@@ -22,7 +22,7 @@ Cloud tasks already have isolated environments. Reuse the existing checkout; do 
 In the existing checkout, first inspect `git status --short` and preserve any local changes. Once the checkout is clean:
 
 ```sh
-git fetch origin
+git fetch origin refs/heads/main:refs/remotes/origin/main
 git switch main
 git pull --ff-only origin main
 git switch -c topic/<slug>
@@ -38,7 +38,7 @@ Only create branches for actual work. For parallel work on one topic, a `task/<t
 
 Start a new discussion with: “Continue `<topic>` in `AnujR17/Chatgpt-Environment` on `topic/<slug>`. Read `topics/<slug>/HANDOFF.md` and `TASKS.md`, then work on `<specific objective>`.”
 
-In its cloud checkout, inspect local changes, fetch the branch, switch to the existing local topic branch or create a local tracking branch from `origin/topic/<slug>`, and fast-forward only. Read the brief, tracker and decisions before editing. Do not force a branch switch over uncommitted work.
+In its cloud checkout, inspect local changes, fetch the branch explicitly with `git fetch origin refs/heads/topic/<slug>:refs/remotes/origin/topic/<slug>`, switch to the existing local topic branch or create a local tracking branch from `origin/topic/<slug>`, and fast-forward only. Cloud checkouts can have a narrow default fetch configuration that does not retrieve named branches. Read the brief, tracker and decisions before editing. Do not force a branch switch over uncommitted work.
 
 Finish each work session by recording what changed, the evidence or checks used, unresolved questions, and the next concrete task. Update the handoff and commit only the intended files.
 
