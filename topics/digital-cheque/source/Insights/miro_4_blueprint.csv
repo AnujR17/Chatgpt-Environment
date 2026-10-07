@@ -1,0 +1,8 @@
+﻿Lane,Agree terms,Write & sign,Hand over,Hold,Positive Pay,Present,Clear,Paid or returned,Demand notice,15-day wait,Settle or file
+Evidence,Invoice / verbal deal,Paper cheque,Nothing,Cheque in a drawer,SMS / portal entry,Deposit slip,Cheque image,Credit SMS or return memo,Lawyer's letter,Postal receipt,Complaint file
+Payer,Agrees credit period,"Fills date, amount, signs",Hands over in person,Cannot see it,Submits 5 to 7 fields separately,Unaware of date,Unaware,Learns of bounce late,Receives notice,Pays or ignores,Settles or defends
+Payee,Asks for a PDC,Checks cheque by eye,Stores it,Waits for date,Cannot see if done,Visits branch or drop box,Waits,Reads a reason code,Hires lawyer within 30 days,Counts 15 days by hand,Files within 30 days or settles
+Frontstage,,,,,Bank app / branch form,"Branch counter, drop box",,"SMS, memo",,,Court e-filing (some cities)
+Backstage,,,,,Positive Pay database,Image capture,"CTS grid, drawee checks",Return code issued,,,
+Support,,"NI Act s.6, CTS-2010 rules",,3-month validity,RBI PPS circular,Continuous clearing rules,NPCI CTS,NI Act s.138,s.138 proviso (b),s.138 proviso (c),"s.142 venue, s.147 compounding"
+Pain,Purpose not written anywhere,Errors void cheque; only date editable,No receipt of handover,Both sides blind,"Disconnected chore, varies by bank",Missed windows,Phase 2 speed deferred,Code hides the legal clock,Delivery often disputed,Manual counting; early filing fatal,~10 years in Gujarat

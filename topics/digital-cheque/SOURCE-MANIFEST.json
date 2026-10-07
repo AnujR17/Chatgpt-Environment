@@ -1,0 +1,153 @@
+{
+  "archive_name": "Digital Cheque.zip",
+  "archive_sha256": "e3ff151ee79bb43c92d8477f0bbb732538aaca0dd53f91da3ca2692fc0b98fde",
+  "import_date": "2026-10-07",
+  "file_count": 29,
+  "files": [
+    {
+      "path": "source/00-Foundation/01-foundation-analysis-pointer.md",
+      "size_bytes": 815,
+      "sha256": "33f6f779b9f74d70113baa2bed86cbf28c5f26f0612eea712a2c9454e91b27f9"
+    },
+    {
+      "path": "source/00-Foundation/02-why-digital-cheques-were-never-introduced.md",
+      "size_bytes": 4211,
+      "sha256": "77a0764e8ce45dad266c6a1277fa1d847b7eb6dd60e5cb09368e4c82726016cb"
+    },
+    {
+      "path": "source/00-Foundation/03-rbi-payments-vision-2028-summary.md",
+      "size_bytes": 4714,
+      "sha256": "a0132a3cb659cd72728bf01ab1209e87605994fef3b86c1c1d3255661ae4a490"
+    },
+    {
+      "path": "source/00-Foundation/04-e-cheque-predictive-scenarios.md",
+      "size_bytes": 7221,
+      "sha256": "486fd1bf3121ba1c9991fe0ab09e6e233c427d64c4bb7c1337ed285c1cabd511"
+    },
+    {
+      "path": "source/00-Foundation/05-digital-cheque-design-factors.md",
+      "size_bytes": 12544,
+      "sha256": "8eb6cbf13326505480dfd82494c2d8f027f6e55505d011e921ea407f0bfffd6b"
+    },
+    {
+      "path": "source/00-Foundation/Digital Cheque — Foundation Analysis.md",
+      "size_bytes": 30241,
+      "sha256": "753eec8ceb5c9d6ef2a050f6fa8db5fde99e9dce501e9c5a6b754a528616c72d"
+    },
+    {
+      "path": "source/00-Foundation/Digital Cheque — Global Precedents.pdf",
+      "size_bytes": 190977,
+      "sha256": "cbb2bbe1bedef115827ed43b09dc5f4b0d7313e63d3aa730ba6310886e17d283"
+    },
+    {
+      "path": "source/00-Foundation/digital-cheque-target-structure.md",
+      "size_bytes": 11891,
+      "sha256": "2cf669db0f5e4978b5a0d65f8d4913691fbd3bb6e4ac8c99dc261681cb6c78ea"
+    },
+    {
+      "path": "source/Documentation/Digital Cheque - Data Evidence Appendix.md",
+      "size_bytes": 8841,
+      "sha256": "77bdb2faee49540206b528d3174d0761b81122b3ef63b43397ecca683ceceaf2"
+    },
+    {
+      "path": "source/Documentation/Digital Cheque - India Physical Cheque Parameters.md",
+      "size_bytes": 16132,
+      "sha256": "543450c4bd5adeb27a3f7bd162eb05ff25a0010b5c03315c88eeff6dd0d7ea25"
+    },
+    {
+      "path": "source/Documentation/Digital Cheque - Similar Countries Transition Analysis.md",
+      "size_bytes": 10510,
+      "sha256": "9b2e2cfa44f84c99c80e0da7ec0ad910559ff39e8a809b21c9e4d5b4a15b5b27"
+    },
+    {
+      "path": "source/Documentation/Digital Cheque - Singapore Session Log (30 Sep-1 Oct 2026).md",
+      "size_bytes": 20795,
+      "sha256": "14e4a8abc1e4aa265ebf40fcaa8a69677c6ff38fc061c4f4467440560ff918b4"
+    },
+    {
+      "path": "source/Documentation/digital-cheque-session-log.md",
+      "size_bytes": 20733,
+      "sha256": "6342c8e75051f1da1f6ae834e0e2cdccabcad102bdd6f5724e14a00bb5b9e5fe"
+    },
+    {
+      "path": "source/Insights/handoff-digital-cheque.md",
+      "size_bytes": 15651,
+      "sha256": "6fb73b564b79f29973608b5b2d424401de39ae102081e7c5ef7553b6cbec995f"
+    },
+    {
+      "path": "source/Insights/miro_1_affinity.csv",
+      "size_bytes": 6216,
+      "sha256": "c7933bdece35299a9f92a9124a32f3b00fb161d6603493dd3aa41a71d6806302"
+    },
+    {
+      "path": "source/Insights/miro_2_csd.csv",
+      "size_bytes": 1007,
+      "sha256": "f51424c567aea59d811aa23bd694c1a449cd432c28bded1175ebd9da6f4d1854"
+    },
+    {
+      "path": "source/Insights/miro_3_stakeholders.csv",
+      "size_bytes": 296,
+      "sha256": "411b4e323f40a12376dfc59505b2d89d38cfa5ebb0355e713cb9945f1481675e"
+    },
+    {
+      "path": "source/Insights/miro_4_blueprint.csv",
+      "size_bytes": 1463,
+      "sha256": "3fe9ada87ca000470a005ef8dfb5ec3888b40d292d46fc05a405dbce79578ef7"
+    },
+    {
+      "path": "source/Insights/miro_5_journey.csv",
+      "size_bytes": 1211,
+      "sha256": "08579f5426280c73f57e808c899ca166cc09717ad5d1b0479fd7af36c54ba859"
+    },
+    {
+      "path": "source/Visuals/scenario_01_edp_supplier_payment.png",
+      "size_bytes": 101762,
+      "sha256": "ef9a91c08026846f155096ec4926186662e7554621d8aa1b0cc073234a786232"
+    },
+    {
+      "path": "source/Visuals/scenario_02_edp_plus_high_trust_payment.png",
+      "size_bytes": 93823,
+      "sha256": "65ba0090936cdb2d29905d51af01e318690359f07726430406380687859362e9"
+    },
+    {
+      "path": "source/Visuals/scenario_03_savings_account_new_capability.png",
+      "size_bytes": 97830,
+      "sha256": "8275e8722736cb4d7128257fa171874b8f80ea697cfa92135e16425eb213aaee"
+    },
+    {
+      "path": "source/Visuals/scenario_04_edp_plus_insufficient_funds.png",
+      "size_bytes": 118311,
+      "sha256": "7e0a63d840c424cae998d525162b04f81b81f7948502923cf63afda23d0cf131"
+    },
+    {
+      "path": "source/Visuals/scenario_05_edp_plus_unclaimed.png",
+      "size_bytes": 96193,
+      "sha256": "c19adf2dc8f2118492735ad87e7d555523b66fd28b41d2d2761cbb3cb3ea1abf"
+    },
+    {
+      "path": "source/Visuals/scenario_06_cancellation_before_maturity.png",
+      "size_bytes": 98066,
+      "sha256": "6f858752d88c339862b6f3e3ae3043b26f99a0040bb679327a2f9aa20565fb0d"
+    },
+    {
+      "path": "source/Visuals/scenario_07_legacy_pdc_transition.png",
+      "size_bytes": 117210,
+      "sha256": "b203b17df45dee45464c6aaf0250f09be2fe22592c583abbb72897cdf6a9fc18"
+    },
+    {
+      "path": "source/Visuals/scenario_08_parallel_account_tracks.png",
+      "size_bytes": 91862,
+      "sha256": "da777fc61accafae591f134f444ac0da7c8f38f49e552797655b99d07cf745d0"
+    },
+    {
+      "path": "source/Visuals/scenario_09_dispute_after_payment.png",
+      "size_bytes": 100150,
+      "sha256": "73f4170b84120441766442c935845435ba77a5c9e35c11c59d18685383ca9d14"
+    },
+    {
+      "path": "source/Visuals/singapore_edp_edpplus_full_flow.png",
+      "size_bytes": 372891,
+      "sha256": "6f0f8c0391f424c3bb2780dc1a4745df747dedceb4b18a5c5c23be13aeb19348"
+    }
+  ]
+}
