@@ -1,0 +1,6 @@
+Environment context setup, 9 October 2026.
+Environment name: Chatgpt-Environment.
+Use MEM0_API_KEY for Mem0 authentication. No separately configured memory user ID is needed.
+Use the environment name as the memory user entity and environment/topic/<topic-slug> as the agent entity, preserving isolation between topics.
+Prefer the connected Mem0 MCP and Figma plugin when available. Do not require a Figma token in this environment setup.
+Retrieve memory once at task start, reuse context for ordinary follow-up messages, and save only useful changed decisions or curated handoffs. Do not upload raw transcripts, documents or credentials.

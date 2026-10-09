@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Explicit, cached Mem0 and Figma operations; no SDK startup or telemetry calls."""
+"""Explicit, cached Mem0 fallback; prefer connected MCP tools when available."""
 import argparse
 import fcntl
 import hashlib
@@ -9,11 +9,11 @@ from pathlib import Path
 import re
 import tempfile
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote, urlencode
 from urllib.request import build_opener, HTTPRedirectHandler, Request
 
 STATE_ROOT = Path('/workspace/shared/environment-context/state')
 MAX_RESPONSE = 8 * 1024 * 1024
+ENVIRONMENT_NAME = 'Chatgpt-Environment'
 
 
 class SetupError(Exception):
@@ -42,7 +42,13 @@ def session_id(explicit=None):
 def topic_id(value):
     if not re.fullmatch(r'[a-z0-9][a-z0-9-]{0,79}', value):
         raise SetupError('Topic must be a lowercase slug, for example digital-cheque.')
-    return 'chatgpt-environment/topic/' + value
+    return ENVIRONMENT_NAME + '/topic/' + value
+
+
+def credential_scope():
+    # Separate caches when switching actual keys, without storing or printing the key.
+    # Proxy-placeholder rotations still need an explicit refresh after configuration changes.
+    return hashlib.sha256(required('MEM0_API_KEY').encode()).hexdigest()
 
 
 def check_text(text, limit):
@@ -78,7 +84,7 @@ def request_json(url, token_variable, header, payload=None):
     except (URLError, OSError, TimeoutError):
         raise SetupError('Network request failed; no automatic retry. A write may have reached the service.') from None
     if len(body) > MAX_RESPONSE:
-        raise SetupError('Response exceeds the local size limit; request narrower Figma nodes if applicable.')
+        raise SetupError('Response exceeds the local size limit.')
     try:
         return json.loads(body)
     except (ValueError, UnicodeError):
@@ -122,57 +128,40 @@ def atomic_json(path, data):
 
 def start_memory(topic, query, session=None, refresh=False):
     agent = topic_id(topic)
-    user = required('MEM0_USER_ID')
+    user = ENVIRONMENT_NAME
     task = session_id(session)
     query = check_text(query, 1500)
-    required('ENV_ALL')  # Missing configuration does not consume the request budget.
+    account = credential_scope()  # The API key is the only required configured credential.
     payload = {'query': query, 'filters': {'AND': [{'user_id': user}, {'agent_id': agent}]}, 'top_k': 8}
     # Query is deliberately excluded: one retrieval per topic/task, even if rephrased.
-    return cached_request(['mem0-start', user, agent, task], lambda: request_json(
-        'https://api.mem0.ai/v3/memories/search/', 'ENV_ALL', 'Authorization', payload), refresh)
+    return cached_request(['mem0-start', account, user, agent, task], lambda: request_json(
+        'https://api.mem0.ai/v3/memories/search/', 'MEM0_API_KEY', 'Authorization', payload), refresh)
 
 
 def save_memory(topic, text, checkpoint, retry=False):
     agent = topic_id(topic)
-    user = required('MEM0_USER_ID')
+    user = ENVIRONMENT_NAME
     text = check_text(text, 5000)
-    required('ENV_ALL')
+    account = credential_scope()
     payload = {
         'messages': [{'role': 'user', 'content': text}],
         'filters': {'user_id': user, 'agent_id': agent},
-        'metadata': {'topic': topic, 'checkpoint': checkpoint, 'source': 'AnujR17/Chatgpt-Environment'},
+        'metadata': {'environment': ENVIRONMENT_NAME, 'topic': topic,
+                     'checkpoint': checkpoint, 'source': 'AnujR17/Chatgpt-Environment'},
     }
     content_hash = hashlib.sha256(text.encode()).hexdigest()
     # Deduplicate the same text across sessions and checkpoint labels.
-    key = ['mem0-save', user, agent, content_hash]
+    key = ['mem0-save', account, user, agent, content_hash]
     return cached_request(key, lambda: request_json(
-        'https://api.mem0.ai/v3/memories/add/', 'ENV_ALL', 'Authorization', payload), 'failed' if retry else False)
-
-
-def read_figma(file_key, node_id=None, depth=2, session=None, refresh=False):
-    if not re.fullmatch(r'[A-Za-z0-9_-]{1,100}', file_key):
-        raise SetupError('Supply a Figma file key, not a full URL.')
-    if node_id and not re.fullmatch(r'[0-9]+:[0-9]+', node_id):
-        raise SetupError('Supply one node ID in the form 123:456.')
-    if not 1 <= depth <= 4:
-        raise SetupError('Figma depth must be between 1 and 4.')
-    task = session_id(session)
-    required('FIGMA_ACCESS_TOKEN')
-    path = '/v1/files/' + quote(file_key, safe='')
-    params = {'depth': depth}
-    if node_id:
-        path += '/nodes'
-        params['ids'] = node_id
-    url = 'https://api.figma.com' + path + '?' + urlencode(params)
-    return cached_request(['figma-read', task, file_key, node_id, depth],
-                          lambda: request_json(url, 'FIGMA_ACCESS_TOKEN', 'X-Figma-Token'), refresh)
+        'https://api.mem0.ai/v3/memories/add/', 'MEM0_API_KEY', 'Authorization', payload), 'failed' if retry else False)
 
 
 def local_status():
-    return {'status': 'local-only', 'credentials': {name: bool(os.environ.get(name))
-            for name in ('ENV_ALL', 'MEM0_USER_ID', 'FIGMA_ACCESS_TOKEN')},
-            'mem0_topic_isolation': 'user_id AND topic-specific agent_id',
-            'figma': 'on-demand read-only REST fallback; native editing connector is separate'}
+    return {'status': 'local-only', 'credentials': {'MEM0_API_KEY': bool(os.environ.get('MEM0_API_KEY'))},
+            'environment_entity': ENVIRONMENT_NAME,
+            'mem0_topic_isolation': 'environment user_id AND topic-specific agent_id',
+            'mem0': 'prefer connected MCP; this helper is the direct-API fallback',
+            'figma': 'use connected plugin only; no Figma token setting required'}
 
 
 def main():
@@ -189,12 +178,6 @@ def main():
     save.add_argument('--file', required=True, help='UTF-8 file containing the curated summary.')
     save.add_argument('--checkpoint', choices=('decision', 'correction', 'handoff'), required=True)
     save.add_argument('--retry', action='store_true', help='Explicit resubmission; diagnose uncertain outcomes first.')
-    figma = sub.add_parser('figma-read', help='Read one file or node only when a task needs it.')
-    figma.add_argument('--file-key', required=True)
-    figma.add_argument('--node-id')
-    figma.add_argument('--depth', type=int, default=2)
-    figma.add_argument('--session')
-    figma.add_argument('--refresh', action='store_true')
     args = parser.parse_args()
     try:
         if args.command == 'status':
@@ -205,8 +188,6 @@ def main():
             if Path(args.file).stat().st_size > 20000:
                 raise SetupError('Summary file is too large; send a curated handoff only.')
             result = save_memory(args.topic, Path(args.file).read_text(encoding='utf-8'), args.checkpoint, args.retry)
-        else:
-            result = read_figma(args.file_key, args.node_id, args.depth, args.session, args.refresh)
     except SetupError as error:
         result = {'status': 'blocked', 'error': str(error)}
     except (OSError, ValueError, UnicodeError):

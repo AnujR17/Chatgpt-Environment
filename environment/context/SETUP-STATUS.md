@@ -1,33 +1,30 @@
-# Context setup handoff
+# Context setup repair handoff
 
-Prepared on 9 October 2026 (Asia/Kolkata). Branch: `task/environment/topic-context`.
+Updated 9 October 2026 (Asia/Kolkata), branch `task/environment/topic-context`.
 
-## User requirements
+## Latest user requirements
 
-- `ENV_ALL` is the Mem0 token variable, shared across tasks using this environment.
-- Mem0 context must be separate per topic.
-- Restore context at the start of a conversation/task, not on every message.
-- Support Figma and add other tools when future tasks require them.
-- Implement these workflows as reusable skills.
+- Replace the earlier Mem0 token name with `MEM0_API_KEY`.
+- Remove the separately configured memory user ID.
+- Use this environment name for Mem0 entities, keeping topics separate.
+- Use the available Figma plugin; require no Figma token here.
+- Prefer the connected Mem0 MCP when its tools are exposed.
+- Retain the minimal-request policy and reusable skills.
 
-## Implemented
+## Diagnosis
 
-- Topic context skill with a single scoped retrieval per task and local-file fallback.
-- Figma skill with scoped, cached REST reads only when needed; editing needs a separate native connector.
-- Standard-library helper with no SDK pings, telemetry, polling or automatic retries.
-- Per-topic Mem0 entity filters, task-scoped retrieval caching and cross-session identical-summary deduplication.
-- Credential/header protection and rejection of redirects.
-- Repeatable installer that preserves unrelated instructions and locally edited managed files.
-- Workspace instructions pointing to installed skills independently of topic branches.
+The prior draft saved its API-domain and credential requirements, but no credentials were applied to the runtime. A key rename alone cannot establish authentication or fix a host-side MCP connection. No callable Mem0 or Figma MCP tools were exposed in this task's tool inventory during repair. Their presence in another app/chat remains distinct from availability here.
 
-## Validation
+The configuration tool only adds secret/variable requirements; deleting obsolete rows needs the environment settings editor. The implementation removes those dependencies and supplies the environment entity automatically, so stale rows are not read by the helper.
 
-14 offline tests passed. They exercise request budgets, scope, credentials, errors, deduplication, read targets and installation preservation. Mem0 endpoints/filters and Figma headers/paths were checked against their official maintained client/specification.
+## Corrected behavior
 
-## Remaining setup
+`MEM0_API_KEY` is the sole required fallback credential. Entity fields use `Chatgpt-Environment` and `Chatgpt-Environment/topic/<topic>`. Topic memory stays isolated. A different actual key gets a separate local cache scope. Proxy-placeholder credential rotation can still need an explicit refresh after diagnosis.
 
-Neither `ENV_ALL` nor `FIGMA_ACCESS_TOKEN` was present in the actual runtime or configured secret bindings during inspection. Secure values must be supplied in environment settings. `MEM0_USER_ID` must be stable; the draft suggests `chatgpt-environment-owner`, or use the exact ID for an existing Mem0 namespace.
+Figma REST code and its token requirement have been removed from the implementation. The Figma skill uses a connected plugin only when the task requires it. The Mem0 skill prefers exposed MCP tools and uses direct HTTP only as a fallback, never both for one operation.
 
-After configuration applies, use one topic-scoped Mem0 search to validate access and one requested Figma file/node read when Figma is needed. No live authenticated API success is claimed. Environment publication and fresh-task activation must be verified separately. The setup applies to tasks using this configured environment, not globally to unrelated chats.
+A short bootstrap record is prepared to establish the environment and environment-setup entities once authentication is available. It contains configuration decisions only, without any keys or raw documents. No remote entity creation or live API success has been claimed.
 
-Update this record after live validation. Do not upload the Digital Cheque archive, full transcripts or missing research outputs as part of the credential check.
+## Remaining external actions
+
+Remove obsolete credential/variable rows in environment settings, securely supply `MEM0_API_KEY`, save and publish the corrected configuration. Expose the Mem0/Figma connection to tasks that need it if its tools are not already callable. Then perform one useful setup write and a scoped lookup; update this status with observed results.

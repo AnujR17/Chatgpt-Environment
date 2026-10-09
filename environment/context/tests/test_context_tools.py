@@ -22,8 +22,7 @@ class ContextTests(unittest.TestCase):
         self.state = patch.object(tools, 'STATE_ROOT', Path(self.temporary.name))
         self.state.start()
         self.addCleanup(self.state.stop)
-        environment = {'ENV_ALL': 'test-mem0-credential', 'MEM0_USER_ID': 'test-person',
-                       'FIGMA_ACCESS_TOKEN': 'test-figma-credential', 'CODEX_THREAD_ID': 'task-a'}
+        environment = {'MEM0_API_KEY': 'test-mem0-credential', 'CODEX_THREAD_ID': 'task-a'}
         self.environment = patch.dict(os.environ, environment, clear=True)
         self.environment.start()
         self.addCleanup(self.environment.stop)
@@ -35,7 +34,8 @@ class ContextTests(unittest.TestCase):
         result = tools.local_status()
         self.send.assert_not_called()
         self.assertNotIn('test-mem0-credential', json.dumps(result))
-        self.assertTrue(result['credentials']['ENV_ALL'])
+        self.assertEqual(result['credentials'], {'MEM0_API_KEY': True})
+        self.assertEqual(result['environment_entity'], 'Chatgpt-Environment')
 
     def test_repeated_start_even_rephrased_makes_one_request(self):
         first = tools.start_memory('digital-cheque', 'Current work')
@@ -52,16 +52,16 @@ class ContextTests(unittest.TestCase):
         first = self.send.call_args_list[0].args[3]
         other = self.send.call_args_list[1].args[3]
         self.assertEqual(first['filters'], {'AND': [
-            {'user_id': 'test-person'}, {'agent_id': 'chatgpt-environment/topic/digital-cheque'}]})
+            {'user_id': 'Chatgpt-Environment'}, {'agent_id': 'Chatgpt-Environment/topic/digital-cheque'}]})
         self.assertNotEqual(first['filters'], other['filters'])
         self.assertEqual(first['top_k'], 8)
 
     def test_missing_secret_does_not_consume_call_or_cache(self):
-        del os.environ['ENV_ALL']
+        del os.environ['MEM0_API_KEY']
         with self.assertRaises(tools.SetupError):
             tools.start_memory('digital-cheque', 'Work')
         self.send.assert_not_called()
-        os.environ['ENV_ALL'] = 'new-test-credential'
+        os.environ['MEM0_API_KEY'] = 'new-test-credential'
         self.assertEqual(tools.start_memory('digital-cheque', 'Work')['status'], 'ok')
         self.assertEqual(self.send.call_count, 1)
 
@@ -91,9 +91,11 @@ class ContextTests(unittest.TestCase):
         self.assertEqual(self.send.call_count, 1)
         url, variable, header, payload = self.send.call_args.args
         self.assertEqual(url, 'https://api.mem0.ai/v3/memories/add/')
-        self.assertEqual(variable, 'ENV_ALL')
+        self.assertEqual(variable, 'MEM0_API_KEY')
         self.assertEqual(header, 'Authorization')
-        self.assertEqual(payload['filters']['agent_id'], 'chatgpt-environment/topic/digital-cheque')
+        self.assertEqual(payload['filters']['agent_id'], 'Chatgpt-Environment/topic/digital-cheque')
+        self.assertEqual(payload['filters']['user_id'], 'Chatgpt-Environment')
+        self.assertEqual(payload['metadata']['environment'], 'Chatgpt-Environment')
         self.assertNotIn('user_id', payload)  # v3 identities belong inside filters.
 
     def test_summary_containing_credential_is_blocked(self):
@@ -110,13 +112,25 @@ class ContextTests(unittest.TestCase):
             tools.start_memory('digital-cheque', 'Work')
         self.send.assert_not_called()
 
-    def test_figma_reads_only_the_requested_node_and_reuses_cache(self):
-        tools.read_figma('exampleKey', '123:456')
-        tools.read_figma('exampleKey', '123:456')
+    def test_new_api_key_does_not_reuse_another_accounts_context(self):
+        tools.start_memory('digital-cheque', 'Work')
+        os.environ['MEM0_API_KEY'] = 'another-test-credential'
+        tools.start_memory('digital-cheque', 'Work')
+        self.assertEqual(self.send.call_count, 2)
+
+    def test_api_key_alone_is_enough_without_user_id_or_figma_token(self):
+        tools.start_memory('environment-setup', 'Setup')
         self.assertEqual(self.send.call_count, 1)
-        self.assertEqual(self.send.call_args.args,
-                         ('https://api.figma.com/v1/files/exampleKey/nodes?depth=2&ids=123%3A456',
-                          'FIGMA_ACCESS_TOKEN', 'X-Figma-Token'))
+        self.assertNotIn('MEM0_USER_ID', os.environ)
+        self.assertNotIn('FIGMA_ACCESS_TOKEN', tools.local_status()['credentials'])
+
+    def test_bootstrap_creates_environment_and_topic_entity_without_extra_id(self):
+        text = (ROOT / 'bootstrap.txt').read_text()
+        tools.save_memory('environment-setup', text, 'decision')
+        payload = self.send.call_args.args[3]
+        self.assertEqual(payload['filters'], {'user_id': 'Chatgpt-Environment',
+                                             'agent_id': 'Chatgpt-Environment/topic/environment-setup'})
+        self.assertEqual(payload['metadata']['environment'], 'Chatgpt-Environment')
 
     def test_redirects_are_rejected(self):
         with self.assertRaises(tools.SetupError):
@@ -130,7 +144,7 @@ class ContextTests(unittest.TestCase):
             with self.assertRaises(tools.SetupError) as outcome:
                 self.network.stop()
                 try:
-                    tools.request_json('https://api.mem0.ai/v3/memories/search/', 'ENV_ALL',
+                    tools.request_json('https://api.mem0.ai/v3/memories/search/', 'MEM0_API_KEY',
                                        'Authorization', {'query': 'Work'})
                 finally:
                     self.network.start()
