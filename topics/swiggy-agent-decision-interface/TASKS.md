@@ -11,7 +11,7 @@ Updated: 9 October 2026
 
 ## Context-sharing delivery
 
-- [ ] Publish and verify the topic branch on GitHub (local commit prepared).
+- [x] Publish and verify the topic branch on GitHub; the initial remote head matched the local commit.
 - [x] Attempt a short Mem0 handoff and record the actual result: HTTP 400; authentication check HTTP 200.
 - [ ] Diagnose the Mem0 add validation failure and submit the pending MEMORY_SUMMARY.md payload after correction.
 

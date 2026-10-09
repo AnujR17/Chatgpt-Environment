@@ -1,7 +1,7 @@
 # Swiggy Support Agent Decision Interface
 
-Branch: `topic/swiggy-agent-decision-interface`  
-Repository: https://github.com/AnujR17/Chatgpt-Environment  
+Branch: `topic/swiggy-agent-decision-interface`
+Repository: https://github.com/AnujR17/Chatgpt-Environment
 Context established: 9 October 2026
 
 ## Goal

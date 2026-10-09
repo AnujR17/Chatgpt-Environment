@@ -1,8 +1,8 @@
 # Continuation handoff
 
-Updated: 9 October 2026  
-Repository: https://github.com/AnujR17/Chatgpt-Environment  
-Branch: `topic/swiggy-agent-decision-interface`  
+Updated: 9 October 2026
+Repository: https://github.com/AnujR17/Chatgpt-Environment
+Branch: `topic/swiggy-agent-decision-interface`
 Topic path: `topics/swiggy-agent-decision-interface/`
 
 ## What happened
@@ -10,6 +10,8 @@ Topic path: `topics/swiggy-agent-decision-interface/`
 The user uploaded `Swiggy-Agent-Decision-Interface-Handoff.zip` and asked to understand the project. We unpacked it, read the main handoff/draft/policy/checklist and supporting research/reference material, and explained the concept and evidence limits. The user then requested a separate branch in this repository plus repository and Mem0 context sharing.
 
 All 28 supplied files are preserved byte-for-byte under `source/Swiggy-Agent-Decision-Interface-Handoff/`; `source/manifest.json` records SHA-256 checksums. No design or historical source decisions were silently changed. The MP4 is approximately 110 seconds of audio; its incomplete PDF transcript was inspected, but the recording was not independently transcribed. HTML files are design/reference boards, not an interactive case-handling prototype. External Figma/Claude links were not accessed.
+
+Repository sync: topic branch published and initial remote head verified against local commit. Main was not changed.
 
 ## Read next
 
@@ -30,7 +32,7 @@ Before design, reconcile the no-default-outcome conflict, first-time-review fair
 
 ## Mem0
 
-User entity: `Chatgpt-Environment`  
+User entity: `Chatgpt-Environment`
 Agent entity: `Chatgpt-Environment/topic/swiggy-agent-decision-interface`
 
 The earlier topic lookup failed because the executor could not connect to its proxy. Network-enabled commands subsequently reached GitHub. A curated memory write was attempted with the same topic scope; the result is recorded below. Do not repeatedly retry uncertain writes or upload the archive/transcript as memory. Read topic-scoped memory once per new task, using workspace guidance. Git files remain the inspectable source of truth.
