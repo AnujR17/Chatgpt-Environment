@@ -1,0 +1,381 @@
+<title>Swiggy Refund Signals</title>
+<style>
+  :root{
+    --bg:#FAF7F2;
+    --surface:#FFFFFF;
+    --surface-2:#F3EEE6;
+    --ink:#211B14;
+    --ink-dim:#6E6255;
+    --line:#E5DDD0;
+    --accent:#E06B1F;
+    --accent-soft:#FDECDD;
+    --bot:#2B6CA3;
+    --bot-soft:#E6F0F8;
+    --agent:#B5541E;
+    --agent-soft:#FBEADD;
+    --backend:#6B5B95;
+    --backend-soft:#EEEAF6;
+    --warn:#A3271F;
+    --warn-soft:#FBE9E7;
+    --ok:#3D7A4E;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#181410;
+      --surface:#221C16;
+      --surface-2:#2A231C;
+      --ink:#F1E9DD;
+      --ink-dim:#B4A896;
+      --line:#3A3126;
+      --accent:#F0894A;
+      --accent-soft:#3A2416;
+      --bot:#7FB4DE;
+      --bot-soft:#1C2C38;
+      --agent:#E2A06E;
+      --agent-soft:#3A2A19;
+      --backend:#B6A6E0;
+      --backend-soft:#2A2438;
+      --warn:#E48A83;
+      --warn-soft:#3A1E1B;
+      --ok:#8FC79E;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#181410;
+    --surface:#221C16;
+    --surface-2:#2A231C;
+    --ink:#F1E9DD;
+    --ink-dim:#B4A896;
+    --line:#3A3126;
+    --accent:#F0894A;
+    --accent-soft:#3A2416;
+    --bot:#7FB4DE;
+    --bot-soft:#1C2C38;
+    --agent:#E2A06E;
+    --agent-soft:#3A2A19;
+    --backend:#B6A6E0;
+    --backend-soft:#2A2438;
+    --warn:#E48A83;
+    --warn-soft:#3A1E1B;
+    --ok:#8FC79E;
+    color-scheme:dark;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Inter",-apple-system,"Segoe UI",sans-serif;
+    line-height:1.5;
+    padding-inline:16px;
+    max-width:920px;
+    margin:0 auto;
+    padding-block:32px 64px;
+  }
+  h1,h2,h3{font-family:"Fraunces","Georgia",serif; text-wrap:balance; margin:0;}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;}
+  a{color:var(--accent);}
+
+  header{margin-bottom:28px;}
+  .kicker{
+    font-family:"JetBrains Mono",monospace;
+    font-size:12px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-dim);
+    margin-bottom:8px;
+  }
+  h1{font-size:clamp(28px,5vw,40px); font-weight:600;}
+  .subtitle{color:var(--ink-dim); font-size:16px; margin-top:8px; max-width:65ch;}
+
+  .banner{
+    background:var(--accent-soft);
+    border:1px solid var(--accent);
+    border-radius:10px;
+    padding:14px 16px;
+    font-size:14px;
+    color:var(--ink);
+    margin-top:20px;
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+  }
+  .banner b{color:var(--accent);}
+
+  section{margin-top:44px;}
+  .section-head{display:flex; align-items:baseline; gap:10px; margin-bottom:14px; flex-wrap:wrap;}
+  .section-head h2{font-size:22px; font-weight:600;}
+  .section-num{font-family:"JetBrains Mono",monospace; font-size:13px; color:var(--ink-dim);}
+
+  .legend{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:18px;}
+  .legend-item{display:flex; align-items:center; gap:6px; font-size:13px; color:var(--ink-dim);}
+  .dot{width:10px; height:10px; border-radius:50%; display:inline-block; flex:none;}
+  .dot.bot{background:var(--bot);}
+  .dot.agent{background:var(--agent);}
+  .dot.backend{background:var(--backend);}
+
+  /* mermaid container */
+  .diagram-card{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:18px;
+    overflow-x:auto;
+  }
+
+  /* two-column cards */
+  .lanes{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+  @media (max-width:640px){ .lanes{grid-template-columns:1fr;} }
+  .lane{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:20px;
+  }
+  .lane-title{
+    display:flex; align-items:center; gap:8px;
+    font-family:"Fraunces",serif; font-size:19px; font-weight:600;
+    margin-bottom:4px;
+  }
+  .lane-sub{font-size:13px; color:var(--ink-dim); margin-bottom:16px;}
+  .lane.bot .lane-title{color:var(--bot);}
+  .lane.agent .lane-title{color:var(--agent);}
+
+  .group{margin-bottom:16px;}
+  .group:last-child{margin-bottom:0;}
+  .group-label{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--ink-dim);
+    margin-bottom:8px;
+  }
+  .chip-list{display:flex; flex-direction:column; gap:8px;}
+  .chip{
+    background:var(--surface-2);
+    border-radius:8px;
+    padding:8px 10px;
+    font-size:13.5px;
+    display:flex; justify-content:space-between; align-items:center; gap:10px;
+  }
+  .chip .tag{
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    color:var(--ink-dim);
+    white-space:nowrap;
+    flex:none;
+  }
+  .lane.bot .chip{background:var(--bot-soft);}
+  .lane.agent .chip{background:var(--agent-soft);}
+
+  /* matrix table */
+  .table-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:14px; background:var(--surface);}
+  table{border-collapse:collapse; width:100%; font-size:13.5px; min-width:720px;}
+  th,td{padding:10px 12px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px; text-transform:uppercase; letter-spacing:.04em;
+    color:var(--ink-dim);
+    background:var(--surface-2);
+    position:sticky; top:0;
+  }
+  tr:last-child td{border-bottom:none;}
+  td.center, th.center{text-align:center;}
+  .mark{font-size:15px;}
+  .mark.yes{color:var(--ok);}
+  .mark.partial{color:var(--ink-dim);}
+  .mark.no{color:var(--ink-dim); opacity:.35;}
+  .evtag{
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    padding:2px 6px;
+    border-radius:5px;
+    background:var(--surface-2);
+    color:var(--ink-dim);
+    white-space:nowrap;
+  }
+  .flagrow td{background:var(--warn-soft);}
+
+  .callout{
+    background:var(--warn-soft);
+    border:1px solid var(--warn);
+    border-radius:14px;
+    padding:20px;
+    margin-top:18px;
+  }
+  .callout h3{color:var(--warn); font-size:17px; margin-bottom:10px;}
+  .callout ul{margin:0; padding-left:18px; font-size:14px;}
+  .callout li{margin-bottom:8px;}
+  .callout li:last-child{margin-bottom:0;}
+
+  footer{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    font-size:12.5px;
+    color:var(--ink-dim);
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<header>
+  <div class="kicker">Support Agent Decision Interface — Research working note</div>
+  <h1>Who checks what, before a refund is decided</h1>
+  <p class="subtitle">Every parameter behind a Swiggy refund or account-block decision, split by where in the process it appears to enter: the Help-chat bot, the human agent, and the backend teams neither of them show in real time.</p>
+  <div class="banner">
+    <span>⚠</span>
+    <span><b>Assumption, labelled:</b> Swiggy has never published which team sees which signal. The Bot / Agent / Backend split below is our own reconstruction, built from the process description in the research notes (Section 5) and one anonymised support-executive interview. Every row keeps its original evidence tag so you can tell a documented rule from a reported pattern from our inference.</span>
+  </div>
+</header>
+
+<section id="flow">
+  <div class="section-head"><span class="section-num">01</span><h2>The handoff, in sequence</h2></div>
+  <p class="subtitle" style="margin-bottom:14px;">[Reported + Official, assembled] — where each actor enters and what it adds to the case.</p>
+  <div class="diagram-card">
+<pre class="mermaid">
+sequenceDiagram
+    participant C as Customer
+    participant B as Help-chat Bot
+    participant A as Human Agent
+    participant E as Email / Trust &amp; Safety
+
+    C->>B: Opens Help chat, picks issue + order
+    Note over B: issue type, order vertical,<br/>payment mode, order stage/timing
+    B-->>C: Offers coupon or ~20-30% refund
+    C->>B: Taps "Talk to an agent"
+    B->>A: Hands off full chat history
+    Note over A: + customer profile<br/>+ refund total, last 3 months
+    A-->>C: Resolves, denies, or holds for merchant OK
+    Note over A: after 2-3 repeat cases
+    A->>E: Escalates to email review
+    Note over E: pattern review -> possible<br/>"fraud user" flag, restriction
+    E-->>C: Final outcome by email
+</pre>
+  </div>
+</section>
+
+<section id="lanes">
+  <div class="section-head"><span class="section-num">02</span><h2>What each layer works with</h2></div>
+  <div class="lanes">
+    <div class="lane bot">
+      <div class="lane-title"><span class="dot bot"></span>Help-chat Bot</div>
+      <div class="lane-sub">Automated, first contact. Rule-driven, no visible customer history.</div>
+
+      <div class="group">
+        <div class="group-label">Order &amp; issue facts</div>
+        <div class="chip-list">
+          <div class="chip">Issue type customer selects <span class="tag">Official</span></div>
+          <div class="chip">Order vertical — food / Instamart / alcohol / Genie <span class="tag">Official</span></div>
+          <div class="chip">Payment mode — prepaid vs COD <span class="tag">Official</span></div>
+          <div class="chip">Order stage / timing vs policy cutoff <span class="tag">Official</span></div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-label">Standard response rules</div>
+        <div class="chip-list">
+          <div class="chip">Merchant permission required before any resolution <span class="tag">Official</span></div>
+          <div class="chip">Evidence request, e.g. photo upload <span class="tag">Official / Anecdotal</span></div>
+          <div class="chip">Default offer: partial refund or coupon <span class="tag">Anecdotal</span></div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-label">Escalation trigger</div>
+        <div class="chip-list">
+          <div class="chip">Customer asks for a human; full history carries over <span class="tag">Official</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lane agent">
+      <div class="lane-title"><span class="dot agent"></span>Human Support Agent</div>
+      <div class="lane-sub">Chat or call, after handoff. Sees the bot's facts plus customer history.</div>
+
+      <div class="group">
+        <div class="group-label">Inherited from the bot</div>
+        <div class="chip-list">
+          <div class="chip">All order &amp; issue facts above, same session <span class="tag">Official</span></div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-label">Customer history shown</div>
+        <div class="chip-list">
+          <div class="chip">Refund amount, last 3 months <span class="tag">Reported</span></div>
+          <div class="chip">Complaint frequency across orders <span class="tag">Reported</span></div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-label">Judgment inputs</div>
+        <div class="chip-list">
+          <div class="chip">Fault attribution — customer / restaurant / partner / Swiggy <span class="tag">Official</span></div>
+          <div class="chip">Evidence review <span class="tag">Anecdotal</span></div>
+          <div class="chip">Merchant / delivery-partner permission status <span class="tag">Official</span></div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="group-label">Escalation rule</div>
+        <div class="chip-list">
+          <div class="chip">2-3 repeat cases -> moved to email team <span class="tag">Reported</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="matrix">
+  <div class="section-head"><span class="section-num">03</span><h2>Full parameter matrix</h2></div>
+  <p class="subtitle" style="margin-bottom:14px;">All 12 parameters named anywhere in the research, one row each, with where they appear to enter the process.</p>
+  <div class="legend">
+    <div class="legend-item"><span class="mark yes">●</span> confirmed at this stage</div>
+    <div class="legend-item"><span class="mark partial">◐</span> plausible, not confirmed</div>
+    <div class="legend-item"><span class="mark no">○</span> not this stage</div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Parameter</th>
+          <th class="center">Bot</th>
+          <th class="center">Agent</th>
+          <th class="center">Backend</th>
+          <th>Evidence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Fault attribution (customer / restaurant / partner / Swiggy)</td><td class="center mark yes">●</td><td class="center mark yes">●</td><td class="center mark no">○</td><td><span class="evtag">Official</span></td></tr>
+        <tr><td>2</td><td>Order stage / timing vs. policy cutoff</td><td class="center mark partial">◐</td><td class="center mark yes">●</td><td class="center mark no">○</td><td><span class="evtag">Official</span></td></tr>
+        <tr><td>3</td><td>Issue type</td><td class="center mark yes">●</td><td class="center mark yes">●</td><td class="center mark no">○</td><td><span class="evtag">Official</span></td></tr>
+        <tr><td>4</td><td>Payment mode (prepaid vs. COD)</td><td class="center mark yes">●</td><td class="center mark yes">●</td><td class="center mark no">○</td><td><span class="evtag">Official</span></td></tr>
+        <tr><td>5</td><td>Order vertical (food / Instamart / alcohol / Genie)</td><td class="center mark yes">●</td><td class="center mark yes">●</td><td class="center mark no">○</td><td><span class="evtag">Official</span></td></tr>
+        <tr><td>6</td><td>Evidence supplied (photos, "required evidences")</td><td class="center mark partial">◐</td><td class="center mark yes">●</td><td class="center mark no">○</td><td><span class="evtag">Official</span> / <span class="evtag">Anecdotal</span></td></tr>
+        <tr><td>7</td><td>Restaurant / merchant permission</td><td class="center mark no">○</td><td class="center mark yes">●</td><td class="center mark partial">◐</td><td><span class="evtag">Official</span></td></tr>
+        <tr><td>8</td><td>Refund amount, last 3 months</td><td class="center mark no">○</td><td class="center mark yes">●</td><td class="center mark no">○</td><td><span class="evtag">Reported</span></td></tr>
+        <tr><td>9</td><td>Complaint frequency across orders</td><td class="center mark no">○</td><td class="center mark yes">●</td><td class="center mark partial">◐</td><td><span class="evtag">Reported</span></td></tr>
+        <tr class="flagrow"><td>10</td><td>Customer value tier (high / medium / low)</td><td class="center mark no">○</td><td class="center mark partial">◐</td><td class="center mark yes">●</td><td><span class="evtag">Reported</span></td></tr>
+        <tr class="flagrow"><td>11</td><td>"Fraud user" flag</td><td class="center mark no">○</td><td class="center mark no">○</td><td class="center mark yes">●</td><td><span class="evtag">Reported</span></td></tr>
+        <tr class="flagrow"><td>12</td><td>Device signals (SHIELD fingerprinting)</td><td class="center mark no">○</td><td class="center mark no">○</td><td class="center mark yes">●</td><td><span class="evtag">Reported</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <h3>Rows 10-12 are flagged, not proposed</h3>
+    <ul>
+      <li><b>Value tier</b> and <b>fraud flag</b> are the two places the research drifts from a checkable fact into a customer-intent score. Surfacing either one to an agent means the interface is scoring the customer, not showing what they did — this breaks the project's no-prediction rule directly.</li>
+      <li><b>Device signals</b> (SHIELD) are reported for promo-abuse and delivery-incentive fraud. Nothing in the sources ties them to refund decisions specifically, so including them here would be a guess dressed up as data.</li>
+      <li>Objective alternative already in the research notes: show refund count and complaint count as plain numbers with dates (row 8-9), and let the agent draw their own conclusion — never a pre-computed tier or flag.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  Source: <span class="mono">swiggy-refund-and-blocking-rules-research.md</span>, Sections 4-6. Evidence tags follow that document's legend: Official (Swiggy's own published terms), Reported (news, named or anonymised source, unconfirmed by Swiggy), Anecdotal (customer forums), Inferred (reasoning without a source). The Bot / Agent / Backend split on this page is Inferred throughout unless a specific claim in the source text says otherwise.
+</footer>

@@ -1,0 +1,146 @@
+{
+  "source_archive": "Swiggy-Agent-Decision-Interface-Handoff.zip",
+  "archive_sha256": "b423abf54a866f487e0f358da281e4a0b731fa80c55b4f2cd4cc4ee2a6373ecc",
+  "files": [
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/00_README_HANDOFF.md",
+      "size_bytes": 8039,
+      "sha256": "d84d001f061f369cf4ce973dde2a2de3552394cd322ec9c993f699588894b5bb"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/01_case-study/swiggy-case-study-draft.md",
+      "size_bytes": 52330,
+      "sha256": "07bcc213b19ac4b872e9bc153a2b685b1e749b2b635d11fcefc43d7504f919db"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/01_case-study/swiggy-case-study-structure.md",
+      "size_bytes": 21074,
+      "sha256": "c86aa31be2fb765d41d48472a4b0a4885ae7002a1998eac5adcf31c3043cc631"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/02_research/akshat-swiggy-handoff-notes.md",
+      "size_bytes": 9713,
+      "sha256": "6f20b430afdbdf2ebfb0530a8089c0a28ef0bec380231ab98e8328ec6cf80b67"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/02_research/swiggy-bot-vs-agent-parameters.md",
+      "size_bytes": 4311,
+      "sha256": "8d6ddf30e58e075b154399f444632fddf78a293c38f65b73597e8e07b239ad3f"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/02_research/swiggy-cross-party-evidence-research.md",
+      "size_bytes": 21152,
+      "sha256": "f91d2c885c982045d622da0c2938491769d844cc99bb780778751bf378844c8a"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/02_research/swiggy-expert-interview-guide.md",
+      "size_bytes": 1036,
+      "sha256": "12c16d8b38628a8ad3ed9bd972a6244d8b236f501a6abb7789e63a8bad1d1817"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/02_research/swiggy-refund-and-blocking-rules-research.md",
+      "size_bytes": 23632,
+      "sha256": "eb301041482a24d82dac72a360e31680ef4e536be2a6c7b677a3df9b0b2178d2"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/02_research/swiggy-secondary-research-crossverification.md",
+      "size_bytes": 15806,
+      "sha256": "af02a62b885e0e413c1dcaed86f332eec4ce6c2a2f88802e645582400da7c2c7"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/03_define-ideate/swiggy-frozen-policy-and-scenarios.md",
+      "size_bytes": 12090,
+      "sha256": "f67b3e3d516e2ccb2dcf0b5a08332d43712b590c5d5464c018df2f26d230099f"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/04_design/agent-panel-references.html",
+      "size_bytes": 26062,
+      "sha256": "898ce9bca9156ead4bfd886c1b5ad1bab20984f7285b4a41e4b97a26265934cb"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/04_design/swiggy-design-approval-checklist.md",
+      "size_bytes": 6705,
+      "sha256": "a7abbc7cc83ef12e7f5437aa54b0583aef2dc3056062519b878dedcd1207334b"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/04_design/swiggy-design-system-research.md",
+      "size_bytes": 4090,
+      "sha256": "06c66c11611954353d0f28168a7d93d921bdeb2d079b6d48590064a7dc63baa2"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/04_design/swiggy-refund-signals.html",
+      "size_bytes": 16720,
+      "sha256": "abcc44a113031df135b6ef21aa8280ffacbaaab09c6477c383b096b9adea8fc1"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/User Experience Query.mp4",
+      "size_bytes": 3557794,
+      "sha256": "ab855266eb383a08b2b9e6da4225a79738c183625d8b1775ecb9e3be3c1d26c3"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/User_Experience_Query_hin.pdf",
+      "size_bytes": 20420,
+      "sha256": "cb9cd426e2792887cddf79d0a492d02deb538b3e45e74f4f33fe4c6a90f4e2d4"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/handoff-swiggy-case-study.md",
+      "size_bytes": 16627,
+      "sha256": "3e9f528d79ba64b0a721742fb51437dc250a3dfde2e28077c45e6cc66c1718f3"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-artifact-analysis.md",
+      "size_bytes": 13817,
+      "sha256": "651a7714219557653385b54247e87c5db3de103aa642c10e2265ebc466a9674c"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-case-study-context.md",
+      "size_bytes": 33390,
+      "sha256": "3f63b4b0c0673fc7b26f26f470e1e07a2cbdb0fd405a6a3272dfb059307b059c"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-case-study-structure.md",
+      "size_bytes": 6610,
+      "sha256": "0f6d8ab013cb7e1178e2fc7283de4130f21b36bb19f066953d4eb970b1d419a8"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-cross-party-evidence-research.md",
+      "size_bytes": 13920,
+      "sha256": "21e2be1192c7bdabb355fc2f5b9fee37af51fb645ae4db4ab4f018329fc380e9"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-expert-interview-verification.md",
+      "size_bytes": 14398,
+      "sha256": "b6c6ffe09597e622eb07a7d6862ef5c810612eab90badd3b553104d3f03baedc"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-gap-analysis.md",
+      "size_bytes": 10554,
+      "sha256": "2325645ad16123dc1d8c62fd5ecc6d45f2c3bb43ecb7452634d0f03f4dea9b03"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-literature-review.md",
+      "size_bytes": 11846,
+      "sha256": "ac9ff6c2f2be11d8192211c75c26a73665754b5e47d2be424fbce22985f65861"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-refund-and-blocking-rules-research.md",
+      "size_bytes": 20389,
+      "sha256": "e333bc58f3ff47daab5c1848a3a90817b7b7fbbec9ad5a8a72e6f801640b704b"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-simulated-expert-interview-transcript.md",
+      "size_bytes": 23160,
+      "sha256": "01bd24bb195d5f3af1758ee554930efb53a922fe2724e601815f20e50564d432"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy-simulated-expert-profile.md",
+      "size_bytes": 7376,
+      "sha256": "bedc8ddcc52af21c9c15a563db23f1a7f71e0c72bad7b9855c820c91b5ee28f9"
+    },
+    {
+      "path": "Swiggy-Agent-Decision-Interface-Handoff/05_akshat-original-files/swiggy_evidence-based_research.md",
+      "size_bytes": 53286,
+      "sha256": "dcbdb846cfcaecb811ef23939927d76109751c26363f1639410fa61df8b14a52"
+    }
+  ]
+}

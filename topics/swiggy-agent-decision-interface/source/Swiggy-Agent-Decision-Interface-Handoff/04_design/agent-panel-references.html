@@ -1,0 +1,293 @@
+<title>Agent Panel References</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap">
+<style>
+/* Layout: one reading column. 1 findings, 2 region map (queue rail, case info, chat centre, insights), 3 peer analysis, 4 two kit options side by side, 5 approval. */
+:root{
+  --bg:#F6F5F3; --surface:#FFFFFF; --ink:#1E1B19; --muted:#625C57; --line:#E2DEDA;
+  --orange:#FF5200; --orange-ink:#C43F00; --salt:#FFEDE3; --tint2:#FAD2BB;
+  --action:#1E1B19; --insight:#EBEEF6; --insight-ink:#384868;
+  --met:#1E7A45; --met-bg:#E3F3E9; --notmet:#B3261E; --notmet-bg:#FBE7E5; --unknown:#5C5F70; --unknown-bg:#ECEDF1;
+  --avoid:#9A3B12; --avoid-bg:#FBEDE6; --link:#B23C00;
+  --f-body:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-disp:"Outfit","Plus Jakarta Sans",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#151312; --surface:#1E1B19; --ink:#EEEAE6; --muted:#ABA39C; --line:#332F2C;
+  --orange:#FF6A24; --orange-ink:#FF9A66; --salt:#3A2418; --tint2:#5A3420;
+  --action:#EEEAE6; --insight:#232A38; --insight-ink:#BCC9E6;
+  --met:#6FD39A; --met-bg:#16301F; --notmet:#F2968F; --notmet-bg:#3A1C1A; --unknown:#B7BACA; --unknown-bg:#272B35;
+  --avoid:#F0A47E; --avoid-bg:#3A2418; --link:#FF9A66; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151312; --surface:#1E1B19; --ink:#EEEAE6; --muted:#ABA39C; --line:#332F2C;
+  --orange:#FF6A24; --orange-ink:#FF9A66; --salt:#3A2418; --tint2:#5A3420;
+  --action:#EEEAE6; --insight:#232A38; --insight-ink:#BCC9E6;
+  --met:#6FD39A; --met-bg:#16301F; --notmet:#F2968F; --notmet-bg:#3A1C1A; --unknown:#B7BACA; --unknown-bg:#272B35;
+  --avoid:#F0A47E; --avoid-bg:#3A2418; --link:#FF9A66; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55;padding-inline:20px;padding-block:32px 64px}
+.wrap{max-width:1060px;margin:0 auto;display:flex;flex-direction:column;gap:52px}
+h1,h2,h3{font-family:var(--f-disp);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:32px;font-weight:800;letter-spacing:-.01em}
+h2{font-size:22px;font-weight:600}
+h3{font-size:16px;font-weight:600}
+p{margin:0;max-width:70ch}
+a{color:var(--link)}
+a:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-radius:3px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+header,section{display:flex;flex-direction:column;gap:16px}
+.lede{color:var(--muted)}
+.note{font-size:13px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.fact .k{font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.fact .v{font-family:var(--f-disp);font-size:18px;font-weight:600}
+.fact .src{font-size:12px;color:var(--muted)}
+.sw-inline{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.dot{width:22px;height:22px;border-radius:6px;border:1px solid var(--line);display:inline-block}
+.gap{background:var(--avoid-bg);color:var(--ink);border-radius:12px;padding:14px 16px;font-size:14px}
+.schem{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;overflow-x:auto}
+.schem svg{display:block;min-width:760px;width:100%;height:auto}
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px 24px;font-size:14px}
+.legend b{font-family:var(--f-mono);font-weight:500;color:var(--orange-ink);margin-right:6px}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+.kits{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.kit{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.kit .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.badge{font-size:12px;font-weight:600;padding:2px 10px;border-radius:999px;background:var(--salt);color:var(--orange-ink)}
+.mock{border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:10px;background:var(--bg)}
+.mock .bar{display:flex;align-items:center;gap:8px;justify-content:space-between;flex-wrap:wrap}
+.logo{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-disp);font-weight:800;font-size:14px}
+.logo i{width:18px;height:18px;border-radius:6px;background:var(--orange);display:inline-block}
+.btn{font:600 13px var(--f-body);border-radius:10px;padding:7px 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.btn.primary-o{background:var(--orange);border-color:var(--orange);color:#fff}
+.btn.primary-n{background:var(--action);border-color:var(--action);color:var(--surface)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px}
+.chip.met{color:var(--met);background:var(--met-bg)}
+.chip.no{color:var(--notmet);background:var(--notmet-bg)}
+.chip.unk{color:var(--unknown);background:var(--unknown-bg)}
+.chip.trig{color:var(--ink);background:var(--surface);border:1px solid var(--line)}
+.ins{background:var(--insight);color:var(--insight-ink);border-radius:8px;padding:6px 10px;font-size:13px}
+.sel-o{background:var(--salt);border-left:3px solid var(--orange);border-radius:6px;padding:6px 10px;font-size:13px}
+.sel-n{background:var(--surface);border-left:3px solid var(--ink);border-radius:6px;padding:6px 10px;font-size:13px}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.rules{margin:0;padding-left:18px;font-size:14px;display:flex;flex-direction:column;gap:4px}
+.type{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.spec{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.spec .big{font-size:26px;font-weight:800;line-height:1.1}
+.spec .mid{font-size:15px}
+.spec .lab{font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.approve{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.approve ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+@media (max-width:480px){h1{font-size:26px}}
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">Stage 8 · Design · Pre-approval · v2</span>
+  <h1>Agent Panel References</h1>
+  <p class="lede">What Swiggy publishes about its own design, how comparable companies carry a consumer brand into internal and support tools, the revised screen layout with the chat in the centre, and two visual-kit options built on Swiggy's official brand values.</p>
+</header>
+
+<section>
+  <h2>1. What Swiggy publishes</h2>
+  <div class="facts">
+    <div class="fact"><span class="k">Primary colour</span><span class="sw-inline"><i class="dot" style="background:#FF5200"></i><span class="v mono">#FF5200</span></span><span>Swiggy Orange. The brand book says to use the most orange, then Salt, then White.</span><span class="src">Swiggy Brand Book, 02 Colors</span></div>
+    <div class="fact"><span class="k">Supporting colours</span><span class="sw-inline"><i class="dot" style="background:#FFEDE3"></i><span class="v mono">#FFEDE3</span><i class="dot" style="background:#FFFFFF"></i><span class="v mono">#FFFFFF</span></span><span>Salt and White. Orange tints: #F58B55, #F8AE88, #FAD2BB, #FDF5EE.</span><span class="src">Swiggy Brand Book, 02 Colors</span></div>
+    <div class="fact"><span class="k">Typeface</span><span class="v">Gilroy</span><span>Ten weights. Headlines in ExtraBold, subheads in Medium, body in Light. Sentence case throughout.</span><span class="src">Swiggy Brand Book, 03 Typography</span></div>
+    <div class="fact"><span class="k">Shape</span><span class="v">Rounded "bento"</span><span>The corners of content blocks match the rounded square behind the logo.</span><span class="src">Swiggy Brand Book, 04 Layout</span></div>
+    <div class="fact"><span class="k">Product design system</span><span class="v">Exists, not public</span><span>"A foundation library that supports all our business lines", kept in Figma. Its tokens and components aren't published.</span><span class="src">Figma customer story</span></div>
+  </div>
+  <p class="gap"><strong>Gap:</strong> the brand book covers marketing (logo, posters, co-branding). It has no guidance on product UI, internal tools or support screens beyond "maintain contrast" for buttons. Nothing public shows Swiggy's agent tool (the Agent Workbench), which matches what Stage 4 found. So the agent kit below is <em>our proposal, built from Swiggy's published brand values</em>, and isn't presented as Swiggy's actual system.</p>
+  <p class="note">Sources: <a href="https://www.swiggy.com/corporate/wp-content/uploads/2026/07/swiggy-brandbook.pdf">Swiggy Brand Book (PDF)</a> · <a href="https://www.figma.com/customers/how-swiggy-rolls-out-features-50-percent-faster/">Figma: How Swiggy rolls out features 50% faster</a> · <a href="https://www.sneakpeek.design/p/swiggys-design-process">Sneak Peek: Swiggy's design process</a></p>
+</section>
+
+<section>
+  <h2>2. How peers carry a consumer brand into internal tools</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Company</th><th>What they published</th><th>What it means for us</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Uber</strong> · Base Web</td><td>Built because Uber has "hundreds of internal web applications used by developers, product managers, and operations teams". One entry point to theme "all design tokens, including colors, sizing, and typography".</td><td>Internal tools share the consumer brand's foundations (type, spacing, tokens) but get a theme suited to dense work.</td></tr>
+      <tr><td><strong>DoorDash</strong> · Prism</td><td>One design language with presets for Default, Caviar and Merchant. Teams building tools "used by support agents" previously had to build custom UI elements.</td><td>Support tools need a deliberate theme of their own, or they drift. The same component can recolour per product.</td></tr>
+      <tr><td><strong>Zomato</strong> · design system</td><td>Green buttons for actions. Red "limited to deletion and cancellation actions". Three greys, a palette of 10 colours in total. Consumer examples only.</td><td>Keep the palette small, and give each colour one job.</td></tr>
+      <tr><td><strong>Shopify</strong> · admin</td><td>Mostly neutral text. Orange means "in-progress or pending", and red only means blocked or an error. "Avoid relying on color alone."</td><td>Status colours need fixed roles. Orange already means "pending" in operational UIs, which matters for Swiggy's orange.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Sources: <a href="https://www.uber.com/blog/introducing-base-web">Uber: Introducing Base Web</a> · <a href="https://careersatdoordash.com/blog/design-language-system-theming/">DoorDash: Design language system theming</a> · <a href="https://uxdesign.cc/developing-the-zomato-design-system-438357188904">Developing the Zomato design system</a> · <a href="https://shopify.dev/docs/apps/design/visual-design">Shopify: App visual design</a></p>
+  <p><strong>Pattern across all four:</strong> internal tools keep the brand's foundations (type, corner radius, spacing), keep large surfaces neutral for long shifts, limit the brand colour to identity and actions, and give status colours fixed roles that never rely on colour alone.</p>
+</section>
+
+<section>
+  <h2>Approved references (from v1)</h2>
+  <p class="note">
+    <a href="https://support.zendesk.com/hc/en-us/articles/4408836526362-Using-the-context-panel">Zendesk context panel</a> (party records) ·
+    <a href="https://www.intercom.com/help/en/articles/6258745-the-help-desk-explained">Intercom help desk</a> (chat layout) ·
+    <a href="https://docs.gorgias.com/en-US/review-customer-history-in-gorgias-2390890">Gorgias</a> (order data) ·
+    <a href="https://trailhead.salesforce.com/content/learn/modules/service-cloud-agent-experience/explore-the-service-console">Salesforce Service Console</a> (status strip) ·
+    <a href="https://docs.github.com/en/enterprise-cloud@latest/pull-requests/reference/status-checks">GitHub status checks</a> (conditions, but no default merge button) ·
+    <a href="https://docs.stripe.com/disputes/responding">Stripe disputes</a> (evidence by type) ·
+    <a href="https://merchants.ubereats.com/au/en/order-errors">Uber Eats order errors</a> (fault categories) ·
+    Anti-reference: <a href="https://www.outlookbusiness.com/news/inside-zomatos-karma-score-what-deepinder-goyal-reveals-about-fraud-refunds">Zomato karma score</a>.
+  </p>
+</section>
+
+<section>
+  <h2>3. Revised layout: chat in the centre, queue on the left</h2>
+  <div class="schem" role="img" aria-label="Schematic: narrow queue rail on the far left, case information column, chat column in the centre, insights and decision column on the right.">
+  <svg viewBox="0 0 1000 480" xmlns="http://www.w3.org/2000/svg" font-family="Plus Jakarta Sans, system-ui, sans-serif">
+    <rect x="0" y="0" width="1000" height="480" rx="10" style="fill:var(--bg)"/>
+    <rect x="10" y="10" width="150" height="460" rx="10" style="fill:var(--surface);stroke:var(--line)"/>
+    <rect x="170" y="10" width="250" height="460" rx="10" style="fill:var(--surface);stroke:var(--line)"/>
+    <rect x="430" y="10" width="300" height="460" rx="10" style="fill:var(--surface);stroke:var(--orange)"/>
+    <rect x="740" y="10" width="250" height="460" rx="10" style="fill:var(--surface);stroke:var(--line)"/>
+    <g font-size="11" font-weight="600" letter-spacing="1" style="fill:var(--muted)">
+      <text x="22" y="34">Q · QUEUE</text><text x="182" y="34">CASE INFORMATION</text><text x="442" y="34">CHAT (CENTRE)</text><text x="752" y="34">INSIGHTS + DECISION</text>
+    </g>
+    <!-- queue -->
+    <rect x="20" y="46" width="130" height="54" rx="8" style="fill:var(--salt);stroke:var(--orange)"/>
+    <text x="30" y="66" font-size="12" font-weight="600" style="fill:var(--ink)">Active · #4821</text>
+    <text x="30" y="86" font-size="11" style="fill:var(--muted)">Wrong item · 3:12</text>
+    <g font-size="11" style="fill:var(--muted)">
+      <rect x="20" y="108" width="130" height="48" rx="8" style="fill:var(--bg)"/><text x="30" y="128" style="fill:var(--ink)">#4822 Missing</text><text x="30" y="146">waiting 1:40</text>
+      <rect x="20" y="162" width="130" height="48" rx="8" style="fill:var(--bg)"/><text x="30" y="182" style="fill:var(--ink)">#4826 Late</text><text x="30" y="200">waiting 0:52</text>
+      <rect x="20" y="216" width="130" height="48" rx="8" style="fill:var(--bg)"/><text x="30" y="236" style="fill:var(--ink)">#4829 Quality</text><text x="30" y="254">waiting 0:20</text>
+    </g>
+    <text x="22" y="292" font-size="11" style="fill:var(--muted)">Sorted by wait time.</text>
+    <text x="22" y="308" font-size="11" style="fill:var(--muted)">No priority score.</text>
+    <!-- case -->
+    <g font-size="12">
+      <rect x="180" y="46" width="230" height="80" rx="8" style="fill:none;stroke:var(--line)"/>
+      <text x="192" y="68" font-weight="600" style="fill:var(--ink)">M1 Order + timeline</text>
+      <text x="192" y="88" style="fill:var(--muted)">items, prices, event times</text>
+      <rect x="180" y="134" width="230" height="120" rx="8" style="fill:none;stroke:var(--line)"/>
+      <text x="192" y="156" font-weight="600" style="fill:var(--ink)">M2 Evidence</text>
+      <rect x="192" y="168" width="60" height="44" rx="6" style="fill:var(--bg);stroke:var(--line)"/>
+      <rect x="260" y="168" width="60" height="44" rx="6" style="fill:var(--salt);stroke:var(--orange)"/>
+      <rect x="328" y="168" width="60" height="44" rx="6" style="fill:var(--bg);stroke:var(--line)"/>
+      <text x="192" y="232" style="fill:var(--muted)">type · supplied by · origin · times</text>
+      <rect x="180" y="262" width="230" height="110" rx="8" style="fill:none;stroke:var(--line)"/>
+      <text x="192" y="284" font-weight="600" style="fill:var(--ink)">M3 Party records · 90 days</text>
+      <text x="192" y="306" style="fill:var(--muted)">Customer 3 / 7 orders</text>
+      <text x="192" y="324" style="fill:var(--muted)">Restaurant 9 / 1,860 orders</text>
+      <text x="192" y="342" style="fill:var(--muted)">Rider 1 / 412 deliveries</text>
+      <rect x="180" y="380" width="230" height="78" rx="8" style="fill:none;stroke:var(--line)"/>
+      <text x="192" y="402" font-weight="600" style="fill:var(--ink)">M4 Restaurant permission</text>
+      <text x="192" y="422" style="fill:var(--muted)">Requested 4 min ago</text>
+    </g>
+    <!-- chat -->
+    <g font-size="12">
+      <rect x="440" y="46" width="280" height="54" rx="8" style="fill:var(--bg)"/>
+      <text x="452" y="68" font-weight="600" style="fill:var(--ink)">C1 Bot handover</text>
+      <text x="452" y="88" style="fill:var(--muted)">issue picked · bot offered 25% coupon</text>
+      <rect x="452" y="116" width="190" height="30" rx="15" style="fill:var(--bg)"/>
+      <rect x="518" y="156" width="190" height="30" rx="15" style="fill:var(--salt)"/>
+      <rect x="452" y="196" width="170" height="30" rx="15" style="fill:var(--bg)"/>
+      <rect x="518" y="236" width="150" height="30" rx="15" style="fill:var(--salt)"/>
+      <text x="452" y="296" style="fill:var(--muted)">C2 Live conversation</text>
+      <rect x="440" y="370" width="280" height="88" rx="8" style="fill:none;stroke:var(--line)"/>
+      <text x="452" y="394" font-weight="600" style="fill:var(--ink)">C3 Reply + templates</text>
+      <text x="452" y="414" style="fill:var(--muted)">policy-cited templates</text>
+      <rect x="652" y="420" width="56" height="26" rx="8" style="fill:var(--orange)"/><text x="664" y="437" font-weight="600" style="fill:#FFFFFF">Send</text>
+    </g>
+    <!-- insights -->
+    <g font-size="12">
+      <rect x="750" y="46" width="230" height="64" rx="8" style="fill:var(--insight)"/>
+      <text x="762" y="68" font-weight="600" style="fill:var(--insight-ink)">I1 Status strip</text>
+      <text x="762" y="88" style="fill:var(--insight-ink)">clocks · triggers · permission</text>
+      <rect x="750" y="118" width="230" height="168" rx="8" style="fill:none;stroke:var(--line)"/>
+      <text x="762" y="140" font-weight="600" style="fill:var(--ink)">I2 Policy conditions</text>
+      <circle cx="768" cy="162" r="5" style="fill:var(--met)"/><text x="780" y="166" style="fill:var(--muted)">P3 Claim window</text>
+      <rect x="756" y="176" width="218" height="24" rx="6" style="fill:var(--salt)"/>
+      <circle cx="768" cy="188" r="5" style="fill:var(--met)"/><text x="780" y="192" style="fill:var(--ink)">P5 Evidence (selected)</text>
+      <circle cx="768" cy="214" r="5" style="fill:var(--unknown)"/><text x="780" y="218" style="fill:var(--muted)">P6 Restaurant permission</text>
+      <circle cx="768" cy="240" r="5" style="fill:var(--notmet)"/><text x="780" y="244" style="fill:var(--muted)">P8 Approval limit</text>
+      <rect x="750" y="294" width="230" height="40" rx="8" style="fill:none;stroke:var(--line);stroke-dasharray:4 4"/>
+      <text x="762" y="319" font-weight="600" style="fill:var(--ink)">I3 Similar cases (agent opens)</text>
+      <rect x="750" y="342" width="230" height="116" rx="8" style="fill:none;stroke:var(--line)"/>
+      <text x="762" y="364" font-weight="600" style="fill:var(--ink)">I4 Decision</text>
+      <g font-size="11">
+        <rect x="762" y="376" width="100" height="28" rx="8" style="fill:var(--surface);stroke:var(--line)"/><text x="796" y="394" style="fill:var(--ink)">Full</text>
+        <rect x="868" y="376" width="100" height="28" rx="8" style="fill:var(--surface);stroke:var(--line)"/><text x="896" y="394" style="fill:var(--ink)">Partial</text>
+        <rect x="762" y="412" width="100" height="28" rx="8" style="fill:var(--surface);stroke:var(--line)"/><text x="796" y="430" style="fill:var(--ink)">Deny</text>
+        <rect x="868" y="412" width="100" height="28" rx="8" style="fill:var(--surface);stroke:var(--line)"/><text x="894" y="430" style="fill:var(--ink)">Review</text>
+      </g>
+    </g>
+    <!-- link line evidence to condition -->
+    <path d="M320 190 C 430 330, 640 330, 756 188" style="fill:none;stroke:var(--orange);stroke-dasharray:5 4"/>
+  </svg>
+  </div>
+  <div class="legend">
+    <div><b>Q</b>Your queue: the agent's own pending chats. Issue type and wait time only. Sorted by wait time, with no priority score or customer label.</div>
+    <div><b>M1–M4</b>Case information, moved to the left so it sits beside the queue.</div>
+    <div><b>C1–C3</b>Chat in the centre, the most comfortable reading position.</div>
+    <div><b>I1–I4</b>Insights and decision on the right. The four decision buttons carry equal weight.</div>
+  </div>
+  <p class="gap"><strong>Trade-off with chat in the centre:</strong> a policy condition (right) and its evidence (left) now sit on opposite sides of the chat (dashed orange line). The fix: selecting a condition highlights its evidence on the left, and the condition card also shows a small thumbnail of the linked evidence, so the agent doesn't have to look back and forth. Test this at Stage 9.</p>
+</section>
+
+<section>
+  <h2>4. Two visual-kit options, both built on Swiggy's brand values</h2>
+  <div class="kits">
+    <div class="kit">
+      <div class="top"><h3>Option 1: Orange for actions</h3><span class="badge">Recommended</span></div>
+      <div class="mock">
+        <div class="bar"><span class="logo"><i></i>Agent Workbench (concept)</span><button class="btn primary-o" type="button">Send reply</button></div>
+        <div class="sel-o">Selected case / condition uses Salt with an orange edge</div>
+        <div class="chips"><span class="chip met">✓ Met</span><span class="chip no">✕ Not met</span><span class="chip unk">? Unknown</span><span class="chip trig">Review: first-time customer</span></div>
+        <div class="ins">Insight: no delivery photo on record</div>
+      </div>
+      <ul class="rules">
+        <li>Swiggy Orange marks identity, the primary action (Send) and the current selection only.</li>
+        <li>Orange and amber are <strong>never</strong> used for status, so orange can't be misread as "pending" or "warning".</li>
+        <li>Surfaces are warm neutrals. Salt marks selection.</li>
+        <li>Decision buttons stay neutral and equal, so none of them reads as the suggested answer.</li>
+      </ul>
+    </div>
+    <div class="kit">
+      <div class="top"><h3>Option 2: Neutral actions</h3><span class="badge">Uber Base / Shopify admin style</span></div>
+      <div class="mock">
+        <div class="bar"><span class="logo"><i></i>Agent Workbench (concept)</span><button class="btn primary-n" type="button">Send reply</button></div>
+        <div class="sel-n">Selected case / condition uses an ink edge</div>
+        <div class="chips"><span class="chip met">✓ Met</span><span class="chip no">✕ Not met</span><span class="chip unk">? Unknown</span><span class="chip trig">Review: first-time customer</span></div>
+        <div class="ins">Insight: no delivery photo on record</div>
+      </div>
+      <ul class="rules">
+        <li>Orange appears only in the logo mark.</li>
+        <li>Actions are charcoal, so the screen is calmest over a long shift.</li>
+        <li>It reads less like Swiggy, which weakens the case study's brand fit.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="type">
+    <div class="spec">
+      <span class="lab">Type: Gilroy (official), stand-in for the prototype</span>
+      <span class="big" style="font-family:var(--f-disp)">Outfit · display stand-in</span>
+      <span class="mid">Plus Jakarta Sans for body text: higher x-height and clearer numbers at 13–15px over long shifts.</span>
+      <span class="mono">IBM Plex Mono · 19:42 · ₹180 · 3 / 7</span>
+      <p class="note">Gilroy is a licensed font that isn't on Google Fonts, so the coded prototype uses stand-ins with a similar geometric shape. The Figma mockup can use Gilroy itself if you have the licence. The brand book's "Gilroy Light for body" is meant for print; at screen sizes in a dense tool it's too thin, so body text moves to Regular or Medium.</p>
+    </div>
+    <div class="spec">
+      <span class="lab">Status colours (same in both options)</span>
+      <div class="chips"><span class="chip met">✓ Met</span><span class="chip no">✕ Not met</span><span class="chip unk">? Unknown</span></div>
+      <p class="note">Green and red follow Shopify's roles: red only means blocked or failed. "Unknown" is neutral grey, because a missing fact is a gap to fill, not a warning about the customer. Every chip has an icon and a word.</p>
+    </div>
+  </div>
+</section>
+
+<section class="approve">
+  <h2>What you're approving</h2>
+  <ol>
+    <li>The revised layout: queue rail, case information, chat in the centre, insights and decision.</li>
+    <li>The queue rule: only the agent's own chats, sorted by wait time, with no priority score.</li>
+    <li>Kit Option 1 or Option 2.</li>
+    <li>Gilroy in Figma, with stand-in fonts in the coded prototype.</li>
+  </ol>
+</section>
+</div>
