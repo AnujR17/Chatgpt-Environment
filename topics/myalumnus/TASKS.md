@@ -8,10 +8,13 @@ Updated: 9 October 2026.
 - [x] Create and switch the existing environment checkout to `topic/myalumnus` from `origin/main`.
 - [x] Write topic overview, decisions, source inventory, and continuation handoff.
 - [x] Publish and verify the topic branch on GitHub; local checkout tracks `origin/topic/myalumnus`.
+- [x] Build the first portfolio case-study draft in `AnujR17/anuj-rai` on `case-study/myalumnus`, following the newer portfolio's style and user-confirmed collaboration credit.
+- [x] Finish portfolio checks, publish the branch, and open [draft PR #1](https://github.com/AnujR17/anuj-rai/pull/1) against `code/portfolio`.
+- [ ] Review the first case-study draft with the user; make requested narrative or layout refinements. No merge is authorized.
 
 ## Source-reported open work, not new implementation requests
 
-- Portfolio case study remains unwritten. Handoff proposes 13 stages; Future Scope and Limitations are unfinished, and Learnings is reserved for the owner's input.
+- The handoff's case study was unwritten; this session now has a first webpage draft. Review its narrative and individual-contribution wording. Personal Learnings still needs the user's own input.
 - Think-aloud report: one approval silently failed; cause unresolved, not reproduced here.
 - Held approval does not return automatically to Home; incorrect default hold reason when no photo exists.
 - Photo mismatch approval based on host confirmation is documented as an accepted demo risk and a pilot question.

@@ -28,4 +28,8 @@ The workspace topic-context skill was read at task start. One topic-scoped MyAlu
 
 ## Next step
 
-Continue with the user's next concrete objective on `topic/myalumnus`. Do not infer authorization to fix reported application issues merely from their inclusion in the handoff.
+The user subsequently authorized a portfolio webpage and confirmed their role: decision-making, concept refinement, research, and UI in a collaboration. The first draft lives in `/workspace/anuj-rai` on `case-study/myalumnus`, based on the newer `code/portfolio` branch. Its route is `/work/myalumnus`; source and claim boundaries are documented in `docs/myalumnus-case-study.md` there. It links from the homepage and Work index, uses eight final demo screens, and includes a keyboard-operable five-state screen viewer.
+
+Keep portfolio implementation on `case-study/myalumnus` and topic context on this repository's `topic/myalumnus`. Finish any unchecked validation/publication steps in TASKS, then continue with the user's next objective. Do not merge without explicit approval or infer authorization to fix the MyAlumnus application merely from reported issues.
+
+The portfolio branch is published at commit `35f7fe7f3fcb2b8c122ed770ee45820c9753216d`; [draft PR #1](https://github.com/AnujR17/anuj-rai/pull/1) targets `code/portfolio`. Production build, full lint, TypeScript, whitespace checks, and Chromium checks passed. Browser review covered five routes at four widths (20 combinations), keyboard screenshot selection, image loading, section/source interactions, mobile featured switching, unknown-route 404, reduced motion, and readable content without JavaScript, with no runtime exceptions. The next step is user review and requested refinements; no merge has occurred.

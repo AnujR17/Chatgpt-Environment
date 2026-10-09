@@ -39,4 +39,4 @@ The supplied report describes one real-guard think-aloud session and expert/mode
 
 ## Next task
 
-Await the user's next project objective. Possible work includes a case study, deeper implementation review, or a specified application fix; none is authorized by this branch setup alone.
+Review the first portfolio case-study draft with the user: [draft PR #1](https://github.com/AnujR17/anuj-rai/pull/1), branch `case-study/myalumnus` in `AnujR17/anuj-rai`, route `/work/myalumnus`. The user confirmed a collaboration and their contribution in decision-making, concept refinement, research, and UI. Portfolio checks passed; no merge occurred. Continue requested refinements there and keep topic context on this environment branch.
