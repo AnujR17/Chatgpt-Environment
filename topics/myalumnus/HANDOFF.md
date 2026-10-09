@@ -8,7 +8,7 @@ Updated: 9 October 2026.
 
 ## What happened
 
-The user supplied three handoff ZIPs, the deployed URL, and the application GitHub URL, and requested project understanding. An overview was completed. They then explicitly asked for a dedicated topic branch in the environment repository. The existing clean checkout was used; no worktree or application modifications were needed.
+The user supplied three handoff ZIPs, the deployed URL, and the application GitHub URL, and requested project understanding. An overview was completed. They then explicitly asked for a dedicated topic branch in the environment repository. The existing clean checkout was used; no worktree or application modifications were needed. The topic branch was pushed to GitHub, its remote ref verified, and upstream set to `origin/topic/myalumnus`.
 
 Project explanation and evidence boundaries are in the topic README. The application was inspected at GitHub commit `5955e1e1d16564f6374467b8384c12e577108116`; the live sign-in page was reachable, but demo interactions and live database state were not tested. Later work should recheck remote state before relying on this dated snapshot.
 
@@ -28,4 +28,4 @@ The workspace topic-context skill was read at task start. One topic-scoped MyAlu
 
 ## Next step
 
-Finish remote branch verification if still unchecked in TASKS, then continue with the user's next concrete objective. Do not infer authorization to fix reported application issues merely from their inclusion in the handoff.
+Continue with the user's next concrete objective on `topic/myalumnus`. Do not infer authorization to fix reported application issues merely from their inclusion in the handoff.

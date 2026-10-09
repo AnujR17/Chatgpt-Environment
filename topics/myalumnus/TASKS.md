@@ -7,7 +7,7 @@ Updated: 9 October 2026.
 - [x] Inspect the project repository, live sign-in page, and handoff material; summarize project understanding.
 - [x] Create and switch the existing environment checkout to `topic/myalumnus` from `origin/main`.
 - [x] Write topic overview, decisions, source inventory, and continuation handoff.
-- [ ] Publish and verify the topic branch on GitHub.
+- [x] Publish and verify the topic branch on GitHub; local checkout tracks `origin/topic/myalumnus`.
 
 ## Source-reported open work, not new implementation requests
 
