@@ -1,0 +1,527 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>S2 Wireframe · Agent Panel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap">
+<style>
+/* Layout: one fixed 1440x900 low-fi frame (scaled to fit), then the content & layer map and findings below it. Greyscale on purpose: visual kit is still on hold. Blue is only for annotations. */
+:root{
+  --page:#ECEEF1; --paper:#FFFFFF; --ink:#1D2127; --ink2:#4A515C; --mute:#7C8490;
+  --line:#C9CED6; --fill:#F2F4F7; --fill2:#E3E7EC; --anno:#2E59C9; --anno-bg:#E6EDFF;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --cond:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --page:#14171B; --paper:#1D2126; --ink:#E7EAEE; --ink2:#B4BBC5; --mute:#8A929E;
+  --line:#3A414B; --fill:#252A31; --fill2:#2F353D; --anno:#8FB0FF; --anno-bg:#1F2B48; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --page:#14171B; --paper:#1D2126; --ink:#E7EAEE; --ink2:#B4BBC5; --mute:#8A929E;
+  --line:#3A414B; --fill:#252A31; --fill2:#2F353D; --anno:#8FB0FF; --anno-bg:#1F2B48; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+.lines{font-size:12px;display:grid;gap:2px;padding:2px 0 4px 10px;border-left:2px solid var(--line)}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.45}
+.wrap{max-width:1480px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:grid;gap:28px}
+h1{font-family:var(--cond);font-weight:600;font-size:26px;margin:0;text-wrap:balance}
+h2{font-family:var(--cond);font-weight:600;font-size:19px;margin:0 0 10px;text-wrap:balance}
+.lede{color:var(--ink2);max-width:72ch;margin:6px 0 0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+/* toolbar */
+.bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.bar .grp{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.bar .lbl{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+.tb{font:500 13px var(--sans);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:5px 10px;cursor:pointer}
+.tb[aria-pressed="true"]{background:var(--anno-bg);border-color:var(--anno);color:var(--anno)}
+.tb:focus-visible,.w button:focus-visible,summary:focus-visible{outline:2px solid var(--anno);outline-offset:2px}
+/* stage + frame */
+.stage{position:relative;width:100%;overflow:hidden;border-radius:4px}
+.stage.actual{overflow-x:auto}
+.frame{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0;background:var(--paper);border:1px solid var(--line);
+  display:grid;grid-template-rows:44px 1fr;font-size:13px;color:var(--ink)}
+.stage.actual .frame{position:relative;transform:none!important}
+.dim{position:absolute;right:8px;bottom:6px;font:11px var(--mono);color:var(--mute);z-index:5}
+/* header */
+.hdr{display:flex;align-items:center;gap:14px;padding:0 14px;border-bottom:1px solid var(--line);background:var(--fill)}
+.logo{width:22px;height:22px;border-radius:5px;background:var(--fill2);border:1px solid var(--line)}
+.hdr .ttl{font-weight:600}
+.hdr .sp{flex:1}
+.pill{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12px;background:var(--paper);white-space:nowrap}
+.ibtn{border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:3px 8px;font:12px var(--sans);color:var(--ink2);cursor:pointer}
+/* body grid */
+.cols{display:grid;grid-template-columns:56px 372px 572px 1fr;min-height:0;position:relative}
+.col{border-right:1px solid var(--line);min-height:0;overflow-y:auto;overflow-x:hidden;position:relative}
+.col:last-child{border-right:0}
+.chd{position:sticky;top:0;z-index:3;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 12px;display:flex;align-items:center;gap:8px;font-weight:600;min-height:36px}
+.chd .code{font:500 11px var(--mono);color:var(--mute)}
+.chd .sp{flex:1}
+.sec{padding:10px 12px;border-bottom:1px solid var(--line);display:grid;gap:7px}
+.sh{display:flex;align-items:center;gap:6px;font:600 11px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--ink2)}
+.sh .sp{flex:1}
+.sh .ctx{font:500 10px var(--sans);text-transform:none;letter-spacing:0;border:1px dashed var(--line);border-radius:4px;padding:0 5px;color:var(--mute)}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:3px 8px}
+.kv dt{color:var(--mute)} .kv dd{margin:0}
+.items{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.items td{padding:3px 0;border-bottom:1px dotted var(--line)} .items td:last-child{text-align:right}
+.items tr.tot td{border-bottom:0;font-weight:600}
+details.g{border:1px solid var(--line);border-radius:6px;background:var(--fill)}
+details.g>summary{cursor:pointer;padding:5px 9px;list-style:none;display:flex;gap:6px;align-items:center;font-size:12px}
+details.g>summary::before{content:"▸";color:var(--mute);font-size:10px}
+details.g[open]>summary::before{content:"▾"}
+details.g>.in{padding:2px 9px 8px;display:grid;gap:3px;font-size:12px}
+.tl{display:grid;grid-template-columns:auto 1fr auto;gap:2px 8px;font-variant-numeric:tabular-nums}
+.tl .cut{color:var(--anno)}
+.gap{display:flex;gap:7px;align-items:flex-start;font-size:12.5px;border-left:3px solid var(--ink2);padding:3px 8px;background:var(--fill)}
+.ev{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.tile{border:1px solid var(--line);border-radius:6px;padding:6px;display:grid;gap:4px;font-size:12px;background:var(--paper);transition:box-shadow .2s}
+.thumb{height:62px;border-radius:4px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 6px,var(--fill2) 6px,var(--fill2) 12px);display:grid;place-items:center;color:var(--mute);font-size:11px}
+.tile.empty{border-style:dashed;color:var(--mute)}
+.tile.empty .thumb{background:none;border:1px dashed var(--line)}
+.meta{display:flex;flex-wrap:wrap;gap:3px}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:4px;padding:0 5px;font-size:11px;background:var(--fill);white-space:nowrap}
+.rec{display:grid;grid-template-columns:78px 1fr auto;gap:6px;align-items:center;font-size:12.5px;padding:3px 0;border-bottom:1px dotted var(--line)}
+.rec .n{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.lnk{background:none;border:0;padding:0;color:var(--anno);font:inherit;font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.btns{display:flex;gap:6px;flex-wrap:wrap}
+.btn{border:1px solid var(--ink2);background:var(--paper);color:var(--ink);border-radius:6px;padding:4px 10px;font:500 12px var(--sans);cursor:pointer}
+.btn.ghost{border-color:var(--line);color:var(--ink2)}
+/* queue */
+.q{display:grid;gap:4px;padding:6px 4px}
+.qh{font:600 10px var(--sans);color:var(--mute);text-align:center;padding:6px 0 2px;text-transform:uppercase;letter-spacing:.05em}
+.qi{position:relative;border:1px solid var(--line);border-radius:6px;padding:5px 2px;text-align:center;font-size:11px;background:var(--paper);cursor:pointer;display:grid;gap:1px}
+.qi .ab{font:600 12px var(--cond)} .qi .t{font:11px var(--mono)}
+.qi.act{border:2px solid var(--ink);background:var(--fill)}
+.qi .dot{position:absolute;top:3px;right:3px;width:7px;height:7px;border-radius:50%;background:var(--ink)}
+.qx{position:absolute;left:0;top:0;bottom:0;width:150px;background:var(--paper);border-right:1px solid var(--line);box-shadow:4px 0 12px rgba(0,0,0,.12);z-index:8;padding:6px;display:none;gap:4px;align-content:start;grid-auto-rows:min-content}
+.qcol:hover .qx,.qcol:focus-within .qx,.qx.pin{display:grid}
+.qx .qi{text-align:left;padding:6px 8px}
+/* chat */
+.cht{display:grid;grid-template-rows:auto 1fr auto;height:100%;min-height:0}
+.chat{display:grid;grid-template-rows:auto 1fr auto;min-height:0;height:100%}
+.msgs{overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:9px;min-height:0}
+.hand{border:1px solid var(--line);border-radius:8px;background:var(--fill);padding:9px 11px;display:grid;gap:5px;font-size:12.5px}
+.hand .r{display:grid;grid-template-columns:120px 1fr;gap:6px}
+.hand .r b{font-weight:500;color:var(--mute)}
+.m{max-width:72%;padding:7px 10px;border-radius:8px;border:1px solid var(--line);font-size:13px}
+.m small{display:block;color:var(--mute);font:10.5px var(--mono);margin-top:2px}
+.m.cu{align-self:flex-start;background:var(--paper)}
+.m.ag{align-self:flex-end;background:var(--fill2)}
+.sys{align-self:center;font-size:11.5px;color:var(--mute);border:1px dashed var(--line);border-radius:999px;padding:1px 10px}
+.photo{width:150px;height:96px;border-radius:6px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 6px,var(--fill2) 6px,var(--fill2) 12px);display:grid;place-items:center;color:var(--mute);font-size:11px;transition:box-shadow .2s}
+.typing{font-size:11.5px;color:var(--mute);font-style:italic}
+.reply{border-top:1px solid var(--line);padding:10px 12px;display:grid;gap:7px}
+.ta{border:1px solid var(--line);border-radius:6px;height:58px;padding:7px 9px;color:var(--mute);background:var(--paper)}
+.rrow{display:flex;gap:6px;align-items:center}
+.rrow .sp{flex:1}
+.send{border:1px solid var(--ink);background:var(--ink);color:var(--paper);border-radius:6px;padding:5px 16px;font:600 12px var(--sans)}
+.clock{display:inline-flex;gap:5px;align-items:center;border:1px solid var(--ink2);border-radius:5px;padding:1px 7px;font:500 12px var(--mono)}
+/* insights */
+.ins{display:grid;grid-template-rows:auto 1fr auto;height:100%;min-height:0}
+.insc{overflow-y:auto;min-height:0}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.ck{border:1px solid var(--line);border-radius:6px;padding:5px 7px;display:grid;gap:1px;font-size:11px;color:var(--mute)}
+.ck b{font:500 13px var(--mono);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.cond{border:1px solid var(--line);border-radius:6px;padding:7px 9px;display:grid;grid-template-columns:auto 1fr;gap:3px 9px;cursor:pointer;background:var(--paper);text-align:left;font:inherit;color:inherit;width:100%}
+.cond[aria-pressed="true"]{border-color:var(--anno);box-shadow:0 0 0 2px var(--anno-bg)}
+.st{grid-row:span 3;align-self:start;font:600 11px var(--sans);border:1.5px solid var(--ink);border-radius:4px;padding:1px 6px;white-space:nowrap}
+.st.unk{border-style:dashed;color:var(--ink2);border-color:var(--ink2)}
+.cond .nm{font-weight:600;font-size:12.5px}
+.cond .f{font-size:12px;color:var(--ink2)}
+.cond .src{display:flex;gap:6px;align-items:center;font-size:11px;color:var(--mute)}
+.mini{width:30px;height:20px;border-radius:3px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 4px,var(--fill2) 4px,var(--fill2) 8px);border:1px solid var(--line)}
+.dec{border-top:2px solid var(--ink);padding:10px 12px;display:grid;gap:8px;background:var(--paper)}
+.fault{display:flex;gap:5px;flex-wrap:wrap;align-items:center;font-size:12px}
+.seg{border:1px solid var(--line);border-radius:5px;padding:2px 8px;background:var(--paper);font:12px var(--sans);color:var(--ink);cursor:pointer}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.dbtn{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.dbtn button{border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:6px;padding:8px 4px;font:600 12.5px var(--sans);cursor:pointer}
+.part{border:1px dashed var(--line);border-radius:6px;padding:6px 8px;display:grid;gap:3px;font-size:12px}
+.part label{display:flex;gap:6px;align-items:center}
+.part .tot{font-weight:600;font-family:var(--mono)}
+/* drawers */
+.drw{position:absolute;top:44px;right:0;bottom:0;width:420px;background:var(--paper);border-left:2px solid var(--ink);z-index:9;box-shadow:-8px 0 20px rgba(0,0,0,.15);display:grid;grid-template-rows:auto 1fr;}
+.drw .dh{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line);font-weight:600}
+.drw .dh .sp{flex:1}
+.drw .db{overflow-y:auto;padding:12px;display:grid;gap:9px;align-content:start;font-size:12.5px}
+.warnlbl{border:1.5px solid var(--ink);border-radius:5px;padding:5px 8px;font-weight:500;font-size:12px}
+.pc{border:1px solid var(--line);border-radius:6px;padding:8px;display:grid;gap:3px}
+.log{display:grid;grid-template-columns:52px 1fr;gap:4px 8px;font-size:12px}
+.log span:nth-child(odd){font-family:var(--mono);color:var(--mute)}
+/* annotations */
+.ids [data-id]{position:relative}
+.ids [data-id]::after{content:attr(data-id);position:absolute;top:-7px;right:-3px;z-index:6;font:500 9.5px/1 var(--mono);color:var(--anno);background:var(--anno-bg);border:1px solid var(--anno);border-radius:3px;padding:2px 3px;white-space:nowrap;pointer-events:none}
+.hlA [data-v~="A"],.hlG [data-v~="G"],.hlD [data-v~="D"],.hlH [data-v~="H"]{outline:2px dashed var(--anno);outline-offset:1px}
+.frame .qx{position:absolute}
+.lit{box-shadow:0 0 0 3px var(--anno)!important}
+.fold{position:absolute;left:0;right:0;height:0;border-top:2px dashed var(--anno);pointer-events:none}
+/* below-frame content */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0}
+.card h3{margin:0;font:600 14px var(--sans)}
+.card p,.card li{margin:0;color:var(--ink2);font-size:13.5px}
+.card ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.tag{display:inline-block;font:500 11px var(--mono);border:1px solid var(--line);border-radius:4px;padding:0 5px;color:var(--ink2);background:var(--fill)}
+.tbl{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:8px}
+table.map{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+table.map th,table.map td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.map th{font:600 11.5px var(--sans);text-transform:uppercase;letter-spacing:.05em;color:var(--mute);background:var(--fill)}
+table.map td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:center;width:56px}
+table.map td.list{color:var(--ink2);font-size:12.5px}
+table.map tr.total td{font-weight:600;background:var(--fill)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink2)}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>S2 low-fi wireframe · 1440 × 900</h1>
+    <p class="lede">Scenario S2: wrong item, thin evidence, prior refunds. Every element carries its sticky ID from the IA inventory. All names, orders and numbers are <b>fictional</b>; policy values come from frozen policy v1.1 and keep their source tags. Greyscale on purpose, because the visual kit is still on hold.</p>
+  </header>
+
+  <div class="bar" role="toolbar" aria-label="Wireframe controls">
+    <div class="grp"><span class="lbl">Show</span>
+      <button class="tb" id="t-ids" aria-pressed="true">Sticky IDs</button>
+      <button class="tb" id="t-fold" aria-pressed="false">Fold lines</button>
+      <button class="tb" id="t-size" aria-pressed="false">Actual size</button>
+    </div>
+    <div class="grp"><span class="lbl">Outline visibility</span>
+      <button class="tb vis" data-k="A" aria-pressed="false">A · Always</button>
+      <button class="tb vis" data-k="G" aria-pressed="false">G · Glance</button>
+      <button class="tb vis" data-k="D" aria-pressed="false">D · On demand</button>
+      <button class="tb vis" data-k="H" aria-pressed="false">H · When it happens</button>
+    </div>
+    <div class="grp"><span class="lbl">Try</span><span style="font-size:12.5px;color:var(--ink2)">Click a policy condition · hover the queue rail · Partial · Show older · Similar cases · Case log</span></div>
+  </div>
+
+  <div class="stage" id="stage">
+   <div class="frame ids" id="frame">
+    <!-- G header -->
+    <div class="hdr">
+      <span class="logo" aria-hidden="true"></span><span class="ttl">Agent workspace</span>
+      <span class="pill" data-id="G1.1" data-v="A">● Riya S. · Online ▾</span>
+      <span class="pill mono" data-id="G1.2" data-v="A">4 chats assigned</span>
+      <span class="sp"></span>
+      <button class="ibtn" data-id="G2.1" data-v="D">⌕ Search orders / customers</button>
+      <button class="ibtn" data-id="G3.2" data-v="D">Policy handbook v1.1</button>
+      <button class="ibtn" data-id="G3.1" data-v="D">? Shortcuts</button>
+      <button class="ibtn" data-id="G2.2" data-v="D">◐ Theme</button>
+    </div>
+
+    <div class="cols">
+     <!-- Q rail -->
+     <div class="col qcol" style="overflow:visible">
+       <div class="qh" data-id="Q3.2" data-v="A">4</div>
+       <div class="qh" data-id="Q3.1" data-v="A" style="padding-top:0">by<br>wait</div>
+       <div class="q">
+         <div class="qi act" data-id="Q1.1" data-v="A"><span class="ab">WI</span><span class="t">8m</span></div>
+         <div class="qi" data-id="Q2.1–Q2.4" data-v="A"><span class="dot" aria-label="new message"></span><span class="ab">MI</span><span class="t">6:40</span></div>
+         <div class="qi"><span class="ab">LD</span><span class="t">3:15</span></div>
+         <div class="qi"><span class="dot" aria-label="new message"></span><span class="ab">DM</span><span class="t">0:50</span></div>
+       </div>
+       <div class="qx" id="qx" data-id="Q3.3" data-v="A">
+         <div class="qh" style="text-align:left">Your chats · 4 · sorted by wait</div>
+         <div class="qi act"><b>#2041</b> Wrong item<span class="t">open 8m</span></div>
+         <div class="qi"><span class="dot"></span><b>#2057</b> Missing item<span class="t">waiting 6:40</span></div>
+         <div class="qi"><b>#2063</b> Late delivery<span class="t">waiting 3:15</span></div>
+         <div class="qi"><span class="dot"></span><b>#2070</b> Damaged pack<span class="t">waiting 0:50</span></div>
+         <div style="font-size:11px;color:var(--mute);padding:4px 2px">Alt + ↓ next chat</div>
+       </div>
+     </div>
+
+     <!-- M case info -->
+     <div class="col" id="colM">
+       <div class="chd">Case information <span class="code">M</span><span class="sp"></span><span class="code">fictional data</span></div>
+       <div class="sec">
+         <div class="sh">Order <span class="sp"></span><span class="chip" data-id="M1.6" data-v="G">Food delivery</span></div>
+         <dl class="kv">
+           <dt>Order</dt><dd class="mono" data-id="M1.1" data-v="A">#SW-2041 · Thu 8 Oct, 19:32</dd>
+           <dt>Restaurant</dt><dd data-id="M1.2" data-v="A">Tandoor House</dd>
+           <dt>Payment</dt><dd data-id="M1.5" data-v="A">Prepaid (UPI)</dd>
+           <dt>Complaint</dt><dd class="mono" data-id="M1.13" data-v="A">20:29 · 8 min after delivered</dd>
+         </dl>
+         <table class="items" data-id="M1.3 · M1.4" data-v="A">
+           <tr><td>1 × Paneer butter masala</td><td>₹240</td></tr>
+           <tr><td>2 × Butter naan</td><td>₹110</td></tr>
+           <tr class="tot"><td>Order total</td><td>₹350</td></tr>
+         </table>
+         <details class="g" data-id="M1.7–M1.14" data-v="G">
+           <summary>Timeline · <span class="mono">delivered 20:21</span> · OTP used</summary>
+           <div class="in tl">
+             <span>Placed</span><span></span><span class="mono">19:32</span>
+             <span>Accepted</span><span></span><span class="mono">19:34</span>
+             <span>Prepared</span><span></span><span class="mono">19:52</span>
+             <span>Picked up</span><span></span><span class="mono">19:58</span>
+             <span>Delivered</span><span>OTP used</span><span class="mono">20:21</span>
+             <span>Complaint</span><span></span><span class="mono">20:29</span>
+             <span class="cut">Claim window closes</span><span class="cut">P3 · 24 h</span><span class="mono cut">Fri 20:21</span>
+           </div>
+         </details>
+       </div>
+
+       <div class="sec">
+         <div class="sh">Evidence · 1 item</div>
+         <div class="gap" data-id="M2.7" data-v="H">No delivery photo on record.</div>
+         <div class="gap" data-id="M2.8" data-v="H">Customer photo sent 40 min after the complaint.</div>
+         <div class="ev">
+           <div class="tile" id="ev-cust" data-id="M2.1–M2.4 · M2.9" data-v="A D">
+             <div class="thumb">customer photo</div>
+             <div class="meta"><span class="chip">Customer photo</span><span class="chip">by Customer</span><span class="chip">Sent in afterwards</span></div>
+             <details class="g" data-id="M2.5" data-v="G"><summary>Times</summary><div class="in mono">Captured: not recorded<br>Submitted: 21:09</div></details>
+             <button class="lnk" data-id="I2.12" data-v="D" style="justify-self:start">Link to a condition</button>
+           </div>
+           <div class="tile empty" id="ev-del">
+             <div class="thumb">no delivery photo</div>
+             <div class="meta"><span class="chip">Delivery photo</span><span class="chip">by Rider</span></div>
+             <span>None on record</span>
+           </div>
+         </div>
+       </div>
+
+       <div class="sec" id="recs">
+         <div class="sh">Party records · 90 days <span class="sp"></span><span class="ctx" data-id="M3.7" data-v="A">Context, not a policy condition</span></div>
+         <div class="rec" data-id="M3.1" data-v="A"><span>Customer</span><span class="n">3 refunds / 7 orders</span><button class="lnk" data-open="cust-lines">Dates</button></div>
+         <div id="cust-lines" class="lines" hidden data-id="M3.4" data-v="D">
+           <span class="mono">14 Sep · Wrong item · ₹180 · Full refund</span>
+           <span class="mono">29 Aug · Missing item · ₹90 · Full refund</span>
+           <span class="mono">02 Aug · Quality · ₹120 · Partial refund</span>
+         </div>
+         <div class="rec" data-id="M3.2" data-v="A"><span>Restaurant</span><span class="n">9 wrong-item / 1,860 orders</span><button class="lnk">Dates</button></div>
+         <div class="rec" data-id="M3.3" data-v="A"><span>Rider</span><span class="n">1 report / 412 deliveries</span><button class="lnk">Dates</button></div>
+         <div class="rrow" style="font-size:12px">
+           <details class="g" data-id="M3.5" data-v="G" style="flex:1"><summary>Open complaints today: none</summary><div class="in">No other open complaint for any of the three parties.</div></details>
+           <button class="btn ghost" id="older" data-id="M3.8" data-v="D">Show older · logged</button>
+         </div>
+       </div>
+
+       <div class="sec">
+         <div class="sh">Restaurant permission</div>
+         <div class="rrow"><span class="chip" data-id="M4.1" data-v="A" style="font-size:12px">✓ Given</span><span class="mono" data-id="M4.2" data-v="A" style="font-size:12px">2 min ago · 21:09</span><span class="sp"></span><button class="btn ghost" data-id="M4.4" data-v="A" disabled>Request</button></div>
+       </div>
+
+       <div class="sec">
+         <details class="g" data-id="M5.1–M5.3" data-v="G"><summary>People · Aman K. · rider R-118</summary>
+           <div class="in"><span>Customer: Aman K. · +91 ••••• ••427</span><span>Rider ID: R-118</span><span>First order with Swiggy: No</span></div></details>
+       </div>
+     </div>
+
+     <!-- C chat -->
+     <div class="col" style="overflow:hidden">
+      <div class="chat">
+       <div class="chd">Chat · #SW-2041 <span class="chip" data-id="C2.4" data-v="G">English</span><span class="sp"></span>
+         <span class="clock" data-id="C4.1" data-v="A">◷ Reply by 3:12</span></div>
+       <div class="msgs">
+         <div class="hand" data-id="C1.1–C1.3" data-v="A">
+           <div class="sh">Bot handover · 20:37</div>
+           <div class="r"><b>Picked in bot</b><span>Wrong item</span></div>
+           <div class="r"><b>Customer said</b><span>"I ordered paneer butter masala but got a different curry."</span></div>
+           <div class="r"><b>Bot offered</b><span>25% coupon on next order (20:34) · declined</span></div>
+           <details class="g" data-id="C1.4" data-v="D"><summary>Bot steps · 4</summary><div class="in"><span>Issue picker · Item picker · Coupon offer · Handover</span></div></details>
+         </div>
+         <div class="sys">Riya joined · 21:03</div>
+         <div class="m ag" data-id="C2.1" data-v="A">Hi Aman, I'm Riya from Swiggy support. I've read your chat with the bot.<small>21:03</small></div>
+         <div class="m ag">Could you share a photo of the dish you received?<small>21:05</small></div>
+         <div class="m cu">Ok one sec<small>21:08</small></div>
+         <div class="m cu" style="padding:6px"><div class="photo" id="ev-chat" data-id="C2.2" data-v="A">photo · 21:09</div><small>21:09</small></div>
+         <div class="sys">Restaurant permission given · 21:09</div>
+         <div class="m cu">This is what came. Not what I ordered.<small>21:09</small></div>
+         <div class="typing" data-id="C2.3" data-v="A">Aman is typing…</div>
+       </div>
+       <div class="reply">
+         <div class="ta" data-id="C3.1" data-v="A">Type a reply…</div>
+         <div class="rrow">
+           <button class="btn ghost" data-id="C3.2" data-v="D">Templates</button>
+           <button class="btn ghost" data-id="C3.3" data-v="D">Ask for evidence</button>
+           <button class="btn ghost" data-id="C3.5" data-v="D">Internal note</button>
+           <span class="sp"></span><button class="send">Send</button>
+         </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- I insights + decision -->
+     <div class="col" style="overflow:hidden">
+      <div class="ins">
+       <div class="chd">Insights + decision <span class="code">I</span><span class="sp"></span>
+         <button class="btn ghost" id="openLog" data-id="L1.1–L1.3" data-v="D">Case log</button></div>
+       <div class="insc">
+        <div class="sec">
+          <div class="strip" data-id="I1.1" data-v="A">
+            <div class="ck">Claim window<b>23 h 10 m</b></div>
+            <div class="ck">Reply by<b>3:12</b></div>
+            <div class="ck">Regulatory<b>by 8 Nov</b></div>
+          </div>
+          <div class="chips">
+            <span class="chip" data-id="I1.2" data-v="A">No review triggers</span>
+            <span class="chip" data-id="I1.3" data-v="A">Permission ✓ given</span>
+            <span class="chip" data-id="I1.4" data-v="A">History: C 3/7 · R 9/1,860 · Rd 1/412</span>
+          </div>
+        </div>
+        <div class="sec">
+          <div class="sh">Issue</div>
+          <div class="rrow" style="font-size:12.5px">
+            <span data-id="I5.1" data-v="A"><b>Wrong item</b> <span style="color:var(--mute)">(P1, from bot)</span></span>
+            <span class="sp"></span>
+            <button class="btn ghost" data-id="I5.3" data-v="A">Confirm · Change</button>
+          </div>
+          <div style="font-size:12px;color:var(--ink2)" data-id="I5.2" data-v="A">Default liable party: Restaurant <span class="chip">P2 · Borrowed</span></div>
+        </div>
+        <div class="sec" id="conds">
+          <div class="sh">Policy conditions <span class="sp"></span><span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mute)" data-id="I2.11" data-v="A">click to see evidence</span></div>
+          <button class="cond" aria-pressed="false" data-link="" data-id="I2.1 · I2.7" data-v="A">
+            <span class="st">✓ Met</span><span class="nm">P3 Claim window</span>
+            <span class="f">Complaint 8 min after delivered · window 24 h</span>
+            <span class="src" data-id="I2.8" data-v="G">Hypothetical</span>
+          </button>
+          <button class="cond" aria-pressed="false" data-link="ev-cust ev-chat ev-del" data-id="I2.3 · I2.10" data-v="A G">
+            <span class="st">✓ Met</span><span class="nm">P5 Evidence available</span>
+            <span class="f">1 customer photo, sent in afterwards · no delivery photo</span>
+            <span class="src"><span class="mini" aria-hidden="true"></span>Hypothetical</span>
+          </button>
+          <button class="cond" aria-pressed="false" data-link="perm" data-id="I2.4" data-v="A">
+            <span class="st">✓ Met</span><span class="nm">P6 Restaurant permission</span>
+            <span class="f">Given 21:09</span>
+            <span class="src">Published</span>
+          </button>
+          <button class="cond" aria-pressed="false" data-link="" data-id="I2.5" data-v="A">
+            <span class="st unk">? Unknown</span><span class="nm">P7 Amount in policy range</span>
+            <span class="f">Amount not chosen · range up to ₹240 (item value)</span>
+            <span class="src">Published + Borrowed</span>
+          </button>
+          <button class="cond" aria-pressed="false" data-link="" data-id="I2.6" data-v="A">
+            <span class="st unk">? Unknown</span><span class="nm">P8 Approval limit</span>
+            <span class="f">Amount not chosen · limit ₹500</span>
+            <span class="src">Hypothetical</span>
+          </button>
+          <button class="btn ghost" id="openSim" data-id="I3.1" data-v="D" style="justify-self:start">Similar cases</button>
+        </div>
+       </div>
+       <div class="dec">
+         <div class="fault" data-id="I4.6" data-v="A">Fault:
+           <button class="seg" aria-pressed="false">Customer</button><button class="seg" aria-pressed="false">Restaurant</button><button class="seg" aria-pressed="false">Rider</button><button class="seg" aria-pressed="false">Swiggy</button>
+         </div>
+         <div class="part" id="part" hidden data-id="I4.2" data-v="A">
+           <label><input type="checkbox" id="p1" value="240"> 1 × Paneer butter masala · ₹240</label>
+           <label><input type="checkbox" id="p2" value="110"> 2 × Butter naan · ₹110</label>
+           <span>Refund total: <span class="tot" id="ptot">₹0</span></span>
+         </div>
+         <div class="dbtn" data-id="I4.1–I4.5" data-v="A">
+           <button>Full refund</button><button id="bPart">Partial</button><button>Deny</button><button>Send to review</button>
+         </div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <!-- drawers -->
+    <div class="drw" id="drSim" hidden>
+      <div class="dh">Similar cases <span class="sp"></span><button class="btn ghost" data-close="drSim">Close</button></div>
+      <div class="db">
+        <div class="warnlbl" data-id="I3.4" data-v="D">Past cases, for reference only. Not a recommendation.</div>
+        <div style="color:var(--ink2)" data-id="I3.2" data-v="D">Matched on: wrong item · P3 met · P5 met by customer photo only · no delivery photo</div>
+        <div class="pc" data-id="I3.3" data-v="D"><b>Case #1882 · 2 Oct</b><span>Wrong item · customer photo only</span><span>Outcome: Partial refund · reason given: item value only</span></div>
+        <div class="pc"><b>Case #1740 · 27 Sep</b><span>Wrong item · customer photo only</span><span>Outcome: Sent to review · reason given: photo unclear</span></div>
+        <div class="pc"><b>Case #1655 · 21 Sep</b><span>Wrong item · customer photo only</span><span>Outcome: Full refund · reason given: restaurant confirmed mix-up</span></div>
+        <div style="font-size:11.5px;color:var(--mute)">No counts, no agent names. Reply wording from these cases appears only after you decide (C3.4).</div>
+      </div>
+    </div>
+    <div class="drw" id="drLog" hidden>
+      <div class="dh">Case log · #SW-2041 <span class="sp"></span><button class="btn ghost" data-close="drLog">Close</button></div>
+      <div class="db"><div class="log" id="logList">
+        <span>21:03</span><span>Riya opened the case</span>
+        <span>21:07</span><span>Requested restaurant permission</span>
+        <span>21:09</span><span>Permission given by restaurant</span>
+      </div></div>
+    </div>
+       </div>
+  </div>
+
+  <div style="font:12px var(--mono);color:var(--mute);margin-top:-18px">Frame 1440 × 900 · columns 56 / 372 / 572 / 440 · header 44</div>
+  
+<section>
+  <h2>Decisions locked in this step</h2>
+  <div class="cards">
+    <div class="card"><h3>Frame</h3><p>1440 × 900 (16:10). Every wireframe and prototype screen is drawn inside it.</p><span class="tag">Checklist A1</span></div>
+    <div class="card"><h3>Columns</h3><p>4 columns: queue rail 56 (expands to 150 as an overlay on hover) · case info 372 · chat 572 · insights 440.</p><span class="tag">B1 · B2</span></div>
+    <div class="card"><h3>What collapses</h3><p>Fixed visibility codes, same for every case: A open, G chip that expands, D behind a button, H appears only when that state happens.</p><span class="tag">Owner choice 10 Oct</span></div>
+    <div class="card"><h3>Status strip</h3><p>Top of the insights column. The reply-by clock also sits in the chat header (C4.1).</p><span class="tag">B4</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Content and layer map</h2>
+  <p class="lede" style="margin:0 0 10px">How many stickies each region holds, by visibility code. "Always" lists what must fit above the fold. "When it happens" lists what appears only in its scenario.</p>
+  <div class="tbl"><table class="map">
+    <thead><tr><th>Region</th><th>A</th><th>G</th><th>D</th><th>H</th><th>Always open (must fit)</th><th>Appears only when it happens</th></tr></thead>
+    <tbody><tr><td><b>Header</b></td><td class="n">2</td><td class="n">0</td><td class="n">4</td><td class="n">0</td><td class="list"><span class="tag">G1.1</span>, <span class="tag">G1.2</span></td><td class="list">—</td></tr><tr><td><b>Queue</b></td><td class="n">8</td><td class="n">0</td><td class="n">0</td><td class="n">1</td><td class="list"><span class="tag">Q1.1</span>, <span class="tag">Q2.1</span>, <span class="tag">Q2.2</span>, <span class="tag">Q2.3</span>, <span class="tag">Q2.4</span>, <span class="tag">Q3.1</span>, <span class="tag">Q3.2</span>, <span class="tag">Q3.3</span></td><td class="list"><span class="tag">S3.3</span></td></tr><tr><td><b>Case info</b></td><td class="n">17</td><td class="n">13</td><td class="n">3</td><td class="n">8</td><td class="list"><span class="tag">M1.1</span>, <span class="tag">M1.2</span>, <span class="tag">M1.3</span>, <span class="tag">M1.4</span>, <span class="tag">M1.5</span>, <span class="tag">M1.13</span>, <span class="tag">M2.1</span>, <span class="tag">M2.2</span>, <span class="tag">M2.3</span>, <span class="tag">M2.4</span>, <span class="tag">M3.1</span>, <span class="tag">M3.2</span>, <span class="tag">M3.3</span>, <span class="tag">M3.7</span>, <span class="tag">M4.1</span>, <span class="tag">M4.2</span>, <span class="tag">M4.4</span></td><td class="list"><span class="tag">M2.6</span>, <span class="tag">M2.7</span>, <span class="tag">M2.8</span>, <span class="tag">M3.6</span>, <span class="tag">M4.3</span>, <span class="tag">S1.2</span>, <span class="tag">S1.3</span>, <span class="tag">S2.5</span></td></tr><tr><td><b>Chat</b></td><td class="n">8</td><td class="n">1</td><td class="n">4</td><td class="n">1</td><td class="list"><span class="tag">C1.1</span>, <span class="tag">C1.2</span>, <span class="tag">C1.3</span>, <span class="tag">C2.1</span>, <span class="tag">C2.2</span>, <span class="tag">C2.3</span>, <span class="tag">C3.1</span>, <span class="tag">C4.1</span></td><td class="list"><span class="tag">C3.4</span></td></tr><tr><td><b>Insights</b></td><td class="n">20</td><td class="n">2</td><td class="n">5</td><td class="n">11</td><td class="list"><span class="tag">I1.1</span>, <span class="tag">I1.2</span>, <span class="tag">I1.3</span>, <span class="tag">I1.4</span>, <span class="tag">I5.1</span>, <span class="tag">I5.2</span>, <span class="tag">I5.3</span>, <span class="tag">I2.1</span>, <span class="tag">I2.3</span>, <span class="tag">I2.4</span>, <span class="tag">I2.5</span>, <span class="tag">I2.6</span>, <span class="tag">I2.7</span>, <span class="tag">I2.11</span>, <span class="tag">I4.1</span>, <span class="tag">I4.2</span>, <span class="tag">I4.3</span>, <span class="tag">I4.4</span>, <span class="tag">I4.5</span>, <span class="tag">I4.6</span></td><td class="list"><span class="tag">I2.2</span>, <span class="tag">I2.9</span>, <span class="tag">I6.1</span>, <span class="tag">I6.2</span>, <span class="tag">I3.5</span>, <span class="tag">I7.1</span>, <span class="tag">I7.2</span>, <span class="tag">S2.1</span>, <span class="tag">S2.2</span>, <span class="tag">S2.3</span>, <span class="tag">S2.4</span></td></tr><tr><td><b>Drawer</b></td><td class="n">0</td><td class="n">0</td><td class="n">3</td><td class="n">0</td><td class="list">—</td><td class="list">—</td></tr><tr><td><b>Anywhere</b></td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">3</td><td class="list">—</td><td class="list"><span class="tag">S1.1</span>, <span class="tag">S3.1</span>, <span class="tag">S3.2</span></td></tr><tr class="total"><td>Total (excl. X never-shown)</td><td class="n">55</td><td class="n">16</td><td class="n">19</td><td class="n">24</td><td></td><td></td></tr></tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Coverage check</h2>
+  <div class="cards">
+    <div class="card"><h3>Placed in this S2 frame</h3><p><b class="mono">92</b> of <b class="mono">103</b> placeable stickies (categories G, Q, C, M, I, L). States (S) and never-shown (X) are excluded.</p></div>
+    <div class="card" style="grid-column:span 2"><h3>Not drawn here, and why</h3><p><span class="tag">C3.4</span> Reference wording from similar cases (only after decision) <i>(H, All)</i>, <span class="tag">M2.6</span> Photo time from file (only when recorded) <i>(H, All)</i>, <span class="tag">M3.6</span> &#x27;No history&#x27; state <i>(H, S4)</i>, <span class="tag">M4.3</span> Restaurant&#x27;s reason (if refused) <i>(H, All)</i>, <span class="tag">I2.2</span> P4 Cash-on-delivery timing check <i>(H, All)</i>, <span class="tag">I2.9</span> &#x27;No published threshold&#x27; note <i>(H, All)</i>, <span class="tag">I6.1</span> Rider record vs customer claim, side by side <i>(H, S3)</i>, <span class="tag">I6.2</span> Who bears the cost (shown after agent picks fault) <i>(H, S6)</i>, <span class="tag">I3.5</span> &#x27;No closely matching cases&#x27; state <i>(H, All)</i>, <span class="tag">I7.1</span> Reviewer gets case log attached <i>(H, S3 S4)</i>, <span class="tag">I7.2</span> Escalate when permission has no reply <i>(H, S5)</i></p><p>All of these are H (scenario-only) items, apart from any listed otherwise. They get drawn in their own scenario frames.</p></div>
+  </div>
+</section>
+<section>
+  <h2>What the fit test found</h2>
+  <p class="lede" style="margin:0 0 10px">Measured in the 1440 × 900 frame with every G chip collapsed. Fonts were a fallback in the test browser, so treat pixel numbers as approximate (±20 px).</p>
+  <div class="cards">
+    <div class="card"><h3>1 · Case info overflows by about 66 px</h3><p>Restaurant permission (M4, all A) and People (M5) fall below the fold. The order, evidence and party records fit.</p><p><b>Cause:</b> permission is shown three times: M4 block, status-strip chip (I1.3) and condition P6.</p><span class="tag">Decision needed</span></div>
+    <div class="card"><h3>2 · History sits in the status strip</h3><p>I1.4 repeats the three party counts next to the clocks and triggers, right above the decision buttons. That is the most decision-adjacent spot on screen for something labelled "Context, not a policy condition". Fairness risk: it reads like a fourth trigger.</p><span class="tag">Decision needed</span></div>
+    <div class="card"><h3>3 · Partial refund items open on click</h3><p>I4.2 is coded A, but item checkboxes for every case would push the decision bar up ~70 px. In the frame they appear only after "Partial" is pressed. Proposed recode: button A, checkboxes H.</p><span class="tag">Recode</span></div>
+    <div class="card"><h3>4 · Insights column fits</h3><p>Status strip, issue, P3–P8 and the pinned decision bar fit without scrolling in S2. Scenarios with triggers (S3, S4) add chips and the I6 side-by-side block, so that column needs its own fit test there.</p><span class="tag">OK in S2</span></div>
+    <div class="card"><h3>5 · Queue rail codes</h3><p>Two-letter issue codes (WI, MI, LD, DM) fit 56 px but must be learned. Test with the new-agent persona; the hover overlay gives full words.</p><span class="tag">Stage 9 watch</span></div>
+    <div class="card"><h3>6 · Chat has spare height</h3><p>Chat ends ~100 px above the reply box at this point of the conversation. It fills as the chat grows, so no change.</p><span class="tag">No change</span></div>
+  </div>
+</section>
+<section>
+  <h2>Assumptions in this frame</h2>
+  <div class="card"><ul>
+    <li><b>Assumption:</b> P7 and P8 show "Unknown" until the agent enters an amount, because both check the refund amount, which does not exist yet.</li>
+    <li><b>Assumption:</b> P4 (cash on delivery) is hidden because S2 is prepaid. It is coded H.</li>
+    <li><b>Assumption:</b> restaurant permission is already given in S2, so S2 tests evidence and history only. S5 covers the stalled case.</li>
+    <li>All names, order numbers, times and counts are fictional. Past-case outcomes in the similar-cases drawer are placeholders, shown without counts.</li>
+  </ul></div>
+</section>
+
+
+</div>
+
+<script>
+(function(){
+  const stage=document.getElementById('stage'), frame=document.getElementById('frame');
+  function fit(){ if(stage.classList.contains('actual')){stage.style.height='902px';return}
+    const s=Math.min(1,stage.clientWidth/1442); frame.style.transform='scale('+s+')'; stage.style.height=(902*s)+'px'; }
+  addEventListener('resize',fit); fit();
+  const tog=(id,fn)=>{const b=document.getElementById(id);b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);fn(on)})};
+  tog('t-ids',on=>frame.classList.toggle('ids',on));
+  tog('t-size',on=>{stage.classList.toggle('actual',on);fit()});
+  tog('t-fold',on=>{document.querySelectorAll('.fold').forEach(f=>f.remove()); if(!on)return;
+    frame.querySelectorAll('.col').forEach(c=>{ if(c.scrollHeight>c.clientHeight+2){const f=document.createElement('div');f.className='fold';f.style.top=(c.clientHeight-2)+'px';c.appendChild(f)} });
+    frame.querySelectorAll('.insc,.msgs').forEach(c=>{ if(c.scrollHeight>c.clientHeight+2){const f=document.createElement('div');f.className='fold';f.style.top=(c.clientHeight-2)+'px';c.style.position='relative';c.appendChild(f)} });
+  });
+  document.querySelectorAll('.vis').forEach(b=>b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);frame.classList.toggle('hl'+b.dataset.k,on)}));
+  // condition -> evidence highlight
+  const log=document.getElementById('logList');
+  const now=()=>'21:1'+Math.min(9,log.children.length/2|0);
+  function addLog(t){log.insertAdjacentHTML('beforeend','<span>'+now()+'</span><span>'+t+'</span>')}
+  document.querySelectorAll('.cond').forEach(c=>c.addEventListener('click',()=>{
+    const was=c.getAttribute('aria-pressed')==='true';
+    document.querySelectorAll('.cond').forEach(x=>x.setAttribute('aria-pressed','false'));
+    document.querySelectorAll('.lit').forEach(x=>x.classList.remove('lit'));
+    if(was)return; c.setAttribute('aria-pressed','true');
+    (c.dataset.link||'').split(' ').filter(Boolean).forEach(id=>{const el=id==='perm'?document.querySelector('[data-id="M4.1"]'):document.getElementById(id); if(el)el.classList.add('lit')});
+  }));
+  document.querySelector('[data-open="cust-lines"]').addEventListener('click',()=>{const e=document.getElementById('cust-lines');e.hidden=!e.hidden});
+  document.getElementById('older').addEventListener('click',e=>{e.target.textContent='Older history open · logged';addLog('Opened older history: customer')});
+  document.getElementById('bPart').addEventListener('click',()=>{const p=document.getElementById('part');p.hidden=!p.hidden});
+  ['p1','p2'].forEach(id=>document.getElementById(id).addEventListener('change',()=>{let t=0;['p1','p2'].forEach(i=>{const x=document.getElementById(i);if(x.checked)t+=+x.value});document.getElementById('ptot').textContent='₹'+t}));
+  document.querySelectorAll('.seg').forEach(s=>s.addEventListener('click',()=>{const on=s.getAttribute('aria-pressed')!=='true';document.querySelectorAll('.seg').forEach(x=>x.setAttribute('aria-pressed','false'));s.setAttribute('aria-pressed',on)}));
+  document.getElementById('openSim').addEventListener('click',()=>{document.getElementById('drSim').hidden=false;addLog('Opened similar cases')});
+  document.getElementById('openLog').addEventListener('click',()=>{document.getElementById('drLog').hidden=false});
+  document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>{document.getElementById(b.dataset.close).hidden=true}));
+})();
+</script>
+
+</body></html>

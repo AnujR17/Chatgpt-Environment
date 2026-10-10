@@ -1,0 +1,84 @@
+{
+  "javascript_errors": [],
+  "external_fonts": "blocked; fallback fonts used",
+  "initial_geometry": [
+    {
+      "width": 56,
+      "height": 854,
+      "contentHeight": 854,
+      "overflow": "visible"
+    },
+    {
+      "width": 372,
+      "height": 854,
+      "contentHeight": 901,
+      "overflow": "auto"
+    },
+    {
+      "width": 572,
+      "height": 854,
+      "contentHeight": 854,
+      "overflow": "hidden"
+    },
+    {
+      "width": 438,
+      "height": 854,
+      "contentHeight": 854,
+      "overflow": "hidden"
+    }
+  ],
+  "p5_highlights": [
+    "ev-cust",
+    "ev-del",
+    "ev-chat"
+  ],
+  "p3_data_link": "",
+  "after_selecting_both_items": {
+    "refund_total": "\u20b9350",
+    "policy_cards": [
+      "\u2713 Met\nP3 Claim window\nComplaint 8 min after delivered \u00b7 window 24 h\nHypothetical",
+      "\u2713 Met\nP5 Evidence available\n1 customer photo, sent in afterwards \u00b7 no delivery photo\nHypothetical",
+      "\u2713 Met\nP6 Restaurant permission\nGiven 21:09\nPublished",
+      "? Unknown\nP7 Amount in policy range\nAmount not chosen \u00b7 range up to \u20b9240 (item value)\nPublished + Borrowed",
+      "? Unknown\nP8 Approval limit\nAmount not chosen \u00b7 limit \u20b9500\nHypothetical"
+    ]
+  },
+  "older_history": {
+    "button": "Older history open \u00b7 logged",
+    "visible_history_lines": false,
+    "log": "\n        21:03Riya opened the case\n        21:07Requested restaurant permission\n        21:09Permission given by restaurant\n      21:13Opened older history: customer"
+  },
+  "similar_cases": {
+    "drawer_visible": true,
+    "role": null,
+    "dialog_rect": {
+      "x": 1035,
+      "y": 245,
+      "width": 420,
+      "height": 854
+    }
+  },
+  "editor_is_form_field": "DIV:false",
+  "queue_controls": [
+    {
+      "tag": "DIV",
+      "tabIndex": -1,
+      "role": null
+    },
+    {
+      "tag": "DIV",
+      "tabIndex": -1,
+      "role": null
+    },
+    {
+      "tag": "DIV",
+      "tabIndex": -1,
+      "role": null
+    },
+    {
+      "tag": "DIV",
+      "tabIndex": -1,
+      "role": null
+    }
+  ]
+}

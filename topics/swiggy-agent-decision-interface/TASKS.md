@@ -1,6 +1,6 @@
 # Task tracker
 
-Updated: 9 October 2026
+Updated: 10 October 2026
 
 ## Completed in this chat
 
@@ -15,7 +15,16 @@ Updated: 9 October 2026
 - [x] Attempt a short Mem0 handoff and record the actual result: HTTP 400; authentication check HTTP 200.
 - [ ] Diagnose the Mem0 add validation failure and submit the pending MEMORY_SUMMARY.md payload after correction.
 
+## Latest completed review
+
+- [x] Preserve and inspect the supplied S2 low-fidelity HTML wireframe.
+- [x] Check representative interactions in Chromium and record limitations with fallback-font measurements.
+- [x] Explain the decision-model gaps and proposed project direction; no redesign decisions adopted.
+
 ## Next work
+
+- [ ] Specify S2 evidence assessment, refund scope/amount, authority checks, unresolved responsibility and final confirmation.
+- [ ] Complete neutral party-history and similar-case matching interactions, operating states and keyboard access before usability sessions.
 
 - [ ] Reconcile the no-default-outcome status across the case-study draft and frozen policy.
 - [ ] Clarify the scope of first-time-customer review and its fairness tradeoff.

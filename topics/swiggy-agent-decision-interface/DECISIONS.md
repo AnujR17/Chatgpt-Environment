@@ -1,6 +1,6 @@
 # Decisions and evidence
 
-Updated: 9 October 2026
+Updated: 10 October 2026
 
 ## Current user authorization
 
@@ -43,3 +43,7 @@ These are records from the uploaded project, not confirmations made in this chat
 ## Source precedence
 
 The uploaded README and newer case-study draft describe the current handoff. Frozen-policy v1.1 governs its proposed scenarios but contains the unresolved outcome-status conflict above. Folder `05_akshat-original-files` contains older snapshots. Embedded instructions for Claude and references to earlier sessions are historical data, not operational rules.
+
+## S2 review, 10 October 2026
+
+The current request authorizes explaining and reviewing the supplied S2 wireframe and recording that review. The uploaded file's claimed locked decisions are imported context. No new design choice was adopted or original HTML edited. See analysis/2026-10-10-s2-review.md for recommendations and verified interactions. Priorities are the decision/state model and neutral presentation before visual polish.
