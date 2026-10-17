@@ -1,0 +1,751 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>S2 Wireframe · Agent Panel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap">
+<style>
+/* Layout: one fixed 1440x900 low-fi frame (scaled to fit) that works like the real screen, an inspector sheet that explains any element, then the function index and content map. Greyscale on purpose: visual kit is on hold. Blue = annotation only. */
+:root{
+  --page:#ECEEF1; --paper:#FFFFFF; --ink:#1D2127; --ink2:#4A515C; --mute:#737B87;
+  --line:#C9CED6; --fill:#F2F4F7; --fill2:#E3E7EC; --anno:#2E59C9; --anno-bg:#E6EDFF; --shade:rgba(20,24,30,.18);
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --cond:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --page:#14171B; --paper:#1D2126; --ink:#E7EAEE; --ink2:#B4BBC5; --mute:#8D95A1;
+  --line:#3A414B; --fill:#252A31; --fill2:#2F353D; --anno:#8FB0FF; --anno-bg:#1F2B48; --shade:rgba(0,0,0,.45); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --page:#14171B; --paper:#1D2126; --ink:#E7EAEE; --ink2:#B4BBC5; --mute:#8D95A1;
+  --line:#3A414B; --fill:#252A31; --fill2:#2F353D; --anno:#8FB0FF; --anno-bg:#1F2B48; --shade:rgba(0,0,0,.45); color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.45}
+.wrap{max-width:1480px;margin:0 auto;padding-inline:16px;padding-block:20px 120px;display:grid;gap:22px}
+.wrap>*{min-width:0}
+h1{font-family:var(--cond);font-weight:600;font-size:26px;margin:0;text-wrap:balance}
+h2{font-family:var(--cond);font-weight:600;font-size:19px;margin:0 0 10px;text-wrap:balance}
+.lede{color:var(--ink2);max-width:80ch;margin:6px 0 0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+button{font:inherit;color:inherit}
+/* toolbar */
+.bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px 12px;position:sticky;top:env(safe-area-inset-top,0px);z-index:30}
+.grp{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.lbl{font-size:11.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+.tb{font:500 13px var(--sans);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:4px 10px;cursor:pointer}
+.tb[aria-pressed="true"]{background:var(--anno-bg);border-color:var(--anno);color:var(--anno)}
+.tb.demo{border-style:dashed}
+:focus-visible{outline:2px solid var(--anno);outline-offset:2px}
+/* stage */
+.stage{position:relative;width:100%;overflow:hidden;border-radius:4px}
+.stage.actual{overflow-x:auto}
+.frame{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0;background:var(--paper);border:1px solid var(--line);display:grid;grid-template-rows:44px 1fr;font-size:13px;color:var(--ink);overflow:hidden}
+.stage.actual .frame{position:relative;transform:none!important}
+/* header */
+.hdr{display:flex;align-items:center;gap:10px;padding:0 14px;border-bottom:1px solid var(--line);background:var(--fill)}
+.logo{width:22px;height:22px;border-radius:5px;background:var(--fill2);border:1px solid var(--line)}
+.ttl{font-weight:600}
+.sp{flex:1}
+.pill{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12px;background:var(--paper);white-space:nowrap;cursor:pointer}
+.ibtn{border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:3px 9px;font-size:12px;color:var(--ink2);cursor:pointer}
+/* columns */
+.cols{display:grid;grid-template-columns:56px 372px 572px 1fr;min-height:0;position:relative}
+.col{border-right:1px solid var(--line);min-height:0;overflow-y:auto;overflow-x:hidden;position:relative}
+.col:last-child{border-right:0}
+.chd{position:sticky;top:0;z-index:3;background:var(--paper);border-bottom:1px solid var(--line);padding:7px 12px;display:flex;align-items:center;gap:8px;font-weight:600;min-height:36px}
+.code{font:500 11px var(--mono);color:var(--mute)}
+.sec{padding:9px 12px;border-bottom:1px solid var(--line);display:grid;gap:6px}
+.sh{display:flex;align-items:center;gap:6px;font:600 11px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--ink2)}
+.ctx{font:500 10px var(--sans);text-transform:none;letter-spacing:0;border:1px dashed var(--line);border-radius:4px;padding:0 5px;color:var(--mute)}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:2px 8px;margin:0}
+.kv dt{color:var(--mute)} .kv dd{margin:0}
+.items{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.items td{padding:2px 0;border-bottom:1px dotted var(--line)} .items td:last-child{text-align:right}
+.items tr.tot td{border-bottom:0;font-weight:600}
+.items tr.aff td:first-child::after{content:" · in complaint";color:var(--mute);font-size:11px}
+.exp{border:1px solid var(--line);border-radius:6px;background:var(--fill)}
+.exp>.eh{cursor:pointer;padding:4px 9px;display:flex;gap:6px;align-items:center;font-size:12px;width:100%;text-align:left;background:none;border:0}
+.exp>.eh::before{content:"▸";color:var(--mute);font-size:10px}
+.exp.open>.eh::before{content:"▾"}
+.exp>.in{padding:2px 9px 7px;display:grid;gap:3px;font-size:12px}
+.tl{display:grid;grid-template-columns:auto 1fr auto;gap:1px 8px;font-variant-numeric:tabular-nums}
+.tl .cut{color:var(--anno)}
+.gap{font-size:12.5px;border-left:3px solid var(--ink2);padding:2px 8px;background:var(--fill)}
+.sysrec{display:flex;flex-wrap:wrap;gap:4px;font-size:12px;align-items:center}
+.tile{border:1px solid var(--line);border-radius:6px;padding:6px;display:grid;grid-template-columns:92px 1fr;gap:4px 8px;font-size:12px;background:var(--paper);cursor:pointer;text-align:left;width:100%}
+.thumb{height:62px;border-radius:4px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 6px,var(--fill2) 6px,var(--fill2) 12px);display:grid;place-items:center;color:var(--mute);font-size:11px;grid-row:span 3}
+.meta{display:flex;flex-wrap:wrap;gap:3px}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:4px;padding:0 5px;font-size:11px;background:var(--fill);white-space:nowrap}
+.chip.on{border-color:var(--ink);font-weight:600}
+.rec{display:grid;grid-template-columns:74px 1fr auto;gap:6px;align-items:center;font-size:12.5px;padding:2px 0;border-bottom:1px dotted var(--line)}
+.rec .n{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.lines{font-size:11.5px;display:grid;gap:1px;padding:2px 0 4px 10px;border-left:2px solid var(--line);font-family:var(--mono)}
+.lines .old{color:var(--mute)}
+.lnk{background:none;border:0;padding:0;color:var(--anno);font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.btn{border:1px solid var(--ink2);background:var(--paper);border-radius:6px;padding:3px 10px;font:500 12px var(--sans);cursor:pointer}
+.btn.ghost{border-color:var(--line);color:var(--ink2)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn.pri{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.perm{display:grid;gap:4px;font-size:12px}
+.pst{font-weight:600;border:1.5px solid var(--ink);border-radius:4px;padding:0 6px}
+.pst.unk{border-style:dashed;color:var(--ink2);border-color:var(--ink2)}
+/* queue */
+.qh{font:600 10px var(--sans);color:var(--mute);text-align:center;padding:6px 0 2px;text-transform:uppercase;letter-spacing:.05em}
+.q{display:grid;gap:4px;padding:6px 4px}
+.qi{position:relative;border:1px solid var(--line);border-radius:6px;padding:5px 2px;text-align:center;font-size:11px;background:var(--paper);cursor:pointer;display:grid;gap:1px;width:100%}
+.qi .ab{font:600 12px var(--cond)} .qi .t{font:11px var(--mono)}
+.qi.act{border:2px solid var(--ink);background:var(--fill)}
+.qi.done{opacity:.55}
+.qi .dot{position:absolute;top:3px;right:3px;width:7px;height:7px;border-radius:50%;background:var(--ink)}
+.qcol{overflow:visible!important}
+.qx{position:absolute;left:0;top:0;bottom:0;width:170px;background:var(--paper);border-right:1px solid var(--line);box-shadow:4px 0 12px var(--shade);z-index:12;padding:6px;display:none;gap:4px;align-content:start;grid-auto-rows:min-content}
+.qcol:hover .qx,.qcol:focus-within .qx{display:grid}
+.qx .qi{text-align:left;padding:6px 8px}
+/* chat */
+.chat{display:grid;grid-template-rows:auto 1fr auto;height:100%;min-height:0}
+.msgs{overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:0}
+.hand{border:1px solid var(--line);border-radius:8px;background:var(--fill);padding:8px 11px;display:grid;gap:4px;font-size:12.5px}
+.hand .r{display:grid;grid-template-columns:110px 1fr;gap:6px}
+.hand .r b{font-weight:500;color:var(--mute)}
+.m{max-width:74%;padding:6px 10px;border-radius:8px;border:1px solid var(--line);font-size:13px}
+.m small{display:block;color:var(--mute);font:10.5px var(--mono);margin-top:2px}
+.m.cu{align-self:flex-start;background:var(--paper)}
+.m.ag{align-self:flex-end;background:var(--fill2)}
+.m.note{align-self:flex-end;background:var(--paper);border-style:dashed}
+.m.note::before{content:"Internal note · not sent to customer";display:block;font-size:10.5px;color:var(--mute)}
+.sys{align-self:center;font-size:11.5px;color:var(--mute);border:1px dashed var(--line);border-radius:999px;padding:1px 10px}
+.photo{width:150px;height:92px;border-radius:6px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 6px,var(--fill2) 6px,var(--fill2) 12px);display:grid;place-items:center;color:var(--mute);font-size:11px;cursor:pointer;border:0}
+.typing{font-size:11.5px;color:var(--mute);font-style:italic}
+.reply{border-top:1px solid var(--line);padding:8px 12px;display:grid;gap:6px;position:relative}
+.reply textarea{border:1px solid var(--line);border-radius:6px;height:56px;padding:6px 9px;background:var(--paper);color:var(--ink);font:13px var(--sans);resize:none;width:100%}
+.reply.noteMode textarea{border-style:dashed}
+.menu{position:absolute;bottom:100%;left:12px;width:440px;background:var(--paper);border:1px solid var(--ink2);border-radius:8px;box-shadow:0 -6px 18px var(--shade);padding:6px;display:grid;gap:3px;z-index:9}
+.menu button{text-align:left;background:none;border:1px solid transparent;border-radius:5px;padding:5px 7px;cursor:pointer;font-size:12.5px}
+.menu button:hover{border-color:var(--line);background:var(--fill)}
+.menu .mh{font:600 11px var(--sans);color:var(--mute);text-transform:uppercase;letter-spacing:.05em;padding:2px 6px}
+.refw{border:1px dashed var(--ink2);border-radius:6px;padding:5px 8px;display:grid;gap:4px;font-size:12px}
+.clock{display:inline-flex;gap:5px;align-items:center;border:1px solid var(--ink2);border-radius:5px;padding:1px 7px;font:500 12px var(--mono)}
+.clock.low{border-width:2px;border-color:var(--ink)}
+/* insights */
+.ins{display:grid;grid-template-rows:auto 1fr auto;height:100%;min-height:0}
+.insc{overflow-y:auto;min-height:0}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.ck{border:1px solid var(--line);border-radius:6px;padding:4px 7px;display:grid;font-size:11px;color:var(--mute)}
+.ck b{font:500 13px var(--mono);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.side{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px}
+.side>div{border:1px solid var(--line);border-radius:6px;padding:5px 7px;display:grid;gap:2px}
+.side b{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute)}
+.conds{display:grid;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.cr{display:grid;grid-template-columns:70px 1fr auto;gap:8px;align-items:center;padding:4px 8px;border-bottom:1px solid var(--line);font-size:12px;cursor:pointer;background:var(--paper);text-align:left;width:100%;border-left:0;border-right:0;border-top:0}
+.cr:last-child{border-bottom:0}
+.cr[aria-expanded="true"]{background:var(--anno-bg)}
+.cr .nm{font-weight:600;white-space:nowrap;flex-shrink:0}
+.cr .f{color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cr .lk{font:11px var(--mono);color:var(--mute)}
+.cdet{padding:5px 8px 7px 86px;font-size:11.5px;color:var(--ink2);display:grid;gap:3px;background:var(--fill);border-bottom:1px solid var(--line)}
+.st{font:600 10.5px var(--sans);border:1.5px solid var(--ink);border-radius:4px;padding:0 4px;white-space:nowrap;text-align:center}
+.st.unk{border-style:dashed;color:var(--ink2);border-color:var(--ink2)}
+.st.no{background:var(--ink);color:var(--paper)}
+.st.na{border-color:var(--line);color:var(--mute)}
+.dec{border-top:2px solid var(--ink);padding:9px 12px;display:grid;gap:7px;background:var(--paper)}
+.seg{border:1px solid var(--line);border-radius:5px;padding:2px 8px;background:var(--paper);font-size:12px;cursor:pointer}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.dbtn{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.dbtn button{border:1.5px solid var(--ink);background:var(--paper);border-radius:6px;padding:7px 4px;font:600 12.5px var(--sans);cursor:pointer}
+.dbtn button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.part{border:1px dashed var(--line);border-radius:6px;padding:5px 8px;display:grid;gap:2px;font-size:12px}
+.part label{display:flex;gap:6px;align-items:center}
+.cost{font-size:12px;border:1px solid var(--line);border-radius:5px;padding:3px 8px;background:var(--fill)}
+.confirm{border:1.5px solid var(--ink);border-radius:6px;padding:7px 9px;display:grid;gap:5px;font-size:12px}
+.confirm select,.confirm input,.ov select,.ov input{font:12.5px var(--sans);padding:3px 6px;border:1px solid var(--line);border-radius:5px;background:var(--paper);color:var(--ink)}
+.done{border:1.5px solid var(--ink);border-radius:6px;padding:8px 10px;display:grid;gap:3px;font-size:12.5px}
+/* drawers + overlays */
+.drw{position:absolute;top:44px;right:0;bottom:0;width:430px;background:var(--paper);border-left:2px solid var(--ink);z-index:15;box-shadow:-8px 0 20px var(--shade);display:grid;grid-template-rows:auto 1fr}
+.dh{display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid var(--line);font-weight:600}
+.db{overflow-y:auto;padding:12px;display:grid;gap:8px;align-content:start;font-size:12.5px}
+.warnlbl{border:1.5px solid var(--ink);border-radius:5px;padding:5px 8px;font-weight:500;font-size:12px}
+.pc{border:1px solid var(--line);border-radius:6px;padding:7px 8px;display:grid;gap:2px}
+.log{display:grid;grid-template-columns:44px 1fr;gap:4px 8px;font-size:12px}
+.log span:nth-child(odd){font-family:var(--mono);color:var(--mute)}
+.scrim{position:absolute;inset:44px 0 0 0;background:var(--shade);z-index:18;display:grid;place-items:center}
+.ov{width:560px;max-height:760px;overflow:auto;background:var(--paper);border:2px solid var(--ink);border-radius:8px;display:grid;grid-template-rows:auto 1fr}
+.ov .db{gap:6px}
+.big{height:300px;border-radius:6px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 10px,var(--fill2) 10px,var(--fill2) 20px);display:grid;place-items:center;color:var(--mute)}
+.ptab{width:100%;border-collapse:collapse;font-size:12px}
+.ptab td{border-bottom:1px solid var(--line);padding:4px 6px;vertical-align:top}
+.toast{position:absolute;left:50%;top:52px;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:6px 14px;border-radius:6px;font-size:12.5px;z-index:25}
+/* annotations */
+.ids [data-id]:not(.qx):not(.menu){position:relative}
+.ids [data-id]::after{content:attr(data-id);position:absolute;top:-6px;right:-3px;z-index:6;font:500 9.5px/1 var(--mono);color:var(--anno);background:var(--anno-bg);border:1px solid var(--anno);border-radius:3px;padding:2px 3px;white-space:nowrap;pointer-events:none}
+.hlA [data-v~="A"],.hlG [data-v~="G"],.hlD [data-v~="D"],.hlH [data-v~="H"]{outline:2px dashed var(--anno);outline-offset:1px}
+.insp [data-id]{cursor:help}
+.insp [data-id]:hover{outline:2px solid var(--anno);outline-offset:1px}
+.picked{outline:3px solid var(--anno)!important;outline-offset:2px}
+.lit{box-shadow:0 0 0 3px var(--anno)!important}
+.flash{animation:fl 1.4s ease 2}
+@keyframes fl{50%{box-shadow:0 0 0 4px var(--anno)}}
+.fold{position:absolute;left:0;right:0;height:0;border-top:2px dashed var(--anno);pointer-events:none;z-index:7}
+/* inspector sheet */
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--paper);border-top:2px solid var(--anno);box-shadow:0 -8px 24px var(--shade);padding-inline:16px;padding-block:12px calc(12px + env(safe-area-inset-bottom,0px));max-height:46vh;overflow:auto}
+.sheet .in{max-width:1480px;margin:0 auto;display:grid;gap:8px}
+.sheet h3{margin:0;font:600 16px var(--sans);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px 18px}
+.sgrid div{min-width:0}
+.sgrid b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute);font-weight:600}
+.tag{display:inline-block;font:500 11px var(--mono);border:1px solid var(--line);border-radius:4px;padding:0 5px;color:var(--ink2);background:var(--fill)}
+/* below-frame content */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0}
+.card h3{margin:0;font:600 14px var(--sans)}
+.card p,.card li{margin:0;color:var(--ink2);font-size:13.5px}
+.card ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.tbl{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:8px}
+table.map{border-collapse:collapse;width:100%;min-width:820px;font-size:13px}
+table.map th,table.map td{padding:6px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.map th{font:600 11.5px var(--sans);text-transform:uppercase;letter-spacing:.05em;color:var(--mute);background:var(--fill)}
+table.map td.n{font-family:var(--mono);text-align:center;width:52px}
+table.map td.list{color:var(--ink2);font-size:12.5px}
+table.map tr.total td{font-weight:600;background:var(--fill)}
+.fx td:first-child{white-space:nowrap}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>S2 wireframe · functional · 1440 × 900</h1>
+    <p class="lede">This frame works like the real screen. <b>Use</b> mode: click anything and it does what the agent would do. <b>Inspect</b> mode: click any element to see its sticky ID, layer, visibility rule and how it works. The queue holds four fictional chats: S2 (open), S5, S3 and S8 from the frozen policy (v1.3). All names, orders and numbers are fictional. Greyscale on purpose.</p>
+  </header>
+
+  <div class="bar" role="toolbar" aria-label="Wireframe controls">
+    <div class="grp"><span class="lbl">Mode</span>
+      <button class="tb" id="m-use" aria-pressed="true">Use</button>
+      <button class="tb" id="m-insp" aria-pressed="false">Inspect</button>
+    </div>
+    <div class="grp"><span class="lbl">Show</span>
+      <button class="tb" id="t-ids" aria-pressed="false">Sticky IDs</button>
+      <button class="tb" id="t-fold" aria-pressed="false">Fold lines</button>
+      <button class="tb" id="t-size" aria-pressed="false">Actual size</button>
+    </div>
+    <div class="grp"><span class="lbl">Outline</span>
+      <button class="tb vis" data-k="A" aria-pressed="false">A</button>
+      <button class="tb vis" data-k="G" aria-pressed="false">G</button>
+      <button class="tb vis" data-k="D" aria-pressed="false">D</button>
+      <button class="tb vis" data-k="H" aria-pressed="false">H</button>
+    </div>
+    <div class="grp"><span class="lbl">Simulate</span>
+      <button class="tb demo" id="sim-cust">Customer replies</button>
+      <button class="tb demo" id="sim-give">Restaurant gives</button>
+      <button class="tb demo" id="sim-refuse">Restaurant refuses</button>
+      <button class="tb demo" id="sim-reset">Reset all chats</button>
+    </div>
+  </div>
+
+  <div class="stage" id="stage"><div class="frame" id="frame"></div></div>
+  <div style="font:12px var(--mono);color:var(--mute);margin-top:-14px">Frame 1440 × 900 · columns 56 / 372 / 572 / 440 · header 44 · "Simulate" buttons are demo controls, not part of the agent screen</div>
+
+  <section>
+    <h2>Function index</h2>
+    <p class="lede" style="margin:0 0 10px">Every working function in the frame: where it sits, how to trigger it and what happens. "Show me" switches to the right chat if needed, then flashes the element.</p>
+    <div class="tbl"><table class="map fx"><thead><tr><th>ID</th><th>Function</th><th>Where</th><th>How</th><th>What happens</th><th>Logged</th><th></th></tr></thead><tbody id="fxBody"></tbody></table></div>
+  </section>
+
+  
+<section><h2>Content and layer map</h2>
+<p class="lede" style="margin:0 0 10px">Sticky counts per region by visibility code (A always · G glance · D on demand · H when it happens), from the IA inventory.</p>
+<div class="tbl"><table class="map"><thead><tr><th>Region</th><th>A</th><th>G</th><th>D</th><th>H</th><th>Always open (must fit)</th><th>Appears only when it happens</th></tr></thead><tbody><tr><td><b>Header</b></td><td class="n">2</td><td class="n">0</td><td class="n">4</td><td class="n">0</td><td class="list"><span class="tag">G1.1</span>, <span class="tag">G1.2</span></td><td class="list">—</td></tr><tr><td><b>Queue</b></td><td class="n">8</td><td class="n">0</td><td class="n">0</td><td class="n">1</td><td class="list"><span class="tag">Q1.1</span>, <span class="tag">Q2.1</span>, <span class="tag">Q2.2</span>, <span class="tag">Q2.3</span>, <span class="tag">Q2.4</span>, <span class="tag">Q3.1</span>, <span class="tag">Q3.2</span>, <span class="tag">Q3.3</span></td><td class="list"><span class="tag">S3.3</span></td></tr><tr><td><b>Case info</b></td><td class="n">18</td><td class="n">13</td><td class="n">3</td><td class="n">8</td><td class="list"><span class="tag">M1.1</span>, <span class="tag">M1.2</span>, <span class="tag">M1.3</span>, <span class="tag">M1.4</span>, <span class="tag">M1.5</span>, <span class="tag">M1.13</span>, <span class="tag">M2.1</span>, <span class="tag">M2.2</span>, <span class="tag">M2.3</span>, <span class="tag">M2.4</span>, <span class="tag">M3.1</span>, <span class="tag">M3.2</span>, <span class="tag">M3.3</span>, <span class="tag">M3.7</span>, <span class="tag">M4.1</span>, <span class="tag">M4.2</span>, <span class="tag">M4.4</span>, <span class="tag">M4.5</span></td><td class="list"><span class="tag">M2.6</span>, <span class="tag">M2.7</span>, <span class="tag">M2.8</span>, <span class="tag">M3.6</span>, <span class="tag">M4.3</span>, <span class="tag">S1.2</span>, <span class="tag">S1.3</span>, <span class="tag">S2.5</span></td></tr><tr><td><b>Chat</b></td><td class="n">8</td><td class="n">1</td><td class="n">4</td><td class="n">1</td><td class="list"><span class="tag">C1.1</span>, <span class="tag">C1.2</span>, <span class="tag">C1.3</span>, <span class="tag">C2.1</span>, <span class="tag">C2.2</span>, <span class="tag">C2.3</span>, <span class="tag">C3.1</span>, <span class="tag">C4.1</span></td><td class="list"><span class="tag">C3.4</span></td></tr><tr><td><b>Insights</b></td><td class="n">20</td><td class="n">2</td><td class="n">5</td><td class="n">13</td><td class="list"><span class="tag">I1.1</span>, <span class="tag">I1.2</span>, <span class="tag">I1.3</span>, <span class="tag">I1.4</span>, <span class="tag">I5.1</span>, <span class="tag">I5.2</span>, <span class="tag">I5.3</span>, <span class="tag">I2.1</span>, <span class="tag">I2.3</span>, <span class="tag">I2.4</span>, <span class="tag">I2.5</span>, <span class="tag">I2.6</span>, <span class="tag">I2.7</span>, <span class="tag">I2.11</span>, <span class="tag">I4.1</span>, <span class="tag">I4.2</span>, <span class="tag">I4.3</span>, <span class="tag">I4.4</span>, <span class="tag">I4.5</span>, <span class="tag">I4.6</span></td><td class="list"><span class="tag">I2.2</span>, <span class="tag">I2.9</span>, <span class="tag">I6.1</span>, <span class="tag">I6.2</span>, <span class="tag">I6.3</span>, <span class="tag">I3.5</span>, <span class="tag">I7.1</span>, <span class="tag">I7.2</span>, <span class="tag">S2.1</span>, <span class="tag">S2.2</span>, <span class="tag">S2.3</span>, <span class="tag">S2.4</span>, <span class="tag">S2.6</span></td></tr><tr><td><b>Drawer</b></td><td class="n">0</td><td class="n">0</td><td class="n">3</td><td class="n">0</td><td class="list">—</td><td class="list">—</td></tr><tr><td><b>Anywhere</b></td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">3</td><td class="list">—</td><td class="list"><span class="tag">S1.1</span>, <span class="tag">S3.1</span>, <span class="tag">S3.2</span></td></tr><tr class="total"><td>Total (excl. X never-shown)</td><td class="n">56</td><td class="n">16</td><td class="n">19</td><td class="n">26</td><td></td><td></td></tr></tbody></table></div></section>
+<section><h2>Coverage check</h2><div class="cards">
+<div class="card"><h3>Placed across the four chats</h3><p><b class="mono">101</b> of <b class="mono">105</b> placeable stickies (G, Q, C, M, I, L). States (S) and never-shown (X) excluded.</p></div>
+<div class="card" style="grid-column:1/-1"><h3>Not drawn yet</h3><p><span class="tag">M2.6</span> Photo time from file (only when recorded) <i>(H, All)</i>; <span class="tag">M3.6</span> &#x27;No history&#x27; state <i>(H, S4)</i>; <span class="tag">I2.2</span> P4 Cash-on-delivery timing check <i>(H, All)</i>; <span class="tag">I3.5</span> &#x27;No closely matching cases&#x27; state <i>(H, All)</i></p></div></div></section>
+<section>
+  <h2>What changed in this version, and what the fit test found</h2>
+  <div class="cards">
+    <div class="card"><h3>Evidence: delivery photo removed</h3><p>Riders and restaurants log no photos (owner decision, policy v1.3). The evidence block now holds the customer's photo, gap facts and system records (OTP, location ping) only. Case information now fits above the fold in S2, S3, S5 and S8.</p><span class="tag">Policy v1.3</span></div>
+    <div class="card"><h3>Policy conditions: one line each</h3><p>Each condition is a single row (status · name · fact). Source, evidence and the threshold note open on click. The block went from about 430 px to about 200 px in S2.</p><span class="tag">I2</span></div>
+    <div class="card"><h3>Fit test: all four chats fit</h3><p>Measured at 1440 × 900 with expandable rows closed: case information, chat and insights fit without scrolling in S2, S3, S5 and S8, including S3 with a decision open. When the check step is open, the conditions area shrinks to about 170 px; watch whether agents re-read conditions there (Stage 9). Fonts were a fallback in the test browser (±20 px).</p><span class="tag">Verified</span></div>
+    <div class="card"><h3>Still open from v1 (owner decisions)</h3><ul><li>Permission is still shown in M4, the status-strip chip (I1.3) and P6.</li><li>History still repeats in the status strip (I1.4).</li><li>Partial-refund items appear only after pressing Partial (built that way; recode I4.2 from A to H if approved).</li></ul></div>
+    <div class="card"><h3>New fairness point (v1.3)</h3><p>With no rider or restaurant photos, every photo comes from the customer, the party making the claim. The screen states the origin as a fact ("sent in afterwards") and never rates it. Logged for Stage 12.</p><span class="tag">Limitations</span></div>
+  </div>
+</section>
+<section>
+  <h2>Assumptions in this frame</h2>
+  <div class="card"><ul>
+    <li><b>Assumption:</b> P7 and P8 stay Unknown until the agent picks an amount, then update live.</li>
+    <li><b>Assumption:</b> when the agent refunds a customer-fault case, cost falls on Swiggy as goodwill [Inferred]; Swiggy publishes no rule.</li>
+    <li><b>Assumption:</b> a fault and a reason are required before confirming any outcome except Send to review.</li>
+    <li>Similar-case outcomes, names, orders, times and counts are fictional placeholders.</li>
+  </ul></div>
+</section>
+
+</div>
+
+<div class="sheet" id="sheet" hidden><div class="in" id="sheetIn"></div></div>
+
+<script>
+const INV = {"rows": {"G1.1": {"t": "Agent name + online / away status", "l": "System", "v": "A", "reg": "Header", "scen": "All", "src": "", "note": ""}, "G1.2": {"t": "Number of chats assigned right now", "l": "System", "v": "A", "reg": "Header", "scen": "All", "src": "", "note": "Load only; no performance ranking"}, "G2.1": {"t": "Search orders / customers", "l": "Decision support", "v": "D", "reg": "Header", "scen": "All", "src": "", "note": ""}, "G2.2": {"t": "Light / dark theme toggle", "l": "System", "v": "D", "reg": "Header", "scen": "All", "src": "Checklist A2", "note": ""}, "G3.1": {"t": "Keyboard shortcuts list", "l": "System", "v": "D", "reg": "Header", "scen": "All", "src": "Checklist I2", "note": ""}, "G3.2": {"t": "Policy handbook link (frozen policy, current version)", "l": "Data", "v": "D", "reg": "Header", "scen": "All", "src": "Frozen policy", "note": ""}, "Q1.1": {"t": "Active chat card: order ID, issue type, elapsed time", "l": "Data", "v": "A", "reg": "Queue", "scen": "All", "src": "Approved queue rule", "note": ""}, "Q2.1": {"t": "Waiting chat: order ID", "l": "Data", "v": "A", "reg": "Queue", "scen": "All", "src": "", "note": ""}, "Q2.2": {"t": "Waiting chat: issue type", "l": "Data", "v": "A", "reg": "Queue", "scen": "All", "src": "", "note": ""}, "Q2.3": {"t": "Waiting chat: wait time", "l": "Data", "v": "A", "reg": "Queue", "scen": "All", "src": "", "note": ""}, "Q2.4": {"t": "Waiting chat: new-message indicator", "l": "System", "v": "A", "reg": "Queue", "scen": "All", "src": "", "note": ""}, "Q3.1": {"t": "Sorted by wait time (label on screen)", "l": "System", "v": "A", "reg": "Queue", "scen": "All", "src": "Approved queue rule", "note": ""}, "Q3.2": {"t": "Queue count", "l": "System", "v": "A", "reg": "Queue", "scen": "All", "src": "", "note": ""}, "Q3.3": {"t": "Switch chat (click / shortcut)", "l": "Decision support", "v": "A", "reg": "Queue", "scen": "All", "src": "", "note": ""}, "C1.1": {"t": "Issue the customer picked in the bot", "l": "Data", "v": "A", "reg": "Chat", "scen": "All", "src": "M1.1", "note": ""}, "C1.2": {"t": "Customer's own words (first message)", "l": "Data", "v": "A", "reg": "Chat", "scen": "All", "src": "M1.1", "note": ""}, "C1.3": {"t": "What the bot already offered (e.g. 25% coupon, 19:51)", "l": "Data", "v": "A", "reg": "Chat", "scen": "All", "src": "M9.1", "note": ""}, "C1.4": {"t": "Bot steps taken before handover", "l": "Data", "v": "D", "reg": "Chat", "scen": "All", "src": "", "note": ""}, "C2.1": {"t": "Messages with timestamps", "l": "Data", "v": "A", "reg": "Chat", "scen": "All", "src": "", "note": ""}, "C2.2": {"t": "Photos sent in chat (inline thumbnails)", "l": "Data", "v": "A", "reg": "Chat", "scen": "All", "src": "", "note": "Same items appear in M2 Evidence"}, "C2.3": {"t": "Customer typing indicator", "l": "System", "v": "A", "reg": "Chat", "scen": "All", "src": "", "note": ""}, "C2.4": {"t": "Customer language", "l": "Data", "v": "G", "reg": "Chat", "scen": "All", "src": "", "note": "Assumption: multilingual chats"}, "C3.1": {"t": "Text box + Send", "l": "Decision support", "v": "A", "reg": "Chat", "scen": "All", "src": "", "note": ""}, "C3.2": {"t": "Templates that cite a policy condition", "l": "Decision support", "v": "D", "reg": "Chat", "scen": "All", "src": "M9.3", "note": ""}, "C3.3": {"t": "Ask customer for evidence (ready message)", "l": "Decision support", "v": "D", "reg": "Chat", "scen": "All", "src": "M3.6", "note": ""}, "C3.4": {"t": "Reference wording from similar cases (only after decision)", "l": "Decision support", "v": "H", "reg": "Chat", "scen": "All", "src": "M9.4 · Step 3", "note": ""}, "C3.5": {"t": "Internal note (not sent to customer)", "l": "Decision support", "v": "D", "reg": "Chat", "scen": "All", "src": "", "note": ""}, "C4.1": {"t": "Reply-by clock: 5 min", "l": "Insight", "v": "A", "reg": "Chat", "scen": "All", "src": "Frozen policy §6", "note": ""}, "M1.1": {"t": "Order ID + date/time", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "M7.1", "note": ""}, "M1.2": {"t": "Restaurant name", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "", "note": ""}, "M1.3": {"t": "Items with quantity + price", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "M7.1", "note": ""}, "M1.4": {"t": "Order total", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "", "note": ""}, "M1.5": {"t": "Payment mode (prepaid / cash on delivery)", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "P4", "note": ""}, "M1.6": {"t": "Order type (food delivery)", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "", "note": "Scope = food only"}, "M1.7": {"t": "Placed time", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "M2.1", "note": ""}, "M1.8": {"t": "Restaurant accepted time", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "M2.1", "note": ""}, "M1.9": {"t": "Prepared time (this order only)", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "B2", "note": ""}, "M1.10": {"t": "Picked up time", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "M2.1", "note": ""}, "M1.11": {"t": "Delivered time + OTP used / not used", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "M4.1", "note": ""}, "M1.12": {"t": "Location ping at delivery", "l": "Data", "v": "G", "reg": "Case info", "scen": "S3", "src": "M4.1", "note": ""}, "M1.13": {"t": "Complaint raised time", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "M2.1", "note": ""}, "M1.14": {"t": "Policy cut-off marks on the timeline (claim window)", "l": "Insight", "v": "G", "reg": "Case info", "scen": "All", "src": "M2.3", "note": ""}, "M2.1": {"t": "Evidence tile: thumbnail", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "M3.1", "note": ""}, "M2.2": {"t": "Evidence tile: type (customer photo, OTP, location ping, chat)", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "M3.1", "note": ""}, "M2.3": {"t": "Evidence tile: supplied by (system / customer)", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "M3.1", "note": ""}, "M2.4": {"t": "Evidence tile: origin (captured at event / sent in afterwards)", "l": "Data", "v": "A", "reg": "Case info", "scen": "All", "src": "M3.1", "note": ""}, "M2.5": {"t": "Evidence tile: captured at + submitted at", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "M3.1", "note": ""}, "M2.6": {"t": "Photo time from file (only when recorded)", "l": "Data", "v": "H", "reg": "Case info", "scen": "All", "src": "B1", "note": ""}, "M2.7": {"t": "Gap fact: 'Only evidence: 1 customer photo'", "l": "Insight", "v": "H", "reg": "Case info", "scen": "S2", "src": "M3.3 · Policy v1.3", "note": ""}, "M2.8": {"t": "Gap fact: 'Photo sent 40 min after complaint'", "l": "Insight", "v": "H", "reg": "Case info", "scen": "S2", "src": "M3.4", "note": ""}, "M2.9": {"t": "Open full-size evidence", "l": "Decision support", "v": "D", "reg": "Case info", "scen": "All", "src": "", "note": ""}, "M3.1": {"t": "Customer: refunds out of orders, 90 days", "l": "Insight", "v": "A", "reg": "Case info", "scen": "S2", "src": "M6.2", "note": ""}, "M3.2": {"t": "Restaurant: complaints out of orders, 90 days", "l": "Insight", "v": "A", "reg": "Case info", "scen": "S6", "src": "M6.2", "note": ""}, "M3.3": {"t": "Rider: reports out of deliveries, 90 days", "l": "Insight", "v": "A", "reg": "Case info", "scen": "S3", "src": "M6.2", "note": ""}, "M3.4": {"t": "Dated lines behind each count", "l": "Data", "v": "D", "reg": "Case info", "scen": "All", "src": "M6.1", "note": ""}, "M3.5": {"t": "Open complaints today (all three parties)", "l": "Insight", "v": "G", "reg": "Case info", "scen": "All", "src": "B3", "note": ""}, "M3.6": {"t": "'No history' state", "l": "Insight", "v": "H", "reg": "Case info", "scen": "S4", "src": "Frozen §5", "note": ""}, "M3.7": {"t": "Label: 'Context, not a policy condition'", "l": "System", "v": "A", "reg": "Case info", "scen": "All", "src": "Frozen §5", "note": ""}, "M3.8": {"t": "Show older (logged)", "l": "Decision support", "v": "D", "reg": "Case info", "scen": "S2", "src": "M6.3", "note": ""}, "M4.1": {"t": "Permission status (not requested / requested / given / refused / no reply)", "l": "Data", "v": "A", "reg": "Case info", "scen": "S5", "src": "M5.1", "note": ""}, "M4.2": {"t": "Time since request", "l": "Insight", "v": "A", "reg": "Case info", "scen": "S5", "src": "M5.2", "note": ""}, "M4.3": {"t": "Restaurant's reason (if refused)", "l": "Data", "v": "H", "reg": "Case info", "scen": "All", "src": "", "note": ""}, "M4.4": {"t": "Request / remind / escalate buttons", "l": "Decision support", "v": "A", "reg": "Case info", "scen": "S5", "src": "M5.3", "note": ""}, "M4.5": {"t": "Who answered + where (e.g. Given by: restaurant, Partner app)", "l": "Data", "v": "A", "reg": "Case info", "scen": "S2 S5 S8", "src": "Policy v1.2 §4", "note": ""}, "M5.1": {"t": "Customer name (masked phone)", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "", "note": "Show only what the decision needs"}, "M5.2": {"t": "Rider ID", "l": "Data", "v": "G", "reg": "Case info", "scen": "All", "src": "", "note": ""}, "M5.3": {"t": "First order with Swiggy? (yes / no)", "l": "Data", "v": "G", "reg": "Case info", "scen": "S4", "src": "T2", "note": ""}, "I1.1": {"t": "Three clocks: claim window · reply-by · regulatory", "l": "Insight", "v": "A", "reg": "Insights", "scen": "All", "src": "Frozen §6", "note": ""}, "I1.2": {"t": "Review triggers fired (with source)", "l": "Insight", "v": "A", "reg": "Insights", "scen": "S3 S4 S7", "src": "M8.2", "note": ""}, "I1.3": {"t": "Permission chip", "l": "Insight", "v": "A", "reg": "Insights", "scen": "All", "src": "M5.1", "note": ""}, "I1.4": {"t": "History chips for all three parties", "l": "Insight", "v": "A", "reg": "Insights", "scen": "All", "src": "M6.2", "note": ""}, "I5.1": {"t": "Issue category (P1)", "l": "Insight", "v": "A", "reg": "Insights", "scen": "All", "src": "M1.2", "note": ""}, "I5.2": {"t": "Default liable party (P2)", "l": "Insight", "v": "A", "reg": "Insights", "scen": "S6", "src": "M1.2", "note": ""}, "I5.3": {"t": "Confirm / correct category (logged)", "l": "Decision support", "v": "A", "reg": "Insights", "scen": "All", "src": "M1.3", "note": ""}, "I2.1": {"t": "P3 Claim window check (fact + status)", "l": "Insight", "v": "A", "reg": "Insights", "scen": "S7", "src": "M2.2", "note": ""}, "I2.2": {"t": "P4 Cash-on-delivery timing check", "l": "Insight", "v": "H", "reg": "Insights", "scen": "All", "src": "M2.2", "note": ""}, "I2.3": {"t": "P5 Evidence available check", "l": "Insight", "v": "A", "reg": "Insights", "scen": "S2", "src": "M3.2", "note": ""}, "I2.4": {"t": "P6 Restaurant permission check", "l": "Insight", "v": "A", "reg": "Insights", "scen": "S5", "src": "M5.1", "note": ""}, "I2.5": {"t": "P7 Amount within policy range", "l": "Insight", "v": "A", "reg": "Insights", "scen": "All", "src": "M7.2", "note": ""}, "I2.6": {"t": "P8 Within approval limit (₹500)", "l": "Insight", "v": "A", "reg": "Insights", "scen": "S3 S4", "src": "M7.3", "note": ""}, "I2.7": {"t": "Status chip per condition: met / not met / unknown", "l": "Insight", "v": "A", "reg": "Insights", "scen": "All", "src": "", "note": ""}, "I2.8": {"t": "Source tag per condition (Published / Borrowed / Hypothetical)", "l": "Insight", "v": "G", "reg": "Insights", "scen": "All", "src": "", "note": ""}, "I2.9": {"t": "'No published threshold' note", "l": "Insight", "v": "H", "reg": "Insights", "scen": "All", "src": "Insight 1", "note": ""}, "I2.10": {"t": "Linked evidence thumbnail inside condition", "l": "Insight", "v": "G", "reg": "Insights", "scen": "All", "src": "Layout fix B3", "note": ""}, "I2.11": {"t": "Select condition → highlight its evidence", "l": "Decision support", "v": "A", "reg": "Insights", "scen": "All", "src": "Layout fix B3", "note": ""}, "I2.12": {"t": "Link evidence to condition (logged)", "l": "Decision support", "v": "D", "reg": "Insights", "scen": "All", "src": "M3.5", "note": ""}, "I6.1": {"t": "Rider record vs customer claim, side by side", "l": "Insight", "v": "H", "reg": "Insights", "scen": "S3", "src": "M4.2", "note": ""}, "I6.2": {"t": "Who bears the cost (shown after agent picks fault)", "l": "Insight", "v": "H", "reg": "Insights", "scen": "S6", "src": "M4.3", "note": ""}, "I6.3": {"t": "Cost falls on: Swiggy (refund after restaurant refused)", "l": "Insight", "v": "H", "reg": "Insights", "scen": "S8", "src": "Policy v1.2 §4", "note": ""}, "I3.1": {"t": "'Similar cases' button (agent opens)", "l": "Decision support", "v": "D", "reg": "Insights", "scen": "All", "src": "M0.2", "note": ""}, "I3.2": {"t": "Matched on: issue · conditions · evidence pattern", "l": "Insight", "v": "D", "reg": "Insights", "scen": "All", "src": "Step 3", "note": ""}, "I3.3": {"t": "2–3 reference case cards, differing outcomes", "l": "Decision support", "v": "D", "reg": "Insights", "scen": "All", "src": "Step 3", "note": ""}, "I3.4": {"t": "Label: 'Past case, for reference only. Not a recommendation'", "l": "System", "v": "D", "reg": "Insights", "scen": "All", "src": "Step 3", "note": ""}, "I3.5": {"t": "'No closely matching cases' state", "l": "System", "v": "H", "reg": "Insights", "scen": "All", "src": "Step 3", "note": ""}, "I4.1": {"t": "Full refund", "l": "Decision support", "v": "A", "reg": "Insights", "scen": "All", "src": "M7.4", "note": ""}, "I4.2": {"t": "Partial refund + item checkboxes + computed total", "l": "Decision support", "v": "A", "reg": "Insights", "scen": "All", "src": "M7.4", "note": ""}, "I4.3": {"t": "Deny", "l": "Decision support", "v": "A", "reg": "Insights", "scen": "All", "src": "", "note": ""}, "I4.4": {"t": "Send to review", "l": "Decision support", "v": "A", "reg": "Insights", "scen": "All", "src": "M8.3", "note": ""}, "I4.5": {"t": "Equal visual weight, no pre-selection (under test)", "l": "System", "v": "A", "reg": "Insights", "scen": "All", "src": "Owner: consider, not locked", "note": ""}, "I4.6": {"t": "Fault selection (customer / restaurant / rider / Swiggy)", "l": "Decision support", "v": "A", "reg": "Insights", "scen": "All", "src": "M4.3", "note": ""}, "I7.1": {"t": "Reviewer gets case log attached", "l": "Decision support", "v": "H", "reg": "Insights", "scen": "S3 S4", "src": "M8.3", "note": ""}, "I7.2": {"t": "Escalate when permission has no reply", "l": "Decision support", "v": "H", "reg": "Insights", "scen": "S5", "src": "M5.3", "note": ""}, "L1.1": {"t": "What was linked to which condition", "l": "Data", "v": "D", "reg": "Drawer", "scen": "All", "src": "M0.1", "note": ""}, "L1.2": {"t": "What was opened (Show older, similar cases)", "l": "Data", "v": "D", "reg": "Drawer", "scen": "All", "src": "M0.1", "note": ""}, "L1.3": {"t": "Decision + time + reasons", "l": "Data", "v": "D", "reg": "Drawer", "scen": "All", "src": "M0.1", "note": ""}, "S1.1": {"t": "Condition unknown (fact not available)", "l": "Insight", "v": "H", "reg": "Anywhere", "scen": "All", "src": "", "note": ""}, "S1.2": {"t": "Evidence missing", "l": "Insight", "v": "H", "reg": "Case info", "scen": "S2", "src": "", "note": ""}, "S1.3": {"t": "No history", "l": "Insight", "v": "H", "reg": "Case info", "scen": "S4", "src": "", "note": ""}, "S2.1": {"t": "Conflicting records", "l": "Insight", "v": "H", "reg": "Insights", "scen": "S3", "src": "", "note": ""}, "S2.2": {"t": "Outside claim window", "l": "Insight", "v": "H", "reg": "Insights", "scen": "S7", "src": "", "note": ""}, "S2.3": {"t": "Over approval limit", "l": "Insight", "v": "H", "reg": "Insights", "scen": "S3 S4", "src": "", "note": ""}, "S2.4": {"t": "First-time customer", "l": "Insight", "v": "H", "reg": "Insights", "scen": "S4", "src": "", "note": ""}, "S2.5": {"t": "Permission: no reply after 10 min", "l": "Insight", "v": "H", "reg": "Case info", "scen": "S5", "src": "", "note": ""}, "S2.6": {"t": "Permission refused (P6 not met + reason)", "l": "Insight", "v": "H", "reg": "Insights", "scen": "S8", "src": "Policy v1.2 §4", "note": ""}, "S3.1": {"t": "Loading / data not yet arrived", "l": "System", "v": "H", "reg": "Anywhere", "scen": "All", "src": "", "note": ""}, "S3.2": {"t": "Connection lost", "l": "System", "v": "H", "reg": "Anywhere", "scen": "All", "src": "", "note": ""}, "S3.3": {"t": "Empty queue", "l": "System", "v": "H", "reg": "Queue", "scen": "All", "src": "", "note": ""}, "X1.1": {"t": "Fraud / risk / trust score", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X1.2": {"t": "Customer value tier", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X1.3": {"t": "'Fraud user' flag", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X1.4": {"t": "'Likely at fault' suggestion", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X1.5": {"t": "AI image-tampering score", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X1.6": {"t": "'Verified' / 'Suspicious' badges on evidence", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X1.7": {"t": "Outcome counts in similar cases", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X1.8": {"t": "Agent names or star ranking", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X2.1": {"t": "Pre-selected Approve", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X2.2": {"t": "System-suggested refund amount", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X2.3": {"t": "Auto-send decision or reply", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X2.4": {"t": "Detecting that the agent is 'struggling'", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X2.5": {"t": "Trend arrows on history ('refunds rising')", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X2.6": {"t": "Priority score in queue", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X2.7": {"t": "Auto-routing to another team by complaint count", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}, "X2.8": {"t": "Predicted outcome for a review route", "l": "Never", "v": "—", "reg": "Nowhere", "scen": "All", "src": "Admissibility test", "note": ""}}, "subj": {"G1": "Agent identity + status", "G2": "Workspace tools", "G3": "Help + shortcuts", "Q1": "Active chat", "Q2": "Waiting chats", "Q3": "Queue rules", "C1": "Bot handover", "C2": "Live conversation", "C3": "Reply + templates", "C4": "Chat clock (new)", "M1": "Order + timeline", "M2": "Evidence", "M3": "Party records · 90 days", "M4": "Restaurant permission", "M5": "People involved (new)", "I1": "Status strip", "I2": "Policy conditions (P1–P8)", "I3": "Similar cases (agent opens)", "I4": "Decision", "I5": "Issue type + liability (new)", "I6": "Conflicting records + cost (new)", "I7": "Review routing (new)", "L1": "Case log", "S1": "Data states", "S2": "Case situations", "S3": "System states", "X1": "Banned verdicts + scores", "X2": "Banned behaviours"}};
+</script>
+<script>
+(function(){
+"use strict";
+const $=s=>document.querySelector(s);
+const frame=$('#frame'), stage=$('#stage');
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const rs=n=>'₹'+Number(n).toLocaleString('en-IN');
+const T=s=>{const p=s.split(':').map(Number);return p[0]*60+p[1]};
+const HM=m=>{m=Math.floor(((m%1440)+1440)%1440);return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')};
+const dur=m=>{m=Math.round(m);if(m<60)return m+' min';const h=Math.floor(m/60),r=m%60;return h+' h'+(r?' '+r+' min':'')};
+const T0=Date.now(), NOW0=T('21:12');
+const secs=()=>(Date.now()-T0)/1000;
+const nowM=()=>NOW0+secs()/60;
+const nowHM=()=>HM(nowM());
+
+/* ---------- frozen policy v1.3 (fictional values tagged as in the file) ---------- */
+const ISSUES={
+ 'Missing item':{liable:'Restaurant',p5:true,range:'item'},
+ 'Wrong item':{liable:'Restaurant',p5:true,range:'item'},
+ 'Damaged packaging':{liable:'Delivery partner or Swiggy',p5:true,range:'order'},
+ 'Quality or taste':{liable:'Restaurant',p5:true,range:null},
+ 'Non-delivery':{liable:'Delivery partner or Swiggy',p5:false,range:'order'},
+ 'Late delivery':{liable:'Delivery partner or Swiggy',p5:false,range:null}
+};
+const HANDBOOK=[
+ ['P1','Issue type is one of six types','Published + Borrowed'],['P2','Default liable party per issue type','Published + Borrowed'],
+ ['P3','Claim raised within 24 h of "delivered"','Hypothetical'],['P4','Cash on delivery: reported before "delivered"','Published'],
+ ['P5','At least one customer photo (missing, wrong, damaged, quality)','Hypothetical · v1.3'],['P6','Restaurant permission before any resolution','Published'],
+ ['P7','Amount within range: affected item value; damaged / non-delivery up to 100%','Published + Borrowed'],['P8','Up to ₹500 without review','Hypothetical'],
+ ['T1','Refund above ₹500','Borrowed'],['T2','First-time customer','Borrowed'],['T3','Outside the claim window','Borrowed'],['T4','Rider record and customer claim disagree','Hypothetical']
+];
+const TEMPLATES=[
+ ['P3','Within claim window','Your complaint was raised within our 24-hour claim window, so I can look at it right away.'],
+ ['P5','Photo received','Thanks for the photo. I have attached it to your case.'],
+ ['P6','Checking with the restaurant','I have asked the restaurant to confirm. I will update you as soon as they reply.'],
+ ['P8','Needs a second review','This refund needs a quick second review. You will hear from us within 48 hours.']
+];
+const ASK='Could you share a clear photo of the item you received, with the bag or bill if you still have it?';
+const REASONS=['Conditions checked; evidence supports the claim','Refunding after restaurant refused','Evidence does not support the claim','Amount outside the policy range','Needs a second reviewer','Other (see internal note)'];
+
+/* ---------- four fictional chats ---------- */
+const BASE={
+S2:{key:'S2',code:'WI',no:'#2041',order:'SW-2041',date:'Thu 8 Oct',placed:'19:32',restaurant:'Tandoor House',pay:'Prepaid (UPI)',cod:false,
+ items:[{n:'Paneer butter masala',q:1,p:240,aff:true},{n:'Butter naan',q:2,p:110}],
+ tl:[['Placed','','19:32'],['Accepted','','19:34'],['Prepared','','19:52'],['Picked up','','19:58'],['Delivered','OTP used','20:21']],
+ delivered:'20:21',complaint:'20:29',otp:'OTP used 20:21',ping:'Location ping at address 20:21',
+ photos:[{id:'p1',by:'Customer',origin:'Sent in afterwards',cap:'not recorded',sub:'21:09'}],
+ gaps:['Only evidence: 1 customer photo.','Customer photo sent 40 min after the complaint.'],
+ rec:{cust:['Customer','3 refunds / 7 orders',['14 Sep · Wrong item · ₹180 · Full refund','29 Aug · Missing item · ₹90 · Full refund','02 Aug · Quality · ₹120 · Partial refund'],['11 Jun · Missing item · ₹60 · Full refund','03 Apr · Late delivery · no refund']],
+      rest:['Restaurant','9 wrong-item / 1,860 orders',['06 Oct · Wrong item','01 Oct · Wrong item','27 Sep · Wrong item','+ 6 more within 90 days'],['Jun–Jul · 7 wrong-item / 1,540 orders']],
+      rider:['Rider','1 report / 412 deliveries',['19 Sep · Damaged packaging'],['No reports before 90 days']]},
+ perm:{st:'given',by:'Restaurant (Partner app)',req:'21:07',at:'21:09',reason:''},
+ people:{cust:'Aman K. · +91 ••••• ••427',rider:'R-118',first:'No'},
+ bot:{at:'20:37',picked:'Wrong item',said:'"I ordered paneer butter masala but got a different curry."',offered:'25% coupon on next order (20:34) · declined',steps:'Issue picker · Item picker · Coupon offer · Handover'},
+ msgs:[{w:'sys',t:'Riya joined',at:'21:03'},{w:'ag',t:"Hi Aman, I'm Riya from Swiggy support. I've read your chat with the bot.",at:'21:03'},{w:'ag',t:'Could you share a photo of the dish you received?',at:'21:05'},{w:'sys',t:'Restaurant permission requested',at:'21:07'},{w:'cu',t:'Ok one sec',at:'21:08'},{w:'cu',photo:'p1',at:'21:09'},{w:'sys',t:'Restaurant permission given',at:'21:09'},{w:'cu',t:'This is what came. Not what I ordered.',at:'21:09'}],
+ typing:true,replies:["It was some other curry. I don't eat chicken.",'Ok, thank you.'],
+ issue:'Wrong item',trig:[],conflict:null,wait:8*60,reply:192,
+ sim:[{c:'#1882 · 2 Oct',o:'Partial refund (affected item)',r:'Item value only',w:"I've refunded the price of the item that was wrong. You'll see it in 3–5 working days."},
+      {c:'#1740 · 27 Sep',o:'Sent to review',r:'Photo unclear',w:"I've passed your case to a colleague for a second review. You'll hear back within 48 hours."},
+      {c:'#1655 · 21 Sep',o:'Full refund',r:'Restaurant confirmed mix-up',w:"The restaurant confirmed the mix-up, so I've refunded the full order."}]},
+S5:{key:'S5',code:'WI',no:'#2057',order:'SW-2057',date:'Thu 8 Oct',placed:'20:02',restaurant:'Wok Express',pay:'Prepaid (card)',cod:false,
+ items:[{n:'Veg hakka noodles',q:1,p:180,aff:true},{n:'Spring rolls',q:1,p:80}],
+ tl:[['Placed','','20:02'],['Accepted','','20:03'],['Prepared','','20:18'],['Picked up','','20:22'],['Delivered','OTP used','20:40']],
+ delivered:'20:40',complaint:'20:46',otp:'OTP used 20:40',ping:'Location ping at address 20:40',
+ photos:[{id:'p1',by:'Customer',origin:'Sent in afterwards',cap:'not recorded',sub:'20:47'}],
+ gaps:['Only evidence: 1 customer photo.'],
+ rec:{cust:['Customer','0 refunds / 9 orders',['No refunds within 90 days'],['01 May · Missing item · ₹40 · Full refund']],
+      rest:['Restaurant','5 wrong-item / 1,240 orders',['03 Oct · Wrong item','22 Sep · Wrong item','+ 3 more within 90 days'],['Jun–Jul · 4 wrong-item / 1,100 orders']],
+      rider:['Rider','0 reports / 290 deliveries',['No reports within 90 days'],['No reports before 90 days']]},
+ perm:{st:'requested',by:'',req:'21:00',at:'',reason:''},
+ people:{cust:'Farhan S. · +91 ••••• ••903',rider:'R-342',first:'No'},
+ bot:{at:'20:49',picked:'Wrong item',said:'"Got chilli noodles instead of hakka noodles."',offered:'20% coupon (20:48) · declined',steps:'Issue picker · Item picker · Photo upload · Coupon offer · Handover'},
+ msgs:[{w:'sys',t:'Riya joined',at:'20:58'},{w:'ag',t:"Hi Farhan, I'm Riya. I can see the photo you shared with the bot.",at:'20:58'},{w:'sys',t:'Restaurant permission requested',at:'21:00'},{w:'cu',t:'How long will this take?',at:'21:06'}],
+ typing:false,replies:['Still waiting…','Fine, thanks.'],
+ issue:'Wrong item',trig:[],conflict:null,wait:400,reply:140,
+ sim:[{c:'#1901 · 3 Oct',o:'Full refund (affected item)',r:'Restaurant gave permission after escalation',w:"The restaurant has confirmed, so I've refunded the noodles."},
+      {c:'#1777 · 28 Sep',o:'Sent to review',r:'Restaurant did not reply',w:"I've passed your case on for review while we wait for the restaurant."},
+      {c:'#1698 · 24 Sep',o:'Partial refund',r:'Restaurant confirmed one item only',w:"I've refunded the item the restaurant confirmed was wrong."}]},
+S3:{key:'S3',code:'ND',no:'#2063',order:'SW-2063',date:'Thu 8 Oct',placed:'20:05',restaurant:'Hyderabadi Handi',pay:'Prepaid (card)',cod:false,
+ items:[{n:'Chicken biryani (family)',q:1,p:450,aff:true},{n:'Mirchi ka salan',q:1,p:80,aff:true},{n:'Double ka meetha',q:1,p:80,aff:true}],
+ tl:[['Placed','','20:05'],['Accepted','','20:06'],['Prepared','','20:24'],['Picked up','','20:31'],['Marked delivered','OTP not used','20:52']],
+ delivered:'20:52',complaint:'20:58',otp:'OTP not used',ping:'Location ping at address 20:52',
+ photos:[],gaps:['OTP not used at drop-off.'],
+ rec:{cust:['Customer','0 refunds / 22 orders',['No refunds within 90 days'],['No refunds before 90 days']],
+      rest:['Restaurant','6 complaints / 2,900 orders',['04 Oct · Quality','25 Sep · Missing item','+ 4 more within 90 days'],['Jun–Jul · 5 complaints / 2,600 orders']],
+      rider:['Rider','2 non-delivery / 388 deliveries',['30 Sep · Non-delivery','12 Sep · Non-delivery'],['22 May · Non-delivery']]},
+ perm:{st:'given',by:'Restaurant (Partner app)',req:'21:01',at:'21:03',reason:''},
+ people:{cust:'Neha R. · +91 ••••• ••215',rider:'R-207',first:'No'},
+ bot:{at:'21:00',picked:'Order not received',said:'"App says delivered but I never got anything."',offered:'Nothing offered (non-delivery goes to an agent)',steps:'Issue picker · Handover'},
+ msgs:[{w:'sys',t:'Riya joined',at:'21:00'},{w:'ag',t:"Hi Neha, I'm Riya. I'm checking the delivery record now.",at:'21:01'},{w:'cu',t:'Nobody came to my door. I was home the whole time.',at:'21:02'},{w:'sys',t:'Restaurant permission given',at:'21:03'}],
+ typing:false,replies:['The gate guard also says no one came.','Ok.'],
+ issue:'Non-delivery',trig:['T4'],conflict:{rider:['Marked delivered · 20:52','Location ping at address · 20:52','OTP not used'],cust:['"Not received" · 20:58','"Nobody came to my door" · 21:02']},wait:195,reply:260,
+ sim:[{c:'#1860 · 1 Oct',o:'Full refund',r:'OTP not used; no other record',w:"I've refunded the full order. Sorry it never reached you."},
+      {c:'#1712 · 26 Sep',o:'Sent to review',r:'Records conflict; above ₹500',w:"Because the records don't match, a colleague will review this within 48 hours."},
+      {c:'#1633 · 19 Sep',o:'Partial refund',r:'Part of order confirmed received',w:"I've refunded the items that didn't reach you."}]},
+S8:{key:'S8',code:'MI',no:'#2070',order:'SW-2070',date:'Thu 8 Oct',placed:'20:10',restaurant:'Dosa Corner',pay:'Prepaid (UPI)',cod:false,
+ items:[{n:'Masala dosa',q:1,p:160,aff:true},{n:'Filter coffee',q:2,p:120}],
+ tl:[['Placed','','20:10'],['Accepted','','20:11'],['Prepared','','20:28'],['Picked up','','20:33'],['Delivered','OTP used','20:50']],
+ delivered:'20:50',complaint:'20:55',otp:'OTP used 20:50',ping:'Location ping at address 20:50',
+ photos:[{id:'p1',by:'Customer',origin:'Sent in afterwards',cap:'not recorded',sub:'20:55'}],
+ gaps:['Only evidence: 1 customer photo.'],
+ rec:{cust:['Customer','1 refund / 12 orders',['18 Aug · Late delivery · ₹50 · Partial refund'],['No refunds before 90 days']],
+      rest:['Restaurant','3 missing-item / 980 orders',['29 Sep · Missing item','14 Sep · Missing item','02 Aug · Missing item'],['Jun–Jul · 2 missing-item / 870 orders']],
+      rider:['Rider','0 reports / 150 deliveries',['No reports within 90 days'],['No reports before 90 days']]},
+ perm:{st:'refused',by:'Restaurant (Partner app)',req:'21:02',at:'21:06',reason:'Item was packed'},
+ people:{cust:'Kiran P. · +91 ••••• ••588',rider:'R-511',first:'No'},
+ bot:{at:'20:58',picked:'Missing item',said:'"The dosa is missing, only the coffee came."',offered:'25% coupon (20:57) · declined',steps:'Issue picker · Item picker · Photo upload · Coupon offer · Handover'},
+ msgs:[{w:'cu',photo:'p1',at:'20:55'},{w:'sys',t:'Riya joined',at:'21:01'},{w:'ag',t:"Hi Kiran, I'm Riya. I've seen your photo and I'm checking with the restaurant.",at:'21:02'},{w:'sys',t:'Restaurant permission refused: "Item was packed"',at:'21:06'}],
+ typing:false,replies:['So what happens now?','Ok.'],
+ issue:'Missing item',trig:[],conflict:null,wait:50,reply:280,
+ sim:[{c:'#1874 · 2 Oct',o:'Full refund (affected item)',r:'Refunded after restaurant refused',w:"I've refunded the missing dosa. You'll see it in 3–5 working days."},
+      {c:'#1759 · 27 Sep',o:'Deny',r:'Evidence did not support the claim',w:"I've checked the order records and I'm not able to refund this item."},
+      {c:'#1681 · 22 Sep',o:'Sent to review',r:'Restaurant refused; customer disputed',w:"I've asked a colleague to review this within 48 hours."}]}
+};
+const ORDER=['S2','S5','S3','S8'];
+let S={}, A='S2', mode='use', away=false, toast='', toastT=null, typingT=null;
+function fresh(k){const b=JSON.parse(JSON.stringify(BASE[k]));Object.assign(b,{open:{},condOpen:null,linked:{},dec:null,part:[],fault:null,reason:'',decided:null,
+  log:[{at:b.msgs[0].at,t:'Agent opened the case'}].concat(b.perm.req?[{at:b.perm.req,t:'Requested restaurant permission'}]:[]).concat(b.perm.at?[{at:b.perm.at,t:'Restaurant '+(b.perm.st==='refused'?'refused: "'+b.perm.reason+'"':'gave permission')}]:[]),
+  draft:'',note:false,menu:null,drawer:null,ov:null,unread:k!=='S2'&&k!=='S3',older:{},confirmed:false,replyAt:secs()+b.reply,waitAt:secs()-b.wait,issueEdit:false,stick:true});return b}
+function resetAll(){S={};ORDER.forEach(k=>S[k]=fresh(k))}
+resetAll();
+const cur=()=>S[A];
+function log(t){cur().log.push({at:nowHM(),t})}
+function say(t){toast=t;clearTimeout(toastT);toastT=setTimeout(()=>{toast='';render()},2200)}
+
+/* ---------- policy checks ---------- */
+const total=s=>s.items.reduce((a,i)=>a+i.p,0);
+const rangeOf=s=>{const r=ISSUES[s.issue].range;if(!r)return null;return r==='order'?total(s):s.items.filter(i=>i.aff).reduce((a,i)=>a+i.p,0)};
+function amt(s){if(!s.dec)return null;if(s.dec==='full')return total(s);if(s.dec==='partial')return s.part.length?s.part.reduce((a,i)=>a+s.items[i].p,0):null;if(s.dec==='deny')return 0;return null}
+function permState(s){const p=s.perm;if(p.st==='requested'&&nowM()-T(p.req)>=10)return 'noreply';return p.st}
+function conds(s){
+ const out=[],a=amt(s),rg=rangeOf(s),iss=ISSUES[s.issue];
+ const m=T(s.complaint)-T(s.delivered);
+ out.push({id:'P3',sid:'I2.1',nm:'Claim window',st:m<=1440?'met':'no',f:'Complaint '+dur(m)+' after delivered · window 24 h',src:'Hypothetical'});
+ if(s.cod)out.push({id:'P4',sid:'I2.2',nm:'COD timing',st:'unk',f:'Cash on delivery',src:'Published'});
+ if(!iss.p5)out.push({id:'P5',sid:'I2.3',nm:'Evidence',st:'na',f:'Not required for '+s.issue.toLowerCase(),src:'Hypothetical · v1.3'});
+ else out.push({id:'P5',sid:'I2.3',nm:'Evidence',st:s.photos.length?'met':'no',f:s.photos.length?s.photos.length+' customer photo, sent in afterwards':'No customer photo yet',src:'Hypothetical · v1.3',ev:s.photos.map(p=>p.id)});
+ const ps=permState(s),p=s.perm;
+ out.push({id:'P6',sid:'I2.4',nm:'Restaurant permission',st:ps==='given'?'met':ps==='refused'?'no':'unk',
+   f:ps==='given'?'Given '+p.at:ps==='refused'?'Refused '+p.at+' · "'+p.reason+'"':ps==='notreq'?'Not requested':'Requested '+p.req+' · no reply '+dur(nowM()-T(p.req)),src:'Published',ev:['perm']});
+ if(rg==null)out.push({id:'P7',sid:'I2.5',nm:'Amount in range',st:'unk',f:'No published threshold for '+s.issue.toLowerCase(),src:'—',np:true});
+ else if(a==null)out.push({id:'P7',sid:'I2.5',nm:'Amount in range',st:'unk',f:'Amount not chosen · range up to '+rs(rg),src:'Published + Borrowed'});
+ else out.push({id:'P7',sid:'I2.5',nm:'Amount in range',st:a<=rg?'met':'no',f:rs(a)+' vs range up to '+rs(rg)+(ISSUES[s.issue].range==='item'?' (affected item)':' (order)'),src:'Published + Borrowed'});
+ if(a==null)out.push({id:'P8',sid:'I2.6',nm:'Approval limit',st:'unk',f:'Amount not chosen · limit ₹500',src:'Hypothetical'});
+ else out.push({id:'P8',sid:'I2.6',nm:'Approval limit',st:a<=500?'met':'no',f:rs(a)+(a<=500?' within':' over')+' ₹500 limit',src:'Hypothetical'});
+ return out}
+function trigs(s){const t=[];const a=amt(s);
+ if(a!=null&&a>500)t.push(['T1','Refund above ₹500','Borrowed']);
+ if(s.people.first==='Yes')t.push(['T2','First-time customer','Borrowed']);
+ if(T(s.complaint)-T(s.delivered)>1440)t.push(['T3','Late filing','Borrowed']);
+ if(s.trig.includes('T4'))t.push(['T4','Conflicting records','Hypothetical']);
+ return t}
+function costLine(s){
+ if(!s.dec||s.dec==='review')return null;
+ if(s.dec==='deny')return 'No refund · no cost moved';
+ if(!s.fault)return null;
+ if(permState(s)==='refused')return 'Swiggy (restaurant refused, '+s.perm.at+') · v1.2, Inferred';
+ return {Customer:'Swiggy (refund despite customer fault) · Inferred',Restaurant:'Restaurant',Rider:'Delivery partner',Swiggy:'Swiggy'}[s.fault]}
+const ST={met:['✓ Met',''],no:['✕ Not met','no'],unk:['? Unknown','unk'],na:['– N/A','na']};
+
+/* ---------- render ---------- */
+function exp(s,key,head,body,id,v){const o=!!s.open[key];return `<div class="exp${o?' open':''}" data-id="${id}" data-v="${v}"><button class="eh" data-act="tog" data-arg="${key}"><span>${head}</span></button>${o?`<div class="in">${body}</div>`:''}</div>`}
+function hdr(){const s=cur();const n=ORDER.filter(k=>S[k].decided).length;
+ return `<div class="hdr"><span class="logo" aria-hidden="true"></span><span class="ttl">Agent workspace</span>
+ <button class="pill" data-act="away" data-id="G1.1" data-v="A" data-f="status">${away?'○ Riya S. · Away':'● Riya S. · Online'} ▾</button>
+ <span class="pill mono" data-id="G1.2" data-v="A">4 assigned${n?' · '+n+' closed':''}</span><span class="sp"></span>
+ <button class="ibtn" data-act="ov" data-arg="search" data-id="G2.1" data-v="D" data-f="search">⌕ Search orders / customers</button>
+ <button class="ibtn" data-act="ov" data-arg="book" data-id="G3.2" data-v="D" data-f="book">Policy handbook v1.3</button>
+ <button class="ibtn" data-act="ov" data-arg="keys" data-id="G3.1" data-v="D" data-f="keys">? Shortcuts</button>
+ <button class="ibtn" data-act="theme" data-id="G2.2" data-v="D" data-f="theme">◐ Theme</button></div>`}
+function wait(k){const s=S[k];if(k!==A&&s.decided)return 'done';if(k===A)return 'open '+Math.floor((secs()-s.waitAt)/60)+'m';const w=Math.max(0,secs()-s.waitAt);return Math.floor(w/60)+':'+String(Math.floor(w%60)).padStart(2,'0')}
+function queue(){
+ const items=ORDER.map(k=>{const s=S[k];return `<button class="qi${k===A?' act':''}${s.decided?' done':''}" data-act="go" data-arg="${k}" ${k===A?'data-id="Q1.1" data-v="A"':'data-id="Q2.1–Q2.4" data-v="A"'}>${s.unread&&k!==A?'<span class="dot" aria-label="new message"></span>':''}<span class="ab">${s.decided?'✓':s.code}</span><span class="t" data-wait="${k}">${wait(k)}</span></button>`}).join('');
+ const wide=ORDER.map(k=>{const s=S[k];return `<button class="qi${k===A?' act':''}${s.decided?' done':''}" data-act="go" data-arg="${k}">${s.unread&&k!==A?'<span class="dot"></span>':''}<b>${s.no}</b> ${esc(s.issue)}${s.decided?' · closed':''}<span class="t" data-wait="${k}">${k===A?wait(k):'waiting '+wait(k)}</span><span style="font-size:10px;color:var(--mute)">Scenario ${k}</span></button>`}).join('');
+ return `<div class="col qcol" data-f="queue"><div class="qh" data-id="Q3.2" data-v="A">4</div><div class="qh" data-id="Q3.1" data-v="A" style="padding-top:0">by<br>wait</div>
+ <div class="q">${items}</div><div class="qx" data-id="Q3.3" data-v="A"><div class="qh" style="text-align:left">Your chats · 4 · sorted by wait</div>${wide}<div style="font-size:11px;color:var(--mute);padding:4px 2px">Alt + ↓ / ↑ to switch</div></div></div>`}
+function caseCol(){const s=cur(),ps=permState(s),p=s.perm;
+ const items=s.items.map((i,k)=>`<tr class="${i.aff?'aff':''}"><td>${i.q} × ${esc(i.n)}</td><td>${rs(i.p)}</td></tr>`).join('');
+ const tl=s.tl.map(r=>`<span>${r[0]}</span><span>${r[1]}</span><span class="mono">${r[2]}</span>`).join('')+`<span>Complaint</span><span></span><span class="mono">${s.complaint}</span><span class="cut">Claim window closes</span><span class="cut">P3 · 24 h</span><span class="mono cut">${HM(T(s.delivered))} next day</span>`;
+ const photos=s.photos.map(ph=>{const L=s.linked[ph.id]||[];return `<button class="tile" id="ev-${ph.id}" data-act="ev" data-arg="${ph.id}" data-id="M2.1–M2.4 · M2.9" data-v="A D" data-f="evtile"><div class="thumb">customer photo</div>
+  <div class="meta"><span class="chip">Customer photo</span><span class="chip">by ${ph.by}</span><span class="chip">${ph.origin}</span></div>
+  <div class="mono" data-id="M2.5" data-v="G" style="font-size:11.5px">Captured: ${ph.cap} · Submitted: ${ph.sub}</div>
+  <div style="font-size:11.5px;color:var(--mute)" data-id="I2.12" data-v="D">${L.length?'Linked to '+L.join(', '):'Not linked to a condition · click to view and link'}</div></button>`}).join('')||`<div class="gap" data-id="S1.2" data-v="H">No customer photos in this case.</div>`;
+ const rec=['cust','rest','rider'].map((r,ix)=>{const R=s.rec[r],k='rec-'+r,o=s.open[k];
+  return `<div class="rec" data-id="M3.${ix+1}" data-v="A"><span>${R[0]}</span><span class="n">${R[1]}</span><button class="lnk" data-act="tog" data-arg="${k}" data-f="dates-${r}">${o?'Hide':'Dates'}</button></div>
+  ${o?`<div class="lines" data-id="M3.4" data-v="D">${R[2].map(x=>`<span>${esc(x)}</span>`).join('')}${s.older[r]?R[3].map(x=>`<span class="old">${esc(x)} · older than 90 days</span>`).join(''):`<button class="lnk" data-act="older" data-arg="${r}" data-id="M3.8" data-v="D" style="justify-self:start;font-family:var(--sans)">Show older · logged</button>`}</div>`:''}`}).join('');
+ const label={given:'✓ Given',refused:'✕ Refused',requested:'… Requested',noreply:'! No reply after 10 min',notreq:'Not requested'}[ps];
+ let btns='';
+ if(ps==='notreq')btns=`<button class="btn" data-act="perm" data-arg="request">Request</button>`;
+ if(ps==='requested')btns=`<button class="btn ghost" data-act="perm" data-arg="remind">Remind</button>`;
+ if(ps==='noreply')btns=`<button class="btn ghost" data-act="perm" data-arg="remind">Remind</button><button class="btn" data-act="perm" data-arg="escalate" data-id="I7.2" data-v="H" data-f="escalate">Escalate</button>`;
+ return `<div class="col" id="colM"><div class="chd">Case information <span class="code">M</span><span class="sp"></span><span class="code">fictional · scenario ${s.key}</span></div>
+ <div class="sec"><div class="sh">Order <span class="sp"></span><span class="chip" data-id="M1.6" data-v="G">Food delivery</span></div>
+  <dl class="kv"><dt>Order</dt><dd class="mono" data-id="M1.1" data-v="A">${s.order} · ${s.date}, ${s.placed}</dd><dt>Restaurant</dt><dd data-id="M1.2" data-v="A">${s.restaurant}</dd>
+  <dt>Payment</dt><dd data-id="M1.5" data-v="A">${s.pay}</dd><dt>Complaint</dt><dd class="mono" data-id="M1.13" data-v="A">${s.complaint} · ${dur(T(s.complaint)-T(s.delivered))} after delivered</dd></dl>
+  <table class="items" data-id="M1.3 · M1.4" data-v="A">${items}<tr class="tot"><td>Order total</td><td>${rs(total(s))}</td></tr></table>
+  ${exp(s,'tl',`Timeline · <span class="mono">${s.tl[s.tl.length-1][0].toLowerCase()} ${s.delivered}</span> · ${s.tl[s.tl.length-1][1]}`,`<div class="tl">${tl}</div>`,'M1.7–M1.14','G')}</div>
+ <div class="sec"><div class="sh">Evidence <span class="sp"></span><span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mute)">riders and restaurants log no photos (v1.3)</span></div>
+  ${s.gaps.map((g,i)=>`<div class="gap" data-id="${i===0?'M2.7':'M2.8'}" data-v="H">${esc(g)}</div>`).join('')}
+  ${photos}
+  <div class="sysrec" data-id="M1.11 · M1.12" data-v="G"><span style="color:var(--mute)">System records:</span><span class="chip">${s.otp}</span><span class="chip">${s.ping}</span></div></div>
+ <div class="sec"><div class="sh">Party records · 90 days <span class="sp"></span><span class="ctx" data-id="M3.7" data-v="A">Context, not a policy condition</span></div>${rec}
+  ${exp(s,'today','Open complaints today: none','No other open complaint for any of the three parties.','M3.5','G')}</div>
+ <div class="sec" id="perm" data-f="perm"><div class="sh">Restaurant permission <span class="code" style="text-transform:none">P6</span></div>
+  <div class="perm"><div class="row"><span class="pst${ps==='given'||ps==='refused'?'':' unk'}" data-id="M4.1" data-v="A">${label}</span>
+   <span class="mono" data-id="M4.2" data-v="A">${p.at?p.at+' · ':''}requested ${p.req||'—'}${(ps==='requested'||ps==='noreply')?' · '+dur(nowM()-T(p.req))+' ago':''}</span><span class="sp"></span>${btns?`<span class="row" data-id="M4.4" data-v="A">${btns}</span>`:''}</div>
+   ${p.by?`<span data-id="M4.5" data-v="A">${ps==='refused'?'Refused':'Given'} by: ${p.by}</span>`:''}
+   ${ps==='refused'?`<span data-id="M4.3" data-v="H">Restaurant's reason: "${esc(p.reason)}"</span>`:''}</div></div>
+ <div class="sec">${exp(s,'ppl','People · '+s.people.cust.split(' · ')[0]+' · rider '+s.people.rider,`<span>Customer: ${s.people.cust}</span><span>Rider ID: ${s.people.rider}</span><span>First order with Swiggy: ${s.people.first}</span>`,'M5.1–M5.3','G')}</div></div>`}
+function msgHTML(m,s){
+ if(m.w==='sys')return `<div class="sys">${esc(m.t)} · ${m.at}</div>`;
+ if(m.photo)return `<div class="m cu" style="padding:6px"><button class="photo" data-act="ev" data-arg="${m.photo}" data-id="C2.2" data-v="A" id="chat-${m.photo}">photo · ${m.at}</button><small>${m.at}</small></div>`;
+ return `<div class="m ${m.w}" data-id="C2.1" data-v="A">${esc(m.t)}<small>${m.at}</small></div>`}
+function replyClock(){const s=cur(),r=Math.round(s.replyAt-secs());const a=Math.abs(r);const t=Math.floor(a/60)+':'+String(a%60).padStart(2,'0');return {txt:r>=0?'Reply by '+t:'Overdue '+t,low:r<60}}
+function chatCol(){const s=cur(),rc=replyClock();
+ let menu='';
+ if(s.menu==='tpl')menu=`<div class="menu" data-id="C3.2" data-v="D"><div class="mh">Templates · each cites its condition</div>${TEMPLATES.map((t,i)=>`<button data-act="tpl" data-arg="${i}"><b>${t[0]}</b> · ${t[1]}<br><span style="color:var(--mute)">${esc(t[2])}</span></button>`).join('')}</div>`;
+ const ref=s.decided?`<div class="refw" data-id="C3.4" data-v="H"><b>Reference wording from similar cases · available after your decision</b>${s.sim.slice(0,2).map((c,i)=>`<button class="lnk" data-act="ref" data-arg="${i}" style="text-align:left">"${esc(c.w)}"</button>`).join('')}</div>`:'';
+ return `<div class="col" style="overflow:hidden"><div class="chat">
+ <div class="chd">Chat · ${s.order} <span class="chip" data-id="C2.4" data-v="G">English</span><span class="sp"></span><span class="clock${rc.low?' low':''}" data-id="C4.1" data-v="A" data-clock="reply">◷ ${rc.txt}</span></div>
+ <div class="msgs" id="msgs"><div class="hand" data-id="C1.1–C1.3" data-v="A"><div class="sh">Bot handover · ${s.bot.at}</div>
+  <div class="r"><b>Picked in bot</b><span>${s.bot.picked}</span></div><div class="r"><b>Customer said</b><span>${esc(s.bot.said)}</span></div><div class="r"><b>Bot offered</b><span>${esc(s.bot.offered)}</span></div>
+  ${exp(s,'bot','Bot steps',esc(s.bot.steps),'C1.4','D')}</div>
+  ${s.msgs.map(m=>msgHTML(m,s)).join('')}
+  ${s.typing?`<div class="typing" data-id="C2.3" data-v="A">${s.people.cust.split(' ')[0]} is typing…</div>`:''}</div>
+ <div class="reply${s.note?' noteMode':''}">${menu}${ref}
+  <textarea id="ta" data-id="C3.1" data-v="A" placeholder="${s.note?'Internal note: not sent to the customer':'Type a reply… (Ctrl + Enter to send)'}" aria-label="Reply">${esc(s.draft)}</textarea>
+  <div class="row"><button class="btn ghost" data-act="menu" data-arg="tpl" data-id="C3.2" data-v="D" data-f="tpl">Templates</button>
+  <button class="btn ghost" data-act="ask" data-id="C3.3" data-v="D" data-f="ask">Ask for evidence</button>
+  <button class="btn ${s.note?'':'ghost'}" data-act="note" data-id="C3.5" data-v="D" data-f="note" aria-pressed="${s.note}">${s.note?'Writing note ✓':'Internal note'}</button>
+  <span class="sp"></span><button class="btn pri" data-act="send" data-f="send">${s.note?'Add note':'Send'}</button></div></div></div></div>`}
+function insCol(){const s=cur(),C=conds(s),TR=trigs(s),ps=permState(s),a=amt(s);
+ const claimLeft=T(s.delivered)+1440-nowM();
+ const cnt={met:0,no:0,unk:0,na:0};C.forEach(c=>cnt[c.st]++);
+ const rows=C.map(c=>{const o=s.condOpen===c.id,L=Object.keys(s.linked).filter(k=>s.linked[k].includes(c.id));
+  return `<button class="cr" aria-expanded="${o}" data-act="cond" data-arg="${c.id}" data-id="${c.sid} · I2.7" data-v="A"><span class="st ${ST[c.st][1]}">${ST[c.st][0]}</span><span style="min-width:0;display:flex;gap:6px"><span class="nm">${c.id} ${c.nm}</span><span class="f">${esc(c.f)}</span></span><span class="lk">${L.length?'⧉'+L.length:''}</span></button>
+  ${o?`<div class="cdet"><span data-id="I2.8" data-v="G">Source: ${c.src}</span>${c.np?`<span data-id="I2.9" data-v="H">Swiggy publishes no threshold for this issue type.</span>`:''}<span>${esc(c.f)}</span>
+   <span data-id="I2.10" data-v="G">${c.ev&&c.ev.length?'Evidence: '+c.ev.map(e=>e==='perm'?'permission record (M4)':'customer photo').join(', ')+' · highlighted in case information':'No evidence item for this condition'}${L.length?' · you linked: '+L.map(()=>'customer photo').join(', '):''}</span></div>`:''}`}).join('');
+ const tchips=TR.length?TR.map(t=>`<span class="chip on">⚑ ${t[0]} ${t[1]} · ${t[2]}</span>`).join(''):'<span class="chip">No review triggers</span>';
+ const part=s.dec==='partial'?`<div class="part" data-id="I4.2" data-v="A">${s.items.map((i,k)=>`<label><input type="checkbox" data-chg="part" value="${k}" id="pt-${s.key}-${k}" ${s.part.includes(k)?'checked':''}> ${i.q} × ${esc(i.n)} · ${rs(i.p)}${i.aff?' · in complaint':''}</label>`).join('')}<span>Refund total: <b class="mono">${a==null?'₹0':rs(a)}</b></span></div>`:'';
+ const cl=costLine(s);
+ let low='';
+ if(s.decided){const d=s.decided;low=`<div class="done" data-id="L1.3" data-v="D"><b>Decision recorded · ${d.at}</b><span>${d.label}${d.amount!=null&&d.type!=='deny'?' · '+rs(d.amount):''}${d.fault?' · fault: '+d.fault:''}</span>${d.cost?`<span>Cost falls on: ${d.cost}</span>`:''}<span>Reason: ${esc(d.reason)}</span>${d.type==='review'?'<span data-id="I7.1" data-v="H">Case log attached for the reviewer.</span>':''}<div class="row"><button class="btn ghost" data-act="reopen">Reopen (demo)</button><button class="btn ghost" data-act="drawer" data-arg="log">View case log</button></div></div>`}
+ else{
+  const segs=['Customer','Restaurant','Rider','Swiggy'].map(f=>`<button class="seg" aria-pressed="${s.fault===f}" data-act="fault" data-arg="${f}">${f}</button>`).join('');
+  const D=[['full','Full refund'],['partial','Partial'],['deny','Deny'],['review','Send to review']].map(d=>`<button aria-pressed="${s.dec===d[0]}" data-act="dec" data-arg="${d[0]}">${d[1]}</button>`).join('');
+  let conf='';
+  if(s.dec){const need=s.dec!=='review'&&!s.fault;const lab={full:'Full refund',partial:'Partial refund',deny:'Deny',review:'Send to review'}[s.dec];
+   conf=`<div class="confirm" data-f="confirm"><b>Check before confirming</b><span>${lab}${a!=null&&s.dec!=='deny'?' · '+rs(a):''}${s.fault?' · fault: '+s.fault:''}</span>
+   <span>Conditions: ${cnt.met} met · ${cnt.no} not met · ${cnt.unk} unknown${cnt.na?' · '+cnt.na+' N/A':''} · Triggers: ${TR.length?TR.map(t=>t[0]).join(', '):'none'}</span>
+   ${s.dec==='review'?'<span data-id="I7.1" data-v="H">The full case log goes to the reviewer.</span>':''}
+   <label class="row">Reason <select data-chg="reason" id="rs-${s.key}"><option value="">Choose…</option>${REASONS.map(r=>`<option${s.reason===r?' selected':''}>${r}</option>`).join('')}</select></label>
+   <div class="row"><button class="btn pri" data-act="confirm" ${(!s.reason||need||(s.dec==='partial'&&!s.part.length))?'disabled':''}>Confirm</button><button class="btn ghost" data-act="cancel">Cancel</button>
+   <span style="color:var(--mute)">${need?'Choose a fault first.':s.dec==='partial'&&!s.part.length?'Tick at least one item.':!s.reason?'Choose a reason.':''}</span></div></div>`}
+  low=`<div class="row" data-id="I4.6" data-v="A" style="font-size:12px">Fault: ${segs}</div>${part}
+   ${cl?`<div class="cost" data-id="${permState(s)==='refused'?'I6.3':'I6.2'}" data-v="H">Cost falls on: <b>${cl}</b></div>`:''}
+   <div class="dbtn" data-id="I4.1–I4.5" data-v="A" data-f="dec">${D}</div>${conf}`}
+ return `<div class="col" style="overflow:hidden"><div class="ins">
+ <div class="chd">Insights + decision <span class="code">I</span><span class="sp"></span><button class="btn ghost" data-act="drawer" data-arg="log" data-id="L1.1–L1.3" data-v="D" data-f="log">Case log · ${s.log.length}</button></div>
+ <div class="insc" id="insc">
+  <div class="sec"><div class="strip" data-id="I1.1" data-v="A"><div class="ck">Claim window<b data-clock="claim">${claimLeft>0?Math.floor(claimLeft/60)+' h '+String(Math.floor(claimLeft%60)).padStart(2,'0')+' m':'Closed'}</b></div><div class="ck">Reply by<b data-clock="reply2">${replyClock().txt.replace('Reply by ','')}</b></div><div class="ck">Regulatory<b>by 8 Nov</b></div></div>
+   <div class="chips"><span data-id="I1.2" data-v="A" style="display:contents">${tchips}</span><span class="chip" data-id="I1.3" data-v="A">Permission: ${{given:'✓ given',refused:'✕ refused',requested:'… requested',noreply:'! no reply',notreq:'not requested'}[ps]}</span>
+   <span class="chip" data-id="I1.4" data-v="A">History: C ${s.rec.cust[1].split(' / ')[0].split(' ')[0]}/${s.rec.cust[1].split(' / ')[1].split(' ')[0]} · R ${s.rec.rest[1].split(' ')[0]}/${s.rec.rest[1].split(' / ')[1].split(' ')[0]} · Rd ${s.rec.rider[1].split(' ')[0]}/${s.rec.rider[1].split(' / ')[1].split(' ')[0]}</span></div></div>
+  <div class="sec"><div class="row" style="font-size:12.5px"><span data-id="I5.1" data-v="A"><b>${s.issue}</b> <span style="color:var(--mute)">(P1, ${s.confirmed?'confirmed':'from bot'})</span></span><span class="sp"></span>
+   ${s.issueEdit?`<select data-chg="issue" id="iss-${s.key}">${Object.keys(ISSUES).map(k=>`<option${k===s.issue?' selected':''}>${k}</option>`).join('')}</select>`:`<button class="btn ghost" data-act="iconf" data-id="I5.3" data-v="A" data-f="issue" ${s.confirmed?'disabled':''}>Confirm</button><button class="btn ghost" data-act="iedit">Change</button>`}</div>
+   <div style="font-size:12px;color:var(--ink2)" data-id="I5.2" data-v="A">Default liable party: ${ISSUES[s.issue].liable} <span class="chip">P2</span></div></div>
+  ${s.conflict?`<div class="sec" data-id="I6.1 · S2.1" data-v="H"><div class="sh">Records side by side · T4</div><div class="side"><div><b>Rider record</b>${s.conflict.rider.map(x=>`<span>${esc(x)}</span>`).join('')}</div><div><b>Customer</b>${s.conflict.cust.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div></div>`:''}
+  <div class="sec"><div class="sh">Policy conditions <span class="sp"></span><span style="text-transform:none;letter-spacing:0;font-weight:400;color:var(--mute)" data-id="I2.11" data-v="A">click a row for source + evidence</span></div>
+   <div class="conds" data-f="conds">${rows}</div>
+   <button class="btn ghost" data-act="drawer" data-arg="sim" data-id="I3.1" data-v="D" data-f="sim" style="justify-self:start">Similar cases</button></div>
+ </div><div class="dec">${low}</div></div></div>`}
+function drawers(){const s=cur();
+ if(s.drawer==='sim'){const C=conds(s);return `<div class="drw"><div class="dh">Similar cases <span class="sp"></span><button class="btn ghost" data-act="close">Close</button></div><div class="db">
+  <div class="warnlbl" data-id="I3.4" data-v="D">Past cases, for reference only. Not a recommendation.</div>
+  <div style="color:var(--ink2)" data-id="I3.2" data-v="D">Matched on: ${s.issue.toLowerCase()} · ${C.map(c=>c.id+' '+(c.st==='met'?'met':c.st==='no'?'not met':c.st==='na'?'N/A':'unknown')).join(', ')} · ${s.photos.length?'customer photo':'no photo'}, ${s.otp.toLowerCase()}</div>
+  ${s.sim.map((c,i)=>`<div class="pc" ${i===0?'data-id="I3.3" data-v="D"':''}><b>Case ${c.c}</b><span>Same issue, conditions and evidence pattern</span><span>Outcome: ${c.o} · reason given: ${c.r}</span></div>`).join('')}
+  <div style="font-size:11.5px;color:var(--mute)">No counts and no agent names. Reply wording from these cases appears in the reply box only after you record a decision (C3.4).</div></div></div>`}
+ if(s.drawer==='log')return `<div class="drw"><div class="dh">Case log · ${s.order} <span class="sp"></span><button class="btn ghost" data-act="close">Close</button></div><div class="db"><div class="log">${s.log.map(l=>`<span>${l.at}</span><span>${esc(l.t)}</span>`).join('')}</div><div style="font-size:11.5px;color:var(--mute)">This is what a reviewer or auditor reads: what was linked, opened and decided.</div></div></div>`;
+ return ''}
+function overlay(){const s=cur();if(!s.ov)return '';let h='',b='';
+ if(s.ov.t==='ev'){const ph=s.photos.find(p=>p.id===s.ov.id);const L=s.linked[ph.id]||[];const C=conds(s).filter(c=>c.st!=='na');h='Evidence · customer photo';
+  b=`<div class="big">full-size customer photo (placeholder)</div><table class="ptab"><tr><td>Type</td><td>Customer photo</td></tr><tr><td>Supplied by</td><td>${ph.by}</td></tr><tr><td>Origin</td><td>${ph.origin}</td></tr><tr><td>Captured at</td><td>${ph.cap} (no time in the file)</td></tr><tr><td>Submitted at</td><td>${ph.sub}</td></tr></table>
+  <div class="row" data-id="I2.12" data-v="D">Link to condition <select id="lk-sel">${C.map(c=>`<option value="${c.id}">${c.id} ${c.nm}</option>`).join('')}</select><button class="btn" data-act="link" data-arg="${ph.id}">Link · logged</button></div>
+  <span style="color:var(--ink2)">${L.length?'Linked to: '+L.join(', '):'Not linked yet.'}</span><span style="font-size:11.5px;color:var(--mute)">No "verified" or "suspicious" label is ever shown (X1.6).</span>`}
+ if(s.ov.t==='search'){h='Search orders / customers';const q=(s.ov.q||'').toLowerCase();const r=ORDER.filter(k=>{const x=S[k];return !q||(x.order+' '+x.no+' '+x.people.cust+' '+x.restaurant+' '+x.issue).toLowerCase().includes(q)});
+  b=`<input id="sq" placeholder="Order no., customer or restaurant" value="${esc(s.ov.q||'')}" aria-label="Search">${r.map(k=>`<button class="pc" style="text-align:left;cursor:pointer;background:var(--paper)" data-act="go" data-arg="${k}"><b>${S[k].order} · ${S[k].issue}</b><span>${S[k].people.cust.split(' · ')[0]} · ${S[k].restaurant}</span></button>`).join('')||'<span>No match in today\'s orders.</span>'}`}
+ if(s.ov.t==='book'){h='Policy handbook · frozen policy v1.3';b=`<table class="ptab">${HANDBOOK.map(r=>`<tr><td class="mono">${r[0]}</td><td>${r[1]}</td><td><span class="chip">${r[2]}</span></td></tr>`).join('')}</table><span style="font-size:11.5px;color:var(--mute)">Hypothetical and Borrowed values are a working set, not Swiggy's published policy.</span>`}
+ if(s.ov.t==='keys'){h='Keyboard shortcuts';b=`<table class="ptab"><tr><td class="mono">Alt + ↓ / ↑</td><td>Next / previous chat</td></tr><tr><td class="mono">Ctrl + Enter</td><td>Send reply</td></tr><tr><td class="mono">Alt + L</td><td>Open case log</td></tr><tr><td class="mono">Alt + S</td><td>Open similar cases</td></tr><tr><td class="mono">Esc</td><td>Close drawer or dialog</td></tr></table>`}
+ return `<div class="scrim" data-act="scrim"><div class="ov" role="dialog" aria-label="${h}"><div class="dh">${h}<span class="sp"></span><button class="btn ghost" data-act="close">Close</button></div><div class="db">${b}</div></div></div>`}
+function render(){
+ const keep={};['colM','msgs','insc'].forEach(id=>{const e=document.getElementById(id);if(e)keep[id]=e.scrollTop});
+ const fa=document.activeElement&&document.activeElement.id;
+ frame.innerHTML=hdr()+`<div class="cols">${queue()}${caseCol()}${chatCol()}${insCol()}</div>`+drawers()+overlay()+(toast?`<div class="toast">${esc(toast)}</div>`:'');
+ ['colM','insc'].forEach(id=>{const e=document.getElementById(id);if(e&&keep[id]!=null)e.scrollTop=keep[id]});
+ const m=document.getElementById('msgs');if(m){if(cur().stick){m.scrollTop=m.scrollHeight;cur().stick=false}else if(keep.msgs!=null)m.scrollTop=keep.msgs}
+ if(fa){const e=document.getElementById(fa);if(e){e.focus();if(e.setSelectionRange&&e.value!=null&&e.tagName!=='SELECT')try{e.setSelectionRange(e.value.length,e.value.length)}catch(_){}}}
+ const s=cur();document.querySelectorAll('.lit').forEach(x=>x.classList.remove('lit'));
+ if(s.condOpen){const c=conds(s).find(x=>x.id===s.condOpen);(c&&c.ev||[]).forEach(e=>{if(e==='perm'){const p=document.getElementById('perm');p&&p.classList.add('lit')}else{['ev-'+e,'chat-'+e].forEach(id=>{const x=document.getElementById(id);x&&x.classList.add('lit')})}})}
+ if(picked){const el=frame.querySelector(`[data-id="${picked}"]`);el&&el.classList.add('picked')}
+ drawFold()}
+
+/* ---------- actions ---------- */
+const ACT={
+ go(k){if(!S[k])return;const c=S[A];if(c){c.ov=null;c.menu=null}A=k;S[k].unread=false;S[k].stick=true;S[k].ov=null;},
+ tog(k){const s=cur();s.open[k]=!s.open[k]},
+ away(){away=!away;say(away?'Status: Away. No new chats will be assigned.':'Status: Online')},
+ theme(){const r=document.documentElement;const dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);r.setAttribute('data-theme',dark?'light':'dark')},
+ ov(t){cur().ov={t}},
+ close(){const s=cur();s.ov=null;s.drawer=null;s.menu=null},
+ scrim(_,el,e){if(e.target===el){cur().ov=null;return}return false},
+ drawer(d){const s=cur();s.drawer=s.drawer===d?null:d;if(d==='sim'&&s.drawer)log('Opened similar cases')},
+ ev(id){cur().ov={t:'ev',id}},
+ link(id){const s=cur();const v=document.getElementById('lk-sel').value;s.linked[id]=s.linked[id]||[];if(!s.linked[id].includes(v)){s.linked[id].push(v);log('Linked customer photo to '+v)};say('Linked to '+v+' · logged')},
+ older(r){const s=cur();s.older[r]=true;log('Opened older history: '+s.rec[r][0].toLowerCase())},
+ perm(a){const s=cur(),p=s.perm;
+  if(a==='request'){p.st='requested';p.req=nowHM();log('Requested restaurant permission');s.msgs.push({w:'sys',t:'Restaurant permission requested',at:nowHM()});s.stick=true}
+  if(a==='remind'){log('Reminded restaurant');say('Reminder sent to the restaurant · logged')}
+  if(a==='escalate'){log('Escalated: restaurant did not reply after 10 min');say('Escalated to restaurant support · logged')}},
+ cond(id){const s=cur();s.condOpen=s.condOpen===id?null:id},
+ menu(m){const s=cur();s.menu=s.menu===m?null:m},
+ tpl(i){const s=cur();s.draft=(s.draft?s.draft+' ':'')+TEMPLATES[i][2];s.menu=null;setTimeout(()=>{const t=$('#ta');t&&t.focus()})},
+ ask(){const s=cur();s.draft=(s.draft?s.draft+' ':'')+ASK;setTimeout(()=>{const t=$('#ta');t&&t.focus()})},
+ ref(i){const s=cur();s.draft=s.sim[i].w;setTimeout(()=>{const t=$('#ta');t&&t.focus()})},
+ note(){const s=cur();s.note=!s.note},
+ send(){const s=cur();const t=(s.draft||'').trim();if(!t){say('Type a message first.');return}
+  if(s.note){s.msgs.push({w:'note',t,at:nowHM()});log('Internal note added');s.note=false}
+  else{s.msgs.push({w:'ag',t,at:nowHM()});s.replyAt=secs()+300;s.typing=false}
+  s.draft='';s.stick=true},
+ iconf(){const s=cur();s.confirmed=true;log('Confirmed issue category: '+s.issue)},
+ iedit(){cur().issueEdit=true},
+ fault(f){const s=cur();s.fault=s.fault===f?null:f},
+ dec(d){const s=cur();s.dec=s.dec===d?null:d;if(s.dec!=='partial')s.part=[];s.reason=''},
+ cancel(){const s=cur();s.dec=null;s.part=[];s.reason=''},
+ confirm(){const s=cur();const a=amt(s);const lab={full:'Full refund',partial:'Partial refund',deny:'Deny',review:'Sent to review'}[s.dec];
+  s.decided={type:s.dec,label:lab,amount:a,fault:s.fault,cost:costLine(s),reason:s.reason,at:nowHM()};
+  const C=conds(s);log('Decision: '+lab+(a!=null&&s.dec!=='deny'?' '+rs(a):'')+(s.fault?' · fault '+s.fault:'')+' · reason: '+s.reason+' · conditions '+C.map(c=>c.id+' '+c.st).join(', '));
+  if(s.dec==='review')log('Case log attached for reviewer · triggers: '+(trigs(s).map(t=>t[0]).join(', ')||'none'));
+  say('Decision recorded · '+lab)},
+ reopen(){const s=cur();log('Decision reopened (demo)');s.decided=null;s.dec=null;s.part=[];s.reason=''}
+};
+let picked=null;
+frame.addEventListener('click',e=>{
+ if(mode==='insp'){const el=e.target.closest('[data-id]');e.preventDefault();e.stopPropagation();if(el)showSheet(el.dataset.id);return}
+ const a=e.target.closest('[data-act]');if(!a||!frame.contains(a))return;
+ const fn=ACT[a.dataset.act];if(!fn)return;if(fn(a.dataset.arg,a,e)===false)return;render()},true);
+frame.addEventListener('change',e=>{const el=e.target,s=cur();const c=el.dataset.chg;if(!c)return;
+ if(c==='part'){const k=+el.value;s.part=el.checked?[...s.part,k]:s.part.filter(x=>x!==k)}
+ if(c==='reason')s.reason=el.value;
+ if(c==='issue'){const old=s.issue;s.issue=el.value;s.issueEdit=false;s.confirmed=true;if(old!==s.issue)log('Changed issue category: '+old+' → '+s.issue);else log('Confirmed issue category: '+s.issue)}
+ render()});
+frame.addEventListener('input',e=>{if(e.target.id==='ta')cur().draft=e.target.value;if(e.target.id==='sq'){cur().ov.q=e.target.value;render()}});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'){ACT.close();hideSheet();render();return}
+ if(e.altKey&&(e.key==='ArrowDown'||e.key==='ArrowUp')){e.preventDefault();const i=ORDER.indexOf(A);ACT.go(ORDER[(i+(e.key==='ArrowDown'?1:3))%4]);render()}
+ if(e.altKey&&(e.key==='l'||e.key==='L')){e.preventDefault();ACT.drawer('log');render()}
+ if(e.altKey&&(e.key==='s'||e.key==='S')){e.preventDefault();ACT.drawer('sim');render()}
+ if(e.ctrlKey&&e.key==='Enter'&&document.activeElement&&document.activeElement.id==='ta'){e.preventDefault();ACT.send();render()}});
+
+/* ---------- simulate (demo controls) ---------- */
+$('#sim-cust').onclick=()=>{const s=cur();if(!s.replies.length){say('No more scripted replies in this chat.');render();return}s.typing=true;s.stick=true;render();clearTimeout(typingT);
+ typingT=setTimeout(()=>{s.typing=false;s.msgs.push({w:'cu',t:s.replies.shift(),at:nowHM()});s.stick=true;render()},1400)};
+$('#sim-give').onclick=()=>{const s=cur(),p=s.perm;if(p.st==='given'){say('Permission is already given.');render();return}p.st='given';p.by='Restaurant (Partner app)';p.at=nowHM();if(!p.req)p.req=nowHM();p.reason='';log('Restaurant gave permission');s.msgs.push({w:'sys',t:'Restaurant permission given',at:nowHM()});s.stick=true;render()};
+$('#sim-refuse').onclick=()=>{const s=cur(),p=s.perm;p.st='refused';p.by='Restaurant (Partner app)';p.at=nowHM();if(!p.req)p.req=nowHM();p.reason='Item was packed correctly';log('Restaurant refused: "'+p.reason+'"');s.msgs.push({w:'sys',t:'Restaurant permission refused: "'+p.reason+'"',at:nowHM()});s.stick=true;render()};
+$('#sim-reset').onclick=()=>{resetAll();A='S2';render();say('All four chats reset');render()};
+
+/* ---------- toolbar ---------- */
+function tog(id,fn){const b=document.getElementById(id);b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);fn(on)})}
+function setMode(m){mode=m;$('#m-use').setAttribute('aria-pressed',m==='use');$('#m-insp').setAttribute('aria-pressed',m==='insp');frame.classList.toggle('insp',m==='insp');if(m==='use')hideSheet();else showSheetIntro()}
+$('#m-use').onclick=()=>setMode('use');$('#m-insp').onclick=()=>setMode('insp');
+tog('t-ids',on=>frame.classList.toggle('ids',on));
+tog('t-size',on=>{stage.classList.toggle('actual',on);fit()});
+let fold=false;tog('t-fold',on=>{fold=on;drawFold()});
+document.querySelectorAll('.vis').forEach(b=>b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);frame.classList.toggle('hl'+b.dataset.k,on)}));
+function drawFold(){frame.querySelectorAll('.fold').forEach(f=>f.remove());if(!fold)return;
+ frame.querySelectorAll('#colM,#insc,#msgs').forEach(c=>{if(c.scrollHeight>c.clientHeight+2){const f=document.createElement('div');f.className='fold';f.style.top=(c.offsetTop+c.clientHeight-2)+'px';f.style.left=c.offsetLeft+'px';f.style.width=c.clientWidth+'px';f.style.right='auto';c.offsetParent.appendChild(f)}})}
+function fit(){if(stage.classList.contains('actual')){stage.style.height='902px';return}const s=Math.min(1,stage.clientWidth/1442);frame.style.transform='scale('+s+')';stage.style.height=(902*s)+'px'}
+addEventListener('resize',fit);
+
+/* ---------- inspector ---------- */
+const VN={A:'Always visible',G:'Glance: chip or row that expands',D:'On demand: behind a button',H:'Only when that state happens','—':'Never shown'};
+const HOW={
+ G1:"Shows who is working and whether new chats can arrive. Click switches Online / Away. The count is workload only: no ranking or performance score (X1.8).",
+ G2:"Search finds today's orders by order number, customer or restaurant and opens that chat. Theme switches light / dark for long and night shifts (checklist A2).",
+ G3:"Keyboard shortcuts and the frozen policy handbook (P1–P8, T1–T4 with source tags), so a rule can be checked without leaving the screen.",
+ Q1:"The chat open right now: order, issue and how long it has been open.",
+ Q2:"The agent's other chats, each with a 2-letter issue code and live wait time; a dot means a new message. Hover the rail to expand with full words. No priority score (X2.6).",
+ Q3:"Approved queue rule: own chats only, sorted by wait time. Click a chat, or press Alt + ↓ / ↑, to switch. Each chat keeps its own state.",
+ C1:"What happened before the agent joined: the issue picked in the bot, the customer's words and what the bot already offered, so the agent does not repeat it.",
+ C2:"The live conversation. A photo the customer sends appears here and as an evidence tile in M2; clicking either opens the evidence viewer.",
+ C3:"Reply box. Templates cite the condition they rely on. 'Ask for evidence' inserts a ready message. Internal notes are never sent. Reference wording from similar cases appears only after the decision is recorded (C3.4).",
+ C4:"Reply-by clock (5 min, Hypothetical). Counts down live and resets when the agent sends a message.",
+ M1:"Order facts as recorded. The timeline expands to show each status time and the claim-window cut-off (P3).",
+ M2:"Evidence as recorded, each with type, who supplied it, origin and times. Policy v1.3: only customer photos and system records (OTP, location ping). Gap facts state what is thin, never 'suspicious'. Click a tile to view full size and link it to a condition (logged).",
+ M3:"Each party's last 90 days as a count out of their total, in the same format for customer, restaurant and rider. Labelled 'Context, not a policy condition'. 'Dates' opens the dated lines; 'Show older' is logged.",
+ M4:"Restaurant permission (P6, Published). Shows status, who answered and when. Buttons follow the state: Request, then Remind, then Escalate after 10 min with no reply. A refusal shows the restaurant's reason (S8).",
+ M5:"Only the people details the decision needs: name, masked phone, rider ID and whether this is the customer's first order (T2).",
+ I1:"One-glance strip: claim window, reply-by and regulatory clocks; review triggers that fired, each with its source; permission and history chips.",
+ I2:"Each condition checked against its fact: Met / Not met / Unknown / N/A. One line each; click a row for the source tag and linked evidence, which is highlighted in the case column. P7 and P8 update live as the agent picks an amount.",
+ I3:"Opened only by the agent. Shows 2–3 past cases matched on exact facts, with differing outcomes and no counts, labelled 'not a recommendation'. Opening it is logged.",
+ I4:"Four outcomes with equal weight and nothing pre-selected. Picking one opens a check step that needs a fault and a reason, and shows conditions, triggers and who bears the cost. Confirming writes to the case log.",
+ I5:"Issue category from the bot (P1) with its default liable party (P2). The agent confirms or changes it; a change is logged and re-runs the condition checks.",
+ I6:"S3: rider record and customer claim side by side, neither highlighted. After the agent picks a fault and a refund, the cost line shows who pays; if the restaurant refused, cost falls on Swiggy (policy v1.2).",
+ I7:"Send to review attaches the full case log for the reviewer. Escalation for a restaurant with no reply sits in M4.",
+ L1:"Everything the agent linked, opened and decided, with times. A reviewer or auditor reads this.",
+ S1:"Data state: shown only when a fact is missing or thin.",S2:"Case situation: appears in the scenario that triggers it (S3, S5, S8 here).",S3:"System state: loading, connection lost or empty queue."
+};
+function expand(idstr){const out=[];idstr.split(/\s*·\s*/).forEach(p=>{const m=p.match(/^([A-Z]\d)\.(\d+)(?:–(?:[A-Z]\d\.)?(\d+))?$/);if(!m){return}for(let k=+m[2];k<=+(m[3]||m[2]);k++)out.push(m[1]+'.'+k)});return out}
+function showSheet(idstr){picked=idstr;render();const ids=expand(idstr);const sh=$('#sheet'),inn=$('#sheetIn');sh.hidden=false;
+ const subj=ids[0]?ids[0].split('.')[0]:'';
+ inn.innerHTML=`<div class="row"><h3>${idstr} <span class="tag">${subj} · ${esc((INV.subj||{})[subj]||'')}</span></h3><span class="sp"></span><button class="tb" id="sh-close">Close</button></div>
+ <p style="margin:0;color:var(--ink2);max-width:100ch"><b>How it works:</b> ${esc(HOW[subj]||'')}</p>
+ <div class="sgrid">${ids.map(i=>{const r=INV.rows[i];if(!r)return '';return `<div><b>${i} · ${r.l}</b>${esc(r.t)}<br><span style="color:var(--mute);font-size:12.5px">${VN[r.v]||r.v} · region: ${r.reg} · scenarios: ${r.scen}${r.src?' · source: '+esc(r.src):''}${r.note?' · '+esc(r.note):''}</span></div>`}).join('')}</div>`;
+ $('#sh-close').onclick=()=>{hideSheet();render()}}
+function showSheetIntro(){const sh=$('#sheet');sh.hidden=false;$('#sheetIn').innerHTML=`<div class="row"><h3>Inspect mode</h3><span class="sp"></span><button class="tb" id="sh-close">Back to Use</button></div><p style="margin:0;color:var(--ink2)">Click any element in the frame to see its sticky ID, layer, visibility rule, source and how it works. Elements outline in blue on hover.</p>`;$('#sh-close').onclick=()=>setMode('use')}
+function hideSheet(){picked=null;$('#sheet').hidden=true}
+
+/* ---------- function index ---------- */
+const FX=[
+ ['G1.1','Online / Away','Header','Click the status pill','Status switches; toast confirms','No','S2','status'],
+ ['G2.1','Search orders','Header','Click Search, type','Filters today\'s orders; click a result to open that chat','No','S2','search','ov:search'],
+ ['G3.2','Policy handbook','Header','Click Policy handbook','P1–P8 and T1–T4 with source tags','No','S2','book','ov:book'],
+ ['G3.1','Shortcuts','Header','Click ? Shortcuts','List of keyboard shortcuts','No','S2','keys','ov:keys'],
+ ['G2.2','Theme','Header','Click ◐ Theme','Switches light / dark','No','S2','theme'],
+ ['Q3.3','Switch chat','Queue rail','Click a chat, hover to expand, or Alt + ↓ / ↑','Loads that chat; each keeps its own state; done chats show ✓','No','S2','queue'],
+ ['M1.7–M1.14','Timeline','Case info','Click the Timeline row','Status times + claim-window cut-off','No','S2','tl','tog:tl'],
+ ['M2.9','Evidence viewer','Case info / chat','Click the photo tile or the photo in chat','Full-size view with type, supplier, origin and times','No','S2','evtile'],
+ ['I2.12','Link evidence to condition','Evidence viewer','Pick a condition, click Link','Tile and condition row show the link','Yes','S2','evtile'],
+ ['M3.4','Dated history lines','Case info','Click Dates on any party row','Dated lines behind the count','No','S2','dates-cust','tog:rec-cust'],
+ ['M3.8','Show older','Case info','Open Dates, click Show older','Lines older than 90 days appear, marked','Yes','S2','dates-cust','tog:rec-cust'],
+ ['M4.4','Request / Remind / Escalate','Case info','S5: click Remind or Escalate','Buttons follow the permission state','Yes','S5','perm'],
+ ['M4.3','Refusal reason','Case info','S8, or Simulate → Restaurant refuses','P6 turns Not met with the reason','Yes','S8','perm'],
+ ['C3.2','Templates','Chat','Click Templates, pick one','Inserts wording that cites its condition','No','S2','tpl'],
+ ['C3.3','Ask for evidence','Chat','Click Ask for evidence','Inserts a ready request','No','S2','ask'],
+ ['C3.5','Internal note','Chat','Click Internal note, type, Add note','Dashed note bubble, never sent','Yes','S2','note'],
+ ['C3.1','Send reply','Chat','Type, click Send or Ctrl + Enter','Message appears; reply-by clock resets to 5:00','No','S2','send'],
+ ['C4.1','Reply-by clock','Chat header','Wait, or send a message','Counts down live; bold under 1 min','No','S2','send'],
+ ['I5.3','Confirm / change issue','Insights','Click Confirm or Change','Change re-runs P5 and P7 checks','Yes','S2','issue'],
+ ['I2.11','Condition → evidence','Insights','Click a condition row','Row expands with source; evidence highlights in case info','No','S2','conds'],
+ ['I2.5 · I2.6','Live P7 / P8 checks','Insights','Pick Full or Partial and tick items','Amount checked against range and ₹500 limit','No','S2','dec'],
+ ['I1.2','Trigger T1','Insights','S3: pick Full refund (₹610)','"T1 Refund above ₹500" chip appears','No','S3','dec'],
+ ['I6.1','Records side by side','Insights','Open chat S3','Rider record and customer claim, neither highlighted','No','S3','conds'],
+ ['I4.6','Fault selection','Decision bar','Click a fault','Needed before confirming a refund or deny','No','S2','dec'],
+ ['I6.2 · I6.3','Cost falls on','Decision bar','Pick fault + Full or Partial','Who pays; Swiggy if the restaurant refused (S8)','No','S8','dec'],
+ ['I4.1–I4.5','Decide + confirm','Decision bar','Pick an outcome, fault and reason; Confirm','Check summary, then decision recorded; queue shows ✓','Yes','S2','dec'],
+ ['I7.1','Send to review','Decision bar','Pick Send to review, reason, Confirm','Case log attached for the reviewer','Yes','S3','dec'],
+ ['C3.4','Reference wording','Chat','After confirming a decision','Wording from similar cases appears; click to insert','No','S2','send'],
+ ['I3.1–I3.5','Similar cases','Insights','Click Similar cases (or Alt + S)','Drawer: matched-on facts, 3 cases, no counts','Yes','S2','sim','drawer:sim'],
+ ['L1.1–L1.3','Case log','Insights header','Click Case log (or Alt + L)','Every link, open and decision with times','—','S2','log','drawer:log'],
+ ['—','Simulate controls','Toolbar','Customer replies / Restaurant gives / refuses / Reset','Demo only: drives events the agent would receive','—','S2','']
+];
+$('#fxBody').innerHTML=FX.map((f,i)=>`<tr><td class="mono">${f[0]}</td><td><b>${f[1]}</b></td><td>${f[2]}</td><td>${f[3]}</td><td>${f[4]}</td><td>${f[5]}</td><td>${f[7]?`<button class="tb" data-fx="${i}">Show me</button>`:''}</td></tr>`).join('');
+$('#fxBody').addEventListener('click',e=>{const b=e.target.closest('[data-fx]');if(!b)return;const f=FX[+b.dataset.fx];setMode('use');ACT.close();ACT.go(f[6]);
+ if(f[8]){const[a,g]=f[8].split(':');if(a==='ov')ACT.ov(g);if(a==='tog')cur().open[g]=true;if(a==='drawer'){cur().drawer=g}}
+ render();stage.scrollIntoView({behavior:'smooth',block:'start'});const el=frame.querySelector(`[data-f="${f[7]}"]`);if(el){el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}});
+
+/* ---------- tick ---------- */
+setInterval(()=>{const r=replyClock();const c=frame.querySelector('[data-clock="reply"]');if(c){c.textContent='◷ '+r.txt;c.classList.toggle('low',r.low)}const c2=frame.querySelector('[data-clock="reply2"]');if(c2)c2.textContent=r.txt.replace('Reply by ','');
+ ORDER.forEach(k=>frame.querySelectorAll(`[data-wait="${k}"]`).forEach(e=>{e.textContent=(k!==A&&e.closest('.qx')?'waiting ':'')+wait(k)}))},1000);
+setInterval(()=>{if(!cur().ov&&document.activeElement&&document.activeElement.tagName!=='TEXTAREA'&&document.activeElement.tagName!=='SELECT')render()},30000);
+render();fit();
+})();
+
+</script>
+
+</body></html>

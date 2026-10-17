@@ -1,0 +1,78 @@
+{
+  "requests": [
+    {
+      "id": "refund",
+      "url": "https://www.swiggy.com/refund-policy",
+      "final_url": "https://www.swiggy.com/refund-policy",
+      "status": 200,
+      "bytes": 29716,
+      "sha256_response": "eb9dd9e213449de65e92e07453fbcaf76b6886bcd28d4c143a8d03abfd8b003b",
+      "extraction": "JSON parse of public __NEXT_DATA__, props.pageProps.data.cards[0].htmlData, then HTML-to-text",
+      "legal_text_characters": 7464,
+      "sha256_normalized_text": "b5de73694e0b059f3a76a28ac333f4c575780ed1303ccb08c15c5bd9947aab3a",
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    },
+    {
+      "id": "terms",
+      "url": "https://www.swiggy.com/terms-and-conditions",
+      "final_url": "https://www.swiggy.com/terms-and-conditions",
+      "status": 200,
+      "bytes": 138114,
+      "sha256_response": "4de3f53ad28fa424f2989afff26a4c675cfa7940a868286f2d716e81970e8398",
+      "extraction": "JSON parse of public __NEXT_DATA__, props.pageProps.data.cards[0].htmlData, then HTML-to-text",
+      "legal_text_characters": 113182,
+      "sha256_normalized_text": "522ecc4162b2bffd8050ab1a38d9262e9e0ca38738720f005cac3bf5bb2cac6e",
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    },
+    {
+      "id": "refund-app",
+      "url": "https://www.swiggy.com/refund-policy?is_app=true",
+      "final_url": "https://www.swiggy.com/refund-policy?is_app=true",
+      "status": 200,
+      "bytes": 29716,
+      "sha256_response": "eb9dd9e213449de65e92e07453fbcaf76b6886bcd28d4c143a8d03abfd8b003b",
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    },
+    {
+      "id": "terms-app",
+      "url": "https://www.swiggy.com/terms-and-conditions?is_app=true",
+      "final_url": "https://www.swiggy.com/terms-and-conditions?is_app=true",
+      "status": 200,
+      "bytes": 138114,
+      "sha256_response": "4de3f53ad28fa424f2989afff26a4c675cfa7940a868286f2d716e81970e8398",
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    },
+    {
+      "id": "privacy",
+      "url": "https://www.swiggy.com/privacy-policy",
+      "final_url": "https://www.swiggy.com/privacy-policy",
+      "status": 200,
+      "bytes": 46823,
+      "sha256_response": "7fd9c6f3798ba90c5faf66b06e03b178e0f3078be732bffc678f176ba4d972df",
+      "extraction": "JSON parse of public __NEXT_DATA__, props.pageProps.data.cards[0].htmlData, then HTML-to-text",
+      "legal_text_characters": 24009,
+      "sha256_normalized_text": "89808ee4c2f42ab76f4dc21b513f5dceba8d0547631bfbd8b04c8ed4318aa45d",
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    },
+    {
+      "id": "instamart",
+      "url": "https://instamart.in/instamart-cancellation-refund-policy",
+      "final_url": "https://instamart.in/instamart-cancellation-refund-policy",
+      "status": 200,
+      "bytes": 12796,
+      "sha256_response": "3cee18e4864af2bb5854dbe9b870f936361e882b41659a06b43577b5b990468c",
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    }
+  ],
+  "app_query_matches_web_response": {
+    "refund": true,
+    "terms": true
+  },
+  "scope_limit": "Public web/app-oriented legal pages only; no native installed app, authenticated order, merchant contract or internal agent system accessed. Raw third-party HTML is kept in temporary research storage, not redistributed in the public repository."
+}

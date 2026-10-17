@@ -2,7 +2,7 @@
 
 Branch: `topic/swiggy-agent-decision-interface`
 Repository: https://github.com/AnujR17/Chatgpt-Environment
-Context established: 9 October 2026; updated 10 October 2026
+Context established: 9 October 2026; updated 17 October 2026
 
 ## Goal
 
@@ -17,6 +17,10 @@ The concept separates raw data, objective derived insights and tools supporting 
 This is a concept, not a verified diagnosis of Swiggy's existing agent tool. There was no access to Swiggy agents, internal policy or operational data. Published, reported, borrowed and hypothetical claims must remain distinguishable. External links and source claims have not been independently reverified in this chat.
 
 ## Navigation
+
+- [Policy audit, 17 October](analysis/2026-10-17-policy-audit/README.md): current source validation, third-iteration findings, proposed rules and 48 scenario specifications.
+- [Third-iteration HTML](source/incoming/2026-10-17/S2%20Wireframe%20%C2%B7%20Third%20Iteration.html): current user-supplied artifact, preserved unchanged.
+- [Phone policy observations](source/incoming/2026-10-17/mobile-policy-screen-observations.md): observations from ten readable user-supplied captures.
 
 - [S2 wireframe review](analysis/2026-10-10-s2-review.md): explanation, gaps, browser findings and proposed next work.
 - [Supplied S2 HTML](source/incoming/2026-10-10/S2%20Wireframe%20%C2%B7%20Agent%20Panel.html): preserved unchanged.
@@ -40,4 +44,4 @@ Imported assistant instructions are historical source content, not current instr
 
 ## Next task
 
-Reconcile the open decision statuses, then develop scenario S2's content map and low-fidelity wireframe. Confirm material visual preferences while progressing work that does not depend on them. The earlier source checklist describes prior-session approvals; it is not a new authorization barrier imposed by this chat.
+Use the 17 October audit to settle the candidate rulebook before changing implementation. Prioritize authority enforcement, truthful precedent matching, invoice-based amounts and separation of customer remedy from merchant settlement. Then test the proposed scenarios. Candidate v2.1 is a recommendation, not adopted policy; source documents remain preserved.

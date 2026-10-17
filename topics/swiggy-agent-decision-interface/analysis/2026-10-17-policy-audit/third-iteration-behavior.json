@@ -1,0 +1,429 @@
+{
+  "scenarios": [
+    {
+      "id": "S2",
+      "subject": "Wrong item",
+      "paid": 413,
+      "conditions": [
+        {
+          "id": "P1",
+          "status": "met",
+          "source": "Published types + Borrowed structure"
+        },
+        {
+          "id": "P5",
+          "status": "met",
+          "source": "Hypothetical"
+        },
+        {
+          "id": "P6",
+          "status": "met",
+          "source": "Owner \u00b7 Hypothetical (agreed 12 Jan 2026)"
+        },
+        {
+          "id": "P7",
+          "status": "unk",
+          "source": "Owner"
+        },
+        {
+          "id": "P8",
+          "status": "unk",
+          "source": "Hypothetical"
+        }
+      ],
+      "rider": [
+        {
+          "id": "R1",
+          "nm": "Marked delivered at the address",
+          "st": "met",
+          "f": "Rider 15 m from drop address at marking \u00b7 limit 100 m",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R2",
+          "nm": "Called before \"unreachable\"",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 call logs Reported"
+        },
+        {
+          "id": "R3",
+          "nm": "Waited at the door",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 value Hypothetical"
+        },
+        {
+          "id": "R4",
+          "nm": "On time (rider stages)",
+          "st": "met",
+          "f": "Rider stages -1 min vs plan \u00b7 grace 10 min",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R5",
+          "nm": "Incidents reported in time",
+          "st": "na",
+          "f": "No incidents logged",
+          "src": "Hypothetical"
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "subject": "Wrong item",
+      "paid": 549,
+      "conditions": [
+        {
+          "id": "P1",
+          "status": "met",
+          "source": "Published types + Borrowed structure"
+        },
+        {
+          "id": "P5",
+          "status": "met",
+          "source": "Hypothetical"
+        },
+        {
+          "id": "P6",
+          "status": "unk",
+          "source": "Owner \u00b7 Hypothetical (agreed 3 Mar 2026)"
+        },
+        {
+          "id": "P7",
+          "status": "unk",
+          "source": "Owner"
+        },
+        {
+          "id": "P8",
+          "status": "unk",
+          "source": "Hypothetical"
+        }
+      ],
+      "rider": [
+        {
+          "id": "R1",
+          "nm": "Marked delivered at the address",
+          "st": "met",
+          "f": "Rider 22 m from drop address at marking \u00b7 limit 100 m",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R2",
+          "nm": "Called before \"unreachable\"",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 call logs Reported"
+        },
+        {
+          "id": "R3",
+          "nm": "Waited at the door",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 value Hypothetical"
+        },
+        {
+          "id": "R4",
+          "nm": "On time (rider stages)",
+          "st": "met",
+          "f": "Rider stages -1 min vs plan \u00b7 grace 10 min",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R5",
+          "nm": "Incidents reported in time",
+          "st": "na",
+          "f": "No incidents logged",
+          "src": "Hypothetical"
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "subject": "Not delivered (marked delivered)",
+      "paid": 696,
+      "conditions": [
+        {
+          "id": "P1",
+          "status": "met",
+          "source": "Published types + Borrowed structure"
+        },
+        {
+          "id": "P5",
+          "status": "na",
+          "source": "Hypothetical"
+        },
+        {
+          "id": "P6",
+          "status": "met",
+          "source": "Owner \u00b7 Hypothetical (agreed 20 Nov 2025)"
+        },
+        {
+          "id": "P7",
+          "status": "unk",
+          "source": "Owner"
+        },
+        {
+          "id": "P8",
+          "status": "unk",
+          "source": "Hypothetical"
+        }
+      ],
+      "rider": [
+        {
+          "id": "R1",
+          "nm": "Marked delivered at the address",
+          "st": "met",
+          "f": "Rider 40 m from drop address at marking \u00b7 limit 100 m",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R2",
+          "nm": "Called before \"unreachable\"",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 call logs Reported"
+        },
+        {
+          "id": "R3",
+          "nm": "Waited at the door",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 value Hypothetical"
+        },
+        {
+          "id": "R4",
+          "nm": "On time (rider stages)",
+          "st": "met",
+          "f": "Rider stages +2 min vs plan \u00b7 grace 10 min",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R5",
+          "nm": "Incidents reported in time",
+          "st": "na",
+          "f": "No incidents logged",
+          "src": "Hypothetical"
+        }
+      ]
+    },
+    {
+      "id": "S8",
+      "subject": "Missing item",
+      "paid": 329,
+      "conditions": [
+        {
+          "id": "P1",
+          "status": "met",
+          "source": "Published types + Borrowed structure"
+        },
+        {
+          "id": "P5",
+          "status": "met",
+          "source": "Hypothetical"
+        },
+        {
+          "id": "P6",
+          "status": "no",
+          "source": "Owner \u00b7 Hypothetical (agreed 8 Jul 2026)"
+        },
+        {
+          "id": "P7",
+          "status": "unk",
+          "source": "Owner"
+        },
+        {
+          "id": "P8",
+          "status": "unk",
+          "source": "Hypothetical"
+        }
+      ],
+      "rider": [
+        {
+          "id": "R1",
+          "nm": "Marked delivered at the address",
+          "st": "met",
+          "f": "Rider 10 m from drop address at marking \u00b7 limit 100 m",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R2",
+          "nm": "Called before \"unreachable\"",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 call logs Reported"
+        },
+        {
+          "id": "R3",
+          "nm": "Waited at the door",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 value Hypothetical"
+        },
+        {
+          "id": "R4",
+          "nm": "On time (rider stages)",
+          "st": "met",
+          "f": "Rider stages -1 min vs plan \u00b7 grace 10 min",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R5",
+          "nm": "Incidents reported in time",
+          "st": "na",
+          "f": "No incidents logged",
+          "src": "Hypothetical"
+        }
+      ]
+    },
+    {
+      "id": "S9",
+      "subject": "Late delivery",
+      "paid": 486,
+      "conditions": [
+        {
+          "id": "P1",
+          "status": "met",
+          "source": "Published types + Borrowed structure"
+        },
+        {
+          "id": "P5",
+          "status": "na",
+          "source": "Hypothetical"
+        },
+        {
+          "id": "P6",
+          "status": "met",
+          "source": "Owner \u00b7 Hypothetical (agreed 1 Feb 2026)"
+        },
+        {
+          "id": "P7",
+          "status": "unk",
+          "source": "\u2014"
+        },
+        {
+          "id": "P8",
+          "status": "unk",
+          "source": "Hypothetical"
+        }
+      ],
+      "rider": [
+        {
+          "id": "R1",
+          "nm": "Marked delivered at the address",
+          "st": "met",
+          "f": "Rider 20 m from drop address at marking \u00b7 limit 100 m",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R2",
+          "nm": "Called before \"unreachable\"",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 call logs Reported"
+        },
+        {
+          "id": "R3",
+          "nm": "Waited at the door",
+          "st": "na",
+          "f": "Rider did not report the customer unreachable",
+          "src": "Borrowed (Uber) \u00b7 value Hypothetical"
+        },
+        {
+          "id": "R4",
+          "nm": "On time (rider stages)",
+          "st": "met",
+          "f": "Rider stages +4 min vs plan \u00b7 grace 10 min",
+          "src": "Hypothetical"
+        },
+        {
+          "id": "R5",
+          "nm": "Incidents reported in time",
+          "st": "met",
+          "f": "1 incident(s) logged before marked delivered",
+          "src": "Hypothetical"
+        }
+      ]
+    }
+  ],
+  "S3_over_limit_confirm": {
+    "confirm_enabled": true,
+    "triggers": [
+      [
+        "T1",
+        "High value: refund \u20b9696 > \u20b9500",
+        "Borrowed",
+        "High value \u20b9696"
+      ],
+      [
+        "T4",
+        "Conflicting records: marked delivered 40 m from address vs \"not received\"",
+        "Hypothetical",
+        "Conflicting records"
+      ]
+    ],
+    "P8": {
+      "id": "P8",
+      "nm": "Approval limit",
+      "st": "no",
+      "f": "\u20b9696 over \u20b9500 limit",
+      "src": "Hypothetical"
+    },
+    "decision_recorded": {
+      "type": "full",
+      "label": "Full refund",
+      "amount": 696,
+      "fault": "Swiggy",
+      "cost": "Swiggy \u20b9696",
+      "reason": "Evidence supports the claim",
+      "at": "21:12",
+      "items": [
+        "1 \u00d7 Chicken biryani (family)",
+        "1 \u00d7 Mirchi ka salan",
+        "1 \u00d7 Double ka meetha"
+      ]
+    }
+  },
+  "S8_no_refund_terms": {
+    "P6": {
+      "id": "P6",
+      "nm": "Restaurant terms",
+      "src": "Owner \u00b7 Hypothetical (agreed 8 Jul 2026)",
+      "st": "no",
+      "f": "Restaurant terms: no refunds \u00b7 cost would fall on Swiggy"
+    },
+    "cost": {
+      "txt": "Swiggy \u20b9168 (restaurant terms: no refunds)"
+    },
+    "amount": 168
+  },
+  "P5_before_assessment": {
+    "id": "P5",
+    "nm": "Evidence",
+    "st": "met",
+    "f": "1 customer photo",
+    "src": "Hypothetical",
+    "ev": true
+  },
+  "star_before_subject_change": "\u2605 Star case \u00b7 #1882 \u00b7 2 Oct\nClose\n1 \u00b7 Policies\n8 of 8 match\nShow\n2 \u00b7 Triggers\n3 of 3 match\nShow\n\tSTAR CASE\tTHIS CASE\t\nCustomer\t4 raised \u00b7 3 refunded\nof 8 orders\t5 raised \u00b7 3 refunded\nof 7 orders\t\nRider\t4 complaints \u00b7 2 liable\nof 500 deliveries\t2 complaints \u00b7 1 liable\nof 412 deliveries\t\nRestaurant\t11 complaints \u00b7 8 upheld\nof 1,700 orders\t12 complaints \u00b7 9 upheld\nof 1,860 orders\t\nSame pattern: raised and upheld both within \u00b11\nPartly: one within \u00b11\nDifferent: neither\nDecision: Full refund \u00b7 \u20b9189 \u00b7 fault: Restaurant\nReason: Photo shows the issue in the restaurant's item\nClosing message: \"I've refunded \u20b9189 for the dish that was wrong, including its GST. It will reach your UPI account in 3\u20135 working days.\"\nFairness 4/5 \u00b7 QA reviewed 12 Oct",
+  "star_after_unrelated_subject_change": "\u2605 Star case \u00b7 #1882 \u00b7 2 Oct\nClose\n1 \u00b7 Policies\n8 of 8 match\nShow\n2 \u00b7 Triggers\n3 of 3 match\nShow\n\tSTAR CASE\tTHIS CASE\t\nCustomer\t4 raised \u00b7 3 refunded\nof 8 orders\t5 raised \u00b7 3 refunded\nof 7 orders\t\nRider\t4 complaints \u00b7 2 liable\nof 500 deliveries\t2 complaints \u00b7 1 liable\nof 412 deliveries\t\nRestaurant\t11 complaints \u00b7 8 upheld\nof 1,700 orders\t12 complaints \u00b7 9 upheld\nof 1,860 orders\t\nSame pattern: raised and upheld both within \u00b11\nPartly: one within \u00b11\nDifferent: neither\nDecision: Full refund \u00b7 \u20b9189 \u00b7 fault: Restaurant\nReason: Photo shows the issue in the restaurant's item\nClosing message: \"I've refunded \u20b9189 for the dish that was wrong, including its GST. It will reach your UPI account in 3\u20135 working days.\"\nFairness 4/5 \u00b7 QA reviewed 12 Oct",
+  "manual_override_without_reason": {
+    "condition": {
+      "id": "P8",
+      "nm": "Approval limit",
+      "st": "na",
+      "f": "\u20b9413 within \u20b9500 limit",
+      "src": "Hypothetical",
+      "orig": "met",
+      "by": "21:12"
+    },
+    "lastLog": [
+      {
+        "at": "21:12",
+        "t": "P8 changed by agent: met \u2192 N/A"
+      }
+    ]
+  },
+  "javascript_errors": [],
+  "method": "Headless Chromium; external requests blocked; in-memory test-only hook exposes existing model functions; preserved HTML unchanged. S3 confirmation and star subject changes exercised through UI."
+}

@@ -1,6 +1,6 @@
 # Decisions and evidence
 
-Updated: 10 October 2026
+Updated: 17 October 2026
 
 ## Current user authorization
 
@@ -47,3 +47,11 @@ The uploaded README and newer case-study draft describe the current handoff. Fro
 ## S2 review, 10 October 2026
 
 The current request authorizes explaining and reviewing the supplied S2 wireframe and recording that review. The uploaded file's claimed locked decisions are imported context. No new design choice was adopted or original HTML edited. See analysis/2026-10-10-s2-review.md for recommendations and verified interactions. Priorities are the decision/state model and neutral presentation before visual polish.
+
+## Policy audit authorization and findings, 17 October 2026
+
+The user requested current internet/source validation of terms and policies across three supplied wireframes, explicitly focused on the third iteration. They also supplied ten readable phone policy captures. This authorizes analysis, source checks, a detailed candidate policy and scenario coverage report; it is not adoption of the proposed model or a request to alter the working prototype.
+
+The original ZIP did use terms; source existence is now distinguished from interpretation and operational assumptions. The report in analysis/2026-10-17-policy-audit/ records verified sources, remaining unknowns, current prototype behavior, a proposed v2.1 and 48 scenario specifications. Source scope is product/region/date-specific. Private merchant contracts and actual Swiggy agent authorities remain unavailable. New supplied HTML originals are preserved without changes.
+
+Confirmed browser findings include the ₹696 execution/proposal ambiguity despite the demo ₹500 cap, precedent match claims generated from self-comparison, and unreasoned condition overrides. Proposed corrections are not accepted decisions or evidence of measured usability improvement. No live refunds, messages or partner actions were performed.

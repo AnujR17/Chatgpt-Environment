@@ -1,6 +1,6 @@
 # Task tracker
 
-Updated: 10 October 2026
+Updated: 17 October 2026
 
 ## Completed in this chat
 
@@ -21,7 +21,23 @@ Updated: 10 October 2026
 - [x] Check representative interactions in Chromium and record limitations with fallback-font measurements.
 - [x] Explain the decision-model gaps and proposed project direction; no redesign decisions adopted.
 
+## Policy audit completed, 17 October
+
+- [x] Preserve all three new HTML files and trace original terms references.
+- [x] Fetch public terms/refund/privacy and app-query variants; extract embedded legal text and record hashes.
+- [x] Check ten readable user-supplied phone captures against the source clauses/table.
+- [x] Verify borrowed-source scope and relevant Indian consumer/GST/payment/privacy sources, with effective-date limits.
+- [x] Check third-iteration behavior for authority enforcement, overrides and precedent matching.
+- [x] Prepare an explicitly proposed v2.1 rulebook and 48 scenario specifications.
+
 ## Next work
+
+- [ ] Review/adopt or revise candidate v2.1; keep customer remedy, evidence, authority, settlement and execution separate.
+- [ ] Correct the ₹696 approval-limit bypass and status override behavior.
+- [ ] Replace tautological precedent matching with independent past-case data or explicitly label demonstration placeholders.
+- [ ] Replace universal 3–5-day promises, hardcoded tax assumptions and undocumented recovery splits with source-labelled transaction/invoice rules.
+- [ ] Restore late-filing, COD, safety, payment and missing-data coverage; execute priority cases from the scenario matrix.
+
 
 - [ ] Specify S2 evidence assessment, refund scope/amount, authority checks, unresolved responsibility and final confirmation.
 - [ ] Complete neutral party-history and similar-case matching interactions, operating states and keyboard access before usability sessions.

@@ -1,0 +1,1078 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>S2 Wireframe · Second Iteration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap">
+<style>
+/* Layout: one fixed 1440x900 low-fi frame (scaled to fit) that works like the real screen, an inspector sheet that explains any element, then the function index and content map. Greyscale on purpose: visual kit is on hold. Blue = annotation only. */
+:root{
+  --page:#ECEEF1; --paper:#FFFFFF; --ink:#1D2127; --ink2:#4A515C; --mute:#737B87;
+  --line:#C9CED6; --fill:#F2F4F7; --fill2:#E3E7EC; --anno:#2E59C9; --anno-bg:#E6EDFF; --shade:rgba(20,24,30,.18);
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --cond:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --page:#14171B; --paper:#1D2126; --ink:#E7EAEE; --ink2:#B4BBC5; --mute:#8D95A1;
+  --line:#3A414B; --fill:#252A31; --fill2:#2F353D; --anno:#8FB0FF; --anno-bg:#1F2B48; --shade:rgba(0,0,0,.45); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --page:#14171B; --paper:#1D2126; --ink:#E7EAEE; --ink2:#B4BBC5; --mute:#8D95A1;
+  --line:#3A414B; --fill:#252A31; --fill2:#2F353D; --anno:#8FB0FF; --anno-bg:#1F2B48; --shade:rgba(0,0,0,.45); color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.45}
+.wrap{max-width:1480px;margin:0 auto;padding-inline:16px;padding-block:20px 120px;display:grid;gap:22px}
+.wrap>*{min-width:0}
+h1{font-family:var(--cond);font-weight:600;font-size:26px;margin:0;text-wrap:balance}
+h2{font-family:var(--cond);font-weight:600;font-size:19px;margin:0 0 10px;text-wrap:balance}
+.lede{color:var(--ink2);max-width:80ch;margin:6px 0 0}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+button{font:inherit;color:inherit}
+/* toolbar */
+.bar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px 12px;position:sticky;top:env(safe-area-inset-top,0px);z-index:30}
+.grp{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.lbl{font-size:11.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+.tb{font:500 13px var(--sans);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:4px 10px;cursor:pointer}
+.tb[aria-pressed="true"]{background:var(--anno-bg);border-color:var(--anno);color:var(--anno)}
+.tb.demo{border-style:dashed}
+:focus-visible{outline:2px solid var(--anno);outline-offset:2px}
+/* stage */
+.stage{position:relative;width:100%;overflow:hidden;border-radius:4px}
+.stage.actual{overflow-x:auto}
+.frame{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0;background:var(--paper);border:1px solid var(--line);display:grid;grid-template-rows:44px 1fr;font-size:13px;color:var(--ink);overflow:hidden}
+.stage.actual .frame{position:relative;transform:none!important}
+/* header */
+.hdr{display:flex;align-items:center;gap:10px;padding:0 14px;border-bottom:1px solid var(--line);background:var(--fill)}
+.logo{width:22px;height:22px;border-radius:5px;background:var(--fill2);border:1px solid var(--line)}
+.ttl{font-weight:600}
+.sp{flex:1}
+.pill{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--line);border-radius:999px;padding:2px 9px;font-size:12px;background:var(--paper);white-space:nowrap;cursor:pointer}
+.ibtn{border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:3px 9px;font-size:12px;color:var(--ink2);cursor:pointer}
+/* columns */
+.cols{display:grid;grid-template-columns:56px 372px 572px 1fr;min-height:0;position:relative}
+.col{border-right:1px solid var(--line);min-height:0;overflow-y:auto;overflow-x:hidden;position:relative}
+.col:last-child{border-right:0}
+.chd{position:sticky;top:0;z-index:3;background:var(--paper);border-bottom:1px solid var(--line);padding:7px 12px;display:flex;align-items:center;gap:8px;font-weight:600;min-height:36px}
+.code{font:500 11px var(--mono);color:var(--mute)}
+.sec{padding:9px 12px;border-bottom:1px solid var(--line);display:grid;gap:6px}
+.sh{display:flex;align-items:center;gap:6px;font:600 11px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--ink2)}
+.ctx{font:500 10px var(--sans);text-transform:none;letter-spacing:0;border:1px dashed var(--line);border-radius:4px;padding:0 5px;color:var(--mute)}
+.kv{display:grid;grid-template-columns:96px 1fr;gap:2px 8px;margin:0}
+.kv dt{color:var(--mute)} .kv dd{margin:0}
+.items{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.items td{padding:2px 0;border-bottom:1px dotted var(--line)} .items td:last-child{text-align:right}
+.items tr.tot td{border-bottom:0;font-weight:600}
+.items tr.aff td:first-child::after{content:" · in complaint";color:var(--mute);font-size:11px}
+.exp{border:1px solid var(--line);border-radius:6px;background:var(--fill)}
+.exp>.eh{cursor:pointer;padding:4px 9px;display:flex;gap:6px;align-items:center;font-size:12px;width:100%;text-align:left;background:none;border:0}
+.exp>.eh::before{content:"▸";color:var(--mute);font-size:10px}
+.exp.open>.eh::before{content:"▾"}
+.exp>.in{padding:2px 9px 7px;display:grid;gap:3px;font-size:12px}
+.tl{display:grid;grid-template-columns:auto 1fr auto;gap:1px 8px;font-variant-numeric:tabular-nums}
+.tl .cut{color:var(--anno)}
+.gap{font-size:12.5px;border-left:3px solid var(--ink2);padding:2px 8px;background:var(--fill)}
+.sysrec{display:flex;flex-wrap:wrap;gap:4px;font-size:12px;align-items:center}
+.tile{border:1px solid var(--line);border-radius:6px;padding:6px;display:grid;grid-template-columns:92px 1fr;gap:4px 8px;font-size:12px;background:var(--paper);cursor:pointer;text-align:left;width:100%}
+.thumb{height:62px;border-radius:4px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 6px,var(--fill2) 6px,var(--fill2) 12px);display:grid;place-items:center;color:var(--mute);font-size:11px;grid-row:span 3}
+.meta{display:flex;flex-wrap:wrap;gap:3px}
+.chip{display:inline-block;border:1px solid var(--line);border-radius:4px;padding:0 5px;font-size:11px;background:var(--fill);white-space:nowrap}
+.chip.on{border-color:var(--ink);font-weight:600}
+.rec{display:grid;grid-template-columns:74px 1fr auto;gap:6px;align-items:center;font-size:12.5px;padding:2px 0;border-bottom:1px dotted var(--line)}
+.rec .n{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.lines{font-size:11.5px;display:grid;gap:1px;padding:2px 0 4px 10px;border-left:2px solid var(--line);font-family:var(--mono)}
+.lines .old{color:var(--mute)}
+.lnk{background:none;border:0;padding:0;color:var(--anno);font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.btn{border:1px solid var(--ink2);background:var(--paper);border-radius:6px;padding:3px 10px;font:500 12px var(--sans);cursor:pointer}
+.btn.ghost{border-color:var(--line);color:var(--ink2)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn.pri{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.perm{display:grid;gap:4px;font-size:12px}
+.pst{font-weight:600;border:1.5px solid var(--ink);border-radius:4px;padding:0 6px}
+.pst.unk{border-style:dashed;color:var(--ink2);border-color:var(--ink2)}
+/* queue */
+.qh{font:600 10px var(--sans);color:var(--mute);text-align:center;padding:6px 0 2px;text-transform:uppercase;letter-spacing:.05em}
+.q{display:grid;gap:4px;padding:6px 4px}
+.qi{position:relative;border:1px solid var(--line);border-radius:6px;padding:5px 2px;text-align:center;font-size:11px;background:var(--paper);cursor:pointer;display:grid;gap:1px;width:100%}
+.qi .ab{font:600 12px var(--cond)} .qi .t{font:11px var(--mono)}
+.qi.act{border:2px solid var(--ink);background:var(--fill)}
+.qi.done{opacity:.55}
+.qi .dot{position:absolute;top:3px;right:3px;width:7px;height:7px;border-radius:50%;background:var(--ink)}
+.qcol{overflow:visible!important}
+.qx{position:absolute;left:0;top:0;bottom:0;width:170px;background:var(--paper);border-right:1px solid var(--line);box-shadow:4px 0 12px var(--shade);z-index:12;padding:6px;display:none;gap:4px;align-content:start;grid-auto-rows:min-content}
+.qcol:hover .qx,.qcol:focus-within .qx{display:grid}
+.qx .qi{text-align:left;padding:6px 8px}
+/* chat */
+.chat{display:grid;grid-template-rows:auto 1fr auto;height:100%;min-height:0}
+.msgs{overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:0}
+.hand{border:1px solid var(--line);border-radius:8px;background:var(--fill);padding:8px 11px;display:grid;gap:4px;font-size:12.5px}
+.hand .r{display:grid;grid-template-columns:110px 1fr;gap:6px}
+.hand .r b{font-weight:500;color:var(--mute)}
+.m{max-width:74%;padding:6px 10px;border-radius:8px;border:1px solid var(--line);font-size:13px}
+.m small{display:block;color:var(--mute);font:10.5px var(--mono);margin-top:2px}
+.m.cu{align-self:flex-start;background:var(--paper)}
+.m.ag{align-self:flex-end;background:var(--fill2)}
+.m.note{align-self:flex-end;background:var(--paper);border-style:dashed}
+.m.note::before{content:"Internal note · not sent to customer";display:block;font-size:10.5px;color:var(--mute)}
+.sys{align-self:center;font-size:11.5px;color:var(--mute);border:1px dashed var(--line);border-radius:999px;padding:1px 10px}
+.photo{width:150px;height:92px;border-radius:6px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 6px,var(--fill2) 6px,var(--fill2) 12px);display:grid;place-items:center;color:var(--mute);font-size:11px;cursor:pointer;border:0}
+.typing{font-size:11.5px;color:var(--mute);font-style:italic}
+.reply{border-top:1px solid var(--line);padding:8px 12px;display:grid;gap:6px;position:relative}
+.reply textarea{border:1px solid var(--line);border-radius:6px;height:56px;padding:6px 9px;background:var(--paper);color:var(--ink);font:13px var(--sans);resize:none;width:100%}
+.reply.noteMode textarea{border-style:dashed}
+.menu{position:absolute;bottom:100%;left:12px;width:440px;background:var(--paper);border:1px solid var(--ink2);border-radius:8px;box-shadow:0 -6px 18px var(--shade);padding:6px;display:grid;gap:3px;z-index:9}
+.menu button{text-align:left;background:none;border:1px solid transparent;border-radius:5px;padding:5px 7px;cursor:pointer;font-size:12.5px}
+.menu button:hover{border-color:var(--line);background:var(--fill)}
+.menu .mh{font:600 11px var(--sans);color:var(--mute);text-transform:uppercase;letter-spacing:.05em;padding:2px 6px}
+.refw{border:1px dashed var(--ink2);border-radius:6px;padding:5px 8px;display:grid;gap:4px;font-size:12px}
+.clock{display:inline-flex;gap:5px;align-items:center;border:1px solid var(--ink2);border-radius:5px;padding:1px 7px;font:500 12px var(--mono)}
+.clock.low{border-width:2px;border-color:var(--ink)}
+/* insights */
+.ins{display:grid;grid-template-rows:auto 1fr auto;height:100%;min-height:0}
+.insc{overflow-y:auto;min-height:0}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.ck{border:1px solid var(--line);border-radius:6px;padding:4px 7px;display:grid;font-size:11px;color:var(--mute)}
+.ck b{font:500 13px var(--mono);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.side{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px}
+.side>div{border:1px solid var(--line);border-radius:6px;padding:5px 7px;display:grid;gap:2px}
+.side b{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute)}
+.conds{display:grid;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.cr{display:grid;grid-template-columns:70px 1fr auto;gap:8px;align-items:center;padding:4px 8px;border-bottom:1px solid var(--line);font-size:12px;cursor:pointer;background:var(--paper);text-align:left;width:100%;border-left:0;border-right:0;border-top:0}
+.cr:last-child{border-bottom:0}
+.cr[aria-expanded="true"]{background:var(--anno-bg)}
+.cr .nm{font-weight:600;white-space:nowrap;flex-shrink:0}
+.cr .f{color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cr .lk{font:11px var(--mono);color:var(--mute)}
+.cdet{padding:5px 8px 7px 86px;font-size:11.5px;color:var(--ink2);display:grid;gap:3px;background:var(--fill);border-bottom:1px solid var(--line)}
+.st{font:600 10.5px var(--sans);border:1.5px solid var(--ink);border-radius:4px;padding:0 4px;white-space:nowrap;text-align:center}
+.st.unk{border-style:dashed;color:var(--ink2);border-color:var(--ink2)}
+.st.no{background:var(--ink);color:var(--paper)}
+.st.na{border-color:var(--line);color:var(--mute)}
+.dec{border-top:2px solid var(--ink);padding:9px 12px;display:grid;gap:7px;background:var(--paper)}
+.seg{border:1px solid var(--line);border-radius:5px;padding:2px 8px;background:var(--paper);font-size:12px;cursor:pointer}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.dbtn{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.dbtn button{border:1.5px solid var(--ink);background:var(--paper);border-radius:6px;padding:7px 4px;font:600 12.5px var(--sans);cursor:pointer}
+.dbtn button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.part{border:1px dashed var(--line);border-radius:6px;padding:5px 8px;display:grid;gap:2px;font-size:12px}
+.part label{display:flex;gap:6px;align-items:center}
+.cost{font-size:12px;border:1px solid var(--line);border-radius:5px;padding:3px 8px;background:var(--fill)}
+.confirm{border:1.5px solid var(--ink);border-radius:6px;padding:7px 9px;display:grid;gap:5px;font-size:12px}
+.confirm select,.confirm input,.ov select,.ov input{font:12.5px var(--sans);padding:3px 6px;border:1px solid var(--line);border-radius:5px;background:var(--paper);color:var(--ink)}
+.done{border:1.5px solid var(--ink);border-radius:6px;padding:8px 10px;display:grid;gap:3px;font-size:12.5px}
+/* drawers + overlays */
+.drw{position:absolute;top:44px;right:0;bottom:0;width:430px;background:var(--paper);border-left:2px solid var(--ink);z-index:15;box-shadow:-8px 0 20px var(--shade);display:grid;grid-template-rows:auto 1fr}
+.dh{display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid var(--line);font-weight:600}
+.db{overflow-y:auto;padding:12px;display:grid;gap:8px;align-content:start;font-size:12.5px}
+.warnlbl{border:1.5px solid var(--ink);border-radius:5px;padding:5px 8px;font-weight:500;font-size:12px}
+.pc{border:1px solid var(--line);border-radius:6px;padding:7px 8px;display:grid;gap:2px}
+.log{display:grid;grid-template-columns:44px 1fr;gap:4px 8px;font-size:12px}
+.log span:nth-child(odd){font-family:var(--mono);color:var(--mute)}
+.scrim{position:absolute;inset:44px 0 0 0;background:var(--shade);z-index:18;display:grid;place-items:center}
+.ov{width:560px;max-height:760px;overflow:auto;background:var(--paper);border:2px solid var(--ink);border-radius:8px;display:grid;grid-template-rows:auto 1fr}
+.ov .db{gap:6px}
+.big{height:300px;border-radius:6px;background:repeating-linear-gradient(45deg,var(--fill),var(--fill) 10px,var(--fill2) 10px,var(--fill2) 20px);display:grid;place-items:center;color:var(--mute)}
+.ptab{width:100%;border-collapse:collapse;font-size:12px}
+.ptab td{border-bottom:1px solid var(--line);padding:4px 6px;vertical-align:top}
+.toast{position:absolute;left:50%;top:52px;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:6px 14px;border-radius:6px;font-size:12.5px;z-index:25}
+/* annotations */
+.ids [data-id]:not(.qx):not(.menu){position:relative}
+.ids [data-id]::after{content:attr(data-id);position:absolute;top:-6px;right:-3px;z-index:6;font:500 9.5px/1 var(--mono);color:var(--anno);background:var(--anno-bg);border:1px solid var(--anno);border-radius:3px;padding:2px 3px;white-space:nowrap;pointer-events:none}
+.hlA [data-v~="A"],.hlG [data-v~="G"],.hlD [data-v~="D"],.hlH [data-v~="H"]{outline:2px dashed var(--anno);outline-offset:1px}
+.insp [data-id]{cursor:help}
+.insp [data-id]:hover{outline:2px solid var(--anno);outline-offset:1px}
+.picked{outline:3px solid var(--anno)!important;outline-offset:2px}
+.lit{box-shadow:0 0 0 3px var(--anno)!important}
+.flash{animation:fl 1.4s ease 2}
+@keyframes fl{50%{box-shadow:0 0 0 4px var(--anno)}}
+.fold{position:absolute;left:0;right:0;height:0;border-top:2px dashed var(--anno);pointer-events:none;z-index:7}
+/* inspector sheet */
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--paper);border-top:2px solid var(--anno);box-shadow:0 -8px 24px var(--shade);padding-inline:16px;padding-block:12px calc(12px + env(safe-area-inset-bottom,0px));max-height:46vh;overflow:auto}
+.sheet .in{max-width:1480px;margin:0 auto;display:grid;gap:8px}
+.sheet h3{margin:0;font:600 16px var(--sans);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:8px 18px}
+.sgrid div{min-width:0}
+.sgrid b{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute);font-weight:600}
+.tag{display:inline-block;font:500 11px var(--mono);border:1px solid var(--line);border-radius:4px;padding:0 5px;color:var(--ink2);background:var(--fill)}
+/* below-frame content */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0}
+.card h3{margin:0;font:600 14px var(--sans)}
+.card p,.card li{margin:0;color:var(--ink2);font-size:13.5px}
+.card ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.tbl{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:8px}
+table.map{border-collapse:collapse;width:100%;min-width:820px;font-size:13px}
+table.map th,table.map td{padding:6px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.map th{font:600 11.5px var(--sans);text-transform:uppercase;letter-spacing:.05em;color:var(--mute);background:var(--fill)}
+table.map td.n{font-family:var(--mono);text-align:center;width:52px}
+table.map td.list{color:var(--ink2);font-size:12.5px}
+table.map tr.total td{font-weight:600;background:var(--fill)}
+.fx td:first-child{white-space:nowrap}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+/* ===== second iteration additions ===== */
+.hint{font:400 11px var(--sans);color:var(--mute);text-transform:none;letter-spacing:0}
+.f2{font-size:11.5px;color:var(--ink2)}
+.gapb{font-family:var(--mono);font-weight:600;border:1px solid var(--ink2);border-radius:4px;padding:0 4px;font-size:11.5px}
+.items tr.sub td{font-size:11px;color:var(--mute);border-bottom:1px dotted var(--line)}
+.gaps{display:grid;gap:4px}
+.hscroll{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.hscroll>.tile{flex:0 0 300px;scroll-snap-align:start}
+.party{border:1px solid var(--line);border-radius:6px;background:var(--paper)}
+.party .ph{display:grid;grid-template-columns:1fr auto;grid-template-areas:"n l" "c c";gap:1px 8px;width:100%;text-align:left;background:none;border:0;padding:5px 8px;cursor:pointer}
+.party .pn{grid-area:n;font-weight:600;font-size:12.5px}
+.party .pc2{grid-area:c;font-size:12px}
+.party .ph .lnk{grid-area:l}
+.party .pb{padding:0 8px 7px;display:grid;gap:4px}
+.pmeta{font-size:11.5px;color:var(--mute)}
+.rtab{width:100%;border-collapse:collapse;font-size:11.5px;font-variant-numeric:tabular-nums}
+.rtab th{font:600 10.5px var(--sans);text-transform:uppercase;letter-spacing:.04em;color:var(--mute);text-align:left;border-bottom:1px solid var(--line);padding:2px 4px}
+.rtab td{border-bottom:1px dotted var(--line);padding:2px 4px;vertical-align:top}
+.rtab tr.tot td{font-weight:600;border-top:1.5px solid var(--ink);border-bottom:0;background:var(--fill)}
+.rtab tr.old td{color:var(--mute)}
+/* centre */
+.chd2{gap:8px;flex-wrap:nowrap}
+.iss{font-weight:600;max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex-shrink:1}
+.tabs{display:flex;gap:3px;flex-shrink:0}
+.tab{border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:2px 9px;font:500 12px var(--sans);cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.badge{display:inline-block;min-width:16px;padding:0 4px;border-radius:8px;background:var(--anno);color:#fff;font:600 10.5px var(--sans);text-align:center}
+.pv{display:flex;gap:6px;align-items:center;padding:5px 12px;border-bottom:1px solid var(--line);background:var(--anno-bg);font-size:12.5px}
+.chat{grid-template-rows:auto auto 1fr auto}
+.chat>.msgs,.chat>.vbody{grid-row:3}
+.chat>.reply{grid-row:4}
+.chat>.pv{grid-row:2}
+.mlist{display:flex;flex-direction:column;gap:8px}
+.sugtag{display:block;font:10px var(--sans);color:var(--mute);margin-top:2px}
+.vbody{overflow-y:auto;padding:10px 12px;display:grid;gap:8px;align-content:start;min-height:0}
+.vh{display:flex;align-items:center;gap:8px;font-weight:600}
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.vsec{border:1px solid var(--line);border-radius:6px;padding:7px 9px;display:grid;gap:3px;font-size:12.5px;align-content:start}
+.rules{display:grid;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.rr{display:grid;grid-template-columns:78px 1fr auto;gap:8px;align-items:center;padding:4px 8px;border-bottom:1px solid var(--line);font-size:12px}
+.rr:last-child{border-bottom:0}
+.rr .chip{white-space:normal;max-width:150px;font-size:10px}
+.kv3{display:grid;grid-template-columns:110px 60px 1fr;gap:3px 8px;font-size:12.5px}
+.kot{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dotted var(--line);padding:1px 0}
+.subrow{border-left:3px solid var(--ink);padding:2px 8px;background:var(--fill)}
+/* reply */
+.sug{display:grid;gap:2px;text-align:left;border:1.5px dashed var(--anno);background:var(--anno-bg);border-radius:6px;padding:6px 9px;cursor:pointer;font-size:12.5px;color:var(--ink)}
+.sug .sl{font:600 10.5px var(--sans);text-transform:uppercase;letter-spacing:.05em;color:var(--anno)}
+.pop{position:absolute;left:12px;right:12px;bottom:100%;margin-bottom:6px;background:var(--paper);border:2px solid var(--ink);border-radius:8px;box-shadow:0 -8px 20px var(--shade);padding:9px 11px;display:grid;gap:5px;z-index:10;font-size:12.5px}
+.closing{border:1.5px solid var(--ink);border-radius:6px;padding:5px 9px;font-size:12px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.dots{display:flex;gap:4px;margin-left:auto}
+.dots span{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--ink)}
+.dots .d1{background:var(--ink)} .dots .d2{background:var(--anno);border-color:var(--anno)}
+/* insights */
+.iline{display:grid;gap:4px}
+.iline button{display:grid;grid-template-columns:94px 1fr;gap:6px;text-align:left;background:var(--fill);border:1px solid var(--line);border-radius:6px;padding:4px 8px;cursor:pointer;font-size:12px;line-height:1.35}
+.iline b{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2)}
+.cr{display:grid;grid-template-columns:76px 1fr;border-bottom:1px solid var(--line);background:var(--paper)}
+.cr:last-child{border-bottom:0}
+.cr.ovr{background:var(--fill)}
+.stb{background:none;border:0;border-right:1px solid var(--line);padding:4px 6px;cursor:pointer;display:grid;place-items:center}
+.cn{display:flex;gap:6px;align-items:center;min-width:0;background:none;border:0;padding:4px 8px;cursor:pointer;text-align:left;font-size:12px;flex-wrap:wrap}
+.cn[aria-expanded="true"]{background:var(--anno-bg)}
+.cn .nm{font-weight:600;white-space:nowrap}
+.cn .f{color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+.cn .chg{font:600 10px var(--sans);border:1px dashed var(--ink);border-radius:3px;padding:0 4px;white-space:nowrap}
+.ovm{display:flex;flex-wrap:wrap;gap:4px;align-items:center;padding:5px 8px;background:var(--anno-bg);border-bottom:1px solid var(--line);font-size:12px}
+.cdet{padding:5px 8px 7px 84px}
+.rsum{display:flex;gap:6px;align-items:center;border:1px solid var(--line);border-radius:6px;padding:4px 8px;background:var(--paper);cursor:pointer;font-size:12px;width:100%;text-align:left}
+.terms{border:1px solid var(--line);border-left:3px solid var(--ink2);border-radius:6px;padding:4px 8px;display:grid;gap:3px;font-size:12px}
+.terms b{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink2);margin-right:4px}
+.trig{font-weight:500}
+.side3{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;font-size:12px}
+.side3>div{border:1px solid var(--line);border-radius:6px;padding:5px 7px;display:grid;gap:1px}
+.side3 b{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--mute)}
+.dec{gap:6px}
+.drow{display:flex;gap:4px;align-items:center;flex-wrap:wrap;font-size:12px}
+.drow .dl{width:52px;color:var(--mute);font-size:11.5px}
+.drow select{font:12.5px var(--sans);padding:3px 6px;border:1px solid var(--line);border-radius:5px;background:var(--paper);color:var(--ink);max-width:250px}
+.dbtn{grid-template-columns:repeat(5,1fr);gap:5px}
+.dbtn button{padding:7px 2px;font-size:12px}
+.dbtn .holdb{border-style:dashed}
+.cost.dim{color:var(--mute)}
+.route{font-size:12px;border:1.5px solid var(--ink);border-radius:5px;padding:4px 8px}
+.heldrow{font-size:12px;border:1.5px dashed var(--ink);border-radius:5px;padding:4px 8px}
+.qi.held{border-style:dashed}
+.qi .hb{font:600 9.5px var(--sans);border:1px solid var(--ink);border-radius:3px;padding:0 3px;justify-self:center}
+.heldtag{font:600 10.5px var(--sans);border:1px dashed var(--ink);border-radius:3px;padding:0 4px;justify-self:start}
+.fair{font-weight:600;border:1.5px solid var(--ink);border-radius:5px;padding:2px 7px;justify-self:start}
+.ov.wide{width:720px}
+.tagbox{border:1.5px solid var(--ink);border-radius:6px;padding:7px 9px;display:grid;gap:5px}
+.lit{box-shadow:0 0 0 3px var(--anno)!important}
+/* inspect + change markers */
+.insp [data-k]{cursor:help}
+.insp [data-k]:hover{outline:2px solid var(--anno);outline-offset:1px}
+.chg [data-c="new"]{outline:2px solid var(--anno);outline-offset:1px;position:relative}
+.chg [data-c="changed"]{outline:2px dashed var(--anno);outline-offset:1px;position:relative}
+.chg [data-c="new"]::after,.chg [data-c="changed"]::after{position:absolute;top:-7px;right:-2px;z-index:6;font:600 9px/1 var(--mono);color:#fff;background:var(--anno);border-radius:3px;padding:2px 3px;pointer-events:none}
+.chg [data-c="new"]::after{content:"NEW"}
+.chg [data-c="changed"]::after{content:"CHANGED"}
+.tag.new{background:var(--anno);color:#fff;border-color:var(--anno)}
+.tag.changed{border:1px dashed var(--anno);color:var(--anno)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--ink2)}
+.legend span{display:inline-flex;gap:5px;align-items:center}
+.sw{display:inline-block;width:18px;height:11px;border-radius:2px}
+.sw.n{outline:2px solid var(--anno)} .sw.c{outline:2px dashed var(--anno)}
+.cards h3 .tag{margin-left:4px}
+
+.clock{white-space:nowrap;flex-shrink:0}
+
+.cr{padding:0;cursor:default}
+</style>
+<div class="wrap">
+  <header>
+    <h1>S2 Wireframe · Agent Panel · Second iteration</h1>
+    <p class="lede">Rebuilt against the approved v2.0 change spec (14 Oct 2026). The frame is still 1440 × 900 and greyscale, and it works like the real screen. <b>Use</b> mode: click anything and it does what the agent would do. <b>Inspect</b> mode: click any outlined element to see its layer, visibility rule, the spec section it comes from and what changed since iteration 1. Five fictional chats: S2 (open), S5, S3, S8 and the new S9 (on hold). All names, orders and amounts are fictional.</p>
+  </header>
+
+  <div class="bar" role="toolbar" aria-label="Wireframe controls">
+    <div class="grp"><span class="lbl">Mode</span>
+      <button class="tb" id="m-use" aria-pressed="true">Use</button>
+      <button class="tb" id="m-insp" aria-pressed="false">Inspect</button>
+    </div>
+    <div class="grp"><span class="lbl">Show</span>
+      <button class="tb" id="t-chg" aria-pressed="false">Changes from iteration 1</button>
+      <button class="tb" id="t-size" aria-pressed="false">Actual size</button>
+    </div>
+    <div class="grp"><span class="lbl">Simulate</span>
+      <button class="tb demo" id="sim-cust">Customer replies</button>
+      <button class="tb demo" id="sim-off">Customer goes offline</button>
+      <button class="tb demo" id="sim-reset">Reset all chats</button>
+    </div>
+  </div>
+
+  <div class="stage" id="stage"><div class="frame" id="frame"></div></div>
+  <div class="legend"><span class="mono">Frame 1440 × 900 · columns 56 / 372 / 572 / 440 · header 44</span><span><i class="sw n"></i>New in iteration 2</span><span><i class="sw c"></i>Changed (turn on "Changes from iteration 1")</span><span>"Simulate" buttons are demo controls, not part of the agent screen</span></div>
+
+  <section>
+    <h2>What changed from iteration 1</h2>
+    <div class="cards">
+      <div class="card"><h3>Removed <span class="tag">owner decisions</span></h3><ul>
+        <li>Claim-window, reply-by and regulatory clocks from Insights (reply-by stays in the chat header)</li>
+        <li>"No review triggers", "Permission" and "History: C 3/7…" chips</li>
+        <li>P3 claim window and T3 late filing (the 24 h limit is now an upstream gate; S7 removed)</li>
+        <li>Restaurant permission block, request / remind / escalate, 10-minute wait</li>
+        <li>OTP and location ping from Evidence (proof of delivery moved to the Rider view)</li>
+        <li>People tab (names now sit in Party records)</li>
+        <li>Ask for evidence, Internal note and reference wording in the reply box</li>
+        <li>P2 default liability as a visible row (now only in the P1 ⓘ detail)</li>
+      </ul></div>
+      <div class="card"><h3>Added <span class="tag new">new</span></h3><ul>
+        <li>Centre switch: Customer chat · Rider · Restaurant, with unread badge and one-line preview</li>
+        <li>Rider view: activity log, proof of delivery, trip time vs promised, contacts, incidents, R1–R5</li>
+        <li>Restaurant view: acceptance and prep vs own estimate, KOT, instructions, substitutions, terms</li>
+        <li>Case insight line (Customer · Rider · Restaurant), clickable to sources</li>
+        <li>Terms block (restaurant terms + triggers only when fired)</li>
+        <li>Photo tags the agent taps to confirm; condition override with "Changed by agent"</li>
+        <li>On hold with "who is responsible", Held tag in the queue</li>
+        <li>Close-ticket pop-up and 3–4 closing messages; restaurant report on close</li>
+        <li>Suggested reply from keywords; templates only for unmet / unknown conditions</li>
+      </ul></div>
+      <div class="card"><h3>Changed <span class="tag changed">changed</span></h3><ul>
+        <li>Subject pre-filled from the bot, 17 options; Fault and Action never pre-filled</li>
+        <li>Action has five buttons; Reason list depends on Fault × Action</li>
+        <li>Full refund = affected items + GST; whole order for non-delivery</li>
+        <li>P6 is now "within the restaurant's agreed terms"; cost split shows Swiggy's share above the cap</li>
+        <li>Party records on one basis: raised · upheld out of total, with a total row for the customer</li>
+        <li>Records side by side in every case; Similar cases became the on-demand Star case with a QA fairness rating</li>
+        <li>Evidence scrolls sideways; timeline shows the complaint gap ("+8 min")</li>
+        <li>Case log opens as a centred pop-up</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Function index</h2>
+    <p class="lede" style="margin:0 0 10px">Every working function: where it sits, how to trigger it and what happens. "Show me" opens the right chat and view, then flashes the element.</p>
+    <div class="tbl"><table class="map fx"><thead><tr><th></th><th>Function</th><th>Where</th><th>How</th><th>What happens</th><th>Logged</th><th></th></tr></thead><tbody id="fxBody"></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Notes for review</h2>
+    <div class="cards">
+      <div class="card"><h3>Labelled assumptions</h3><ul>
+        <li>Rider-app data (location at marking, call logs, incidents, "marked packed") is Hypothetical in shape.</li>
+        <li>GST shown at 5%, the rate on restaurant food sold through a delivery platform.</li>
+        <li>Refund timelines in closing messages ("3–5 working days") and the 3–4 min ideal handling time are placeholders.</li>
+        <li>Suggested replies use simple keyword rules here; the real feature would generate text.</li>
+      </ul></div>
+      <div class="card"><h3>Risks carried to Stage 12</h3><ul>
+        <li>Legal deadline (48 h / 1 month) is no longer on screen, but held and review cases stay open.</li>
+        <li>Suggested replies are unrestricted and can promise an outcome before Confirm; only the log guards this.</li>
+        <li>The star case can still anchor agents; Stage 9 should check copy rates.</li>
+        <li>Non-delivery cases now rest on one system fact: rider location at marking.</li>
+      </ul></div>
+      <div class="card"><h3>Test it in 2 minutes</h3><ul>
+        <li>S2: click the photo, tag it; pick Restaurant + Full refund + a reason; Confirm → Yes → press Enter four times.</li>
+        <li>S5: Restaurant view (substitution, no consent); then Full refund with fault Restaurant to see the ₹250 / ₹65 split.</li>
+        <li>S9: On hold → Customer; then Simulate "Customer replies".</li>
+        <li>Any chat: Rider view, then Simulate "Customer replies" to see the preview.</li>
+      </ul></div>
+    </div>
+  </section>
+</div>
+
+<div class="sheet" id="sheet" hidden><div class="in" id="sheetIn"></div></div>
+
+<script>
+/* ===== Second iteration · data (frozen policy v2.0, all orders and people fictional) ===== */
+const GST_RATE=0.05; // 5% GST on restaurant food sold through a delivery platform [Law]
+
+/* Subject list (spec §9). p5 = photo required (P5). range: 'item' = affected items + GST, 'order' = whole order incl. fees, null = no published threshold. */
+const SUBJECTS=[
+ ['Items','Missing item',{p5:true,range:'item',liable:'Restaurant',tags:['Item absent','Bag/seal intact','Bill shows item']}],
+ ['Items','Wrong item',{p5:true,range:'item',liable:'Restaurant',tags:['Different dish','Wrong variant (veg/non-veg, size)']}],
+ ['Items','Customisation not followed',{p5:true,range:'item',liable:'Restaurant',tags:['Instruction ignored','Add-on missing']}],
+ ['Items','Inadequate quantity',{p5:true,range:'item',liable:'Restaurant',tags:['Short portion','Container under-filled']}],
+ ['Quality','Quality or taste',{p5:true,range:'item',liable:'Restaurant',tags:['Cold','Undercooked/burnt','Stale']}],
+ ['Quality','Hygiene / foreign object',{p5:true,range:'item',liable:'Restaurant',tags:['Foreign object','Hygiene concern']}],
+ ['Packaging','Damaged or spilled',{p5:true,range:'item',liable:'Delivery partner or Swiggy',tags:['Spillage','Container broken','Bag torn']}],
+ ['Packaging','Tampered / unsealed',{p5:true,range:'item',liable:'Delivery partner or Swiggy',tags:['Seal broken','Seal missing']}],
+ ['Delivery','Not delivered (marked delivered)',{p5:false,range:'order',liable:'Delivery partner or Swiggy'}],
+ ['Delivery','Late delivery',{p5:false,range:null,liable:'Delivery partner or Swiggy'}],
+ ['Delivery','Delivered to wrong address',{p5:false,range:'order',liable:'Delivery partner (customer if the address was entered wrong)'}],
+ ['Delivery','Rider conduct',{p5:false,range:null,liable:'Delivery partner',route:true}],
+ ['Payment','Charged, order not placed / charged twice',{p5:false,range:'order',liable:'Swiggy'}],
+ ['Payment','Refund for earlier issue not received',{p5:false,range:null,liable:'Swiggy'}],
+ ['Payment','Offer or coupon not applied',{p5:false,range:null,liable:'Swiggy'}],
+ ['Cancellation','Cancelled by restaurant or Swiggy',{p5:false,range:'order',liable:'Whoever cancelled'}],
+ ['Cancellation','Cancellation fee dispute',{p5:false,range:null,liable:'Depends on who cancelled'}]
+];
+const SUBJ=Object.fromEntries(SUBJECTS.map(r=>[r[1],r[2]]));
+const ORIGINAL6=['Missing item','Wrong item','Quality or taste','Damaged or spilled','Not delivered (marked delivered)','Late delivery'];
+
+const HANDBOOK=[
+ ['P1','Issue type is in the Subject list','Published types + Borrowed structure'],
+ ['P2','Default liability per issue type · shown only in the P1 "i" detail','Published + Borrowed'],
+ ['P4','Cash on delivery: reported before marked delivered','Published'],
+ ['P5','At least one customer photo (items, quality, packaging subjects)','Hypothetical'],
+ ['P6','Within the restaurant\'s agreed refund terms (Full / Partial up to ₹X per order / None)','Owner · Hypothetical'],
+ ['P7','Amount within range: affected items + their GST; whole order for non-delivery','Owner'],
+ ['P8','Up to ₹500 without review','Hypothetical'],
+ ['R1','Marked delivered within 100 m of the drop address','Hypothetical'],
+ ['R2','At least 1 in-app call before reporting the customer unreachable','Borrowed (Uber) · call logs Reported'],
+ ['R3','Waited at least 7 min at the door before ending the delivery','Borrowed (Uber) · value Hypothetical'],
+ ['R4','Rider stages within promised time + 10 min','Hypothetical'],
+ ['R5','In-transit incidents reported before marking delivered','Hypothetical'],
+ ['T1','Refund above ₹500','Borrowed'],['T2','First-time customer','Borrowed'],['T4','Rider record and customer claim disagree','Hypothetical'],
+ ['—','Removed in v2.0: P3 claim window and T3 late filing (the 24 h limit is now an upstream gate)','Owner']
+];
+
+/* Templates: only offered for conditions that are not met or unknown (spec §10). */
+const TPL={
+ P1:'Could you tell me a little more about what went wrong with the order?',
+ P4:'Could you confirm whether you paid the delivery partner in cash?',
+ P5:'Could you share a clear photo of the item you received, with the bag or bill if you still have it?',
+ P6:'I\'m confirming how the refund for this order can be handled. Please give me a moment.',
+ P7:'Could you tell me which items were affected, so I refund the right amount?',
+ P8:'This refund needs a quick second review. You\'ll hear from us in the app.'
+};
+
+const TPL_ONLY={P8:'no'}; // P8's template only fits once the limit is actually exceeded
+
+/* Reason options change with Fault x Action (spec §1). */
+const REASONS={
+ full:{_:['Evidence supports the claim','Customer clarified in chat'],Restaurant:['Photo shows the issue in the restaurant\'s item','Kitchen order and photo do not match'],Rider:['Trip record supports the claim'],Swiggy:['Platform or payment error'],Customer:['Goodwill refund despite a customer-side cause']},
+ partial:{_:['Only part of the order was affected','Refund limited to the affected items'],Restaurant:['Restaurant delay or item issue, part of order'],Rider:['Part of the order damaged in transit'],Swiggy:['Partial platform error'],Customer:['Goodwill partial refund']},
+ deny:{_:['Evidence does not show the issue','Order records show it was delivered as ordered'],Customer:['Customer-side cause (address, instructions, availability)'],Restaurant:['Substitution was agreed by the customer'],Rider:[],Swiggy:[]},
+ review:{_:['A review trigger fired','Records conflict','Amount above my approval limit','Need more input from the restaurant or rider']}
+};
+
+/* ---------- five fictional chats ---------- */
+const BASE={
+S2:{key:'S2',code:'WI',no:'#2041',order:'SW-2041',date:'Thu 8 Oct',placed:'19:32',restaurant:'Tandoor House',pay:'Prepaid (UPI)',cod:false,first:false,
+ cust:{name:'Aman K.',phone:'+91 ••••• ••427'},
+ items:[{n:'Paneer butter masala',q:1,p:240,aff:true},{n:'Butter naan',q:2,p:110}],fees:{del:30,pack:15},
+ delivered:'20:21',complaint:'20:29',
+ tl:[['Placed','19:32'],['Accepted','19:34'],['Prepared','19:52'],['Picked up','19:58'],['Marked delivered','20:21']],
+ photos:[{id:'p1',label:'Dish received',sub:'21:09',origin:'Sent in afterwards'}],
+ gaps:['Only evidence: 1 customer photo.','Customer photo sent 40 min after the complaint.'],
+ rec:{cust:{orders:7,rows:[['14 Sep','Wrong item','₹180','Refunded'],['20 Sep','Late delivery','—','Not upheld'],['29 Aug','Missing item','₹90','Refunded'],['05 Aug','Missing item','—','Not upheld'],['02 Aug','Quality or taste','₹120','Refunded (partial)']],older:[['11 Jun','Missing item','₹60','Refunded']]},
+  rider:{name:'Vikram D.',id:'R-118',total:412,rows:[['19 Sep','Damaged or spilled','Liable'],['03 Sep','Late delivery','Not liable']],older:[]},
+  rest:{total:1860,rows:[['06 Oct','Wrong item','Upheld'],['01 Oct','Wrong item','Upheld'],['27 Sep','Wrong item','Not upheld']],raised:12,upheld:9,older:[['Jun–Jul','7 wrong-item complaints · 5 upheld','—']]}},
+ bot:{at:'20:37',picked:'Wrong item',said:'"I ordered paneer butter masala but got a different curry."',offered:'25% coupon on next order (20:34) · declined'},
+ subject:'Wrong item',
+ msgs:[{w:'sys',t:'Riya joined',at:'21:03'},{w:'ag',t:"Hi Aman, I'm Riya from Swiggy support. I've read your chat with the bot.",at:'21:03'},{w:'ag',t:'Could you share a photo of the dish you received?',at:'21:05'},{w:'cu',t:'Ok one sec',at:'21:08'},{w:'cu',photo:'p1',at:'21:09'},{w:'cu',t:'This is what came. Not what I ordered.',at:'21:09'}],
+ typing:true,replies:["It was some other curry. I don't eat chicken.",'Ok, thank you.'],wait:8*60,reply:192,
+ rider:{log:[['Assigned','19:40'],['Accepted','19:41'],['Reached restaurant','19:50'],['Picked up','19:58'],['Reached drop','20:19'],['Marked delivered','20:21']],loc:15,promised:'20:25',stages:'Restaurant prep +3 min · pickup wait 8 min · en route 21 min (planned 22)',riderDelay:-1,contacts:[],incidents:[],unreach:false},
+ restv:{accepted:'19:34',est:15,actual:18,handover:'19:58',kot:[['1 × Paneer butter masala','Marked packed 19:51'],['2 × Butter naan','Marked packed 19:51']],instr:'"Less spicy"',subs:[]},
+ terms:{type:'full',agreed:'12 Jan 2026'},conflict:false,
+ star:{c:'#1882 · 2 Oct',dec:'Full refund · ₹189',fault:'Restaurant',reason:'Photo shows the issue in the restaurant\'s item',msg:"I've refunded ₹189 for the dish that was wrong, including its GST. It will reach your UPI account in 3–5 working days.",fair:4,qa:'12 Oct'}},
+
+S5:{key:'S5',code:'WI',no:'#2057',order:'SW-2057',date:'Thu 8 Oct',placed:'20:02',restaurant:'Wok Express',pay:'Prepaid (card)',cod:false,first:false,
+ cust:{name:'Farhan S.',phone:'+91 ••••• ••903'},
+ items:[{n:'Chilli paneer (dry)',q:1,p:300,aff:true},{n:'Veg fried rice',q:1,p:180}],fees:{del:25,pack:20},
+ delivered:'20:40',complaint:'20:46',
+ tl:[['Placed','20:02'],['Accepted','20:03'],['Prepared','20:18'],['Picked up','20:22'],['Marked delivered','20:40']],
+ photos:[{id:'p1',label:'Dish received',sub:'20:47',origin:'Sent in bot'},{id:'p2',label:'Bill',sub:'20:59',origin:'Sent in chat'}],
+ gaps:['2 customer photos, both sent after the complaint.'],
+ rec:{cust:{orders:9,rows:[['21 Sep','Missing item','₹40','Refunded']],older:[]},
+  rider:{name:'Sana M.',id:'R-342',total:290,rows:[],older:[]},
+  rest:{total:1240,rows:[['03 Oct','Wrong item','Upheld'],['22 Sep','Wrong item','Not upheld']],raised:7,upheld:5,older:[]}},
+ bot:{at:'20:49',picked:'Wrong item',said:'"Got gobi manchurian instead of chilli paneer."',offered:'20% coupon (20:48) · declined'},
+ subject:'Wrong item',
+ msgs:[{w:'cu',photo:'p1',at:'20:47'},{w:'sys',t:'Riya joined',at:'20:58'},{w:'ag',t:"Hi Farhan, I'm Riya. I can see the photo you shared with the bot.",at:'20:58'},{w:'cu',photo:'p2',at:'20:59'},{w:'cu',t:'How long will this take?',at:'21:06'}],
+ typing:false,replies:['I never agreed to any replacement.','Ok, thanks.'],wait:400,reply:140,
+ rider:{log:[['Assigned','20:08'],['Accepted','20:08'],['Reached restaurant','20:17'],['Picked up','20:22'],['Reached drop','20:38'],['Marked delivered','20:40']],loc:22,promised:'20:42',stages:'Restaurant prep on estimate · pickup wait 5 min · en route 16 min (planned 17)',riderDelay:-1,contacts:[],incidents:[],unreach:false},
+ restv:{accepted:'20:03',est:15,actual:15,handover:'20:22',kot:[['1 × Gobi manchurian (replacing Chilli paneer)','Marked packed 20:17'],['1 × Veg fried rice','Marked packed 20:17']],instr:'None',subs:[['Chilli paneer (dry)','Marked out of stock 20:05','Replaced with Gobi manchurian','Customer consent: not recorded']]},
+ terms:{type:'partial',cap:250,agreed:'3 Mar 2026'},conflict:false,
+ star:{c:'#1915 · 4 Oct',dec:'Full refund · ₹315',fault:'Restaurant',reason:'Kitchen order and photo do not match',msg:"I've refunded ₹315 for the item that was replaced without your agreement. It will reach your card in 5–7 working days.",fair:5,qa:'9 Oct'}},
+
+S3:{key:'S3',code:'ND',no:'#2063',order:'SW-2063',date:'Thu 8 Oct',placed:'20:05',restaurant:'Hyderabadi Handi',pay:'Prepaid (card)',cod:false,first:false,
+ cust:{name:'Neha R.',phone:'+91 ••••• ••215'},
+ items:[{n:'Chicken biryani (family)',q:1,p:450,aff:true},{n:'Mirchi ka salan',q:1,p:80,aff:true},{n:'Double ka meetha',q:1,p:80,aff:true}],fees:{del:35,pack:20},
+ delivered:'20:52',complaint:'20:58',
+ tl:[['Placed','20:05'],['Accepted','20:06'],['Prepared','20:24'],['Picked up','20:31'],['Marked delivered','20:52']],
+ photos:[],gaps:['No customer photo (not required for non-delivery).','Only system record: marked delivered 20:52, 40 m from the address.'],
+ rec:{cust:{orders:22,rows:[],older:[]},
+  rider:{name:'Imran H.',id:'R-207',total:388,rows:[['30 Sep','Not delivered','Liable'],['12 Sep','Not delivered','Not liable'],['28 Aug','Late delivery','Not liable']],older:[['22 May','Not delivered','Liable']]},
+  rest:{total:2900,rows:[['04 Oct','Quality or taste','Upheld'],['25 Sep','Missing item','Not upheld']],raised:6,upheld:4,older:[]}},
+ bot:{at:'21:00',picked:'Order not received',said:'"App says delivered but I never got anything."',offered:'Nothing offered (non-delivery goes to an agent)'},
+ subject:'Not delivered (marked delivered)',
+ msgs:[{w:'sys',t:'Riya joined',at:'21:00'},{w:'ag',t:"Hi Neha, I'm Riya. I'm checking the delivery record now.",at:'21:01'},{w:'cu',t:'Nobody came to my door. I was home the whole time.',at:'21:02'}],
+ typing:false,replies:['The gate guard also says no one came.','Ok.'],wait:195,reply:260,
+ rider:{log:[['Assigned','20:12'],['Accepted','20:13'],['Reached restaurant','20:22'],['Picked up','20:31'],['Reached drop','20:50'],['Marked delivered','20:52']],loc:40,promised:'20:50',stages:'Restaurant prep −2 min · pickup wait 9 min · en route 19 min (planned 18)',riderDelay:2,contacts:[['20:50','In-app call to customer','Not answered · 25 s']],incidents:[],unreach:false},
+ restv:{accepted:'20:06',est:20,actual:18,handover:'20:31',kot:[['1 × Chicken biryani (family)','Marked packed 20:23'],['1 × Mirchi ka salan','Marked packed 20:23'],['1 × Double ka meetha','Marked packed 20:24']],instr:'"Extra raita"',subs:[]},
+ terms:{type:'full',agreed:'20 Nov 2025'},conflict:true,
+ star:{c:'#1712 · 26 Sep',dec:'Sent to review',fault:'—',reason:'Records conflict',msg:"Because the delivery record and your account don't match, a senior colleague will review this and update you in the app.",fair:4,qa:'30 Sep'}},
+
+S8:{key:'S8',code:'MI',no:'#2070',order:'SW-2070',date:'Thu 8 Oct',placed:'20:10',restaurant:'Dosa Corner',pay:'Prepaid (UPI)',cod:false,first:false,
+ cust:{name:'Kiran P.',phone:'+91 ••••• ••588'},
+ items:[{n:'Masala dosa',q:1,p:160,aff:true},{n:'Filter coffee',q:2,p:120}],fees:{del:25,pack:10},
+ delivered:'20:50',complaint:'20:55',
+ tl:[['Placed','20:10'],['Accepted','20:11'],['Prepared','20:28'],['Picked up','20:33'],['Marked delivered','20:50']],
+ photos:[{id:'p1',label:'Bag contents',sub:'20:55',origin:'Sent in bot'}],
+ gaps:['Only evidence: 1 customer photo.'],
+ rec:{cust:{orders:12,rows:[['18 Aug','Late delivery','₹50','Refunded (partial)'],['02 Sep','Quality or taste','—','Not upheld']],older:[]},
+  rider:{name:'Prakash N.',id:'R-511',total:150,rows:[],older:[]},
+  rest:{total:980,rows:[['29 Sep','Missing item','Upheld'],['14 Sep','Missing item','Upheld'],['02 Aug','Missing item','Not upheld']],raised:3,upheld:2,older:[]}},
+ bot:{at:'20:58',picked:'Missing item',said:'"The dosa is missing, only the coffee came."',offered:'25% coupon (20:57) · declined'},
+ subject:'Missing item',
+ msgs:[{w:'cu',photo:'p1',at:'20:55'},{w:'sys',t:'Riya joined',at:'21:01'},{w:'ag',t:"Hi Kiran, I'm Riya. I've seen your photo and I'm checking the order records.",at:'21:02'},{w:'cu',t:'Only the coffee came. The bag was stapled shut.',at:'21:04'}],
+ typing:false,replies:['So what happens now?','Ok.'],wait:50,reply:280,
+ rider:{log:[['Assigned','20:15'],['Accepted','20:15'],['Reached restaurant','20:26'],['Picked up','20:33'],['Reached drop','20:48'],['Marked delivered','20:50']],loc:10,promised:'20:52',stages:'Restaurant prep +2 min · pickup wait 7 min · en route 15 min (planned 16)',riderDelay:-1,contacts:[],incidents:[],unreach:false},
+ restv:{accepted:'20:11',est:15,actual:17,handover:'20:33',kot:[['1 × Masala dosa','Marked packed 20:30'],['2 × Filter coffee','Marked packed 20:27']],instr:'"Extra sambar"',subs:[]},
+ terms:{type:'none',agreed:'8 Jul 2026'},conflict:false,
+ star:{c:'#1874 · 2 Oct',dec:'Full refund · ₹168',fault:'Restaurant',reason:'Photo shows the issue in the restaurant\'s item',msg:"I've refunded ₹168 for the missing dosa, including its GST. It will reach your UPI account in 3–5 working days.",fair:3,qa:'7 Oct'}},
+
+S9:{key:'S9',code:'LD',no:'#2078',order:'SW-2078',date:'Thu 8 Oct',placed:'20:00',restaurant:'Burger Point',pay:'Prepaid (UPI)',cod:false,first:false,
+ cust:{name:'Rohit V.',phone:'+91 ••••• ••770'},
+ items:[{n:'Classic burger',q:2,p:320,aff:true},{n:'Peri peri fries',q:1,p:100,aff:true}],fees:{del:30,pack:15},
+ delivered:'21:05',complaint:'21:07',
+ tl:[['Placed','20:00'],['Accepted','20:01'],['Prepared','20:35'],['Picked up','20:36'],['Marked delivered','21:05']],
+ photos:[],gaps:['No customer photo (not required for late delivery).'],
+ rec:{cust:{orders:30,rows:[['10 Sep','Late delivery','₹60','Refunded (partial)'],['22 Aug','Missing item','—','Not upheld']],older:[]},
+  rider:{name:'Deepak S.',id:'R-466',total:520,rows:[['15 Sep','Late delivery','Not liable']],older:[]},
+  rest:{total:3100,rows:[['05 Oct','Late delivery','Upheld'],['28 Sep','Late delivery','Upheld'],['20 Sep','Quality or taste','Not upheld']],raised:9,upheld:6,older:[]}},
+ bot:{at:'21:08',picked:'Late delivery',said:'"Order came 35 minutes late."',offered:'Nothing offered'},
+ subject:'Late delivery',
+ msgs:[{w:'sys',t:'Riya joined',at:'21:08'},{w:'ag',t:"Hi Rohit, I'm Riya. I'm sorry your order was late. I'm looking at what happened.",at:'21:08'},{w:'cu',t:'35 minutes late. I want compensation.',at:'21:09'},{w:'ag',t:'Could you tell me if anything in the order was affected, for example cold or spilled?',at:'21:10'},{w:'sys',t:'Rohit went offline',at:'21:10'}],
+ typing:false,replies:['Sorry, network issue. The burgers were cold.','Ok.'],wait:240,reply:150,offline:true,
+ rider:{log:[['Assigned','20:08'],['Accepted','20:09'],['Reached restaurant','20:18'],['Picked up','20:36'],['Reached drop','21:03'],['Marked delivered','21:05']],loc:20,promised:'20:30',stages:'Restaurant prep +16 min · pickup wait 18 min · en route 27 min (planned 23)',riderDelay:4,contacts:[],incidents:[['20:52','Road closure reported','Route changed']],unreach:false},
+ restv:{accepted:'20:01',est:18,actual:34,handover:'20:36',kot:[['2 × Classic burger','Marked packed 20:34'],['1 × Peri peri fries','Marked packed 20:35']],instr:'None',subs:[]},
+ terms:{type:'full',agreed:'1 Feb 2026'},conflict:false,
+ star:{c:'#1840 · 30 Sep',dec:'Partial refund · ₹105',fault:'Restaurant',reason:'Restaurant delay or item issue, part of order',msg:"I've refunded ₹105 towards the fries and part of the delay. It will reach your UPI account in 3–5 working days.",fair:4,qa:'5 Oct'}}
+};
+const ORDER=['S2','S5','S3','S8','S9'];
+
+(function(){
+"use strict";
+const $=s=>document.querySelector(s);
+const frame=$('#frame'), stage=$('#stage');
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const rs=n=>'₹'+Number(n).toLocaleString('en-IN');
+const T=s=>{const p=s.split(':').map(Number);return p[0]*60+p[1]};
+const HM=m=>{m=Math.floor(((m%1440)+1440)%1440);return String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')};
+const gapTxt=m=>{m=Math.round(m);if(m<60)return '+'+m+' min';const h=Math.floor(m/60),r=m%60;return '+'+h+' h'+(r?' '+r+' min':'')};
+const T0=Date.now(), NOW0=T('21:12');
+const secs=()=>(Date.now()-T0)/1000;
+const nowHM=()=>HM(NOW0+secs()/60);
+const gst=x=>Math.round(x*GST_RATE);
+
+/* ---------- inspect dictionary: what each element is, its layer, and what changed since iteration 1 ---------- */
+const INFO={
+ 'hdr.status':['Online / Away','System','A','same','—','Who is working and whether new chats can arrive. Click switches Online / Away.'],
+ 'hdr.search':['Search orders','System','D','same','—','Finds today\'s orders by number, customer or restaurant and opens that chat.'],
+ 'hdr.book':['Policy handbook v2.0','Data','D','changed','§2, §4, §8','Lists P1–P8, R1–R5 and T1, T2, T4 with source tags. P3 and T3 are listed as removed in v2.0.'],
+ 'hdr.keys':['Shortcuts','System','D','changed','—','Keyboard shortcuts, now including Alt + 1 / 2 / 3 for the centre views.'],
+ 'hdr.theme':['Theme','System','D','same','—','Light / dark for long and night shifts.'],
+ 'q.rail':['Queue rail','Data','A','changed','§10 On hold','Own chats only, sorted by wait. New in iteration 2: a held chat shows "H" and, in the expanded rail, "Held · waiting on <party>". It stays with the same agent.'],
+ 'm.order':['Order and amounts','Data','A','changed','§2 P7','Order facts plus GST, delivery and packaging lines, so "full refund = affected items + their GST" can be read straight off the bill. The complaint time shows its gap from delivery, e.g. "+8 min".'],
+ 'm.timeline':['Timeline','Data','G','changed','§5 Timeline','Status times. The complaint row shows its gap from "marked delivered" ("+5 min" / "+3 h 10 min"). The claim-window cut-off is gone (P3 removed).'],
+ 'm.evidence':['Evidence','Data','A','changed','§5 Evidence','Customer photos as tiles that scroll sideways. OTP and location ping were removed here; delivery proof now lives in the Rider view. Gap facts state what is thin, never "suspicious".'],
+ 'm.photo':['Photo viewer + tags','Data → agent observation','D','changed','§5 Evidence','Opens the photo enlarged in the centre. 2–3 tags for the current Subject sit under it. Tapping one records what the agent sees (e.g. "Spillage"). The system never pre-selects a tag. Each tap is logged.'],
+ 'm.records':['Party records','Data (context)','A','changed','§5 Party records, §11.4','Same basis for every party: raised · upheld, out of total. Customer has a dated table with a total row. Customer name and rider name/ID now sit here (People tab removed). Labelled "Context, not a policy condition".'],
+ 'c.tabs':['Centre view switch','System','A','new','§6','Customer chat · Rider · Restaurant, beside the issue name. Left and right panels stay the same; only the centre changes. Alt + 1 / 2 / 3.'],
+ 'c.preview':['New-message preview','Data','H','new','§6','While the Rider or Restaurant view is open, a new customer message shows as an unread badge on the Customer chat tab plus a one-line preview with "Reply". The view never switches by itself.'],
+ 'c.handover':['Bot handover','Data','A','same','—','What happened before the agent joined: the issue picked in the bot, the customer\'s words and what the bot offered. The Subject in the decision block is pre-filled from here.'],
+ 'c.msgs':['Conversation','Data','A','same','—','The live chat. A photo sent here also appears as an evidence tile.'],
+ 'c.clock':['Reply-by clock','Data','A','changed','§4','5 min (Hypothetical). Shown only here now; removed from the Insights panel. Resets when the agent sends.'],
+ 'r.activity':['Rider activity log','Data','A','new','§7','Every step of the trip with times: assigned → accepted → reached restaurant → picked up → reached drop → marked delivered.'],
+ 'r.pod':['Proof of delivery','Data','A','new','§7','Marked delivered in the rider app (QR shown, no OTP, no photo) plus the rider\'s distance from the drop address at that moment. Data shape is Hypothetical.'],
+ 'r.trip':['Trip time vs promised','Insight','A','new','§7','Promised vs actual time, with the delay split by stage so a late order can be attributed to restaurant prep, pickup wait or travel without blaming anyone.'],
+ 'r.contacts':['Contact attempts','Data','A','new','§7','In-app calls and messages from the rider to the customer.'],
+ 'r.incidents':['Rider-reported incidents','Data','A','new','§7','Issues the rider logged in the app during the trip.'],
+ 'r.rules':['Rider rules R1–R5','Insight','A','new','§8','Each rule checked against a fact: met / not met / N/A. R2 and R3 apply only when the rider reported the customer unreachable. A rule that is not met never sets Fault.'],
+ 's.accept':['Acceptance and prep times','Data → insight','A','new','§6 Restaurant view','When the restaurant accepted, its own prep estimate vs actual, and handover to the rider. Compared only with the restaurant\'s own promise.'],
+ 's.kot':['Order as sent to the kitchen','Data','A','new','§6 Restaurant view','The kitchen order ticket (KOT): exactly what the restaurant received, with "marked packed" times. "Marked packed" is Hypothetical data.'],
+ 's.instr':['Customer instructions','Data','A','new','§6 Restaurant view','Cooking or packing notes as the restaurant received them.'],
+ 's.subs':['Stock / substitution changes','Data','H','new','§6 Restaurant view','Items marked out of stock or replaced, with whether the customer agreed. A substitution the customer agreed to is not a wrong item.'],
+ 's.terms':['Agreed refund terms','Data','A','new','§3','The restaurant\'s terms from signing, read-only. Not a condition the agent can check off.'],
+ 't.templates':['Templates','Decision support','D','changed','§10 Type panel','Offered only for conditions that are not met or unknown. Met conditions need no further questions. Each template names its condition.'],
+ 't.suggest':['Suggested reply','Decision support','H','new','§10 Type panel','Type a sentence, half a sentence or keywords; one empathetic reply is suggested. Click it, then press Enter. Unrestricted (owner decision); each sent suggestion is logged as edited or unedited.'],
+ 't.box':['Reply box','System','A','changed','§10 Type panel','Docked in all three centre views. Enter sends, Shift + Enter adds a line. Ask for evidence, Internal note and reference wording were removed.'],
+ 'i.line':['Case insight line','Insight','A','new','§10.1','Facts from the case information, grouped Customer · Rider · Restaurant. Replaces the old "History: C 3/7…" chip. Each group is clickable and jumps to its source. No judgement words.'],
+ 'i.conds':['Policy conditions','Insight','A','changed','§2','Loaded from the case information and bot handover. Each row: met / not met / unknown / N/A against a fact. Click the name for source and the "i" detail (P2 default liability lives there).'],
+ 'i.override':['Agent override','Decision support','D','new','§2','Click a status to change it. No reason needed; the log records old → new, who and when. The row shows "Changed by agent" and the original value on hover.'],
+ 'i.ridersum':['Rider rules summary','Insight','A','new','§8','One line counting R1–R5 results, linking to the Rider view where each rule is shown.'],
+ 'i.terms':['Terms','Data','A','new','§4','Line 1 always: restaurant refund terms. Line 2 only when a review trigger fires (T1, T2, T4). Replaces the "No review triggers" chip.'],
+ 'i.side':['Records side by side','Data (context)','A','changed','§10.3','Customer · Rider · Restaurant in every case, same raised · upheld out of total format. In iteration 1 it appeared only for conflicting records (S3).'],
+ 'i.star':['Star case','Decision support','D','changed','§10.4','On demand. A past case matched on the same Subject, the same condition pattern and the same restaurant terms type. Shows decision, reason, closing message and the QA reviewer\'s fairness rating. No agent name. Replaces "Similar cases". Opening it is logged.'],
+ 'i.subject':['Subject','Data','A','changed','§1, §9','Pre-filled from the bot handover; change it from the drop-down (17 subjects in 6 groups). A change re-runs the conditions and is logged.'],
+ 'i.fault':['Fault','Decision','A','same','§1','Chosen by the agent only. Never pre-filled.'],
+ 'i.action':['Action','Decision','A','changed','§1, §10','Five buttons: Full · Partial · Deny · Send to review · On hold. Never pre-filled. Full refund = affected items + their GST; whole order for non-delivery.'],
+ 'i.reason':['Reason','Decision support','A','changed','§1','The list changes with each Fault × Action combination.'],
+ 'i.cost':['Cost split','Insight','H','changed','§3','Who pays. With restaurant fault, the restaurant pays up to its agreed cap and Swiggy pays the excess; "No refunds" terms move the whole cost to Swiggy.'],
+ 'i.confirm':['Confirm → close ticket','Decision','A','changed','§10','Confirm records the decision. A pop-up above the reply box asks "Close this ticket?". Yes loads 3–4 closing messages; the agent sends each one.'],
+ 'i.closing':['Closing messages','Decision support','H','new','§10','A series of 3–4 empathetic closing messages that state the result. Loaded one at a time into the reply box; nothing is sent automatically.'],
+ 'i.hold':['On hold','Decision support','A','new','§10 On hold','Every press asks who is responsible for the delay. The chat stays with the same agent and shows "Held" in the queue rail. Recorded in the case log and the agent\'s record, never in party history.'],
+ 'i.log':['Case log','Data','D','changed','§6','Same content as iteration 1, now opened as a centred pop-up.'],
+ 'i.report':['Restaurant report','Data','H','new','§3','On close of a full or partial refund: restaurant-relevant facts sent to the Partner app. No customer name, phone, address or history.']
+};
+const VN={A:'Always visible',G:'Glance: row that expands',D:'On demand: behind a click',H:'Only when that state happens'};
+const CHG={new:'New in iteration 2',changed:'Changed from iteration 1',same:'Same as iteration 1'};
+const K=k=>`data-k="${k}" data-c="${(INFO[k]||[])[3]||''}"`;
+
+/* ---------- state ---------- */
+let S={}, A='S2', mode='use', away=false, toast='', toastT=null, typingT=null, picked=null;
+function fresh(k){const b=JSON.parse(JSON.stringify(BASE[k]));
+ Object.assign(b,{botSubject:b.subject,subjChanged:false,open:{},condOpen:null,override:{},ovMenu:null,tags:{},view:'chat',unread:0,preview:'',
+  dec:null,part:[],fault:null,reason:'',decided:null,closing:null,closePrompt:false,closed:false,held:null,report:false,
+  log:[{at:(b.msgs.find(m=>m.w==='sys')||b.msgs[0]).at,t:'Agent opened the case'}],
+  draft:'',sugUsed:null,menu:null,drawer:null,ov:null,qUnread:k!=='S2'&&k!=='S3',older:{},replyAt:secs()+b.reply,waitAt:secs()-b.wait,openAt:secs()-b.wait,stick:true,offline:!!b.offline});
+ return b}
+function resetAll(){S={};ORDER.forEach(k=>S[k]=fresh(k))}
+resetAll();
+const cur=()=>S[A];
+function log(t,s){(s||cur()).log.push({at:nowHM(),t})}
+function say(t){toast=t;clearTimeout(toastT);toastT=setTimeout(()=>{toast='';render()},2400)}
+
+/* ---------- facts and checks ---------- */
+const itemsTotal=s=>s.items.reduce((a,i)=>a+i.p,0);
+const paid=s=>{const it=itemsTotal(s);return it+gst(it)+s.fees.del+s.fees.pack};
+const affTotal=s=>s.items.filter(i=>i.aff).reduce((a,i)=>a+i.p,0);
+const subj=s=>SUBJ[s.subject];
+function rangeOf(s){const r=subj(s).range;if(!r)return null;if(r==='order')return paid(s);const a=affTotal(s);return a+gst(a)}
+function amt(s){
+ if(!s.dec||s.dec==='review'||s.dec==='hold')return null;
+ if(s.dec==='deny')return 0;
+ if(s.dec==='full'){if(subj(s).range==='order')return paid(s);const a=affTotal(s)||itemsTotal(s);return a+gst(a)}
+ if(s.dec==='partial'){if(!s.part.length)return null;const x=s.part.reduce((a,i)=>a+s.items[i].p,0);return x+gst(x)}
+ return null}
+const termsTxt=t=>t.type==='full'?'Full refunds':t.type==='partial'?'Partial, max '+rs(t.cap)+' per order':'No refunds';
+const ST={met:['✓ Met',''],no:['✕ Not met','no'],unk:['? Unknown','unk'],na:['– N/A','na']};
+const SN={met:'met',no:'not met',unk:'unknown',na:'N/A'};
+function condsRaw(s){
+ const out=[],a=amt(s),rg=rangeOf(s),sj=subj(s),t=s.terms;
+ out.push({id:'P1',nm:'Issue type',st:'met',f:s.subject+(s.subjChanged?' · changed by agent':' · from bot'),src:'Published types + Borrowed structure',i:'P2 policy default for '+s.subject.toLowerCase()+': '+sj.liable+'. Shown here only, not next to Fault.'+(ORIGINAL6.includes(s.subject)?'':' This subject is beyond the original six: Hypothetical scope.')});
+ if(s.cod)out.push({id:'P4',nm:'COD timing',st:'unk',f:'Cash on delivery',src:'Published'});
+ if(!sj.p5)out.push({id:'P5',nm:'Evidence',st:'na',f:'No photo required for '+s.subject.toLowerCase(),src:'Hypothetical'});
+ else{const tg=Object.values(s.tags).flat();out.push({id:'P5',nm:'Evidence',st:s.photos.length?'met':'no',f:s.photos.length?s.photos.length+' customer photo'+(s.photos.length>1?'s':'')+(tg.length?' · you tagged: '+tg.join(', '):''):'No customer photo yet',src:'Hypothetical',ev:true})}
+ let p6;
+ if(t.type==='full')p6={st:'met',f:'Restaurant terms: full refunds'};
+ else if(t.type==='none')p6={st:'no',f:'Restaurant terms: no refunds · cost would fall on Swiggy'};
+ else if(a==null)p6={st:'unk',f:'Terms: max '+rs(t.cap)+' per order · amount not chosen'};
+ else p6=a<=t.cap?{st:'met',f:rs(a)+' within restaurant cap '+rs(t.cap)}:{st:'no',f:rs(a)+' is '+rs(a-t.cap)+' above restaurant cap '+rs(t.cap)};
+ out.push(Object.assign({id:'P6',nm:'Restaurant terms',src:'Owner · Hypothetical (agreed '+t.agreed+')'},p6));
+ if(rg==null)out.push({id:'P7',nm:'Amount in range',st:'unk',f:'No published threshold for '+s.subject.toLowerCase(),src:'—',np:true});
+ else if(a==null)out.push({id:'P7',nm:'Amount in range',st:'unk',f:'Amount not chosen · range up to '+rs(rg),src:'Owner'});
+ else out.push({id:'P7',nm:'Amount in range',st:a<=rg?'met':'no',f:rs(a)+' vs range up to '+rs(rg)+(subj(s).range==='order'?' (whole order)':' (affected items + GST)'),src:'Owner'});
+ if(a==null)out.push({id:'P8',nm:'Approval limit',st:'unk',f:'Amount not chosen · limit ₹500',src:'Hypothetical'});
+ else out.push({id:'P8',nm:'Approval limit',st:a<=500?'met':'no',f:rs(a)+(a<=500?' within':' over')+' ₹500 limit',src:'Hypothetical'});
+ return out}
+function conds(s){return condsRaw(s).map(c=>{const o=s.override[c.id];return o?Object.assign({},c,{orig:c.st,st:o.st,by:o.at}):c})}
+function riderRules(s){const r=s.rider,out=[];
+ out.push({id:'R1',nm:'Marked delivered at the address',st:r.loc<=100?'met':'no',f:'Rider '+r.loc+' m from drop address at marking · limit 100 m',src:'Hypothetical'});
+ out.push({id:'R2',nm:'Called before "unreachable"',st:r.unreach?(r.contacts.length?'met':'no'):'na',f:r.unreach?r.contacts.length+' call(s) logged':'Rider did not report the customer unreachable',src:'Borrowed (Uber) · call logs Reported'});
+ out.push({id:'R3',nm:'Waited at the door',st:r.unreach?'unk':'na',f:r.unreach?'Wait time not recorded':'Rider did not report the customer unreachable',src:'Borrowed (Uber) · value Hypothetical'});
+ out.push({id:'R4',nm:'On time (rider stages)',st:r.riderDelay<=10?'met':'no',f:'Rider stages '+(r.riderDelay>0?'+'+r.riderDelay:r.riderDelay)+' min vs plan · grace 10 min',src:'Hypothetical'});
+ out.push({id:'R5',nm:'Incidents reported in time',st:r.incidents.length?(r.incidents.every(i=>T(i[0])<=T(s.delivered))?'met':'no'):'na',f:r.incidents.length?r.incidents.length+' incident(s) logged before marked delivered':'No incidents logged',src:'Hypothetical'});
+ return out}
+function trigs(s){const t=[];const a=amt(s);
+ if(a!=null&&a>500)t.push(['T1','High value: refund '+rs(a)+' > ₹500','Borrowed']);
+ if(s.first)t.push(['T2','First-time customer','Borrowed']);
+ if(s.conflict)t.push(['T4','Conflicting records: marked delivered '+s.rider.loc+' m from address vs "not received"','Hypothetical']);
+ return t}
+function costLine(s){const a=amt(s);
+ if(!s.dec||s.dec==='review'||s.dec==='hold')return null;
+ if(s.dec==='deny')return {txt:'No refund · no cost moved'};
+ if(a==null)return null;
+ if(!s.fault)return {txt:'Choose a fault to see who pays',dim:true};
+ const t=s.terms;
+ if(s.fault==='Restaurant'){
+  if(t.type==='full')return {txt:'Restaurant '+rs(a)+' (terms: full refunds)'};
+  if(t.type==='none')return {txt:'Swiggy '+rs(a)+' (restaurant terms: no refunds)'};
+  return a<=t.cap?{txt:'Restaurant '+rs(a)+' (within cap '+rs(t.cap)+')'}:{txt:'Restaurant '+rs(t.cap)+' (agreed cap) · Swiggy '+rs(a-t.cap)+' (above cap)'}}
+ return {txt:{Rider:'Delivery partner '+rs(a)+' (v1.3 mapping, Inferred)',Swiggy:'Swiggy '+rs(a),Customer:'Swiggy '+rs(a)+' (goodwill, Inferred)'}[s.fault]}}
+function reasonsFor(s){if(!s.dec||s.dec==='hold')return [];const R=REASONS[s.dec];return [...(s.fault&&R[s.fault]||[]),...R._,'Other (see case log)']}
+const delivDelta=s=>T(s.delivered)-T(s.rider.promised);
+const recSum={
+ cust:s=>{const r=s.rec.cust.rows;return {raised:r.length,up:r.filter(x=>x[3].startsWith('Refunded')).length,of:s.rec.cust.orders+' orders',refTot:r.filter(x=>x[3].startsWith('Refunded')).reduce((a,x)=>a+(+x[2].replace(/[^\d]/g,'')||0),0)}},
+ rider:s=>{const r=s.rec.rider.rows;return {raised:r.length,up:r.filter(x=>x[2]==='Liable').length,of:s.rec.rider.total+' deliveries'}},
+ rest:s=>({raised:s.rec.rest.raised,up:s.rec.rest.upheld,of:s.rec.rest.total.toLocaleString('en-IN')+' orders'})};
+
+/* ---------- closing messages (spec §10) ---------- */
+function closingMsgs(s,d){const n=s.cust.name.split(' ')[0],a=d.amount,pay=s.pay.replace(/Prepaid \((.*)\)/,'$1');
+ const aff=s.items.filter(i=>i.aff).map(i=>i.n.toLowerCase()).join(' and ');
+ if(d.type==='full'||d.type==='partial')return [
+  `Thank you for your patience, ${n}. I've gone through your order and everything you shared.`,
+  `I've processed a refund of ${rs(a)}${subj(s).range==='order'?' for the whole order, including fees':' for the '+aff+', including GST'}. It will reach your ${pay} account in 3–5 working days.`,
+  `I'm sorry this happened. We've shared the details with the ${d.fault==='Rider'?'delivery team':'restaurant'} so it is less likely to happen again.`,
+  `Is there anything else I can help you with today?`];
+ if(d.type==='deny')return [
+  `Thank you for your patience, ${n}. I've checked the order records and what you shared.`,
+  `I'm not able to process a refund for this order: ${d.reason.charAt(0).toLowerCase()+d.reason.slice(1)}.`,
+  `If you have anything more to share, you can raise it again from Help in the app.`,
+  `Thank you for reaching out, and take care.`];
+ return [
+  `Thank you for your patience, ${n}.`,
+  `I've passed your case to a senior colleague for a second review, with everything we discussed.`,
+  `You'll get an update in the app once the review is done.`,
+  `Is there anything else I can help you with in the meantime?`]}
+
+/* ---------- suggested reply (keyword rules, fictional) ---------- */
+function suggest(s,txt){const t=txt.toLowerCase().trim(),n=s.cust.name.split(' ')[0];if(t.length<3)return '';
+ const R=[[/photo|pic|image/,`Could you share a clear photo of what you received, ${n}? It helps me check this quickly.`],
+  [/sorry|apolog/,`I'm really sorry about this, ${n}. I understand how frustrating it is, and I'm looking into it right now.`],
+  [/refund|money/,`I understand you'd like a refund. Let me check the order details and I'll update you in a moment.`],
+  [/restaurant|kitchen/,`I'm checking the restaurant's records for your order right now.`],
+  [/rider|deliver|late/,`I'm looking at the delivery partner's trip record for your order. Give me a moment.`],
+  [/wait|moment|check/,`Thank you for waiting, ${n}. I'm still checking this and will update you shortly.`],
+  [/there|online|respond/,`Are you still there, ${n}? I'll keep this chat open for a few more minutes.`],
+  [/address|location/,`Could you confirm your delivery address and a nearby landmark?`]];
+ for(const [re,v] of R)if(re.test(t))return v;
+ const c=txt.trim();return `Thanks for letting me know, ${n}. ${c.charAt(0).toUpperCase()+c.slice(1)}${/[.?!]$/.test(c)?'':'.'}`}
+
+/* ---------- render: header + queue ---------- */
+function hdr(){const n=ORDER.filter(k=>S[k].closed).length;
+ return `<div class="hdr"><span class="logo" aria-hidden="true"></span><span class="ttl">Agent workspace</span>
+ <button class="pill" data-act="away" ${K('hdr.status')}>${away?'○ Riya S. · Away':'● Riya S. · Online'} ▾</button>
+ <span class="pill mono">5 assigned${n?' · '+n+' closed':''}</span><span class="sp"></span>
+ <button class="ibtn" data-act="ov" data-arg="search" ${K('hdr.search')}>⌕ Search orders / customers</button>
+ <button class="ibtn" data-act="ov" data-arg="book" ${K('hdr.book')}>Policy handbook v2.0</button>
+ <button class="ibtn" data-act="ov" data-arg="keys" ${K('hdr.keys')}>? Shortcuts</button>
+ <button class="ibtn" data-act="theme" ${K('hdr.theme')}>◐ Theme</button></div>`}
+function wait(k){const s=S[k];if(s.closed)return 'done';if(k===A)return 'open '+Math.floor((secs()-s.openAt)/60)+'m';const w=Math.max(0,secs()-s.waitAt);return Math.floor(w/60)+':'+String(Math.floor(w%60)).padStart(2,'0')}
+function queue(){
+ const items=ORDER.map(k=>{const s=S[k];return `<button class="qi${k===A?' act':''}${s.closed?' done':''}${s.held?' held':''}" data-act="go" data-arg="${k}" aria-label="${s.no} ${esc(s.subject)}">${s.qUnread&&k!==A?'<span class="dot"></span>':''}<span class="ab">${s.closed?'✓':s.code}</span><span class="t" data-wait="${k}">${wait(k)}</span>${s.held?'<span class="hb">H</span>':''}</button>`}).join('');
+ const wide=ORDER.map(k=>{const s=S[k];return `<button class="qi${k===A?' act':''}${s.closed?' done':''}" data-act="go" data-arg="${k}">${s.qUnread&&k!==A?'<span class="dot"></span>':''}<b>${s.no}</b> ${esc(s.subject)}${s.closed?' · closed':''}<span class="t" data-wait="${k}">${k===A?wait(k):'waiting '+wait(k)}</span>${s.held?`<span class="heldtag">Held · waiting on ${s.held.by}</span>`:''}<span style="font-size:10px;color:var(--mute)">Scenario ${k}</span></button>`}).join('');
+ return `<div class="col qcol" ${K('q.rail')}><div class="qh">5</div><div class="qh" style="padding-top:0">by<br>wait</div>
+ <div class="q">${items}</div><div class="qx"><div class="qh" style="text-align:left">Your chats · 5 · sorted by wait</div>${wide}<div style="font-size:11px;color:var(--mute);padding:4px 2px">Alt + ↓ / ↑ to switch</div></div></div>`}
+
+/* ---------- render: case information (left) ---------- */
+function exp(s,key,head,body,k){const o=!!s.open[key];return `<div class="exp${o?' open':''}" ${k?K(k):''}><button class="eh" data-act="tog" data-arg="${key}"><span>${head}</span></button>${o?`<div class="in">${body}</div>`:''}</div>`}
+function caseCol(){const s=cur(),g=T(s.complaint)-T(s.delivered),it=itemsTotal(s);
+ const items=s.items.map(i=>`<tr class="${i.aff?'aff':''}"><td>${i.q} × ${esc(i.n)}</td><td>${rs(i.p)}</td></tr>`).join('');
+ const tl=s.tl.map(r=>`<span>${r[0]}</span><span></span><span class="mono">${r[1]}</span>`).join('')+`<span><b>Complaint</b></span><span class="gapb">${gapTxt(g)} after delivered</span><span class="mono"><b>${s.complaint}</b></span>`;
+ const photos=s.photos.length?s.photos.map(ph=>{const tg=s.tags[ph.id]||[];return `<button class="tile" id="ev-${ph.id}" data-act="ev" data-arg="${ph.id}" ${K('m.photo')}><div class="thumb">${esc(ph.label)}</div>
+  <div class="meta"><span class="chip">Customer photo</span><span class="chip">${ph.origin}</span></div><div class="mono" style="font-size:11.5px">Submitted ${ph.sub}</div>
+  <div style="font-size:11.5px;color:${tg.length?'var(--ink)':'var(--mute)'}">${tg.length?'You confirmed: '+tg.join(', '):'Click to enlarge and tag'}</div></button>`}).join(''):'';
+ const C=recSum.cust(s),Rd=recSum.rider(s),Rs=recSum.rest(s);
+ const cRows=s.rec.cust.rows.map(r=>`<tr><td class="mono">${r[0]}</td><td>${esc(r[1])}</td><td class="mono">${r[2]}</td><td>${r[3]}</td></tr>`).join('');
+ const cOld=s.older.cust?s.rec.cust.older.map(r=>`<tr class="old"><td class="mono">${r[0]}</td><td>${esc(r[1])}</td><td class="mono">${r[2]}</td><td>${r[3]} · &gt;90 d</td></tr>`).join(''):'';
+ const custTab=`<table class="rtab"><thead><tr><th>Date</th><th>Issue raised</th><th>Refund</th><th>Outcome</th></tr></thead><tbody>${cRows||'<tr><td colspan="4">No issues raised within 90 days</td></tr>'}${cOld}
+  <tr class="tot"><td>Total</td><td>${C.raised} raised</td><td class="mono">${rs(C.refTot)}</td><td>${C.up} refunded</td></tr></tbody></table>${s.older.cust?'':`<button class="lnk" data-act="older" data-arg="cust">Show older · logged</button>`}`;
+ const simpleTab=(rows,older,key,cols)=>`<table class="rtab"><thead><tr>${cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((x,i)=>`<td${i===0?' class="mono"':''}>${esc(x)}</td>`).join('')}</tr>`).join('')||`<tr><td colspan="${cols.length}">No complaints within 90 days</td></tr>`}${s.older[key]?older.map(r=>`<tr class="old">${r.map((x,i)=>`<td${i===0?' class="mono"':''}>${esc(x)}${i===r.length-1?' · &gt;90 d':''}</td>`).join('')}</tr>`).join(''):''}</tbody></table>${s.older[key]?'':`<button class="lnk" data-act="older" data-arg="${key}">Show older · logged</button>`}`;
+ const party=(key,title,sum,body)=>{const o=s.open['rec-'+key];return `<div class="party"><button class="ph" data-act="tog" data-arg="rec-${key}"><span class="pn">${title}</span><span class="pc2 mono">${sum}</span><span class="lnk">${o?'Hide':'Dates'}</span></button>${o?`<div class="pb">${body}</div>`:''}</div>`};
+ return `<div class="col" id="colM"><div class="chd">Case information <span class="code">M</span><span class="sp"></span><span class="code">fictional · scenario ${s.key}</span></div>
+ <div class="sec" ${K('m.order')}><div class="sh">Order <span class="sp"></span><span class="chip">Food delivery</span></div>
+  <dl class="kv"><dt>Order</dt><dd class="mono">${s.order} · ${s.date}, ${s.placed}</dd><dt>Restaurant</dt><dd>${s.restaurant}</dd><dt>Payment</dt><dd>${s.pay}</dd>
+  <dt>Complaint</dt><dd class="mono">${s.complaint} <b class="gapb">${gapTxt(g)}</b> after delivered</dd></dl>
+  <table class="items">${items}<tr class="sub"><td>Items ${rs(it)} · GST 5% ${rs(gst(it))} · delivery ${rs(s.fees.del)} · packaging ${rs(s.fees.pack)}</td><td></td></tr><tr class="tot"><td>Paid</td><td>${rs(paid(s))}</td></tr></table>
+  ${exp(s,'tl',`Timeline · <span class="mono">marked delivered ${s.delivered} · complaint ${s.complaint} (${gapTxt(g)})</span>`,`<div class="tl">${tl}</div>`,'m.timeline')}</div>
+ <div class="sec" id="evSec" ${K('m.evidence')}><div class="sh">Evidence <span class="sp"></span><span class="hint">${s.photos.length>1?'scroll sideways →':'customer photos only'}</span></div>
+  <div class="gaps">${s.gaps.map(g=>`<div class="gap">${esc(g)}</div>`).join('')}</div>
+  ${photos?`<div class="hscroll">${photos}</div>`:''}</div>
+ <div class="sec" id="recSec" ${K('m.records')}><div class="sh">Party records · 90 days <span class="sp"></span><span class="ctx">Context, not a policy condition</span></div>
+  ${party('cust','Customer · '+esc(s.cust.name),C.raised+' raised · '+C.up+' refunded / '+C.of,`<div class="pmeta">${s.cust.phone} · first order with Swiggy: ${s.first?'Yes':'No'}</div>`+custTab)}
+  ${party('rider','Rider · '+esc(s.rec.rider.name)+' · '+s.rec.rider.id,Rd.raised+' complaints · '+Rd.up+' liable / '+Rd.of,`<div class="pmeta">"Liable" = a past agent chose Fault: rider</div>`+simpleTab(s.rec.rider.rows,s.rec.rider.older,'rider',['Date','Complaint','Finding']))}
+  ${party('rest','Restaurant · '+esc(s.restaurant),Rs.raised+' complaints · '+Rs.up+' upheld / '+Rs.of,simpleTab(s.rec.rest.rows,s.rec.rest.older,'rest',['Date','Complaint','Finding']))}</div></div>`}
+
+/* ---------- render: centre (chat / rider / restaurant) ---------- */
+function msgHTML(m){
+ if(m.w==='sys')return `<div class="sys">${esc(m.t)} · ${m.at}</div>`;
+ if(m.photo){const s=cur(),ph=s.photos.find(p=>p.id===m.photo);return `<div class="m cu" style="padding:6px"><button class="photo" data-act="ev" data-arg="${m.photo}" id="chat-${m.photo}">${esc(ph?ph.label:'photo')} · ${m.at}</button><small>${m.at}</small></div>`}
+ return `<div class="m ${m.w}">${esc(m.t)}${m.sug?'<span class="sugtag">suggested'+(m.sug==='edited'?', edited':'')+'</span>':''}<small>${m.at}</small></div>`}
+function replyClock(){const s=cur(),r=Math.round(s.replyAt-secs());const a=Math.abs(r);const t=Math.floor(a/60)+':'+String(a%60).padStart(2,'0');return {txt:r>=0?'Reply by '+t:'Overdue '+t,low:r<60}}
+function chatView(s){
+ return `<div class="msgs" id="msgs"><div class="hand" ${K('c.handover')}><div class="sh">Bot handover · ${s.bot.at}</div>
+  <div class="r"><b>Picked in bot</b><span>${s.bot.picked}</span></div><div class="r"><b>Customer said</b><span>${esc(s.bot.said)}</span></div><div class="r"><b>Bot offered</b><span>${esc(s.bot.offered)}</span></div></div>
+  <div class="mlist" ${K('c.msgs')}>${s.msgs.map(msgHTML).join('')}</div>
+  ${s.typing?`<div class="typing">${s.cust.name.split(' ')[0]} is typing…</div>`:''}${s.offline&&!s.closed?`<div class="typing">${s.cust.name.split(' ')[0]} is offline</div>`:''}</div>`}
+function stRow(r){return `<div class="rr"><span class="st ${ST[r.st][1]}">${ST[r.st][0]}</span><span><b>${r.id} ${r.nm}</b><br><span class="f2">${esc(r.f)}</span></span><span class="chip">${r.src}</span></div>`}
+function riderView(s){const r=s.rider,d=delivDelta(s),RR=riderRules(s);
+ return `<div class="vbody" id="vbody">
+ <div class="vh">Rider · ${esc(s.rec.rider.name)} · ${s.rec.rider.id}<span class="sp"></span><span class="hint">all items are recorded facts · rider-app data shape is Hypothetical</span></div>
+ <div class="vgrid">
+ <div class="vsec" ${K('r.activity')}><div class="sh">Activity log</div><div class="tl">${r.log.map(x=>`<span>${x[0]}</span><span></span><span class="mono">${x[1]}</span>`).join('')}</div></div>
+ <div class="vsec" ${K('r.pod')}><div class="sh">Proof of delivery</div><div>Marked delivered <b class="mono">${s.delivered}</b> in the rider app</div><div>QR shown · no OTP · no photo</div><div>Rider location at marking: <b class="mono">${r.loc} m</b> from the drop address</div></div>
+ <div class="vsec" ${K('r.trip')}><div class="sh">Trip time vs promised</div><div class="mono">Promised ${r.promised} · actual ${s.delivered} · <b>${d>0?'+'+d+' min late':d===0?'on time':Math.abs(d)+' min early'}</b></div><div class="f2">${esc(r.stages)}</div></div>
+ <div class="vsec" ${K('r.contacts')}><div class="sh">Contact attempts</div>${r.contacts.length?r.contacts.map(c=>`<div><span class="mono">${c[0]}</span> · ${esc(c[1])} · ${esc(c[2])}</div>`).join(''):'<div class="f2">No calls or messages to the customer logged</div>'}</div>
+ <div class="vsec" ${K('r.incidents')}><div class="sh">Rider-reported incidents</div>${r.incidents.length?r.incidents.map(c=>`<div><span class="mono">${c[0]}</span> · ${esc(c[1])} · ${esc(c[2])}</div>`).join(''):'<div class="f2">No incidents reported during the trip</div>'}</div>
+ </div>
+ <div class="vsec" ${K('r.rules')}><div class="sh">Rider rules R1–R5 <span class="sp"></span><span class="hint">a rule not met never sets Fault</span></div><div class="rules">${RR.map(stRow).join('')}</div></div></div>`}
+function restView(s){const v=s.restv,dp=v.actual-v.est;
+ return `<div class="vbody" id="vbody">
+ <div class="vh">Restaurant · ${esc(s.restaurant)}<span class="sp"></span><span class="hint">facts only · no condition checks (terms were agreed at signing)</span></div>
+ <div class="vsec" ${K('s.accept')}><div class="sh">Acceptance and preparation</div>
+  <div class="kv3"><span>Accepted</span><b class="mono">${v.accepted}</b><span>${T(v.accepted)-T(s.placed)} min after placed</span>
+  <span>Prep time</span><b class="mono">${v.actual} min</b><span>own estimate ${v.est} min · <b>${dp>0?'+'+dp+' min':dp===0?'on estimate':dp+' min'}</b></span>
+  <span>Handed to rider</span><b class="mono">${v.handover}</b><span>rider reached ${s.rider.log[2][1]}</span></div></div>
+ <div class="vsec" ${K('s.kot')}><div class="sh">Order as sent to the kitchen (KOT)</div>${v.kot.map(x=>`<div class="kot"><span>${esc(x[0])}</span><span class="mono">${esc(x[1])}</span></div>`).join('')}</div>
+ <div class="vsec" ${K('s.instr')}><div class="sh">Customer instructions</div><div>${esc(v.instr)}</div></div>
+ <div class="vsec" ${K('s.subs')}><div class="sh">Stock / substitution changes</div>${v.subs.length?v.subs.map(x=>`<div class="subrow"><b>${esc(x[0])}</b> · ${esc(x[1])}<br>${esc(x[2])} · <b>${esc(x[3])}</b></div>`).join(''):'<div class="f2">No items marked out of stock or replaced</div>'}</div>
+ <div class="vsec" ${K('s.terms')}><div class="sh">Agreed refund terms <span class="chip">read-only</span></div><div>${termsTxt(s.terms)} · agreed ${s.terms.agreed}</div></div></div>`}
+function replyBox(s){
+ const C=conds(s).filter(c=>(c.st==='no'||c.st==='unk')&&TPL[c.id]&&(!TPL_ONLY[c.id]||TPL_ONLY[c.id]===c.st));
+ let menu='';
+ if(s.menu==='tpl')menu=`<div class="menu"><div class="mh">Templates · only for conditions not met or unknown</div>${C.map(c=>`<button data-act="tpl" data-arg="${c.id}"><b>${c.id} ${c.nm}</b> · ${SN[c.st]}<br><span style="color:var(--mute)">${esc(TPL[c.id])}</span></button>`).join('')||'<span class="f2" style="padding:4px 6px">All conditions are met. No templates needed.</span>'}</div>`;
+ let top='';
+ if(s.closePrompt&&s.decided)top=`<div class="pop" ${K('i.confirm')}><b>Close this ticket?</b><span>Decision recorded: ${s.decided.label}${s.decided.amount?' · '+rs(s.decided.amount):''}${s.decided.fault?' · fault '+s.decided.fault:''}</span><span class="f2">Yes loads ${4} closing messages. You send each one.</span><div class="row"><button class="btn pri" data-act="closeYes">Yes, close and load closing messages</button><button class="btn ghost" data-act="closeNo">Not yet</button></div></div>`;
+ else if(s.closing&&s.closing.i<s.closing.list.length)top=`<div class="closing" ${K('i.closing')}><b>Closing message ${s.closing.i+1} of ${s.closing.list.length}</b> <span class="f2">· loaded in the reply box · press Enter or Send</span><div class="dots">${s.closing.list.map((_,i)=>`<span class="${i<s.closing.i?'d1':i===s.closing.i?'d2':''}"></span>`).join('')}</div></div>`;
+ else if(!s.closed){const sg=suggest(s,s.draft);if(sg&&s.sugUsed==null&&!s.closing)top=`<button class="sug" data-act="sug" ${K('t.suggest')}><span class="sl">Suggested reply · click, then press Enter</span>${esc(sg)}</button>`}
+ const tplN=C.length;
+ return `<div class="reply" ${K('t.box')}>${menu}${top}
+  <textarea id="ta" placeholder="${s.closed?'Ticket closed':'Type a reply, half a sentence or keywords… (Enter to send, Shift + Enter for a new line)'}" aria-label="Reply" ${s.closed?'disabled':''}>${esc(s.draft)}</textarea>
+  <div class="row"><button class="btn ghost" data-act="menu" data-arg="tpl" ${K('t.templates')} ${s.closed?'disabled':''}>Templates · ${tplN}</button><span class="f2">${s.sugUsed!=null?'Suggested text loaded'+(s.sugUsed!==s.draft?' · edited':''):''}</span>
+  <span class="sp"></span><button class="btn pri" data-act="send" ${s.closed?'disabled':''}>Send</button></div></div>`}
+function centreCol(){const s=cur(),rc=replyClock();
+ const tab=(v,l,n)=>`<button class="tab" role="tab" aria-selected="${s.view===v}" data-act="view" data-arg="${v}">${l}${n?` <span class="badge">${n}</span>`:''}</button>`;
+ const pv=s.view!=='chat'&&s.unread?`<div class="pv" ${K('c.preview')}><b>${esc(s.cust.name.split(' ')[0])}:</b> ${esc(s.preview)}<span class="sp"></span><button class="lnk" data-act="view" data-arg="chat">Reply</button></div>`:'';
+ const body=s.view==='rider'?riderView(s):s.view==='rest'?restView(s):chatView(s);
+ return `<div class="col" style="overflow:hidden"><div class="chat">
+ <div class="chd chd2"><span class="iss" title="${esc(s.subject)}">${esc(s.subject)}</span><span class="tabs" role="tablist" ${K('c.tabs')}>${tab('chat','Customer chat',s.unread)}${tab('rider','Rider')}${tab('rest','Restaurant')}</span><span class="sp"></span>
+  ${s.closed?'<span class="clock">Closed</span>':`<span class="clock${rc.low?' low':''}" data-clock="reply" ${K('c.clock')}>◷ ${rc.txt}</span>`}</div>
+ ${pv}${body}${replyBox(s)}</div></div>`}
+
+/* ---------- render: insights + decision (right) ---------- */
+function insightLine(s){const g=T(s.complaint)-T(s.delivered),d=delivDelta(s),v=s.restv,dp=v.actual-v.est;
+ const ev=subj(s).p5?(s.photos.length?s.photos.length+' photo'+(s.photos.length>1?'s':'')+', sent '+gapTxt(T(s.photos[0].sub)-T(s.complaint)).replace('+','')+' after complaint':'no photo yet'):'no photo required';
+ const a=affTotal(s);
+ const cust=`${s.subject} · ${subj(s).range==='order'?'order '+rs(paid(s)):'items '+rs(a)}${s.photos.length||subj(s).p5?' · '+ev:''} · complaint ${gapTxt(g)}`;
+ const rider=`marked delivered ${s.delivered}, ${s.rider.loc} m from address · ${d>0?'+'+d+' min vs promised':'on time'}${s.rider.contacts.length?' · '+s.rider.contacts.length+' call':''}`;
+ const sub=v.subs.length?' · substitution, consent not recorded':'';
+ const rest=`terms: ${termsTxt(s.terms).toLowerCase()} · prep ${dp>0?'+'+dp+' min':'on estimate'}${sub}`;
+ return `<div class="iline" ${K('i.line')}><button data-act="jump" data-arg="cust"><b>Customer</b><span>${esc(cust)}</span></button><button data-act="view" data-arg="rider"><b>Rider</b><span>${esc(rider)}</span></button><button data-act="view" data-arg="rest"><b>Restaurant</b><span>${esc(rest)}</span></button></div>`}
+function insCol(){const s=cur(),C=conds(s),TR=trigs(s),a=amt(s),RR=riderRules(s);
+ const rows=C.map(c=>{const o=s.condOpen===c.id;
+  return `<div class="cr${c.by?' ovr':''}"><button class="stb" data-act="ovmenu" data-arg="${c.id}" title="${c.by?'Original value: '+SN[c.orig]+' · changed by agent '+c.by:'Click to change (logged)'}" ${K('i.override')}><span class="st ${ST[c.st][1]}">${ST[c.st][0]}</span></button>
+  <button class="cn" data-act="cond" data-arg="${c.id}" aria-expanded="${o}"><span class="nm">${c.id} ${c.nm}</span><span class="f">${esc(c.f)}</span>${c.by?`<span class="chg">Changed by agent ${c.by}</span>`:''}</button></div>
+  ${s.ovMenu===c.id?`<div class="ovm">Set ${c.id} to ${['met','no','unk','na'].map(x=>`<button class="seg" data-act="setov" data-arg="${c.id}:${x}" aria-pressed="${c.st===x}">${ST[x][0]}</button>`).join('')}${c.by?`<button class="lnk" data-act="setov" data-arg="${c.id}:reset">Back to original (${SN[c.orig]})</button>`:''}<span class="f2">No reason needed · old → new is logged</span></div>`:''}
+  ${o?`<div class="cdet"><span>Source: ${c.src}</span><span>${esc(c.f)}</span>${c.i?`<span>ⓘ ${esc(c.i)}</span>`:''}${c.np?'<span>Swiggy publishes no threshold for this issue type.</span>':''}${c.ev?'<span>Evidence highlighted in case information.</span>':''}</div>`:''}`}).join('');
+ const rc={met:0,no:0,unk:0,na:0};RR.forEach(r=>rc[r.st]++);
+ const side=['cust','rider','rest'].map(k=>{const x=recSum[k](s);const lab={cust:'Customer',rider:'Rider',rest:'Restaurant'}[k];const up={cust:'refunded',rider:'liable',rest:'upheld'}[k];return `<div><b>${lab}</b><span class="mono">${x.raised} raised</span><span class="mono">${x.up} ${up}</span><span class="f2">of ${x.of}</span></div>`}).join('');
+ let low='';
+ if(s.closed){const d=s.decided;low=`<div class="done"><b>Ticket closed · ${s.closedAt}</b><span>${d.label}${d.amount?' · '+rs(d.amount):''}${d.fault?' · fault: '+d.fault:''}</span>${d.cost?`<span>Cost: ${d.cost}</span>`:''}<span>Reason: ${esc(d.reason)}</span>${s.report?`<button class="lnk" data-act="ov" data-arg="report" ${K('i.report')} style="justify-self:start">Report sent to ${esc(s.restaurant)} (Partner app) · view</button>`:''}<div class="row"><button class="btn ghost" data-act="reopen">Reopen (demo)</button><button class="btn ghost" data-act="ov" data-arg="log">View case log</button></div></div>`}
+ else if(s.decided){const d=s.decided;low=`<div class="done"><b>Decision recorded · ${d.at}</b><span>${d.label}${d.amount?' · '+rs(d.amount):''}${d.fault?' · fault: '+d.fault:''}</span>${d.cost?`<span>Cost: ${d.cost}</span>`:''}<span>Reason: ${esc(d.reason)}</span>${s.closing?'<span class="f2">Sending closing messages in the reply box…</span>':`<div class="row"><button class="btn pri" data-act="askClose">Close ticket…</button><button class="btn ghost" data-act="reopen">Change decision</button></div>`}</div>`}
+ else{
+  const sel=`<select data-chg="subject" id="sj-${s.key}" aria-label="Subject">${[...new Set(SUBJECTS.map(r=>r[0]))].map(g=>`<optgroup label="${g}">${SUBJECTS.filter(r=>r[0]===g).map(r=>`<option${r[1]===s.subject?' selected':''}>${r[1]}</option>`).join('')}</optgroup>`).join('')}</select>`;
+  const segs=['Customer','Restaurant','Rider','Swiggy'].map(f=>`<button class="seg" aria-pressed="${s.fault===f}" data-act="fault" data-arg="${f}">${f}</button>`).join('');
+  const D=[['full','Full refund'],['partial','Partial'],['deny','Deny'],['review','Send to review'],['hold','On hold']].map(d=>`<button aria-pressed="${s.dec===d[0]}" data-act="dec" data-arg="${d[0]}" ${d[0]==='hold'?K('i.hold'):''} class="${d[0]==='hold'?'holdb':''}">${d[1]}</button>`).join('');
+  const part=s.dec==='partial'?`<div class="part">${s.items.map((i,k)=>`<label><input type="checkbox" data-chg="part" value="${k}" ${s.part.includes(k)?'checked':''}> ${i.q} × ${esc(i.n)} · ${rs(i.p)} + GST</label>`).join('')}</div>`:'';
+  const cl=costLine(s),R=reasonsFor(s);
+  const need=s.dec&&s.dec!=='review'&&!s.fault, needP=s.dec==='partial'&&!s.part.length;
+  const route=subj(s).route?`<div class="route">Conduct complaints are handled by the safety team. Case will be transferred. You still resolve any refund part. Routing is logged.</div>`:'';
+  low=`<div class="drow" ${K('i.subject')}><span class="dl">Subject</span>${sel}<span class="chip">${s.subjChanged?'changed by agent':'from bot'}</span></div>${route}
+   <div class="drow" ${K('i.fault')}><span class="dl">Fault</span>${segs}</div>
+   <div class="dbtn" ${K('i.action')}>${D}</div>${part}
+   ${s.held&&!s.dec?`<div class="heldrow">Held since ${s.held.at} · waiting on ${s.held.by} <button class="lnk" data-act="resume">Resume</button></div>`:''}
+   ${s.dec&&s.dec!=='hold'?`<div class="drow" ${K('i.reason')}><span class="dl">Reason</span><select data-chg="reason" id="rs-${s.key}" aria-label="Reason"><option value="">Choose…</option>${R.map(r=>`<option${s.reason===r?' selected':''}>${esc(r)}</option>`).join('')}</select></div>
+   ${cl?`<div class="cost${cl.dim?' dim':''}" ${K('i.cost')}>${a!=null&&s.dec!=='deny'?'<b class="mono">'+rs(a)+'</b> · ':''}Cost: <b>${esc(cl.txt)}</b></div>`:''}
+   <div class="row"><button class="btn pri" data-act="confirm" ${K('i.confirm')} ${(!s.reason||need||needP)?'disabled':''}>Confirm</button><button class="btn ghost" data-act="cancel">Cancel</button><span class="f2">${need?'Choose a fault.':needP?'Tick at least one item.':!s.reason?'Choose a reason.':''}</span></div>`:''}`}
+ return `<div class="col" style="overflow:hidden"><div class="ins">
+ <div class="chd">Insights + decision <span class="code">I</span><span class="sp"></span><button class="btn ghost" data-act="ov" data-arg="log" ${K('i.log')}>Case log · ${s.log.length}</button></div>
+ <div class="insc" id="insc">
+  <div class="sec">${insightLine(s)}</div>
+  <div class="sec"><div class="sh">Policy conditions <span class="sp"></span><span class="hint">click a status to change · a name for detail</span></div>
+   <div class="conds" ${K('i.conds')}>${rows}</div>
+   <button class="rsum" data-act="view" data-arg="rider" ${K('i.ridersum')}><b>Rider rules R1–R5</b> ${rc.met} met${rc.no?' · '+rc.no+' not met':''}${rc.unk?' · '+rc.unk+' unknown':''}${rc.na?' · '+rc.na+' N/A':''}<span class="sp"></span><span class="lnk">Rider view →</span></button>
+   <div class="terms" ${K('i.terms')}><div><b>Terms</b> Restaurant: ${termsTxt(s.terms).toLowerCase()} · agreed ${s.terms.agreed}</div>${TR.map(t=>`<div class="trig">⚑ Review trigger ${t[0]} · ${esc(t[1])} <span class="chip">${t[2]}</span></div>`).join('')}</div></div>
+  <div class="sec"><div class="sh">Records side by side <span class="sp"></span><span class="ctx">Context, not a policy condition</span></div><div class="side3" ${K('i.side')}>${side}</div>
+   <button class="btn ghost" data-act="drawer" data-arg="star" ${K('i.star')} style="justify-self:start">★ Star case</button></div>
+ </div><div class="dec">${low}</div></div></div>`}
+
+/* ---------- drawers + overlays ---------- */
+function drawers(){const s=cur();
+ if(s.drawer!=='star')return '';
+ const C=condsRaw(s),RR=riderRules(s),st=s.star;
+ return `<div class="drw"><div class="dh">★ Star case <span class="sp"></span><button class="btn ghost" data-act="close">Close</button></div><div class="db">
+  <div class="warnlbl">A past case, not a recommendation.</div>
+  <div class="f2">Matched on: ${esc(s.subject)} · ${C.filter(c=>!['P7','P8'].includes(c.id)).map(c=>c.id+' '+SN[c.st]).join(', ')} · ${RR.map(r=>r.id+' '+SN[r.st]).join(', ')} · restaurant terms: ${s.terms.type}. Amounts ignored.</div>
+  <div class="pc"><b>Case ${st.c}</b><span>Decision: <b>${esc(st.dec)}</b>${st.fault!=='—'?' · fault: '+st.fault:''}</span><span>Reason: ${esc(st.reason)}</span><span>Closing message: <i>"${esc(st.msg)}"</i></span>
+  <span class="fair">Fairness ${st.fair}/5 · QA reviewed ${st.qa}</span></div>
+  <div class="f2">The rating is given by a QA reviewer on one question: "Was the decision consistent with the policy conditions and evidence, treating all parties equally?" [Hypothetical rubric]. No agent name is shown. Opening this is logged.</div></div></div>`}
+function overlay(){const s=cur();if(!s.ov)return '';let h='',b='',wide=false;
+ if(s.ov.t==='ev'){const ph=s.photos.find(p=>p.id===s.ov.id),tg=s.tags[ph.id]||[],tags=subj(s).tags||[];h='Customer photo · '+ph.label;wide=true;
+  b=`<div class="big">${esc(ph.label)} · full size (placeholder)</div><table class="ptab"><tr><td>Type</td><td>Customer photo</td><td>Origin</td><td>${ph.origin}</td></tr><tr><td>Submitted</td><td class="mono">${ph.sub} · ${gapTxt(T(ph.sub)-T(s.complaint))} after the complaint</td><td>Complaint</td><td class="mono">${s.complaint}</td></tr></table>
+  <div class="tagbox" ${K('m.photo')}><b>What does the photo show? Tap to confirm (${esc(s.subject)})</b><div class="row">${tags.length?tags.map(t=>`<button class="seg" data-act="tag" data-arg="${esc(ph.id+'|'+t)}" aria-pressed="${tg.includes(t)}">${esc(t)}</button>`).join(''):'<span class="f2">No photo tags for this subject.</span>'}</div><span class="f2">Your observation, logged. The system never pre-selects a tag and never labels a photo "verified" or "suspicious".</span></div>`}
+ if(s.ov.t==='log'){h='Case log · '+s.order;wide=true;b=`<div class="log">${s.log.map(l=>`<span>${l.at}</span><span>${esc(l.t)}</span>`).join('')}</div><span class="f2">What a reviewer, supervisor or auditor reads: what was opened, tagged, changed and decided, with times.</span>`}
+ if(s.ov.t==='hold'){h='Put on hold';b=`<b>Who is responsible for the delay?</b><div class="row">${['Customer','Rider','Restaurant'].map(p=>`<button class="btn" data-act="hold" data-arg="${p}">${p}</button>`).join('')}</div><span class="f2">The chat stays with you and shows "Held" in the queue rail. Recorded in the case log and your handling-time record for your supervisor. Never added to any party's history.</span><span class="f2">Ideal handling time 3–4 min [Hypothetical]. This chat has been open ${Math.floor((secs()-s.openAt)/60)} min.</span>`}
+ if(s.ov.t==='report'){const d=s.decided;h='Report sent to restaurant · Partner app';b=`<table class="ptab"><tr><td>Order</td><td>${s.order} · ${s.date}, ${s.placed}</td></tr><tr><td>Items affected</td><td>${d.items.map(esc).join(', ')}</td></tr><tr><td>Issue</td><td>${esc(s.subject)}</td></tr><tr><td>Decision</td><td>${d.label} · ${rs(d.amount)} · reason: ${esc(d.reason)}</td></tr><tr><td>Your times</td><td>accepted ${s.restv.accepted} · prep ${s.restv.actual} min (estimate ${s.restv.est}) · handover ${s.restv.handover}</td></tr><tr><td>Evidence</td><td>${s.photos.length?s.photos.length+' customer photo(s) attached':'No photo'}</td></tr><tr><td>Cost split</td><td>${esc(d.cost||'—')}</td></tr></table><span class="f2">Not included: customer name, phone, address or history (privacy, DPDP Act 2023).</span>`}
+ if(s.ov.t==='search'){h='Search orders / customers';const q=(s.ov.q||'').toLowerCase();const r=ORDER.filter(k=>{const x=S[k];return !q||(x.order+' '+x.no+' '+x.cust.name+' '+x.restaurant+' '+x.subject).toLowerCase().includes(q)});
+  b=`<input id="sq" placeholder="Order no., customer or restaurant" value="${esc(s.ov.q||'')}" aria-label="Search">${r.map(k=>`<button class="pc" style="text-align:left;cursor:pointer;background:var(--paper)" data-act="go" data-arg="${k}"><b>${S[k].order} · ${esc(S[k].subject)}</b><span>${S[k].cust.name} · ${S[k].restaurant}</span></button>`).join('')||'<span>No match in today\'s orders.</span>'}`}
+ if(s.ov.t==='book'){h='Policy handbook · frozen policy v2.0';wide=true;b=`<table class="ptab">${HANDBOOK.map(r=>`<tr><td class="mono">${r[0]}</td><td>${esc(r[1])}</td><td><span class="chip">${esc(r[2])}</span></td></tr>`).join('')}</table><span class="f2">Hypothetical and Borrowed values are a working set, not Swiggy's published policy.</span>`}
+ if(s.ov.t==='keys'){h='Keyboard shortcuts';b=`<table class="ptab"><tr><td class="mono">Alt + ↓ / ↑</td><td>Next / previous chat</td></tr><tr><td class="mono">Alt + 1 / 2 / 3</td><td>Customer chat / Rider / Restaurant view</td></tr><tr><td class="mono">Enter</td><td>Send reply (Shift + Enter for a new line)</td></tr><tr><td class="mono">Alt + L</td><td>Case log</td></tr><tr><td class="mono">Alt + S</td><td>Star case</td></tr><tr><td class="mono">Esc</td><td>Close pop-up or drawer</td></tr></table>`}
+ return `<div class="scrim" data-act="scrim"><div class="ov${wide?' wide':''}" role="dialog" aria-label="${esc(h)}"><div class="dh">${esc(h)}<span class="sp"></span><button class="btn ghost" data-act="close">Close</button></div><div class="db">${b}</div></div></div>`}
+
+function render(){
+ const keep={};['colM','msgs','insc','vbody'].forEach(id=>{const e=document.getElementById(id);if(e)keep[id]=e.scrollTop});
+ const fa=document.activeElement&&document.activeElement.id;
+ frame.innerHTML=hdr()+`<div class="cols">${queue()}${caseCol()}${centreCol()}${insCol()}</div>`+drawers()+overlay()+(toast?`<div class="toast">${esc(toast)}</div>`:'');
+ ['colM','insc','vbody'].forEach(id=>{const e=document.getElementById(id);if(e&&keep[id]!=null)e.scrollTop=keep[id]});
+ const m=document.getElementById('msgs');if(m){if(cur().stick){m.scrollTop=m.scrollHeight;cur().stick=false}else if(keep.msgs!=null)m.scrollTop=keep.msgs}
+ if(fa){const e=document.getElementById(fa);if(e&&!e.disabled){e.focus();if(e.tagName==='TEXTAREA')try{e.setSelectionRange(e.value.length,e.value.length)}catch(_){}}}
+ const s=cur();
+ if(s.condOpen==='P5'){s.photos.forEach(p=>['ev-'+p.id,'chat-'+p.id].forEach(id=>{const x=document.getElementById(id);x&&x.classList.add('lit')}))}
+ if(picked){const el=frame.querySelector(`[data-k="${picked}"]`);el&&el.classList.add('picked')}}
+
+/* ---------- actions ---------- */
+function decide(s){const a=amt(s);const lab={full:'Full refund',partial:'Partial refund',deny:'Deny',review:'Sent to review'}[s.dec];
+ const cl=costLine(s);const items=s.dec==='partial'?s.part.map(i=>s.items[i].q+' × '+s.items[i].n):s.items.filter(i=>i.aff).map(i=>i.q+' × '+i.n);
+ s.decided={type:s.dec,label:lab,amount:a,fault:s.fault,cost:cl&&!cl.dim?cl.txt:'',reason:s.reason,at:nowHM(),items};
+ log('Decision: '+lab+(a?' '+rs(a):'')+(s.fault?' · fault '+s.fault:'')+' · reason: '+s.reason+' · conditions '+conds(s).map(c=>c.id+' '+SN[c.st]).join(', '),s);
+ if(s.dec==='review')log('Case log attached for reviewer · triggers: '+(trigs(s).map(t=>t[0]).join(', ')||'none'),s)}
+function sendText(s,t){
+ const sug=s.sugUsed!=null?(s.sugUsed===t?'unedited':'edited'):null;
+ s.msgs.push({w:'ag',t,at:nowHM(),sug});if(sug)log('Sent suggested text ('+sug+')',s);
+ s.replyAt=secs()+300;s.typing=false;s.sugUsed=null;s.draft='';s.stick=true;
+ if(s.held){log('Hold ended: agent replied',s);s.held=null}
+ if(s.closing){s.closing.i++;log('Sent closing message '+s.closing.i+' of '+s.closing.list.length,s);
+  if(s.closing.i<s.closing.list.length)s.draft=s.closing.list[s.closing.i];
+  else{s.closed=true;s.closedAt=nowHM();s.closing=null;log('Ticket closed',s);
+   if(s.decided.type==='full'||s.decided.type==='partial'){s.report=true;log('Report sent to restaurant Partner app (restaurant-relevant facts only)',s)}
+   say('Ticket closed · '+s.no)}}}
+const ACT={
+ go(k){if(!S[k])return;const c=S[A];if(c){c.ov=null;c.menu=null}A=k;S[k].qUnread=false;S[k].stick=true;S[k].ov=null},
+ tog(k){const s=cur();s.open[k]=!s.open[k]},
+ away(){away=!away;say(away?'Status: Away. No new chats will be assigned.':'Status: Online')},
+ theme(){const r=document.documentElement;const dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);r.setAttribute('data-theme',dark?'light':'dark')},
+ ov(t){const s=cur();s.ov={t};s.drawer=null},
+ close(){const s=cur();s.ov=null;s.drawer=null;s.menu=null;s.ovMenu=null},
+ scrim(_,el,e){if(e.target===el){cur().ov=null;return}return false},
+ drawer(d){const s=cur();s.drawer=s.drawer===d?null:d;if(s.drawer==='star')log('Opened star case')},
+ view(v){const s=cur();s.view=v;if(v==='chat'){s.unread=0;s.preview='';s.stick=true}else log('Opened '+(v==='rider'?'Rider':'Restaurant')+' view')},
+ jump(){const s=cur();s.open['rec-cust']=true;setTimeout(()=>{const e=document.getElementById('evSec');if(e){e.scrollIntoView({block:'nearest'});e.classList.remove('flash');void e.offsetWidth;e.classList.add('flash')}})},
+ ev(id){cur().ov={t:'ev',id}},
+ tag(arg){const s=cur();const [id,t]=arg.split('|');const L=s.tags[id]=s.tags[id]||[];if(L.includes(t)){s.tags[id]=L.filter(x=>x!==t);log('Removed photo tag: '+t)}else{L.push(t);log('Agent confirmed photo shows: '+t)}},
+ older(r){const s=cur();s.older[r]=true;log('Opened older history: '+{cust:'customer',rider:'rider',rest:'restaurant'}[r])},
+ cond(id){const s=cur();s.condOpen=s.condOpen===id?null:id;s.ovMenu=null},
+ ovmenu(id){const s=cur();s.ovMenu=s.ovMenu===id?null:id},
+ setov(arg){const s=cur();const [id,v]=arg.split(':');const raw=condsRaw(s).find(c=>c.id===id);const was=(s.override[id]||{}).st||raw.st;
+  if(v==='reset'){delete s.override[id];log(id+' changed back to original: '+SN[raw.st])}
+  else if(v!==was){if(v===raw.st)delete s.override[id];else s.override[id]={st:v,at:nowHM()};log(id+' changed by agent: '+SN[was]+' → '+SN[v])}
+  s.ovMenu=null},
+ menu(m){const s=cur();s.menu=s.menu===m?null:m},
+ tpl(id){const s=cur();s.draft=(s.draft?s.draft+' ':'')+TPL[id];s.menu=null;s.sugUsed=null;log('Inserted template for '+id);setTimeout(()=>{const t=$('#ta');t&&t.focus()})},
+ sug(){const s=cur();const v=suggest(s,s.draft);s.draft=v;s.sugUsed=v;setTimeout(()=>{const t=$('#ta');t&&t.focus()})},
+ send(){const s=cur();const t=(s.draft||'').trim();if(!t){say('Type a message first.');return}sendText(s,t)},
+ fault(f){const s=cur();s.fault=s.fault===f?null:f;if(!reasonsFor(s).includes(s.reason))s.reason=''},
+ dec(d){const s=cur();if(d==='hold'){s.ov={t:'hold'};return}s.dec=s.dec===d?null:d;if(s.dec!=='partial')s.part=[];s.reason=''},
+ hold(p){const s=cur();s.held={by:p,at:nowHM()};s.ov=null;log('Put on hold · responsible for delay: '+p+' (agent record only)');say('Held · waiting on '+p+'. The chat stays in your queue.')},
+ resume(){const s=cur();log('Hold ended by agent');s.held=null},
+ cancel(){const s=cur();s.dec=null;s.part=[];s.reason=''},
+ confirm(){const s=cur();decide(s);s.closePrompt=true;say('Decision recorded · '+s.decided.label)},
+ askClose(){cur().closePrompt=true},
+ closeNo(){const s=cur();s.closePrompt=false;log('Close postponed')},
+ closeYes(){const s=cur();s.closePrompt=false;s.held=null;const list=closingMsgs(s,s.decided);s.closing={list,i:0};s.draft=list[0];s.sugUsed=null;log('Closing messages loaded ('+list.length+')');setTimeout(()=>{const t=$('#ta');t&&t.focus()})},
+ reopen(){const s=cur();log(s.closed?'Ticket reopened (demo)':'Decision changed (reopened)');Object.assign(s,{decided:null,dec:null,part:[],reason:'',closed:false,closing:null,closePrompt:false,report:false,draft:''})}
+};
+frame.addEventListener('click',e=>{
+ if(mode==='insp'){const el=e.target.closest('[data-k]');e.preventDefault();e.stopPropagation();if(el)showSheet(el.dataset.k);return}
+ const a=e.target.closest('[data-act]');if(!a||!frame.contains(a))return;
+ const fn=ACT[a.dataset.act];if(!fn)return;if(fn(a.dataset.arg,a,e)===false)return;render()},true);
+frame.addEventListener('change',e=>{const el=e.target,s=cur();const c=el.dataset.chg;if(!c)return;
+ if(c==='part'){const k=+el.value;s.part=el.checked?[...s.part,k]:s.part.filter(x=>x!==k)}
+ if(c==='reason')s.reason=el.value;
+ if(c==='subject'){const old=s.subject;s.subject=el.value;s.subjChanged=s.subject!==s.botSubject;s.override={};log('Subject changed: '+old+' → '+s.subject+' (conditions re-run)');if(SUBJ[s.subject].route)log('Rider conduct: case routed to the safety team for the conduct part')}
+ render()});
+frame.addEventListener('input',e=>{const s=cur();if(e.target.id==='ta'){const before=suggest(s,s.draft);s.draft=e.target.value;
+  if(s.sugUsed==null&&!s.closing&&suggest(s,s.draft)!==before){const pos=e.target.selectionStart;render();const t=$('#ta');if(t){t.focus();t.setSelectionRange(pos,pos)}}}
+ if(e.target.id==='sq'){s.ov.q=e.target.value;render()}});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'){ACT.close();hideSheet();render();return}
+ if(e.altKey&&(e.key==='ArrowDown'||e.key==='ArrowUp')){e.preventDefault();const i=ORDER.indexOf(A);ACT.go(ORDER[(i+(e.key==='ArrowDown'?1:ORDER.length-1))%ORDER.length]);render()}
+ if(e.altKey&&['1','2','3'].includes(e.key)){e.preventDefault();ACT.view({1:'chat',2:'rider',3:'rest'}[e.key]);render()}
+ if(e.altKey&&(e.key==='l'||e.key==='L')){e.preventDefault();ACT.ov('log');render()}
+ if(e.altKey&&(e.key==='s'||e.key==='S')){e.preventDefault();ACT.drawer('star');render()}
+ if(e.key==='Enter'&&!e.shiftKey&&document.activeElement&&document.activeElement.id==='ta'){e.preventDefault();ACT.send();render()}});
+
+/* ---------- simulate (demo controls, not part of the agent screen) ---------- */
+$('#sim-cust').onclick=()=>{const s=cur();if(!s.replies.length||s.closed){say('No more scripted replies in this chat.');render();return}s.typing=true;s.stick=true;render();clearTimeout(typingT);
+ typingT=setTimeout(()=>{const t=s.replies.shift();s.typing=false;if(s.offline){s.offline=false;s.msgs.push({w:'sys',t:s.cust.name.split(' ')[0]+' is back online',at:nowHM()})}
+  s.msgs.push({w:'cu',t,at:nowHM()});s.stick=true;if(s.view!=='chat'){s.unread++;s.preview=t}if(s.held)log('Customer replied while held');render()},1200)};
+$('#sim-off').onclick=()=>{const s=cur();if(s.offline){say('Customer is already offline.');render();return}s.offline=true;s.msgs.push({w:'sys',t:s.cust.name.split(' ')[0]+' went offline',at:nowHM()});s.stick=true;render()};
+$('#sim-reset').onclick=()=>{resetAll();A='S2';render();say('All five chats reset');render()};
+
+/* ---------- toolbar ---------- */
+function tog(id,fn){const b=document.getElementById(id);b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);fn(on)})}
+function setMode(m){mode=m;$('#m-use').setAttribute('aria-pressed',m==='use');$('#m-insp').setAttribute('aria-pressed',m==='insp');frame.classList.toggle('insp',m==='insp');if(m==='use')hideSheet();else showSheetIntro()}
+$('#m-use').onclick=()=>setMode('use');$('#m-insp').onclick=()=>setMode('insp');
+tog('t-chg',on=>frame.classList.toggle('chg',on));
+tog('t-size',on=>{stage.classList.toggle('actual',on);fit()});
+function fit(){if(stage.classList.contains('actual')){stage.style.height='902px';return}const s=Math.min(1,stage.clientWidth/1442);frame.style.transform='scale('+s+')';stage.style.height=(902*s)+'px'}
+addEventListener('resize',fit);
+
+/* ---------- inspector ---------- */
+function showSheet(k){picked=k;render();const r=INFO[k];if(!r)return;const sh=$('#sheet'),inn=$('#sheetIn');sh.hidden=false;
+ inn.innerHTML=`<div class="row"><h3>${esc(r[0])} <span class="tag">${r[1]}</span><span class="tag">${VN[r[2]]}</span><span class="tag ${r[3]}">${CHG[r[3]]}</span><span class="tag">spec ${r[4]}</span></h3><span class="sp"></span><button class="tb" id="sh-close">Close</button></div>
+ <p style="margin:0;color:var(--ink2);max-width:110ch"><b>How it works:</b> ${esc(r[5])}</p>`;
+ $('#sh-close').onclick=()=>{hideSheet();render()}}
+function showSheetIntro(){const sh=$('#sheet');sh.hidden=false;$('#sheetIn').innerHTML=`<div class="row"><h3>Inspect mode</h3><span class="sp"></span><button class="tb" id="sh-close">Back to Use</button></div><p style="margin:0;color:var(--ink2)">Click any outlined element to see its layer, visibility rule, what changed since iteration 1, the spec section it comes from and how it works.</p>`;$('#sh-close').onclick=()=>setMode('use')}
+function hideSheet(){picked=null;$('#sheet').hidden=true}
+
+/* ---------- function index ---------- */
+const FX=[
+ ['c.tabs','Switch centre view','Centre header','Click Rider or Restaurant (Alt + 2 / 3)','Centre panel changes; left and right stay','Yes','S2',''],
+ ['c.preview','New-message preview','Centre, under tabs','Open Rider view, then Simulate → Customer replies','Unread badge + one-line preview with Reply; no auto-switch','No','S2','view:rider'],
+ ['r.rules','Rider rules R1–R5','Rider view','Open Rider view','Each rule met / not met / N/A against a fact','No','S3','view:rider'],
+ ['r.trip','Trip time vs promised','Rider view','Open S9, Rider view','Delay split: restaurant prep, pickup wait, en route','No','S9','view:rider'],
+ ['s.subs','Substitution without consent','Restaurant view','Open S5, Restaurant view','Out-of-stock replacement, consent not recorded','No','S5','view:rest'],
+ ['s.kot','Kitchen order (KOT)','Restaurant view','Open S8, Restaurant view','Item list as received, with "marked packed" times','No','S8','view:rest'],
+ ['m.photo','Photo viewer + tags','Evidence / chat','Click the photo tile, tap a tag','Enlarged photo; tags for the Subject; tap is logged','Yes','S2',''],
+ ['m.evidence','Evidence side scroll','Case info','Open S5','Two photo tiles scroll sideways','No','S5',''],
+ ['m.timeline','Timeline gap','Case info','Click Timeline','Complaint row shows "+8 min after delivered"','No','S2','open:tl'],
+ ['m.records','Party records + total','Case info','Click Dates on Customer','Dated table, total row; Show older is logged','Yes','S2','open:rec-cust'],
+ ['i.line','Case insight line','Insights','Click Customer / Rider / Restaurant','Jumps to the source','No','S2',''],
+ ['i.override','Override a condition','Insights','Click a status chip, pick a value','Row shows "Changed by agent"; old → new logged','Yes','S2',''],
+ ['i.conds','Condition detail + P2','Insights','Click P1 name','Source and ⓘ P2 default liability','No','S2','cond:P1'],
+ ['i.terms','Terms + triggers','Insights','Open S3, pick Full refund','T1 appears (₹696 > ₹500) next to T4','No','S3',''],
+ ['i.subject','Change subject','Decision','Pick another subject','Conditions re-run; logged; Rider conduct shows routing','Yes','S2',''],
+ ['i.cost','Cost split by restaurant terms','Decision','S5: Fault Restaurant + Full refund','Restaurant ₹250 · Swiggy ₹65','No','S5',''],
+ ['i.reason','Reason by Fault × Action','Decision','Change Fault or Action','Reason list changes','No','S2',''],
+ ['i.confirm','Confirm → close ticket','Decision','Pick Fault, Action, Reason; Confirm','Pop-up above the reply box: Close this ticket?','Yes','S2',''],
+ ['i.closing','Closing messages','Reply box','Yes, close → press Enter 4 times','Messages sent one by one; ticket closes; queue ✓','Yes','S2',''],
+ ['i.report','Restaurant report','Decision','After closing a full / partial refund','Restaurant-relevant facts only; view it','Yes','S2',''],
+ ['i.hold','On hold','Decision','S9: click On hold, pick Customer','Held tag in queue; pop-up every press','Yes','S9',''],
+ ['i.star','Star case','Insights','Click ★ Star case (Alt + S)','Past decision, reason, closing message, Fairness 4/5','Yes','S2','drawer:star'],
+ ['t.templates','Templates (unmet only)','Reply box','Click Templates','Only conditions not met / unknown','Yes','S2',''],
+ ['t.suggest','Suggested reply','Reply box','Type "photo" or "sorry"','Suggestion appears; click, Enter sends; logged','Yes','S2',''],
+ ['i.log','Case log','Insights header','Click Case log (Alt + L)','Centred pop-up','—','S2','ov:log'],
+ ['q.rail','Switch chat','Queue rail','Click a chat, hover to expand, Alt + ↓ / ↑','Each chat keeps its state; held and done marked','No','S2','']
+];
+$('#fxBody').innerHTML=FX.map((f,i)=>`<tr><td><span class="tag ${(INFO[f[0]]||[])[3]}">${(INFO[f[0]]||[])[3]||''}</span></td><td><b>${f[1]}</b></td><td>${f[2]}</td><td>${f[3]}</td><td>${f[4]}</td><td>${f[5]}</td><td><button class="tb" data-fx="${i}">Show me</button></td></tr>`).join('');
+$('#fxBody').addEventListener('click',e=>{const b=e.target.closest('[data-fx]');if(!b)return;const f=FX[+b.dataset.fx];setMode('use');ACT.close();ACT.go(f[6]);
+ const s=cur();s.view='chat';
+ if(f[7]){const[a,g]=f[7].split(':');if(a==='view')s.view=g;if(a==='open')s.open[g]=true;if(a==='drawer')s.drawer=g;if(a==='ov')s.ov={t:g};if(a==='cond')s.condOpen=g}
+ render();stage.scrollIntoView({behavior:'smooth',block:'start'});const el=frame.querySelector(`[data-k="${f[0]}"]`);if(el){el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}});
+
+/* ---------- tick ---------- */
+setInterval(()=>{const r=replyClock();const c=frame.querySelector('[data-clock="reply"]');if(c){c.textContent='◷ '+r.txt;c.classList.toggle('low',r.low)}
+ ORDER.forEach(k=>frame.querySelectorAll(`[data-wait="${k}"]`).forEach(e=>{e.textContent=(k!==A&&e.closest('.qx')?'waiting ':'')+wait(k)}))},1000);
+render();fit();
+})();
+
+</script>
+
+</body></html>
