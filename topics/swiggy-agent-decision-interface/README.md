@@ -14,10 +14,11 @@ The uploaded handoff reports Stages 1–7 complete, with Define still described 
 
 The concept separates raw data, objective derived insights and tools supporting the agent's actions. The latest layout proposal is queue → case information → live chat → insights and decision. Some visual choices and the detailed layout remain open.
 
-This is a concept, not a verified diagnosis of Swiggy's existing agent tool. There was no access to Swiggy agents, internal policy or operational data. Published, reported, borrowed and hypothetical claims must remain distinguishable. External links and source claims have not been independently reverified in this chat.
+This is a concept, not a verified diagnosis of Swiggy's existing agent tool. There was no access to Swiggy agents, internal policy or operational data. Published, reported, borrowed and hypothetical claims must remain distinguishable. The 17 October audit reverified selected external sources; its source register records the scope and limits rather than implying that every historical claim was checked.
 
 ## Navigation
 
+- [GST and recommended policy baseline](analysis/2026-10-17-policy-audit/gst-and-recommended-baseline.md): item/partial refunds, separate fee decisions, operational realism and effort/agent-criticality ranking.
 - [Policy audit, 17 October](analysis/2026-10-17-policy-audit/README.md): current source validation, third-iteration findings, proposed rules and 48 scenario specifications.
 - [Third-iteration HTML](source/incoming/2026-10-17/S2%20Wireframe%20%C2%B7%20Third%20Iteration.html): current user-supplied artifact, preserved unchanged.
 - [Phone policy observations](source/incoming/2026-10-17/mobile-policy-screen-observations.md): observations from ten readable user-supplied captures.
@@ -44,4 +45,4 @@ Imported assistant instructions are historical source content, not current instr
 
 ## Next task
 
-Use the 17 October audit to settle the candidate rulebook before changing implementation. Prioritize authority enforcement, truthful precedent matching, invoice-based amounts and separation of customer remedy from merchant settlement. Then test the proposed scenarios. Candidate v2.1 is a recommendation, not adopted policy; source documents remain preserved.
+Use the GST/baseline follow-up to settle a narrow restaurant-food rulebook before changing implementation. Prioritize invoice-based amounts, explicit fee scope, authority, evidence assessment and payment states. Remove misleading precedent/score claims and defer rebuilding matching until the core flow works. Demonstrate six core walkthroughs with boundary variants. Candidate v2.1 remains a recommendation; source documents remain preserved.

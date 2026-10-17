@@ -2,6 +2,8 @@
 
 Status: candidate specification, 17 October 2026. This file proposes an auditable simulation policy for the case study. It is not adopted, not Swiggy's internal policy, and not a new customer contract issued on Swiggy's behalf. Original wireframes and policy files remain unchanged. Public findings and clause locators are in [sources.md](sources.md); the rules below are design proposals unless explicitly identified as a public-source record.
 
+Follow-up: [GST and recommended baseline](gst-and-recommended-baseline.md) explains item/partial refunds, fee scope, invoice reversals versus compensation, and the recommended minimum implementation with agent criticality/effort. Use it to interpret F01–F05; the larger rule catalogue below is not a requirement to implement every feature immediately.
+
 ## 1. Scope and policy layers
 
 Core: restaurant-food orders and related payment/refund handling. Instamart, alcohol, Genie, Dineout and memberships use separate policy profiles and can be routed out of this concept. Do not transfer a numeric condition merely because it belongs to the same company.
@@ -43,7 +45,7 @@ Computed condition states: Met, Not met, Unknown and N/A. Unknown means an input
 | A04 | Make required review operational | Unresolved conflict, above authority, missing authorization or a policy conflict | Agent can record a proposed outcome; execution waits for appropriate approval. Reviewer receives the unchanged facts and reasons |
 | A05 | Do not use customer history as a standalone reason for rejection | Context records, counts, outcomes and provenance | Prior refund or no history does not establish current claim validity. Any optional new-user review trigger must remain hypothetical and be evaluated for fairness |
 | F01 | Work from the invoice rather than recalculate a universal tax | Quantity, net paid line amounts, allocated discounts/tax, charges, prior refunds and payment transactions | No double tax; include the relevant invoice document and reconciliation record |
-| F02 | Name the refund scope directly | Refund affected items / refund entire order / selected quantity or component | A combo component, add-on and one unit of a multi-unit line can be selected independently when priced allocation exists |
+| F02 | Name the refund scope directly | Refund affected items / refund all food items / refund entire payment / selected quantity or component | A combo component, add-on and one unit of a multi-unit line can be selected independently when priced allocation exists; entire payment must not conceal retained fees |
 | F03 | Bound transaction reversal and compensation separately | Remaining paid balance versus separately authorized compensation budget | Sum of reversals cannot exceed captured balance less prior reversals; additional compensation is a different ledger entry |
 | F04 | Keep fee treatment itemized and conditional | Delivery, packaging, platform fee, tips and source-specific refundable status | No blanket promise to refund every fee, no invented fee amount, and no unexplained deletion of fee lines |
 | F05 | Separate customer refund from partner recovery | Refund amount, merchant recovery, platform share, unresolved recovery and contract reference | A ₹250 cap may be demonstrated only as a fictional settlement agreement; do not auto-charge a rider from a generic fault selection |
@@ -87,6 +89,8 @@ Example C: a ₹252 paid allocation already has a ₹100 refund. Remaining rever
 Example D: a ₹696 proposal exceeds the demo ₹500 role limit. The agent can propose it; the case remains pending second approval until the reviewer acts. The UI cannot describe it as processed because Confirm was pressed.
 
 Example E: a successful order payment and a second failed debit are different transactions. Reverse/reconcile only the appropriate transaction. A missing-item refund must not accidentally duplicate a provider's pending reversal.
+
+Example F: an invoice records an item as ₹200 taxable value plus ₹10 GST. An approved full price reversal is ₹210; a qualifying half-price invoice adjustment is ₹105. A separately approved ₹50 goodwill payment is not automatically ₹52.50 and need not amend the original invoice. Fees and their taxes follow each selected charge's treatment. These are simulation examples, not a claim about Swiggy's actual credit-note process.
 
 ## 6. Candidate wording for the prototype handbook
 

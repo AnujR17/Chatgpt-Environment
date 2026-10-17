@@ -55,3 +55,9 @@ The user requested current internet/source validation of terms and policies acro
 The original ZIP did use terms; source existence is now distinguished from interpretation and operational assumptions. The report in analysis/2026-10-17-policy-audit/ records verified sources, remaining unknowns, current prototype behavior, a proposed v2.1 and 48 scenario specifications. Source scope is product/region/date-specific. Private merchant contracts and actual Swiggy agent authorities remain unavailable. New supplied HTML originals are preserved without changes.
 
 Confirmed browser findings include the ₹696 execution/proposal ambiguity despite the demo ₹500 cap, precedent match claims generated from self-comparison, and unreasoned condition overrides. Proposed corrections are not accepted decisions or evidence of measured usability improvement. No live refunds, messages or partner actions were performed.
+
+## GST and policy verdict follow-up, 17 October 2026
+
+The user requested item/partial refund tax explanation, a realistic recommended policy baseline and effort/agent-criticality ranking. The follow-up report is analysis/2026-10-17-policy-audit/gst-and-recommended-baseline.md. It distinguishes invoice price reversals from goodwill/commercial payments and all-food refunds from entire-payment reversals. Actual recorded tax, discounts, fees and prior refunds replace a blanket 5% assumption. No claim is made that every Swiggy payout reverses GST or that a full food refund automatically includes every fee.
+
+Recommendation: retain the panel structure; correct financial records, authority, evidence assessment, permission and execution states; demonstrate six core walkthroughs; remove misleading precedent/score claims and defer rebuilding matching. Exact Swiggy operating thresholds and private partner mandates remain unverified. The recommendation is concrete but not owner adoption or authorization to change the prototype. Source originals remain unchanged.

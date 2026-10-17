@@ -34,6 +34,17 @@ This proves the documents referred to terms and used them in the working policy.
 
 Ten readable phone captures show the relevant cancellation/refund sections and complete credit-time table. See [observations](../../source/incoming/2026-10-17/mobile-policy-screen-observations.md). This is direct user-supplied evidence of displayed wording, complementary to SW-A. It does not supply private contracts, personalized help logic or internal authority limits.
 
+## GST follow-up sources, 17 October
+
+Read [GST and recommended baseline](gst-and-recommended-baseline.md) for the application to item refunds, fee treatment and compensation. [Fetch metadata](gst-followup-fetch-record.json) records successful downloads and access limitations; no complete third-party text is republished.
+
+| ID | Resource and locator | Checked evidence | Use and limit |
+| --- | --- | --- | --- |
+| IN-GST34 | [CBIC annotated CGST Act section 34](https://taxinformation.cbic.gov.in/content-page/explore-act/1000304/1000001), subsections 1–2 and amendment footnotes | Official-domain search-index text read; direct browser open failed | Credit-note framework and amendment cautions. Indexed text can lag commencement notifications; not a claim of a complete notification-history audit or a customer filing deadline |
+| IN-GST137 | [Circular 137/07/2020-GST](https://cbic-gst.gov.in/pdf/Circular_Refund_137_7_2020.pdf), table items 1–3 | Direct HTTP 200, PDF downloaded and text read | Invoiced cancellation/return accounting examples; not a universal restaurant refund valuation rule |
+| IN-GST178 | [Circular 178/10/2022-GST](https://cbic-gst.gov.in/pdf/cir-178-08-2022-cgst.pdf), paragraphs 7–7.1.4 and cancellation discussion | Browser PDF plus direct HTTP 200 download/text | Payment classification depends on the underlying arrangement; do not automatically add 5% to goodwill or declare every compensatory payment exempt |
+| IN-GST25N | [GST Council September 2025 newsletter](https://gstcouncil.gov.in/sites/default/files/2025-10/september_newsletter.pdf), pp. 8–9, summary of Circular 251/08/2025 | Direct HTTP 200, PDF downloaded and relevant text read | Official summary distinguishes financial/commercial credit notes without original tax reduction. Original circular endpoint returned HTTP 503; do not claim the original was fully reviewed |
+
 ## Compact verified clause digest
 
 SW-R: A reserves a 100% cancellation charge; B distinguishes non-customer causes. D.1 concerns damaged/tampered packaging refused at delivery; D.2 addresses attributable non-delivery; D.4 requires merchant permission; D.5 contains estimated credit times. The COD paragraph conditions non-payment on reporting before delivery status is recorded. F is alcohol-specific. No general 24-hour food cutoff, ₹500 authority, ₹250 restaurant cap or 100-metre rule was found here.

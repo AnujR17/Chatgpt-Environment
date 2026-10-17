@@ -1,0 +1,55 @@
+{
+  "scope": "GST/refund follow-up; primary legal/accounting sources, not Swiggy internal accounting access",
+  "requests": [
+    {
+      "id": "secondary-discounts-2025",
+      "url": "https://taxinformation.cbic.gov.in/view-pdf/1003290/ENG/Circulars",
+      "error": "HTTP Error 503: Service Unavailable",
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    },
+    {
+      "id": "september-newsletter-2025",
+      "url": "https://gstcouncil.gov.in/sites/default/files/2025-10/september_newsletter.pdf",
+      "http_status": 200,
+      "bytes": 19434044,
+      "sha256": "bcce326c9dd2a08884f40a6eb42af363e4d06db23a40681e0d4451d36e425fdc",
+      "content_type": "application/pdf",
+      "is_pdf": true,
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    },
+    {
+      "id": "cancelled-service-2020",
+      "url": "https://cbic-gst.gov.in/pdf/Circular_Refund_137_7_2020.pdf",
+      "http_status": 200,
+      "bytes": 104848,
+      "sha256": "46570f6a3bbfc27de6c1cd0b6ccb5323b37f325250d2778256a4e9c16cbdde0c",
+      "content_type": "application/pdf",
+      "is_pdf": true,
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    },
+    {
+      "id": "compensation-2022",
+      "url": "https://cbic-gst.gov.in/pdf/cir-178-08-2022-cgst.pdf",
+      "http_status": 200,
+      "bytes": 186355,
+      "sha256": "876b1146be3188e915193d2506ad5f2e0acbbd9e84c7752859d8db85554de35a",
+      "content_type": "application/pdf",
+      "is_pdf": true,
+      "date_checked": "2026-10-17",
+      "raw_response_published": false
+    }
+  ],
+  "indexed_verification": [
+    {
+      "url": "https://taxinformation.cbic.gov.in/content-page/explore-act/1000304/1000001",
+      "method": "Official-domain web search-index result; subsections and amendment footnotes read",
+      "date_checked": "2026-10-17",
+      "direct_browser_open": "Failed",
+      "limit": "Index may lag notifications. Not a complete commencement-history audit."
+    }
+  ],
+  "extraction": "Successful PDFs downloaded to temporary research storage; pdftotext -layout used. Only summaries and response hashes committed."
+}

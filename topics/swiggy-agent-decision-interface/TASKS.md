@@ -29,6 +29,8 @@ Updated: 17 October 2026
 - [x] Verify borrowed-source scope and relevant Indian consumer/GST/payment/privacy sources, with effective-date limits.
 - [x] Check third-iteration behavior for authority enforcement, overrides and precedent matching.
 - [x] Prepare an explicitly proposed v2.1 rulebook and 48 scenario specifications.
+- [x] Explain item/partial GST treatment, separate fees and compensation using primary tax sources; record access/effective-date limits.
+- [x] Recommend a narrower operational baseline, six walkthroughs and prototype-versus-production effort/agent-criticality priorities.
 
 ## Next work
 

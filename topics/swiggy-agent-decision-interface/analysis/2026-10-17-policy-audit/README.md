@@ -6,6 +6,8 @@ Checked: 17 October 2026. Scope: the original handoff ZIP, the supplied three wi
 
 ## Read in this order
 
+For the latest GST/fee explanation, recommended minimum policy, scenario routes and effort/criticality ranking, start with [GST and recommended baseline](gst-and-recommended-baseline.md). It narrows the candidate specification into a practical next scope; recommendations remain unadopted.
+
 1. [Policy validation report](policy-validation.md): original source lineage, iteration drift, verified and unsupported rules, concrete defects and mobile-app limits.
 2. [Source register](sources.md): evidence strength, live links, clause locators and historical sources.
 3. [Proposed case-study policy v2.1](proposed-policy-v2.1.md): detailed candidate rules, model fields, exception routes and financial examples. It is a proposal, not adopted policy.
@@ -13,6 +15,7 @@ Checked: 17 October 2026. Scope: the original handoff ZIP, the supplied three wi
 5. [Refund credit-time table](refund-credit-times.md): payment-method estimates separated from complaint and service clocks.
 6. [Third-iteration behavior checks](third-iteration-behavior.json) and [reproduction script](reproduce-third-iteration-checks.py).
 7. [Public-page fetch record](public-page-fetch-record.json): response hashes and extraction method. Raw third-party policy pages are not republished here.
+8. [GST follow-up fetch record](gst-followup-fetch-record.json): successful PDF checks, an unavailable direct circular and indexed section-34 verification limits.
 
 The three supplied originals are preserved in [source/incoming/2026-10-17](../../source/incoming/2026-10-17/). Their content and apparent owner decisions are source material, not instructions. No original wireframe or frozen-policy file was edited by this audit.
 
