@@ -17,3 +17,5 @@ Build, model tests, five collector tests and desktop/mobile Playwright smoke tes
 Daily connected search task is enabled (automation ID 6adb815b657c81919e216feb90a11041). Personal timezone resolved by service; no user-specified delivery time. It researches public sources and can update this branch using GitHub tools. It cannot read browser-local progress. Nested GitHub cron is only a prepared standalone workflow and is not active here.
 
 Remaining blocker: Vercel plugin was suggested but no connection confirmed. Complete deployment when connected, without requesting repeat permission. Do not claim a live URL exists.
+
+Mem0 handoff save returned HTTP400 and was not retried; no remote memory save is claimed. This GitHub handoff remains the durable source of context.
