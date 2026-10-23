@@ -8,9 +8,9 @@
 - [x] Implement daily career-page collector and GitHub workflow.
 - [x] Run initial collector: 15 sources, 10 fetched, 5 blocked/manual checks.
 - [x] Production build and model/collector tests.
-- [ ] Browser QA and final fixes.
-- [ ] Publish private source repository under AnujR17.
-- [ ] Run and verify GitHub collection workflow.
-- [ ] Deploy to Vercel after account connection is available.
+- [x] Browser QA: filters, details, stages, persisted reload, due actions, custom roles, CSV, JSON backup/restore, mobile layout, drag/drop.
+- [x] Publish app branch under AnujR17/Chatgpt-Environment. New-repository creation denied by integration; existing repository reused.
+- [x] Enable connected daily search task; enabled state verified. Optional nested GitHub cron remains inactive on this topic branch.
+- [ ] BLOCKED: deploy to Vercel after its account connection is available. No Vercel credentials or connected tools currently available.
 - [ ] Inspect résumé/portfolio when supplied; review application eligibility.
 - [ ] Add authenticated cross-device persistence if requested.

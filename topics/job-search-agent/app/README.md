@@ -33,15 +33,15 @@ python scripts/export_excel.py
 
 ## Collection and daily updates
 
-An optional standalone-repository GitHub workflow is included at `.github/workflows/collect-jobs.yml`, with a **03:30 UTC / 09:00 IST daily** schedule. It is **not active** in this monorepo subdirectory/topic branch; GitHub scheduled workflows must live on the default branch. No main-branch changes were made. The connected daily search task, when enabled, is separate from this optional workflow. It checks configured public source pages, respects robots policy, records blocks/errors, detects visible content changes, and discovers relevant JobPosting JSON-LD and Lever API candidates. GitHub schedules can be delayed. It does not scrape every job board or social feed.
+An optional standalone-repository GitHub workflow is included at `.github/workflows/collect-jobs.yml`, with a **03:30 UTC / 09:00 IST daily** schedule. It is **not active** in this monorepo subdirectory/topic branch; GitHub scheduled workflows must live on the default branch. No main-branch changes were made. The connected daily search task is enabled and separate from this optional workflow. It checks configured public source pages, respects robots policy, records blocks/errors, detects visible content changes, and discovers relevant JobPosting JSON-LD and Lever API candidates. GitHub schedules can be delayed. It does not scrape every job board or social feed.
 
 New supported candidates enter `public/data/review-queue.json` and appear on the board with pay unconfirmed. Previously known jobs are deduplicated by employer/title. Personal application progress is never overwritten by feed refreshes.
 
-The initial research used company careers, employer LinkedIn listings/posts and public job boards. X was searched, but no qualifying original post was independently verified. **Daily LinkedIn/X search is not enabled**. Broad search discovery needs approved platform access or a search provider; restricted pages are flagged for manual review. No CAPTCHA bypass is implemented.
+The initial research used company careers, employer LinkedIn listings/posts and public job boards. X was searched, but no qualifying original post was independently verified. A connected **daily search task is enabled**, including public LinkedIn/X search and job-board/company research. It can update this branch’s public feed through the connected GitHub integration. Broad coverage still depends on accessible sources; restricted pages are flagged for manual review. No CAPTCHA bypass is implemented.
 
 A page fetch confirms only that content could be fetched. It does not reconfirm pay, employment terms or current recruiting. `checkedAt` is the manual research date; `lastPageFetched` is the collector observation. Original posting dates and discovery dates are distinct. Changed pages need review; personal application stages are never automatically closed.
 
-Each run produces `public/data/collection-report.md` and an updated Excel workbook. Once the Vercel Git integration is connected, data commits trigger deployment. The workflow summary is a source-health digest, not an email notification. Email/WhatsApp delivery is not configured.
+Each run produces `public/data/collection-report.md` and an updated Excel workbook. Once the Vercel Git integration is connected to this production branch, public data commits can trigger deployment. The optional workflow summary is a source-health digest; the enabled daily task returns a job-search digest. Email/WhatsApp delivery is not configured.
 
 ## Deploy to Vercel
 

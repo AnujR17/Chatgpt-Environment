@@ -179,7 +179,7 @@ def main():
             source.update(lastStatus='error',message=f'{type(error).__name__}; manual review required.');counts['error']=counts.get('error',0)+1
         print(f"{source['id']}: {source['lastStatus']}",flush=True)
     data['meta']['collectorLastRun']=now
-    data['meta']['scheduleStatus']='Daily GitHub workflow configured. Last collector result is recorded below; social discovery requires manual/API research.'
+    data['meta']['scheduleStatus']='Collector result recorded. Daily search is managed by the connected task; the optional repository cron requires default-branch setup.'
     data['meta']['collectorSummary']=counts
     queue={'updatedAt':now,'candidates':list(queued.values())}
     for path,value in [(directory/'sources.json',source_data),(directory/'jobs.json',data),(queue_path,queue)]:

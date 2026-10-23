@@ -103,7 +103,7 @@ excluded = [
  dict(company='hussh Pune',reason='Stale snippet advertises ₹40k, but the current page gives no stipend and describes a campus challenge/probation process; keep outside confirmed matches.',url='https://careers.hussh.ai/open-roles/ui-ux-product-design-intern-pune'),
  dict(company='X',reason='Searched public indexed hiring posts; no independently verified qualifying original post found in this pass.',url=None),
 ]
-meta = dict(researchedAt=DAY,collectorLastRun=None,scheduleStatus='Daily collection configured; first scheduled run pending.',
+meta = dict(researchedAt=DAY,collectorLastRun=None,scheduleStatus='Initial research snapshot; check the handoff for current scheduled-search status.',
     coverage='Research snapshot across company careers, LinkedIn jobs/posts and public job boards; X searched without a qualifying verified result.',excluded=excluded)
 out=ROOT/'public/data'
 out.mkdir(parents=True,exist_ok=True)
