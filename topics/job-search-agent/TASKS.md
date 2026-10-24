@@ -24,4 +24,4 @@
 - [x] Rebuild Discover, Applications and Companies for clearer actions and larger text.
 - [x] Preserve browser-local progress and backup compatibility; add company preferences to backups.
 - [x] Update daily task with new source/pay/watchlist rules.
-- [ ] Finish redesigned desktop/mobile workflow QA and deploy exact tested commit.
+- [x] Redesigned desktop/mobile workflow QA passed; exact tested commit3f9e701 deployed to production and READY verified.
