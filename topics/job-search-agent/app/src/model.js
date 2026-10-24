@@ -28,6 +28,26 @@ export function benchmarkText(benchmark) {
 }
 export function roleType(job) { return job.roleType || 'Internship'; }
 export function isPipeline(job) { return ['shortlisted','applied','assessment','interview','offer'].includes(job.status); }
+export const companyKey = name => String(name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+export function companyMatches(company, name) {
+  const key = companyKey(name);
+  return !!key && [company.name, company.company, ...(company.aliases || [])].some(value => companyKey(value) === key);
+}
+export function mergeCompanies(feed, overrides) {
+  const known = new Set(feed.map(c => c.id));
+  return [...feed.map(c => ({...c, ...overrides[c.id]})), ...Object.entries(overrides).filter(([id,c]) => !known.has(id) && c?.name).map(([id,c]) => ({id,tier:'Possible',companyType:'Unclassified',...c}))];
+}
+export function isCompanyBlocked(job, companies) {
+  return companies.some(c => c.blacklisted === true && (job.companyId === c.id || companyMatches(c, job.company)));
+}
+export function fitSummary(requirements = [], assessment = {}) {
+  const result = {total:requirements.length, met:0, partial:0, gap:0, unknown:0};
+  requirements.forEach((requirement, i) => {
+    const state = assessment[requirement.id || String(i)]?.state;
+    result[['met','partial','gap'].includes(state) ? state : 'unknown']++;
+  });
+  return {...result, percent:result.total ? Math.round(result.met / result.total * 100) : null, assessed:result.total - result.unknown};
+}
 export function safeUrl(value) {
   try { const url = new URL(value); return ['https:', 'http:', 'mailto:'].includes(url.protocol) ? url.href : ''; } catch { return ''; }
 }
@@ -66,5 +86,11 @@ export function validateBackup(value) {
   if (value.custom.length > 5000 || JSON.stringify(value).length > 5_000_000) throw new Error('Backup is too large.');
   for (const job of value.custom) if (!job.id || typeof job.id !== 'string' || !job.company || !job.title) throw new Error('Backup contains an invalid job.');
   for (const update of Object.values(value.overrides)) if (!update || typeof update !== 'object' || Array.isArray(update)) throw new Error('Backup contains invalid updates.');
+  if (value.companyOverrides !== undefined) {
+    if (!value.companyOverrides || typeof value.companyOverrides !== 'object' || Array.isArray(value.companyOverrides)) throw new Error('Backup contains invalid company preferences.');
+    for (const update of Object.values(value.companyOverrides)) {
+      if (!update || typeof update !== 'object' || Array.isArray(update) || (update.blacklisted !== undefined && typeof update.blacklisted !== 'boolean')) throw new Error('Backup contains invalid company preferences.');
+    }
+  }
   return value;
 }

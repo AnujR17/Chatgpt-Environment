@@ -93,3 +93,16 @@ The source filters include Indeed, Naukri and X. Indeed supplied four accessible
 Company salary reports include Glassdoor evidence for Tekion, Scaler, Lenskart, Rapido, Techolution, F1studioz and other targets. Weak or geographically ambiguous evidence stays qualitative. F1studioz historical reports are below the target; it is a Possible target, not a confirmed stipend match. Current role pay and payBenchmark values are separate. Annual reports remain annual. No senior pay was extrapolated to internship stipends.
 
 The Excel workbook contains a separate Company watchlist sheet. Company CSV and JSON backup/restore are available in the app. The collector defaults new undisclosed-pay candidates to on_hold. Do not run seed.py to refresh: it recreates the older initial snapshot.
+
+
+## Expanded company directory and blacklist
+
+The24 October expansion contains92 employer/studio targets (58 product companies) and28 role leads. Forty directory role records include senior team evidence and internship programs as well as real vacancies; inspect the explicit seniority, access and intake labels. Likely role families are inferred, not postings. Each company retains careers/public contact routes; contacts carry their actual purpose. Eight new early-career leads have unknown pay and remain on hold.
+
+Companies now sorts product companies first, with search, company-type and role-evidence filters, editable categories/following and expandable role/source details. Each role has source-backed requirements and a private Met/Partly met/Gap/Unassessed checklist with evidence notes. The meter counts listed criteria, bonus items and application steps equally; it does not measure hiring odds or certify mandatory eligibility. No resume/portfolio was assessed, so initial personal fit is Unassessed.
+
+Use Companies → Blacklist to exclude any employer, including a company absent from the feed. Blacklisting hides matching Discover/directory recommendations and future matching feed items in this browser. Saved applications, notes/history and next actions remain accessible. Exclusions are reversible and may include private reasons. Names match by normalised spelling or explicitly researched aliases, not fuzzy guessing.
+
+Preferences, blacklist and evidence use the existing company override localStorage key and version1 JSON backup, with old backups still supported. They stay browser-local, cannot be read by the daily task, and never enter public research exports. Export filtered list creates a local CSV including current private evidence; download it only where intended. The static workbook includes Company directory and Role requirements sheets; public/data/company-directory.csv is regenerated with the workbook by python scripts/export_excel.py.
+
+Run the new workflow check with PLAYWRIGHT_BROWSERS_PATH pointing at installed browser binaries: python tests/company_check.py. It exercises product filtering, source requirements, evidence meter, blacklist, saved application preservation, export, reload, backup/restore, custom exclusions and mobile layout. Existing browser_check.py covers the original workflow.

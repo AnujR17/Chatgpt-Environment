@@ -25,3 +25,14 @@
 - [x] Preserve browser-local progress and backup compatibility; add company preferences to backups.
 - [x] Update daily task with new source/pay/watchlist rules.
 - [x] Redesigned desktop/mobile workflow QA passed; exact tested commit3f9e701 deployed to production and READY verified.
+
+
+## Product-first company expansion and blacklist
+
+- [x] Research92 company/studio targets including58 product companies,40 differentiated role records and public careers/contact routes.
+- [x] Add8 genuine early-career role leads, all on hold for undisclosed pay;28 feed roles total.
+- [x] Add product-first directory, sourced role requirements and private evidence checklist.
+- [x] Add reversible blacklist including future-company exclusions, reasons, backup/restore and preservation of application history.
+- [x] Expand Excel and CSV company/requirements exports; update daily maintenance instructions.
+- [x] Model/data/collector/build and desktop/mobile workflow checks passed locally.
+- [ ] Verify deployment of this exact update and live directory/blacklist workflow.

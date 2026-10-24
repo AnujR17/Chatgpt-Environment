@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBackup, benchmarkText } from '../src/model.js';
+import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBackup, benchmarkText, mergeCompanies, isCompanyBlocked, fitSummary } from '../src/model.js';
 test('stipend thresholds use the lower bound and original evidence',()=>{
  assert.equal(payMatch({region:'Gujarat',payMin:20000,payVerified:true}),'meets');
  assert.equal(payMatch({region:'India',payMin:30000,payVerified:true}),'meets');
@@ -45,4 +45,23 @@ test('on-hold feed updates preserve an existing application and its notes',()=>{
  assert.equal(mergeJobs(feed,[],{})[0].status,'on_hold');
  const merged=mergeJobs(feed,[],{'same-role':{status:'applied',notes:'Already submitted'}})[0];
  assert.equal(merged.status,'applied');assert.equal(merged.notes,'Already submitted');
+});
+
+test('blacklist survives feed refresh, matches aliases, and keeps application history',()=>{
+ const overrides={a:{blacklisted:true},custom:{name:'Other Studio',blacklisted:true}};
+ const companies=mergeCompanies([{id:'a',name:'Product Co',aliases:['ProductCo India']}],overrides);
+ assert.equal(companies.length,2);
+ assert.equal(isCompanyBlocked({company:'ProductCo India'},companies),true);
+ assert.equal(isCompanyBlocked({company:'Other Studio'},companies),true);
+ assert.equal(isCompanyBlocked({company:'Other'},companies),false);
+ const job=mergeJobs([{id:'j',company:'Product Co',title:'UX Intern'}],[],{j:{status:'applied',notes:'Preserve'}})[0];
+ assert.equal(job.status,'applied');assert.equal(job.notes,'Preserve');
+ assert.equal(isCompanyBlocked(job,mergeCompanies([{id:'a',name:'Product Co'}],{a:{blacklisted:false}})),false);
+});
+test('fit counts unknowns separately and cannot manufacture a match',()=>{
+ const reqs=[{id:'portfolio'},{id:'figma'},{id:'degree'},{id:'duration'}];
+ assert.deepEqual(fitSummary(reqs),{total:4,met:0,partial:0,gap:0,unknown:4,percent:0,assessed:0});
+ const result=fitSummary(reqs,{portfolio:{state:'met',evidence:'Case study'},figma:{state:'partial'},degree:{state:'gap'},duration:{state:'invalid'}});
+ assert.equal(result.met,1);assert.equal(result.percent,25);assert.equal(result.unknown,1);assert.equal(result.partial,1);assert.equal(result.gap,1);
+ assert.equal(fitSummary([]).percent,null);
 });

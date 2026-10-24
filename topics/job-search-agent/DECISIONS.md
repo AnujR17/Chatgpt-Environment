@@ -30,3 +30,11 @@ Access outcome: the verified AnujR17 integration denied createRepository. Reuse 
 - Preserve existing browser-local roles/profile/progress and old JSON backup compatibility. Company following/categories use an additional local storage key and travel in backups.
 
 Research outcome:20 roles, including4 Indeed details and1 employer-linked Naukri route, plus2 X mirror-backed cross-posts attached to existing roles. Seven new roles,16 held for pay/details. Company watchlist17 entries. Naukri direct access is blocked and X originals403; both caveats remain visible. No applications were submitted. Daily task prompt updated to carry these rules and maintain/deploy the public role and company feeds.
+
+
+2026-10-24 — Expanded company directory and private exclusions:
+
+- User wants a long product-first employer list including studios/services, source-backed advertised roles, careers/public contacts, likely role families and requirement fit. Prefer product companies by default without removing studios.
+- Distinguish current opening evidence from senior team evidence, programs, indexed leads and inferred possible roles. Contacts retain actual purpose; never guess emails.
+- Actual applicant fit is unassessed until resume/portfolio evidence exists. Add a transparent per-criterion Met/Partly met/Gap/Unassessed evidence checklist, not an invented hiring probability. Bonus criteria/application steps count equally and this limitation is visible.
+- User requested company blacklist. Keep reversible browser-local exclusions/reasons alongside existing company overrides and backups. Hide blocked recommendations and future matching feed items while preserving saved applications/history. Do not publish personal dislikes. Daily task cannot read local blacklist, so no promise to filter its digest by it.

@@ -351,6 +351,1166 @@
       "lastStatus": "blocked",
       "lastChecked": "2026-10-24",
       "message": "Original X URL returned 403; content checked through third-party mirror. Evidence: https://workingww.twstalker.com/BThreeAgency/status/2108934891069161479"
+    },
+    {
+      "id": "directory-6d4a420dbecf",
+      "company": "F1studioz",
+      "url": "https://www.linkedin.com/posts/f1studioz_hiring-uxdesign-uxjobs-activity-7446791304879075328-v-9z",
+      "kind": "social",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed employer LinkedIn post. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-84f268cfb654",
+      "company": "Techolution",
+      "url": "https://hire.techolution.com/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Retained prior research; not rechecked in this expansion. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-be2833c9591b",
+      "company": "Razorpay",
+      "url": "https://razorpay.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-ac72529269cd",
+      "company": "Razorpay",
+      "url": "https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4745511005",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official job indexed; detailed requirements not assessed. Current employer board title found. Senior role recorded as team evidence only, not a suitable internship recommendation.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-a4dae6a8dd90",
+      "company": "PhonePe",
+      "url": "https://www.phonepe.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-103e7bc94794",
+      "company": "PhonePe",
+      "url": "https://jobs.smartrecruiters.com/PHONEPELIMITED/1000000000004131-lead-product-designer",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official job indexed; detailed requirements not assessed. Lead-level vacancy. Third-party intern claims were not verified against an official current internship and were not promoted.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-563a7659a3ab",
+      "company": "Groww",
+      "url": "https://groww.in/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-7d136695794d",
+      "company": "CRED",
+      "url": "https://careers.cred.club/openings",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page fetched; dynamic listings need manual check. HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-ecd2fd0650d8",
+      "company": "CRED",
+      "url": "https://www.linkedin.com/posts/hsivaramakrishnan_hiring-designhiring-cred-activity-7427043968623751168-o3tL",
+      "kind": "social",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official/indexed source. Public hiring post asks for high-fidelity visual work and interactive/code examples. Current vacancy/seniority must be confirmed; other comments report mail routing problems.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-a61c5fcaf324",
+      "company": "Zoho",
+      "url": "https://www.zoho.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-a2531e783a4a",
+      "company": "Freshworks",
+      "url": "https://careers.smartrecruiters.com/Freshworks",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-53b99b0ac65c",
+      "company": "Chargebee",
+      "url": "https://jobs.chargebee.com/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-88097bd9ef97",
+      "company": "Kissflow",
+      "url": "https://careers.kissflow.com/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-b397ff92ebd5",
+      "company": "Juspay",
+      "url": "https://juspay.io/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-6c61b4f9909e",
+      "company": "Fi Money",
+      "url": "https://fi.money/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-8e8446028d9f",
+      "company": "Jupiter",
+      "url": "https://jupiter.money/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-c6dc072a027b",
+      "company": "Jupiter",
+      "url": "https://wormhole.jupiter.money/website/career/application-form/?designation=Product+Design+Manager&requisitionId=566",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official application indexed; details not verified. Application form title exists; no current junior vacancy established.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-2cb27faf2d62",
+      "company": "Cashfree Payments",
+      "url": "https://www.cashfree.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-86bbc3741449",
+      "company": "Postman",
+      "url": "https://www.postman.com/company/careers/open-positions/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-bd8882ab4aa0",
+      "company": "BrowserStack",
+      "url": "https://www.browserstack.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-ac19127559f8",
+      "company": "Whatfix",
+      "url": "https://whatfix.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-fcc6e0513090",
+      "company": "Whatfix",
+      "url": "https://whatfix101.hire.trakstar.com/?country=India&rsu=mile&state=Karnataka",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official board indexed; detailed requirements not assessed. Senior/manager role only; not treated as entry-level eligibility.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-c7f7221f340c",
+      "company": "MoEngage",
+      "url": "https://www.moengage.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-5f95e64f22f6",
+      "company": "CleverTap",
+      "url": "https://clevertap.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-18a72c859bc6",
+      "company": "WebEngage",
+      "url": "https://webengage.hire.trakstar.com/jobs",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-e05c4d3ed88e",
+      "company": "WebEngage",
+      "url": "https://webengage.hire.trakstar.com/jobs/fk0pgmn/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Stale or unavailable: direct role URL returned 404. Search index retains this role but direct fetch returned 404. Do not treat it as open.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-5444c439b74d",
+      "company": "LeadSquared",
+      "url": "https://www.leadsquared.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-54a76c589e2b",
+      "company": "LeadSquared",
+      "url": "https://in.indeed.com/q-product-design-intern-l-bengaluru%2C-karnataka-jobs.html",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indeed index only; official role/application not verified. Indexed updated 21 Oct 2026; result explicitly has no job description. No requirements or pay inferred. Official careers portal retained as the safe starting point.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-f1547ea88264",
+      "company": "Darwinbox",
+      "url": "https://darwinbox.com/en-us/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page fetched; dynamic listings need manual check. HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-9a2195d6449a",
+      "company": "Keka",
+      "url": "https://www.keka.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-db4c87f5733e",
+      "company": "Yellow.ai",
+      "url": "https://yellow.ai/career/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-a2da3661359b",
+      "company": "Gupshup",
+      "url": "https://www.gupshup.ai/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-9e0cd1678baf",
+      "company": "Sprinto",
+      "url": "https://jobs.lever.co/Sprinto",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-ceed64d8aca6",
+      "company": "Facilio",
+      "url": "https://facilio.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-7182e5606fdd",
+      "company": "Rocketlane",
+      "url": "https://careers.kula.ai/rocketlane",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-faaeeea74380",
+      "company": "SuperOps",
+      "url": "https://superops.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-347c397c6529",
+      "company": "Swiggy",
+      "url": "https://careers.swiggy.in/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page fetched; dynamic listings need manual check. HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-670b1274f5ec",
+      "company": "Meesho",
+      "url": "https://www.meesho.io/jobs",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page fetched; dynamic listings need manual check. HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-c2f37f54b8a4",
+      "company": "Flipkart",
+      "url": "https://www.flipkartcareers.com/design",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-66049fe1a23b",
+      "company": "Myntra",
+      "url": "https://jobs.myntra.com/home",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page fetched; dynamic listings need manual check. HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-bfc8a4f513bd",
+      "company": "Zepto",
+      "url": "https://www.zepto.com/s/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official career page indexed; direct content unavailable. HTTP 202; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-1bc96e0f398f",
+      "company": "BookMyShow",
+      "url": "https://bookmyshow.hire.trakstar.com/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-cb4e56181ab6",
+      "company": "BookMyShow",
+      "url": "https://bookmyshow.hire.trakstar.com/jobs/fk0ztil/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official role and board indexed; full JD not assessed. Graphic design rather than core UX/product internship; team evidence only.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-fa8dcc5959a6",
+      "company": "Plum",
+      "url": "https://careers.kula.ai/plumhq",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-6e12c0e45943",
+      "company": "Setu",
+      "url": "https://setu.co/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-eea183033276",
+      "company": "Rupeek",
+      "url": "https://rupeek.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-dabfe036ad3c",
+      "company": "Open Money",
+      "url": "https://open.money/company/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-bb9f2c158831",
+      "company": "smallcase",
+      "url": "https://smallcase.freshteam.com/jobs",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page fetched; dynamic listings need manual check. HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-0087f8959570",
+      "company": "Pine Labs",
+      "url": "https://www.pinelabs.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-9bbd45066a2c",
+      "company": "Zeta",
+      "url": "https://www.zeta.tech/in/careers/work-with-us",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page fetched; dynamic listings need manual check. HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-567e946dfa25",
+      "company": "Zeta",
+      "url": "https://www.zeta.tech/in/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official/indexed source. Indexed official careers page publishes this email; fetched HTML obscures it.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-17bed6f5eb00",
+      "company": "Navi",
+      "url": "https://navi.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-a8945e01dfa6",
+      "company": "Zerodha",
+      "url": "https://careers.zerodha.com/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page fetched; dynamic listings need manual check. HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-de9e7251357b",
+      "company": "project44",
+      "url": "https://www.project44.com/company/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-2e7258ded748",
+      "company": "project44",
+      "url": "https://www.project44.com/company/careers/open-roles/job/?detail=8101750",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official/indexed source. Employer publishes this specifically for hiring-process accommodations. Apply through the job form; this is not a general application inbox.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-ad9b55d27ca1",
+      "company": "project44",
+      "url": "https://job-boards.greenhouse.io/project44/jobs/8101750",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official role detail accessible. Employer listing checked directly and corroborated on company product-team page. Pay undisclosed; hold until stipend confirmed.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-211ae6858252",
+      "company": "Frappe",
+      "url": "https://frappe.io/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-3c6460b84ed8",
+      "company": "Frappe",
+      "url": "https://frappe.io/careers/open-positions/designer",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official role detail accessible. Full-time early-career role, not an internship. Employer JD and remote-policy careers page were directly read; pay undisclosed.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-099deaf3a496",
+      "company": "Atomicwork",
+      "url": "https://www.atomicwork.com/company/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers page fetched. HTTP 200; career-page content was accessible. A career page does not establish a matching opening.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-1afd6215299c",
+      "company": "Juno",
+      "url": "https://careers.kula.ai/juno",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers route accessible; dynamic details may require manual checking. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-a7fd5bd84b2e",
+      "company": "Juno",
+      "url": "https://careers.kula.ai/juno/446-product-design-intern",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official role detail accessible. Current official board and JD both read. Internship title still asks for shipping experience; do not assume a first-time applicant qualifies. Pay not disclosed.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-bf871e53700d",
+      "company": "Gravity",
+      "url": "https://careers.gravity.fast",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers route accessible; dynamic details may require manual checking. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-25145fb130b6",
+      "company": "Gravity",
+      "url": "https://careers.gravity.fast/jobs/cmqdlet8309n1b5p6q8lbi6im",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official role detail accessible. Official JD and application form accessible. Remote-first company. Application requires resume, portfolio, start availability, expected monthly stipend and an everyday-app improvement answer. Current stipend not disclosed.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-b9f6ffffadb1",
+      "company": "Lokal",
+      "url": "https://apply.workable.com/lokal-app/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official careers route accessible; dynamic details may require manual checking. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-7923ade05603",
+      "company": "Lokal",
+      "url": "https://apply.workable.com/lokal-app/j/CB2EDD7186",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official ATS URL indexed; direct readable body empty. Job title/location indexed from employer ATS. Current availability, full criteria and pay require manual verification; not a verified live internship.",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-17ce76314e48",
+      "company": "NetBramha Studios",
+      "url": "https://www.netbramha.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-f0530a69ad53",
+      "company": "Lollypop Design Studio",
+      "url": "https://lollypop.design/careers/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-29f996a09d25",
+      "company": "yuj",
+      "url": "https://www.yujdesigns.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-2ba71244635f",
+      "company": "Think Design Collaborative",
+      "url": "https://think.design/contact-us/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-fe10bc5c23a4",
+      "company": "Think Design Collaborative",
+      "url": "https://in.linkedin.com/jobs/view/senior-user-experience-designer-at-think-design-collaborative-4474229948",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed listing; not intern. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-fe5683a404c9",
+      "company": "Aubergine Solutions",
+      "url": "https://www.aubergine.co/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-d10236134a80",
+      "company": "Aubergine Solutions",
+      "url": "https://www.aubergine.co/internships",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-162430388f0d",
+      "company": "Aubergine Solutions",
+      "url": "https://www.aubergine.co/contact-us",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed official page. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-75d59678ad1e",
+      "company": "Divami",
+      "url": "https://divami.com/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-b7256f4c9ed4",
+      "company": "Divami",
+      "url": "https://in.linkedin.com/jobs/view/digital-solution-designer-at-divami-4482033907",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed listing; seniority not confirmed. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-2641dfabf55a",
+      "company": "Silverscoop",
+      "url": "https://silverscoop.co/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-306b7c97f52c",
+      "company": "Silverscoop",
+      "url": "https://silverscoop.co/about/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed official page. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-2cf2d63becbb",
+      "company": "Yellowchalk Design",
+      "url": "https://yellowchalk.com/careers/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-61d17a321f2f",
+      "company": "Yellowchalk Design",
+      "url": "https://wellfound.com/company/yellowchalkuiux/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed company profile; no vacancies listed. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-a7e349ac790b",
+      "company": "Ungrammary",
+      "url": "https://club.ungrammary.com/ugjobs",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-43840660987d",
+      "company": "Ungrammary",
+      "url": "https://www.wixforms.com/f/7371425029596120240",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Opened; fixed monthly stipend without amount. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-fbe49f5e1883",
+      "company": "Ungrammary",
+      "url": "https://cutshort.io/company/ungrammary-85-Bwdu9Tqm",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed company job page. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-94c4b069f2c3",
+      "company": "Thence",
+      "url": "https://www.thence.digital/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-0e7f3a2a1ef8",
+      "company": "Thence",
+      "url": "https://wellfound.com/company/thence",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed company profile. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-5a1479d939ae",
+      "company": "Prismic Reflections",
+      "url": "https://www.prismicreflections.com/career",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-cf1e200af967",
+      "company": "Prismic Reflections",
+      "url": "https://docs.google.com/forms/d/15DMSVUBV_q-Zg3beowKo9PQJtujVGrKVUMWibs1iJ4k/viewform",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Opened official linked form. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-46f9a96a2592",
+      "company": "Prismic Reflections",
+      "url": "https://www.prismicreflections.com/contact",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-15b1ff845562",
+      "company": "Nonlinear",
+      "url": "https://nonlinear.in/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-aa4bd8eef87f",
+      "company": "Nonlinear",
+      "url": "https://nonlinear.in/contact-us",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed official contact page. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-aa517f5d1ed8",
+      "company": "Aufait UX",
+      "url": "https://www.aufaitux.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-6063cb512819",
+      "company": "WowMakers",
+      "url": "https://www.wowmakers.com/careers/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-5dea572fac16",
+      "company": "ScreenRoot",
+      "url": "https://screenroot.com/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-4aa1bf7e0043",
+      "company": "Octet Design Studio",
+      "url": "https://octet.design/careers/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-0fdd23c3db38",
+      "company": "QED42",
+      "url": "https://www.qed42.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-45f88db8e34b",
+      "company": "QED42",
+      "url": "https://www.qed42.com/careers/open-positions",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Opened: No items found in extracted page. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-e220c3406edd",
+      "company": "QED42",
+      "url": "https://www.qed42.com/insights/cracking-interviews-and-getting-into-the-qed42-design-team",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Historical guidance updated22April2024. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-30ca79f02a71",
+      "company": "QED42",
+      "url": "https://in.indeed.com/cmp/Qed42",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed third-party role context. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-57235b7852a8",
+      "company": "Peepal Design",
+      "url": "https://peepaldesign.com/careers/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-acf09d6fe7e7",
+      "company": "Peepal Design",
+      "url": "https://www.linkedin.com/posts/peepaldesign_hiring-uxresearch-internships-activity-7222289568270622720-UxTd",
+      "kind": "social",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed old social post; not current vacancy. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-4c3078203b5d",
+      "company": "Userfacet",
+      "url": "https://www.userfacet.com/careers",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-decedf0a737b",
+      "company": "InventIndia",
+      "url": "https://www.inventindia.com/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-7cbad57e9c5c",
+      "company": "Brilworks Software",
+      "url": "https://www.brilworks.com/career/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-26c1cb4de9e0",
+      "company": "Brilworks Software",
+      "url": "https://www.brilworks.com/hire-ui-ux-designer/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed official page; service not job opening. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-164ce0842795",
+      "company": "Elephant Design",
+      "url": "https://www.elephantdesign.com/join-us",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Search-indexed official page; not directly opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-72faa72cd7f5",
+      "company": "ZEUX Innovation",
+      "url": "https://zeuxinnovation.com/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official site opened; no extractable text. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-6140128436c1",
+      "company": "ZEUX Innovation",
+      "url": "https://www.linkedin.com/posts/zeux-innovation_most-people-look-for-a-job-were-looking-activity-7459837297631457281-ZGJ3",
+      "kind": "social",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed employer post; first training-phase pay unclear. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-e12682a364eb",
+      "company": "ProCreator",
+      "url": "https://procreator.design/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-3eed22fb12ef",
+      "company": "ProCreator",
+      "url": "https://in.indeed.com/q-ui-ux-designer-intern-l-vashi%2C-thane%2C-maharashtra-jobs.html",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed job-board detail; employer original not checked. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-f785c4546147",
+      "company": "ProCreator",
+      "url": "https://in.linkedin.com/jobs/view/ux-ui-designer-intern-at-procreator-global-ui-ux-design-agency-4403004356",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed listing, older. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-444949f669d2",
+      "company": "Lemon Yellow",
+      "url": "https://lemonyellow.design/career/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-45849038e5f2",
+      "company": "Lemon Yellow",
+      "url": "https://lemonyellow.design/faqs/jobs/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened/indexed official page. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-b115b1b1ab58",
+      "company": "Lemon Yellow",
+      "url": "https://lydesign.keka.com/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Dynamic board; no role text extracted. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-440dd02be405",
+      "company": "GoProtoz",
+      "url": "https://www.goprotoz.com/",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-3c0514b21749",
+      "company": "GoProtoz",
+      "url": "https://wellfound.com/company/goprotoz",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed company profile; current role is engineering, not design. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-137c46a02110",
+      "company": "Designit",
+      "url": "https://www.designit.com/jobs",
+      "kind": "careers",
+      "lastStatus": "ok",
+      "lastChecked": "2026-10-24",
+      "message": "Official page opened. ",
+      "directoryResearch": true
+    },
+    {
+      "id": "directory-1c2ed91e67bb",
+      "company": "Designit",
+      "url": "https://in.linkedin.com/in/pallavi-poojari-8b4481ab",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Historical social context; not internship. ",
+      "directoryResearch": true
     }
   ]
 }
