@@ -1,5 +1,9 @@
 # Design internship tracker
 
+Live board: https://chatgpt-environment.vercel.app
+
+Production is READY from the board branch in the existing Vercel project `chatgpt-environment`.
+
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
 ## Included
@@ -74,4 +78,6 @@ Open each board card for the original source and requirements. No portfolio, deg
 
 ## Access limitations
 
-The GitHub identity is AnujR17, but repository creation was denied by the integration. The app therefore uses a dedicated branch in the existing repository. Vercel account connection is required before deployment; no live Vercel URL has been claimed.
+The GitHub identity is AnujR17, but repository creation was denied by the integration. The app therefore uses a dedicated branch in the existing repository. Vercel is now connected and the existing project is deployed at https://chatgpt-environment.vercel.app. The explicit teamId selector returned403, while operations on the verified project through the default connection scope succeeded.
+
+Production was deployed directly from topic/job-search-agent without merging main. The daily search task is configured to deploy exact future listing-data commits to this same project and verify the live feed. A branch push alone should not be reported as a production refresh.

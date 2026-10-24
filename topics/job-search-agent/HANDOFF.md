@@ -1,21 +1,31 @@
-# Handoff
+# Job search agent handoff
 
-Continue the job-search-agent task in the existing checkout, branch topic/job-search-agent. Read app/README.md and TASKS.md.
+Updated 24 October 2026. Continue in the existing checkout on branch `topic/job-search-agent`.
 
-User wants UX/interaction/product design internships, mostly remote India. Gujarat minimum ₹20k/month, other locations ₹30k+, ₹25k conditional. Build and deploy a Kanban to Vercel, use AnujR17 GitHub account. Initial 13 role leads and Excel workbook are in app/public/data. No applications submitted and no applicant portfolio/résumé inspected.
+## Live deployment
 
-GitHub identity confirmed as AnujR17. Vercel plugin discovered but not yet connected; connection suggestion made. Complete all source/testing work before treating deployment as blocked. Do not deploy to another host as a substitute without user instruction.
+- URL: https://chatgpt-environment.vercel.app
+- Existing GitHub repository: AnujR17/Chatgpt-Environment. Do not create another repository.
+- Vercel project: chatgpt-environment, ID prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg.
+- Owner accountId verified: team_wbMCzPWEpuswtIa2AekWJJLh.
+- Production deployment dpl_JCoWzatBVkPpPXTFt1YRgbn6qTPm is READY, source commit 1b56d21f6adf2702771646b3ccb82e2cdaf74229 on topic/job-search-agent.
+- Root directory topics/job-search-agent/app; Vite; npm ci; npm run build; output dist; Node24.
+- User initially imported main, which contains workspace docs and not the app. The existing Vercel project was corrected and the topic branch was deployed directly to production. Main was not modified or merged.
+- The Vercel connection works using the exact project ID and default connection scope. Explicit teamId calls returned403; do not repeat team-scope probes or ask the user to reinstall/reconnect.
+- HTTPS verification returned200 for the application shell and /data/jobs.json with13 researched leads. Deployment Protection was preserved.
 
-Private application progress currently lives in browser localStorage with backup export, not in the published feed. Mem0 portfolio lookup returned zero records. User must supply accurate résumé/portfolio links before role-fit assertions or submission work.
+## Product state
 
-## Completed state
+UX/interaction/product design internships. Prioritise remote India, then Gujarat/Maharashtra/Goa/southern India. Gujarat minimum INR20k/month; elsewhere INR30k+, INR25k conditional. Remote30k provisional. Initial13 leads include3 employer-stated stipend matches. No applications submitted. No portfolio/resume inspected; do not infer applicant experience.
 
-GitHub branch published: https://github.com/AnujR17/Chatgpt-Environment/tree/topic/job-search-agent/topics/job-search-agent/app . Repository creation was denied, so use the existing repository. Vercel root directory topics/job-search-agent/app, Vite, output dist, production branch topic/job-search-agent. No main-branch modification or merge.
+Private application stages/profile/notes are browser-local with JSON backup/restore, not cloud synced and not readable by the daily task. Public feed contains only job research. Collector initial run:15 sources,10 fetched,5 blocked. Nested GitHub cron is a prepared optional workflow and is not active on this topic branch.
 
-Build, model tests, five collector tests and desktop/mobile Playwright smoke test passed. Initial data: 13 leads, 3 original-employer pay matches; collector 15 sources, 10 fetched, 5 blocked; no automatic submissions. Excel workbook exported.
+## Scheduled search
 
-Daily connected search task is enabled (automation ID 6adb815b657c81919e216feb90a11041). Personal timezone resolved by service; no user-specified delivery time. It researches public sources and can update this branch using GitHub tools. It cannot read browser-local progress. Nested GitHub cron is only a prepared standalone workflow and is not active here.
+Connected daily task remains enabled (ID6adb815b657c81919e216feb90a11041). Its prompt now includes deploying exact new listing-data commits to the existing production Vercel project and verifying READY plus the live feed. A topic-branch push alone is not proof production refreshed because Git production tracking was originally main. Do not merge main or create new projects/repos. Task cannot read browser-local application progress.
 
-Remaining blocker: Vercel plugin was suggested but no connection confirmed. Complete deployment when connected, without requesting repeat permission. Do not claim a live URL exists.
+## Validation and limits
 
-Mem0 handoff save returned HTTP400 and was not retried; no remote memory save is claimed. This GitHub handoff remains the durable source of context.
+Local production build, model tests, collector tests and desktop/mobile browser smoke test passed. Public deployed HTML and JSON verified directly with trusted HTTPS. Chromium initially could not trust the session proxy CA; further live browser QA routes first-party requests through Python verified HTTPS rather than disabling TLS checks.
+
+Prior portfolio-scoped Mem0 lookup returned no records. Previous Mem0 handoff save returned HTTP400 and was not retried. This GitHub handoff is the durable record.

@@ -11,6 +11,6 @@
 - [x] Browser QA: filters, details, stages, persisted reload, due actions, custom roles, CSV, JSON backup/restore, mobile layout, drag/drop.
 - [x] Publish app branch under AnujR17/Chatgpt-Environment. New-repository creation denied by integration; existing repository reused.
 - [x] Enable connected daily search task; enabled state verified. Optional nested GitHub cron remains inactive on this topic branch.
-- [ ] BLOCKED: deploy to Vercel after its account connection is available. No Vercel credentials or connected tools currently available.
+- [x] Deploy existing Vercel project to production from the board branch; READY verified at https://chatgpt-environment.vercel.app.
 - [ ] Inspect résumé/portfolio when supplied; review application eligibility.
 - [ ] Add authenticated cross-device persistence if requested.
