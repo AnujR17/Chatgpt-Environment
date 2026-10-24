@@ -8,7 +8,7 @@ Updated 24 October 2026. Continue in the existing checkout on branch `topic/job-
 - Existing GitHub repository: AnujR17/Chatgpt-Environment. Do not create another repository.
 - Vercel project: chatgpt-environment, ID prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg.
 - Owner accountId verified: team_wbMCzPWEpuswtIa2AekWJJLh.
-- Production deployment dpl_5ViDw8AtKYnjakx5XSM3eug45Bkf is READY, source commit 71b37226f50f5d9e87f301c54ab1102c4b78baf6 on topic/job-search-agent.
+- Production deployment dpl_C8uzR9mzmP47Jo1Y99Tyx4ycLW57 is READY, source commit a21d8e0fc8e4bf0efe5426e935e8e114a1e7c57e on topic/job-search-agent.
 - Root directory topics/job-search-agent/app; Vite; npm ci; npm run build; output dist; Node24.
 - User initially imported main, which contains workspace docs and not the app. The existing Vercel project was corrected and the topic branch was deployed directly to production. Main was not modified or merged.
 - The Vercel connection works using the exact project ID and default connection scope. Explicit teamId calls returned403; do not repeat team-scope probes or ask the user to reinstall/reconnect.
@@ -61,12 +61,12 @@ User requested a long company/studio list with product companies prioritised, ca
 Deployment result: production dpl_5ViDw8AtKYnjakx5XSM3eug45Bkf READY from71b37226f50f5d9e87f301c54ab1102c4b78baf6. Live HTTPS returned200 for28 jobs,92 companies, CSV and Excel. Both original and company-specific browser workflows passed against the deployed site, including mobile, using93 verified HTTPS first-party requests through the session trusted-CA transport (TLS verification retained). No applications/employer messages sent. Resume/portfolio still not supplied. Existing repo/account/project preserved; main unchanged.
 
 
-## Private applicant review and safe assessment import
+## Generic requirement-import support
 
-The user supplied a resume and active portfolio GitHub branch. Both were reviewed read-only, including original public project images and source/evidence notes. A single scoped portfolio-design Mem0 lookup returned design preferences/vocabulary, not new applicant facts. The user then confirmed expected graduation/start/duration/relocation; the existing daily task now carries the confirmed private profile and its evidence limits, with schedule unchanged.
+Role details and company records share a requirement meter. Role details also support locally stored criteria for employers absent from the public directory. Backup restore merges company preferences and per-role criteria, preserving blacklist/reason, tier, following and unrelated criteria. A judgment for the identical criterion is replaced by the imported value. Application stages, notes and profile are unaffected by assessment-only imports.
 
-Private review artifacts are outside this public repository under /workspace/outputs/design-job-fit: an Excel review, Markdown explanation and version1 JSON assessment-only import. Do not commit or publish them. The import changes no profile, job stages, notes or company preferences; it adds criterion evidence. Browser storage cannot be written remotely, so the user must download/import the file through Export > Restore a backup (back up current progress first). Imported judgments may replace previous judgments of the same criterion.
+Role lookup prefers stable job IDs, then exact titles, before a shared careers URL. This prevents two roles on one careers page from accidentally sharing a criterion record.
 
-Generic app support now shows the shared requirement meter in role details as well as company records, including private fit records for employers absent from the directory. Backup restore merges company preferences and per-role criteria so an assessment-only import preserves blacklists, reasons, tiers, following, unrelated criteria and application/profile data. Role matching prefers stable job IDs and exact titles before shared career URLs, preventing two roles on the same career page from sharing the wrong assessment.
+Production deployment dpl_C8uzR9mzmP47Jo1Y99Tyx4ycLW57 is READY from a21d8e0fc8e4bf0efe5426e935e8e114a1e7c57e. Thirteen model/data tests and production build passed. Local and live tests verify nested merge preservation, role/company shared meters, shared-URL role matching and mobile layout. Live checks retained TLS verification and recorded no browser errors. Test fixtures contain generic sample strings.
 
-Private assessment is evidence-based and provisional: original interfaces and documented prototypes support foundational UX/interaction work; current academic/ongoing/group projects retain actual contribution/status. No commercial shipping, senior years, hardware acceptance, user outcomes or named advanced tools are inferred. Watchlist-only companies remain unscored. Older bundled criteria and bonus/application steps limit score comparability; no hiring probability is assigned. No applications/messages sent and no portfolio branch was edited or merged.
+Public documentation records software behavior and public research only. Applicant documents, assessments and review metadata belong outside this repository. Browser-local records require the user to import a downloaded file using Export > Restore a backup; export a current backup first.

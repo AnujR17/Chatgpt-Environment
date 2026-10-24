@@ -12,7 +12,7 @@
 - [x] Publish app branch under AnujR17/Chatgpt-Environment. New-repository creation denied by integration; existing repository reused.
 - [x] Enable connected daily search task; enabled state verified. Optional nested GitHub cron remains inactive on this topic branch.
 - [x] Deploy existing Vercel project to production from the board branch; READY verified at https://chatgpt-environment.vercel.app.
-- [x] Review supplied resume and active portfolio source/artifacts, capture confirmed availability privately, and produce private criterion assessment/workbook/import.
+- [x] Support criterion-only backup imports while preserving existing application and company preferences.
 - [ ] Add authenticated cross-device persistence if requested.
 
 
@@ -36,3 +36,11 @@
 - [x] Expand Excel and CSV company/requirements exports; update daily maintenance instructions.
 - [x] Model/data/collector/build and desktop/mobile workflow checks passed locally.
 - [x] Exact app commit71b3722 deployed to existing production project; READY, live feeds/downloads and both desktop/mobile workflow checks passed.
+
+
+## Generic requirement-import support
+
+- [x] Reuse requirement meter in role details, including employers outside the public directory.
+- [x] Merge nested criteria without clearing unrelated preferences, application stages or profile.
+- [x] Prefer stable role IDs/titles over shared career URLs.
+- [x] Thirteen model/data checks, build and local/live import preservation tests passed; app commit a21d8e0 deployed READY.
