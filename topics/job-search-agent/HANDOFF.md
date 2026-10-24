@@ -70,3 +70,14 @@ Role lookup prefers stable job IDs, then exact titles, before a shared careers U
 Production deployment dpl_C8uzR9mzmP47Jo1Y99Tyx4ycLW57 is READY from a21d8e0fc8e4bf0efe5426e935e8e114a1e7c57e. Thirteen model/data tests and production build passed. Local and live tests verify nested merge preservation, role/company shared meters, shared-URL role matching and mobile layout. Live checks retained TLS verification and recorded no browser errors. Test fixtures contain generic sample strings.
 
 Public documentation records software behavior and public research only. Applicant documents, assessments and review metadata belong outside this repository. Browser-local records require the user to import a downloaded file using Export > Restore a backup; export a current backup first.
+
+
+## Public source expansion
+
+User requested broader use of remote/startup/YC/Who is hiring channels and asked why Indeed/Naukri coverage was small. Public research expanded to36 role leads,111 employer targets (73 product companies),224 individual source records and21 source-coverage records. Eight additional role leads include older YC/Indeed records explicitly held for current-intake verification, junior salary alternatives and public Indeed/company details. No new qualifying monthly internship stipend was verified. Applicant/private assessment data was not copied into this research update.
+
+Source chips now distinguish YC / Work at a Startup, Wellfound, Remote boards, Hacker News and Cutshort. HN matching is tested before generic ycombinator-domain matching. Source coverage explains blocks, sampled/partial searches, zero suitable leads, expired originals and directory-only discovery. Individual source checks are collapsed by default. Indeed linked roles10 (including cross-posts); Naukri1 and still robots blocked. Startup maps/directories do not imply vacancies or employer health.
+
+Annual USD/INR salary is displayed using advertisedCompensation, distinct from verified monthly INR payMin/payMax. SuperKalam metadata conflicts, so no numeric monthly stipend. The two YC roles retain2024 posting dates and older-listing warning. Ungrammary gets a below-target Cutshort report without changing primary verified pay or duplicating its card. Chiblu/project44/Zunderdog cross-posts enrich stable IDs.
+
+Daily task prompt now covers the additional channels, source coverage records, original dates/units and truthful zero-result reporting, preserving its existing schedule and private context. Generic app/model/data tests, collector tests, build and local browser source/legacy/company/import flows passed. Production publication and live checks follow on this exact update.

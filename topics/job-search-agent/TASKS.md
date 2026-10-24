@@ -44,3 +44,14 @@
 - [x] Merge nested criteria without clearing unrelated preferences, application stages or profile.
 - [x] Prefer stable role IDs/titles over shared career URLs.
 - [x] Thirteen model/data checks, build and local/live import preservation tests passed; app commit a21d8e0 deployed READY.
+
+
+## Public source coverage expansion
+
+- [x] Research YC/Work at a Startup, HN, Wellfound, remote boards, India boards and startup maps/directories.
+- [x] Add8 researched role leads,19 employer targets and6 existing-role enrichment records; retain original dates, pay caveats and IDs.
+- [x] Add dedicated source filters,21-source coverage view and expandable individual checks.
+- [x] Keep annual INR/USD salary distinct from monthly stipend; expose older listing badges and below-target evidence.
+- [x] Regenerate Excel/CSV exports and broaden daily maintenance prompt without changing schedule.
+- [x] Model/data, collector, build and local source/legacy/company/import browser workflows passed.
+- [ ] Verify exact production deployment and live source coverage.

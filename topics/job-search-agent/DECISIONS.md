@@ -38,3 +38,11 @@ Research outcome:20 roles, including4 Indeed details and1 employer-linked Naukri
 - Distinguish current opening evidence from senior team evidence, programs, indexed leads and inferred possible roles. Contacts retain actual purpose; never guess emails.
 - Actual applicant fit is unassessed until resume/portfolio evidence exists. Add a transparent per-criterion Met/Partly met/Gap/Unassessed evidence checklist, not an invented hiring probability. Bonus criteria/application steps count equally and this limitation is visible.
 - User requested company blacklist. Keep reversible browser-local exclusions/reasons alongside existing company overrides and backups. Hide blocked recommendations and future matching feed items while preserving saved applications/history. Do not publish personal dislikes. Daily task cannot read local blacklist, so no promise to filter its digest by it.
+
+
+2026-10-24 — Source coverage correction:
+
+- The prior shortlist under-covered non-LinkedIn channels. Explicitly include YC/Work at a Startup, Wellfound, HN Who is hiring, remote boards and startup maps/directories alongside India boards and employer careers.
+- Record searched versus blocked/limited sources, exclusions and zero suitable results in the site's source coverage. Account-required application steps are separate from accessible public research.
+- Do not inflate counts with expired, unpaid, fee-based, senior/geographically ineligible roles or duplicate cross-posts. Older still-listed leads remain on_hold with original dates. Directories and talent pools remain discovery, not vacancies.
+- Preserve annual/foreign salary units and conflicting metadata. No conversion into a qualifying monthly internship stipend. Public files contain employer/listing research only.

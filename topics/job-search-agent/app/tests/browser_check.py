@@ -19,15 +19,17 @@ with sync_playwright() as p, TemporaryDirectory() as temp:
  expected=len([j for j in data['jobs'] if j.get('status')!='closed'])
  expect(page.locator('.role-card')).to_have_count(expected)
  # Platform filters include cross-posted evidence without duplicating roles.
- for platform,count in [('Indeed',4),('Naukri',1),('X',2)]:
-  page.get_by_role('button',name=re.compile('^'+platform+r'\b')).click()
+ for platform in ['Indeed','Naukri','X','YC / Work at a Startup','Wellfound','Remote boards','Hacker News']:
+  chip=page.locator('.source-chips>button').filter(has_text=re.compile('^'+re.escape(platform)))
+  count=int(chip.locator('span').inner_text())
+  chip.click()
   expect(page.locator('.role-card')).to_have_count(count)
  page.get_by_role('button',name='All sources',exact=True).click()
  page.get_by_label('Role type',exact=True).select_option('Junior / fresher')
  expect(page.locator('.role-card')).to_have_count(sum(j.get('roleType')=='Junior / fresher' for j in data['jobs']))
  page.get_by_label('Role type',exact=True).select_option('all')
  page.get_by_label('Pay evidence',exact=True).select_option('estimated')
- expect(page.locator('.role-card')).to_have_count(3)
+ expect(page.locator('.role-card')).to_have_count(sum(j.get('payMin') is None and bool(j.get('payBenchmark',{}).get('sourceUrl')) for j in data['jobs']))
  # Historical reports remain separate from current pay, and stay on hold.
  tech=page.locator('.role-card').filter(has=page.get_by_text('Techolution',exact=True))
  expect(tech.get_by_text('Pay not disclosed',exact=True)).to_be_visible()

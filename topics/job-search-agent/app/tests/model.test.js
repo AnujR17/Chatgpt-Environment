@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBackup, benchmarkText, mergeCompanies, isCompanyBlocked, fitSummary, mergeCompanyPreferences } from '../src/model.js';
+import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBackup, benchmarkText, mergeCompanies, isCompanyBlocked, fitSummary, mergeCompanyPreferences,platformName,platforms,stipend,compensationText } from '../src/model.js';
 test('stipend thresholds use the lower bound and original evidence',()=>{
  assert.equal(payMatch({region:'Gujarat',payMin:20000,payVerified:true}),'meets');
  assert.equal(payMatch({region:'India',payMin:30000,payVerified:true}),'meets');
@@ -71,4 +71,20 @@ test('importing reviewed criteria preserves blacklist, category and other role e
  const result=mergeCompanyPreferences(old,{a:{assessments:{r:{two:{state:'partial',evidence:'Reviewed portfolio'}}}}});
  assert.equal(result.a.blacklisted,true);assert.equal(result.a.blacklistReason,'Private');assert.equal(result.a.tier,'Dream');assert.equal(result.a.following,true);
  assert.equal(result.a.assessments.r.one.evidence,'Existing');assert.equal(result.a.assessments.r.two.state,'partial');assert.equal(result.a.assessments.other.criterion.state,'gap');assert.equal(old.a.assessments.r.two.state,'unknown');
+});
+
+test('source families distinguish startup boards, HN and remote cross-posts',()=>{
+ assert.equal(platformName('https://news.ycombinator.com/item?id=49922569'),'Hacker News');
+ assert.equal(platformName('https://www.ycombinator.com/companies/example/jobs/123'),'YC / Work at a Startup');
+ assert.equal(platformName('Work at a Startup'),'YC / Work at a Startup');
+ assert.equal(platformName('Himalayas'),'Remote boards');assert.equal(platformName('Wellfound'),'Wellfound');
+ assert.deepEqual(platforms({sourceType:'Company careers',additionalSources:[{platform:'Wellfound'},{platform:'Wellfound'},{platform:'Remote OK'}]}),['Company careers','Wellfound','Remote boards']);
+});
+test('annual and foreign compensation are displayed without implying a monthly stipend match',()=>{
+ const salary={min:8000,max:12000,currency:'USD',period:'year',verified:true};
+ assert.equal(compensationText(salary),'USD 8,000–USD 12,000/year');
+ assert.equal(stipend({payMin:null,advertisedCompensation:salary}),'USD 8,000–USD 12,000/year');
+ assert.equal(payMatch({payMin:null,advertisedCompensation:salary}),'annual');
+ assert.equal(compensationText({min:400000,max:600000,currency:'INR',period:'year'}),'₹4,00,000–₹6,00,000/year');
+ assert.equal(payMatch({payMin:null,advertisedCompensation:{...salary,verified:false}}),'unconfirmed');
 });

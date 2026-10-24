@@ -10,19 +10,22 @@ ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'public/data/jobs.json').read_text())
 sources=json.loads((ROOT/'public/data/sources.json').read_text())
 wb=Workbook();ws=wb.active;ws.title='Internships'
-columns={'company':'Company','title':'Role','roleType':'Role type','location':'Location','workMode':'Work mode','payMin':'Minimum INR/month','payMax':'Maximum INR/month','payVerified':'Pay confirmed in original','status':'Status','nextAction':'Next action','dueDate':'Due date','interviewAt':'Interview time','appliedAt':'Applied date','sourceType':'Platform','sourceUrl':'Original source','applicationUrl':'Application link','email':'Application email','applicationMethod':'Application route','evidence':'Evidence / caveats','requirements':'Requirements','applicationInstructions':'Application instructions','postedLabel':'Posted','firstSeen':'First discovered','checkedAt':'Last checked','notes':'Personal notes'}
+columns={'company':'Company','title':'Role','roleType':'Role type','location':'Location','workMode':'Work mode','payMin':'Minimum INR/month','payMax':'Maximum INR/month','payVerified':'Pay confirmed in original','listedCompensation':'Listed salary / original units','status':'Status','nextAction':'Next action','dueDate':'Due date','interviewAt':'Interview time','appliedAt':'Applied date','sourceType':'Platform','sourceUrl':'Original source','applicationUrl':'Application link','email':'Application email','applicationMethod':'Application route','evidence':'Evidence / caveats','requirements':'Requirements','applicationInstructions':'Application instructions','postedLabel':'Posted','firstSeen':'First discovered','checkedAt':'Last checked','notes':'Personal notes'}
 ws.append(list(columns.values()))
 for job in data['jobs']:
  row=[]
  for key in columns:
   value=job.get(key,'')
+  if key=='listedCompensation':
+   comp=job.get('advertisedCompensation') or {}
+   value=comp.get('label') or (f"{comp.get('currency','')} {comp.get('min')}–{comp.get('max')}/{comp.get('period')}" if comp.get('min') is not None else '')
   if isinstance(value,str) and value.lstrip().startswith(('=','+','-','@')):value="'"+value
   row.append(value)
  ws.append(row)
- for column in (15,16):
+ for column in (16,17):
   cell=ws.cell(ws.max_row,column)
   if isinstance(cell.value,str) and cell.value.startswith(('https://','mailto:')):cell.hyperlink=cell.value;cell.style='Hyperlink'
-status=DataValidation(type='list',formula1='"discovered,shortlisted,on_hold,applied,assessment,interview,offer,closed"');ws.add_data_validation(status);status.add('I2:I10000')
+status=DataValidation(type='list',formula1='"discovered,shortlisted,on_hold,applied,assessment,interview,offer,closed"');ws.add_data_validation(status);status.add('J2:J10000')
 ws.freeze_panes='C2';ws.auto_filter.ref=ws.dimensions
 for col in ws.columns:
  letter=col[0].column_letter
@@ -33,6 +36,13 @@ for row in ws.iter_rows(min_row=2):
 ss=wb.create_sheet('Sources');ss.append(['Company','URL','Type','Fetch result','Last fetch','Notes'])
 for s in sources['sources']:ss.append([s['company'],s['url'],s['kind'],s.get('lastStatus',''),s.get('lastChecked',''),s.get('message','')])
 ss.freeze_panes='A2';ss.auto_filter.ref=ss.dimensions
+if sources.get('coverage'):
+ coverage_sheet=wb.create_sheet('Source coverage')
+ coverage_sheet.append(['Source','URL','Checked','Access status','Findings','Limits','Examples excluded or held'])
+ for source in sources['coverage']:
+  examples='; '.join(item if isinstance(item,str) else (item.get('company','')+': '+item.get('reason','')) for item in source.get('exclusionExamples',[]))
+  coverage_sheet.append([source['source'],source['url'],source.get('checkedAt',''),source.get('status',''),source.get('findings',''),source.get('limits',''),examples])
+ coverage_sheet.freeze_panes='A2';coverage_sheet.auto_filter.ref=coverage_sheet.dimensions
 company_path=ROOT/'public/data/companies.json'
 company_records=[]
 if company_path.exists():
@@ -74,7 +84,7 @@ for row in [
  ['Stipend','Gujarat minimum INR20,000/month; elsewhere INR30,000+, INR25,000 conditional. Remote floor provisionally INR30,000.'],
  ['Evidence','Only employer-stated minimums count as confirmed. Undisclosed-pay roles stay on hold. Glassdoor and other company reports are historical context, never a current offer. Annual figures stay annual.'],
  ['Company groups','Dream / Workable / Possible are editable suggestions, not hiring probabilities. The company watchlist does not assert current vacancies or offers.'],
- ['Personal fit','No resume or portfolio assessed. Requirement rows begin Unassessed. Met/partial/gap is an evidence checklist, not hiring odds.'],
+ ['Personal fit','Public exports contain no personal assessment. Browser-only criteria can be reviewed separately; Met/partial/gap is an evidence checklist, not hiring odds.'],
  ['Blacklist','Browser-local blacklist hides recommendations, including future matching feed items. Saved application history is retained. Use JSON backup to transfer preferences; daily task cannot read local blacklist.'],
  ['Freshness','Discovery date is not posting date. An accessible listing does not guarantee current hiring.'],
  ['Applications','No applications have been submitted. Status and application fields are for you to update.'],
@@ -96,7 +106,7 @@ print('Exported internships.xlsx')
 
 # Public research CSV; private blacklist/preferences/evidence are exported only by the browser.
 with (ROOT/'public/data/company-directory.csv').open('w', newline='', encoding='utf-8-sig') as output:
- writer=csv.writer(output)
+ writer=csv.writer(output,lineterminator='\n')
  writer.writerow(['Company','Category','Type','Sector','Location notes','Opening status','Likely roles (inferred)','Careers URL','Public email','Contact route','Contact kind','Contact caveat','Role','Seniority','Role location','Role URL','Role evidence','Requirements','Personal fit','Pay note','Notes','Sources'])
  for company in company_records:
   contact=company.get('contact') or {}

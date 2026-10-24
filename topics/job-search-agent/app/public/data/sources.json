@@ -1511,6 +1511,956 @@
       "lastChecked": "2026-10-24",
       "message": "Historical social context; not internship. ",
       "directoryResearch": true
+    },
+    {
+      "id": "research-ec84329a0691",
+      "company": "SuperKalam",
+      "url": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Employer homepage links its YC careers board. Original metadata is from 2024; current intake is unconfirmed. Visible pay says INR 25–40K without a period, while JSON-LD says USD/year; no monthly stipend is confirmed.",
+      "jobId": "yc-superkalam-MW7xgR6"
+    },
+    {
+      "id": "research-ebf0169f1225",
+      "company": "Coulomb AI",
+      "url": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "YC board retains this role, originally posted in 2024. Header asks 1+ years, while the body permits current/recent design students and class projects. Employer Join Us currently shows engineering roles. Salary is USD 8–12K/year in structured data, not a monthly INR stipend.",
+      "jobId": "yc-coulomb-Qtbm3xO"
+    },
+    {
+      "id": "research-60427be60f69",
+      "company": "Icogz",
+      "url": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indeed detail publicly opened. Three-month UI/UX and web/landing-page internship, in person in Mumbai. Employer careers page confirms company and publishes general HR contact, but this internship was not visible in extracted official openings. Pay/current intake unconfirmed.",
+      "jobId": "indeed-icogz-3d84294c02b4aced"
+    },
+    {
+      "id": "research-09d8fe54c3fc",
+      "company": "VictorFlow",
+      "url": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indeed and official careers/role page opened. Explicit Pollachi onsite; remote not assumed. Full-time internship; stipend and posting/closing dates undisclosed.",
+      "jobId": "indeed-victorflow-32e693c20b142dbf"
+    },
+    {
+      "id": "research-1c771cb557cb",
+      "company": "Balusen Technologies",
+      "url": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indeed detail publicly opened: Remote India, internship 0–1y. Body dated21 May 2026. CareerScan date3 Oct 2026 repeats the May body; not evidence of a new original posting. Official careers route opened without extractable roles. Verify intake, pay and start window.",
+      "jobId": "indeed-balusen-846c4cef6fe81a21"
+    },
+    {
+      "id": "research-a7b5e741391b",
+      "company": "Gunadhya Software Solutions",
+      "url": "https://in.indeed.com/viewjob?jk=e4310669941f4c75",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indeed detail and employer career page opened, both list matching UI/UX Intern0–1. Company Pune-based; specific remote arrangements not confirmed. Stipend/date unknown. Ignore expiry assigned by unrelated mirrors.",
+      "jobId": "indeed-gunadhya-e4310669941f4c75"
+    },
+    {
+      "id": "research-96f48c0b8ac9",
+      "company": "Qoruz",
+      "url": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Employer/recruiter-posted Cutshort detail opened. Junior full-time alternative, not internship, asking1–3 years. Listing quotes INR4–6lakh per YEAR; monthly stipend fields must remain null. Work arrangement/current intake require confirmation.",
+      "jobId": "cutshort-qoruz-c5rfKlTo"
+    },
+    {
+      "id": "research-e667433304d5",
+      "company": "Energise.pro",
+      "url": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Himalayas detail and documented public API both accessible; API per-job check returned200. Detail explicitly permits all countries and API has no country restrictions plus UTC+05:30. Original company site was opened but only ASO/User Acquisition roles were visible, so the UX vacancy is not corroborated on its site. Pay undisclosed. Board labels entry-level while body requires1–2 commercial years.",
+      "jobId": "himalayas-energise-pro-uiux-designer"
+    },
+    {
+      "id": "research-8fb1dbee22f6",
+      "company": "SuperKalam",
+      "url": "https://superkalam.com/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened; Join Us links YC jobs"
+    },
+    {
+      "id": "research-f3129327ebfd",
+      "company": "Coulomb AI",
+      "url": "https://coulomb.ai/JoinUs",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened; engineering roles visible"
+    },
+    {
+      "id": "research-a25bd1c1f3ef",
+      "company": "Cardboard",
+      "url": "https://www.ycombinator.com/companies/cardboard/jobs",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public page"
+    },
+    {
+      "id": "research-7b971ecd5434",
+      "company": "Cardog",
+      "url": "https://news.ycombinator.com/item?id=49926872",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Fetched through HN Algolia API and thread"
+    },
+    {
+      "id": "research-145c567d2688",
+      "company": "Cardog",
+      "url": "https://cardog.app/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened; Design Engineer remote listed"
+    },
+    {
+      "id": "research-35b96c12bb52",
+      "company": "Sundream Studio",
+      "url": "https://news.ycombinator.com/item?id=49932275",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Fetched HN October2026 employer comment"
+    },
+    {
+      "id": "research-f98163dfb37a",
+      "company": "Icogz",
+      "url": "https://www.icogz.com/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official career page opened"
+    },
+    {
+      "id": "research-0cc6779ebb2b",
+      "company": "VictorFlow",
+      "url": "https://www.victorflow.com/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official career page opened"
+    },
+    {
+      "id": "research-f7ad8090a499",
+      "company": "Balusen Technologies",
+      "url": "https://balusen.com/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official profile indexed / dynamic career shell"
+    },
+    {
+      "id": "research-424fd260025e",
+      "company": "Gunadhya Software Solutions",
+      "url": "https://www.gunadhyasoft.com/career/index",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official career page opened"
+    },
+    {
+      "id": "research-b345d7cde2bb",
+      "company": "Qoruz",
+      "url": "https://www.linkedin.com/company/qoruz/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official profile indexed / dynamic career shell"
+    },
+    {
+      "id": "research-d5bf661a3e4a",
+      "company": "Talview",
+      "url": "https://careers.talview.com/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Direct extract lacked roles; indexed text previously showed intern"
+    },
+    {
+      "id": "research-25275f434998",
+      "company": "GreedyGame",
+      "url": "https://in.linkedin.com/jobs/view/product-designer-intern-at-greedygame-4462939948",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed original explicitly no longer accepting"
+    },
+    {
+      "id": "research-02f12a411e44",
+      "company": "GreedyGame",
+      "url": "https://itbots.in/jobs/product-designer-intern-202609210945116ab0af4facaef",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Mirror states Dec21deadline; original closure retained"
+    },
+    {
+      "id": "research-a5376d24bc1f",
+      "company": "Energise.pro",
+      "url": "https://himalayas.app/jobs/api/companies/energise-pro/jobs/ui-ux-designer",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "API 200; open according to board"
+    },
+    {
+      "id": "research-3c6ad91b1aae",
+      "company": "Energise.pro",
+      "url": "https://energise.pro/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened; no UX opening visible"
+    },
+    {
+      "id": "research-fc623d3c7b85",
+      "company": "GitLab",
+      "url": "https://about.gitlab.com/jobs/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-ef127cff33aa",
+      "company": "GitLab",
+      "url": "https://himalayas.app/companies/gitlab-com/jobs/product-design-expression-of-interest-form",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Public API observed; no current vacancy"
+    },
+    {
+      "id": "research-c383cdf9adf7",
+      "company": "Snaptrude",
+      "url": "https://www.snaptrude.com/careers",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-56be8e16a332",
+      "company": "Snaptrude",
+      "url": "https://wellfound.com/company/snaptrude/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened/indexed0 jobs"
+    },
+    {
+      "id": "research-3efaafaffe78",
+      "company": "Snaptrude",
+      "url": "https://wellfound.com/jobs/3203156-product-design-intern",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Direct HTTP 410 Gone despite search-index text"
+    },
+    {
+      "id": "research-35fb84bf6381",
+      "company": "Appbrew",
+      "url": "https://www.appbrew.com/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-db84974924d6",
+      "company": "Appbrew",
+      "url": "https://wellfound.com/jobs/3340685-product-design-intern",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Direct HTTP 410 Gone despite search-index text"
+    },
+    {
+      "id": "research-e92b0e1538d9",
+      "company": "Troopr.ai / Troopr Labs",
+      "url": "https://troopr.freshteam.com/jobs",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-fd4a9c546309",
+      "company": "Troopr.ai / Troopr Labs",
+      "url": "https://troopr.freshteam.com/jobs/1Q615E3mmTmP/product-designer-remote",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-588f1c110fd4",
+      "company": "Troopr.ai / Troopr Labs",
+      "url": "https://wellfound.com/jobs/4602344-product-designer-intern",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Direct HTTP 410"
+    },
+    {
+      "id": "research-86f45bf27fac",
+      "company": "Troopr.ai / Troopr Labs",
+      "url": "https://wellfound.com/jobs/4629881-webflow-designer-junior",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Direct HTTP 410"
+    },
+    {
+      "id": "research-b48367a4b20b",
+      "company": "Attira",
+      "url": "https://wellfound.com/jobs/4823701-intern-ui-ux-and-qa",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-6d4c738dc88b",
+      "company": "Attira",
+      "url": "https://wellfound.com/company/attira/jobs",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-93d2a531a71f",
+      "company": "Attira",
+      "url": "https://forms.gle/LUhBLUf436udHo359",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Link published on opened role; form submission not performed"
+    },
+    {
+      "id": "research-8e3893316d46",
+      "company": "BigThinkCode Technologies",
+      "url": "https://bigthinkcode.com/",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-441fb7eecbaf",
+      "company": "BigThinkCode Technologies",
+      "url": "https://cutshort.io/job/UI-UX-Design-Internship-Fresher-Chennai-Pondicherry-BigThinkCode-Technologies-hHEZeQYZ",
+      "kind": "careers",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened public source"
+    },
+    {
+      "id": "research-a783b888b0e9",
+      "company": "Chiblu",
+      "url": "https://wellfound.com/jobs/4209561-product-design-intern",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed cross-post of the existing role. Header shows INR 8–10k without an explicit pay period in the visible excerpt. Original employer pay remains unconfirmed; do not count this as a new role or a qualifying stipend."
+    },
+    {
+      "id": "research-9c7fabc6db6f",
+      "company": "Techolution",
+      "url": "https://in.indeed.com/viewjob?jk=0478c2677b776fbf",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Additional public employer listing UX Designer-Intern Hyderabad; likely same role family, no new duplicate without employer requisition check."
+    },
+    {
+      "id": "research-f38f845257ce",
+      "company": "Zunderdog",
+      "url": "https://in.indeed.com/viewjob?jk=9a426f94d6829cb6",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Public Indeed detail opened with same Pune remote-for-now internship and unknown pay."
+    },
+    {
+      "id": "research-b8673a4442d8",
+      "company": "project44",
+      "url": "https://in.indeed.com/viewjob?jk=df3586a6c551d09a",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indeed header uses Convey, but full role text explicitly says project44 and matches original internship. Treat as mislabelled cross-post, not separate employer/vacancy."
+    },
+    {
+      "id": "research-befa25d2e7bc",
+      "company": "Ungrammary",
+      "url": "https://cutshort.io/job/UX-UI-Design-Trainee-Fellowship-Mumbai-Ungrammary-cfphTF7t",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Employer-posted matching UX/UI internship,24 Aug 2026; advertises INR 10–12k/month, below target."
+    },
+    {
+      "id": "research-0ff4cbdab3a4",
+      "company": "VictorFlow",
+      "url": "https://www.victorflow.com/careers/ui-ux-intern",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Official internship detail opened and careers index links it."
+    },
+    {
+      "id": "research-0a4858d0bc09",
+      "company": "VictorFlow",
+      "url": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-victorflow-4478853960",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed cross-post; body specifies Pollachi onsite despite Coimbatore header."
+    },
+    {
+      "id": "research-6d3c6c6043af",
+      "company": "Balusen Technologies",
+      "url": "https://www.careerscan.in/jobs/ui-ux-intern-balusen-technologies-bengaluru-e35cda",
+      "kind": "role",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Shows3 Oct 2026 while body remains21 May 2026."
+    },
+    {
+      "id": "research-eec6643b0a78",
+      "company": "YC startup jobs",
+      "url": "https://www.ycombinator.com/jobs/role/design",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Reviewed public design search and selected company job details. Two eligible-region conditional leads retained with older dates and pay caveats. No newly confirmed qualifying monthly stipend."
+    },
+    {
+      "id": "research-74ce075e4366",
+      "company": "Work at a Startup",
+      "url": "https://www.workatastartup.com/jobs?roles=designer",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Direct filtered route was not accessible in the research tool; public YC employer pages provide overlapping job content."
+    },
+    {
+      "id": "research-50e888fb9132",
+      "company": "Hacker News Who is hiring, October2026",
+      "url": "https://news.ycombinator.com/item?id=49922569",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Fetched the actual October2026 thread via Algolia API:266 top-level posts,25 mentioning designer/UX/design-engineer terms. No verified India-eligible UX/product internship or junior role from this pass. Cardog and Sundream retained as conditional company targets."
+    },
+    {
+      "id": "research-35d853d7b8f9",
+      "company": "YC Startup Directory",
+      "url": "https://www.ycombinator.com/companies",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Selected public company profiles/jobs support SuperKalam, Coulomb AI and Cardboard discovery."
+    },
+    {
+      "id": "research-dfadfbebff68",
+      "company": "Indeed",
+      "url": "https://in.indeed.com/",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Expanded targeted searches beyond four earlier listings. Four new relevant details retained with undisclosed stipend (Icogz, VictorFlow, Balusen, Gunadhya), plus genuine cross-post enrichments. Numerous other interns are below pay floor, unpaid, wrong discipline or expired; no inference that search counts equal relevant vacancies."
+    },
+    {
+      "id": "research-9aca8fb8317e",
+      "company": "Naukri",
+      "url": "https://www.naukri.com/",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Direct/domain public queries again reported robots restrictions. No newly verified original Naukri role; existing employer-linked route retained. Account connection was not tested or required for these public-source checks; do not imply signed-in access."
+    },
+    {
+      "id": "research-1086252e16a9",
+      "company": "Cutshort",
+      "url": "https://cutshort.io/jobs/user-experience-ux-design-jobs",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Qoruz junior product UX alternative found with annual pay preserved; Ungrammary matching internship adds below-target advertised pay context. Monsoonfish/Integra/AMPM below target and unrelated Product Management roles excluded. Current public examples were mostly below target: Integra Magna INR 3–5k/month, AMPM INR 10–15k/month, SDS INR 7–15k/month. BigThinkCode has an annual INR 1–3 lakh header and restrictive cohort/certification requirements, retained as company research. Ungrammary cross-post adds an annual range and inactive-recruiter caveat to an existing role."
+    },
+    {
+      "id": "research-4d8bb08372fa",
+      "company": "Unstop",
+      "url": "https://unstop.com/internships",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Targeted design searches found BigThinkCode deadline14 Oct 2026 and Virtual Tech2024closed; neither added as active. Competition/hackathon results are not jobs. Targeted search returned competitions with INR 30k prize pools rather than monthly internship pay. No competition prize was treated as an employer stipend."
+    },
+    {
+      "id": "research-9b7c2089a0fc",
+      "company": "Internshala",
+      "url": "https://internshala.com/",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Public domain search reported robots restriction. No new original role verified; no CAPTCHA bypass or signed-in session attempted."
+    },
+    {
+      "id": "research-be0d6d3860e9",
+      "company": "Instahyre",
+      "url": "https://www.instahyre.com/",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Targeted indexed design-intern/0–1 year queries produced no independently verified eligible detail in this pass. This is a coverage limitation, not proof of no jobs; authenticated matching workflow not inspected."
+    },
+    {
+      "id": "research-8cf1b39afc58",
+      "company": "Wellfound",
+      "url": "https://wellfound.com/role/r/ui-ux-designer",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Several indexed internships were expired on direct check; accessible ads often unpaid or below target. Attira preserved as company/conditional research, no proven qualifying stipend. Accounts may be needed to apply/save, not to research these public detail pages."
+    },
+    {
+      "id": "research-be6ad0507210",
+      "company": "Himalayas",
+      "url": "https://himalayas.app/jobs/countries/india/entry-level-design",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Documented public API checks: India product-designer internships returned 0; UX internships returned 6, including five developer/graphic roles and GWEN fee-based training. Entry-level UI/UX search returned 6 records: one plausible junior opening at Energise.pro, an experienced Cloud Counselage role, a GitLab talent pool, adjacent QA and graphic roles. Category counts alone do not establish suitable vacancies."
+    },
+    {
+      "id": "research-c285966ca439",
+      "company": "We Work Remotely",
+      "url": "https://weworkremotely.com/categories/remote-design-jobs",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "No suitable India-eligible UX/product internship or fresher role verified in the examined public sample. Visible roles were predominantly senior/principal/manager or geographically restricted. Category-level Anywhere in the World labels are insufficient evidence of country eligibility."
+    },
+    {
+      "id": "research-f730927b2890",
+      "company": "Remote OK",
+      "url": "https://remoteok.com/remote-design-jobs",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "No suitable India-eligible UX/product internship or junior role verified from examined categories and junior filters. A junior brand-design example was Canada-only; a worldwide junior graphic role was outside the requested discipline."
+    },
+    {
+      "id": "research-bbea80424e04",
+      "company": "Remotive",
+      "url": "https://remotive.com/remote-jobs/design",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Opened design, India andinternpublicpages. No suitable UX/product internship or junior role verified; visible examples were geographic restrictions, senior, graphic/video or other disciplines. Did not bypass paid access or promise comprehensive coverage."
+    },
+    {
+      "id": "research-28c95cfd81c1",
+      "company": "Remote.co",
+      "url": "https://remote.co/remote-jobs/design",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Examined public designcategory. Product/visual roles predominantly US-national orUSlocal/hybrid; no suitable Indiaeligibleintern/junior verified."
+    },
+    {
+      "id": "research-ba468645ad48",
+      "company": "Working Nomads",
+      "url": "https://www.workingnomads.com/jobs?category=design",
+      "kind": "job-board",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Design URL could not be accessed and targetedpublicsearch yielded no independently verifiable matching detail. This is an access/coverage gap, not evidence of no jobs."
+    },
+    {
+      "id": "research-980acc247427",
+      "company": "StartupMap.in",
+      "url": "https://startupmap.in/",
+      "kind": "directory",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Public landing page and eligible-city links inspected. Useful for finding potential employers by city/sector; a hiring filter is not proof of a UX internship. Follow individual company sites to verify roles."
+    },
+    {
+      "id": "research-a1a4427a28bb",
+      "company": "StartupBlink India",
+      "url": "https://www.startupblink.com/top-startups/india",
+      "kind": "directory",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Accessible India startup directory includes existing targets such as Swiggy, Meesho, Groww and Juspay. Rankings/funding do not establish an active business, stipend or design vacancy; verify official careers."
+    },
+    {
+      "id": "research-62148c304f58",
+      "company": "Indian Startup Map",
+      "url": "https://indianstartupmap.com/map",
+      "kind": "directory",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Public map and methodology explain registered companies and coordinate limits. Registration, scheme membership and funding signals do not establish current hiring; no vacancy inferred."
+    },
+    {
+      "id": "research-3d5ccd4561e4",
+      "company": "IndianStartupsMap",
+      "url": "https://www.indianstartupsmap.com/",
+      "kind": "directory",
+      "lastStatus": "manual",
+      "lastChecked": "2026-10-24",
+      "message": "Indexed directory discovered, but direct page timed out. No new role or employer contact was verified from this source."
     }
-  ]
+  ],
+  "coverage": [
+    {
+      "id": "yc-design",
+      "name": "YC startup jobs",
+      "platform": "YC / Work at a Startup",
+      "url": "https://www.ycombinator.com/jobs/role/design",
+      "checkedAt": "2026-10-24",
+      "status": "searched",
+      "findings": "Reviewed public design search and selected company job details. Two eligible-region conditional leads retained with older dates and pay caveats. No newly confirmed qualifying monthly stipend.",
+      "acceptedRoles": 2,
+      "newlyPostedRolesVerified": 0,
+      "notes": "Public details accessible; applying through YC may require a profile. Company directory is a discovery source, not a vacancy guarantee.",
+      "source": "YC startup jobs",
+      "limits": "Public details accessible; applying through YC may require a profile. Company directory is a discovery source, not a vacancy guarantee."
+    },
+    {
+      "id": "workatastartup",
+      "name": "Work at a Startup",
+      "platform": "YC / Work at a Startup",
+      "url": "https://www.workatastartup.com/jobs?roles=designer",
+      "checkedAt": "2026-10-24",
+      "status": "limited",
+      "findings": "Direct filtered route was not accessible in the research tool; public YC employer pages provide overlapping job content.",
+      "acceptedRoles": 0,
+      "notes": "Do not double-count YC and Work at a Startup mirrors as different openings.",
+      "source": "Work at a Startup",
+      "limits": "Do not double-count YC and Work at a Startup mirrors as different openings."
+    },
+    {
+      "id": "hn-october-2026",
+      "name": "Hacker News Who is hiring, October2026",
+      "platform": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49922569",
+      "checkedAt": "2026-10-24",
+      "status": "searched",
+      "findings": "Fetched the actual October2026 thread via Algolia API:266 top-level posts,25 mentioning designer/UX/design-engineer terms. No verified India-eligible UX/product internship or junior role from this pass. Cardog and Sundream retained as conditional company targets.",
+      "acceptedRoles": 0,
+      "companyTargets": 2,
+      "reviewedPosts": 266,
+      "designTermMatches": 25,
+      "notes": "Engineering, senior, North-America/Europe-only and volunteer posts were not promoted as qualifying design internships.",
+      "source": "Hacker News Who is hiring, October 2026",
+      "limits": "Engineering, senior, North-America/Europe-only and volunteer posts were not promoted as qualifying design internships."
+    },
+    {
+      "id": "yc-startup-directory",
+      "name": "YC Startup Directory",
+      "platform": "Startup directories",
+      "url": "https://www.ycombinator.com/companies",
+      "checkedAt": "2026-10-24",
+      "status": "discovery",
+      "findings": "Selected public company profiles/jobs support SuperKalam, Coulomb AI and Cardboard discovery.",
+      "acceptedRoles": 0,
+      "notes": "Directory membership and funding do not establish an opening, internship pay or applicant fit.",
+      "source": "YC Startup Directory",
+      "limits": "Directory membership and funding do not establish an opening, internship pay or applicant fit."
+    },
+    {
+      "source": "Indeed",
+      "url": "https://in.indeed.com/",
+      "checkedAt": "2026-10-24",
+      "status": "Public details and search results accessible",
+      "findings": "Expanded targeted searches beyond four earlier listings. Four new relevant details retained with undisclosed stipend (Icogz, VictorFlow, Balusen, Gunadhya), plus genuine cross-post enrichments. Numerous other interns are below pay floor, unpaid, wrong discipline or expired; no inference that search counts equal relevant vacancies.",
+      "id": "coverage-dfadfbebff",
+      "limits": "",
+      "platform": "Indeed"
+    },
+    {
+      "source": "Naukri",
+      "url": "https://www.naukri.com/",
+      "checkedAt": "2026-10-24",
+      "status": "Blocked by robots.txt",
+      "findings": "Direct/domain public queries again reported robots restrictions. No newly verified original Naukri role; existing employer-linked route retained. Account connection was not tested or required for these public-source checks; do not imply signed-in access.",
+      "id": "coverage-9aca8fb831",
+      "limits": "",
+      "platform": "Naukri"
+    },
+    {
+      "source": "Cutshort",
+      "url": "https://cutshort.io/jobs/user-experience-ux-design-jobs",
+      "checkedAt": "2026-10-24",
+      "status": "Public role details accessible; apply uses candidate login",
+      "findings": "Qoruz junior product UX alternative found with annual pay preserved; Ungrammary matching internship adds below-target advertised pay context. Monsoonfish/Integra/AMPM below target and unrelated Product Management roles excluded. Current public examples were mostly below target: Integra Magna INR 3–5k/month, AMPM INR 10–15k/month, SDS INR 7–15k/month. BigThinkCode has an annual INR 1–3 lakh header and restrictive cohort/certification requirements, retained as company research. Ungrammary cross-post adds an annual range and inactive-recruiter caveat to an existing role.",
+      "id": "coverage-1086252e16",
+      "limits": "",
+      "platform": "Cutshort",
+      "exclusionExamples": [
+        {
+          "company": "AMPM Network",
+          "url": "https://cutshort.io/company/jobs-at-am%3Apm-network-31-iYNcGQRZ",
+          "reason": "₹10–15k/mo, belowtarget; recruiterinactive"
+        },
+        {
+          "company": "SDS softwares",
+          "url": "https://cutshort.io/jobs/user-experience-ux-design-jobs",
+          "reason": "₹7–15k/mo; no current full-time students; immediatejoiners"
+        }
+      ]
+    },
+    {
+      "source": "Unstop",
+      "url": "https://unstop.com/internships",
+      "checkedAt": "2026-10-24",
+      "status": "Public/indexed details accessible",
+      "findings": "Targeted design searches found BigThinkCode deadline14 Oct 2026 and Virtual Tech2024closed; neither added as active. Competition/hackathon results are not jobs. Targeted search returned competitions with INR 30k prize pools rather than monthly internship pay. No competition prize was treated as an employer stipend.",
+      "id": "coverage-4d8bb08372",
+      "limits": "",
+      "exclusionExamples": [
+        {
+          "company": "Pixel Paranoia UI/UX hackathon",
+          "url": "https://unstop.com/o/1759594",
+          "reason": "Competitionprize30k, notinternstipend"
+        }
+      ]
+    },
+    {
+      "source": "Internshala",
+      "url": "https://internshala.com/",
+      "checkedAt": "2026-10-24",
+      "status": "Blocked by robots.txt",
+      "findings": "Public domain search reported robots restriction. No new original role verified; no CAPTCHA bypass or signed-in session attempted.",
+      "id": "coverage-9b7c2089a0",
+      "limits": ""
+    },
+    {
+      "source": "Instahyre",
+      "url": "https://www.instahyre.com/",
+      "checkedAt": "2026-10-24",
+      "status": "Targeted public search only",
+      "findings": "Targeted indexed design-intern/0–1 year queries produced no independently verified eligible detail in this pass. This is a coverage limitation, not proof of no jobs; authenticated matching workflow not inspected.",
+      "id": "coverage-be0d6d3860",
+      "limits": ""
+    },
+    {
+      "source": "Wellfound",
+      "url": "https://wellfound.com/role/r/ui-ux-designer",
+      "checkedAt": "2026-10-24",
+      "status": "Partial public coverage; originals individually checked",
+      "findings": "Several indexed internships were expired on direct check; accessible ads often unpaid or below target. Attira preserved as company/conditional research, no proven qualifying stipend. Accounts may be needed to apply/save, not to research these public detail pages.",
+      "exclusionExamples": [
+        {
+          "company": "Snaptrude",
+          "url": "https://wellfound.com/jobs/3203156-product-design-intern",
+          "reason": "Direct HTTP 410Gone; search index stale"
+        },
+        {
+          "company": "Renan",
+          "url": "https://wellfound.com/jobs/3534863-ui-ux-design-intern-work-from-home",
+          "reason": "Opened detail explicitly₹5k/month"
+        },
+        {
+          "company": "MAVR",
+          "url": "https://wellfound.com/jobs/4572769-ui-ux-brand-design-intern-freshers",
+          "reason": "Body explicitly unpaid"
+        }
+      ],
+      "id": "coverage-8cf1b39afc",
+      "limits": "",
+      "platform": "Wellfound"
+    },
+    {
+      "source": "Himalayas",
+      "url": "https://himalayas.app/jobs/countries/india/entry-level-design",
+      "checkedAt": "2026-10-24",
+      "status": "Public API and individual details checked",
+      "findings": "Documented public API checks: India product-designer internships returned 0; UX internships returned 6, including five developer/graphic roles and GWEN fee-based training. Entry-level UI/UX search returned 6 records: one plausible junior opening at Energise.pro, an experienced Cloud Counselage role, a GitLab talent pool, adjacent QA and graphic roles. Category counts alone do not establish suitable vacancies.",
+      "apiDocumentation": "https://himalayas.app/api",
+      "exclusionExamples": [
+        {
+          "company": "GWEN",
+          "url": "https://himalayas.app/companies/gwen/jobs/ux-design-intern",
+          "reason": "Applicant-paid training, no salary or job offer"
+        },
+        {
+          "company": "Cloud Counselage",
+          "url": "https://himalayas.app/companies/cloud-counselage-pvt-ltd/jobs/jr-ui-ux-designer",
+          "reason": "2+years andKerala/TamilNadu residency; not a fresher role"
+        },
+        {
+          "company": "GitLab",
+          "url": "https://himalayas.app/companies/gitlab-com/jobs/product-design-expression-of-interest-form",
+          "reason": "Explicit future talent pool, not current vacancy"
+        }
+      ],
+      "id": "coverage-be6ad05072",
+      "limits": "",
+      "platform": "Remote boards"
+    },
+    {
+      "source": "We Work Remotely",
+      "url": "https://weworkremotely.com/categories/remote-design-jobs",
+      "checkedAt": "2026-10-24",
+      "status": "Public category opened; sample checked",
+      "findings": "No suitable India-eligible UX/product internship or fresher role verified in the examined public sample. Visible roles were predominantly senior/principal/manager or geographically restricted. Category-level Anywhere in the World labels are insufficient evidence of country eligibility.",
+      "exclusionExamples": [
+        {
+          "company": "Workiva",
+          "url": "https://weworkremotely.com/categories/remote-design-jobs",
+          "reason": "Principal designer, UnitedStates"
+        },
+        {
+          "company": "Cribl",
+          "url": "https://weworkremotely.com/categories/remote-design-jobs",
+          "reason": "Senior UX, UnitedStates"
+        }
+      ],
+      "id": "coverage-c285966ca4",
+      "limits": "",
+      "platform": "Remote boards"
+    },
+    {
+      "source": "Remote OK",
+      "url": "https://remoteok.com/remote-design-jobs",
+      "checkedAt": "2026-10-24",
+      "status": "Public listing/category checked; limited role detail",
+      "findings": "No suitable India-eligible UX/product internship or junior role verified from examined categories and junior filters. A junior brand-design example was Canada-only; a worldwide junior graphic role was outside the requested discipline.",
+      "exclusionExamples": [
+        {
+          "company": "Twine",
+          "url": "https://remoteok.com/remote-jobs/remote-junior-brand-designer-twine-1131835",
+          "reason": "Canada-only brand role"
+        },
+        {
+          "company": "Twine",
+          "url": "https://remoteok.com/remote-jobs/remote-junior-graphic-designer-twine-1132062",
+          "reason": "Graphic brand work; outside requested UX/product roles"
+        }
+      ],
+      "id": "coverage-f730927b28",
+      "limits": "",
+      "platform": "Remote boards"
+    },
+    {
+      "source": "Remotive",
+      "url": "https://remotive.com/remote-jobs/design",
+      "checkedAt": "2026-10-24",
+      "status": "Limited public sample; full feed marketed behind paid access",
+      "findings": "Opened design, India andinternpublicpages. No suitable UX/product internship or junior role verified; visible examples were geographic restrictions, senior, graphic/video or other disciplines. Did not bypass paid access or promise comprehensive coverage.",
+      "exclusionExamples": [
+        {
+          "company": "Blueprint Technologies",
+          "url": "https://remotive.com/remote-jobs/design",
+          "reason": "UX/CX roleArgentina; seniorexamplePhilippines"
+        },
+        {
+          "company": "HOPn UG",
+          "url": "https://remotive.com/remote-jobs/design",
+          "reason": "GraphicinternGermany"
+        }
+      ],
+      "id": "coverage-bbea80424e",
+      "limits": "",
+      "platform": "Remote boards"
+    },
+    {
+      "source": "Remote.co",
+      "url": "https://remote.co/remote-jobs/design",
+      "checkedAt": "2026-10-24",
+      "status": "Public category opened; sample checked",
+      "findings": "Examined public designcategory. Product/visual roles predominantly US-national orUSlocal/hybrid; no suitable Indiaeligibleintern/junior verified.",
+      "exclusionExamples": [
+        {
+          "company": "Databento",
+          "url": "https://remote.co/remote-jobs/design",
+          "reason": "VisualDesignerUSnational"
+        },
+        {
+          "company": "Discovery Education",
+          "url": "https://remote.co/remote-jobs/design",
+          "reason": "ProductDesignerUSnational"
+        }
+      ],
+      "id": "coverage-28c95cfd81",
+      "limits": "",
+      "platform": "Remote boards"
+    },
+    {
+      "source": "Working Nomads",
+      "url": "https://www.workingnomads.com/jobs?category=design",
+      "checkedAt": "2026-10-24",
+      "status": "Page inaccessible through research tool; no verified leads",
+      "findings": "Design URL could not be accessed and targetedpublicsearch yielded no independently verifiable matching detail. This is an access/coverage gap, not evidence of no jobs.",
+      "exclusionExamples": [],
+      "id": "coverage-ba468645ad",
+      "limits": "",
+      "platform": "Remote boards"
+    },
+    {
+      "id": "coverage-980acc2474",
+      "source": "StartupMap.in",
+      "url": "https://startupmap.in/",
+      "status": "Directory page opened; dynamic company grid not fully inspected",
+      "findings": "Public landing page and eligible-city links inspected. Useful for finding potential employers by city/sector; a hiring filter is not proof of a UX internship. Follow individual company sites to verify roles.",
+      "checkedAt": "2026-10-24"
+    },
+    {
+      "id": "coverage-a1a4427a28",
+      "source": "StartupBlink India",
+      "url": "https://www.startupblink.com/top-startups/india",
+      "status": "Public employer directory inspected",
+      "findings": "Accessible India startup directory includes existing targets such as Swiggy, Meesho, Groww and Juspay. Rankings/funding do not establish an active business, stipend or design vacancy; verify official careers.",
+      "checkedAt": "2026-10-24"
+    },
+    {
+      "id": "coverage-62148c304f",
+      "source": "Indian Startup Map",
+      "url": "https://indianstartupmap.com/map",
+      "status": "Independent directory opened; employer discovery only",
+      "findings": "Public map and methodology explain registered companies and coordinate limits. Registration, scheme membership and funding signals do not establish current hiring; no vacancy inferred.",
+      "checkedAt": "2026-10-24"
+    },
+    {
+      "id": "coverage-3d5ccd4561",
+      "source": "IndianStartupsMap",
+      "url": "https://www.indianstartupsmap.com/",
+      "status": "Search index available; direct page timed out",
+      "findings": "Indexed directory discovered, but direct page timed out. No new role or employer contact was verified from this source.",
+      "checkedAt": "2026-10-24"
+    }
+  ],
+  "coverageUpdatedAt": "2026-10-24"
 }

@@ -111,3 +111,16 @@ Run the new workflow check with PLAYWRIGHT_BROWSERS_PATH pointing at installed b
 ### Reviewed-fit imports
 
 A version1 backup may contain assessment-only companyOverrides (no profile or application fields). Restore merges each company record and role criteria, retaining existing blacklist/reason/tier/following and unrelated criteria. The imported judgment wins for an identical criterion; export a backup first. Personal assessment files stay outside the public repository/feed and must be imported by the user in their own browser. Role details reuse the company requirement meter and support private criteria for employers absent from the public directory. Test this with python tests/fit_import_check.py.
+
+
+## Broader source coverage
+
+Public research now includes YC / Work at a Startup, Wellfound, Hacker News Who is hiring, Himalayas, We Work Remotely, Remote OK, Remotive, Remote.co, Working Nomads, India job boards and startup maps/directories. The feed has36 researched role leads and111 employer targets, including73 product companies. These counts include older on-hold leads, junior alternatives and watchlist-only company records; they are not a count of newly posted qualifying internships.
+
+Discover has dedicated source-family filters and a Source coverage button. Sources & evidence displays21 checked sources with actual access limits, findings, examples excluded and dates. Individual source checks are expandable. A public directory/map listing is employer discovery, not a vacancy. Public research usually needs no linked account; applying/saving can require the platform's own login. No signed-in Indeed/Naukri connector or CAPTCHA bypass is configured.
+
+Indeed links10 role records after4 new leads and cross-post enrichment; Naukri remains1 employer-linked route because original automated access is blocked. YC SuperKalam and Coulomb records originated in2024 and carry older-listing/on_hold warnings. HN October2026 research examined266 top-level posts with25 design-term matches but no verified India-eligible junior design vacancy. Several promising Wellfound originals are410 or below target; Chiblu gets a sourced cross-post rather than a duplicate card.
+
+Annual/foreign junior salary stays in advertisedCompensation with original currency/period. The display supports annual INR/USD and labels it separately; it is never a confirmed monthly stipend match. SuperKalam pay metadata conflicts and remains unquantified. Matching Ungrammary Cutshort fellowship reports10–12k/month below target; a separate company page annual range is retained with limits. Salary and freshness caveats remain with source evidence.
+
+The supported Excel export now includes Source coverage, and regenerates the public company CSV. The daily task prompt maintains this expanded coverage and source schema; browser-private state remains separate. Run python tests/source_coverage_check.py for source filters, cross-post dedupe, older listing labels, original salary units, coverage/access status and mobile layout.

@@ -9,12 +9,36 @@ export const STAGES = [
   { id: 'closed', label: 'Closed', help: 'Archived, rejected or withdrawn' },
 ];
 export const KEYS = { overrides: 'design-jobs.overrides.v1', custom: 'design-jobs.custom.v1', profile: 'design-jobs.profile.v1', companies: 'design-jobs.companies.v1' };
+export const PLATFORM_FILTERS = ['Company careers','Indeed','Naukri','Cutshort','YC / Work at a Startup','Wellfound','Remote boards','Hacker News','LinkedIn','X','Job board'];
+export function platformName(value) {
+  const source = String(value || '').toLowerCase();
+  if (/hacker news|who is hiring|news\.ycombinator|hnhiring/.test(source)) return 'Hacker News';
+  if (/ycombinator|work.?at.?a.?startup|workatastartup|^yc\b/.test(source)) return 'YC / Work at a Startup';
+  if (/wellfound|angel\.co/.test(source)) return 'Wellfound';
+  if (/remote boards|remoteok|remote ok|weworkremotely|we work remotely|remotive|himalayas|workingnomads|working nomads|remote\.co/.test(source)) return 'Remote boards';
+  if (source.includes('linkedin')) return 'LinkedIn';
+  if (source.includes('indeed')) return 'Indeed';
+  if (source.includes('naukri')) return 'Naukri';
+  if (source.includes('cutshort')) return 'Cutshort';
+  if (source === 'x' || source.includes('twitter') || source.includes('x.com/')) return 'X';
+  if (source.includes('company')) return 'Company careers';
+  return source.includes('manual') ? 'Manual' : 'Job board';
+}
+export function platforms(job) {
+  return [...new Set([platformName(job.sourceType), ...(job.additionalSources || []).map(source => platformName(source.platform || source.url))])];
+}
 export const money = value => value == null ? 'Undisclosed' : `₹${Number(value).toLocaleString('en-IN')}`;
+export function compensationText(compensation) {
+  if (!compensation || compensation.min == null || !['INR','USD'].includes(compensation.currency) || !['year','month'].includes(compensation.period)) return '';
+  const format = value => `${compensation.currency === 'INR' ? '₹' : 'USD '}${Number(value).toLocaleString(compensation.currency === 'INR' ? 'en-IN' : 'en-US')}`;
+  return `${format(compensation.min)}${compensation.max && compensation.max !== compensation.min ? `–${format(compensation.max)}` : ''}/${compensation.period}`;
+}
 export function stipend(job) {
-  if (job.payMin == null) return 'Pay not disclosed';
+  if (job.payMin == null) return compensationText(job.advertisedCompensation) || 'Pay not disclosed';
   return `${money(job.payMin)}${job.payMax && job.payMax !== job.payMin ? `–${money(job.payMax)}` : ''}/mo`;
 }
 export function payMatch(job) {
+  if (job.advertisedCompensation?.period === 'year' && job.advertisedCompensation.verified === true) return 'annual';
   if (job.payMin == null || job.payVerified !== true) return job.payBenchmark?.sourceUrl ? 'estimated' : 'unconfirmed';
   const floor = job.region === 'Gujarat' ? 20000 : 30000;
   if (job.payMin >= floor) return 'meets';
@@ -88,8 +112,8 @@ export function csvCell(value) {
   return `"${(/^[\s]*[=+@-]/.test(text) ? "'" : '') + text.replaceAll('"', '""')}"`;
 }
 export function toCsv(jobs) {
-  const columns = { company: 'Company', title: 'Role', roleType: 'Role type', location: 'Location', workMode: 'Work mode', payMin: 'Minimum INR/month', payMax: 'Maximum INR/month', payVerified: 'Pay confirmed in original listing', benchmarkSummary: 'Reported pay (not current offer)', status: 'Status', nextAction: 'Next action', dueDate: 'Due date', interviewAt: 'Interview time', appliedAt: 'Applied date', sourceType: 'Platform', sourceUrl: 'Source', applicationUrl: 'Apply link', email: 'Application email', evidence: 'Evidence', firstSeen: 'First discovered', checkedAt: 'Last checked', notes: 'Notes' };
-  return '\ufeff' + [Object.values(columns).map(csvCell).join(','), ...jobs.map(job => Object.keys(columns).map(k => csvCell(job[k])).join(','))].join('\r\n');
+  const columns = { company: 'Company', title: 'Role', roleType: 'Role type', location: 'Location', workMode: 'Work mode', payMin: 'Minimum INR/month', payMax: 'Maximum INR/month', payVerified: 'Pay confirmed in original listing', listedCompensation: 'Listed salary / original units', benchmarkSummary: 'Reported pay (not current offer)', status: 'Status', nextAction: 'Next action', dueDate: 'Due date', interviewAt: 'Interview time', appliedAt: 'Applied date', sourceType: 'Platform', sourceUrl: 'Source', applicationUrl: 'Apply link', email: 'Application email', evidence: 'Evidence', firstSeen: 'First discovered', checkedAt: 'Last checked', notes: 'Notes' };
+  return '\ufeff' + [Object.values(columns).map(csvCell).join(','), ...jobs.map(job => Object.keys(columns).map(k => csvCell(k === 'listedCompensation' ? compensationText(job.advertisedCompensation) || job.advertisedCompensation?.label || '' : job[k])).join(','))].join('\r\n');
 }
 export function validateBackup(value) {
   if (!value || value.version !== 1 || !Array.isArray(value.custom) || !value.overrides || typeof value.overrides !== 'object' || Array.isArray(value.overrides)) throw new Error('Choose a valid tracker JSON backup.');

@@ -74,6 +74,197 @@
         "company": "CartGeek",
         "reason": "Indeed and employer page accessible. Another employer posting on LinkedIn categorizes the same title as Volunteer; paid status is not established. Possible volunteer/unpaid classification; do not recommend as a qualifying paid role until clarified.",
         "url": "https://in.indeed.com/viewjob?jk=ae2a4028dccd3fbe"
+      },
+      {
+        "company": "Cityfurnish",
+        "title": "UI UX Intern",
+        "url": "https://www.ycombinator.com/companies/cityfurnish/jobs/Lv5ZJGE-ui-ux-intern",
+        "reason": "Gurugram onsite location outside requested geography; visible stipend/equity fields also appear malformed. Do not silently reinterpret10–15INR as10–15K."
+      },
+      {
+        "company": "Cityfurnish",
+        "title": "Graphic Design Intern",
+        "url": "https://www.ycombinator.com/companies/cityfurnish/jobs/Shh82zw-graphic-design-intern",
+        "reason": "Gurugram, graphic/marketing discipline and15–18K/month below target."
+      },
+      {
+        "company": "Deep24",
+        "title": "Design Intern",
+        "url": "https://www.ycombinator.com/companies/deep24/jobs/HeHnv5v-design-intern",
+        "reason": "Remote US and US-citizen/visa-only requirement; worldwide remote not established."
+      },
+      {
+        "company": "Pangea.app",
+        "title": "UI/UX Designer",
+        "url": "https://www.ycombinator.com/companies/pangea-app/jobs/71NlYUD-ui-ux-designer",
+        "reason": "Remote limited toUS/CA/GB, not India."
+      },
+      {
+        "company": "VueTech",
+        "title": "UX/UI Designer",
+        "url": "https://vuetech.sh/careers",
+        "reason": "Official details require SF Bay Area hybrid contract/in-person sessions and shippedB2B experience; not India remote internship."
+      },
+      {
+        "company": "Trustworthy Technology",
+        "title": "Graphic/product designer interest",
+        "url": "https://news.ycombinator.com/item?id=49924889",
+        "reason": "FOSS volunteer/donated-time proposal without salary; not paid internship lead."
+      },
+      {
+        "company": "Material Depot",
+        "title": "Content designer",
+        "url": "https://www.ycombinator.com/companies/material-depot/jobs/35VDcJe-content-designer",
+        "reason": "Graphic/content/SEO role with architecture/interior-design graduate criterion; not the requested UX/product role."
+      },
+      {
+        "company": "Cardboard",
+        "title": "Founding Designer",
+        "url": "https://www.ycombinator.com/companies/cardboard/jobs",
+        "reason": "3+years experienced role; company kept as watchlist target rather than internship recommendation."
+      },
+      {
+        "company": "Cornixe",
+        "url": "https://in.indeed.com/viewjob?jk=cab95a51610f6449",
+        "reason": "Advertised UI/UX intern₹5–15k/month, below target."
+      },
+      {
+        "company": "Integra Magna",
+        "url": "https://in.indeed.com/viewjob?jk=5601dabe8e3bc414",
+        "reason": "Advertised remote UI/UX intern₹3–5k/month, below target."
+      },
+      {
+        "company": "LearnElectronics India",
+        "url": "https://in.indeed.com/viewjob?jk=5fe71f4a77319606",
+        "reason": "Remote UI/UX/Wix internship advertises₹1k/month, below target."
+      },
+      {
+        "company": "Cyber Square AI and Robotics",
+        "url": "https://in.indeed.com/viewjob?jk=7b8239485ad94e33",
+        "reason": "Body explicitly says six-month internship unpaid, despite useful UX/product scope."
+      },
+      {
+        "company": "Arka Information Systems",
+        "url": "https://arkainformations.com/careers/ui-ux-designer-intern/",
+        "reason": "Indeed genericIndia header omitted location; original employer page explicitly Saket, Delhi3–6 months. Outside eligible office region; no remote permission."
+      },
+      {
+        "company": "AppsForBharat",
+        "url": "https://in.indeed.com/q-design-internship-l-bengaluru%2C-karnataka-jobs.html?vjk=434b56b07cd96e3c",
+        "reason": "Indeed explicitly marks product-design intern expired."
+      },
+      {
+        "company": "GreedyGame",
+        "url": "https://in.linkedin.com/jobs/view/product-designer-intern-at-greedygame-4462939948",
+        "reason": "Employer original says no longer accepting; mirrors list fresh dates/Decdeadline. Company watchlist only; old advertised₹35–40k is not a current role."
+      },
+      {
+        "company": "BigThinkCode Technologies",
+        "url": "https://unstop.com/internships/uiux-designer-internship-bigthinkcode-technologies-1763886/amp",
+        "reason": "Unstop deadline14 October 2026 passed. Cutshort current-looking mirror does not prove renewed intake."
+      },
+      {
+        "company": "Virtual Tech Services",
+        "url": "https://unstop.com/internships/uiux-designer-internship-virtual-tech-services-951589",
+        "reason": "Application closed, updatedApril2024."
+      },
+      {
+        "company": "Monsoonfish",
+        "url": "https://cutshort.io/job/UI-Design-Intern-Pune-Monsoonfish-kAgAUepU",
+        "reason": "UI design internship₹5–10k/month, below target."
+      },
+      {
+        "company": "AMPM Network",
+        "url": "https://cutshort.io/jobs/user-experience-ux-design-jobs-in-mumbai",
+        "reason": "Product-design intern₹10–15k/month in-office Mumbai, below target."
+      },
+      {
+        "company": "Castus Info",
+        "url": "https://in.indeed.com/viewjob?jk=122433b7478f72d5",
+        "reason": "UI/UX title body describes backend/server Magento/Laravel developer role; not design internship."
+      },
+      {
+        "company": "Talview",
+        "url": "https://careers.talview.com/",
+        "reason": "Indexed UI/UX Intern, but direct careers extract returns no positions; dynamic/unverified. Watchlist instead of active new role."
+      },
+      {
+        "company": "Snaptrude",
+        "url": "https://wellfound.com/jobs/3203156-product-design-intern",
+        "reason": "Former INR 30k indexed internship; original now HTTP 410 Gone.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "ZuAI",
+        "url": "https://wellfound.com/jobs/4295584-product-designer-intern",
+        "reason": "Original now HTTP 410; INR 1.2–1.8 lakh header must not be treated as monthly pay.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Maiyaa Mori",
+        "url": "https://wellfound.com/jobs/4697905-ui-ux-design-intern",
+        "reason": "Original now HTTP 410 Gone.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Troopr.ai",
+        "url": "https://wellfound.com/jobs/4602344-product-designer-intern",
+        "reason": "Former INR 25k internship; original now HTTP 410 Gone.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "ClickPost",
+        "url": "https://wellfound.com/jobs/4261304-ux-research-intern",
+        "reason": "Former INR 25–30k UX research internship; original now HTTP 410 Gone.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Troopr.ai",
+        "url": "https://wellfound.com/jobs/4629881-webflow-designer-junior",
+        "reason": "Junior Webflow original now HTTP 410 Gone.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Sequoia Technologies",
+        "url": "https://wellfound.com/jobs/4626101-ui-ux-design-intern-product-design-unpaid",
+        "reason": "Explicitly unpaid.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "MAVR",
+        "url": "https://wellfound.com/jobs/4572769-ui-ux-brand-design-intern-freshers",
+        "reason": "Body explicitly says unpaid.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Renan",
+        "url": "https://wellfound.com/jobs/3534863-ui-ux-design-intern-work-from-home",
+        "reason": "Body explicitly states INR 5,000/month.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "GoPratle",
+        "url": "https://wellfound.com/jobs/4424577-ui-ux-design-intern-remote-clone",
+        "reason": "INR 2–5k advertised range is below target.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Rootcode",
+        "url": "https://wellfound.com/jobs/4262928-design-intern-graphic-saas-product-design",
+        "reason": "Body calls the role volunteer; conflicts with INR 5–15k header. Graphic design is primary.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Zorven",
+        "url": "https://wellfound.com/jobs/4049855-ui-ux-designer-intern-remote-training-ppo",
+        "reason": "First three months are a learning phase; later INR 5–15k/month is below target.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "GWEN",
+        "url": "https://himalayas.app/companies/gwen/jobs/ux-design-intern",
+        "reason": "Applicant-paid training programme; explicitly no employment or salary.",
+        "checkedAt": "2026-10-24"
       }
     ],
     "collectorSummary": {
@@ -88,7 +279,8 @@
       "applications": "None submitted. All records read-only research."
     },
     "companyWatchlistAt": "2026-10-24",
-    "companyDirectoryCount": 92
+    "companyDirectoryCount": 111,
+    "coverageNote": "Expanded public research across YC, Wellfound, remote boards, Who is hiring, startup maps and India job boards. Newly discovered is not newly posted; older listings and access limits are labelled."
   },
   "jobs": [
     {
@@ -357,7 +549,23 @@
       "automationNotes": "Email draft can be prepared. First confirm this older role remains open and meets the stipend requirement.",
       "applicationInstructions": "Share portfolio, a short reason for your interest, one project you would discuss and earliest start date.",
       "roleType": "Internship",
-      "summary": "At least three portfolio projects, including end-to-end thinking and a mobile flow; Figma, visual craft, research and communication."
+      "summary": "At least three portfolio projects, including end-to-end thinking and a mobile flow; Figma, visual craft, research and communication.",
+      "additionalSources": [
+        {
+          "platform": "Wellfound",
+          "url": "https://wellfound.com/jobs/4209561-product-design-intern",
+          "note": "Indexed cross-post of the existing role. Header shows INR 8–10k without an explicit pay period in the visible excerpt. Original employer pay remains unconfirmed; do not count this as a new role or a qualifying stipend."
+        }
+      ],
+      "payObservations": [
+        {
+          "min": 8000,
+          "max": 10000,
+          "period": "Unspecified in visible header",
+          "sourceUrl": "https://wellfound.com/jobs/4209561-product-design-intern",
+          "currentEmployerOfferVerified": false
+        }
+      ]
     },
     {
       "id": "neuralpath-design-intern",
@@ -559,6 +767,11 @@
           "platform": "Company careers",
           "url": "https://hire.techolution.com/careers",
           "note": "Company hiring channel; check the exact role and work arrangement."
+        },
+        {
+          "platform": "Indeed",
+          "url": "https://in.indeed.com/viewjob?jk=0478c2677b776fbf",
+          "note": "Additional public employer listing UX Designer-Intern Hyderabad; likely same role family, no new duplicate without employer requisition check."
         }
       ],
       "payBenchmark": {
@@ -836,6 +1049,13 @@
       "tags": [
         "UX",
         "Product"
+      ],
+      "additionalSources": [
+        {
+          "platform": "Indeed",
+          "url": "https://in.indeed.com/viewjob?jk=9a426f94d6829cb6",
+          "note": "Public Indeed detail opened with same Pune remote-for-now internship and unknown pay."
+        }
       ]
     },
     {
@@ -938,6 +1158,13 @@
       "tags": [
         "Product company",
         "Pay to confirm"
+      ],
+      "additionalSources": [
+        {
+          "platform": "Indeed",
+          "url": "https://in.indeed.com/viewjob?jk=df3586a6c551d09a",
+          "note": "Indeed header uses Convey, but full role text explicitly says project44 and matches original internship. Treat as mislabelled cross-post, not separate employer/vacancy."
+        }
       ]
     },
     {
@@ -1176,10 +1403,44 @@
       "checkedAt": "2026-10-24",
       "postedAt": null,
       "postedLabel": "Posting date not confirmed",
-      "nextAction": "Confirm monthly stipend and Mumbai/remote arrangement; prepare your own application video.",
+      "nextAction": "Job-board stipend is below target; confirm whether compensation has changed before prioritising.",
       "tags": [
         "Design studio",
         "Pay to confirm"
+      ],
+      "additionalSources": [
+        {
+          "platform": "Cutshort",
+          "url": "https://cutshort.io/job/UX-UI-Design-Trainee-Fellowship-Mumbai-Ungrammary-cfphTF7t",
+          "note": "Employer-posted matching UX/UI internship,24 Aug 2026; advertises INR 10–12k/month, below target."
+        },
+        {
+          "platform": "Cutshort",
+          "url": "https://cutshort.io/company/ungrammary-85-Bwdu9Tqm",
+          "note": "Opened company jobs page: UI/UX internship, remote India, 0–2 years; INR 1–2 lakh/year is explicitly annual in the header. Recruiter has not been active recently. Original employer amount remains unconfirmed; do not promote this annual range into a monthly stipend."
+        }
+      ],
+      "payBenchmark": {
+        "min": 10000,
+        "max": 12000,
+        "currency": "INR",
+        "period": "month",
+        "role": "UX/UI Design Intern",
+        "kind": "Employer-posted job-board stipend",
+        "sourceUrl": "https://cutshort.io/job/UX-UI-Design-Trainee-Fellowship-Mumbai-Ungrammary-cfphTF7t",
+        "observedAt": "2026-10-24",
+        "note": "Matching fellowship title/content but employer form gives no amount. Board advertises10–12k/month below target; verify current offer. Do not promote as qualifying pay.",
+        "sourceLabel": "Cutshort employer-posted fellowship",
+        "confidence": "Board listing; exact current offer unconfirmed"
+      },
+      "payObservations": [
+        {
+          "min": 100000,
+          "max": 200000,
+          "period": "year",
+          "sourceUrl": "https://cutshort.io/company/ungrammary-85-Bwdu9Tqm",
+          "currentEmployerOfferVerified": false
+        }
       ]
     },
     {
@@ -1319,6 +1580,623 @@
       "tags": [
         "Design studio",
         "Pay to confirm"
+      ]
+    },
+    {
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "sourceType": "YC / Work at a Startup",
+      "checkedAt": "2026-10-24",
+      "firstSeen": "2026-10-24",
+      "region": "Southern India",
+      "applicationMethod": "Employer-posted YC role; review original application route",
+      "automationNotes": "No application sent. YC profile/application may require the applicant to sign in; public role details do not require linking an account here.",
+      "id": "yc-superkalam-MW7xgR6",
+      "companyId": "superkalam",
+      "company": "SuperKalam",
+      "title": "Product Designer (Internship)",
+      "roleType": "Internship",
+      "location": "Bengaluru or remote within India",
+      "workMode": "Remote",
+      "summary": "Design learning flows and UI for an AI education product. Four-to-six-month internship; current intake needs confirmation.",
+      "requirements": "Portfolio or previous product-design internship; Investigate audiences and product problems; Design flows for different learner cohorts; Research, feedback and usable UI; Communication and independent ownership; Bonus: Jitter/Rive motion skills; Availability for a four-to-six-month internship",
+      "requirementItems": [
+        {
+          "id": "427b338b0d",
+          "text": "Portfolio or previous product-design internship",
+          "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship"
+        },
+        {
+          "id": "6d4e2e45a1",
+          "text": "Investigate audiences and product problems",
+          "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship"
+        },
+        {
+          "id": "51fb5b01ce",
+          "text": "Design flows for different learner cohorts",
+          "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship"
+        },
+        {
+          "id": "250a83b83c",
+          "text": "Research, feedback and usable UI",
+          "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship"
+        },
+        {
+          "id": "877ecee1ae",
+          "text": "Communication and independent ownership",
+          "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship"
+        },
+        {
+          "id": "61d56bdc39",
+          "text": "Bonus: Jitter/Rive motion skills",
+          "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship"
+        },
+        {
+          "id": "7bea20ca4c",
+          "text": "Availability for a four-to-six-month internship",
+          "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship"
+        }
+      ],
+      "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship",
+      "applicationUrl": "https://forms.gle/4tp6hnUHkCPfpiJMA",
+      "applicationInstructions": "Employer links a form and asks applicants to understand the product before applying. Form content was not accessible in this research.",
+      "postedAt": "2024-04-20T17:36:06Z",
+      "postedLabel": "Original YC metadata: 20 April 2024; still listed on company board when checked",
+      "evidence": "Employer homepage links its YC careers board. Original metadata is from 2024; current intake is unconfirmed. Visible pay says INR 25–40K without a period, while JSON-LD says USD/year; no monthly stipend is confirmed.",
+      "nextAction": "Confirm current intake, academic-year eligibility and exact stipend currency/period.",
+      "advertisedCompensation": {
+        "label": "₹25K–₹40K shown; period/currency metadata conflict",
+        "currency": "Unconfirmed",
+        "period": "Unconfirmed",
+        "verified": false,
+        "sourceUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship",
+        "note": "Visible INR amount lacks a period; structured data says USD25,000–40,000/year. Do not infer monthly INR stipend."
+      },
+      "listingVerification": "older-listing",
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://superkalam.com/",
+          "note": "Official homepage Join Us points to the YC company jobs board."
+        }
+      ],
+      "tags": [
+        "Product company",
+        "YC W23",
+        "Remote India",
+        "Verify current intake",
+        "Pay units unclear"
+      ]
+    },
+    {
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "sourceType": "YC / Work at a Startup",
+      "checkedAt": "2026-10-24",
+      "firstSeen": "2026-10-24",
+      "region": "Southern India",
+      "applicationMethod": "Employer-posted YC role; review original application route",
+      "automationNotes": "No application sent. YC profile/application may require the applicant to sign in; public role details do not require linking an account here.",
+      "id": "yc-coulomb-Qtbm3xO",
+      "companyId": "coulomb-ai",
+      "company": "Coulomb AI",
+      "title": "UX Designer",
+      "roleType": "Junior / fresher",
+      "location": "Bengaluru, India",
+      "workMode": "Unconfirmed",
+      "summary": "Early-career full-time UX alternative at a battery-analytics product company. Header asks one-plus years; student/project criteria appear in the body.",
+      "requirements": "Relevant design study, current or completed; Figma or comparable design tools; Research and usability fundamentals; Explain decisions and collaborate; Portfolio; academic projects accepted; Bonus: frontend or motion/prototyping experience",
+      "requirementItems": [
+        {
+          "id": "0de14bded5",
+          "text": "Relevant design study, current or completed",
+          "sourceUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer"
+        },
+        {
+          "id": "4ef11985ae",
+          "text": "Figma or comparable design tools",
+          "sourceUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer"
+        },
+        {
+          "id": "74dd7c5cf9",
+          "text": "Research and usability fundamentals",
+          "sourceUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer"
+        },
+        {
+          "id": "57cde103a7",
+          "text": "Explain decisions and collaborate",
+          "sourceUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer"
+        },
+        {
+          "id": "a22c406d78",
+          "text": "Portfolio; academic projects accepted",
+          "sourceUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer"
+        },
+        {
+          "id": "29ef3e6dab",
+          "text": "Bonus: frontend or motion/prototyping experience",
+          "sourceUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer"
+        }
+      ],
+      "sourceUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer",
+      "applicationUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer",
+      "postedAt": "2024-10-08T12:59:55Z",
+      "postedLabel": "Original YC metadata: 8 October 2024; current intake unconfirmed",
+      "evidence": "YC board retains this role, originally posted in 2024. Header asks 1+ years, while the body permits current/recent design students and class projects. Employer Join Us currently shows engineering roles. Salary is USD 8–12K/year in structured data, not a monthly INR stipend.",
+      "nextAction": "Confirm vacancy is active, experience requirement, Bengaluru work arrangement and annual compensation.",
+      "advertisedCompensation": {
+        "min": 8000,
+        "max": 12000,
+        "currency": "USD",
+        "period": "year",
+        "verified": true,
+        "sourceUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer",
+        "note": "Header displays $8K–$12K; JSON-LD uses USD and YEAR. Preserve annual currency; exact current package needs confirmation."
+      },
+      "listingVerification": "older-listing",
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://coulomb.ai/JoinUs",
+          "note": "Employer careers page checked; visible roles are engineering, so it does not independently reconfirm this older UX opening."
+        }
+      ],
+      "tags": [
+        "Product company",
+        "YC S21",
+        "Junior alternative",
+        "1+ years header",
+        "Older listing"
+      ]
+    },
+    {
+      "id": "indeed-icogz-3d84294c02b4aced",
+      "company": "Icogz",
+      "title": "Intern - UI/UX / Web Designer",
+      "roleType": "Internship",
+      "location": "Oshiwara, Mumbai, Maharashtra",
+      "workMode": "On-site",
+      "region": "Maharashtra",
+      "sourceType": "Indeed",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced",
+      "applicationUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "requirements": "UI/UX or web-design coursework, personal projects or freelance work; Responsive/mobile-first design, typography, colour, layout and hierarchy; Familiarity with Figma, Adobe XD, Canva or similar; Willingness to learn HTML/CSS and AI-assisted development; Relevant degree/diploma/certification or equivalent self-taught experience; Portfolio and relevant landing-page or WordPress examples; Three-month internship; communication and feedback",
+      "requirementItems": [
+        {
+          "id": "035ee2819c",
+          "text": "UI/UX or web-design coursework, personal projects or freelance work",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced"
+        },
+        {
+          "id": "3086f87768",
+          "text": "Responsive/mobile-first design, typography, colour, layout and hierarchy",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced"
+        },
+        {
+          "id": "cf79768771",
+          "text": "Familiarity with Figma, Adobe XD, Canva or similar",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced"
+        },
+        {
+          "id": "c9a24cdc2f",
+          "text": "Willingness to learn HTML/CSS and AI-assisted development",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced"
+        },
+        {
+          "id": "814433f64c",
+          "text": "Relevant degree/diploma/certification or equivalent self-taught experience",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced"
+        },
+        {
+          "id": "23530a15a7",
+          "text": "Portfolio and relevant landing-page or WordPress examples",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced"
+        },
+        {
+          "id": "f0612ad20f",
+          "text": "Three-month internship; communication and feedback",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced"
+        }
+      ],
+      "evidence": "Indeed detail publicly opened. Three-month UI/UX and web/landing-page internship, in person in Mumbai. Employer careers page confirms company and publishes general HR contact, but this internship was not visible in extracted official openings. Pay/current intake unconfirmed.",
+      "checkedAt": "2026-10-24",
+      "firstSeen": "2026-10-24",
+      "postedAt": null,
+      "postedLabel": "Posting date not confirmed",
+      "nextAction": "Confirm current intake, stipend, work arrangement and eligibility with employer before applying.",
+      "email": "hr@icogz.com",
+      "applicationMethod": "Indeed or published recruitment email",
+      "careersUrl": "https://www.icogz.com/careers",
+      "companyType": "Product company",
+      "summary": "Enterprise AI/BI company: UI/UX, responsive web design, prototyping and AI-assisted development.",
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://www.icogz.com/careers",
+          "note": "Official careers/general HR route; internship not visible in extracted list."
+        }
+      ],
+      "companyId": "icogz"
+    },
+    {
+      "id": "indeed-victorflow-32e693c20b142dbf",
+      "company": "VictorFlow",
+      "title": "UI/UX Intern",
+      "roleType": "Internship",
+      "location": "Pollachi, Tamil Nadu, India",
+      "workMode": "On-site",
+      "region": "Southern India",
+      "sourceType": "Indeed",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf",
+      "applicationUrl": "https://www.victorflow.com/careers/ui-ux-intern",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "requirements": "Pursuing or completed bachelor degree; Portfolio of mobile/website UI/UX work; Figma proficiency; Adobe XD bonus; Wireframes, prototypes, research and usability testing; Developer collaboration and communication",
+      "requirementItems": [
+        {
+          "id": "6466a230b2",
+          "text": "Pursuing or completed bachelor degree",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf"
+        },
+        {
+          "id": "00247311bc",
+          "text": "Portfolio of mobile/website UI/UX work",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf"
+        },
+        {
+          "id": "80c553b9f3",
+          "text": "Figma proficiency; Adobe XD bonus",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf"
+        },
+        {
+          "id": "3305220b19",
+          "text": "Wireframes, prototypes, research and usability testing",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf"
+        },
+        {
+          "id": "f3ea4822d3",
+          "text": "Developer collaboration and communication",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf"
+        }
+      ],
+      "evidence": "Indeed and official careers/role page opened. Explicit Pollachi onsite; remote not assumed. Full-time internship; stipend and posting/closing dates undisclosed.",
+      "checkedAt": "2026-10-24",
+      "firstSeen": "2026-10-24",
+      "postedAt": null,
+      "postedLabel": "Posting date not confirmed",
+      "nextAction": "Confirm current intake, stipend, work arrangement and eligibility with employer before applying.",
+      "careersUrl": "https://www.victorflow.com/careers",
+      "companyType": "Design studio",
+      "applicationMethod": "Employer application form",
+      "summary": "UI/UX and Webflow studio internship for website/mobile design, research and developer collaboration.",
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://www.victorflow.com/careers/ui-ux-intern",
+          "note": "Official internship detail opened and careers index links it."
+        },
+        {
+          "platform": "LinkedIn",
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-victorflow-4478853960",
+          "note": "Indexed cross-post; body specifies Pollachi onsite despite Coimbatore header."
+        }
+      ],
+      "companyId": "victorflow"
+    },
+    {
+      "id": "indeed-balusen-846c4cef6fe81a21",
+      "company": "Balusen Technologies",
+      "title": "UI/UX Intern",
+      "roleType": "Internship",
+      "location": "Bengaluru / Remote India",
+      "workMode": "Remote",
+      "region": "India",
+      "sourceType": "Indeed",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21",
+      "applicationUrl": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "requirements": "0–1 years / fresher; Figma and school/personal-project portfolio; Interest in UX research and accessibility; Wireframes, component libraries and design docs; Collaborative mindset; Listing requests 10–15 day join availability and CTC/take-home information",
+      "requirementItems": [
+        {
+          "id": "2fe044b54d",
+          "text": "0–1 years / fresher",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21"
+        },
+        {
+          "id": "81f77aa463",
+          "text": "Figma and school/personal-project portfolio",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21"
+        },
+        {
+          "id": "19e00d7cde",
+          "text": "Interest in UX research and accessibility",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21"
+        },
+        {
+          "id": "6a270125c3",
+          "text": "Wireframes, component libraries and design docs",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21"
+        },
+        {
+          "id": "3a12a8897c",
+          "text": "Collaborative mindset",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21"
+        },
+        {
+          "id": "af558420c8",
+          "text": "Listing requests 10–15 day join availability and CTC/take-home information",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=846c4cef6fe81a21"
+        }
+      ],
+      "evidence": "Indeed detail publicly opened: Remote India, internship 0–1y. Body dated21 May 2026. CareerScan date3 Oct 2026 repeats the May body; not evidence of a new original posting. Official careers route opened without extractable roles. Verify intake, pay and start window.",
+      "checkedAt": "2026-10-24",
+      "firstSeen": "2026-10-24",
+      "postedAt": "2026-05-21",
+      "postedLabel": "21 May2026 in body; later aggregator date not original",
+      "nextAction": "Confirm current intake, stipend, work arrangement and eligibility with employer before applying.",
+      "email": "info@balusen.com",
+      "applicationMethod": "Employer-listed email or careers route",
+      "careersUrl": "https://balusen.com/careers",
+      "companyType": "Unclassified",
+      "summary": "Remote India fresher internship involving Figma, research, wireframes and handoff; older opening needing confirmation.",
+      "additionalSources": [
+        {
+          "platform": "Job board",
+          "url": "https://www.careerscan.in/jobs/ui-ux-intern-balusen-technologies-bengaluru-e35cda",
+          "note": "Shows3 Oct 2026 while body remains21 May 2026."
+        }
+      ],
+      "listingVerification": "older-listing",
+      "companyId": "balusen-technologies"
+    },
+    {
+      "id": "indeed-gunadhya-e4310669941f4c75",
+      "company": "Gunadhya Software Solutions",
+      "title": "UI/UX Intern",
+      "roleType": "Internship",
+      "location": "Pune, Maharashtra; exact office/work mode to confirm",
+      "workMode": "Unconfirmed",
+      "region": "Maharashtra",
+      "sourceType": "Indeed",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=e4310669941f4c75",
+      "applicationUrl": "https://www.gunadhyasoft.com/career/index",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "requirements": "Freshers /0–1 years with relevant degree or study; Figma, wireframes, prototypes and user flows; Responsive design, typography, spacing and hierarchy; Communication, teamwork and feedback; Portfolio or academic/personal UI/UX work desirable; Bonus: HTML/CSS, research/usability, components and accessibility",
+      "requirementItems": [
+        {
+          "id": "2f5e422ee7",
+          "text": "Freshers /0–1 years with relevant degree or study",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=e4310669941f4c75"
+        },
+        {
+          "id": "770c6c7e0b",
+          "text": "Figma, wireframes, prototypes and user flows",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=e4310669941f4c75"
+        },
+        {
+          "id": "f3e3d0750d",
+          "text": "Responsive design, typography, spacing and hierarchy",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=e4310669941f4c75"
+        },
+        {
+          "id": "a3aacc11c6",
+          "text": "Communication, teamwork and feedback",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=e4310669941f4c75"
+        },
+        {
+          "id": "3cacd57cdc",
+          "text": "Portfolio or academic/personal UI/UX work desirable",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=e4310669941f4c75"
+        },
+        {
+          "id": "a94c7a45d2",
+          "text": "Bonus: HTML/CSS, research/usability, components and accessibility",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=e4310669941f4c75"
+        }
+      ],
+      "evidence": "Indeed detail and employer career page opened, both list matching UI/UX Intern0–1. Company Pune-based; specific remote arrangements not confirmed. Stipend/date unknown. Ignore expiry assigned by unrelated mirrors.",
+      "checkedAt": "2026-10-24",
+      "firstSeen": "2026-10-24",
+      "postedAt": null,
+      "postedLabel": "Posting date not confirmed",
+      "nextAction": "Confirm current intake, stipend, work arrangement and eligibility with employer before applying.",
+      "careersUrl": "https://www.gunadhyasoft.com/career/index",
+      "companyType": "Services",
+      "applicationMethod": "Employer careers application",
+      "summary": "Fresher-friendly UI/UX internship for web/mobile, Figma and development/QA collaboration.",
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://www.gunadhyasoft.com/career/index",
+          "note": "Official page independently lists matching UI/UX internship."
+        }
+      ],
+      "companyId": "gunadhya-software-solutions"
+    },
+    {
+      "id": "cutshort-qoruz-c5rfKlTo",
+      "company": "Qoruz",
+      "title": "Junior UX Designer",
+      "roleType": "Junior / fresher",
+      "location": "Bengaluru, Karnataka",
+      "workMode": "Unconfirmed",
+      "region": "Southern India",
+      "sourceType": "Cutshort",
+      "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo",
+      "applicationUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "requirements": "1–3 years experience as listed; Figma and production-ready UI; Data-heavy dashboards, tables, search/filter and error/loading/permission states; Research and product thinking; Engineering collaboration, implementation review and design systems",
+      "requirementItems": [
+        {
+          "id": "70b74b5aca",
+          "text": "1–3 years experience as listed",
+          "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo"
+        },
+        {
+          "id": "755153733a",
+          "text": "Figma and production-ready UI",
+          "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo"
+        },
+        {
+          "id": "ac3b6411ec",
+          "text": "Data-heavy dashboards, tables, search/filter and error/loading/permission states",
+          "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo"
+        },
+        {
+          "id": "8f6d67418e",
+          "text": "Research and product thinking",
+          "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo"
+        },
+        {
+          "id": "611ec5c4f4",
+          "text": "Engineering collaboration, implementation review and design systems",
+          "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo"
+        }
+      ],
+      "evidence": "Employer/recruiter-posted Cutshort detail opened. Junior full-time alternative, not internship, asking1–3 years. Listing quotes INR4–6lakh per YEAR; monthly stipend fields must remain null. Work arrangement/current intake require confirmation.",
+      "checkedAt": "2026-10-24",
+      "firstSeen": "2026-10-24",
+      "postedAt": "2026-10-16",
+      "postedLabel": "16 October2026 on detail; index displayed7October",
+      "nextAction": "Confirm current intake, stipend, work arrangement and eligibility with employer before applying.",
+      "careersUrl": "https://www.linkedin.com/company/qoruz/",
+      "email": "hr@qoruz.com",
+      "applicationMethod": "Cutshort application; employer profile publishes recruitment email",
+      "companyType": "Product company",
+      "summary": "Creator-marketing SaaS junior role focused on dashboards, UI execution, interaction states and research.",
+      "salaryOriginal": {
+        "min": 400000,
+        "max": 600000,
+        "currency": "INR",
+        "period": "year",
+        "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo",
+        "kind": "Employer/recruiter-posted annual range",
+        "employerOfferVerified": false
+      },
+      "additionalSources": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://www.linkedin.com/company/qoruz/",
+          "note": "Official employer profile describes product and publisheshr@qoruz.com."
+        }
+      ],
+      "advertisedCompensation": {
+        "min": 400000,
+        "max": 600000,
+        "currency": "INR",
+        "period": "year",
+        "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo",
+        "kind": "Employer/recruiter-posted annual range",
+        "employerOfferVerified": false,
+        "verified": true,
+        "note": "Employer/recruiter-posted annual listing range, not a verified offer or monthly stipend."
+      },
+      "companyId": "qoruz"
+    },
+    {
+      "id": "himalayas-energise-pro-uiux-designer",
+      "company": "Energise.pro",
+      "companyId": "energise-pro",
+      "title": "UI/UX Designer",
+      "roleType": "Junior / fresher",
+      "location": "Worldwide remote; listing explicitly allows all countries",
+      "workMode": "Remote",
+      "region": "India",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "sourceType": "Himalayas",
+      "sourceUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer",
+      "applicationUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer",
+      "applicationMethod": "Himalayas application route; sign-in requested at apply step",
+      "automationNotes": "Public listing/API can be researched without an account. The Apply route leads to Himalayas talent sign-up; do not bypass it. Confirm original employer intake and terms.",
+      "requirements": "1–2 years commercial Product/UX/UI design experience; Confident Figma use and mobile-app UI/UX work; Competitive analysis, user research, flows, wireframes and prototypes; Collaboration with product management and engineering, including handoff; Basic product metrics; design systems and iOS/Android patterns are preferred; English B1+ is a listed bonus; original advert is in Ukrainian",
+      "requirementItems": [
+        {
+          "id": "ee65512291",
+          "text": "1–2 years commercial Product/UX/UI design experience",
+          "sourceUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer"
+        },
+        {
+          "id": "49faa802d0",
+          "text": "Confident Figma use and mobile-app UI/UX work",
+          "sourceUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer"
+        },
+        {
+          "id": "df14ddb760",
+          "text": "Competitive analysis, user research, flows, wireframes and prototypes",
+          "sourceUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer"
+        },
+        {
+          "id": "263e123df8",
+          "text": "Collaboration with product management and engineering, including handoff",
+          "sourceUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer"
+        },
+        {
+          "id": "4be0337345",
+          "text": "Basic product metrics; design systems and iOS/Android patterns are preferred",
+          "sourceUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer"
+        },
+        {
+          "id": "c654fae80c",
+          "text": "English B1+ is a listed bonus; original advert is in Ukrainian",
+          "sourceUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer"
+        }
+      ],
+      "summary": "Remote UI/UX role for a mobile-product company. This is a full-time junior alternative, requiring 1–2 commercial years, not an internship.",
+      "evidence": "Himalayas detail and documented public API both accessible; API per-job check returned200. Detail explicitly permits all countries and API has no country restrictions plus UTC+05:30. Original company site was opened but only ASO/User Acquisition roles were visible, so the UX vacancy is not corroborated on its site. Pay undisclosed. Board labels entry-level while body requires1–2 commercial years.",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "postedAt": "2026-08-07",
+      "postedLabel": "Himalayas detail says7 August2026; API pubDate is last update, not original posting date",
+      "deadline": "2026-11-05",
+      "nextAction": "Confirm stipend, commercial-experience requirement, current employer intake and role start window before applying. Board deadline: 2026-11-05; confirm employer start window.",
+      "tags": [
+        "Remote boards",
+        "Full-time alternative",
+        "Experience to confirm",
+        "Pay to confirm"
+      ],
+      "listingVerification": "board-detail",
+      "sourceChecks": [
+        {
+          "url": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer",
+          "label": "Himalayas role detail",
+          "evidenceStatus": "Opened public source",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://himalayas.app/jobs/api/companies/energise-pro/jobs/ui-ux-designer",
+          "label": "Documented Himalayas per-job API",
+          "evidenceStatus": "API 200; open according to board",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://energise.pro/",
+          "label": "Official company site",
+          "evidenceStatus": "Opened; no UX opening visible",
+          "checkedAt": "2026-10-24"
+        }
       ]
     }
   ]
