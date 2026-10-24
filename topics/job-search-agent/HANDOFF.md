@@ -8,7 +8,7 @@ Updated 24 October 2026. Continue in the existing checkout on branch `topic/job-
 - Existing GitHub repository: AnujR17/Chatgpt-Environment. Do not create another repository.
 - Vercel project: chatgpt-environment, ID prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg.
 - Owner accountId verified: team_wbMCzPWEpuswtIa2AekWJJLh.
-- Production deployment dpl_BXaMDQ1KZTgzpfsfVGQr9Gfz1YTp is READY, source commit 3f9e701b4385e74c01053bda0b0dce4745ffe908 on topic/job-search-agent.
+- Production deployment dpl_5ViDw8AtKYnjakx5XSM3eug45Bkf is READY, source commit 71b37226f50f5d9e87f301c54ab1102c4b78baf6 on topic/job-search-agent.
 - Root directory topics/job-search-agent/app; Vite; npm ci; npm run build; output dist; Node24.
 - User initially imported main, which contains workspace docs and not the app. The existing Vercel project was corrected and the topic branch was deployed directly to production. Main was not modified or merged.
 - The Vercel connection works using the exact project ID and default connection scope. Explicit teamId calls returned403; do not repeat team-scope probes or ask the user to reinstall/reconnect.
@@ -56,3 +56,6 @@ User requested a long company/studio list with product companies prioritised, ca
 - sources.json now155 source entries. Naukri robots blocked; new X searches produced no verified new post. Existing2 X cross-post enrichments remain with prior caveats. Studio evidence includes official/employer social and Indeed; ProCreator reported5–15k stays below-target context; ZEUX initial training pay unclear.
 - Daily task prompt expanded for directory schema, sourced requirements, contact-purpose preservation and blacklist/fit privacy limits; enabled schedule unchanged.
 -12 model/data tests,5 collector tests and production build passed. Existing browser smoke and new company_check.py passed locally, including92/58 counts, evidence meter, source/CSV, blacklist persistence, preserved application, backup/restore, unblocking, custom exclusions and390px layout. Deployment verification follows after exact commit publication.
+
+
+Deployment result: production dpl_5ViDw8AtKYnjakx5XSM3eug45Bkf READY from71b37226f50f5d9e87f301c54ab1102c4b78baf6. Live HTTPS returned200 for28 jobs,92 companies, CSV and Excel. Both original and company-specific browser workflows passed against the deployed site, including mobile, using93 verified HTTPS first-party requests through the session trusted-CA transport (TLS verification retained). No applications/employer messages sent. Resume/portfolio still not supplied. Existing repo/account/project preserved; main unchanged.

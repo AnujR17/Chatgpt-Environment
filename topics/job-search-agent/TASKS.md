@@ -35,4 +35,4 @@
 - [x] Add reversible blacklist including future-company exclusions, reasons, backup/restore and preservation of application history.
 - [x] Expand Excel and CSV company/requirements exports; update daily maintenance instructions.
 - [x] Model/data/collector/build and desktop/mobile workflow checks passed locally.
-- [ ] Verify deployment of this exact update and live directory/blacklist workflow.
+- [x] Exact app commit71b3722 deployed to existing production project; READY, live feeds/downloads and both desktop/mobile workflow checks passed.
