@@ -14,3 +14,14 @@
 - [x] Deploy existing Vercel project to production from the board branch; READY verified at https://chatgpt-environment.vercel.app.
 - [ ] Inspect résumé/portfolio when supplied; review application eligibility.
 - [ ] Add authenticated cross-device persistence if requested.
+
+
+## 24 October expansion
+
+- [x] Broaden research to Indeed/Naukri/X and employer career pages;20 roles total.
+- [x] Add17-company Dream/Workable/Possible watchlist with salary sources and caveats.
+- [x] Retain16 undisclosed/detail-uncertain roles on hold and show reported pay separately.
+- [x] Rebuild Discover, Applications and Companies for clearer actions and larger text.
+- [x] Preserve browser-local progress and backup compatibility; add company preferences to backups.
+- [x] Update daily task with new source/pay/watchlist rules.
+- [ ] Finish redesigned desktop/mobile workflow QA and deploy exact tested commit.

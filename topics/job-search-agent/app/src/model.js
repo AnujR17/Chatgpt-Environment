@@ -1,25 +1,33 @@
 export const STAGES = [
   { id: 'discovered', label: 'Discovered', help: 'Review the role and requirements' },
   { id: 'shortlisted', label: 'Shortlisted', help: 'Prepare your application' },
+  { id: 'on_hold', label: 'On hold', help: 'Confirm pay, eligibility or timing' },
   { id: 'applied', label: 'Applied', help: 'Track replies and follow-ups' },
   { id: 'assessment', label: 'Assessment', help: 'Complete the next task' },
   { id: 'interview', label: 'Interview', help: 'Prepare and confirm the time' },
   { id: 'offer', label: 'Offer', help: 'Review the details' },
   { id: 'closed', label: 'Closed', help: 'Archived, rejected or withdrawn' },
 ];
-export const KEYS = { overrides: 'design-jobs.overrides.v1', custom: 'design-jobs.custom.v1', profile: 'design-jobs.profile.v1' };
+export const KEYS = { overrides: 'design-jobs.overrides.v1', custom: 'design-jobs.custom.v1', profile: 'design-jobs.profile.v1', companies: 'design-jobs.companies.v1' };
 export const money = value => value == null ? 'Undisclosed' : `₹${Number(value).toLocaleString('en-IN')}`;
 export function stipend(job) {
-  if (job.payMin == null) return 'Stipend undisclosed';
+  if (job.payMin == null) return 'Pay not disclosed';
   return `${money(job.payMin)}${job.payMax && job.payMax !== job.payMin ? `–${money(job.payMax)}` : ''}/mo`;
 }
 export function payMatch(job) {
-  if (job.payMin == null || job.payVerified === false) return 'unconfirmed';
+  if (job.payMin == null || job.payVerified !== true) return job.payBenchmark?.sourceUrl ? 'estimated' : 'unconfirmed';
   const floor = job.region === 'Gujarat' ? 20000 : 30000;
   if (job.payMin >= floor) return 'meets';
   if (job.payMin >= 25000 || (job.payMax >= 25000 && job.payMin >= 20000)) return 'consider';
   return 'below';
 }
+export function benchmarkText(benchmark) {
+  if (!benchmark || benchmark.min == null) return 'No reliable design-intern pay range found';
+  const range = `${money(benchmark.min)}${benchmark.max && benchmark.max !== benchmark.min ? `–${money(benchmark.max)}` : ''}`;
+  return `${range}/${benchmark.period === 'year' ? 'year' : 'month'} ${benchmark.kind === 'Employer-listed stipend' ? 'in employer listing' : 'reported'}`;
+}
+export function roleType(job) { return job.roleType || 'Internship'; }
+export function isPipeline(job) { return ['shortlisted','applied','assessment','interview','offer'].includes(job.status); }
 export function safeUrl(value) {
   try { const url = new URL(value); return ['https:', 'http:', 'mailto:'].includes(url.protocol) ? url.href : ''; } catch { return ''; }
 }
@@ -50,7 +58,7 @@ export function csvCell(value) {
   return `"${(/^[\s]*[=+@-]/.test(text) ? "'" : '') + text.replaceAll('"', '""')}"`;
 }
 export function toCsv(jobs) {
-  const columns = { company: 'Company', title: 'Role', location: 'Location', workMode: 'Work mode', payMin: 'Minimum INR/month', payMax: 'Maximum INR/month', payVerified: 'Pay confirmed in original listing', status: 'Status', nextAction: 'Next action', dueDate: 'Due date', interviewAt: 'Interview time', appliedAt: 'Applied date', sourceUrl: 'Source', applicationUrl: 'Apply link', email: 'Application email', evidence: 'Evidence', firstSeen: 'First discovered', checkedAt: 'Last checked', notes: 'Notes' };
+  const columns = { company: 'Company', title: 'Role', roleType: 'Role type', location: 'Location', workMode: 'Work mode', payMin: 'Minimum INR/month', payMax: 'Maximum INR/month', payVerified: 'Pay confirmed in original listing', benchmarkSummary: 'Reported pay (not current offer)', status: 'Status', nextAction: 'Next action', dueDate: 'Due date', interviewAt: 'Interview time', appliedAt: 'Applied date', sourceType: 'Platform', sourceUrl: 'Source', applicationUrl: 'Apply link', email: 'Application email', evidence: 'Evidence', firstSeen: 'First discovered', checkedAt: 'Last checked', notes: 'Notes' };
   return '\ufeff' + [Object.values(columns).map(csvCell).join(','), ...jobs.map(job => Object.keys(columns).map(k => csvCell(job[k])).join(','))].join('\r\n');
 }
 export function validateBackup(value) {

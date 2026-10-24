@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBackup } from '../src/model.js';
+import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBackup, benchmarkText } from '../src/model.js';
 test('stipend thresholds use the lower bound and original evidence',()=>{
  assert.equal(payMatch({region:'Gujarat',payMin:20000,payVerified:true}),'meets');
  assert.equal(payMatch({region:'India',payMin:30000,payVerified:true}),'meets');
@@ -33,4 +33,16 @@ test('backup validation rejects malformed imports',()=>{
  assert.throws(()=>validateBackup({version:1,custom:[],overrides:[]}));
  assert.throws(()=>validateBackup({version:1,custom:[{id:'a'}],overrides:{}}));
  assert.equal(validateBackup({version:1,custom:[],overrides:{}}).version,1);
+});
+test('company reports never become confirmed listing pay and annual units stay annual',()=>{
+ const benchmark={min:300000,max:300000,period:'year',sourceUrl:'https://example.com/report'};
+ assert.equal(payMatch({payMin:null,payVerified:false,payBenchmark:benchmark}),'estimated');
+ assert.equal(benchmarkText(benchmark),'₹3,00,000/year reported');
+ assert.equal(payMatch({payMin:40000,payVerified:false}),'unconfirmed');
+});
+test('on-hold feed updates preserve an existing application and its notes',()=>{
+ const feed=[{id:'same-role',company:'Employer',title:'UX Intern',status:'on_hold'}];
+ assert.equal(mergeJobs(feed,[],{})[0].status,'on_hold');
+ const merged=mergeJobs(feed,[],{'same-role':{status:'applied',notes:'Already submitted'}})[0];
+ assert.equal(merged.status,'applied');assert.equal(merged.notes,'Already submitted');
 });

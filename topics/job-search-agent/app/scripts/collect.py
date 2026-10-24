@@ -97,7 +97,7 @@ def extract_schema(item,url,company,day):
     return dict(id='auto-'+hashlib.sha256(role_url.encode()).hexdigest()[:14],company=company,title=title,
         sourceUrl=role_url,applicationUrl=role_url,location=location,workMode='Remote' if remote else 'Unconfirmed',
         region='Gujarat' if any(x in location.lower() for x in ['gujarat','ahmedabad','surat','rajkot','vadodara','gandhinagar']) else 'India',
-        sourceType='Company careers',payMin=None,payMax=None,payVerified=False,status='discovered',
+        sourceType='Company careers',payMin=None,payMax=None,payVerified=False,status='on_hold',roleType='Internship',
         firstSeen=day,checkedAt=day,postedAt=item.get('datePosted'),postedLabel=item.get('datePosted') or 'Not stated',
         evidence='Automatically discovered in a public employer JobPosting feed. Confirm role, remote eligibility, pay and current availability before applying.',
         requirements=description.visible()[:1800],applicationMethod='Employer application; review required',

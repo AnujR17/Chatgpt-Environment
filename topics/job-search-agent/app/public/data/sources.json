@@ -170,6 +170,187 @@
       "lastChecked": "2026-10-23T15:37:35+00:00",
       "message": "Public page fetched; hiring availability still needs employer confirmation.",
       "contentHash": "b2af622375a92bbdd1305a1e76bd3edb9b42fedeaeac919c7fa981b402f7f354"
+    },
+    {
+      "id": "indeed-techolution-e1a25a765d7c4fd7",
+      "company": "Techolution",
+      "url": "https://in.indeed.com/viewjob?jk=e1a25a765d7c4fd7",
+      "kind": "role",
+      "jobId": "indeed-techolution-e1a25a765d7c4fd7",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "indeed-f1studioz-fef929ca634359c7",
+      "company": "F1studioz",
+      "url": "https://in.indeed.com/viewjob?jk=fef929ca634359c7",
+      "kind": "role",
+      "jobId": "indeed-f1studioz-fef929ca634359c7",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "indeed-greenping-157d2635900933e2",
+      "company": "Green Ping Solutions",
+      "url": "https://in.indeed.com/viewjob?jk=157d2635900933e2",
+      "kind": "role",
+      "jobId": "indeed-greenping-157d2635900933e2",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "indeed-moontechnolabs-45ad3491be217187",
+      "company": "Moon Technolabs",
+      "url": "https://in.indeed.com/viewjob?jk=45ad3491be217187",
+      "kind": "role",
+      "jobId": "indeed-moontechnolabs-45ad3491be217187",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "naukri-keyideas-181120004352",
+      "company": "Keyideas Infotech",
+      "url": "https://www.naukri.com/job-listings-ui-ux-internship-figma-graphics-research-keyideas-infotech-gurgaon-gurugram-0-to-1-years-181120004352",
+      "kind": "role",
+      "jobId": "naukri-keyideas-181120004352",
+      "lastStatus": "blocked"
+    },
+    {
+      "id": "careers-zunderdog-uiux-intern-pune",
+      "company": "Zunderdog",
+      "url": "https://www.zunderdog.com/careers/ui-ux-design-intern-pune",
+      "kind": "role",
+      "jobId": "careers-zunderdog-uiux-intern-pune",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "careers-zunderdog-uiux-fresher-pune",
+      "company": "Zunderdog",
+      "url": "https://www.zunderdog.com/careers/ui-ux-designer-fresher-pune",
+      "kind": "role",
+      "jobId": "careers-zunderdog-uiux-fresher-pune",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-microsoft",
+      "company": "Microsoft",
+      "url": "https://careers.microsoft.com/v2/global/en/students",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-adobe",
+      "company": "Adobe",
+      "url": "https://careers.adobe.com/us/en/university",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-atlassian",
+      "company": "Atlassian",
+      "url": "https://www.atlassian.com/company/careers/earlycareers",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-tekion",
+      "company": "Tekion",
+      "url": "https://tekion.com/careers",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-scaler",
+      "company": "Scaler Academy",
+      "url": "https://www.scaler.com/careers/",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-lenskart",
+      "company": "Lenskart",
+      "url": "https://careers.lenskart.com/",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-shramiksathi",
+      "company": "ShramikSathi",
+      "url": "https://shramiksathi.com/",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-rapido",
+      "company": "Rapido",
+      "url": "https://www.rapido.bike/Careers",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-satsure",
+      "company": "SatSure",
+      "url": "https://www.satsure.co/careers/",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-bthree",
+      "company": "BThree Design Agency",
+      "url": "https://www.bthreedesigns.com/",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-parallel",
+      "company": "Parallel",
+      "url": "https://www.parallelhq.com/careers",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-f1studioz",
+      "company": "F1studioz",
+      "url": "https://f1studioz.com/careers",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-moon-technolabs",
+      "company": "Moon Technolabs",
+      "url": "https://www.moontechnolabs.com/career-with-us/",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-zunderdog",
+      "company": "Zunderdog",
+      "url": "https://www.zunderdog.com/careers",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "watch-keyideas-infotech",
+      "company": "Keyideas Infotech",
+      "url": "https://www.keyideasinfotech.com/careers/ui-ux-design-internship/",
+      "kind": "careers",
+      "lastStatus": "pending"
+    },
+    {
+      "id": "x-wint-7515659430051426304",
+      "company": "Wint Wealth",
+      "url": "https://x.com/beatsbyshaz/status/2112981756571983955",
+      "kind": "social",
+      "jobId": "wint-7515659430051426304",
+      "lastStatus": "blocked",
+      "lastChecked": "2026-10-24",
+      "message": "Original X URL returned 403; content checked through third-party mirror. Evidence: https://workingww.twstalker.com/beatsbyshaz/status/2112981756571983955"
+    },
+    {
+      "id": "x-bthree-4473077505",
+      "company": "BThree Designs",
+      "url": "https://x.com/BThreeAgency/status/2108934891069161479",
+      "kind": "social",
+      "jobId": "bthree-4473077505",
+      "lastStatus": "blocked",
+      "lastChecked": "2026-10-24",
+      "message": "Original X URL returned 403; content checked through third-party mirror. Evidence: https://workingww.twstalker.com/BThreeAgency/status/2108934891069161479"
     }
   ]
 }

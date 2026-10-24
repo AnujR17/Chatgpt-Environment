@@ -1,9 +1,9 @@
 {
   "meta": {
-    "researchedAt": "2026-10-23",
+    "researchedAt": "2026-10-24",
     "collectorLastRun": "2026-10-23T15:37:35+00:00",
     "scheduleStatus": "Daily search task enabled. Public feed updates depend on source access; optional repository cron is not active on this topic branch.",
-    "coverage": "Research snapshot across company careers, LinkedIn jobs/posts and public job boards; X searched without a qualifying verified result.",
+    "coverage": "Company careers, Indeed, employer-linked Naukri, X post mirrors and LinkedIn. Undisclosed pay kept on hold. Company salary research is separate from current role compensation.",
     "excluded": [
       {
         "company": "Appbrew",
@@ -36,15 +36,58 @@
         "url": "https://careers.hussh.ai/open-roles/ui-ux-product-design-intern-pune"
       },
       {
-        "company": "X",
-        "reason": "Searched public indexed hiring posts; no independently verified qualifying original post found in this pass.",
-        "url": null
+        "company": "DronaHQ",
+        "reason": "Original Indeed detail explicitly says expired.",
+        "url": "https://in.indeed.com/viewjob?jk=ec1278ec2a185728"
+      },
+      {
+        "company": "iVoyant",
+        "reason": "Original Indeed result explicitly says expired; another listing 0d6b9d4b3f8986b1 also expired.",
+        "url": "https://in.indeed.com/viewjob?jk=400a7b3dc494676a"
+      },
+      {
+        "company": "Zuntra Digital",
+        "reason": "Official employer description explicitly says unpaid 3-month internship; old Naukri-associated salary snippets must not override this.",
+        "url": "https://www.zuntra.com/blank-8-3-1-1-1"
+      },
+      {
+        "company": "SurveySparrow",
+        "reason": "Indeed lists ₹10,000–20,000 a year, not a month. Below threshold as written; do not silently change unit.",
+        "url": "https://in.indeed.com/viewjob?jk=418f4508c13b1c25"
+      },
+      {
+        "company": "FX31Labs",
+        "reason": "Naukri-associated identifier appears old; aggregator result is unrelated head role with another-card snippet. Official career page did not verify active internship.",
+        "url": "https://www.ambitionbox.com/jobs/fx31-labs-jobs-cmp?campaign=jobs_widget&rid=naukri_280525033857"
+      },
+      {
+        "company": "Kevit.io",
+        "reason": "Indexed Naukri-associated lead is historical and current original Naukri/employer vacancy could not be established. Avoid presenting as newly active Naukri role.",
+        "url": "https://www.ambitionbox.com/jobs/kevit-technologies-jobs?rid=naukri_310525502382"
+      },
+      {
+        "company": "TensorGo",
+        "reason": "Indeed detail remains accessible, but original company role returns HTTP 410 Gone. Company-side deletion conflicts with accessible Indeed listing; do not label verified active.",
+        "url": "https://in.indeed.com/viewjob?jk=5e25dd89f059fecc"
+      },
+      {
+        "company": "CartGeek",
+        "reason": "Indeed and employer page accessible. Another employer posting on LinkedIn categorizes the same title as Volunteer; paid status is not established. Possible volunteer/unpaid classification; do not recommend as a qualifying paid role until clarified.",
+        "url": "https://in.indeed.com/viewjob?jk=ae2a4028dccd3fbe"
       }
     ],
     "collectorSummary": {
       "blocked": 5,
       "ok": 10
-    }
+    },
+    "sourceCoverage": {
+      "Indeed": "Four useful accessible original job details; two additional caveated hold records. Zunderdog fresher discovered in Indeed search but primary verified source is employer.",
+      "Naukri": "One employer-verified role with explicit Naukri Apply link. Naukri itself robots-blocks original checking; no CAPTCHA bypass attempted. Further indexed leads were too stale/weak for active shortlist.",
+      "X": "Two original status URLs with accessible mirrors; both original URLs returned 403. Enrich existing Wint/BThree records without duplicates.",
+      "compensation": "No new record has verified qualifying stipend. Keep pay unknown and confirmation next-action visible.",
+      "applications": "None submitted. All records read-only research."
+    },
+    "companyWatchlistAt": "2026-10-24"
   },
   "jobs": [
     {
@@ -77,7 +120,9 @@
       "evidence": "Employer-authored LinkedIn description explicitly states Remote (India) and ₹30,000/month. The job header says Bengaluru; the description confirms remote work. One opening listed.",
       "applicationMethod": "Email application; draft can be prepared",
       "automationNotes": "Prepare portfolio links and the requested design response, then review and send by email. No email has been sent.",
-      "applicationInstructions": "Email a portfolio with 2–3 case studies and a response of up to 150 words: how should a worker confirm yesterday’s attendance on a small Android phone with an intermittent connection? No cover letter requested. Selection mentions a portfolio discussion, then a paid exercise."
+      "applicationInstructions": "Email a portfolio with 2–3 case studies and a response of up to 150 words: how should a worker confirm yesterday’s attendance on a small Android phone with an intermittent connection? No cover letter requested. Selection mentions a portfolio discussion, then a paid exercise.",
+      "roleType": "Internship",
+      "summary": "Figma, reusable components, design tokens, responsive and accessible interfaces, research and Hindi/English communication."
     },
     {
       "id": "menstrupedia-ux-intern",
@@ -106,7 +151,9 @@
       "evidence": "Company career page states internship, Ahmedabad office and ₹25,000–₹30,000/month. Meets the Gujarat minimum. Original posting date is not stated; confirm the opening is still available.",
       "applicationMethod": "Company application form",
       "automationNotes": "Form link is present on the employer page. Final fields, sign-in requirements and CAPTCHA have not been verified; use the original page to apply.",
-      "applicationInstructions": "Use the company’s Apply link. The page also asks for a résumé and a paragraph explaining suitability, with subject Application for UX Design Intern."
+      "applicationInstructions": "Use the company’s Apply link. The page also asks for a résumé and a paragraph explaining suitability, with subject Application for UX Design Intern.",
+      "roleType": "Internship",
+      "summary": "Design web/mobile interfaces, test with users, collaborate with developers and measure outcomes."
     },
     {
       "id": "more-retail-4477072502",
@@ -134,7 +181,9 @@
       "requirements": "Portfolio showing design decisions and process, Figma, user research and design systems. Pursuing or recently completed a relevant design/HCI degree. Internship duration: 3–6 months.",
       "evidence": "Employer-authored LinkedIn description states ₹35,000/month and Bengaluru. Remote work is not confirmed. Third-party ₹40,000 claims were not used.",
       "applicationMethod": "LinkedIn application",
-      "automationNotes": "Requires your signed-in LinkedIn session. Treat as manual until the actual application flow is inspected."
+      "automationNotes": "Requires your signed-in LinkedIn session. Treat as manual until the actual application flow is inspected.",
+      "roleType": "Internship",
+      "summary": "Portfolio showing design decisions and process, Figma, user research and design systems."
     },
     {
       "id": "bthree-4473077505",
@@ -161,10 +210,22 @@
       ],
       "email": "contact@bthreedesigns.com",
       "requirements": "Strong Framer implementation, Figma auto-layout/components, design systems and motion tools such as Jitter or Lottie. Three-month internship, immediate start, eight hours/day.",
-      "evidence": "Original listing gives ₹20,000–₹25,000/month and Remote / Hybrid. Conditional only if ₹25,000 is agreed and fully remote work is confirmed; the advertised minimum falls below your general threshold.",
+      "evidence": "Original listing gives ₹20,000–₹25,000/month and Remote / Hybrid. Conditional only if ₹25,000 is agreed and fully remote work is confirmed; the advertised minimum falls below your general threshold. An X mirror of the company post claims remote anywhere in India; original X access was blocked, so confirm with the employer.",
       "applicationMethod": "Email application; draft can be prepared",
       "automationNotes": "Prepare a personalised email and links. Confirm ₹25k and fully remote terms before committing. No message has been sent.",
-      "applicationInstructions": "Send portfolio/work samples, 2–3 lines on work you enjoy and 2–3 lines on what you want to learn. Framer/motion examples are useful."
+      "applicationInstructions": "Send portfolio/work samples, 2–3 lines on work you enjoy and 2–3 lines on what you want to learn. Framer/motion examples are useful.",
+      "roleType": "Internship",
+      "summary": "Strong Framer implementation, Figma auto-layout/components, design systems and motion tools such as Jitter or Lottie.",
+      "additionalSources": [
+        {
+          "platform": "X",
+          "url": "https://x.com/BThreeAgency/status/2108934891069161479",
+          "evidenceUrl": "https://workingww.twstalker.com/BThreeAgency/status/2108934891069161479",
+          "note": "Original X URL returned 403; content checked through third-party mirror. Snowflake time derived from status ID, not platform-confirmed. Mirror showed 2 weeks ago.",
+          "observedAt": "2026-10-24",
+          "derivedDate": "2026-10-10T14:57:14.803Z"
+        }
+      ]
     },
     {
       "id": "wint-7515659430051426304",
@@ -183,7 +244,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": null,
       "postedLabel": "1 week ago when checked",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "Product",
         "Design systems"
@@ -191,7 +252,19 @@
       "requirements": "Figma, product thinking, collaboration with product and engineering. Portfolio work on design systems is specifically encouraged.",
       "evidence": "A current post by the company’s co-founder/design leader confirms the internship and Bangalore office attendance. ₹30k–₹35k appears only in third-party listings; employer pay is unconfirmed.",
       "applicationMethod": "Recruiter-linked application form",
-      "automationNotes": "The original post links to a Binary form. Inspect form requirements in your browser; submission and CAPTCHA behaviour are unverified."
+      "automationNotes": "The original post links to a Binary form. Inspect form requirements in your browser; submission and CAPTCHA behaviour are unverified.",
+      "roleType": "Internship",
+      "summary": "Figma, product thinking, collaboration with product and engineering.",
+      "additionalSources": [
+        {
+          "platform": "X",
+          "url": "https://x.com/beatsbyshaz/status/2112981756571983955",
+          "evidenceUrl": "https://workingww.twstalker.com/beatsbyshaz/status/2112981756571983955",
+          "note": "Original X URL returned 403; content checked through third-party mirror. Snowflake time is derived from the status identifier, not an independently verified platform timestamp. Mirror displayed 2 days ago.",
+          "observedAt": "2026-10-24",
+          "derivedDate": "2026-10-21T18:58:02.726Z"
+        }
+      ]
     },
     {
       "id": "hevo-433ffdef",
@@ -210,7 +283,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": null,
       "postedLabel": "Not stated",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "UX",
         "SaaS",
@@ -219,7 +292,9 @@
       "requirements": "Figma components and tokens, SaaS/dashboard interfaces, prototyping and developer handoff. AI-assisted design workflows are relevant.",
       "evidence": "Official employer Lever role and application page are accessible. On-site Bangalore; stipend and original publication date are not disclosed.",
       "applicationMethod": "Lever application form",
-      "automationNotes": "Assisted form filling appears feasible after a résumé and accurate profile are supplied. Fields include résumé, name, email, phone and current company. Final validation/CAPTCHA unverified."
+      "automationNotes": "Assisted form filling appears feasible after a résumé and accurate profile are supplied. Fields include résumé, name, email, phone and current company. Final validation/CAPTCHA unverified.",
+      "roleType": "Internship",
+      "summary": "Figma components and tokens, SaaS/dashboard interfaces, prototyping and developer handoff."
     },
     {
       "id": "revrag-product-design",
@@ -238,7 +313,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": null,
       "postedLabel": "Not stated",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "Product",
         "AI",
@@ -247,7 +322,9 @@
       "requirements": "Strong portfolio, Figma variables/components, AI prototyping, interaction states and fintech workflows. Six-month internship.",
       "evidence": "Original company role is accessible and lists Bengaluru on-site. Third-party ₹40k claims are not confirmed by this page.",
       "applicationMethod": "Employer-linked Google Form",
-      "automationNotes": "Open the company’s application form and select Product Design Intern. Required fields, authentication and CAPTCHA have not been verified."
+      "automationNotes": "Open the company’s application form and select Product Design Intern. Required fields, authentication and CAPTCHA have not been verified.",
+      "roleType": "Internship",
+      "summary": "Strong portfolio, Figma variables/components, AI prototyping, interaction states and fintech workflows."
     },
     {
       "id": "chiblu-design-intern",
@@ -266,7 +343,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": "2026-05-05",
       "postedLabel": "5 May 2026 · older posting",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "Product",
         "Marketplace",
@@ -277,7 +354,9 @@
       "evidence": "Company still exposes the role page and links it from careers. It is an older May posting; current hiring and stipend require confirmation.",
       "applicationMethod": "Email or Wellfound",
       "automationNotes": "Email draft can be prepared. First confirm this older role remains open and meets the stipend requirement.",
-      "applicationInstructions": "Share portfolio, a short reason for your interest, one project you would discuss and earliest start date."
+      "applicationInstructions": "Share portfolio, a short reason for your interest, one project you would discuss and earliest start date.",
+      "roleType": "Internship",
+      "summary": "At least three portfolio projects, including end-to-end thinking and a mobile flow; Figma, visual craft, research and communication."
     },
     {
       "id": "neuralpath-design-intern",
@@ -296,7 +375,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": null,
       "postedLabel": "Not stated",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "Product",
         "Mobile",
@@ -305,7 +384,9 @@
       "requirements": "Figma, UI, prototypes and a portfolio. Students/recent graduates welcome; internships can fit around classes.",
       "evidence": "Company careers page explicitly lists a remote Product Design Intern opportunity and year-round applications. Duration and stipend are discussed individually.",
       "applicationMethod": "Email application via company page",
-      "automationNotes": "Use the company’s email link to prepare an application with work samples and availability. Confirm the stipend first."
+      "automationNotes": "Use the company’s email link to prepare an application with work samples and availability. Confirm the stipend first.",
+      "roleType": "Internship",
+      "summary": "Figma, UI, prototypes and a portfolio."
     },
     {
       "id": "krmr-design-intern",
@@ -324,7 +405,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": null,
       "postedLabel": "Not stated",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "UX",
         "Product",
@@ -333,7 +414,9 @@
       "requirements": "Portfolio showing layout, typography and colour; Figma auto-layout and prototypes; component documentation and development handoff.",
       "evidence": "Original company career page confirms Remote (India) and internship. No stipend or publication date stated.",
       "applicationMethod": "LinkedIn link from employer page",
-      "automationNotes": "Application link leads toward LinkedIn; signed-in flow and exact fields are unverified."
+      "automationNotes": "Application link leads toward LinkedIn; signed-in flow and exact fields are unverified.",
+      "roleType": "Internship",
+      "summary": "Portfolio showing layout, typography and colour; Figma auto-layout and prototypes; component documentation and development handoff.."
     },
     {
       "id": "zavio-design-intern",
@@ -352,7 +435,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": null,
       "postedLabel": "Not stated",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "Product",
         "Fintech",
@@ -361,7 +444,9 @@
       "requirements": "Research, wireframes, user flows and high-fidelity interfaces for financial education products.",
       "evidence": "Company careers page lists this as an open internship, remote anywhere in India. Stipend and posting date are not stated.",
       "applicationMethod": "Company application link",
-      "automationNotes": "Open the original company Apply link. The final destination and form requirements need manual verification."
+      "automationNotes": "Open the original company Apply link. The final destination and form requirements need manual verification.",
+      "roleType": "Internship",
+      "summary": "Research, wireframes, user flows and high-fidelity interfaces for financial education products.."
     },
     {
       "id": "gnixar-design-intern",
@@ -380,7 +465,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": null,
       "postedLabel": "13 days ago on job board when checked",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "Product",
         "Education"
@@ -388,7 +473,10 @@
       "requirements": "Visual and interaction design portfolio, Figma, prototyping and design-system contributions.",
       "evidence": "Job-board description reports remote India and ₹25k–₹40k/month, but its header conflicts on location and compensation. The company careers page dynamically loads roles; this role/pay remains unverified.",
       "applicationMethod": "Confirm on employer careers first",
-      "automationNotes": "Verify the opening, remote eligibility and stipend with the employer before sharing personal information. Third-party pay is not treated as confirmed."
+      "automationNotes": "Verify the opening, remote eligibility and stipend with the employer before sharing personal information. Third-party pay is not treated as confirmed.",
+      "roleType": "Internship",
+      "summary": "Visual and interaction design portfolio, Figma, prototyping and design-system contributions..",
+      "listingVerification": "indexed"
     },
     {
       "id": "glance-ux-intern",
@@ -407,7 +495,7 @@
       "checkedAt": "2026-10-23",
       "postedAt": "2026-10-15",
       "postedLabel": "15 October 2026 on job board",
-      "status": "discovered",
+      "status": "on_hold",
       "tags": [
         "UX",
         "Interaction",
@@ -416,7 +504,382 @@
       "requirements": "UX/visual design for TV shopping interfaces, design systems, interaction states, engineering handoff and interest in AI/ambient computing.",
       "evidence": "StudentSmart reports ₹30k–₹40k/month and Bengaluru; original employer confirmation and work arrangement are still needed.",
       "applicationMethod": "Job-board sign-in; find original employer listing",
-      "automationNotes": "StudentSmart requires login/identity details before redirecting. Prefer verifying the original Glance opportunity first."
+      "automationNotes": "StudentSmart requires login/identity details before redirecting. Prefer verifying the original Glance opportunity first.",
+      "roleType": "Internship",
+      "summary": "UX/visual design for TV shopping interfaces, design systems, interaction states, engineering handoff and interest in AI/ambient computing..",
+      "listingVerification": "indexed"
+    },
+    {
+      "observedAt": "2026-10-24",
+      "postedAt": null,
+      "payMin": null,
+      "payMax": null,
+      "payCurrency": "INR",
+      "payPeriod": "month",
+      "payStatus": "Undisclosed",
+      "payVerified": false,
+      "reviewDisposition": "Confirm pay before applying",
+      "applicationState": "Not applied",
+      "id": "indeed-techolution-e1a25a765d7c4fd7",
+      "company": "Techolution",
+      "title": "UX Design Intern",
+      "location": "Hyderabad / remote claim requires confirmation",
+      "workMode": "Unconfirmed",
+      "roleType": "Internship",
+      "experience": "0–1 year",
+      "sourceName": "Indeed",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=e1a25a765d7c4fd7",
+      "applicationUrl": "https://hire.techolution.com/careers",
+      "companyCareersUrl": "https://hire.techolution.com/careers",
+      "verification": "Indeed detail accessible; official careers index also lists UX Designer–Intern in Hyderabad. Remote statement in Indeed conflicts with Hyderabad in current company index.",
+      "postedLabel": "No reliable original posting date displayed",
+      "requirements": "Portfolio and Figma; Interaction/UX/graphic design or related degree; Research, wireframes, prototypes and developer specifications.",
+      "applicationRoute": "Indeed application or locate UX Designer–Intern on employer careers portal; form and account requirements untested",
+      "accessLimitation": "Official careers site is dynamic; indexed role corroboration is stronger than its text-only rendering.",
+      "nextAction": "Confirm current vacancy, India remote eligibility and at least ₹25–30k/month before submitting.",
+      "evidenceUrls": [
+        "https://in.indeed.com/viewjob?jk=0478c2677b776fbf"
+      ],
+      "sourceType": "Indeed",
+      "status": "on_hold",
+      "region": "Southern India",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "evidence": "Indeed detail accessible; official careers index also lists UX Designer–Intern in Hyderabad. Remote statement in Indeed conflicts with Hyderabad in current company index. Official careers site is dynamic; indexed role corroboration is stronger than its text-only rendering.",
+      "summary": "Portfolio and Figma; Interaction/UX/graphic design or related degree.",
+      "applicationMethod": "Indeed application or locate UX Designer–Intern on employer careers portal; form and account requirements untested",
+      "automationNotes": "Official careers site is dynamic; indexed role corroboration is stronger than its text-only rendering. Submission has not been tested.",
+      "tags": [
+        "UX",
+        "Product"
+      ],
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://hire.techolution.com/careers",
+          "note": "Company hiring channel; check the exact role and work arrangement."
+        }
+      ],
+      "payBenchmark": {
+        "min": 15000,
+        "max": 29000,
+        "period": "month",
+        "currency": "INR",
+        "role": "UX Design Intern",
+        "kind": "Reported salary",
+        "sourceUrl": "https://www.glassdoor.co.in/Salary/Techolution-UX-Design-intern-India-Salaries-EJI_IE1397522.0%2C11_KO12%2C28_IL.29%2C34_IN115.htm?payPeriod=MONTHLY",
+        "sourceLabel": "Glassdoor · UX Design Intern · India",
+        "confidence": "Historical reports",
+        "observedAt": "2026-10-24",
+        "note": "Visible reports range from ₹15k in May2024 to ₹25k–₹29k in2025. The page also models ₹18k–₹30k/month across10 submissions. Reports are not the current role’s offer; confirm ₹25k–₹30k and remote terms."
+      },
+      "benchmarkSummary": "Reported 15000–29000 INR/month; current listing pay undisclosed"
+    },
+    {
+      "observedAt": "2026-10-24",
+      "postedAt": null,
+      "payMin": null,
+      "payMax": null,
+      "payCurrency": "INR",
+      "payPeriod": "month",
+      "payStatus": "Undisclosed",
+      "payVerified": false,
+      "reviewDisposition": "Confirm pay before applying",
+      "applicationState": "Not applied",
+      "id": "indeed-f1studioz-fef929ca634359c7",
+      "company": "F1studioz",
+      "title": "UX Intern",
+      "location": "Bengaluru",
+      "workMode": "Unconfirmed",
+      "roleType": "Internship",
+      "experience": "Student / recent graduate; prior internship preferred",
+      "duration": "At least 6 months",
+      "sourceName": "Indeed",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=fef929ca634359c7",
+      "applicationUrl": "https://in.indeed.com/viewjob?jk=fef929ca634359c7",
+      "companyCareersUrl": "https://f1studioz.com/careers",
+      "verification": "Original Indeed detail accessible without an expiry banner; official careers page corroborates employer and application channel, not a unique role detail.",
+      "postedLabel": "Not stated",
+      "requirements": "Practice projects accepted in portfolio; Final-semester B.Des/M.Des or engineering student/graduate with UX skills; AI tools and enterprise UX interest; possible full-time availability.",
+      "applicationRoute": "Indeed; official careers page provides careers@f1studioz.com as company hiring channel.",
+      "accessLimitation": "Actual application submission flow not tested. General company hybrid policy does not establish this role's work mode.",
+      "nextAction": "Ask stipend, Bengaluru attendance requirements and six-month availability before applying.",
+      "sourceType": "Indeed",
+      "status": "on_hold",
+      "region": "Southern India",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "evidence": "Original Indeed detail accessible without an expiry banner; official careers page corroborates employer and application channel, not a unique role detail. Actual application submission flow not tested. General company hybrid policy does not establish this role's work mode.",
+      "summary": "Practice projects accepted in portfolio; Final-semester B.Des/M.Des or engineering student/graduate with UX skills.",
+      "applicationMethod": "Indeed; official careers page provides careers@f1studioz.com as company hiring channel.",
+      "automationNotes": "Actual application submission flow not tested. General company hybrid policy does not establish this role's work mode. Submission has not been tested.",
+      "tags": [
+        "UX",
+        "Product"
+      ],
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://f1studioz.com/careers",
+          "note": "Company hiring channel; check the exact role and work arrangement."
+        }
+      ],
+      "payBenchmark": {
+        "min": 10000,
+        "max": 10000,
+        "period": "month",
+        "currency": "INR",
+        "role": "UX Intern",
+        "kind": "Reported salary",
+        "sourceUrl": "https://www.glassdoor.co.in/Monthly-Pay/f1Studioz-UX-Intern-Remote-India-Monthly-Pay-EJI_IE1588351.0%2C9_KO10%2C19_IL.20%2C32_IS12563.htm",
+        "sourceLabel": "Glassdoor · UX Intern · Remote India",
+        "confidence": "Low",
+        "observedAt": "2026-10-24",
+        "note": "Low-confidence page displays about ₹10k/month and5 submissions, updated4 June2025. Historical report is below your target; verify whether this current role has a different budget."
+      },
+      "benchmarkSummary": "Reported 10000–10000 INR/month; current listing pay undisclosed"
+    },
+    {
+      "observedAt": "2026-10-24",
+      "postedAt": null,
+      "payMin": null,
+      "payMax": null,
+      "payCurrency": "INR",
+      "payPeriod": "month",
+      "payStatus": "Undisclosed",
+      "payVerified": false,
+      "reviewDisposition": "Confirm pay before applying",
+      "applicationState": "Not applied",
+      "id": "indeed-greenping-157d2635900933e2",
+      "company": "Green Ping Solutions",
+      "title": "UI/UX Design Intern",
+      "location": "Ahmedabad, Gujarat",
+      "workMode": "On-site",
+      "roleType": "Internship",
+      "experience": "Entry level; higher-secondary qualification preferred",
+      "sourceName": "Indeed",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=157d2635900933e2",
+      "applicationUrl": "https://in.indeed.com/viewjob?jk=157d2635900933e2",
+      "companyCareersUrl": null,
+      "verification": "Original Indeed detail accessible without an expiry banner.",
+      "postedLabel": "Not stated",
+      "requirements": "Web and mobile UI; User research, flows and prototypes; Components/design systems and developer collaboration.",
+      "applicationRoute": "Indeed SmartApply",
+      "accessLimitation": "Login and application fields not inspected through submission.",
+      "nextAction": "Confirm stipend of at least ₹20k/month and internship duration.",
+      "sourceType": "Indeed",
+      "status": "on_hold",
+      "region": "Gujarat",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "evidence": "Original Indeed detail accessible without an expiry banner. Login and application fields not inspected through submission.",
+      "summary": "Web and mobile UI; User research, flows and prototypes.",
+      "applicationMethod": "Indeed SmartApply",
+      "automationNotes": "Login and application fields not inspected through submission. Submission has not been tested.",
+      "tags": [
+        "UX",
+        "Product"
+      ]
+    },
+    {
+      "observedAt": "2026-10-24",
+      "postedAt": null,
+      "payMin": null,
+      "payMax": null,
+      "payCurrency": "INR",
+      "payPeriod": "month",
+      "payStatus": "Undisclosed",
+      "payVerified": false,
+      "reviewDisposition": "Confirm pay before applying",
+      "applicationState": "Not applied",
+      "id": "indeed-moontechnolabs-45ad3491be217187",
+      "company": "Moon Technolabs",
+      "title": "Trainee UI/UX Designer",
+      "location": "Ahmedabad, Gujarat",
+      "workMode": "On-site",
+      "roleType": "Junior / fresher",
+      "experience": "Fresher / 0–1 year; 2025–26 graduates preferred",
+      "sourceName": "Indeed",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=45ad3491be217187",
+      "applicationUrl": "https://www.moontechnolabs.com/career-with-us/",
+      "companyCareersUrl": "https://www.moontechnolabs.com/career-with-us/",
+      "verification": "Indeed detail accessible; official careers page lists Trainee UI/UX Designer with experience Fresher.",
+      "postedLabel": "Not stated",
+      "requirements": "Figma or Adobe XD; Wireframes, prototypes, research and design systems; Bachelor's graduate and developer handoff skills.",
+      "applicationRoute": "Official careers Apply Now / career@moontechnolabs.com, or Indeed",
+      "accessLimitation": "Submission not tested; this is a junior job alternative, not an internship.",
+      "nextAction": "Confirm starting monthly salary ≥₹20k and graduate eligibility.",
+      "sourceType": "Indeed",
+      "status": "on_hold",
+      "region": "Gujarat",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "evidence": "Indeed detail accessible; official careers page lists Trainee UI/UX Designer with experience Fresher. Submission not tested; this is a junior job alternative, not an internship.",
+      "summary": "Figma or Adobe XD; Wireframes, prototypes, research and design systems.",
+      "applicationMethod": "Official careers Apply Now / career@moontechnolabs.com, or Indeed",
+      "automationNotes": "Submission not tested; this is a junior job alternative, not an internship. Submission has not been tested.",
+      "tags": [
+        "UX",
+        "Product"
+      ],
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://www.moontechnolabs.com/career-with-us/",
+          "note": "Company hiring channel; check the exact role and work arrangement."
+        }
+      ]
+    },
+    {
+      "observedAt": "2026-10-24",
+      "postedAt": null,
+      "payMin": null,
+      "payMax": null,
+      "payCurrency": "INR",
+      "payPeriod": "month",
+      "payStatus": "Undisclosed",
+      "payVerified": false,
+      "reviewDisposition": "Confirm pay before applying",
+      "applicationState": "Not applied",
+      "id": "naukri-keyideas-181120004352",
+      "company": "Keyideas Infotech",
+      "title": "UI/UX Design Intern",
+      "location": "Remote India (confirm eligibility)",
+      "workMode": "Remote",
+      "roleType": "Internship",
+      "experience": "0–1 year",
+      "sourceName": "Naukri",
+      "sourceUrl": "https://www.naukri.com/job-listings-ui-ux-internship-figma-graphics-research-keyideas-infotech-gurgaon-gurugram-0-to-1-years-181120004352",
+      "applicationUrl": "https://www.naukri.com/job-listings-ui-ux-internship-figma-graphics-research-keyideas-infotech-gurgaon-gurugram-0-to-1-years-181120004352",
+      "companyCareersUrl": "https://www.keyideasinfotech.com/careers/ui-ux-design-internship/",
+      "verification": "Current accessible employer role page explicitly links this Naukri application. Original Naukri page is robots-blocked, so activity of that particular Naukri listing is unverified.",
+      "postedLabel": "No reliable posting date. Naukri identifier appears historical; do not infer freshness.",
+      "requirements": "B.Des/M.Des or relevant design qualification; Figma and Illustrator; Research/usability, web/mobile design, components and brand styles.",
+      "applicationRoute": "Employer page directs applicants to Naukri; no WhatsApp applications.",
+      "accessLimitation": "Employer says remote; Naukri slug says Gurgaon. Confirm remote India eligibility and current application link.",
+      "nextAction": "Verify active Naukri route and paid stipend ≥₹25–30k before investing in application.",
+      "sourceType": "Naukri",
+      "status": "on_hold",
+      "region": "India",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "evidence": "Current accessible employer role page explicitly links this Naukri application. Original Naukri page is robots-blocked, so activity of that particular Naukri listing is unverified. Employer says remote; Naukri slug says Gurgaon. Confirm remote India eligibility and current application link.",
+      "summary": "B.Des/M.Des or relevant design qualification; Figma and Illustrator.",
+      "applicationMethod": "Employer page directs applicants to Naukri; no WhatsApp applications.",
+      "automationNotes": "Employer says remote; Naukri slug says Gurgaon. Confirm remote India eligibility and current application link. Submission has not been tested.",
+      "tags": [
+        "UX",
+        "Product"
+      ],
+      "listingVerification": "indexed",
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://www.keyideasinfotech.com/careers/ui-ux-design-internship/",
+          "note": "Employer role page corroborates the role and links this Naukri application. The Naukri page itself could not be checked."
+        }
+      ],
+      "payBenchmark": {
+        "min": 19000,
+        "max": 21000,
+        "period": "month",
+        "currency": "INR",
+        "role": "UI UX Design Intern",
+        "kind": "Reported salary",
+        "sourceUrl": "https://www.glassdoor.com/Salaries/ui-ux-design-intern-salary-SRCH_IM1083_KO0%2C19_P4.htm",
+        "sourceLabel": "Glassdoor · Keyideas UI UX Design Intern · New Delhi",
+        "confidence": "Low",
+        "observedAt": "2026-10-24",
+        "note": "Cross-company salary page reports ₹19k–₹21k/month for Keyideas in New Delhi. Sample/date unavailable and location differs from the remote posting. This is below the general target and does not establish current pay."
+      },
+      "benchmarkSummary": "Reported 19000–21000 INR/month; current listing pay undisclosed"
+    },
+    {
+      "observedAt": "2026-10-24",
+      "postedAt": null,
+      "payMin": null,
+      "payMax": null,
+      "payCurrency": "INR",
+      "payPeriod": "month",
+      "payStatus": "Undisclosed",
+      "payVerified": false,
+      "reviewDisposition": "Confirm pay before applying",
+      "applicationState": "Not applied",
+      "id": "careers-zunderdog-uiux-intern-pune",
+      "company": "Zunderdog",
+      "title": "UI/UX Design Intern",
+      "location": "Pune; remote for now",
+      "workMode": "Remote for now",
+      "roleType": "Internship",
+      "experience": "Students / recent graduates",
+      "sourceName": "Company careers",
+      "discoveredVia": "Company careers (follow-up from Indeed-discovered fresher role)",
+      "sourceUrl": "https://www.zunderdog.com/careers/ui-ux-design-intern-pune",
+      "applicationUrl": "https://www.zunderdog.com/careers/ui-ux-design-intern-pune",
+      "companyCareersUrl": "https://www.zunderdog.com/careers",
+      "verification": "Official role and application form accessible. Employer prefers candidates in or near Pune.",
+      "postedLabel": "Careers index shows a relative age of 2 days; original absolute publication date not independently available.",
+      "requirements": "Figma basics; Few college, personal or professional design projects; Layout, wireframes, simple prototypes and checking developed screens.",
+      "applicationRoute": "Employer form with resume, education, experience, notice period, location, expected salary and privacy consent.",
+      "accessLimitation": "Remote arrangement is temporary; no promise of permanent remote. Application form not submitted.",
+      "nextAction": "Confirm paid stipend and whether eventual Pune attendance is required.",
+      "sourceType": "Company careers",
+      "status": "on_hold",
+      "region": "Maharashtra",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "evidence": "Official role and application form accessible. Employer prefers candidates in or near Pune. Remote arrangement is temporary; no promise of permanent remote. Application form not submitted.",
+      "summary": "Figma basics; Few college, personal or professional design projects.",
+      "applicationMethod": "Employer form with resume, education, experience, notice period, location, expected salary and privacy consent.",
+      "automationNotes": "Remote arrangement is temporary; no promise of permanent remote. Application form not submitted. Submission has not been tested.",
+      "tags": [
+        "UX",
+        "Product"
+      ]
+    },
+    {
+      "observedAt": "2026-10-24",
+      "postedAt": null,
+      "payMin": null,
+      "payMax": null,
+      "payCurrency": "INR",
+      "payPeriod": "month",
+      "payStatus": "Undisclosed",
+      "payVerified": false,
+      "reviewDisposition": "Confirm pay before applying",
+      "applicationState": "Not applied",
+      "id": "careers-zunderdog-uiux-fresher-pune",
+      "company": "Zunderdog",
+      "title": "UI/UX Designer (Fresher)",
+      "location": "Pune; remote for now",
+      "workMode": "Remote for now",
+      "roleType": "Junior / fresher",
+      "experience": "Fresher / 0–1 year",
+      "sourceName": "Company careers",
+      "discoveredVia": "Indeed search",
+      "discoveryUrl": "https://in.indeed.com/q-junior-ux-ui-designer-l-pune%2C-maharashtra-jobs.html",
+      "sourceUrl": "https://www.zunderdog.com/careers/ui-ux-designer-fresher-pune",
+      "applicationUrl": "https://www.zunderdog.com/careers/ui-ux-designer-fresher-pune",
+      "companyCareersUrl": "https://www.zunderdog.com/careers",
+      "verification": "Official role and application form accessible; Indeed discovery was a search result, not a uniquely verified job-detail URL.",
+      "postedLabel": "Careers index shows a relative age of 2 days; original absolute publication date not independently available.",
+      "requirements": "Figma and portfolio; personal/college/freelance work accepted; Flows, prototypes, accessible UI and design systems; Developer collaboration and usability reviews.",
+      "applicationRoute": "Employer application form; resume, location, expected annual salary and privacy consent required.",
+      "accessLimitation": "Employer prefers Pune or nearby candidates; current remote arrangement may change.",
+      "nextAction": "Confirm salary ≥₹25–30k/month and future office expectations.",
+      "sourceType": "Company careers",
+      "status": "on_hold",
+      "region": "Maharashtra",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "evidence": "Official role and application form accessible; Indeed discovery was a search result, not a uniquely verified job-detail URL. Employer prefers Pune or nearby candidates; current remote arrangement may change.",
+      "summary": "Figma and portfolio; personal/college/freelance work accepted; Flows, prototypes, accessible UI and design systems.",
+      "applicationMethod": "Employer application form; resume, location, expected annual salary and privacy consent required.",
+      "automationNotes": "Employer prefers Pune or nearby candidates; current remote arrangement may change. Submission has not been tested.",
+      "tags": [
+        "UX",
+        "Product"
+      ]
     }
   ]
 }

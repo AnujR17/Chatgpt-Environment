@@ -8,10 +8,12 @@ Personal internship discovery and application Kanban for Anuj. Primary GitHub ow
 
 ## Included
 
-- 13 researched UX/product/interaction-adjacent internship leads, checked on 23 October 2026.
+- 20 researched roles, including internships and clearly marked junior/fresher alternatives, updated24 October2026. Four Indeed detail listings, one employer-linked Naukri route, employer careers and two X cross-post enrichments complement earlier sources.
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat minimum ₹20,000/month; elsewhere ₹30,000, with ₹25,000 considered individually. A ₹30,000 remote minimum is provisional.
-- Kanban and table views, drag/drop and accessible status selection, filters, notes, due dates, interview dates and activity history.
+- Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
+- Separate company watchlist with17 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.
 - Source evidence, exclusions, freshness caveats and a collection report.
@@ -81,3 +83,13 @@ Open each board card for the original source and requirements. No portfolio, deg
 The GitHub identity is AnujR17, but repository creation was denied by the integration. The app therefore uses a dedicated branch in the existing repository. Vercel is now connected and the existing project is deployed at https://chatgpt-environment.vercel.app. The explicit teamId selector returned403, while operations on the verified project through the default connection scope succeeded.
 
 Production was deployed directly from topic/job-search-agent without merging main. The daily search task is configured to deploy exact future listing-data commits to this same project and verify the live feed. A branch push alone should not be reported as a production refresh.
+
+## 24 October redesign and broader research
+
+Discover → review/save a role → Applications → next action is the main workflow. Company targets remain separate from vacancies and user-received offers. Suggested categories are editable and are not hiring probabilities.
+
+The source filters include Indeed, Naukri and X. Indeed supplied four accessible job-detail pages. Keyideas’s employer page links an older Naukri application route; Naukri itself blocks automated inspection, so current route activity is unconfirmed. Wint and BThree X originals returned403; mirrors supplied content, with original URLs, access caveats and derived-date limits recorded as additionalSources. Cross-posts are deduplicated rather than counted as new jobs. Known expired/unpaid/removed listings remain in exclusions.
+
+Company salary reports include Glassdoor evidence for Tekion, Scaler, Lenskart, Rapido, Techolution, F1studioz and other targets. Weak or geographically ambiguous evidence stays qualitative. F1studioz historical reports are below the target; it is a Possible target, not a confirmed stipend match. Current role pay and payBenchmark values are separate. Annual reports remain annual. No senior pay was extrapolated to internship stipends.
+
+The Excel workbook contains a separate Company watchlist sheet. Company CSV and JSON backup/restore are available in the app. The collector defaults new undisclosed-pay candidates to on_hold. Do not run seed.py to refresh: it recreates the older initial snapshot.
