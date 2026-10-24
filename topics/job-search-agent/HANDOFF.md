@@ -59,3 +59,14 @@ User requested a long company/studio list with product companies prioritised, ca
 
 
 Deployment result: production dpl_5ViDw8AtKYnjakx5XSM3eug45Bkf READY from71b37226f50f5d9e87f301c54ab1102c4b78baf6. Live HTTPS returned200 for28 jobs,92 companies, CSV and Excel. Both original and company-specific browser workflows passed against the deployed site, including mobile, using93 verified HTTPS first-party requests through the session trusted-CA transport (TLS verification retained). No applications/employer messages sent. Resume/portfolio still not supplied. Existing repo/account/project preserved; main unchanged.
+
+
+## Private applicant review and safe assessment import
+
+The user supplied a resume and active portfolio GitHub branch. Both were reviewed read-only, including original public project images and source/evidence notes. A single scoped portfolio-design Mem0 lookup returned design preferences/vocabulary, not new applicant facts. The user then confirmed expected graduation/start/duration/relocation; the existing daily task now carries the confirmed private profile and its evidence limits, with schedule unchanged.
+
+Private review artifacts are outside this public repository under /workspace/outputs/design-job-fit: an Excel review, Markdown explanation and version1 JSON assessment-only import. Do not commit or publish them. The import changes no profile, job stages, notes or company preferences; it adds criterion evidence. Browser storage cannot be written remotely, so the user must download/import the file through Export > Restore a backup (back up current progress first). Imported judgments may replace previous judgments of the same criterion.
+
+Generic app support now shows the shared requirement meter in role details as well as company records, including private fit records for employers absent from the directory. Backup restore merges company preferences and per-role criteria so an assessment-only import preserves blacklists, reasons, tiers, following, unrelated criteria and application/profile data. Role matching prefers stable job IDs and exact titles before shared career URLs, preventing two roles on the same career page from sharing the wrong assessment.
+
+Private assessment is evidence-based and provisional: original interfaces and documented prototypes support foundational UX/interaction work; current academic/ongoing/group projects retain actual contribution/status. No commercial shipping, senior years, hardware acceptance, user outcomes or named advanced tools are inferred. Watchlist-only companies remain unscored. Older bundled criteria and bonus/application steps limit score comparability; no hiring probability is assigned. No applications/messages sent and no portfolio branch was edited or merged.

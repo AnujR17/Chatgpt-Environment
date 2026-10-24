@@ -106,3 +106,8 @@ Use Companies → Blacklist to exclude any employer, including a company absent 
 Preferences, blacklist and evidence use the existing company override localStorage key and version1 JSON backup, with old backups still supported. They stay browser-local, cannot be read by the daily task, and never enter public research exports. Export filtered list creates a local CSV including current private evidence; download it only where intended. The static workbook includes Company directory and Role requirements sheets; public/data/company-directory.csv is regenerated with the workbook by python scripts/export_excel.py.
 
 Run the new workflow check with PLAYWRIGHT_BROWSERS_PATH pointing at installed browser binaries: python tests/company_check.py. It exercises product filtering, source requirements, evidence meter, blacklist, saved application preservation, export, reload, backup/restore, custom exclusions and mobile layout. Existing browser_check.py covers the original workflow.
+
+
+### Reviewed-fit imports
+
+A version1 backup may contain assessment-only companyOverrides (no profile or application fields). Restore merges each company record and role criteria, retaining existing blacklist/reason/tier/following and unrelated criteria. The imported judgment wins for an identical criterion; export a backup first. Personal assessment files stay outside the public repository/feed and must be imported by the user in their own browser. Role details reuse the company requirement meter and support private criteria for employers absent from the public directory. Test this with python tests/fit_import_check.py.

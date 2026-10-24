@@ -1,6 +1,6 @@
 import React, {useEffect,useMemo,useRef,useState} from 'react';
 import {ArrowDownToLine,ArrowRight,ArrowUpRight,Bookmark,Building2,CalendarDays,Check,CheckCheck,ChevronDown,ChevronRight,Compass,ExternalLink,FileText,Filter,LayoutGrid,List,MapPin,MoreHorizontal,Plus,RefreshCw,Search,ShieldCheck,SlidersHorizontal,Sparkles,Target,X} from 'lucide-react';
-import {STAGES,KEYS,stipend,payMatch,safeUrl,canonicalUrl,mergeJobs,dateLabel,localDate,isDue,toCsv,validateBackup,benchmarkText,roleType,isPipeline,csvCell,mergeCompanies,isCompanyBlocked,companyMatches,companyKey} from './model';
+import {STAGES,KEYS,stipend,payMatch,safeUrl,canonicalUrl,mergeJobs,dateLabel,localDate,isDue,toCsv,validateBackup,benchmarkText,roleType,isPipeline,csvCell,mergeCompanies,isCompanyBlocked,companyMatches,companyKey,mergeCompanyPreferences} from './model';
 import {Sources,Profile,JobDrawer,AddModal} from './legacy';
 import CompanyDirectory from './CompanyDirectory';
 
@@ -34,6 +34,7 @@ export default function App(){
  const jobs=useMemo(()=>mergeJobs(feed,custom,overrides),[feed,custom,overrides]);
  const companies=useMemo(()=>mergeCompanies(companyFeed,companyOverrides),[companyFeed,companyOverrides]);
  const selectedJob=jobs.find(j=>j.id===selected);
+ const selectedCompany=selectedJob?(companies.find(c=>companyMatches(c,selectedJob.company))||{id:`fit-${companyKey(selectedJob.company)}`,...companyOverrides[`fit-${companyKey(selectedJob.company)}`]}):null;
  const discoveryJobs=jobs.filter(j=>!isCompanyBlocked(j,companies));
  const held=discoveryJobs.filter(j=>j.status==='on_hold'),pipeline=jobs.filter(isPipeline),due=jobs.filter(j=>isDue(j)),interviews=jobs.filter(j=>j.status==='interview');
  const candidates=discoveryJobs.filter(j=>j.status!=='closed');
@@ -48,7 +49,7 @@ export default function App(){
    (bucket==='all'||bucket==='closed'||bucket==='hold'&&j.status==='on_hold'||bucket==='saved'&&isPipeline(j)||bucket==='new'&&j.status==='discovered');
  }).sort((a,b)=>{if(sort==='newest')return (b.firstSeen||'').localeCompare(a.firstSeen||'');const rank={meets:0,consider:1,estimated:2,unconfirmed:3,below:4};return rank[payMatch(a)]-rank[payMatch(b)]||(a.workMode==='Remote'?0:1)-(b.workMode==='Remote'?0:1)||a.company.localeCompare(b.company);}),[jobs,companies,search,platform,mode,pay,type,bucket,sort]);
  function backup(){saveFile(`design-search-backup-${localDate()}.json`,JSON.stringify({version:1,exportedAt:new Date().toISOString(),overrides,custom,profile,companyOverrides},null,2));setExportOpen(false);}
- async function restore(e){const file=e.target.files[0];e.target.value='';if(!file)return;try{if(file.size>5_000_000)throw Error('Backup is too large.');const data=validateBackup(JSON.parse(await file.text()));setOverrides(old=>({...old,...data.overrides}));setCustom(old=>[...new Map([...old,...data.custom].map(j=>[j.id,j])).values()]);if(data.profile&&typeof data.profile==='object')setProfile({...EMPTY_PROFILE,...Object.fromEntries(Object.keys(EMPTY_PROFILE).map(k=>[k,typeof data.profile[k]==='string'?data.profile[k]:'']))});if(data.companyOverrides&&typeof data.companyOverrides==='object'&&!Array.isArray(data.companyOverrides))setCompanyOverrides(old=>({...old,...data.companyOverrides}));setToast('Backup restored, including saved roles and notes.');}catch(err){setToast(err.message||'Could not read this backup.');}}
+ async function restore(e){const file=e.target.files[0];e.target.value='';if(!file)return;try{if(file.size>5_000_000)throw Error('Backup is too large.');const data=validateBackup(JSON.parse(await file.text()));setOverrides(old=>({...old,...data.overrides}));setCustom(old=>[...new Map([...old,...data.custom].map(j=>[j.id,j])).values()]);if(data.profile&&typeof data.profile==='object')setProfile({...EMPTY_PROFILE,...Object.fromEntries(Object.keys(EMPTY_PROFILE).map(k=>[k,typeof data.profile[k]==='string'?data.profile[k]:'']))});if(data.companyOverrides&&typeof data.companyOverrides==='object'&&!Array.isArray(data.companyOverrides))setCompanyOverrides(old=>mergeCompanyPreferences(old,data.companyOverrides));setToast('Backup restored, including saved roles and notes.');}catch(err){setToast(err.message||'Could not read this backup.');}}
  function addJob(job){if(jobs.some(j=>job.sourceUrl&&canonicalUrl(j.sourceUrl)===canonicalUrl(job.sourceUrl)))throw Error('That source is already on your list.');const newJob={...job,id:`custom-${crypto.randomUUID()}`,firstSeen:localDate(),sourceType:'Manual',checkedAt:null,evidence:'Added by you. Confirm details with the employer.',status:'discovered',tags:[]};setCustom(old=>[...old,newJob]);setAddOpen(false);setSelected(newJob.id);setToast('Role added.');}
  function blacklistCompany(name){const company=companies.find(c=>companyMatches(c,name));companyUpdate(company?.id||`blocked-${companyKey(name)}`,{...(company?{}:{name,tier:'Possible',companyType:'Unclassified'}),blacklisted:true});setToast(`${name} blacklisted. Saved applications are preserved.`);}
  function companyRoles(name){changePage('discover');setSearch(name);}
@@ -77,7 +78,7 @@ export default function App(){
    {page==='sources'&&<Sources meta={meta} sources={sources} onRefresh={refresh}/>}
    {page==='profile'&&<Profile profile={profile} onSave={value=>{setProfile(value);setToast('Profile saved in this browser.');}}/>}
   </main>
-  {selectedJob&&<JobDrawer key={selectedJob.id} job={selectedJob} profile={profile} onClose={()=>setSelected(null)} onUpdate={changes=>update(selectedJob.id,changes)} onProfile={()=>{setSelected(null);changePage('profile');}} onNotify={setToast}/>}
+  {selectedJob&&<JobDrawer key={selectedJob.id} job={selectedJob} company={selectedCompany} onCompanyUpdate={companyUpdate} profile={profile} onClose={()=>setSelected(null)} onUpdate={changes=>update(selectedJob.id,changes)} onProfile={()=>{setSelected(null);changePage('profile');}} onNotify={setToast}/>}
   {addOpen&&<AddModal onClose={()=>setAddOpen(false)} onAdd={addJob}/>}
   {toast&&<div className="toast" role="status"><Check size={18}/>{toast}<button onClick={()=>setToast('')} aria-label="Dismiss notification"><X size={15}/></button></div>}
  </div>;

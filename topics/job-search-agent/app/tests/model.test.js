@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBackup, benchmarkText, mergeCompanies, isCompanyBlocked, fitSummary } from '../src/model.js';
+import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBackup, benchmarkText, mergeCompanies, isCompanyBlocked, fitSummary, mergeCompanyPreferences } from '../src/model.js';
 test('stipend thresholds use the lower bound and original evidence',()=>{
  assert.equal(payMatch({region:'Gujarat',payMin:20000,payVerified:true}),'meets');
  assert.equal(payMatch({region:'India',payMin:30000,payVerified:true}),'meets');
@@ -64,4 +64,11 @@ test('fit counts unknowns separately and cannot manufacture a match',()=>{
  const result=fitSummary(reqs,{portfolio:{state:'met',evidence:'Case study'},figma:{state:'partial'},degree:{state:'gap'},duration:{state:'invalid'}});
  assert.equal(result.met,1);assert.equal(result.percent,25);assert.equal(result.unknown,1);assert.equal(result.partial,1);assert.equal(result.gap,1);
  assert.equal(fitSummary([]).percent,null);
+});
+
+test('importing reviewed criteria preserves blacklist, category and other role evidence',()=>{
+ const old={a:{blacklisted:true,blacklistReason:'Private',tier:'Dream',following:true,assessments:{r:{one:{state:'met',evidence:'Existing'},two:{state:'unknown'}},other:{criterion:{state:'gap'}}}}};
+ const result=mergeCompanyPreferences(old,{a:{assessments:{r:{two:{state:'partial',evidence:'Reviewed portfolio'}}}}});
+ assert.equal(result.a.blacklisted,true);assert.equal(result.a.blacklistReason,'Private');assert.equal(result.a.tier,'Dream');assert.equal(result.a.following,true);
+ assert.equal(result.a.assessments.r.one.evidence,'Existing');assert.equal(result.a.assessments.r.two.state,'partial');assert.equal(result.a.assessments.other.criterion.state,'gap');assert.equal(old.a.assessments.r.two.state,'unknown');
 });

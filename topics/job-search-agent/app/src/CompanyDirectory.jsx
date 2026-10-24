@@ -4,6 +4,11 @@ import {safeUrl,benchmarkText,companyMatches,fitSummary,csvCell,localDate,dateLa
 
 const TIERS=['Dream','Workable','Possible'];
 function Link({href,children,className=''}){const url=safeUrl(href);return url?<a href={url} className={className} target="_blank" rel="noopener noreferrer">{children}</a>:null;}
+export function jobFitRecord(job,company){
+ const records=company?.roles||[];
+ const existing=records.find(r=>r.jobId===job.id)||records.find(r=>r.title===job.title)||records.find(r=>r.url===job.sourceUrl);
+ return existing||{id:job.id,title:job.title,url:job.sourceUrl,requirements:job.requirementItems||(job.requirements?[{id:'listing-summary',text:job.requirements,sourceUrl:job.sourceUrl}]:[])};
+}
 export function companyRoleRecords(company,jobs){
  const researched=company.roles||[];
  const urls=new Set(researched.map(r=>r.url));
@@ -11,7 +16,7 @@ export function companyRoleRecords(company,jobs){
  return [...researched.map(r=>({...r,jobId:r.jobId||jobs.find(j=>companyMatches(company,j.company)&&(r.url===j.sourceUrl||r.title.toLowerCase()===j.title.toLowerCase()))?.id})),...jobs.filter(j=>companyMatches(company,j.company)&&!urls.has(j.sourceUrl)&&!titles.has(j.title.toLowerCase().replace(/[^a-z0-9]/g,''))).map(j=>({id:j.id,title:j.title,url:j.sourceUrl,location:j.location,seniority:j.roleType||'Internship',evidenceStatus:j.evidence,requirements:j.requirements?[{id:'listing-summary',text:j.requirements,sourceUrl:j.sourceUrl}]:[],jobId:j.id}))];
 }
 function download(name,contents){const url=URL.createObjectURL(new Blob([contents],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-function RequirementFit({role,company,onUpdate}){
+export function RequirementFit({role,company,onUpdate}){
  const requirements=(role.requirements||[]).map((r,i)=>typeof r==='string'?{id:String(i),text:r}:r);
  const roleKey=role.id||role.url||role.title;
  const assessment=company.assessments?.[roleKey]||{};

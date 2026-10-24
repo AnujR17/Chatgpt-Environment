@@ -12,7 +12,7 @@
 - [x] Publish app branch under AnujR17/Chatgpt-Environment. New-repository creation denied by integration; existing repository reused.
 - [x] Enable connected daily search task; enabled state verified. Optional nested GitHub cron remains inactive on this topic branch.
 - [x] Deploy existing Vercel project to production from the board branch; READY verified at https://chatgpt-environment.vercel.app.
-- [ ] Inspect résumé/portfolio when supplied; review application eligibility.
+- [x] Review supplied resume and active portfolio source/artifacts, capture confirmed availability privately, and produce private criterion assessment/workbook/import.
 - [ ] Add authenticated cross-device persistence if requested.
 
 

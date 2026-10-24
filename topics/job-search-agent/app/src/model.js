@@ -37,6 +37,16 @@ export function mergeCompanies(feed, overrides) {
   const known = new Set(feed.map(c => c.id));
   return [...feed.map(c => ({...c, ...overrides[c.id]})), ...Object.entries(overrides).filter(([id,c]) => !known.has(id) && c?.name).map(([id,c]) => ({id,tier:'Possible',companyType:'Unclassified',...c}))];
 }
+export function mergeCompanyPreferences(existing, incoming) {
+  const merged = {...existing};
+  for (const [id, update] of Object.entries(incoming)) {
+    const previous = existing[id] || {};
+    const assessments = {...previous.assessments};
+    for (const [role, criteria] of Object.entries(update.assessments || {})) assessments[role] = {...assessments[role], ...criteria};
+    merged[id] = {...previous, ...update, ...(Object.keys(assessments).length ? {assessments} : {})};
+  }
+  return merged;
+}
 export function isCompanyBlocked(job, companies) {
   return companies.some(c => c.blacklisted === true && (job.companyId === c.id || companyMatches(c, job.company)));
 }
