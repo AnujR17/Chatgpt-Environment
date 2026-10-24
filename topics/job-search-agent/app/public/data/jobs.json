@@ -3,7 +3,7 @@
     "researchedAt": "2026-10-24",
     "collectorLastRun": "2026-10-23T15:37:35+00:00",
     "scheduleStatus": "Daily search task enabled. Public feed updates depend on source access; optional repository cron is not active on this topic branch.",
-    "coverage": "Company careers, Indeed, employer-linked Naukri, X post mirrors and LinkedIn. Undisclosed pay kept on hold. Company salary research is separate from current role compensation.",
+    "coverage": "Employer careers and public ATS, Indeed, Naukri, X, LinkedIn, YC, startup directories, Wellfound, India job boards, remote boards and Hacker News; access and zero-result limitations are recorded in sources.json.",
     "excluded": [
       {
         "company": "Appbrew",
@@ -265,6 +265,42 @@
         "url": "https://himalayas.app/companies/gwen/jobs/ux-design-intern",
         "reason": "Applicant-paid training programme; explicitly no employment or salary.",
         "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Kixar",
+        "url": "https://www.glassdoor.co.in/job-listing/ui-ux-designer-kixar-private-limited-JV_IC2939242_KO0%2C14_KE15%2C36.htm?jl=1010127226858",
+        "reason": "INR30–35k/month internship copy explicitly expired; page says8 May2026 and no longer accepting. Fresh mirror ages do not revive it.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Melento",
+        "url": "https://in.indeed.com/viewjob?jk=833d06c53f7e612d",
+        "reason": "Indeed internship lists INR11,000–150,000/month, a very wide anomalous range with below-target minimum; not a confirmed stipend match.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "BetterStory",
+        "url": "https://wellfound.com/jobs/4722763-visual-design-intern",
+        "reason": "INR25k/month remote India visual-design internship explicitly says it is not a product/UX role; outside requested discipline.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Redliner",
+        "url": "https://in.indeed.com/q-ui-ux-internship-l-india-remote-jobs.html?vjk=68ca8d800a96d7da",
+        "reason": "Indexed up-to-INR30k listing is expired; upper limit is not a guaranteed minimum.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "Veril Studio",
+        "url": "https://www.verilstudio.com/careers/ui-ux-design-intern",
+        "reason": "Official design internship explicitly unpaid.",
+        "checkedAt": "2026-10-24"
+      },
+      {
+        "company": "BiCSoM",
+        "url": "https://bicsom.co/jobs/ux-designer-job/",
+        "reason": "Historical2022 role with a still-accessible form, but LinkedIn crosspost closed; watchlist only pending a new intake.",
+        "checkedAt": "2026-10-24"
       }
     ],
     "collectorSummary": {
@@ -272,14 +308,14 @@
       "ok": 10
     },
     "sourceCoverage": {
-      "Indeed": "Four useful accessible original job details; two additional caveated hold records. Zunderdog fresher discovered in Indeed search but primary verified source is employer.",
+      "Indeed": "Four useful accessible original job details; two additional caveated hold records. Zunderdog fresher discovered in Indeed search but primary verified source is employer. Additional pass found expired/below-target details and historical BiCSoM employer corroboration; no new active card.",
       "Naukri": "One employer-verified role with explicit Naukri Apply link. Naukri itself robots-blocks original checking; no CAPTCHA bypass attempted. Further indexed leads were too stale/weak for active shortlist.",
       "X": "Two original status URLs with accessible mirrors; both original URLs returned 403. Enrich existing Wint/BThree records without duplicates.",
-      "compensation": "No new record has verified qualifying stipend. Keep pay unknown and confirmation next-action visible.",
+      "compensation": "Three new unknown-pay internships held for compensation/intake verification. No new confirmed qualifying monthly stipend. Historical separate Innovexis20–25k/month evidence is below remote target and not current in295 pay.",
       "applications": "None submitted. All records read-only research."
     },
     "companyWatchlistAt": "2026-10-24",
-    "companyDirectoryCount": 111,
+    "companyDirectoryCount": 115,
     "coverageNote": "Expanded public research across YC, Wellfound, remote boards, Who is hiring, startup maps and India job boards. Newly discovered is not newly posted; older listings and access limits are labelled."
   },
   "jobs": [
@@ -2196,6 +2232,223 @@
           "label": "Official company site",
           "evidenceStatus": "Opened; no UX opening visible",
           "checkedAt": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "id": "careers-arihantai-uiux-product-intern-85",
+      "company": "Arihant AI",
+      "companyId": "arihant-ai",
+      "title": "UI/UX & Product Design Internship (Web, Mobile & AI Systems)",
+      "roleType": "Internship",
+      "location": "Prahladnagar, Ahmedabad; strictly on-site",
+      "workMode": "On-site",
+      "region": "Gujarat",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "sourceType": "Company careers",
+      "sourceUrl": "https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85",
+      "applicationUrl": "https://arihantai.com/jobs/apply/uiux-product-design-internship-web-mobile-ai-systems-85",
+      "applicationMethod": "Published employer application route; no submission made",
+      "requirements": "UI hierarchy, typography, contrast and responsive layouts; Component libraries, auto-layout, tokens and interaction states; Client discovery, end-to-end flows and engineering collaboration; Interest in generative visuals; motion and frontend knowledge are bonuses; Final-year design/technical students, recent graduates or self-taught designers; six- or twelve-month options",
+      "requirementItems": [
+        {
+          "id": "c42c3e14be",
+          "text": "UI hierarchy, typography, contrast and responsive layouts",
+          "sourceUrl": "https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85"
+        },
+        {
+          "id": "2847a023c9",
+          "text": "Component libraries, auto-layout, tokens and interaction states",
+          "sourceUrl": "https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85"
+        },
+        {
+          "id": "f095910585",
+          "text": "Client discovery, end-to-end flows and engineering collaboration",
+          "sourceUrl": "https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85"
+        },
+        {
+          "id": "63b647fa9a",
+          "text": "Interest in generative visuals; motion and frontend knowledge are bonuses",
+          "sourceUrl": "https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85"
+        },
+        {
+          "id": "65b5a15d9f",
+          "text": "Final-year design/technical students, recent graduates or self-taught designers; six- or twelve-month options",
+          "sourceUrl": "https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85"
+        }
+      ],
+      "summary": "Enterprise ERP, portals and AI-interface design internship with two advertised places.",
+      "evidence": "Official detail accessible. Stipend is negotiable with no amount. Careers index advertises immediate joining; later intake is unconfirmed. No remote option. Other company internships have unpaid options, so confirm the design-role policy separately.",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "postedAt": null,
+      "postedLabel": "No reliable absolute original posting date verified; discovery date is not publication date.",
+      "nextAction": "Confirm paid six-month terms at INR20,000/month or more, final-year eligibility and whether the immediate-joining intake allows a later start.",
+      "tags": [
+        "Pay to confirm",
+        "Intake to confirm"
+      ],
+      "listingVerification": "employer-detail",
+      "sourceChecks": [
+        {
+          "url": "https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85",
+          "label": "Employer-hosted role",
+          "evidenceStatus": "Official detail accessible. Stipend is negotiable with no amount. Careers index advertises immediate joining; later intake is unconfirmed. No remote option. Other company internships have unpaid options, so confirm the design-role policy separately.",
+          "checkedAt": "2026-10-24"
+        }
+      ],
+      "automationNotes": "Read-only research. Application gates and eligibility have not been tested.",
+      "companyCareersUrl": "https://arihantai.com/jobs"
+    },
+    {
+      "id": "careers-innovexis-ui-ux-intern-in295",
+      "company": "Innovexis",
+      "companyId": "innovexis",
+      "title": "UI UX Intern",
+      "roleType": "Internship",
+      "location": "Remote; Bengaluru-based employer description",
+      "workMode": "Remote",
+      "region": "India",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "sourceType": "Company careers",
+      "sourceUrl": "https://careerspage.io/innovexis/ui-ux-intern-in295",
+      "applicationUrl": "https://careerspage.io/innovexis/ui-ux-intern-in295",
+      "applicationMethod": "Published employer application route; no submission made",
+      "requirements": "Enrolled in design, HCI or a related degree; Basic interface-design tools and principles; Research, wireframes, prototypes and usability testing; Team communication; portfolio and edtech familiarity are helpful",
+      "requirementItems": [
+        {
+          "id": "aac84f171d",
+          "text": "Enrolled in design, HCI or a related degree",
+          "sourceUrl": "https://careerspage.io/innovexis/ui-ux-intern-in295"
+        },
+        {
+          "id": "3341f63005",
+          "text": "Basic interface-design tools and principles",
+          "sourceUrl": "https://careerspage.io/innovexis/ui-ux-intern-in295"
+        },
+        {
+          "id": "de95907e6a",
+          "text": "Research, wireframes, prototypes and usability testing",
+          "sourceUrl": "https://careerspage.io/innovexis/ui-ux-intern-in295"
+        },
+        {
+          "id": "9b8d68d312",
+          "text": "Team communication; portfolio and edtech familiarity are helpful",
+          "sourceUrl": "https://careerspage.io/innovexis/ui-ux-intern-in295"
+        }
+      ],
+      "summary": "Remote educational-platform design internship.",
+      "evidence": "Employer-hosted ATS detail accessible. Mentions annual compensation without a figure; no monthly stipend established. Relative publication ages vary across indexed copies and are not reliable original dates. A different older same-company ATS listing advertises INR20–25k/month, below the remote target; it does not set this listing’s pay. Employer also sells training; employment terms and absence of fees need confirmation.",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "postedAt": null,
+      "postedLabel": "No reliable absolute original posting date verified; discovery date is not publication date.",
+      "nextAction": "Confirm current paid employment intake, no applicant fees, India eligibility, duration/start window and remote stipend around INR30,000/month; INR25,000 only considered individually.",
+      "tags": [
+        "Pay to confirm",
+        "Intake to confirm"
+      ],
+      "listingVerification": "employer-detail",
+      "sourceChecks": [
+        {
+          "url": "https://careerspage.io/innovexis/ui-ux-intern-in295",
+          "label": "Employer-hosted role",
+          "evidenceStatus": "Employer-hosted ATS detail accessible. Mentions annual compensation without a figure; no monthly stipend established. Relative publication ages vary across indexed copies and are not reliable original dates. A different older same-company ATS listing advertises INR20–25k/month, below the remote target; it does not set this listing’s pay. Employer also sells training; employment terms and absence of fees need confirmation.",
+          "checkedAt": "2026-10-24"
+        }
+      ],
+      "automationNotes": "Read-only research. Application gates and eligibility have not been tested.",
+      "payBenchmark": {
+        "min": 20000,
+        "max": 25000,
+        "currency": "INR",
+        "period": "month",
+        "role": "UI UX Intern — separate older ATS listing in221",
+        "kind": "Historical separate employer-hosted advertisement",
+        "sourceUrl": "https://careerspage.io/innovexis/ui-ux-intern-in221?src=28",
+        "observedAt": "2026-10-24",
+        "confidence": "Low",
+        "sample": "One older indexed advertisement; not salary-survey data",
+        "note": "Indexed copy crawled about five months before review. Below remote target and not the current in295 offer. Original publication date unknown."
+      }
+    },
+    {
+      "id": "careers-unitedover-04e656b6-31ce-4f66-aee2-45bf80085c3b",
+      "company": "Unitedover",
+      "companyId": "unitedover",
+      "title": "UI/UX Internship",
+      "roleType": "Internship",
+      "location": "Remote (India), full-time",
+      "workMode": "Remote",
+      "region": "India",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "sourceType": "Company careers",
+      "sourceUrl": "https://app.dover.com/apply/unitedover/04e656b6-31ce-4f66-aee2-45bf80085c3b",
+      "applicationUrl": "https://app.dover.com/apply/unitedover/04e656b6-31ce-4f66-aee2-45bf80085c3b",
+      "applicationMethod": "Published employer application route; no submission made",
+      "requirements": "Listed experience band zero to two years; Figma and Adobe visual/motion tools; Design systems, user research, testing and prototypes",
+      "requirementItems": [
+        {
+          "id": "da46e71e78",
+          "text": "Listed experience band zero to two years",
+          "sourceUrl": "https://app.dover.com/apply/unitedover/04e656b6-31ce-4f66-aee2-45bf80085c3b"
+        },
+        {
+          "id": "5afc7f6f34",
+          "text": "Figma and Adobe visual/motion tools",
+          "sourceUrl": "https://app.dover.com/apply/unitedover/04e656b6-31ce-4f66-aee2-45bf80085c3b"
+        },
+        {
+          "id": "fef5509803",
+          "text": "Design systems, user research, testing and prototypes",
+          "sourceUrl": "https://app.dover.com/apply/unitedover/04e656b6-31ce-4f66-aee2-45bf80085c3b"
+        }
+      ],
+      "summary": "Indexed remote-India internship; confirm live intake first.",
+      "evidence": "Employer Dover ATS search index contains role and application fields; direct opening returned a JavaScript shell. Indexed employer copy was crawled about five months before review, not a posting date. Remotive mirror returned403; its relative age does not prove freshness. Pay and duration undisclosed.",
+      "firstSeen": "2026-10-24",
+      "checkedAt": "2026-10-24",
+      "postedAt": null,
+      "postedLabel": "No reliable absolute original posting date verified; discovery date is not publication date.",
+      "nextAction": "First confirm the employer is still recruiting; then confirm paid terms, India remote eligibility, duration and start window. Target INR30,000/month; INR25,000 requires individual review.",
+      "tags": [
+        "Pay to confirm",
+        "Intake to confirm"
+      ],
+      "listingVerification": "indexed",
+      "sourceChecks": [
+        {
+          "url": "https://app.dover.com/apply/unitedover/04e656b6-31ce-4f66-aee2-45bf80085c3b",
+          "label": "Employer-hosted role",
+          "evidenceStatus": "Employer Dover ATS search index contains role and application fields; direct opening returned a JavaScript shell. Indexed employer copy was crawled about five months before review, not a posting date. Remotive mirror returned403; its relative age does not prove freshness. Pay and duration undisclosed.",
+          "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://remotive.com/remote/jobs/design/ui-ux-internship-5888092",
+          "label": "Remotive indexed crosspost",
+          "evidenceStatus": "Original mirror403; indexed title only; not independently current",
+          "checkedAt": "2026-10-24"
+        }
+      ],
+      "automationNotes": "Read-only research. Application gates and eligibility have not been tested.",
+      "discoveredVia": "Remotive indexed result and employer Dover ATS",
+      "additionalSources": [
+        {
+          "id": "remotive-unitedover-5888092",
+          "platform": "Remote boards",
+          "url": "https://remotive.com/remote/jobs/design/ui-ux-internship-5888092",
+          "label": "Remotive indexed crosspost",
+          "checkedAt": "2026-10-24",
+          "evidence": "Indexed same employer/title and remote India role; direct403. Relative mirror age not an original posting date; current intake unverified."
         }
       ]
     }
