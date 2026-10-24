@@ -8,7 +8,7 @@ Updated 24 October 2026. Continue in the existing checkout on branch `topic/job-
 - Existing GitHub repository: AnujR17/Chatgpt-Environment. Do not create another repository.
 - Vercel project: chatgpt-environment, ID prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg.
 - Owner accountId verified: team_wbMCzPWEpuswtIa2AekWJJLh.
-- Production deployment dpl_C8uzR9mzmP47Jo1Y99Tyx4ycLW57 is READY, source commit a21d8e0fc8e4bf0efe5426e935e8e114a1e7c57e on topic/job-search-agent.
+- Production deployment dpl_4Rc3WD6hypRNJrTVYTA2F3TPuJbL is READY, source commit 0c777b27d5d945266a3ed97eba5f2e8843f9adb5 on topic/job-search-agent.
 - Root directory topics/job-search-agent/app; Vite; npm ci; npm run build; output dist; Node24.
 - User initially imported main, which contains workspace docs and not the app. The existing Vercel project was corrected and the topic branch was deployed directly to production. Main was not modified or merged.
 - The Vercel connection works using the exact project ID and default connection scope. Explicit teamId calls returned403; do not repeat team-scope probes or ask the user to reinstall/reconnect.
@@ -81,3 +81,6 @@ Source chips now distinguish YC / Work at a Startup, Wellfound, Remote boards, H
 Annual USD/INR salary is displayed using advertisedCompensation, distinct from verified monthly INR payMin/payMax. SuperKalam metadata conflicts, so no numeric monthly stipend. The two YC roles retain2024 posting dates and older-listing warning. Ungrammary gets a below-target Cutshort report without changing primary verified pay or duplicating its card. Chiblu/project44/Zunderdog cross-posts enrich stable IDs.
 
 Daily task prompt now covers the additional channels, source coverage records, original dates/units and truthful zero-result reporting, preserving its existing schedule and private context. Generic app/model/data tests, collector tests, build and local browser source/legacy/company/import flows passed. Production publication and live checks follow on this exact update.
+
+
+Source-expansion production verification: dpl_4Rc3WD6hypRNJrTVYTA2F3TPuJbL READY from 0c777b27d5d945266a3ed97eba5f2e8843f9adb5. Live HTTPS returned200 with36 jobs,111 companies and21 coverage records. Live workbook verified36 internship/junior rows,224 source rows,21 coverage rows and111 company rows. Production source workflow passed desktop/mobile with26 verified HTTPS requests, including Indeed deduplication, older YC badges, annual USD/INR units, remote-board filters and access-limit reporting. Existing local application/company/import browser workflows,16 model/data tests,5 collector tests and production build passed. No applications/messages sent; private user data was not published.

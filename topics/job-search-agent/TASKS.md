@@ -54,4 +54,4 @@
 - [x] Keep annual INR/USD salary distinct from monthly stipend; expose older listing badges and below-target evidence.
 - [x] Regenerate Excel/CSV exports and broaden daily maintenance prompt without changing schedule.
 - [x] Model/data, collector, build and local source/legacy/company/import browser workflows passed.
-- [ ] Verify exact production deployment and live source coverage.
+- [x] App commit0c777b2 deployed READY; live JSON/workbook and desktop/mobile source workflow passed with original units and access caveats.
