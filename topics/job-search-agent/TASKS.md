@@ -66,3 +66,12 @@
 - [x] Expand directory to123 and regenerate source evidence/Excel/CSV.
 - [x] Data/model tests, collector tests and production build.
 - [x] Local/live desktop/mobile checks passed; production dpl_64L4GTtHFbxjKPHsPrYtLGy5roJf READY at a346107; live JSON/CSV/Excel exact matches.
+
+
+## Startup designer hiring pass
+
+- [x] Verify startup-specific original role sources, pay/geography and closure evidence.
+- [x] Add4 conditional internships and6 existing Startup search tags, preserving prior records.
+- [x] Add13 sourced directory records, distinguishing current, closed, senior and below-pay evidence.
+- [x] Regenerate exports; data/model and collector tests plus production build.
+- [ ] Complete browser verification and exact live production checks.

@@ -343,6 +343,72 @@
         "url": "https://careerspage.io/innovexis/ui-ux-intern-in295",
         "reason": "Tracked in295 original removed404/410; archived stable record, application history retained.",
         "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "Superteams.ai",
+        "url": "https://www.superteams.ai/career/figma-design-intern/",
+        "reason": "Original role explicitly closed despite its listing on the general careers index.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "Leap",
+        "url": "https://leapfinance.freshteam.com/jobs/sTgwRD31WhNQ/product-design-intern",
+        "reason": "Original ATS host/detail returns a site-not-found page; indexed internship not confirmed current.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "LeelaRam Technologies",
+        "url": "https://www.leelaramtechnologies.com/careers/ui-ux-design-intern",
+        "reason": "Original stipend10–15k/month in Mumbai, below target.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "GoPratle",
+        "url": "https://wellfound.com/jobs/4555222-ui-ux-intern-remote-clone",
+        "reason": "Original header2–5k and final-year/fresher restriction; not a qualifying stipend match.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "FLIP",
+        "url": "https://wellfound.com/jobs/4029436-product-design-intern",
+        "reason": "Original410 Gone.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "frover",
+        "url": "https://wellfound.com/jobs/3307361-product-designer-intern-ui-ux",
+        "reason": "Original410 Gone.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "Mowka",
+        "url": "https://wellfound.com/jobs/4503290-product-designer-intern",
+        "reason": "Original410 Gone.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "eLeoRex Technologies",
+        "url": "https://eleorex.com/about-us/career/ui-ux-design-intern/",
+        "reason": "Original1October2026 deadline passed; not a current internship recommendation.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "Figr",
+        "url": "https://careers.antler.co/companies/figr/jobs/48650001-product-design-intern",
+        "reason": "Antler original detail explicitly says no longer accepting. Current opening not inferred from a stale search snippet.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "Grexa AI",
+        "url": "https://peerlist.io/company/grexa_ai/careers/product-design-intern/jobhlknq7lkradbbdc7dbmeg9ne98p",
+        "reason": "Original Peerlist employer post is archived; watch for a renewed role rather than treating it as current.",
+        "checkedAt": "2026-10-25"
+      },
+      {
+        "company": "Cravv",
+        "url": "https://wellfound.com/jobs/4716470-product-design-intern",
+        "reason": "Employer Wellfound detail lists20k/month and digital/device work. Below the non-Gujarat target; retain as a watchlist-only company, not a qualifying new job.",
+        "checkedAt": "2026-10-25"
       }
     ],
     "collectorSummary": {
@@ -354,22 +420,45 @@
       "Naukri": "One employer-verified role with explicit Naukri Apply link. Naukri itself robots-blocks original checking; no CAPTCHA bypass attempted. Further indexed leads were too stale/weak for active shortlist.",
       "X": "Two original status URLs with accessible mirrors; both original URLs returned 403. Enrich existing Wint/BThree records without duplicates.",
       "compensation": "Two new internships have undisclosed amounts; two fresher alternatives retain full-time labels. Moonfire INR2.5–4lakh/year is annual salary, not monthly stipend. No new confirmed qualifying monthly stipend.",
-      "applications": "None submitted. All records read-only research."
+      "applications": "None submitted. All records read-only research.",
+      "startupSearch": "Four new startup internships on hold; six existing startup leads enriched. Search Startup in Discover. Closed, senior-only, below-target and unverified-index-only leads are not new active recommendations."
     },
     "companyWatchlistAt": "2026-10-25",
-    "companyDirectoryCount": 123,
+    "companyDirectoryCount": 136,
     "coverageNote": "Expanded public research across YC, Wellfound, remote boards, Who is hiring, startup maps and India job boards. Newly discovered is not newly posted; older listings and access limits are labelled.",
     "lastResearchRefresh": {
       "date": "2026-10-25",
+      "focus": "Startup design hiring",
       "newRoles": 4,
-      "archivedRoles": 1,
-      "existingPrimaryUrlsChecked": 39,
-      "publicPagesFetched": 34,
-      "blockedSources": 4,
-      "removedOriginals": 1,
+      "archivedRoles": 0,
+      "existingRolesEnriched": 6,
+      "newCompanyRecords": 13,
       "newConfirmedMonthlyStipendMatches": 0,
-      "scope": "Targeted employer/ATS, India boards, public social, remote/startup/YC and HN search; source coverage includes access and zero-result limits."
-    }
+      "scope": "Original employer details, rendered client-side role and linked public ATS; startup boards checked for closure/pay/experience conflicts."
+    },
+    "researchRuns": [
+      {
+        "date": "2026-10-25",
+        "newRoles": 4,
+        "archivedRoles": 1,
+        "existingPrimaryUrlsChecked": 39,
+        "publicPagesFetched": 34,
+        "blockedSources": 4,
+        "removedOriginals": 1,
+        "newConfirmedMonthlyStipendMatches": 0,
+        "scope": "Targeted employer/ATS, India boards, public social, remote/startup/YC and HN search; source coverage includes access and zero-result limits."
+      },
+      {
+        "date": "2026-10-25",
+        "focus": "Startup design hiring",
+        "newRoles": 4,
+        "archivedRoles": 0,
+        "existingRolesEnriched": 6,
+        "newCompanyRecords": 13,
+        "newConfirmedMonthlyStipendMatches": 0,
+        "scope": "Original employer details, rendered client-side role and linked public ATS; startup boards checked for closure/pay/experience conflicts."
+      }
+    ]
   },
   "jobs": [
     {
@@ -601,7 +690,8 @@
       "tags": [
         "Product",
         "AI",
-        "Fintech"
+        "Fintech",
+        "Startup"
       ],
       "requirements": "Strong portfolio, Figma variables/components, AI prototyping, interaction states and fintech workflows. Six-month internship.",
       "evidence": "Original company role is accessible and lists Bengaluru on-site. Third-party ₹40k claims are not confirmed by this page.",
@@ -609,7 +699,8 @@
       "automationNotes": "Open the company’s application form and select Product Design Intern. Required fields, authentication and CAPTCHA have not been verified.",
       "roleType": "Internship",
       "summary": "Strong portfolio, Figma variables/components, AI prototyping, interaction states and fintech workflows.",
-      "lastPageFetched": "2026-10-25"
+      "lastPageFetched": "2026-10-25",
+      "companyId": "revrag-ai"
     },
     {
       "id": "chiblu-design-intern",
@@ -632,7 +723,8 @@
       "tags": [
         "Product",
         "Marketplace",
-        "UX"
+        "UX",
+        "Startup"
       ],
       "email": "apply@chiblu.com",
       "requirements": "At least three portfolio projects, including end-to-end thinking and a mobile flow; Figma, visual craft, research and communication. Two months with possible extension.",
@@ -658,7 +750,9 @@
           "currentEmployerOfferVerified": false
         }
       ],
-      "lastPageFetched": "2026-10-25"
+      "lastPageFetched": "2026-10-25",
+      "companyId": "chiblu",
+      "listingVerification": "older-listing"
     },
     {
       "id": "neuralpath-design-intern",
@@ -681,7 +775,8 @@
       "tags": [
         "Product",
         "Mobile",
-        "UI"
+        "UI",
+        "Startup"
       ],
       "requirements": "Figma, UI, prototypes and a portfolio. Students/recent graduates welcome; internships can fit around classes.",
       "evidence": "Company careers page explicitly lists a remote Product Design Intern opportunity and year-round applications. Duration and stipend are discussed individually.",
@@ -689,7 +784,8 @@
       "automationNotes": "Use the company’s email link to prepare an application with work samples and availability. Confirm the stipend first.",
       "roleType": "Internship",
       "summary": "Figma, UI, prototypes and a portfolio.",
-      "lastPageFetched": "2026-10-25"
+      "lastPageFetched": "2026-10-25",
+      "companyId": "neuralpath-technologies"
     },
     {
       "id": "krmr-design-intern",
@@ -743,7 +839,8 @@
       "tags": [
         "Product",
         "Fintech",
-        "Research"
+        "Research",
+        "Startup"
       ],
       "requirements": "Research, wireframes, user flows and high-fidelity interfaces for financial education products.",
       "evidence": "Company careers page lists this as an open internship, remote anywhere in India. Stipend and posting date are not stated.",
@@ -751,7 +848,8 @@
       "automationNotes": "Open the original company Apply link. The final destination and form requirements need manual verification.",
       "roleType": "Internship",
       "summary": "Research, wireframes, user flows and high-fidelity interfaces for financial education products..",
-      "lastPageFetched": "2026-10-25"
+      "lastPageFetched": "2026-10-25",
+      "companyId": "zavio"
     },
     {
       "id": "gnixar-design-intern",
@@ -1477,7 +1575,8 @@
       "nextAction": "Confirm pay, current availability and role-specific work arrangement; review portfolio against requirements.",
       "tags": [
         "Product company",
-        "Pay to confirm"
+        "Pay to confirm",
+        "Startup"
       ],
       "lastPageFetched": "2026-10-25"
     },
@@ -2619,7 +2718,8 @@
       "postedLabel": "12 October 2026 in employer JobPosting metadata",
       "nextAction": "Confirm monthly stipend, internship duration and start window; review the portfolio request.",
       "tags": [
-        "Pay to confirm"
+        "Pay to confirm",
+        "Startup"
       ],
       "listingVerification": "employer-detail"
     },
@@ -2815,6 +2915,224 @@
           "note": "Mirror salary claim INR30–50k/month is unconfirmed by the original ATS."
         }
       ]
+    },
+    {
+      "id": "startup-propel-design-intern",
+      "companyId": "propel",
+      "company": "Propel",
+      "title": "Design Intern",
+      "roleType": "Internship",
+      "location": "Remote or Bengaluru, India",
+      "workMode": "Remote",
+      "region": "India",
+      "sourceUrl": "https://gopropel.in/careers/design-intern/",
+      "applicationUrl": "https://gopropel.in/careers/design-intern?apply=1",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "sourceType": "Company careers",
+      "firstSeen": "2026-10-25",
+      "checkedAt": "2026-10-25",
+      "postedAt": null,
+      "postedLabel": "Employer posting date not stated; newly researched, not newly posted",
+      "status": "on_hold",
+      "tags": [
+        "Startup",
+        "Product",
+        "UX",
+        "Pay to confirm"
+      ],
+      "requirements": "Portfolio; student or personal projects accepted; Figma components, responsive layouts and design systems; Practical AI-assisted design and an interest in funnel analysis; Android/Material conventions and ability to iterate quickly",
+      "requirementItems": [
+        {
+          "id": "c1a501cf56",
+          "text": "Portfolio; student or personal projects accepted",
+          "sourceUrl": "https://gopropel.in/careers/design-intern/"
+        },
+        {
+          "id": "5db1349946",
+          "text": "Figma components, responsive layouts and design systems",
+          "sourceUrl": "https://gopropel.in/careers/design-intern/"
+        },
+        {
+          "id": "b03583daf9",
+          "text": "Practical AI-assisted design and an interest in funnel analysis",
+          "sourceUrl": "https://gopropel.in/careers/design-intern/"
+        },
+        {
+          "id": "8d004004e5",
+          "text": "Android/Material conventions and ability to iterate quickly",
+          "sourceUrl": "https://gopropel.in/careers/design-intern/"
+        }
+      ],
+      "summary": "Design app interfaces, systems and growth assets at an AI-focused consumer-app team. Full-time internship.",
+      "evidence": "Rendered official detail verified, including interface work and AI-assisted iteration. Stipend, duration and start dates are unstated. This is not a confirmed paid-stipend match.",
+      "applicationMethod": "Published employer form/contact; manual review",
+      "automationNotes": "No application submitted or employer message sent.",
+      "nextAction": "Confirm paid status, monthly stipend, duration and joining window; review AI/mobile-design expectations.",
+      "listingVerification": "employer-detail"
+    },
+    {
+      "id": "startup-kodin-uiux-intern",
+      "companyId": "kodin-autometa-labs",
+      "company": "Kodin / Autometa Labs",
+      "title": "UI/UX Design Intern",
+      "roleType": "Internship",
+      "location": "Remote; Ahmedabad-based product team, India",
+      "workMode": "Remote",
+      "region": "India",
+      "sourceUrl": "https://www.getkodin.com/#careers",
+      "applicationUrl": "https://www.getkodin.com/#careers",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "sourceType": "Company careers",
+      "firstSeen": "2026-10-25",
+      "checkedAt": "2026-10-25",
+      "postedAt": null,
+      "postedLabel": "Employer posting date not stated; newly researched, not newly posted",
+      "status": "on_hold",
+      "tags": [
+        "Startup",
+        "Product",
+        "UX",
+        "Pay to confirm"
+      ],
+      "requirements": "Figma, prototyping, user research and design-system skills named; Interest in student-editor and faculty-dashboard usability; Clarify hours and duration before proceeding",
+      "requirementItems": [
+        {
+          "id": "8ce5fa4ff3",
+          "text": "Figma, prototyping, user research and design-system skills named",
+          "sourceUrl": "https://www.getkodin.com/#careers"
+        },
+        {
+          "id": "7739c39159",
+          "text": "Interest in student-editor and faculty-dashboard usability",
+          "sourceUrl": "https://www.getkodin.com/#careers"
+        },
+        {
+          "id": "c2b424e7f6",
+          "text": "Clarify hours and duration before proceeding",
+          "sourceUrl": "https://www.getkodin.com/#careers"
+        }
+      ],
+      "summary": "Design student-editor and faculty-dashboard experiences. Employer lists a 2–4 month internship with flexible start.",
+      "evidence": "Official careers section advertises a stipend without an amount. It names Figma, prototypes, research and design systems; no formal degree or experience requirement is stated. Hours and intake need confirmation.",
+      "applicationMethod": "Published employer form/contact; manual review",
+      "automationNotes": "No application submitted or employer message sent.",
+      "nextAction": "Confirm stipend, hours, India work arrangement and a suitable 3–4 month duration; use the employer internship form.",
+      "listingVerification": "employer-detail"
+    },
+    {
+      "id": "startup-formas-uiux-design-intern",
+      "companyId": "formas-ai",
+      "company": "FORMAS.AI",
+      "title": "UI/UX Design Intern",
+      "roleType": "Internship",
+      "location": "Remote Global / Singapore; confirm India contracting and hours",
+      "workMode": "Remote",
+      "region": "India",
+      "sourceUrl": "https://www.formas.ai/careers",
+      "applicationUrl": "mailto:careers@formas.ai",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "sourceType": "Company careers",
+      "firstSeen": "2026-10-25",
+      "checkedAt": "2026-10-25",
+      "postedAt": null,
+      "postedLabel": "Employer posting date not stated; newly researched, not newly posted",
+      "status": "on_hold",
+      "tags": [
+        "Startup",
+        "Product",
+        "UX",
+        "Pay to confirm"
+      ],
+      "requirements": "Design/HCI/interaction-design student or recent graduate; Figma familiarity and interface-design fundamentals; Prototyping, component-library work and usability-test support",
+      "requirementItems": [
+        {
+          "id": "d04818e900",
+          "text": "Design/HCI/interaction-design student or recent graduate",
+          "sourceUrl": "https://www.formas.ai/careers"
+        },
+        {
+          "id": "d67952bbf5",
+          "text": "Figma familiarity and interface-design fundamentals",
+          "sourceUrl": "https://www.formas.ai/careers"
+        },
+        {
+          "id": "617d479b85",
+          "text": "Prototyping, component-library work and usability-test support",
+          "sourceUrl": "https://www.formas.ai/careers"
+        }
+      ],
+      "summary": "Prototype and improve a spatial-design product, including interface components and usability testing.",
+      "evidence": "Specific internship detail says Remote Global / Singapore and allows full-time or part-time work. Current design/HCI students or recent graduates are eligible in the advert. Pay, duration and local engagement terms are unstated.",
+      "applicationMethod": "Published employer form/contact; manual review",
+      "automationNotes": "No application submitted or employer message sent.",
+      "nextAction": "Confirm paid status, monthly amount, duration, India engagement and time-zone overlap before applying.",
+      "listingVerification": "employer-detail",
+      "email": "careers@formas.ai",
+      "applicationInstructions": "Employer requests portfolio, resume and a short note about design technology and AI."
+    },
+    {
+      "id": "startup-daankart-product-uiux-intern",
+      "companyId": "daankart",
+      "company": "Daankart",
+      "title": "Product & UI/UX Intern",
+      "roleType": "Internship",
+      "location": "Hyderabad, Telangana, India",
+      "workMode": "On-site",
+      "region": "Southern India",
+      "sourceUrl": "https://daankart.com/about/careers#open-roles",
+      "applicationUrl": "mailto:daankart.com@gmail.com",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "sourceType": "Company careers",
+      "firstSeen": "2026-10-25",
+      "checkedAt": "2026-10-25",
+      "postedAt": null,
+      "postedLabel": "Employer posting date not stated; newly researched, not newly posted",
+      "status": "on_hold",
+      "tags": [
+        "Startup",
+        "Product",
+        "UX",
+        "Pay to confirm"
+      ],
+      "requirements": "Figma comfort and user-journey thinking; Explain design decisions and work with engineering; Research, prototyping and usability testing; Design for trust and conversion; six-month office commitment",
+      "requirementItems": [
+        {
+          "id": "cd5d993174",
+          "text": "Figma comfort and user-journey thinking",
+          "sourceUrl": "https://daankart.com/about/careers#open-roles"
+        },
+        {
+          "id": "48ee8201ab",
+          "text": "Explain design decisions and work with engineering",
+          "sourceUrl": "https://daankart.com/about/careers#open-roles"
+        },
+        {
+          "id": "99edda2987",
+          "text": "Research, prototyping and usability testing",
+          "sourceUrl": "https://daankart.com/about/careers#open-roles"
+        },
+        {
+          "id": "0b0d4ca6ae",
+          "text": "Design for trust and conversion; six-month office commitment",
+          "sourceUrl": "https://daankart.com/about/careers#open-roles"
+        }
+      ],
+      "summary": "Research and improve donor journeys, interface consistency and a component library. Six-month, full-time office internship.",
+      "evidence": "Official careers page names the role, location, duration and HR contact. Stipend and exact start window are not stated; do not infer a paid offer from internship benefits.",
+      "applicationMethod": "Published employer form/contact; manual review",
+      "automationNotes": "No application submitted or employer message sent.",
+      "nextAction": "Confirm compensation, eligibility and start window through the published careers contact before proceeding.",
+      "listingVerification": "employer-detail",
+      "email": "daankart.com@gmail.com",
+      "applicationInstructions": "Published careers contact for the Hyderabad product/UI internship; confirm paid terms before sending an application."
     }
   ]
 }

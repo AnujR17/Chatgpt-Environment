@@ -51,3 +51,10 @@ Application progress and blacklist remain browser-local. No private overrides or
 | Zunderdog | fetched |
 | Zunderdog | fetched |
 | project44 | fetched |
+
+
+## Startup-focused follow-up —25 October2026
+
+Four new conditional internships:Propel (remote/Bengaluru), Kodin/Autometa Labs (remote,2–4 months), FORMAS.AI (remote global/Singapore, India terms to confirm), Daankart (Hyderabad office,six months). All stipend amounts are unknown and all records start on hold. No new confirmed monthly stipend match.
+
+Startup search tag added to those four and six existing leads. Prior records, application stages and pay retained. Coachingle3+years, closed Figr/Grexa/Superteams, unavailable Leap original, absent Globalli current ATS designer, below-pay Cravv/LeelaRam/GoPratle and expired eLeoRex are separately documented. New data contains public employer research only; no private browser state or applicant information.

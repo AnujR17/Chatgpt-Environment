@@ -7548,6 +7548,715 @@
           "evidenceStatus": "Employer ATS exposes a three-month UI/UX internship,4–6 hours/day, five days/week. Pay, current intake and India eligibility are not stated. Historical India company evidence does not confirm this intake; watchlist pending clarification."
         }
       ]
+    },
+    {
+      "id": "propel",
+      "name": "Propel",
+      "company": "Propel",
+      "companyType": "Product company",
+      "sector": "Consumer-app publishing and product growth",
+      "focus": "Consumer-app publishing and product growth",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Rendered official detail verified, including interface work and AI-assisted iteration. Stipend, duration and start dates are unstated. This is not a confirmed paid-stipend match.",
+      "careersUrl": "https://gopropel.in/careers/design-intern/",
+      "locationNote": "Remote or Bengaluru, India",
+      "openingStatus": "Rendered official detail verified, including interface work and AI-assisted iteration. Stipend, duration and start dates are unstated. This is not a confirmed paid-stipend match.",
+      "payNote": "Design app interfaces, systems and growth assets at an AI-focused consumer-app team. Full-time internship. Amount unconfirmed.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://gopropel.in/careers/design-intern/",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Rendered official detail verified, including interface work and AI-assisted iteration. Stipend, duration and start dates are unstated. This is not a confirmed paid-stipend match.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://gopropel.in/careers/design-intern/",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://gopropel.in/careers/design-intern/"
+      },
+      "roles": [
+        {
+          "id": "startup-propel-design-intern",
+          "jobId": "startup-propel-design-intern",
+          "title": "Design Intern",
+          "url": "https://gopropel.in/careers/design-intern/",
+          "seniority": "Internship",
+          "location": "Remote or Bengaluru, India",
+          "requirements": [
+            {
+              "id": "c1a501cf56",
+              "text": "Portfolio; student or personal projects accepted",
+              "sourceUrl": "https://gopropel.in/careers/design-intern/"
+            },
+            {
+              "id": "5db1349946",
+              "text": "Figma components, responsive layouts and design systems",
+              "sourceUrl": "https://gopropel.in/careers/design-intern/"
+            },
+            {
+              "id": "b03583daf9",
+              "text": "Practical AI-assisted design and an interest in funnel analysis",
+              "sourceUrl": "https://gopropel.in/careers/design-intern/"
+            },
+            {
+              "id": "8d004004e5",
+              "text": "Android/Material conventions and ability to iterate quickly",
+              "sourceUrl": "https://gopropel.in/careers/design-intern/"
+            }
+          ],
+          "evidenceStatus": "Rendered official detail verified, including interface work and AI-assisted iteration. Stipend, duration and start dates are unstated. This is not a confirmed paid-stipend match."
+        }
+      ]
+    },
+    {
+      "id": "kodin-autometa-labs",
+      "name": "Kodin / Autometa Labs",
+      "company": "Kodin / Autometa Labs",
+      "companyType": "Product company",
+      "sector": "Education software and coding-lab interfaces",
+      "focus": "Education software and coding-lab interfaces",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Official careers section advertises a stipend without an amount. It names Figma, prototypes, research and design systems; no formal degree or experience requirement is stated. Hours and intake need confirmation.",
+      "careersUrl": "https://www.getkodin.com/#careers",
+      "locationNote": "Remote; Ahmedabad-based product team, India",
+      "openingStatus": "Official careers section advertises a stipend without an amount. It names Figma, prototypes, research and design systems; no formal degree or experience requirement is stated. Hours and intake need confirmation.",
+      "payNote": "Design student-editor and faculty-dashboard experiences. Employer lists a 2–4 month internship with flexible start. Amount unconfirmed.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://www.getkodin.com/#careers",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Official careers section advertises a stipend without an amount. It names Figma, prototypes, research and design systems; no formal degree or experience requirement is stated. Hours and intake need confirmation.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://www.getkodin.com/#careers",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://www.getkodin.com/#careers"
+      },
+      "roles": [
+        {
+          "id": "startup-kodin-uiux-intern",
+          "jobId": "startup-kodin-uiux-intern",
+          "title": "UI/UX Design Intern",
+          "url": "https://www.getkodin.com/#careers",
+          "seniority": "Internship",
+          "location": "Remote; Ahmedabad-based product team, India",
+          "requirements": [
+            {
+              "id": "8ce5fa4ff3",
+              "text": "Figma, prototyping, user research and design-system skills named",
+              "sourceUrl": "https://www.getkodin.com/#careers"
+            },
+            {
+              "id": "7739c39159",
+              "text": "Interest in student-editor and faculty-dashboard usability",
+              "sourceUrl": "https://www.getkodin.com/#careers"
+            },
+            {
+              "id": "c2b424e7f6",
+              "text": "Clarify hours and duration before proceeding",
+              "sourceUrl": "https://www.getkodin.com/#careers"
+            }
+          ],
+          "evidenceStatus": "Official careers section advertises a stipend without an amount. It names Figma, prototypes, research and design systems; no formal degree or experience requirement is stated. Hours and intake need confirmation."
+        }
+      ],
+      "aliases": [
+        "Kodin",
+        "Autometa Labs",
+        "Autometa Labs Pvt Ltd"
+      ]
+    },
+    {
+      "id": "formas-ai",
+      "name": "FORMAS.AI",
+      "company": "FORMAS.AI",
+      "companyType": "Product company",
+      "sector": "AI design software for architecture and interiors",
+      "focus": "AI design software for architecture and interiors",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Specific internship detail says Remote Global / Singapore and allows full-time or part-time work. Current design/HCI students or recent graduates are eligible in the advert. Pay, duration and local engagement terms are unstated.",
+      "careersUrl": "https://www.formas.ai/careers",
+      "locationNote": "Remote Global / Singapore; confirm India contracting and hours",
+      "openingStatus": "Specific internship detail says Remote Global / Singapore and allows full-time or part-time work. Current design/HCI students or recent graduates are eligible in the advert. Pay, duration and local engagement terms are unstated.",
+      "payNote": "Prototype and improve a spatial-design product, including interface components and usability testing. Amount unconfirmed.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://www.formas.ai/careers",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Specific internship detail says Remote Global / Singapore and allows full-time or part-time work. Current design/HCI students or recent graduates are eligible in the advert. Pay, duration and local engagement terms are unstated.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://www.formas.ai/careers",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://www.formas.ai/careers"
+      },
+      "roles": [
+        {
+          "id": "startup-formas-uiux-design-intern",
+          "jobId": "startup-formas-uiux-design-intern",
+          "title": "UI/UX Design Intern",
+          "url": "https://www.formas.ai/careers",
+          "seniority": "Internship",
+          "location": "Remote Global / Singapore; confirm India contracting and hours",
+          "requirements": [
+            {
+              "id": "d04818e900",
+              "text": "Design/HCI/interaction-design student or recent graduate",
+              "sourceUrl": "https://www.formas.ai/careers"
+            },
+            {
+              "id": "d67952bbf5",
+              "text": "Figma familiarity and interface-design fundamentals",
+              "sourceUrl": "https://www.formas.ai/careers"
+            },
+            {
+              "id": "617d479b85",
+              "text": "Prototyping, component-library work and usability-test support",
+              "sourceUrl": "https://www.formas.ai/careers"
+            }
+          ],
+          "evidenceStatus": "Specific internship detail says Remote Global / Singapore and allows full-time or part-time work. Current design/HCI students or recent graduates are eligible in the advert. Pay, duration and local engagement terms are unstated."
+        }
+      ]
+    },
+    {
+      "id": "daankart",
+      "name": "Daankart",
+      "company": "Daankart",
+      "companyType": "Product company",
+      "sector": "Donation and crowdfunding product software",
+      "focus": "Donation and crowdfunding product software",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Official careers page names the role, location, duration and HR contact. Stipend and exact start window are not stated; do not infer a paid offer from internship benefits.",
+      "careersUrl": "https://daankart.com/about/careers#open-roles",
+      "locationNote": "Hyderabad, Telangana, India",
+      "openingStatus": "Official careers page names the role, location, duration and HR contact. Stipend and exact start window are not stated; do not infer a paid offer from internship benefits.",
+      "payNote": "Research and improve donor journeys, interface consistency and a component library. Six-month, full-time office internship. Amount unconfirmed.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://daankart.com/about/careers#open-roles",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Official careers page names the role, location, duration and HR contact. Stipend and exact start window are not stated; do not infer a paid offer from internship benefits.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://daankart.com/about/careers#open-roles",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://daankart.com/about/careers#open-roles"
+      },
+      "roles": [
+        {
+          "id": "startup-daankart-product-uiux-intern",
+          "jobId": "startup-daankart-product-uiux-intern",
+          "title": "Product & UI/UX Intern",
+          "url": "https://daankart.com/about/careers#open-roles",
+          "seniority": "Internship",
+          "location": "Hyderabad, Telangana, India",
+          "requirements": [
+            {
+              "id": "cd5d993174",
+              "text": "Figma comfort and user-journey thinking",
+              "sourceUrl": "https://daankart.com/about/careers#open-roles"
+            },
+            {
+              "id": "48ee8201ab",
+              "text": "Explain design decisions and work with engineering",
+              "sourceUrl": "https://daankart.com/about/careers#open-roles"
+            },
+            {
+              "id": "99edda2987",
+              "text": "Research, prototyping and usability testing",
+              "sourceUrl": "https://daankart.com/about/careers#open-roles"
+            },
+            {
+              "id": "0b0d4ca6ae",
+              "text": "Design for trust and conversion; six-month office commitment",
+              "sourceUrl": "https://daankart.com/about/careers#open-roles"
+            }
+          ],
+          "evidenceStatus": "Official careers page names the role, location, duration and HR contact. Stipend and exact start window are not stated; do not infer a paid offer from internship benefits."
+        }
+      ]
+    },
+    {
+      "id": "revrag-ai",
+      "name": "RevRag AI",
+      "company": "RevRag AI",
+      "companyType": "Product company",
+      "sector": "AI agents for financial workflows",
+      "focus": "AI agents for financial workflows",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+      "careersUrl": "https://www.revrag.ai/careers/product-design-intern",
+      "locationNote": "Bengaluru, Karnataka",
+      "openingStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+      "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://www.revrag.ai/careers/product-design-intern",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://www.revrag.ai/careers/product-design-intern",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://www.revrag.ai/careers/product-design-intern"
+      },
+      "roles": [
+        {
+          "id": "revrag-product-design",
+          "jobId": "revrag-product-design",
+          "title": "Product Design Intern",
+          "url": "https://www.revrag.ai/careers/product-design-intern",
+          "seniority": "Internship",
+          "location": "Bengaluru, Karnataka",
+          "requirements": [],
+          "evidenceStatus": "Original company role is accessible and lists Bengaluru on-site. Third-party ₹40k claims are not confirmed by this page."
+        }
+      ]
+    },
+    {
+      "id": "neuralpath-technologies",
+      "name": "NeuralPath Technologies",
+      "company": "NeuralPath Technologies",
+      "companyType": "Product company",
+      "sector": "Privacy-first consumer applications",
+      "focus": "Privacy-first consumer applications",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+      "careersUrl": "https://www.neuralpath.app/careers/",
+      "locationNote": "Remote, India",
+      "openingStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+      "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://www.neuralpath.app/careers/",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://www.neuralpath.app/careers/",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://www.neuralpath.app/careers/"
+      },
+      "roles": [
+        {
+          "id": "neuralpath-design-intern",
+          "jobId": "neuralpath-design-intern",
+          "title": "Product Design Intern",
+          "url": "https://www.neuralpath.app/careers/",
+          "seniority": "Internship",
+          "location": "Remote, India",
+          "requirements": [],
+          "evidenceStatus": "Company careers page explicitly lists a remote Product Design Intern opportunity and year-round applications. Duration and stipend are discussed individually."
+        }
+      ]
+    },
+    {
+      "id": "zavio",
+      "name": "Zavio",
+      "company": "Zavio",
+      "companyType": "Product company",
+      "sector": "Financial education software",
+      "focus": "Financial education software",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+      "careersUrl": "https://www.gozavio.com/careers",
+      "locationNote": "Remote, India",
+      "openingStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+      "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://www.gozavio.com/careers",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://www.gozavio.com/careers",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://www.gozavio.com/careers"
+      },
+      "roles": [
+        {
+          "id": "zavio-design-intern",
+          "jobId": "zavio-design-intern",
+          "title": "Product Design Intern",
+          "url": "https://www.gozavio.com/careers",
+          "seniority": "Internship",
+          "location": "Remote, India",
+          "requirements": [],
+          "evidenceStatus": "Company careers page lists this as an open internship, remote anywhere in India. Stipend and posting date are not stated."
+        }
+      ]
+    },
+    {
+      "id": "chiblu",
+      "name": "Chiblu",
+      "company": "Chiblu",
+      "companyType": "Product company",
+      "sector": "Marketplace software for independent makers",
+      "focus": "Marketplace software for independent makers",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Existing researched role; stipend and renewed intake need confirmation.",
+      "careersUrl": "https://chiblu.com/careers/product-design-intern-ux-ui",
+      "locationNote": "Remote, India; Bengaluru preferred",
+      "openingStatus": "Existing researched role; stipend and renewed intake need confirmation.",
+      "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://chiblu.com/careers/product-design-intern-ux-ui",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Existing researched role; stipend and renewed intake need confirmation.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://chiblu.com/careers/product-design-intern-ux-ui",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://chiblu.com/careers/product-design-intern-ux-ui"
+      },
+      "roles": [
+        {
+          "id": "chiblu-design-intern",
+          "jobId": "chiblu-design-intern",
+          "title": "Product Design Intern (UX & UI)",
+          "url": "https://chiblu.com/careers/product-design-intern-ux-ui",
+          "seniority": "Internship",
+          "location": "Remote, India; Bengaluru preferred",
+          "requirements": [],
+          "evidenceStatus": "Company still exposes the role page and links it from careers. It is an older May posting; current hiring and stipend require confirmation. Recheck25 October: employer page remains accessible; linked Wellfound4209561 now returns410 Gone. The employer page alone does not establish a renewed intake."
+        }
+      ]
+    },
+    {
+      "id": "coachingle",
+      "name": "Coachingle",
+      "company": "Coachingle",
+      "companyType": "Product company",
+      "sector": "AI learning software",
+      "focus": "AI learning software",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Official product role requires3+ years, confirmed in the public role-description bundle. Company target only, not an intern/junior recommendation.",
+      "careersUrl": "https://www.coachingle.com/careers",
+      "locationNote": "Remote India",
+      "openingStatus": "Official product role requires3+ years, confirmed in the public role-description bundle. Company target only, not an intern/junior recommendation.",
+      "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://www.coachingle.com/careers",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Official product role requires3+ years, confirmed in the public role-description bundle. Company target only, not an intern/junior recommendation.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://www.coachingle.com/careers",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://www.coachingle.com/careers"
+      },
+      "roles": [
+        {
+          "id": "coachingle-startup-role-evidence",
+          "title": "Product Designer",
+          "url": "https://www.coachingle.com/careers",
+          "location": "Remote India",
+          "seniority": "Experienced; 3+ years",
+          "requirements": [],
+          "evidenceStatus": "Official product role requires3+ years, confirmed in the public role-description bundle. Company target only, not an intern/junior recommendation."
+        }
+      ],
+      "currentOpeningVerified": true
+    },
+    {
+      "id": "cravv",
+      "name": "Cravv",
+      "company": "Cravv",
+      "companyType": "Product company",
+      "sector": "AI cooking device and companion app",
+      "focus": "AI cooking device and companion app",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Employer Wellfound detail lists20k/month and digital/device work. Below the non-Gujarat target; retain as a watchlist-only company, not a qualifying new job.",
+      "careersUrl": "https://wellfound.com/jobs/4716470-product-design-intern",
+      "locationNote": "Bengaluru, office; six months",
+      "openingStatus": "Employer Wellfound detail lists20k/month and digital/device work. Below the non-Gujarat target; retain as a watchlist-only company, not a qualifying new job.",
+      "payNote": "Employer advert:INR20,000/month, below the non-Gujarat target; not a current offer to the applicant.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://wellfound.com/jobs/4716470-product-design-intern",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Employer Wellfound detail lists20k/month and digital/device work. Below the non-Gujarat target; retain as a watchlist-only company, not a qualifying new job.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://wellfound.com/jobs/4716470-product-design-intern",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://wellfound.com/jobs/4716470-product-design-intern"
+      },
+      "roles": [
+        {
+          "id": "cravv-startup-role-evidence",
+          "title": "Product Design Intern",
+          "url": "https://wellfound.com/jobs/4716470-product-design-intern",
+          "location": "Bengaluru, office; six months",
+          "seniority": "Internship; below pay target",
+          "requirements": [],
+          "evidenceStatus": "Employer Wellfound detail lists20k/month and digital/device work. Below the non-Gujarat target; retain as a watchlist-only company, not a qualifying new job."
+        }
+      ],
+      "currentOpeningVerified": true
+    },
+    {
+      "id": "figr",
+      "name": "Figr",
+      "company": "Figr",
+      "companyType": "Product company",
+      "sector": "AI product-design tools",
+      "focus": "AI product-design tools",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Antler original detail explicitly says no longer accepting. Current opening not inferred from a stale search snippet.",
+      "careersUrl": "https://careers.antler.co/companies/figr/jobs/48650001-product-design-intern",
+      "locationNote": "Bengaluru / remote historical description",
+      "openingStatus": "Antler original detail explicitly says no longer accepting. Current opening not inferred from a stale search snippet.",
+      "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://careers.antler.co/companies/figr/jobs/48650001-product-design-intern",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Antler original detail explicitly says no longer accepting. Current opening not inferred from a stale search snippet.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://careers.antler.co/companies/figr/jobs/48650001-product-design-intern",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://careers.antler.co/companies/figr/jobs/48650001-product-design-intern"
+      },
+      "roles": [
+        {
+          "id": "figr-startup-role-evidence",
+          "title": "Product Design Intern",
+          "url": "https://careers.antler.co/companies/figr/jobs/48650001-product-design-intern",
+          "location": "Bengaluru / remote historical description",
+          "seniority": "Closed internship evidence",
+          "requirements": [],
+          "evidenceStatus": "Antler original detail explicitly says no longer accepting. Current opening not inferred from a stale search snippet."
+        }
+      ],
+      "currentOpeningVerified": false
+    },
+    {
+      "id": "grexa-ai",
+      "name": "Grexa AI",
+      "company": "Grexa AI",
+      "companyType": "Product company",
+      "sector": "AI marketing software",
+      "focus": "AI marketing software",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Original Peerlist employer post is archived; watch for a renewed role rather than treating it as current.",
+      "careersUrl": "https://peerlist.io/company/grexa_ai/careers/product-design-intern/jobhlknq7lkradbbdc7dbmeg9ne98p",
+      "locationNote": "Navi Mumbai, office",
+      "openingStatus": "Original Peerlist employer post is archived; watch for a renewed role rather than treating it as current.",
+      "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://peerlist.io/company/grexa_ai/careers/product-design-intern/jobhlknq7lkradbbdc7dbmeg9ne98p",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Original Peerlist employer post is archived; watch for a renewed role rather than treating it as current.",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://peerlist.io/company/grexa_ai/careers/product-design-intern/jobhlknq7lkradbbdc7dbmeg9ne98p",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://peerlist.io/company/grexa_ai/careers/product-design-intern/jobhlknq7lkradbbdc7dbmeg9ne98p"
+      },
+      "roles": [
+        {
+          "id": "grexa-ai-startup-role-evidence",
+          "title": "Product Design Intern",
+          "url": "https://peerlist.io/company/grexa_ai/careers/product-design-intern/jobhlknq7lkradbbdc7dbmeg9ne98p",
+          "location": "Navi Mumbai, office",
+          "seniority": "Archived internship evidence",
+          "requirements": [],
+          "evidenceStatus": "Original Peerlist employer post is archived; watch for a renewed role rather than treating it as current."
+        }
+      ],
+      "currentOpeningVerified": false
+    },
+    {
+      "id": "globalli",
+      "name": "Globalli",
+      "company": "Globalli",
+      "companyType": "Product company",
+      "sector": "Workforce-management software",
+      "focus": "Workforce-management software",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Current official linked Greenhouse API exposes13 jobs and no designer role. Mirrored junior descriptions remain unverified; no active card added.",
+      "careersUrl": "https://globalli.io/company/careers",
+      "locationNote": "Indexed remote India/Pakistan; current intake unconfirmed",
+      "openingStatus": "Current official linked Greenhouse API exposes13 jobs and no designer role. Mirrored junior descriptions remain unverified; no active card added.",
+      "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-25",
+      "sources": [
+        {
+          "url": "https://globalli.io/company/careers",
+          "label": "Public employer/role evidence",
+          "evidenceStatus": "Current official linked Greenhouse API exposes13 jobs and no designer role. Mirrored junior descriptions remain unverified; no active card added.",
+          "checkedAt": "2026-10-25"
+        },
+        {
+          "url": "https://boards-api.greenhouse.io/v1/boards/globalli/jobs?content=true",
+          "label": "Official ATS feed linked from employer careers",
+          "evidenceStatus": "13 current jobs; no design role present",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "contact": {
+        "url": "https://globalli.io/company/careers",
+        "kind": "Published careers/application route",
+        "sourceUrl": "https://globalli.io/company/careers"
+      },
+      "roles": [
+        {
+          "id": "globalli-startup-role-evidence",
+          "title": "Junior Product Designer",
+          "url": "https://globalli.io/company/careers",
+          "location": "Indexed remote India/Pakistan; current intake unconfirmed",
+          "seniority": "Indexed historical lead",
+          "requirements": [],
+          "evidenceStatus": "Current official linked Greenhouse API exposes13 jobs and no designer role. Mirrored junior descriptions remain unverified; no active card added."
+        }
+      ],
+      "currentOpeningVerified": false
     }
   ],
   "meta": {
@@ -7555,6 +8264,6 @@
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 123
+    "directoryCount": 136
   }
 }
