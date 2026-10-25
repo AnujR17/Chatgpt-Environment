@@ -74,4 +74,4 @@
 - [x] Add4 conditional internships and6 existing Startup search tags, preserving prior records.
 - [x] Add13 sourced directory records, distinguishing current, closed, senior and below-pay evidence.
 - [x] Regenerate exports; data/model and collector tests plus production build.
-- [ ] Complete browser verification and exact live production checks.
+- [x] Local/live desktop/mobile startup search, private-preference preservation and exact live JSON/CSV/Excel pass; READY deployment dpl_4ZKYzRv19hoWeKYDLubaryr3L3Ye from87e9a42.
