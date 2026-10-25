@@ -124,3 +124,12 @@ Indeed links10 role records after4 new leads and cross-post enrichment; Naukri r
 Annual/foreign junior salary stays in advertisedCompensation with original currency/period. The display supports annual INR/USD and labels it separately; it is never a confirmed monthly stipend match. SuperKalam pay metadata conflicts and remains unquantified. Matching Ungrammary Cutshort fellowship reports10–12k/month below target; a separate company page annual range is retained with limits. Salary and freshness caveats remain with source evidence.
 
 The supported Excel export now includes Source coverage, and regenerates the public company CSV. The daily task prompt maintains this expanded coverage and source schema; browser-private state remains separate. Run python tests/source_coverage_check.py for source filters, cross-post dedupe, older listing labels, original salary units, coverage/access status and mobile layout.
+
+
+##25 October research maintenance
+
+The feed retains43 role records:42 active recommendations and1 archived removed listing. Four new on-hold entries are Atlabs and Revvity internships plus Moonfire and Enterprise Bot permanent fresher alternatives. No new qualifying monthly stipend is confirmed. Moonfire’s INR2.5–4lakh/year is annual pay. Glance links to its original Greenhouse application; the aggregator’s pay is unverified. Innovexis in295 is archived after original404/410, preserving saved application stages and history.
+
+Directory123 companies;255 source records;24 source-coverage records. Source families actually checked carry25October dates; older dates remain where a check was not repeated. The39 existing primary URLs were attempted,34 fetched,4 blocked and1 removed. A fetched page alone does not confirm intake. Public research remains targeted best effort, with no signed-in Naukri/X session or CAPTCHA bypass. Source coverage documents zero suitable results and stale/misclassified/low-pay evidence.
+
+The daily search now runs at exact07:00 Asia/Kolkata from26October2026; the prior flexible task is paused. The task updates and deploys public research. Private browser blacklist/profile/history remain in localStorage and cannot be read by the background search.

@@ -55,3 +55,14 @@
 - [x] Regenerate Excel/CSV exports and broaden daily maintenance prompt without changing schedule.
 - [x] Model/data, collector, build and local source/legacy/company/import browser workflows passed.
 - [x] App commit0c777b2 deployed READY; live JSON/workbook and desktop/mobile source workflow passed with original units and access caveats.
+
+
+##25 October research refresh
+
+- [x] Recheck39 existing primary sources without bypassing robots/access controls.
+- [x] Add4 evidenced on-hold roles; keep unknown pay and annual salary distinct.
+- [x] Archive removed Innovexis original; preserve IDs and browser application history.
+- [x] Upgrade Glance to employer ATS; correct Icogz source title; record stale-source conflicts.
+- [x] Expand directory to123 and regenerate source evidence/Excel/CSV.
+- [x] Data/model tests, collector tests and production build.
+- [ ] Verify browser/private-preference behavior and exact live deployment.
