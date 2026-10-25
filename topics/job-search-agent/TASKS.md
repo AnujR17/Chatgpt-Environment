@@ -65,4 +65,4 @@
 - [x] Upgrade Glance to employer ATS; correct Icogz source title; record stale-source conflicts.
 - [x] Expand directory to123 and regenerate source evidence/Excel/CSV.
 - [x] Data/model tests, collector tests and production build.
-- [ ] Verify browser/private-preference behavior and exact live deployment.
+- [x] Local/live desktop/mobile checks passed; production dpl_64L4GTtHFbxjKPHsPrYtLGy5roJf READY at a346107; live JSON/CSV/Excel exact matches.
