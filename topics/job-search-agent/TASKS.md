@@ -75,3 +75,14 @@
 - [x] Add13 sourced directory records, distinguishing current, closed, senior and below-pay evidence.
 - [x] Regenerate exports; data/model and collector tests plus production build.
 - [x] Local/live desktop/mobile startup search, private-preference preservation and exact live JSON/CSV/Excel pass; READY deployment dpl_4ZKYzRv19hoWeKYDLubaryr3L3Ye from87e9a42.
+
+
+##26 October research maintenance
+
+- [x] Search employer/startup, India-board, public social and named remote channels; preserve access limits and zero-result outcomes.
+- [x] Attempt all46 active primary URLs; archive expired Balusen with stable ID, hold BThree for current timing/pay conditions.
+- [x] Add six original-employer internships with unknown stipend on hold; upgrade Lokal ATS evidence while retaining directory role ID.
+- [x] Add seven company targets; keep Sola/Octave unverified/unavailable evidence separate from vacancies.
+- [x] Preserve prior IDs, requirement IDs, dates, pay, source records and review queue; regenerate supported exports.
+- [x] Data/model tests, five collector tests, build and preservation audit.
+- [ ] Publish exact data commit to existing production project and verify live feeds/downloads and browser behavior.
