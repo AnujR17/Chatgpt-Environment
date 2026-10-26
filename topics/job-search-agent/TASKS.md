@@ -85,4 +85,4 @@
 - [x] Add seven company targets; keep Sola/Octave unverified/unavailable evidence separate from vacancies.
 - [x] Preserve prior IDs, requirement IDs, dates, pay, source records and review queue; regenerate supported exports.
 - [x] Data/model tests, five collector tests, build and preservation audit.
-- [ ] Publish exact data commit to existing production project and verify live feeds/downloads and browser behavior.
+- [x] Exact data commit e517ddb deployed production READY as dpl_76Rd2sAET3Lk3z8yfVfwS5Nwf4pc; live JSON/CSV/Excel exact matches, desktop/mobile and synthetic private-state checks passed.
