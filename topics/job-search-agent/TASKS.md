@@ -86,3 +86,13 @@
 - [x] Preserve prior IDs, requirement IDs, dates, pay, source records and review queue; regenerate supported exports.
 - [x] Data/model tests, five collector tests, build and preservation audit.
 - [x] Exact data commit e517ddb deployed production READY as dpl_76Rd2sAET3Lk3z8yfVfwS5Nwf4pc; live JSON/CSV/Excel exact matches, desktop/mobile and synthetic private-state checks passed.
+
+
+##27 October research maintenance
+
+- [x] Search named employer,India-board,social,startup,remote and HN sources; record access/zero-result limits.
+- [x] Attempt all51 active primary URLs; preserve stages,IDs,pay,original dates and two archived records.
+- [x] Add seven internships and one labelled junior alternative on hold; update existing LeadSquared/Microsoft evidence and Arihant cross-post.
+- [x] Expand company directory to153,keeping historical/unpaid/performance-only/experienced roles separate from active feed.
+- [x] Regenerate Excel/CSV;16 data/model checks,five collector checks,build and preservation audit.
+- [ ] Verify browser and exact production commit/live data in existing project.
