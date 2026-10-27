@@ -95,4 +95,4 @@
 - [x] Add seven internships and one labelled junior alternative on hold; update existing LeadSquared/Microsoft evidence and Arihant cross-post.
 - [x] Expand company directory to153,keeping historical/unpaid/performance-only/experienced roles separate from active feed.
 - [x] Regenerate Excel/CSV;16 data/model checks,five collector checks,build and preservation audit.
-- [ ] Verify browser and exact production commit/live data in existing project.
+- [x] Local/live desktop/mobile checks passed; exact data commit aeb4de3 production READY as dpl_CRKAtw1pq27A4BcRG8qSZmtCdoZj. Live JSON/report/CSV/Excel exact matches; protections preserved.
