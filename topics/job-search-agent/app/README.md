@@ -8,11 +8,11 @@ Personal internship discovery and application Kanban for Anuj. Primary GitHub ow
 
 ## Included
 
-- 61 retained role records (59 active,2 archived), updated27 October2026. Seven new internships and one junior alternative stay on hold for compensation/intake details. Sources include employer careers, Indeed, an employer-linked Naukri route and caveated public cross-posts.
+- 65 retained role records (63 active,2 archived), updated28 October2026. Three new internships and one junior alternative stay on hold for compensation/intake details. Sources include employer careers, Infoparks Kerala, Indeed, an employer-linked Naukri route and caveated public cross-posts.
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat minimum ₹20,000/month; elsewhere ₹30,000, with ₹25,000 considered individually. A ₹30,000 remote minimum is provisional.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with153 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with161 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.

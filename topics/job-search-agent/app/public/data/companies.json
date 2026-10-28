@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-10-27",
+  "researchedAt": "2026-10-28",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -3606,6 +3606,12 @@
           "detail": "Official JD and application form accessible. Remote-first company. Application requires resume, portfolio, start availability, expected monthly stipend and an everyday-app improvement answer. Current stipend not disclosed.",
           "evidenceStatus": "Official role detail accessible",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://gravity.jobs.growhire.com/jobs/cmqdlet8309n1b5p6q8lbi6im",
+          "label": "Matching employer ATS requisition; same role",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Same role ID and requirements; Bengaluru or remote India. Pay/duration/start undisclosed, current cohort needs confirmation."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -9582,13 +9588,568 @@
           "evidenceStatus": "Employer Wellfound advert:remote India,3months,20hours/week and performance-based compensation with no fixed stipend. Not an undisclosed guaranteed salary. Company also markets training; do not conflate the programs with employment. No active feed card."
         }
       ]
+    },
+    {
+      "id": "water-robotics",
+      "name": "WATER / Water Robotics",
+      "company": "WATER / Water Robotics",
+      "companyType": "Product company",
+      "sector": "Biophysical intelligence and adaptive-product application UX",
+      "focus": "Biophysical intelligence and adaptive-product application UX",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested Workable target for biophysical intelligence and adaptive-product application ux. Editable preference/fit suggestion; not hiring probability or an offer.",
+      "careersUrl": "https://www.water.bio/careers/WR021",
+      "locationNote": "Hyderabad, Telangana, India; on-site for six months",
+      "openingStatus": "Original WR021 application page specifies Hyderabad on-site, six months and application UX/Figma/user testing. Employer displays24August2026. Stipend, deadline and cohort start are unstated; a live form alone does not establish renewed intake.",
+      "currentOpeningVerified": true,
+      "payNote": "Current listing compensation undisclosed; no reliable role-specific benchmark added. Confirm the actual offer terms.",
+      "payConfidence": "Unconfirmed",
+      "researchedAt": "2026-10-28",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; not additional advertised vacancies.",
+      "contact": {
+        "url": "https://www.water.bio/careers/WR021",
+        "kind": "Public careers/application route; no recruitment email inferred",
+        "sourceUrl": "https://www.water.bio/careers/WR021"
+      },
+      "sources": [
+        {
+          "url": "https://www.water.bio/careers/WR021",
+          "label": "Specific advertised role with caveats",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Original WR021 application page specifies Hyderabad on-site, six months and application UX/Figma/user testing. Employer displays24August2026. Stipend, deadline and cohort start are unstated; a live form alone does not establish renewed intake."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-water-ux-intern-wr021",
+          "title": "UX Design Intern",
+          "url": "https://www.water.bio/careers/WR021",
+          "seniority": "Internship; pay/eligibility to confirm",
+          "location": "Hyderabad, Telangana, India; on-site for six months",
+          "requirements": [
+            {
+              "id": "015ac1fb9052",
+              "text": "Design/HCI student or recent graduate, or a strong self-taught portfolio",
+              "sourceUrl": "https://www.water.bio/careers/WR021"
+            },
+            {
+              "id": "010868149a23",
+              "text": "Strong Figma and a design used by someone who supplied feedback",
+              "sourceUrl": "https://www.water.bio/careers/WR021"
+            },
+            {
+              "id": "b822b0780397",
+              "text": "Six months full time on-site in Hyderabad",
+              "sourceUrl": "https://www.water.bio/careers/WR021"
+            },
+            {
+              "id": "813d129f4602",
+              "text": "Prototype and test flows; contribute components and edge states; usability research, data visualisation and frontend are bonuses",
+              "sourceUrl": "https://www.water.bio/careers/WR021"
+            }
+          ],
+          "evidenceStatus": "Original WR021 application page specifies Hyderabad on-site, six months and application UX/Figma/user testing. Employer displays24August2026. Stipend, deadline and cohort start are unstated; a live form alone does not establish renewed intake."
+        }
+      ]
+    },
+    {
+      "id": "alignminds",
+      "name": "AlignMinds Technologies",
+      "company": "AlignMinds Technologies",
+      "companyType": "Services / technology team",
+      "sector": "Design-led product engineering",
+      "focus": "Design-led product engineering",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested Workable target for design-led product engineering. Editable preference/fit suggestion; not hiring probability or an offer.",
+      "careersUrl": "https://www.alignminds.com/careers/",
+      "locationNote": "Kochi, Kerala, India; work arrangement to confirm",
+      "openingStatus": "Institutional Infoparks Kerala detail names a Kochi UI/UX internship and published recruitment inbox. No numeric pay, duration, hours, original date or start deadline. Employer careers page corroborates the company, but does not independently establish this intake.",
+      "currentOpeningVerified": true,
+      "payNote": "Current listing compensation undisclosed; no reliable role-specific benchmark added. Confirm the actual offer terms.",
+      "payConfidence": "Unconfirmed",
+      "researchedAt": "2026-10-28",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; not additional advertised vacancies.",
+      "contact": {
+        "email": "careers@alignminds.com",
+        "url": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3",
+        "kind": "Recruitment inbox explicitly published for this internship; no message sent",
+        "sourceUrl": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3"
+      },
+      "sources": [
+        {
+          "url": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3",
+          "label": "Specific advertised role with caveats",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Institutional Infoparks Kerala detail names a Kochi UI/UX internship and published recruitment inbox. No numeric pay, duration, hours, original date or start deadline. Employer careers page corroborates the company, but does not independently establish this intake."
+        },
+        {
+          "url": "https://www.alignminds.com/careers/",
+          "label": "Official careers/company context",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Official design-led consulting careers context; specific internship intake not independently corroborated here. General info inbox is not substituted for recruitment."
+        }
+      ],
+      "roles": [
+        {
+          "id": "infopark-alignminds-uiux-internship-3",
+          "title": "UI/UX Designer Internship",
+          "url": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3",
+          "seniority": "Internship; pay/eligibility to confirm",
+          "location": "Kochi, Kerala, India; work arrangement to confirm",
+          "requirements": [
+            {
+              "id": "b87e355e417b",
+              "text": "Basic understanding of UI/UX principles",
+              "sourceUrl": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3"
+            },
+            {
+              "id": "3147e756d944",
+              "text": "Familiarity with Figma, Adobe XD, Sketch or similar tools",
+              "sourceUrl": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3"
+            },
+            {
+              "id": "e454c6c8d777",
+              "text": "Attention to detail, creativity and openness to feedback",
+              "sourceUrl": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3"
+            }
+          ],
+          "evidenceStatus": "Institutional Infoparks Kerala detail names a Kochi UI/UX internship and published recruitment inbox. No numeric pay, duration, hours, original date or start deadline. Employer careers page corroborates the company, but does not independently establish this intake."
+        }
+      ]
+    },
+    {
+      "id": "nuefind",
+      "name": "NueFind",
+      "company": "NueFind",
+      "companyType": "Product company",
+      "sector": "Indian-brand discovery marketplace",
+      "focus": "Indian-brand discovery marketplace",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested Possible target for indian-brand discovery marketplace. Editable preference/fit suggestion; not hiring probability or an offer.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403",
+      "locationNote": "Bengaluru, Karnataka, India; work mode not stated",
+      "openingStatus": "Employer-authored LinkedIn detail asks for website redesign, Figma wireframes/mockups and implementation on the live site. Pay, duration, weekly hours, degree criteria and work mode are absent. Relative five-day label is not a verified original posting date. Official company website corroborates marketplace context only.",
+      "currentOpeningVerified": true,
+      "payNote": "Current listing compensation undisclosed; no reliable role-specific benchmark added. Confirm the actual offer terms.",
+      "payConfidence": "Unconfirmed",
+      "researchedAt": "2026-10-28",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; not additional advertised vacancies.",
+      "contact": {
+        "url": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403",
+        "kind": "Public careers/application route; no recruitment email inferred",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403"
+      },
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403",
+          "label": "Specific advertised role with caveats",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Employer-authored LinkedIn detail asks for website redesign, Figma wireframes/mockups and implementation on the live site. Pay, duration, weekly hours, degree criteria and work mode are absent. Relative five-day label is not a verified original posting date. Official company website corroborates marketplace context only."
+        },
+        {
+          "url": "https://www.nuefind.com/pages/about-us",
+          "label": "Official product/company context",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Marketplace company context only; no separate job or salary inferred."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-nuefind-uiux-intern-4481147403",
+          "title": "UI/UX Intern",
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403",
+          "seniority": "Internship; pay/eligibility to confirm",
+          "location": "Bengaluru, Karnataka, India; work mode not stated",
+          "requirements": [
+            {
+              "id": "f219f7b61a08",
+              "text": "Create website wireframes and mockups in Figma",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403"
+            },
+            {
+              "id": "aa732ef3caaa",
+              "text": "Improve website appearance, usability and flows",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403"
+            },
+            {
+              "id": "04ff02cee5fb",
+              "text": "Implement design changes on the live website; exact technology stack unstated",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403"
+            }
+          ],
+          "evidenceStatus": "Employer-authored LinkedIn detail asks for website redesign, Figma wireframes/mockups and implementation on the live site. Pay, duration, weekly hours, degree criteria and work mode are absent. Relative five-day label is not a verified original posting date. Official company website corroborates marketplace context only."
+        }
+      ]
+    },
+    {
+      "id": "pixster-studio",
+      "name": "Pixster Studio",
+      "company": "Pixster Studio",
+      "companyType": "Product company",
+      "sector": "Consumer mobile applications and design systems",
+      "focus": "Consumer mobile applications and design systems",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested Workable target for consumer mobile applications and design systems. Editable preference/fit suggestion; not hiring probability or an offer.",
+      "careersUrl": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer",
+      "locationNote": "Ahmedabad, Gujarat, India; on-site",
+      "openingStatus": "Original employer detail advertises two on-site Ahmedabad openings. Title says0–1years, while body asks1+years of product/UI-UX experience and counts internships; academic/personal portfolio projects accepted. Neither pay nor original posting date is stated. This experience conflict needs clarification.",
+      "currentOpeningVerified": true,
+      "payNote": "Current listing compensation undisclosed; no reliable role-specific benchmark added. Confirm the actual offer terms.",
+      "payConfidence": "Unconfirmed",
+      "researchedAt": "2026-10-28",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; not additional advertised vacancies.",
+      "contact": {
+        "url": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer",
+        "kind": "Public careers/application route; no recruitment email inferred",
+        "sourceUrl": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer"
+      },
+      "sources": [
+        {
+          "url": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer",
+          "label": "Specific advertised role with caveats",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Original employer detail advertises two on-site Ahmedabad openings. Title says0–1years, while body asks1+years of product/UI-UX experience and counts internships; academic/personal portfolio projects accepted. Neither pay nor original posting date is stated. This experience conflict needs clarification."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-pixster-junior-product-designer",
+          "title": "Product Designer (0–1 years) — junior alternative",
+          "url": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer",
+          "seniority": "Junior / fresher; pay/eligibility to confirm",
+          "location": "Ahmedabad, Gujarat, India; on-site",
+          "requirements": [
+            {
+              "id": "8938fd23c202",
+              "text": "Body asks1+years in product/UI-UX, including internships; title says0–1years: clarify",
+              "sourceUrl": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer"
+            },
+            {
+              "id": "1bdba49e5ad2",
+              "text": "Portfolio may contain academic/personal projects or strong case studies",
+              "sourceUrl": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer"
+            },
+            {
+              "id": "bd5da5db5310",
+              "text": "Figma Auto Layout, components and prototyping; typography and colour fundamentals",
+              "sourceUrl": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer"
+            },
+            {
+              "id": "c9783a6088fe",
+              "text": "iOS/Android/web interfaces, mentored HIG/Material Design, micro-interactions and developer collaboration",
+              "sourceUrl": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer"
+            }
+          ],
+          "evidenceStatus": "Original employer detail advertises two on-site Ahmedabad openings. Title says0–1years, while body asks1+years of product/UI-UX experience and counts internships; academic/personal portfolio projects accepted. Neither pay nor original posting date is stated. This experience conflict needs clarification."
+        }
+      ]
+    },
+    {
+      "id": "sparksupport",
+      "name": "SparkSupport Infotech",
+      "company": "SparkSupport Infotech",
+      "companyType": "Services / technology team",
+      "sector": "Managed IT and software development",
+      "focus": "Managed IT and software development",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Company watchlist only; current evidence does not establish a suitable paid early-career role. Editable suggestion, not hiring odds.",
+      "careersUrl": "https://sparksupport.com/careers/",
+      "locationNote": "Infopark Kochi; on-site six months",
+      "openingStatus": "Infoparks Kerala advert describes a six-month on-site design internship with Company Standard stipend. Original employer careers page explicitly says no job openings. Current intake is unresolved; no active feed card and no claim the advert itself was definitively closed.",
+      "currentOpeningVerified": false,
+      "payNote": "Amount unstated; Company Standard is not a numerical monthly stipend.",
+      "payConfidence": "Limited",
+      "researchedAt": "2026-10-28",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred role families only; not vacancies.",
+      "contact": {
+        "email": "careers@sparksupport.com",
+        "url": "https://sparksupport.com/careers/",
+        "kind": "Published recruitment route; confirm conflicting intake before applying",
+        "sourceUrl": "https://infopark.in/jobs/sparksupport-infotech-pvt-ltd/ui-ux-designer-intern-1"
+      },
+      "sources": [
+        {
+          "url": "https://infopark.in/jobs/sparksupport-infotech-pvt-ltd/ui-ux-designer-intern-1",
+          "label": "Specific role evidence with limitations",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Infoparks Kerala advert describes a six-month on-site design internship with Company Standard stipend. Original employer careers page explicitly says no job openings. Current intake is unresolved; no active feed card and no claim the advert itself was definitively closed."
+        },
+        {
+          "url": "https://sparksupport.com/careers/",
+          "label": "Original careers conflicts with board",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Employer explicitly displays no openings at this time."
+        }
+      ],
+      "roles": [
+        {
+          "id": "sparksupport-design-evidence",
+          "title": "UI/UX Designer Intern — conflicting intake evidence",
+          "url": "https://infopark.in/jobs/sparksupport-infotech-pvt-ltd/ui-ux-designer-intern-1",
+          "seniority": "Company evidence only; not an active internship recommendation",
+          "location": "Infopark Kochi; on-site six months",
+          "requirements": [
+            {
+              "id": "fee15be1b310",
+              "text": "Figma wireframes/prototypes; Photoshop/Illustrator visual assets",
+              "sourceUrl": "https://infopark.in/jobs/sparksupport-infotech-pvt-ltd/ui-ux-designer-intern-1"
+            },
+            {
+              "id": "329aa672bedb",
+              "text": "Completed UI/UX certification preferred",
+              "sourceUrl": "https://infopark.in/jobs/sparksupport-infotech-pvt-ltd/ui-ux-designer-intern-1"
+            },
+            {
+              "id": "f0febce141d8",
+              "text": "Six months on-site in Kochi",
+              "sourceUrl": "https://infopark.in/jobs/sparksupport-infotech-pvt-ltd/ui-ux-designer-intern-1"
+            }
+          ],
+          "evidenceStatus": "Infoparks Kerala advert describes a six-month on-site design internship with Company Standard stipend. Original employer careers page explicitly says no job openings. Current intake is unresolved; no active feed card and no claim the advert itself was definitively closed."
+        }
+      ]
+    },
+    {
+      "id": "nuvento",
+      "name": "Nuvento Systems",
+      "company": "Nuvento Systems",
+      "companyType": "Services / technology team",
+      "sector": "Digital product and software services",
+      "focus": "Digital product and software services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Company watchlist only; current evidence does not establish a suitable paid early-career role. Editable suggestion, not hiring odds.",
+      "careersUrl": "https://nuvento.com/",
+      "locationNote": "Kochi; hybrid",
+      "openingStatus": "Institutional employer advert explicitly specifies three months unpaid; a possible later salary does not make the internship paid. Excluded from active recommendations.",
+      "currentOpeningVerified": false,
+      "payNote": "Explicitly unpaid for three months; below stipend target.",
+      "payConfidence": "Limited",
+      "researchedAt": "2026-10-28",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred role families only; not vacancies.",
+      "contact": {
+        "email": "anindita.ghosal@nuvento.com",
+        "url": "https://infopark.in/jobs/nuvento-systems-private-limited/ui-ux-intern",
+        "kind": "Application inbox published in this role body; not a salary enquiry already sent",
+        "sourceUrl": "https://infopark.in/jobs/nuvento-systems-private-limited/ui-ux-intern"
+      },
+      "sources": [
+        {
+          "url": "https://infopark.in/jobs/nuvento-systems-private-limited/ui-ux-intern",
+          "label": "Specific role evidence with limitations",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Institutional employer advert explicitly specifies three months unpaid; a possible later salary does not make the internship paid. Excluded from active recommendations."
+        }
+      ],
+      "roles": [
+        {
+          "id": "nuvento-design-evidence",
+          "title": "UI/UX Intern — explicitly unpaid",
+          "url": "https://infopark.in/jobs/nuvento-systems-private-limited/ui-ux-intern",
+          "seniority": "Company evidence only; not an active internship recommendation",
+          "location": "Kochi; hybrid",
+          "requirements": [
+            {
+              "id": "83dd36027676",
+              "text": "Relevant study and design portfolio",
+              "sourceUrl": "https://infopark.in/jobs/nuvento-systems-private-limited/ui-ux-intern"
+            },
+            {
+              "id": "15f3e2f12020",
+              "text": "Figma, Adobe XD or Sketch",
+              "sourceUrl": "https://infopark.in/jobs/nuvento-systems-private-limited/ui-ux-intern"
+            },
+            {
+              "id": "f6dacc97b0fc",
+              "text": "Three-month unpaid internship",
+              "sourceUrl": "https://infopark.in/jobs/nuvento-systems-private-limited/ui-ux-intern"
+            }
+          ],
+          "evidenceStatus": "Institutional employer advert explicitly specifies three months unpaid; a possible later salary does not make the internship paid. Excluded from active recommendations."
+        }
+      ]
+    },
+    {
+      "id": "neurai-technologies",
+      "name": "Neurai Technologies",
+      "company": "Neurai Technologies",
+      "companyType": "Product company",
+      "sector": "Creator tools and media products",
+      "focus": "Creator tools and media products",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Company watchlist only; current evidence does not establish a suitable paid early-career role. Editable suggestion, not hiring odds.",
+      "careersUrl": "https://neuraitech.com/careers/",
+      "locationNote": "Remote; India primary focus",
+      "openingStatus": "Indexed original employer detail states15,000INR/month gross for2–3months, plus discretionary performance incentives. Direct detail timed out during this pass; evidence is indexed official text. Lower stipend and mainly social/visual/video scope exclude it from the active UX shortlist.",
+      "currentOpeningVerified": false,
+      "payNote": "Indexed employer15,000INR/month gross; incentives do not raise a guaranteed floor.",
+      "payConfidence": "Limited",
+      "researchedAt": "2026-10-28",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred role families only; not vacancies.",
+      "contact": {
+        "url": "https://neuraitech.com/careers/",
+        "kind": "Public careers/context route; no recruitment email guessed",
+        "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+      },
+      "sources": [
+        {
+          "url": "https://neuraitech.com/careers/design-intern/",
+          "label": "Specific role evidence with limitations",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Indexed original employer detail states15,000INR/month gross for2–3months, plus discretionary performance incentives. Direct detail timed out during this pass; evidence is indexed official text. Lower stipend and mainly social/visual/video scope exclude it from the active UX shortlist."
+        }
+      ],
+      "roles": [
+        {
+          "id": "neurai-technologies-design-evidence",
+          "title": "Design Intern — below-target stipend",
+          "url": "https://neuraitech.com/careers/design-intern/",
+          "seniority": "Company evidence only; not an active internship recommendation",
+          "location": "Remote; India primary focus",
+          "requirements": [
+            {
+              "id": "83e37a579d2e",
+              "text": "College students; no full-time experience required",
+              "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+            },
+            {
+              "id": "0ba307e9c726",
+              "text": "Social creatives, simple layouts and short video edits",
+              "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+            },
+            {
+              "id": "64dfcea1735d",
+              "text": "Two-to-three-month remote internship",
+              "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+            }
+          ],
+          "evidenceStatus": "Indexed original employer detail states15,000INR/month gross for2–3months, plus discretionary performance incentives. Direct detail timed out during this pass; evidence is indexed official text. Lower stipend and mainly social/visual/video scope exclude it from the active UX shortlist."
+        }
+      ],
+      "payBenchmark": {
+        "min": 15000,
+        "max": 15000,
+        "currency": "INR",
+        "period": "month",
+        "role": "Design Intern",
+        "kind": "Employer-listed stipend",
+        "sourceUrl": "https://neuraitech.com/careers/design-intern/",
+        "observedAt": "2026-10-28",
+        "confidence": "Limited: indexed official detail; direct fetch timeout",
+        "note": "Specific visual/media design internship range, below target; not a UX/product-design stipend inference or a received offer."
+      }
+    },
+    {
+      "id": "jio",
+      "name": "Jio",
+      "company": "Jio",
+      "companyType": "Product company",
+      "sector": "Telecommunications and digital products",
+      "focus": "Telecommunications and digital products",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Company watchlist only; current evidence does not establish a suitable paid early-career role. Editable suggestion, not hiring odds.",
+      "careersUrl": "https://careers.jio.com/frmjobdescription.aspx?JBTITLE=LXU8057xFyosevktt8ag2w%3D%3D&funcCode=ni4dknKJ6TY%3D&jbID=cpYnSfK8AcND9rzlh25Ugw%3D%3D",
+      "locationNote": "Bengaluru, Karnataka; employer office location",
+      "openingStatus": "Original posted7October2026. Despite Junior title, body explicitly asks2–6years and B.Tech/B.E with CS/IT/ECE preferred. Not an internship/fresher recommendation.",
+      "currentOpeningVerified": false,
+      "payNote": "Salary not disclosed; no senior or generic company pay substituted.",
+      "payConfidence": "Limited",
+      "researchedAt": "2026-10-28",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred role families only; not vacancies.",
+      "contact": {
+        "url": "https://careers.jio.com/frmjobdescription.aspx?JBTITLE=LXU8057xFyosevktt8ag2w%3D%3D&funcCode=ni4dknKJ6TY%3D&jbID=cpYnSfK8AcND9rzlh25Ugw%3D%3D",
+        "kind": "Public careers/context route; no recruitment email guessed",
+        "sourceUrl": "https://careers.jio.com/frmjobdescription.aspx?JBTITLE=LXU8057xFyosevktt8ag2w%3D%3D&funcCode=ni4dknKJ6TY%3D&jbID=cpYnSfK8AcND9rzlh25Ugw%3D%3D"
+      },
+      "sources": [
+        {
+          "url": "https://careers.jio.com/frmjobdescription.aspx?JBTITLE=LXU8057xFyosevktt8ag2w%3D%3D&funcCode=ni4dknKJ6TY%3D&jbID=cpYnSfK8AcND9rzlh25Ugw%3D%3D",
+          "label": "Specific role evidence with limitations",
+          "checkedAt": "2026-10-28",
+          "evidenceStatus": "Original posted7October2026. Despite Junior title, body explicitly asks2–6years and B.Tech/B.E with CS/IT/ECE preferred. Not an internship/fresher recommendation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "jio-design-evidence",
+          "title": "Junior UI/UX Designer87241396 — experienced requirement",
+          "url": "https://careers.jio.com/frmjobdescription.aspx?JBTITLE=LXU8057xFyosevktt8ag2w%3D%3D&funcCode=ni4dknKJ6TY%3D&jbID=cpYnSfK8AcND9rzlh25Ugw%3D%3D",
+          "seniority": "Company evidence only; not an active internship recommendation",
+          "location": "Bengaluru, Karnataka; employer office location",
+          "requirements": [
+            {
+              "id": "b7e1e37f8d06",
+              "text": "Two-to-six years experience",
+              "sourceUrl": "https://careers.jio.com/frmjobdescription.aspx?JBTITLE=LXU8057xFyosevktt8ag2w%3D%3D&funcCode=ni4dknKJ6TY%3D&jbID=cpYnSfK8AcND9rzlh25Ugw%3D%3D"
+            },
+            {
+              "id": "7874a2559f25",
+              "text": "B.Tech/B.E; CS, IT or ECE preferable",
+              "sourceUrl": "https://careers.jio.com/frmjobdescription.aspx?JBTITLE=LXU8057xFyosevktt8ag2w%3D%3D&funcCode=ni4dknKJ6TY%3D&jbID=cpYnSfK8AcND9rzlh25Ugw%3D%3D"
+            },
+            {
+              "id": "4236a944c84b",
+              "text": "Wireframes, user research, responsive interfaces and usability testing",
+              "sourceUrl": "https://careers.jio.com/frmjobdescription.aspx?JBTITLE=LXU8057xFyosevktt8ag2w%3D%3D&funcCode=ni4dknKJ6TY%3D&jbID=cpYnSfK8AcND9rzlh25Ugw%3D%3D"
+            }
+          ],
+          "evidenceStatus": "Original posted7October2026. Despite Junior title, body explicitly asks2–6years and B.Tech/B.E with CS/IT/ECE preferred. Not an internship/fresher recommendation."
+        }
+      ]
     }
   ],
   "meta": {
-    "researchedAt": "2026-10-27",
+    "researchedAt": "2026-10-28",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 153
+    "directoryCount": 161
   }
 }
