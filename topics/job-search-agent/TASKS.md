@@ -96,3 +96,13 @@
 - [x] Expand company directory to153,keeping historical/unpaid/performance-only/experienced roles separate from active feed.
 - [x] Regenerate Excel/CSV;16 data/model checks,five collector checks,build and preservation audit.
 - [x] Local/live desktop/mobile checks passed; exact data commit aeb4de3 production READY as dpl_CRKAtw1pq27A4BcRG8qSZmtCdoZj. Live JSON/report/CSV/Excel exact matches; protections preserved.
+
+
+##28 October research maintenance
+
+- [x] Search named employer, India-board, social, startup, remote and HN sources with access/zero-result limits.
+- [x] Attempt all59 active primaries; preserve prior records, pay, dates, exclusions, requirement IDs and two archives.
+- [x] Add three internships and one labelled junior alternative on hold; deduplicate Gravity ATS evidence.
+- [x] Expand directory to161; keep conflicting, unpaid, below-target and experienced-only evidence separate.
+- [x] Regenerate Excel/CSV; data/model and five collector checks, build, preservation audit and local desktop/mobile checks.
+- [x] Exact data commit3a7c0d0 production READY as dpl_7fhsaanX8j5YoYFteLRFoYkp9WwL; live JSON/CSV/Excel/report exact matches, desktop/mobile and synthetic preference/history checks passed; protections unchanged.
