@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-10-28",
+  "researchedAt": "2026-10-29",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -3281,6 +3281,12 @@
           "detail": "Employer listing checked directly and corroborated on company product-team page. Pay undisclosed; hold until stipend confirmed.",
           "evidenceStatus": "Official role detail accessible",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://www.project44.com/company/careers/open-roles/job/?detail=8101750",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Matching exact8101750 internship on official employer careers; six months Bengaluru, stipend absent."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -10143,13 +10149,636 @@
           "evidenceStatus": "Original posted7October2026. Despite Junior title, body explicitly asks2–6years and B.Tech/B.E with CS/IT/ECE preferred. Not an internship/fresher recommendation."
         }
       ]
+    },
+    {
+      "id": "fuworx",
+      "name": "Fuworx Innovations",
+      "company": "Fuworx Innovations",
+      "companyType": "Services / technology team",
+      "sector": "Digital engineering and transformation",
+      "focus": "Digital engineering and transformation",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference/fit suggestion for digital engineering and transformation. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://www.fuworx.com/careers/",
+      "locationNote": "Hyderabad, Telangana, India; hybrid",
+      "openingStatus": "Original Open Position list explicitly names UI/UX Designer, Intern and Hybrid (Hyderabad). No numeric stipend, duration, hours, degree criteria or publication/start date. Apply controls do not expose a separate job-detail URL in the reviewed page; a general resume form is available. General info inbox is not a verified recruiting address.",
+      "payNote": "Current fixed stipend not stated; do not infer from company reputation.",
+      "payConfidence": "See source caveats",
+      "currentOpeningVerified": true,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "url": "https://www.fuworx.com/careers/",
+        "email": "info@fuworx.com",
+        "kind": "Published general resume form; email is general company contact, not a stated recruitment inbox",
+        "sourceUrl": "https://www.fuworx.com/careers/"
+      },
+      "sources": [
+        {
+          "url": "https://www.fuworx.com/careers/",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Original Open Position list explicitly names UI/UX Designer, Intern and Hybrid (Hyderabad). No numeric stipend, duration, hours, degree criteria or publication/start date. Apply controls do not expose a separate job-detail URL in the reviewed page; a general resume form is available. General info inbox is not a verified recruiting address."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-fuworx-uiux-intern",
+          "title": "UI/UX Designer — Intern",
+          "url": "https://www.fuworx.com/careers/",
+          "seniority": "Internship; current terms/intake need confirmation",
+          "location": "Hyderabad, Telangana, India; hybrid",
+          "requirements": [
+            {
+              "id": "425a180ae233",
+              "text": "Hybrid Hyderabad internship as listed; detailed skills and degree criteria not published",
+              "sourceUrl": "https://www.fuworx.com/careers/"
+            }
+          ],
+          "evidenceStatus": "Original Open Position list explicitly names UI/UX Designer, Intern and Hybrid (Hyderabad). No numeric stipend, duration, hours, degree criteria or publication/start date. Apply controls do not expose a separate job-detail URL in the reviewed page; a general resume form is available. General info inbox is not a verified recruiting address."
+        }
+      ]
+    },
+    {
+      "id": "paradigm-sports",
+      "name": "Paradigm",
+      "company": "Paradigm",
+      "companyType": "Product company",
+      "sector": "Sports motion-analysis software",
+      "focus": "Sports motion-analysis software",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference/fit suggestion for sports motion-analysis software. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://paradigmsports.app/",
+      "locationNote": "Indiranagar, Bengaluru, Karnataka, India; full-time office",
+      "openingStatus": "YDI advert dated13March2026 lists full-time Bengaluru office and three months. Body stipend30–35kINR/month differs from header30–50k. Employer site inaccessible in this pass; neither range is a verified current offer. Keep older-listing/on_hold until renewed intake and current pay confirmed.",
+      "payNote": "Historical YDI body30–35k/month versus header30–50k; no current employer-confirmed compensation.",
+      "payConfidence": "See source caveats",
+      "currentOpeningVerified": false,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "email": "abeljohnsunil@gmail.com",
+        "url": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs",
+        "kind": "Application email explicitly published by dated advert author; current recruitment activity unconfirmed",
+        "sourceUrl": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs"
+      },
+      "sources": [
+        {
+          "url": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "YDI advert dated13March2026 lists full-time Bengaluru office and three months. Body stipend30–35kINR/month differs from header30–50k. Employer site inaccessible in this pass; neither range is a verified current offer. Keep older-listing/on_hold until renewed intake and current pay confirmed."
+        },
+        {
+          "url": "https://paradigmsports.app/",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Employer site inaccessible through research tool; no current hiring inferred."
+        }
+      ],
+      "roles": [
+        {
+          "id": "ydi-paradigm-uiux-intern-20260313",
+          "title": "UI/UX Design Intern — older advert; intake unconfirmed",
+          "url": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs",
+          "seniority": "Internship; current terms/intake need confirmation",
+          "location": "Indiranagar, Bengaluru, Karnataka, India; full-time office",
+          "requirements": [
+            {
+              "id": "c397564942c5",
+              "text": "UX research, data analysis and independent task ownership",
+              "sourceUrl": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs"
+            },
+            {
+              "id": "f966156d7603",
+              "text": "Strong Figma and design-system execution",
+              "sourceUrl": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs"
+            },
+            {
+              "id": "515848991572",
+              "text": "AI/prompting awareness and some frontend understanding",
+              "sourceUrl": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs"
+            },
+            {
+              "id": "dfec1006b7d2",
+              "text": "Graphic or motion interest; Claude Code and Adobe Creative Suite are bonuses",
+              "sourceUrl": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs"
+            }
+          ],
+          "evidenceStatus": "YDI advert dated13March2026 lists full-time Bengaluru office and three months. Body stipend30–35kINR/month differs from header30–50k. Employer site inaccessible in this pass; neither range is a verified current offer. Keep older-listing/on_hold until renewed intake and current pay confirmed."
+        }
+      ],
+      "payBenchmark": {
+        "min": 30000,
+        "max": 35000,
+        "currency": "INR",
+        "period": "month",
+        "role": "UI/UX Design Intern",
+        "kind": "Historical advertised stipend on job board",
+        "sourceUrl": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs",
+        "observedAt": "2026-10-29",
+        "listingDate": "2026-03-13",
+        "sample": "One dated advert; not a salary-survey sample",
+        "confidence": "Low for current intake/pay",
+        "note": "March2026 body30–35k/month; header30–50k conflict retained. Employer site unavailable. Historical advert, not a current stipend or received offer."
+      }
+    },
+    {
+      "id": "hugohub",
+      "name": "HugoHub / Atlas Consolidated",
+      "company": "HugoHub / Atlas Consolidated",
+      "companyType": "Product company",
+      "sector": "Modular banking platform",
+      "focus": "Modular banking platform",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference/fit suggestion for modular banking platform. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://atlasconsolidatedpteltd.teamtailor.com/jobs",
+      "locationNote": "Hyderabad; historical internships on-site for six months",
+      "openingStatus": "Exact original UX8483276 and UI8495367 pages explicitly say no longer active. Current employer job index lists three other roles, not design internships. Fresh mirror ages and an anonymous35k/month board copy do not revive these vacancies.",
+      "payNote": "No verified current stipend. Anonymous board35k/month claim cannot establish a current employer offer.",
+      "payConfidence": "See source caveats",
+      "currentOpeningVerified": false,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "url": "https://atlasconsolidatedpteltd.teamtailor.com/jobs",
+        "kind": "Public careers route; no recruitment email inferred",
+        "sourceUrl": "https://atlasconsolidatedpteltd.teamtailor.com/jobs"
+      },
+      "sources": [
+        {
+          "url": "https://atlasconsolidatedpteltd.teamtailor.com/jobs/8483276-ux-design-intern",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Exact original UX8483276 and UI8495367 pages explicitly say no longer active. Current employer job index lists three other roles, not design internships. Fresh mirror ages and an anonymous35k/month board copy do not revive these vacancies."
+        },
+        {
+          "url": "https://atlasconsolidatedpteltd.teamtailor.com/jobs/8495367-ui-design-intern",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Original exact UI internship explicitly inactive."
+        },
+        {
+          "url": "https://atlasconsolidatedpteltd.teamtailor.com/jobs",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Three current other-role listings; talent connection is not a vacancy."
+        },
+        {
+          "url": "https://echojobs.io/job/hugohub-ux-design-intern-zlmcy",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Historical matching copy; EchoJobs13October verification and2h age are mirror claims, not original publication/current intake."
+        }
+      ],
+      "roles": [
+        {
+          "id": "hugohub-ux-intern-8483276",
+          "title": "UX Design Intern8483276 — inactive",
+          "url": "https://atlasconsolidatedpteltd.teamtailor.com/jobs/8483276-ux-design-intern",
+          "seniority": "Closed original internship; historical evidence only",
+          "location": "Hyderabad; historical six-month on-site role",
+          "requirements": [
+            {
+              "id": "0ba20c035802",
+              "text": "Historical mirror: Figma, user research and interaction/IA foundations",
+              "sourceUrl": "https://echojobs.io/job/hugohub-ux-design-intern-zlmcy"
+            },
+            {
+              "id": "b6531cee26bd",
+              "text": "Historical mirror: ongoing/recent Design or HCI study preferred",
+              "sourceUrl": "https://echojobs.io/job/hugohub-ux-design-intern-zlmcy"
+            },
+            {
+              "id": "491c75674686",
+              "text": "Historical mirror: six-month Hyderabad office commitment",
+              "sourceUrl": "https://echojobs.io/job/hugohub-ux-design-intern-zlmcy"
+            }
+          ],
+          "evidenceStatus": "Exact original UX8483276 and UI8495367 pages explicitly say no longer active. Current employer job index lists three other roles, not design internships. Fresh mirror ages and an anonymous35k/month board copy do not revive these vacancies."
+        },
+        {
+          "id": "hugohub-ui-intern-8495367",
+          "title": "UI Design Intern8495367 — inactive",
+          "url": "https://atlasconsolidatedpteltd.teamtailor.com/jobs/8495367-ui-design-intern",
+          "seniority": "Closed original internship; no active recommendation",
+          "location": "Hyderabad",
+          "requirements": [],
+          "evidenceStatus": "Original exact page explicitly no longer active."
+        }
+      ],
+      "aliases": [
+        "HugoHub",
+        "Atlas Consolidated Pte. Ltd."
+      ]
+    },
+    {
+      "id": "nngtw-studio",
+      "name": "Nngtw Studio",
+      "company": "Nngtw Studio",
+      "companyType": "Product company",
+      "sector": "Games and interactive applications",
+      "focus": "Games and interactive applications",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference/fit suggestion for games and interactive applications. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://www.nngtw.com/careers",
+      "locationNote": "India remote for advertised internship",
+      "openingStatus": "Advertised India-remote UI/UX internship conflicts with its linked Google form, which redirects to closedform and explicitly no longer accepts responses. Keep company-only pending a working renewed intake; no pay or duration verified.",
+      "payNote": "No stipend stated. Certificate/mentorship are not evidence of pay.",
+      "payConfidence": "Unconfirmed",
+      "currentOpeningVerified": false,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "url": "https://www.nngtw.com/",
+        "email": "hello@nngtw.studio",
+        "kind": "General business/partnership contact on official home, not verified recruitment email",
+        "sourceUrl": "https://www.nngtw.com/"
+      },
+      "sources": [
+        {
+          "url": "https://www.nngtw.com/careers/ui-ux-design-intern",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Role and careers index advertise open UI/UX role; work involves web/mobile/gamified UX."
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScLOwa6O_McDXujdHTrDAmGE-MTUgyVhcUMI2_1h3BVWyhTDA/viewform",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Direct public form redirects to closedform; text explicitly no longer accepting responses."
+        }
+      ],
+      "roles": [
+        {
+          "id": "nngtw-uiux-intern-evidence",
+          "title": "UI/UX Design Intern — application route closed",
+          "url": "https://www.nngtw.com/careers/ui-ux-design-intern",
+          "seniority": "Conflicting current-intake evidence; not active recommendation",
+          "location": "Remote India",
+          "requirements": [
+            {
+              "id": "4d4146e5a03a",
+              "text": "Basic Figma and UI/UX principles",
+              "sourceUrl": "https://www.nngtw.com/careers/ui-ux-design-intern"
+            },
+            {
+              "id": "a7bdd6e46e79",
+              "text": "Attention to detail, feedback and iteration",
+              "sourceUrl": "https://www.nngtw.com/careers/ui-ux-design-intern"
+            },
+            {
+              "id": "1f2c33f3c11b",
+              "text": "Portfolio/personal work, responsive design and AI tools are nice to have",
+              "sourceUrl": "https://www.nngtw.com/careers/ui-ux-design-intern"
+            }
+          ],
+          "evidenceStatus": "Advertised India-remote UI/UX internship conflicts with its linked Google form, which redirects to closedform and explicitly no longer accepts responses. Keep company-only pending a working renewed intake; no pay or duration verified."
+        }
+      ]
+    },
+    {
+      "id": "google-youtube",
+      "name": "Google / YouTube",
+      "company": "Google / YouTube",
+      "companyType": "Product company",
+      "sector": "Video platforms and creator experiences",
+      "focus": "Video platforms and creator experiences",
+      "tier": "Dream",
+      "categorySuggested": "Dream",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Dream preference/fit suggestion for video platforms and creator experiences. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date",
+      "locationNote": "Bengaluru; specific summer2027 cohort",
+      "openingStatus": "Indexed official YouTube summer2027 internship specifies graduation in2028 and returning full-time enrollment. Application window27October–4November2026. Direct employer detail unavailable through research tool; recorded as cohort-specific directory evidence, not a generally eligible internship recommendation.",
+      "payNote": "Salary undisclosed; no current or historical numeric range inferred.",
+      "payConfidence": "See source caveats",
+      "currentOpeningVerified": false,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "url": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date",
+        "kind": "Public careers route; no recruitment email inferred",
+        "sourceUrl": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date"
+      },
+      "sources": [
+        {
+          "url": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Indexed official YouTube summer2027 internship specifies graduation in2028 and returning full-time enrollment. Application window27October–4November2026. Direct employer detail unavailable through research tool; recorded as cohort-specific directory evidence, not a generally eligible internship recommendation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "google-youtube-ux-intern-78252225691820742",
+          "title": "UX Design Intern, Summer2027, YouTube —2028 cohort",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date",
+          "seniority": "Cohort-specific internship; indexed official evidence",
+          "location": "Bengaluru, India",
+          "requirements": [
+            {
+              "id": "f43e95a6623f",
+              "text": "Graduating in2028 from relevant B.Des/M.Des/B.Tech/M.Tech degree",
+              "sourceUrl": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date"
+            },
+            {
+              "id": "3998fa71c615",
+              "text": "Full-time enrollment and return to study after internship",
+              "sourceUrl": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date"
+            },
+            {
+              "id": "0447c8610530",
+              "text": "User interviews/surveys, user-centred design work and portfolio",
+              "sourceUrl": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date"
+            },
+            {
+              "id": "795386ec89cf",
+              "text": "Figma, Framer or similar design tools",
+              "sourceUrl": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date"
+            }
+          ],
+          "evidenceStatus": "Indexed official YouTube summer2027 internship specifies graduation in2028 and returning full-time enrollment. Application window27October–4November2026. Direct employer detail unavailable through research tool; recorded as cohort-specific directory evidence, not a generally eligible internship recommendation."
+        }
+      ],
+      "aliases": [
+        "Google",
+        "YouTube"
+      ]
+    },
+    {
+      "id": "arventiq-labs",
+      "name": "Arventiq Labs",
+      "company": "Arventiq Labs",
+      "companyType": "Product company",
+      "sector": "Education platforms and cybersecurity tools",
+      "focus": "Education platforms and cybersecurity tools",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference/fit suggestion for education platforms and cybersecurity tools. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://arventiqlabs.com/careers",
+      "locationNote": "Bengaluru; on-site/hybrid varies by role",
+      "openingStatus": "Careers index/search mentions UI/UX internships, but normal public site jobs feed currently contains four non-design roles and no UI/UX role. No specific current design opening established. One separate SOC programme has3999INR fee; this does not establish UI/UX fees or compensation.",
+      "payNote": "UI/UX stipend/fees unknown. Do not conflate a separate fee-based SOC programme with design employment.",
+      "payConfidence": "Unconfirmed",
+      "currentOpeningVerified": false,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "url": "https://arventiqlabs.com/careers",
+        "email": "info@arventiqlabs.com",
+        "kind": "General company contact; not a verified UI/UX recruitment route",
+        "sourceUrl": "https://arventiqlabs.com/careers"
+      },
+      "sources": [
+        {
+          "url": "https://arventiqlabs.com/careers",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Index and generic FAQ only; not proof a role is currently accepting."
+        },
+        {
+          "url": "https://arventiq-reviews-api.arventiqlabs.com/v1/jobs",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Careers index/search mentions UI/UX internships, but normal public site jobs feed currently contains four non-design roles and no UI/UX role. No specific current design opening established. One separate SOC programme has3999INR fee; this does not establish UI/UX fees or compensation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "arventiq-uiux-indexed-evidence",
+          "title": "UI/UX internship — index only; not in current public roles feed",
+          "url": "https://arventiqlabs.com/careers",
+          "seniority": "Indexed lead; no current design vacancy confirmed",
+          "location": "Bengaluru; role-specific mode unverified",
+          "requirements": [],
+          "evidenceStatus": "Careers index/search mentions UI/UX internships, but normal public site jobs feed currently contains four non-design roles and no UI/UX role. No specific current design opening established. One separate SOC programme has3999INR fee; this does not establish UI/UX fees or compensation."
+        }
+      ]
+    },
+    {
+      "id": "3di-systems",
+      "name": "3Di Systems",
+      "company": "3Di Systems",
+      "companyType": "Product company",
+      "sector": "Civic technology and community software",
+      "focus": "Civic technology and community software",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference/fit suggestion for civic technology and community software. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://www.3disystems.com/current-job-openings/",
+      "locationNote": "Mumbai/Navi Mumbai and Pune; role-specific work arrangement required",
+      "openingStatus": "Careers landing page has a Junior Product Designer/Mumbai teaser and placeholder apply# link. Linked Current Job Openings has six other roles, no design detail. Placeholder content is not a confirmed new junior vacancy.",
+      "payNote": "No design-role salary verified.",
+      "payConfidence": "Unconfirmed",
+      "currentOpeningVerified": false,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "url": "https://www.3disystems.com/current-job-openings/",
+        "kind": "Public careers route; no recruitment email inferred",
+        "sourceUrl": "https://www.3disystems.com/current-job-openings/"
+      },
+      "sources": [
+        {
+          "url": "https://www.3disystems.com/careers-at-3di/",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Careers landing page has a Junior Product Designer/Mumbai teaser and placeholder apply# link. Linked Current Job Openings has six other roles, no design detail. Placeholder content is not a confirmed new junior vacancy."
+        },
+        {
+          "url": "https://www.3disystems.com/current-job-openings/",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Current openings reviewed; six other advertised roles, no Junior Product Designer detail."
+        }
+      ],
+      "roles": [
+        {
+          "id": "3di-junior-product-design-teaser",
+          "title": "Junior Product Designer — unverified landing-page teaser",
+          "url": "https://www.3disystems.com/careers-at-3di/",
+          "seniority": "Unverified teaser; no active junior recommendation",
+          "location": "Mumbai on teaser; current role location unverified",
+          "requirements": [],
+          "evidenceStatus": "Careers landing page has a Junior Product Designer/Mumbai teaser and placeholder apply# link. Linked Current Job Openings has six other roles, no design detail. Placeholder content is not a confirmed new junior vacancy."
+        }
+      ]
+    },
+    {
+      "id": "unosecur",
+      "name": "Unosecur",
+      "company": "Unosecur",
+      "companyType": "Product company",
+      "sector": "Identity security for human and AI identities",
+      "focus": "Identity security for human and AI identities",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference/fit suggestion for identity security for human and ai identities. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://www.unosecur.com/careers",
+      "locationNote": "Historical internship Bengaluru office; current arrangement unverified",
+      "openingStatus": "Specific indexed Workable Product Design Intern detail returns410Gone. Official careers corroborates identity-security company; linked public ATS is a blank JavaScript response. No renewed design intake established; no claim all company hiring closed.",
+      "payNote": "No current stipend verified; mirror salary/experience metadata not promoted.",
+      "payConfidence": "Unconfirmed",
+      "currentOpeningVerified": false,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "url": "https://www.unosecur.com/careers",
+        "kind": "Public careers route; no recruitment email inferred",
+        "sourceUrl": "https://www.unosecur.com/careers"
+      },
+      "sources": [
+        {
+          "url": "https://jobs.workable.com/view/hi44WzLeFfNqDRnyDhXD2R/product-design-intern-in-bengaluru-at-unosecur",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Exact detail410 overrides stale search snippet."
+        },
+        {
+          "url": "https://www.unosecur.com/careers",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Official identity-security company context; no exact design role established."
+        },
+        {
+          "url": "https://apply.workable.com/unosecur/",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Blank public ATS response, not proof company hiring is closed."
+        }
+      ],
+      "roles": [
+        {
+          "id": "unosecur-design-intern-archived-board",
+          "title": "Product Design Intern — gone indexed detail",
+          "url": "https://jobs.workable.com/view/hi44WzLeFfNqDRnyDhXD2R/product-design-intern-in-bengaluru-at-unosecur",
+          "seniority": "Older/gone board detail; no active recommendation",
+          "location": "Bengaluru; historical on-site listing",
+          "requirements": [
+            {
+              "id": "2ca214fefd5a",
+              "text": "Indexed advert: complex B2B SaaS UX and product design",
+              "sourceUrl": "https://jobs.workable.com/view/hi44WzLeFfNqDRnyDhXD2R/product-design-intern-in-bengaluru-at-unosecur"
+            }
+          ],
+          "evidenceStatus": "Specific indexed Workable Product Design Intern detail returns410Gone. Official careers corroborates identity-security company; linked public ATS is a blank JavaScript response. No renewed design intake established; no claim all company hiring closed."
+        }
+      ]
+    },
+    {
+      "id": "strom-bot",
+      "name": "Strom Bot",
+      "company": "Strom Bot",
+      "companyType": "Product company",
+      "sector": "Discord management dashboards and community tools",
+      "focus": "Discord management dashboards and community tools",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference/fit suggestion for discord management dashboards and community tools. Not a hiring probability, confirmed vacancy or offer.",
+      "careersUrl": "https://www.strombot.com/careers/ui-ux-design-intern",
+      "locationNote": "Remote; published2025/2026 computer-stream graduate restriction",
+      "openingStatus": "Original role header explicitly Volunteer and Unpaid, posted27June2026. Body mentions skill/output-based stipend without guaranteed amount, which conflicts with unpaid header. Not a qualifying paid internship.",
+      "payNote": "Explicit unpaid/volunteer header; conditional body wording is not a guaranteed stipend.",
+      "payConfidence": "Unconfirmed",
+      "currentOpeningVerified": false,
+      "researchedAt": "2026-10-29",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised openings.",
+      "contact": {
+        "url": "https://www.strombot.com/careers/ui-ux-design-intern",
+        "kind": "Public careers route; no recruitment email inferred",
+        "sourceUrl": "https://www.strombot.com/careers/ui-ux-design-intern"
+      },
+      "sources": [
+        {
+          "url": "https://www.strombot.com/careers/ui-ux-design-intern",
+          "label": "Public source evidence with limits",
+          "checkedAt": "2026-10-29",
+          "evidenceStatus": "Original role header explicitly Volunteer and Unpaid, posted27June2026. Body mentions skill/output-based stipend without guaranteed amount, which conflicts with unpaid header. Not a qualifying paid internship."
+        }
+      ],
+      "roles": [
+        {
+          "id": "strombot-uiux-intern-unpaid",
+          "title": "UI/UX Design Intern — unpaid/volunteer",
+          "url": "https://www.strombot.com/careers/ui-ux-design-intern",
+          "seniority": "Unpaid internship; excluded from paid shortlist",
+          "location": "Remote; India eligibility not separately verified",
+          "requirements": [
+            {
+              "id": "87da5cdf9920",
+              "text": "2025/2026 Computer Science, IT or related graduate",
+              "sourceUrl": "https://www.strombot.com/careers/ui-ux-design-intern"
+            },
+            {
+              "id": "a6fa29b69f72",
+              "text": "Figma, responsive design and design portfolio/coursework",
+              "sourceUrl": "https://www.strombot.com/careers/ui-ux-design-intern"
+            },
+            {
+              "id": "8c117eac22d4",
+              "text": "Full-time remote availability",
+              "sourceUrl": "https://www.strombot.com/careers/ui-ux-design-intern"
+            }
+          ],
+          "evidenceStatus": "Original role header explicitly Volunteer and Unpaid, posted27June2026. Body mentions skill/output-based stipend without guaranteed amount, which conflicts with unpaid header. Not a qualifying paid internship."
+        }
+      ]
     }
   ],
   "meta": {
-    "researchedAt": "2026-10-28",
+    "researchedAt": "2026-10-29",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 161
+    "directoryCount": 170
   }
 }
