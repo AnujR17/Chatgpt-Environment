@@ -106,3 +106,13 @@
 - [x] Expand directory to161; keep conflicting, unpaid, below-target and experienced-only evidence separate.
 - [x] Regenerate Excel/CSV; data/model and five collector checks, build, preservation audit and local desktop/mobile checks.
 - [x] Exact data commit3a7c0d0 production READY as dpl_7fhsaanX8j5YoYFteLRFoYkp9WwL; live JSON/CSV/Excel/report exact matches, desktop/mobile and synthetic preference/history checks passed; protections unchanged.
+
+
+##29 October research maintenance
+
+- [x] Search named employer,India-board,public social,startup,remote and HN sources; preserve exact access and zero-result caveats.
+- [x] Attempt all63 active primaries; review nine role terms,retain two archives,prior IDs/pay/stages/dates/requirements and source history.
+- [x] Add Fuworx and older Paradigm on hold; preserve annual units and label historical/repost dates.
+- [x] Add nine company targets with closed/unpaid/cohort/programme/placeholder distinctions; deduplicate project44 employer requisition.
+- [x] Regenerate Excel/CSV; data/model and five collector checks,build,preservation audit and local desktop/mobile synthetic-state checks.
+- [x] Exact b01d18e production READY as dpl_6YXkBenK5GdoUGcMAfcj3TcgMWcQ;live JSON/CSV/Excel/report exact matches,desktop/mobile and synthetic-state checks passed; protections unchanged.
