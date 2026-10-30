@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-10-29",
+  "researchedAt": "2026-10-30",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -7261,20 +7261,38 @@
       "rationale": "Suggested employer target based on a published early-career role; no hiring probability implied.",
       "careersUrl": "https://jobs.revvity.com/job/thane/ux-intern/20539/102245859808",
       "locationNote": "Thane / Mumbai, Maharashtra; employer pages use both locations",
-      "openingStatus": "Advertised role; eligibility, pay and intake need review",
+      "openingStatus": "Retained UX internship original removed; replacement unverified",
       "payNote": "Life-sciences software UX internship spanning research and design. Stipend, duration and intake timing require confirmation.",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred families; only the named role is evidenced.",
-      "researchedAt": "2026-10-25",
+      "researchedAt": "2026-10-30",
       "sources": [
         {
           "url": "https://jobs.revvity.com/job/thane/ux-intern/20539/102245859808",
           "label": "Original employer/ATS role",
           "evidenceStatus": "Official careers detail lists JR-045767 and links the Workday application plus a mandatory Microsoft questionnaire. Both steps are required. Workday was not accessible through the research tool; no submission flow tested. Unstop lists 5 November while another mirror gives 7 December; neither is an employer-confirmed deadline.",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "url": "https://jobs.revvity.com/job/thane/ux-intern/20539/102245859808",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Original detail repeatedlyHTTP404 and official requisition search JR-045767 returned0results30October. Retired as removed original, not claimed filled. Cached research extract still shows old JD. Workday public detail403 means replacement availability unresolved. History/IDs retained; browser-local saved stage overrides feed status."
+        },
+        {
+          "url": "https://jobs.revvity.com/search-jobs/JR-045767/",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Fresh official search returned200 and0results for exact requisition. Together with repeated original404 supports original removal; not proof position filled."
+        },
+        {
+          "url": "https://revvity.wd103.myworkdayjobs.com/wday/cxs/revvity/External/job/Mumbai/UX-Intern_JR-045767",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Normal public detail request403 permission denied; no retry/bypass, no current replacement intake established."
         }
       ],
       "contact": {
@@ -7312,7 +7330,7 @@
               "sourceUrl": "https://jobs.revvity.com/job/thane/ux-intern/20539/102245859808"
             }
           ],
-          "evidenceStatus": "Official careers detail lists JR-045767 and links the Workday application plus a mandatory Microsoft questionnaire. Both steps are required. Workday was not accessible through the research tool; no submission flow tested. Unstop lists 5 November while another mirror gives 7 December; neither is an employer-confirmed deadline."
+          "evidenceStatus": "Official careers detail lists JR-045767 and links the Workday application plus a mandatory Microsoft questionnaire. Both steps are required. Workday was not accessible through the research tool; no submission flow tested. Unstop lists 5 November while another mirror gives 7 December; neither is an employer-confirmed deadline. Original detail repeatedlyHTTP404 and official requisition search JR-045767 returned0results30October. Retired as removed original, not claimed filled. Cached research extract still shows old JD. Workday public detail403 means replacement availability unresolved. History/IDs retained; browser-local saved stage overrides feed status."
         }
       ]
     },
@@ -10772,13 +10790,456 @@
           "evidenceStatus": "Original role header explicitly Volunteer and Unpaid, posted27June2026. Body mentions skill/output-based stipend without guaranteed amount, which conflicts with unpaid header. Not a qualifying paid internship."
         }
       ]
+    },
+    {
+      "id": "theinterviews",
+      "name": "TheInterviews",
+      "company": "TheInterviews",
+      "companyType": "Product company",
+      "sector": "Voice AI interviews and hiring software",
+      "focus": "Voice AI interviews and hiring software",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on published product or UX work and location; no hiring probability or offer implied.",
+      "careersUrl": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
+      "locationNote": "Remote within India; Hyderabad hybrid/office optional",
+      "payNote": "Paid internship; numeric stipend not published and set at offer.",
+      "openingStatus": "Current employer role; pay, engagement and exact start require confirmation",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-30",
+      "sources": [
+        {
+          "url": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Original200 detail: paid, approximately12weeks,20–40hours/week,November/December2026 start. Remote India or optional Hyderabad office;2–3hours evening IST overlap. Direct contract with TheInterviews Inc.(Delaware), no Indian subsidiary. Stipend depends on hours/experience and is not numerically stated. Intake/start and college acceptance still need confirmation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-theinterviews-product-design-intern-ux-accessibility",
+          "title": "Product Design Intern — UX/UI and Accessibility",
+          "url": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
+          "seniority": "Internship",
+          "location": "Remote within India; Hyderabad hybrid/office optional",
+          "requirements": [
+            {
+              "id": "aab256f4984d",
+              "text": "Students/recent graduates welcome; portfolio should explain process and iteration",
+              "sourceUrl": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india"
+            },
+            {
+              "id": "881f07a8b14b",
+              "text": "Figma and visual/interaction foundations; feedback and weekly iteration",
+              "sourceUrl": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india"
+            },
+            {
+              "id": "04e2392d1269",
+              "text": "Accessibility checks for keyboard, screen reader, contrast and mobile; component/token work mapped to Tailwind",
+              "sourceUrl": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india"
+            },
+            {
+              "id": "4f33ce3cce8b",
+              "text": "Research/analytics and developer handoff; HTML/CSS/React are bonuses",
+              "sourceUrl": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india"
+            }
+          ],
+          "evidenceStatus": "Original200 detail: paid, approximately12weeks,20–40hours/week,November/December2026 start. Remote India or optional Hyderabad office;2–3hours evening IST overlap. Direct contract with TheInterviews Inc.(Delaware), no Indian subsidiary. Stipend depends on hours/experience and is not numerically stated. Intake/start and college acceptance still need confirmation.",
+          "jobId": "careers-theinterviews-product-design-intern-ux-accessibility"
+        }
+      ],
+      "contact": {
+        "url": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
+        "kind": "Published role application form / optional AI-interview route; not initiated",
+        "sourceUrl": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india"
+      },
+      "evidenceConfidence": "High for original role terms; pay amount and final intake unconfirmed."
+    },
+    {
+      "id": "humanx",
+      "name": "HumanX",
+      "company": "HumanX",
+      "companyType": "UX/product studio",
+      "sector": "Behaviour-led digital product design consultancy",
+      "focus": "Behaviour-led digital product design consultancy",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on published product or UX work and location; no hiring probability or offer implied.",
+      "careersUrl": "https://www.humanx.io/join-the-team",
+      "locationNote": "Mumbai internship; junior header Mumbai/body Bengaluru conflict. Work mode unstated.",
+      "payNote": "No numerical pay in either original role.",
+      "openingStatus": "Two advertised early-career roles; pay/start/locations require confirmation",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-30",
+      "sources": [
+        {
+          "url": "https://www.humanx.io/join-the-team",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Official team index links Product Design Intern and Product Designer1–2years. talent@humanx.io is general recruitment/speculative-interest contact, not contacted."
+        },
+        {
+          "url": "https://www.humanx.io/job-roles/product-design-intern",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Original role: Mumbai,3–6months,0–1years. Student/personal work and self-taught candidates welcome. Pay, posting date, start/cohort and work mode absent. Linked RecruitCRM application could not be read through research tool; no form submitted."
+        },
+        {
+          "url": "https://www.humanx.io/job-roles/product-designer-1",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Original full-time role requires1–2years; junior/stretch alternative, not an internship or assured fresher eligibility. Header says Mumbai, body says Bengaluru. Pay/start/work mode unstated. Linked RecruitCRM application restricted to research tool."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-humanx-product-design-intern",
+          "title": "Product Design Intern",
+          "url": "https://www.humanx.io/job-roles/product-design-intern",
+          "seniority": "Internship",
+          "location": "Mumbai, Maharashtra, India; work mode unstated",
+          "requirements": [
+            {
+              "id": "b4d42f113499",
+              "text": "Portfolio including student or personal design work;0–1years",
+              "sourceUrl": "https://www.humanx.io/job-roles/product-design-intern"
+            },
+            {
+              "id": "2dc7278dfb0b",
+              "text": "Research/data/behaviour synthesis into problem statements, journeys and prototypes",
+              "sourceUrl": "https://www.humanx.io/job-roles/product-design-intern"
+            },
+            {
+              "id": "a12b7efd7972",
+              "text": "Strong aesthetics, attention to detail, collaboration and presenting design decisions",
+              "sourceUrl": "https://www.humanx.io/job-roles/product-design-intern"
+            },
+            {
+              "id": "c1bf2706b03a",
+              "text": "Motion, illustration and advanced prototyping are bonuses",
+              "sourceUrl": "https://www.humanx.io/job-roles/product-design-intern"
+            }
+          ],
+          "evidenceStatus": "Original role: Mumbai,3–6months,0–1years. Student/personal work and self-taught candidates welcome. Pay, posting date, start/cohort and work mode absent. Linked RecruitCRM application could not be read through research tool; no form submitted.",
+          "jobId": "careers-humanx-product-design-intern"
+        },
+        {
+          "id": "careers-humanx-product-designer-1-2years",
+          "title": "Product Designer — junior/stretch,1–2years required",
+          "url": "https://www.humanx.io/job-roles/product-designer-1",
+          "seniority": "Junior / fresher",
+          "location": "Mumbai header / Bengaluru body; employer location conflict",
+          "requirements": [
+            {
+              "id": "b48ab96435c1",
+              "text": "1–2years required; do not assume zero-experience or student eligibility",
+              "sourceUrl": "https://www.humanx.io/job-roles/product-designer-1"
+            },
+            {
+              "id": "23abf8d2a719",
+              "text": "Develop ideas into prototypes, including no-code/lightweight code",
+              "sourceUrl": "https://www.humanx.io/job-roles/product-designer-1"
+            },
+            {
+              "id": "71af42ed19f1",
+              "text": "Synthesize research/data into product problems and vision",
+              "sourceUrl": "https://www.humanx.io/job-roles/product-designer-1"
+            },
+            {
+              "id": "aed777260339",
+              "text": "Present product stories and work with technical teams",
+              "sourceUrl": "https://www.humanx.io/job-roles/product-designer-1"
+            }
+          ],
+          "evidenceStatus": "Original full-time role requires1–2years; junior/stretch alternative, not an internship or assured fresher eligibility. Header says Mumbai, body says Bengaluru. Pay/start/work mode unstated. Linked RecruitCRM application restricted to research tool.",
+          "jobId": "careers-humanx-product-designer-1-2years"
+        }
+      ],
+      "contact": {
+        "email": "talent@humanx.io",
+        "kind": "General recruitment / speculative interest",
+        "sourceUrl": "https://www.humanx.io/join-the-team"
+      },
+      "evidenceConfidence": "High for original role requirements; pay/start unconfirmed and junior location conflicts."
+    },
+    {
+      "id": "tensorgo",
+      "name": "TensorGo",
+      "company": "TensorGo",
+      "companyType": "Product company",
+      "sector": "AI and computer-vision platform",
+      "focus": "AI and computer-vision platform",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on published product or UX work and location; no hiring probability or offer implied.",
+      "careersUrl": "https://www.tensorgo.com/careers/",
+      "locationNote": "Hyderabad; historical design internship work from office",
+      "payNote": "Current stipend undisclosed. Historical role-specific report is below30k target and not current pay.",
+      "openingStatus": "Historical Indeed advert conflicts with410 original; renewed intake unverified",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-30",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=5e25dd89f059fecc",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Indeed exact detail still readable: PDI282506,body Posted22August2026,Hyderabad office6months,0–1years; no pay. Original employer detail410; not verified active."
+        },
+        {
+          "url": "https://tensorgo.com/job-type/pdi282506/",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Repeated fresh originalHTTP410Gone. Current careers page is JavaScript shell; site migration possible, so no company-wide closure inferred. Accessible Indeed advert does not establish renewed intake."
+        },
+        {
+          "url": "https://www.tensorgo.com/careers/",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Fresh careers200 response is a JavaScript shell; current product-design intake not established."
+        },
+        {
+          "url": "https://www.glassdoor.co.in/Salary/TensorGo-Technologies-UX-Product-Designer-Intern-Salaries-E4412050_DAO.htm?filter.jobTitleExact=UX%2FProduct+Designer+Intern",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Role-specific public Glassdoor table: one report1June2023,Hyderabad0–1years,23–27kINR/month. Low-confidence historical benchmark; modeled header differs, not current listing pay."
+        }
+      ],
+      "roles": [
+        {
+          "id": "tensorgo-pdi282506",
+          "title": "Product Design Intern — original removed",
+          "url": "https://tensorgo.com/job-type/pdi282506/",
+          "seniority": "Historical / original removed",
+          "location": "Hyderabad, Telangana; office",
+          "requirements": [
+            {
+              "id": "59d05d14b34c",
+              "text": "Historical advert:0–1years and six-month office availability",
+              "sourceUrl": "https://tensorgo.com/job-type/pdi282506/"
+            },
+            {
+              "id": "e3097a07a787",
+              "text": "Historical advert: user flows, wireframes, UI and developer handoff",
+              "sourceUrl": "https://tensorgo.com/job-type/pdi282506/"
+            }
+          ],
+          "evidenceStatus": "Repeated fresh originalHTTP410Gone. Current careers page is JavaScript shell; site migration possible, so no company-wide closure inferred. Accessible Indeed advert does not establish renewed intake."
+        }
+      ],
+      "payBenchmark": {
+        "min": 23000,
+        "max": 27000,
+        "currency": "INR",
+        "period": "month",
+        "role": "UX/Product Designer Intern",
+        "kind": "Historical self-reported salary",
+        "sourceUrl": "https://www.glassdoor.co.in/Salary/TensorGo-Technologies-UX-Product-Designer-Intern-Salaries-E4412050_DAO.htm?filter.jobTitleExact=UX%2FProduct+Designer+Intern",
+        "observedAt": "2026-10-30",
+        "reportedAt": "2023-06-01",
+        "sampleSize": 1,
+        "sample": "One Hyderabad0–1year report submitted1June2023",
+        "confidence": "Low",
+        "note": "Visible one-report table23–27k/month; modeled header differs(24–26k). Historical/self-reported, not a current stipend or offer; does not establish30k."
+      },
+      "evidenceConfidence": "Low for current intake; repeated410 original and stale Indeed conflict. Historical salary sample low confidence."
+    },
+    {
+      "id": "xcube-labs",
+      "name": "[x]cube LABS / PurpleTalk",
+      "company": "[x]cube LABS / PurpleTalk",
+      "companyType": "Services / product engineering",
+      "sector": "Digital product engineering and UX services",
+      "focus": "Digital product engineering and UX services",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on published product or UX work and location; no hiring probability or offer implied.",
+      "careersUrl": "https://jobs.klimb.io/purpletalk?department=design&source=google_jobs",
+      "locationNote": "Hyderabad; no remote permission established",
+      "payNote": "Internship pay unstated; no qualifying numerical stipend established.",
+      "openingStatus": "Internship detail retained, but linked application explicitly not accepting",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-30",
+      "sources": [
+        {
+          "url": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f?source=careers",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "ATS detail KL-85UMEFA9 remains readable:3months,0–1years, pay/date unknown. Linked application explicitly says not accepting applications; not an active feed recommendation."
+        },
+        {
+          "url": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f/apply?source=careers",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Original application says currently not accepting applications. CAPTCHA not entered/bypassed."
+        }
+      ],
+      "roles": [
+        {
+          "id": "xcube-labs-kl-85umefa9",
+          "title": "Intern — UI/UX, applications not accepting",
+          "url": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f?source=careers",
+          "seniority": "Internship — application closed",
+          "location": "Hyderabad, Telangana, India",
+          "requirements": [
+            {
+              "id": "619b9dc55b57",
+              "text": "0–1years; any graduation/PG/doctorate listed, current-student eligibility unconfirmed",
+              "sourceUrl": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f?source=careers"
+            },
+            {
+              "id": "d948af800ce7",
+              "text": "Figma/XD/Sketch, research, wireframes, prototypes and design systems",
+              "sourceUrl": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f?source=careers"
+            },
+            {
+              "id": "9a61f3f21aee",
+              "text": "Photoshop, Illustrator and After Effects training a bonus",
+              "sourceUrl": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f?source=careers"
+            }
+          ],
+          "evidenceStatus": "ATS detail KL-85UMEFA9 remains readable:3months,0–1years, pay/date unknown. Linked application explicitly says not accepting applications; not an active feed recommendation."
+        }
+      ],
+      "contact": {
+        "email": "alphateam@xcubelabs.com",
+        "kind": "Published careers questions contact",
+        "sourceUrl": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f?source=careers"
+      },
+      "evidenceConfidence": "High for not-accepting application-page observation; future intake/pay unconfirmed."
+    },
+    {
+      "id": "archinza",
+      "name": "Archinza",
+      "company": "Archinza",
+      "companyType": "Product company",
+      "sector": "AI search and business tools for design industry",
+      "focus": "AI search and business tools for design industry",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on published product or UX work and location; no hiring probability or offer implied.",
+      "careersUrl": "https://wellfound.com/jobs/4639779-ux-design-intern",
+      "locationNote": "Remote Everywhere on Wellfound; company New Delhi",
+      "payNote": "Visible5–10kINR header omits period; structured metadata explicitly YEAR. Anomalous and below target as written, not monthly stipend.",
+      "openingStatus": "Advertised UX intern; pay-unit conflict/low amount excludes qualifying recommendation",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-30",
+      "sources": [
+        {
+          "url": "https://wellfound.com/jobs/4639779-ux-design-intern",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Original Wellfound detail readable, relative age2months not an absolute publication date. Header5–10kINR lacks period; fetched JSON-LD baseSalary specifies YEAR. Do not silently reinterpret as monthly. Pay/error needs employer clarification; not stipend match."
+        },
+        {
+          "url": "https://archinza.com",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Official product website linked from employer job description; product context only, not additional vacancy evidence."
+        }
+      ],
+      "roles": [
+        {
+          "id": "wellfound-archinza-4639779",
+          "title": "UX Design Intern — compensation unit unresolved",
+          "url": "https://wellfound.com/jobs/4639779-ux-design-intern",
+          "seniority": "Internship — below-target / unit conflict",
+          "location": "Remote Everywhere",
+          "requirements": [
+            {
+              "id": "94b082046fc5",
+              "text": "No experience stated; Figma, research, prototyping and design systems",
+              "sourceUrl": "https://wellfound.com/jobs/4639779-ux-design-intern"
+            }
+          ],
+          "evidenceStatus": "Original Wellfound detail readable, relative age2months not an absolute publication date. Header5–10kINR lacks period; fetched JSON-LD baseSalary specifies YEAR. Do not silently reinterpret as monthly. Pay/error needs employer clarification; not stipend match."
+        }
+      ],
+      "evidenceConfidence": "High for as-written YEAR metadata; low for intended compensation accuracy or qualifying stipend."
+    },
+    {
+      "id": "growth-gravy",
+      "name": "Growth Gravy",
+      "company": "Growth Gravy",
+      "companyType": "Services / digital agency",
+      "sector": "Digital marketing, websites and UI/UX",
+      "focus": "Digital marketing, websites and UI/UX",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on published product or UX work and location; no hiring probability or offer implied.",
+      "careersUrl": "https://careers.growthgravy.com/",
+      "locationNote": "Panjim/Goa; work-from-home depends on role, not established for UX",
+      "payNote": "No UI/UX stipend or salary confirmed.",
+      "openingStatus": "Generic employer UI/UX Designer opening; broad board internship intake unconfirmed",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-10-30",
+      "sources": [
+        {
+          "url": "https://careers.growthgravy.com/",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "Public research extract lists UI/UX Designer; pay/seniority/detailed current internship not established. Normal HTTP request encountered CAPTCHA redirect shell; no bypass. Work-from-home FAQ is role-dependent."
+        },
+        {
+          "url": "https://startupgoa.org/job/growth-gravy-goa-internship-internships-in-goa-multiple-positions/",
+          "label": "Public source observation",
+          "checkedAt": "2026-10-30",
+          "evidenceStatus": "StartupGoa broad multi-position internship advert includes UI/UX Intern; no original date, pay, UX-specific requirements or current cohort verified. Company-only discovery, not an inferred active internship."
+        }
+      ],
+      "roles": [
+        {
+          "id": "startupgoa-growth-gravy-uiux-intern",
+          "title": "UI/UX Intern — general programme/intake unconfirmed",
+          "url": "https://startupgoa.org/job/growth-gravy-goa-internship-internships-in-goa-multiple-positions/",
+          "seniority": "Indexed / general internship programme",
+          "location": "Panjim, Goa",
+          "requirements": [],
+          "evidenceStatus": "StartupGoa broad multi-position internship advert includes UI/UX Intern; no original date, pay, UX-specific requirements or current cohort verified. Company-only discovery, not an inferred active internship."
+        }
+      ],
+      "contact": {
+        "email": "hr@growthgravy.com",
+        "kind": "Published general/speculative recruitment for unmatched positions",
+        "sourceUrl": "https://startupgoa.org/job/growth-gravy-goa-internship-internships-in-goa-multiple-positions/"
+      },
+      "evidenceConfidence": "Low for current UX internship intake; generic programme and role teaser only."
     }
   ],
   "meta": {
-    "researchedAt": "2026-10-29",
+    "researchedAt": "2026-10-30",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 170
+    "directoryCount": 176
   }
 }
