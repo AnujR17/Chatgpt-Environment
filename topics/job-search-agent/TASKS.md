@@ -116,3 +116,13 @@
 - [x] Add nine company targets with closed/unpaid/cohort/programme/placeholder distinctions; deduplicate project44 employer requisition.
 - [x] Regenerate Excel/CSV; data/model and five collector checks,build,preservation audit and local desktop/mobile synthetic-state checks.
 - [x] Exact b01d18e production READY as dpl_6YXkBenK5GdoUGcMAfcj3TcgMWcQ;live JSON/CSV/Excel/report exact matches,desktop/mobile and synthetic-state checks passed; protections unchanged.
+
+
+##30 October research maintenance
+
+- [x] Search named employer,India-board,social,startup,remote and HN sources;record exact sample/access/zero-result limits and StartupGoa discovery.
+- [x] Attempt all65active originals;review seven retained terms;retire Revvity original using404+official0results;leave Moonfire maintenance unresolved.
+- [x] Add TheInterviews/HumanX two internships and HumanX1–2year junior/stretch on hold;no invented stipend/offer/date.
+- [x] Add six company targets with removed-original,application-not-accepting,historical salary,annual-unit conflict and general programme distinctions.
+- [x] Preserve prior stable records/source/requirement IDs,review queue and browser-private separation;regenerate Excel/CSV and pass required checks/local QA.
+- [x] Exact e5c7fca production READY as dpl_FRpu5u4GZifKRDvrq2t9Ts8F2TdT;seven live files exact matches,desktop/mobile/synthetic-state checks passed;protection unchanged.
