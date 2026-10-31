@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-10-30",
+  "researchedAt": "2026-10-31",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -1062,7 +1062,7 @@
       "payLabel": "Pay needs confirmation",
       "payBenchmark": null,
       "paySources": [],
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-10-31",
       "currentOpeningVerified": false,
       "companyType": "Design studio",
       "likelyRoles": [
@@ -1075,6 +1075,12 @@
           "url": "https://www.zunderdog.com/careers",
           "label": "Previously researched careers route",
           "evidenceStatus": "Retained prior research; not rechecked in this expansion"
+        },
+        {
+          "url": "https://www.zunderdog.com/careers",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Fresh employer careers page explicitly says not hiring now and applications closed while shortlisting. Both exact retained design detail URLs404. Public research cache/crossposts still expose old jobs; fresh employer closure takes precedence. Retired stable records, not claimed filled; browser-local saved application stages/history remain separate."
         }
       ],
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
@@ -1086,7 +1092,7 @@
           "url": "https://www.zunderdog.com/careers/ui-ux-design-intern-pune",
           "location": "Pune; remote for now",
           "seniority": "Internship",
-          "evidenceStatus": "Official role and application form accessible. Employer prefers candidates in or near Pune. Remote arrangement is temporary; no promise of permanent remote. Application form not submitted.",
+          "evidenceStatus": "Official role and application form accessible. Employer prefers candidates in or near Pune. Remote arrangement is temporary; no promise of permanent remote. Application form not submitted. Fresh employer careers page explicitly says not hiring now and applications closed while shortlisting. Both exact retained design detail URLs404. Public research cache/crossposts still expose old jobs; fresh employer closure takes precedence. Retired stable records, not claimed filled; browser-local saved application stages/history remain separate.",
           "requirements": [
             {
               "id": "listing-summary",
@@ -1102,7 +1108,7 @@
           "url": "https://www.zunderdog.com/careers/ui-ux-designer-fresher-pune",
           "location": "Pune; remote for now",
           "seniority": "Junior / fresher",
-          "evidenceStatus": "Official role and application form accessible; Indeed discovery was a search result, not a uniquely verified job-detail URL. Employer prefers Pune or nearby candidates; current remote arrangement may change.",
+          "evidenceStatus": "Official role and application form accessible; Indeed discovery was a search result, not a uniquely verified job-detail URL. Employer prefers Pune or nearby candidates; current remote arrangement may change. Fresh employer careers page explicitly says not hiring now and applications closed while shortlisting. Both exact retained design detail URLs404. Public research cache/crossposts still expose old jobs; fresh employer closure takes precedence. Retired stable records, not claimed filled; browser-local saved application stages/history remain separate.",
           "requirements": [
             {
               "id": "listing-summary",
@@ -1111,7 +1117,8 @@
             }
           ]
         }
-      ]
+      ],
+      "openingStatus": "Employer closed applications while shortlisting; retained design roles archived"
     },
     {
       "id": "keyideas-infotech",
@@ -8694,6 +8701,12 @@
           "label": "26October employer role check",
           "checkedAt": "2026-10-26",
           "evidenceStatus": "Employer Freshteam detail and application form accessible; students in any year or graduates accepted. Financial compensation promised without amount. No reliable original date, start window or explicit remote arrangement. Original Freshteam captcha/form was not submitted or bypassed."
+        },
+        {
+          "url": "https://androcid.freshteam.com/jobs/_KvFSyux1O8C/ui-ux-design-intern",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Retained original Freshteam role reviewed:three months,students any year/freshers,financial compensation without amount. Start and office/remote terms still unconfirmed. Prior requirement IDs unchanged."
         }
       ],
       "roles": [
@@ -8739,7 +8752,7 @@
       "openingStatus": "Employer Freshteam detail and application form accessible; students in any year or graduates accepted. Financial compensation promised without amount. No reliable original date, start window or explicit remote arrangement. Original Freshteam captcha/form was not submitted or bypassed.",
       "payNote": "Stipend amount not stated; no qualifying monthly payment established.",
       "currentOpeningVerified": true,
-      "researchedAt": "2026-10-26"
+      "researchedAt": "2026-10-31"
     },
     {
       "id": "sola",
@@ -11233,13 +11246,666 @@
         "sourceUrl": "https://startupgoa.org/job/growth-gravy-goa-internship-internships-in-goa-multiple-positions/"
       },
       "evidenceConfidence": "Low for current UX internship intake; generic programme and role teaser only."
+    },
+    {
+      "id": "storestory",
+      "name": "StoreStory",
+      "company": "StoreStory",
+      "companyType": "Product company",
+      "sector": "E-commerce software for Indian merchants",
+      "focus": "E-commerce software for Indian merchants",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://storestory.in/careers",
+      "locationNote": "Pune, Maharashtra; hybrid",
+      "payNote": "Intern stipend unpublished.",
+      "openingStatus": "Named Product Design Intern on employer careers index",
+      "evidenceConfidence": "High for named original role; pay, duration and intake unconfirmed.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://storestory.in/careers",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Original careers page explicitly lists Product Design Intern, Pune hybrid, and careers@storestory.in. This is a named role within the index, not an inferred vacancy from a generic careers page. Pay, duration, degree criteria, posting date and start absent."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-storestory-product-design-intern",
+          "title": "Product Design Intern",
+          "url": "https://storestory.in/careers",
+          "seniority": "Internship",
+          "location": "Pune, Maharashtra; hybrid",
+          "requirements": [
+            {
+              "id": "04b61e6685b0",
+              "text": "Research merchant workflows",
+              "sourceUrl": "https://storestory.in/careers"
+            },
+            {
+              "id": "53e874aa1a2b",
+              "text": "Prototype product experiences and contribute to the StoreStory design system",
+              "sourceUrl": "https://storestory.in/careers"
+            },
+            {
+              "id": "01bd3145c600",
+              "text": "Application asks for a short introduction and links to work",
+              "sourceUrl": "https://storestory.in/careers"
+            }
+          ],
+          "evidenceStatus": "Original careers page explicitly lists Product Design Intern, Pune hybrid, and careers@storestory.in. This is a named role within the index, not an inferred vacancy from a generic careers page. Pay, duration, degree criteria, posting date and start absent.",
+          "jobId": "careers-storestory-product-design-intern"
+        }
+      ],
+      "contact": {
+        "email": "careers@storestory.in",
+        "kind": "Published role applications and general careers enquiries",
+        "sourceUrl": "https://storestory.in/careers"
+      }
+    },
+    {
+      "id": "galaxeye",
+      "name": "GalaxEye",
+      "company": "GalaxEye",
+      "companyType": "Product company",
+      "sector": "Earth observation and geospatial intelligence software",
+      "focus": "Earth observation and geospatial intelligence software",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://careers.galaxeye.space/jobs/Careers",
+      "locationNote": "Bengaluru/Bangalore, Karnataka; office per matching Built In detail",
+      "payNote": "No current numerical stipend stated.",
+      "openingStatus": "Exact employer requisition published; pay, duration and intake to confirm",
+      "evidenceConfidence": "High for employer RSS requisition and requirements; start/pay not established.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://careers.galaxeye.space/jobs/Careers/214465000006183057/UI-UX-Design-Intern-Product-Design?source=RSS",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Original employer ATS metadata marks requisition 214465000006183057 published. Employer RSS contains full JD and pubDate 29 October 2026; detail returns200 title shell. Matching LinkedIn4484171365 and Built In11956035 corroborate. No pay, duration or joining date stated; Built In28November validThrough is aggregator metadata, not employer deadline."
+        },
+        {
+          "url": "https://careers.galaxeye.space/jobs/Careers/rss",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Employer-published RSS includes exact214465000006183057,full JD and29October2026 pubDate. Original posting date is distinct from31October firstSeen."
+        },
+        {
+          "url": "https://galaxeye.space/job-portal",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Official corporate careers page links careers.galaxeye.space; establishes ATS ownership, not extra vacancy."
+        },
+        {
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-%E2%80%94-product-design-at-galaxeye-4484171365",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Matching public employer listing; relative1day age is not a separate original posting date."
+        },
+        {
+          "url": "https://builtin.com/job/ui-ux-design-intern-product-design/11956035",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Matching detail11956035; Bengaluru office.29October datePosted and28November validThrough are board metadata, not independently confirmed employer deadline."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-galaxeye-uiux-product-intern-214465000006183057",
+          "title": "UI/UX Design Intern — Product Design",
+          "url": "https://careers.galaxeye.space/jobs/Careers/214465000006183057/UI-UX-Design-Intern-Product-Design?source=RSS",
+          "seniority": "Internship",
+          "location": "Bengaluru/Bangalore, Karnataka; office per matching Built In detail",
+          "requirements": [
+            {
+              "id": "db4bc3cd35fb",
+              "text": "Pursuing/recently completed Design, Interaction Design, HCI or related degree",
+              "sourceUrl": "https://careers.galaxeye.space/jobs/Careers/rss"
+            },
+            {
+              "id": "8234293da4ba",
+              "text": "Figma proficiency including Auto Layout, components, variants and prototyping",
+              "sourceUrl": "https://careers.galaxeye.space/jobs/Careers/rss"
+            },
+            {
+              "id": "86353830c10a",
+              "text": "Portfolio showing process; interaction, hierarchy, complete workflows and edge cases",
+              "sourceUrl": "https://careers.galaxeye.space/jobs/Careers/rss"
+            },
+            {
+              "id": "96ae0d0d6e4d",
+              "text": "Design systems, implementation specifications and design QA; dashboards, tokens, accessibility, HTML/CSS and GIS interest are bonuses",
+              "sourceUrl": "https://careers.galaxeye.space/jobs/Careers/rss"
+            }
+          ],
+          "evidenceStatus": "Original employer ATS metadata marks requisition 214465000006183057 published. Employer RSS contains full JD and pubDate 29 October 2026; detail returns200 title shell. Matching LinkedIn4484171365 and Built In11956035 corroborate. No pay, duration or joining date stated; Built In28November validThrough is aggregator metadata, not employer deadline.",
+          "jobId": "careers-galaxeye-uiux-product-intern-214465000006183057"
+        }
+      ],
+      "contact": {
+        "url": "https://careers.galaxeye.space/jobs/Careers/214465000006183057/UI-UX-Design-Intern-Product-Design?source=RSS",
+        "kind": "Published employer ATS application route; not submitted",
+        "sourceUrl": "https://careers.galaxeye.space/jobs/Careers/rss"
+      }
+    },
+    {
+      "id": "paoyaila",
+      "name": "Paoyaila Animation Studios LLP",
+      "company": "Paoyaila Animation Studios LLP",
+      "companyType": "UX/product studio",
+      "sector": "Games, animation, AR/VR and digital experience services",
+      "focus": "Games, animation, AR/VR and digital experience services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game",
+      "locationNote": "Kochi, Kerala; advert literally says [Remote/Hybrid], needs confirmation",
+      "payNote": "No stipend or compensation terms stated.",
+      "openingStatus": "Institutional-board game UI/UX internship; employer intake unconfirmed",
+      "evidenceConfidence": "Medium for employer-submitted board detail; direct website has no readable body.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Infoparks Kerala employer detail: three months,Kochi; work mode literal [Remote/Hybrid] may be placeholder. Header says Designer, body explicitly Intern. Pay, original date and cohort absent. Official company profile corroborates studio/site/contact; direct company website yields no readable body, so current employer intake unconfirmed."
+        },
+        {
+          "url": "https://infopark.in/companies-profile/paoyaila-animation-studios-llp",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Institutional company profile corroborates Kochi studio,paoyaila.com and published HR contact. Profile alone is not a vacancy."
+        }
+      ],
+      "roles": [
+        {
+          "id": "infopark-paoyaila-uiux-game-intern",
+          "title": "UI/UX Intern — Game Design",
+          "url": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game",
+          "seniority": "Internship",
+          "location": "Kochi, Kerala; advert literally says [Remote/Hybrid], needs confirmation",
+          "requirements": [
+            {
+              "id": "06ceb1cbc4e3",
+              "text": "Pursuing/recently completed UI/UX, Graphic Design, Game Design or related study",
+              "sourceUrl": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game"
+            },
+            {
+              "id": "1f00cf36faf9",
+              "text": "Figma/XD/Photoshop/Illustrator; user-centred design, gaming accessibility and game interest",
+              "sourceUrl": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game"
+            },
+            {
+              "id": "db7945a2ba51",
+              "text": "Game menus, HUDs, wireframes/prototypes, player research and multi-platform iteration",
+              "sourceUrl": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game"
+            },
+            {
+              "id": "5367cab64788",
+              "text": "After Effects or Unity UI/prototyping experience is a bonus",
+              "sourceUrl": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game"
+            }
+          ],
+          "evidenceStatus": "Infoparks Kerala employer detail: three months,Kochi; work mode literal [Remote/Hybrid] may be placeholder. Header says Designer, body explicitly Intern. Pay, original date and cohort absent. Official company profile corroborates studio/site/contact; direct company website yields no readable body, so current employer intake unconfirmed.",
+          "jobId": "infopark-paoyaila-uiux-game-intern"
+        }
+      ],
+      "officialWebsite": "https://www.paoyaila.com/",
+      "officialCareersUrl": null,
+      "careersUrlNote": "Employer-posted institutional-board role; standalone official careers route not verified.",
+      "contact": {
+        "email": "hrpaoyaila@gmail.com",
+        "kind": "Role application contact published by employer on institutional board",
+        "sourceUrl": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game"
+      }
+    },
+    {
+      "id": "kaho",
+      "name": "Kaho",
+      "company": "Kaho",
+      "companyType": "Product company",
+      "sector": "AI-assisted PDF/ebook reading, learning and voice interfaces",
+      "focus": "AI-assisted PDF/ebook reading, learning and voice interfaces",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791",
+      "locationNote": "Remote India according to Shine full-time advert",
+      "payNote": "Shine body explicitly5.25–9lakhINR/year; header Salary Not Disclosed. Not monthly internship pay or received offer.",
+      "openingStatus": "Fresher full-time board lead; employer vacancy/eligibility unverified",
+      "evidenceConfidence": "Medium for board requirements and annual units; low for current employer intake.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Shine exact19923791 full-time remote India body lists5.25–9lakhINR/year, no experience and18November2026 application deadline; header salary undisclosed/0–4years differs. Jooble matches copy. Official kaho.ai corroborates product only, not vacancy. Relative mirror ages vary; original date, employer intake and student/start eligibility unverified."
+        },
+        {
+          "url": "https://kaho.ai/",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Official product site corroborates reading/notes/voice AI functionality. No careers link found; not independent vacancy or salary confirmation."
+        },
+        {
+          "url": "https://in.jooble.org/jdp/894734666374398994",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Matching full-time remote Kaho fresher copy with5.25–9lakh p.a.; mirror, not employer confirmation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "shine-kaho-product-designer-fresher-19923791",
+          "title": "Product Designer — fresher full-time alternative",
+          "url": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791",
+          "seniority": "Junior / fresher",
+          "location": "Remote India according to Shine full-time advert",
+          "requirements": [
+            {
+              "id": "7ecc2585ac89",
+              "text": "Body says no experience required and welcomes fresh design graduates; current-student eligibility unconfirmed",
+              "sourceUrl": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791"
+            },
+            {
+              "id": "2717e3edc6f5",
+              "text": "Portfolio with an end-to-end flow case study and Figma prototypes",
+              "sourceUrl": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791"
+            },
+            {
+              "id": "4427455ec2c6",
+              "text": "Strong typography; Hindi/Devanagari experience a bonus",
+              "sourceUrl": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791"
+            },
+            {
+              "id": "15e3862df93d",
+              "text": "Design reading/notes/AI/voice flows and reusable light/dark design system; test and iterate",
+              "sourceUrl": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791"
+            }
+          ],
+          "evidenceStatus": "Shine exact19923791 full-time remote India body lists5.25–9lakhINR/year, no experience and18November2026 application deadline; header salary undisclosed/0–4years differs. Jooble matches copy. Official kaho.ai corroborates product only, not vacancy. Relative mirror ages vary; original date, employer intake and student/start eligibility unverified.",
+          "jobId": "shine-kaho-product-designer-fresher-19923791"
+        }
+      ],
+      "officialWebsite": "https://kaho.ai/",
+      "officialCareersUrl": null,
+      "careersUrlNote": "Public job-board application route; no official employer careers page verified.",
+      "contact": {
+        "url": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791",
+        "kind": "Public job-board application route; official employer route unverified",
+        "sourceUrl": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791"
+      }
+    },
+    {
+      "id": "worksent",
+      "name": "Worksent Technologies",
+      "company": "Worksent Technologies",
+      "companyType": "Services / IT and UX",
+      "sector": "White-label MSP services and web/digital design",
+      "focus": "White-label MSP services and web/digital design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://worksent.com/careers/",
+      "locationNote": "Infopark Kochi; historical institutional advert says hybrid",
+      "payNote": "Design-intern stipend unstated.",
+      "openingStatus": "Institutional UX/3D internship advert lacks current employer-index corroboration",
+      "evidenceConfidence": "Medium for board role; low for current intake, absent from current employer careers extract.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://infopark.in/jobs/worksent-technologies-pvt-ltd/ui-ux-3d-motion-designer-intern",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Infoparks employer advert names Kochi hybrid internship with3D motion requirement. No date/pay/duration. Current employer careers extract lists other roles without this title; absence alone does not prove closure, but current design intake not established. Company-only pending confirmation."
+        },
+        {
+          "url": "https://worksent.com/careers/",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Current employer careers extract lists recruitment/sales/content/IT roles; no UI/UX/3D intern found in reviewed body. Not a company-wide closure claim."
+        }
+      ],
+      "roles": [
+        {
+          "id": "infopark-worksent-uiux-3d-motion-intern",
+          "title": "UI/UX & 3D Motion Designer — Intern, intake unconfirmed",
+          "url": "https://infopark.in/jobs/worksent-technologies-pvt-ltd/ui-ux-3d-motion-designer-intern",
+          "seniority": "Institutional advert / intake unconfirmed",
+          "location": "Infopark Kochi; historical institutional advert says hybrid",
+          "requirements": [
+            {
+              "id": "204e7dfc4377",
+              "text": "Freshers; related design/visual communication bachelor degree",
+              "sourceUrl": "https://infopark.in/jobs/worksent-technologies-pvt-ltd/ui-ux-3d-motion-designer-intern"
+            },
+            {
+              "id": "85ea382c04cb",
+              "text": "Actual3D motion/animation experience and portfolio; Figma/Adobe/Sketch",
+              "sourceUrl": "https://infopark.in/jobs/worksent-technologies-pvt-ltd/ui-ux-3d-motion-designer-intern"
+            },
+            {
+              "id": "e46448eab483",
+              "text": "UX interfaces, wireframes, style guide and collaboration",
+              "sourceUrl": "https://infopark.in/jobs/worksent-technologies-pvt-ltd/ui-ux-3d-motion-designer-intern"
+            }
+          ],
+          "evidenceStatus": "Infoparks employer advert names Kochi hybrid internship with3D motion requirement. No date/pay/duration. Current employer careers extract lists other roles without this title; absence alone does not prove closure, but current design intake not established. Company-only pending confirmation."
+        }
+      ],
+      "contact": {
+        "email": "careers@worksent.com",
+        "kind": "Published recruitment contact; verify current design intake",
+        "sourceUrl": "https://infopark.in/jobs/worksent-technologies-pvt-ltd/ui-ux-3d-motion-designer-intern"
+      }
+    },
+    {
+      "id": "cynaris-solutions",
+      "name": "Cynaris Solutions",
+      "company": "Cynaris Solutions",
+      "companyType": "Services / software engineering",
+      "sector": "Software development and UI/UX services",
+      "focus": "Software development and UI/UX services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://cynarissolutions.com/careers",
+      "locationNote": "Bengaluru hybrid; two office days/week",
+      "payNote": "Original role explicitly Unpaid.",
+      "openingStatus": "Unpaid UI/UX programme excluded from paid recommendations",
+      "evidenceConfidence": "High for original unpaid terms; no qualifying paid design intake evidenced.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://cynarissolutions.com/job/uiux-design-intern",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Original detail explicitly Salary Unpaid,15positions,deadline31December2026 and two office days/week. Certificate follows assessment/demo; no paid internship inferred from skill-development programme."
+        }
+      ],
+      "roles": [
+        {
+          "id": "cynaris-uiux-design-intern",
+          "title": "UI/UX Design Intern — unpaid",
+          "url": "https://cynarissolutions.com/job/uiux-design-intern",
+          "seniority": "Unpaid internship — excluded",
+          "location": "Bengaluru hybrid; two office days/week",
+          "requirements": [
+            {
+              "id": "3382288d114a",
+              "text": "Student/fresher in Design,CS,HCI or related; own laptop",
+              "sourceUrl": "https://cynarissolutions.com/job/uiux-design-intern"
+            },
+            {
+              "id": "3fc614477db1",
+              "text": "Figma/XD and basic UX/IA; academic/personal portfolio useful",
+              "sourceUrl": "https://cynarissolutions.com/job/uiux-design-intern"
+            }
+          ],
+          "evidenceStatus": "Original detail explicitly Salary Unpaid,15positions,deadline31December2026 and two office days/week. Certificate follows assessment/demo; no paid internship inferred from skill-development programme."
+        }
+      ],
+      "contact": {
+        "email": "contact@cynarissolutions.com",
+        "kind": "General company contact, not designated recruitment inbox",
+        "sourceUrl": "https://cynarissolutions.com/job/uiux-design-intern"
+      }
+    },
+    {
+      "id": "nrg-phoenix",
+      "name": "NRG Phoenix Technology",
+      "company": "NRG Phoenix Technology",
+      "companyType": "Services / software engineering",
+      "sector": "Software and digital product services",
+      "focus": "Software and digital product services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://careers.nrg-phoenix.com/apply/ui-ux-intern?id=19",
+      "locationNote": "Chennai, Tamil Nadu; day shift",
+      "payNote": "Exact employer header No Pay Monthly.",
+      "openingStatus": "Unpaid UI/UX internship excluded from recommendations",
+      "evidenceConfidence": "High for original no-pay header; no paid design intake established.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://careers.nrg-phoenix.com/apply/ui-ux-intern?id=19",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Original employer detail ID19 lists No Pay Monthly. Chennai,day shift,0years. Not an undisclosed-pay lead or qualifying stipend match."
+        }
+      ],
+      "roles": [
+        {
+          "id": "nrg-phoenix-uiux-intern-19",
+          "title": "UI-UX Intern — no pay",
+          "url": "https://careers.nrg-phoenix.com/apply/ui-ux-intern?id=19",
+          "seniority": "Unpaid internship — excluded",
+          "location": "Chennai, Tamil Nadu; day shift",
+          "requirements": [
+            {
+              "id": "3eb06091dee8",
+              "text": "Bachelors in Computer Science;0years",
+              "sourceUrl": "https://careers.nrg-phoenix.com/apply/ui-ux-intern?id=19"
+            },
+            {
+              "id": "1e6bdbdb8ef1",
+              "text": "Figma/XD/Sketch,wireframes,prototypes and responsive design",
+              "sourceUrl": "https://careers.nrg-phoenix.com/apply/ui-ux-intern?id=19"
+            },
+            {
+              "id": "75170ba8b3c5",
+              "text": "HTML/CSS bonus; research and design-system support",
+              "sourceUrl": "https://careers.nrg-phoenix.com/apply/ui-ux-intern?id=19"
+            }
+          ],
+          "evidenceStatus": "Original employer detail ID19 lists No Pay Monthly. Chennai,day shift,0years. Not an undisclosed-pay lead or qualifying stipend match."
+        }
+      ],
+      "contact": {
+        "url": "https://careers.nrg-phoenix.com/apply/ui-ux-intern?id=19",
+        "kind": "Published employer role page; no application sent",
+        "sourceUrl": "https://careers.nrg-phoenix.com/apply/ui-ux-intern?id=19"
+      }
+    },
+    {
+      "id": "alphaorigin",
+      "name": "AlphaOrigin",
+      "company": "AlphaOrigin",
+      "companyType": "UX/product studio",
+      "sector": "Product engineering, SaaS and interface design",
+      "focus": "Product engineering, SaaS and interface design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://alphaorigin.in/careers/work-with-us/open-positions",
+      "locationNote": "Pune hybrid in removed design advert",
+      "payNote": "Historical indexed design advert gives no verified numerical stipend.",
+      "openingStatus": "Former INT.002 original404; current index lists engineering and QA internships only",
+      "evidenceConfidence": "High for current original404/index observation; historical design intake not renewed.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://alphaorigin.in/careers/work-with-us/open-positions/product-design-intern",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Fresh detail404; fresh employer index shows only MERN INT.001 and QA INT.003, no design INT.002. Cached/search extract and JobLeads still expose old role; not current vacancy or newly posted internship."
+        },
+        {
+          "url": "https://alphaorigin.in/careers/work-with-us/open-positions",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Fresh index contains two engineering/QA internships, not design. Cached descriptor mentioning design does not override current role list."
+        }
+      ],
+      "roles": [
+        {
+          "id": "alphaorigin-int002-product-design-intern",
+          "title": "Product Design Intern — removed original INT.002",
+          "url": "https://alphaorigin.in/careers/work-with-us/open-positions/product-design-intern",
+          "seniority": "Historical / removed original",
+          "location": "Pune hybrid in removed design advert",
+          "requirements": [
+            {
+              "id": "27eb8e74d852",
+              "text": "Historical indexed advert:0–1years and six-month programme",
+              "sourceUrl": "https://alphaorigin.in/careers/work-with-us/open-positions/product-design-intern"
+            },
+            {
+              "id": "24f9769e21cd",
+              "text": "Historical indexed advert: product discovery, interface exploration and handoff",
+              "sourceUrl": "https://alphaorigin.in/careers/work-with-us/open-positions/product-design-intern"
+            }
+          ],
+          "evidenceStatus": "Fresh detail404; fresh employer index shows only MERN INT.001 and QA INT.003, no design INT.002. Cached/search extract and JobLeads still expose old role; not current vacancy or newly posted internship."
+        }
+      ],
+      "contact": {
+        "url": "https://alphaorigin.in/contact?type=careers",
+        "kind": "Published career enquiry route",
+        "sourceUrl": "https://alphaorigin.in/careers/work-with-us/open-positions"
+      }
+    },
+    {
+      "id": "quickhyre",
+      "name": "QuickHyre",
+      "company": "QuickHyre",
+      "companyType": "Product company",
+      "sector": "AI job search and hiring/workforce tools",
+      "focus": "AI job search and hiring/workforce tools",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and eligible geography; not hiring probability or an offer.",
+      "careersUrl": "https://quickhyre.ai/",
+      "locationNote": "Historical mirror says remote India,part-time,3–6months",
+      "payNote": "Historical mirror30–35kINR/month; deadline4October2026 passed, not current pay/offer.",
+      "openingStatus": "Expired mirror programme; current employer design vacancy unverified",
+      "evidenceConfidence": "Low for current design hiring; stale/identity-conflicting mirror evidence only.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-10-31",
+      "sources": [
+        {
+          "url": "https://www.jobleads.com/in/job/ui-ux-design--india--e95cd778d2e47359c1ecec32e8af95d3e",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "JobLeads body QuickHyre but header Trybotics; advert deadline4October2026 passed,immediate start,30–35kINR/month. CollegeSearch/Broxer expose similar copy, not a renewed original intake. Do not recommend or infer eligibility/current stipend."
+        },
+        {
+          "url": "https://www.collegesearch.in/internships/uiux-design-work-from-home-jobinternship-at-quickhyre-3270901",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-10-31",
+          "evidenceStatus": "Matching remote UI/UX internship mirror discovered; no renewed original intake verified."
+        }
+      ],
+      "roles": [
+        {
+          "id": "mirror-quickhyre-uiux-intern-oct04",
+          "title": "UI/UX Design Intern — expired mirror, employer identity conflict",
+          "url": "https://www.jobleads.com/in/job/ui-ux-design--india--e95cd778d2e47359c1ecec32e8af95d3e",
+          "seniority": "Expired mirror / excluded",
+          "location": "Historical mirror says remote India,part-time,3–6months",
+          "requirements": [
+            {
+              "id": "771b409f7aad",
+              "text": "Mirror: final-year/recent graduate, portfolio and Figma/XD/Sketch",
+              "sourceUrl": "https://www.jobleads.com/in/job/ui-ux-design--india--e95cd778d2e47359c1ecec32e8af95d3e"
+            },
+            {
+              "id": "7f09626cc726",
+              "text": "Mirror:3–6months and immediate joining",
+              "sourceUrl": "https://www.jobleads.com/in/job/ui-ux-design--india--e95cd778d2e47359c1ecec32e8af95d3e"
+            }
+          ],
+          "evidenceStatus": "JobLeads body QuickHyre but header Trybotics; advert deadline4October2026 passed,immediate start,30–35kINR/month. CollegeSearch/Broxer expose similar copy, not a renewed original intake. Do not recommend or infer eligibility/current stipend."
+        }
+      ],
+      "officialCareersUrl": null,
+      "careersUrlNote": "Official product/job portal; its external jobs are not proof it is hiring a designer internally.",
+      "payBenchmark": {
+        "min": 30000,
+        "max": 35000,
+        "currency": "INR",
+        "period": "month",
+        "role": "UI/UX Design Intern",
+        "kind": "Historical mirror-advertised stipend",
+        "sourceUrl": "https://www.jobleads.com/in/job/ui-ux-design--india--e95cd778d2e47359c1ecec32e8af95d3e",
+        "observedAt": "2026-10-31",
+        "reportedDeadline": "2026-10-04",
+        "sample": "One mirrored advert, not salary survey",
+        "confidence": "Low",
+        "note": "Expired mirror; header Trybotics/body QuickHyre conflict, immediate-start/final-year wording. Not employer-verified current pay or received offer."
+      },
+      "contact": {
+        "url": "https://quickhyre.ai/",
+        "kind": "General official product/job portal, not a verified recruitment contact",
+        "sourceUrl": "https://quickhyre.ai/"
+      }
     }
   ],
   "meta": {
-    "researchedAt": "2026-10-30",
+    "researchedAt": "2026-10-31",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 176
+    "directoryCount": 185
   }
 }
