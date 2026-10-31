@@ -126,3 +126,13 @@
 - [x] Add six company targets with removed-original,application-not-accepting,historical salary,annual-unit conflict and general programme distinctions.
 - [x] Preserve prior stable records/source/requirement IDs,review queue and browser-private separation;regenerate Excel/CSV and pass required checks/local QA.
 - [x] Exact e5c7fca production READY as dpl_FRpu5u4GZifKRDvrq2t9Ts8F2TdT;seven live files exact matches,desktop/mobile/synthetic-state checks passed;protection unchanged.
+
+
+## 31 October research maintenance
+
+- [x] Search named employer,India-board,social,startup,remote and HN families;record actual access/sample/zero-result limits and add Shine coverage.
+- [x] Attempt all67active primaries;review twelve retained terms;retire two Zunderdog records on explicit employer closure;leave maintenance/shell restrictions unresolved.
+- [x] Add StoreStory,GalaxEye,Paoyaila internships and Kaho full-time fresher alternative on hold;keep annual units and original/mirror dates distinct;deduplicate Androcid/GalaxEye crossposts.
+- [x] Add nine company targets with unpaid,removed,expired,board-only and uncertain-current-intake distinctions;preserve all source/requirement IDs and private-state separation.
+- [x] Regenerate Excel/CSV,update current README counts,pass required tests/build/preservation audit and local browser checks.
+- [x] Exact55d966e production READY as dpl_5uKbatnHx2HMrUuGh9TATHCesxvQ;seven live files exact matches,live desktop/mobile/synthetic-state checks passed;protection unchanged.
