@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-10-31",
+  "researchedAt": "2026-11-01",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -745,8 +745,8 @@
         }
       ],
       "currentOpeningVerified": false,
-      "openingStatus": "Company watchlist; not a verified current vacancy",
-      "researchedAt": "2026-10-24",
+      "openingStatus": "Retained internship archived; renewed intake not verified. Public employer LinkedIn in.linkedin.com extract displays No longer accepting applications beside this exact role. Collector robots/access restricted; older cached www variant does not display closure. Retired based on explicit platform closure observation,not HTTP access failure or assumed company-wide hiring end.",
+      "researchedAt": "2026-11-01",
       "currentRoleId": "bthree-4473077505",
       "tier": "Possible",
       "rationale": "Suggested exploratory studio target; advertised maximum reaches the user’s conditional INR25k band.",
@@ -777,6 +777,12 @@
           "url": "https://www.bthreedesigns.com/",
           "label": "Previously researched careers route",
           "evidenceStatus": "Retained prior research; not rechecked in this expansion"
+        },
+        {
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-bthree-design-agency-4473077505",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Public employer LinkedIn in.linkedin.com extract displays No longer accepting applications beside this exact role. Collector robots/access restricted; older cached www variant does not display closure. Retired based on explicit platform closure observation,not HTTP access failure or assumed company-wide hiring end."
         }
       ],
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
@@ -788,7 +794,7 @@
           "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-bthree-design-agency-4473077505",
           "location": "Remote / hybrid, India",
           "seniority": "Internship",
-          "evidenceStatus": "Original listing gives ₹20,000–₹25,000/month and Remote / Hybrid. Conditional only if ₹25,000 is agreed and fully remote work is confirmed; the advertised minimum falls below your general threshold. An X mirror of the company post claims remote anywhere in India; original X access was blocked, so confirm with the employer.",
+          "evidenceStatus": "Original listing gives ₹20,000–₹25,000/month and Remote / Hybrid. Conditional only if ₹25,000 is agreed and fully remote work is confirmed; the advertised minimum falls below your general threshold. An X mirror of the company post claims remote anywhere in India; original X access was blocked, so confirm with the employer. Public employer LinkedIn in.linkedin.com extract displays No longer accepting applications beside this exact role. Collector robots/access restricted; older cached www variant does not display closure. Retired based on explicit platform closure observation,not HTTP access failure or assumed company-wide hiring end.",
           "requirements": [
             {
               "id": "listing-summary",
@@ -3562,7 +3568,7 @@
         "UX Designer"
       ],
       "likelyRolesEvidence": "Role family; current role evidence appears separately below.",
-      "openingStatus": "Verified official remote-India internship; stipend undisclosed",
+      "openingStatus": "Retained internship archived; renewed intake not verified. Exact employer detail,application route and matching Growhire requisition404. Fresh careers indexes on both domains show only three AI/engineering roles,not Product Design Intern. Original role removed; renewal unverified,not claimed filled.",
       "roles": [
         {
           "title": "Product Design Intern",
@@ -3591,7 +3597,7 @@
           ],
           "seniority": "Internship",
           "location": "Bengaluru or remote India",
-          "evidenceStatus": "Official role detail accessible",
+          "evidenceStatus": "Official role detail accessible Exact employer detail,application route and matching Growhire requisition404. Fresh careers indexes on both domains show only three AI/engineering roles,not Product Design Intern. Original role removed; renewal unverified,not claimed filled.",
           "notes": "Official JD and application form accessible. Remote-first company. Application requires resume, portfolio, start availability, expected monthly stipend and an everyday-app improvement answer. Current stipend not disclosed.",
           "checkedAt": "2026-10-24",
           "pay": null,
@@ -3625,6 +3631,12 @@
           "label": "Matching employer ATS requisition; same role",
           "checkedAt": "2026-10-28",
           "evidenceStatus": "Same role ID and requirements; Bengaluru or remote India. Pay/duration/start undisclosed, current cohort needs confirmation."
+        },
+        {
+          "url": "https://careers.gravity.fast/jobs/cmqdlet8309n1b5p6q8lbi6im",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Exact employer detail,application route and matching Growhire requisition404. Fresh careers indexes on both domains show only three AI/engineering roles,not Product Design Intern. Original role removed; renewal unverified,not claimed filled."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -3632,7 +3644,7 @@
       "tier": "Workable",
       "focus": "AI agent software",
       "rationale": "Product team working in ai agent software. Watch published internship and early-career roles; current evidence is recorded below.",
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-01",
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
     },
     {
@@ -8020,7 +8032,7 @@
       "rationale": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
       "careersUrl": "https://www.neuralpath.app/careers/",
       "locationNote": "Remote, India",
-      "openingStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+      "openingStatus": "Retained remote Product Design Intern/year-round application programme rechecked. Stipend and duration negotiated per role/candidate; no new vacancy inferred.",
       "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
       "likelyRoles": [
         "UX Designer",
@@ -8028,13 +8040,19 @@
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
-      "researchedAt": "2026-10-25",
+      "researchedAt": "2026-11-01",
       "sources": [
         {
           "url": "https://www.neuralpath.app/careers/",
           "label": "Public employer/role evidence",
           "evidenceStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "url": "https://www.neuralpath.app/careers/",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Retained remote Product Design Intern/year-round application programme rechecked. Stipend and duration negotiated per role/candidate; no new vacancy inferred."
         }
       ],
       "contact": {
@@ -8068,7 +8086,7 @@
       "rationale": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
       "careersUrl": "https://www.gozavio.com/careers",
       "locationNote": "Remote, India",
-      "openingStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
+      "openingStatus": "Retained named remote-India Product Design Intern rechecked; pay,duration and intake still unconfirmed.",
       "payNote": "No qualifying current stipend established unless explicitly stated in role evidence.",
       "likelyRoles": [
         "UX Designer",
@@ -8076,13 +8094,19 @@
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
-      "researchedAt": "2026-10-25",
+      "researchedAt": "2026-11-01",
       "sources": [
         {
           "url": "https://www.gozavio.com/careers",
           "label": "Public employer/role evidence",
           "evidenceStatus": "Original employer advert already researched today; stipend and intake terms remain unconfirmed.",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "url": "https://www.gozavio.com/careers",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Retained named remote-India Product Design Intern rechecked; pay,duration and intake still unconfirmed."
         }
       ],
       "contact": {
@@ -9570,10 +9594,10 @@
       "rationale": "Company target only; current evidence does not establish a suitable paid internship. Suggested tier is editable, not hiring odds.",
       "careersUrl": "https://wellfound.com/company/noobsync-innovations/jobs",
       "locationNote": "Remote India; Andhra Pradesh company location",
-      "openingStatus": "Employer Wellfound advert:remote India,3months,20hours/week and performance-based compensation with no fixed stipend. Not an undisclosed guaranteed salary. Company also markets training; do not conflate the programs with employment. No active feed card.",
+      "openingStatus": "Retained Wellfound UIUX Developer Intern explicitly performance-only,no fixed stipend,3months/20hours per week. Not a new guaranteed-pay opportunity.",
       "payNote": "Explicit performance-only compensation, no fixed stipend; does not establish monthly minimum.",
       "currentOpeningVerified": true,
-      "researchedAt": "2026-10-27",
+      "researchedAt": "2026-11-01",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
@@ -9596,6 +9620,12 @@
           "label": "Official company context",
           "checkedAt": "2026-10-27",
           "evidenceStatus": "Direct response was a JavaScript shell; indexed official context includes services and training. No extra opening inferred."
+        },
+        {
+          "url": "https://wellfound.com/company/noobsync-innovations/jobs",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Retained Wellfound UIUX Developer Intern explicitly performance-only,no fixed stipend,3months/20hours per week. Not a new guaranteed-pay opportunity."
         }
       ],
       "roles": [
@@ -10505,11 +10535,11 @@
       "rationale": "Editable Dream preference/fit suggestion for video platforms and creator experiences. Not a hiring probability, confirmed vacancy or offer.",
       "careersUrl": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date",
       "locationNote": "Bengaluru; specific summer2027 cohort",
-      "openingStatus": "Indexed official YouTube summer2027 internship specifies graduation in2028 and returning full-time enrollment. Application window27October–4November2026. Direct employer detail unavailable through research tool; recorded as cohort-specific directory evidence, not a generally eligible internship recommendation.",
+      "openingStatus": "Original Google detail now readable:Summer2027,Bengaluru,graduating2028 and returning full-time enrollment;application27October–4November2026. Cohort-specific directory evidence,not a general winter internship. Prior indexed source/requirement IDs retained.",
       "payNote": "Salary undisclosed; no current or historical numeric range inferred.",
       "payConfidence": "See source caveats",
       "currentOpeningVerified": false,
-      "researchedAt": "2026-10-29",
+      "researchedAt": "2026-11-01",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
@@ -10526,6 +10556,12 @@
           "label": "Public source evidence with limits",
           "checkedAt": "2026-10-29",
           "evidenceStatus": "Indexed official YouTube summer2027 internship specifies graduation in2028 and returning full-time enrollment. Application window27October–4November2026. Direct employer detail unavailable through research tool; recorded as cohort-specific directory evidence, not a generally eligible internship recommendation."
+        },
+        {
+          "url": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Original Google detail now readable:Summer2027,Bengaluru,graduating2028 and returning full-time enrollment;application27October–4November2026. Cohort-specific directory evidence,not a general winter internship. Prior indexed source/requirement IDs retained."
         }
       ],
       "roles": [
@@ -10533,7 +10569,7 @@
           "id": "google-youtube-ux-intern-78252225691820742",
           "title": "UX Design Intern, Summer2027, YouTube —2028 cohort",
           "url": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date",
-          "seniority": "Cohort-specific internship; indexed official evidence",
+          "seniority": "Cohort-specific internship; original detail now verified",
           "location": "Bengaluru, India",
           "requirements": [
             {
@@ -10557,7 +10593,7 @@
               "sourceUrl": "https://www.google.com/about/careers/applications/jobs/results/78252225691820742-user-experience-design-intern-summer-2027-youtube-ux?sort_by=date"
             }
           ],
-          "evidenceStatus": "Indexed official YouTube summer2027 internship specifies graduation in2028 and returning full-time enrollment. Application window27October–4November2026. Direct employer detail unavailable through research tool; recorded as cohort-specific directory evidence, not a generally eligible internship recommendation."
+          "evidenceStatus": "Indexed official YouTube summer2027 internship specifies graduation in2028 and returning full-time enrollment. Application window27October–4November2026. Direct employer detail unavailable through research tool; recorded as cohort-specific directory evidence, not a generally eligible internship recommendation. Original Google detail now readable:Summer2027,Bengaluru,graduating2028 and returning full-time enrollment;application27October–4November2026. Cohort-specific directory evidence,not a general winter internship. Prior indexed source/requirement IDs retained."
         }
       ],
       "aliases": [
@@ -11899,13 +11935,518 @@
         "kind": "General official product/job portal, not a verified recruitment contact",
         "sourceUrl": "https://quickhyre.ai/"
       }
+    },
+    {
+      "id": "neuroinkx",
+      "name": "NeuroInkX",
+      "company": "NeuroInkX",
+      "companyType": "Product company",
+      "sector": "AI document intelligence and communication-workflow software",
+      "focus": "AI document intelligence and communication-workflow software",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and geography; not a hiring probability or job offer.",
+      "careersUrl": "https://neuroinkx.com/careers/",
+      "locationNote": "Hyderabad, Telangana; work from home; India-wide remote eligibility unconfirmed",
+      "payNote": "No stipend or paid-status terms stated.",
+      "openingStatus": "Named six-month UX/UI internship on fresh employer careers page",
+      "evidenceConfidence": "High for named role/duration/WFH; pay,start and remote geography unconfirmed.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-11-01",
+      "sources": [
+        {
+          "url": "https://neuroinkx.com/careers/",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Fresh employer200 page explicitly lists UX/UI Design Intern, Hyderabad,six months and Work from Home. Pay,paid status,student/degree eligibility,start date and wider remote geography absent. Apply Now is a button; no verified external destination or submission tested."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-neuroinkx-ux-ui-design-intern",
+          "title": "UX / UI Design Intern",
+          "url": "https://neuroinkx.com/careers/",
+          "seniority": "Internship",
+          "location": "Hyderabad, Telangana; work from home; India-wide remote eligibility unconfirmed",
+          "requirements": [
+            {
+              "id": "dc980f3707dd",
+              "text": "Figma",
+              "sourceUrl": "https://neuroinkx.com/careers/"
+            },
+            {
+              "id": "269a1ab08852",
+              "text": "Website and mobile interface design",
+              "sourceUrl": "https://neuroinkx.com/careers/"
+            },
+            {
+              "id": "355315b829c2",
+              "text": "Design Thinking; six-month internship",
+              "sourceUrl": "https://neuroinkx.com/careers/"
+            }
+          ],
+          "evidenceStatus": "Fresh employer200 page explicitly lists UX/UI Design Intern, Hyderabad,six months and Work from Home. Pay,paid status,student/degree eligibility,start date and wider remote geography absent. Apply Now is a button; no verified external destination or submission tested.",
+          "jobId": "careers-neuroinkx-ux-ui-design-intern"
+        }
+      ],
+      "contact": {
+        "url": "https://neuroinkx.com/careers/",
+        "kind": "Named role Apply Now control; destination unverified, no submission",
+        "sourceUrl": "https://neuroinkx.com/careers/"
+      }
+    },
+    {
+      "id": "esperlife-predigle",
+      "name": "EsperLife / Predigle",
+      "company": "EsperLife / Predigle",
+      "companyType": "Product engineering / services",
+      "sector": "Regulated-product engineering, AI and digital product design",
+      "focus": "Regulated-product engineering, AI and digital product design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and geography; not a hiring probability or job offer.",
+      "careersUrl": "https://www.espergroup.com/careers?site=esperlife.com",
+      "locationNote": "Chennai, Tamil Nadu; hybrid",
+      "payNote": "No monthly stipend,paid-status terms or duration stated.",
+      "openingStatus": "Exact Designer Intern role and current group careers index readable",
+      "evidenceConfidence": "High for original JD; operating brand/employment entity,pay and intake need confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-11-01",
+      "sources": [
+        {
+          "url": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Fresh original detail200 lists Chennai/hybrid internship; careers index includes Designer Intern with two openings. Header/footer brand EsperLife, copy names Predigle, group portal labels Global. Confirm legal employer/brand and assignment. Pay,duration,degree eligibility and posting/start dates absent. Application form not submitted."
+        },
+        {
+          "url": "https://www.espergroup.com/careers?site=esperlife.com",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Fresh careers index includes Designer Intern,Hybrid,India,two openings; no stipend or start date. Brand/legal employer still needs confirmation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-esperlife-predigle-designer-intern",
+          "title": "Designer Intern — UI/UX and product design",
+          "url": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com",
+          "seniority": "Internship",
+          "location": "Chennai, Tamil Nadu; hybrid",
+          "requirements": [
+            {
+              "id": "04934af2af05",
+              "text": "Working Figma and UI/UX fundamentals",
+              "sourceUrl": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com"
+            },
+            {
+              "id": "9de01d03bc87",
+              "text": "Exposure to Adobe Creative Suite,Sketch,Framer or similar tools",
+              "sourceUrl": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com"
+            },
+            {
+              "id": "9b26d5f7e6fc",
+              "text": "Visual judgment,attention to detail and responding to feedback",
+              "sourceUrl": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com"
+            },
+            {
+              "id": "491321120e3c",
+              "text": "Portfolio/sample work preferred; wireframes,prototypes,product screens and engineering collaboration",
+              "sourceUrl": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com"
+            }
+          ],
+          "evidenceStatus": "Fresh original detail200 lists Chennai/hybrid internship; careers index includes Designer Intern with two openings. Header/footer brand EsperLife, copy names Predigle, group portal labels Global. Confirm legal employer/brand and assignment. Pay,duration,degree eligibility and posting/start dates absent. Application form not submitted.",
+          "jobId": "careers-esperlife-predigle-designer-intern"
+        }
+      ],
+      "contact": {
+        "url": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com",
+        "kind": "Published role application form; not submitted",
+        "sourceUrl": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com"
+      }
+    },
+    {
+      "id": "nudge-justnudge",
+      "name": "Nudge / justnudge",
+      "company": "Nudge / justnudge",
+      "companyType": "Product company",
+      "sector": "Consumer rewards and purchase-data intelligence",
+      "focus": "Consumer rewards and purchase-data intelligence",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and geography; not a hiring probability or job offer.",
+      "careersUrl": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp",
+      "locationNote": "Bengaluru, Karnataka; in-office full-time role",
+      "payNote": "Employer-platform pay undisclosed. Jobfound mirror2.5–4lakhINR/year is uncorroborated context only.",
+      "openingStatus": "Named0–2year full-time junior role on Peerlist with matching employer LinkedIn",
+      "evidenceConfidence": "High for matching public role requirements; pay,start and current-student eligibility unconfirmed.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-11-01",
+      "sources": [
+        {
+          "url": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Fresh Peerlist200 detail says full-time,in-office Bengaluru,0–2years; matching employer LinkedIn4484597515. No salary,original absolute posting date or start stated. Official justnudge.com and company profile corroborate rewards/purchase-data identity only. Student eligibility and named bonus-tool evidence not assumed."
+        },
+        {
+          "url": "https://in.linkedin.com/jobs/view/junior-product-designer-at-nudge-4484597515",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Matching employer title,identity,0–2years and mobile/motion/AI requirements. Relative1day label not original publication date."
+        },
+        {
+          "url": "https://jobfound.org/job/nudge-is-hiring-for-junior-product-designer-bengaluru-karnataka-india-india-30-october-2026",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Matching mirrored JD;30October is mirror posting label,2.5–4LPA only uncorroborated mirror header,not employer pay."
+        },
+        {
+          "url": "https://www.justnudge.com/",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Official consumer-rewards product site; company identity corroboration only,not independent job/pay evidence."
+        },
+        {
+          "url": "https://in.linkedin.com/company/justnudge",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Employer company profile links justnudge.com and corroborates Bengaluru consumer rewards/purchase-data identity."
+        }
+      ],
+      "roles": [
+        {
+          "id": "peerlist-nudge-junior-product-designer-jobhgnq9pralkmo8afm7on99jllrlp",
+          "title": "Junior Product Designer — full-time,0–2 years",
+          "url": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp",
+          "seniority": "Junior / fresher",
+          "location": "Bengaluru, Karnataka; in-office full-time role",
+          "requirements": [
+            {
+              "id": "f4c30975f090",
+              "text": "0–2years; Figma essential and personal projects welcome",
+              "sourceUrl": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp"
+            },
+            {
+              "id": "89497408457f",
+              "text": "Mobile UI,typography,spacing,visual composition and prototyping",
+              "sourceUrl": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp"
+            },
+            {
+              "id": "c961b79b0087",
+              "text": "Motion,micro-interactions and experimenting with AI-built prototypes",
+              "sourceUrl": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp"
+            },
+            {
+              "id": "c69d89f1d744",
+              "text": "Rive,After Effects,Cursor,Claude or Lovable familiarity are bonuses",
+              "sourceUrl": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp"
+            }
+          ],
+          "evidenceStatus": "Fresh Peerlist200 detail says full-time,in-office Bengaluru,0–2years; matching employer LinkedIn4484597515. No salary,original absolute posting date or start stated. Official justnudge.com and company profile corroborate rewards/purchase-data identity only. Student eligibility and named bonus-tool evidence not assumed.",
+          "jobId": "peerlist-nudge-junior-product-designer-jobhgnq9pralkmo8afm7on99jllrlp"
+        }
+      ],
+      "officialWebsite": "https://www.justnudge.com/",
+      "officialCareersUrl": null,
+      "careersUrlNote": "Employer company-specific Peerlist role; no standalone company careers page verified. Distinct consumer-rewards company, not another Nudge brand.",
+      "payBenchmark": {
+        "min": 250000,
+        "max": 400000,
+        "currency": "INR",
+        "period": "year",
+        "role": "Junior Product Designer",
+        "kind": "Unverified mirror-advertised annual salary",
+        "sourceUrl": "https://jobfound.org/job/nudge-is-hiring-for-junior-product-designer-bengaluru-karnataka-india-india-30-october-2026",
+        "observedAt": "2026-11-01",
+        "mirrorPublishedAt": "2026-10-30",
+        "sample": "One mirrored advert,not a salary-survey sample",
+        "confidence": "Low",
+        "note": "Jobfound header2.5–4LPA; no range on matching employer Peerlist/LinkedIn. Mirror date is not employer original date. Not employer-confirmed current salary or received offer; never convert to monthly stipend."
+      },
+      "contact": {
+        "url": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp",
+        "kind": "Employer-platform role application control; sign-in/submission not tested",
+        "sourceUrl": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp"
+      }
+    },
+    {
+      "id": "fit-krmrsolutions",
+      "name": "KRMR Solutions",
+      "company": "KRMR Solutions",
+      "companyType": "Services company",
+      "sector": "Software platforms,enterprise AI and UX services",
+      "focus": "Software platforms,enterprise AI and UX services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and geography; not a hiring probability or job offer.",
+      "careersUrl": "https://krmrsolutions.com/careers",
+      "locationNote": "Current detail Remote India; older unpaid programme listed Mumbai",
+      "payNote": "Current stipend unstated. Older indexed UX internship explicitly unpaid; does not establish new role pay.",
+      "openingStatus": "Current named internship; historical unpaid-programme warning requires confirmation",
+      "evidenceConfidence": "High for current original role; older unpaid/closed evidence indexed, current pay unknown.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-11-01",
+      "sources": [
+        {
+          "url": "https://krmrsolutions.com/careers/design-intern",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Current original detail/index readable,remote India; salary/duration/start absent. Older LinkedIn4162214922 is explicitly titled UX Design Intern(Unpaid) and indexed closed. Direct collector robots-disallowed. Historical separate programme,not proof current role is paid or necessarily unpaid. Confirm policy before proceeding."
+        },
+        {
+          "url": "https://in.linkedin.com/jobs/view/ux-design-intern-unpaid-at-krmr-solutions-4162214922",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Search extract labels one year ago,Unpaid and no longer accepting. No numerical amount/period inferred. Current role page omits pay; old programme does not establish current stipend."
+        }
+      ],
+      "roles": [
+        {
+          "id": "krmr-design-intern",
+          "title": "UI/UX Product Design Intern",
+          "url": "https://krmrsolutions.com/careers/design-intern",
+          "seniority": "Internship",
+          "location": "Remote India",
+          "requirements": [
+            {
+              "id": "listing-summary",
+              "text": "Portfolio showing layout, typography and colour; Figma auto-layout and prototypes; component documentation and development handoff.",
+              "sourceUrl": "https://krmrsolutions.com/careers/design-intern"
+            }
+          ],
+          "evidenceStatus": "Current original detail/index readable,remote India; salary/duration/start absent. Older LinkedIn4162214922 is explicitly titled UX Design Intern(Unpaid) and indexed closed. Direct collector robots-disallowed. Historical separate programme,not proof current role is paid or necessarily unpaid. Confirm policy before proceeding.",
+          "jobId": "krmr-design-intern"
+        }
+      ],
+      "historicalPayEvidence": [
+        {
+          "role": "UX Design Intern(Unpaid)",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/ux-design-intern-unpaid-at-krmr-solutions-4162214922",
+          "observedAt": "2026-11-01",
+          "evidenceType": "Indexed historical employer advert",
+          "postingDate": null,
+          "note": "Search extract labels one year ago,Unpaid and no longer accepting. No numerical amount/period inferred. Current role page omits pay; old programme does not establish current stipend."
+        }
+      ],
+      "contact": {
+        "url": "https://www.linkedin.com/company/krmr/posts/",
+        "kind": "Current employer Apply link points to company profile,not a verified job-specific application",
+        "sourceUrl": "https://krmrsolutions.com/careers/design-intern"
+      },
+      "compatibilityNote": "Uses existing deterministic feed-only company/checklist IDs; no private browser state was read or seeded."
+    },
+    {
+      "id": "fit-greenpingsolutions",
+      "name": "Green Ping Solutions",
+      "company": "Green Ping Solutions",
+      "companyType": "Unclassified",
+      "sector": "Advertised web/mobile UI and UX work; broader company scope unverified",
+      "focus": "Advertised web/mobile UI and UX work; broader company scope unverified",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and geography; not a hiring probability or job offer.",
+      "careersUrl": "https://in.indeed.com/viewjob?jk=157d2635900933e2",
+      "locationNote": "Ahmedabad,Gujarat; in person in expired advert",
+      "payNote": "Amount unstated; no current₹20k/month match established.",
+      "openingStatus": "Original Indeed listing explicitly expired; renewed employer intake unverified",
+      "evidenceConfidence": "High for expiry banner; official company identity/careers route not verified.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-11-01",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=157d2635900933e2",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Two fresh normal HTTPS reads explicitly say This job has expired on Indeed. Cached research extract still shows old application advert; fresh expiry takes precedence. Not proof vacancy filled or company-wide hiring ended."
+        }
+      ],
+      "roles": [
+        {
+          "id": "indeed-greenping-157d2635900933e2",
+          "title": "UI/UX Design Intern — expired original Indeed listing",
+          "url": "https://in.indeed.com/viewjob?jk=157d2635900933e2",
+          "seniority": "Expired internship — archived",
+          "location": "Ahmedabad,Gujarat; in person in expired advert",
+          "requirements": [
+            {
+              "id": "listing-summary",
+              "text": "Web and mobile UI; User research, flows and prototypes; Components/design systems and developer collaboration.",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=157d2635900933e2"
+            }
+          ],
+          "evidenceStatus": "Two fresh normal HTTPS reads explicitly say This job has expired on Indeed. Cached research extract still shows old application advert; fresh expiry takes precedence. Not proof vacancy filled or company-wide hiring ended.",
+          "jobId": "indeed-greenping-157d2635900933e2"
+        }
+      ],
+      "officialCareersUrl": null,
+      "careersUrlNote": "Retained original Indeed listing,now expired; no official employer domain verified.",
+      "contact": {
+        "url": "https://in.indeed.com/viewjob?jk=157d2635900933e2",
+        "kind": "Archived listing; no current recruitment contact verified",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=157d2635900933e2"
+      },
+      "compatibilityNote": "Uses existing deterministic feed-only company/checklist IDs; no private browser state was read or seeded."
+    },
+    {
+      "id": "seloriz",
+      "name": "Seloriz Solutions",
+      "company": "Seloriz Solutions",
+      "companyType": "Product engineering / services",
+      "sector": "Physical products,industrial design,embedded and connected technologies",
+      "focus": "Physical products,industrial design,embedded and connected technologies",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and geography; not a hiring probability or job offer.",
+      "careersUrl": "https://www.seloriz.com/jobs",
+      "locationNote": "Remote India; Hubballi,Karnataka company location",
+      "payNote": "Pay unstated; current role is physical/CAD and requires immediate joining.",
+      "openingStatus": "Advertised physical/industrial internship; not a digital UX internship recommendation",
+      "evidenceConfidence": "High for original scope/duration/immediate-start terms; later intake/pay unknown.",
+      "likelyRoles": [
+        "Industrial Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Future role families inferred from engineering scope; no separate digital UX vacancy evidenced.",
+      "researchedAt": "2026-11-01",
+      "sources": [
+        {
+          "url": "https://www.seloriz.com/jobs/product-design-industrial-design-intern",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Original role focuses physical/industrial concepts,CAD,enclosures and engineering collaboration. Immediate joining and six months. No pay or later cohort stated; company-only because scope/timing differ from requested digital UX intake."
+        }
+      ],
+      "roles": [
+        {
+          "id": "seloriz-product-industrial-design-intern",
+          "title": "Product Design and Industrial Design Intern",
+          "url": "https://www.seloriz.com/jobs/product-design-industrial-design-intern",
+          "seniority": "Industrial design internship / immediate-start flag",
+          "location": "Remote India",
+          "requirements": [
+            {
+              "id": "859f34ee504f",
+              "text": "Physical product development,ergonomics,materials and manufacturability",
+              "sourceUrl": "https://www.seloriz.com/jobs/product-design-industrial-design-intern"
+            },
+            {
+              "id": "bf5a859f089e",
+              "text": "3D CAD(SolidWorks/Creo/Fusion360 preferred),sketching,prototyping and relevant portfolio",
+              "sourceUrl": "https://www.seloriz.com/jobs/product-design-industrial-design-intern"
+            },
+            {
+              "id": "bbcce98865a6",
+              "text": "Full-time six months and immediate joining; students/recent graduates welcome",
+              "sourceUrl": "https://www.seloriz.com/jobs/product-design-industrial-design-intern"
+            }
+          ],
+          "evidenceStatus": "Original role focuses physical/industrial concepts,CAD,enclosures and engineering collaboration. Immediate joining and six months. No pay or later cohort stated; company-only because scope/timing differ from requested digital UX intake."
+        }
+      ],
+      "contact": {
+        "email": "contact@seloriz.com",
+        "kind": "General company contact also explicitly named for role applications",
+        "sourceUrl": "https://www.seloriz.com/jobs/product-design-industrial-design-intern"
+      }
+    },
+    {
+      "id": "iqraa-mark",
+      "name": "IQRAA MARK",
+      "company": "IQRAA MARK",
+      "companyType": "Product company",
+      "sector": "Education,faith and community technology platform",
+      "focus": "Education,faith and community technology platform",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Suggested preference/fit tier based on evidenced product/UX work and geography; not a hiring probability or job offer.",
+      "careersUrl": "https://www.iqraamark.com/career/",
+      "locationNote": "Kozhikode/Calicut,Kerala; hybrid,not unrestricted remote",
+      "payNote": "No pay amount/paid status stated. UX programme30days; longer paid cohort not established.",
+      "openingStatus": "Named30-day UIUX programme,below requested3–6month duration",
+      "evidenceConfidence": "High for original duration/hybrid terms; stipend and extensions unknown.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families; only the named sourced role is evidenced.",
+      "researchedAt": "2026-11-01",
+      "sources": [
+        {
+          "url": "https://www.iqraamark.com/career/",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Employer index states30Days,Hybrid,Kozhikode and completion certificate. Indeed remote header conflicts with hybrid body. No paid amount or3–6month extension established; directory-only,not rejected merely because pay is undisclosed."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=bc023d54f8029003",
+          "label": "Public evidence observation",
+          "checkedAt": "2026-11-01",
+          "evidenceStatus": "Matching UX internship advert:remote header,hybrid body. Employer original30-day hybrid terms take precedence; no duplicate active card."
+        }
+      ],
+      "roles": [
+        {
+          "id": "iqraa-mark-uiux-designer-intern",
+          "title": "UI/UX Designer Intern —30-day programme",
+          "url": "https://www.iqraamark.com/career/",
+          "seniority": "Short programme / not requested duration",
+          "location": "Kozhikode/Calicut,Kerala; hybrid,not unrestricted remote",
+          "requirements": [
+            {
+              "id": "670bb578ae86",
+              "text": "Figma/XD basics and UI/UX principles",
+              "sourceUrl": "https://www.iqraamark.com/career/"
+            },
+            {
+              "id": "22a1cd615b2c",
+              "text": "Creativity,willingness to learn;30-day hybrid programme",
+              "sourceUrl": "https://www.iqraamark.com/career/"
+            }
+          ],
+          "evidenceStatus": "Employer index states30Days,Hybrid,Kozhikode and completion certificate. Indeed remote header conflicts with hybrid body. No paid amount or3–6month extension established; directory-only,not rejected merely because pay is undisclosed."
+        }
+      ],
+      "contact": {
+        "email": "hriqraamark@gmail.com",
+        "kind": "Employer-published internship resumes/recruitment",
+        "sourceUrl": "https://www.iqraamark.com/career/"
+      }
     }
   ],
   "meta": {
-    "researchedAt": "2026-10-31",
+    "researchedAt": "2026-11-01",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 185
+    "directoryCount": 192
   }
 }

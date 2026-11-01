@@ -8,11 +8,11 @@ Personal internship discovery and application Kanban for Anuj. Primary GitHub ow
 
 ## Included
 
-- 74 retained role records (69 active,5 archived), updated31 October2026. Three new internships and one full-time fresher alternative stay on hold; unknown stipend and board-only annual salary evidence remain separate. Two Zunderdog records are archived after explicit employer closure. Sources include employer RSS/careers, institutional boards, Shine, Indeed and caveated public cross-posts.
+- 77 retained role records (69 active,8 archived), updated1 November2026. New NeuroInkX/EsperLife internships and Nudge junior alternative stay on hold; current numerical pay unknown. Green Ping,Gravity and BThree retired with source/access caveats. Original posting dates,annual salary reports and browser-local progress remain separate.
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat minimum ₹20,000/month; elsewhere ₹30,000, with ₹25,000 considered individually. A ₹30,000 remote minimum is provisional.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with185 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with192 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.
