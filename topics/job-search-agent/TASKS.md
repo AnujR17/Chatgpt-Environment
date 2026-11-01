@@ -136,3 +136,13 @@
 - [x] Add nine company targets with unpaid,removed,expired,board-only and uncertain-current-intake distinctions;preserve all source/requirement IDs and private-state separation.
 - [x] Regenerate Excel/CSV,update current README counts,pass required tests/build/preservation audit and local browser checks.
 - [x] Exact55d966e production READY as dpl_5uKbatnHx2HMrUuGh9TATHCesxvQ;seven live files exact matches,live desktop/mobile/synthetic-state checks passed;protection unchanged.
+
+
+## 1 November research maintenance
+
+- [x] Search employer,India-board,social,startup,remote and HN samples;record actual access/zero-result limits;add Peerlist/AndhraStartupMap coverage.
+- [x] Attempt69active originals,review15retained terms,archive Green Ping/Gravity/BThree on positive expiry/removal evidence;retain maintenance/access uncertainty.
+- [x] Add NeuroInkX/EsperLife internships and Nudge junior alternative on hold,without invented monthly stipend or original posting dates.
+- [x] Add seven directory records;preserve fallback company/requirement IDs,prior sources,review queue and browser-private separation.
+- [x] Regenerate Excel/CSV;model,five collector tests,build,preservation audits and local/live desktop/mobile checks pass. Document one stale historical Gravity on_hold data assertion;test/UI/model files unchanged.
+- [x] Exact5340cdc production READY as dpl_CSDdh8GBhbLzwFHb48PgwpmkTSKA;seven live files exact matches,synthetic progress/blacklist/checklist preservation and zero runtime errors;protection unchanged. No follow-up data deployment needed.
