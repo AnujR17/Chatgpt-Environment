@@ -146,3 +146,13 @@
 - [x] Add seven directory records;preserve fallback company/requirement IDs,prior sources,review queue and browser-private separation.
 - [x] Regenerate Excel/CSV;model,five collector tests,build,preservation audits and local/live desktop/mobile checks pass. Document one stale historical Gravity on_hold data assertion;test/UI/model files unchanged.
 - [x] Exact5340cdc production READY as dpl_CSDdh8GBhbLzwFHb48PgwpmkTSKA;seven live files exact matches,synthetic progress/blacklist/checklist preservation and zero runtime errors;protection unchanged. No follow-up data deployment needed.
+
+
+## 2 November research maintenance
+
+- [x] Search named employer,India-board,social,startup,remote and HN samples;record actual access,crawl-date and zero-result limits.
+- [x] Attempt69active originals,review14retained terms,archive LeadSquared/Toddle36030 on positive expiry/unavailable evidence;retain separate Toddle junior and maintenance uncertainty.
+- [x] Add Bose/Cresentrix internships and conditional Akshora evergreen programme on hold;retain labelled junior alternatives without quota additions.
+- [x] Add seven company records with annual-unit,volunteer,expired,unverified-requisition and selected-stipend distinctions;preserve prior IDs/evidence and browser-private separation.
+- [x] Regenerate Excel/CSV;model,five collector tests,build,preservation audit and local/live browser checks pass. One known Gravity historical on_hold assertion remains documented;test/UI/model unchanged.
+- [x] Exactaa7cdd7 production READY as dpl_3hE5tWPbotnyi2FYRC6WRGHkwNvR;seven live files exact byte matches,synthetic blacklist/criterion/saved-history preservation,zero runtime errors and unchanged protection. Handoff-only follow-up needs no new deploy.
