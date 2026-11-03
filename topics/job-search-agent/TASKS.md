@@ -156,3 +156,13 @@
 - [x] Add seven company records with annual-unit,volunteer,expired,unverified-requisition and selected-stipend distinctions;preserve prior IDs/evidence and browser-private separation.
 - [x] Regenerate Excel/CSV;model,five collector tests,build,preservation audit and local/live browser checks pass. One known Gravity historical on_hold assertion remains documented;test/UI/model unchanged.
 - [x] Exactaa7cdd7 production READY as dpl_3hE5tWPbotnyi2FYRC6WRGHkwNvR;seven live files exact byte matches,synthetic blacklist/criterion/saved-history preservation,zero runtime errors and unchanged protection. Handoff-only follow-up needs no new deploy.
+
+
+## 3 November research maintenance
+
+- [x] Search named employer,India-board,social,startup/remote/map samples;screen newNovember HN135top-level/9word-matches;record exact scope/access limits.
+- [x] Attempt70active primaries and review17retained terms;preserve tenarchives,eight unresolved bodies and maintenance/access distinctions.
+- [x] Add SkuTrunk,YTTolderMayadvert,HellCraftpaid-track-unconfirmed on hold;no stipend or junior quota inventions.
+- [x] Add seven company targets with below-pay,scope,unclassified-seniority and programme distinctions;preserve IDs/source history/requirements/contact purposes/private-state separation.
+- [x] Regenerate Excel/CSV;model,five collector tests,build,audits and local/live browser checks pass. One known historical Gravity on_hold assertion documented;UI/model/test files unchanged.
+- [x] Exact385e87e production READY as dpl_71BvWq8LtdyCGfTDdivsmGZFkesg;seven live files byte-match,synthetic blacklist/criteria/history preserved,zero runtime errors,protection unchanged. Handoff-only follow-up needs no new deploy.
