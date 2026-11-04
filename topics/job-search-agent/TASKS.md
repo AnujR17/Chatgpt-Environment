@@ -1,5 +1,16 @@
 # Tasks
 
+## 4 November 2026 refresh
+
+- [x] Recheck all73 previously active primary URLs;record66 fetched,7 restricted and five small shells separately from16 rotating term reviews.
+- [x] Add OgalAI paid remote internship on_hold for India eligibility and undisclosed compensation;no newly verified stipend match or fabricated junior alternative.
+- [x] Archive Moonfire after explicit original postponement;retain annual pay,stable IDs,requirements and prior maintenance evidence.
+- [x] Add11 differentiated company records;refresh26 of34 coverage records with source/access/date limits and fresh NovemberHN snapshot.
+- [x] Preserve baseline evidence,contacts,requirements,source prefix,exclusions and review queue;regenerate84-role/217-company workbook,478 requirement rows and company CSV.
+- [x] Build,model,five collector tests,preservation audit and local/live desktop/mobile checks pass. Existing Gravity on_hold assertion remains a documented data-test failure;no UI/model/test edits.
+- [x] Commit/push asAnujR17;deploy exact public-data commit47493480a72a3111078a5d8d9f04fd2149a1b205 to the existing project. READY dpl_9458gR17bdzx6wSXfGxU7vV7PTQR and all seven live files verified byte-for-byte;protection unchanged.
+- [x] Keep all user browser-local progress/private criteria inaccessible and unpublished;no applications or employer messages.
+
 - [x] Verify GitHub account AnujR17.
 - [x] Research and curate initial 13 leads with source evidence.
 - [x] Build Kanban/list views, filters, application stages, notes and next actions.
