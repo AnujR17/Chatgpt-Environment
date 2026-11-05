@@ -1,5 +1,13 @@
 # Tasks
 
+## 5 November open-source capture integration
+
+- [x] Inspect reusable source/licences against current app;adapt MIT page reader with full notice and exact provenance.
+- [x] Add user-click capture/review/local export companion and private board import;preserve layout and existing data.
+- [x] Validate unverified compensation/date/classification,exact source deduplication,blacklist/unpaid skip,atomic invalid-file rejection and private-state preservation.
+- [x] Package deterministic six-file ZIP;18 focused tests,five collector checks,build and local/live desktop/mobile pass. Real logged-in platform/toolbar installation remains unverified.
+- [x] Publish exact7ada68ef8d3699f217d8ee5e130da79610bf658e;READYdpl_7uiy3eXGCiHeAex6gx4av9qgVejN andliveZIP/import verified. Existing research files and protection unchanged.
+
 ## 5 November stipend-floor update
 
 - [x] Apply10k Gujarat/remoteIndia minimum,15k preferred;15k other eligible cities. Preserve layout,verified-minimum logic and original salary units.

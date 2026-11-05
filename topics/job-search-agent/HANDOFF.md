@@ -2,6 +2,18 @@
 
 Updated 5 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 5 November open-source capture adaptation — published
+
+Added a companion ManifestV3 extension and browser-local capture import without changing the board layout or public research data. `extension/capture.js` adapts the MIT-licensed page reader from PrafulAggarwal1234/job-application-tracker at commit46dc8319dc6ec8d7b7a6852ac4f4abcc4583cfee;full upstream copyright/licence and provenance included. Other reviewed projects are architectural references only. See OPEN_SOURCE_ADAPTATION.md for exact source parts and deferred Greenhouse/Ashby adapters.
+
+Workflow: install unpacked extension in a supported desktop Chromium browser,open job detail,review fields,Save for review,Export captures;board Export → Import captured jobs. Export → Download browser clipper serves the deterministic six-file ZIP. Permissions only activeTab,scripting,storage;no standing host access,background crawling,cookies,AI or submission. An embedded in-app browser may not support installation. The cloud task gains no authenticated browser access.
+
+Imported captures stay in browser-local custom records,on_hold,with raw compensation and dates unverified. Exact known source/platform-ID duplicates,current blacklist matches and explicit unpaid pay text are skipped. Unexpected profile/stage/notes fields in capture JSON are ignored;invalid files reject before writes. Existing stages,notes,evidence and blacklist preferences survive imports. Later public-feed matches and crossposts without shared identity still need duplicate review;no fuzzy/global merging claimed.
+
+18 capture/model tests,five collector tests,production build and local/live desktop/mobile checks pass with0runtime errors. Four controlled capture fixtures and popup save/dedup/export with mocked Chrome APIs feed the real board import tests. Actual Chrome toolbar permission/installation and current logged-in platform DOM remain unverified. Existing unrelated Gravity data-test expectation remains documented;no full-suite pass claim.
+
+Feature commit7ada68ef8d3699f217d8ee5e130da79610bf658e pushed on topic/job-search-agent asAnujR17 and deployed to existing production projectprj_o1CANE3Uj8jY3AWgGku9nV0qjqPg. READYdpl_7uiy3eXGCiHeAex6gx4av9qgVejN with exactSHA/ref/project/publicalias verified. Seven live research/export files remain byte-identical to the previous release;ZIP8127bytes SHA25693a5945b27258e1aad3bd781a63fa50e18cfffd080b735fcb373273ce345249b matches committed package. Existing root/protection/preview isolation retained;no main/new project/account changes. This is a scoped feature release,not a feed refresh. No private capture files,applicant data or session credentials published. Review artifacts:/workspace/clipper-adaptation-review. Handoff-only follow-up needs no redeploy.
+
 ## 5 November stipend-floor follow-up — published
 
 Current stipend policy: Gujarat and remote India minimumINR10,000/month,preferINR15,000+;other eligible cities minimumINR15,000/month. Higher pay is welcome. Updated payMatch,brief and Excel guidance with lower-bound,unverified-pay and original-salary-unit checks. Existing layout unchanged.
