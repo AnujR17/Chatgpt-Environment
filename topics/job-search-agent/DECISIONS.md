@@ -1,5 +1,13 @@
 # Decisions
 
+2026-11-05 — Isolate job-board publishing from unrelated topic branches:
+
+- User reported a failed Vercel preview for `topic/checkpoint` commit `4362327`. Deployment evidence confirms `NOW_SANDBOX_WORKER_ROOTDIR_NOT_EXIST`: that branch has no `topics/job-search-agent/app`;the job-board branch does.
+- Keep the existing Vercel project/root/public URL and publish the job board from `topic/job-search-agent`. No new repository/project,main merge or Checkpoint source change is needed.
+- Disable automatic previews at the project level with `previewDeploymentsDisabled: true`. A branch-local vercel.json or ignored-build command cannot reliably guard a different branch whose configured root is absent.
+- Continue exact-commit production publishing through the existing authenticated Vercel connection. Do not claim Git Production Branch tracking was changed by this setting;the available project-update API does not expose that operation.
+- Preserve SSO,password/trusted-IP protection,all feed data and browser-local progress. Verify the branch's production build and public link after applying the setting;retain older failed deployment history.
+
 2026-10-23 — Current user instructions:
 
 - Roles: UX designer, interaction designer and product designer internships. Include UI/UX only when responsibilities are relevant.

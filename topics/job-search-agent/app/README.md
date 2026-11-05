@@ -4,6 +4,8 @@ Live board: https://chatgpt-environment.vercel.app
 
 Production is READY from the board branch in the existing Vercel project `chatgpt-environment`.
 
+Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
+
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
 ## Included
@@ -51,7 +53,11 @@ Each run produces `public/data/collection-report.md` and an updated Excel workbo
 
 ## Deploy to Vercel
 
-Import **AnujR17/Chatgpt-Environment**, use branch **topic/job-search-agent**, set root directory **topics/job-search-agent/app**, framework **Vite**, build command `npm run build`, output directory `dist`. Set the project production branch to `topic/job-search-agent`. No runtime secrets are needed for this version. `vercel.json` includes the configuration.
+Use the existing project **chatgpt-environment** and source branch **topic/job-search-agent** in **AnujR17/Chatgpt-Environment**. Root directory is **topics/job-search-agent/app**, framework **Vite**, install command `npm ci`, build command `npm run build`, output directory `dist`. No runtime secrets are needed for this version. `vercel.json` includes the app configuration.
+
+Project-level automatic preview deployments are disabled (`previewDeploymentsDisabled: true`). This repository contains independent topic branches: `topic/checkpoint`, for example, contains a Windows app and has no job-board directory. A preview of that branch in this project fails before the build starts. Do not change the job-board root directory to accommodate another topic or merge unrelated apps into this branch.
+
+The release workflow explicitly deploys an exact commit from `topic/job-search-agent` to production in the existing project and verifies READY plus the public files. A Git push by itself is not a production release. This fix does not claim to have changed Vercel's Git Production Branch tracking; automatic previews are disabled while the existing explicit production-publish workflow continues. Deployment protection stays unchanged.
 
 The existing source repository is public. Only public listing research and application source are committed; personal profile and progress stay browser-local. The Vercel deployment exposes only the researched job feed and application shell. If deployed without Vercel protection, anyone with its URL can read these public job leads. `noindex` is a search-engine hint, not authentication.
 
