@@ -24,3 +24,10 @@
 - [x] Add labelled LAN adapters, dashboard connection status and scoped firewall helper.
 - [x] Publish and download-verify camera/phone repair release (checkpoint-v0.2.1-preview.2, run 41989299286).
 - [ ] Confirm camera frames and physical phone connectivity on the user's Windows 10 PC.
+
+- [x] User confirms camera capture now works on their PC.
+- [x] Fix small smile/open smile/brow mapping, continuous motion, neutral fallback and paired phone presentation.
+- [x] Implement native one-click GitHub updater with small package, full fallback and rollback.
+- [x] Verify local safety/interaction tests and native-to-browser expressions/reduced motion.
+- [ ] Verify real Windows restart/rollback fixtures and publish/download-check 0.3.0 assets.
+- [ ] Check subjective facial response and an actual later-version update on the user's PC.

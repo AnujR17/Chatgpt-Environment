@@ -167,7 +167,11 @@ class SetupDialog(QDialog):
 class PreferencesDialog(QDialog):
     def __init__(self,parent):
         super().__init__(parent);self.setWindowTitle('Settings');self.resize(680,min(650,max(540,parent.height()-40)))
-        outer=QVBoxLayout(self);outer.setContentsMargins(24,24,24,24);outer.setSpacing(16);outer.addWidget(label('Settings',28,bold=True))
+        outer=QVBoxLayout(self);outer.setContentsMargins(24,24,24,24);outer.setSpacing(16)
+        from checkpoint.version import RELEASE_TAG
+        header=QHBoxLayout();header.addWidget(label('Settings',28,bold=True),1);header.addWidget(label(RELEASE_TAG.removeprefix('checkpoint-v'),12,True))
+        def open_updates():self.reject();QTimer.singleShot(0,parent.show_updates)
+        header.addWidget(button('Check for updates',open_updates));outer.addLayout(header)
         scroll=QScrollArea();scroll.setWidgetResizable(True);content=QWidget();scroll.setWidget(content);root=QVBoxLayout(content);root.setContentsMargins(4,4,12,8);root.setSpacing(14);outer.addWidget(scroll,1)
         root.addWidget(label('Display',18,bold=True));self.reduced=QCheckBox('Reduce animation');self.reduced.setChecked(parent.reduced_motion);root.addWidget(self.reduced)
         self.pip=QCheckBox('Show Pip on the desktop');self.pip.setChecked(parent.overlay_enabled);root.addWidget(self.pip)
@@ -196,7 +200,7 @@ class PreferencesDialog(QDialog):
 class MainWindow(QMainWindow):
     def __init__(self, *, no_setup=False, data_dir=None):
         super().__init__();self.setWindowTitle("Checkpoint");self.resize(1440,940);self.setMinimumSize(1000,640)
-        self.session=Session();self.worker=None;self.frequency=4.;self.retain=False;self.saved=False;self.current_view=0;self.theme="light";self.reduced_motion=False;self.motion_paused=False;self.last_image=None;self.last_status="";self._closing=False
+        self.session=Session();self.worker=None;self.frequency=4.;self.retain=False;self.saved=False;self.current_view=0;self.theme="light";self.reduced_motion=False;self.motion_paused=False;self.last_image=None;self.last_status="";self._closing=False;self.update_dialog=None
         self.live_view=False;self.expression_controls=[];self.neutral_controls=[];self.view_selectors=[];self.detect_games=False;self.screen_tracking=False;self.game_worker=None;self.game_observation=None
         self.overlay=PipOverlay();self.overlay_enabled=False;self.overlay_corner='bottom-right';self.nudges_enabled=False;self.last_nudge=''
         self.phone_bridge=PhoneBridge();self.phone_server=None;self.companion=CompanionState();self.latest_report={};self.latest_companion={};self.next_export=0.
@@ -233,7 +237,9 @@ class MainWindow(QMainWindow):
             shortcut=QShortcut(QKeySequence(key),self);shortcut.activated.connect(callback);self.shortcuts.append(shortcut)
         if QSystemTrayIcon.isSystemTrayAvailable():
             self.tray=QSystemTrayIcon(QIcon(str(ASSETS/"unknown.svg")),self);menu=QMenu(self)
-            menu.addAction("Open Checkpoint",self.showNormal);menu.addAction("Show / hide Pip",self.toggle_overlay);menu.addAction("Pause all sources",self.pause_all);menu.addAction("Check in",self.check_in);menu.addAction("Take a break",self.toggle_break);menu.addAction("Quit",self.close);self.tray.setContextMenu(menu);self.tray.show()
+            menu.addAction("Open Checkpoint",self.showNormal);menu.addAction('Check for updates',self.show_updates);menu.addAction("Show / hide Pip",self.toggle_overlay);menu.addAction("Pause all sources",self.pause_all);menu.addAction("Check in",self.check_in);menu.addAction("Take a break",self.toggle_break);menu.addAction("Quit",self.close);self.tray.setContextMenu(menu);self.tray.show()
+        from checkpoint.update_ui import last_update_error
+        self.last_status=last_update_error(Path(__file__).resolve().parents[1])
         self.refresh()
         QApplication.instance().applicationStateChanged.connect(self.application_state)
         if not no_setup:QTimer.singleShot(0,self.new_session)
@@ -489,9 +495,9 @@ class MainWindow(QMainWindow):
         self.overlay.blob.set_movement(displayed.movement if displayed else None)
         now=time.monotonic()
         if now>=self.next_export:
-            self.next_export=now+.5
+            self.next_export=now+.25
             activity=self.input_observer.activity.snapshot() if self.input_observer.enabled and self.input_observer.target else None
-            state,report=self.companion.update(s,displayed,self.game_observation,input_stats=activity,nudges=self.nudges_enabled,now=now)
+            state,report=self.companion.update(s,displayed,self.game_observation,input_stats=activity,nudges=self.nudges_enabled,motion_enabled=not(self.reduced_motion or self.motion_paused),now=now)
             self.latest_companion=state;self.latest_report=report;self.phone_bridge.publish(state,report)
             if state['nudge'] and state['nudge']!=self.last_nudge:self.overlay.set_message(state['nudge'])
             self.last_nudge=state['nudge']
@@ -586,6 +592,10 @@ class MainWindow(QMainWindow):
         self.session=Session(game=dialog.game.currentText().strip()[:100] or "Other / manual",intention=dialog.intention.currentText(),competitive=dialog.competitive.isChecked(),experimental_analysis=prior.experimental_analysis,face_mapping=prior.face_mapping,face_gain=prior.face_gain,quiet=prior.quiet)
         self.companion=CompanionState();self.next_export=0.;self.saved=False;self.last_status="";self.refresh()
 
+    def show_updates(self):
+        from checkpoint.update_ui import UpdateDialog
+        dialog=UpdateDialog(self);self.update_dialog=dialog;dialog.exec();self.update_dialog=None;dialog.deleteLater()
+
     def show_preferences(self):
         dialog=PreferencesDialog(self)
         if dialog.exec()!=QDialog.DialogCode.Accepted:return
@@ -656,6 +666,8 @@ class MainWindow(QMainWindow):
         root.addWidget(button("Close",dialog.accept));dialog.exec()
 
     def closeEvent(self,event:QCloseEvent):
+        if self.update_dialog is not None and self.update_dialog.request_cancel():
+            event.ignore();QTimer.singleShot(300,self.close);return
         if not self.pause():event.ignore();QTimer.singleShot(500,self.close);return
         if not self.stop_game_tracking():event.ignore();QTimer.singleShot(500,self.close);return
         self.overlay.close();self.overlay.deleteLater()
@@ -693,6 +705,8 @@ def main():
             path=Path(args.screenshot);path.parent.mkdir(parents=True,exist_ok=True)
             window.timer.stop();render=QImage(window.size(),QImage.Format.Format_ARGB32);render.fill(0);window.render(render);render.save(str(path));QTimer.singleShot(200,window.close)
         QTimer.singleShot(args.screenshot_delay,save)
+    from checkpoint.updates import signal_update_ready
+    QTimer.singleShot(350,lambda:signal_update_ready(Path(__file__).resolve().parents[1]))
     code=app.exec()
     window.deleteLater();app.sendPostedEvents(None,QEvent.Type.DeferredDelete);app.processEvents()
     return code

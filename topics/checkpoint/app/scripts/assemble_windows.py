@@ -67,7 +67,9 @@ print('Setup check completed.')
 6. Phone dashboard displays a pairing QR. Choose your Wi-Fi adapter and scan it on the same trusted Wi-Fi.
    If the phone cannot connect, use Test this link on the laptop and the Private-network firewall instructions.
 7. Settings offers HSEmotion expression estimates, game observation and optional input timing/nudges.
-8. Report exports derived session data. No camera/game images or typed text are sent to your phone.
+8. Settings > Check for updates offers Update and restart for future releases.
+   Small app updates reuse the runtime/models; a changed runtime uses the full package automatically.
+9. Report exports derived session data. No camera/game images or typed text are sent to your phone.
 
 Neutral and loss of detection use a flat neutral appearance. The status still
 says when no face is detected. Set my neutral face optionally calibrates a few

@@ -1,0 +1,15 @@
+# Pip's facial movement response
+
+The user confirmed camera capture works, but laughing was barely represented and drawn brows did not read as angry. The old mapping discarded modest smiles as neutral; every 4 Hz camera sample restarted a 1.2 second eased transition, hiding brief movements. The drawn-brow lines were also tilted toward a worried expression. These implementation defects are corrected without changing provider-trained weights.
+
+Neutral keeps a flat mouth, relaxed brows and the original soft body. Missing/stale face tracking immediately resets to that appearance while retaining the unavailable/no-face label. Rest floors suppress very small movements; optional relaxed calibration removes personal offsets, with caps so a strongly posed expression cannot be completely subtracted. No personal emotion-photo collection is required.
+
+A modest visible smile now drives the smile continuously, with gentle widening and softer eyes. Smile plus jaw opening drives the **Open smile** appearance: a dark smiling mouth, happy eye arcs and a vertical bob of less than 1% of the character's height. It is a visual laughter-like composition, not audio-verified laughter. Jaw opening alone stays **Mouth open** and does not create a happy/laughing state. Strong smile movement takes precedence over squinted brows, preventing an open smile from looking angry.
+
+Drawn brows no longer require a strong frown or complete cancellation of inner-brow raising. They tilt inward/down and accompany a slightly tightened mouth and body. The label stays **Brows drawn**, because a visible face cannot establish internal anger or frustration. Physical mapping is the recommended engine; the optional eight-category HSEmotion model has no separate laughter class.
+
+Time-based exponential following replaces repeated eased-transition resets. Face parameters respond in about 140 ms on rising targets and release more slowly (240 ms); colour/body transitions take longer. These are animation filter constants, not measured end-to-end camera latency. One continuous native body is retained, without large shakes, particles or effects. Reduced motion/paused decoration displays changing face states without bounce/easing and is also passed to the phone.
+
+The phone uses the same visual parameters and geometry, with active updates up to four times per second rather than once per second. This reduces missed brief expressions; it is not a claim that all laughter is captured. No camera images are streamed to the phone.
+
+The native state image and GIF are rendered from explicit synthetic face signals. They verify composition and transition behaviour, not facial-recognition accuracy on the user's face. Tests cover rest, small smiles, open smiles versus talking, brow cancellation, continuous retargeting, recorded-video mapper operation, and native-to-phone updates. Provider model hashes and the earlier categorical-model benchmark remain unchanged. A target-person check is still needed to assess whether their actual movements map usefully.

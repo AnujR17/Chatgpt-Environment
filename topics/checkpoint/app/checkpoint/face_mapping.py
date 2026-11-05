@@ -4,21 +4,39 @@ import hashlib
 import time
 import cv2
 import numpy as np
-from checkpoint.runtime import Cue
+from checkpoint.cues import Cue
 
 
 def movement_parameters(scores,baseline=None,gain=1.5):
     baseline=baseline or {}
     def value(name):return max(0.,float(scores.get(name,0))-float(baseline.get(name,0)))
-    smile=(value('mouthSmileLeft')+value('mouthSmileRight'))/2
-    frown=(value('mouthFrownLeft')+value('mouthFrownRight'))/2
-    down=(value('browDownLeft')+value('browDownRight'))/2
-    up=value('browInnerUp');blink=(float(scores.get('eyeBlinkLeft',0))+float(scores.get('eyeBlinkRight',0)))/2
-    clip=lambda x,lo,hi:max(lo,min(hi,float(x)))
-    deadband=lambda x:0. if abs(x)<.1 else x
-    return {'smile':deadband(clip((smile-frown)*gain*2,-1,1)),'brow':deadband(clip((down-up)*gain*2,-1,1)),
-            'eyes':clip(1-blink, .08,1.3),'jaw':deadband(clip(value('jawOpen')*gain,0,1)),
-            'tension':clip(down*gain,0,.6)}
+    def average(prefix):return (value(prefix+'Left')+value(prefix+'Right'))/2
+    clip=lambda x,lo=0.,hi=1.:max(lo,min(hi,float(x)))
+    # Small rest movements stay flat; expression strength stays continuous above the floor.
+    floor=lambda x:max(0.,x-(.025 if baseline else .045))
+    smile=average('mouthSmile');frown=average('mouthFrown')
+    positive=clip(floor(smile-.35*frown)*gain*2.8)
+    negative=clip(floor(frown-.65*smile)*gain*2.5)
+    down=.65*average('browDown')+.35*max(value('browDownLeft'),value('browDownRight'))
+    brow=clip((floor(down)-.28*floor(value('browInnerUp')))*gain*3.,-1.,1.)
+    jaw=clip(floor(value('jawOpen'))*gain*1.9)
+    blink=(float(scores.get('eyeBlinkLeft',0))+float(scores.get('eyeBlinkRight',0)))/2
+    squint=max(average('eyeSquint'),average('cheekSquint'))
+    laughing=clip((positive-.2)/.65)*clip((jaw-.12)/.5)
+    deadband=lambda x:0. if abs(x)<.12 else x
+    return {'smile':deadband(positive-negative),'brow':deadband(brow),
+            'eyes':clip((1-blink)*(1-.45*squint),.08,1.3),'jaw':deadband(jaw),
+            'tension':clip(down*gain+average('mouthPress')*gain*.35,0,.6),'laugh':laughing}
+
+
+def movement_label(movement):
+    # A smile plus an open mouth is a visible open smile, not proof of audible laughter.
+    if movement['smile']>=.16:
+        return ('happiness','Open smile') if movement.get('laugh',0)>.08 else ('happiness','Smile movement')
+    if movement['brow']>.15:return 'anger','Brows drawn'
+    if movement['smile']<-.15:return 'sadness','Mouth corners lowered'
+    if movement['jaw']>.2:return 'surprise','Mouth open'
+    return 'neutral','Neutral appearance'
 
 
 class LandmarkPipeline:
@@ -55,16 +73,13 @@ class LandmarkPipeline:
             self.calibration.append(scores)
             if len(self.calibration)>=8:
                 names=['mouthSmileLeft','mouthSmileRight','mouthFrownLeft','mouthFrownRight','browDownLeft','browDownRight','browInnerUp','jawOpen']
-                self.baseline={name:float(np.median([x.get(name,0) for x in self.calibration])) for name in names};self.calibrating=False;label='Neutral face calibrated'
+                self.baseline={name:min(.12 if name=='jawOpen' else .18,float(np.median([x.get(name,0) for x in self.calibration]))) for name in names};self.calibrating=False;label='Neutral face calibrated'
             else:label=f'Hold a relaxed face · {len(self.calibration)}/8'
-            movement={'smile':0.,'brow':0.,'eyes':1.,'jaw':0.,'tension':0.}
+            movement={'smile':0.,'brow':0.,'eyes':1.,'jaw':0.,'tension':0.,'laugh':0.}
         else:
             movement=movement_parameters(scores,self.baseline,self.gain)
-            if movement['brow']>.22:key='anger';label='Brows drawn'
-            elif movement['smile']>.3:key='happiness';label='Smile movement'
-            elif movement['jaw']>.35:key='surprise';label='Mouth open'
-            elif movement['smile']<-.2:key='sadness';label='Mouth corners lowered'
-            if key=='neutral':movement.update(smile=0.,brow=0.,jaw=0.)
+            key,label=movement_label(movement)
+            if key=='neutral':movement.update(smile=0.,brow=0.,jaw=0.,laugh=0.)
         return Cue('accepted',key,reason='Physical face mapping · not a mood estimate',elapsed_ms=(time.monotonic()-start)*1000,
                    movement=movement,mapping_label=label)
 

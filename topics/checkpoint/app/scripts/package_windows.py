@@ -8,7 +8,7 @@ copytree(ROOT/'checkpoint',APP/'checkpoint',dirs_exist_ok=True,ignore=lambda d,n
 (APP/'docs').mkdir(exist_ok=True)
 for p in ['MODEL-CARD.md','release-gates.json']:copyfile(ROOT/'artifacts'/p,APP/'artifacts'/p)
 # Exact source and runtime provenance are shipped for review, without training images or reference downloads.
-manifest={str(p.relative_to(APP)):hashlib.sha256(p.read_bytes()).hexdigest() for p in APP.rglob('*') if p.is_file() and p.name!='application-manifest.json'}
+manifest={str(p.relative_to(APP)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in APP.rglob('*') if p.is_file() and p.name!='application-manifest.json'}
 (APP/'application-manifest.json').write_text(json.dumps(manifest,indent=2))
 with ZipFile(OUT,'w',ZIP_DEFLATED,compresslevel=6) as z:
     for p in sorted(APP.rglob('*')):

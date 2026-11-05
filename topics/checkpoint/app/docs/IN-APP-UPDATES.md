@@ -1,0 +1,17 @@
+# In-app updates
+
+The old 0.2.x app has no updater. Install the 0.3.0 portable release once into a fresh folder. From then on, open **Settings → Check for updates** (also in the tray menu). When a newer Checkpoint release exists, choose **Update and restart**. Nothing is installed silently.
+
+The app checks only Checkpoint release tags and update assets from AnujR17/Chatgpt-Environment on GitHub. Other topic projects in the repository are ignored. Preview releases are included because this application is a research preview. No GitHub account, token or new service subscription is required. Offline/rate-limit failures display an error and leave the installation alone.
+
+Most releases download **Checkpoint-App-Update.zip**, containing app code, assets and instructions. Existing model hashes and the pinned runtime fingerprint must match before using it. If models/runtime differ, the same button downloads the full portable package instead; it does not ask you to unpack another ZIP manually. The first bootstrap install and a change of machine still use the full download.
+
+The updater checks repository-specific asset URLs, expected size, SHA-256, GitHub's asset digest when supplied, and app file hashes. It rejects traversal, reserved Windows paths, duplicate/case-colliding entries and symlinks. Trust is in this GitHub repository/account and HTTPS; this is not a separately code-signed update channel. Code-signing remains outside the preview's claims.
+
+Preparation runs outside the UI thread. It creates a complete next installation beside the current one. Unchanged runtime files use same-drive hard links where supported, with a copy fallback; app files are copied independently before being replaced. Current files are not overwritten while the app runs. Your normal saved check-ins live in Windows app data, outside the portable folder.
+
+Choosing the restart ends the current app session and stops sensing and phone sharing. A separate Windows PowerShell process waits for Checkpoint to exit, moves the old installation into a backup, swaps in the prepared version and launches it with capture off. The new app acknowledges that its Qt window/event loop started. A launch failure or missing acknowledgement restores and restarts the previous installation. Other running copies/file locks can prevent a swap; the error is retained for the next launch. The helper does not change system execution policy, install a service, require administrator rights, modify the firewall or stop a game.
+
+Update work is under `.checkpoint-updates` beside the portable folder. Previous installations are retained under `.checkpoint-backups`; old backups can be removed manually once satisfied with the installed version. Checkpoint must be in a writable folder. Do not delete a pending update folder while applying an update.
+
+The Windows CI fixture exercises the actual helper, embedded Python restart and failed-start rollback using disposable folders. It does not modify a user's installation. Software tests separately check the native button flow, corrupt download/cancellation isolation, repository filtering, package compatibility and unsafe archives. Publication verification checks both the full and small assets. User-device security policy, disk/file locks and network conditions can still affect an actual update.

@@ -87,3 +87,5 @@ See README.md, the two candidate folders, training-config.json, training-history
 ![External video confusion matrix](figures/video-confusion.png)
 ![Validation learning curves](figures/learning-curves.png)
 ![Test reliability](figures/classification-reliability.png)
+
+0.3.0 changes physical-movement presentation thresholds, brow geometry and animation response, without changing provider model bytes. Open smile combines visible smile and jaw movement; it is not an audio-verified laughter class. The earlier categorical-model benchmark does not validate these new movement thresholds. See docs/EXPRESSIVE-PIP.md.

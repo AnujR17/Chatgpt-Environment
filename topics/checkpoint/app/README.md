@@ -4,13 +4,21 @@ Pip is an original soft desktop companion. The Windows app maps visible face mov
 
 ## Download and use
 
-**[Download the Windows portable app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.2.1-preview.2/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.2.1-preview.2)
+**[Download the Windows portable app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.3.0-preview.1/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.3.0-preview.1)
 
 Extract the whole ZIP into a new folder, run **Start Checkpoint.cmd**, tick **Track my face**, then **Start camera**. Click **Show Pip** for the frameless click-through companion. **Phone dashboard** displays a pairing QR: scan it from a phone on the same trusted Wi-Fi. No phone-store installation is required; the phone view is a local browser dashboard.
 
 [Controls and pairing](docs/PIP-COMPANION.md) · [Windows instructions](docs/WINDOWS-APP.md) · [Video shortlist and training](docs/VIDEO-AND-MODEL-RESEARCH.md) · [Model comparison](artifacts/pretrained-comparison.json)
 
 ![Pip phone dashboard, synthetic UI fixture](artifacts/pip-phone-neutral.png)
+
+## Updates and expressions
+
+Install this version once to get **Settings → Check for updates**. Future releases offer **Update and restart** inside the app, with a small app payload when the runtime/models can be reused and a full-package fallback otherwise. Downloads are checked before staging; failed startup restores the previous installation. No silent update is installed. [How updates work](docs/IN-APP-UPDATES.md).
+
+Pip now responds to smaller smiles, open smiles and drawn brows with a faster continuous transition. Neutral stays flat. An open smile gets soft happy eyes, an open mouth and a tiny bob; inward brows give a firmer expression. These are physical-movement mappings, not new emotion-model classes or measured moods. [Motion behaviour](docs/EXPRESSIVE-PIP.md).
+
+![Native Pip states, synthetic face signals](artifacts/pip-expression-states.png)
 
 ## What is implemented
 

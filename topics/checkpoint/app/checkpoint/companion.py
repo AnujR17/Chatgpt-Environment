@@ -10,7 +10,7 @@ class CompanionState:
         self.nudge='';self.nudge_at=0.;self.last_prompt=-1000.;self.last_fall=-1000.;self.fall_pending=False
         self.activity_samples=deque(maxlen=360);self.last_activity=-100.
 
-    def update(self,session,display,game,*,input_stats=None,nudges=False,now=None):
+    def update(self,session,display,game,*,input_stats=None,nudges=False,motion_enabled=True,now=None):
         now=time.monotonic() if now is None else now;elapsed=round(session.elapsed(),1)
         title=display.title if display else session.affect[0]
         artwork=display.artwork if display else session.report
@@ -37,7 +37,7 @@ class CompanionState:
         visual=parameters(artwork)
         if display and display.movement:visual=movement_visual(display.movement)
         state={'version':1,'character':'Pip','updated_at':time.time(),'elapsed_seconds':elapsed,
-            'active':session.active,'paused':session.break_deadline is not None,'game':session.game,
+            'animate':bool(motion_enabled and session.active and session.break_deadline is None),'active':session.active,'paused':session.break_deadline is not None,'game':session.game,
             'title':title,'source':source,'artwork':artwork,'blob':visual,
             'unknown':artwork is None,'camera_active':session.camera_active,'game_status':game_status,'game_cue':cue,
             'checkin':{'title':session.affect[0],'pleasantness':session.affect[1],'activation':session.affect[2]},

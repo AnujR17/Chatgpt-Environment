@@ -2,6 +2,8 @@
   "browser": "Chromium, 390x844 phone viewport",
   "fixture": "Synthetic physical-face cues, not live recognition",
   "native_to_phone_updates": "passed",
+  "open_smile_animation": "passed",
+  "paired_reduced_motion": "passed",
   "neutral_fallback": "passed",
   "report_download": "passed",
   "disconnection": "passed",

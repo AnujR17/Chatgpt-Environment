@@ -41,6 +41,8 @@ jobs:
           New-Item -ItemType Directory -Force build/Checkpoint-Windows/docs | Out-Null
           Copy-Item docs/WINDOWS-APP.md build/Checkpoint-Windows/docs/
           Copy-Item docs/PIP-COMPANION.md build/Checkpoint-Windows/docs/
+          Copy-Item docs/IN-APP-UPDATES.md build/Checkpoint-Windows/docs/
+          Copy-Item docs/EXPRESSIVE-PIP.md build/Checkpoint-Windows/docs/
           Copy-Item docs/CAMERA-AND-PHONE-TROUBLESHOOTING.md build/Checkpoint-Windows/docs/
           Copy-Item docs/VIDEO-AND-MODEL-RESEARCH.md build/Checkpoint-Windows/docs/
           Copy-Item artifacts/cards-app-tests.xml build/Checkpoint-Windows/docs/
@@ -64,9 +66,16 @@ jobs:
           Copy-Item artifacts/live-tracking-tests.xml build/Checkpoint-Windows/docs/
           Copy-Item artifacts/pip-tests.xml build/Checkpoint-Windows/docs/
           Copy-Item artifacts/pip-phone-verification.json build/Checkpoint-Windows/docs/
+      - name: Check Windows updater restart and rollback
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_updates.py
+          if ($LASTEXITCODE -ne 0) { throw 'Windows updater restart/rollback fixtures failed' }
+          Copy-Item artifacts/windows-updater-smoke.json build/Checkpoint-Windows/docs/
       - name: Package and verify archive
         run: |
           python -m scripts.package_windows
+          if ($LASTEXITCODE -ne 0) { throw 'Package verification failed' }
+          python -m scripts.package_app_update
           if ($LASTEXITCODE -ne 0) { throw 'Package verification failed' }
           $hash = (Get-FileHash ../Checkpoint-Windows-Preview.zip -Algorithm SHA256).Hash.ToLower()
           "$hash  Checkpoint-Windows-Preview.zip" | Set-Content -Encoding ascii ../SHA256SUMS.txt
@@ -77,6 +86,8 @@ jobs:
           path: |
             topics/checkpoint/Checkpoint-Windows-Preview.zip
             topics/checkpoint/SHA256SUMS.txt
+            topics/checkpoint/Checkpoint-App-Update.zip
+            topics/checkpoint/Checkpoint-update.json
             topics/checkpoint/app/build/Checkpoint-Windows/windows-smoke.png
             topics/checkpoint/app/artifacts/windows-package-verification.json
             topics/checkpoint/app/artifacts/windows-tracking-smoke.json
@@ -86,11 +97,13 @@ jobs:
           GH_REPO: ${{ github.repository }}
           RELEASE_COMMIT: ${{ github.sha }}
         run: |
-          $tag = 'checkpoint-v0.2.1-preview.2'
+          $tag = python -c "from checkpoint.version import RELEASE_TAG; print(RELEASE_TAG)"
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint — Camera and phone connection fix' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint — Expressive Pip and in-app updates' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
-          gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt --clobber
+          gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip --clobber
           if ($LASTEXITCODE -ne 0) { throw 'Release asset upload failed' }
+          gh release upload $tag ../Checkpoint-update.json --clobber
+          if ($LASTEXITCODE -ne 0) { throw 'Update manifest upload failed' }
