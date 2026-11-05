@@ -89,7 +89,7 @@ def report_html(report):
         parts.append('</p><p class="muted">Counts refer to check-ins, not time spent in a feeling.</p>')
     observed=report.get('observations')
     if observed and any(observed.get('sustained_patterns',{}).values()):
-        patterns=observed['sustained_patterns'];label='Recorded-video context' if observed.get('video_test') else 'Visual context'
+        patterns=observed['sustained_patterns'];label='Visual context (includes video testing)' if observed.get('video_test') else 'Visual context'
         parts.append('<h2>'+label+'</h2><p>'+e(observed.get('usable_face_seconds',0))+' seconds of usable observation: '+e(patterns.get('tense',0))+' sustained tense-looking patterns and '+e(patterns.get('positive',0))+' sustained positive-looking patterns. These need your interpretation; they are not emotion durations.</p>')
     parts.extend(['<h2>What stands out</h2><p>'+e(c['insight'])+'</p>','<h2>For your next session</h2><p>'+e(c['next_step'])+'</p>',
                   '<p class="muted">CMA describes pleasantness and activation. Coordinates are adjustable check-in values, not clinical measurements. Facial estimates, hand gestures and input activity are not used to invent an emotional history.</p></body></html>'])

@@ -2,7 +2,7 @@
 
 Nori is a local Windows gaming companion. Its default **Reflection** view considers sustained visual patterns and your own check-ins. **Face preview** is an instant tester for facial and hand movements. CMA reports describe your reported pleasantness and activation; they do not invent a mood history from a webcam.
 
-Already on 0.3? Use **Settings → Check for updates → Update and restart**. The compatible app package includes the new hand model without replacing the native runtime. **[Full Windows download](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.4.0-preview.1/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.4.0-preview.1)
+Already on 0.3? Use **Settings → Check for updates → Update and restart**. The compatible app package includes the new hand model without replacing the native runtime. **[Full Windows download](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.4.0-preview.2/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.4.0-preview.2)
 
 For a fresh install, extract the full ZIP and run **Start Checkpoint.cmd**. Start your camera and optionally enable **Track face and hands**. Reflection uses a 20-second observation window and stable display holds; your confirmed check-in stays in charge. Choose **Face preview** for immediate movement tests, or **Open video** to test a local clip. **Show Nori** enables the frameless companion. Hold **Ctrl+Alt and drag**, then release to lock its position. **Phone dashboard** pairs on the same trusted private Wi-Fi.
 

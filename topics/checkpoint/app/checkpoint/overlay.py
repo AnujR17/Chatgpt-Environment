@@ -14,7 +14,7 @@ class NoriOverlay(QWidget):
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground);self.setAttribute(Qt.WidgetAttribute.WA_ShowWithoutActivating)
         self.setStyleSheet('background:transparent;');self.setWindowTitle('Nori');self.resize(164,190)
         self.blob=NoriWidget(132);self.blob.setParent(self);self.blob.move(16,48);self.blob.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents)
-        self.message='';self.message_until=0.;self.dragging=False;self.drag_offset=QPoint();self.editing=False;self.manual_until=0.;self.preference_file=None
+        self.message='';self.message_until=0.;self.dragging=False;self.drag_offset=QPoint();self.editing=False;self.manual_until=0.;self.preference_file=None;self.recreating=False
         self.setAccessibleName('Nori desktop companion · hold Ctrl+Alt to drag; release to lock');self.place('bottom-right')
         self.expiry=QTimer(self);self.expiry.timeout.connect(self.clear_expired);self.expiry.start(500)
         self.modifiers=QTimer(self);self.modifiers.setInterval(50);self.modifiers.timeout.connect(self.check_modifiers)
@@ -31,7 +31,9 @@ class NoriOverlay(QWidget):
             set_style(hwnd,-20,(style&~0x20) if self.editing else (style|0x20))
 
     def hideEvent(self,event):
-        self.modifiers.stop();self.manual_until=0.;super().hideEvent(event)
+        self.modifiers.stop()
+        if not self.recreating:self.manual_until=0.
+        super().hideEvent(event)
 
     def place(self,corner):
         screen=QGuiApplication.primaryScreen()
@@ -58,10 +60,10 @@ class NoriOverlay(QWidget):
 
     def set_editable(self,enabled):
         if enabled==self.editing:return
-        self.editing=enabled;visible=self.isVisible();position=self.pos();self.setWindowFlag(Qt.WindowType.WindowTransparentForInput,not enabled)
+        self.editing=enabled;visible=self.isVisible();position=self.pos();self.recreating=True;self.setWindowFlag(Qt.WindowType.WindowTransparentForInput,not enabled)
         self.setCursor(Qt.CursorShape.SizeAllCursor if enabled else Qt.CursorShape.ArrowCursor)
         if visible:self.show();self.move(position)
-        self.update()
+        self.recreating=False;self.update()
 
     def check_modifiers(self):
         if sys.platform=='win32':

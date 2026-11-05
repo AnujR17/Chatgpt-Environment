@@ -310,7 +310,9 @@ class MainWindow(QMainWindow):
         return True
 
     def toggle_overlay(self):
-        self.overlay_enabled=not self.overlay_enabled;self.overlay.setVisible(self.overlay_enabled);self.refresh()
+        self.overlay_enabled=not self.overlay_enabled
+        if not self.overlay_enabled:self.overlay.manual_until=0.;self.overlay.dragging=False;self.overlay.set_editable(False)
+        self.overlay.setVisible(self.overlay_enabled);self.refresh()
 
     def edit_overlay_position(self):
         self.overlay_enabled=True;self.overlay.show();self.overlay.begin_move();self.refresh()
@@ -635,7 +637,9 @@ class MainWindow(QMainWindow):
             rows=['<h2>Visible movement details</h2><p>'+html.escape(cue.mapping_label or cue.reason)+'</p><table>']
             for key in ('smile','mouth_wide','pressed','jaw','teeth','brow','eye_left','eye_right','snarl','hand','mouth_visible'):
                 if key in movement:rows.append('<tr><td>'+html.escape(key.replace('_',' '))+'</td><td>'+f'{movement[key]:.2f}'+'</td></tr>')
-            rows.append('</table><h3>Eight-class expression model</h3><p>Model scores are not probabilities of your felt emotion.</p><table>')
+            rows.append('</table>')
+            if cue.gesture and cue.gesture.get('status')=='unavailable':rows.append('<p>Hand tracker unavailable: '+html.escape(cue.gesture.get('reason',''))+'</p>')
+            rows.append('<h3>Eight-class expression model</h3><p>Model scores are not probabilities of your felt emotion.</p><table>')
             scores=estimate.get('scores',{})
             for name in LABELS:rows.append('<tr><td>'+html.escape(name.title())+'</td><td>'+(f'{scores[name]:.2f}' if name in scores else 'Unavailable')+'</td></tr>')
             rows.append('</table><p>'+html.escape(estimate.get('reason',''))+'</p>');content.setHtml(''.join(rows))

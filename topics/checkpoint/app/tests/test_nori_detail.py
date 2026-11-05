@@ -86,7 +86,7 @@ def test_43_checkin_profiles_are_distinct_and_cma_changes_body_not_expression():
 def test_drag_release_relocks_and_remembers_position(tmp_path):
     app=create_application([]);w=MainWindow(no_setup=True,data_dir=tmp_path);w.show();w.toggle_overlay()
     try:
-        overlay=w.overlay;overlay.begin_move();overlay.move(120,130)
+        overlay=w.overlay;overlay.begin_move();QTest.qWait(150);assert overlay.editing;overlay.move(120,130)
         QTest.mousePress(overlay,Qt.MouseButton.LeftButton,pos=QPoint(80,110));QTest.mouseRelease(overlay,Qt.MouseButton.LeftButton,pos=QPoint(80,110))
         assert not overlay.editing and overlay.windowFlags()&Qt.WindowType.WindowTransparentForInput
         point=overlay.pos();assert (tmp_path/'preferences.ini').exists()
