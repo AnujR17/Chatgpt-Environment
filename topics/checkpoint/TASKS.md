@@ -16,5 +16,5 @@
 - [x] Build Pip transparent click-through overlay and local paired phone dashboard with report export.
 - [x] Add opt-in game-focused aggregate input timings and conservative quiet-window nudges.
 - [x] Verify native/browser integration and document limited official-trailer training experiment.
-- [ ] Publish and verify Pip Windows preview.
+- [x] Publish and verify Pip Windows preview (run 41985453835, HTTP 200, archive/source/model hashes checked).
 - [ ] Obtain accessible full-run gameplay sources and independent scene/event validation before enabling learned game cues.

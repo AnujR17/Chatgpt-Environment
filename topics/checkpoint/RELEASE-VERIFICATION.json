@@ -1,24 +1,43 @@
 {
   "verified_at": "2026-11-05",
   "branch": "topic/checkpoint",
-  "release_commit": "4e8959ccde6e8bc17fe44d72bfd87cbc7e14904b",
-  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.1.0-preview.2",
+  "release_commit": "ee17627654263490e750a86c1d1c7a22438a9824",
+  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.2.0-pip-preview.2",
   "download_http_status": 200,
-  "download_bytes": 173356564,
-  "sha256": "46dfcd58e9ea5c5af5d9e740ab0373815519a33951e03537309c9168d5863974",
+  "download_bytes": 237453271,
+  "sha256": "7126fcafe49434210e0e5c30cb5046433f7b92e2e6e629a603b127a1bca8b687",
   "checksum_matches_release_file": true,
+  "github_asset_digest_matches": true,
   "archive_integrity": "passed",
   "app_source_matches_branch": "passed after Windows newline normalization",
-  "model_weights": "unchanged",
-  "local_tests": "34 passed, 1 Windows-only test skipped; includes actual recorded-video inference",
+  "model_weights": "Provider-pretrained MediaPipe and HSEmotion added with verified hashes; archived classifier unchanged",
+  "local_tests": "41 passed, 1 Windows-only test skipped; includes actual recorded-video face mapping",
+  "phone_browser_checks": {
+    "browser": "Chromium, 390x844 phone viewport",
+    "fixture": "Synthetic physical-face cues, not live recognition",
+    "native_to_phone_updates": "passed",
+    "neutral_fallback": "passed",
+    "report_download": "passed",
+    "disconnection": "passed",
+    "horizontal_overflow": "none",
+    "javascript_errors": [],
+    "physical_phone_network": "not tested"
+  },
   "windows_checks": {
     "windows_native_live_card_fixture": "passed",
     "windows_gdi_own_window_fixture": "passed",
     "reject_wrong_window": "passed",
     "pause_clears_live_card": "passed",
     "player_report_preserved": "passed",
-    "physical_camera_and_actual_game": "not tested"
+    "overlay_no_focus_steal": "passed",
+    "overlay_native_clickthrough_style": "passed",
+    "raw_input_registration": "passed",
+    "face_landmarker_native_load": "passed",
+    "hsemotion_inference": "passed",
+    "phone_loopback_api": "passed",
+    "physical_camera_and_actual_game": "not tested",
+    "physical_phone_wifi": "not tested"
   },
-  "actual_getting_over_it_event_accuracy": "not evaluated; only synthetic-motion tests",
-  "run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41974006878"
+  "actual_getting_over_it_event_accuracy": "not evaluated; trailer scene experiment excluded from live cues due failed scene generalization",
+  "run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41985453835"
 }
