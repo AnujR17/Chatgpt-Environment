@@ -4,8 +4,12 @@ on:
   push:
     branches: [topic/checkpoint]
     paths:
-      - topics/checkpoint/app/**
-      - .github/workflows/checkpoint-windows.yml
+      - topics/checkpoint/app/checkpoint/**
+      - topics/checkpoint/app/scripts/**
+      - topics/checkpoint/app/requirements-runtime.txt
+      - topics/checkpoint/app/artifacts/*.onnx
+      - topics/checkpoint/app/artifacts/calibration.json
+      - topics/checkpoint/app/design/windows-runtime-sources.json
   workflow_dispatch:
 
 permissions:
