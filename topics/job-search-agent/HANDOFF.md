@@ -2,6 +2,18 @@
 
 Updated 5 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 5 November Gandhinagar / GIFT City follow-up — published
+
+Focused local research adds Vested Finance junior UI/UX as an on-hold full-time stretch alternative:1–2years product-design experience, GIFT City in-office, undisclosed salary. Wellfound4878924 and matching LinkedIn4481196262 deduplicated. Employer-linked Notion's general remote role is separate. No new qualifying INR20k+ Gandhinagar internship verified. Existing Menstrupedia Ahmedabad25–30k/month employer page rechecked; intake/joining unresolved.
+
+Eight company records added: Vested, Aookly, Kwiqwork, iQud, STEMbotix, DreamCrafters, AI Certs and TrellisSoft. Aookly exact Indeed expired; Kwiqwork explicitly closed; iQud2–4years; STEMbotix CAD/up-to15k; AI Certs15–18k; DreamCrafters25–30k/month contract with employer/seniority unconfirmed. TrellisSoft official index says no openings; indexed internship is not promoted as active. Negative/ambiguous QuickOps,Nextsavy,Honeybee and EveoAI evidence retained in exclusions/sources.
+
+87 retained roles /75 active /12 archived;233 companies;1,469 source records;35 coverage rows;526 exported requirement rows. Existing jobs unchanged except appended Menstrupedia observation; prior company records and all source-prefix/requirement/contact IDs,exclusions,review queue and collector timestamps preserved. Nine coverage rows updated/added with prior snapshots; this focused pass does not claim a second whole-board recheck. Naukri web robots/normal empty shell and X403 recorded. Internshala public category/exact AI Certs detail readable by normal TLS/robots-aware request despite web-tool restriction; no authenticated session implied.
+
+Public data commit `e576da9141d27b97ce51c99a34e1f8f858de90bd`, on `topic/job-search-agent`, pushed as AnujR17. Existing project `prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg` production deployment `dpl_FeaFSWhwXpRSNUvXbfMrDtZTYyXj` READY; exact SHA/ref/project and public alias verified. All seven live JSON/export/report files byte-match that commit. Live/local desktop/mobile smoke passed with0runtime errors and synthetic blacklist/profile/stage/requirements preservation. Existing deployment protection unchanged; automatic-preview isolation retained; no Git Production Branch tracking change claimed.
+
+Build,model,five Python collector checks and preservation/export audit pass. Two data assertions pass; existing Gravity on_hold assertion at tests/data.test.js:19 still fails because its previously corroborated closure is retained. No UI/model/test or main changes; no applications/messages or private applicant data committed. Review artifacts remain outside Git in `/workspace/gandhinagar-nov5-review`. This handoff-only follow-up does not require redeployment.
+
 ## Branch publishing fix — 5 November 2026
 
 - User reported a preview failure for Checkpoint commit4362327. Vercel deployment `dpl_2JgB1SFBKBRfgMjETmpmjRwjXumB` confirms `NOW_SANDBOX_WORKER_ROOTDIR_NOT_EXIST` at build-container-init. `topic/checkpoint` contains no job-board app;`topic/job-search-agent` contains it. No Checkpoint or main source changes were made.

@@ -1,5 +1,13 @@
 # Tasks
 
+## 5 November Gandhinagar / GIFT City follow-up
+
+- [x] Search local employers,LinkedIn/socials,Indeed,Naukri,Internshala,Wellfound,Cutshort andUnstop; record actual access and zero-result limits.
+- [x] Add one junior stretch role and eight company records; preserve below-target,closed and experienced-only distinctions. No new verified20k+ Gandhinagar internship.
+- [x] Preserve all existing record/requirement/source IDs,review queue and browser-state compatibility; regenerate workbook/company CSV.
+- [x] Validate build,model,collector,preservation and desktop/mobile flows; document existing Gravity data-test failure.
+- [x] Publish exacte576da9141d27b97ce51c99a34e1f8f858de90bd to existing production project; READYdpl_FeaFSWhwXpRSNUvXbfMrDtZTYyXj,all seven live files and live browser verified;protection unchanged.
+
 ## 5 November branch publishing fix
 
 - [x] Diagnose Checkpoint preview error against Vercel error metadata and both branch trees;job-board root exists only in its own branch.
