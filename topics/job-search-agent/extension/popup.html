@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Design search clipper</title>
+<style>
+  *{box-sizing:border-box}body{width:380px;margin:0;padding:22px;background:#f7f6f2;color:#293d34;font:14px system-ui,sans-serif}h1{font-size:21px;margin:0 0 8px}p{line-height:1.5;color:#66746b}label{display:block;font-weight:600;margin:13px 0 5px}input,textarea{width:100%;border:1px solid #d8dfd0;border-radius:7px;padding:9px;font:inherit;background:white;color:inherit}textarea{min-height:92px;resize:vertical}button,a{font:inherit}button{border:1px solid #c9d2c1;border-radius:7px;padding:10px;cursor:pointer;color:inherit;background:white}button.primary{background:#304b40;color:white;border-color:#304b40}button:disabled{opacity:.5;cursor:default}.actions{display:flex;gap:8px;margin-top:15px;flex-wrap:wrap}a{color:#304b40}#message{min-height:24px;line-height:1.5;margin:12px 0 0}small{display:block;color:#66746b;line-height:1.5;margin-top:8px}:focus-visible{outline:3px solid #9aab83;outline-offset:2px}
+</style>
+<h1>Capture a job</h1>
+<p>Review the details from this page. Captures stay in this browser until you export them.</p>
+<form id="capture-form">
+  <label for="title">Role</label><input id="title" required maxlength="250">
+  <label for="company">Company</label><input id="company" required maxlength="200">
+  <label for="location">Location and work arrangement</label><input id="location" maxlength="500">
+  <label for="rawCompensation">Pay exactly as listed</label><input id="rawCompensation" maxlength="1500" placeholder="Leave blank if undisclosed">
+  <label for="description">Job description</label><textarea id="description" required maxlength="20000"></textarea>
+  <small>No description found? Paste only the job description. Pay and eligibility remain unverified.</small>
+  <div class="actions"><button class="primary" id="save" type="submit" disabled>Save for review</button><button id="reread" type="button">Read page again</button></div>
+</form>
+<p id="message" role="status" aria-live="polite"></p>
+<div class="actions"><button id="export" type="button">Export captures</button><button id="clear" type="button">Clear captures</button></div>
+<p><a href="https://chatgpt-environment.vercel.app" target="_blank" rel="noopener noreferrer">Open design search board</a></p>
+<small>In the board, choose Export → Import captured jobs and select the exported JSON. Saving a job never marks it applied.</small>
+<script type="module" src="popup.js"></script>
+</html>

@@ -20,6 +20,14 @@ Personal internship discovery and application Kanban for Anuj. Primary GitHub ow
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.
 - Source evidence, exclusions, freshness caveats and a collection report.
 
+## Browser capture companion
+
+Download the browser clipper from **Export → Download browser clipper**, unzip it and load it in a supported desktop Chromium browser using Developer mode → Load unpacked. Open a job detail, review the captured fields, save for review and export the JSON. Use **Export → Import captured jobs** in the board in your usual browser. See [the extension guide](../extension/README.md) for source attribution, permissions and limitations.
+
+Captured jobs stay browser-local, enter On hold with pay/location/seniority unverified, and never change application stages or applicant data. Exact source/platform-ID duplicates and current blacklisted companies are skipped. Cross-posts without shared identity need manual review. The clipper does not give the cloud task access to a logged-in browser, submit applications or bypass blocked pages. Site readers are tested on controlled fixtures; live platform layouts still require checks on the user's device.
+
+Build its deterministic download with `python scripts/package_clipper.py` before `npm run build`. No runtime or extension dependencies were added.
+
 ## Run and check
 
 ```sh
