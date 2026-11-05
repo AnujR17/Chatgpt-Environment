@@ -31,3 +31,11 @@
 - [x] Verify local safety/interaction tests and native-to-browser expressions/reduced motion.
 - [x] Verify real Windows restart/rollback fixtures and publish/download-check 0.3.0 full/small assets (run 42012077177).
 - [ ] Check subjective facial response and an actual later-version update on the user's PC.
+
+- [x] Rename character Nori and implement independent face regions, hand-mouth masking and conservative teeth appearance.
+- [x] Author 43 selectable check-in profiles and connect reported CMA to body energy/shape.
+- [x] Make sustained Reflection default; keep instant Face preview and eight-class scores separate.
+- [x] Replace report event logs with CMA check-in journey/reflection and native/phone PDF.
+- [x] Add Ctrl+Alt/tray dragging with click-through restoration and saved placement.
+- [ ] Publish/verify 0.4 native Windows and in-app payload.
+- [ ] Validate subjective usefulness, hand-mouth/teeth performance and a real update on the user's device.

@@ -29,13 +29,10 @@ REFERENCES = {**ANCHORS, **LEGACY}
 # Extended words are optional vocabulary, with adjustable illustrative defaults.
 # No categorical word or facial cue establishes either dimension for a person.
 from checkpoint.vocabulary import CARDS
+from checkpoint.cma_defaults import DEFAULTS
 for _key,_card in CARDS.items():
     if _key not in REFERENCES:
-        _v,_a=(0.,0.)
-        if _key in ('amused','delighted','exhilarated','happy','hopeful','grateful','satisfied','contented'):_v,_a=(.6,.3)
-        if _key in ('composed','serene','modest'):_v,_a=(.5,-.5)
-        if _key in ('miserable','disappointed','brooding','withdrawn','exhausted'):_v,_a=(-.5,-.6)
-        if _key in ('combative','hate','indignant','loathing','disgust','appalled'):_v,_a=(-.6,.6)
+        _v,_a=DEFAULTS.get(_key,(0.,0.))
         REFERENCES[_key]=(_card['label'],_v,_a,'Your word for this moment. Adjust the balance to fit how it feels.')
 
 

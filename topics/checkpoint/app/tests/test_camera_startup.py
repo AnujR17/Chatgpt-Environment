@@ -55,7 +55,7 @@ def test_cancelling_camera_warmup_releases_handle_without_opening_more_devices(m
 def test_model_failure_keeps_camera_preview_running_and_shows_tracking_error(monkeypatch,tmp_path,failure):
     import checkpoint.face_mapping as mapping
     class BrokenModel:
-        def __init__(self):
+        def __init__(self,**kwargs):
             if failure=='startup':raise RuntimeError('Synthetic model startup error')
         def infer(self,frame):raise RuntimeError('Synthetic model inference error')
         def close(self):pass
@@ -71,6 +71,7 @@ def test_model_failure_keeps_camera_preview_running_and_shows_tracking_error(mon
             if window.worker is not None and window.worker.frames>3 and window.worker.analysis_error:break
         assert window.session.camera_active and window.worker.isRunning() and window.last_image is not None
         assert window.worker.source==2 and window.worker.error==''
+        assert ('startup error' if failure=='startup' else 'inference error') in window.worker.analysis_error
         assert any('Face tracking unavailable' in label.text() for label in window.camera_messages)
         assert window.emblems[0].current_state is None
         assert all(not selector.isEnabled() for selector in window.camera_selectors)

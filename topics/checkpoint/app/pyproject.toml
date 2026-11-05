@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "checkpoint-companion"
-version = "0.3.0"
+version = "0.4.0"
 description = "Local research prototype for expression cues and player-reported CMA check-ins"
 requires-python = ">=3.11"
 dependencies = ["numpy>=1.26", "opencv-contrib-python>=4.10", "onnxruntime>=1.20", "PySide6-Essentials>=6.8", "psutil>=6", "qrcode==8.2", "mediapipe==0.10.35"]
@@ -17,7 +17,7 @@ checkpoint-video = "checkpoint.video:main"
 include = ["checkpoint*"]
 
 [tool.setuptools.package-data]
-checkpoint = ["assets/*.svg", "assets/*.ttf", "assets/*.txt", "assets/*.html"]
+checkpoint = ["assets/*.svg", "assets/*.ttf", "assets/*.txt", "assets/*.html", "assets/*.task", "assets/*.js"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

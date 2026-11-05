@@ -34,12 +34,22 @@ def expression_display(session, *, max_age=5):
     if cue is None:
         return ExpressionDisplay('Looking for a face', None, 'Waiting for usable face tracking.',source=source)
     if time.monotonic() - session.cue_received_at > max_age:
-        return ExpressionDisplay('Tracking unavailable', None, 'No recent camera result. Pip has returned to a neutral appearance.',source=source)
+        return ExpressionDisplay('Tracking unavailable', None, 'No recent camera result. Nori has returned to a neutral appearance.',source=source)
+    if cue.gesture and cue.gesture.get('near') and cue.movement is not None:
+        return ExpressionDisplay('Hand near mouth','composed','Mouth cues are withheld where the hand may hide them. Visible upper-face movement can continue.',cue.movement,'face_movement')
     if cue.status != 'accepted' or cue.expression not in EXPRESSIONS:
         title='No face detected' if 'no face' in cue.reason.lower() else 'Face tracking unavailable' if session.face_mapping else 'Expression uncertain'
         return ExpressionDisplay(title, None, cue.reason or 'No stable expression estimate is available.',source=source)
     if cue.movement is not None:
         return ExpressionDisplay(cue.mapping_label or 'Facial movement',EXPRESSIONS[cue.expression][1],
-            'Your face movements are mapped to Pip. Your feelings remain your check-in.',cue.movement,'face_movement')
+            'Your face movements are mapped to Nori. Your feelings remain your check-in.',cue.movement,'face_movement')
     title, artwork = EXPRESSIONS[cue.expression]
     return ExpressionDisplay(title, artwork, 'Experimental face estimate · Your feeling and CMA remain your check-in.')
+
+
+def category_estimate(cue):
+    if cue is None:return None
+    if cue.model_estimate is not None:return cue.model_estimate
+    if len(cue.probabilities)==len(EXPRESSIONS):
+        return {'status':cue.status,'label':cue.expression,'score':cue.confidence,'scores':dict(zip(EXPRESSIONS,cue.probabilities)),'reason':cue.reason}
+    return None

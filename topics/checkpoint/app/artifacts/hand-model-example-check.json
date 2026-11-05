@@ -1,0 +1,9 @@
+{
+  "source": "https://storage.googleapis.com/mediapipe-assets/right_hands.jpg",
+  "hands_detected": 2,
+  "landmarks_per_hand": [
+    21,
+    21
+  ],
+  "scope": "Provider hand example; not hand-to-mouth or emotion accuracy"
+}

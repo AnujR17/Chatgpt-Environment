@@ -38,12 +38,12 @@ def open_camera(index, interrupted=lambda: False, *, platform=None):
 
 
 class CaptureWorker(QThread):
-    def __init__(self, source, *, analyze=False, frequency=2, generation=0, realtime=True,face_mapping=False,face_gain=1.5):
+    def __init__(self, source, *, analyze=False, frequency=2, generation=0, realtime=True,face_mapping=False,face_gain=1.5,hands=True,categories=True):
         super().__init__()
         self.source=source;self.analyze=analyze;self.frequency=max(.25,min(5,float(frequency)));self.generation=generation
         self.realtime=realtime;self.lock=threading.Lock();self.latest_image=None;self.latest_cue=None
         self.finished_reason='';self.error='';self.analysis_error='';self.frames=0;self.backend=''
-        self.face_mapping=face_mapping;self.neutral_requested=threading.Event();self.face_gain=face_gain
+        self.face_mapping=face_mapping;self.neutral_requested=threading.Event();self.face_gain=face_gain;self.hands=hands;self.categories=categories
 
     def take_latest(self):
         with self.lock:
@@ -81,7 +81,7 @@ class CaptureWorker(QThread):
                     from checkpoint.runtime import FacePipeline,CueSmoother
                     if self.face_mapping:
                         from checkpoint.face_mapping import LandmarkPipeline
-                        model=LandmarkPipeline();model.gain=self.face_gain
+                        model=LandmarkPipeline(hands=self.hands,categories=self.categories);model.gain=self.face_gain
                     else:model=FacePipeline(pretrained=True);smoother=CueSmoother()
                 except Exception as ex:self.tracking_failed(ex)
             next_analysis=0.;next_preview=0.

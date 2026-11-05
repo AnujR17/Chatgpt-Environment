@@ -69,6 +69,6 @@ def test_actual_model_video_input_cannot_fill_cma(window,app):
     while window.session.cue is None and window.session.camera_active and time.monotonic()<deadline:
         app.processEvents();time.sleep(.01)
     assert window.session.camera_active and window.session.cue is not None
-    window.refresh();assert all(obj.isVisible() for obj,key in window.state_labels if key=="cue" and obj.parent().isVisible())
+    window.select_card_source(1);window.refresh();assert all(obj.isVisible() for obj,key in window.state_labels if key=="cue" and obj.parent().isVisible())
     assert window.session.report is None and window.session.affect[1]=="Not reported"
     assert window.pause() and window.session.cue is None and window.last_image is None

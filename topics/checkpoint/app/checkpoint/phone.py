@@ -12,7 +12,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 class PhoneBridge:
     def __init__(self):
-        self.lock=threading.Lock();self.state={'connected':False};self.report={};self.last_client=0.
+        self.pdf_renderer=None;self.lock=threading.Lock();self.state={'connected':False};self.report={};self.last_client=0.
 
     def publish(self,state,report):
         # A JSON round-trip constrains the boundary to structured values, not Qt images/arrays.
@@ -78,6 +78,7 @@ class PhoneServer:
                 self.send_response(status);self.send_header('Content-Type',kind);self.send_header('Content-Length',str(len(data)))
                 self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff')
                 self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; frame-ancestors 'none'")
+                if self.path=='/api/report.pdf':self.send_header('Content-Disposition','attachment; filename="checkpoint-cma-report.pdf"')
                 if self.path=='/api/report':self.send_header('Content-Disposition','attachment; filename="checkpoint-session.json"')
                 self.end_headers();self.wfile.write(data)
             def do_GET(self):
@@ -85,10 +86,15 @@ class PhoneServer:
                 if self.path=='/':
                     owner.last_page_request=time.monotonic()
                     return self.send_data(200,(assets/'phone.html').read_bytes(),'text/html; charset=utf-8')
+                if self.path=='/nori-visual.js':return self.send_data(200,(assets/'nori-visual.js').read_bytes(),'text/javascript; charset=utf-8')
                 if self.path=='/font.ttf':return self.send_data(200,(assets/'DM-Sans.ttf').read_bytes(),'font/ttf')
-                if self.path not in ('/api/state','/api/report'):return self.send_data(404,{'error':'Not found'})
+                if self.path not in ('/api/state','/api/report','/api/report.pdf'):return self.send_data(404,{'error':'Not found'})
                 auth=self.headers.get('Authorization','')
                 if not auth.isascii() or not secrets.compare_digest(auth,'Bearer '+owner.token):return self.send_data(401,{'error':'Pair with the link from your laptop'})
+                if self.path=='/api/report.pdf':
+                    if owner.bridge.pdf_renderer is None:return self.send_data(503,{'error':'Report renderer unavailable'})
+                    try:return self.send_data(200,owner.bridge.pdf_renderer(owner.bridge.read(report=True)),'application/pdf')
+                    except Exception as ex:return self.send_data(503,{'error':str(ex)})
                 return self.send_data(200,owner.bridge.read(report=self.path=='/api/report'))
         class Server(ThreadingHTTPServer):
             daemon_threads=True

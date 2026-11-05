@@ -35,3 +35,7 @@ HSEmotion ONNX enet_b0_8_best_afew is provider-trained: https://github.com/av-sa
 The Getting Over It trailer is publisher-hosted media, movie 256696623, authored/published by Bennett Foddy/associated game publisher. Its raw video and thumbnails are excluded from this distribution. A hash, visual annotations, experimental feature model and results document a limited research trial; no general reuse/commercial-training licence is asserted. YouTube candidates are listed as metadata discovery only and were not downloaded or trained on.
 
 QR generation uses qrcode 8.2; its distribution licence is retained in the bundled runtime metadata. Phone UI uses the same bundled OFL DM Sans and original Pip vector geometry as the native application.
+
+## Google MediaPipe Hand Landmarker
+
+The provider-pretrained hand task is bundled at checkpoint/assets/hand_landmarker.task. Source URL, fixed version, SHA-256 and bytes are recorded in artifacts/hand-landmarker-provenance.json. MediaPipe code licence is preserved in MEDIAPIPE-LICENSE.txt; provider model/content terms remain applicable. The task supplies 21 hand landmarks; our mouth-proximity and teeth visibility rules are separate unvalidated heuristics. The provider hand example is used locally for a smoke check and is not redistributed.

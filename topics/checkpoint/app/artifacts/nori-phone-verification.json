@@ -1,0 +1,16 @@
+{
+  "browser": "Chromium, 390x844 phone viewport",
+  "fixture": "Synthetic physical-face cues, not live recognition",
+  "native_to_phone_updates": "passed",
+  "open_smile_animation": "passed",
+  "paired_reduced_motion": "passed",
+  "neutral_fallback": "passed",
+  "report_download": "PDF passed",
+  "hand_mouth_mask": "passed",
+  "visible_teeth_presentation": "passed",
+  "cma_uses_checkins_only": "passed",
+  "disconnection": "passed",
+  "horizontal_overflow": "none",
+  "javascript_errors": [],
+  "physical_phone_network": "not tested"
+}

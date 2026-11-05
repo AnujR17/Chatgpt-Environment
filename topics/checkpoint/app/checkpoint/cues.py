@@ -13,6 +13,8 @@ class Cue:
     elapsed_ms: float = 0.
     movement: dict | None = None
     mapping_label: str | None = None
+    gesture: dict | None = None
+    model_estimate: dict | None = None
 
     def to_dict(self):
         return asdict(self)

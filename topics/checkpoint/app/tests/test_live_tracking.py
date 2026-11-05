@@ -83,7 +83,7 @@ def test_real_expression_pipeline_updates_native_live_view(tmp_path):
     video = Path(os.environ.get('CHECKPOINT_TEST_VIDEO', 'data/videos/02-01-05-01-01-01-04.mp4'))
     if not video.exists(): pytest.skip('Requires separately sourced research video; no recording is committed')
     app = create_application([]); window = MainWindow(no_setup=True, data_dir=tmp_path); window.show()
-    window.frequency = 5.; window.start_source(str(video), analyze=True)
+    window.frequency = 5.; window.select_card_source(1); window.start_source(str(video), analyze=True)
     seen = []; deadline = time.monotonic() + 8
     while window.worker is not None and time.monotonic() < deadline:
         app.processEvents(); time.sleep(.01)

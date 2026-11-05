@@ -27,6 +27,8 @@ class Session:
     experimental_analysis: bool = False
     face_mapping: bool = True
     face_gain: float = 1.5
+    hand_tracking: bool = True
+    category_estimates: bool = True
     quiet: bool = True
     source_kind: str | None = None
     cue: object | None = None

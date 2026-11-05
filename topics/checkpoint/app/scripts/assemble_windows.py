@@ -25,7 +25,7 @@ version=json.loads((ROOT/'build/windows-runtime/source.json').read_text())['vers
 for dll in (SITE/'PySide6').glob('*140*.dll'):copyfile(dll,RUNTIME/dll.name)
 copytree(ROOT/'checkpoint',OUT/'checkpoint',dirs_exist_ok=True,ignore=lambda d,n:[x for x in n if x=='__pycache__'])
 (OUT/'artifacts').mkdir(exist_ok=True)
-for name in ['expression.onnx','calibration.json','yunet.onnx','release-gates.json','MODEL-CARD.md','face_landmarker.task','face-landmarker-provenance.json','hsemotion-afew.onnx','hsemotion-provenance.json','game-scene-model.json','game-scene-training.json','pretrained-comparison.json']:
+for name in ['expression.onnx','calibration.json','yunet.onnx','release-gates.json','MODEL-CARD.md','face_landmarker.task','face-landmarker-provenance.json','hsemotion-afew.onnx','hsemotion-provenance.json','game-scene-model.json','game-scene-training.json','pretrained-comparison.json','hand-landmarker-provenance.json']:
     copyfile(ROOT/'artifacts'/name,OUT/'artifacts'/name)
 copytree(ROOT/'third_party',OUT/'third_party',dirs_exist_ok=True)
 (OUT/'launch.py').write_text('''import os,sys,ctypes,traceback
@@ -57,19 +57,21 @@ print('Native window created. Close it to finish this check.')
 app.exec()
 print('Setup check completed.')
 ''')
-(OUT/'READ ME FIRST.txt').write_text('''Checkpoint — Windows portable preview
+(OUT/'READ ME FIRST.txt').write_text('''Checkpoint with Nori — Windows portable preview
 
 1. Extract the entire ZIP to a normal folder on your Windows PC.
 2. Double-click Start Checkpoint.cmd.
 3. Choose a game and intention. Camera starts off.
-4. Select your camera, tick Track my face and click Start camera. Pip maps visible face movements.
-5. Show Pip enables the transparent, frameless, click-through desktop buddy.
+4. Select your camera and enable Track face and hands. Reflection is the default.
+   It uses sustained visual patterns and your confirmed check-ins.
+   Choose Face preview for immediate mouth, brow, eye, teeth and hand tests.
+5. Show Nori enables the transparent, frameless, click-through desktop buddy.
 6. Phone dashboard displays a pairing QR. Choose your Wi-Fi adapter and scan it on the same trusted Wi-Fi.
    If the phone cannot connect, use Test this link on the laptop and the Private-network firewall instructions.
 7. Settings offers HSEmotion expression estimates, game observation and optional input timing/nudges.
 8. Settings > Check for updates offers Update and restart for future releases.
    Small app updates reuse the runtime/models; a changed runtime uses the full package automatically.
-9. Report exports derived session data. No camera/game images or typed text are sent to your phone.
+9. Report shows your CMA journey and exports a readable PDF. It does not log facial events. No camera/game images or typed text are sent to your phone.
 
 Neutral and loss of detection use a flat neutral appearance. The status still
 says when no face is detected. Set my neutral face optionally calibrates a few

@@ -85,7 +85,8 @@ def test_nudge_waits_for_quiet_input_is_optional_and_has_cooldown():
     assert not snapshot['nudge']
     snapshot,_=state.update(session,face,quiet,input_stats={'idle_seconds':4},nudges=False,now=116)
     assert not snapshot['nudge']
-    assert 'frame' not in report and report['moments'][0]['source']=='face_movement'
+    assert report['schema']==3 and report['cma']['count']==0
+    assert 'moments' not in report and 'input_activity' not in report
 
 
 def test_app_report_dialog_closes_and_pair_dialog_stops_sharing(tmp_path):
@@ -112,7 +113,7 @@ def test_existing_physical_mapper_on_recorded_face_and_neutral_calibration(tmp_p
     mapper=LandmarkPipeline(folder)
     try:
         cue=mapper.infer(frame);assert cue.status=='accepted' and cue.movement is not None
-        assert set(cue.movement)=={'smile','brow','eyes','jaw','tension','laugh'}
+        assert {'smile','brow','eyes','jaw','tension','laugh','teeth','mouth_visible','hand'}<=set(cue.movement)
         mapper.start_neutral()
         for _ in range(8):cue=mapper.infer(frame)
         assert cue.mapping_label=='Neutral face calibrated'

@@ -1,6 +1,6 @@
 # In-app updates
 
-The old 0.2.x app has no updater. Install the 0.3.0 portable release once into a fresh folder, or apply its small app patch over a working 0.2.1 camera-fix installation: close all app/check-setup windows, extract the patch and copy its contents into the existing Checkpoint-Windows folder, replacing files. The runtime/model dependency manifests are unchanged between those versions. From then on, open **Settings → Check for updates** (also in the tray menu). When a newer Checkpoint release exists, choose **Update and restart**. Nothing is installed silently.
+The old 0.2.x app has no updater. Install the current portable release once into a fresh folder, or apply its small app patch over a working 0.2.1 camera-fix installation: close all app/check-setup windows, extract the patch and copy its contents into the existing Checkpoint-Windows folder, replacing files. The runtime/model dependency manifests are unchanged between those versions. From then on, open **Settings → Check for updates** (also in the tray menu). When a newer Checkpoint release exists, choose **Update and restart**. Nothing is installed silently.
 
 The app checks only Checkpoint release tags and update assets from AnujR17/Chatgpt-Environment on GitHub. Other topic projects in the repository are ignored. Preview releases are included because this application is a research preview. No GitHub account, token or new service subscription is required. Offline/rate-limit failures display an error and leave the installation alone.
 
@@ -15,3 +15,5 @@ Choosing the restart ends the current app session and stops sensing and phone sh
 Update work is under `.checkpoint-updates` beside the portable folder. Previous installations are retained under `.checkpoint-backups`; old backups can be removed manually once satisfied with the installed version. Checkpoint must be in a writable folder. Do not delete a pending update folder while applying an update.
 
 The Windows CI fixture exercises the actual helper, embedded Python restart and failed-start rollback using disposable folders. It does not modify a user's installation. Software tests separately check the native button flow, corrupt download/cancellation isolation, repository filtering, package compatibility and unsafe archives. Publication verification checks both the full and small assets. User-device security policy, disk/file locks and network conditions can still affect an actual update.
+
+0.4 adds a bundled hand model in the app payload. The native runtime and existing face weights remain identical, so a compatible 0.3 installation can use the small in-app package.
