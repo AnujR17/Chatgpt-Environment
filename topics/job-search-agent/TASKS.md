@@ -1,5 +1,16 @@
 # Tasks
 
+## 5 November 2026 refresh
+
+- [x] Attempt all73 active primary URLs;record64fetched,8restricted,one404 andfive small shells separately from16 rotating term reviews.
+- [x] Add Brainoid original internship on_hold for current pay/cohort;retain weak older below-target listing evidence separately. Add Websar Indeed/Glassdoor full-time fresher25–30k/month salary without stipend conversion.
+- [x] Archive Atlabs internship on exact original/form404 plus current employer-index corroboration;retain stable evidence and distinct full-time role.
+- [x] Add8 company targets;refresh25 coverage records with honest access/date/pay/scope limits and HN219IDs/187posts/43broadmatches.
+- [x] Preserve baseline source/requirement/contact IDs and data;regenerate86-role/225-company workbook and504 requirement rows plus company CSV.
+- [x] Build,model,five collector tests,preservation audit and local/live desktop/mobile checks pass. Document pre-existing Gravity on_hold data-test failure;no test/UI/model edits.
+- [x] Commit/push asAnujR17;deploy exact data commitdec85d2b37be234efe124da516c1f70f389b3b95 to existing project. READYdpl_7j2QqtceF2zibF5jDHhW6C1gA3hY,seven live files exact,protection unchanged.
+- [x] No applications/messages/private-browser access;keep docs follow-up separate from production deployment.
+
 ## 4 November 2026 refresh
 
 - [x] Recheck all73 previously active primary URLs;record66 fetched,7 restricted and five small shells separately from16 rotating term reviews.
