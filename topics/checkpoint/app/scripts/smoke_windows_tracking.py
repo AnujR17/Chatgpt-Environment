@@ -47,7 +47,7 @@ from checkpoint.phone import PhoneServer,private_firewall_command
 window.phone_server=PhoneServer(window.phone_bridge,host='127.0.0.1',port=0).start()
 request=Request(f'http://127.0.0.1:{window.phone_server.port}/api/state',headers={'Authorization':'Bearer '+window.phone_server.token})
 assert json.load(urlopen(request))['character']=='Pip'
-(ROOT/'build/Checkpoint-Windows/firewall-command-check.ps1').write_text(private_firewall_command(window.phone_server.port),encoding='utf8')
+(ROOT/'artifacts/firewall-command-check.ps1').write_text(private_firewall_command(window.phone_server.port),encoding='utf8')
 window.phone_server.stop();window.phone_server=None
 window.last_status = 'Synthetic expression fixture · no camera connected'
 window.refresh()

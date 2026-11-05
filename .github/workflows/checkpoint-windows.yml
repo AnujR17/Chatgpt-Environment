@@ -58,7 +58,7 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Windows live tracking fixture checks failed' }
           $parseTokens = $null
           $parseErrors = $null
-          [System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path build/Checkpoint-Windows/firewall-command-check.ps1), [ref]$parseTokens, [ref]$parseErrors) | Out-Null
+          [System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path artifacts/firewall-command-check.ps1), [ref]$parseTokens, [ref]$parseErrors) | Out-Null
           if ($parseErrors.Count -gt 0) { throw 'Phone firewall helper PowerShell syntax failed' }
           Copy-Item artifacts/windows-tracking-smoke.json build/Checkpoint-Windows/docs/
           Copy-Item artifacts/live-tracking-tests.xml build/Checkpoint-Windows/docs/
@@ -86,7 +86,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           RELEASE_COMMIT: ${{ github.sha }}
         run: |
-          $tag = 'checkpoint-v0.2.1-preview.1'
+          $tag = 'checkpoint-v0.2.1-preview.2'
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
             gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint — Camera and phone connection fix' --notes-file docs/RELEASE-NOTES.md
