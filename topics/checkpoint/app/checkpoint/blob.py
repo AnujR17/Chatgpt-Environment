@@ -83,9 +83,10 @@ class PipWidget(AffectWidget):
         v=self.interpolated();self.pip_current=v
         size=min(self.width(),self.height());centre=QPointF(self.width()/2,self.height()*.50);scale=size*.48
         phase=0. if self.reduced_motion or self.paused else self.animation_time*(.6+v['energy']*.9)
-        ink=QColor('#34453E');body=QColor(round(v['red']),round(v['green']),round(v['blue']))
+        ink=QColor('#34453E')
         unknown=self.current_state is None or self.target is None
         if unknown:v=parameters(None);phase=0.
+        body=QColor(round(v['red']),round(v['green']),round(v['blue']))
         p.setPen(Qt.PenStyle.NoPen);shadow=QColor('#34453E');shadow.setAlpha(19);p.setBrush(shadow)
         p.drawEllipse(QPointF(centre.x(),centre.y()+scale*.83),scale*.64,scale*.07)
         pen=QPen(ink, max(1.5,size*.009));pen.setJoinStyle(Qt.PenJoinStyle.RoundJoin);p.setPen(pen)

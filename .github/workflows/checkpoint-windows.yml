@@ -81,7 +81,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           RELEASE_COMMIT: ${{ github.sha }}
         run: |
-          $tag = 'checkpoint-v0.2.0-pip-preview.1'
+          $tag = 'checkpoint-v0.2.0-pip-preview.2'
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
             gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint — Pip companion preview' --notes-file docs/RELEASE-NOTES.md

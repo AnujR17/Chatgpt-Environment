@@ -41,6 +41,9 @@ def test_pip_overlay_has_transparent_corners_and_no_window_chrome(tmp_path):
     overlay.blob.set_state('angry',0,0);overlay.blob.configure(reduced_motion=True)
     image=QImage(overlay.size(),QImage.Format.Format_ARGB32);image.fill(Qt.GlobalColor.transparent);overlay.render(image)
     assert image.pixelColor(0,0).alpha()==0 and image.pixelColor(image.width()-1,image.height()-1).alpha()==0
+    overlay.blob.set_state(None);overlay.blob.set_movement(None)
+    neutral=overlay.blob.grab().toImage()
+    assert neutral.pixelColor(neutral.width()//2,neutral.height()//2).name()=='#97beaf'
     overlay.set_editable(True);assert not overlay.windowFlags() & Qt.WindowType.WindowTransparentForInput
     overlay.set_editable(False);assert overlay.windowFlags() & Qt.WindowType.WindowTransparentForInput
     window.close();window.deleteLater();app.processEvents()
