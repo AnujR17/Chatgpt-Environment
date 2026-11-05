@@ -1,5 +1,12 @@
 # Tasks
 
+## 5 November branch publishing fix
+
+- [x] Diagnose Checkpoint preview error against Vercel error metadata and both branch trees;job-board root exists only in its own branch.
+- [x] Disable automatic previews for the existing job-board project;preserve root,framework,protection and source branches.
+- [x] Publish `topic/job-search-agent` commit2c9b8acb4f35d98464dd5fec1e4477107876bd01 at the existing public URL;READYdpl_ipKZ2eRiqd7oGKR99kUQ7bxuft2E verified.
+- [x] Verify seven live files and live desktop/mobile behavior;test push created no automatic preview. Git Production Branch tracking was not changed;explicit production-publish workflow continues.
+
 ## 5 November 2026 refresh
 
 - [x] Attempt all73 active primary URLs;record64fetched,8restricted,one404 andfive small shells separately from16 rotating term reviews.

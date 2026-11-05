@@ -2,6 +2,15 @@
 
 Updated 5 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## Branch publishing fix — 5 November 2026
+
+- User reported a preview failure for Checkpoint commit4362327. Vercel deployment `dpl_2JgB1SFBKBRfgMjETmpmjRwjXumB` confirms `NOW_SANDBOX_WORKER_ROOTDIR_NOT_EXIST` at build-container-init. `topic/checkpoint` contains no job-board app;`topic/job-search-agent` contains it. No Checkpoint or main source changes were made.
+- Updated only the existing project's automatic-preview setting with supported `previewDeploymentsDisabled: true`. This avoids unrelated branch previews entering this project. Root remains `topics/job-search-agent/app`;Vite/npmci/npmrunbuild/dist/Node24 and protection unchanged. Do not claim the Git Production Branch tracking setting changed;the available API does not expose it. Exact production publishing from the board branch remains the release workflow.
+- Published branch commit `2c9b8acb4f35d98464dd5fec1e4477107876bd01` to production in project `prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`. Deployment `dpl_ipKZ2eRiqd7oGKR99kUQ7bxuft2E` READY;Git SHA/ref,project and public alias verified. Public URL remains https://chatgpt-environment.vercel.app so browser-local progress stays on the same origin.
+- All seven live data/export/report files returned200 and matched this commit byte-for-byte;feed contents unchanged from the research release. Local source changes were documentation only. A test push after the setting update generated no automatic preview/check-run;deployment search for that SHA showed only the explicit READY production build. Historical failed previews remain history.
+- Live desktop/mobile browser workflow passed with zero runtime errors and synthetic override/blacklist/profile/requirement preservation. No real private browser data accessed. Evidence is outside Git in `/workspace/job-board-branch-publishing-review/`.
+- This verification follow-up is documentation only. Do not redeploy production for it or re-enable previews without addressing branches that lack this project's root directory.
+
 ## Latest release — 5 November 2026
 
 - Production data commit `dec85d2b37be234efe124da516c1f70f389b3b95` on `topic/job-search-agent`;deployment `dpl_7j2QqtceF2zibF5jDHhW6C1gA3hY` READY,production,in exact existing project `prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`. Git SHA/ref,main live alias and owner account verified using default connection scope. Framework/build/install/output/root and protection unchanged;no explicit teamId,main edits or new project/repo.
