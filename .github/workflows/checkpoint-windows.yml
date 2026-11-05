@@ -1,0 +1,76 @@
+name: Checkpoint Windows preview
+
+on:
+  push:
+    branches: [topic/checkpoint]
+    paths:
+      - topics/checkpoint/app/**
+      - .github/workflows/checkpoint-windows.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: checkpoint-windows-release
+  cancel-in-progress: false
+
+jobs:
+  package:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: topics/checkpoint/app
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Fetch the reviewed Windows runtime
+        run: python -m scripts.fetch_windows_runtime
+      - name: Assemble native application
+        run: python -m scripts.assemble_windows
+      - name: Include instructions and test evidence
+        run: |
+          New-Item -ItemType Directory -Force build/Checkpoint-Windows/docs | Out-Null
+          Copy-Item docs/WINDOWS-APP.md build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/cards-app-tests.xml build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/windows-assembly-verification.json build/Checkpoint-Windows/docs/
+      - name: Check native launch on Windows
+        run: |
+          Push-Location build/Checkpoint-Windows
+          & ./runtime/python.exe ./launch.py --no-setup --screenshot ./windows-smoke.png
+          if ($LASTEXITCODE -ne 0) { throw 'Native Windows launch failed' }
+          if (!(Test-Path ./windows-smoke.png)) { throw 'Native window screenshot missing' }
+          Pop-Location
+      - name: Package and verify archive
+        run: |
+          python -m scripts.package_windows
+          if ($LASTEXITCODE -ne 0) { throw 'Package verification failed' }
+          $hash = (Get-FileHash ../Checkpoint-Windows-Preview.zip -Algorithm SHA256).Hash.ToLower()
+          "$hash  Checkpoint-Windows-Preview.zip" | Set-Content -Encoding ascii ../SHA256SUMS.txt
+      - name: Preserve package and launch evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: checkpoint-windows-preview
+          path: |
+            topics/checkpoint/Checkpoint-Windows-Preview.zip
+            topics/checkpoint/SHA256SUMS.txt
+            topics/checkpoint/app/build/Checkpoint-Windows/windows-smoke.png
+            topics/checkpoint/app/artifacts/windows-package-verification.json
+      - name: Publish downloadable research preview
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_COMMIT: ${{ github.sha }}
+        run: |
+          $tag = 'checkpoint-v0.1.0-preview.1'
+          gh release view $tag *> $null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint Windows preview 0.1.0' --notes-file docs/RELEASE-NOTES.md
+            if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
+          }
+          gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt --clobber
+          if ($LASTEXITCODE -ne 0) { throw 'Release asset upload failed' }
