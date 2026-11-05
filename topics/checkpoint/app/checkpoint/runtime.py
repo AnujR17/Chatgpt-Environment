@@ -1,5 +1,5 @@
 """Bounded local facial-expression inference. Never converts expressions to CMA/mood."""
-from dataclasses import dataclass, asdict
+from checkpoint.cues import Cue
 import json
 import math
 import time
@@ -12,22 +12,6 @@ ort.disable_telemetry_events()
 cv2.setNumThreads(1)
 ROOT = Path(__file__).resolve().parents[1]
 LABELS = ("neutral", "happiness", "surprise", "sadness", "anger", "disgust", "fear", "contempt")
-
-
-@dataclass(frozen=True)
-class Cue:
-    status: str
-    expression: str | None = None
-    confidence: float | None = None
-    probabilities: tuple = ()
-    reason: str = ""
-    face_box: tuple | None = None
-    elapsed_ms: float = 0.
-    movement: dict | None = None
-    mapping_label: str | None = None
-
-    def to_dict(self):
-        return asdict(self)
 
 
 def preprocess(crop):

@@ -62,9 +62,10 @@ print('Setup check completed.')
 1. Extract the entire ZIP to a normal folder on your Windows PC.
 2. Double-click Start Checkpoint.cmd.
 3. Choose a game and intention. Camera starts off.
-4. Tick Track my face and click Start camera. Pip maps visible face movements.
+4. Select your camera, tick Track my face and click Start camera. Pip maps visible face movements.
 5. Show Pip enables the transparent, frameless, click-through desktop buddy.
-6. Phone dashboard displays a pairing QR. Scan it on the same trusted Wi-Fi.
+6. Phone dashboard displays a pairing QR. Choose your Wi-Fi adapter and scan it on the same trusted Wi-Fi.
+   If the phone cannot connect, use Test this link on the laptop and the Private-network firewall instructions.
 7. Settings offers HSEmotion expression estimates, game observation and optional input timing/nudges.
 8. Report exports derived session data. No camera/game images or typed text are sent to your phone.
 

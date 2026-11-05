@@ -41,6 +41,7 @@ jobs:
           New-Item -ItemType Directory -Force build/Checkpoint-Windows/docs | Out-Null
           Copy-Item docs/WINDOWS-APP.md build/Checkpoint-Windows/docs/
           Copy-Item docs/PIP-COMPANION.md build/Checkpoint-Windows/docs/
+          Copy-Item docs/CAMERA-AND-PHONE-TROUBLESHOOTING.md build/Checkpoint-Windows/docs/
           Copy-Item docs/VIDEO-AND-MODEL-RESEARCH.md build/Checkpoint-Windows/docs/
           Copy-Item artifacts/cards-app-tests.xml build/Checkpoint-Windows/docs/
           Copy-Item artifacts/windows-assembly-verification.json build/Checkpoint-Windows/docs/
@@ -55,6 +56,10 @@ jobs:
         run: |
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_tracking.py
           if ($LASTEXITCODE -ne 0) { throw 'Windows live tracking fixture checks failed' }
+          $parseTokens = $null
+          $parseErrors = $null
+          [System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path build/Checkpoint-Windows/firewall-command-check.ps1), [ref]$parseTokens, [ref]$parseErrors) | Out-Null
+          if ($parseErrors.Count -gt 0) { throw 'Phone firewall helper PowerShell syntax failed' }
           Copy-Item artifacts/windows-tracking-smoke.json build/Checkpoint-Windows/docs/
           Copy-Item artifacts/live-tracking-tests.xml build/Checkpoint-Windows/docs/
           Copy-Item artifacts/pip-tests.xml build/Checkpoint-Windows/docs/
@@ -81,10 +86,10 @@ jobs:
           GH_REPO: ${{ github.repository }}
           RELEASE_COMMIT: ${{ github.sha }}
         run: |
-          $tag = 'checkpoint-v0.2.0-pip-preview.2'
+          $tag = 'checkpoint-v0.2.1-preview.1'
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint — Pip companion preview' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint — Camera and phone connection fix' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt --clobber

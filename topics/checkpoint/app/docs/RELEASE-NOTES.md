@@ -1,4 +1,8 @@
-# Checkpoint — Pip companion preview
+# Checkpoint — Camera and phone connection fix
+
+Fixes Windows camera startup with DirectShow first, Media Foundation/default fallback and warm-up retries. The MSMF hardware-transform path is disabled for this app process. Select the intended camera from the new device control. A tracking-model startup/inference failure no longer shuts down the preview; its error is shown separately. Model loading also handles non-ASCII install folders.
+
+Phone pairing now labels network adapters, prefers active Wi-Fi, reports dashboard connection status and provides a laptop link test. Windows users can explicitly copy a narrowly scoped Private-network/local-subnet firewall rule for this app and its current dashboard port; no firewall changes happen automatically. See docs/CAMERA-AND-PHONE-TROUBLESHOOTING.md.
 
 Extract the full ZIP and run Start Checkpoint.cmd. Tick Track my face and Start camera; Show Pip enables the transparent, frameless, click-through desktop character. Phone dashboard pairs a read-only local dashboard by QR on the same trusted Wi-Fi. Report exports derived observations as JSON. No camera/game images or typed text are sent to the phone.
 

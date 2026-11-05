@@ -6,8 +6,8 @@ import os
 from pathlib import Path
 import sys
 import time
-from PySide6.QtCore import Qt, QTimer, QStandardPaths, QEvent
-from PySide6.QtGui import QFont, QFontDatabase, QImage, QPixmap, QCloseEvent, QIcon, QShortcut, QKeySequence
+from PySide6.QtCore import Qt, QTimer, QStandardPaths, QEvent, QUrl
+from PySide6.QtGui import QFont, QFontDatabase, QImage, QPixmap, QCloseEvent, QIcon, QShortcut, QKeySequence, QDesktopServices
 from PySide6.QtSvgWidgets import QSvgWidget
 from PySide6.QtWidgets import (QApplication,QMainWindow,QWidget,QFrame,QLabel,QPushButton,QVBoxLayout,QHBoxLayout,
  QStackedWidget,QDialog,QDialogButtonBox,QComboBox,QLineEdit,QCheckBox,QDoubleSpinBox,QMessageBox,QFileDialog,QMenu,QScrollArea,QSystemTrayIcon,QGridLayout,QSlider,QSizePolicy)
@@ -21,7 +21,7 @@ from checkpoint.expression_view import expression_display
 from checkpoint.gameplay import GameWorker
 from checkpoint.blob import PipWidget
 from checkpoint.overlay import PipOverlay
-from checkpoint.phone import PhoneBridge,PhoneServer,local_addresses
+from checkpoint.phone import PhoneBridge,PhoneServer,local_networks,private_firewall_command
 from checkpoint.companion import CompanionState
 from checkpoint.input_activity import InputObserver
 
@@ -202,7 +202,7 @@ class MainWindow(QMainWindow):
         self.phone_bridge=PhoneBridge();self.phone_server=None;self.companion=CompanionState();self.latest_report={};self.latest_companion={};self.next_export=0.
         self.input_observer=InputObserver(QApplication.instance(),int(self.winId()))
         directory=data_dir or os.environ.get("CHECKPOINT_DATA_DIR") or QStandardPaths.writableLocation(QStandardPaths.StandardLocation.AppLocalDataLocation)
-        self.history=History(directory);self.preview_widgets=[];self.emblems=[];self.state_labels=[]
+        self.history=History(directory);self.preview_widgets=[];self.emblems=[];self.state_labels=[];self.camera_index=0;self.camera_selectors=[];self.camera_messages=[]
         outer=QWidget();self.setCentralWidget(outer);all_layout=QVBoxLayout(outer);all_layout.setContentsMargins(0,0,0,0);all_layout.setSpacing(0)
         nav=QFrame();nav.setObjectName('nav');nav.setFixedHeight(72);nl=QHBoxLayout(nav);nl.setContentsMargins(28,8,28,8);nl.setSpacing(12)
         mark=label('c.',26,bold=True);mark.setFixedSize(36,36);mark.setAlignment(Qt.AlignmentFlag.AlignCenter);mark.setStyleSheet('background:#235C49;color:#FFFFFF;border-radius:12px;');nl.addWidget(mark);nl.addWidget(label('checkpoint',18,bold=True));nl.addSpacing(36)
@@ -252,6 +252,8 @@ class MainWindow(QMainWindow):
         dimensions,dl=panel('stateCard',14);dl.addWidget(label('Your reported CMA · updated by your check-in',12,True));self.add_dimensions(dl);sl.addWidget(dimensions);row.addWidget(state_panel,7)
         camera,cl=panel(padding=24);cl.setSpacing(14);ch=QHBoxLayout();ch.addWidget(label('Your camera',18,bold=True),1);status=label('',12,True);self.state_labels.append((status,'capture'));ch.addWidget(status);cl.addLayout(ch)
         preview=VideoPreview();preview.setMinimumSize(300,230);preview.setMaximumHeight(260);self.preview_widgets.append(preview);cl.addWidget(preview)
+        devices=QComboBox();devices.setAccessibleName('Camera device');devices.addItems(['Camera 1 · default']+[f'Camera {i+1}' for i in range(1,10)]);devices.currentIndexChanged.connect(self.select_camera);self.camera_selectors.append(devices);cl.addWidget(devices)
+        feedback=label('',13,True);self.camera_messages.append(feedback);cl.addWidget(feedback)
         track=QCheckBox('Track my face');track.setAccessibleName('Track expressions');track.toggled.connect(self.toggle_expression_tracking);self.expression_controls.append(track);cl.addWidget(track)
         neutral=button('Set my neutral face',self.calibrate_neutral);self.neutral_controls.append(neutral);cl.addWidget(neutral)
         cl.addWidget(label('Optional preview. Your check-in is always your choice.',14,True));actions=QHBoxLayout();capture=button('Start camera',self.toggle_camera);self.camera_controls.append(capture);actions.addWidget(capture,1);file=button('Open video',self.open_video);self.file_controls.append(file);actions.addWidget(file,1);cl.addLayout(actions)
@@ -314,20 +316,40 @@ class MainWindow(QMainWindow):
             try:self.phone_server=PhoneServer(self.phone_bridge).start()
             except OSError as ex:
                 self.phone_server=None;QMessageBox.warning(self,'Phone connection unavailable','Could not start local sharing: '+str(ex));return
-        self.refresh();dialog=QDialog(self);dialog.setWindowTitle('Pip on your phone');dialog.resize(430,580);layout=QVBoxLayout(dialog);layout.setContentsMargins(28,24,28,24)
-        layout.addWidget(label('Pip on your phone',28,bold=True));layout.addWidget(label('Keep your laptop and phone on the same trusted Wi-Fi, then scan to pair.',15,True))
-        networks=QComboBox();networks.addItems(local_addresses());networks.setAccessibleName('Laptop network address');layout.addWidget(networks)
+        self.refresh();dialog=QDialog(self);dialog.setWindowTitle('Pip on your phone');dialog.resize(510,740)
+        outer=QVBoxLayout(dialog);scroll=QScrollArea();scroll.setWidgetResizable(True);content=QWidget();layout=QVBoxLayout(content);layout.setContentsMargins(24,20,24,20);scroll.setWidget(content);outer.addWidget(scroll,1)
+        layout.addWidget(label('Pip on your phone',28,bold=True));layout.addWidget(label('Use the same trusted Wi-Fi on both devices. Choose your Wi-Fi or Ethernet adapter below, then scan.',15,True))
+        networks=QComboBox()
+        for name,address in local_networks():networks.addItem(name+' · '+address,address)
+        networks.setAccessibleName('Laptop network address');layout.addWidget(networks)
         qr=QSvgWidget();qr.setFixedSize(240,240);layout.addWidget(qr,alignment=Qt.AlignmentFlag.AlignCenter);address=label('',14,True);layout.addWidget(address)
+        connection=label('',14);layout.addWidget(connection)
         import qrcode
         from qrcode.image.svg import SvgPathImage
         def update_qr():
-            url=self.phone_server.url(networks.currentText());image=qrcode.make(url,image_factory=SvgPathImage,border=4)
-            qr.load(image.to_string());address.setText(f'Local address: http://{networks.currentText()}:{self.phone_server.port}')
-        networks.currentTextChanged.connect(update_qr);update_qr()
-        layout.addWidget(label('Shares derived expression, game cues and your reports. No camera or gameplay images leave the laptop. This local preview uses HTTP; use a trusted private network. On Windows, allow the app on Private networks if prompted.',13,True))
-        layout.addWidget(button('Copy pairing link',lambda:QApplication.clipboard().setText(self.phone_server.url(networks.currentText()))))
+            url=self.phone_server.url(networks.currentData());image=qrcode.make(url,image_factory=SvgPathImage,border=4)
+            qr.load(image.to_string());address.setText(f'Local address: http://{networks.currentData()}:{self.phone_server.port}')
+        networks.currentIndexChanged.connect(update_qr);update_qr()
+        def connection_status():
+            server=self.phone_server
+            if server is None:return
+            if self.phone_bridge.last_client>=server.started and time.monotonic()-self.phone_bridge.last_client<6:message='Dashboard connected · receiving updates'
+            elif server.last_page_request>=server.started:message='Dashboard page reached · waiting for paired updates'
+            else:message='Local server ready · no dashboard has connected yet'
+            if networks.currentData()=='127.0.0.1':message='No LAN connection found. Connect the laptop to Wi-Fi or Ethernet first.'
+            connection.setText(message)
+        timer=QTimer(dialog);timer.timeout.connect(connection_status);timer.start(500);dialog.finished.connect(timer.stop);connection_status()
+        layout.addWidget(button('Test this link on the laptop',lambda:QDesktopServices.openUrl(QUrl(self.phone_server.url(networks.currentData())))))
+        layout.addWidget(button('Copy pairing link',lambda:QApplication.clipboard().setText(self.phone_server.url(networks.currentData()))))
+        layout.addWidget(label('If it opens here but not on your phone: use the same non-guest Wi-Fi, check for VPN or router device isolation, and allow this app through Windows Firewall on Private networks. Keep the address as http://.',13,True))
+        if sys.platform=='win32':
+            def copy_firewall_fix():
+                QApplication.clipboard().setText(private_firewall_command(self.phone_server.port))
+                QMessageBox.information(dialog,'Private Wi-Fi firewall command copied','On your trusted home Wi-Fi, make sure the Windows network profile is Private. Open Windows Terminal as administrator, select PowerShell and paste the copied command. It allows only this bundled Python app, this dashboard port and devices on the local subnet. It does not turn off the firewall or change Public-network access. Then rescan the QR code.')
+            layout.addWidget(button('Copy Private-network firewall fix',copy_firewall_fix))
+        layout.addWidget(label('Only derived data is shared. No camera/game images leave the laptop. The phone does not use its own camera for tracking. This local preview uses HTTP on your private network.',13,True));layout.addStretch()
         def stop():self.phone_server.stop();self.phone_server=None;dialog.accept()
-        layout.addWidget(button('Stop phone sharing',stop));layout.addWidget(button('Keep sharing and close',dialog.accept,True));dialog.exec()
+        outer.addWidget(button('Stop phone sharing',stop));outer.addWidget(button('Keep sharing and close',dialog.accept,True));dialog.exec()
 
     def receive_game_observation(self,worker,observation):
         if worker is not self.game_worker or not self.session.active or self.session.break_deadline is not None:return
@@ -338,9 +360,12 @@ class MainWindow(QMainWindow):
     def mark_start_view(self):
         if self.game_worker is not None and self.screen_tracking:
             self.game_worker.mark_requested.set();self.game_status.setText('Switch to the game at your start view. The next captured game frame will be marked in memory.')
+    def select_camera(self,index):
+        self.camera_index=index;self.refresh()
+
     def toggle_camera(self):
         if self.session.camera_active:self.pause()
-        elif self.session.active and self.session.break_deadline is None:self.start_source(0)
+        elif self.session.active and self.session.break_deadline is None:self.start_source(self.camera_index)
     def open_video(self):
         if not self.session.active or self.session.break_deadline is not None:return
         path,_=QFileDialog.getOpenFileName(self,'Open a local video',str(Path.home()),'Video files (*.mp4 *.avi *.mov *.mkv);;All files (*)')
@@ -415,6 +440,12 @@ class MainWindow(QMainWindow):
         for selector in self.view_selectors:
             selector.blockSignals(True);selector.setCurrentIndex(1 if self.live_view else 0);selector.blockSignals(False)
         if self.tray is not None:self.tray.setToolTip("Checkpoint / "+("Capture active" if s.camera_active else "Capture off"))
+        for selector in self.camera_selectors:
+            selector.blockSignals(True);selector.setCurrentIndex(self.camera_index);selector.blockSignals(False);selector.setEnabled(not s.camera_active and s.active and s.break_deadline is None)
+        worker=self.worker
+        feedback=('Camera connected. Face tracking unavailable: '+worker.analysis_error) if worker is not None and worker.analysis_error else ''
+        if worker is not None and not worker.frames:feedback=f'Opening Camera {self.camera_index+1}…' if s.source_kind=='camera' else 'Opening the selected video…'
+        for message in self.camera_messages:message.setText(feedback);message.setVisible(bool(feedback))
         for control in self.camera_controls:
             control.setText('Pause video' if s.source_kind=='video' else 'Pause camera' if s.camera_active else 'Start camera');control.setEnabled(s.active and s.break_deadline is None)
         for control in self.file_controls:control.setEnabled(s.active and s.break_deadline is None)
@@ -441,7 +472,7 @@ class MainWindow(QMainWindow):
             if displayed.source=='face_movement':source='Tracked face movement'
         for obj,key in self.state_labels:
             if key=='cue':obj.setVisible(s.experimental_analysis)
-            obj.setText({"title":title,"valence":valence,"energy":energy,"description":desc,"source":source,"cue":cue_text,"capture":"Video file" if s.source_kind=="video" else "On" if s.camera_active else "Off"}[key])
+            obj.setText({"title":title,"valence":valence,"energy":energy,"description":desc,"source":source,"cue":cue_text,"capture":"Video file" if s.source_kind=="video" else ("On · "+worker.backend if worker is not None and worker.frames else "Starting…") if s.camera_active else "Off"}[key])
         for control in self.motion_controls:control.setText('Motion reduced' if self.reduced_motion else 'Resume animation' if self.motion_paused else 'Pause animation');control.setEnabled(not self.reduced_motion)
         for em in self.emblems:
             em.configure(theme=self.theme,reduced_motion=self.reduced_motion,paused=self.motion_paused,enabled=s.active and s.break_deadline is None)
@@ -480,7 +511,7 @@ class MainWindow(QMainWindow):
         if self.session.camera_active:self.pause();return
         if not self.session.active:return
         menu=QMenu(self);camera=menu.addAction("Start local camera");video=menu.addAction("Open local video file");choice=menu.exec(self.capture_control.mapToGlobal(self.capture_control.rect().bottomLeft()))
-        if choice==camera:self.start_source(0)
+        if choice==camera:self.start_source(self.camera_index)
         elif choice==video:
             path,_=QFileDialog.getOpenFileName(self,"Open local video",str(Path.home()),"Videos (*.mp4 *.avi *.mov *.mkv);;All files (*)")
             if path:self.start_source(path)

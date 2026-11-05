@@ -4,7 +4,7 @@ Pip is an original soft desktop companion. The Windows app maps visible face mov
 
 ## Download and use
 
-**[Download the Windows portable app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.2.0-pip-preview.2/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.2.0-pip-preview.2)
+**[Download the Windows portable app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.2.1-preview.1/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.2.1-preview.1)
 
 Extract the whole ZIP into a new folder, run **Start Checkpoint.cmd**, tick **Track my face**, then **Start camera**. Click **Show Pip** for the frameless click-through companion. **Phone dashboard** displays a pairing QR: scan it from a phone on the same trusted Wi-Fi. No phone-store installation is required; the phone view is a local browser dashboard.
 
@@ -41,3 +41,5 @@ Run `python -m pytest -q` after installing pytest. Separately sourced face-video
 Browser-to-native phone verification uses Chromium at a 390×844 viewport and synthetic cues, not a physical phone or recognition-accuracy test. Actual recorded-video mapping, model benchmarking and software tests have separate evidence. Check [release verification](../RELEASE-VERIFICATION.json) and artifacts for the publication results. No game-FPS, battery, camera-hardware or intervention-effectiveness claim is inferred from software checks.
 
 [Model card](artifacts/MODEL-CARD.md) · [Third-party notices](third_party/NOTICES.md) · [Older editable Figma card design](https://www.figma.com/design/Rj3WAO6IpUb48OFUerY7aW?node-id=108-127)
+
+Camera will not start, or the phone QR link will not load? See [camera and phone troubleshooting](docs/CAMERA-AND-PHONE-TROUBLESHOOTING.md). The updated build tries DirectShow first and lets you choose another camera. The pairing dialog includes adapter names, a laptop link test and an explicit Windows Private-network firewall helper.

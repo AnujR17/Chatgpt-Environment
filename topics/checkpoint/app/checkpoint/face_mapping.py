@@ -31,7 +31,7 @@ class LandmarkPipeline:
         self.mp=mp
         model=Path(directory or Path(__file__).resolve().parents[1]/'artifacts')/'face_landmarker.task'
         if hashlib.sha256(model.read_bytes()).hexdigest()!='64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff':raise ValueError('Face mapping model checksum mismatch')
-        options=vision.FaceLandmarkerOptions(base_options=python.BaseOptions(model_asset_path=str(model),delegate=python.BaseOptions.Delegate.CPU),
+        options=vision.FaceLandmarkerOptions(base_options=python.BaseOptions(model_asset_buffer=model.read_bytes(),delegate=python.BaseOptions.Delegate.CPU),
             running_mode=vision.RunningMode.VIDEO,num_faces=2,min_face_detection_confidence=.6,min_face_presence_confidence=.6,
             min_tracking_confidence=.6,output_face_blendshapes=True)
         self.detector=vision.FaceLandmarker.create_from_options(options);self.last_timestamp=-1;self.baseline={};self.calibration=[];self.calibrating=False;self.gain=1.5

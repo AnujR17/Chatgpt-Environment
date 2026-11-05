@@ -23,21 +23,49 @@ class PhoneBridge:
         with self.lock:self.last_client=time.monotonic();return deepcopy(self.report if report else self.state)
 
 
-def local_addresses():
+def local_networks():
+    """Label interfaces so a virtual/VPN IP is not mistaken for the Wi-Fi address."""
     import psutil
-    found=[]
-    for addresses in psutil.net_if_addrs().values():
+    found=[];stats=psutil.net_if_stats()
+    for name,addresses in psutil.net_if_addrs().items():
+        if name in stats and not stats[name].isup:continue
+        lower=name.lower()
+        virtual=any(x in lower for x in ('vethernet','virtual','vmware','wsl','docker','loopback','tailscale','vpn','wireguard','zerotier','tap-'))
+        wireless=any(x in lower for x in ('wi-fi','wifi','wireless','wlan'))
         for addr in addresses:
             if addr.family!=socket.AF_INET:continue
             try:ip=ipaddress.ip_address(addr.address)
             except ValueError:continue
-            if ip.is_private and not ip.is_loopback and not ip.is_link_local:found.append(str(ip))
-    return sorted(set(found),key=lambda x:(not x.startswith('192.168.'),not x.startswith('10.'),x)) or ['127.0.0.1']
+            if ip.is_private and not ip.is_loopback and not ip.is_link_local and not ip.is_unspecified:
+                found.append((2 if virtual else 0 if wireless else 1,name,str(ip)))
+    return [(name,address) for _,name,address in sorted(set(found))] or [('No LAN address · laptop only','127.0.0.1')]
+
+
+def local_addresses():return list(dict.fromkeys(address for _,address in local_networks()))
+
+
+def private_firewall_command(port,executable=None):
+    """Copyable, explicit-user-run fix. Never execute or weaken the global firewall."""
+    import hashlib
+    import ntpath
+    import sys
+    if type(port) is not int or not 0<port<65536:raise ValueError('Invalid dashboard port')
+    executable=str(executable or sys.executable)
+    programs=[executable]
+    if ntpath.basename(executable).lower() in ('python.exe','pythonw.exe'):
+        programs=[ntpath.join(ntpath.dirname(executable),name) for name in ('python.exe','pythonw.exe')]
+    quote=lambda value:"'"+value.replace("'","''")+"'"
+    lines=[]
+    for program in programs:
+        name='CheckpointPhone-'+hashlib.sha256((program.lower()+':'+str(port)).encode()).hexdigest()[:16]
+        lines.append(f"if (-not (Get-NetFirewallRule -Name {quote(name)} -ErrorAction SilentlyContinue)) {{ New-NetFirewallRule -Name {quote(name)} -DisplayName 'Checkpoint phone dashboard' -Direction Inbound -Action Allow -Enabled True -Protocol TCP -LocalPort {port} -Program {quote(program)} -Profile Private -RemoteAddress LocalSubnet -ErrorAction Stop | Out-Null }}")
+    lines.append("Write-Output 'Checkpoint private-network rule is ready. Keep the app open and rescan its QR code.'")
+    return '\n'.join(lines)
 
 
 class PhoneServer:
     def __init__(self,bridge,host='0.0.0.0',port=8765):
-        self.bridge=bridge;self.token=secrets.token_urlsafe(24);self.server=None;self.thread=None;self.host=host;self.port=port
+        self.bridge=bridge;self.started=0.;self.last_page_request=0.;self.token=secrets.token_urlsafe(24);self.server=None;self.thread=None;self.host=host;self.port=port
 
     def start(self):
         owner=self;assets=Path(__file__).with_name('assets')
@@ -54,7 +82,9 @@ class PhoneServer:
                 self.end_headers();self.wfile.write(data)
             def do_GET(self):
                 if self.path=='/favicon.ico':return self.send_data(204,b'','image/png')
-                if self.path=='/':return self.send_data(200,(assets/'phone.html').read_bytes(),'text/html; charset=utf-8')
+                if self.path=='/':
+                    owner.last_page_request=time.monotonic()
+                    return self.send_data(200,(assets/'phone.html').read_bytes(),'text/html; charset=utf-8')
                 if self.path=='/font.ttf':return self.send_data(200,(assets/'DM-Sans.ttf').read_bytes(),'font/ttf')
                 if self.path not in ('/api/state','/api/report'):return self.send_data(404,{'error':'Not found'})
                 auth=self.headers.get('Authorization','')
@@ -67,7 +97,7 @@ class PhoneServer:
         except OSError:
             if not self.port:raise
             self.server=Server((self.host,0),Handler)
-        self.port=self.server.server_address[1]
+        self.port=self.server.server_address[1];self.started=time.monotonic()
         self.thread=threading.Thread(target=self.server.serve_forever,kwargs={'poll_interval':.15},daemon=True);self.thread.start();return self
 
     def url(self,address):return f'http://{address}:{self.port}/#pair={self.token}'

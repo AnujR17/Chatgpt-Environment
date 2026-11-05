@@ -33,15 +33,21 @@ window.overlay.grab().save(str(ROOT/'build/Checkpoint-Windows/windows-pip-overla
 assert window.overlay.grab().toImage().pixelColor(0,0).alpha()==0,'Overlay has an opaque background rectangle'
 window.input_observer.start();assert window.input_observer.enabled;window.input_observer.stop()
 from checkpoint.face_mapping import LandmarkPipeline
-mapper=LandmarkPipeline()
-try:assert mapper.infer(np.zeros((480,640,3),dtype=np.uint8)).status=='unavailable'
+# Exercise model bytes from a non-ASCII installation path and the real graph.
+folder=ROOT/'build/顔のモデル';folder.mkdir(parents=True,exist_ok=True)
+(folder/'face_landmarker.task').write_bytes((ROOT/'artifacts/face_landmarker.task').read_bytes())
+mapper=LandmarkPipeline(folder)
+try:
+    assert mapper.infer(np.zeros((480,640,3),dtype=np.uint8)).status=='unavailable'
+    assert mapper.infer(np.random.default_rng(8).integers(0,256,(480,640,3),dtype=np.uint8)).status in ('accepted','unavailable')
 finally:mapper.close()
 from checkpoint.pretrained_expression import HSEExpressionModel
 model=HSEExpressionModel();assert abs(float(model.probabilities(np.zeros((112,112,3),dtype=np.uint8)).sum())-1)<1e-4
-from checkpoint.phone import PhoneServer
+from checkpoint.phone import PhoneServer,private_firewall_command
 window.phone_server=PhoneServer(window.phone_bridge,host='127.0.0.1',port=0).start()
 request=Request(f'http://127.0.0.1:{window.phone_server.port}/api/state',headers={'Authorization':'Bearer '+window.phone_server.token})
 assert json.load(urlopen(request))['character']=='Pip'
+(ROOT/'build/Checkpoint-Windows/firewall-command-check.ps1').write_text(private_firewall_command(window.phone_server.port),encoding='utf8')
 window.phone_server.stop();window.phone_server=None
 window.last_status = 'Synthetic expression fixture · no camera connected'
 window.refresh()
@@ -64,6 +70,7 @@ result = {'windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_
           'reject_wrong_window': 'passed', 'pause_clears_live_card': 'passed',
           'player_report_preserved': 'passed','overlay_no_focus_steal':'passed','overlay_native_clickthrough_style':'passed',
           'raw_input_registration':'passed','face_landmarker_native_load':'passed','hsemotion_inference':'passed','phone_loopback_api':'passed',
+          'face_landmarker_non_ascii_path':'passed','face_landmarker_native_graph_inference':'passed',
           'physical_camera_and_actual_game': 'not tested','physical_phone_wifi':'not tested'}
 (ROOT / 'artifacts/windows-tracking-smoke.json').write_text(json.dumps(result, indent=2))
 print(json.dumps(result))

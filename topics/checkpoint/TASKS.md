@@ -18,3 +18,9 @@
 - [x] Verify native/browser integration and document limited official-trailer training experiment.
 - [x] Publish and verify Pip Windows preview (run 41985453835, HTTP 200, archive/source/model hashes checked).
 - [ ] Obtain accessible full-run gameplay sources and independent scene/event validation before enabling learned game cues.
+
+- [x] Diagnose reported MSMF frame failure and separate camera startup from tracking initialization.
+- [x] Implement selected-camera backend fallback/warm-up/cancellation and actionable errors.
+- [x] Add labelled LAN adapters, dashboard connection status and scoped firewall helper.
+- [ ] Publish and download-verify camera/phone repair release.
+- [ ] Confirm camera frames and physical phone connectivity on the user's Windows 10 PC.

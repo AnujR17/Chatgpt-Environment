@@ -11,3 +11,5 @@
 [Full controls and limits](PIP-COMPANION.md) · [Video list, actual training and model comparison](VIDEO-AND-MODEL-RESEARCH.md) · [Release verification](../../RELEASE-VERIFICATION.json).
 
 No posed personal emotion-photo collection is required. The categorical model improved on the matched acted-video comparison, but personal webcam/gamer affect accuracy remains unverified. Neutral fallback is a visual appearance, not a claim that an unobserved person feels neutral. Actual device/game performance, physical phone networking and user benefit still need testing.
+
+Camera will not start, or the phone QR link will not load? See [camera and phone troubleshooting](CAMERA-AND-PHONE-TROUBLESHOOTING.md). The updated build tries DirectShow first and lets you choose another camera. The pairing dialog includes adapter names, a laptop link test and an explicit Windows Private-network firewall helper.

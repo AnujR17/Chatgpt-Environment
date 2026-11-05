@@ -99,14 +99,17 @@ def test_app_report_dialog_closes_and_pair_dialog_stops_sharing(tmp_path):
     window.close();window.deleteLater();app.processEvents()
 
 
-def test_existing_physical_mapper_on_recorded_face_and_neutral_calibration():
+def test_existing_physical_mapper_on_recorded_face_and_neutral_calibration(tmp_path):
     import cv2
     import numpy as np
     from checkpoint.face_mapping import LandmarkPipeline
     fixture=Path(os.environ.get('CHECKPOINT_TEST_VIDEO','data/videos/02-01-05-01-01-01-04.mp4'))
     if not fixture.exists():pytest.skip('Requires separately sourced research video')
     cap=cv2.VideoCapture(str(fixture));cap.set(cv2.CAP_PROP_POS_MSEC,1500);ok,frame=cap.read();cap.release();assert ok
-    mapper=LandmarkPipeline()
+    # Non-ASCII install directories must work on Windows as well as Linux.
+    folder=tmp_path/'顔のモデル';folder.mkdir()
+    (folder/'face_landmarker.task').write_bytes(Path('artifacts/face_landmarker.task').read_bytes())
+    mapper=LandmarkPipeline(folder)
     try:
         cue=mapper.infer(frame);assert cue.status=='accepted' and cue.movement is not None
         assert set(cue.movement)=={'smile','brow','eyes','jaw','tension'}
