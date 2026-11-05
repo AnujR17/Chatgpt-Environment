@@ -2,6 +2,16 @@
 
 Updated 5 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 5 November stipend-floor follow-up — published
+
+Current stipend policy: Gujarat and remote India minimumINR10,000/month,preferINR15,000+;other eligible cities minimumINR15,000/month. Higher pay is welcome. Updated payMatch,brief and Excel guidance with lower-bound,unverified-pay and original-salary-unit checks. Existing layout unchanged.
+
+Fresh normal exact Internshala AI Certs1793856702 advertises Gandhinagar in-office15–18kINR/month,apply5December,stated start3November–8December. Added stable card internshala-ai-certs-1793856702 on_hold for3versus3–6month duration,current cohort and product-UX/graphic-work split. Earlier20k-floor exclusion remains with historical/inactive annotation;directory requirements/IDs unchanged. Lower thresholds do not revive expired,unpaid,senior or unrelated jobs. This was an exact-role/policy follow-up,not another whole-board pass.
+
+88retained/76active/12archived;233companies;1,472source records;35coverage rows;526requirement export rows. Prior jobs unchanged,prior source prefix and requirement IDs/text preserved,review queue and collector timestamp unchanged. Model,five Python collector,build,preservation/export and local/live desktop/mobile checks pass with0runtime errors. Backup-merge browser check preserves synthetic profile,applications,notes and unrelated company criteria. Known prior Gravity data-test expectation at tests/data.test.js:19 remains unchanged;no claim full data suite passes.
+
+Published exact topic/job-search-agent commit181e90c8d4bce1f04e602a2b330fad35ac5867d7 to existing projectprj_o1CANE3Uj8jY3AWgGku9nV0qjqPg. Productiondpl_9wskrKe3U7R2LjNLGdi73LR3YboM READY,exactref/SHA/project/publicalias verified;all seven live data/export/report files byte-match. Live browser confirms revised banner and new card. Existing protection/preview isolation retained;no main/new project/auth changes. No applications/messages,private applicant documents,browser exclusions or session credentials published. Review artifacts outside Git:/workspace/pay-policy-nov5-review. Handoff-only follow-up requires no redeploy.
+
 ## 5 November Gandhinagar / GIFT City follow-up — published
 
 Focused local research adds Vested Finance junior UI/UX as an on-hold full-time stretch alternative:1–2years product-design experience, GIFT City in-office, undisclosed salary. Wellfound4878924 and matching LinkedIn4481196262 deduplicated. Employer-linked Notion's general remote role is separate. No new qualifying INR20k+ Gandhinagar internship verified. Existing Menstrupedia Ahmedabad25–30k/month employer page rechecked; intake/joining unresolved.

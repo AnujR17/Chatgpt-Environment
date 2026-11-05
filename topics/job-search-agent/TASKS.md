@@ -1,5 +1,12 @@
 # Tasks
 
+## 5 November stipend-floor update
+
+- [x] Apply10k Gujarat/remoteIndia minimum,15k preferred;15k other eligible cities. Preserve layout,verified-minimum logic and original salary units.
+- [x] Recheck AI Certs exact Internshala detail;add15–18k Gandhinagar internship on_hold for duration/intake and preserve prior exclusion as historical.
+- [x] Regenerate exports;preservation/model/collector/build/local/live browser checks pass. Known Gravity data-test expectation remains documented.
+- [x] Publish exact181e90c8d4bce1f04e602a2b330fad35ac5867d7;READYdpl_9wskrKe3U7R2LjNLGdi73LR3YboM,seven live files exact,no main/protection changes.
+
 ## 5 November Gandhinagar / GIFT City follow-up
 
 - [x] Search local employers,LinkedIn/socials,Indeed,Naukri,Internshala,Wellfound,Cutshort andUnstop; record actual access and zero-result limits.
