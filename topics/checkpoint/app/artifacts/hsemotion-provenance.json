@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/HSE-asavchenko/face-emotion-recognition/blob/main/models/affectnet_emotions/onnx/enet_b0_8_best_afew.onnx?raw=true",
+  "sha256": "7aa2ea31c1311f4f8aa9d3fdb085d418dd4e7a48c4b9ed41df8c044f91d0213f",
+  "provider": "HSEmotion / av-savchenko",
+  "model": "enet_b0_8_best_afew",
+  "code_source": "https://github.com/av-savchenko/hsemotion-onnx",
+  "license_claim": "Apache-2.0 in provider repository; underlying datasets retain their own terms"
+}

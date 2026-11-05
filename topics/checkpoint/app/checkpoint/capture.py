@@ -7,11 +7,13 @@ from PySide6.QtGui import QImage
 
 
 class CaptureWorker(QThread):
-    def __init__(self, source, *, analyze=False, frequency=2, generation=0, realtime=True):
+    def __init__(self, source, *, analyze=False, frequency=2, generation=0, realtime=True,face_mapping=False,face_gain=1.5):
         super().__init__()
         self.source=source;self.analyze=analyze;self.frequency=max(.25,min(5,float(frequency)));self.generation=generation
         self.realtime=realtime;self.lock=threading.Lock();self.latest_image=None;self.latest_cue=None
         self.finished_reason="";self.error="";self.frames=0
+        self.face_mapping=face_mapping;self.neutral_requested=threading.Event()
+        self.face_gain=face_gain
 
     def take_latest(self):
         with self.lock:
@@ -19,7 +21,7 @@ class CaptureWorker(QThread):
         return image,cue
 
     def run(self):
-        capture=None
+        capture=None;model=None
         try:
             if isinstance(self.source,str) and "://" in self.source:raise ValueError("Only local video files and local camera devices are supported")
             capture=cv2.VideoCapture(self.source)
@@ -30,7 +32,10 @@ class CaptureWorker(QThread):
             frame_period=1/min(30,max(1,fps if fps>0 else 15))
             if self.analyze:
                 from checkpoint.runtime import FacePipeline, CueSmoother
-                model=FacePipeline();smoother=CueSmoother()
+                if self.face_mapping:
+                    from checkpoint.face_mapping import LandmarkPipeline
+                    model=LandmarkPipeline();model.gain=self.face_gain;smoother=None
+                else:model=FacePipeline(pretrained=True);smoother=CueSmoother()
             else:model=None;smoother=None
             next_analysis=0.;next_preview=0.
             while not self.isInterruptionRequested():
@@ -40,7 +45,10 @@ class CaptureWorker(QThread):
                     break
                 self.frames+=1
                 if self.analyze and t>=next_analysis:
-                    cue=smoother.update(model.infer(frame));next_analysis=t+1/self.frequency
+                    if self.face_mapping and self.neutral_requested.is_set():model.start_neutral();self.neutral_requested.clear()
+                    cue=model.infer(frame)
+                    if smoother is not None:cue=smoother.update(cue)
+                    next_analysis=t+1/self.frequency
                     with self.lock:self.latest_cue=(self.generation,cue)
                 if t>=next_preview:
                     rgb=cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
@@ -55,6 +63,7 @@ class CaptureWorker(QThread):
         except Exception as ex:
             self.error=str(ex)
         finally:
+            if model is not None and hasattr(model,'close'):model.close()
             if capture is not None:capture.release()
             with self.lock:self.latest_image=None;self.latest_cue=None
 

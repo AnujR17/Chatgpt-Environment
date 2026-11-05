@@ -1,3 +1,13 @@
+# Current face engines — Pip preview
+
+Default: provider-trained Google MediaPipe Face Landmarker, task version float16/1. It supplies physical brow/eye/mouth movements and does not estimate felt emotion or CMA. We did not train its weights. URL/hash: face-landmarker-provenance.json. Neutral calibration is optional, local and in memory; no personal photo collection or model fine-tuning is required.
+
+Alternative: provider-trained HSEmotion enet_b0_8_best_afew ONNX. On the matched exploratory 208 RAVDESS acted-video clips, accuracy is 62.5%, macro-F1 .603, versus the archived original classifier's 29.8%/.251. Anger recall 56.3%, neutral recall 50%; do not claim individual reliability. No weights/thresholds were tuned on these clips. See pretrained-comparison.json and ../docs/VIDEO-AND-MODEL-RESEARCH.md for protocol, selection limits, provider overlap uncertainty and source links. No gamer, Indian-context or felt-emotion accuracy is established. Automatic player CMA remains unavailable.
+
+The game-scene classifier is a separate single-trailer research trial, not a facial model or validated event detector, and is not used for live scene/cue decisions. Production affect-detection readiness is not claimed for any engine.
+
+## Archived original classifier and benchmark
+
 # Checkpoint expression model / research model card
 
 Status: experimental; not production ready. Automatic CMA and frustration prediction are unavailable.

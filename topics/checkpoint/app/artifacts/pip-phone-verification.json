@@ -1,0 +1,11 @@
+{
+  "browser": "Chromium, 390x844 phone viewport",
+  "fixture": "Synthetic physical-face cues, not live recognition",
+  "native_to_phone_updates": "passed",
+  "neutral_fallback": "passed",
+  "report_download": "passed",
+  "disconnection": "passed",
+  "horizontal_overflow": "none",
+  "javascript_errors": [],
+  "physical_phone_network": "not tested"
+}

@@ -27,7 +27,7 @@ def test_live_model_result_changes_card_without_overwriting_report(tmp_path):
     assert (window.session.report, window.session.valence, window.session.arousal) == ('calm', .6, -.4)
     window.session.receive_cue(Cue('unavailable', reason='No face in frame'), generation); window.refresh()
     assert window.emblems[0].current_state is None
-    assert expression_display(window.session).title == 'Expression uncertain'
+    assert expression_display(window.session).title == 'No face detected'
     window.select_card_source(0); assert window.emblems[0].current_state == 'calm'
     window.select_card_source(1); window.pause(); assert window.emblems[0].current_state is None
     assert expression_display(window.session).title == 'Camera paused'

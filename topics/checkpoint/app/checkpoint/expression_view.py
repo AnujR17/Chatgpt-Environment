@@ -20,19 +20,26 @@ class ExpressionDisplay:
     title: str
     artwork: str | None
     detail: str
+    movement: dict | None = None
+    source: str = 'expression_estimate'
 
 
 def expression_display(session, *, max_age=5):
+    source='face_movement' if session.face_mapping else 'expression_estimate'
     if not session.experimental_analysis:
-        return ExpressionDisplay('Tracking is off', None, 'Enable Track expressions, then start your camera.')
+        return ExpressionDisplay('Tracking is off', None, 'Enable Track my face, then start your camera.',source=source)
     if not session.camera_active:
-        return ExpressionDisplay('Camera paused', None, 'Start your camera or open a local video to track expressions.')
+        return ExpressionDisplay('Camera paused', None, 'Start your camera or open a local video to track expressions.',source=source)
     cue = session.cue
     if cue is None:
-        return ExpressionDisplay('Looking for a face', None, 'Waiting for a stable expression. This is an experimental estimate.')
+        return ExpressionDisplay('Looking for a face', None, 'Waiting for usable face tracking.',source=source)
     if time.monotonic() - session.cue_received_at > max_age:
-        return ExpressionDisplay('Expression unavailable', None, 'No recent camera result. The previous expression has been cleared.')
+        return ExpressionDisplay('Tracking unavailable', None, 'No recent camera result. Pip has returned to a neutral appearance.',source=source)
     if cue.status != 'accepted' or cue.expression not in EXPRESSIONS:
-        return ExpressionDisplay('Expression uncertain', None, cue.reason or 'No stable expression estimate is available.')
+        title='No face detected' if 'no face' in cue.reason.lower() else 'Face tracking unavailable' if session.face_mapping else 'Expression uncertain'
+        return ExpressionDisplay(title, None, cue.reason or 'No stable expression estimate is available.',source=source)
+    if cue.movement is not None:
+        return ExpressionDisplay(cue.mapping_label or 'Facial movement',EXPRESSIONS[cue.expression][1],
+            'Your face movements are mapped to Pip. Your feelings remain your check-in.',cue.movement,'face_movement')
     title, artwork = EXPRESSIONS[cue.expression]
     return ExpressionDisplay(title, artwork, 'Experimental face estimate · Your feeling and CMA remain your check-in.')

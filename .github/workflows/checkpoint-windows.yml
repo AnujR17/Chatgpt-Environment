@@ -40,6 +40,8 @@ jobs:
         run: |
           New-Item -ItemType Directory -Force build/Checkpoint-Windows/docs | Out-Null
           Copy-Item docs/WINDOWS-APP.md build/Checkpoint-Windows/docs/
+          Copy-Item docs/PIP-COMPANION.md build/Checkpoint-Windows/docs/
+          Copy-Item docs/VIDEO-AND-MODEL-RESEARCH.md build/Checkpoint-Windows/docs/
           Copy-Item artifacts/cards-app-tests.xml build/Checkpoint-Windows/docs/
           Copy-Item artifacts/windows-assembly-verification.json build/Checkpoint-Windows/docs/
       - name: Check native launch on Windows
@@ -55,6 +57,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Windows live tracking fixture checks failed' }
           Copy-Item artifacts/windows-tracking-smoke.json build/Checkpoint-Windows/docs/
           Copy-Item artifacts/live-tracking-tests.xml build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/pip-tests.xml build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/pip-phone-verification.json build/Checkpoint-Windows/docs/
       - name: Package and verify archive
         run: |
           python -m scripts.package_windows
@@ -77,10 +81,10 @@ jobs:
           GH_REPO: ${{ github.repository }}
           RELEASE_COMMIT: ${{ github.sha }}
         run: |
-          $tag = 'checkpoint-v0.1.0-preview.2'
+          $tag = 'checkpoint-v0.2.0-pip-preview.1'
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint Windows preview 0.1.0 — live tracking' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint — Pip companion preview' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt --clobber

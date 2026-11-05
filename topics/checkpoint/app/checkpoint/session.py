@@ -25,6 +25,8 @@ class Session:
     active: bool = True
     camera_active: bool = False
     experimental_analysis: bool = False
+    face_mapping: bool = True
+    face_gain: float = 1.5
     quiet: bool = True
     source_kind: str | None = None
     cue: object | None = None

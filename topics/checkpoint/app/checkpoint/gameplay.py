@@ -193,11 +193,13 @@ class GameWorker(QThread):
     def __init__(self, *, screen=False, detector=active_game, capture=capture_game):
         super().__init__(); self.screen = screen; self.detector = detector; self.capture = capture
         self.mark_requested = threading.Event(); self.analyzer = GettingOverItAnalyzer(); self.last_pid = None
+        self.foreground = ActiveGame(None)
 
     def run(self):
         try:
             while not self.isInterruptionRequested():
                 game = self.detector()
+                self.foreground = game
                 if game.name == 'Getting Over It':
                     if game.pid != self.last_pid:
                         self.analyzer.clear(); self.last_pid = game.pid
@@ -219,7 +221,7 @@ class GameWorker(QThread):
         except Exception as ex:
             self.observation.emit(GameObservation(None, 'Game tracking stopped: ' + str(ex)))
         finally:
-            self.analyzer.clear()
+            self.analyzer.clear();self.foreground=ActiveGame(None)
 
     def stop(self):
         self.requestInterruption(); return self.wait(2000)

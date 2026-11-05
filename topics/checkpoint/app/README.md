@@ -1,47 +1,43 @@
-# Checkpoint — native Windows gaming companion
+# Checkpoint with Pip
 
-A native desktop app for checking in with your feelings during a game. Choose from 43 illustrated cards, adjust pleasantness and energy independently, and take a break when you want one.
+Pip is an original soft desktop companion. The Windows app maps visible face movements locally, observes optional Getting Over It context and input timing, and shares a small phone dashboard. One body morphs smoothly; neutral and missing detection use a flat neutral face.
 
-## Download for Windows
+## Download and use
 
-**[Download Checkpoint for Windows x64](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.1.0-preview.2/Checkpoint-Windows-Preview.zip)** · [Release and checksums](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.1.0-preview.2)
+**[Download the Windows portable app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.2.0-pip-preview.1/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.2.0-pip-preview.1)
 
-1. Download `Checkpoint-Windows-Preview.zip` and **extract the entire archive**.
-2. Open the `Checkpoint-Windows` folder.
-3. Double-click **Start Checkpoint.cmd**. Python and Qt are included.
+Extract the whole ZIP into a new folder, run **Start Checkpoint.cmd**, tick **Track my face**, then **Start camera**. Click **Show Pip** for the frameless click-through companion. **Phone dashboard** displays a pairing QR: scan it from a phone on the same trusted Wi-Fi. No phone-store installation is required; the phone view is a local browser dashboard.
 
-Windows 10/11 x64 is the target. Keep the extracted folders together. Run **Check setup.cmd** for diagnostics. This is an unsigned research preview. The package was assembled on a Windows runner and passed a native launch/screenshot check. Its download and SHA-256 checksum have been verified. See [live tracking instructions and verification scope](docs/LIVE-TRACKING.md).
+[Controls and pairing](docs/PIP-COMPANION.md) · [Windows instructions](docs/WINDOWS-APP.md) · [Video shortlist and training](docs/VIDEO-AND-MODEL-RESEARCH.md) · [Model comparison](artifacts/pretrained-comparison.json)
 
-![Native Checkpoint application](artifacts/cards-app-session.png)
+![Pip phone dashboard, synthetic UI fixture](artifacts/pip-phone-neutral.png)
 
-## What works
+## What is implemented
 
-- Eight common feeling cards first; all 43 available through search and the full library.
-- Check-ins with independent pleasantness and energy sliders; cancellation preserves your last report.
-- Optional own-camera/video preview with **Track expressions (experimental)**. Stable estimates automatically change the **Live expression** card. The eight model classes are separate from the 43 self-report words.
-- Windows foreground-process detection and opt-in Getting Over It window sampling. Optical flow gives possible climb/fall cues; a player-marked reference identifies a similar start view. These game-event cues are unvalidated heuristics.
-- Breaks, session completion, light/dark appearance, reduced animation and optional local summary history.
+- Local Google MediaPipe physical-face mapping, optional in-memory neutral calibration and movement strength. No posed personal emotion-photo set is needed.
+- Alternative provider-trained HSEmotion expression estimates: 62.5% versus 29.8% for the earlier classifier on the matched 208 acted-video clips. This does not establish personal webcam or gamer-mood accuracy.
+- Transparent, frameless, no-focus desktop Pip; click-through during play, corners/temporary drag mode configured from the main app. Exclusive fullscreen and game-specific compatibility remain target-device checks.
+- Token-paired, read-only local phone dashboard with live state, game context, source-labelled recent moments and JSON report download. No face/game images, typed text or key identities are exported. Local HTTP is intended for a trusted private network.
+- Optional supported-foreground-game detection, Getting Over It window observation, aggregate mouse/key timing and conservative quiet nudges. Current game events are experimental heuristics; no full-map or frustration detector is claimed.
+- Separate player check-ins/CMA, 43 selectable words, light/dark native UI, reduced motion, optional check-in retention, breaks and clean capture shutdown.
 
-![Feeling cards](artifacts/cards-app-library.png)
+The source list contains six YouTube candidates and an accessible publisher trailer. YouTube downloads were denied by the workspace proxy. An actual small scene model was trained on inspected trailer frames and evaluated, but it confused an opening view and stays out of live cue decisions. See the research report for exact splits and limitations.
 
-Feelings and CMA come from **your check-in**. Facial-expression inference is experimental, disabled by default and cannot assign your mood or trigger interventions. Microphone capture is not implemented. Getting Over It screen sampling is a separate opt-in control in Settings and only targets that supported foreground game. Normal use does not record or upload video. History is off by default.
+## Verify and reproduce
 
-## Source and verification
+Source targets Python 3.13 and the pinned native Windows wheels. From the repository root:
 
 ```sh
 cd topics/checkpoint/app
 python -m venv .venv
-# Windows PowerShell:
 .venv\Scripts\Activate.ps1
 python -m pip install -r requirements-runtime.txt
 python -m pip install --no-deps -e .
 python -m checkpoint.app
 ```
 
-34 checks pass in Linux, including real recorded-video expression inference and automatic native card updates; the Windows-only GDI check is skipped locally. Synthetic game scenes test motion direction, temporal gating, scene cuts and start-view matching, not real-game recognition accuracy. See [tracking instructions and limits](docs/LIVE-TRACKING.md). Earlier evidence: 27 checks passed in the original Linux workspace. A [GitHub Actions Windows runner](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41971376058) also passed a native window launch and screenshot check. Physical-camera access, player recognition of the illustrations and performance on your computer remain unverified. The model failed its production release gates; this is a research preview.
+Run `python -m pytest -q` after installing pytest. Separately sourced face-video fixtures are not committed and their tests skip when absent. The face mapper can require system EGL/GLES libraries for a Linux development environment; those are not Windows installation requirements. Windows runtime wheels and hashes are in design/windows-runtime-sources.json. The branch workflow assembles and verifies the portable release; raw datasets, footage, caches and vendor downloads are excluded from Git.
 
-[Windows instructions](docs/WINDOWS-APP.md) · [Feature applicability](docs/FEATURE-APPLICABILITY.md) · [Model card](artifacts/MODEL-CARD.md) · [Third-party notices](third_party/NOTICES.md) · [Editable Figma](https://www.figma.com/design/Rj3WAO6IpUb48OFUerY7aW?node-id=108-127)
+Browser-to-native phone verification uses Chromium at a 390×844 viewport and synthetic cues, not a physical phone or recognition-accuracy test. Actual recorded-video mapping, model benchmarking and software tests have separate evidence. Check [release verification](../RELEASE-VERIFICATION.json) and artifacts for the publication results. No game-FPS, battery, camera-hardware or intervention-effectiveness claim is inferred from software checks.
 
-To run software checks, install pytest and run `python -m pytest -q`. The external-video test requires the separately sourced research fixture and skips when it is absent. Raw training images, evaluation videos, downloaded visual references, caches and environments are excluded from this repository.
-
-The exact Python embedded runtime and wheel hashes are recorded in `design/windows-runtime-sources.json`. The [branch workflow](../../../.github/workflows/checkpoint-windows.yml) fetches those exact vendor files, assembles the app, checks a native Windows launch and publishes the portable ZIP. The scripts in `scripts/` assemble and verify the bundle from vendor files under `build/`. They do not train or alter the model. SHA256SUMS.txt in the release verifies the downloadable ZIP.
+[Model card](artifacts/MODEL-CARD.md) · [Third-party notices](third_party/NOTICES.md) · [Older editable Figma card design](https://www.figma.com/design/Rj3WAO6IpUb48OFUerY7aW?node-id=108-127)

@@ -4,7 +4,7 @@ This builds a Windows distribution on Linux; it does not claim Windows execution
 from pathlib import Path
 from zipfile import ZipFile
 from shutil import copytree,copyfile
-import json,hashlib,struct
+import json,hashlib,struct,sys
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'build/Checkpoint-Windows';RUNTIME=OUT/'runtime';SITE=RUNTIME/'Lib/site-packages'
 RUNTIME.mkdir(parents=True,exist_ok=True);SITE.mkdir(parents=True,exist_ok=True)
 with ZipFile(ROOT/'build/windows-runtime/python-embed.zip') as z:z.extractall(RUNTIME)
@@ -25,7 +25,7 @@ version=json.loads((ROOT/'build/windows-runtime/source.json').read_text())['vers
 for dll in (SITE/'PySide6').glob('*140*.dll'):copyfile(dll,RUNTIME/dll.name)
 copytree(ROOT/'checkpoint',OUT/'checkpoint',dirs_exist_ok=True,ignore=lambda d,n:[x for x in n if x=='__pycache__'])
 (OUT/'artifacts').mkdir(exist_ok=True)
-for name in ['expression.onnx','calibration.json','yunet.onnx','release-gates.json','MODEL-CARD.md']:
+for name in ['expression.onnx','calibration.json','yunet.onnx','release-gates.json','MODEL-CARD.md','face_landmarker.task','face-landmarker-provenance.json','hsemotion-afew.onnx','hsemotion-provenance.json','game-scene-model.json','game-scene-training.json','pretrained-comparison.json']:
     copyfile(ROOT/'artifacts'/name,OUT/'artifacts'/name)
 copytree(ROOT/'third_party',OUT/'third_party',dirs_exist_ok=True)
 (OUT/'launch.py').write_text('''import os,sys,ctypes,traceback
@@ -62,7 +62,15 @@ print('Setup check completed.')
 1. Extract the entire ZIP to a normal folder on your Windows PC.
 2. Double-click Start Checkpoint.cmd.
 3. Choose a game and intention. Camera starts off.
-4. Choose a feeling card, adjust pleasantness and energy, then save.
+4. Tick Track my face and click Start camera. Pip maps visible face movements.
+5. Show Pip enables the transparent, frameless, click-through desktop buddy.
+6. Phone dashboard displays a pairing QR. Scan it on the same trusted Wi-Fi.
+7. Settings offers HSEmotion expression estimates, game observation and optional input timing/nudges.
+8. Report exports derived session data. No camera/game images or typed text are sent to your phone.
+
+Neutral and loss of detection use a flat neutral appearance. The status still
+says when no face is detected. Set my neutral face optionally calibrates a few
+seconds of relaxed tracking in memory; no personal photo collection is needed.
 
 No separate Python installation or package downloads are required.
 Keep the runtime, checkpoint and artifacts folders beside the launcher.
@@ -72,9 +80,9 @@ For diagnostics, run Check setup.cmd. Startup errors are written under
 Camera and video are explicit choices. No microphone or gameplay recording.
 Expression analysis is experimental, off by default and never sets your CMA.
 History is off by default; opting in stores derived summaries locally.
-This private research preview is not code-signed. It was assembled on Linux;
-Windows launch, physical-camera permissions and device performance still need
-verification on the target PC. The included numerical/runtime libraries are
+This research preview is not code-signed. Automated Windows launch and fixture
+checks run before publication. Physical-camera access, actual game behaviour,
+phone Wi-Fi/firewall access and device performance still need a target-device check. The included numerical/runtime libraries are
 Windows x64 wheels. Windows 10/11 x64 is the target.
 
 Runtime: official Python embedded distribution and PyPI wheels. Third-party
@@ -89,7 +97,10 @@ def amd64(path):
 for relative in ['python.exe','pythonw.exe',f'python{tag}.dll','Lib/site-packages/PySide6/Qt6Core.dll','Lib/site-packages/PySide6/plugins/platforms/qwindows.dll']:
     amd64(RUNTIME/relative)
 assert hashlib.sha256((OUT/'artifacts/expression.onnx').read_bytes()).hexdigest()=='b0e28051075f6f9ed200bbd9e510c451d2e05ceb3fab0d548cb5e9b3942da466'
+for name,provenance in [('face_landmarker.task','face-landmarker-provenance.json'),('hsemotion-afew.onnx','hsemotion-provenance.json')]:
+    expected=json.loads((ROOT/'artifacts'/provenance).read_text())['sha256']
+    assert hashlib.sha256((OUT/'artifacts'/name).read_bytes()).hexdigest()==expected
 sources={'python':json.loads((ROOT/'build/windows-runtime/source.json').read_text()),'wheels':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'build/windows-wheels').glob('*.whl')}}
 (OUT/'runtime-sources.json').write_text(json.dumps(sources,indent=2))
-result={'directory':str(OUT),'python':version,'windows_x64_pe_headers':'passed','qt_windows_platform_plugin':'present','vc_runtime':'bundled from official Qt/Python distributions','native_windows_execution':'not available in Linux workspace','bytes':sum(p.stat().st_size for p in OUT.rglob('*') if p.is_file())}
+result={'directory':str(OUT),'python':version,'windows_x64_pe_headers':'passed','qt_windows_platform_plugin':'present','vc_runtime':'bundled from official Qt/Python distributions','assembly_platform':sys.platform,'native_windows_execution':'See separate Windows fixture checks','bytes':sum(p.stat().st_size for p in OUT.rglob('*') if p.is_file())}
 (ROOT/'artifacts/windows-assembly-verification.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))

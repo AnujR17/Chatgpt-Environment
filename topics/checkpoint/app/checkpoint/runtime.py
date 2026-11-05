@@ -23,6 +23,8 @@ class Cue:
     reason: str = ""
     face_box: tuple | None = None
     elapsed_ms: float = 0.
+    movement: dict | None = None
+    mapping_label: str | None = None
 
     def to_dict(self):
         return asdict(self)
@@ -55,8 +57,11 @@ class ExpressionModel:
 
 
 class FacePipeline:
-    def __init__(self, directory=ROOT/"artifacts", min_face_pixels=80):
-        self.model=ExpressionModel(directory)
+    def __init__(self, directory=ROOT/"artifacts", min_face_pixels=80,pretrained=False):
+        if pretrained:
+            from checkpoint.pretrained_expression import HSEExpressionModel
+            self.model=HSEExpressionModel(directory)
+        else:self.model=ExpressionModel(directory)
         self.detector=cv2.FaceDetectorYN.create(str(Path(directory)/"yunet.onnx"),"",(320,320),.9,.3,5000)
         self.min_face_pixels=min_face_pixels
 

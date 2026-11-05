@@ -25,3 +25,13 @@ Torchvision MobileNetV3-Small with ImageNet-1k V1 weights, https://pytorch.org/v
 CMA vector emblems are exact native SVG exports of the user's Checkpoint Figma components 50:2, 50:9, 50:16, 50:23 and 50:30 in file Rj3WAO6IpUb48OFUerY7aW. No flattened UI image is used in the app. Camera/video imagery is supplied dynamically by the explicitly selected local source.
 
 DM Sans is bundled under the SIL Open Font License 1.1; see DM-Sans-OFL.txt and checkpoint/assets/OFL.txt. No browser or embedded web engine is used by the native app.
+
+## Pip preview providers and gameplay study
+
+Google MediaPipe runtime 0.10.35 and Face Landmarker float16/1 are provider assets, not in-project training. Runtime licence: MEDIAPIPE-LICENSE.txt. Model URL and SHA-256: artifacts/face-landmarker-provenance.json. Documentation: https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker/python .
+
+HSEmotion ONNX enet_b0_8_best_afew is provider-trained: https://github.com/av-savchenko/hsemotion-onnx . Provider licence: HSEMOTION-LICENSE.txt; model provenance/hash in artifacts/hsemotion-provenance.json. Provider code/weight licensing does not relicense underlying datasets. Outputs are expression-category estimates, not validated mood/CMA or clinical measurements.
+
+The Getting Over It trailer is publisher-hosted media, movie 256696623, authored/published by Bennett Foddy/associated game publisher. Its raw video and thumbnails are excluded from this distribution. A hash, visual annotations, experimental feature model and results document a limited research trial; no general reuse/commercial-training licence is asserted. YouTube candidates are listed as metadata discovery only and were not downloaded or trained on.
+
+QR generation uses qrcode 8.2; its distribution licence is retained in the bundled runtime metadata. Phone UI uses the same bundled OFL DM Sans and original Pip vector geometry as the native application.

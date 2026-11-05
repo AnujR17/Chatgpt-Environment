@@ -1,0 +1,1622 @@
+{
+  "protocol": "Same 208 RAVDESS actor 01-04 clips, ten middle-60% frames, same face/quality gate, mean probabilities; calm excluded",
+  "candidate": "HSEmotion enet_b0_8_best_afew, pretrained provider ONNX, no fine-tuning",
+  "clips": 208,
+  "accuracy_including_no_prediction": 0.625,
+  "macro_f1_supported_truth": 0.6028644889761292,
+  "per_class": {
+    "neutral": {
+      "precision": 0.2857142857142857,
+      "recall": 0.5,
+      "f1-score": 0.36363636363636365,
+      "support": 16.0
+    },
+    "happiness": {
+      "precision": 0.8,
+      "recall": 0.75,
+      "f1-score": 0.7741935483870968,
+      "support": 32.0
+    },
+    "surprise": {
+      "precision": 1.0,
+      "recall": 0.28125,
+      "f1-score": 0.43902439024390244,
+      "support": 32.0
+    },
+    "sadness": {
+      "precision": 0.6190476190476191,
+      "recall": 0.8125,
+      "f1-score": 0.7027027027027027,
+      "support": 32.0
+    },
+    "anger": {
+      "precision": 1.0,
+      "recall": 0.5625,
+      "f1-score": 0.72,
+      "support": 32.0
+    },
+    "disgust": {
+      "precision": 0.5178571428571429,
+      "recall": 0.90625,
+      "f1-score": 0.6590909090909091,
+      "support": 32.0
+    },
+    "fear": {
+      "precision": 0.64,
+      "recall": 0.5,
+      "f1-score": 0.5614035087719298,
+      "support": 32.0
+    },
+    "contempt": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "accuracy": 0.625,
+    "macro avg": {
+      "precision": 0.607827380952381,
+      "recall": 0.5390625,
+      "f1-score": 0.5275064278541131,
+      "support": 208.0
+    },
+    "weighted avg": {
+      "precision": 0.7261172161172161,
+      "recall": 0.625,
+      "f1-score": 0.6212666524638035,
+      "support": 208.0
+    }
+  },
+  "confusion": [
+    [
+      8,
+      3,
+      0,
+      3,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      24,
+      0,
+      3,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      8,
+      2,
+      9,
+      0,
+      0,
+      8,
+      5,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      26,
+      0,
+      1,
+      1,
+      0
+    ],
+    [
+      4,
+      1,
+      0,
+      0,
+      18,
+      7,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      29,
+      1,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      8,
+      0,
+      4,
+      16,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "latency_ms": {
+    "median": 28.391536499839276,
+    "p95": 36.44532970038199
+  },
+  "baseline_accuracy": 0.2980769230769231,
+  "limitations": [
+    "Acted clip-level labels, not natural gamer emotions",
+    "Four actors only",
+    "Exploratory comparison on an already reported benchmark; fresh target-context validation still required",
+    "Unknown overlap with provider training datasets",
+    "No personal emotion photos required"
+  ],
+  "records": [
+    {
+      "file": "02-01-01-01-01-01-04.mp4",
+      "actor": 4,
+      "truth": 0,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-01-02-04.mp4",
+      "actor": 4,
+      "truth": 0,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-02-01-04.mp4",
+      "actor": 4,
+      "truth": 0,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-02-02-04.mp4",
+      "actor": 4,
+      "truth": 0,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-01-01-04.mp4",
+      "actor": 4,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-01-02-04.mp4",
+      "actor": 4,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-02-01-04.mp4",
+      "actor": 4,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-02-02-04.mp4",
+      "actor": 4,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-01-01-04.mp4",
+      "actor": 4,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-01-02-04.mp4",
+      "actor": 4,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-02-01-04.mp4",
+      "actor": 4,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-02-02-04.mp4",
+      "actor": 4,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-01-01-04.mp4",
+      "actor": 4,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-01-02-04.mp4",
+      "actor": 4,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-02-01-04.mp4",
+      "actor": 4,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-02-02-04.mp4",
+      "actor": 4,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-01-01-04.mp4",
+      "actor": 4,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-01-02-04.mp4",
+      "actor": 4,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-02-01-04.mp4",
+      "actor": 4,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-02-02-04.mp4",
+      "actor": 4,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-01-01-04.mp4",
+      "actor": 4,
+      "truth": 4,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-01-02-04.mp4",
+      "actor": 4,
+      "truth": 4,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-02-01-04.mp4",
+      "actor": 4,
+      "truth": 4,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-02-02-04.mp4",
+      "actor": 4,
+      "truth": 4,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-01-01-04.mp4",
+      "actor": 4,
+      "truth": 4,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-01-02-04.mp4",
+      "actor": 4,
+      "truth": 4,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-02-01-04.mp4",
+      "actor": 4,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-02-02-04.mp4",
+      "actor": 4,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-01-01-04.mp4",
+      "actor": 4,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-01-02-04.mp4",
+      "actor": 4,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-02-01-04.mp4",
+      "actor": 4,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-02-02-04.mp4",
+      "actor": 4,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-01-01-04.mp4",
+      "actor": 4,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-01-02-04.mp4",
+      "actor": 4,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-02-01-04.mp4",
+      "actor": 4,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-02-02-04.mp4",
+      "actor": 4,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-01-01-04.mp4",
+      "actor": 4,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-01-02-04.mp4",
+      "actor": 4,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-02-01-04.mp4",
+      "actor": 4,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-02-02-04.mp4",
+      "actor": 4,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-01-01-04.mp4",
+      "actor": 4,
+      "truth": 5,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-01-02-04.mp4",
+      "actor": 4,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-02-01-04.mp4",
+      "actor": 4,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-02-02-04.mp4",
+      "actor": 4,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-01-01-04.mp4",
+      "actor": 4,
+      "truth": 2,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-01-02-04.mp4",
+      "actor": 4,
+      "truth": 2,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-02-01-04.mp4",
+      "actor": 4,
+      "truth": 2,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-02-02-04.mp4",
+      "actor": 4,
+      "truth": 2,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-01-01-04.mp4",
+      "actor": 4,
+      "truth": 2,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-01-02-04.mp4",
+      "actor": 4,
+      "truth": 2,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-02-01-04.mp4",
+      "actor": 4,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-02-02-04.mp4",
+      "actor": 4,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-01-01-01.mp4",
+      "actor": 1,
+      "truth": 0,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-01-02-01.mp4",
+      "actor": 1,
+      "truth": 0,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-02-01-01.mp4",
+      "actor": 1,
+      "truth": 0,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-02-02-01.mp4",
+      "actor": 1,
+      "truth": 0,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-01-01-01.mp4",
+      "actor": 1,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-01-02-01.mp4",
+      "actor": 1,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-02-01-01.mp4",
+      "actor": 1,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-02-02-01.mp4",
+      "actor": 1,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-01-01-01.mp4",
+      "actor": 1,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-01-02-01.mp4",
+      "actor": 1,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-02-01-01.mp4",
+      "actor": 1,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-02-02-01.mp4",
+      "actor": 1,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-01-01-01.mp4",
+      "actor": 1,
+      "truth": 3,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-01-02-01.mp4",
+      "actor": 1,
+      "truth": 3,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-02-01-01.mp4",
+      "actor": 1,
+      "truth": 3,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-02-02-01.mp4",
+      "actor": 1,
+      "truth": 3,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-01-01-01.mp4",
+      "actor": 1,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-01-02-01.mp4",
+      "actor": 1,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-02-01-01.mp4",
+      "actor": 1,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-02-02-01.mp4",
+      "actor": 1,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-01-01-01.mp4",
+      "actor": 1,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-01-02-01.mp4",
+      "actor": 1,
+      "truth": 4,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-02-01-01.mp4",
+      "actor": 1,
+      "truth": 4,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-02-02-01.mp4",
+      "actor": 1,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-01-01-01.mp4",
+      "actor": 1,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-01-02-01.mp4",
+      "actor": 1,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-02-01-01.mp4",
+      "actor": 1,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-02-02-01.mp4",
+      "actor": 1,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-01-01-01.mp4",
+      "actor": 1,
+      "truth": 6,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-01-02-01.mp4",
+      "actor": 1,
+      "truth": 6,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-02-01-01.mp4",
+      "actor": 1,
+      "truth": 6,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-02-02-01.mp4",
+      "actor": 1,
+      "truth": 6,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-01-01-01.mp4",
+      "actor": 1,
+      "truth": 6,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-01-02-01.mp4",
+      "actor": 1,
+      "truth": 6,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-02-01-01.mp4",
+      "actor": 1,
+      "truth": 6,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-02-02-01.mp4",
+      "actor": 1,
+      "truth": 6,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-01-01-01.mp4",
+      "actor": 1,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-01-02-01.mp4",
+      "actor": 1,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-02-01-01.mp4",
+      "actor": 1,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-02-02-01.mp4",
+      "actor": 1,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-01-01-01.mp4",
+      "actor": 1,
+      "truth": 5,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-01-02-01.mp4",
+      "actor": 1,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-02-01-01.mp4",
+      "actor": 1,
+      "truth": 5,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-02-02-01.mp4",
+      "actor": 1,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-01-01-01.mp4",
+      "actor": 1,
+      "truth": 2,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-01-02-01.mp4",
+      "actor": 1,
+      "truth": 2,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-02-01-01.mp4",
+      "actor": 1,
+      "truth": 2,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-02-02-01.mp4",
+      "actor": 1,
+      "truth": 2,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-01-01-01.mp4",
+      "actor": 1,
+      "truth": 2,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-01-02-01.mp4",
+      "actor": 1,
+      "truth": 2,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-02-01-01.mp4",
+      "actor": 1,
+      "truth": 2,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-02-02-01.mp4",
+      "actor": 1,
+      "truth": 2,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-01-01-03.mp4",
+      "actor": 3,
+      "truth": 0,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-01-02-03.mp4",
+      "actor": 3,
+      "truth": 0,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-02-01-03.mp4",
+      "actor": 3,
+      "truth": 0,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-02-02-03.mp4",
+      "actor": 3,
+      "truth": 0,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-01-01-03.mp4",
+      "actor": 3,
+      "truth": 1,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-01-02-03.mp4",
+      "actor": 3,
+      "truth": 1,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-02-01-03.mp4",
+      "actor": 3,
+      "truth": 1,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-02-02-03.mp4",
+      "actor": 3,
+      "truth": 1,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-01-01-03.mp4",
+      "actor": 3,
+      "truth": 1,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-01-02-03.mp4",
+      "actor": 3,
+      "truth": 1,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-02-01-03.mp4",
+      "actor": 3,
+      "truth": 1,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-02-02-03.mp4",
+      "actor": 3,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-01-01-03.mp4",
+      "actor": 3,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-01-02-03.mp4",
+      "actor": 3,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-02-01-03.mp4",
+      "actor": 3,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-02-02-03.mp4",
+      "actor": 3,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-01-01-03.mp4",
+      "actor": 3,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-01-02-03.mp4",
+      "actor": 3,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-02-01-03.mp4",
+      "actor": 3,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-02-02-03.mp4",
+      "actor": 3,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-01-01-03.mp4",
+      "actor": 3,
+      "truth": 4,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-01-02-03.mp4",
+      "actor": 3,
+      "truth": 4,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-02-01-03.mp4",
+      "actor": 3,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-02-02-03.mp4",
+      "actor": 3,
+      "truth": 4,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-01-01-03.mp4",
+      "actor": 3,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-01-02-03.mp4",
+      "actor": 3,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-02-01-03.mp4",
+      "actor": 3,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-02-02-03.mp4",
+      "actor": 3,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-01-01-03.mp4",
+      "actor": 3,
+      "truth": 6,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-01-02-03.mp4",
+      "actor": 3,
+      "truth": 6,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-02-01-03.mp4",
+      "actor": 3,
+      "truth": 6,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-02-02-03.mp4",
+      "actor": 3,
+      "truth": 6,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-01-01-03.mp4",
+      "actor": 3,
+      "truth": 6,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-01-02-03.mp4",
+      "actor": 3,
+      "truth": 6,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-02-01-03.mp4",
+      "actor": 3,
+      "truth": 6,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-02-02-03.mp4",
+      "actor": 3,
+      "truth": 6,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-01-01-03.mp4",
+      "actor": 3,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-01-02-03.mp4",
+      "actor": 3,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-02-01-03.mp4",
+      "actor": 3,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-02-02-03.mp4",
+      "actor": 3,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-01-01-03.mp4",
+      "actor": 3,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-01-02-03.mp4",
+      "actor": 3,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-02-01-03.mp4",
+      "actor": 3,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-02-02-03.mp4",
+      "actor": 3,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-01-01-03.mp4",
+      "actor": 3,
+      "truth": 2,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-01-02-03.mp4",
+      "actor": 3,
+      "truth": 2,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-02-01-03.mp4",
+      "actor": 3,
+      "truth": 2,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-02-02-03.mp4",
+      "actor": 3,
+      "truth": 2,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-01-01-03.mp4",
+      "actor": 3,
+      "truth": 2,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-01-02-03.mp4",
+      "actor": 3,
+      "truth": 2,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-02-01-03.mp4",
+      "actor": 3,
+      "truth": 2,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-02-02-03.mp4",
+      "actor": 3,
+      "truth": 2,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-01-01-02.mp4",
+      "actor": 2,
+      "truth": 0,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-01-02-02.mp4",
+      "actor": 2,
+      "truth": 0,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-02-01-02.mp4",
+      "actor": 2,
+      "truth": 0,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-01-01-02-02-02.mp4",
+      "actor": 2,
+      "truth": 0,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-01-01-02.mp4",
+      "actor": 2,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-01-02-02.mp4",
+      "actor": 2,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-02-01-02.mp4",
+      "actor": 2,
+      "truth": 1,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-01-02-02-02.mp4",
+      "actor": 2,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-01-01-02.mp4",
+      "actor": 2,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-01-02-02.mp4",
+      "actor": 2,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-02-01-02.mp4",
+      "actor": 2,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-03-02-02-02-02.mp4",
+      "actor": 2,
+      "truth": 1,
+      "prediction": 1,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-01-01-02.mp4",
+      "actor": 2,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-01-02-02.mp4",
+      "actor": 2,
+      "truth": 3,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-02-01-02.mp4",
+      "actor": 2,
+      "truth": 3,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-01-02-02-02.mp4",
+      "actor": 2,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-01-01-02.mp4",
+      "actor": 2,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-01-02-02.mp4",
+      "actor": 2,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-02-01-02.mp4",
+      "actor": 2,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-04-02-02-02-02.mp4",
+      "actor": 2,
+      "truth": 3,
+      "prediction": 3,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-01-01-02.mp4",
+      "actor": 2,
+      "truth": 4,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-01-02-02.mp4",
+      "actor": 2,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-02-01-02.mp4",
+      "actor": 2,
+      "truth": 4,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-01-02-02-02.mp4",
+      "actor": 2,
+      "truth": 4,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-01-01-02.mp4",
+      "actor": 2,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-01-02-02.mp4",
+      "actor": 2,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-02-01-02.mp4",
+      "actor": 2,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-05-02-02-02-02.mp4",
+      "actor": 2,
+      "truth": 4,
+      "prediction": 4,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-01-01-02.mp4",
+      "actor": 2,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-01-02-02.mp4",
+      "actor": 2,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-02-01-02.mp4",
+      "actor": 2,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-01-02-02-02.mp4",
+      "actor": 2,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-01-01-02.mp4",
+      "actor": 2,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-01-02-02.mp4",
+      "actor": 2,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-02-01-02.mp4",
+      "actor": 2,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-06-02-02-02-02.mp4",
+      "actor": 2,
+      "truth": 6,
+      "prediction": 6,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-01-01-02.mp4",
+      "actor": 2,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-01-02-02.mp4",
+      "actor": 2,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-02-01-02.mp4",
+      "actor": 2,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-01-02-02-02.mp4",
+      "actor": 2,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-01-01-02.mp4",
+      "actor": 2,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-01-02-02.mp4",
+      "actor": 2,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-02-01-02.mp4",
+      "actor": 2,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-07-02-02-02-02.mp4",
+      "actor": 2,
+      "truth": 5,
+      "prediction": 5,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-01-01-02.mp4",
+      "actor": 2,
+      "truth": 2,
+      "prediction": 0,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-01-02-02.mp4",
+      "actor": 2,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-02-01-02.mp4",
+      "actor": 2,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-01-02-02-02.mp4",
+      "actor": 2,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-01-01-02.mp4",
+      "actor": 2,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-01-02-02.mp4",
+      "actor": 2,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-02-01-02.mp4",
+      "actor": 2,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    },
+    {
+      "file": "02-01-08-02-02-02-02.mp4",
+      "actor": 2,
+      "truth": 2,
+      "prediction": 2,
+      "eligible_frames": 10
+    }
+  ]
+}

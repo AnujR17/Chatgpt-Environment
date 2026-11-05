@@ -1,0 +1,590 @@
+{
+  "annotation_method": "Human inspection of contact sheet and timestamps; visual scene labels only",
+  "samples": [
+    {
+      "seconds": 0.0,
+      "label": "title_or_non_game",
+      "split": "train"
+    },
+    {
+      "seconds": 0.25,
+      "label": "title_or_non_game",
+      "split": "train"
+    },
+    {
+      "seconds": 0.5,
+      "label": "title_or_non_game",
+      "split": "train"
+    },
+    {
+      "seconds": 0.75,
+      "label": "title_or_non_game",
+      "split": "train"
+    },
+    {
+      "seconds": 1.0,
+      "label": "title_or_non_game",
+      "split": "train"
+    },
+    {
+      "seconds": 1.25,
+      "label": "title_or_non_game",
+      "split": "train"
+    },
+    {
+      "seconds": 1.5,
+      "label": "title_or_non_game",
+      "split": "train"
+    },
+    {
+      "seconds": 1.75,
+      "label": "title_or_non_game",
+      "split": "train"
+    },
+    {
+      "seconds": 2.2,
+      "label": "title_or_non_game",
+      "split": "validation"
+    },
+    {
+      "seconds": 2.45,
+      "label": "title_or_non_game",
+      "split": "validation"
+    },
+    {
+      "seconds": 2.7,
+      "label": "title_or_non_game",
+      "split": "validation"
+    },
+    {
+      "seconds": 2.95,
+      "label": "title_or_non_game",
+      "split": "validation"
+    },
+    {
+      "seconds": 3.2,
+      "label": "title_or_non_game",
+      "split": "validation"
+    },
+    {
+      "seconds": 3.45,
+      "label": "title_or_non_game",
+      "split": "validation"
+    },
+    {
+      "seconds": 37.8,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 38.05,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 38.3,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 38.55,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 38.8,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 39.05,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 39.3,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 39.55,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 39.8,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 40.05,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 40.3,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 40.55,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 40.8,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 41.05,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 41.3,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 41.55,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 41.8,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 42.05,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 42.3,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 42.55,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 42.8,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 43.05,
+      "label": "title_or_non_game",
+      "split": "test"
+    },
+    {
+      "seconds": 4.5,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 4.75,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 5.0,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 5.25,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 5.5,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 5.75,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 6.0,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 6.25,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 6.5,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 6.75,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 7.0,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 7.25,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 7.5,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 7.75,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 8.0,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 8.25,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 8.5,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 8.75,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 9.0,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 9.25,
+      "label": "opening_lake",
+      "split": "train"
+    },
+    {
+      "seconds": 11.0,
+      "label": "opening_lake",
+      "split": "validation"
+    },
+    {
+      "seconds": 11.25,
+      "label": "opening_lake",
+      "split": "validation"
+    },
+    {
+      "seconds": 11.5,
+      "label": "opening_lake",
+      "split": "validation"
+    },
+    {
+      "seconds": 11.75,
+      "label": "opening_lake",
+      "split": "validation"
+    },
+    {
+      "seconds": 12.0,
+      "label": "opening_lake",
+      "split": "validation"
+    },
+    {
+      "seconds": 12.25,
+      "label": "opening_lake",
+      "split": "validation"
+    },
+    {
+      "seconds": 14.5,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 14.75,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 15.0,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 15.25,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 15.5,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 15.75,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 16.0,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 16.25,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 16.5,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 16.75,
+      "label": "opening_lake",
+      "split": "test"
+    },
+    {
+      "seconds": 18.5,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 18.75,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 19.0,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 19.25,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 19.5,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 19.75,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 20.0,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 20.25,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 20.5,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 20.75,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 21.0,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 21.25,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 21.5,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 21.75,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 22.0,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 22.25,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 22.5,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 22.75,
+      "label": "rock_slope",
+      "split": "train"
+    },
+    {
+      "seconds": 24.5,
+      "label": "rock_slope",
+      "split": "validation"
+    },
+    {
+      "seconds": 24.75,
+      "label": "rock_slope",
+      "split": "validation"
+    },
+    {
+      "seconds": 25.0,
+      "label": "rock_slope",
+      "split": "validation"
+    },
+    {
+      "seconds": 25.25,
+      "label": "rock_slope",
+      "split": "validation"
+    },
+    {
+      "seconds": 25.5,
+      "label": "rock_slope",
+      "split": "validation"
+    },
+    {
+      "seconds": 25.75,
+      "label": "rock_slope",
+      "split": "validation"
+    },
+    {
+      "seconds": 28.5,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 28.75,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 29.0,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 29.25,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 29.5,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 29.75,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 30.0,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 30.25,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 30.5,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 30.75,
+      "label": "rock_slope",
+      "split": "test"
+    },
+    {
+      "seconds": 32.0,
+      "label": "pipe_grey_rock",
+      "split": "train"
+    },
+    {
+      "seconds": 32.25,
+      "label": "pipe_grey_rock",
+      "split": "train"
+    },
+    {
+      "seconds": 32.5,
+      "label": "pipe_grey_rock",
+      "split": "train"
+    },
+    {
+      "seconds": 32.75,
+      "label": "pipe_grey_rock",
+      "split": "train"
+    },
+    {
+      "seconds": 34.0,
+      "label": "pipe_grey_rock",
+      "split": "validation"
+    },
+    {
+      "seconds": 34.25,
+      "label": "pipe_grey_rock",
+      "split": "validation"
+    },
+    {
+      "seconds": 35.0,
+      "label": "pipe_grey_rock",
+      "split": "test"
+    },
+    {
+      "seconds": 35.25,
+      "label": "pipe_grey_rock",
+      "split": "test"
+    },
+    {
+      "seconds": 35.5,
+      "label": "pipe_grey_rock",
+      "split": "test"
+    },
+    {
+      "seconds": 35.75,
+      "label": "pipe_grey_rock",
+      "split": "test"
+    },
+    {
+      "seconds": 36.0,
+      "label": "pipe_grey_rock",
+      "split": "test"
+    }
+  ]
+}

@@ -1,9 +1,11 @@
-# Checkpoint Windows preview 2 — live expression cards and game observation
+# Checkpoint — Pip companion preview
 
-Extract the whole ZIP and run Start Checkpoint.cmd. This update fixes the missing connection between expression results and the large card: enable Track expressions (experimental) and start the camera, or open a local face video. Stable accepted estimates now update Live expression automatically. Your manual feeling and CMA stay independent.
+Extract the full ZIP and run Start Checkpoint.cmd. Tick Track my face and Start camera; Show Pip enables the transparent, frameless, click-through desktop character. Phone dashboard pairs a read-only local dashboard by QR on the same trusted Wi-Fi. Report exports derived observations as JSON. No camera/game images or typed text are sent to the phone.
 
-Settings also offers opt-in Getting Over It foreground-window observation. Sustained optical flow provides possible climb/fall cues; a player-marked start view can be matched. These are unvalidated heuristics, not a trained game-event or frustration detector. No raw screen/camera recording or upload occurs in normal use.
+Pip is one continuous original blob. Neutral and unavailable tracking use a flat mouth and relaxed brows. Default physical mapping uses Google MediaPipe Face Landmarker; optional neutral calibration is in memory and requires no collection of posed emotion photos. HSEmotion is the alternative experimental category model: 62.5% versus the earlier model's 29.8% on the matched 208 acted-video clips, not gamer or personal-webcam accuracy.
 
-34 checks passed in Linux, including real recorded-video face inference and card updates. The Windows build additionally gates publication on native launch and card/GDI capture fixture checks. Physical webcam, real Getting Over It event accuracy and game-performance checks remain outstanding. The expression model is unchanged: 77.1% held-out image accuracy, 29.8% external acted-video clip accuracy, failed production gates. The app remains an unsigned research preview.
+Opt-in game-focused mouse/key timing and conservative quiet nudges are included. No key identities or typed text are exported, and the overlay never injects into or controls the game. Windowed/borderless play is recommended; universal fullscreen/anti-cheat compatibility is not claimed. Keep ordinary sharing on a trusted private LAN; HTTP transport is not encrypted.
 
-See topics/checkpoint/app/docs/LIVE-TRACKING.md for controls, limitations and the next validation steps. Vendor runtime hashes are verified during assembly; the published SHA256SUMS.txt verifies the package.
+The gameplay source list and actual limited trailer-training results are included. YouTube downloads were blocked by the workspace proxy. The trained single-trailer scene model failed to generalize an opening view and remains a research artifact; live game cues still use labelled experimental heuristics, not a trained full-game/mood detector.
+
+Automated publication checks cover native Windows launch, overlay focus/style, own-window GDI, input registration, model inference and the loopback phone API. Physical camera, real phone Wi-Fi/firewall access, actual game performance and intervention usefulness remain unverified. This unsigned research preview is not a production affect detector.

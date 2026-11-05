@@ -1,0 +1,76 @@
+{
+  "checked_on": "2026-11-05",
+  "source_status": "Metadata discovery is not visual review or a download licence",
+  "videos": [
+    {
+      "id": "G01",
+      "title": "Full Game and Ending (No Commentary), HD 50fps",
+      "url": "https://www.youtube.com/watch?v=hu0PGGkvniQ",
+      "extractable": "Route/scene coverage; visually annotate events before training",
+      "access": "Download attempted; workspace proxy denied YouTube (403)",
+      "used_in_training": false,
+      "emotion_labels": "None; gameplay or stream performance does not provide felt-emotion ground truth",
+      "redistribution": "No raw video bundled; source rights require separate review for use beyond this research preview"
+    },
+    {
+      "id": "G02",
+      "title": "Ludophiles full playthrough, extra Snake Ride",
+      "url": "https://www.youtube.com/watch?v=NnCtRm1Kug4",
+      "extractable": "Route landmarks; creator says some failed attempts were edited out",
+      "access": "Metadata found; video not downloaded or visually reviewed",
+      "used_in_training": false,
+      "emotion_labels": "None; gameplay or stream performance does not provide felt-emotion ground truth",
+      "redistribution": "No raw video bundled; source rights require separate review for use beyond this research preview"
+    },
+    {
+      "id": "G03",
+      "title": "Fast and Reliable Climbing Techniques \u2014 Complete Guide",
+      "url": "https://www.youtube.com/watch?v=wuINHep1Ahg",
+      "extractable": "Technique/obstacle examples; inspect cuts and overlays",
+      "access": "Search metadata found; video not downloaded or visually reviewed",
+      "used_in_training": false,
+      "emotion_labels": "None; gameplay or stream performance does not provide felt-emotion ground truth",
+      "redistribution": "No raw video bundled; source rights require separate review for use beyond this research preview"
+    },
+    {
+      "id": "G04",
+      "title": "Getting Over It \u2014 Orange Hell",
+      "url": "https://www.youtube.com/watch?v=V0p0TS2d7Gs",
+      "extractable": "Candidate obstacle examples; verify actual content before labels",
+      "access": "Search metadata found; video not downloaded or visually reviewed",
+      "used_in_training": false,
+      "emotion_labels": "None; gameplay or stream performance does not provide felt-emotion ground truth",
+      "redistribution": "No raw video bundled; source rights require separate review for use beyond this research preview"
+    },
+    {
+      "id": "G05",
+      "title": "Getting Over It \u2014 DO NOT RIDE SNAKE",
+      "url": "https://www.youtube.com/watch?v=0KbdJ9LeXXM",
+      "extractable": "Candidate setback example linked by Ludophiles; inspect before event labels",
+      "access": "Creator-linked metadata found; video not downloaded or visually reviewed",
+      "used_in_training": false,
+      "emotion_labels": "None; gameplay or stream performance does not provide felt-emotion ground truth",
+      "redistribution": "No raw video bundled; source rights require separate review for use beyond this research preview"
+    },
+    {
+      "id": "G06",
+      "title": "Getting Over It \u2014 THE ENDING (How to beat the game)",
+      "url": "https://www.youtube.com/watch?v=eVnLVLdMlpE",
+      "extractable": "Ending/route examples; commentary is not a verified emotion label",
+      "access": "Search metadata found; video not downloaded or visually reviewed",
+      "used_in_training": false,
+      "emotion_labels": "None; gameplay or stream performance does not provide felt-emotion ground truth",
+      "redistribution": "No raw video bundled; source rights require separate review for use beyond this research preview"
+    },
+    {
+      "id": "G07",
+      "title": "Official publisher Steam trailer, movie 256696623",
+      "url": "https://store.steampowered.com/app/240720/Getting_Over_It_with_Bennett_Foddy/",
+      "extractable": "Inspected opening lake, rock slope, grey-rock/pipe view and title images",
+      "access": "43.3 seconds downloaded from publisher CDN; contact sheet inspected",
+      "used_in_training": true,
+      "emotion_labels": "None; gameplay or stream performance does not provide felt-emotion ground truth",
+      "redistribution": "No raw video bundled; source rights require separate review for use beyond this research preview"
+    }
+  ]
+}

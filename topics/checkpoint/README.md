@@ -1,9 +1,9 @@
-# Checkpoint interaction-design project
+# Checkpoint with Pip
 
-Native Windows gaming companion, emotion-card design and documented research. All current work is on **topic/checkpoint**; main is unchanged.
+The Windows app, transparent Pip desktop companion and local phone dashboard live on **topic/checkpoint**.
 
-**[Download the Windows app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.1.0-preview.2/Checkpoint-Windows-Preview.zip)** — extract the entire ZIP, open its folder and double-click **Start Checkpoint.cmd**. Windows 10/11 x64 is the target; Python and Qt are included. The Windows launch check and download checksum passed. [Verification](RELEASE-VERIFICATION.json).
+**[Download the Windows app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.2.0-pip-preview.1/Checkpoint-Windows-Preview.zip)** — extract the entire ZIP and run Start Checkpoint.cmd.
 
-[Application, screenshots and setup](app/README.md) · [Release and checksums](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.1.0-preview.2) · [Research](research/) · [Handoff](HANDOFF.md)
+[App, screenshots and pairing](app/README.md) · [Model/video research](app/docs/VIDEO-AND-MODEL-RESEARCH.md) · [Source list CSV](app/design/gameplay-video-shortlist.csv) · [Verification](RELEASE-VERIFICATION.json)
 
-The research contains secondary evidence and explicitly simulated persona interviews. The simulated responses are not primary research and must not be cited as real interviews. Emotional self-report and experimental facial-expression classification remain separate.
+Research persona interviews remain simulated. No real participant studies or validated gamer frustration detection are claimed.

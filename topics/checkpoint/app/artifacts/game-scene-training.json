@@ -1,0 +1,50 @@
+{
+  "source_sha256": "8f53c669d9f54af8764de5dcaeb0294883f7e0a1a9af82aec8e3f77bdd680afa",
+  "samples": {
+    "train": 50,
+    "validation": 20,
+    "test": 47
+  },
+  "validation_balanced_accuracy": 1.0,
+  "test_accuracy": 0.7872340425531915,
+  "test_balanced_accuracy": 0.75,
+  "classes": [
+    "opening_lake",
+    "pipe_grey_rock",
+    "rock_slope",
+    "title_or_non_game"
+  ],
+  "test_confusion": [
+    [
+      0,
+      0,
+      10,
+      0
+    ],
+    [
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      22
+    ]
+  ],
+  "limitations": [
+    "Single 43-second publisher trailer",
+    "Limited inspected opening views and title screens",
+    "Temporal blocks from one source are not independent-player/video generalization",
+    "Not a fall, mood, frustration or full-map model"
+  ],
+  "test_used_for_selection": false
+}
