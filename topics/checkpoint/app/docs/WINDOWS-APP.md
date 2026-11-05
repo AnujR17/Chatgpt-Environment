@@ -36,6 +36,8 @@ The Figma views use exported native widget geometry, original vector scenes, imp
 
 ## Verification and limits
 
+Publication update, 2026-11-05: the [Windows branch build](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41971376058) passed native launch and screenshot capture. The published ZIP was downloaded successfully and its checksum verified. See [release verification](../../RELEASE-VERIFICATION.json). The original Linux-only limitations below describe the earlier local build; camera/device validation remains outstanding.
+
 27 automated checks pass in the Linux workspace. These cover actual card clicks and search, saving independent dimensions, cancellation, onboarding, capture failures, real recorded-video input, expression isolation, motion controls, local history and clean snapshot exit. A pixel-level check also verifies that card body colours and outlines render separately.
 
 The Windows distribution was assembled with official embedded Python 3.13.17 and matching Windows x64 wheels. PE architecture, required Qt platform plugin, bundled C runtime, trained-model hash and ZIP integrity were checked. **Windows execution, physical-camera permission handling and target-device performance could not be verified in this Linux workspace.** Run `Check setup.cmd` for diagnostics; startup errors are written under `%LOCALAPPDATA%\CheckpointResearch\Checkpoint\startup-error.log`.

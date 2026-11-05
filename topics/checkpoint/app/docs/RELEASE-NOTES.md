@@ -4,6 +4,6 @@ Download **Checkpoint-Windows-Preview.zip**, extract the entire archive, open it
 
 The native app includes 43 illustrated feeling cards, search, independent pleasantness and energy check-ins, optional own-camera/video preview, breaks and optional local session summaries. No gameplay capture or microphone is used. Facial-expression analysis is experimental, off by default, and cannot set mood or CMA.
 
-27 checks passed in the original Linux workspace. The package archive, bundled AMD64 runtime, required Qt plugin and model hash were verified in Linux. Windows execution has not been verified. Physical camera access and performance on your PC still need checking. The app is an unsigned research preview; model production release gates remain failed.
+27 checks passed in the original Linux workspace. The published package was assembled on a Windows runner, passed a [native launch and screenshot check](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41971376058), and passed archive and model-hash verification. The download and SHA-256 checksum were also checked. Physical camera access and performance on your PC still need checking. The app is an unsigned research preview; model production release gates remain failed.
 
 The bundled runtime was obtained from official Python/PyPI distributions and checked against the reviewed vendor hashes. SHA256SUMS.txt verifies the downloadable ZIP. Source, model evidence and third-party notices are in topics/checkpoint/app. Raw training images, research videos and reference-image downloads are excluded.

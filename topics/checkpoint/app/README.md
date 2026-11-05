@@ -10,7 +10,7 @@ A native desktop app for checking in with your feelings during a game. Choose fr
 2. Open the `Checkpoint-Windows` folder.
 3. Double-click **Start Checkpoint.cmd**. Python and Qt are included.
 
-Windows 10/11 x64 is the target. Keep the extracted folders together. Run **Check setup.cmd** for diagnostics. This is an unsigned research preview. The downloadable package was assembled and verified in Linux; native Windows execution has not been checked here.
+Windows 10/11 x64 is the target. Keep the extracted folders together. Run **Check setup.cmd** for diagnostics. This is an unsigned research preview. The package was assembled on a Windows runner and passed a native launch/screenshot check. Its download and SHA-256 checksum have been verified. See [release verification](../RELEASE-VERIFICATION.json).
 
 ![Native Checkpoint application](artifacts/cards-app-session.png)
 
@@ -37,10 +37,10 @@ python -m pip install --no-deps -e .
 python -m checkpoint.app
 ```
 
-27 automated checks passed in the original Linux workspace. Windows launch remains a target-device check. Physical-camera access, player recognition of the illustrations and performance on your computer remain unverified. The model failed its production release gates; this is a research preview.
+27 automated checks passed in the original Linux workspace. A [GitHub Actions Windows runner](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41971376058) also passed a native window launch and screenshot check. Physical-camera access, player recognition of the illustrations and performance on your computer remain unverified. The model failed its production release gates; this is a research preview.
 
 [Windows instructions](docs/WINDOWS-APP.md) · [Feature applicability](docs/FEATURE-APPLICABILITY.md) · [Model card](artifacts/MODEL-CARD.md) · [Third-party notices](third_party/NOTICES.md) · [Editable Figma](https://www.figma.com/design/Rj3WAO6IpUb48OFUerY7aW?node-id=108-127)
 
 To run software checks, install pytest and run `python -m pytest -q`. The external-video test requires the separately sourced research fixture and skips when it is absent. Raw training images, evaluation videos, downloaded visual references, caches and environments are excluded from this repository.
 
-The exact Python embedded runtime and wheel hashes are recorded in `design/windows-runtime-sources.json`. The scripts in `scripts/` assemble and verify a portable Windows bundle from the vendor files under `build/`. They do not train or alter the model. SHA256SUMS.txt in the release verifies the downloadable ZIP.
+The exact Python embedded runtime and wheel hashes are recorded in `design/windows-runtime-sources.json`. The [branch workflow](../../../.github/workflows/checkpoint-windows.yml) fetches those exact vendor files, assembles the app, checks a native Windows launch and publishes the portable ZIP. The scripts in `scripts/` assemble and verify the bundle from vendor files under `build/`. They do not train or alter the model. SHA256SUMS.txt in the release verifies the downloadable ZIP.

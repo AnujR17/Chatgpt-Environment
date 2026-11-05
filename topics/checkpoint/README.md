@@ -2,7 +2,7 @@
 
 Native Windows gaming companion, emotion-card design and documented research. All current work is on **topic/checkpoint**; main is unchanged.
 
-**[Download the Windows app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.1.0-preview.1/Checkpoint-Windows-Preview.zip)** — extract the entire ZIP, open its folder and double-click **Start Checkpoint.cmd**. Windows 10/11 x64 is the target; Python and Qt are included.
+**[Download the Windows app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.1.0-preview.1/Checkpoint-Windows-Preview.zip)** — extract the entire ZIP, open its folder and double-click **Start Checkpoint.cmd**. Windows 10/11 x64 is the target; Python and Qt are included. The Windows launch check and download checksum passed. [Verification](RELEASE-VERIFICATION.json).
 
 [Application, screenshots and setup](app/README.md) · [Release and checksums](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.1.0-preview.1) · [Research](research/) · [Handoff](HANDOFF.md)
 
