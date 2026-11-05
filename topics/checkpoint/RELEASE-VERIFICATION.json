@@ -1,17 +1,19 @@
 {
   "verified_at": "2026-11-05",
   "branch": "topic/checkpoint",
-  "release_commit": "ee17627654263490e750a86c1d1c7a22438a9824",
-  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.2.0-pip-preview.2",
+  "release_commit": "5569ddc54496c5b1896835dba2b5866cd2b1ca2a",
+  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.2.1-preview.2",
   "download_http_status": 200,
-  "download_bytes": 237453271,
-  "sha256": "7126fcafe49434210e0e5c30cb5046433f7b92e2e6e629a603b127a1bca8b687",
+  "download_bytes": 237464949,
+  "sha256": "440c60f04029bbabb5b84cd7b464f14ff209aa027d923fc43ee4ab0c18630f9b",
   "checksum_matches_release_file": true,
   "github_asset_digest_matches": true,
   "archive_integrity": "passed",
   "app_source_matches_branch": "passed after Windows newline normalization",
   "model_weights": "Provider-pretrained MediaPipe and HSEmotion added with verified hashes; archived classifier unchanged",
-  "local_tests": "41 passed, 1 Windows-only test skipped; includes actual recorded-video face mapping",
+  "local_tests": "49 passed, 1 Windows-only test skipped; includes camera-failure fixtures and actual recorded-video face mapping",
+  "reported_failures": "User Windows 10 MSMF grabFrame -2147483638; physical phone page unreachable. DirectShow-first and LAN diagnostics shipped; target-PC retest pending",
+  "firewall_helper_powershell_syntax": "passed in Windows workflow; command was parsed, not executed",
   "phone_browser_checks": {
     "browser": "Chromium, 390x844 phone viewport",
     "fixture": "Synthetic physical-face cues, not live recognition",
@@ -35,9 +37,11 @@
     "face_landmarker_native_load": "passed",
     "hsemotion_inference": "passed",
     "phone_loopback_api": "passed",
+    "face_landmarker_non_ascii_path": "passed",
+    "face_landmarker_native_graph_inference": "passed",
     "physical_camera_and_actual_game": "not tested",
     "physical_phone_wifi": "not tested"
   },
   "actual_getting_over_it_event_accuracy": "not evaluated; trailer scene experiment excluded from live cues due failed scene generalization",
-  "run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41985453835"
+  "run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41989299286"
 }

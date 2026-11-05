@@ -22,5 +22,5 @@
 - [x] Diagnose reported MSMF frame failure and separate camera startup from tracking initialization.
 - [x] Implement selected-camera backend fallback/warm-up/cancellation and actionable errors.
 - [x] Add labelled LAN adapters, dashboard connection status and scoped firewall helper.
-- [ ] Publish and download-verify camera/phone repair release.
+- [x] Publish and download-verify camera/phone repair release (checkpoint-v0.2.1-preview.2, run 41989299286).
 - [ ] Confirm camera frames and physical phone connectivity on the user's Windows 10 PC.
