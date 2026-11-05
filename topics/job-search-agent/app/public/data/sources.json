@@ -14320,6 +14320,33 @@
       "lastStatus": "coverage",
       "lastChecked": "2026-11-05T07:13:14+00:00",
       "message": "Gandhinagar UI/UX/design-intern domain searches and Ahmedabad internship index sampled; results mainly other disciplines or old/closed windows. No new exact qualifying local UX/design detail verified. Limits: Index/repost dates and relative countdowns are not verified original dates. Earlier broad5November evidence retained in history."
+    },
+    {
+      "id": "nov05-pay-2f2276a3a256",
+      "company": "AI Certs",
+      "url": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+      "kind": "research",
+      "lastStatus": "fetched / terms reviewed",
+      "lastChecked": "2026-11-05T07:51:08+00:00",
+      "message": "Fresh normal public Internshala exact detail states Gandhinagar in-office, INR15,000–18,000/month and apply by5December2026. The header gives three months and the description3–6 months; stated joining window3November–8December2026 needs employer confirmation. Now clears the revised Gujarat stipend floor; earlier below-target evidence used the former20k criterion and remains historical. Original posting date is unverified; relative just-now label is not converted into one."
+    },
+    {
+      "id": "nov05-pay-89fffc397afa",
+      "company": "Internshala",
+      "url": "https://internshala.com/internships/ui-ux-design-internship-in-gandhinagar/",
+      "kind": "research",
+      "lastStatus": "coverage",
+      "lastChecked": "2026-11-05T07:51:08+00:00",
+      "message": "AI Certs1793856702 Gandhinagar in-office15–18kINR/month now clears revised Gujarat floor; added one on-hold card for current intake and3vs3–6month duration. Apply5December; stated joining3November–8December. Earlier below20k exclusion retained as historical, not current exclusion."
+    },
+    {
+      "id": "nov05-pay-b22b85901af5",
+      "company": "Gandhinagar / GIFT City focused research",
+      "url": "https://www.linkedin.com/jobs/search/?keywords=UX%20design%20intern&location=Gandhinagar",
+      "kind": "research",
+      "lastStatus": "coverage",
+      "lastChecked": "2026-11-05T07:51:08+00:00",
+      "message": "AI Certs paid Graphic/UIUX internship15–18kINR/month now enters on_hold under revised Gujarat floor. Existing Vested junior stretch retained separately; prior local research evidence preserved. Not a new whole-board search."
     }
   ],
   "coverage": [
@@ -15680,13 +15707,13 @@
       "source": "Internshala",
       "url": "https://internshala.com/internships/ui-ux-design-internship-in-gandhinagar/",
       "checkedAt": "2026-11-05",
-      "status": "Normal public category and exact detail readable; web tool restricted",
-      "findings": "Standard normal HTTPS/robots-aware request reads Gandhinagar category and exact AI Certs1793856702:15–18k/month,in-office,three-month header,apply5Dec,3Nov–8Dec start window. Below Gujarat minimum. Category also serves unrelated-city/profile fallback results.",
+      "status": "Fresh normal public exact detail reviewed under revised stipend floor",
+      "findings": "AI Certs1793856702 Gandhinagar in-office15–18kINR/month now clears revised Gujarat floor; added one on-hold card for current intake and3vs3–6month duration. Apply5December; stated joining3November–8December. Earlier below20k exclusion retained as historical, not current exclusion.",
       "id": "coverage-9b7c2089a0",
       "limits": "Earlier robots-restricted observations remain historical. This normal read establishes only sampled public pages, not authenticated access. Header posted-just-now is relative, not an absolute original date.",
       "exclusionExamples": [
-        "AI Certs15–18k/month",
-        "Unrelated fallback jobs are not Gandhinagar UX matches"
+        "Unrelated-city/profile category fallback results are not matching vacancies",
+        "Below-target label in prior observation used former20k floor"
       ],
       "history": [
         {
@@ -15804,6 +15831,19 @@
           "exclusionExamples": [
             "Training/placementcourses notvacancies",
             "Categoriesnotexactjobs"
+          ]
+        },
+        {
+          "source": "Internshala",
+          "url": "https://internshala.com/internships/ui-ux-design-internship-in-gandhinagar/",
+          "checkedAt": "2026-11-05",
+          "status": "Normal public category and exact detail readable; web tool restricted",
+          "findings": "Standard normal HTTPS/robots-aware request reads Gandhinagar category and exact AI Certs1793856702:15–18k/month,in-office,three-month header,apply5Dec,3Nov–8Dec start window. Below Gujarat minimum. Category also serves unrelated-city/profile fallback results.",
+          "id": "coverage-9b7c2089a0",
+          "limits": "Earlier robots-restricted observations remain historical. This normal read establishes only sampled public pages, not authenticated access. Header posted-just-now is relative, not an absolute original date.",
+          "exclusionExamples": [
+            "AI Certs15–18k/month",
+            "Unrelated fallback jobs are not Gandhinagar UX matches"
           ]
         }
       ]
@@ -18807,14 +18847,30 @@
       "source": "Gandhinagar / GIFT City focused research",
       "url": "https://www.linkedin.com/jobs/search/?keywords=UX%20design%20intern&location=Gandhinagar",
       "checkedAt": "2026-11-05",
-      "status": "Targeted public employer and multi-platform sample",
-      "findings": "One new Vested junior stretch alternative, salary undisclosed; zero newly confirmed INR20k+ Gandhinagar design internships. Existing Menstrupedia Ahmedabad25–30k retained/rechecked. Eight company directory additions distinguish actual junior advert, experienced-only, expired, closed, below-target and uncertain contract evidence.",
+      "status": "Focused policy follow-up and exact local internship recheck",
+      "findings": "AI Certs paid Graphic/UIUX internship15–18kINR/month now enters on_hold under revised Gujarat floor. Existing Vested junior stretch retained separately; prior local research evidence preserved. Not a new whole-board search.",
       "limits": "Focused follow-up to earlier5November whole-board pass, not a second whole-board recheck. Employer presence is not a quality guarantee or open internship. No applications/messages or private-browser access.",
       "exclusionExamples": [
         "Aookly expired",
         "Kwiqwork closed",
-        "STEMbotix CAD/up-to15k",
-        "AI Certs15–18k"
+        "STEMbotix physical/CAD scope remains outside digital UX shortlist"
+      ],
+      "history": [
+        {
+          "id": "coverage-gandhinagar-design",
+          "source": "Gandhinagar / GIFT City focused research",
+          "url": "https://www.linkedin.com/jobs/search/?keywords=UX%20design%20intern&location=Gandhinagar",
+          "checkedAt": "2026-11-05",
+          "status": "Targeted public employer and multi-platform sample",
+          "findings": "One new Vested junior stretch alternative, salary undisclosed; zero newly confirmed INR20k+ Gandhinagar design internships. Existing Menstrupedia Ahmedabad25–30k retained/rechecked. Eight company directory additions distinguish actual junior advert, experienced-only, expired, closed, below-target and uncertain contract evidence.",
+          "limits": "Focused follow-up to earlier5November whole-board pass, not a second whole-board recheck. Employer presence is not a quality guarantee or open internship. No applications/messages or private-browser access.",
+          "exclusionExamples": [
+            "Aookly expired",
+            "Kwiqwork closed",
+            "STEMbotix CAD/up-to15k",
+            "AI Certs15–18k"
+          ]
+        }
       ]
     }
   ],

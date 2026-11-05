@@ -1,23 +1,9 @@
-# 5 November 2026 — Gandhinagar / GIFT City follow-up
+# 5 November 2026 — stipend-floor follow-up
 
-Focused local follow-up after the earlier whole-board November5 refresh. This pass does not relabel all retained roles as newly checked or claim exhaustive inventory.
+Gujarat and remote India now use INR10,000/month minimum with INR15,000+ preferred. Other eligible cities use INR15,000/month minimum. Higher pay remains welcome. Only verified listing minimums qualify; unknown pay, historical benchmarks and annual salaries stay separate.
 
-- 87 retained roles,75 active and12 archived. One new full-time junior stretch alternative: Vested Finance, GIFT City, salary undisclosed,1–2 years product-design experience requested. No new confirmed INR20,000+ Gandhinagar design internship.
-- Existing Menstrupedia Ahmedabad UX internship rechecked on its employer page: INR25,000–30,000/month; joining/current cohort still needs confirmation.
-- Eight new company directory entries,233 total. Actual positions stay separate from employer targets, closed internships, experienced-only roles and inferred role families.
-- Aookly exact Indeed original explicitly expired despite older indexes. Kwiqwork employer says closed; InteractiveWarriors public employer extract says no longer accepting. These were not existing active feed records, so no retained role was retired this pass.
-- STEMbotix physical/CAD internship up to15,000/month; AI Certs Graphic/UIUX15,000–18,000/month; Nextsavy2,000–5,000/month. Below Gujarat target. QuickOps stipend5,000–10,000/month conflicts with separate annual salary216,000–312,000/year; never converted into a stipend match. Honeybee body explicitly unpaid. EveoAI duration/experience/pay-unit conflicts remain unresolved.
-- DreamCrafters Indeed game-UI contract25,000–30,000/month is directory-only: employer identity,seniority/student eligibility and contract terms unconfirmed. Monthly contract salary is not internship stipend.
-- Vested exact Wellfound and matching employer LinkedIn crosspost describe GIFT City in-office despite Ahmedabad/Mumbai headers. Employer-linked Notion lists a separate general remote UI/UX role; its remote policy is not transferred to the junior vacancy.
+Fresh normal exact Internshala AI Certs1793856702 advertises Gandhinagar full-time in-office Graphic/UIUX internship at INR15,000–18,000/month. Added one on-hold role: confirm three-month header versus3–6month description, current intake, joining window and share of product UX versus graphic/marketing work. Apply-by5December2026; stated start window3November–8December2026. No original publication date inferred from relative just-now wording. No application sent.
 
-## Source coverage and access
+88 retained roles /76 active /12 archived;233 companies /35 coverage rows. Earlier today’s local and broad research remains in source histories. This is an exact-role and policy follow-up, not another exhaustive search. AI Certs’ earlier below-target exclusion preserves its original reason and now has an inactive/historical annotation. Other exclusions require their own current-pay/eligibility review; lower pay criteria do not revive expired,unpaid,senior or unrelated roles.
 
-Explicit local searches: employer careers, LinkedIn jobs/public posts/company profiles, Indeed, Naukri, X, Internshala, Wellfound, Cutshort and Unstop. Nine coverage rows updated/added, with prior evidence retained in history; other source-family dates preserved.
-
-Indeed exact details and Wellfound detail fetched normally. LinkedIn normal requests restricted; public extracts and their crawl limits recorded. Naukri web tool reports robots restrictions and normal search returns an empty client shell. X original search403, no suitable original local post verified. Internshala web tool restricted, but standard verified HTTPS/robots-aware public requests returned readable category and AI Certs exact detail. This establishes only sampled public access, not a signed-in account. Relative posting labels are not original dates. Category fallback jobs and stale indexes are not new qualifying vacancies.
-
-No applications,selection exercises or employer messages. Browser-local stages,blacklists,assessments and profile were inaccessible and are not part of the public research. Stable existing IDs,requirements,source history,exclusions and review queue retained. No UI/model or main-branch change. Regenerate supported workbook/company CSV,validate and deploy the exact data commit to the existing project; verify READY and live files before reporting publication.
-
-## Validation
-
-Production build, model tests, five Python collector tests and preservation/export audit passed. Existing data-test assertion still expects the previously closed Gravity listing to remain on_hold; it fails at tests/data.test.js:19. The other two data checks pass. This pass preserves Gravity and all prior job statuses; no UI/model/test changes. Desktop/mobile and exact production checks are recorded in the release handoff after completion.
+The display rule and Excel guidance now use the revised floors; the layout stays unchanged. Public data contains no applicant profile,personal assessment or browser blacklist. Existing IDs,source prefix,requirement text/IDs,application histories and review queue are retained. Regenerated exports and build/policy/browser checks are recorded in the release handoff. Prior known Gravity data-test assertion remains unchanged and fails because it expects a closed role to be on_hold.

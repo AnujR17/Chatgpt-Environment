@@ -4,7 +4,13 @@ import { payMatch, mergeJobs, isDue, toCsv, safeUrl, canonicalUrl, validateBacku
 test('stipend thresholds use the lower bound and original evidence',()=>{
  assert.equal(payMatch({region:'Gujarat',payMin:20000,payVerified:true}),'meets');
  assert.equal(payMatch({region:'India',payMin:30000,payVerified:true}),'meets');
- assert.equal(payMatch({region:'India',payMin:25000,payMax:40000,payVerified:true}),'consider');
+ assert.equal(payMatch({region:'Gujarat',payMin:10000,payVerified:true}),'meets');
+ assert.equal(payMatch({region:'India',workMode:'Remote',payMin:10000,payVerified:true}),'meets');
+ assert.equal(payMatch({region:'Maharashtra',workMode:'On-site',payMin:15000,payVerified:true}),'meets');
+ assert.equal(payMatch({region:'India',payMin:25000,payMax:40000,payVerified:true}),'meets');
+ assert.equal(payMatch({region:'Gujarat',payMin:9999,payMax:15000,payVerified:true}),'below');
+ assert.equal(payMatch({region:'India',workMode:'Remote',payMin:9999,payMax:30000,payVerified:true}),'below');
+ assert.equal(payMatch({region:'Maharashtra',workMode:'Hybrid',payMin:14999,payMax:25000,payVerified:true}),'below');
  assert.equal(payMatch({region:'India',payMin:1000,payMax:30000,payVerified:true}),'below');
  assert.equal(payMatch({region:'India',payMin:40000,payVerified:false}),'unconfirmed');
  assert.equal(payMatch({region:'India',payMin:null}),'unconfirmed');

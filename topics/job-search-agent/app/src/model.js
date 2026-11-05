@@ -40,9 +40,8 @@ export function stipend(job) {
 export function payMatch(job) {
   if (job.advertisedCompensation?.period === 'year' && job.advertisedCompensation.verified === true) return 'annual';
   if (job.payMin == null || job.payVerified !== true) return job.payBenchmark?.sourceUrl ? 'estimated' : 'unconfirmed';
-  const floor = job.region === 'Gujarat' ? 20000 : 30000;
+  const floor = job.region === 'Gujarat' || job.workMode === 'Remote' ? 10000 : 15000;
   if (job.payMin >= floor) return 'meets';
-  if (job.payMin >= 25000 || (job.payMax >= 25000 && job.payMin >= 20000)) return 'consider';
   return 'below';
 }
 export function benchmarkText(benchmark) {

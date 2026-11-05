@@ -81,7 +81,7 @@ notes=wb.create_sheet('Read me')
 for row in [
  ['Design internship search','Research snapshot: '+data['meta']['researchedAt']],
  ['Priority','Remote India, then Gujarat/Maharashtra/Goa/southern India.'],
- ['Stipend','Gujarat minimum INR20,000/month; elsewhere INR30,000+, INR25,000 conditional. Remote floor provisionally INR30,000.'],
+ ['Stipend','Gujarat and remote India: INR10,000/month minimum, INR15,000+ preferred. Other eligible cities: INR15,000/month minimum. Higher pay remains welcome; unknown pay stays on hold.'],
  ['Evidence','Only employer-stated minimums count as confirmed. Undisclosed-pay roles stay on hold. Glassdoor and other company reports are historical context, never a current offer. Annual figures stay annual.'],
  ['Company groups','Dream / Workable / Possible are editable suggestions, not hiring probabilities. The company watchlist does not assert current vacancies or offers.'],
  ['Personal fit','Public exports contain no personal assessment. Browser-only criteria can be reviewed separately; Met/partial/gap is an evidence checklist, not hiring odds.'],
