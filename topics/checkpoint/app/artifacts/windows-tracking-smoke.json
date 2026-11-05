@@ -1,0 +1,8 @@
+{
+  "windows_native_live_card_fixture": "passed",
+  "windows_gdi_own_window_fixture": "passed",
+  "reject_wrong_window": "passed",
+  "pause_clears_live_card": "passed",
+  "player_report_preserved": "passed",
+  "physical_camera_and_actual_game": "not tested"
+}

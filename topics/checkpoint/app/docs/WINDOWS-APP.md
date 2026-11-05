@@ -1,51 +1,23 @@
-# Checkpoint for Windows — current build
+# Checkpoint Windows preview 2
 
-The current application uses the supplied emotions poster as a reference for an outlined, five-colour card family. It includes the poster's 39 words plus Calm, Frustrated, Excited and Bewildered from the project vocabulary. This is a selectable vocabulary, not an emotion taxonomy or a set of new facial-model classes.
+[Download the Windows ZIP](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.1.0-preview.2/Checkpoint-Windows-Preview.zip). Extract the entire archive, open the Checkpoint-Windows folder and run **Start Checkpoint.cmd**. Windows 10/11 x64 is the target; Python and Qt are bundled. Use **Check setup.cmd** for diagnostics.
 
-## Download
+## Face expressions
 
-[Download the portable Windows ZIP](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.1.0-preview.1/Checkpoint-Windows-Preview.zip). Extract the whole archive before launching.
+Tick **Track expressions (experimental)** beside the camera, then **Start camera**. The main card switches to **Live expression** and follows stable accepted expression estimates automatically. A local face video can be used instead. The card clears on uncertainty, a lost face, stale results or pause. Switch the card-source dropdown to **Your check-in** to view your own chosen word; your reported pleasantness and energy remain independent in both views.
 
-## Launch
+The model predicts eight expression categories, not all 43 feeling words. It is unchanged and remains experimental: 77.1% held-out image accuracy and 29.8% external acted-video clip accuracy. Neither number measures gamer feelings or real-time webcam accuracy. Production release gates remain failed.
 
-Extract the entire `Checkpoint-Windows-Preview.zip` archive, open the `Checkpoint-Windows` folder and double-click **Start Checkpoint.cmd**. Keep its folders together. Python, Qt and the numerical runtime are bundled; no Python installation or package download is required at launch. The target is Windows 10/11 x64.
+## Getting Over It
 
-Choose a game and intention. Camera starts off. **Choose a feeling** opens eight common cards. **All feelings** and search expose all 43 cards. Clicking any part of a card opens its check-in; adjust pleasantness and energy, then save. Cancel leaves the existing report unchanged. Not sure records an unassigned state without CMA coordinates.
+In **Settings**, enable **Observe the Getting Over It game window** and save. Return to the game. The app identifies its Windows foreground process and samples only its client area, twice per second. The context line can show **Possible climb**, **Possible fall**, uncertain movement, or a match to a player-marked start view. Use **Mark start view**, then switch to the desired game location to capture that in-memory reference. **Stop game tracking** clears it and stops observation.
 
-**Start camera** and **Open video** are explicit source actions. They show your own preview rather than gameplay. The expression model is experimental, off by default and cannot select a feeling, either CMA dimension or an intervention. Breaks stop capture; returning keeps it off.
+These are optical-flow and reference-matching heuristics, not a trained game-event classifier. They have not been evaluated on actual Getting Over It recordings. They do not establish progress, death, restart, frustration or CMA. Borderless/windowed mode may be needed if fullscreen capture produces a blank frame. CS2/Valorant process identity is supported; their gameplay analysis is not.
 
-The Check-ins view includes reports from the active session and any opted-in saved summaries. Settings offers reduced animation, optional derived history and experimental analysis. Settings apply to the current app launch. Saving settings pauses capture. Game and intention can be edited during the session without resetting the report.
+## Privacy and verification
 
-## Review files
+Camera and screen sampling are separate opt-in choices. Normal use does not save or upload camera/screen frames or use a microphone. The game view is not substituted for the face preview. Screen observation targets only the supported foreground game and stops on break, end or close. Optional local history stores derived player reports and session information; it is off by default.
 
-- `artifacts/cards-app-session.png`: actual native session UI
-- `artifacts/cards-app-empty.png`: first-use state
-- `artifacts/cards-app-library.png`: common card selection
-- `artifacts/cards-app-all-feelings.png`: full searchable vocabulary
-- `artifacts/cards-app-search.png`: a search result
-- `artifacts/cards-app-checkin.png`: independent CMA inputs
-- `artifacts/cards-app-settings.png`: bounded, scrollable settings
-- `artifacts/cards-app-compact.png`: 1000×680 layout with the main action visible
-- `artifacts/cards-app-setup.png`: session onboarding
-- `artifacts/cards-app-break.png` and `cards-app-summary.png`: follow-up states
-- `artifacts/cards-vocabulary.png`: full reference-derived character sheet
+34 checks passed in Linux, including actual recorded-video face inference, automatic native-card updates, report preservation, uncertainty clearing and synthetic scene-motion tests. The [Windows build](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41974006878) passed native launch plus live-card and GDI capture checks against its own Qt-window fixture. This is not evidence of physical webcam or actual game-event accuracy. The published ZIP was downloaded and checksum-verified. See [release verification](../../RELEASE-VERIFICATION.json).
 
-Editable Figma: page **11 Windows app / Reference cards**. Session: https://www.figma.com/design/Rj3WAO6IpUb48OFUerY7aW?node-id=108-127
-
-The Figma views use exported native widget geometry, original vector scenes, imported shared buttons and a reusable feeling-card component with text/artwork properties. Continuous sliders, real source access, persistent session state and complete search run in the native app. The Figma prototype illustrates common paths.
-
-## Verification and limits
-
-Publication update, 2026-11-05: the [Windows branch build](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41971376058) passed native launch and screenshot capture. The published ZIP was downloaded successfully and its checksum verified. See [release verification](../../RELEASE-VERIFICATION.json). The original Linux-only limitations below describe the earlier local build; camera/device validation remains outstanding.
-
-27 automated checks pass in the Linux workspace. These cover actual card clicks and search, saving independent dimensions, cancellation, onboarding, capture failures, real recorded-video input, expression isolation, motion controls, local history and clean snapshot exit. A pixel-level check also verifies that card body colours and outlines render separately.
-
-The Windows distribution was assembled with official embedded Python 3.13.17 and matching Windows x64 wheels. PE architecture, required Qt platform plugin, bundled C runtime, trained-model hash and ZIP integrity were checked. **Windows execution, physical-camera permission handling and target-device performance could not be verified in this Linux workspace.** Run `Check setup.cmd` for diagnostics; startup errors are written under `%LOCALAPPDATA%\CheckpointResearch\Checkpoint\startup-error.log`.
-
-No training images or third-party reference downloads are bundled. The user's reference image is redrawn as scalable assets, not presented as a training dataset. Numeric slider defaults remain adjustable design suggestions; they are not population norms. Recognition with players, Indian-context validation and frustration reduction remain untested. Previous synthetic persona interviews are still synthetic. Model weights, benchmark accuracy and failed production release gates are unchanged.
-
-The normal runtime does not record/upload camera frames or use a microphone. Derived history is off by default. App-scoped shortcuts are Ctrl+Shift+C (check-in), Ctrl+Shift+B (break) and Ctrl+Shift+P (pause capture); these are not global game hotkeys. No automatic game detection, game-event CV, OS startup service or automatic intervention is claimed.
-
-## Reproduce source assets
-
-`python -m checkpoint.app --no-setup` runs the source app. `python -m scripts.render_cards_app` recreates the current screenshots and scene catalogue. `python -m scripts.export_qt_design` exports geometry for Figma. The Windows assembly scripts are under `scripts/`; downloaded vendor runtime files stay under `build/`. Source and vendor provenance are included in the portable folder.
+Read [tracking controls and limitations](LIVE-TRACKING.md) for the required real-game validation. Earlier persona interviews remain synthetic. The current editable Figma file documents the earlier card design; the new live-tracking controls are implemented in the native app. No new primary research or model retraining was performed for this update.
