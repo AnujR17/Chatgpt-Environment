@@ -1,0 +1,11 @@
+-r requirements-runtime.txt
+scipy==1.18.1
+scikit-learn==1.9.1
+pillow==13.0.0
+requests==2.34.2
+onnx==1.17.0
+pytest==9.2.0
+matplotlib==3.11.2
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu

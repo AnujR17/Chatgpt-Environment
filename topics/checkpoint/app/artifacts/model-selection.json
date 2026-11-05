@@ -1,0 +1,21 @@
+{
+  "selected": "transfer",
+  "criterion": "Highest macro-F1 on eligible deduplicated FER+ PublicTest validation split",
+  "candidates": [
+    {
+      "name": "compact",
+      "validation_macro_f1": 0.5942557581996448,
+      "validation_accuracy": 0.7858215680384499,
+      "onnx_sha256": "c2de012d6bae763244031177ed167d651fb0ff6e152e4e41330517a6093e465b"
+    },
+    {
+      "name": "transfer",
+      "validation_macro_f1": 0.6244370608461267,
+      "validation_accuracy": 0.7717032141784319,
+      "onnx_sha256": "b0e28051075f6f9ed200bbd9e510c451d2e05ceb3fab0d548cb5e9b3942da466"
+    }
+  ],
+  "private_test_used": false,
+  "external_video_used": false,
+  "frozen_model_sha256": "b0e28051075f6f9ed200bbd9e510c451d2e05ceb3fab0d548cb5e9b3942da466"
+}

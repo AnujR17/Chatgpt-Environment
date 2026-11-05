@@ -1,0 +1,19 @@
+{
+  "status": "Project acceptance targets, not a universal industry standard",
+  "registered_before_private_test_evaluation": true,
+  "image_top1_accuracy_min": 0.75,
+  "image_macro_f1_min": 0.65,
+  "image_ece_max": 0.08,
+  "selective_accuracy_min": 0.80,
+  "selective_coverage_min": 0.40,
+  "external_video_macro_f1_min": 0.55,
+  "frame_pipeline_p95_ms_max": 250,
+  "release_requirements": [
+    "Independent consented gamer videos with participant-disjoint splits",
+    "Paired participant-reported valence/arousal and frustration labels before automatic CMA estimation",
+    "Representative Indian-context evaluation; no demographic inference from faces",
+    "Commercial/data-rights review if scope moves beyond academic research",
+    "Camera hardware, native permissions and game-performance testing on target OS",
+    "UI approval remains pending until explicitly received"
+  ]
+}

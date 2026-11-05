@@ -1,0 +1,16 @@
+.venv/
+.cache/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+data/
+artifacts/*.pt
+artifacts/*.onnx
+artifacts/*.npz
+artifacts/*predictions*.jsonl
+dist/
+build/
+
+*.zip
+!artifacts/expression.onnx
+!artifacts/yunet.onnx

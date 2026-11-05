@@ -1,0 +1,50 @@
+{
+  "production_ready": false,
+  "quantitative_checks": {
+    "image_top1_accuracy": {
+      "pass": true,
+      "measured": 0.7705357142857143,
+      "target": 0.75
+    },
+    "image_macro_f1": {
+      "pass": false,
+      "measured": 0.6212403634143167,
+      "target": 0.65
+    },
+    "image_ece": {
+      "pass": true,
+      "measured": 0.012592783814207439,
+      "target": 0.08
+    },
+    "image_selective_accuracy": {
+      "pass": true,
+      "measured": 0.8171679621493748,
+      "target": 0.8
+    },
+    "image_selective_coverage": {
+      "pass": true,
+      "measured": 0.8806547619047619,
+      "target": 0.4
+    },
+    "external_video_macro_f1": {
+      "pass": false,
+      "measured": 0.2505582820132862,
+      "target": 0.55
+    },
+    "frame_pipeline_latency": {
+      "pass": true,
+      "measured": 20.838372299567702,
+      "target": 250
+    }
+  },
+  "mandatory_unmet_requirements": [
+    "Independent consented gamer videos with participant-disjoint splits",
+    "Paired participant-reported valence/arousal and frustration labels before automatic CMA estimation",
+    "Representative Indian-context evaluation; no demographic inference from faces",
+    "Commercial/data-rights review if scope moves beyond academic research",
+    "Camera hardware, native permissions and game-performance testing on target OS",
+    "UI approval remains pending until explicitly received"
+  ],
+  "automatic_cma_enabled": false,
+  "reason": "Benchmark expression results do not validate gamer mood/frustration or continuous CMA. Target-device, representative-user, data-rights and UI approval requirements remain."
+}

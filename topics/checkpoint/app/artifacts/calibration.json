@@ -1,0 +1,14 @@
+{
+  "temperature": 0.6944657272439718,
+  "abstention_threshold": 0.49,
+  "calibration_objective": "Temperature scaling: hard plurality-label NLL on PublicTest validation only",
+  "threshold_selection": "Maximum validation coverage with 95% Wilson precision lower bound >=0.80; minimum 50 examples",
+  "validation_selective_coverage": 0.8867527786121958,
+  "validation_selective_accuracy": 0.8170731707317073,
+  "validation_selective_precision_lower_bound": 0.8027174981948297,
+  "validation_nll": 0.653067946434021,
+  "validation_vote_distribution_nll": 0.9666059017181396,
+  "validation_ece": 0.011757247259610411,
+  "validation_accuracy": 0.7717032141784319,
+  "validation_macro_f1": 0.6244370608461267
+}
