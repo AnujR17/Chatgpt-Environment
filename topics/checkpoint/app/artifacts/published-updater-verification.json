@@ -1,10 +1,13 @@
 {
   "published_manifest_and_github_asset_metadata": "passed",
-  "current_version_check": "up to date",
+  "client_version": "0.3.0-preview.1",
+  "discovered_update": "checkpoint-v0.4.0-preview.2",
+  "compatible_payload": "app; runtime and face models reused",
   "published_small_package_download_and_staging": "passed",
-  "staged_payload_files": 65,
-  "app_update_bytes": 255965,
-  "app_update_sha256": "038c6977a2441ff8ee532d16a711f1a073853d1074ba1cf92d60098190d210f6",
-  "fixture": "Real published GitHub payload staged against an explicit synthetic older installation; no code executed and no personal install changed",
+  "staged_payload_files": 74,
+  "app_update_bytes": 6127097,
+  "app_update_sha256": "6df47e34bf4240352848fcb9c1050e73ffc749461e84ed8d4406407a13356ec5",
+  "hand_asset_hash": "passed",
+  "fixture": "Real published payload staged against an explicit synthetic older installation; no code executed and no personal installation changed",
   "existing_fixture_preserved": "passed"
 }

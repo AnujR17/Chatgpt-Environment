@@ -37,5 +37,5 @@
 - [x] Make sustained Reflection default; keep instant Face preview and eight-class scores separate.
 - [x] Replace report event logs with CMA check-in journey/reflection and native/phone PDF.
 - [x] Add Ctrl+Alt/tray dragging with click-through restoration and saved placement.
-- [ ] Publish/verify 0.4 native Windows and in-app payload.
+- [x] Publish/verify 0.4 native Windows and in-app payload (run 42034826447; real public app payload staged using 0.3 client compatibility).
 - [ ] Validate subjective usefulness, hand-mouth/teeth performance and a real update on the user's device.
