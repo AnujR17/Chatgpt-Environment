@@ -15004,6 +15004,561 @@
         "kind": "Founder/commercial strategy-audit contact;not a verified recruitment route",
         "sourceUrl": "https://builtrix.ai/"
       }
+    },
+    {
+      "id": "vested-finance",
+      "name": "Vested Finance",
+      "company": "Vested Finance",
+      "companyType": "Product company",
+      "sector": "Investing and fintech mobile/web products",
+      "focus": "Investing and fintech mobile/web products",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable preference suggestion based on the stated product/design work and local geography; not personal fit, hiring probability or an offer. Local digital-product team merits a closer look.",
+      "careersUrl": "https://friendly-screen-cd5.notion.site/Careers-Vested-b5593a6895ae4a5fbae6f352e957925d?pvs=4",
+      "locationNote": "Junior advert: GIFT City, Gandhinagar in office; board header locations differ; relocation restriction needs clarification.",
+      "payNote": "Junior salary undisclosed; no internship stipend or role-specific benchmark established.",
+      "openingStatus": "Fresh normal Wellfound detail states full-time, in-office GIFT City, Gandhinagar in the description, despite Ahmedabad header. It requests 1–2 years of digital-product experience; pay undisclosed. Matching employer LinkedIn extract has Mumbai header but the same GIFT City description; normal LinkedIn access restricted. Relative one-week label is not an original posting date. Treat as a junior stretch alternative, not an internship or confirmed fresher intake.",
+      "evidenceConfidence": "Public evidence supports the explicitly stated terms only; current intake and unknown terms require confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-05",
+      "sources": [
+        {
+          "url": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Fresh normal Wellfound detail states full-time, in-office GIFT City, Gandhinagar in the description, despite Ahmedabad header. It requests 1–2 years of digital-product experience; pay undisclosed. Matching employer LinkedIn extract has Mumbai header but the same GIFT City description; normal LinkedIn access restricted. Relative one-week label is not an original posting date. Treat as a junior stretch alternative, not an internship or confirmed fresher intake."
+        },
+        {
+          "url": "https://in.linkedin.com/jobs/view/junior-ui-ux-designer-at-vested-finance-4481196262",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Matching public employer crosspost; normal access restricted; same vacancy."
+        },
+        {
+          "url": "https://vestedfinance.com/",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Fresh official homepage links the careers Notion URL; corroborates company identity, not compensation."
+        },
+        {
+          "url": "https://friendly-screen-cd5.notion.site/Careers-Vested-b5593a6895ae4a5fbae6f352e957925d?pvs=4",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Employer-linked careers public extract lists a general UI/UX Designer; normal body is a client shell."
+        },
+        {
+          "url": "https://friendly-screen-cd5.notion.site/UI-UX-Designer-2a75d1eb1f5f800184b0f24bf4b8393f?pvs=21",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Separate general remote role; not evidence the GIFT City junior role is remote."
+        }
+      ],
+      "roles": [
+        {
+          "id": "wellfound-vested-finance-junior-uiux-4878924",
+          "title": "Junior UI/UX Designer — stretch",
+          "url": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer",
+          "seniority": "Junior full-time, 1–2 years requested",
+          "location": "GIFT City, Gandhinagar",
+          "requirements": [
+            {
+              "id": "d6477d56a244",
+              "text": "1–2 years designing digital products, preferably B2C; header says two years, not a fresher guarantee",
+              "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+            },
+            {
+              "id": "6bc62f07b8a6",
+              "text": "Portfolio showing process, interaction design and visual craft",
+              "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+            },
+            {
+              "id": "dee7e77e4687",
+              "text": "Figma components, auto layout, variables and prototyping; responsive, accessible mobile/web design",
+              "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+            },
+            {
+              "id": "47f9441620b0",
+              "text": "Experience collaborating with product managers and engineers on production work; AI-assisted design workflow",
+              "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+            }
+          ],
+          "evidenceStatus": "Fresh normal Wellfound detail states full-time, in-office GIFT City, Gandhinagar in the description, despite Ahmedabad header. It requests 1–2 years of digital-product experience; pay undisclosed. Matching employer LinkedIn extract has Mumbai header but the same GIFT City description; normal LinkedIn access restricted. Relative one-week label is not an original posting date. Treat as a junior stretch alternative, not an internship or confirmed fresher intake.",
+          "checkedAt": "2026-11-05",
+          "jobId": "wellfound-vested-finance-junior-uiux-4878924"
+        },
+        {
+          "id": "vested-official-uiux-general",
+          "title": "UI/UX Designer / Product Designer — separate general official role",
+          "url": "https://friendly-screen-cd5.notion.site/UI-UX-Designer-2a75d1eb1f5f800184b0f24bf4b8393f?pvs=21",
+          "seniority": "General product-design role; not verified internship/fresher intake",
+          "location": "Official Notion page says Remote; do not transfer this to the GIFT City junior vacancy",
+          "requirements": [
+            {
+              "id": "c822397bc8fe",
+              "text": "Own product design from concept to launch; maintain Figma design system; research and usability testing",
+              "sourceUrl": "https://friendly-screen-cd5.notion.site/UI-UX-Designer-2a75d1eb1f5f800184b0f24bf4b8393f?pvs=21"
+            }
+          ],
+          "evidenceStatus": "Employer homepage links careers Notion; public extract lists this separate remote role. Normal Notion body is a client shell. No verified match to the junior requisition.",
+          "checkedAt": "2026-11-05"
+        }
+      ],
+      "contact": {
+        "url": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer",
+        "kind": "Published role application route; no recruitment email verified",
+        "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+      }
+    },
+    {
+      "id": "aookly",
+      "name": "Aookly",
+      "company": "Aookly",
+      "companyType": "Product company",
+      "sector": "Professional networking platform",
+      "focus": "Professional networking platform",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable preference suggestion based on the stated product/design work and local geography; not personal fit, hiring probability or an offer. Retain only with the opening, pay and seniority caveats below.",
+      "careersUrl": "https://in.linkedin.com/company/aookly",
+      "locationNote": "Gandhinagar in-person internship advert; company profile says SG Highway, Ahmedabad. Confirm actual office if a new intake appears.",
+      "payNote": "No disclosed design-intern stipend; expired advert is not a current paid opening.",
+      "openingStatus": "Fresh normal exact Indeed detail explicitly says expired. Older cached detail/category and Shine/HiringGo copies still show the role; they do not establish renewed intake. Pay undisclosed; paid time off does not mean a paid stipend.",
+      "evidenceConfidence": "Public evidence supports the explicitly stated terms only; current intake and unknown terms require confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-05",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=71cfe32d7155d3ec",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Fresh normal exact Indeed detail explicitly says expired. Older cached detail/category and Shine/HiringGo copies still show the role; they do not establish renewed intake. Pay undisclosed; paid time off does not mean a paid stipend."
+        },
+        {
+          "url": "https://in.linkedin.com/company/aookly",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Public company profile identifies a networking app and links aookly.com; product identity corroboration only. Marketing-agency contact is not a recruitment email."
+        },
+        {
+          "url": "https://aookly.com/",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Normal homepage is an unreadable client shell; no new careers intake established."
+        },
+        {
+          "url": "https://www.shine.com/jobs/ui-ux-designer-intern/aookly/19503780",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Cached matching copy available but fresh normal URL404; no revival of expired Indeed role."
+        }
+      ],
+      "roles": [
+        {
+          "id": "aookly-uiux-intern-71cfe32d7155d3ec",
+          "title": "UI/UX Designer Intern — expired",
+          "url": "https://in.indeed.com/viewjob?jk=71cfe32d7155d3ec",
+          "seniority": "Expired internship; not active",
+          "location": "Gandhinagar",
+          "requirements": [
+            {
+              "id": "6a915017b406",
+              "text": "Students/freshers with relevant projects accepted in historical advert",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=71cfe32d7155d3ec"
+            },
+            {
+              "id": "3736421fe97d",
+              "text": "Figma, user flows, wireframes, prototypes and responsive design",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=71cfe32d7155d3ec"
+            }
+          ],
+          "evidenceStatus": "Fresh normal exact Indeed detail explicitly says expired. Older cached detail/category and Shine/HiringGo copies still show the role; they do not establish renewed intake. Pay undisclosed; paid time off does not mean a paid stipend.",
+          "checkedAt": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "kwiqwork",
+      "name": "Kwiqwork",
+      "company": "Kwiqwork",
+      "companyType": "UX / product studio",
+      "sector": "Client software, SaaS and UX/UI",
+      "focus": "Client software, SaaS and UX/UI",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable preference suggestion based on the stated product/design work and local geography; not personal fit, hiring probability or an offer. Local digital-product team merits a closer look.",
+      "careersUrl": "https://kwiqwork.com/careers/ux-ui-internship",
+      "locationNote": "Gandhinagar, on-site; historical 3–6 month full-time internship",
+      "payNote": "No numerical internship pay stated.",
+      "openingStatus": "Fresh employer detail explicitly states applications closed while previous applicants are reviewed. Three-to-six-month on-site Gandhinagar UX/UI internship is historical/closed; no stipend amount stated.",
+      "evidenceConfidence": "Public evidence supports the explicitly stated terms only; current intake and unknown terms require confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-05",
+      "sources": [
+        {
+          "url": "https://kwiqwork.com/careers/ux-ui-internship",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Fresh employer detail explicitly states applications closed while previous applicants are reviewed. Three-to-six-month on-site Gandhinagar UX/UI internship is historical/closed; no stipend amount stated."
+        }
+      ],
+      "roles": [
+        {
+          "id": "kwiqwork-uxui-intern-closed",
+          "title": "UX/UI Design Intern — closed",
+          "url": "https://kwiqwork.com/careers/ux-ui-internship",
+          "seniority": "Closed internship",
+          "location": "Gandhinagar",
+          "requirements": [
+            {
+              "id": "85b364fdf2e6",
+              "text": "Pursuing/recent degree in Design, HCI or related field",
+              "sourceUrl": "https://kwiqwork.com/careers/ux-ui-internship"
+            },
+            {
+              "id": "85d20e994832",
+              "text": "Figma and portfolio showing research, wireframes and final design",
+              "sourceUrl": "https://kwiqwork.com/careers/ux-ui-internship"
+            },
+            {
+              "id": "a66bad72828d",
+              "text": "Full-time on-site commitment of 3–6 months",
+              "sourceUrl": "https://kwiqwork.com/careers/ux-ui-internship"
+            }
+          ],
+          "evidenceStatus": "Fresh employer detail explicitly states applications closed while previous applicants are reviewed. Three-to-six-month on-site Gandhinagar UX/UI internship is historical/closed; no stipend amount stated.",
+          "checkedAt": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "id": "iqud-informatics",
+      "name": "iQud Informatics",
+      "company": "iQud Informatics",
+      "companyType": "Services / product engineering studio",
+      "sector": "SaaS, AI-driven digital products and client software",
+      "focus": "SaaS, AI-driven digital products and client software",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable preference suggestion based on the stated product/design work and local geography; not personal fit, hiring probability or an offer. Retain only with the opening, pay and seniority caveats below.",
+      "careersUrl": "https://iqudinformatics.com/career/",
+      "locationNote": "GIFT City, Gandhinagar, work from office",
+      "payNote": "Designer compensation undisclosed; no intern-pay inference.",
+      "openingStatus": "Fresh official UI/UX Designer detail and careers index request 2–4 years, GIFT City work from office. Other engineering/HR internships on the same index are not design internships. Design-intern opening not advertised in the sampled index.",
+      "evidenceConfidence": "Public evidence supports the explicitly stated terms only; current intake and unknown terms require confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-05",
+      "sources": [
+        {
+          "url": "https://iqudinformatics.com/career/jobs/ui-ux-designer/",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Fresh official UI/UX Designer detail and careers index request 2–4 years, GIFT City work from office. Other engineering/HR internships on the same index are not design internships. Design-intern opening not advertised in the sampled index."
+        },
+        {
+          "url": "https://iqudinformatics.com/career/",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Official careers index publishes jobs@iqudinformatics.com as HR route; current internships are other disciplines."
+        }
+      ],
+      "roles": [
+        {
+          "id": "iqud-uiux-designer-2to4",
+          "title": "UI/UX Designer — experienced",
+          "url": "https://iqudinformatics.com/career/jobs/ui-ux-designer/",
+          "seniority": "Experienced, 2–4 years; not internship/fresher",
+          "location": "GIFT City, Gandhinagar",
+          "requirements": [
+            {
+              "id": "7f701bbe2e92",
+              "text": "2–4 years UI/UX experience and web/mobile portfolio",
+              "sourceUrl": "https://iqudinformatics.com/career/jobs/ui-ux-designer/"
+            },
+            {
+              "id": "e13e1cf9e3a1",
+              "text": "Figma auto layout, components, prototyping and design systems",
+              "sourceUrl": "https://iqudinformatics.com/career/jobs/ui-ux-designer/"
+            },
+            {
+              "id": "847e99e95bc0",
+              "text": "UX research, responsive design, accessibility and engineer collaboration",
+              "sourceUrl": "https://iqudinformatics.com/career/jobs/ui-ux-designer/"
+            }
+          ],
+          "evidenceStatus": "Fresh official UI/UX Designer detail and careers index request 2–4 years, GIFT City work from office. Other engineering/HR internships on the same index are not design internships. Design-intern opening not advertised in the sampled index.",
+          "checkedAt": "2026-11-05"
+        }
+      ],
+      "contact": {
+        "email": "jobs@iqudinformatics.com",
+        "url": "https://iqudinformatics.com/career/",
+        "kind": "Official HR / careers contact; not proof of a design internship",
+        "sourceUrl": "https://iqudinformatics.com/career/"
+      }
+    },
+    {
+      "id": "stembotix",
+      "name": "STEMbotix",
+      "company": "STEMbotix",
+      "companyType": "Product company",
+      "sector": "Robotics, IoT, physical products and STEM education",
+      "focus": "Robotics, IoT, physical products and STEM education",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable preference suggestion based on the stated product/design work and local geography; not personal fit, hiring probability or an offer. Retain only with the opening, pay and seniority caveats below.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189",
+      "locationNote": "Gandhinagar; six-month physical-product internship",
+      "payNote": "Up to INR15,000/month in this role; below INR20,000 Gujarat minimum.",
+      "openingStatus": "Employer-authored public LinkedIn extract: six months, Gandhinagar, up to INR15,000/month; SolidWorks/CAD, 3D models, technical drawings and assemblies for mechanical/product-design students. Below Gujarat target and primarily physical-product/CAD work, not digital UX. Normal LinkedIn read restricted; extract crawl last week, not a verified original date.",
+      "evidenceConfidence": "Public evidence supports the explicitly stated terms only; current intake and unknown terms require confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-05",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Employer-authored public LinkedIn extract: six months, Gandhinagar, up to INR15,000/month; SolidWorks/CAD, 3D models, technical drawings and assemblies for mechanical/product-design students. Below Gujarat target and primarily physical-product/CAD work, not digital UX. Normal LinkedIn read restricted; extract crawl last week, not a verified original date."
+        }
+      ],
+      "roles": [
+        {
+          "id": "stembotix-product-design-4479420189",
+          "title": "Product Design Intern — physical/CAD, below target",
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189",
+          "seniority": "Physical-product internship, not digital UX",
+          "location": "Gandhinagar",
+          "requirements": [
+            {
+              "id": "67ce6b30dafc",
+              "text": "Basic SolidWorks or similar CAD and 3D modelling",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189"
+            },
+            {
+              "id": "27ab59ef3d14",
+              "text": "Mechanical Engineering, Product Design or related technical study",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189"
+            },
+            {
+              "id": "3090f06ffe05",
+              "text": "Technical drawings, assemblies, prototyping and testing",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189"
+            }
+          ],
+          "evidenceStatus": "Employer-authored public LinkedIn extract: six months, Gandhinagar, up to INR15,000/month; SolidWorks/CAD, 3D models, technical drawings and assemblies for mechanical/product-design students. Below Gujarat target and primarily physical-product/CAD work, not digital UX. Normal LinkedIn read restricted; extract crawl last week, not a verified original date.",
+          "checkedAt": "2026-11-05"
+        }
+      ],
+      "contact": {
+        "email": "garima@stembotix.com",
+        "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189",
+        "kind": "HR Executive contact explicitly published for this physical-product internship",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189"
+      }
+    },
+    {
+      "id": "dreamcrafters-innovations",
+      "name": "DreamCrafters Innovations",
+      "company": "DreamCrafters Innovations",
+      "companyType": "Product company",
+      "sector": "Game and interactive application design; based on advert only",
+      "focus": "Game and interactive application design; based on advert only",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable preference suggestion based on the stated product/design work and local geography; not personal fit, hiring probability or an offer. Retain only with the opening, pay and seniority caveats below.",
+      "careersUrl": null,
+      "locationNote": "Gandhinagar in person; contractual/temporary",
+      "payNote": "Listed contract salary INR25,000–30,000/month, not stipend; employer/contract conditions unresolved.",
+      "openingStatus": "Fresh exact Indeed detail advertises in-person Gandhinagar UI/UX Game Designer, contractual/temporary, INR25,000–30,000/month salary. Requires game/interactive-app experience and relevant portfolio; no years or student/fresher eligibility stated. Employer careers/legal identity uncorroborated; keep directory-only until seniority, employer and contract are verified. Not an internship stipend.",
+      "evidenceConfidence": "Public evidence supports the explicitly stated terms only; current intake and unknown terms require confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-05",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=f89bd898c3a47aa8",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Fresh exact Indeed detail advertises in-person Gandhinagar UI/UX Game Designer, contractual/temporary, INR25,000–30,000/month salary. Requires game/interactive-app experience and relevant portfolio; no years or student/fresher eligibility stated. Employer careers/legal identity uncorroborated; keep directory-only until seniority, employer and contract are verified. Not an internship stipend."
+        }
+      ],
+      "roles": [
+        {
+          "id": "dreamcrafters-game-uiux-f89bd898c3a47aa8",
+          "title": "UI/UX Game Designer — contract / eligibility unconfirmed",
+          "url": "https://in.indeed.com/viewjob?jk=f89bd898c3a47aa8",
+          "seniority": "Contract, seniority unspecified; not verified fresher internship",
+          "location": "Gandhinagar",
+          "requirements": [
+            {
+              "id": "d7668e33569b",
+              "text": "Experience designing mobile games or interactive applications and game portfolio",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=f89bd898c3a47aa8"
+            },
+            {
+              "id": "e2f287a9e224",
+              "text": "Figma/prototyping, HUDs, menus and reward mechanics",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=f89bd898c3a47aa8"
+            },
+            {
+              "id": "764be4e2d68b",
+              "text": "Unity/Unreal UI workflow familiarity is an advantage",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=f89bd898c3a47aa8"
+            }
+          ],
+          "evidenceStatus": "Fresh exact Indeed detail advertises in-person Gandhinagar UI/UX Game Designer, contractual/temporary, INR25,000–30,000/month salary. Requires game/interactive-app experience and relevant portfolio; no years or student/fresher eligibility stated. Employer careers/legal identity uncorroborated; keep directory-only until seniority, employer and contract are verified. Not an internship stipend.",
+          "checkedAt": "2026-11-05"
+        }
+      ],
+      "contact": {
+        "url": "https://in.indeed.com/viewjob?jk=f89bd898c3a47aa8",
+        "kind": "Public board application route; original employer careers/contact not verified",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=f89bd898c3a47aa8"
+      }
+    },
+    {
+      "id": "ai-certs",
+      "name": "AI Certs",
+      "company": "AI Certs",
+      "companyType": "Product company",
+      "sector": "Edtech AI/blockchain certifications; employer description",
+      "focus": "Edtech AI/blockchain certifications; employer description",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable preference suggestion based on the stated product/design work and local geography; not personal fit, hiring probability or an offer. Retain only with the opening, pay and seniority caveats below.",
+      "careersUrl": null,
+      "locationNote": "Gandhinagar in-office in board advert; duration conflict needs confirmation",
+      "payNote": "INR15,000–18,000/month in current board advert, below Gujarat minimum.",
+      "openingStatus": "Normal public Internshala exact detail readable with standard TLS/robots checks, despite web-tool restriction: Graphic/UIUX Design, Gandhinagar in-office, INR15,000–18,000/month, three months in header but 3–6 in description, apply by5December2026, stated joining window3November–8December. Below Gujarat minimum; no application. Relative posted-just-now label not converted into original publication date.",
+      "evidenceConfidence": "Public evidence supports the explicitly stated terms only; current intake and unknown terms require confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-05",
+      "sources": [
+        {
+          "url": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Normal public Internshala exact detail readable with standard TLS/robots checks, despite web-tool restriction: Graphic/UIUX Design, Gandhinagar in-office, INR15,000–18,000/month, three months in header but 3–6 in description, apply by5December2026, stated joining window3November–8December. Below Gujarat minimum; no application. Relative posted-just-now label not converted into original publication date."
+        }
+      ],
+      "roles": [
+        {
+          "id": "ai-certs-graphic-uiux-1793856702",
+          "title": "Graphic/UIUX Design Intern — below target",
+          "url": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+          "seniority": "Internship; students/freshers/recent graduates",
+          "location": "Gandhinagar",
+          "requirements": [
+            {
+              "id": "03a844fecf18",
+              "text": "Figma preferred; Canva/graphic design and UI/UX fundamentals",
+              "sourceUrl": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702"
+            },
+            {
+              "id": "6881fc645697",
+              "text": "Wireframes, mockups and responsive web interfaces",
+              "sourceUrl": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702"
+            },
+            {
+              "id": "7c3b844c8586",
+              "text": "Full-time in-office, three-month header; 3–6 months description conflict",
+              "sourceUrl": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702"
+            }
+          ],
+          "evidenceStatus": "Normal public Internshala exact detail readable with standard TLS/robots checks, despite web-tool restriction: Graphic/UIUX Design, Gandhinagar in-office, INR15,000–18,000/month, three months in header but 3–6 in description, apply by5December2026, stated joining window3November–8December. Below Gujarat minimum; no application. Relative posted-just-now label not converted into original publication date.",
+          "checkedAt": "2026-11-05"
+        }
+      ],
+      "contact": {
+        "url": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+        "kind": "Published board application route for below-target internship; no recruitment email verified",
+        "sourceUrl": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702"
+      }
+    },
+    {
+      "id": "trellissoft",
+      "name": "TrellisSoft",
+      "company": "TrellisSoft",
+      "companyType": "Services / product engineering studio",
+      "sector": "AI and digital product engineering",
+      "focus": "AI and digital product engineering",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable preference suggestion based on the stated product/design work and local geography; not personal fit, hiring probability or an offer. Retain only with the opening, pay and seniority caveats below.",
+      "careersUrl": "https://trellissoft.ai/careers/opening/",
+      "locationNote": "Official about page identifies Gandhinagar, Bengaluru and Goa development centres",
+      "payNote": "Current design-intern pay unknown. Historical campus program had unpaid first90days and conditional INR7,000; not a current role-specific design benchmark.",
+      "openingStatus": "Official current-opportunities public extract crawled yesterday says no open positions. JobGrin category contains a Gandhinagar0–2year UX/UI Designer Intern body under UI/UX Engineer but no exact current detail URL established; do not treat category or employee profiles as an opening. Older university campus notice has unpaid90days then conditional7,000 stipend and1.8lakh/year probation, not design-specific current pay.",
+      "evidenceConfidence": "Public evidence supports the explicitly stated terms only; current intake and unknown terms require confirmation.",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-05",
+      "sources": [
+        {
+          "url": "https://trellissoft.ai/careers/opening/",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Official current-opportunities public extract crawled yesterday says no open positions. JobGrin category contains a Gandhinagar0–2year UX/UI Designer Intern body under UI/UX Engineer but no exact current detail URL established; do not treat category or employee profiles as an opening. Older university campus notice has unpaid90days then conditional7,000 stipend and1.8lakh/year probation, not design-specific current pay."
+        },
+        {
+          "url": "https://trellissoft.ai/about/",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Official public about page corroborates Gandhinagar development centre; not an open vacancy."
+        },
+        {
+          "url": "https://jobgrin.co.in/ux-ui-jobs-in-gandhinagar",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Indexed/category internship body only; exact detail and current employer intake unverified."
+        },
+        {
+          "url": "https://rku.ac.in/placementpanel/companyprofile/036-Trellissoft%20Engineering%20Services%20Pvt.%20Ltd.pdf",
+          "label": "5 November Gandhinagar-focused public research",
+          "checkedAt": "2026-11-05",
+          "evidenceStatus": "Historical campus notice REF2018: unpaid first90days, later conditional7,000 stipend and1.8lakh annual probation; not design-specific/current compensation."
+        }
+      ],
+      "roles": []
     }
   ],
   "meta": {
@@ -15011,6 +15566,6 @@
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 225
+    "directoryCount": 233
   }
 }

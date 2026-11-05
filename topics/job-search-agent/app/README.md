@@ -10,11 +10,11 @@ Personal internship discovery and application Kanban for Anuj. Primary GitHub ow
 
 ## Included
 
-- 86 retained role records (74 active,12 archived), updated5 November2026. BrainoidTech internship and Websar full-time fresher alternative are on hold for current pay/intake or eligibility details. Atlabs internship is archived after original/application removal and employer-index corroboration. Original posting dates,full-time salary units and browser-local progress remain separate.
+- 87 retained role records (75 active,12 archived), updated5 November2026. Gandhinagar follow-up adds Vested Finance as an undisclosed-salary junior stretch alternative; no new INR20,000+ local internship was verified. BrainoidTech internship and Websar full-time fresher alternative are on hold for current pay/intake or eligibility details. Atlabs internship is archived after original/application removal and employer-index corroboration. Original posting dates,full-time salary units and browser-local progress remain separate.
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat minimum ₹20,000/month; elsewhere ₹30,000, with ₹25,000 considered individually. A ₹30,000 remote minimum is provisional.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with225 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with233 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.

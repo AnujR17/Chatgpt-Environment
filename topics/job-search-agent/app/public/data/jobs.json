@@ -1075,6 +1075,51 @@
         "url": "https://remoteok.com/remote-jobs/989-remote-design-intern-food-hunt",
         "reason": "Fresh exact RemoteOK detail says no longer available and12yr. Searchtitle~93kUSD is not employer stipend;not a new role.",
         "checkedAt": "2026-11-05"
+      },
+      {
+        "company": "Aookly",
+        "url": "https://in.indeed.com/viewjob?jk=71cfe32d7155d3ec",
+        "reason": "Fresh normal exact Indeed detail explicitly says expired. Older cached detail/category and Shine/HiringGo copies still show the role; they do not establish renewed intake. Pay undisclosed; paid time off does not mean a paid stipend."
+      },
+      {
+        "company": "STEMbotix",
+        "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-stembotix-4479420189",
+        "reason": "Employer-authored public LinkedIn extract: six months, Gandhinagar, up to INR15,000/month; SolidWorks/CAD, 3D models, technical drawings and assemblies for mechanical/product-design students. Below Gujarat target and primarily physical-product/CAD work, not digital UX. Normal LinkedIn read restricted; extract crawl last week, not a verified original date."
+      },
+      {
+        "company": "AI Certs",
+        "url": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+        "reason": "Normal public Internshala exact detail readable with standard TLS/robots checks, despite web-tool restriction: Graphic/UIUX Design, Gandhinagar in-office, INR15,000–18,000/month, three months in header but 3–6 in description, apply by5December2026, stated joining window3November–8December. Below Gujarat minimum; no application. Relative posted-just-now label not converted into original publication date."
+      },
+      {
+        "company": "Kwiqwork",
+        "url": "https://kwiqwork.com/careers/ux-ui-internship",
+        "reason": "Fresh employer detail explicitly states applications closed while previous applicants are reviewed. Three-to-six-month on-site Gandhinagar UX/UI internship is historical/closed; no stipend amount stated."
+      },
+      {
+        "company": "InteractiveWarriors Studio",
+        "url": "https://in.linkedin.com/jobs/view/graphic-design-and-ui-ux-design-intern-at-interactivewarriors-studio-pvt-ltd-4354406361",
+        "reason": "Public employer extract explicitly no longer accepting applications; hybrid Gandhinagar role is closed, not fresh."
+      },
+      {
+        "company": "Honeybee Digital",
+        "url": "https://cutshort.io/job/Wordpress-Intern-Honeybee-Digital-gm0KlnTe",
+        "reason": "Body explicitly unpaid three-month WordPress internship, despite annual-looking header. Outside paid UX shortlist."
+      },
+      {
+        "company": "Nextsavy Technologies",
+        "url": "https://www.glassdoor.co.in/job-listing/ui-ux-design-intern-nextsavy-technologies-llp-JV_IC2935226_KO0%2C19_KE20%2C45.htm?jl=1010148080929",
+        "reason": "Matching public design-intern detail crawled last month states INR2,000–5,000/month; below Gujarat minimum. Not a current employer pay confirmation."
+      },
+      {
+        "company": "QuickOps India",
+        "url": "https://www.glassdoor.co.in/job-listing/ui-ux-brand-design-intern-quickops-india-private-limited-JV_IC2935226_KO0%2C25_KE26%2C56.htm?jl=1010136194173",
+        "reason": "Public copy crawled last month states stipend5,000–10,000/month but separate annual salary216,000–312,000/year; preserve conflict, do not convert salary into stipend match."
+      },
+      {
+        "company": "EveoAI",
+        "url": "https://wellfound.com/jobs/2782523-ui-ux-designer-india-intern-3-months-full-time-3-position",
+        "reason": "Fresh detail has5,000–20,000INR header without established period,2-month body vs3-month title,1-year header vs2-year body. Not a verified20k minimum stipend; no pay-unit assumption."
       }
     ],
     "collectorSummary": {
@@ -1093,7 +1138,7 @@
       "latestPass": "IndeednewWebsarfresherandproject44dedupe;Naukrirobots/Keyideasemptyshell;X403;Instahyre520;Wellfoundunpaid/410;remoteUSA/oldFoodHunt;HN219IDs/187posts/43broadmatches.25coveragefamiliesrefreshed;unsampleddatespreserved."
     },
     "companyWatchlistAt": "2026-11-05",
-    "companyDirectoryCount": 225,
+    "companyDirectoryCount": 233,
     "coverageNote": "Expanded public research across YC, Wellfound, remote boards, Who is hiring, startup maps and India job boards. Newly discovered is not newly posted; older listings and access limits are labelled.",
     "lastResearchRefresh": {
       "date": "2026-11-05",
@@ -1312,26 +1357,36 @@
         "newConfirmedMonthlyStipendMatches": 0,
         "note": "Brainoid six-month UX internship held for current stipend amount;older low-pay row retained. WebsarPune full-time fresher25–30k/month salary kept separate from stipend. Atlabs internship original/formremoved andindexcorroborated;archived. Privatebrowserdata inaccessible.",
         "scope": "Wholeactiveprimaryattempt,rotatingoriginalterms,Indeed/Naukri/X,India/startup/remote/YCpublicsamplesandHNAPI;best effort,notexhaustive."
+      },
+      {
+        "date": "2026-11-05",
+        "focus": "Gandhinagar / GIFT City follow-up",
+        "newRoles": 1,
+        "newInternships": 0,
+        "newJuniorAlternatives": 1,
+        "newCompanyRecords": 8,
+        "retiredRoles": 0,
+        "retainedRecords": 87,
+        "activeRecords": 75,
+        "newConfirmedMonthlyStipendMatches": 0,
+        "existingTermsReviewed": 1,
+        "note": "Vested junior stretch held for pay/experience/eligibility. Aookly expired; Kwiqwork closed; STEMbotix CAD and AI Certs below target. Menstrupedia existing Ahmedabad stipend rechecked. No private browser data accessed.",
+        "scope": "Focused local follow-up; earlier same-day whole-board audit retained, not repeated or relabelled."
       }
     ],
     "refreshSummary": {
-      "newRoles": 2,
-      "newInternships": 1,
+      "focus": "Gandhinagar / GIFT City follow-up",
+      "newRoles": 1,
+      "newInternships": 0,
       "newJuniorAlternatives": 1,
-      "retiredRoles": 1,
-      "retainedRecords": 86,
-      "activeRecords": 74,
-      "existingPrimaryUrlsAttempted": 73,
-      "publicPagesFetched": 64,
-      "collectorBlocked": 8,
-      "missingOriginals": 1,
-      "sourceErrors": 0,
-      "shellResponses": 5,
-      "existingTermsReviewed": 16,
-      "unresolvedRetainedPrimaryBodies": 8,
       "newCompanyRecords": 8,
+      "retiredRoles": 0,
+      "retainedRecords": 87,
+      "activeRecords": 75,
       "newConfirmedMonthlyStipendMatches": 0,
-      "note": "Brainoid six-month UX internship held for current stipend amount;older low-pay row retained. WebsarPune full-time fresher25–30k/month salary kept separate from stipend. Atlabs internship original/formremoved andindexcorroborated;archived. Privatebrowserdata inaccessible."
+      "existingTermsReviewed": 1,
+      "note": "Vested junior stretch held for pay/experience/eligibility. Aookly expired; Kwiqwork closed; STEMbotix CAD and AI Certs below target. Menstrupedia existing Ahmedabad stipend rechecked. No private browser data accessed.",
+      "scope": "Focused local follow-up; earlier same-day whole-board audit retained, not repeated or relabelled."
     }
   },
   "jobs": [
@@ -1528,6 +1583,11 @@
           "checkedAt": "2026-11-05",
           "sourceUrl": "https://www.menstrupedia.com/careers/ux-intern",
           "note": "Fresh original still states Ahmedabad UX internship25,000–30,000INR/month. No employer-confirmed joining/cohort date."
+        },
+        {
+          "checkedAt": "2026-11-05",
+          "sourceUrl": "https://www.menstrupedia.com/careers/ux-intern",
+          "note": "Additional Gandhinagar-focused pass: fresh employer page retains Ahmedabad UX Design Intern and INR25,000–30,000/month. No new intake/start date established; same retained role, not a new opening."
         }
       ]
     },
@@ -9707,6 +9767,72 @@
           "url": "https://www.glassdoor.co.in/job-listing/ux-designer-websar-technologies-llp-JV_KO0%2C11_KE12%2C35.htm?jl=1010290765450",
           "checkedAt": "2026-11-05",
           "note": "Fresh normal Glassdoor detail200 matches employer,title,fresher requirements and25–30kINR/month. Web extract crawled5days ago is separately dated. Not a separate vacancy or verified original publication date."
+        }
+      ]
+    },
+    {
+      "id": "wellfound-vested-finance-junior-uiux-4878924",
+      "companyId": "vested-finance",
+      "company": "Vested Finance",
+      "title": "Junior UI/UX Designer — 1–2 years / stretch",
+      "roleType": "Junior / fresher",
+      "location": "GIFT City, Gandhinagar, Gujarat (description); Ahmedabad/Mumbai headers differ",
+      "workMode": "On-site",
+      "region": "Gujarat",
+      "sourceType": "Wellfound",
+      "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer",
+      "applicationUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-05",
+      "checkedAt": "2026-11-05",
+      "postedAt": null,
+      "postedLabel": "One week ago shown on Wellfound when checked; original publication date unverified",
+      "summary": "GIFT City fintech product-design junior stretch alternative; 1–2 years requested, salary unknown. Not an internship.",
+      "evidence": "Fresh normal Wellfound detail states full-time, in-office GIFT City, Gandhinagar in the description, despite Ahmedabad header. It requests 1–2 years of digital-product experience; pay undisclosed. Matching employer LinkedIn extract has Mumbai header but the same GIFT City description; normal LinkedIn access restricted. Relative one-week label is not an original posting date. Treat as a junior stretch alternative, not an internship or confirmed fresher intake.",
+      "nextAction": "Confirm current GIFT City requisition, salary, joining window and whether student/early-career applicants are eligible despite the 1–2 year product-design requirement. Wellfound says relocation not allowed; clarify its meaning before relying on the role.",
+      "requirements": "1–2 years designing digital products, preferably B2C; header says two years, not a fresher guarantee; Portfolio showing process, interaction design and visual craft; Figma components, auto layout, variables and prototyping; responsive, accessible mobile/web design; Experience collaborating with product managers and engineers on production work; AI-assisted design workflow",
+      "requirementItems": [
+        {
+          "id": "d6477d56a244",
+          "text": "1–2 years designing digital products, preferably B2C; header says two years, not a fresher guarantee",
+          "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+        },
+        {
+          "id": "6bc62f07b8a6",
+          "text": "Portfolio showing process, interaction design and visual craft",
+          "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+        },
+        {
+          "id": "dee7e77e4687",
+          "text": "Figma components, auto layout, variables and prototyping; responsive, accessible mobile/web design",
+          "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+        },
+        {
+          "id": "47f9441620b0",
+          "text": "Experience collaborating with product managers and engineers on production work; AI-assisted design workflow",
+          "sourceUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer"
+        }
+      ],
+      "tags": [
+        "Gandhinagar",
+        "GIFT City",
+        "Junior stretch",
+        "Undisclosed salary",
+        "1–2 years requested"
+      ],
+      "listingVerification": "public-job-detail",
+      "applicationMethod": "Wellfound published role; manual application review",
+      "automationNotes": "Research only; no application, form or employer message sent.",
+      "additionalSources": [
+        {
+          "id": "vested-linkedin-4481196262",
+          "platform": "LinkedIn",
+          "url": "https://in.linkedin.com/jobs/view/junior-ui-ux-designer-at-vested-finance-4481196262",
+          "checkedAt": "2026-11-05",
+          "note": "Matching employer-authored public extract crawled two days ago; normal read restricted. GIFT City description matches, Mumbai header differs. Same role, not a second opening."
         }
       ]
     }
