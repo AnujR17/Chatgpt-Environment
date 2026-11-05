@@ -1,0 +1,10 @@
+{
+  "published_manifest_and_github_asset_metadata": "passed",
+  "current_version_check": "up to date",
+  "published_small_package_download_and_staging": "passed",
+  "staged_payload_files": 65,
+  "app_update_bytes": 255965,
+  "app_update_sha256": "038c6977a2441ff8ee532d16a711f1a073853d1074ba1cf92d60098190d210f6",
+  "fixture": "Real published GitHub payload staged against an explicit synthetic older installation; no code executed and no personal install changed",
+  "existing_fixture_preserved": "passed"
+}

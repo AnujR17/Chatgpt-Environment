@@ -6,6 +6,8 @@ Pip is an original soft desktop companion. The Windows app maps visible face mov
 
 **[Download the Windows portable app](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.3.0-preview.1/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.3.0-preview.1)
 
+Already using the working **0.2.1 camera-fix build**? [Download the small app patch](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.3.0-preview.1/Checkpoint-App-Update.zip) (256 KB). Close all Checkpoint/Check setup windows, extract it and copy its contents into your existing **Checkpoint-Windows** folder, replacing files. Then restart. This patch reuses 0.2.1’s identical runtime/models; use the full download for a fresh installation or an older version. Future updates use the in-app button.
+
 Extract the whole ZIP into a new folder, run **Start Checkpoint.cmd**, tick **Track my face**, then **Start camera**. Click **Show Pip** for the frameless click-through companion. **Phone dashboard** displays a pairing QR: scan it from a phone on the same trusted Wi-Fi. No phone-store installation is required; the phone view is a local browser dashboard.
 
 [Controls and pairing](docs/PIP-COMPANION.md) · [Windows instructions](docs/WINDOWS-APP.md) · [Video shortlist and training](docs/VIDEO-AND-MODEL-RESEARCH.md) · [Model comparison](artifacts/pretrained-comparison.json)

@@ -1,23 +1,25 @@
 {
   "verified_at": "2026-11-05",
   "branch": "topic/checkpoint",
-  "release_commit": "5569ddc54496c5b1896835dba2b5866cd2b1ca2a",
-  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.2.1-preview.2",
+  "release_commit": "eab825af70392a4d19383db4603cc70dd9000861",
+  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.3.0-preview.1",
   "download_http_status": 200,
-  "download_bytes": 237464949,
-  "sha256": "440c60f04029bbabb5b84cd7b464f14ff209aa027d923fc43ee4ab0c18630f9b",
+  "download_bytes": 237500873,
+  "sha256": "9a73bcb2ed37695281978b8064c29b1053ab99831d9b9a50d12e5196ec29b349",
   "checksum_matches_release_file": true,
   "github_asset_digest_matches": true,
   "archive_integrity": "passed",
   "app_source_matches_branch": "passed after Windows newline normalization",
   "model_weights": "Provider-pretrained MediaPipe and HSEmotion added with verified hashes; archived classifier unchanged",
-  "local_tests": "49 passed, 1 Windows-only test skipped; includes camera-failure fixtures and actual recorded-video face mapping",
-  "reported_failures": "User Windows 10 MSMF grabFrame -2147483638; physical phone page unreachable. DirectShow-first and LAN diagnostics shipped; target-PC retest pending",
+  "local_tests": "72 passed, 1 Windows-only test skipped; includes expression response, updater staging/security/button flow and recorded-video face mapping",
+  "reported_failures": "User confirms camera capture works; asked for clearer laugh/happy/brow movement and one-click updates. Personal response and later-version update on user hardware remain to test",
   "firewall_helper_powershell_syntax": "passed in Windows workflow; command was parsed, not executed",
   "phone_browser_checks": {
     "browser": "Chromium, 390x844 phone viewport",
     "fixture": "Synthetic physical-face cues, not live recognition",
     "native_to_phone_updates": "passed",
+    "open_smile_animation": "passed",
+    "paired_reduced_motion": "passed",
     "neutral_fallback": "passed",
     "report_download": "passed",
     "disconnection": "passed",
@@ -42,6 +44,23 @@
     "physical_camera_and_actual_game": "not tested",
     "physical_phone_wifi": "not tested"
   },
+  "windows_updater_checks": {
+    "windows_restart_swap_fixture": "passed",
+    "windows_failed_start_rollback_fixture": "passed",
+    "fixture": "Disposable installations, actual embedded Python and PowerShell helper; no personal install modified",
+    "user_network_and_physical_device": "not tested"
+  },
   "actual_getting_over_it_event_accuracy": "not evaluated; trailer scene experiment excluded from live cues due failed scene generalization",
-  "run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41989299286"
+  "run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/42012077177",
+  "published_updater_checks": {
+    "published_manifest_and_github_asset_metadata": "passed",
+    "current_version_check": "up to date",
+    "published_small_package_download_and_staging": "passed",
+    "staged_payload_files": 65,
+    "app_update_bytes": 255965,
+    "app_update_sha256": "038c6977a2441ff8ee532d16a711f1a073853d1074ba1cf92d60098190d210f6",
+    "fixture": "Real published GitHub payload staged against an explicit synthetic older installation; no code executed and no personal install changed",
+    "existing_fixture_preserved": "passed"
+  },
+  "bootstrap_0_2_1_dependency_manifests": "identical runtime pins/provenance; model weights unchanged"
 }

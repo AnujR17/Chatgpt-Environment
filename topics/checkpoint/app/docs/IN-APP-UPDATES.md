@@ -1,6 +1,6 @@
 # In-app updates
 
-The old 0.2.x app has no updater. Install the 0.3.0 portable release once into a fresh folder. From then on, open **Settings → Check for updates** (also in the tray menu). When a newer Checkpoint release exists, choose **Update and restart**. Nothing is installed silently.
+The old 0.2.x app has no updater. Install the 0.3.0 portable release once into a fresh folder, or apply its small app patch over a working 0.2.1 camera-fix installation: close all app/check-setup windows, extract the patch and copy its contents into the existing Checkpoint-Windows folder, replacing files. The runtime/model dependency manifests are unchanged between those versions. From then on, open **Settings → Check for updates** (also in the tray menu). When a newer Checkpoint release exists, choose **Update and restart**. Nothing is installed silently.
 
 The app checks only Checkpoint release tags and update assets from AnujR17/Chatgpt-Environment on GitHub. Other topic projects in the repository are ignored. Preview releases are included because this application is a research preview. No GitHub account, token or new service subscription is required. Offline/rate-limit failures display an error and leave the installation alone.
 

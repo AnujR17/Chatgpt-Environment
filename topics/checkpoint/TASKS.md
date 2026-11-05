@@ -29,5 +29,5 @@
 - [x] Fix small smile/open smile/brow mapping, continuous motion, neutral fallback and paired phone presentation.
 - [x] Implement native one-click GitHub updater with small package, full fallback and rollback.
 - [x] Verify local safety/interaction tests and native-to-browser expressions/reduced motion.
-- [ ] Verify real Windows restart/rollback fixtures and publish/download-check 0.3.0 assets.
+- [x] Verify real Windows restart/rollback fixtures and publish/download-check 0.3.0 full/small assets (run 42012077177).
 - [ ] Check subjective facial response and an actual later-version update on the user's PC.
