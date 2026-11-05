@@ -17,6 +17,8 @@ from checkpoint.affect import ANCHORS, REFERENCES, dimension_words
 from checkpoint.motion import AffectWidget
 from checkpoint.symbols import CORE, MEANINGS
 from checkpoint.vocabulary import CARDS, COMMON, search_cards
+from checkpoint.expression_view import expression_display
+from checkpoint.gameplay import GameWorker
 
 ASSETS=Path(__file__).with_name("assets")
 
@@ -166,6 +168,9 @@ class PreferencesDialog(QDialog):
         root.addWidget(label('History',18,bold=True));self.retention=QCheckBox('Save session summaries on this device');self.retention.setChecked(parent.retain);root.addWidget(self.retention);root.addWidget(label('Stores your check-ins, game and session duration. Camera frames are never saved.',13,True))
         root.addWidget(label('Expression research',18,bold=True));self.experimental=QCheckBox('Enable experimental facial-expression cues');self.experimental.setChecked(parent.session.experimental_analysis);root.addWidget(self.experimental)
         root.addWidget(label('Research only. Expression categories cannot establish mood, frustration or either CMA dimension. They never change your check-in.',13,True))
+        root.addWidget(label('Game context',18,bold=True));self.detect_games=QCheckBox('Detect supported foreground games on Windows');self.detect_games.setChecked(parent.detect_games);root.addWidget(self.detect_games)
+        self.screen_tracking=QCheckBox('Observe the Getting Over It game window');self.screen_tracking.setChecked(parent.screen_tracking);root.addWidget(self.screen_tracking)
+        root.addWidget(label('Only the foreground Getting Over It window is sampled, twice per second. Possible climb/fall cues use camera motion and are not validated event labels. No screen images are saved. Other windows are not analysed.',13,True))
         frequency=QHBoxLayout();frequency.addWidget(label('Analysis frames per second',14),1);self.frequency=QDoubleSpinBox();self.frequency.setRange(.25,5);self.frequency.setSingleStep(.25);self.frequency.setValue(parent.frequency);self.frequency.setEnabled(self.experimental.isChecked());self.experimental.toggled.connect(self.frequency.setEnabled);frequency.addWidget(self.frequency);root.addLayout(frequency)
         root.addWidget(label('Applies to this app launch. Saving settings pauses an active camera or video; resume it when you choose.',13,True));root.addStretch()
         box=QDialogButtonBox(QDialogButtonBox.StandardButton.Save|QDialogButtonBox.StandardButton.Cancel);box.accepted.connect(self.accept);box.rejected.connect(self.reject);outer.addWidget(box)
@@ -175,6 +180,7 @@ class MainWindow(QMainWindow):
     def __init__(self, *, no_setup=False, data_dir=None):
         super().__init__();self.setWindowTitle("Checkpoint");self.resize(1440,940);self.setMinimumSize(1000,640)
         self.session=Session();self.worker=None;self.frequency=2.;self.retain=False;self.saved=False;self.current_view=0;self.theme="light";self.reduced_motion=False;self.motion_paused=False;self.last_image=None;self.last_status="";self._closing=False
+        self.live_view=False;self.expression_controls=[];self.view_selectors=[];self.detect_games=False;self.screen_tracking=False;self.game_worker=None;self.game_observation=None
         directory=data_dir or os.environ.get("CHECKPOINT_DATA_DIR") or QStandardPaths.writableLocation(QStandardPaths.StandardLocation.AppLocalDataLocation)
         self.history=History(directory);self.preview_widgets=[];self.emblems=[];self.state_labels=[]
         outer=QWidget();self.setCentralWidget(outer);all_layout=QVBoxLayout(outer);all_layout.setContentsMargins(0,0,0,0);all_layout.setSpacing(0)
@@ -187,6 +193,9 @@ class MainWindow(QMainWindow):
         self.scroll=QScrollArea();self.scroll.setWidgetResizable(True);all_layout.addWidget(self.scroll,1);canvas=QWidget();self.scroll.setWidget(canvas);root=QVBoxLayout(canvas);root.setContentsMargins(28,24,28,20);root.setSpacing(16)
         h=QHBoxLayout();words=QVBoxLayout();words.setSpacing(6);self.title=label('Your session',30,bold=True);self.subtitle=label('',14,True);words.addWidget(self.title);words.addWidget(self.subtitle);h.addLayout(words,1)
         self.game_tag=label('',12,True);h.addWidget(self.game_tag);h.addSpacing(24);self.end_control=button('End session',self.end_or_new);h.addWidget(self.end_control);root.addLayout(h)
+        context_row=QHBoxLayout();self.game_status=label('Game detection is off · Game events are not being observed.',13,True);context_row.addWidget(self.game_status,1)
+        self.game_detection_control=button('Detect game',self.toggle_game_tracking);context_row.addWidget(self.game_detection_control)
+        self.mark_start_control=button('Mark start view',self.mark_start_view);self.mark_start_control.setVisible(False);context_row.addWidget(self.mark_start_control);root.addLayout(context_row)
         self.view_buttons=[];self.camera_controls=[];self.file_controls=[];self.checkin_controls=[];self.motion_controls=[]
         for i in range(3):
             b=button('Development view',lambda checked=False,idx=i:self.change_view(idx));b.setParent(self);b.hide();self.view_buttons.append(b)
@@ -209,7 +218,7 @@ class MainWindow(QMainWindow):
     def build_body(self,mode):
         body=QWidget();row=QHBoxLayout(body);row.setContentsMargins(0,0,0,0);row.setSpacing(18)
         state_panel,sl=panel(padding=24);sl.setSpacing(14)
-        header=QHBoxLayout();header.addWidget(label('Your feeling',18,bold=True),1);source=label('',12,True);self.state_labels.append((source,'source'));header.addWidget(source);motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(36);motion.setObjectName('navButton');header.addWidget(motion);self.motion_controls.append(motion)
+        header=QHBoxLayout();selector=QComboBox();selector.addItems(['Your check-in','Live expression']);selector.setAccessibleName('Card source');selector.setFixedWidth(185);selector.currentIndexChanged.connect(self.select_card_source);self.view_selectors.append(selector);header.addWidget(selector);header.addStretch();source=label('',12,True);self.state_labels.append((source,'source'));header.addWidget(source);motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(36);motion.setObjectName('navButton');header.addWidget(motion);self.motion_controls.append(motion)
         if mode==0:self.motion_button=motion
         sl.addLayout(header);middle=QHBoxLayout();middle.setSpacing(24)
         stage,stage_layout=panel('artStage',0);stage.setFixedSize(230,230);em=Emblem(220,mode=mode);self.emblems.append(em);stage_layout.addWidget(em,alignment=Qt.AlignmentFlag.AlignCenter);middle.addWidget(stage)
@@ -217,15 +226,56 @@ class MainWindow(QMainWindow):
         check=button('Choose a feeling',self.primary_action,True);self.checkin_controls.append(check)
         if mode==0:self.checkin_button=check
         words.addSpacing(10);words.addWidget(check);words.addStretch();middle.addLayout(words,1);sl.addLayout(middle,1)
-        dimensions,dl=panel('stateCard',14);self.add_dimensions(dl);sl.addWidget(dimensions);row.addWidget(state_panel,7)
+        dimensions,dl=panel('stateCard',14);dl.addWidget(label('Your reported CMA · updated by your check-in',12,True));self.add_dimensions(dl);sl.addWidget(dimensions);row.addWidget(state_panel,7)
         camera,cl=panel(padding=24);cl.setSpacing(14);ch=QHBoxLayout();ch.addWidget(label('Your camera',18,bold=True),1);status=label('',12,True);self.state_labels.append((status,'capture'));ch.addWidget(status);cl.addLayout(ch)
         preview=VideoPreview();preview.setMinimumSize(300,230);preview.setMaximumHeight(260);self.preview_widgets.append(preview);cl.addWidget(preview)
+        track=QCheckBox('Track expressions (experimental)');track.setAccessibleName('Track expressions');track.toggled.connect(self.toggle_expression_tracking);self.expression_controls.append(track);cl.addWidget(track)
         cl.addWidget(label('Optional preview. Your check-in is always your choice.',14,True));actions=QHBoxLayout();capture=button('Start camera',self.toggle_camera);self.camera_controls.append(capture);actions.addWidget(capture,1);file=button('Open video',self.open_video);self.file_controls.append(file);actions.addWidget(file,1);cl.addLayout(actions)
         if mode==0:self.capture_control=capture
         cl.addWidget(label('On this device · No recording · Microphone off',12,True));cue=label('',12,True);cue.setVisible(False);self.state_labels.append((cue,'cue'));cl.addWidget(cue);cl.addStretch();row.addWidget(camera,4)
         return body
 
     def return_to_session(self):self.refresh();self.scroll.verticalScrollBar().setValue(0)
+    def select_card_source(self,index):
+        self.live_view=index==1;self.refresh()
+
+    def toggle_expression_tracking(self,enabled):
+        source=self.worker.source if self.worker is not None and self.session.camera_active else None
+        if not self.pause():return
+        self.session.experimental_analysis=bool(enabled)
+        if enabled:self.live_view=True
+        if source is not None:self.start_source(source)
+        self.refresh()
+
+    def toggle_game_tracking(self):
+        if self.detect_games:self.stop_game_tracking();self.refresh()
+        else:self.configure_game_tracking(True,False)
+
+    def configure_game_tracking(self,enabled,screen):
+        if not self.stop_game_tracking():return
+        self.detect_games=bool(enabled or screen);self.screen_tracking=bool(screen);self.game_observation=None
+        if self.detect_games and sys.platform=='win32' and self.session.active:
+            worker=GameWorker(screen=self.screen_tracking);self.game_worker=worker
+            worker.observation.connect(lambda observation,w=worker:self.receive_game_observation(w,observation));worker.start()
+        elif self.detect_games:self.game_status.setText('Live game-window tracking requires Windows.')
+        self.refresh()
+
+    def stop_game_tracking(self):
+        if self.game_worker is not None:
+            if not self.game_worker.stop():return False
+            self.game_worker.deleteLater();self.game_worker=None
+        self.detect_games=False;self.screen_tracking=False;self.game_observation=None
+        return True
+
+    def receive_game_observation(self,worker,observation):
+        if worker is not self.game_worker or not self.session.active or self.session.break_deadline is not None:return
+        self.game_observation=observation
+        if observation.game:self.session.game=observation.game
+        self.refresh()
+
+    def mark_start_view(self):
+        if self.game_worker is not None and self.screen_tracking:
+            self.game_worker.mark_requested.set();self.game_status.setText('Switch to the game at your start view. The next captured game frame will be marked in memory.')
     def toggle_camera(self):
         if self.session.camera_active:self.pause()
         elif self.session.active and self.session.break_deadline is None:self.start_source(0)
@@ -284,7 +334,20 @@ class MainWindow(QMainWindow):
         elif s.break_deadline is not None:self.title.setText("A moment away")
         else:self.title.setText("Your session")
         self.subtitle.setText(s.game+"  ·  "+s.intention)
-        self.game_tag.setText("Competitive session" if s.competitive else "Manual game context")
+        self.game_tag.setText('Windows game detection' if self.detect_games else "Competitive session" if s.competitive else "Manual game context")
+        observation=self.game_observation
+        status=(observation.game+' · ' if observation and observation.game else '')+(observation.status if observation else 'Looking for a supported foreground game…' if sys.platform=='win32' else 'Live game-window tracking requires Windows')
+        if observation and observation.cue:status+=' · '+observation.cue
+        if self.detect_games:
+            if self.game_worker is not None and self.game_worker.mark_requested.is_set():status='Switch to Getting Over It at the start view to mark it.'
+            self.game_status.setText(status+(' · Screen sampling on' if self.screen_tracking else ' · Screen sampling off'))
+        else:self.game_status.setText('Game detection is off · Game events are not being observed.')
+        self.game_detection_control.setText('Stop game tracking' if self.detect_games else 'Detect game');self.game_detection_control.setEnabled(s.active and s.break_deadline is None)
+        self.mark_start_control.setVisible(self.screen_tracking and self.game_worker is not None)
+        for control in self.expression_controls:
+            control.blockSignals(True);control.setChecked(s.experimental_analysis);control.blockSignals(False);control.setEnabled(s.active and s.break_deadline is None)
+        for selector in self.view_selectors:
+            selector.blockSignals(True);selector.setCurrentIndex(1 if self.live_view else 0);selector.blockSignals(False)
         if self.tray is not None:self.tray.setToolTip("Checkpoint / "+("Capture active" if s.camera_active else "Capture off"))
         for control in self.camera_controls:
             control.setText('Pause video' if s.source_kind=='video' else 'Pause camera' if s.camera_active else 'Start camera');control.setEnabled(s.active and s.break_deadline is None)
@@ -305,13 +368,21 @@ class MainWindow(QMainWindow):
         if s.report:
             elapsed=int(s.reports[-1]['elapsed_seconds']);desc=f'Checked in at {elapsed//60:02d}:{elapsed%60:02d} into this session.'
         else:desc='Choose a card that fits this moment.' 
+        displayed=expression_display(s,max_age=max(3.,2/self.frequency)) if self.live_view else None
+        artwork=s.report
+        if displayed is not None:
+            title=displayed.title;desc=displayed.detail;source='Experimental estimate';artwork=displayed.artwork
         for obj,key in self.state_labels:
             if key=='cue':obj.setVisible(s.experimental_analysis)
             obj.setText({"title":title,"valence":valence,"energy":energy,"description":desc,"source":source,"cue":cue_text,"capture":"Video file" if s.source_kind=="video" else "On" if s.camera_active else "Off"}[key])
         for control in self.motion_controls:control.setText('Motion reduced' if self.reduced_motion else 'Resume animation' if self.motion_paused else 'Pause animation');control.setEnabled(not self.reduced_motion)
         for em in self.emblems:
             em.configure(theme=self.theme,reduced_motion=self.reduced_motion,paused=self.motion_paused,enabled=s.active and s.break_deadline is None)
-            em.set_state(s.report,s.valence,s.arousal)
+            if self.live_view:
+                # Fixed presentation coordinates animate artwork only; they are never CMA estimates.
+                em.set_state(artwork,0. if artwork else None,0. if artwork else None)
+                em.setAccessibleName(title)
+            else:em.set_state(s.report,s.valence,s.arousal)
         for preview in self.preview_widgets:
             if s.camera_active and self.last_image is not None:
                 if preview.isVisible():preview.set_image(self.last_image)
@@ -338,6 +409,7 @@ class MainWindow(QMainWindow):
         if not self.pause():return
         self.last_status=""
         if analyze is not None:self.session.experimental_analysis=bool(analyze)
+        if self.session.experimental_analysis:self.live_view=True
         try:
             generation=self.session.start_capture("camera" if isinstance(source,int) else "video")
             worker=CaptureWorker(source,analyze=self.session.experimental_analysis,frequency=self.frequency,generation=generation)
@@ -376,12 +448,14 @@ class MainWindow(QMainWindow):
         if self.session.break_deadline is not None:self.session.finish_break()
         else:
             if not self.pause():return
+            self.stop_game_tracking()
             self.session.take_break()
         self.refresh()
 
     def end_or_new(self):
         if not self.session.active:self.new_session();return
         if not self.pause():return
+        self.stop_game_tracking()
         self.session.end()
         if not self.saved:
             try:self.history.save(self.session.summary(),consent=self.retain);self.saved=True
@@ -392,6 +466,7 @@ class MainWindow(QMainWindow):
         dialog=SetupDialog(self,self.session)
         if dialog.exec()!=QDialog.DialogCode.Accepted:return
         if not self.pause():return
+        if not self.stop_game_tracking():return
         prior=self.session
         self.session=Session(game=dialog.game.currentText().strip()[:100] or "Other / manual",intention=dialog.intention.currentText(),competitive=dialog.competitive.isChecked(),experimental_analysis=prior.experimental_analysis,quiet=prior.quiet)
         self.saved=False;self.last_status="";self.refresh()
@@ -400,7 +475,9 @@ class MainWindow(QMainWindow):
         dialog=PreferencesDialog(self)
         if dialog.exec()!=QDialog.DialogCode.Accepted:return
         if not self.pause():return
-        self.session.experimental_analysis=dialog.experimental.isChecked();self.retain=dialog.retention.isChecked();self.frequency=dialog.frequency.value();self.reduced_motion=dialog.reduced.isChecked();self.refresh()
+        self.session.experimental_analysis=dialog.experimental.isChecked();self.retain=dialog.retention.isChecked();self.frequency=dialog.frequency.value();self.reduced_motion=dialog.reduced.isChecked()
+        if self.session.experimental_analysis:self.live_view=True
+        self.configure_game_tracking(dialog.detect_games.isChecked(),dialog.screen_tracking.isChecked());self.refresh()
 
     def show_history(self):
         dialog=QDialog(self);dialog.setWindowTitle("Local session history");dialog.resize(800,560);root=QVBoxLayout(dialog);root.setContentsMargins(28,28,28,28);root.addWidget(label("Your saved summaries",28,bold=True))
@@ -437,6 +514,7 @@ class MainWindow(QMainWindow):
 
     def closeEvent(self,event:QCloseEvent):
         if not self.pause():event.ignore();QTimer.singleShot(500,self.close);return
+        if not self.stop_game_tracking():event.ignore();QTimer.singleShot(500,self.close);return
         self.timer.stop();self.session.end()
         if self.tray is not None:self.tray.hide()
         if not self.saved:

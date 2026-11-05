@@ -1,9 +1,9 @@
-# Checkpoint Windows preview 0.1.0
+# Checkpoint Windows preview 2 — live expression cards and game observation
 
-Download **Checkpoint-Windows-Preview.zip**, extract the entire archive, open its folder and double-click **Start Checkpoint.cmd**. Windows 10/11 x64 is the target. Python and Qt are included.
+Extract the whole ZIP and run Start Checkpoint.cmd. This update fixes the missing connection between expression results and the large card: enable Track expressions (experimental) and start the camera, or open a local face video. Stable accepted estimates now update Live expression automatically. Your manual feeling and CMA stay independent.
 
-The native app includes 43 illustrated feeling cards, search, independent pleasantness and energy check-ins, optional own-camera/video preview, breaks and optional local session summaries. No gameplay capture or microphone is used. Facial-expression analysis is experimental, off by default, and cannot set mood or CMA.
+Settings also offers opt-in Getting Over It foreground-window observation. Sustained optical flow provides possible climb/fall cues; a player-marked start view can be matched. These are unvalidated heuristics, not a trained game-event or frustration detector. No raw screen/camera recording or upload occurs in normal use.
 
-27 checks passed in the original Linux workspace. The published package was assembled on a Windows runner, passed a [native launch and screenshot check](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/41971376058), and passed archive and model-hash verification. The download and SHA-256 checksum were also checked. Physical camera access and performance on your PC still need checking. The app is an unsigned research preview; model production release gates remain failed.
+34 checks passed in Linux, including real recorded-video face inference and card updates. The Windows build additionally gates publication on native launch and card/GDI capture fixture checks. Physical webcam, real Getting Over It event accuracy and game-performance checks remain outstanding. The expression model is unchanged: 77.1% held-out image accuracy, 29.8% external acted-video clip accuracy, failed production gates. The app remains an unsigned research preview.
 
-The bundled runtime was obtained from official Python/PyPI distributions and checked against the reviewed vendor hashes. SHA256SUMS.txt verifies the downloadable ZIP. Source, model evidence and third-party notices are in topics/checkpoint/app. Raw training images, research videos and reference-image downloads are excluded.
+See topics/checkpoint/app/docs/LIVE-TRACKING.md for controls, limitations and the next validation steps. Vendor runtime hashes are verified during assembly; the published SHA256SUMS.txt verifies the package.

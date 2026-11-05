@@ -49,6 +49,12 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Native Windows launch failed' }
           if (!(Test-Path ./windows-smoke.png)) { throw 'Native window screenshot missing' }
           Pop-Location
+      - name: Check Windows live card and game-window capture fixtures
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_tracking.py
+          if ($LASTEXITCODE -ne 0) { throw 'Windows live tracking fixture checks failed' }
+          Copy-Item artifacts/windows-tracking-smoke.json build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/live-tracking-tests.xml build/Checkpoint-Windows/docs/
       - name: Package and verify archive
         run: |
           python -m scripts.package_windows
@@ -64,16 +70,17 @@ jobs:
             topics/checkpoint/SHA256SUMS.txt
             topics/checkpoint/app/build/Checkpoint-Windows/windows-smoke.png
             topics/checkpoint/app/artifacts/windows-package-verification.json
+            topics/checkpoint/app/artifacts/windows-tracking-smoke.json
       - name: Publish downloadable research preview
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           RELEASE_COMMIT: ${{ github.sha }}
         run: |
-          $tag = 'checkpoint-v0.1.0-preview.1'
+          $tag = 'checkpoint-v0.1.0-preview.2'
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint Windows preview 0.1.0' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint Windows preview 0.1.0 — live tracking' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt --clobber

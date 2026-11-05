@@ -1,3 +1,7 @@
+# Preview 2 update
+
+See [live tracking](LIVE-TRACKING.md). The large card can now follow experimental expression estimates; CMA remains player-reported. Windows foreground-game detection and Getting Over It screen observation are implemented. Possible climb/fall and start-view cues are unvalidated heuristics, not trained or validated game-event/frustration inference. No real Getting Over It accuracy claim is made. The table below records the earlier build and must be read with this update.
+
 # Planned features and implementation status
 
 This maps the design brief to the native research build. “Implemented” means code exists; verification scope is stated separately.

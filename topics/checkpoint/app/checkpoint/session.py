@@ -28,6 +28,7 @@ class Session:
     quiet: bool = True
     source_kind: str | None = None
     cue: object | None = None
+    cue_received_at: float = 0.
     report: str | None = None
     valence: float | None = None
     arousal: float | None = None
@@ -59,7 +60,7 @@ class Session:
     def receive_cue(self, cue, generation):
         if not self.active or not self.camera_active or not self.experimental_analysis or generation!=self.generation:
             return False
-        self.cue=cue
+        self.cue=cue;self.cue_received_at=time.monotonic()
         return True
 
     def check_in(self, feeling, valence=None, arousal=None):
