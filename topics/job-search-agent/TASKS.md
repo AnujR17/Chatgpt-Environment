@@ -1,5 +1,16 @@
 # Tasks
 
+## 6 November research refresh
+
+- [x] Re-evaluate earlier pay exclusions under revised10k Gujarat/remoteIndia and15k other-city floors; preserve historical reasons and original units.
+- [x] Add9held roles:8internships and1fresher alternative,three explicit monthly stipends;retain all current-intake,location,eligibility and unit conflicts.
+- [x] Attempt76active primary URLs;68fetched,8restricted,5shells;19rotating term reviews,zero reliable retained closures.
+- [x] Add6company targets;refresh26/35coverage records andHN235IDs/198posts/50broadmatches with honest access/zero-result limits.
+- [x] Regenerate97-role/239-company workbook,556requirement rows andcompany CSV;preserve IDs,criterion text,source/exclusion history,queue,collector timestamp and browser-state compatibility.
+- [x] Build,18model/capture checks,fivecollector checks,preservation andlocal/live desktop/mobile checks pass;document pre-existing Gravity data-test failure without undoing closure.
+- [x] Push asAnujR17;publish exactdcf6cf17977adaeb83843315a7839c13bff20b22 toexisting production project. READYdpl_9zvqWEdXPfCtDPACJUg5uPrURQox,seven live files byte-exact,protection andclipper unchanged.
+- [x] No main/UI/extension/seed changes,applications/messages or private-browser access. Docs-only follow-up needs no redeploy.
+
 ## 5 November open-source capture integration
 
 - [x] Inspect reusable source/licences against current app;adapt MIT page reader with full notice and exact provenance.
