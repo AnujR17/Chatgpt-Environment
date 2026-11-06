@@ -1,14 +1,14 @@
 # Checkpoint with Nori
 
-Nori is a local Windows gaming companion. Its default **Reflection** view considers sustained visual patterns and your own check-ins. **Face preview** is an instant tester for facial and hand movements. CMA reports describe your reported pleasantness and activation; they do not invent a mood history from a webcam.
+Nori is a local Windows gaming companion. **Live reflection** provides smoothed expression feedback, a separate recent trend and a flat neutral fallback. **Movement test** inspects the face/hand tracker; **My check-in** records your own feeling and CMA. Check-ins never pin the live character. [Research, model comparisons and rebuild plan](docs/REBUILD-RESEARCH-AND-PLAN.md).
 
-Already on 0.3? Use **Settings → Check for updates → Update and restart**. The compatible app package includes the new hand model without replacing the native runtime. **[Full Windows download](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.4.0-preview.2/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.4.0-preview.2)
+Already on 0.3? Use **Settings → Check for updates → Update and restart**. The compatible app package includes the new hand model without replacing the native runtime. **[Full Windows download](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.5.0-preview.1/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.5.0-preview.1)
 
-For a fresh install, extract the full ZIP and run **Start Checkpoint.cmd**. Start your camera and optionally enable **Track face and hands**. Reflection uses a 20-second observation window and stable display holds; your confirmed check-in stays in charge. Choose **Face preview** for immediate movement tests, or **Open video** to test a local clip. **Show Nori** enables the frameless companion. Hold **Ctrl+Alt and drag**, then release to lock its position. **Phone dashboard** pairs on the same trusted private Wi-Fi.
+For a fresh install, extract the full ZIP and run **Start Checkpoint.cmd**. Choose **Start face tracking** to enable local analysis and open the camera in one action. The previous 20-second window and 30-second hold are removed. Clean sustained signals changed poses in 0.5–0.9 seconds in deterministic replay; actual camera latency and recognition vary. **Open video** tests a local clip. **Show Nori** enables the frameless companion. Hold **Ctrl+Alt and drag**, then release to lock its position. **Phone dashboard** pairs on the same trusted private Wi-Fi.
 
 [Reflection, face mapping, CMA and dragging](docs/NORI-REFLECTION-AND-CMA.md) · [Updates](docs/IN-APP-UPDATES.md) · [Camera/phone troubleshooting](docs/CAMERA-AND-PHONE-TROUBLESHOOTING.md) · [Video testing](docs/VIDEO-EXPRESSION-TESTING.md)
 
-![Nori reflection screen with explicitly synthetic check-ins](artifacts/nori-reflection-screen.png)
+![Current native interface with labelled synthetic signals and a separate check-in](artifacts/nori-responsive-reflection.png)
 
 All 43 feeling words have selectable character profiles. They are not 43 trained camera classes. The default tracker combines physical face/hand cues with separate eight-class HSEmotion scores. It distinguishes mouth widening from smiling and withholds hidden mouth cues under possible hand occlusion. Visible teeth use a conservative image heuristic. These features need target-person checking; model scores cannot establish felt emotion or either CMA axis.
 

@@ -37,7 +37,7 @@ def test_geometry_is_bounded_and_continuous_across_state_space():
 def test_motion_lifecycle_and_two_slider_checkin(tmp_path):
     app=create_application([]);w=MainWindow(no_setup=True,data_dir=tmp_path);w.show();QTest.qWait(40)
     assert all(not e.timer.isActive() for e in w.emblems)
-    w.session.check_in('happy');w.refresh();QTest.qWait(50)
+    w.session.check_in('happy');w.select_card_source(2);w.refresh();QTest.qWait(50)
     assert w.emblems[0].timer.isActive() and not w.emblems[1].timer.isActive()
     w.change_view(2);assert not w.emblems[0].timer.isActive() and w.emblems[2].timer.isActive()
     w.toggle_motion();assert all(not e.timer.isActive() for e in w.emblems)

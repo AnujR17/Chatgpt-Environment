@@ -101,12 +101,15 @@ class NoriWidget(AffectWidget):
         super().set_state(state,valence,arousal)
         self.setAccessibleName(CHARACTER_NAME+' · '+(str(state) if state else 'no current estimate'))
 
-    def set_movement(self,movement):
+    def set_movement(self,movement,*,authored=False):
         if self.movement is not None and movement is None:
             self.interpolated();self.pip_to=parameters(self.current_state,*self.report_coords)
         self.movement=movement
         if movement:
-            target=movement_visual({k:float(v) for k,v in movement.items() if k in BASE})
+            values={k:float(v) for k,v in movement.items() if k in BASE}
+            if authored:
+                target=parameters(self.current_state);target.update(values)
+            else:target=movement_visual(values)
             if target!=self.pip_to:self.interpolated();self.pip_to=target
         if movement and movement.get('mouth_visible',1)<.5:
             for key in ('smile','jaw','teeth','laugh','mouth_wide'):self.pip_current[key]=0.

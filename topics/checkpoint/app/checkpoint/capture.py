@@ -38,11 +38,12 @@ def open_camera(index, interrupted=lambda: False, *, platform=None):
 
 
 class CaptureWorker(QThread):
-    def __init__(self, source, *, analyze=False, frequency=2, generation=0, realtime=True,face_mapping=False,face_gain=1.5,hands=True,categories=True):
+    def __init__(self, source, *, analyze=False, frequency=8, generation=0, realtime=True,face_mapping=False,face_gain=1.5,hands=True,categories=True):
         super().__init__()
-        self.source=source;self.analyze=analyze;self.frequency=max(.25,min(5,float(frequency)));self.generation=generation
+        self.source=source;self.analyze=analyze;self.frequency=max(.25,min(15,float(frequency)));self.generation=generation
         self.realtime=realtime;self.lock=threading.Lock();self.latest_image=None;self.latest_cue=None
         self.finished_reason='';self.error='';self.analysis_error='';self.frames=0;self.backend=''
+        self.pending_frame=None;self.analysis_stop=threading.Event();self.frame_ready=threading.Condition(self.lock);self.analysis_thread=None
         self.face_mapping=face_mapping;self.neutral_requested=threading.Event();self.face_gain=face_gain;self.hands=hands;self.categories=categories
 
     def take_latest(self):
@@ -61,8 +62,41 @@ class CaptureWorker(QThread):
         self.analysis_error=str(ex)
         with self.lock:self.latest_cue=(self.generation,Cue('unavailable',reason='Face tracking unavailable. Camera preview remains available. '+str(ex)))
 
+    def submit_analysis(self,frame,now):
+        if not self.analyze:return
+        with self.frame_ready:
+            # Capacity one: replace an unprocessed frame instead of adding latency.
+            self.pending_frame=(frame.copy(),now);self.frame_ready.notify()
+
+    def analyze_latest(self):
+        model=None
+        try:
+            from checkpoint.runtime import FacePipeline
+            if self.face_mapping:
+                from checkpoint.face_mapping import LandmarkPipeline
+                model=LandmarkPipeline(hands=self.hands,categories=self.categories);model.gain=self.face_gain
+            else:model=FacePipeline(pretrained=True)
+            next_analysis=0.
+            while not self.analysis_stop.is_set():
+                with self.frame_ready:
+                    while not self.analysis_stop.is_set() and (self.pending_frame is None or time.monotonic()<next_analysis):
+                        self.frame_ready.wait(timeout=.03)
+                    if self.analysis_stop.is_set():break
+                    frame,captured_at=self.pending_frame;self.pending_frame=None
+                if time.monotonic()-captured_at>1.:continue
+                if self.face_mapping and self.neutral_requested.is_set():model.start_neutral();self.neutral_requested.clear()
+                started=time.monotonic();cue=model.infer(frame)
+                if not self.analysis_stop.is_set() and time.monotonic()-captured_at<=1.:
+                    with self.lock:self.latest_cue=(self.generation,cue)
+                next_analysis=started+1/self.frequency
+        except Exception as ex:self.tracking_failed(ex)
+        finally:
+            if model is not None and hasattr(model,'close'):
+                try:model.close()
+                except Exception:pass
+
     def run(self):
-        capture=None;model=None;smoother=None;first=None
+        capture=None;first=None
         try:
             if isinstance(self.source,str) and '://' in self.source:raise ValueError('Only local video files and local camera devices are supported')
             if isinstance(self.source,int):
@@ -77,14 +111,9 @@ class CaptureWorker(QThread):
             fps=capture.get(cv2.CAP_PROP_FPS)
             frame_period=1/min(30,max(1,fps if fps>0 else 15))
             if self.analyze and not self.isInterruptionRequested():
-                try:
-                    from checkpoint.runtime import FacePipeline,CueSmoother
-                    if self.face_mapping:
-                        from checkpoint.face_mapping import LandmarkPipeline
-                        model=LandmarkPipeline(hands=self.hands,categories=self.categories);model.gain=self.face_gain
-                    else:model=FacePipeline(pretrained=True);smoother=CueSmoother()
-                except Exception as ex:self.tracking_failed(ex)
-            next_analysis=0.;next_preview=0.
+                self.analysis_thread=threading.Thread(target=self.analyze_latest,name='Checkpoint inference',daemon=True)
+                self.analysis_thread.start()
+            next_preview=0.
             while not self.isInterruptionRequested():
                 t=time.monotonic()
                 if first is not None:frame=first;first=None;ok=True
@@ -96,19 +125,7 @@ class CaptureWorker(QThread):
                     break
                 # Publish preview before inference; an ML error must never remove the camera feed.
                 if t>=next_preview:self.publish_preview(frame);next_preview=t+1/15
-                if model is not None and t>=next_analysis:
-                    try:
-                        if self.face_mapping and self.neutral_requested.is_set():model.start_neutral();self.neutral_requested.clear()
-                        cue=model.infer(frame)
-                        if smoother is not None:cue=smoother.update(cue)
-                        with self.lock:self.latest_cue=(self.generation,cue)
-                    except Exception as ex:
-                        self.tracking_failed(ex)
-                        if hasattr(model,'close'):
-                            try:model.close()
-                            except Exception:pass
-                        model=None
-                    next_analysis=t+1/self.frequency
+                self.submit_analysis(frame,t)
                 if self.realtime:
                     remaining=frame_period-(time.monotonic()-t)
                     while remaining>0 and not self.isInterruptionRequested():
@@ -116,11 +133,11 @@ class CaptureWorker(QThread):
         except InterruptedError:self.finished_reason='Camera opening cancelled'
         except Exception as ex:self.error=str(ex)
         finally:
-            if model is not None and hasattr(model,'close'):
-                try:model.close()
-                except Exception:pass
+            self.analysis_stop.set()
+            with self.frame_ready:self.frame_ready.notify_all()
+            if self.analysis_thread is not None:self.analysis_thread.join()
             if capture is not None:capture.release()
-            with self.lock:self.latest_image=None;self.latest_cue=None
+            with self.lock:self.latest_image=None;self.latest_cue=None;self.pending_frame=None
 
     def stop(self, timeout=3000):
         self.requestInterruption();return self.wait(timeout)

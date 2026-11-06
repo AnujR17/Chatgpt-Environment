@@ -1,0 +1,115 @@
+{
+  "fixture": "Seven existing RAVDESS actor04 acted clips, realtime playback, no training; smoke evidence only",
+  "captures": "Preview and inference run independently; actual landmarks, hands and HSE inference enabled",
+  "cma_invented": false,
+  "results": [
+    {
+      "file": "02-01-01-01-01-01-04.mp4",
+      "sampled_results": 18,
+      "usable_results": 18,
+      "preview_frames": 99,
+      "seconds_from_start_to_first_reflected_pose": null,
+      "pipeline_ms_median": 50.4,
+      "model_labels": {
+        "uncertain": 18
+      },
+      "reflected_labels": {
+        "Expression unclear": 18
+      }
+    },
+    {
+      "file": "02-01-03-01-01-01-04.mp4",
+      "sampled_results": 24,
+      "usable_results": 24,
+      "preview_frames": 105,
+      "seconds_from_start_to_first_reflected_pose": 1.729,
+      "pipeline_ms_median": 37.1,
+      "model_labels": {
+        "uncertain": 12,
+        "happiness": 12
+      },
+      "reflected_labels": {
+        "Expression unclear": 19,
+        "An open smile": 5
+      }
+    },
+    {
+      "file": "02-01-05-01-01-01-04.mp4",
+      "sampled_results": 27,
+      "usable_results": 27,
+      "preview_frames": 111,
+      "seconds_from_start_to_first_reflected_pose": 3.39,
+      "pipeline_ms_median": 31.83,
+      "model_labels": {
+        "uncertain": 27
+      },
+      "reflected_labels": {
+        "Expression unclear": 23,
+        "Neutral expression": 4
+      }
+    },
+    {
+      "file": "02-01-04-01-01-01-04.mp4",
+      "sampled_results": 24,
+      "usable_results": 24,
+      "preview_frames": 101,
+      "seconds_from_start_to_first_reflected_pose": null,
+      "pipeline_ms_median": 31.11,
+      "model_labels": {
+        "uncertain": 24
+      },
+      "reflected_labels": {
+        "Expression unclear": 24
+      }
+    },
+    {
+      "file": "02-01-06-01-01-01-04.mp4",
+      "sampled_results": 24,
+      "usable_results": 24,
+      "preview_frames": 99,
+      "seconds_from_start_to_first_reflected_pose": 3.074,
+      "pipeline_ms_median": 31.17,
+      "model_labels": {
+        "uncertain": 21,
+        "fear": 3
+      },
+      "reflected_labels": {
+        "Expression unclear": 21,
+        "Neutral expression": 3
+      }
+    },
+    {
+      "file": "02-01-07-01-01-01-04.mp4",
+      "sampled_results": 28,
+      "usable_results": 28,
+      "preview_frames": 117,
+      "seconds_from_start_to_first_reflected_pose": null,
+      "pipeline_ms_median": 31.91,
+      "model_labels": {
+        "disgust": 13,
+        "uncertain": 12,
+        "sadness": 3
+      },
+      "reflected_labels": {
+        "Expression unclear": 28
+      }
+    },
+    {
+      "file": "02-01-08-01-01-01-04.mp4",
+      "sampled_results": 24,
+      "usable_results": 24,
+      "preview_frames": 97,
+      "seconds_from_start_to_first_reflected_pose": 1.088,
+      "pipeline_ms_median": 33.2,
+      "model_labels": {
+        "uncertain": 21,
+        "fear": 3
+      },
+      "reflected_labels": {
+        "Expression unclear": 20,
+        "Neutral expression": 4
+      }
+    }
+  ],
+  "limits": "Not target-webcam/gamer accuracy; no confusion/recall estimate from this smoke selection"
+}

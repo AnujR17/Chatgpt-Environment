@@ -39,3 +39,10 @@
 - [x] Add Ctrl+Alt/tray dragging with click-through restoration and saved placement.
 - [x] Publish/verify 0.4 native Windows and in-app payload (run 42034826447; real public app payload staged using 0.3 client compatibility).
 - [ ] Validate subjective usefulness, hand-mouth/teeth performance and a real update on the user's device.
+
+- [x] Investigate slow reflection, manual-report pinning, model integration and capture blocking.
+- [x] Research primary sources and compare B2/MobileFaceNet against B0 on the same 208 acted clips; retain B0 on measured trade-offs.
+- [x] Implement adaptive filtering, responsive authored poses, a separate recent trend, latest-frame inference and one-action camera flow.
+- [x] Verify replay, actual video smoke, 96 local tests and paired browser/PDF; expose substantial recognition uncertainty in the research plan.
+- [ ] Verify/publish the 0.5 Windows release and public app update payload.
+- [ ] Evaluate subject-separated natural gaming/webcam recognition and usefulness; no reliable 43-emotion claim.

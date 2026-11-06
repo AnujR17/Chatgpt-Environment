@@ -63,6 +63,9 @@ QPushButton#emotionCard {{ min-height: 208px; min-width: 190px; background: {c['
 QPushButton#emotionCard:hover {{ border: 2px solid {c['accent']}; background: {c['surface_alt']}; }}
 QPushButton#emotionCard:focus {{ border: 3px solid {c['accent']}; padding: 0; }}
 QLineEdit {{ min-height: 22px; }}
+QTabBar::tab {{ background: {c['surface_alt']}; color: {c['secondary']}; padding: 10px 12px; border: 0; margin-right: 4px; border-radius: 7px; }}
+QTabBar::tab:selected {{ background: {c['accent']}; color: {c['on_accent']}; }}
+QTabBar::tab:focus {{ border: 2px solid {c['accent']}; }}
 '''
 
 STYLE=make_style()

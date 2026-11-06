@@ -112,3 +112,34 @@ def test_firewall_helper_is_private_subnet_exact_port_app_scoped_and_quotes_path
     assert "C:\\Anuj''s files\\runtime\\pythonw.exe" in command and 'python.exe' in command
     assert '-Profile Any' not in command and '-Profile Public' not in command and 'Set-NetFirewallProfile' not in command
     with pytest.raises(ValueError):private_firewall_command(0)
+
+
+def test_camera_continues_during_slow_inference_and_pending_frame_capacity_is_one(monkeypatch):
+    import threading
+    import checkpoint.face_mapping as mapping
+    from checkpoint.cues import Cue
+    entered=threading.Event();release=threading.Event();closed=threading.Event()
+    class SlowModel:
+        def __init__(self,**kwargs):
+            entered.set();release.wait(2)
+        def infer(self,frame):
+            time.sleep(.15);return Cue('accepted','neutral',.9)
+        def close(self):closed.set()
+    camera=CameraFixture()
+    monkeypatch.setattr(capture_module,'open_camera',lambda *a:(camera,camera.frame.copy(),'Fixture'))
+    monkeypatch.setattr(mapping,'LandmarkPipeline',SlowModel)
+    worker=capture_module.CaptureWorker(0,analyze=True,face_mapping=True,frequency=8);worker.start()
+    try:
+        assert entered.wait(2)
+        time.sleep(.25)
+        assert worker.frames>=5, 'Camera was blocked by model initialization'
+        image,cue=worker.take_latest();assert image is not None and cue is None
+        with worker.lock:assert isinstance(worker.pending_frame,tuple) and len(worker.pending_frame)==2
+        release.set();deadline=time.monotonic()+3
+        while time.monotonic()<deadline:
+            image,cue=worker.take_latest()
+            if cue:break
+            time.sleep(.02)
+        assert cue and worker.frames>=8
+    finally:
+        release.set();assert worker.stop();assert camera.released and closed.is_set()

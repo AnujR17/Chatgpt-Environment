@@ -1,0 +1,424 @@
+{
+  "fixture": "Synthetic time-stamped face signals, not camera latency or emotion accuracy",
+  "baseline_commit": "ab0c2541e717cdaf96e4d5217d804a71f5490657",
+  "fps": {
+    "4": {
+      "previous": {
+        "neutral": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "smile": {
+          "first_matching_pose_seconds": 12.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            },
+            {
+              "after_seconds": 12.0,
+              "artwork": "contented"
+            }
+          ]
+        },
+        "tense": {
+          "first_matching_pose_seconds": 22.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "contented"
+            },
+            {
+              "after_seconds": 22.0,
+              "artwork": "frustrated"
+            }
+          ]
+        },
+        "neutral_return": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "frustrated"
+            }
+          ]
+        },
+        "hidden": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "frustrated"
+            }
+          ]
+        },
+        "recover_smile": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "frustrated"
+            }
+          ]
+        }
+      },
+      "rebuild": {
+        "neutral": {
+          "first_matching_pose_seconds": 0.75,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            },
+            {
+              "after_seconds": 0.75,
+              "artwork": "composed"
+            }
+          ]
+        },
+        "smile": {
+          "first_matching_pose_seconds": 0.5,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "composed"
+            },
+            {
+              "after_seconds": 0.5,
+              "artwork": "happy"
+            }
+          ]
+        },
+        "tense": {
+          "first_matching_pose_seconds": 0.5,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "happy"
+            },
+            {
+              "after_seconds": 0.5,
+              "artwork": "angry"
+            }
+          ]
+        },
+        "neutral_return": {
+          "first_matching_pose_seconds": 1.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "angry"
+            },
+            {
+              "after_seconds": 1.0,
+              "artwork": "composed"
+            }
+          ]
+        },
+        "hidden": {
+          "first_matching_pose_seconds": 0.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "recover_smile": {
+          "first_matching_pose_seconds": 0.5,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            },
+            {
+              "after_seconds": 0.5,
+              "artwork": "happy"
+            }
+          ]
+        }
+      }
+    },
+    "8": {
+      "previous": {
+        "neutral": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "smile": {
+          "first_matching_pose_seconds": 12.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            },
+            {
+              "after_seconds": 12.0,
+              "artwork": "contented"
+            }
+          ]
+        },
+        "tense": {
+          "first_matching_pose_seconds": 22.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "contented"
+            },
+            {
+              "after_seconds": 22.0,
+              "artwork": "frustrated"
+            }
+          ]
+        },
+        "neutral_return": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "frustrated"
+            }
+          ]
+        },
+        "hidden": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "frustrated"
+            }
+          ]
+        },
+        "recover_smile": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "frustrated"
+            }
+          ]
+        }
+      },
+      "rebuild": {
+        "neutral": {
+          "first_matching_pose_seconds": 0.75,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            },
+            {
+              "after_seconds": 0.75,
+              "artwork": "composed"
+            }
+          ]
+        },
+        "smile": {
+          "first_matching_pose_seconds": 0.5,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "composed"
+            },
+            {
+              "after_seconds": 0.5,
+              "artwork": "happy"
+            }
+          ]
+        },
+        "tense": {
+          "first_matching_pose_seconds": 0.625,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "happy"
+            },
+            {
+              "after_seconds": 0.625,
+              "artwork": "angry"
+            }
+          ]
+        },
+        "neutral_return": {
+          "first_matching_pose_seconds": 0.875,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "angry"
+            },
+            {
+              "after_seconds": 0.875,
+              "artwork": "composed"
+            }
+          ]
+        },
+        "hidden": {
+          "first_matching_pose_seconds": 0.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "recover_smile": {
+          "first_matching_pose_seconds": 0.5,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            },
+            {
+              "after_seconds": 0.5,
+              "artwork": "happy"
+            }
+          ]
+        }
+      }
+    },
+    "12": {
+      "previous": {
+        "neutral": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "smile": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "tense": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "neutral_return": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "hidden": {
+          "first_matching_pose_seconds": 0.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "recover_smile": {
+          "first_matching_pose_seconds": null,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        }
+      },
+      "rebuild": {
+        "neutral": {
+          "first_matching_pose_seconds": 0.667,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            },
+            {
+              "after_seconds": 0.667,
+              "artwork": "composed"
+            }
+          ]
+        },
+        "smile": {
+          "first_matching_pose_seconds": 0.5,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "composed"
+            },
+            {
+              "after_seconds": 0.5,
+              "artwork": "happy"
+            }
+          ]
+        },
+        "tense": {
+          "first_matching_pose_seconds": 0.583,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "happy"
+            },
+            {
+              "after_seconds": 0.583,
+              "artwork": "angry"
+            }
+          ]
+        },
+        "neutral_return": {
+          "first_matching_pose_seconds": 0.75,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": "angry"
+            },
+            {
+              "after_seconds": 0.75,
+              "artwork": "composed"
+            }
+          ]
+        },
+        "hidden": {
+          "first_matching_pose_seconds": 0.0,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            }
+          ]
+        },
+        "recover_smile": {
+          "first_matching_pose_seconds": 0.5,
+          "transitions": [
+            {
+              "after_seconds": 0.0,
+              "artwork": null
+            },
+            {
+              "after_seconds": 0.5,
+              "artwork": "happy"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

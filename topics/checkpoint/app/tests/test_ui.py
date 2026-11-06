@@ -30,7 +30,7 @@ def test_native_starts_private_and_all_visual_views_load(window):
 
 
 def test_manual_checkin_cma_is_immediate_and_camera_stays_off(window):
-    window.session.check_in("engaged");window.refresh()
+    window.session.check_in("engaged");window.select_card_source(2);window.refresh()
     assert all(obj.text()=="Engaged" for obj,key in window.state_labels if key=="title")
     assert not window.session.camera_active
     window.toggle_break();assert window.session.break_deadline is not None

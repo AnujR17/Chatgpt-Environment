@@ -44,6 +44,11 @@ jobs:
           Copy-Item docs/IN-APP-UPDATES.md build/Checkpoint-Windows/docs/
           Copy-Item docs/EXPRESSIVE-PIP.md build/Checkpoint-Windows/docs/
           Copy-Item docs/NORI-REFLECTION-AND-CMA.md build/Checkpoint-Windows/docs/
+          Copy-Item docs/REBUILD-RESEARCH-AND-PLAN.md build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/reflection-replay.json build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/rebuild-model-comparison.json build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/rebuild-mobileface-comparison.json build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/reflection-video-smoke.json build/Checkpoint-Windows/docs/
           Copy-Item docs/CAMERA-AND-PHONE-TROUBLESHOOTING.md build/Checkpoint-Windows/docs/
           Copy-Item docs/VIDEO-AND-MODEL-RESEARCH.md build/Checkpoint-Windows/docs/
           Copy-Item artifacts/cards-app-tests.xml build/Checkpoint-Windows/docs/
@@ -101,7 +106,7 @@ jobs:
           $tag = python -c "from checkpoint.version import RELEASE_TAG; print(RELEASE_TAG)"
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint — Nori reflection and CMA reports' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint 0.5 — responsive Nori reflection' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip --clobber

@@ -32,13 +32,15 @@ class CompanionState:
         report=cma_summary(session,activity)
         if reflection_summary:report['observations']=reflection_summary
         visual=parameters(artwork) if display and display.source!='player_report' else parameters(artwork,session.valence,session.arousal)
-        if display and display.movement:visual=movement_visual(display.movement)
+        if display and display.movement:
+            if display.source=='visual_pattern':visual.update(display.movement)
+            else:visual=movement_visual(display.movement)
         state={'version':2,'character':CHARACTER_NAME,'updated_at':time.time(),'elapsed_seconds':elapsed,
             'animate':bool(motion_enabled and session.active and session.break_deadline is None),'active':session.active,'paused':session.break_deadline is not None,'game':session.game,
-            'title':title,'source':source,'artwork':artwork,'blob':visual,'unknown':artwork is None,
+            'detail':display.detail if display else '', 'title':title,'source':source,'artwork':artwork,'blob':visual,'unknown':artwork is None,
             'camera_active':session.camera_active,'capture_source':session.source_kind,'game_status':game_status,'game_cue':cue,
             'checkin':{'title':session.affect[0],'pleasantness':session.affect[1],'activation':session.affect[2]},
-            'model_estimate':category_estimate(session.cue) if display and display.source in ('face_movement','expression_estimate') else None,
+            'model_estimate':category_estimate(session.cue) if display and display.source in ('face_movement','expression_estimate','visual_pattern') else None,
             'input':input_stats or {'status':'Input observation off'},'nudge':self.nudge,
             'cma_report':{k:report['cma'][k] for k in ('count','trend','insight','next_step','latest')}}
         return state,report

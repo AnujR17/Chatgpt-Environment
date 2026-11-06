@@ -23,6 +23,21 @@ window.session.receive_cue(Cue('accepted', 'anger', .9), generation)
 window.refresh(); app.processEvents()
 assert window.emblems[0].current_state == 'angry'
 assert (window.session.report, window.session.valence, window.session.arousal) == ('calm', .6, -.4)
+# Exercise default reflection through the real Qt refresh path and preserve check-ins.
+from checkpoint.face_mapping import neutral_movement
+window.select_card_source(0)
+for _ in range(9):
+    m=neutral_movement();m.update(smile=.75,cheek=.5)
+    window.session.receive_cue(Cue('accepted','happiness',movement=m),generation)
+    window.refresh();QTest.qWait(125)
+assert window.emblems[0].current_state=='happy','Default reflection did not respond'
+assert window.session.report=='calm','Live tracking overwrote the check-in'
+window.session.check_in('sad',-.5,-.4);window.refresh()
+assert window.emblems[0].current_state=='happy','Check-in pinned live reflection'
+window.grab().save(str(ROOT/'build/Checkpoint-Windows/windows-responsive-reflection.png'))
+window.select_card_source(1)
+window.session.receive_cue(Cue('accepted','anger',.9),generation);window.refresh()
+
 user=ctypes.WinDLL('user32');user.GetForegroundWindow.restype=wintypes.HWND
 before=user.GetForegroundWindow();window.toggle_overlay();QTest.qWait(150)
 assert user.GetForegroundWindow()==before,'Overlay stole focus'
@@ -69,7 +84,7 @@ finally:
     game_module.active_game = original
 window.pause(); assert window.emblems[0].current_state is None
 window.close(); app.processEvents()
-result = {'windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_fixture': 'passed',
+result = {'windows_native_responsive_reflection_fixture':'passed','checkin_does_not_pin_live_reflection':'passed','windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_fixture': 'passed',
           'reject_wrong_window': 'passed', 'pause_clears_live_card': 'passed',
           'player_report_preserved': 'passed','overlay_no_focus_steal':'passed','overlay_native_clickthrough_style':'passed',
           'raw_input_registration':'passed','face_landmarker_native_load':'passed','hsemotion_inference':'passed','phone_loopback_api':'passed',

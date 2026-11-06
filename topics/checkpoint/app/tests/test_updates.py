@@ -7,6 +7,7 @@ import stat
 import zipfile
 import pytest
 from checkpoint import updates as u
+from checkpoint.version import APP_VERSION
 
 
 def zip_bytes(files):
@@ -22,10 +23,11 @@ def fixture(tmp_path):
     (root/'runtime/pythonw.exe').write_bytes(b'fixture-runtime');(root/'launch.py').write_text('old-launch')
     (root/'runtime-sources.json').write_text(json.dumps({'python':{'sha256':'a'*64},'wheels':{'fixture.whl':'b'*64}}))
     (root/'artifacts/face.onnx').write_bytes(b'fixture-model')
-    files={'checkpoint/version.py':b"APP_VERSION = '0.4.1'\n",'checkpoint/__init__.py':b'', 'checkpoint/new.py':b'new code'}
+    next_version=str(int(APP_VERSION.split('.')[0])+1)+'.0.0'
+    files={'checkpoint/version.py':f"APP_VERSION = '{next_version}'\n".encode(),'checkpoint/__init__.py':b'', 'checkpoint/new.py':b'new code'}
     data=zip_bytes(files)
     sha=lambda b:hashlib.sha256(b).hexdigest()
-    manifest={'protocol':1,'tag':'checkpoint-v0.4.1-preview.1','version':'0.4.1',
+    manifest={'protocol':1,'tag':'checkpoint-v'+next_version+'-preview.1','version':next_version,
       'runtime':u.runtime_fingerprint(json.loads((root/'runtime-sources.json').read_text())),
       'models':{'artifacts/face.onnx':sha(b'fixture-model')},
       'app':{'name':'Checkpoint-App-Update.zip','bytes':len(data),'sha256':sha(data),'files':{p:sha(v) for p,v in files.items()}},

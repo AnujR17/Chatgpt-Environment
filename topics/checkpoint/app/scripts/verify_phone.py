@@ -17,10 +17,10 @@ async def main():
     flat={'smile':0.,'brow':0.,'eyes':1.,'jaw':0.,'tension':0.}
     window.session.receive_cue(Cue('accepted','neutral',movement=flat,mapping_label='Neutral appearance'),generation)
     window.overlay_enabled=True;window.refresh();window.phone_server=PhoneServer(window.phone_bridge,host='127.0.0.1',port=0).start()
-    running=True
+    running=True;keep_fresh=True
     async def pulse():
         while running:
-            if window.session.cue is not None:window.session.cue_received_at=time.monotonic()
+            if keep_fresh and window.session.cue is not None:window.session.cue_received_at=time.monotonic()
             app.processEvents();await asyncio.sleep(.02)
     task=asyncio.create_task(pulse());errors=[]
     try:
@@ -62,6 +62,14 @@ async def main():
             window.session.receive_cue(Cue('accepted','anger',movement=brow,mapping_label='Brows drawn'),generation);window.next_export=0.;window.refresh()
             await page.get_by_role('heading',name='Brows drawn',exact=True).wait_for();await asyncio.sleep(1.3)
             await page.screenshot(path=str(ROOT/'artifacts/nori-phone-brows.png'),full_page=True)
+            # Exercise the default reflection at a real 8Hz signal cadence, not only Movement test.
+            keep_fresh=False;window.select_card_source(0)
+            for _ in range(12):
+                window.session.receive_cue(Cue('accepted','happiness',movement={**happy,'cheek':.5},mapping_label='Smile movement'),generation)
+                window.next_export=0.;window.refresh();await asyncio.sleep(.125)
+            await page.get_by_role('heading',name='Smile-like expression',exact=True).wait_for()
+            assert await page.evaluate('latest.source==="visual_pattern" && latest.blob.smile>0.5')
+            await page.screenshot(path=str(ROOT/'artifacts/nori-phone-reflection.png'),full_page=True)
             assert window.latest_report['cma']['count']==0, 'Face cues must not invent CMA check-ins'
             window.session.check_in('angry',-.7,.8);window.session.check_in('calm',.6,-.6);window.next_export=0.;window.refresh()
             await page.get_by_text('2 CMA check-ins',exact=True).wait_for()
@@ -69,6 +77,8 @@ async def main():
             download=await download_info.value;pdf=Path(await download.path()).read_bytes()
             assert pdf.startswith(b'%PDF-') and len(pdf)>5000
             assert window.latest_report['schema']==3 and 'moments' not in window.latest_report
+            assert window.latest_companion['source']=='visual_pattern' and window.latest_companion['artwork']=='happy', 'Check-in pinned the live character'
+            window.select_card_source(1);keep_fresh=True
             window.session.receive_cue(Cue('unavailable',reason='No face detected'),generation);window.next_export=0.;window.refresh()
             await page.get_by_role('heading',name='No face detected',exact=True).wait_for()
             # Unknown face renders a flat neutral appearance without asserting a neutral emotion.
@@ -78,7 +88,7 @@ async def main():
             assert not errors,errors
             await browser.close()
         result={'browser':'Chromium, 390x844 phone viewport','fixture':'Synthetic physical-face cues, not live recognition',
-                'native_to_phone_updates':'passed','open_smile_animation':'passed','paired_reduced_motion':'passed','neutral_fallback':'passed','report_download':'PDF passed','hand_mouth_mask':'passed','visible_teeth_presentation':'passed','cma_uses_checkins_only':'passed','disconnection':'passed','horizontal_overflow':'none','javascript_errors':errors,
+                'default_reflection_and_manual_separation':'passed','native_to_phone_updates':'passed','open_smile_animation':'passed','paired_reduced_motion':'passed','neutral_fallback':'passed','report_download':'PDF passed','hand_mouth_mask':'passed','visible_teeth_presentation':'passed','cma_uses_checkins_only':'passed','disconnection':'passed','horizontal_overflow':'none','javascript_errors':errors,
                 'physical_phone_network':'not tested'}
         (ROOT/'artifacts/nori-phone-verification.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
     finally:

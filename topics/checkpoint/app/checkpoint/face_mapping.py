@@ -10,7 +10,7 @@ from checkpoint.face_detail import mouth_polygon,hand_mouth,visible_teeth
 
 def neutral_movement():
     return dict(smile=0.,brow=0.,eyes=1.,eye_left=1.,eye_right=1.,brow_skew=0.,jaw=0.,tension=0.,laugh=0.,
-                mouth_wide=0.,pressed=0.,pucker=0.,snarl=0.,asymmetry=0.,teeth=0.,hand=0.,hand_side=1.,mouth_visible=1.)
+                cheek=0.,mouth_wide=0.,pressed=0.,pucker=0.,snarl=0.,asymmetry=0.,teeth=0.,hand=0.,hand_side=1.,mouth_visible=1.)
 
 
 def movement_parameters(scores,baseline=None,gain=1.5):
@@ -37,7 +37,7 @@ def movement_parameters(scores,baseline=None,gain=1.5):
     laughing=clip((positive-.2)/.65)*clip((jaw-.12)/.5)
     result=neutral_movement();result.update(smile=deadband(positive-negative),brow=deadband(brow),eyes=sum(eyes)/2,
         eye_left=eyes[0],eye_right=eyes[1],jaw=deadband(jaw),tension=clip(down*gain+press*gain*.35,0,.7),laugh=laughing,
-        mouth_wide=clip(floor(stretch)*gain*2.5),pressed=clip(floor(press)*gain*2.8),pucker=clip(max(value('mouthPucker'),value('mouthFunnel'))*gain),
+        cheek=clip(floor(cheek)*gain*2.8),mouth_wide=clip(floor(stretch)*gain*2.5),pressed=clip(floor(press)*gain*2.8),pucker=clip(max(value('mouthPucker'),value('mouthFunnel'))*gain),
         snarl=clip(floor(snarl)*gain*3),asymmetry=clip((value('mouthSmileLeft')-value('mouthSmileRight'))*gain*2,-1,1),
         brow_skew=clip((value('browOuterUpLeft')-value('browOuterUpRight'))*gain*2,-1,1))
     return result
@@ -132,13 +132,14 @@ class LandmarkPipeline:
         if gesture['occluded']:
             category={'status':'occluded','label':None,'scores':{},'reason':'Mouth hidden; category estimate withheld'}
         elif self.category_model is not None:
-            if start-self.last_category_at>=.8:
+            if start-self.last_category_at>=.35:
                 try:
                     from checkpoint.runtime import LABELS
                     cue=self.category_model.infer(small)
                     self.category={'status':cue.status,'label':cue.expression,'score':cue.confidence,'scores':dict(zip(LABELS,cue.probabilities)),'reason':cue.reason}
                 except Exception as ex:self.category={'status':'unavailable','reason':str(ex),'scores':{}}
                 self.last_category_at=start
+                self.category['observed_at']=start
             category=self.category
         else:category={'status':'unavailable','reason':self.category_error or 'Category model off','scores':{}}
         return Cue('accepted',key,reason='Visible movements; not a mood/CMA measurement',elapsed_ms=(time.monotonic()-start)*1000,

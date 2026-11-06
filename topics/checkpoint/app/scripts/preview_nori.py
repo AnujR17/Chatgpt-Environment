@@ -1,5 +1,7 @@
 """Actual native renders with explicitly synthetic signals and check-ins."""
 from pathlib import Path
+import time
+from checkpoint.cues import Cue
 from PySide6.QtCore import Qt,QTimer
 from PySide6.QtWidgets import QWidget,QVBoxLayout,QGridLayout,QApplication
 from checkpoint.app import create_application,MainWindow,label
@@ -34,4 +36,15 @@ w.next_export=0.;w.reduced_motion=True;w.show();w.refresh();app.processEvents();
 def grab_report():
     dialog=QApplication.activeModalWidget();dialog.grab().save(str(ROOT/'artifacts/nori-cma-report-screen.png'));dialog.accept()
 QTimer.singleShot(200,grab_report);w.show_report();w.close();app.processEvents()
+w=MainWindow(no_setup=True,data_dir=ROOT/'build/nori-responsive-preview');w.resize(1440,1040)
+w.session.game='Illustrative session · synthetic signals';w.session.check_in('calm',.6,-.5)
+w.session.experimental_analysis=True;w.session.start_capture('video');w.reduced_motion=True;w.timer.stop();w.show()
+base=time.monotonic()-2
+for i in range(16):
+    now=base+i/8;m=neutral_movement();m.update(smile=.8,cheek=.5,jaw=.5,laugh=.6,teeth=.6)
+    w.session.cue=Cue('accepted','happiness',movement=m);w.session.cue_received_at=now
+    w.reflection.display(w.session,now)
+w.last_status='Illustrative preview · synthetic signals, not recognition accuracy';w.next_export=0.;w.refresh();app.processEvents()
+for preview in w.preview_widgets:preview.clear_image('Illustrative preview\n\nSynthetic face signals\nNo camera image')
+w.grab().save(str(ROOT/'artifacts/nori-responsive-reflection.png'));w.close();app.processEvents()
 print('Nori face detail, 43 profiles, reflection screen and synthetic CMA report rendered')
