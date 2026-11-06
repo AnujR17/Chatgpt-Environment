@@ -35,6 +35,20 @@ assert window.session.report=='calm','Live tracking overwrote the check-in'
 window.session.check_in('sad',-.5,-.4);window.refresh()
 assert window.emblems[0].current_state=='happy','Check-in pinned live reflection'
 window.grab().save(str(ROOT/'build/Checkpoint-Windows/windows-responsive-reflection.png'))
+# A learned anger estimate must survive weak handcrafted brow/mouth values.
+for _ in range(10):
+    estimate={'status':'accepted','label':'anger','score':.9,'scores':{'anger':.9,'neutral':.1}}
+    window.session.receive_cue(Cue('accepted','neutral',movement=neutral_movement(),model_estimate=estimate),generation)
+    window.refresh();QTest.qWait(125)
+assert window.emblems[0].current_state=='angry','Learned anger was overridden by geometry'
+# Confident happiness plus tense geometry is ambiguous, never a forced tense pose.
+for _ in range(10):
+    m=neutral_movement();m.update(brow=.8,pressed=.6)
+    estimate={'status':'accepted','label':'happiness','score':.9,'scores':{'happiness':.9,'neutral':.1}}
+    window.session.receive_cue(Cue('accepted','neutral',movement=m,model_estimate=estimate),generation)
+    window.refresh();QTest.qWait(125)
+assert window.emblems[0].current_state is None,'Conflicting evidence forced a pose'
+
 window.select_card_source(1)
 window.session.receive_cue(Cue('accepted','anger',.9),generation);window.refresh()
 
@@ -84,7 +98,7 @@ finally:
     game_module.active_game = original
 window.pause(); assert window.emblems[0].current_state is None
 window.close(); app.processEvents()
-result = {'windows_native_responsive_reflection_fixture':'passed','checkin_does_not_pin_live_reflection':'passed','windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_fixture': 'passed',
+result = {'windows_native_model_primary_and_conflict_fixture':'passed','windows_native_responsive_reflection_fixture':'passed','checkin_does_not_pin_live_reflection':'passed','windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_fixture': 'passed',
           'reject_wrong_window': 'passed', 'pause_clears_live_card': 'passed',
           'player_report_preserved': 'passed','overlay_no_focus_steal':'passed','overlay_native_clickthrough_style':'passed',
           'raw_input_registration':'passed','face_landmarker_native_load':'passed','hsemotion_inference':'passed','phone_loopback_api':'passed',

@@ -2,7 +2,7 @@
 
 Nori is a local Windows gaming companion. **Live reflection** provides smoothed expression feedback, a separate recent trend and a flat neutral fallback. **Movement test** inspects the face/hand tracker; **My check-in** records your own feeling and CMA. Check-ins never pin the live character. [Research, model comparisons and rebuild plan](docs/REBUILD-RESEARCH-AND-PLAN.md).
 
-Already on 0.3? Use **Settings → Check for updates → Update and restart**. The compatible app package includes the new hand model without replacing the native runtime. **[Full Windows download](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.5.0-preview.1/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.5.0-preview.1)
+Already on 0.3? Use **Settings → Check for updates → Update and restart**. The compatible app package includes the new hand model without replacing the native runtime. **[Full Windows download](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.5.0-preview.2/Checkpoint-Windows-Preview.zip)** · [Release](https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.5.0-preview.2)
 
 For a fresh install, extract the full ZIP and run **Start Checkpoint.cmd**. Choose **Start face tracking** to enable local analysis and open the camera in one action. The previous 20-second window and 30-second hold are removed. Clean sustained signals changed poses in 0.5–0.9 seconds in deterministic replay; actual camera latency and recognition vary. **Open video** tests a local clip. **Show Nori** enables the frameless companion. Hold **Ctrl+Alt and drag**, then release to lock its position. **Phone dashboard** pairs on the same trusted private Wi-Fi.
 
@@ -10,7 +10,7 @@ For a fresh install, extract the full ZIP and run **Start Checkpoint.cmd**. Choo
 
 ![Current native interface with labelled synthetic signals and a separate check-in](artifacts/nori-responsive-reflection.png)
 
-All 43 feeling words have selectable character profiles. They are not 43 trained camera classes. The default tracker combines physical face/hand cues with separate eight-class HSEmotion scores. It distinguishes mouth widening from smiling and withholds hidden mouth cues under possible hand occlusion. Visible teeth use a conservative image heuristic. These features need target-person checking; model scores cannot establish felt emotion or either CMA axis.
+All 43 feeling words have selectable character profiles. They are not 43 trained camera classes. The default tracker uses eight-class HSEmotion estimates with face/hand quality and contradiction checks. It distinguishes mouth widening from smiling and withholds hidden mouth cues under possible hand occlusion. Visible teeth use a conservative image heuristic. These features need target-person checking; model scores cannot establish felt emotion or either CMA axis.
 
 **Report** shows a CMA journey, check-in summaries, sample region counts and a next-session reflection. Both desktop and phone download a readable PDF. No facial event log or raw input timeline is presented. [Example report with synthetic check-ins](artifacts/nori-cma-preview.pdf).
 

@@ -43,6 +43,6 @@
 - [x] Investigate slow reflection, manual-report pinning, model integration and capture blocking.
 - [x] Research primary sources and compare B2/MobileFaceNet against B0 on the same 208 acted clips; retain B0 on measured trade-offs.
 - [x] Implement adaptive filtering, responsive authored poses, a separate recent trend, latest-frame inference and one-action camera flow.
-- [x] Verify replay, actual video smoke, 96 local tests and paired browser/PDF; expose substantial recognition uncertainty in the research plan.
+- [x] Verify replay, actual video smoke, 98 local tests and paired browser/PDF; expose substantial recognition uncertainty in the research plan.
 - [ ] Verify/publish the 0.5 Windows release and public app update payload.
 - [ ] Evaluate subject-separated natural gaming/webcam recognition and usefulness; no reliable 43-emotion claim.

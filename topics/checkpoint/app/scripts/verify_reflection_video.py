@@ -14,8 +14,10 @@ def main():
     app=create_application([]);window=MainWindow(no_setup=True,data_dir=ROOT/'build/rebuild-video-check');window.show()
     results=[]
     try:
-        for emotion in ('01','03','05','04','06','07','08'):
-            video=ROOT/f'data/videos/02-01-{emotion}-01-01-01-04.mp4'
+        files=[f'02-01-{emotion}-01-01-01-04.mp4' for emotion in ('01','03','05','04','06','07','08')]
+        files+=['02-01-05-02-01-01-01.mp4','02-01-03-02-01-01-01.mp4']
+        for filename in files:
+            video=ROOT/'data/videos'/filename
             if not video.exists():raise FileNotFoundError('Separately sourced research clips are required')
             window.select_card_source(0);started=time.monotonic();window.start_source(str(video),analyze=True)
             token=None;frames=0;usable=0;latencies=[];model=Counter();reflected=Counter();first=None;maxpreview=0
@@ -38,7 +40,7 @@ def main():
                  'model_labels':dict(model),'reflected_labels':dict(reflected)}
             results.append(row);print(json.dumps(row),flush=True)
             assert maxpreview>10 and frames>0,'Video-to-native path failed'
-        output={'fixture':'Seven existing RAVDESS actor04 acted clips, realtime playback, no training; smoke evidence only',
+        output={'fixture':'Nine existing RAVDESS acted clips: seven normal-intensity actor04 and two high-intensity actor01, realtime playback, no training; smoke evidence only',
                 'captures':'Preview and inference run independently; actual landmarks, hands and HSE inference enabled',
                 'cma_invented':False,'results':results,'limits':'Not target-webcam/gamer accuracy; no confusion/recall estimate from this smoke selection'}
         (ROOT/'artifacts/reflection-video-smoke.json').write_text(json.dumps(output,indent=2))

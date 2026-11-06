@@ -33,7 +33,7 @@ def test_checkin_never_pins_live_reflection_and_cma_stays_reported():
     assert (s.report,s.valence,s.arousal)==('sad',-.6,-.4)
 
 
-def test_angry_needs_model_and_complementary_features_not_brow_or_width_alone():
+def test_brow_and_mouth_tension_without_model_do_not_claim_anger():
     s,e=setup()
     assert feed(e,s,1000,2,brow=.8).artwork is None
     assert feed(e,s,1002,2,brow=.8,pressed=.6).artwork=='frustrated'
@@ -118,3 +118,13 @@ def test_adaptive_filter_reduces_resting_jitter_and_follows_a_step_without_a_lon
     for i in range(8):value=filt.update(.9,10+i/8)
     assert value>.88 and math.isfinite(value)
     assert filt.update(.4,12)==.4, 'A long loss must reset stale filtering state'
+
+
+def test_confident_model_does_not_require_an_unvalidated_anger_geometry_threshold():
+    s,e=setup()
+    assert feed(e,s,1000,1,label='anger').artwork=='angry'
+
+
+def test_confident_happy_model_and_tense_geometry_are_unclear_not_frustrated():
+    s,e=setup()
+    assert feed(e,s,1000,2,brow=.8,pressed=.6,label='happiness').artwork is None

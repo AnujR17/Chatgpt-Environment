@@ -1,36 +1,37 @@
 {
-  "fixture": "Seven existing RAVDESS actor04 acted clips, realtime playback, no training; smoke evidence only",
+  "fixture": "Nine existing RAVDESS acted clips: seven normal-intensity actor04 and two high-intensity actor01, realtime playback, no training; smoke evidence only",
   "captures": "Preview and inference run independently; actual landmarks, hands and HSE inference enabled",
   "cma_invented": false,
   "results": [
     {
       "file": "02-01-01-01-01-01-04.mp4",
-      "sampled_results": 18,
-      "usable_results": 18,
+      "sampled_results": 19,
+      "usable_results": 19,
       "preview_frames": 99,
       "seconds_from_start_to_first_reflected_pose": null,
-      "pipeline_ms_median": 50.4,
+      "pipeline_ms_median": 37.54,
       "model_labels": {
-        "uncertain": 18
+        "uncertain": 19
       },
       "reflected_labels": {
-        "Expression unclear": 18
+        "Expression unclear": 19
       }
     },
     {
       "file": "02-01-03-01-01-01-04.mp4",
-      "sampled_results": 24,
-      "usable_results": 24,
+      "sampled_results": 25,
+      "usable_results": 25,
       "preview_frames": 105,
-      "seconds_from_start_to_first_reflected_pose": 1.729,
-      "pipeline_ms_median": 37.1,
+      "seconds_from_start_to_first_reflected_pose": 2.112,
+      "pipeline_ms_median": 35.19,
       "model_labels": {
-        "uncertain": 12,
-        "happiness": 12
+        "uncertain": 6,
+        "happiness": 19
       },
       "reflected_labels": {
-        "Expression unclear": 19,
-        "An open smile": 5
+        "Expression unclear": 14,
+        "Laugh-like expression": 8,
+        "Smile-like expression": 3
       }
     },
     {
@@ -38,14 +39,14 @@
       "sampled_results": 27,
       "usable_results": 27,
       "preview_frames": 111,
-      "seconds_from_start_to_first_reflected_pose": 3.39,
-      "pipeline_ms_median": 31.83,
+      "seconds_from_start_to_first_reflected_pose": 3.52,
+      "pipeline_ms_median": 33.59,
       "model_labels": {
         "uncertain": 27
       },
       "reflected_labels": {
-        "Expression unclear": 23,
-        "Neutral expression": 4
+        "Expression unclear": 24,
+        "Neutral expression": 3
       }
     },
     {
@@ -54,7 +55,7 @@
       "usable_results": 24,
       "preview_frames": 101,
       "seconds_from_start_to_first_reflected_pose": null,
-      "pipeline_ms_median": 31.11,
+      "pipeline_ms_median": 44.51,
       "model_labels": {
         "uncertain": 24
       },
@@ -67,15 +68,14 @@
       "sampled_results": 24,
       "usable_results": 24,
       "preview_frames": 99,
-      "seconds_from_start_to_first_reflected_pose": 3.074,
-      "pipeline_ms_median": 31.17,
+      "seconds_from_start_to_first_reflected_pose": null,
+      "pipeline_ms_median": 35.73,
       "model_labels": {
-        "uncertain": 21,
-        "fear": 3
+        "uncertain": 18,
+        "fear": 6
       },
       "reflected_labels": {
-        "Expression unclear": 21,
-        "Neutral expression": 3
+        "Expression unclear": 24
       }
     },
     {
@@ -83,31 +83,65 @@
       "sampled_results": 28,
       "usable_results": 28,
       "preview_frames": 117,
-      "seconds_from_start_to_first_reflected_pose": null,
-      "pipeline_ms_median": 31.91,
+      "seconds_from_start_to_first_reflected_pose": 0.771,
+      "pipeline_ms_median": 32.73,
       "model_labels": {
         "disgust": 13,
         "uncertain": 12,
         "sadness": 3
       },
       "reflected_labels": {
-        "Expression unclear": 28
+        "Expression unclear": 11,
+        "Disgust-like expression": 17
       }
     },
     {
       "file": "02-01-08-01-01-01-04.mp4",
-      "sampled_results": 24,
-      "usable_results": 24,
+      "sampled_results": 23,
+      "usable_results": 23,
       "preview_frames": 97,
-      "seconds_from_start_to_first_reflected_pose": 1.088,
-      "pipeline_ms_median": 33.2,
+      "seconds_from_start_to_first_reflected_pose": 1.086,
+      "pipeline_ms_median": 31.89,
       "model_labels": {
-        "uncertain": 21,
+        "uncertain": 20,
         "fear": 3
       },
       "reflected_labels": {
-        "Expression unclear": 20,
+        "Expression unclear": 19,
         "Neutral expression": 4
+      }
+    },
+    {
+      "file": "02-01-05-02-01-01-01.mp4",
+      "sampled_results": 30,
+      "usable_results": 30,
+      "preview_frames": 122,
+      "seconds_from_start_to_first_reflected_pose": 3.262,
+      "pipeline_ms_median": 32.4,
+      "model_labels": {
+        "uncertain": 21,
+        "anger": 9
+      },
+      "reflected_labels": {
+        "Expression unclear": 22,
+        "Tense expression": 6,
+        "Mouth and brows tense": 2
+      }
+    },
+    {
+      "file": "02-01-03-02-01-01-01.mp4",
+      "sampled_results": 26,
+      "usable_results": 26,
+      "preview_frames": 109,
+      "seconds_from_start_to_first_reflected_pose": 1.6,
+      "pipeline_ms_median": 32.84,
+      "model_labels": {
+        "happiness": 26
+      },
+      "reflected_labels": {
+        "Expression unclear": 10,
+        "Smile-like expression": 5,
+        "Laugh-like expression": 11
       }
     }
   ],

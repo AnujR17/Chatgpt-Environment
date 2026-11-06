@@ -46,17 +46,19 @@ class ReflectionEngine:
             return None,'The expression model is unsure.'
         smile=m.get('smile',0);brow=m.get('brow',0);jaw=m.get('jaw',0)
         tense=brow>.25 and max(m.get('pressed',0),m.get('mouth_wide',0),m.get('snarl',0))>.22 and smile<.25
-        # A brow furrow alone can be concentration. Mouth width alone is not a smile.
-        if trusted and label=='anger' and (brow>.2 or tense) and smile<.25:return 'anger','Model and brow/mouth signals agree.'
-        if smile>.28 and not tense and (trusted and label=='happiness' or m.get('cheek',0)>.25):
-            if trusted and label in ('anger','disgust','fear'):
+        # Learned classes are primary. Unvalidated hand rules must not redefine them.
+        if trusted and label in ARTWORK:
+            positive=smile>.28 and m.get('cheek',0)>.25
+            if label=='happiness' and tense or label in ('anger','disgust','fear','sadness','contempt') and positive:
                 return None,'The model and facial movements disagree.'
-            return ('laugh' if m.get('laugh',0)>.2 and jaw>.22 else 'happiness'),'Smile and mouth-shape evidence.'
-        if trusted:
-            supported={'sadness':smile<-.16,'surprise':jaw>.22 and m.get('eyes',1)>.95,
-                       'disgust':m.get('snarl',0)>.15 or score>=.85,'fear':m.get('eyes',1)>1.08 or brow<-.1,
-                       'contempt':abs(m.get('asymmetry',0))>.32,'neutral':True}
-            if supported.get(label,False):return label,'Model estimate supported by visible features.'
+            if label=='neutral' and (abs(smile)>.25 or abs(brow)>.35 or jaw>.3 or m.get('snarl',0)>.3):
+                return None,'The neutral estimate conflicts with visible movement.'
+            if label=='happiness' and m.get('laugh',0)>.2 and jaw>.22:
+                return 'laugh','Pretrained smile estimate with an open-mouth configuration.'
+            return label,'Pretrained expression estimate; your feeling remains your check-in.'
+        # With no confident category, reflect only clearly supported visual configurations.
+        if smile>.28 and not tense and m.get('cheek',0)>.25:
+            return ('laugh' if m.get('laugh',0)>.2 and jaw>.22 else 'happiness'),'Smile and cheek evidence.'
         if tense:return 'tension','Tension is visible; anger, effort and focus remain ambiguous.'
         resting=abs(smile)<.16 and abs(brow)<.2 and jaw<.18 and m.get('mouth_wide',0)<.2 and m.get('snarl',0)<.15
         if resting:return 'neutral','A relaxed-looking facial configuration, not a claim of calm.'

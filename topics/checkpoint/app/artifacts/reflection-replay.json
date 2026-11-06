@@ -237,14 +237,14 @@
           ]
         },
         "tense": {
-          "first_matching_pose_seconds": 0.625,
+          "first_matching_pose_seconds": 0.5,
           "transitions": [
             {
               "after_seconds": 0.0,
               "artwork": "happy"
             },
             {
-              "after_seconds": 0.625,
+              "after_seconds": 0.5,
               "artwork": "angry"
             }
           ]
@@ -371,14 +371,14 @@
           ]
         },
         "tense": {
-          "first_matching_pose_seconds": 0.583,
+          "first_matching_pose_seconds": 0.5,
           "transitions": [
             {
               "after_seconds": 0.0,
               "artwork": "happy"
             },
             {
-              "after_seconds": 0.583,
+              "after_seconds": 0.5,
               "artwork": "angry"
             }
           ]
