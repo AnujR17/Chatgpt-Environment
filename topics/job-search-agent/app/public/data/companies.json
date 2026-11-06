@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-05",
+  "researchedAt": "2026-11-06",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -4255,7 +4255,7 @@
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred role families from published services; not vacancies or eligibility requirements.",
-      "openingStatus": "Official UX/UI internship and associate role pages observed",
+      "openingStatus": "Original retains graduates-only, not academic projects, six months and Mumbai/Remote wording. Current remote intake, student eligibility and compensation conflict need confirmation; not a confirmed stipend match.",
       "roles": [
         {
           "title": "UX/UI Design Intern",
@@ -4358,18 +4358,24 @@
           "label": "Recruitment email published on Cutshort company jobs",
           "evidenceStatus": "Indexed company job page",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://club.ungrammary.com/jobs/ux%2Fui-trainee-designer",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains graduates-only,not academic projects,six months,Mumbai/Remote. Current location/student eligibility and pay remain unresolved. Historical10–12k/month Cutshort could only meet revised remote/Gujarat floor, not Mumbai15k; separate1–2lakh/year remains annual and conflicting."
         }
       ],
       "checkedAt": "2026-10-24",
       "notes": "Official intern page permits graduates and excludes academic-project placements. Associate page headline says remote but body says Mumbai-based/hybrid; confirm before assuming remote. Form asks authentic own responses and explicitly discourages AI-generated content.",
-      "payNote": "Matching Cutshort fellowship advertises ₹10,000–₹12,000/month, below target. A company overview separately gives ₹1–2 lakh/year. Original employer form gives no amount; verify current terms.",
+      "payNote": "Historical matching Cutshort10–12kINR/month could clear revised10k remote floor only if current India-remote intake is confirmed; below Mumbai15k floor. Separate company1–2lakh/year remains annual. No current numerical stipend or received offer established.",
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
       "name": "Ungrammary",
       "tier": "Workable",
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Mumbai, Remote India. Check each role for remote eligibility.",
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-06",
       "payBenchmark": {
         "min": 10000,
         "max": 12000,
@@ -8340,18 +8346,18 @@
       "tier": "Possible",
       "categorySuggested": "Possible",
       "categorySuggestedOnly": true,
-      "rationale": "Employer Wellfound detail lists20k/month and digital/device work. Below the non-Gujarat target; retain as a watchlist-only company, not a qualifying new job.",
+      "rationale": "Interesting device/mobile/AI interaction work, but current stipend units and cohort unresolved. Editable preference, not hiring odds.",
       "careersUrl": "https://wellfound.com/jobs/4716470-product-design-intern",
       "locationNote": "Bengaluru, office; six months",
-      "openingStatus": "Employer Wellfound detail lists20k/month and digital/device work. Below the non-Gujarat target; retain as a watchlist-only company, not a qualifying new job.",
-      "payNote": "Employer advert:INR20,000/month, below the non-Gujarat target; not a current offer to the applicant.",
+      "openingStatus": "Device, companion-app and AI interaction internship; numerical stipend has a unit conflict. Confirm written monthly stipend, current six-month intake and joining window. Send portfolio only after checking the actual device/app scope and terms.",
+      "payNote": "Prior20k/month interpretation retained in history. Fresh header20,000 has no period; metadataYEAR conflicts with body paid-monthly wording. Numerical stipend now unverified.",
       "likelyRoles": [
         "UX Designer",
         "Product Designer",
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
-      "researchedAt": "2026-11-05",
+      "researchedAt": "2026-11-06",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/4716470-product-design-intern",
@@ -8364,6 +8370,12 @@
           "label": "5November public evidence",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh employer-platform detail retains20,000INR/month and six-month Bengaluru office internship;below target. Indexed LinkedIn exact now redirects to genericUSjobs;not a new card."
+        },
+        {
+          "url": "https://wellfound.com/jobs/4716470-product-design-intern",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Normal employer-platform detail is readable: six months, Bengaluru office, no experience required. Visible INR20,000 header has no period; body says stipend paid monthly without repeating the amount, while JobPosting metadata says INR20,000/YEAR. Numerical monthly stipend is not verified. Platform structured date14September2026 is separate from current intake and the relative one-month label. Previously below-target watchlist evidence is retained; revised floors alone do not resolve this unit conflict."
         }
       ],
       "contact": {
@@ -8377,12 +8389,35 @@
           "title": "Product Design Intern",
           "url": "https://wellfound.com/jobs/4716470-product-design-intern",
           "location": "Bengaluru, office; six months",
-          "seniority": "Internship; below pay target",
-          "requirements": [],
-          "evidenceStatus": "Employer Wellfound detail lists20k/month and digital/device work. Below the non-Gujarat target; retain as a watchlist-only company, not a qualifying new job."
+          "seniority": "Internship; on_hold for stated evidence limits",
+          "requirements": [
+            {
+              "id": "51b7ef4e48b9",
+              "text": "Portfolio and Figma; degree or college is not a stated selection requirement",
+              "sourceUrl": "https://wellfound.com/jobs/4716470-product-design-intern"
+            },
+            {
+              "id": "39e079b600b6",
+              "text": "Research and design across the device, mobile app and AI interactions",
+              "sourceUrl": "https://wellfound.com/jobs/4716470-product-design-intern"
+            },
+            {
+              "id": "4577cb6e971e",
+              "text": "Design-system components, micro-interactions and iteration with users in kitchens",
+              "sourceUrl": "https://wellfound.com/jobs/4716470-product-design-intern"
+            },
+            {
+              "id": "2f85b6d8bb45",
+              "text": "Six months in the Bengaluru office",
+              "sourceUrl": "https://wellfound.com/jobs/4716470-product-design-intern"
+            }
+          ],
+          "evidenceStatus": "Normal employer-platform detail is readable: six months, Bengaluru office, no experience required. Visible INR20,000 header has no period; body says stipend paid monthly without repeating the amount, while JobPosting metadata says INR20,000/YEAR. Numerical monthly stipend is not verified. Platform structured date14September2026 is separate from current intake and the relative one-month label. Previously below-target watchlist evidence is retained; revised floors alone do not resolve this unit conflict.",
+          "checkedAt": "2026-11-06"
         }
       ],
-      "currentOpeningVerified": true
+      "currentOpeningVerified": true,
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
     },
     {
       "id": "figr",
@@ -8642,6 +8677,12 @@
           "label": "26October employer role check",
           "checkedAt": "2026-10-26",
           "evidenceStatus": "Official detail DTCI-S191348 describes an internship with remote-India option. Bachelor-level Design/HCI study or recent completion specified; other student qualifications need confirmation. Pay and duration unstated. Shipped work is preferred, not proven by a prototype."
+        },
+        {
+          "url": "https://careers.dectify.in/careers/details/DTCI-S191348/ui-ux-designer/",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains internship,NewDelhi or remoteIndia,11August date and portfolio/design-system criteria. Pay and current remote intake unconfirmed."
         }
       ],
       "roles": [
@@ -8719,6 +8760,12 @@
           "label": "5November rotating term review",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh original retains3–6months,globalremote,competitive stipend and Immediate/Urgent start. Confirm later joining/intake before recommending;no numeric stipend."
+        },
+        {
+          "url": "https://www.collabop.com/careers/ui-ux-intern",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains remoteGlobal,3–6months and competitive undisclosed stipend,immediate/urgent wording. Confirm later joining before recommending as available."
         }
       ],
       "roles": [
@@ -8790,6 +8837,12 @@
           "label": "26October employer role check",
           "checkedAt": "2026-10-26",
           "evidenceStatus": "Official Pune detail and application form accessible. Product-dashboard and design-system duties are explicit; substantial illustration/graphics work also required. Stipend, duration and work arrangement unstated. Published HR email is a recruitment contact."
+        },
+        {
+          "url": "https://www.aeronsystems.com/careers/design-intern-visuals-ui-ux/",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Fresh employer exact retains Pune mixed visual/UI work,technical dashboard components and hr@aeronsystems.com recruitment route. No numerical stipend confirmed."
         }
       ],
       "roles": [
@@ -8868,6 +8921,12 @@
           "label": "Public evidence observation",
           "checkedAt": "2026-10-31",
           "evidenceStatus": "Retained original Freshteam role reviewed:three months,students any year/freshers,financial compensation without amount. Start and office/remote terms still unconfirmed. Prior requirement IDs unchanged."
+        },
+        {
+          "url": "https://androcid.freshteam.com/jobs/_KvFSyux1O8C/ui-ux-design-intern",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains three-month compensated internship,any study year/graduates and web/mobile UI. Amount and current intake unconfirmed."
         }
       ],
       "roles": [
@@ -9129,6 +9188,12 @@
           "label": "5November rotating term review",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh original and employer index retain remoteIndia,12weeks,December2026 and24November deadline. Stipend amount and cohort dates unconfirmed."
+        },
+        {
+          "url": "https://suthartech.com/internships/ui-ux-design-intern",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains remoteIndia12weeks,December2026 cohort and24November deadline; current stipend undisclosed. Confirm cohort and written stipend."
         }
       ],
       "contact": {
@@ -9864,6 +9929,12 @@
           "label": "5November rotating term review",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh original retains UXinternWR021,Hyderabadon-site,24August2026 and current/recentdesign/HCI or self-taught portfolio wording. No new compensation/start evidence."
+        },
+        {
+          "url": "https://www.water.bio/careers/WR021",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains full-time Hyderabad on-site six-month requirement and Figma/components/user-testing work. Pay/current intake not established."
         }
       ],
       "roles": [
@@ -10086,6 +10157,12 @@
           "label": "5November rotating term review",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh original retains Ahmedabad on-site,two openings,0–1year header and existing1+year body caveat. Salary not stated;full-time alternative remains held."
+        },
+        {
+          "url": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original junior role retains Ahmedabad and early-career/internship experience caveats; pay undisclosed. No student eligibility or offer inferred."
         }
       ],
       "roles": [
@@ -10267,14 +10344,14 @@
       "tier": "Possible",
       "categorySuggested": "Possible",
       "categorySuggestedOnly": true,
-      "rationale": "Company watchlist only; current evidence does not establish a suitable paid early-career role. Editable suggestion, not hiring odds.",
+      "rationale": "Remote15k gross can qualify under revised floor, conditional on actual product/UIUX track and three-month agreement. Preference suggestion, not odds.",
       "careersUrl": "https://neuraitech.com/careers/",
       "locationNote": "Remote; India primary focus",
-      "openingStatus": "Fresh original confirms below-target15,000INR/month gross;not an undisclosed qualifying stipend.",
-      "currentOpeningVerified": false,
-      "payNote": "Original design-intern gross15,000INR/month plus conditional incentives. No incentive amount/guarantee inferred.",
+      "openingStatus": "INR15,000/month gross; product/UI/UX focus is selectable, while advertised core duties include social and video work. Confirm a product/UI/UX assignment and mentor, a three-month duration, joining window, student eligibility and fixed gross stipend in writing. Clarify deductions and incentive terms.",
+      "currentOpeningVerified": true,
+      "payNote": "Current role description:INR15,000–15,000/month; listed stipend, not a received offer. Gross before deductions; incentives not guaranteed.",
       "payConfidence": "Limited",
-      "researchedAt": "2026-11-02",
+      "researchedAt": "2026-11-06",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
@@ -10297,14 +10374,20 @@
           "label": "2 November public evidence",
           "checkedAt": "2026-11-02",
           "evidenceStatus": "Fresh original role now readable:15,000INR/month gross plus performance incentives,2–3months,India-focused remote. Main duties social/visual/video;product UIUX focus selectable. Below stipend target;no new qualifying card."
+        },
+        {
+          "url": "https://neuraitech.com/careers/design-intern/",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Fresh employer original explicitly states INR15,000/month gross before deductions, plus unspecified conditional incentives; two to three months agreed before joining. College students with no full-time experience are invited. Product/UI/UX is an application focus, but the core responsibilities remain social creatives, simple layouts and short video edits. Revised remote floor is met; this is a conditional product-design track rather than a confirmed pure UX placement. Earlier below-target observations are historical."
         }
       ],
       "roles": [
         {
           "id": "neurai-technologies-design-evidence",
-          "title": "Design Intern — below-target stipend",
+          "title": "Design Intern — Product/UI/UX track to confirm",
           "url": "https://neuraitech.com/careers/design-intern/",
-          "seniority": "Company evidence only; not an active internship recommendation",
+          "seniority": "Internship; on_hold for stated evidence limits",
           "location": "Remote; India primary focus",
           "requirements": [
             {
@@ -10321,9 +10404,26 @@
               "id": "64dfcea1735d",
               "text": "Two-to-three-month remote internship",
               "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+            },
+            {
+              "id": "0c73b98dbeb7",
+              "text": "Product/UI/UX focus is selectable; confirm actual product responsibilities",
+              "sourceUrl": "https://neuraitech.com/careers/design-intern/"
             }
           ],
-          "evidenceStatus": "Indexed original employer detail states15,000INR/month gross for2–3months, plus discretionary performance incentives. Direct detail timed out during this pass; evidence is indexed official text. Lower stipend and mainly social/visual/video scope exclude it from the active UX shortlist."
+          "evidenceStatus": "Fresh employer original explicitly states INR15,000/month gross before deductions, plus unspecified conditional incentives; two to three months agreed before joining. College students with no full-time experience are invited. Product/UI/UX is an application focus, but the core responsibilities remain social creatives, simple layouts and short video edits. Revised remote floor is met; this is a conditional product-design track rather than a confirmed pure UX placement. Earlier below-target observations are historical.",
+          "checkedAt": "2026-11-06",
+          "payEvidence": {
+            "role": "Design Intern — Product/UI/UX track to confirm",
+            "min": 15000,
+            "max": 15000,
+            "currency": "INR",
+            "period": "month",
+            "sourceUrl": "https://neuraitech.com/careers/design-intern/",
+            "checkedAt": "2026-11-06",
+            "confidence": "Explicit role-body monthly stipend",
+            "note": "Listing evidence, not received offer; current cohort and conditions to confirm."
+          }
         }
       ],
       "payBenchmark": {
@@ -10337,7 +10437,8 @@
         "observedAt": "2026-10-28",
         "confidence": "Limited: indexed official detail; direct fetch timeout",
         "note": "Specific visual/media design internship range, below target; not a UX/product-design stipend inference or a received offer."
-      }
+      },
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
     },
     {
       "id": "jio",
@@ -11071,6 +11172,12 @@
           "label": "4November rotating term review",
           "checkedAt": "2026-11-04",
           "evidenceStatus": "Fresh employer body retains paid internship with amount set at offer,12weeks,November/December2026,20–40h/week,India remote/hybrid/Hyderabad and evening overlap. No numerical stipend or received offer;no AI interview/form initiated."
+        },
+        {
+          "url": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains paid amount undisclosed,12weeks November/December,20–40hours and eveningIST overlap. Confirm current intake and monthly amount."
         }
       ],
       "roles": [
@@ -11159,6 +11266,18 @@
           "label": "5November rotating term review",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh employer detail retains Mumbai0–1year internship,design reasoning and motionbonus. No numerical stipend or cohort confirmed."
+        },
+        {
+          "url": "https://www.humanx.io/job-roles/product-design-intern",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains Mumbai3–6months,0–1years and student/personal portfolios; stipend undisclosed. Confirm current cohort."
+        },
+        {
+          "url": "https://www.humanx.io/job-roles/product-designer-1",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains full-time Mumbai1–2years product-design experience,not an internship. Salary undisclosed; junior stretch remains separate."
         }
       ],
       "roles": [
@@ -11523,6 +11642,12 @@
           "label": "Public evidence observation",
           "checkedAt": "2026-10-31",
           "evidenceStatus": "Original careers page explicitly lists Product Design Intern, Pune hybrid, and careers@storestory.in. This is a named role within the index, not an inferred vacancy from a generic careers page. Pay, duration, degree criteria, posting date and start absent."
+        },
+        {
+          "url": "https://storestory.in/careers",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains Pune hybrid product-design internship and merchant-workflow/design work; pay undisclosed, current joining window to confirm."
         }
       ],
       "roles": [
@@ -12371,6 +12496,12 @@
           "label": "5November rotating term review",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh Peerlist retains Bengaluru office full-time0–2years;salary undisclosed. Old mirror salary remains unverified benchmark,not current employer offer."
+        },
+        {
+          "url": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Peerlist retains Bengaluru0–2years junior role with motion/AI-prototyping criteria; salary undisclosed. Historical annual benchmark is not current salary."
         }
       ],
       "roles": [
@@ -12732,6 +12863,12 @@
           "label": "4November rotating term review",
           "checkedAt": "2026-11-04",
           "evidenceStatus": "Fresh employer ATS retains Mangalore,StudentCollege UX/UI,full-time sixmonths. Salary input is an applicant expectation,not employer pay;no numerical stipend/cohort stated."
+        },
+        {
+          "url": "https://boseprofessional.applytojob.com/apply/d4TpRXTpW3/Software-Development-Intern-UXUI-Design",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains full-time six-month Mangalore UX/UI internship; application asks experience/graduation-project status. No guaranteed student eligibility or pay inferred."
         }
       ],
       "roles": [
@@ -13637,21 +13774,27 @@
       "rationale": "Relevant consumer product work merits a watch target;maximum stipend cannot be treated as a guaranteed match. Suggested preference/fit,not hiring probability or offer.",
       "careersUrl": "https://in.indeed.com/viewjob?jk=434b56b07cd96e3c",
       "locationNote": "HSR Layout,Bengaluru,in person",
-      "payNote": "Indeed employer listing20,000–30,000INR/month;minimum20k below30k target. No25k+ agreement or current employer intake confirmed.",
-      "openingStatus": "Named3month UI-first product internship in public Indeed detail;below-target minimum and current cohort unresolved.",
+      "payNote": "Historical expired Indeed Product Design Intern advert20–30kINR/month. No new eligible internship intake or offer verified.",
+      "openingStatus": "Fresh Indeed exact detail explicitly says expired. INR20–30k/month is historical and would clear revised15k floor, but this intake is not recommended. Current original Kula index has no matching Product Design Intern; experienced Product Designer is separate.",
       "evidenceConfidence": "Original advertised terms or named employer-platform evidence;current cohort,eligibility and salary limitations are stated explicitly.",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families;not unadvertised vacancies.",
-      "researchedAt": "2026-11-03",
+      "researchedAt": "2026-11-06",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=434b56b07cd96e3c",
           "label": "3 November public evidence",
           "checkedAt": "2026-11-03",
           "evidenceStatus": "Fresh normal Indeed detail readable,three-month full-time internship,HSRBengaluru,in-person,20,000–30,000INR/month. Research extract labelled crawled4months ago is separate from today normal fetch;original posting date unknown. Minimum20k is not30k stipend match;not added to active paid shortlist. Official corporate/careers intake not verified."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=434b56b07cd96e3c",
+          "label": "6 November availability check",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Fresh Indeed exact detail explicitly says expired. INR20–30k/month is historical and would clear revised15k floor, but this intake is not recommended. Current original Kula index has no matching Product Design Intern; experienced Product Designer is separate."
         }
       ],
       "roles": [
@@ -13659,7 +13802,7 @@
           "id": "appsforbharat-product-design-intern-434b56b07cd96e3c",
           "title": "Product Design Intern — below-target minimum",
           "url": "https://in.indeed.com/viewjob?jk=434b56b07cd96e3c",
-          "seniority": "Internship;current intake unconfirmed",
+          "seniority": "Expired internship evidence",
           "location": "HSR Layout,Bengaluru,in person",
           "requirements": [
             {
@@ -13678,8 +13821,8 @@
               "sourceUrl": "https://in.indeed.com/viewjob?jk=434b56b07cd96e3c"
             }
           ],
-          "evidenceStatus": "Fresh normal Indeed detail readable,three-month full-time internship,HSRBengaluru,in-person,20,000–30,000INR/month. Research extract labelled crawled4months ago is separate from today normal fetch;original posting date unknown. Minimum20k is not30k stipend match;not added to active paid shortlist. Official corporate/careers intake not verified.",
-          "checkedAt": "2026-11-03",
+          "evidenceStatus": "Fresh Indeed exact detail explicitly says expired. INR20–30k/month is historical and would clear revised15k floor, but this intake is not recommended. Current original Kula index has no matching Product Design Intern; experienced Product Designer is separate.",
+          "checkedAt": "2026-11-06",
           "payEvidence": {
             "role": "Product Design Intern",
             "min": 20000,
@@ -13697,7 +13840,8 @@
         "url": "https://in.indeed.com/viewjob?jk=434b56b07cd96e3c",
         "kind": "Exact employer Indeed application/detail;corporate site is not a verified careers route",
         "sourceUrl": "https://in.indeed.com/viewjob?jk=434b56b07cd96e3c"
-      }
+      },
+      "currentOpeningVerified": false
     },
     {
       "id": "betterstory",
@@ -13850,38 +13994,50 @@
       "id": "falcon-reality",
       "name": "Falcon Reality",
       "company": "Falcon Reality",
-      "companyType": "Product company",
+      "companyType": "Services / product team",
       "sector": "AI-powered B2B SaaS automation",
       "focus": "AI-powered B2B SaaS automation",
       "tier": "Possible",
       "categorySuggested": "Possible",
       "categorySuggestedOnly": true,
-      "rationale": "Suggested preference based on public product/design scope and location evidence;not personal fit,hiring probability or an offer.",
+      "rationale": "Early-career B2B product work with explicit15k/month body; office/cohort and pay metadata caveat retained. Suggested preference, not odds.",
       "careersUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern",
       "locationNote": "Bengaluru;body says on-site five days despite headerWFH flexibility",
-      "payNote": "Employer Wellfound body states15,000INR/month,three months;below target.",
-      "openingStatus": "Public employer Wellfound advert readable;15,000/month is below target. No feed recommendation;relative1month label is not an original date.",
-      "evidenceConfidence": "Original/public employer evidence for stated terms;unresolved intake,location and pay limits remain explicit.",
+      "payNote": "Current role description:INR15,000–15,000/month; listed stipend, not a received offer. ",
+      "openingStatus": "Three-month B2B SaaS design internship explicitly advertising INR15,000/month. Confirm current cohort and joining window, written INR15,000/month, office attendance and design mentorship. Review the published application form requirements; do not assume conversion.",
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities.",
       "likelyRoles": [
         "Product Designer",
         "UX Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-04",
+      "researchedAt": "2026-11-06",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/4691346-ui-ux-design-intern",
           "label": "4November public role evidence",
           "checkedAt": "2026-11-04",
           "evidenceStatus": "Public employer Wellfound advert readable;15,000/month is below target. No feed recommendation;relative1month label is not an original date."
+        },
+        {
+          "url": "https://wellfound.com/jobs/4691346-ui-ux-design-intern",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Normal employer-platform description explicitly repeats INR15,000/month, three months and Bengaluru on-site five days/week. This clears the revised15k floor. Header WFH flexibility is not India-wide remote. Structured salary metadata incorrectly uses YEAR for the same15,000 figure; the verified monthly amount here comes from explicit role-body wording, with the conflict retained. Platform structured date9September2026 is not a new original posting today. Official falconreality.in corroborates AI automation/implementation services; it does not independently confirm intake."
+        },
+        {
+          "url": "https://falconreality.in/",
+          "label": "Official company identity and focus",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "AI automation implementation partner and services; commercial consultation contact is not a recruitment route."
         }
       ],
       "roles": [
         {
           "id": "falcon-reality-design-evidence",
-          "title": "UI/UX Design Intern — below target",
+          "title": "UI/UX Design Intern",
           "url": "https://wellfound.com/jobs/4691346-ui-ux-design-intern",
-          "seniority": "Internship — excluded below-target pay",
+          "seniority": "Internship; on_hold for stated evidence limits",
           "location": "Bengaluru;body says on-site five days despite headerWFH flexibility",
           "requirements": [
             {
@@ -13893,17 +14049,49 @@
               "id": "490cf00e0668",
               "text": "Portfolio showing problem reasoning;B2BSaaS,design systems and basicHTML/CSS bonuses",
               "sourceUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern"
+            },
+            {
+              "id": "4f364eee8e6e",
+              "text": "Figma and UI/UX fundamentals for flows, interaction and visual hierarchy",
+              "sourceUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern"
+            },
+            {
+              "id": "3d89b751cbc9",
+              "text": "Research, prototype and test B2B SaaS workflows with the founder and developers",
+              "sourceUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern"
+            },
+            {
+              "id": "31f5dfbc57d7",
+              "text": "Design systems and components; communicate reasons and iterate on feedback",
+              "sourceUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern"
+            },
+            {
+              "id": "592d0357f61b",
+              "text": "Portfolio plus two or three projects; no prior experience required",
+              "sourceUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern"
             }
           ],
-          "evidenceStatus": "Public employer Wellfound advert readable;15,000/month is below target. No feed recommendation;relative1month label is not an original date.",
-          "checkedAt": "2026-11-04"
+          "evidenceStatus": "Normal employer-platform description explicitly repeats INR15,000/month, three months and Bengaluru on-site five days/week. This clears the revised15k floor. Header WFH flexibility is not India-wide remote. Structured salary metadata incorrectly uses YEAR for the same15,000 figure; the verified monthly amount here comes from explicit role-body wording, with the conflict retained. Platform structured date9September2026 is not a new original posting today. Official falconreality.in corroborates AI automation/implementation services; it does not independently confirm intake.",
+          "checkedAt": "2026-11-06",
+          "payEvidence": {
+            "role": "UI/UX Design Intern",
+            "min": 15000,
+            "max": 15000,
+            "currency": "INR",
+            "period": "month",
+            "sourceUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern",
+            "checkedAt": "2026-11-06",
+            "confidence": "Explicit role-body monthly stipend",
+            "note": "Listing evidence, not received offer; current cohort and conditions to confirm."
+          }
         }
       ],
       "contact": {
         "url": "https://wellfound.com/jobs/4691346-ui-ux-design-intern",
         "kind": "Published careers route;no guessed recruitment email",
         "sourceUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern"
-      }
+      },
+      "currentOpeningVerified": true
     },
     {
       "id": "sapience-studios",
@@ -14469,6 +14657,12 @@
           "label": "Historical indexed pay evidence;current row absent",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Older indexed row reports7–8k/month. Fresh salary-page extract no longer shows that row. Exact original internship requisition not matched;not verified pay for the current six-month advert. Generic Pune UX salary average is unrelated and not used."
+        },
+        {
+          "url": "https://brainoidtech.com/jobs/ux-design/",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Original retains six-month UX internship and monthly stipend without amount; students/freshers welcome. Earlier7–8k evidence is historical, not current stipend."
         }
       ],
       "roles": [
@@ -14569,6 +14763,12 @@
           "label": "5November public evidence",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh normal Glassdoor detail200 corroborates matching vacancy and monthly salary. Cached web extract crawled5days ago;not salary-survey evidence or original publication date."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=9ee14e89aef554d7",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Fresh Indeed retains full-time Pune0–1year/freshers,25–30kINR/month salary. Keep salary separate from internship stipend and verify employer identity."
         }
       ],
       "roles": [
@@ -15057,6 +15257,12 @@
           "label": "5 November Gandhinagar-focused public research",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Separate general remote role; not evidence the GIFT City junior role is remote."
+        },
+        {
+          "url": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Employer-platform retains Ahmedabad office header and1–2years body,2years header. Undisclosed salary, GIFT office terms/eligibility to confirm; junior stretch, not internship."
         }
       ],
       "roles": [
@@ -15480,6 +15686,12 @@
           "label": "Recheck under revised stipend floor",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Fresh normal public Internshala exact detail states Gandhinagar in-office, INR15,000–18,000/month and apply by5December2026. The header gives three months and the description3–6 months; stated joining window3November–8December2026 needs employer confirmation. Now clears the revised Gujarat stipend floor; earlier below-target evidence used the former20k criterion and remains historical. Original posting date is unverified; relative just-now label is not converted into one."
+        },
+        {
+          "url": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+          "label": "6 November retained-role terms",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Fresh exact Internshala retains15–18kINR/month, Gandhinagar office, deadline5December and joining3November–8December. Header3months versus body3–6 conflict persists; graphic/productUX balance to confirm."
         }
       ],
       "roles": [
@@ -15580,13 +15792,469 @@
         }
       ],
       "roles": []
+    },
+    {
+      "id": "aiva-technology",
+      "name": "Aiva Technology",
+      "company": "Aiva Technology",
+      "companyType": "Services / product team",
+      "sector": "Real-estate interface, virtual-tour and frontend design",
+      "focus": "Real-estate interface, virtual-tour and frontend design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Relevant design/React advertised work and15–18k monthly listing; legal employer/contact association and current cohort need verification.",
+      "careersUrl": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87",
+      "locationNote": "Bommanahalli, Bengaluru; in person, three months",
+      "openingStatus": "INR15,000–18,000/month design/frontend internship for real-estate interfaces. Confirm legal employing entity, design-versus-React workload, current three-month intake and joining window, supervision and written stipend. Verify the published contact before sharing applicant documents.",
+      "payNote": "Current role description:INR15,000–18,000/month; listed stipend, not a received offer. ",
+      "payConfidence": "Limited",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-06",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Fresh normal Indeed exact detail states INR15,000–18,000/month, three months and in-person Bommanahalli. Figma interaction design combines with React frontend for dashboards, virtual tours and sales interfaces. Now clears the revised15k floor; earlier exclusions used the old30k criterion. Original publication date remains unknown. The advert publishes hr.fute3@gmail.com; its relationship to the Aiva legal employer is not independently established, and no corporate domain is inferred."
+        }
+      ],
+      "roles": [
+        {
+          "id": "indeed-aiva-uiux-intern-f269a751c3d3ad87",
+          "title": "UI/UX Designer Intern — Interaction / React",
+          "url": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87",
+          "seniority": "Internship; current intake to confirm",
+          "location": "Bommanahalli, Bengaluru; in person, three months",
+          "requirements": [
+            {
+              "id": "71ca5b862d2e",
+              "text": "Figma screens, user flows, wireframes, prototypes and organised components",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87"
+            },
+            {
+              "id": "a86a7a6abfb9",
+              "text": "HTML, CSS, JavaScript and React, including props, state and hooks",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87"
+            },
+            {
+              "id": "8b7fc68b9287",
+              "text": "Responsive interfaces and testing across devices",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87"
+            },
+            {
+              "id": "eff2dc26c5cc",
+              "text": "Portfolio with interface/design work and frontend examples",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87"
+            }
+          ],
+          "evidenceStatus": "Fresh normal Indeed exact detail states INR15,000–18,000/month, three months and in-person Bommanahalli. Figma interaction design combines with React frontend for dashboards, virtual tours and sales interfaces. Now clears the revised15k floor; earlier exclusions used the old30k criterion. Original publication date remains unknown. The advert publishes hr.fute3@gmail.com; its relationship to the Aiva legal employer is not independently established, and no corporate domain is inferred.",
+          "checkedAt": "2026-11-06",
+          "payEvidence": {
+            "role": "UI/UX Designer Intern — Interaction / React",
+            "min": 15000,
+            "max": 18000,
+            "currency": "INR",
+            "period": "month",
+            "sourceUrl": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87",
+            "checkedAt": "2026-11-06",
+            "confidence": "Explicit role-body monthly stipend",
+            "note": "Listing evidence, not received offer; current cohort and conditions to confirm."
+          }
+        }
+      ],
+      "contact": {
+        "url": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87",
+        "kind": "Published role application route; user submits manually",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87"
+      },
+      "currentOpeningVerified": true,
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
+    },
+    {
+      "id": "opsai",
+      "name": "OpsAI",
+      "company": "OpsAI",
+      "companyType": "Product company",
+      "sector": "Enterprise AI governance and operational workflows",
+      "focus": "Enterprise AI governance and operational workflows",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Relevant enterprise UX, but older original, remote/NewDelhi conflict and pay units need confirmation. Qualitative target, not an offer.",
+      "careersUrl": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern",
+      "locationNote": "India; remote listing conflicts with New Delhi role-body wording",
+      "openingStatus": "Enterprise AI UX internship; remote arrangement, work schedule and stipend units need confirmation. Confirm the exact requisition is accepting applications, fully remote work from India versus New Delhi attendance, part-time/full-time schedule, duration and joining window. Obtain currency, monthly stipend range and written eligibility.",
+      "payNote": "Current numerical stipend/salary undisclosed or unverified; confirm employer terms.",
+      "payConfidence": "Limited",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-06",
+      "sources": [
+        {
+          "url": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Indexed employer Zoho detail identifies requisition234298000000411359, opened16August2026, part-time,0–1year, remote, salary10–20K without an established currency/period in the visible field. Normal Zoho response is a client shell. Fresh normal Himalayas matching description confirms a paid monthly stipend without amount and India-only remote metadata, but also says based in New Delhi. Its3November2026 posting date and2January2027 expiry are platform dates, not renewed employer intake. No verified monthly numerical amount or guaranteed remote eligibility is inferred."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-opsai-uiux-intern-234298000000411359",
+          "title": "UI/UX Designer Intern",
+          "url": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern",
+          "seniority": "Internship; current intake to confirm",
+          "location": "India; remote listing conflicts with New Delhi role-body wording",
+          "requirements": [
+            {
+              "id": "0312f8032ac7",
+              "text": "Figma, wireframing, prototyping and user-centred design",
+              "sourceUrl": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern"
+            },
+            {
+              "id": "f37500cadd40",
+              "text": "Enterprise dashboards, workflows, forms and information architecture",
+              "sourceUrl": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern"
+            },
+            {
+              "id": "38a8c8e8988d",
+              "text": "Design systems, research/usability testing and engineering collaboration",
+              "sourceUrl": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern"
+            },
+            {
+              "id": "9737e898453d",
+              "text": "Academic, personal, freelance or open-source design projects are accepted",
+              "sourceUrl": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern"
+            }
+          ],
+          "evidenceStatus": "Indexed employer Zoho detail identifies requisition234298000000411359, opened16August2026, part-time,0–1year, remote, salary10–20K without an established currency/period in the visible field. Normal Zoho response is a client shell. Fresh normal Himalayas matching description confirms a paid monthly stipend without amount and India-only remote metadata, but also says based in New Delhi. Its3November2026 posting date and2January2027 expiry are platform dates, not renewed employer intake. No verified monthly numerical amount or guaranteed remote eligibility is inferred.",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "contact": {
+        "url": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern",
+        "kind": "Published role application route; user submits manually",
+        "sourceUrl": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern"
+      },
+      "website": "https://opsai.co.in/",
+      "currentOpeningVerified": false,
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
+    },
+    {
+      "id": "proof-of-skill",
+      "name": "Proof of Skill",
+      "company": "Proof of Skill",
+      "companyType": "Product company",
+      "sector": "Skills verification and recruiting technology",
+      "focus": "Skills verification and recruiting technology",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Remote fresher platform advert is relevant; current employer hiring, salary and student eligibility unconfirmed. Older experienced roles are separate.",
+      "careersUrl": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher",
+      "locationNote": "Remote; India only",
+      "openingStatus": "Permanent fresher alternative with undisclosed salary; current hiring and student eligibility unconfirmed. Confirm current fresher intake, salary in original units, full-time employment eligibility for a current student and joining window. Ask for an employer-direct requisition; review any assessment terms before proceeding.",
+      "payNote": "Current numerical stipend/salary undisclosed or unverified; confirm employer terms.",
+      "payConfidence": "Limited",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-06",
+      "sources": [
+        {
+          "url": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Fresh normal Himalayas exact detail labels full-time, entry-level and India-only remote, posted30October2026 with platform apply-before29December2026. Salary is undisclosed. proofofskill.org corroborates the product company, not this hiring intake. A different older Antler designer advert45365102 is closed,1–3years and Bengaluru office; another older advert says4–6years. Those are separate role evidence and do not corroborate this fresher vacancy or transfer their experience/location requirements."
+        },
+        {
+          "url": "https://proofofskill.org/",
+          "label": "Official product identity",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Company product identity corroborated; no employer-direct current fresher requisition established."
+        },
+        {
+          "url": "https://careers.antler.co/companies/proof-of-skill/jobs/45365102-ux-ui-designer",
+          "label": "Different older experienced role, closed",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Explicit no longer accepting applications;1–3years,Bengaluru office. Do not transfer closure or requirements to remote fresher platform advert."
+        }
+      ],
+      "roles": [
+        {
+          "id": "himalayas-proof-of-skill-uxui-fresher",
+          "title": "UX/UI Designer (Fresher)",
+          "url": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher",
+          "seniority": "Junior / fresher; current intake to confirm",
+          "location": "Remote; India only",
+          "requirements": [
+            {
+              "id": "6a795ae8df5d",
+              "text": "Figma or Adobe tools and typography/layout/visual hierarchy",
+              "sourceUrl": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher"
+            },
+            {
+              "id": "a176cea2064c",
+              "text": "Research, user flows, wireframes and prototypes",
+              "sourceUrl": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher"
+            },
+            {
+              "id": "49de04ac57f6",
+              "text": "Web interfaces, design consistency, reviews and collaboration with product/engineering",
+              "sourceUrl": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher"
+            }
+          ],
+          "evidenceStatus": "Fresh normal Himalayas exact detail labels full-time, entry-level and India-only remote, posted30October2026 with platform apply-before29December2026. Salary is undisclosed. proofofskill.org corroborates the product company, not this hiring intake. A different older Antler designer advert45365102 is closed,1–3years and Bengaluru office; another older advert says4–6years. Those are separate role evidence and do not corroborate this fresher vacancy or transfer their experience/location requirements.",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "contact": {
+        "url": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher",
+        "kind": "Published role application route; user submits manually",
+        "sourceUrl": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher"
+      },
+      "website": "https://proofofskill.org/",
+      "currentOpeningVerified": false,
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
+    },
+    {
+      "id": "99px",
+      "name": "99px",
+      "company": "99px",
+      "companyType": "UX / product studio",
+      "sector": "Digital product, brand, systems and client interfaces",
+      "focus": "Digital product, brand, systems and client interfaces",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Specific internship accepts student portfolios and gives daily senior review; paid status and stipend need confirmation. Editable preference, not hiring odds.",
+      "careersUrl": "https://www.99px.in/careers/design-intern",
+      "locationNote": "Pune; internship location specified, remote not promised",
+      "openingStatus": "Studio apprenticeship for three to six months; stipend undisclosed. Confirm that the internship is paid at least INR15,000/month, office/hybrid terms, current cohort and joining date, three-to-six-month duration and the balance of product UX versus brand tasks.",
+      "payNote": "Current numerical stipend/salary undisclosed or unverified; confirm employer terms.",
+      "payConfidence": "Limited",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-06",
+      "sources": [
+        {
+          "url": "https://www.99px.in/careers/design-intern",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Fresh employer exact role advertises a Pune design internship for3–6months, at least three months availability, student/personal/redesign portfolios accepted and daily senior review. Work includes live client screens, interface/brand exploration, design systems and documentation. Stipend is not stated; no paid/unpaid or numerical amount inferred. Global-remote company footer does not establish remote eligibility for this Pune role."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-99px-design-intern",
+          "title": "Design Intern",
+          "url": "https://www.99px.in/careers/design-intern",
+          "seniority": "Internship; current intake to confirm",
+          "location": "Pune; internship location specified, remote not promised",
+          "requirements": [
+            {
+              "id": "964916aaca73",
+              "text": "Portfolio can include student, personal or redesign work",
+              "sourceUrl": "https://www.99px.in/careers/design-intern"
+            },
+            {
+              "id": "439ece56b114",
+              "text": "Support client interfaces, visual explorations and design-system documentation",
+              "sourceUrl": "https://www.99px.in/careers/design-intern"
+            },
+            {
+              "id": "fa3aa3164713",
+              "text": "Present work in weekly reviews and respond to critique",
+              "sourceUrl": "https://www.99px.in/careers/design-intern"
+            },
+            {
+              "id": "3155722f2c0d",
+              "text": "Available for at least three months",
+              "sourceUrl": "https://www.99px.in/careers/design-intern"
+            }
+          ],
+          "evidenceStatus": "Fresh employer exact role advertises a Pune design internship for3–6months, at least three months availability, student/personal/redesign portfolios accepted and daily senior review. Work includes live client screens, interface/brand exploration, design systems and documentation. Stipend is not stated; no paid/unpaid or numerical amount inferred. Global-remote company footer does not establish remote eligibility for this Pune role.",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "contact": {
+        "url": "https://www.99px.in/careers/design-intern",
+        "kind": "Published Design Intern mailto application route; email not sent",
+        "sourceUrl": "https://www.99px.in/careers/design-intern"
+      },
+      "website": "https://www.99px.in/",
+      "currentOpeningVerified": true,
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
+    },
+    {
+      "id": "trinance",
+      "name": "Trinance",
+      "company": "Trinance",
+      "companyType": "Product company",
+      "sector": "Financial education app, newsletter and web tools",
+      "focus": "Financial education app, newsletter and web tools",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Student/fresher product design evidence is relevant; current salary, duration and joining window unresolved. No old20k offer inferred.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333",
+      "locationNote": "Banjara Hills, Hyderabad; on-site five days/week",
+      "openingStatus": "Paid financial-product design internship with undisclosed current amount and conflicting duration. Confirm a current employer-direct opening, fixed monthly stipend at least INR15,000, exact duration, joining window and office schedule. Clarify student eligibility and who will supervise product design.",
+      "payNote": "Current numerical stipend/salary undisclosed or unverified; confirm employer terms.",
+      "payConfidence": "Limited",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-06",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Employer-authored public LinkedIn extract crawled last week says paid, Hyderabad office, students/freshers welcome, no professional experience required. Header says3–4months; body says4–5months. Normal original is restricted. Separate older4461895853 advertised20k/month but now redirects to a generic jobs category; it is historical evidence, not verified pay for this intake. Relative one-week label is not an original absolute date."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-trinance-uiux-intern-4476413333",
+          "title": "UI/UX Design Intern",
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333",
+          "seniority": "Internship; current intake to confirm",
+          "location": "Banjara Hills, Hyderabad; on-site five days/week",
+          "requirements": [
+            {
+              "id": "e15689a53fa7",
+              "text": "Students and freshers; no prior professional experience required",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333"
+            },
+            {
+              "id": "af6274bc0003",
+              "text": "Figma, user flows, UI/UX fundamentals and visual hierarchy",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333"
+            },
+            {
+              "id": "1fe67e00a3b2",
+              "text": "Mobile-app flows, prototypes, reusable components and developer collaboration",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333"
+            }
+          ],
+          "evidenceStatus": "Employer-authored public LinkedIn extract crawled last week says paid, Hyderabad office, students/freshers welcome, no professional experience required. Header says3–4months; body says4–5months. Normal original is restricted. Separate older4461895853 advertised20k/month but now redirects to a generic jobs category; it is historical evidence, not verified pay for this intake. Relative one-week label is not an original absolute date.",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "contact": {
+        "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333",
+        "kind": "Published role application route; user submits manually",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333"
+      },
+      "website": "https://trinance.in/",
+      "currentOpeningVerified": false,
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
+    },
+    {
+      "id": "medinex-workforce",
+      "name": "MediNex Workforce",
+      "company": "MediNex Workforce",
+      "companyType": "Services / product team",
+      "sector": "Staffing technology, candidate portals and client dashboards",
+      "focus": "Staffing technology, candidate portals and client dashboards",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Conditional indexed staffing-services internship; current employer requisition, stipend and student eligibility unverified. No reputation/quality guarantee.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484",
+      "locationNote": "Remote India; current employer intake unverified",
+      "openingStatus": "Conditional staffing-services lead; indexed INR17,500/month needs current employer confirmation. Verify current requisition and employing entity through the published employer route, fixed stipend, a three-month agreement, joining window, student eligibility and work schedule. Do not pay fees or treat the mirror as an offer.",
+      "payNote": "Current numerical stipend/salary undisclosed or unverified; confirm employer terms.",
+      "payConfidence": "Limited",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
+      "researchedAt": "2026-11-06",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484",
+          "label": "6 November role re-evaluation",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Public LinkedIn employer extract crawled last month and matching Job Company mirror describe remote India,1–3months, Figma/research/prototyping and INR17,500/month. Normal LinkedIn original is restricted. The mirror updated13October2026 is not an original posting date; corporate medinexworkforce.in corroborates staffing identity, not current vacancy or stipend. Final-year/recent-graduate wording and six-day schedule need confirmation. Current numerical stipend fields remain null because original current terms/intake were not verified."
+        },
+        {
+          "url": "https://thejobcompany.co.in/frontend/job_details?job_id=6490",
+          "label": "Matching mirror",
+          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Mirror updated13October2026;17,500/month claim and1–3months need current employer confirmation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-medinex-product-design-intern-4474939484",
+          "title": "Product Design Intern",
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484",
+          "seniority": "Internship; current intake to confirm",
+          "location": "Remote India; current employer intake unverified",
+          "requirements": [
+            {
+              "id": "5b4293a5bd34",
+              "text": "Figma auto-layout, components and prototyping",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484"
+            },
+            {
+              "id": "89e49e50501e",
+              "text": "User interviews, wireframes, usability/accessibility checks and handoff",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484"
+            },
+            {
+              "id": "778666c67fa5",
+              "text": "Final-year/recent-graduate or self-taught applicant route; eligibility to confirm",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484"
+            },
+            {
+              "id": "671f8266c259",
+              "text": "Full-time remote availability; Monday–Saturday or assigned schedule",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484"
+            }
+          ],
+          "evidenceStatus": "Public LinkedIn employer extract crawled last month and matching Job Company mirror describe remote India,1–3months, Figma/research/prototyping and INR17,500/month. Normal LinkedIn original is restricted. The mirror updated13October2026 is not an original posting date; corporate medinexworkforce.in corroborates staffing identity, not current vacancy or stipend. Final-year/recent-graduate wording and six-day schedule need confirmation. Current numerical stipend fields remain null because original current terms/intake were not verified.",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "contact": {
+        "url": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484",
+        "kind": "Published role application route; user submits manually",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484"
+      },
+      "website": "https://medinexworkforce.in/",
+      "currentOpeningVerified": false,
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-05",
+    "researchedAt": "2026-11-06",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 233
+    "directoryCount": 239
   }
 }
