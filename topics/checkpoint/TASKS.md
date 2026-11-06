@@ -44,5 +44,5 @@
 - [x] Research primary sources and compare B2/MobileFaceNet against B0 on the same 208 acted clips; retain B0 on measured trade-offs.
 - [x] Implement adaptive filtering, responsive authored poses, a separate recent trend, latest-frame inference and one-action camera flow.
 - [x] Verify replay, actual video smoke, 98 local tests and paired browser/PDF; expose substantial recognition uncertainty in the research plan.
-- [ ] Verify/publish the 0.5 Windows release and public app update payload.
+- [x] Verify/publish 0.5.0-preview.3 Windows release and public app update payload (run 42274766631); actual Windows viewport/OTA checks passed.
 - [ ] Evaluate subject-separated natural gaming/webcam recognition and usefulness; no reliable 43-emotion claim.

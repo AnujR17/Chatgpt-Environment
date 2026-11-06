@@ -49,3 +49,10 @@ Local suite:98passed,1Windows-onlyskip. Browser390x844 checks default reflection
 
 
 Preview.2 Windows run42273632398 passed and public full/small assets were verified, including all42appfiles and actual OTA staging. Full243496113bytes SHA6da517792222abcb4f90d0ba6e8a61a10aa815bde2b96b715ed8a9488ad73cab; small6141788bytes SHA44fb2a85f8a237508877a22a68bb0332d8c5987c624c14f87710c98a11cee0e9,80payloadfiles. Actual Windows screenshot then exposed clipped tabs at1024px; prepared preview.3 UI puts tabs on their own row and Start tracking before the preview. Local1024×768asserts/render pass; finalWindows/publicrelease checks pending.
+
+
+## Final 0.5 publication verified
+
+Use checkpoint-v0.5.0-preview.3, codecommit ea5efbd60624add4b54c00225de1e77c082d31cd, Windows run42274766631. Actual Windows tab bounds and initial tracking-action visibility pass, alongside model-primary/conflict, check-in separation, graph loading, overlay and restart/rollback fixtures. Public fullZIP HTTP200: 243491541bytes, SHA256 819bed33eafb9be3e68ce888b23f6a18c45c4c129b8ca7e4a37fddf0cd64c80f; checksum/GitHubdigest/archive/42appsourcefiles match. Public small update 6141988bytes, SHA256 e4295df65a5bb18e9309909e55bdbdda8a973fdf8630596d3226ea87836d888c; actual published discovery/download/staging using old0.4clientidentity passes for80payloadfiles and preserves the disposable previous install. No downloaded code executed in that staging check. See RELEASE-VERIFICATION.json.
+
+Local98tests passed (oneWindows-onlyskip). Model/video evidence and limits remain in the rebuild research plan; nine realtime acted clips include subtle misses and successful strong anger/smile routing after the integration correction. No target-person/gamer or43-emotion accuracy claim. Runtime and face/hand weights unchanged. All code is on topic/checkpoint; remote main stays7d32cda393902f130eb3446d03da7cddcff0795c. User updates via Settings > Check for updates > Update and restart; README has full ZIP for fresh installs.

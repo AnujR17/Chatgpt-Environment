@@ -1,11 +1,11 @@
 {
-  "verified_at": "2026-11-06T18:50:28.478525+00:00",
+  "verified_at": "2026-11-06T18:58:51.160858+00:00",
   "branch": "topic/checkpoint",
-  "release_commit": "c593e663c578b4ae1ca1b1e15ad1ca3365c57739",
-  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.5.0-preview.2",
+  "release_commit": "ea5efbd60624add4b54c00225de1e77c082d31cd",
+  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.5.0-preview.3",
   "download_http_status": 200,
-  "download_bytes": 243496113,
-  "sha256": "6da517792222abcb4f90d0ba6e8a61a10aa815bde2b96b715ed8a9488ad73cab",
+  "download_bytes": 243491541,
+  "sha256": "819bed33eafb9be3e68ce888b23f6a18c45c4c129b8ca7e4a37fddf0cd64c80f",
   "checksum_matches_release_file": true,
   "github_asset_digest_matches": true,
   "archive_integrity": "passed",
@@ -31,6 +31,7 @@
     "physical_phone_network": "not tested"
   },
   "windows_checks": {
+    "windows_native_initial_controls_visible": "passed",
     "windows_native_model_primary_and_conflict_fixture": "passed",
     "windows_native_responsive_reflection_fixture": "passed",
     "checkin_does_not_pin_live_reflection": "passed",
@@ -58,15 +59,15 @@
     "fixture": "Disposable installations, actual embedded Python and PowerShell helper; no personal install modified",
     "user_network_and_physical_device": "not tested"
   },
-  "run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/42273632398",
+  "run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/42274766631",
   "published_updater_checks": {
     "client_version": "0.4.0-preview.2",
-    "discovered_update": "checkpoint-v0.5.0-preview.2",
+    "discovered_update": "checkpoint-v0.5.0-preview.3",
     "compatible_payload": "app; runtime and face weights reused",
     "published_small_package_download_and_staging": "passed",
     "staged_payload_files": 80,
-    "app_update_bytes": 6141788,
-    "app_update_sha256": "44fb2a85f8a237508877a22a68bb0332d8c5987c624c14f87710c98a11cee0e9",
+    "app_update_bytes": 6141988,
+    "app_update_sha256": "e4295df65a5bb18e9309909e55bdbdda8a973fdf8630596d3226ea87836d888c",
     "hand_asset_hash": "passed",
     "existing_fixture_preserved": "passed",
     "fixture": "Real published payload, disposable synthetic previous installation, no downloaded code executed and no personal installation modified"
