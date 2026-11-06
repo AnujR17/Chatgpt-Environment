@@ -251,11 +251,13 @@ class MainWindow(QMainWindow):
     def build_body(self,mode):
         body=QWidget();row=QHBoxLayout(body);row.setContentsMargins(0,0,0,0);row.setSpacing(18)
         state_panel,sl=panel(padding=24);sl.setSpacing(14)
-        header=QHBoxLayout();selector=QTabBar();[selector.addTab(name) for name in ['Live reflection','Movement test','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);header.addWidget(selector);header.addStretch();source=label('',12,True);self.state_labels.append((source,'source'));header.addWidget(source);motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(36);motion.setObjectName('navButton');header.addWidget(motion);self.motion_controls.append(motion)
+        header=QHBoxLayout();selector=QTabBar();[selector.addTab(name) for name in ['Live reflection','Movement test','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);header.addWidget(selector);header.addStretch()
+        toolbar=QHBoxLayout();source=label('',12,True);self.state_labels.append((source,'source'));toolbar.addWidget(source,1)
+        motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(36);motion.setObjectName('navButton');toolbar.addWidget(motion);self.motion_controls.append(motion)
         if mode==0:self.motion_button=motion
-        sl.addLayout(header)
-        stage,stage_layout=panel('artStage',10);stage.setMinimumHeight(240)
-        em=NoriWidget(230,mode=mode);self.emblems.append(em)
+        sl.addLayout(header);sl.addLayout(toolbar)
+        stage,stage_layout=panel('artStage',10);stage.setMinimumHeight(210)
+        em=NoriWidget(200,mode=mode);self.emblems.append(em)
         stage_layout.addWidget(em,alignment=Qt.AlignmentFlag.AlignCenter);sl.addWidget(stage,1)
         title=label('',28,bold=True);desc=label('',14,True)
         self.state_labels.extend([(title,'title'),(desc,'description')]);sl.addWidget(title);sl.addWidget(desc)
@@ -264,13 +266,14 @@ class MainWindow(QMainWindow):
         sl.addWidget(check)
         dimensions,dl=panel('stateCard',14);dl.addWidget(label('Your check-in · pleasantness and energy',12,True));self.add_dimensions(dl);sl.addWidget(dimensions);row.addWidget(state_panel,7)
         camera,cl=panel(padding=24);cl.setSpacing(14);ch=QHBoxLayout();ch.addWidget(label('Face tracking',18,bold=True),1);status=label('',12,True);self.state_labels.append((status,'capture'));ch.addWidget(status);cl.addLayout(ch)
+        actions=QHBoxLayout();capture=button('Start face tracking',self.toggle_camera,True);self.camera_controls.append(capture);actions.addWidget(capture,1);file=button('Open video',self.open_video);self.file_controls.append(file);actions.addWidget(file,1);cl.addLayout(actions)
         preview=VideoPreview();preview.setMinimumSize(300,230);preview.setMaximumHeight(260);self.preview_widgets.append(preview);cl.addWidget(preview)
         devices=QComboBox();devices.setAccessibleName('Camera device');devices.addItems(['Camera 1 · default']+[f'Camera {i+1}' for i in range(1,10)]);devices.currentIndexChanged.connect(self.select_camera);self.camera_selectors.append(devices);cl.addWidget(devices)
         feedback=label('',13,True);self.camera_messages.append(feedback);cl.addWidget(feedback)
         track=QCheckBox('Track my face');track.setAccessibleName('Track expressions');track.toggled.connect(self.toggle_expression_tracking);self.expression_controls.append(track);track.hide()
         neutral=button('Set my neutral face',self.calibrate_neutral);self.neutral_controls.append(neutral);cl.addWidget(neutral)
         details=button('Inspect face signals',self.show_face_details);self.detail_controls.append(details);cl.addWidget(details)
-        cl.addWidget(label('Face signals stay on your computer.',14,True));actions=QHBoxLayout();capture=button('Start face tracking',self.toggle_camera);self.camera_controls.append(capture);actions.addWidget(capture,1);file=button('Open video',self.open_video);self.file_controls.append(file);actions.addWidget(file,1);cl.addLayout(actions)
+        cl.addWidget(label('Face signals stay on your computer.',14,True))
         if mode==0:self.capture_control=capture
         cl.addWidget(label('On this device · No recording · Microphone off',12,True));cue=label('',12,True);cue.setVisible(False);self.state_labels.append((cue,'cue'));cl.addWidget(cue);cl.addStretch();row.addWidget(camera,4)
         return body

@@ -7,6 +7,7 @@ from ctypes import wintypes
 import numpy as np
 from urllib.request import Request,urlopen
 from PySide6.QtTest import QTest
+from PySide6.QtCore import QPoint
 from checkpoint.app import create_application, MainWindow
 from checkpoint.runtime import Cue
 import checkpoint.gameplay as game_module
@@ -15,6 +16,12 @@ ROOT = Path(__file__).resolve().parents[1]
 app = create_application([])
 window = MainWindow(no_setup=True, data_dir=ROOT / 'build/smoke-history')
 window.show(); window.raise_(); window.activateWindow(); QTest.qWait(400)
+tabs=window.view_selectors[0]
+assert tabs.tabRect(2).right()<tabs.width(),'Card tabs are clipped in the actual Windows viewport'
+start=window.camera_controls[0];position=start.mapTo(window,QPoint())
+assert position.y()+start.height()<window.height(),'Start tracking is below the initial viewport'
+assert position.y()<window.preview_widgets[0].mapTo(window,QPoint()).y(),'Start tracking must appear before preview'
+
 window.session.check_in('calm', .6, -.4)
 window.session.experimental_analysis = True
 generation = window.session.start_capture('camera')
@@ -98,7 +105,7 @@ finally:
     game_module.active_game = original
 window.pause(); assert window.emblems[0].current_state is None
 window.close(); app.processEvents()
-result = {'windows_native_model_primary_and_conflict_fixture':'passed','windows_native_responsive_reflection_fixture':'passed','checkin_does_not_pin_live_reflection':'passed','windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_fixture': 'passed',
+result = {'windows_native_initial_controls_visible':'passed','windows_native_model_primary_and_conflict_fixture':'passed','windows_native_responsive_reflection_fixture':'passed','checkin_does_not_pin_live_reflection':'passed','windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_fixture': 'passed',
           'reject_wrong_window': 'passed', 'pause_clears_live_card': 'passed',
           'player_report_preserved': 'passed','overlay_no_focus_steal':'passed','overlay_native_clickthrough_style':'passed',
           'raw_input_registration':'passed','face_landmarker_native_load':'passed','hsemotion_inference':'passed','phone_loopback_api':'passed',

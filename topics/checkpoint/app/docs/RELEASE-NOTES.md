@@ -2,7 +2,7 @@
 
 The slow 20-second observation window and 30-second display lock are removed. Live reflection uses adaptive feature smoothing, short evidence dwell and a separate recent trend. Clean sustained signals changed poses in 0.5–0.9 seconds in deterministic replay; this excludes camera/model startup and is not a webcam latency guarantee. Manual check-ins no longer freeze the live character.
 
-Camera preview and model inference run independently, with one latest pending frame and stale-result rejection. Live reflection, Movement test and My check-in are visible tabs. Start face tracking enables analysis and opens the selected camera in one deliberate action. Model failure leaves the preview available.
+Camera preview and model inference run independently, with one latest pending frame and stale-result rejection. Live reflection, Movement test and My check-in are visible tabs on their own row. Start tracking is above the preview so it stays reachable in smaller windows. Start face tracking enables analysis and opens the selected camera in one deliberate action. Model failure leaves the preview available.
 
 Fresh confident pretrained scores now drive default recognition; feature checks veto clear contradictions instead of replacing learned classes. Mouth width alone cannot be a smile; cheek/model support and conflicting signals are checked. Brow movement alone cannot establish anger. Authored Nori poses retain subtle laugh-like motion and visible-teeth variations. Ambiguity/occlusion returns to a flat neutral appearance with an explicit unclear label. This does not establish reliable eight-class recognition or 43 inferred emotions.
 
