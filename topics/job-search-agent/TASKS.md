@@ -1,5 +1,16 @@
 # Tasks
 
+## 7 November research refresh
+
+- [x] Attempt85active primary URLs;74fetched,11restricted,6shells. Review19terms/availability plus4limited index/redirect records.
+- [x] Add two conditional internships with null current pay fields; preserve mirror/platform dates, country/paid-status/contact and cohort caveats.
+- [x] Retire RevRag andFrappe original roles on employer closure evidence;preserve IDs,requirements andbrowser-local application-stage overrides.
+- [x] Add4company targets;refresh26coverage records plusCarrerlift,36total. Record access restrictions,zero suitable samples,removed/expired/unpaid/below-floor evidence andHN244IDs/205posts/51broadmatches honestly.
+- [x] Regenerate99-role/243-company exports and567requirement rows. Preserve source/history/exclusion/queue/collector evidence;no UI/model/extension/test/seed edits.
+- [x] Build,preservation,18model/capture checks,fivePython checks andlocal/live desktop/mobile pass;document existing outdated on_hold data-test assertion.
+- [x] Publish exact87053e092682bf060a1896668a99fa99f1948e9d fromtopic/job-search-agent:READYdpl_3HQ4JpsYMTwok5gD1xgVvhoQ83wd,seven live files exact,protection andclipper unchanged,no automatic preview for data SHA.
+- [x] No applications/messages/private applicant-state access. Handoff-only follow-up requires no redeploy.
+
 ## 6 November research refresh
 
 - [x] Re-evaluate earlier pay exclusions under revised10k Gujarat/remoteIndia and15k other-city floors; preserve historical reasons and original units.
