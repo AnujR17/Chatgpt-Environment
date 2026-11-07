@@ -10,11 +10,11 @@ Personal internship discovery and application Kanban for Anuj. Primary GitHub ow
 
 ## Included
 
-- 97 retained role records (85 active,12 archived), updated6 November2026. Nine new-to-feed roles: eight internships and one permanent fresher alternative. Falcon Reality15k/month, Neurai15k gross (conditional product/UIUX track) and Aiva15–18k/month explicitly state monthly stipends. Cravv salary units conflict; OpsAI,99px,Trinance,MediNex and Proof of Skill retain pay/intake/eligibility limits on_hold. These are not nine freshly posted jobs or received offers. See [the current research report](public/data/collection-report.md).
+- 99 retained role records (85 active,14 archived), updated 7 November 2026. Two new conditional internships: Domain Expansion remote UI/UX with undisclosed stipend, and Glory Quick Pune with unverified mirror-reported pay. No new numerical stipend match or junior vacancy was confirmed. RevRag and Frappe original roles are archived after employer closure evidence. Existing junior/fresher alternatives and saved history are retained. See [the current research report](public/data/collection-report.md).
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat and remote India minimum ₹10,000/month, with ₹15,000+ preferred; other eligible cities minimum ₹15,000/month. Higher pay remains welcome. Earlier dated research may use former thresholds.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with239 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with243 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.
