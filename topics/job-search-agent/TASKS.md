@@ -1,5 +1,16 @@
 # Tasks
 
+## 8 November research refresh
+
+- [x] Search requested public employer,job-board,startup,remote andsocial sources;record restrictions,zero suitable samples anddates honestly.
+- [x] Attempt85active primary URLs:76fetched,9restricted,6shells;23manual term reviews,zero new retirements.
+- [x] Add4held internships,three explicit monthly40–60k ranges;preserve Bengaluru-only remote restriction,shared operator andcurrent-intake/eligibility caveats.
+- [x] Add5company records,including2closed historical programmes;26dated coverage checks of37total,HN247IDs/207posts/52broadmatches.
+- [x] Regenerate103-role/248-company workbook and583requirement export rows;preserve prior IDs,pay/date/source/history/queue/collector evidence.
+- [x] Build,preservation,20model/capture/data checks,fivePython checks andlocal/live browser pass;retain documented one outdated data-test assertion failure.
+- [x] Push asAnujR17;publish exactb29cf6b2acee77a42358b051a30cc6e43ecb6e9a toexisting project:READYdpl_Fo7uTczUV9dTXrWEtgs5PqyWVNK3,seven live files byte-exact,protection/clipper unchanged,one production/no preview forSHA.
+- [x] No main/UI/model/extension/test/seed/collector changes,applications/messages or private-state access. Docs-only follow-up requires no redeploy.
+
 ## 7 November research refresh
 
 - [x] Attempt85active primary URLs;74fetched,11restricted,6shells. Review19terms/availability plus4limited index/redirect records.
