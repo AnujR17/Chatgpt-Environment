@@ -1,5 +1,16 @@
 # Tasks
 
+## 9 November research refresh
+
+- [x] Search requested public employer,job-board,startup,remote andsocial sources;record exact/indexed/mirror access anddate limits honestly.
+- [x] Attempt89active primary URLs:78fetched,10restricted,one404,6shells;21manualterms reviews,zero reliable newclosures. Keep Nonlinear/Kodin availability unresolved.
+- [x] Add4held internships and1permanentfresher alternative;one exact35–40kmonthly range,unknown paynull forfour. Preserve joining,duration,student andscope caveats.
+- [x] Add8companies,including3unpaid/removed/below-floor product-company records separate from activejobs. Refresh26of37coverage records;HN247IDs/207posts/55broadwordmatches,not55designjobs.
+- [x] Regenerate108-role/256-company workbook and603requirement rows;preserve IDs,requirements,pay/date/source/history/queue/collector evidence andunchanged UI/model/extension.
+- [x] Build,preservation,20model/capture/data checks,fivePython checks andlocal/live browser pass;document known one outdated data-test failure.
+- [x] Push asAnujR17;publish exact6101350b0751e5c1c2d22086516a2b4861e4e7e6:READYdpl_CopA4x9NGemfc9a7Py6pXmsUa69W,seven live files exact,protection/clipper unchanged,oneproduction/no previewforSHA.
+- [x] No main/seed/collector-main changes,applications/messages orprivate-state access. Docs-onlyfollowup needs no redeploy.
+
 ## 8 November research refresh
 
 - [x] Search requested public employer,job-board,startup,remote andsocial sources;record restrictions,zero suitable samples anddates honestly.
