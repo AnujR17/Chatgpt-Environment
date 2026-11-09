@@ -1,6 +1,6 @@
 {
   "meta": {
-    "researchedAt": "2026-11-08",
+    "researchedAt": "2026-11-09",
     "collectorLastRun": "2026-10-23T15:37:35+00:00",
     "scheduleStatus": "Daily exact07:00 Asia/Kolkata search enabled from26October2026. Existing browser-local blacklist/progress preserved; background task cannot read private overrides.",
     "coverage": "Employer careers and public ATS, Indeed, Naukri, X, LinkedIn, YC, startup directories, Wellfound, India job boards, remote boards and Hacker News; access and zero-result limitations are recorded in sources.json.",
@@ -1174,7 +1174,7 @@
       "latestPass": "IndeednewWebsarfresherandproject44dedupe;Naukrirobots/Keyideasemptyshell;X403;Instahyre520;Wellfoundunpaid/410;remoteUSA/oldFoodHunt;HN219IDs/187posts/43broadmatches.25coveragefamiliesrefreshed;unsampleddatespreserved."
     },
     "companyWatchlistAt": "2026-11-05",
-    "companyDirectoryCount": 248,
+    "companyDirectoryCount": 256,
     "coverageNote": "Expanded public research across YC, Wellfound, remote boards, Who is hiring, startup maps and India job boards. Newly discovered is not newly posted; older listings and access limits are labelled.",
     "lastResearchRefresh": {
       "date": "2026-11-05",
@@ -1481,27 +1481,47 @@
         "newConfirmedMonthlyStipendMatches": 3,
         "note": "Three advertised monthly ranges verified in exact role descriptions/metadata,not received offers;two brands shareAuristoperator. Four newroleson_hold forjoining/terms;AdMarkpayundisclosed. No retainedrole newly confirmed closed.",
         "scope": "Wholeactiveprimaryaccessattempt,rotatingtermsandbroadpublicsamples;best effort,notexhaustive."
+      },
+      {
+        "date": "2026-11-09",
+        "newRoles": 5,
+        "newInternships": 4,
+        "newJuniorAlternatives": 1,
+        "retiredRoles": 0,
+        "retainedRecords": 108,
+        "activeRecords": 94,
+        "existingPrimaryUrlsAttempted": 89,
+        "publicPagesFetched": 78,
+        "collectorBlocked": 10,
+        "missingOriginals": 1,
+        "sourceErrors": 0,
+        "shellResponses": 6,
+        "existingTermsReviewed": 21,
+        "newCompanyRecords": 8,
+        "newConfirmedMonthlyStipendMatches": 1,
+        "note": "One exact monthly listingrange verified,notreceivedoffer;four internships andonepermanentfresher allonhold forcurrentcohort/pay/eligibility. No retainedclosure reliablyconfirmed.",
+        "scope": "Wholeactiveprimaryaccessattempt,rotatingmanualterms andpublictargetedsamples;best effort,notexhaustive."
       }
     ],
     "refreshSummary": {
-      "date": "2026-11-08",
-      "newRoles": 4,
+      "date": "2026-11-09",
+      "newRoles": 5,
       "newInternships": 4,
-      "newJuniorAlternatives": 0,
+      "newJuniorAlternatives": 1,
       "retiredRoles": 0,
-      "retainedRecords": 103,
-      "activeRecords": 89,
-      "existingPrimaryUrlsAttempted": 85,
-      "publicPagesFetched": 76,
-      "collectorBlocked": 9,
-      "missingOriginals": 0,
+      "retainedRecords": 108,
+      "activeRecords": 94,
+      "existingPrimaryUrlsAttempted": 89,
+      "publicPagesFetched": 78,
+      "collectorBlocked": 10,
+      "missingOriginals": 1,
       "sourceErrors": 0,
       "shellResponses": 6,
-      "existingTermsReviewed": 23,
-      "newCompanyRecords": 5,
-      "newConfirmedMonthlyStipendMatches": 3,
-      "note": "Three advertised monthly ranges verified in exact role descriptions/metadata,not received offers;two brands shareAuristoperator. Four newroleson_hold forjoining/terms;AdMarkpayundisclosed. No retainedrole newly confirmed closed.",
-      "scope": "Wholeactiveprimaryaccessattempt,rotatingtermsandbroadpublicsamples;best effort,notexhaustive."
+      "existingTermsReviewed": 21,
+      "newCompanyRecords": 8,
+      "newConfirmedMonthlyStipendMatches": 1,
+      "note": "One exact monthly listingrange verified,notreceivedoffer;four internships andonepermanentfresher allonhold forcurrentcohort/pay/eligibility. No retainedclosure reliablyconfirmed.",
+      "scope": "Wholeactiveprimaryaccessattempt,rotatingmanualterms andpublictargetedsamples;best effort,notexhaustive."
     },
     "stipendPolicy": {
       "effectiveAt": "2026-11-05",
@@ -1550,9 +1570,11 @@
       "summary": "Figma, reusable components, design tokens, responsive and accessible interfaces, research and Hindi/English communication.",
       "nextAction": "Confirm current intake and three-to-six-month start window; employer description states remote India and INR30,000/month.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-shramiksathi-4469701295",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
@@ -1604,6 +1626,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ],
       "termReviewHistory": [
@@ -1662,9 +1689,13 @@
       "lastPageFetched": "2026-11-08",
       "nextAction": "Confirm current intake, student eligibility and internship start/duration; employer range remains INR25,000–30,000/month in Ahmedabad.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.menstrupedia.com/careers/ux-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.menstrupedia.com/careers/ux-intern",
+        "textLength": 4298,
+        "contentHash": "de556136fc24831a52995c396cae91bec4c29de158b03ca14d101f322c28c9a2"
       },
       "sourceCheckHistory": [
         {
@@ -1716,6 +1747,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
@@ -1744,7 +1780,8 @@
           "sourceUrl": "https://www.menstrupedia.com/careers/ux-intern",
           "note": "Additional Gandhinagar-focused pass: fresh employer page retains Ahmedabad UX Design Intern and INR25,000–30,000/month. No new intake/start date established; same retained role, not a new opening."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "more-retail-4477072502",
@@ -1777,9 +1814,11 @@
       "summary": "Portfolio showing design decisions and process, Figma, user research and design systems.",
       "nextAction": "Confirm cohort start date and three-to-six-month Bengaluru office commitment; INR35,000/month remains stated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-more-retail-private-limited-4477072502",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
@@ -1831,6 +1870,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ],
       "termReviewHistory": [
@@ -1963,9 +2007,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://www.linkedin.com/posts/sruthisivakumar_product-design-intern-wint-wealth-activity-7515659430051426304-tqUQ",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
@@ -2017,6 +2063,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ]
     },
@@ -2051,9 +2102,13 @@
       "summary": "Figma components and tokens, SaaS/dashboard interfaces, prototyping and developer handoff.",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://jobs.lever.co/hevodata/433ffdef-3125-48ed-a131-52c697c321ee",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://jobs.lever.co/hevodata/433ffdef-3125-48ed-a131-52c697c321ee",
+        "textLength": 3675,
+        "contentHash": "9ea106eaf10e0024bfa6e2c2aefcdfeedb4659a09d7903e14640aff3e70e0de5"
       },
       "sourceCheckHistory": [
         {
@@ -2105,6 +2160,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -2123,7 +2183,8 @@
           "sourceUrl": "https://jobs.lever.co/hevodata/433ffdef-3125-48ed-a131-52c697c321ee",
           "note": "Fresh Lever original retains UX internship/product flow andprototyping work. Current numerical stipend andjoiningdate not established."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "revrag-product-design",
@@ -2241,7 +2302,7 @@
       "payVerified": false,
       "sourceType": "Company careers",
       "firstSeen": "2026-10-23",
-      "checkedAt": "2026-10-25",
+      "checkedAt": "2026-11-09",
       "postedAt": "2026-05-05",
       "postedLabel": "5 May 2026 · older posting",
       "status": "on_hold",
@@ -2279,9 +2340,13 @@
       "companyId": "chiblu",
       "listingVerification": "older-listing",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://chiblu.com/careers/product-design-intern-ux-ui",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://chiblu.com/careers/product-design-intern-ux-ui",
+        "textLength": 3953,
+        "contentHash": "b783134b0da9d278cd04e1671250f3f1cda62b296863d8b7b4ac2eef465033c2"
       },
       "sourceCheckHistory": [
         {
@@ -2333,6 +2398,19 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://chiblu.com/careers/product-design-intern-ux-ui",
+          "note": "Original still says5May2026,remoteIndia/Bangalore preferred,two months with possible extension,at least3realprojects andstrongFigma. No stipend or guaranteed three-month extension;older cohort and length unresolved."
         }
       ]
     },
@@ -2350,7 +2428,7 @@
       "payVerified": false,
       "sourceType": "Company careers",
       "firstSeen": "2026-10-23",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Not stated",
       "status": "on_hold",
@@ -2369,9 +2447,13 @@
       "lastPageFetched": "2026-11-08",
       "companyId": "neuralpath-technologies",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.neuralpath.app/careers/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.neuralpath.app/careers/",
+        "textLength": 6178,
+        "contentHash": "1f1c008d0dea56e8388d0472a0a6db078d1e467dd2b35f9bb8e47ad499e9ca85"
       },
       "sourceCheckHistory": [
         {
@@ -2423,6 +2505,19 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.neuralpath.app/careers/",
+          "note": "Original year-round student/recent-grad remoteIndia internship still named. FAQ says duration/stipend discussed per candidate;no numerical amount or paid guarantee added."
         }
       ]
     },
@@ -2440,7 +2535,7 @@
       "payVerified": false,
       "sourceType": "Company careers",
       "firstSeen": "2026-10-23",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Not stated",
       "status": "on_hold",
@@ -2457,9 +2552,13 @@
       "summary": "Portfolio showing layout, typography and colour; Figma auto-layout and prototypes; component documentation and development handoff..",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://krmrsolutions.com/careers/design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://krmrsolutions.com/careers/design-intern",
+        "textLength": 1082,
+        "contentHash": "8bff83fdb1d6eb49e4150795960a59c5d238d2240c1e4768b61888552107391c"
       },
       "sourceCheckHistory": [
         {
@@ -2511,6 +2610,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "companyId": "fit-krmrsolutions",
@@ -2524,7 +2628,15 @@
           "note": "Search extract labels one year ago,Unpaid and no longer accepting. No numerical amount/period inferred. Current role page omits pay; old programme does not establish current stipend."
         }
       ],
-      "nextAction": "Confirm whether the current role is paid, numerical monthly stipend, duration/student eligibility and intake; older separately indexed programme was explicitly unpaid."
+      "nextAction": "Confirm whether the current role is paid, numerical monthly stipend, duration/student eligibility and intake; older separately indexed programme was explicitly unpaid.",
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://krmrsolutions.com/careers/design-intern",
+          "note": "Original remoteIndia UIUX internship readable;Figma auto-layout,portfolio,design systems anddeveloper handoff. No pay,duration or cohort established."
+        }
+      ]
     },
     {
       "id": "zavio-design-intern",
@@ -2540,7 +2652,7 @@
       "payVerified": false,
       "sourceType": "Company careers",
       "firstSeen": "2026-10-23",
-      "checkedAt": "2026-11-01",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Not stated",
       "status": "on_hold",
@@ -2559,9 +2671,13 @@
       "lastPageFetched": "2026-11-08",
       "companyId": "zavio",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.gozavio.com/careers",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.gozavio.com/careers",
+        "textLength": 2591,
+        "contentHash": "6f9eade4e9bc6d83cea66c3346479bd3d0076d645f81e629b81bad761adc984c"
       },
       "sourceCheckHistory": [
         {
@@ -2613,6 +2729,19 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.gozavio.com/careers",
+          "note": "Original explicitly names remoteIndia product-design internship,research/flows/high-fidelity interfaces. No pay or duration stated;early-access product claims not proof commercial outcomes."
         }
       ]
     },
@@ -2647,9 +2776,13 @@
       "listingVerification": "indexed",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.jobleads.com/in/job/product-design-intern--india--e24abd61a6654a91f9a3af3bab3db8da5",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.jobleads.com/in/job/product-design-intern--india--e24abd61a6654a91f9a3af3bab3db8da5",
+        "textLength": 4449,
+        "contentHash": "c701f92b8d58e7814ef900692dfff06f4dcc7304808f4c087fcc40c902ef4ea1"
       },
       "sourceCheckHistory": [
         {
@@ -2701,8 +2834,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "glance-ux-intern",
@@ -2767,9 +2906,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://job-boards.greenhouse.io/glance/jobs/7916115",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://job-boards.greenhouse.io/glance/jobs/7916115",
+        "textLength": 4503,
+        "contentHash": "77a45848d014b0e3e65f992d5694a9cabdb87f833aba8b3d426d012c768a6ceb"
       },
       "sourceCheckHistory": [
         {
@@ -2821,6 +2964,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -2834,7 +2982,8 @@
           "sourceUrl": "https://job-boards.greenhouse.io/glance/jobs/7916115",
           "note": "Fresh original retains design-student/recent-graduate route,process/craft portfolio andinteraction work. Numerical stipend andjoiningdate unknown."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "observedAt": "2026-10-24",
@@ -2871,7 +3020,7 @@
       "status": "on_hold",
       "region": "Southern India",
       "firstSeen": "2026-10-24",
-      "checkedAt": "2026-10-25",
+      "checkedAt": "2026-11-09",
       "evidence": "Indeed detail accessible; official careers index also lists UX Designer–Intern in Hyderabad. Remote statement in Indeed conflicts with Hyderabad in current company index. Official careers site is dynamic; indexed role corroboration is stronger than its text-only rendering.",
       "summary": "Portfolio and Figma; Interaction/UX/graphic design or related degree.",
       "applicationMethod": "Indeed application or locate UX Designer–Intern on employer careers portal; form and account requirements untested",
@@ -2908,9 +3057,13 @@
       "benchmarkSummary": "Reported 15000–29000 INR/month; current listing pay undisclosed",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=e1a25a765d7c4fd7",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=e1a25a765d7c4fd7",
+        "textLength": 5457,
+        "contentHash": "b2bd5144ec8513b3f65149b70bbe6a24808231b72bfffeeaf1621290690c3b8b"
       },
       "sourceCheckHistory": [
         {
@@ -2962,6 +3115,19 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://in.indeed.com/viewjob?jk=e1a25a765d7c4fd7",
+          "note": "Exact Indeed readable:0–1year UXintern,three openings,Hyderabad header butRemoteWork body. Figma required,pay/duration/cohort unstated. Keep arrangement/student eligibility questions."
         }
       ]
     },
@@ -2998,7 +3164,7 @@
       "status": "on_hold",
       "region": "Southern India",
       "firstSeen": "2026-10-24",
-      "checkedAt": "2026-10-25",
+      "checkedAt": "2026-11-09",
       "evidence": "Original Indeed detail accessible without an expiry banner; official careers page corroborates employer and application channel, not a unique role detail. Actual application submission flow not tested. General company hybrid policy does not establish this role's work mode.",
       "summary": "Practice projects accepted in portfolio; Final-semester B.Des/M.Des or engineering student/graduate with UX skills.",
       "applicationMethod": "Indeed; official careers page provides careers@f1studioz.com as company hiring channel.",
@@ -3030,9 +3196,13 @@
       "benchmarkSummary": "Reported 10000–10000 INR/month; current listing pay undisclosed",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=fef929ca634359c7",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=fef929ca634359c7",
+        "textLength": 4281,
+        "contentHash": "bc7f713ee0b41f8686ed100102e9eac5278d88cd14524c0adad028c1a59c0861"
       },
       "sourceCheckHistory": [
         {
@@ -3084,6 +3254,19 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://in.indeed.com/viewjob?jk=fef929ca634359c7",
+          "note": "Exact Indeed readable:minimum six months,final-semester BDes/MDes orengineering final-semester/graduate route,portfolio andAI UXprocess. Paid stipend mentioned but noamount;do not assume general currentstudent eligibility."
         }
       ]
     },
@@ -3188,7 +3371,7 @@
       "status": "on_hold",
       "region": "Gujarat",
       "firstSeen": "2026-10-24",
-      "checkedAt": "2026-10-25",
+      "checkedAt": "2026-11-09",
       "evidence": "Indeed detail accessible; official careers page lists Trainee UI/UX Designer with experience Fresher. Submission not tested; this is a junior job alternative, not an internship.",
       "summary": "Figma or Adobe XD; Wireframes, prototypes, research and design systems.",
       "applicationMethod": "Official careers Apply Now / career@moontechnolabs.com, or Indeed",
@@ -3206,9 +3389,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=45ad3491be217187",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=45ad3491be217187",
+        "textLength": 2894,
+        "contentHash": "ddaed224bbae4523fe19741038bf63129b0f9dc4001ccad86b1065b15bab3440"
       },
       "sourceCheckHistory": [
         {
@@ -3260,6 +3447,19 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://in.indeed.com/viewjob?jk=45ad3491be217187",
+          "note": "Exact Indeed readable:permanent fresher/0–1year Ahmedabad in-person trainee,2025/26bachelor pass-out preferred,salaryundisclosed. Separate from internship;student/batch eligibility not assumed."
         }
       ]
     },
@@ -3328,9 +3528,13 @@
       "benchmarkSummary": "Reported 19000–21000 INR/month; current listing pay undisclosed",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
-        "status": "shell",
-        "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://www.naukri.com/job-listings-ui-ux-internship-figma-graphics-research-keyideas-infotech-gurgaon-gurugram-0-to-1-years-181120004352",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.naukri.com/job-listings-ui-ux-internship-figma-graphics-research-keyideas-infotech-gurgaon-gurugram-0-to-1-years-181120004352",
+        "textLength": 0,
+        "contentHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "sourceCheckHistory": [
         {
@@ -3382,8 +3586,14 @@
           "checkedAt": "2026-11-07",
           "status": "shell",
           "note": "HTTP success returned a small/client-rendered shell; current role body and intake unresolved."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "shell",
+          "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "observedAt": "2026-10-24",
@@ -3595,9 +3805,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://job-boards.greenhouse.io/project44/jobs/8101750",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://job-boards.greenhouse.io/project44/jobs/8101750",
+        "textLength": 9016,
+        "contentHash": "7b32aaa2b1e55f94e9594428f492082cc0d545b2b029f3c0a7e8ee4a0b8a5138"
       },
       "sourceCheckHistory": [
         {
@@ -3649,6 +3863,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
@@ -3673,7 +3892,8 @@
           "sourceUrl": "https://job-boards.greenhouse.io/project44/jobs/8101750",
           "note": "Fresh Greenhouse original retains Bengaluru six-month intern andstudent/recentdegree or equivalent experience,portfolio andmentorship. Pay/cohort undisclosed;mirror deadlines not employer-confirmed."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-frappe-fade282298",
@@ -3866,9 +4086,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://careers.kula.ai/juno/446-product-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://careers.kula.ai/juno/446-product-design-intern",
+        "textLength": 2078,
+        "contentHash": "2b135ec1fb344800c86084b54a986dd74a4f4e0df79a7b390f6bd50ddb24cfb6"
       },
       "sourceCheckHistory": [
         {
@@ -3920,6 +4144,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
@@ -3934,7 +4163,8 @@
           "sourceUrl": "https://careers.kula.ai/juno/446-product-design-intern",
           "note": "Fresh original retains product-design internship and optional motion/micro-interaction experience. Current stipend and intake not established; no extra experience inferred."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-gravity-450206428f",
@@ -4129,9 +4359,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://club.ungrammary.com/jobs/ux%2Fui-trainee-designer",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://club.ungrammary.com/jobs/ux%2Fui-trainee-designer",
+        "textLength": 3776,
+        "contentHash": "c5bda4eaf53ffc35afabcaa8c9066ab8268136a8e70b4f360946727cc00b13dc"
       },
       "sourceCheckHistory": [
         {
@@ -4183,6 +4417,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -4201,7 +4440,8 @@
           "sourceUrl": "https://club.ungrammary.com/jobs/ux%2Fui-trainee-designer",
           "note": "Fresh original retains graduates-only/notacademicprojects,sixmonths,Mumbai/Remote. Historical10–12k/month can only clear revised remote10k floor if eligible current remote intake;Mumbai15k fails. Separate1–2lakh/year remains annual;cohort/compensation conflict unconfirmed."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-nonlinear-125e37169d",
@@ -4257,7 +4497,7 @@
       "summary": "UX/UI and digital product design. Official UX/UI internship page observed; confirm still hiring",
       "evidence": "Search-indexed official role page; not directly opened. Official page lists in-office UX/UI internship; no posting/closing date or stipend amount. Selection includes timed design challenge and interview. Pay undisclosed; confirm compensation before proceeding.",
       "firstSeen": "2026-10-24",
-      "checkedAt": "2026-10-24",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Posting date not confirmed",
       "nextAction": "Confirm pay, current availability and role-specific work arrangement; review portfolio against requirements.",
@@ -4267,9 +4507,11 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
-        "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "checkedAt": "2026-11-09",
+        "status": "missing",
+        "url": "https://nonlinear.in/careers",
+        "note": "HTTP404 original route;cached/indexed careers still shows UX internship. Availability unresolved,not reliable closure.",
+        "message": "HTTP 404"
       },
       "sourceCheckHistory": [
         {
@@ -4321,6 +4563,18 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://nonlinear.in/careers",
+          "note": "Normal exact/careers returns404 today,while indexed original crawled lastweek still names in-officeBengaluru UXintern3–4months. Conflict unresolved;not archived solely on transient route failure."
         }
       ]
     },
@@ -4363,9 +4617,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://octet.design/careers/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://octet.design/careers/",
+        "textLength": 3153,
+        "contentHash": "b53e1a0fa839e7ac007284da5e431186a2458a2e21296f0c9002d062a91bb30f"
       },
       "sourceCheckHistory": [
         {
@@ -4417,6 +4675,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -4425,7 +4688,8 @@
           "sourceUrl": "https://octet.design/careers/",
           "note": "Fresh employer careers index lists UI Designer1–2years and UIUX Designer1+years Ahmedabad. Generic index, not re-established exact role terms; salary and student eligibility remain unknown."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-octet-design-studio-c1c6a7af08",
@@ -4466,9 +4730,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://octet.design/careers/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://octet.design/careers/",
+        "textLength": 3153,
+        "contentHash": "b53e1a0fa839e7ac007284da5e431186a2458a2e21296f0c9002d062a91bb30f"
       },
       "sourceCheckHistory": [
         {
@@ -4520,6 +4788,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -4528,7 +4801,8 @@
           "sourceUrl": "https://octet.design/careers/",
           "note": "Fresh employer careers index lists UI Designer1–2years and UIUX Designer1+years Ahmedabad. Generic index, not re-established exact role terms; do not count senior4–5year UX vacancy as junior."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "payMin": null,
@@ -4619,9 +4893,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.ycombinator.com/companies/superkalam/jobs/MW7xgR6-product-designer-internship",
+        "textLength": 4900,
+        "contentHash": "35409a171a48cc7b790574f71f1809b936e22080d8b9ea38621d0e9f2a8d2b85"
       },
       "sourceCheckHistory": [
         {
@@ -4673,8 +4951,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "payMin": null,
@@ -4760,9 +5044,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.ycombinator.com/companies/coulomb-ai/jobs/Qtbm3xO-ux-designer",
+        "textLength": 4627,
+        "contentHash": "442900f830a81d143dea754fd9a7b2935d82fd9ec71a5f51bccc09dea03ca2ff"
       },
       "sourceCheckHistory": [
         {
@@ -4814,8 +5102,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "indeed-icogz-3d84294c02b4aced",
@@ -4891,9 +5185,13 @@
       "companyId": "icogz",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced",
+        "textLength": 7444,
+        "contentHash": "07ec22024b267049d242763b91c5a97810230a7edba029f360dbff90d4e84297"
       },
       "sourceCheckHistory": [
         {
@@ -4945,8 +5243,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "indeed-victorflow-32e693c20b142dbf",
@@ -5016,9 +5320,13 @@
       "companyId": "victorflow",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=32e693c20b142dbf",
+        "textLength": 3508,
+        "contentHash": "b196fb6c01157d086567045f1c99537928f9777a3dff61e92fc7f37fe0a3edfa"
       },
       "sourceCheckHistory": [
         {
@@ -5070,8 +5378,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "indeed-balusen-846c4cef6fe81a21",
@@ -5211,9 +5525,13 @@
       "companyId": "gunadhya-software-solutions",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=e4310669941f4c75",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=e4310669941f4c75",
+        "textLength": 3552,
+        "contentHash": "d236b2f7e00f42dbc38f3a48c042fcf64cca8782b2685ca976720fc064dc64e2"
       },
       "sourceCheckHistory": [
         {
@@ -5265,8 +5583,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "cutshort-qoruz-c5rfKlTo",
@@ -5352,9 +5676,13 @@
       "companyId": "qoruz",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo",
+        "textLength": 44894,
+        "contentHash": "68aaf0b352c050c5ac819ae2497ab07c27e6b45532643f24e0a796a9560d6d9c"
       },
       "dateObservation": {
         "checkedAt": "2026-10-29",
@@ -5412,6 +5740,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "dateObservations": [
@@ -5445,7 +5778,8 @@
           "sourceUrl": "https://cutshort.io/job/Junior-UX-Designer-Bengaluru-Bangalore-Qoruz-c5rfKlTo",
           "note": "Fresh board page retainsQoruz4–6lakhINR/year,1–3years. Category/repost date is not original date;no monthly-stipend conversion."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "himalayas-energise-pro-uiux-designer",
@@ -5535,9 +5869,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://himalayas.app/jobs",
+        "textLength": 9551,
+        "contentHash": "c00e832fd77bbf8221e3d8fdab53d9a7549c7d1242462b80ea7ccc4bab235c1c"
       },
       "sourceCheckHistory": [
         {
@@ -5589,6 +5927,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -5597,7 +5940,8 @@
           "sourceUrl": "https://himalayas.app/companies/energise-pro/jobs/ui-ux-designer",
           "note": "Normal exact source redirects to generic Himalayas/jobs. This does not reconfirm role availability or terms; no independent employer closure established, so preserve on_hold and source history."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-arihantai-uiux-product-intern-85",
@@ -5676,9 +6020,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
-        "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "checkedAt": "2026-11-09",
+        "status": "restricted",
+        "url": "https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
@@ -5730,6 +6076,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -5895,9 +6246,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
-        "status": "shell",
-        "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://app.dover.com/apply/unitedover/04e656b6-31ce-4f66-aee2-45bf80085c3b",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://jobs.dover.com/unitedover/04e656b6-31ce-4f66-aee2-45bf80085c3b?src=app",
+        "textLength": 5,
+        "contentHash": "88fa0e9c8ec31bd6ea6bd0738ea669d09a290b9b41c0c77a3ae2211d0c83897b"
       },
       "sourceCheckHistory": [
         {
@@ -5949,8 +6304,14 @@
           "checkedAt": "2026-11-07",
           "status": "shell",
           "note": "HTTP success returned a small/client-rendered shell; current role body and intake unresolved."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "shell",
+          "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-atlabs-product-design-intern",
@@ -6334,9 +6695,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://join.com/companies/enterprisebot/16830986-ui-designer-0-1-years-experience",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://join.com/companies/enterprisebot/16889988-ui-designer-0-1-years-experience",
+        "textLength": 6524,
+        "contentHash": "9080f4a2261380e4bc52355641d3d886b3bd5011f0329920532efabafc2543d2"
       },
       "sourceCheckHistory": [
         {
@@ -6388,6 +6753,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
@@ -6407,7 +6777,8 @@
           "sourceUrl": "https://join.com/companies/enterprisebot/16830986-ui-designer-0-1-years-experience",
           "note": "Fresh employer detail retains permanent hybrid Bengaluru0–1year UI Designer,fresh graduates welcome,six-month probation. Salary/student eligibility unresolved;not internship."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "startup-propel-design-intern",
@@ -6466,9 +6837,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
-        "status": "shell",
-        "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://gopropel.in/careers/design-intern/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://gopropel.in/careers/design-intern/",
+        "textLength": 22,
+        "contentHash": "78217041c21d65bb440fc6ddd6b794edc7ff2f8462eb304dc2900df760c2d7ec"
       },
       "sourceCheckHistory": [
         {
@@ -6520,8 +6895,14 @@
           "checkedAt": "2026-11-07",
           "status": "shell",
           "note": "HTTP success returned a small/client-rendered shell; current role body and intake unresolved."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "shell",
+          "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "startup-kodin-uiux-intern",
@@ -6539,7 +6920,7 @@
       "payVerified": false,
       "sourceType": "Company careers",
       "firstSeen": "2026-10-25",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Employer posting date not stated; newly researched, not newly posted",
       "status": "on_hold",
@@ -6575,9 +6956,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.getkodin.com/#careers",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.getkodin.com/#careers",
+        "textLength": 22171,
+        "contentHash": "c7dcc9416a449f1f3f9ac45e44951063caf3157a4521da39d8d8cad7da54cefd"
       },
       "sourceCheckHistory": [
         {
@@ -6629,6 +7014,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -6636,8 +7026,14 @@
           "checkedAt": "2026-11-05",
           "sourceUrl": "https://www.getkodin.com/#careers",
           "note": "Fresh employer page retains UI/UX internship alongside other disciplines;immediate-joining wording remains a timing condition. Do not transfer frontend intern stipend/details to design."
+        },
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.getkodin.com/#careers",
+          "note": "Normal current homepage at#careers does not expose the previously saved internship. Hashroute/pagechange alone does not prove closure;keep record/on_hold andrequest current employer requisition."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "startup-formas-uiux-design-intern",
@@ -6655,7 +7051,7 @@
       "payVerified": false,
       "sourceType": "Company careers",
       "firstSeen": "2026-10-25",
-      "checkedAt": "2026-11-05",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Employer posting date not stated; newly researched, not newly posted",
       "status": "on_hold",
@@ -6693,9 +7089,13 @@
       "applicationInstructions": "Employer requests portfolio, resume and a short note about design technology and AI.",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.formas.ai/careers",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.formas.ai/careers",
+        "textLength": 52040,
+        "contentHash": "07a626b47d12633a7d73cac72358373ea82413ec181af266c3105fbbf9a32e7e"
       },
       "sourceCheckHistory": [
         {
@@ -6747,6 +7147,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -6754,8 +7159,14 @@
           "checkedAt": "2026-11-05",
           "sourceUrl": "https://www.formas.ai/careers",
           "note": "Fresh employer page still lists UI/UXDesignIntern,Remote/Singapore. India permission,current paid amount and intake remain unconfirmed."
+        },
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.formas.ai/careers",
+          "note": "Normal official careers still names UIUXDesignIntern,remote/Singapore. India hiringeligibility,pay,duration andcohort need confirmation;do not transfer fulltime seniorrequirements tointern."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "startup-daankart-product-uiux-intern",
@@ -6816,9 +7227,13 @@
       "applicationInstructions": "Published careers contact for the Hyderabad product/UI internship; confirm paid terms before sending an application.",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://daankart.com/about/careers#open-roles",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://daankart.com/about/careers#open-roles",
+        "textLength": 13173,
+        "contentHash": "f0468b5f10a663eb33e6acc499b9247b412e962657381bdfef3292d9660fa0af"
       },
       "sourceCheckHistory": [
         {
@@ -6870,6 +7285,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -6883,7 +7303,8 @@
           "sourceUrl": "https://daankart.com/about/careers#open-roles",
           "note": "Fresh employer careers list retains Product&UIUXIntern,Hyderabad office,sixmonths,reportsProductLead,donation-platform workflows. Stipend/currentcohort unknown;not newrole."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-payzoplus-design-intern",
@@ -6937,9 +7358,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.payzoplus.com/company/careers/design",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.payzoplus.com/company/careers/design",
+        "textLength": 5112,
+        "contentHash": "171280029fb356e994641ea6be9dfba81aca82fab29cf73aa370eff47e99472d"
       },
       "sourceCheckHistory": [
         {
@@ -6991,8 +7416,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-dectify-uiux-intern-dtci-s191348",
@@ -7016,7 +7447,7 @@
       "status": "on_hold",
       "sourceType": "Company careers",
       "firstSeen": "2026-10-26",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-09",
       "requirements": "Pursuing or recently completed a bachelor degree in Design, HCI or a related discipline; Figma prototyping, consistent components and design systems; User journeys, accessibility and usability fundamentals; Shipped-project portfolio and prior design-system contributions preferred",
       "requirementItems": [
         {
@@ -7051,9 +7482,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://careers.dectify.in/careers/details/DTCI-S191348/ui-ux-designer/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://careers.dectify.in/careers/details/DTCI-S191348/ui-ux-designer/",
+        "textLength": 2448,
+        "contentHash": "4c1f09a3f025a0e7dfe0aa3aeb5ad0d3827fc44522e68cdb799c1158dba592b5"
       },
       "sourceCheckHistory": [
         {
@@ -7105,6 +7540,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -7112,8 +7552,14 @@
           "checkedAt": "2026-11-06",
           "sourceUrl": "https://careers.dectify.in/careers/details/DTCI-S191348/ui-ux-designer/",
           "note": "Original retains internship,NewDelhi or remoteIndia,11August date and portfolio/design-system criteria. Pay and current remote intake unconfirmed."
+        },
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://careers.dectify.in/careers/details/DTCI-S191348/ui-ux-designer/",
+          "note": "Original11August2026 internship,NewDelhi orremoteIndia,Figma/design systems/accessibility anddegree route. Pay/duration/cohort unstated;Augustdate not refreshedposting."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-collabop-uiux-intern",
@@ -7172,9 +7618,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.collabop.com/careers/ui-ux-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.collabop.com/careers/ui-ux-intern",
+        "textLength": 2106,
+        "contentHash": "990302d0b69b703fa1a2c5982346367eb37644f91174b4b7a7786fa05a32959a"
       },
       "sourceCheckHistory": [
         {
@@ -7226,6 +7676,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -7244,7 +7699,8 @@
           "sourceUrl": "https://www.collabop.com/careers/ui-ux-intern",
           "note": "Fresh original retains remoteGlobal,3–6months,competitive undisclosedstipend andimmediate/urgent start. Laterjoining acceptance not established."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-lokal-product-designer-intern-cb2edd7186",
@@ -7325,9 +7781,13 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
-        "status": "shell",
-        "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://apply.workable.com/lokal-app/j/CB2EDD7186",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://apply.workable.com/lokal-app/j/CB2EDD7186",
+        "textLength": 35,
+        "contentHash": "91cecc7e4051e971a18d5644b0cf61fc3b91f801e5a40446a73cdbd9df9c8401"
       },
       "sourceCheckHistory": [
         {
@@ -7379,6 +7839,11 @@
           "checkedAt": "2026-11-07",
           "status": "shell",
           "note": "HTTP success returned a small/client-rendered shell; current role body and intake unresolved."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "shell",
+          "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
         }
       ],
       "termReviewHistory": [
@@ -7390,7 +7855,8 @@
           "checkedAt": "2026-11-03",
           "note": "Fresh normal public employer API state published,exactCB2EDD7186,original29September2026,six months Bengaluru office,stipend absent. Primary shell not enough by itself."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-aeron-design-intern-visuals-uiux",
@@ -7412,7 +7878,7 @@
       "status": "on_hold",
       "sourceType": "Company careers",
       "firstSeen": "2026-10-26",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Employer publication date unstated; discovery date is not posting date",
       "applicationUrl": "https://www.aeronsystems.com/careers/design-intern-visuals-ui-ux/",
@@ -7449,9 +7915,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.aeronsystems.com/careers/design-intern-visuals-ui-ux/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.aeronsystems.com/careers/design-intern-visuals-ui-ux/",
+        "textLength": 6250,
+        "contentHash": "b1f8ea19206b1ccc611e4482a21b8c0c2b6a6fbe7e5db2dc6a6439a914994126"
       },
       "sourceCheckHistory": [
         {
@@ -7503,6 +7973,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -7510,8 +7985,14 @@
           "checkedAt": "2026-11-06",
           "sourceUrl": "https://www.aeronsystems.com/careers/design-intern-visuals-ui-ux/",
           "note": "Fresh employer exact retains Pune mixed visual/UI work,technical dashboard components and hr@aeronsystems.com recruitment route. No numerical stipend confirmed."
+        },
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.aeronsystems.com/careers/design-intern-visuals-ui-ux/",
+          "note": "Normal Pune original still mixedillustration/campaigngraphics anddashboardUI,requiresFigma plusIllustrator/Photoshop;motion tools optional. HRemailpublished,butpay/duration/cohort unstated."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-androcid-uiux-intern-kvfsyux1o8c",
@@ -7532,7 +8013,7 @@
       "status": "on_hold",
       "sourceType": "Company careers",
       "firstSeen": "2026-10-26",
-      "checkedAt": "2026-11-06",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Employer publication date unstated; discovery date is not posting date",
       "applicationUrl": "https://androcid.freshteam.com/jobs/_KvFSyux1O8C/ui-ux-design-intern",
@@ -7569,9 +8050,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://androcid.freshteam.com/jobs/_KvFSyux1O8C/ui-ux-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://androcid.freshteam.com/jobs/_KvFSyux1O8C/ui-ux-design-intern",
+        "textLength": 2735,
+        "contentHash": "6c1e19e3bffe52216efb198a207f60a470892784ca01ae88479f750528157456"
       },
       "sourceCheckHistory": [
         {
@@ -7623,6 +8108,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
@@ -7636,8 +8126,14 @@
           "checkedAt": "2026-11-06",
           "sourceUrl": "https://androcid.freshteam.com/jobs/_KvFSyux1O8C/ui-ux-design-intern",
           "note": "Original retains three-month compensated internship,any study year/graduates and web/mobile UI. Amount and current intake unconfirmed."
+        },
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://androcid.freshteam.com/jobs/_KvFSyux1O8C/ui-ux-design-intern",
+          "note": "Normal ATS:PanajiGoa,three months,any-yearstudents/graduates,financialcompensation withoutamount. UIresearch/interaction/prototypes plusvisualbrand skills;no numerical stipend inferred."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-suthartech-uiux-intern",
@@ -7659,7 +8155,7 @@
       "payVerified": false,
       "status": "on_hold",
       "firstSeen": "2026-10-27",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Original employer publication date unstated; newly researched, not necessarily newly posted",
       "requirements": "Studying or recently graduated in design, HCI or a related discipline; Portfolio with at least one interface or product case study; Figma or equivalent; typography, spacing and accessibility basics; Explain design decisions, incorporate feedback and prepare engineering handoff notes",
@@ -7698,9 +8194,13 @@
       "duration": "12 weeks",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://suthartech.com/internships/ui-ux-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://suthartech.com/internships/ui-ux-design-intern",
+        "textLength": 1927,
+        "contentHash": "4b8feb0da2c471a63cd081e489fd579e8f54bf1e20f0c53405215ddfaf1e6f4c"
       },
       "sourceCheckHistory": [
         {
@@ -7752,6 +8252,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
@@ -7789,8 +8294,14 @@
           "checkedAt": "2026-11-08",
           "sourceUrl": "https://suthartech.com/internships/ui-ux-design-intern",
           "note": "Fresh original retains remoteIndia,12weeks,December2026 start,24November deadline andstudent/recent-graduate route;stipend undisclosed. Confirm cohort and fixed pay."
+        },
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://suthartech.com/internships/ui-ux-design-intern",
+          "note": "Normal original December2026 cohort,twelve weeks,24Novemberdeadline,remoteIndia. Numerical stipend notpublished;no amount inferred from paidstatus."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-creuto-nihar-uiux-intern",
@@ -7814,7 +8325,7 @@
       "payVerified": false,
       "status": "on_hold",
       "firstSeen": "2026-10-27",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-09",
       "requirements": "Student or personal-project portfolio accepted; Basic Figma skills and layout/typography fundamentals; Openness to feedback; organise components and prepare developer assets; Research experience, mobile design and illustration are optional extras",
       "requirementItems": [
         {
@@ -7849,9 +8360,13 @@
       "applicationDeadline": "2027-01-24",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.niharrout.com/work-with-me/ui-ux-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.niharrout.com/work-with-me/ui-ux-design-intern",
+        "textLength": 13156,
+        "contentHash": "64ee19056d8673e36f96e862f806c3dcf2a7a36f7fbf20a08c278ce7d9d395e7"
       },
       "sourceCheckHistory": [
         {
@@ -7903,12 +8418,25 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
         {
           "checkedAt": "2026-11-02",
           "note": "Fresh original retains remoteIndia,original26October2026 date and24January2027 deadline. Pay and cohort not established."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.niharrout.com/work-with-me/ui-ux-design-intern",
+          "note": "Normal founderhosted role still remoteIndia,student/personalportfolio/basicFigma,26Octoberposting/24January2027deadline. Pay,duration andschedule unstated;not new lead."
         }
       ]
     },
@@ -7964,9 +8492,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://atrisi.org/collaborate/ui-ux-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://atrisi.org/collaborate/ui-ux-design-intern",
+        "textLength": 2866,
+        "contentHash": "d92828d488c72efc863706c20dd1528e8120b28c724bc8325d37f52474e1e6f2"
       },
       "sourceCheckHistory": [
         {
@@ -8018,6 +8550,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -8026,7 +8563,8 @@
           "sourceUrl": "https://atrisi.org/collaborate/ui-ux-design-intern",
           "note": "Normal original readable today with remote/hybrid,Bengaluru preferred andnamedUIUX internship. Published form/LinkedIn/emailroutes are alternatives for same role,not newcards;pay/currentintake remain to confirm."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-toddle-product-design-intern-36030",
@@ -8192,9 +8730,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://toddle.keka.com/careers/jobdetails/85790",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
@@ -8246,6 +8786,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ]
     },
@@ -8309,9 +8854,11 @@
       "automationNotes": "Read-only research; no application, form or employer message submitted.",
       "listingVerification": "board-detail",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://in.linkedin.com/jobs/view/ux-design-research-intern-at-mojro-4477515785",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
@@ -8363,6 +8910,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ]
     },
@@ -8492,9 +9044,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://krevok.com/careers",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://krevok.com/careers",
+        "textLength": 2522,
+        "contentHash": "5402dc62c803bb8d59c1ea975530a68ebd3750c4ac11b67b521adafed2e60d5f"
       },
       "sourceCheckHistory": [
         {
@@ -8546,6 +9102,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -8554,7 +9115,8 @@
           "sourceUrl": "https://krevok.com/careers",
           "note": "Fresh original still states monthly stipend without amount,web-design-focused portfolio and possible full-time conversion. Joining/paid amount unconfirmed."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-water-ux-intern-wr021",
@@ -8613,9 +9175,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.water.bio/careers/WR021",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.water.bio/careers/WR021",
+        "textLength": 1923,
+        "contentHash": "ddc798a8d9df0782fe7f19577318ba81f192ebfea56863e19993ce4ab914425d"
       },
       "sourceCheckHistory": [
         {
@@ -8667,6 +9233,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -8685,7 +9256,8 @@
           "sourceUrl": "https://www.water.bio/careers/WR021",
           "note": "Fresh original retains full-time Hyderabad office,sixmonths,feature flows/components/user testing;currentpay andcohort unconfirmed."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "infopark-alignminds-uiux-internship-3",
@@ -8738,9 +9310,13 @@
       "email": "careers@alignminds.com",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://infopark.in/jobs/alignminds-technologies/ui-ux-designer-internship-3",
+        "textLength": 1803,
+        "contentHash": "35e712741eff47c4bd9bde086f20c5b67f2089ba85eb29dbbcc8ffdf58ff72e9"
       },
       "sourceCheckHistory": [
         {
@@ -8792,8 +9368,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "linkedin-nuefind-uiux-intern-4481147403",
@@ -8844,9 +9426,11 @@
       "automationNotes": "Read-only public research; no application, form or employer message submitted.",
       "listingVerification": "public-job-detail",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-nuefind-4481147403",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
@@ -8898,6 +9482,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ]
     },
@@ -8957,9 +9546,13 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer",
+        "textLength": 6369,
+        "contentHash": "d699f91d60261167d1f4950073e8de46f0fb0147969c2c16215cbbfa0fa8e525"
       },
       "sourceCheckHistory": [
         {
@@ -9011,6 +9604,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
@@ -9049,7 +9647,8 @@
           "sourceUrl": "https://www.pixsterstudio.com/jobs-opening/jr-product-designer",
           "note": "Fresh employer exact retains Ahmedabad0–1header versus1+year body,internships count,student/personal portfolios;salary andcurrent student employment eligibility unresolved."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-fuworx-uiux-intern",
@@ -9091,9 +9690,13 @@
       "automationNotes": "Public read-only research. No form, application or employer message sent.",
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.fuworx.com/careers/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.fuworx.com/careers/",
+        "textLength": 2275,
+        "contentHash": "67688edca9782bac151d0c28cb1128a18de53cda0527855284e05400e6c2dd7e"
       },
       "sourceCheckHistory": [
         {
@@ -9140,8 +9743,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "ydi-paradigm-uiux-intern-20260313",
@@ -9214,9 +9823,13 @@
       },
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.youngdesignersindia.com/Jobs/ui-ux-design-internparadigmbengaluru-ydijobs",
+        "textLength": 3254,
+        "contentHash": "16cd0e837da5420e19b8174836f63ca1863245c9585b7b5b464c2a4ae29aef3c"
       },
       "sourceCheckHistory": [
         {
@@ -9263,8 +9876,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-theinterviews-product-design-intern-ux-accessibility",
@@ -9286,7 +9905,7 @@
       "payVerified": false,
       "status": "on_hold",
       "firstSeen": "2026-10-30",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Original posting date not stated; first observed30October2026 is not a posting date",
       "requirements": "Students/recent graduates welcome; portfolio should explain process and iteration; Figma and visual/interaction foundations; feedback and weekly iteration; Accessibility checks for keyboard, screen reader, contrast and mobile; component/token work mapped to Tailwind; Research/analytics and developer handoff; HTML/CSS/React are bonuses",
@@ -9321,9 +9940,13 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, form or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
+        "textLength": 4356,
+        "contentHash": "21d3d3891f0489f63f62b6e28e18c9c334717b035653120c23d50ccc9f87ba58"
       },
       "lastPageFetched": "2026-11-08",
       "sourceCheckHistory": [
@@ -9366,6 +9989,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "termReviewHistory": [
@@ -9398,8 +10026,14 @@
           "checkedAt": "2026-11-08",
           "sourceUrl": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
           "note": "Fresh original retains November/December approximately12weeks,20–40hours,India remote/hybrid/Hyderabad choice,students welcome and paid stipend amount set at offer. No Indian subsidiary stated;written agreement and hours/cohort to confirm. No AI interview performed."
+        },
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.theinterviews.ai/careers/product-design-intern-ux-accessibility-india",
+          "note": "Normal employer original retains12weeksNov/Deccohort,remoteIndia,20–40hours,eveningISToverlap,studentswelcome. Paidamountsetatoffer,writtenUSentityagreement;no AIinterview/formstarted."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-humanx-product-design-intern",
@@ -9455,9 +10089,13 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, form or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.humanx.io/job-roles/product-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.humanx.io/job-roles/product-design-intern",
+        "textLength": 2933,
+        "contentHash": "7c0293749c4e16c14907d2b44a042f1706cc1f9765a8f23f95c4c49580de464d"
       },
       "lastPageFetched": "2026-11-08",
       "sourceCheckHistory": [
@@ -9500,6 +10138,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -9513,7 +10156,8 @@
           "sourceUrl": "https://www.humanx.io/job-roles/product-design-intern",
           "note": "Original retains Mumbai3–6months,0–1years and student/personal portfolios; stipend undisclosed. Confirm current cohort."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-humanx-product-designer-1-2years",
@@ -9569,9 +10213,13 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, form or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.humanx.io/job-roles/product-designer-1",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.humanx.io/job-roles/product-designer-1",
+        "textLength": 3866,
+        "contentHash": "91c2e532eb90de6c573a117673527f4d805f9786ab440321a875deff7e0577c8"
       },
       "lastPageFetched": "2026-11-08",
       "sourceCheckHistory": [
@@ -9614,6 +10262,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -9622,7 +10275,8 @@
           "sourceUrl": "https://www.humanx.io/job-roles/product-designer-1",
           "note": "Original retains full-time Mumbai1–2years product-design experience,not an internship. Salary undisclosed; junior stretch remains separate."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-storestory-product-design-intern",
@@ -9674,9 +10328,13 @@
       "email": "careers@storestory.in",
       "applicationMethod": "Published role application email; no email sent",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://storestory.in/careers",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://storestory.in/careers",
+        "textLength": 1911,
+        "contentHash": "ef01bca4b17dc97c239d153faecf7ff08894f8fe3c0c0a0f6aaf4c3472b760eb"
       },
       "lastPageFetched": "2026-11-08",
       "sourceCheckHistory": [
@@ -9714,6 +10372,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -9722,7 +10385,8 @@
           "sourceUrl": "https://storestory.in/careers",
           "note": "Original retains Pune hybrid product-design internship and merchant-workflow/design work; pay undisclosed, current joining window to confirm."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-galaxeye-uiux-product-intern-214465000006183057",
@@ -9797,9 +10461,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
-        "status": "shell",
-        "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://careers.galaxeye.space/jobs/Careers/214465000006183057/UI-UX-Design-Intern-Product-Design?source=RSS",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://careers.galaxeye.space/jobs/Careers/214465000006183057/UI-UX-Design-Intern-Product-Design?source=RSS",
+        "textLength": 92,
+        "contentHash": "bb3cbef06e9f872a18afd47e0b301d95469214c72403e07c94566b6132d21d4a"
       },
       "lastPageFetched": "2026-11-08",
       "sourceCheckHistory": [
@@ -9837,6 +10505,11 @@
           "checkedAt": "2026-11-07",
           "status": "shell",
           "note": "HTTP success returned a small/client-rendered shell; current role body and intake unresolved."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "shell",
+          "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
         }
       ],
       "termReviewHistory": [
@@ -9848,7 +10521,8 @@
           "checkedAt": "2026-11-03",
           "note": "Fresh normal employer RSS includes exact214465000006183057/full UIUX product description;original29October retained,stipend absent. Primary remains a shell."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "infopark-paoyaila-uiux-game-intern",
@@ -9904,9 +10578,13 @@
       "automationNotes": "Public read-only research; no application, form or employer message sent.",
       "email": "hrpaoyaila@gmail.com",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://infopark.in/jobs/paoyaila-animation-studios-llp/ui-ux-designer-game",
+        "textLength": 3501,
+        "contentHash": "d3c33bcedd3e901636841866e917dc1f03fcbaee2d13b68a5c1c16b520c4dc58"
       },
       "lastPageFetched": "2026-11-08",
       "sourceCheckHistory": [
@@ -9944,8 +10622,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "shine-kaho-product-designer-fresher-19923791",
@@ -10024,9 +10708,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.shine.com/jobs/product-designer-ui-ux-fresher-wfh/kaho/19923791",
+        "textLength": 4111,
+        "contentHash": "3c8fc6361618e71a5ecfa71be7339cbaf6f25f8d47f4e614eb9368e12df4f2f8"
       },
       "lastPageFetched": "2026-11-08",
       "sourceCheckHistory": [
@@ -10064,8 +10752,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-neuroinkx-ux-ui-design-intern",
@@ -10115,9 +10809,11 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, message or form submission initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://neuroinkx.com/careers/",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "lastPageFetched": "2026-11-02",
       "termReviewHistory": [
@@ -10160,6 +10856,11 @@
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ],
       "researchObservations": [
@@ -10223,9 +10924,13 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, message or form submission initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com",
+        "textLength": 1924,
+        "contentHash": "a1400f70145b6a13eac2a77d37c337bf8f16ab8eee02b7caddaee975dd9cbfd2"
       },
       "lastPageFetched": "2026-11-08",
       "termReviewHistory": [
@@ -10264,6 +10969,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -10272,7 +10982,8 @@
           "note": "Fresh employer detail retains Chennaihybrid designer internship;EsperLife header and Predigle body ambiguity remains. Pay,duration,contract entity and start unconfirmed.",
           "sourceUrl": "https://www.espergroup.com/careers/designer-intern?site=esperlife.com"
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "peerlist-nudge-junior-product-designer-jobhgnq9pralkmo8afm7on99jllrlp",
@@ -10356,9 +11067,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp",
+        "textLength": 3190,
+        "contentHash": "522d2581cf224b7319306593170d7ca7e595ab162b39ac4d0f360523b2ec1575"
       },
       "lastPageFetched": "2026-11-08",
       "termReviewHistory": [
@@ -10401,6 +11116,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -10419,7 +11139,8 @@
           "sourceUrl": "https://peerlist.io/company/justnudge/careers/junior-product-designer/jobhgnq9pralkmo8afm7on99jllrlp",
           "note": "Peerlist retains Bengaluru0–2years junior role with motion/AI-prototyping criteria; salary undisclosed. Historical annual benchmark is not current salary."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-boseprofessional-uxui-intern-d4TpRXTpW3",
@@ -10489,9 +11210,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://boseprofessional.applytojob.com/apply/d4TpRXTpW3/Software-Development-Intern-UXUI-Design",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://boseprofessional.applytojob.com/apply/d4TpRXTpW3/Software-Development-Intern-UXUI-Design",
+        "textLength": 11094,
+        "contentHash": "1ff4d4a5eb1c6f7a9d03669914c189b94975fde4dc8fc913a8a8b0909aac1fb7"
       },
       "lastPageFetched": "2026-11-08",
       "termReviewHistory": [
@@ -10525,6 +11250,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -10538,7 +11268,8 @@
           "sourceUrl": "https://boseprofessional.applytojob.com/apply/d4TpRXTpW3/Software-Development-Intern-UXUI-Design",
           "note": "Original retains full-time six-month Mangalore UX/UI internship; application asks experience/graduation-project status. No guaranteed student eligibility or pay inferred."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-cresentrix-uiux-intern-karaikal",
@@ -10585,9 +11316,13 @@
       "applicationMethod": "Employer-published route; manual review required",
       "automationNotes": "Read-only public research; no application, form, interview or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://cresentrix.com/careers",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://cresentrix.com/careers",
+        "textLength": 4268,
+        "contentHash": "963c546c23f3c3c6ce1b2eb3cb7be152eda7983b0027855dadbdea89830ef595"
       },
       "lastPageFetched": "2026-11-08",
       "termReviewHistory": [
@@ -10621,6 +11356,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -10629,7 +11369,8 @@
           "note": "Fresh employer index still names UI/UX Intern,KaraikalPuducherry,0–1year/freshers. No new expanded accordion requirements or numerical stipend verified.",
           "sourceUrl": "https://cresentrix.com/careers"
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-akshoraailabs-uiux-design-intern",
@@ -10692,9 +11433,13 @@
       "automationNotes": "Read-only public research; no application, form, interview or employer message initiated.",
       "listingEvidenceType": "recurring-programme",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://akshoraailabs.com/careers/internships/ui-ux-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://akshoraailabs.com/careers/internships/ui-ux-design-intern",
+        "textLength": 5109,
+        "contentHash": "ef9615f11693d745d975f41b82e0b22141f9b35d7ab51432e128d786efec454c"
       },
       "lastPageFetched": "2026-11-08",
       "termReviewHistory": [
@@ -10728,6 +11473,11 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
       ],
       "researchObservations": [
@@ -10736,7 +11486,8 @@
           "note": "Fresh role retains3/6months,Remote/Noida,StipendAvailable and technical-degree/career-switcher wording. Prior evergreen/project-dependent and selected/performance stipend caveats retained;no guaranteed fixed paid cohort established.",
           "sourceUrl": "https://akshoraailabs.com/careers/internships/ui-ux-design-intern"
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-ytt-global-ux-designer-intern-03614d23",
@@ -10799,9 +11550,13 @@
       "applicationMethod": "Employer-published route;manual review required",
       "automationNotes": "Read-only public research;no application,form,AI interview or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.ytt.global/careers/ux-designer-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.ytt.global/careers/ux-designer-intern",
+        "textLength": 4596,
+        "contentHash": "ce91b727c11f8da2f4c78f6038756e17410d7a00436f50effa7148c49a588b98"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -10831,8 +11586,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-hellcraft-uiux-intern-6a9bda77f0dfe509105af0df",
@@ -10885,9 +11646,13 @@
       "applicationMethod": "Employer-published route;manual review required",
       "automationNotes": "Read-only public research;no application,form,AI interview or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://careers.hellcraft.in/careers/6a9bda77f0dfe509105af0df",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://careers.hellcraft.in/careers/6a9bda77f0dfe509105af0df",
+        "textLength": 716,
+        "contentHash": "2b9f9872b718bf3a8a35719b68229fd67e62a47f9a3dfd8e0b096dae820b5c27"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -10917,8 +11682,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-skutrunk-uiux-design-intern",
@@ -10970,9 +11741,13 @@
       "applicationMethod": "Employer-published route;manual review required",
       "automationNotes": "Read-only public research;no application,form,AI interview or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.skutrunk.com/careers.php",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.skutrunk.com/careers.php",
+        "textLength": 6273,
+        "contentHash": "246e2a41456ab4cd915ea8a408d14593de2a337a764fd914f57d08a6a85717c4"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11002,8 +11777,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-ogalai-product-design-intern",
@@ -11055,9 +11836,13 @@
       "applicationMethod": "Published employer form;manual review and submission",
       "automationNotes": "Research only;no form,exercise,application or message sent.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://ogalai.com/careers",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://ogalai.com/careers",
+        "textLength": 3315,
+        "contentHash": "7dbd785ce5f05b34924685f5ef9edd2451791ff143ca22f5a8db0bcb19b8b761"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11082,8 +11867,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-brainoidtech-ux-design-intern",
@@ -11162,9 +11953,13 @@
         "note": "An older indexed listing row reported7,000–8,000INR/month;current amount is undisclosed. The fresh source no longer shows that row and it may describe another intake. Low confidence;confirm directly."
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://brainoidtech.com/jobs/ux-design/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://brainoidtech.com/jobs/ux-design/",
+        "textLength": 5271,
+        "contentHash": "1c2a7df6b64916349d86bf6de141511620657fa38b6d19ef4c46a905b8ebf081"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11194,8 +11989,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "indeed-websar-ux-designer-9ee14e89aef554d7",
@@ -11270,9 +12071,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=9ee14e89aef554d7",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=9ee14e89aef554d7",
+        "textLength": 3633,
+        "contentHash": "e957a2c309242f43063e6096f834b30879d1997602d8ac1ff934f16d71269a04"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11292,8 +12097,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "wellfound-vested-finance-junior-uiux-4878924",
@@ -11361,9 +12172,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://wellfound.com/jobs/4878924-junior-ui-ux-designer",
+        "textLength": 5788,
+        "contentHash": "ca58c6b16fcb335ce2240c5822b4f742472e3d91402d2aa00f451a0fac4e1725"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11383,8 +12198,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "internshala-ai-certs-1793856702",
@@ -11403,7 +12224,7 @@
       "payVerified": true,
       "status": "on_hold",
       "firstSeen": "2026-11-05",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Original posting date unverified; relative just-now label when checked, not an absolute date",
       "summary": "Paid Gandhinagar internship, INR15,000–18,000/month; mixed graphic/UIUX work. Duration and current intake need confirmation.",
@@ -11438,9 +12259,13 @@
       "automationNotes": "No application or employer message sent. A readable public page does not mean authenticated account access.",
       "applicationDeadline": "2026-12-05",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+        "textLength": 12840,
+        "contentHash": "32de7f8fd85b73e6765685fab14c309cfc11ef0c58d08981c44f87b3ebd4503b"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11458,6 +12283,11 @@
           "checkedAt": "2026-11-08",
           "sourceUrl": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
           "note": "Fresh exact original retains Gandhinagar office15–18kINR/month,applyby5December,joining3November–8December;three-month header versus3–6month body andmixedgraphic/productUX scope remain."
+        },
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702",
+          "note": "Normal exact stillGandhinagar15–18kINR/month,deadline5December,joining3November–8December. Headerthree monthsversusbody3–6months,graphic/UIUXmixedscope caveatsretained."
         }
       ],
       "sourceCheckHistory": [
@@ -11470,8 +12300,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "wellfound-cravv-product-design-intern-4716470",
@@ -11538,9 +12374,13 @@
         "verifiedMonthlyAmount": false
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://wellfound.com/jobs/4716470-product-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://wellfound.com/jobs/4716470-product-design-intern",
+        "textLength": 5998,
+        "contentHash": "091baee8d3f3febd48609c1c0dd8162deb784be54bd653ac3279ec5ff8f5aed4"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11560,8 +12400,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "wellfound-falcon-reality-uiux-intern-4691346",
@@ -11626,9 +12472,13 @@
         "resolution": "Monthly listing amount established from explicit description; confirm written terms"
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://wellfound.com/jobs/4691346-ui-ux-design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://wellfound.com/jobs/4691346-ui-ux-design-intern",
+        "textLength": 6376,
+        "contentHash": "31eca89b3baab426ee62e74da60669b66e226786e348352495739edeb87fb5f3"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11648,8 +12498,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-neurai-design-intern",
@@ -11708,9 +12564,13 @@
       "applicationMethod": "Published role application route; user submits manually",
       "automationNotes": "No application, form submission or employer message sent. Public evidence does not establish authenticated browser access.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://neuraitech.com/careers/design-intern/",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://neuraitech.com/careers/design-intern/",
+        "textLength": 6811,
+        "contentHash": "3bff3e4356920f63122a14a71a8871fa3505009fbf16f9aaf6f87514472642c8"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11730,8 +12590,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "indeed-aiva-uiux-intern-f269a751c3d3ad87",
@@ -11791,9 +12657,13 @@
       "automationNotes": "No application, form submission or employer message sent. Public evidence does not establish authenticated browser access.",
       "applicationEmail": "hr.fute3@gmail.com",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=f269a751c3d3ad87",
+        "textLength": 5061,
+        "contentHash": "400c22ae32cd2e3cb767a486e9a8a274476f18803ecc3499aeaeff944d6cd603"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11813,8 +12683,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-opsai-uiux-intern-234298000000411359",
@@ -11883,9 +12759,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
-        "status": "shell",
-        "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://opsai.zohorecruit.in/jobs/Careers/234298000000411359/UI-UX-Designer-Intern",
+        "textLength": 58,
+        "contentHash": "0dbe6b470966b6a023f39f10205946167dfb1b1df32b6da177635411b5e5ecad"
       },
       "lastPageFetched": "2026-11-08",
       "sourceCheckHistory": [
@@ -11893,8 +12773,14 @@
           "checkedAt": "2026-11-07",
           "status": "shell",
           "note": "HTTP success returned a small/client-rendered shell; current role body and intake unresolved."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "shell",
+          "note": "HTTP success returned a small/client-rendered shell;role body and current intake unresolved."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "himalayas-proof-of-skill-uxui-fresher",
@@ -11950,9 +12836,13 @@
       "platformPostedAt": "2026-10-30",
       "applicationDeadline": "2026-12-29",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://himalayas.app/companies/proof-of-skill/jobs/ux-ui-designer-fresher",
+        "textLength": 8462,
+        "contentHash": "dd78371ff4df622660a5e5071848727381c803a408da1503c850f8e719d885dd"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -11972,8 +12862,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "careers-99px-design-intern",
@@ -12033,9 +12929,13 @@
       "automationNotes": "No application, form submission or employer message sent. Public evidence does not establish authenticated browser access.",
       "applicationEmail": "mayur.lunawat@99px.in",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.99px.in/careers/design-intern",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.99px.in/careers/design-intern",
+        "textLength": 1617,
+        "contentHash": "f085f582f6c728bf36250b10dae8ea623421aa8a8d58e6c0a9237cb2d448502a"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -12055,8 +12955,14 @@
           "checkedAt": "2026-11-07",
           "status": "fetched",
           "note": "Fetched public body; access alone does not confirm role terms or current intake."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
         }
-      ]
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "linkedin-trinance-uiux-intern-4476413333",
@@ -12123,15 +13029,22 @@
         "note": "Older advert now redirects to category. Not pay for current4476413333, not a received offer."
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-at-trinance-4476413333",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ]
     },
@@ -12213,15 +13126,22 @@
         "note": "Historical/indexed advertised stipend, not a verified current offer or salary survey. Mirror updated13October2026; original date unknown."
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read;not proof of closure."
+        "url": "https://in.linkedin.com/jobs/view/product-design-intern-figma-wireframes-user-research-at-medinex-workforce-4474939484",
+        "note": "Robots policy unavailable/disallowed or access restricted;not proof role closed.",
+        "message": "Robots policy unavailable or disallows automated read"
       },
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-11-07",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read; not evidence of closure."
+        },
+        {
+          "checkedAt": "2026-11-08",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read;not proof of closure."
         }
       ]
     },
@@ -12291,9 +13211,13 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://in.indeed.com/viewjob?jk=e19d212f9ce5bcf1",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://in.indeed.com/viewjob?jk=e19d212f9ce5bcf1",
+        "textLength": 3441,
+        "contentHash": "ba054e0e3e25cbb72732bce6bbc60d123b42b4dc5a8700c99cfb3fba1d55dab3"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -12302,7 +13226,15 @@
           "sourceUrl": "https://in.indeed.com/viewjob?jk=e19d212f9ce5bcf1",
           "note": "Fresh exact Indeed still remote,fourmonths,payundisclosed. Onlyfuture full-time position explicitlypaid;do not assume internship paid. Current cohort,India/no-fee/legal-employer terms to confirm."
         }
-      ]
+      ],
+      "sourceCheckHistory": [
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "carrerlift-gloryquick-uiux-intern-e4bda746",
@@ -12375,9 +13307,13 @@
         "note": "Platform/mirror date, not employer-original posting. Amount not independently corroborated; not a received offer."
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "status": "fetched",
-        "note": "Public body fetched;access alone does not verify terms or current intake."
+        "url": "https://www.carrerlift.in/jobs/glory-quick-it-solutions-ui-ux-design-intern-pune-e4bda746",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.carrerlift.in/jobs/glory-quick-it-solutions-ui-ux-design-intern-pune-e4bda746",
+        "textLength": 3548,
+        "contentHash": "b8afbab6e2a1e82d55f116c21ea326c7a24da53dee5250e9c01ab97d1b4be827"
       },
       "lastPageFetched": "2026-11-08",
       "researchObservations": [
@@ -12386,7 +13322,15 @@
           "sourceUrl": "https://www.carrerlift.in/jobs/glory-quick-it-solutions-ui-ux-design-intern-pune-e4bda746",
           "note": "Fresh Carrerlift mirror still15–25k/month,Pune/studentroute andmirror-onlyWhatsApp. Employer currentdesign requisition/contact not independently verified;currentpay fields remainnull."
         }
-      ]
+      ],
+      "sourceCheckHistory": [
+        {
+          "checkedAt": "2026-11-08",
+          "status": "fetched",
+          "note": "Public body fetched;access alone does not verify terms or current intake."
+        }
+      ],
+      "lastPageFetchedAt": "2026-11-09"
     },
     {
       "id": "insiderone-priberry-uiux-expert-85c6c419",
@@ -12406,7 +13350,7 @@
       "status": "on_hold",
       "firstSeen": "2026-11-08",
       "feedAddedAt": "2026-11-08",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "insiderOne platform posting5November2026; employer-original publication outside the platform not established",
       "summary": "Advertised INR40,000–60,000/month,six-month internship. Remote,from anywhere in India. Current joining window and written employment terms to confirm.",
@@ -12440,7 +13384,24 @@
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
       "sourceJobId": "85c6c419-b3c7-4122-8f52-5d230dff7f9a",
       "platformPostedAt": "2026-11-05",
-      "applicationDeadline": "2026-12-14"
+      "applicationDeadline": "2026-12-14",
+      "lastSourceCheck": {
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://www.insiderone.in/jobs/ui-ux-design-intern-expert-tools-at-priberry-remote-85c6c419-b3c7-4122-8f52-5d230dff7f9a",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.insiderone.in/jobs/ui-ux-design-intern-expert-tools-at-priberry-remote-85c6c419-b3c7-4122-8f52-5d230dff7f9a",
+        "textLength": 7945,
+        "contentHash": "7604abb8a0d457c1850ff90037ba58e21f3cdc6edf1b3b087b8b6e5c863f481b"
+      },
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.insiderone.in/jobs/ui-ux-design-intern-expert-tools-at-priberry-remote-85c6c419-b3c7-4122-8f52-5d230dff7f9a",
+          "note": "Normal exact still40–60kINR/month,sixmonths,remoteanywhereIndia,students/recentgraduates. Same sharedAuristoperator andcurrentcohort/writtenemployment caveats;not new role."
+        }
+      ]
     },
     {
       "id": "insiderone-priberry-uiux-dashboards-9ec82483",
@@ -12460,7 +13421,7 @@
       "status": "on_hold",
       "firstSeen": "2026-11-08",
       "feedAddedAt": "2026-11-08",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "insiderOne platform posting5November2026; employer-original publication outside the platform not established",
       "summary": "Advertised INR40,000–60,000/month,six-month internship. Remote only for people living in or near Bengaluru,India. Current joining window and written employment terms to confirm.",
@@ -12495,7 +13456,24 @@
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
       "sourceJobId": "9ec82483-2cf7-40a8-88ef-9bbb21962a51",
       "platformPostedAt": "2026-11-05",
-      "applicationDeadline": "2027-01-06"
+      "applicationDeadline": "2027-01-06",
+      "lastSourceCheck": {
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://www.insiderone.in/jobs/ui-ux-design-intern-customer-dashboards-at-priberry-bengaluru-9ec82483-2cf7-40a8-88ef-9bbb21962a51",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.insiderone.in/jobs/ui-ux-design-intern-customer-dashboards-at-priberry-bengaluru-9ec82483-2cf7-40a8-88ef-9bbb21962a51",
+        "textLength": 8007,
+        "contentHash": "d85af0a2b15097f2f512221003c8f9fb07a8c60bd244ac34cb9ac023595e3977"
+      },
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.insiderone.in/jobs/ui-ux-design-intern-customer-dashboards-at-priberry-bengaluru-9ec82483-2cf7-40a8-88ef-9bbb21962a51",
+          "note": "Normal exact still40–60kINR/month,sixmonths,remoteONLYpeople living in/nearBengaluru. Current studentcohort/joining andresidence needconfirmation. No Indiawideremote expansion."
+        }
+      ]
     },
     {
       "id": "insiderone-ux-research-intern-5e98ec57",
@@ -12515,7 +13493,7 @@
       "status": "on_hold",
       "firstSeen": "2026-11-08",
       "feedAddedAt": "2026-11-08",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "insiderOne platform posting5November2026; employer-original publication outside the platform not established",
       "summary": "Advertised INR40,000–60,000/month,six-month internship. Remote,from anywhere in India. Current joining window and written employment terms to confirm.",
@@ -12549,7 +13527,24 @@
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
       "sourceJobId": "5e98ec57-34a6-4dfe-9382-71fdeb9d46d8",
       "platformPostedAt": "2026-11-05",
-      "applicationDeadline": "2026-12-07"
+      "applicationDeadline": "2026-12-07",
+      "lastSourceCheck": {
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://www.insiderone.in/jobs/ux-research-intern-at-insiderone-ai-remote-5e98ec57-34a6-4dfe-9382-71fdeb9d46d8",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.insiderone.in/jobs/ux-research-intern-at-insiderone-ai-remote-5e98ec57-34a6-4dfe-9382-71fdeb9d46d8",
+        "textLength": 8119,
+        "contentHash": "3bb78e66c9a754a87a324ac441c7e2b0419063ac1a2652ae2d58be47da68d194"
+      },
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.insiderone.in/jobs/ux-research-intern-at-insiderone-ai-remote-5e98ec57-34a6-4dfe-9382-71fdeb9d46d8",
+          "note": "Normal exact still40–60kINR/month,sixmonths,remoteanywhereIndia,studentproject/researchreasoning route. Originalplatformdate5Novemberretained;no renewedoriginalpublication claimed."
+        }
+      ]
     },
     {
       "id": "careers-admark-digitals-uiux-intern",
@@ -12569,7 +13564,7 @@
       "status": "on_hold",
       "firstSeen": "2026-11-08",
       "feedAddedAt": "2026-11-08",
-      "checkedAt": "2026-11-08",
+      "checkedAt": "2026-11-09",
       "postedAt": null,
       "postedLabel": "Employer-original posting date not established; source dates are recorded separately",
       "summary": "Named remote full-time UI/UX internship; stipend,duration and current joining terms undisclosed.",
@@ -12599,6 +13594,301 @@
       ],
       "listingVerification": "public-job-detail",
       "applicationMethod": "Careers page links to general website contact section for portfolio/CV with role title;internship-enquiry purpose,not a guessed HR email",
+      "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
+      "lastSourceCheck": {
+        "checkedAt": "2026-11-09",
+        "status": "fetched",
+        "url": "https://www.admarkdigitals.com/careers",
+        "note": "Body fetched;access alone does not verify current terms/intake.",
+        "finalUrl": "https://www.admarkdigitals.com/careers",
+        "textLength": 1432,
+        "contentHash": "a083c27dbec29a54ab004e17fef4db685664352e11cf2db458888cfb5b71d947"
+      },
+      "lastPageFetchedAt": "2026-11-09",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-09",
+          "url": "https://www.admarkdigitals.com/careers",
+          "note": "Normal official namedremote fulltimeUIUXintern unchanged. Pay,duration,cohort andstudenttermsunpublished;generalcontactroute retainsactualpurpose."
+        }
+      ]
+    },
+    {
+      "id": "internshala-dogster-ux-design-1793796912",
+      "companyId": "felicity-games",
+      "company": "Felicity Games / Dogster Technologies",
+      "title": "UX Design Intern",
+      "roleType": "Internship",
+      "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912",
+      "applicationUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912",
+      "sourceType": "Internshala",
+      "location": "Bengaluru, Karnataka, India — in office",
+      "workMode": "On-site",
+      "region": "Karnataka",
+      "payMin": 35000,
+      "payMax": 40000,
+      "payVerified": true,
+      "status": "on_hold",
+      "firstSeen": "2026-11-09",
+      "feedAddedAt": "2026-11-09",
+      "checkedAt": "2026-11-09",
+      "postedAt": null,
+      "postedLabel": "Internshala structured platform posting4November2026;not first discovery/check date",
+      "summary": "Advertised INR35,000–40,000/month for six months,in-office mobile-game/app UX internship. Joining window4November–9December;confirm current intake and student eligibility.",
+      "evidence": "Normal exact employer-authored Internshala detail and JobPosting metadata agree on INR35,000–40,000/month,full-time in-office Bengaluru,six months,one opening,application deadline4December2026 and eligible joining4November–9December2026. Structured platform posting is4November2026;first discovery/check is9November,not a fresh posting claim. Body names Felicity Games;official Felicity Organization metadata names Dogster Technologies Private Limited as legal entity. The main corporate site is a client-rendered shell,so the current product/brand narrative is supported by listing and official structured identity,not full normal corporate-body access. No explicit graduate-only degree restriction is stated;student eligibility and specific joining date still require confirmation. Broxer andJobsii are genuine matching mirrors with their own dates,not independent original freshness.",
+      "nextAction": "Confirm current six-month cohort and exact joining date within the published window,student eligibility,written fixed monthly stipend and Bengaluru office arrangement. Show a feature flow,prototype,user-test finding and developer handoff;do not assume permanent conversion.",
+      "requirements": "Figma,prototyping,UI/UX design,UX research and wireframing; Full-time in-office availability for six months;listed joining window4November–9December2026; Responsibilities:mobile-game/app flows,small user tests,design-system components and developer specifications",
+      "requirementItems": [
+        {
+          "id": "864b50241e28",
+          "text": "Figma,prototyping,UI/UX design,UX research and wireframing",
+          "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+        },
+        {
+          "id": "f9bf772f5e5e",
+          "text": "Full-time in-office availability for six months;listed joining window4November–9December2026",
+          "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+        },
+        {
+          "id": "5c2c693b418b",
+          "text": "Responsibilities:mobile-game/app flows,small user tests,design-system components and developer specifications",
+          "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+        }
+      ],
+      "tags": [
+        "Advertised monthly stipend",
+        "Six months",
+        "Bengaluru in office",
+        "Joining date to confirm"
+      ],
+      "listingVerification": "public-job-detail",
+      "applicationMethod": "Published public application route; manual user submission only",
+      "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
+      "sourceJobId": "1793796912",
+      "platformPostedAt": "2026-11-04",
+      "applicationDeadline": "2026-12-04",
+      "listedStartWindow": {
+        "from": "2026-11-04",
+        "to": "2026-12-09",
+        "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+      },
+      "additionalSources": [
+        {
+          "platform": "Broxer",
+          "url": "https://broxer.com/internships/ux-design-intern-krk5ck",
+          "checkedAt": "2026-11-09",
+          "note": "Matching mirror of same employer,scope,monthly range,duration and joining window;mirror date not original posting."
+        },
+        {
+          "platform": "Jobsii",
+          "url": "https://jobsii.com/job/dogster-technologies-ux-design-november-2026/",
+          "checkedAt": "2026-11-09",
+          "note": "Matching mirror dated5November2026 links exact Internshala1793796912;not a second role or original publication."
+        }
+      ]
+    },
+    {
+      "id": "careers-techtel-product-design-intern",
+      "companyId": "techtel",
+      "company": "Techtel",
+      "title": "Product Design Intern",
+      "roleType": "Internship",
+      "sourceUrl": "https://techtel.in/careers",
+      "applicationUrl": "https://techtel.in/contact?subject=Application%3A%20Product%20Design%20Intern",
+      "sourceType": "Company careers",
+      "location": "Remote or Kolkata; confirm India-wide remote arrangement for this role",
+      "workMode": "Remote",
+      "region": "Remote India",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-09",
+      "feedAddedAt": "2026-11-09",
+      "checkedAt": "2026-11-09",
+      "postedAt": null,
+      "postedLabel": "Employer-original posting date not established; source dates are recorded separately",
+      "summary": "Official named product-design internship at an AI/product lab;pay,duration,India-remote terms and joining date to confirm.",
+      "evidence": "Normal official careers explicitly advertises Product Design Intern and separately Product Designer full-time. Careers-wide location says Kolkata or remote;NextKnock mirror says remote open to India/fresher0–1,but employer does not state geography per role,experience,duration,stipend or student criteria. Product Design Intern is a named vacancy,not inferred from a talent pool. Work is designing/prototyping product surfaces alongside engineers. Employer identifies Techtel Ideas Private Limited and Opzami AI product;contact application is the employer-linked route. Mirror found4November/checked6November dates are mirror tracking,not original employer publication.",
+      "nextAction": "Confirm paid,no-fee internship,INR10,000/month minimum with15,000+ preferred,duration,weekly schedule,current student eligibility and exact joining date. Verify that the careers-wide remote option applies across India to this role. Review work-sample scope before proceeding.",
+      "requirements": "Advertised responsibilities:design and prototype product interfaces alongside engineers; Hiring materials:a short introduction and evidence of something built;later conversation and work sample or walkthrough",
+      "requirementItems": [
+        {
+          "id": "e3c0aa59a087",
+          "text": "Advertised responsibilities:design and prototype product interfaces alongside engineers",
+          "sourceUrl": "https://techtel.in/careers"
+        },
+        {
+          "id": "f6849081140a",
+          "text": "Hiring materials:a short introduction and evidence of something built;later conversation and work sample or walkthrough",
+          "sourceUrl": "https://techtel.in/careers"
+        }
+      ],
+      "tags": [
+        "Pay to confirm",
+        "Current intake to confirm"
+      ],
+      "listingVerification": "public-job-detail",
+      "applicationMethod": "Published public application route; manual user submission only",
+      "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
+      "additionalSources": [
+        {
+          "platform": "NextKnock",
+          "url": "https://www.nextknock.in/jobs/product-design-intern-techtel-kolkata-4efcaf63",
+          "checkedAt": "2026-11-09",
+          "note": "Matching role mirror states remote India and0–1years;its found4November/checked6November labels are not employer-original dates. Official careers independently names role but has fewer per-role terms."
+        }
+      ]
+    },
+    {
+      "id": "careers-hmmbiz-graphic-uiux-intern",
+      "companyId": "hmmbiz",
+      "company": "HMMBiz Web Solutions",
+      "title": "Graphic & UI/UX Designer Intern",
+      "roleType": "Internship",
+      "sourceUrl": "https://hmmbiz.com/careers/",
+      "applicationUrl": "https://hmmbiz.com/careers/",
+      "sourceType": "Company careers",
+      "location": "Ahmedabad, Gujarat, India — on-site",
+      "workMode": "On-site",
+      "region": "Gujarat",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-09",
+      "feedAddedAt": "2026-11-09",
+      "checkedAt": "2026-11-09",
+      "postedAt": null,
+      "postedLabel": "Employer-original posting date not established; source dates are recorded separately",
+      "summary": "Six-month Ahmedabad internship,students/recent graduates welcome;mix of graphics and UI/UX,pay undisclosed.",
+      "evidence": "Fresh normal official careers page marks Graphic & UI/UX Designer Intern Open Now,one opening,0–1year,Ahmedabad on-site,six months. Students or recent graduates in design/Fine Arts/related fields accepted;academic/personal portfolio is a plus. Work mixes social/marketing graphics,branding and web/mobile interfaces,wireframes,user flows and prototypes. Current stipend,cohort and joining date unstated. Apply for This Role opens employer form;no form submitted. Public footer sales@hmmbiz.com is a sales contact,not a recruitment address;not substituted for application route.",
+      "nextAction": "Confirm paid,no-fee six-month intake,joining date and fixed stipend at least INR10,000/month,preferably15,000+. Ask how much work is product UI/UX versus marketing graphics,and clarify current student schedule requirements.",
+      "requirements": "Currently enrolled or recently completed design,Fine Arts or related degree/diploma; Graphic/UIUX fundamentals;Figma,Photoshop,Illustrator,Canva or similar tools; Typography,colour,composition,hierarchy,responsive design,wireframing and user flows; Communication/teamwork;academic or personal design portfolio is a plus",
+      "requirementItems": [
+        {
+          "id": "2ca935648aab",
+          "text": "Currently enrolled or recently completed design,Fine Arts or related degree/diploma",
+          "sourceUrl": "https://hmmbiz.com/careers/"
+        },
+        {
+          "id": "814a79fb711e",
+          "text": "Graphic/UIUX fundamentals;Figma,Photoshop,Illustrator,Canva or similar tools",
+          "sourceUrl": "https://hmmbiz.com/careers/"
+        },
+        {
+          "id": "e9ad781ed5f5",
+          "text": "Typography,colour,composition,hierarchy,responsive design,wireframing and user flows",
+          "sourceUrl": "https://hmmbiz.com/careers/"
+        },
+        {
+          "id": "ee577f959d05",
+          "text": "Communication/teamwork;academic or personal design portfolio is a plus",
+          "sourceUrl": "https://hmmbiz.com/careers/"
+        }
+      ],
+      "tags": [
+        "Pay to confirm",
+        "Current intake to confirm"
+      ],
+      "listingVerification": "public-job-detail",
+      "applicationMethod": "Published public application route; manual user submission only",
+      "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session."
+    },
+    {
+      "id": "careers-triosphere-web-app-uiux-intern",
+      "companyId": "triosphere-tech",
+      "company": "Triosphere Tech",
+      "title": "Web, App & UI/UX Intern — design track to confirm",
+      "roleType": "Internship",
+      "sourceUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern",
+      "applicationUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern",
+      "sourceType": "Company careers",
+      "location": "Ahmedabad, Gujarat, India — hybrid",
+      "workMode": "Hybrid",
+      "region": "Gujarat",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-09",
+      "feedAddedAt": "2026-11-09",
+      "checkedAt": "2026-11-09",
+      "postedAt": null,
+      "postedLabel": "Employer-original posting date not established; source dates are recorded separately",
+      "summary": "Hybrid combined-track internship lasting2–3months,part-time/full-time options;UI/UX seat,pay and cohort need confirmation.",
+      "evidence": "Normal exact employer detail and careers index advertise combined Web,App & UI/UX Intern,hybrid,students/fresh graduates0–1year,six openings across the combined tracks. Duration2–3months,part-time/full-time options. Office is Ahmedabad. Relevant CS/IT/Design study accepted;Git/Figma/development tools are a plus,not universal engineering requirements for a design track. Pay/current cohort/joining window unstated. No evidence that all six seats are UI/UX or that a longer placement is available;do not infer either.",
+      "nextAction": "Confirm a dedicated UI/UX track,paid/no-fee terms and fixed stipend at least INR10,000/month,preferably15,000+,joining date,weekly schedule and exact duration. Published2–3months requires checking whether the three-month option is available. Six openings cover combined tracks,not six verified design seats.",
+      "requirements": "Pursuing or recently completed CS,IT,Design or related degree/diploma; Relevant tools,learning/problem-solving,communication and teamwork;Git/Figma/development familiarity a plus; Published2–3month duration,hybrid arrangement and part-time/full-time options",
+      "requirementItems": [
+        {
+          "id": "70aa3564557d",
+          "text": "Pursuing or recently completed CS,IT,Design or related degree/diploma",
+          "sourceUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern"
+        },
+        {
+          "id": "6c5e555b42fe",
+          "text": "Relevant tools,learning/problem-solving,communication and teamwork;Git/Figma/development familiarity a plus",
+          "sourceUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern"
+        },
+        {
+          "id": "5f851ba63af9",
+          "text": "Published2–3month duration,hybrid arrangement and part-time/full-time options",
+          "sourceUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern"
+        }
+      ],
+      "tags": [
+        "Pay to confirm",
+        "Current intake to confirm"
+      ],
+      "listingVerification": "public-job-detail",
+      "applicationMethod": "Published public application route; manual user submission only",
+      "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session."
+    },
+    {
+      "id": "careers-pixelarc-uiux-design-associate",
+      "companyId": "pixel-arc",
+      "company": "Pixel Arc",
+      "title": "UI/UX Design Associate — fresher",
+      "roleType": "Junior / fresher",
+      "sourceUrl": "https://pixelarc.co.in/syndicates/join/",
+      "applicationUrl": "https://pixelarc.co.in/syndicates/join/",
+      "sourceType": "Company careers",
+      "location": "Hyderabad, Telangana, India;office/schedule terms to confirm",
+      "workMode": "Unconfirmed",
+      "region": "Telangana",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-09",
+      "feedAddedAt": "2026-11-09",
+      "checkedAt": "2026-11-09",
+      "postedAt": null,
+      "postedLabel": "Employer-original posting date not established; source dates are recorded separately",
+      "summary": "Permanent full-time fresher alternative,two UI/UX seats;salary and student eligibility undisclosed.",
+      "evidence": "Normal official careers page explicitly lists UI/UX Design Associate,Hyderabad,Full-time,Fresher,two seats. Describes Figma,design systems and developer handoff across campaign and product work. No salary,degree,student route,cohort or joining date stated. Permanent fresher alternative,not an internship. Generic selection section describes a24-hour practical mission;scope,compensation and permitted use need clarification before the user undertakes any task. No assessment or form started.",
+      "nextAction": "Confirm salary in original offered units,employment arrangement,student eligibility and joining date. Ask about product-versus-campaign scope and the24-hour assessment deliverables,time cap,compensation and reuse terms before deciding to proceed.",
+      "requirements": "Explicitly advertised as full-time fresher role in Hyderabad,two seats; Figma,design systems and handoff for campaign and product work",
+      "requirementItems": [
+        {
+          "id": "580e171b1594",
+          "text": "Explicitly advertised as full-time fresher role in Hyderabad,two seats",
+          "sourceUrl": "https://pixelarc.co.in/syndicates/join/"
+        },
+        {
+          "id": "f390d5eeb7ae",
+          "text": "Figma,design systems and handoff for campaign and product work",
+          "sourceUrl": "https://pixelarc.co.in/syndicates/join/"
+        }
+      ],
+      "tags": [
+        "Permanent fresher alternative",
+        "Salary undisclosed",
+        "Student eligibility to confirm"
+      ],
+      "listingVerification": "public-job-detail",
+      "applicationMethod": "Published public application route; manual user submission only",
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session."
     }
   ]

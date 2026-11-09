@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-08",
+  "researchedAt": "2026-11-09",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -7814,7 +7814,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not advertised openings.",
-      "researchedAt": "2026-10-25",
+      "researchedAt": "2026-11-09",
       "sources": [
         {
           "url": "https://www.ecolibrium.io/careers/",
@@ -7833,6 +7833,12 @@
           "label": "Product Designer detail",
           "evidenceStatus": "Requires3–5 years; not an internship/junior recommendation",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "url": "https://employmenthero.com/jobs/organisations/ecolibrium-zemtu/",
+          "label": "9November recheck",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Official static careers still names UI/UX Intern,but current linked ATS shows Product Designer requiring3–5years and Visual Design & Marketing Intern. Normal exact ATS bodies reviewed;neither establishes a current qualifying coreUX internship. No new card;prior source/requirement IDs retained."
         }
       ],
       "roles": [
@@ -13440,13 +13446,19 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families,not unadvertised vacancies.",
-      "researchedAt": "2026-11-02",
+      "researchedAt": "2026-11-09",
       "sources": [
         {
           "url": "https://eleorex.com/about-us/career/ui-ux-design-intern/",
           "label": "2 November public evidence",
           "checkedAt": "2026-11-02",
           "evidenceStatus": "Fresh original200 states14September2026 advert,three months,one vacancy,Ahmedabad office,5days9–6,deadline1October2026. Past deadline controls despite Apply button. Protected email text not guessed. No active card."
+        },
+        {
+          "url": "https://eleorex.com/about-us/career/ui-ux-design-intern/",
+          "label": "9November recheck",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Normal exact original still has14September2026 date,three months and1October2026 deadline. Careers index Open Role label does not override expired detail;no revived feed role."
         }
       ],
       "roles": [
@@ -17226,13 +17238,549 @@
         "kind": "Historical closed platform advert;no current official recruitment contact established",
         "sourceUrl": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-opalcode1793035229"
       }
+    },
+    {
+      "id": "felicity-games",
+      "name": "Felicity Games / Dogster Technologies",
+      "company": "Felicity Games / Dogster Technologies",
+      "companyType": "Product company",
+      "sector": "Mobile casual games and gaming/app interfaces",
+      "focus": "Mobile casual games and gaming/app interfaces",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
+      "careersUrl": "https://felicitygames.com/careers",
+      "locationNote": "Bengaluru in office",
+      "openingStatus": "Specific advertised six-month UX internship;current student intake/joining to confirm",
+      "currentOpeningVerified": true,
+      "payNote": "Employer-authored Internshala explicitly INR35,000–40,000/month;listing range,not received offer.",
+      "payConfidence": "High for advertised monthly listing units;written offer/intake not confirmed",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912",
+          "label": "Named advertised role",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Normal exact employer-authored Internshala detail and JobPosting metadata agree on INR35,000–40,000/month,full-time in-office Bengaluru,six months,one opening,application deadline4December2026 and eligible joining4November–9December2026. Structured platform posting is4November2026;first discovery/check is9November,not a fresh posting claim. Body names Felicity Games;official Felicity Organization metadata names Dogster Technologies Private Limited as legal entity. The main corporate site is a client-rendered shell,so the current product/brand narrative is supported by listing and official structured identity,not full normal corporate-body access. No explicit graduate-only degree restriction is stated;student eligibility and specific joining date still require confirmation. Broxer andJobsii are genuine matching mirrors with their own dates,not independent original freshness."
+        },
+        {
+          "url": "https://felicitygames.com/terms-of-service",
+          "label": "Official structured legal identity;normal body shell",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Organization JSON-LD names Dogster legal entity,Bengaluru and customer-service contact. Main page/body is a client shell;indexed terms separately corroborate brand ownership. Customer-service email not treated as recruitment."
+        }
+      ],
+      "roles": [
+        {
+          "id": "internshala-dogster-ux-design-1793796912",
+          "jobId": "internshala-dogster-ux-design-1793796912",
+          "title": "UX Design Intern",
+          "seniority": "Internship — advertised,current intake to confirm",
+          "url": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912",
+          "location": "Bengaluru, Karnataka, India — in office",
+          "requirements": [
+            {
+              "id": "864b50241e28",
+              "text": "Figma,prototyping,UI/UX design,UX research and wireframing",
+              "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+            },
+            {
+              "id": "f9bf772f5e5e",
+              "text": "Full-time in-office availability for six months;listed joining window4November–9December2026",
+              "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+            },
+            {
+              "id": "5c2c693b418b",
+              "text": "Responsibilities:mobile-game/app flows,small user tests,design-system components and developer specifications",
+              "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+            }
+          ],
+          "evidenceStatus": "Normal exact employer-authored Internshala detail and JobPosting metadata agree on INR35,000–40,000/month,full-time in-office Bengaluru,six months,one opening,application deadline4December2026 and eligible joining4November–9December2026. Structured platform posting is4November2026;first discovery/check is9November,not a fresh posting claim. Body names Felicity Games;official Felicity Organization metadata names Dogster Technologies Private Limited as legal entity. The main corporate site is a client-rendered shell,so the current product/brand narrative is supported by listing and official structured identity,not full normal corporate-body access. No explicit graduate-only degree restriction is stated;student eligibility and specific joining date still require confirmation. Broxer andJobsii are genuine matching mirrors with their own dates,not independent original freshness.",
+          "checkedAt": "2026-11-09"
+        }
+      ],
+      "contact": {
+        "url": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912",
+        "kind": "Exact employer-authored internship application route",
+        "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+      },
+      "website": "https://felicitygames.com/",
+      "aliases": [
+        "Felicity Games",
+        "DOGSTER TECHNOLOGIES PRIVATE LIMITED"
+      ]
+    },
+    {
+      "id": "techtel",
+      "name": "Techtel",
+      "company": "Techtel",
+      "companyType": "Product company",
+      "sector": "AI product lab,Opzami software and physical AI",
+      "focus": "AI product lab,Opzami software and physical AI",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
+      "careersUrl": "https://techtel.in/careers",
+      "locationNote": "Careers says Kolkata or remote;India-remote per role to confirm",
+      "openingStatus": "Named product-design internship,unknown compensation/duration;separate full-time Product Designer has unspecified seniority",
+      "currentOpeningVerified": true,
+      "payNote": "Internship stipend and full-time salary undisclosed;no numbers inferred.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://techtel.in/careers",
+          "label": "Named advertised role",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Normal official careers explicitly advertises Product Design Intern and separately Product Designer full-time. Careers-wide location says Kolkata or remote;NextKnock mirror says remote open to India/fresher0–1,but employer does not state geography per role,experience,duration,stipend or student criteria. Product Design Intern is a named vacancy,not inferred from a talent pool. Work is designing/prototyping product surfaces alongside engineers. Employer identifies Techtel Ideas Private Limited and Opzami AI product;contact application is the employer-linked route. Mirror found4November/checked6November dates are mirror tracking,not original employer publication."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-techtel-product-design-intern",
+          "jobId": "careers-techtel-product-design-intern",
+          "title": "Product Design Intern",
+          "seniority": "Internship — advertised,current intake to confirm",
+          "url": "https://techtel.in/careers",
+          "location": "Remote or Kolkata; confirm India-wide remote arrangement for this role",
+          "requirements": [
+            {
+              "id": "e3c0aa59a087",
+              "text": "Advertised responsibilities:design and prototype product interfaces alongside engineers",
+              "sourceUrl": "https://techtel.in/careers"
+            },
+            {
+              "id": "f6849081140a",
+              "text": "Hiring materials:a short introduction and evidence of something built;later conversation and work sample or walkthrough",
+              "sourceUrl": "https://techtel.in/careers"
+            }
+          ],
+          "evidenceStatus": "Normal official careers explicitly advertises Product Design Intern and separately Product Designer full-time. Careers-wide location says Kolkata or remote;NextKnock mirror says remote open to India/fresher0–1,but employer does not state geography per role,experience,duration,stipend or student criteria. Product Design Intern is a named vacancy,not inferred from a talent pool. Work is designing/prototyping product surfaces alongside engineers. Employer identifies Techtel Ideas Private Limited and Opzami AI product;contact application is the employer-linked route. Mirror found4November/checked6November dates are mirror tracking,not original employer publication.",
+          "checkedAt": "2026-11-09"
+        },
+        {
+          "id": "techtel-product-designer-fulltime",
+          "title": "Product Designer",
+          "seniority": "Full-time,seniority unspecified;not automatically a junior alternative",
+          "url": "https://techtel.in/careers",
+          "location": "Kolkata or remote;per-role terms to confirm",
+          "requirements": [
+            {
+              "id": "73ca6064abaa",
+              "text": "Advertised responsibilities:AI interaction and visual language,including waiting and error states",
+              "sourceUrl": "https://techtel.in/careers"
+            }
+          ],
+          "evidenceStatus": "Official named full-time position;no minimum experience or student eligibility stated. Kept separate from internship."
+        }
+      ],
+      "contact": {
+        "url": "https://techtel.in/contact?subject=Application%3A%20Product%20Design%20Intern",
+        "kind": "Employer-linked role-specific contact application route",
+        "sourceUrl": "https://techtel.in/careers"
+      },
+      "website": "https://techtel.in/",
+      "aliases": [
+        "Techtel Ideas Private Limited"
+      ]
+    },
+    {
+      "id": "hmmbiz",
+      "name": "HMMBiz Web Solutions",
+      "company": "HMMBiz Web Solutions",
+      "companyType": "Services company",
+      "sector": "Web/mobile products,UIUX and brand/marketing design",
+      "focus": "Web/mobile products,UIUX and brand/marketing design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
+      "careersUrl": "https://hmmbiz.com/careers/",
+      "locationNote": "Ahmedabad on-site",
+      "openingStatus": "Open Now six-month Graphic & UI/UX internship,student/recent-graduate route;pay to confirm",
+      "currentOpeningVerified": true,
+      "payNote": "No current stipend amount stated.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://hmmbiz.com/careers/",
+          "label": "Named advertised role",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Fresh normal official careers page marks Graphic & UI/UX Designer Intern Open Now,one opening,0–1year,Ahmedabad on-site,six months. Students or recent graduates in design/Fine Arts/related fields accepted;academic/personal portfolio is a plus. Work mixes social/marketing graphics,branding and web/mobile interfaces,wireframes,user flows and prototypes. Current stipend,cohort and joining date unstated. Apply for This Role opens employer form;no form submitted. Public footer sales@hmmbiz.com is a sales contact,not a recruitment address;not substituted for application route."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-hmmbiz-graphic-uiux-intern",
+          "jobId": "careers-hmmbiz-graphic-uiux-intern",
+          "title": "Graphic & UI/UX Designer Intern",
+          "seniority": "Internship — advertised,current intake to confirm",
+          "url": "https://hmmbiz.com/careers/",
+          "location": "Ahmedabad, Gujarat, India — on-site",
+          "requirements": [
+            {
+              "id": "2ca935648aab",
+              "text": "Currently enrolled or recently completed design,Fine Arts or related degree/diploma",
+              "sourceUrl": "https://hmmbiz.com/careers/"
+            },
+            {
+              "id": "814a79fb711e",
+              "text": "Graphic/UIUX fundamentals;Figma,Photoshop,Illustrator,Canva or similar tools",
+              "sourceUrl": "https://hmmbiz.com/careers/"
+            },
+            {
+              "id": "e9ad781ed5f5",
+              "text": "Typography,colour,composition,hierarchy,responsive design,wireframing and user flows",
+              "sourceUrl": "https://hmmbiz.com/careers/"
+            },
+            {
+              "id": "ee577f959d05",
+              "text": "Communication/teamwork;academic or personal design portfolio is a plus",
+              "sourceUrl": "https://hmmbiz.com/careers/"
+            }
+          ],
+          "evidenceStatus": "Fresh normal official careers page marks Graphic & UI/UX Designer Intern Open Now,one opening,0–1year,Ahmedabad on-site,six months. Students or recent graduates in design/Fine Arts/related fields accepted;academic/personal portfolio is a plus. Work mixes social/marketing graphics,branding and web/mobile interfaces,wireframes,user flows and prototypes. Current stipend,cohort and joining date unstated. Apply for This Role opens employer form;no form submitted. Public footer sales@hmmbiz.com is a sales contact,not a recruitment address;not substituted for application route.",
+          "checkedAt": "2026-11-09"
+        }
+      ],
+      "contact": {
+        "url": "https://hmmbiz.com/careers/",
+        "kind": "Employer role application form;public sales footer email is not recruitment",
+        "sourceUrl": "https://hmmbiz.com/careers/"
+      },
+      "website": "https://hmmbiz.com/"
+    },
+    {
+      "id": "triosphere-tech",
+      "name": "Triosphere Tech",
+      "company": "Triosphere Tech",
+      "companyType": "Services company",
+      "sector": "Web/mobile product development and UIUX",
+      "focus": "Web/mobile product development and UIUX",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
+      "careersUrl": "https://www.triospheretech.com/careers",
+      "locationNote": "Ahmedabad hybrid",
+      "openingStatus": "Advertised combined-track2–3month internship;dedicated design seat/pay/cohort to confirm",
+      "currentOpeningVerified": true,
+      "payNote": "No current stipend amount stated.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern",
+          "label": "Named advertised role",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Normal exact employer detail and careers index advertise combined Web,App & UI/UX Intern,hybrid,students/fresh graduates0–1year,six openings across the combined tracks. Duration2–3months,part-time/full-time options. Office is Ahmedabad. Relevant CS/IT/Design study accepted;Git/Figma/development tools are a plus,not universal engineering requirements for a design track. Pay/current cohort/joining window unstated. No evidence that all six seats are UI/UX or that a longer placement is available;do not infer either."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-triosphere-web-app-uiux-intern",
+          "jobId": "careers-triosphere-web-app-uiux-intern",
+          "title": "Web, App & UI/UX Intern — design track to confirm",
+          "seniority": "Internship — advertised,current intake to confirm",
+          "url": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern",
+          "location": "Ahmedabad, Gujarat, India — hybrid",
+          "requirements": [
+            {
+              "id": "70aa3564557d",
+              "text": "Pursuing or recently completed CS,IT,Design or related degree/diploma",
+              "sourceUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern"
+            },
+            {
+              "id": "6c5e555b42fe",
+              "text": "Relevant tools,learning/problem-solving,communication and teamwork;Git/Figma/development familiarity a plus",
+              "sourceUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern"
+            },
+            {
+              "id": "5f851ba63af9",
+              "text": "Published2–3month duration,hybrid arrangement and part-time/full-time options",
+              "sourceUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern"
+            }
+          ],
+          "evidenceStatus": "Normal exact employer detail and careers index advertise combined Web,App & UI/UX Intern,hybrid,students/fresh graduates0–1year,six openings across the combined tracks. Duration2–3months,part-time/full-time options. Office is Ahmedabad. Relevant CS/IT/Design study accepted;Git/Figma/development tools are a plus,not universal engineering requirements for a design track. Pay/current cohort/joining window unstated. No evidence that all six seats are UI/UX or that a longer placement is available;do not infer either.",
+          "checkedAt": "2026-11-09"
+        }
+      ],
+      "contact": {
+        "url": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern",
+        "kind": "Employer internship application form;general info email remains commercial contact",
+        "sourceUrl": "https://www.triospheretech.com/careers/web-app-and-ui-ux-intern"
+      },
+      "website": "https://www.triospheretech.com/"
+    },
+    {
+      "id": "pixel-arc",
+      "name": "Pixel Arc",
+      "company": "Pixel Arc",
+      "companyType": "UX/product studio",
+      "sector": "Product interfaces,design systems,brand and campaign work",
+      "focus": "Product interfaces,design systems,brand and campaign work",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
+      "careersUrl": "https://pixelarc.co.in/syndicates/join/",
+      "locationNote": "Hyderabad,full-time",
+      "openingStatus": "Advertised two-seat full-time fresher UI/UX associate;student eligibility and salary unknown",
+      "currentOpeningVerified": true,
+      "payNote": "Salary undisclosed;no stipend or annual conversion inferred.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://pixelarc.co.in/syndicates/join/",
+          "label": "Named advertised role",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Normal official careers page explicitly lists UI/UX Design Associate,Hyderabad,Full-time,Fresher,two seats. Describes Figma,design systems and developer handoff across campaign and product work. No salary,degree,student route,cohort or joining date stated. Permanent fresher alternative,not an internship. Generic selection section describes a24-hour practical mission;scope,compensation and permitted use need clarification before the user undertakes any task. No assessment or form started."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-pixelarc-uiux-design-associate",
+          "jobId": "careers-pixelarc-uiux-design-associate",
+          "title": "UI/UX Design Associate — fresher",
+          "seniority": "Junior / fresher — advertised,current intake to confirm",
+          "url": "https://pixelarc.co.in/syndicates/join/",
+          "location": "Hyderabad, Telangana, India;office/schedule terms to confirm",
+          "requirements": [
+            {
+              "id": "580e171b1594",
+              "text": "Explicitly advertised as full-time fresher role in Hyderabad,two seats",
+              "sourceUrl": "https://pixelarc.co.in/syndicates/join/"
+            },
+            {
+              "id": "f390d5eeb7ae",
+              "text": "Figma,design systems and handoff for campaign and product work",
+              "sourceUrl": "https://pixelarc.co.in/syndicates/join/"
+            }
+          ],
+          "evidenceStatus": "Normal official careers page explicitly lists UI/UX Design Associate,Hyderabad,Full-time,Fresher,two seats. Describes Figma,design systems and developer handoff across campaign and product work. No salary,degree,student route,cohort or joining date stated. Permanent fresher alternative,not an internship. Generic selection section describes a24-hour practical mission;scope,compensation and permitted use need clarification before the user undertakes any task. No assessment or form started.",
+          "checkedAt": "2026-11-09"
+        }
+      ],
+      "contact": {
+        "url": "https://pixelarc.co.in/syndicates/join/#apply",
+        "kind": "Employer careers application form;no submission made",
+        "sourceUrl": "https://pixelarc.co.in/syndicates/join/"
+      },
+      "website": "https://pixelarc.co.in/"
+    },
+    {
+      "id": "avyam-labs",
+      "name": "AVYAM LABS",
+      "company": "AVYAM LABS",
+      "companyType": "Product company",
+      "sector": "Healthcare/education SaaS",
+      "focus": "Healthcare/education SaaS",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
+      "careersUrl": "https://wellfound.com/company/avyam-labs/jobs",
+      "locationNote": "Remote India;Ahmedabad company location",
+      "openingStatus": "Normal Wellfound employer-authored detail explicitly says six-month unpaid internship despite Actively Hiring and1-year header. No paid active-feed card. Official website only provides limited corporate corroboration;no employer quality audit.",
+      "currentOpeningVerified": false,
+      "payNote": "Explicitly unpaid in current role;not a qualifying paid internship.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://wellfound.com/jobs/4829685-ui-ux-designer-intern",
+          "label": "Public evidence;not active recommendation",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Normal Wellfound employer-authored detail explicitly says six-month unpaid internship despite Actively Hiring and1-year header. No paid active-feed card. Official website only provides limited corporate corroboration;no employer quality audit."
+        }
+      ],
+      "roles": [
+        {
+          "id": "avyam-labs-research-role",
+          "title": "UI/UX Designer Intern — unpaid",
+          "url": "https://wellfound.com/jobs/4829685-ui-ux-designer-intern",
+          "seniority": "Unpaid internship;excluded from paid feed",
+          "location": "Remote India;Ahmedabad company location",
+          "requirements": [
+            {
+              "id": "d92c72284255",
+              "text": "Six-month remote internship;body explicitly unpaid",
+              "sourceUrl": "https://wellfound.com/jobs/4829685-ui-ux-designer-intern"
+            },
+            {
+              "id": "ec93531dafb5",
+              "text": "Student/early-career route,Figma,wireframes,user flows,components and usability testing",
+              "sourceUrl": "https://wellfound.com/jobs/4829685-ui-ux-designer-intern"
+            }
+          ],
+          "evidenceStatus": "Normal Wellfound employer-authored detail explicitly says six-month unpaid internship despite Actively Hiring and1-year header. No paid active-feed card. Official website only provides limited corporate corroboration;no employer quality audit.",
+          "checkedAt": "2026-11-09"
+        }
+      ],
+      "contact": {
+        "url": "https://wellfound.com/company/avyam-labs/jobs",
+        "kind": "Published public route; purpose and verification limits in role evidence",
+        "sourceUrl": "https://wellfound.com/company/avyam-labs/jobs"
+      },
+      "website": "https://www.avyamlabs.com/"
+    },
+    {
+      "id": "playpower-labs",
+      "name": "Playpower Labs",
+      "company": "Playpower Labs",
+      "companyType": "Product company",
+      "sector": "Digital learning and EdTech products",
+      "focus": "Digital learning and EdTech products",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
+      "careersUrl": "https://www.playpowerlabs.com/",
+      "locationNote": "Historical remote India;Gandhinagar HQ",
+      "openingStatus": "Normal Built In6471570 explicitly says removed29July2025 at06:18UTC. Search/mirrors retain20–30k/month but do not establish renewed current intake. Official corporate site confirms EdTech focus,not a current internship.",
+      "currentOpeningVerified": false,
+      "payNote": "Historical listing20–30kINR/month only;not current offer or active stipend match.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://builtin.com/job/ui-ux-designer-intern/6471570",
+          "label": "Public evidence;not active recommendation",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Normal Built In6471570 explicitly says removed29July2025 at06:18UTC. Search/mirrors retain20–30k/month but do not establish renewed current intake. Official corporate site confirms EdTech focus,not a current internship."
+        }
+      ],
+      "roles": [
+        {
+          "id": "playpower-labs-research-role",
+          "title": "UI/UX Designer Intern — removed historical listing",
+          "url": "https://builtin.com/job/ui-ux-designer-intern/6471570",
+          "seniority": "Removed listing29July2025;no renewed intake established",
+          "location": "Historical remote India;Gandhinagar HQ",
+          "requirements": [
+            {
+              "id": "cc824c13b1a0",
+              "text": "Historical six-month remote role,Figma/Photoshop and AI-learning interfaces",
+              "sourceUrl": "https://builtin.com/job/ui-ux-designer-intern/6471570"
+            }
+          ],
+          "evidenceStatus": "Normal Built In6471570 explicitly says removed29July2025 at06:18UTC. Search/mirrors retain20–30k/month but do not establish renewed current intake. Official corporate site confirms EdTech focus,not a current internship.",
+          "checkedAt": "2026-11-09"
+        }
+      ],
+      "contact": {
+        "url": "https://www.playpowerlabs.com/",
+        "kind": "Published public route; purpose and verification limits in role evidence",
+        "sourceUrl": "https://www.playpowerlabs.com/"
+      },
+      "website": "https://www.playpowerlabs.com/"
+    },
+    {
+      "id": "sevago",
+      "name": "SevaGo",
+      "company": "SevaGo",
+      "companyType": "Product company",
+      "sector": "Local-services marketplace/app",
+      "focus": "Local-services marketplace/app",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
+      "careersUrl": "https://sevago.co.in/careers",
+      "locationNote": "Coimbatore hybrid/on-site opportunity",
+      "openingStatus": "Normal official careers advertises eight weeks and stipend up to INR4,000 based on performance;period not stated. Below applicable15k/month floor even if monthly;not active-feed recommendation. Potential future roles not offers.",
+      "currentOpeningVerified": false,
+      "payNote": "Up to INR4,000 performance-based,period unstated;no guaranteed monthly minimum.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-09",
+      "sources": [
+        {
+          "url": "https://sevago.co.in/careers",
+          "label": "Public evidence;not active recommendation",
+          "checkedAt": "2026-11-09",
+          "evidenceStatus": "Normal official careers advertises eight weeks and stipend up to INR4,000 based on performance;period not stated. Below applicable15k/month floor even if monthly;not active-feed recommendation. Potential future roles not offers."
+        }
+      ],
+      "roles": [
+        {
+          "id": "sevago-research-role",
+          "title": "UI/UX Product Design Intern — below target",
+          "url": "https://sevago.co.in/careers",
+          "seniority": "Eight-week performance-compensated programme;below target",
+          "location": "Coimbatore hybrid/on-site opportunity",
+          "requirements": [
+            {
+              "id": "0ef80d9d2117",
+              "text": "Wireframes through polished product screens",
+              "sourceUrl": "https://sevago.co.in/careers"
+            },
+            {
+              "id": "0b3bc374d992",
+              "text": "Eight-week hybrid internship with Coimbatore on-site opportunity",
+              "sourceUrl": "https://sevago.co.in/careers"
+            }
+          ],
+          "evidenceStatus": "Normal official careers advertises eight weeks and stipend up to INR4,000 based on performance;period not stated. Below applicable15k/month floor even if monthly;not active-feed recommendation. Potential future roles not offers.",
+          "checkedAt": "2026-11-09"
+        }
+      ],
+      "contact": {
+        "url": "https://sevago.co.in/careers",
+        "kind": "Published public route; purpose and verification limits in role evidence",
+        "sourceUrl": "https://sevago.co.in/careers"
+      },
+      "website": "https://sevago.co.in/"
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-08",
+    "researchedAt": "2026-11-09",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 248
+    "directoryCount": 256
   }
 }
