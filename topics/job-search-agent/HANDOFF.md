@@ -467,3 +467,61 @@ Preservation audit:all80prior job IDs/statuses/firstSeen/original dates/pay/requ
 Local/live desktop/mobile workflows passed:73active/10archived/three newheld,206companies/34coverage,annual salary units,synthetic blacklist/profile/Toddle criterion evidence and retained archived Toddle applied/LeadSquared interview stages preserved through reload;zero runtime errors. No actual user browser state read. CA/TLS verification retained via first-party live HTTPS relay. Live jobs/companies/sources/review-queue JSON,company-directory.csv,internships.xlsx and collection-report.md allHTTP200 and SHA256 byte-match exact committed files. QA/hash/deployment/HN-source artifacts outsideGit:/workspace/job-refresh-nov3-review/.
 
 Private applicant documents,profile,blacklist/reasons,assessments,notes/interviews and actual application stages inaccessible and not committed. No forms,applications,AI interviews,employer messages,seed/overwrite collector,memory writes,main changes or new worktree/project. Configured Mem0 skill path absent;existing archive recovered/read,cache-only cache_miss,current brief/repo sufficient,no remote retrieval. Local budget counter is not account-wide usage. Necessary local preview stopped after verification.
+
+
+## 10 November: integrated Codex application workspace, production pending
+
+The user identified the existing job-search-agent branch and asked to integrate
+and enhance it using ai-job-search-dev/ai-job-search. Canonical source is this
+branch and app. The separate topic/ai-job-search starter is a historical
+prototype, not another tracker/profile to populate. Read the new root AGENTS.md,
+.agents/skills/job-search-agent/SKILL.md and REFERENCE_COMPARISON.md.
+
+Baseline f235c4d preserved. Added a role drawer Application workspace and
+Prepare with Codex entry: explicit full-posting/profile confirmation, private
+request export/copy, reviewed result import with job/request/source-hash and
+claim-reference checks, editable Markdown evaluation/CV/letter/interview prep,
+review invalidation after edits, and separately preserved submitted copies.
+The source request that actually produced each result stays with it, even after
+another request is prepared. Existing email draft edits now survive closing
+and reload. Workspaces use current overrides and JSON backup/restore, with
+structural validation and a50MB backup limit. No new localStorage key, model
+backend, account, dependency, public-write API or application submission.
+
+All public research JSON/CSV/workbook/report/clipper bytes and package-lock are
+unchanged. Existing IDs, pay rules and private progress remain in their original
+stores. Cloud tasks still cannot read the user's actual browser/profile/notes/
+assessments/blacklist without a user-shared export. Only fictional data was
+used in QA; no historical applicant profile was copied into public files.
+Private workspace directories, including the earlier prototype's local data,
+are excluded by the new root.gitignore. Do not commit private request/result
+files, applicant documents or backups and do not upload them to topic memory.
+
+Validation:28 JavaScript tests,5 Python collector tests and Vite production
+build pass. Five browser scripts pass: application_workspace_check.py,
+browser_check.py,company_check.py,fit_import_check.py,source_coverage_check.py.
+They cover desktop/mobile export/import and the Node response validator,
+wrong-role rejection, no injected status/notes, persisted working/email drafts,
+invalidated reviews, preserved submitted text, private criteria/blacklist/stages,
+backup/restore, normal board workflow and source coverage; no runtime errors.
+Existing stale tests were corrected for sourced retired roles and current feed
+counts/status wording. Testing exposed real mobile overflow from unbroken
+research strings; source text/pills now wrap. No listings were reopened to
+satisfy tests. Screenshots in/tmp/job-agent-workspace-desktop.png and
+/tmp/job-agent-workspace-mobile.png show synthetic data only. Local npm cache
+uses/tmp/job-agent-npm-cache; Playwright browsers/tmp/job-agent-browsers.
+
+No live release has occurred for this change. Vercel GET on the exact existing
+project prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg returns403 for team
+team_wbMCzPWEpuswtIa2AekWJJLh. Native authorize_team_access is required; do not
+create another project or change protection/scope to evade it. After the user
+completes the team grant, deploy the exact pushed topic/job-search-agent commit
+in the existing project/root and verify READY plus the live application code.
+
+The reference's compiled/visually inspected PDFs, PDF text extraction and
+outcome calibration remain gaps. Fixtures demonstrate software behavior,
+not superior ranking/writing/hiring results. Next use the user's current
+browser-exported request for one real application pilot, then compare identical
+postings/profile against the documented quality criteria before claiming an
+improvement in AI output quality. Do not ask the user to rebuild an already
+populated browser profile without inspecting their supplied export first.

@@ -12,11 +12,11 @@ test('company records keep sources, inferred families and personal assessment se
  }
  const project=companies.find(c=>c.id==='project44');assert.equal(project.contact.kind,'Hiring accommodations only');
 });
-test('new employer roles preserve unknown pay and honest role types',()=>{
+test('retained employer roles preserve unknown pay, honest role types and sourced retirements',()=>{
  assert.equal(new Set(jobs.map(j=>j.id)).size,jobs.length);
  const originalIds=new Set(['careers-project44-51a9c17948','careers-juno-bb3bfbe727','careers-gravity-450206428f','careers-frappe-fade282298','careers-ungrammary-12ccfcdb76','careers-nonlinear-125e37169d','careers-octet-design-studio-e097199be8','careers-octet-design-studio-c1c6a7af08']);
  const newJobs=jobs.filter(j=>originalIds.has(j.id));assert.equal(newJobs.length,8);
- for(const j of newJobs){assert.equal(j.payMin,null);assert.equal(j.payMax,null);assert.equal(j.payVerified,false);assert.equal(j.status,'on_hold');assert.equal(j.postedAt,null);assert.ok(j.requirementItems.length);}
+ for(const j of newJobs){assert.equal(j.payMin,null);assert.equal(j.payMax,null);assert.equal(j.payVerified,false);assert.ok(['on_hold','closed'].includes(j.status));if(j.status==='closed'){assert.ok(['removed-original','closed-original'].includes(j.listingVerification),'Retirements need original-source evidence');assert.ok(j.evidence?.trim());}assert.equal(j.postedAt,null);assert.ok(j.requirementItems.length);}
  assert.equal(newJobs.find(j=>j.companyId==='gravity').workMode,'Remote');assert.equal(newJobs.find(j=>j.companyId==='frappe').roleType,'Junior / fresher');
 });
 test('expanded sources retain older dates, annual units and access limits',()=>{

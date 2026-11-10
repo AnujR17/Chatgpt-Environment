@@ -26,10 +26,10 @@ with sync_playwright() as p, TemporaryDirectory() as temp:
   expect(page.locator('.role-card')).to_have_count(count)
  page.get_by_role('button',name='All sources',exact=True).click()
  page.get_by_label('Role type',exact=True).select_option('Junior / fresher')
- expect(page.locator('.role-card')).to_have_count(sum(j.get('roleType')=='Junior / fresher' for j in data['jobs']))
+ expect(page.locator('.role-card')).to_have_count(sum(j.get('status')!='closed' and j.get('roleType')=='Junior / fresher' for j in data['jobs']))
  page.get_by_label('Role type',exact=True).select_option('all')
  page.get_by_label('Pay evidence',exact=True).select_option('estimated')
- expect(page.locator('.role-card')).to_have_count(sum(j.get('payMin') is None and bool(j.get('payBenchmark',{}).get('sourceUrl')) for j in data['jobs']))
+ expect(page.locator('.role-card')).to_have_count(sum(j.get('status')!='closed' and j.get('payMin') is None and bool(j.get('payBenchmark',{}).get('sourceUrl')) for j in data['jobs']))
  # Historical reports remain separate from current pay, and stay on hold.
  tech=page.locator('.role-card').filter(has=page.get_by_text('Techolution',exact=True))
  expect(tech.get_by_text('Pay not disclosed',exact=True)).to_be_visible()

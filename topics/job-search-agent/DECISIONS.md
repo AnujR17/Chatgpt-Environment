@@ -1,5 +1,13 @@
 # Decisions
 
+2026-11-10 — Integrate the reference ideas into the existing job-search-agent:
+
+- The user explicitly identified their existing board on another branch of this repository and asked to enhance it using ai-job-search-dev/ai-job-search. Use topic/job-search-agent and the existing Vite/React app; the separate topic/ai-job-search starter remains a prototype.
+- Add a private, explicit request/result handoff to the current Codex chat, with confirmed fact IDs, full posting and source identity. Use the browser's existing profile and overrides rather than add another profile/tracker or model backend.
+- Store application documents and submitted copies in existing private overrides/backups. Imports cannot set application status or replace notes/company preferences. Draft edits invalidate the review. Current browser state remains inaccessible to the cloud task unless explicitly exported/shared.
+- No public feed refresh or dependency changes in this implementation. The reference's PDF compilation/text extraction and outcome calibration remain gaps. Tests establish software behavior; no superiority in ranking, writing or hiring outcomes has been measured.
+- The existing Vercel project returned403 for its team scope. Complete and push reviewable source and local verification, then request the native team-access grant. No new deployment project, scope substitution or protection changes.
+
 2026-11-05 — Isolate job-board publishing from unrelated topic branches:
 
 - User reported a failed Vercel preview for `topic/checkpoint` commit `4362327`. Deployment evidence confirms `NOW_SANDBOX_WORKER_ROOTDIR_NOT_EXIST`: that branch has no `topics/job-search-agent/app`;the job-board branch does.

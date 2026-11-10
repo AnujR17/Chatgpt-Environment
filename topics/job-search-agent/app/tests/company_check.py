@@ -31,11 +31,14 @@ with sync_playwright() as p, TemporaryDirectory() as temp:
  with page.expect_download() as download:page.get_by_role('button',name='Export filtered list').click()
  csv=Path(temp)/'companies.csv';download.value.save_as(csv)
  text=csv.read_text();assert 'Gravity' in text and 'Portfolio case study' in text and 'careers.gravity.fast' in text
- # Save the role first, then blacklist: discovery hides it but pipeline remains.
+ # Model an application saved before this source was retired. Feed closures
+ # must not discard a user's stage or prevent reversible blacklist behavior.
+ gravity_id=page.evaluate("fetch('/data/jobs.json').then(r=>r.json()).then(d=>d.jobs.find(j=>j.companyId==='gravity').id)")
+ page.evaluate("id=>localStorage.setItem('design-jobs.overrides.v1',JSON.stringify({[id]:{status:'shortlisted'}}))",gravity_id)
+ page.reload(wait_until='networkidle')
  page.get_by_role('button',name='Discover',exact=True).click()
  page.get_by_label('Search roles').fill('Gravity')
  expect(page.locator('.role-card')).to_have_count(1)
- page.get_by_role('button',name='Save Gravity role',exact=True).click()
  page.get_by_role('button',name='Blacklist company',exact=True).click()
  expect(page.locator('.role-card')).to_have_count(0)
  page.get_by_role('button',name='Applications',exact=True).click()

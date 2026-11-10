@@ -1,3 +1,4 @@
+import {validateStoredKit} from './applicationKit.js';
 export const STAGES = [
   { id: 'discovered', label: 'Discovered', help: 'Review the role and requirements' },
   { id: 'shortlisted', label: 'Shortlisted', help: 'Prepare your application' },
@@ -9,6 +10,7 @@ export const STAGES = [
   { id: 'closed', label: 'Closed', help: 'Archived, rejected or withdrawn' },
 ];
 export const KEYS = { overrides: 'design-jobs.overrides.v1', custom: 'design-jobs.custom.v1', profile: 'design-jobs.profile.v1', companies: 'design-jobs.companies.v1' };
+export const MAX_BACKUP_BYTES = 50_000_000;
 export const PLATFORM_FILTERS = ['Company careers','Indeed','Naukri','Cutshort','YC / Work at a Startup','Wellfound','Remote boards','Hacker News','LinkedIn','X','Job board'];
 export function platformName(value) {
   const source = String(value || '').toLowerCase();
@@ -116,9 +118,11 @@ export function toCsv(jobs) {
 }
 export function validateBackup(value) {
   if (!value || value.version !== 1 || !Array.isArray(value.custom) || !value.overrides || typeof value.overrides !== 'object' || Array.isArray(value.overrides)) throw new Error('Choose a valid tracker JSON backup.');
-  if (value.custom.length > 5000 || JSON.stringify(value).length > 5_000_000) throw new Error('Backup is too large.');
+  if (value.custom.length > 5000 || JSON.stringify(value).length > MAX_BACKUP_BYTES) throw new Error('Backup is too large.');
   for (const job of value.custom) if (!job.id || typeof job.id !== 'string' || !job.company || !job.title) throw new Error('Backup contains an invalid job.');
   for (const update of Object.values(value.overrides)) if (!update || typeof update !== 'object' || Array.isArray(update)) throw new Error('Backup contains invalid updates.');
+  for (const update of Object.values(value.overrides)) if (update.applicationKit !== undefined) validateStoredKit(update.applicationKit);
+  for (const job of value.custom) if (job.applicationKit !== undefined) validateStoredKit(job.applicationKit);
   if (value.companyOverrides !== undefined) {
     if (!value.companyOverrides || typeof value.companyOverrides !== 'object' || Array.isArray(value.companyOverrides)) throw new Error('Backup contains invalid company preferences.');
     for (const update of Object.values(value.companyOverrides)) {

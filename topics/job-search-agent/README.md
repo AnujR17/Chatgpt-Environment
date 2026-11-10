@@ -6,5 +6,6 @@ Build a personal UX, interaction and product-design internship discovery and app
 - [Tasks](TASKS.md)
 - [Decisions](DECISIONS.md)
 - [Handoff](HANDOFF.md)
+- [Reference comparison and application integration](REFERENCE_COMPARISON.md)
 
 Source is published on topic/job-search-agent in AnujR17/Chatgpt-Environment; deployment target is Vercel. No résumé or private applicant information belongs in this topic repository.

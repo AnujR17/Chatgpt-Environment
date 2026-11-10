@@ -1,5 +1,17 @@
 # Tasks
 
+## 10 November: integrate the Codex application workflow
+
+- [x] Locate the existing topic/job-search-agent and make it the canonical product.
+- [x] Compare it with the referenced ai-job-search workflow; record actual gaps.
+- [x] Add private role/profile request export and reviewed result import to the existing drawer.
+- [x] Persist drafts, invalidate edited reviews, preserve submitted copies and include them in backup/restore.
+- [x] Keep public feeds, stable IDs, existing private storage keys and dependencies unchanged.
+- [x] Run unit/collector/build and desktop/mobile workflow checks; update stale lifecycle/count assertions rather than revive retired roles.
+- [ ] Publish the tested commit after the existing Vercel team grant is restored.
+- [ ] Run a real application pilot to assess writing and evaluation quality.
+- [ ] Add verified PDF/text-layer export and feedback calibration after that pilot.
+
 ## 10 November research refresh — production pending team grant
 
 - [x] Search requested publicsourcefamilies;26of37coverage recordsupdated withactualaccess,dates andzero-resultlimits.

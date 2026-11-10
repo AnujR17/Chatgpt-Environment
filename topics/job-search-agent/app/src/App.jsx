@@ -1,6 +1,6 @@
 import React, {useEffect,useMemo,useRef,useState} from 'react';
 import {ArrowDownToLine,ArrowRight,ArrowUpRight,Bookmark,Building2,CalendarDays,Check,CheckCheck,ChevronDown,ChevronRight,Compass,ExternalLink,FileText,Filter,LayoutGrid,List,MapPin,MoreHorizontal,Plus,RefreshCw,Search,ShieldCheck,SlidersHorizontal,Sparkles,Target,X} from 'lucide-react';
-import {STAGES,KEYS,stipend,payMatch,safeUrl,canonicalUrl,mergeJobs,dateLabel,localDate,isDue,toCsv,validateBackup,benchmarkText,roleType,isPipeline,csvCell,mergeCompanies,isCompanyBlocked,companyMatches,companyKey,mergeCompanyPreferences,PLATFORM_FILTERS,platforms} from './model';
+import {STAGES,KEYS,MAX_BACKUP_BYTES,stipend,payMatch,safeUrl,canonicalUrl,mergeJobs,dateLabel,localDate,isDue,toCsv,validateBackup,benchmarkText,roleType,isPipeline,csvCell,mergeCompanies,isCompanyBlocked,companyMatches,companyKey,mergeCompanyPreferences,PLATFORM_FILTERS,platforms} from './model';
 import {Sources,Profile,JobDrawer,AddModal} from './legacy';
 import CompanyDirectory from './CompanyDirectory';
 import {isCaptureFile,prepareCapturedJobs} from './captures';
@@ -50,7 +50,7 @@ export default function App(){
  async function restore(e){
   const file=e.target.files[0];e.target.value='';if(!file)return;
   try{
-   if(file.size>5_000_000)throw Error('JSON file is too large.');
+   if(file.size>MAX_BACKUP_BYTES)throw Error('JSON file is too large.');
    const payload=JSON.parse(await file.text());
    if(isCaptureFile(payload)){
     const result=await prepareCapturedJobs(payload,{jobs,companies});

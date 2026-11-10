@@ -77,6 +77,48 @@ Do not commit résumé files, personal profile data, credentials or browser back
 
 ## Application readiness
 
+### Application workspace with Codex
+
+The existing board is the canonical assistant. The separate `topic/ai-job-search`
+starter is a prototype, not a second tracker to populate. See the checked
+[reference comparison](../REFERENCE_COMPARISON.md) for differences from
+`ai-job-search-dev/ai-job-search` and remaining gaps.
+
+Open a role → **Prepare with Codex** → paste the full job description → review
+and confirm your saved profile → **Download Codex request**. Attach that private
+JSON file in Codex and ask it to prepare your application. **Copy request for
+Codex** is an alternative. The repository's `job-search-agent` skill specifies
+the evaluation, tailored CV, cover letter, interview preparation and review
+format. No extra model key or new profile store is needed.
+
+Use **Import application result** in the same role for the returned JSON. The
+import validates job/request/source identity, exact quoted claims and confirmed
+fact IDs; it cannot prove truth or audit completeness. Editing a document
+removes its review. Profile, posting or role-source changes require a fresh
+request. Existing drafts stay visible when a newer request is prepared.
+
+Drafts, the pasted posting and the existing email draft now persist in this
+browser. After submitting externally, **Save submitted copy** preserves the
+exact documents you confirm sending; future edits leave that copy unchanged.
+It does not send anything or change application stage. Update stage separately.
+The complete workspace is included in existing JSON backup/restore. Backup
+imports now allow up to50MB to accommodate application documents; local browser
+storage limits still apply, with the existing backup warning on save failure.
+
+Requests contain only the selected role, full pasted posting, profile facts
+and contact links, not private notes, assessments, blacklist or other roles.
+The board makes no model calls and does not automatically share or sync files
+with this chat. Only your explicit export/share gives the chat those facts.
+Keep request/result/backup files outside the public repository; use the ignored
+`topics/job-search-agent/private/` directory in this workspace. Outputs are
+Markdown. PDF layout, document compilation and ATS extraction remain unbuilt.
+
+Validate a returned result from the app directory with
+`node scripts/check_application_result.mjs /absolute/request.json /absolute/result.json`.
+Run `python tests/application_workspace_check.py` with Playwright browser paths
+configured for the application workspace's desktop/mobile round trip. Fixtures
+are fictional; this does not test LLM writing quality or hiring outcomes.
+
 - ShramikSathi and BThree publish an application email, so drafts can be prepared without browser form automation.
 - Hevo's public Lever form appears suitable for assisted filling once accurate profile/résumé information is supplied. Submission rules and CAPTCHA remain unverified.
 - LinkedIn applications need a signed-in user session. Google/third-party forms need inspection of their actual requirements.
