@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-09",
+  "researchedAt": "2026-11-10",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -14974,14 +14974,14 @@
       "careersUrl": "https://in.indeed.com/cmp/Websar-Technologies-LLP",
       "locationNote": "NanaPeth,Pune;in person",
       "payNote": "Employer-platform listing25–30kINR/month full-time salary,not an internship stipend. No received offer implied.",
-      "openingStatus": "Fresh Indeed exact detail states full-time UX Designer,NanaPethPune,in-person,up-to1year/freshers welcome and25,000–30,000INR/month salary. Matching Glassdoor public extract crawled5days ago repeats role,requirements and monthly employer-provided pay. Web extractor403 but normal homepage200 under WebsarITsolutions branding;legal-entity association,current employer requisition and joining/student eligibility need confirmation. Original posting date unstated.",
+      "openingStatus": "Saved Indeed UX Designer requisition expired;no renewed eligible intake established",
       "evidenceConfidence": "Evidence supports only the explicit public terms;intake,pay and access caveats remain.",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families;not additional advertised vacancies.",
-      "researchedAt": "2026-11-05",
+      "researchedAt": "2026-11-10",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=9ee14e89aef554d7",
@@ -15000,6 +15000,12 @@
           "label": "6 November retained-role terms",
           "checkedAt": "2026-11-06",
           "evidenceStatus": "Fresh Indeed retains full-time Pune0–1year/freshers,25–30kINR/month salary. Keep salary separate from internship stipend and verify employer identity."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=9ee14e89aef554d7",
+          "label": "10November expired original observation",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact Indeed nowexplicitly says ThisjobhasexpiredonIndeed. Archive thisrequisition,not theemployer. Historical25–30kINR/month fulltimesalary,requirements andsavedbrowserstage overrides remain intact."
         }
       ],
       "roles": [
@@ -15040,7 +15046,8 @@
         "url": "https://in.indeed.com/viewjob?jk=9ee14e89aef554d7",
         "kind": "Published Indeed application route;website branding/contracting-entity association unconfirmed,no recruitment email guessed",
         "sourceUrl": "https://in.indeed.com/viewjob?jk=9ee14e89aef554d7"
-      }
+      },
+      "currentOpeningVerified": false
     },
     {
       "id": "anvil-career",
@@ -16825,7 +16832,7 @@
       "rationale": "Product/design/research work andstudent route fit the directory scope. Editable qualitative preference;no hiring probability or quality guarantee.",
       "careersUrl": "https://priberry.com/careers/",
       "locationNote": "RemoteIndia;Priberry dashboard role requires Bengaluru-area residence.",
-      "openingStatus": "2 specific six-month design/research internship advert(s),40–60kINR/month;current joining confirmation needed.",
+      "openingStatus": "Three specific six-month design internship adverts:Expert Tools India-wide,Customer Dashboardsnear Bengaluru,Review Flowsnear Pune. Current joining/written terms to confirm.",
       "currentOpeningVerified": true,
       "payNote": "Explicit role adverts40–60kINR/month for six-month internships. Listing evidence only;written offer/startnotconfirmed.",
       "payConfidence": "Explicit advertised monthly range;not offer/intake acceptance",
@@ -16834,7 +16841,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-08",
+      "researchedAt": "2026-11-10",
       "sources": [
         {
           "url": "https://www.insiderone.in/jobs/ui-ux-design-intern-expert-tools-at-priberry-remote-85c6c419-b3c7-4122-8f52-5d230dff7f9a",
@@ -16853,6 +16860,12 @@
           "label": "Official identity and shared operating group",
           "checkedAt": "2026-11-08",
           "evidenceStatus": "Priberry careers explicitly links insiderOne hiring;both identify Aurist Private Limited as operator. Platform verification label is self-reported,not independent employer audit."
+        },
+        {
+          "url": "https://www.insiderone.in/jobs/product-design-intern-review-flows-at-priberry-pune-cef2bd4c-6d30-403d-94c5-4f8df0c703eb",
+          "label": "Distinct review-flows requisition",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact employer-platform description and JobPosting metadata agree on INR40,000–60,000/month,six months,full-time,students/recent graduates and remote only for people living in or near Pune. Platform date5November2026 and apply-by4December2026 are distinct from discovery10November. This is a separate review-workflow role with a distinct requisition and responsibilities,not a duplicate of prior expert-tools/customer-dashboard roles. Official Priberry careers links to insiderOne;both identify Aurist Private Limited as operator. Platform verification labels are self-reported,not independent employer audit. Current cohort,joining,legal employer and written terms remain unconfirmed;no received offer or selection work submitted."
         }
       ],
       "roles": [
@@ -16929,6 +16942,38 @@
             "confidence": "High for explicit advertised amount/unit;not a received offer",
             "note": "Role-body and structured units agree;current cohort and written terms to confirm."
           }
+        },
+        {
+          "id": "insiderone-priberry-review-flows-cef2bd4c",
+          "jobId": "insiderone-priberry-review-flows-cef2bd4c",
+          "title": "Product Design Intern — Review Flows",
+          "seniority": "Internship — advertised,current cohort/terms to confirm",
+          "url": "https://www.insiderone.in/jobs/product-design-intern-review-flows-at-priberry-pune-cef2bd4c-6d30-403d-94c5-4f8df0c703eb",
+          "location": "Remote only for people living in or near Pune,India",
+          "requirements": [
+            {
+              "id": "1f1b423c3a40",
+              "text": "Portfolio explaining design reasoning,strong Figma and curiosity about work practices",
+              "sourceUrl": "https://www.insiderone.in/jobs/product-design-intern-review-flows-at-priberry-pune-cef2bd4c-6d30-403d-94c5-4f8df0c703eb"
+            },
+            {
+              "id": "1ae0fa7c0612",
+              "text": "Design reviewer compare/correct/approve flows;prototype,test and measure time savings",
+              "sourceUrl": "https://www.insiderone.in/jobs/product-design-intern-review-flows-at-priberry-pune-cef2bd4c-6d30-403d-94c5-4f8df0c703eb"
+            },
+            {
+              "id": "6a68538cf5fa",
+              "text": "Write clear implementation notes for engineers",
+              "sourceUrl": "https://www.insiderone.in/jobs/product-design-intern-review-flows-at-priberry-pune-cef2bd4c-6d30-403d-94c5-4f8df0c703eb"
+            },
+            {
+              "id": "3dc3630acf0d",
+              "text": "Full-time six-month internship;remote requires residence in or near Pune",
+              "sourceUrl": "https://www.insiderone.in/jobs/product-design-intern-review-flows-at-priberry-pune-cef2bd4c-6d30-403d-94c5-4f8df0c703eb"
+            }
+          ],
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact employer-platform description and JobPosting metadata agree on INR40,000–60,000/month,six months,full-time,students/recent graduates and remote only for people living in or near Pune. Platform date5November2026 and apply-by4December2026 are distinct from discovery10November. This is a separate review-workflow role with a distinct requisition and responsibilities,not a duplicate of prior expert-tools/customer-dashboard roles. Official Priberry careers links to insiderOne;both identify Aurist Private Limited as operator. Platform verification labels are self-reported,not independent employer audit. Current cohort,joining,legal employer and written terms remain unconfirmed;no received offer or selection work submitted."
         }
       ],
       "contact": {
@@ -17774,13 +17819,377 @@
         "sourceUrl": "https://sevago.co.in/careers"
       },
       "website": "https://sevago.co.in/"
+    },
+    {
+      "id": "paybyflip",
+      "name": "FLIP / Paybyflip",
+      "company": "FLIP / Paybyflip",
+      "companyType": "Product company",
+      "sector": "Consumer payment choice,card/UPI rewards and payment interfaces",
+      "focus": "Consumer payment choice,card/UPI rewards and payment interfaces",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and region;not a hiring probability,employer quality guarantee or offer.",
+      "careersUrl": "https://wellfound.com/jobs/4985537-design-intern",
+      "locationNote": "India remote;Gurgaon company location",
+      "openingStatus": "Readable Wellfound design internship;pay period,student route,duration andcohort unresolved",
+      "currentOpeningVerified": true,
+      "payNote": "10–13kINR unqualified header versus YEAR metadata;no verified monthly stipend.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-10",
+      "sources": [
+        {
+          "url": "https://wellfound.com/jobs/4985537-design-intern",
+          "label": "Exact employer-platform detail",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact Wellfound4985537 names Design Intern,remote India,product design plus marketing/graphic work. Requires Figma Auto Layout,components/design systems,graphic/marketing skills and prior freelance design projects or internships;header says1year. Header INR10,000–13,000 has no period;JobPosting baseSalary labels the same numbers YEAR,and body does not state compensation. Current verified monthly stipend cannot be established. Structured platform posting4November2026 is not discovery10November. Exact older FLIP4029436 returns410 and is a different requisition,not corroboration of renewed terms. Official paybyflip.com confirms consumer payment/reward product identity;its/careers route404 does not close the readable Wellfound role. Duration,student eligibility and cohort unknown."
+        },
+        {
+          "url": "https://www.paybyflip.com",
+          "label": "Official product identity",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Readable corporate site confirms payment/reward product;no salary inferred from company claims."
+        }
+      ],
+      "roles": [
+        {
+          "id": "wellfound-flip-design-intern-4985537",
+          "jobId": "wellfound-flip-design-intern-4985537",
+          "title": "Design Intern — Product & Marketing",
+          "seniority": "Internship — advertised,current cohort/terms to confirm",
+          "url": "https://wellfound.com/jobs/4985537-design-intern",
+          "location": "Remote — India",
+          "requirements": [
+            {
+              "id": "ba1fa8c6df82",
+              "text": "Working knowledge of Figma,Auto Layout and design systems",
+              "sourceUrl": "https://wellfound.com/jobs/4985537-design-intern"
+            },
+            {
+              "id": "4257601a6269",
+              "text": "Graphic design,visual communication,marketing campaigns and brand creatives",
+              "sourceUrl": "https://wellfound.com/jobs/4985537-design-intern"
+            },
+            {
+              "id": "cead0aa25e3e",
+              "text": "Prior freelance design projects or internships explicitly required;header1year",
+              "sourceUrl": "https://wellfound.com/jobs/4985537-design-intern"
+            },
+            {
+              "id": "1cb4f7114b47",
+              "text": "Product responsibilities:component management,design-system improvement and prototyping",
+              "sourceUrl": "https://wellfound.com/jobs/4985537-design-intern"
+            }
+          ],
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact Wellfound4985537 names Design Intern,remote India,product design plus marketing/graphic work. Requires Figma Auto Layout,components/design systems,graphic/marketing skills and prior freelance design projects or internships;header says1year. Header INR10,000–13,000 has no period;JobPosting baseSalary labels the same numbers YEAR,and body does not state compensation. Current verified monthly stipend cannot be established. Structured platform posting4November2026 is not discovery10November. Exact older FLIP4029436 returns410 and is a different requisition,not corroboration of renewed terms. Official paybyflip.com confirms consumer payment/reward product identity;its/careers route404 does not close the readable Wellfound role. Duration,student eligibility and cohort unknown."
+        }
+      ],
+      "contact": {
+        "url": "https://wellfound.com/jobs/4985537-design-intern",
+        "kind": "Exact employer-platform job application route;official/careers404",
+        "sourceUrl": "https://wellfound.com/jobs/4985537-design-intern"
+      },
+      "website": "https://www.paybyflip.com",
+      "aliases": [
+        "FLIP",
+        "Paybyflip"
+      ]
+    },
+    {
+      "id": "aicines",
+      "name": "AICines",
+      "company": "AICines",
+      "companyType": "Product company",
+      "sector": "AI filmmaking,creator tools,publishing and viewing platform",
+      "focus": "AI filmmaking,creator tools,publishing and viewing platform",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and region;not a hiring probability,employer quality guarantee or offer.",
+      "careersUrl": "https://aicines.com/careers",
+      "locationNote": "Worldwide remote;Hyderabad optional;separate US-only roles are distinct",
+      "openingStatus": "Specific older UX internship still listed;period conflict,student route,duration andcurrent intake unresolved",
+      "currentOpeningVerified": true,
+      "payNote": "Body25–100kINR/month plus bonus versus YEAR metadata;not verified stipend or received offer.",
+      "payConfidence": "Conflicting employer body/structured periods;exact internship fixed amount unknown",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-10",
+      "sources": [
+        {
+          "url": "https://aicines.com/careers/ui-ux-design-intern",
+          "label": "Exact employer role with compensation conflict",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact employer role body explicitly says INR25,000–100,000 per month,set by portfolio/interview,plus performance bonus. The same JobPosting baseSalary metadata says YEAR. Both conflicting periods retained;payMin/payMax remain null and no verified annual/monthly offer inferred. The role welcomes interns,junior andmid-level candidates andcontract arrangements;range is broad andnot a guaranteed internship offer. Official careers index lists this exact internship as remote worldwide,Hyderabad onsite optional;separate US-only design role is not this requisition. Structured posting10August2026 and valid-through30November2026 retained as older original listing;not freshly posted10November. Duration,current student eligibility,India engagement andjoining need confirmation. Employer expects product exploration before interview;no account,trial,assessment or application was started. Conversion/PPO wording is employer claim,not received offer."
+        },
+        {
+          "url": "https://aicines.com/careers",
+          "label": "Official roles/geography index",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Exact intern role remote worldwide/Hyderabad optional;separate US-only multi-level UIUX role not crossposted as this job."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-aicines-uiux-design-intern",
+          "jobId": "careers-aicines-uiux-design-intern",
+          "title": "UI/UX Design Intern",
+          "seniority": "Internship — advertised,current cohort/terms to confirm",
+          "url": "https://aicines.com/careers/ui-ux-design-intern",
+          "location": "Remote worldwide;Hyderabad on-site optional — confirm India engagement",
+          "requirements": [
+            {
+              "id": "260f2fc62dd7",
+              "text": "Figma and portfolio showing process,not only finished screens",
+              "sourceUrl": "https://aicines.com/careers/ui-ux-design-intern"
+            },
+            {
+              "id": "ed9f9f7430a7",
+              "text": "Layout,hierarchy and interaction fundamentals",
+              "sourceUrl": "https://aicines.com/careers/ui-ux-design-intern"
+            },
+            {
+              "id": "283170abe500",
+              "text": "Prototype/design-system/user-research experience is a bonus",
+              "sourceUrl": "https://aicines.com/careers/ui-ux-design-intern"
+            },
+            {
+              "id": "d44b392900fd",
+              "text": "Responsibilities:creator-facing web/mobile flows,prototyping,lightweight research and engineering collaboration",
+              "sourceUrl": "https://aicines.com/careers/ui-ux-design-intern"
+            },
+            {
+              "id": "5eb3560ae771",
+              "text": "Employer requires prior exploration of its creator leaderboard,Minis and publishing/discovery flows before interview",
+              "sourceUrl": "https://aicines.com/careers/ui-ux-design-intern"
+            }
+          ],
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact employer role body explicitly says INR25,000–100,000 per month,set by portfolio/interview,plus performance bonus. The same JobPosting baseSalary metadata says YEAR. Both conflicting periods retained;payMin/payMax remain null and no verified annual/monthly offer inferred. The role welcomes interns,junior andmid-level candidates andcontract arrangements;range is broad andnot a guaranteed internship offer. Official careers index lists this exact internship as remote worldwide,Hyderabad onsite optional;separate US-only design role is not this requisition. Structured posting10August2026 and valid-through30November2026 retained as older original listing;not freshly posted10November. Duration,current student eligibility,India engagement andjoining need confirmation. Employer expects product exploration before interview;no account,trial,assessment or application was started. Conversion/PPO wording is employer claim,not received offer."
+        }
+      ],
+      "contact": {
+        "url": "https://aicines.com/careers/ui-ux-design-intern",
+        "kind": "Specific employer careers listing;later application mechanism not submitted",
+        "sourceUrl": "https://aicines.com/careers/ui-ux-design-intern"
+      },
+      "website": "https://aicines.com/"
+    },
+    {
+      "id": "webearl-technologies",
+      "name": "WebEarl Technologies",
+      "company": "WebEarl Technologies",
+      "companyType": "Services company",
+      "sector": "Web/mobile software and UIUX/graphic design",
+      "focus": "Web/mobile software and UIUX/graphic design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and region;not a hiring probability,employer quality guarantee or offer.",
+      "careersUrl": "https://www.webearl.com/career",
+      "locationNote": "Ahmedabad on-site",
+      "openingStatus": "Advertised internship below stipend floor;not active recommendation",
+      "currentOpeningVerified": false,
+      "payNote": "Up to8,000INR/month withperformance/policy wording;below10kGujaratfloor.",
+      "payConfidence": "High for visible cap/period;not a guarantee orreceived offer",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-10",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=0bd3b6429ce89f4a",
+          "label": "Exact employer-authored listing",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact Indeed UI/UX andGraphicsDesignerIntern inAhmedabad:three–six months,student/design/IT/CS route,up toINR8,000/month withperformance/companypolicy wording. Below revised10kfloor;no active-feed card. Structuredplatformdate2October2026 distinct fromcheckdate. Officialcareerbody is title-only,not independentcurrent-intake corroboration. Exact employer-platform application email career@webearl.com has role-application purpose,not guessed."
+        }
+      ],
+      "roles": [
+        {
+          "id": "webearl-uiux-intern-0bd3b6429ce89f4a",
+          "title": "UI/UX and Graphics Designer Intern — below target",
+          "url": "https://in.indeed.com/viewjob?jk=0bd3b6429ce89f4a",
+          "seniority": "Internship,below stipend floor",
+          "location": "Ahmedabad,on-site",
+          "requirements": [
+            {
+              "id": "88ef81047077",
+              "text": "Three–six months;design/IT/CS students orgraduates preferred",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=0bd3b6429ce89f4a"
+            },
+            {
+              "id": "9987e9d040fc",
+              "text": "UIUX fundamentals,Figma/XD/Sketch,responsive design and academic/personal portfolio",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=0bd3b6429ce89f4a"
+            },
+            {
+              "id": "3bbddaa2082a",
+              "text": "User interfaces,wireframes,prototypes,basic research and development collaboration",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=0bd3b6429ce89f4a"
+            }
+          ],
+          "evidenceStatus": "Normal exact Indeed UI/UX andGraphicsDesignerIntern inAhmedabad:three–six months,student/design/IT/CS route,up toINR8,000/month withperformance/companypolicy wording. Below revised10kfloor;no active-feed card. Structuredplatformdate2October2026 distinct fromcheckdate. Officialcareerbody is title-only,not independentcurrent-intake corroboration. Exact employer-platform application email career@webearl.com has role-application purpose,not guessed.",
+          "checkedAt": "2026-11-10"
+        }
+      ],
+      "contact": {
+        "email": "career@webearl.com",
+        "kind": "Employer-platform published role application email;not independently corroborated in normal official careers shell",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=0bd3b6429ce89f4a"
+      },
+      "website": "https://www.webearl.com/"
+    },
+    {
+      "id": "siga-systems",
+      "name": "SiGa Systems",
+      "company": "SiGa Systems",
+      "companyType": "Services company",
+      "sector": "Business software,SaaS platforms,web interfaces and AI automation",
+      "focus": "Business software,SaaS platforms,web interfaces and AI automation",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and region;not a hiring probability,employer quality guarantee or offer.",
+      "careersUrl": "https://sigasystems.com/careers/",
+      "locationNote": "Pune,on-site",
+      "openingStatus": "Official UIUXDesigner1–3years;older fresherIndeedrole expired. No newly confirmed fresher/intern intake.",
+      "currentOpeningVerified": false,
+      "payNote": "Expired fresher listing12–20kINR/month salary;current1–3year role salary undisclosed.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-10",
+      "sources": [
+        {
+          "url": "https://sigasystems.com/careers/",
+          "label": "Current official careers",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact Indeed JuniorUIUXDesigner6689b8ddaec677eb explicitly expired. It records permanentfulltime12–20kINR/month,fresher0–6months,BE/BTech/MCA/MCS/MCM qualification;salary is not internship stipend. Current official careers instead lists UIUXDesigner1–3years,Puneoffice,no salary. Do not revive expiredfresher requisition orcall current1–3year role internship. HRemail appears on official careers;general info email retains commercialpurpose."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=6689b8ddaec677eb",
+          "label": "Expired exact fresher role;historical salary evidence",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal exact Indeed JuniorUIUXDesigner6689b8ddaec677eb explicitly expired. It records permanentfulltime12–20kINR/month,fresher0–6months,BE/BTech/MCA/MCS/MCM qualification;salary is not internship stipend. Current official careers instead lists UIUXDesigner1–3years,Puneoffice,no salary. Do not revive expiredfresher requisition orcall current1–3year role internship. HRemail appears on official careers;general info email retains commercialpurpose."
+        }
+      ],
+      "roles": [
+        {
+          "id": "siga-uiux-designer-careers",
+          "title": "UI/UX Designer —1–3years",
+          "url": "https://sigasystems.com/careers/",
+          "seniority": "Experienced/early-career1–3years;not internship",
+          "location": "Pune,on-site",
+          "requirements": [
+            {
+              "id": "274da2fed72d",
+              "text": "One–three years experience,onsite full-time Pune",
+              "sourceUrl": "https://sigasystems.com/careers/"
+            },
+            {
+              "id": "449057cb7ee6",
+              "text": "Design web interfaces,wireframes,user flows andprototypes;usability and developer collaboration",
+              "sourceUrl": "https://sigasystems.com/careers/"
+            }
+          ],
+          "evidenceStatus": "Normal exact Indeed JuniorUIUXDesigner6689b8ddaec677eb explicitly expired. It records permanentfulltime12–20kINR/month,fresher0–6months,BE/BTech/MCA/MCS/MCM qualification;salary is not internship stipend. Current official careers instead lists UIUXDesigner1–3years,Puneoffice,no salary. Do not revive expiredfresher requisition orcall current1–3year role internship. HRemail appears on official careers;general info email retains commercialpurpose.",
+          "checkedAt": "2026-11-10"
+        },
+        {
+          "id": "siga-junior-uiux-6689b8ddaec677eb",
+          "title": "Junior UI/UX Designer — expired Indeed requisition",
+          "url": "https://in.indeed.com/viewjob?jk=6689b8ddaec677eb",
+          "seniority": "Expired permanent fresher role",
+          "location": "Pune",
+          "requirements": [
+            {
+              "id": "fe5cf689d990",
+              "text": "Fresher0–6months;BE/BTech/MCA/MCS/MCM qualification stated",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=6689b8ddaec677eb"
+            },
+            {
+              "id": "8f4c5fa3f93a",
+              "text": "UIUX principles,wireframing,prototyping,responsive interfaces,design systems anddesign tools",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=6689b8ddaec677eb"
+            }
+          ],
+          "evidenceStatus": "Normal exact Indeed JuniorUIUXDesigner6689b8ddaec677eb explicitly expired. It records permanentfulltime12–20kINR/month,fresher0–6months,BE/BTech/MCA/MCS/MCM qualification;salary is not internship stipend. Current official careers instead lists UIUXDesigner1–3years,Puneoffice,no salary. Do not revive expiredfresher requisition orcall current1–3year role internship. HRemail appears on official careers;general info email retains commercialpurpose.",
+          "checkedAt": "2026-11-10"
+        }
+      ],
+      "contact": {
+        "email": "hr@sigasystems.com",
+        "kind": "Official careers HR contact;no employer message sent",
+        "sourceUrl": "https://sigasystems.com/careers/"
+      },
+      "website": "https://sigasystems.com/"
+    },
+    {
+      "id": "productsquads",
+      "name": "ProductSquads",
+      "company": "ProductSquads",
+      "companyType": "Services company",
+      "sector": "AI/product engineering,enterprise data and information-services platforms",
+      "focus": "AI/product engineering,enterprise data and information-services platforms",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative preference based on evidenced work and region;not a hiring probability,employer quality guarantee or offer.",
+      "careersUrl": "https://www.productsquads.co/work-with-us",
+      "locationNote": "Ahmedabad/Hyderabad employer locations;per-role arrangement unknown",
+      "openingStatus": "Watchlist only;current early-careerUX vacancy not verified",
+      "currentOpeningVerified": false,
+      "payNote": "No current design-intern salary orstipend established.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-10",
+      "sources": [
+        {
+          "url": "https://www.productsquads.co/work-with-us",
+          "label": "Official careers unresolved loading inventory",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Normal official careers page has loading/0roles UI andtalent-pool invitation,not a confirmed UX internship. Indexed employee/social snippets mention older UXintern andlaterexperiencedSeniorUXhiring;no current internship detail established. General recruitment email is explicitly published on official contactpage;do not infer vacancy from this contactorgraduate-friendly marketing copy."
+        },
+        {
+          "url": "https://www.productsquads.co/talk-to-us",
+          "label": "Official recruitment contact purpose",
+          "checkedAt": "2026-11-10",
+          "evidenceStatus": "Careers email published separately from commercial consultation;no message sent."
+        }
+      ],
+      "roles": [],
+      "contact": {
+        "email": "careers@productsquads.co",
+        "kind": "Official general recruitment contact,not proof of an opening",
+        "sourceUrl": "https://www.productsquads.co/talk-to-us"
+      },
+      "website": "https://www.productsquads.co/"
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-09",
+    "researchedAt": "2026-11-10",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 256
+    "directoryCount": 261
   }
 }
