@@ -1,5 +1,14 @@
 # Design internship tracker
 
+Application-workspace preview (10 November):
+https://chatgpt-environment-ikclxhc97-anujrai1701-gmailcoms-projects.vercel.app
+
+The new Codex workflow is deployed only to this protected preview from commit
+`82a1fe8`; the production site below remains unchanged. Sign in to Vercel if
+prompted. A preview hostname has separate browser storage: use the existing
+board's JSON backup/restore to bring over your profile and saved progress.
+The current instruction is preview-only; do not promote without explicit approval.
+
 Live board: https://chatgpt-environment.vercel.app
 
 Production is READY from the board branch in the existing Vercel project `chatgpt-environment`.

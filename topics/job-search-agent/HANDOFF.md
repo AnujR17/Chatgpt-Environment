@@ -525,3 +525,40 @@ browser-exported request for one real application pilot, then compare identical
 postings/profile against the documented quality criteria before claiming an
 improvement in AI output quality. Do not ask the user to rebuild an already
 populated browser profile without inspecting their supplied export first.
+
+## 10 November: protected preview published; main and production unchanged
+
+Latest user scope: preview only. The user explicitly said not to push into main
+or production. The team grant is now active. Do not promote this enhancement
+without a later explicit instruction; older production notes above do not apply.
+
+GitHub authenticated login and repo owner verified as AnujR17. Tested commit
+82a1fe8a3e0f72c570c6d708c784c11d1fec15b3 from topic/job-search-agent was deployed
+using the existing Vercel project prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg, source repo
+ID1408350067, existing Vite/app root and Node24. API target omitted deliberately
+per Vercel's documented preview default; returned target null and READY.
+Preview deployment: dpl_8QwrtKRko3JFR8DobB57kQeuDtYn.
+URL: https://chatgpt-environment-ikclxhc97-anujrai1701-gmailcoms-projects.vercel.app
+No project/global protection setting was changed. No main branch push, production
+deployment, domain reassignment or promotion was performed.
+
+Production alias chatgpt-environment.vercel.app was independently verified to
+remain on dpl_CopA4x9NGemfc9a7Py6pXmsUa69W, source commit
+6101350b0751e5c1c2d22086516a2b4861e4e7e6 (9 November research). Preview build
+logs confirm Deployment completed and exact tested asset names index-C-wkykWR.js
+and index-BCmRBqGJ.css. Preview bootstrap HTTP200 references those assets and
+contains the correct deployment ID; jobs feed HTTP200 contains111 records with
+researchedAt2026-11-10. This confirms deployment/serving, not new writing quality.
+
+Automatic approval review rejected protected-bundle web-fetch and share-link
+creation because those tools can expose the protected preview to anyone with
+the link. No attempt was made to bypass that rejection or disable protection.
+Authenticated CLI access is unavailable (no vercel/vc binary). Live browser
+interaction therefore was not repeated. Use prior local33automated tests and
+five desktop/mobile scripts as interaction evidence, and deployment/build/
+bootstrap/feed checks as preview evidence. No claim of full live UI verification.
+
+Preview origin uses separate localStorage from production. To use an existing
+profile/progress, the user can export a JSON backup from their current board and
+restore it in the preview. The cloud task did not read or migrate actual user
+browser state. No applicant data, share-access token or private backup is in Git.

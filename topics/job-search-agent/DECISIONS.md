@@ -1,5 +1,12 @@
 # Decisions
 
+2026-11-10 — Preview-only publishing for this enhancement:
+
+- The user explicitly corrected the publishing scope: do not push to main or production; only a preview is required. This supersedes prior production instructions for the application-workspace enhancement. Do not promote it without a later explicit instruction.
+- GitHub authenticated identity and repository owner are AnujR17. Commit82a1fe8a3e0f72c570c6d708c784c11d1fec15b3 on topic/job-search-agent is deployed as preview dpl_8QwrtKRko3JFR8DobB57kQeuDtYn, READY with target null, in the existing Vercel project. Protection is unchanged.
+- Existing production alias was verified to remain on dpl_CopA4x9NGemfc9a7Py6pXmsUa69W, commit6101350b0751e5c1c2d22086516a2b4861e4e7e6. No main or production write was performed.
+- Automatic approval review rejected tools that would create a shareable protected-preview link for bundle/browser verification. Do not broaden access to complete QA. Preview bootstrap/feed fetches and build/deployment metadata succeeded; live browser interaction was not repeated. Prior local desktop/mobile checks remain the interaction evidence.
+
 2026-11-10 — Integrate the reference ideas into the existing job-search-agent:
 
 - The user explicitly identified their existing board on another branch of this repository and asked to enhance it using ai-job-search-dev/ai-job-search. Use topic/job-search-agent and the existing Vite/React app; the separate topic/ai-job-search starter remains a prototype.

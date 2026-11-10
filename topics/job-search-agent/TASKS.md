@@ -8,7 +8,7 @@
 - [x] Persist drafts, invalidate edited reviews, preserve submitted copies and include them in backup/restore.
 - [x] Keep public feeds, stable IDs, existing private storage keys and dependencies unchanged.
 - [x] Run unit/collector/build and desktop/mobile workflow checks; update stale lifecycle/count assertions rather than revive retired roles.
-- [ ] Publish the tested commit after the existing Vercel team grant is restored.
+- [x] Publish the tested commit as a protected preview after restoring the Vercel team grant. Keep main and production unchanged.
 - [ ] Run a real application pilot to assess writing and evaluation quality.
 - [ ] Add verified PDF/text-layer export and feedback calibration after that pilot.
 
