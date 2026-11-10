@@ -1,13 +1,16 @@
 # Design internship tracker
 
-Application-workspace preview (10 November):
-https://chatgpt-environment-ikclxhc97-anujrai1701-gmailcoms-projects.vercel.app
+Dedicated assistant preview (10 November):
+https://chatgpt-environment-fj1kih2u1-anujrai1701-gmailcoms-projects.vercel.app/assistant
 
-The new Codex workflow is deployed only to this protected preview from commit
-`82a1fe8`; the production site below remains unchanged. Sign in to Vercel if
-prompted. A preview hostname has separate browser storage: use the existing
-board's JSON backup/restore to bring over your profile and saved progress.
-The current instruction is preview-only; do not promote without explicit approval.
+The separate page and server generation pipeline are deployed from `f9960b4`.
+The explicit live Gateway check returned403, mapped to
+`gateway_activation_required`; real generation is blocked pending Gateway
+activation/access. The protected preview itself is READY. Production below is
+unchanged. A preview hostname has separate browser storage; use JSON
+backup/restore for existing profile/progress while testing. Once released on
+the original hostname, / and /assistant share the existing browser state.
+Do not promote without the user's explicit release authorization.
 
 Live board: https://chatgpt-environment.vercel.app
 

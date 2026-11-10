@@ -6,7 +6,8 @@
 - [x] Add a server-only AI Gateway draft/review pipeline and actionable setup/credit/timeout failures.
 - [x] Validate source identity and quotes before replacing saved documents; preserve notes, stages, edits, submissions and backups.
 - [x] Check dedicated-page and generation success/failure/cancel flows on desktop/mobile with controlled responses; retain board regression coverage.
-- [ ] Deploy a new protected preview and run the explicit fictional-data Gateway check to establish live auth/credits/generation status.
+- [x] Deploy a new protected preview and run the explicit fictional-data Gateway check: preview READY; Gateway403 blocks real generation.
+- [ ] Complete the team's AI Gateway activation/access, then retry the live generation check after that meaningful configuration change.
 - [ ] Obtain explicit release authorization before making /assistant available on chatgpt-environment.vercel.app. No main merge is required.
 
 ## 10 November: integrate the Codex application workflow

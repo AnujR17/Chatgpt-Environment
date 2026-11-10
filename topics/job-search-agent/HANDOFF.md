@@ -612,3 +612,51 @@ release approval (and any observed Gateway billing/account activation blocker).
 Vercel team authorization is already active. Do not ask for API keys in chat,
 disable protection, create public share links or retry the rejected share-link
 verification route. Use build/deployment metadata and local checks instead.
+
+
+## 10 November: dedicated assistant preview READY; real AI blocked by Gateway403
+
+New protected preview from f9960b43d362873994ec107691f9dabeb92c4f02:
+https://chatgpt-environment-fj1kih2u1-anujrai1701-gmailcoms-projects.vercel.app/assistant
+Deployment dpl_79vdptXrDhK1zdZDjzb4C7YuFP4f is READY,target null,source owner
+AnujR17,branch topic/job-search-agent,existing project/root/Node24/protection.
+Main was not merged or pushed and no production deployment/promotion occurred.
+The prior a7da980 preview dpl_BkPw8jSb2PeCgPfm9pLjS3L9PvXr is superseded.
+
+Explicit build override npm run build && npm run verify:gateway was used for
+this preview. Source vercel.json's buildCommand previously took precedence and
+prevented the smoke script running in the first preview; its redundant override
+was removed so project/per-deployment commands work. Normal project builds still
+use npm run build and make no model calls. Do not leave a paid smoke step in the
+project default or repeat it automatically on future releases.
+
+The real, fictional-input check ran and returned:
+gatewaySmoke=blocked,code=gateway_activation_required,
+message=Activate AI Gateway for this Vercel team, including any required account
+verification. Model generation did NOT pass. This public classification maps
+upstream403 to activation/access; the exact provider error body was deliberately
+not logged, so do not assert a specific missing-card or credit-balance diagnosis.
+User action: inspect/activate Gateway access at
+https://vercel.com/anujrai1701-gmailcoms-projects/~/ai-gateway
+No key, card, billing budget or credit purchase was created/changed by the task.
+Do not ask for secrets in chat. Retry the real check only after account access
+or configuration changes; do not claim that browser fixtures establish live AI.
+
+The user wants the assistant at chatgpt-environment.vercel.app separately from
+the board. /assistant is implemented, but that exact hostname is production.
+The earlier explicit no-production instruction remains until the user approves
+a concrete release. That release can use the topic branch without a main merge.
+Remaining actions are Gateway activation/access and production release approval.
+GitHub and existing Vercel team connections are already authorized.
+
+Local checks:33JS tests,5Python collector tests,seven browser scripts and Vite
+build pass. New page tests cover direct route, query role ID, back/forward/reload,
+shared profile/progress and backup restore. Model transport tests cover actual
+POST contract with fixture replies, rejected/failed responses, credits errors,
+cancellation and retained old drafts/stages/notes. Server unit tests cover two
+bounded model calls, independent review, invalid claims and no secret/error-body
+leak. Actual calls use AI SDK7 reasoning:'low', maxRetries0 and request deadlines.
+The browser test's cancelled pending-route cleanup was fixed; final targeted
+run has no harness exception. New UI/data/API remains tested locally; protected
+live UI was not checked via a public share link. Prior auto-review rejection of
+that access path remains in force. Never disable protection for verification.
