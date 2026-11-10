@@ -25,3 +25,8 @@ was checked from a different directory. `git diff --check` passed and
 excluded. Initialization created a blank local profile; its expected validation
 failure confirms onboarding is still required. No real application, live
 job-board search, PDF export or recruiter interaction has been tested.
+
+Persistence: implementation commit `741286f` was pushed to
+`origin/topic/ai-job-search`. The initial topic-memory lookup returned no
+matches. Saving a nonpersonal handoff to Mem0 returned HTTP 400; no retry was
+made. Use these repository files as the durable handoff.
