@@ -125,7 +125,7 @@ on this personal app; same-origin input checks do not replace authentication.
 `GET /api/assistant` reports connection configuration only, with no paid call
 or secret value. `POST /api/assistant` validates the request/origin/size, uses two
 bounded model calls with no automatic retry and a140second deadline, then
-validates the result. The standard build never makes model calls.
+validates the result. The standard build never makes model calls. Build command comes from the project or explicit per-deployment settings; vercel.json does not override it.
 `npm run verify:gateway` explicitly runs a live two-pass check with fictional
 facts and uses AI credits; use it only when authorized. It logs a sanitized
 success or setup blocker, never a token, prompt or real candidate profile.
