@@ -1,0 +1,4 @@
+# Candidate data and application artifacts stay local.
+/topics/ai-job-search/private/
+__pycache__/
+*.py[cod]
