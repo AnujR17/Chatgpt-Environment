@@ -562,3 +562,53 @@ Preview origin uses separate localStorage from production. To use an existing
 profile/progress, the user can export a JSON backup from their current board and
 restore it in the preview. The cloud task did not read or migrate actual user
 browser state. No applicant data, share-access token or private backup is in Git.
+
+
+## 10 November: separate assistant page and direct website generation
+
+The user clarified that the assistant must be separately visible on the same
+site and selected direct website generation rather than relying on this chat.
+The prior preview had only a drawer module and required file handoff; that is
+superseded. New /assistant page has a visible nav entry, selectable roles, deep
+links, browser back/forward/reload and the original private profile/IDs/state.
+Role drawers now link into it. Existing job board remains at /.
+
+Added api/assistant.js and server/applicationGeneration.js using pinned AI
+SDK7.0.166 and the verified live Gateway model openai/gpt-5.4-mini. Server-side
+Vercel OIDC or optional private AI_GATEWAY_API_KEY handles authentication.
+No provider secret is in the client; project environment metadata contained
+no configured keys. Deployed Vercel system OIDC is the intended auth path.
+Two bounded no-retry calls draft then independently review against confirmed
+facts. Server validates request hash, exact review quotes and fact IDs. Browser
+saves only validated results, keeps prior documents on failure/cancellation and
+leaves application stage/notes/company preferences untouched. Full posting and
+confirmed profile/contact facts are sent only after Generate, not on status GET.
+The normal build never spends model credits. Explicit verify:gateway script
+runs one fictional two-pass model check and logs sanitized outcome/usage only.
+
+The complete live505model catalog was saved outside Git and the default model
+was verified with published pricing USD0.75input/USD4.50output per million
+tokens. Installed AI7docs/source confirmed Output.object/jsonSchema,
+instructions, reasoning:'low', output limits and abort signals. AI budget or
+keys were not created/changed. Gateway activation/credits are separate from a
+chat subscription; real status is pending the preview smoke check. Do not claim
+successful live model generation from mock browser tests.
+
+Local checks:33JavaScript tests and5Python collector tests pass. Seven browser
+scripts pass, covering new /assistant navigation and direct generation transport
+(success, credits failure, cancel and preserving current drafts), plus existing
+workspace, job board, company, reviewed-fit and coverage workflows. Provider
+responses in browser tests are fixtures. Vite production build passes. Node24,
+all public research data and the four original browser storage keys are retained.
+A restoring-backup posting-sync defect was fixed by using the canonical saved
+posting rather than stale component state. No actual applicant data was used.
+
+Publication scope remains preview until explicit production release approval:
+the fixed chatgpt-environment.vercel.app hostname is the production deployment.
+It is impossible to add /assistant at that exact hostname without updating the
+production app, even with source kept entirely on topic/job-search-agent and
+no main merge. Prepare a concrete new preview first, then request only that
+release approval (and any observed Gateway billing/account activation blocker).
+Vercel team authorization is already active. Do not ask for API keys in chat,
+disable protection, create public share links or retry the rejected share-link
+verification route. Use build/deployment metadata and local checks instead.

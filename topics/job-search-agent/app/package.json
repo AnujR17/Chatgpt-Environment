@@ -9,10 +9,12 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "node --test tests/*.test.js",
     "collect": "python scripts/collect.py",
-    "excel": "python scripts/export_excel.py"
+    "excel": "python scripts/export_excel.py",
+    "verify:gateway": "node scripts/check_gateway.mjs"
   },
   "dependencies": {
     "@fontsource/dm-sans": "^5.2.8",
+    "ai": "7.0.166",
     "lucide-react": "^0.468.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

@@ -1,5 +1,13 @@
 # Decisions
 
+2026-11-10 — Dedicated page and direct website AI, clarified by the user:
+
+- The assistant must be separately visible on the existing site, with direct website generation. Add /assistant and a visible navigation entry; retain / as the job board. Share existing private keys/IDs and keep source on topic/job-search-agent in AnujR17/Chatgpt-Environment.
+- Use server-side AI SDK7.0.166 and AI Gateway, with Vercel OIDC and an optional private key. The live catalog confirms openai/gpt-5.4-mini at inputUSD0.75/outputUSD4.50 per million tokens; selected for bounded personal text generation. No claim of superior writing quality from this model selection.
+- Model calls happen only after explicit Generate, using confirmed facts, a full posting, a draft pass and separate review. Inputs omit notes/blacklists/assessments and other roles. No automatic applications, emails or stage changes. Normal builds contain no paid test; a one-time preview verification can explicitly run the fictional two-call gateway check.
+- Current production prohibition is retained until a concrete preview is reviewed and the user explicitly authorizes updating the fixed hostname. A topic-branch production release does not require a main merge. Do not disable protection or create public share links to verify the protected preview.
+
+
 2026-11-10 — Preview-only publishing for this enhancement:
 
 - The user explicitly corrected the publishing scope: do not push to main or production; only a preview is required. This supersedes prior production instructions for the application-workspace enhancement. Do not promote it without a later explicit instruction.

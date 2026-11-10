@@ -1,5 +1,14 @@
 # Tasks
 
+## 10 November: separate page with direct website generation
+
+- [x] Add /assistant with visible navigation, role deep links, back/forward/refresh and shared existing profile/progress.
+- [x] Add a server-only AI Gateway draft/review pipeline and actionable setup/credit/timeout failures.
+- [x] Validate source identity and quotes before replacing saved documents; preserve notes, stages, edits, submissions and backups.
+- [x] Check dedicated-page and generation success/failure/cancel flows on desktop/mobile with controlled responses; retain board regression coverage.
+- [ ] Deploy a new protected preview and run the explicit fictional-data Gateway check to establish live auth/credits/generation status.
+- [ ] Obtain explicit release authorization before making /assistant available on chatgpt-environment.vercel.app. No main merge is required.
+
 ## 10 November: integrate the Codex application workflow
 
 - [x] Locate the existing topic/job-search-agent and make it the canonical product.

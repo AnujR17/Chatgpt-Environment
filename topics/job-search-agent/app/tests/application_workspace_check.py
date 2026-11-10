@@ -26,7 +26,7 @@ with sync_playwright() as p, TemporaryDirectory() as temp:
         target.get_by_role('button', name='Discover', exact=True).click()
         card = target.locator('.role-card').filter(has=target.get_by_text('ShramikSathi', exact=True))
         card.get_by_role('button', name='Review role').click()
-        target.get_by_role('button', name='Prepare with Codex', exact=True).click()
+        target.get_by_role('button', name='Application workspace', exact=True).click()
         return target.get_by_role('dialog')
 
     dialog = open_workspace(page)

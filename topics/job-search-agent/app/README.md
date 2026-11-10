@@ -70,7 +70,7 @@ Each run produces `public/data/collection-report.md` and an updated Excel workbo
 
 ## Deploy to Vercel
 
-Use the existing project **chatgpt-environment** and source branch **topic/job-search-agent** in **AnujR17/Chatgpt-Environment**. Root directory is **topics/job-search-agent/app**, framework **Vite**, install command `npm ci`, build command `npm run build`, output directory `dist`. No runtime secrets are needed for this version. `vercel.json` includes the app configuration.
+Use the existing project **chatgpt-environment** and source branch **topic/job-search-agent** in **AnujR17/Chatgpt-Environment**. Root directory is **topics/job-search-agent/app**, framework **Vite**, install command `npm ci`, build command `npm run build`, output directory `dist`. Direct AI generation uses server-side Vercel OIDC or a private AI Gateway key. Preserve the existing deployment protection. `vercel.json` includes the app configuration.
 
 Project-level automatic preview deployments are disabled (`previewDeploymentsDisabled: true`). This repository contains independent topic branches: `topic/checkpoint`, for example, contains a Windows app and has no job-board directory. A preview of that branch in this project fails before the build starts. Do not change the job-board root directory to accommodate another topic or merge unrelated apps into this branch.
 
@@ -86,47 +86,58 @@ Do not commit résumé files, personal profile data, credentials or browser back
 
 ## Application readiness
 
-### Application workspace with Codex
+### Separate assistant page with direct AI generation
 
-The existing board is the canonical assistant. The separate `topic/ai-job-search`
-starter is a prototype, not a second tracker to populate. See the checked
-[reference comparison](../REFERENCE_COMPARISON.md) for differences from
-`ai-job-search-dev/ai-job-search` and remaining gaps.
+The job board stays at `/`; the dedicated application assistant is at
+`/assistant`, with an **Assistant** entry beside Discover. A role's **Open
+assistant** action links directly to `/assistant?role=JOB_ID`. Direct links,
+refresh and browser back/forward work. Both pages use the same browser profile,
+application IDs, private overrides and JSON backups on a given hostname.
 
-Open a role → **Prepare with Codex** → paste the full job description → review
-and confirm your saved profile → **Download Codex request**. Attach that private
-JSON file in Codex and ask it to prepare your application. **Copy request for
-Codex** is an alternative. The repository's `job-search-agent` skill specifies
-the evaluation, tailored CV, cover letter, interview preparation and review
-format. No extra model key or new profile store is needed.
+Choose a role, paste its complete posting, review/confirm the profile facts,
+then choose **Generate application**. A server function makes a draft pass and
+an independent review pass through AI Gateway. It returns evaluation, CV,
+letter and interview preparation. Quote/fact/source checks must pass before
+existing documents are replaced. No status, notes or company preferences are
+changed. Cancellation and failures preserve current drafts; edited documents
+lose their previous review. After a real external submission, save the exact
+submitted copy and update application stage yourself.
 
-Use **Import application result** in the same role for the returned JSON. The
-import validates job/request/source identity, exact quoted claims and confirmed
-fact IDs; it cannot prove truth or audit completeness. Editing a document
-removes its review. Profile, posting or role-source changes require a fresh
-request. Existing drafts stay visible when a newer request is prepared.
+The selected posting and confirmed profile/contact links are sent to the model
+only when Generate is clicked. Private notes, blacklists, assessment judgments
+and other applications are excluded. No application or email is sent. Stored
+profile/documents remain browser-local; server processing is transient, and
+Gateway/provider logging follows the account's service settings. Review the
+outputs yourself; source-reference validation cannot prove truth or exhaustive
+coverage. Outputs remain Markdown, without PDF layout or ATS verification.
 
-Drafts, the pasted posting and the existing email draft now persist in this
-browser. After submitting externally, **Save submitted copy** preserves the
-exact documents you confirm sending; future edits leave that copy unchanged.
-It does not send anything or change application stage. Update stage separately.
-The complete workspace is included in existing JSON backup/restore. Backup
-imports now allow up to50MB to accommodate application documents; local browser
-storage limits still apply, with the existing backup warning on save failure.
+Server setup uses Vercel OIDC automatically, or an optional private
+`AI_GATEWAY_API_KEY`. Do not use a VITE-prefixed key or put a key in chat/source.
+`AI_GATEWAY_MODEL` can override the default `openai/gpt-5.4-mini`, confirmed in
+the complete live catalog on10November2026. AI SDK7.0.166 is pinned and its
+installed docs/source were checked. Node24 is retained. Gateway activation and
+credits are separate from a ChatGPT/Codex subscription. Missing authentication,
+verification, credits/budget, rate limits and timeouts have explicit errors and
+an AI settings link where appropriate. No key, credit purchase or budget change
+was made by this implementation. Keep the existing Vercel Deployment Protection
+on this personal app; same-origin input checks do not replace authentication.
 
-Requests contain only the selected role, full pasted posting, profile facts
-and contact links, not private notes, assessments, blacklist or other roles.
-The board makes no model calls and does not automatically share or sync files
-with this chat. Only your explicit export/share gives the chat those facts.
-Keep request/result/backup files outside the public repository; use the ignored
-`topics/job-search-agent/private/` directory in this workspace. Outputs are
-Markdown. PDF layout, document compilation and ATS extraction remain unbuilt.
+`GET /api/assistant` reports connection configuration only, with no paid call
+or secret value. `POST /api/assistant` validates the request/origin/size, uses two
+bounded model calls with no automatic retry and a140second deadline, then
+validates the result. The standard build never makes model calls.
+`npm run verify:gateway` explicitly runs a live two-pass check with fictional
+facts and uses AI credits; use it only when authorized. It logs a sanitized
+success or setup blocker, never a token, prompt or real candidate profile.
+Vite's dev middleware serves the same API handler locally; an ignored
+`.env.local` or exported development credential is needed for real local calls.
 
-Validate a returned result from the app directory with
-`node scripts/check_application_result.mjs /absolute/request.json /absolute/result.json`.
-Run `python tests/application_workspace_check.py` with Playwright browser paths
-configured for the application workspace's desktop/mobile round trip. Fixtures
-are fictional; this does not test LLM writing quality or hiring outcomes.
+Manual Codex export/copy/import remains an optional fallback. Returned JSON can
+be checked with `node scripts/check_application_result.mjs REQUEST.json RESULT.json`.
+The private ignored directory remains `topics/job-search-agent/private/`.
+Backup/restore includes the entire workspace, with a50MB import limit; local
+storage quotas still apply. API requests are limited to250KB. No cloud profile
+or progress database was introduced.
 
 - ShramikSathi and BThree publish an application email, so drafts can be prepared without browser form automation.
 - Hevo's public Lever form appears suitable for assisted filling once accurate profile/résumé information is supplied. Submission rules and CAPTCHA remain unverified.

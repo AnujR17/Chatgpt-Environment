@@ -11,7 +11,26 @@ The live board is `https://chatgpt-environment.vercel.app`. Do not create anothe
 app, repository, tracker, deployment project or profile just because the
 separate `topic/ai-job-search` prototype exists.
 
-## Prepare a requested application
+## Direct website generation
+
+The dedicated `/assistant` page now has server-side generation via
+`app/api/assistant.js` and `app/server/applicationGeneration.js`, using AI SDK7
+and AI Gateway. It shares the board's existing browser profile and progress.
+The site makes a draft call and a separate review call; facts/source checks
+must pass before saving. Requests and responses never change application stages.
+Do not describe this mode as a file handoff or ask the user to rebuild an
+already saved profile. Manual Codex export/import remains optional.
+
+Vercel OIDC or a server-only AI_GATEWAY_API_KEY authenticates model calls. Never
+ask for keys in chat, expose them in VITE variables, or return them from an API.
+Use GET for safe configuration status. Real generation and the explicitly run
+verify:gateway script use credits; never add paid calls to the normal build.
+Gateway credit/account activation is separate from the user's chat subscription.
+Keep platform protection enabled and do not broaden access for browser testing.
+The earlier preview-only constraint remains until the user explicitly authorizes
+updating chatgpt-environment.vercel.app. Main merging is not needed for that release.
+
+## Prepare a requested application in this chat (optional fallback)
 
 The user exports a private `design-search.application-request` version 1 from
 the board's Application workspace, then shares it in this chat. The file holds

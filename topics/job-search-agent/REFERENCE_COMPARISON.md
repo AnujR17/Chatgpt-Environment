@@ -24,7 +24,7 @@ it is inaccurate to describe the whole reference as Denmark-only.
 | Area | Existing board before this integration | Reference workflow | Integrated change / remaining gap |
 | --- | --- | --- | --- |
 | Personal UX/design discovery | India/remote research, role feed, company directory, source coverage, pay caveats, local clipper | Portable portal search and custom adapters | Preserve the existing market-specific discovery and evidence. No search refresh was performed by this change. |
-| Application preparation | Generic email built from the profile; draft edits were lost when the drawer closed | Tailored CV and letter with factual review | Added a private role-specific Codex request/result round trip, persisted email drafts and an application document workspace. The chat does AI writing; no model service is installed in the board. |
+| Application preparation | Generic email built from the profile; draft edits were lost when the drawer closed | Tailored CV and letter with factual review | Added a private role-specific Codex request/result round trip, persisted email drafts and an application document workspace. A later enhancement adds a dedicated /assistant page and a real server-side AI Gateway draft/review pipeline; manual chat exchange remains optional. |
 | Evidence | Source-backed role requirements and browser-local Met/Partly/Gap checklists | Profile-grounded factual and fit evaluation | Export candidate-confirmed fact IDs and full posting; validate returned quotes and IDs. Validation cannot establish truth or exhaustive coverage. |
 | Continuity | Stable researched IDs and private localStorage overrides/backups | Local tracker and application archives | Requests/results retain the existing board role ID. Drafts and frozen submitted copies use the existing overrides and JSON backup; no parallel tracker or cloud private-data store. |
 | Review | No application-specific review record | Separate drafter/reviewer with revision | A reviewed result contract checks role/request/source identity and cited facts. Draft edits invalidate its review. Actual review quality still needs a real application pilot. |
@@ -55,10 +55,7 @@ source code was copied; retain the reference's MIT notice if copying code later.
    the exact submitted copy. Later working edits leave it unchanged. Change the
    application stage yourself after the real event. JSON backup includes it all.
 
-The page makes no model call or employer submission. This is a working handoff
-through a chosen chat, not automatic synchronization with a cloud agent. The
-agent cannot read your existing browser-local state until you explicitly share
-an export. Public research files stay unchanged by this integration.
+The dedicated /assistant page can now generate directly through AI Gateway after confirmation, as documented in the app README. It shares the existing browser profile and tracking records. The manual chat handoff remains optional; the chat still cannot automatically read browser-local data. Neither mode submits applications. Public research files remain unchanged.
 
 ## What would establish better results
 
@@ -74,3 +71,15 @@ The next useful extensions are verified PDF/text extraction, outcome and
 follow-up calibration, and source adapters chosen for real coverage gaps.
 Prioritize them after a real request-to-reviewed-application pilot, rather than
 adding another scraper or a numerical fit score without evidence.
+
+
+## Dedicated website generation follow-up
+
+The user clarified that the assistant should be separately visible on the same
+site and generate directly in the website. It now has a dedicated /assistant
+route, role selection, deep links, direct server generation, a factual review
+pass and shared profile/progress. AI credentials stay server-side. Current
+provider deployment/credit verification is recorded in HANDOFF.md. This adds a
+real model service; older descriptions of chat-only generation are superseded.
+Seeing this route on the fixed production hostname requires releasing the
+changed app there, even while all Git work remains on the topic branch.
