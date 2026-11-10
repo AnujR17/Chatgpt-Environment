@@ -1,5 +1,16 @@
 # Tasks
 
+## 10 November research refresh — production pending team grant
+
+- [x] Search requested publicsourcefamilies;26of37coverage recordsupdated withactualaccess,dates andzero-resultlimits.
+- [x] Attempt94activeprimaries:83fetched,10restricted,one404,6shells;23manualtermsreviews. RetireonlyexactexpiredWebsar,retainstablehistory andsaved-stagecompatibility.
+- [x] Add3heldinternships,one40–60kmonthlyPune-restrictedadvert andtwoMONTH/YEARconflictswithnullmonthlyfields. Recheckretainedjunioralternatives;nonewjuniorvacancyinvented.
+- [x] Add5companies;regenerate111role/261company/623requirement-rowexports. PreservepriorIDs,requirements,contacts,pay/date/source/history,queue andcollector evidence.
+- [x] Build,preservation,20model/capture/datachecks,fivePythonchecks andlocaldesktop/mobilepass;knownoneoutdatedstatus-testfailure documented.
+- [x] Push exact46e5bb974b0d99e71cfd0dbc2f3174e90015e79c asAnujR17. ExistingVercelget_project403;privateone-useconsentlinkissued,userteamgrantrequired. Livejobs/companiesstill9Novemberbaseline.
+- [ ] Aftergrant,re-readexactexistingproject/protection;deployexactdataSHAfromtopic/job-search-agenttoexistingproductionproject,withoutteamIdselector. VerifyREADY/SHA/ref/project/publicalias,sevenlivefiles andlivebrowser beforemarkingpublished.
+- [x] No main/UI/model/extension/tests/seed/collector-mainchanges,applications/messagesorprivate-stateaccess. ConsentURLneverpubliclycommitted.
+
 ## 9 November research refresh
 
 - [x] Search requested public employer,job-board,startup,remote andsocial sources;record exact/indexed/mirror access anddate limits honestly.
