@@ -20,6 +20,12 @@ Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The p
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
+## 11 November research snapshot
+
+114 retained roles (99 active/held,15 archived),266 companies and37 source-coverage records. Three older internships are new to the feed: FTFL on Indeed and Attira/Cop&Drop on Wellfound, all on hold for pay/intake or eligibility clarification. Zero new verified monthly stipend matches and no newly retired records. Existing role/company/requirement IDs and browser-local state compatibility are preserved; workbook and directory CSV regenerated. See [the research report](public/data/collection-report.md).
+
+Production release is pending because this branch also contains the separately developed preview-only Assistant page. The public board was checked and still serves the9November feed. Publishing this research branch must explicitly resolve that feature release scope and verify the exact production commit/live files; a push alone is not a refresh.
+
 ## Included
 
 - 111 retained role records (96 active,15 archived), updated 10 November 2026. Three new internships remain on_hold: Priberry Review Flows advertises INR40,000–60,000/month near Pune; FLIP and AICines have unresolved compensation-period conflicts. The exact Websar Indeed role expired and is archived with its salary/history retained. See [the current research report](public/data/collection-report.md).

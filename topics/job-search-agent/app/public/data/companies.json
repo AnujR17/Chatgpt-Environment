@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-10",
+  "researchedAt": "2026-11-11",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -4401,6 +4401,12 @@
           "label": "8 November retained terms",
           "checkedAt": "2026-11-08",
           "evidenceStatus": "Fresh original retains graduates-only/notacademicprojects,sixmonths,Mumbai/Remote. Historical10–12k/month can only clear revised remote10k floor if eligible current remote intake;Mumbai15k fails. Separate1–2lakh/year remains annual;cohort/compensation conflict unconfirmed."
+        },
+        {
+          "url": "https://cutshort.io/job/UX-UI-Design-Trainee-Fellowship-Mumbai-Ungrammary-cfphTF7t",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact Cutshort fellowship now redirects to generic Mumbai UX category without readable job terms. Original club page restricted. Historical10–12k/month could meet revised remote10k floor only after current eligible remote cohort is confirmed; below Mumbai15k floor. Separate1–2lakh/year remains annual. No renewed intake established."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -4412,7 +4418,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Mumbai, Remote India. Check each role for remote eligibility.",
-      "researchedAt": "2026-11-07",
+      "researchedAt": "2026-11-11",
       "payBenchmark": {
         "min": 10000,
         "max": 12000,
@@ -6803,16 +6809,16 @@
       "rationale": "Consumer wardrobe mobile application design team to research through published career routes; this is a suggested target, not a hiring probability.",
       "careersUrl": "https://wellfound.com/company/attira/jobs",
       "locationNote": "Remote everywhere advertised; timezone preferencesPT / ET / CET need checking.",
-      "openingStatus": "Accessible UI/UX internship ad; pay range and timezone terms need confirmation",
+      "openingStatus": "Older Wellfound UI/UX internship readable; current official careers lists marketing roles, so current UX intake is unresolved.",
       "notes": "Wellfound headline15–25k has no explicit pay period, so no monthly stipend is assumed. Body advertises separate UI/UX and QA internships despite combined title. Lower bound does not meet general target; do not present as qualifying pay.",
-      "payNote": "Current qualifying internship stipend not established. Salary evidence from old or board-only listings is not a current employer offer.",
+      "payNote": "INR15,000–25,000 header has no period; YEAR metadata and body absence do not establish a monthly stipend. Revised floors do not resolve compensation units.",
       "likelyRoles": [
         "Product Designer",
         "UX Designer",
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred role families; only the explicitly listed role records are observed advertisements.",
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-11",
       "roles": [
         {
           "id": "wellfound-attira-4823701",
@@ -6837,7 +6843,7 @@
           ],
           "seniority": "Internship; platform type saysFull Time",
           "location": "Remote everywhere; PT / ET / CET timezone preference",
-          "evidenceStatus": "Wellfound detail opened; employer-linked form published",
+          "evidenceStatus": "Readable employer-authored Wellfound advert names two separate learners: UI/UX Intern and QA Intern. This feed card represents the UI/UX seat only,not a combined requirement or two design vacancies. No prior experience required;wireframes,prototypes,user flows,communication and learning mindset. Remote-only page and structured applicant country India;header Everywhere. Header INR15,000–25,000 has no period;structured baseSalary says YEAR and body gives no amount or period. Neither a monthly stipend nor a verified annual offer is established;monthly numerical fields stay null. Structured platform date8October2026 is older than discovery11November,not a new posting. Preferred Pacific/Eastern/Central-European timezones require schedule clarification. Official attira.org corroborates the wardrobe/outfit-planning product and links a careers route;not independent confirmation of internship pay or cohort. Duration,student eligibility,current intake and fixed compensation need confirmation. No form submitted.",
           "applicationUrl": "https://forms.gle/LUhBLUf436udHo359",
           "payObservation": {
             "min": 15000,
@@ -6845,7 +6851,9 @@
             "period": "Unspecified in visible headline",
             "sourceUrl": "https://wellfound.com/jobs/4823701-intern-ui-ux-and-qa",
             "verifiedMonthly": false
-          }
+          },
+          "jobId": "wellfound-attira-4823701",
+          "checkedAt": "2026-11-11"
         }
       ],
       "sources": [
@@ -6866,6 +6874,18 @@
           "label": "Employer-linked application form",
           "evidenceStatus": "Link published on opened role; form submission not performed",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://wellfound.com/jobs/4823701-intern-ui-ux-and-qa",
+          "label": "11 November exact employer-platform role",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Readable employer-authored Wellfound advert names two separate learners: UI/UX Intern and QA Intern. This feed card represents the UI/UX seat only,not a combined requirement or two design vacancies. No prior experience required;wireframes,prototypes,user flows,communication and learning mindset. Remote-only page and structured applicant country India;header Everywhere. Header INR15,000–25,000 has no period;structured baseSalary says YEAR and body gives no amount or period. Neither a monthly stipend nor a verified annual offer is established;monthly numerical fields stay null. Structured platform date8October2026 is older than discovery11November,not a new posting. Preferred Pacific/Eastern/Central-European timezones require schedule clarification. Official attira.org corroborates the wardrobe/outfit-planning product and links a careers route;not independent confirmation of internship pay or cohort. Duration,student eligibility,current intake and fixed compensation need confirmation. No form submitted."
+        },
+        {
+          "url": "https://attira.org/careers.html",
+          "label": "11 November official careers discrepancy",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Official careers lists Content & Design Lead, Design & Social Media Associate and Campus Marketing Ambassadors; no UI/UX internship there. This does not close the readable Wellfound internship but current UI/UX intake must be confirmed. Marketing jobs are not UX internships."
         }
       ],
       "contact": {
@@ -6873,7 +6893,11 @@
         "kind": "Employer-linked application form",
         "note": "Separate UI/UX and QA tracks. Confirm compensation, timezone overlap and actual internship conditions."
       },
-      "personalFitStatus": "Unassessed; no applicant details in public research."
+      "personalFitStatus": "Unassessed; no applicant details in public research.",
+      "website": "https://attira.org/",
+      "sector": "Consumer wardrobe mobile application",
+      "currentOpeningVerified": false,
+      "categorySuggestedOnly": true
     },
     {
       "id": "bigthinkcode",
@@ -9494,6 +9518,12 @@
           "label": "8 November retained terms",
           "checkedAt": "2026-11-08",
           "evidenceStatus": "Normal original readable today with remote/hybrid,Bengaluru preferred andnamedUIUX internship. Published form/LinkedIn/emailroutes are alternatives for same role,not newcards;pay/currentintake remain to confirm."
+        },
+        {
+          "url": "https://atrisi.org/collaborate/ui-ux-design-intern",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal official still remote/hybrid,Bengaluru preferred,namedUIUXintern withpublished alternativeform/LinkedIn/emailroutes. Pay,duration andcurrentcohort undisclosed. No newcard/crosspostfreshness inferred."
         }
       ],
       "contact": {
@@ -9504,7 +9534,7 @@
       },
       "openingStatus": "Official role and application form accessible. Stipend, duration, degree criteria and detailed tool expectations are absent from readable body. Published hiring inbox accepts resume/portfolio. Employer-linked LinkedIn4428228361 redirected to a generic jobs page, so it is not a verified cross-post.",
       "payNote": "Current role compensation amount unstated; keep separate from any historical benchmark.",
-      "researchedAt": "2026-10-27",
+      "researchedAt": "2026-11-11",
       "currentOpeningVerified": true
     },
     {
@@ -13515,7 +13545,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families,not unadvertised vacancies.",
-      "researchedAt": "2026-11-02",
+      "researchedAt": "2026-11-11",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=98b7c5773d8376ca",
@@ -13528,6 +13558,12 @@
           "label": "2 November public evidence",
           "checkedAt": "2026-11-02",
           "evidenceStatus": "Matching mirror says1month and final-year/recent-graduate eligibility. Mirror observation,not original posting date or confirmed current cohort."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=ffe1212fb67614a7",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal matching remote UI/UX internship still lists200–400kINR/year, not monthly stipend. Similar older exact record and one-month mirror retain their IDs and duration/eligibility caveats; no current3–6month paid cohort established."
         }
       ],
       "roles": [
@@ -14071,13 +14107,19 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families;not unadvertised vacancies.",
-      "researchedAt": "2026-11-03",
+      "researchedAt": "2026-11-11",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/4722763-visual-design-intern",
           "label": "3 November public evidence",
           "checkedAt": "2026-11-03",
           "evidenceStatus": "Public employer Wellfound exact advert explicitly excludes product/UX work and asks pure visual,app/advert assets,motion/video. It states25,000INR/month,India remote,college/no experience welcome. Body October-end objective and relative1month label are old context,not original date or renewed intake. Company-only;future UX extension not assumed."
+        },
+        {
+          "url": "https://wellfound.com/jobs/4722763-visual-design-intern",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact remains25kINR/month,pure visualdesign explicitly NOT product/UX;body October-endobjective older. No UXfeed addition or inferred currentUX vacancy."
         }
       ],
       "roles": [
@@ -14745,13 +14787,19 @@
         "UX Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-04",
+      "researchedAt": "2026-11-11",
       "sources": [
         {
           "url": "https://careers.hussh.ai/open-roles/ui-ux-product-design-intern-pune",
           "label": "4November public role evidence",
           "checkedAt": "2026-11-04",
           "evidenceStatus": "Fresh normal exact Pune and broader design-intern URLs return410. Cached last-week extracts describe campus challenge and probation;current role/index not verified. No active-feed addition."
+        },
+        {
+          "url": "https://careers.hussh.ai/open-roles/ui-ux-product-design-intern-pune",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact still410 despiteindexed two-week-oldprogrammeextract. No renewedPuneintake. Nine-daycontribution andone-to-twomonthprobationcompensation unstated;cachedpaidconversion isnot guaranteed offer."
         }
       ],
       "roles": [
@@ -15184,13 +15232,19 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families;not additional advertised vacancies.",
-      "researchedAt": "2026-11-05",
+      "researchedAt": "2026-11-11",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/4572769-ui-ux-brand-design-intern-freshers",
           "label": "5November public evidence",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Employer Wellfound body explicitly unpaid,three-month UI/UX and brand internship. RemoteIndia/everywhere labels do not make unpaid work a paid opening;excluded from feed."
+        },
+        {
+          "url": "https://wellfound.com/jobs/4572769-ui-ux-brand-design-intern-freshers",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal employer Wellfound still explicitly unpaid,three months. No active paid recommendation."
         }
       ],
       "roles": [
@@ -15235,21 +15289,33 @@
       "rationale": "Editable preference suggestion based on public product/design work and geography;not personal fit,hiring odds or an offer.",
       "careersUrl": "https://wellfound.com/jobs/4261038-ui-ux-design-intern-cop-drop",
       "locationNote": "BangaloreUrban;onsite or remote,everywhere hiring label",
-      "payNote": "Header5,000–15,000INR,period unstated;not verified numerical monthly stipend.",
-      "openingStatus": "Employer Wellfound advert readable;headerINR5,000–15,000 has no explicit period,one-year experience and2months-ago repost. Not verified current monthly stipend or a target match. Do not infer dates or units.",
+      "payNote": "INR5–15k visible headerperiodunstated;YEARmetadata,body absent. Monthly stipend unverified;5k lower bound would be belowremote floor ifmonthly.",
+      "openingStatus": "Older11August employer-platform UXintern,readable;payperiod,one-year eligibility andcurrentcohort unresolved",
       "evidenceConfidence": "Evidence supports only the explicit public terms;intake,pay and access caveats remain.",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families;not additional advertised vacancies.",
-      "researchedAt": "2026-11-05",
+      "researchedAt": "2026-11-11",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/4261038-ui-ux-design-intern-cop-drop",
           "label": "5November public evidence",
           "checkedAt": "2026-11-05",
           "evidenceStatus": "Employer Wellfound advert readable;headerINR5,000–15,000 has no explicit period,one-year experience and2months-ago repost. Not verified current monthly stipend or a target match. Do not infer dates or units."
+        },
+        {
+          "url": "https://wellfound.com/jobs/4261038-ui-ux-design-intern-cop-drop",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Readable employer Wellfound role for indie-brand marketplace UX,discovery research,mobile-first interfaces and founder collaboration. Header INR5,000–15,000 omits period;structured metadata says YEAR,body has no salary. No monthly INR stipend established;payMin/payMax null. If a monthly range is later confirmed,its5k lower bound would be below the remote10k floor;the15k maximum is not a guaranteed amount. Header/metadata require one year of experience;body emphasizes research thinking and taste without a degree filter. Confirm whether relevant internships or student projects qualify rather than assuming fresher eligibility. Page allows onsite Bangalore or remote with India applicant metadata/Everywhere header. Platform date11August2026 is an older listing,not a freshly posted November vacancy. Already present in company directory;new-to-feed only,using the existing directory role ID. Official copdrop.in corroborates marketplace identity but not current hiring terms. Duration,current cohort and compensation unresolved."
+        },
+        {
+          "url": "https://www.copdrop.in/",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Officialindiemarketplaceidentityreadable;notcurrenthiringterms."
         }
       ],
       "roles": [
@@ -15271,15 +15337,17 @@
               "sourceUrl": "https://wellfound.com/jobs/4261038-ui-ux-design-intern-cop-drop"
             }
           ],
-          "evidenceStatus": "Employer Wellfound advert readable;headerINR5,000–15,000 has no explicit period,one-year experience and2months-ago repost. Not verified current monthly stipend or a target match. Do not infer dates or units.",
-          "checkedAt": "2026-11-05"
+          "evidenceStatus": "Readable employer Wellfound role for indie-brand marketplace UX,discovery research,mobile-first interfaces and founder collaboration. Header INR5,000–15,000 omits period;structured metadata says YEAR,body has no salary. No monthly INR stipend established;payMin/payMax null. If a monthly range is later confirmed,its5k lower bound would be below the remote10k floor;the15k maximum is not a guaranteed amount. Header/metadata require one year of experience;body emphasizes research thinking and taste without a degree filter. Confirm whether relevant internships or student projects qualify rather than assuming fresher eligibility. Page allows onsite Bangalore or remote with India applicant metadata/Everywhere header. Platform date11August2026 is an older listing,not a freshly posted November vacancy. Already present in company directory;new-to-feed only,using the existing directory role ID. Official copdrop.in corroborates marketplace identity but not current hiring terms. Duration,current cohort and compensation unresolved.",
+          "checkedAt": "2026-11-11",
+          "jobId": "copdrop-uiux-intern"
         }
       ],
       "contact": {
         "url": "https://wellfound.com/jobs/4261038-ui-ux-design-intern-cop-drop",
         "kind": "Published careers/application route;no guessed recruitment address",
         "sourceUrl": "https://wellfound.com/jobs/4261038-ui-ux-design-intern-cop-drop"
-      }
+      },
+      "website": "https://www.copdrop.in/"
     },
     {
       "id": "fitistan",
@@ -18183,13 +18251,374 @@
         "sourceUrl": "https://www.productsquads.co/talk-to-us"
       },
       "website": "https://www.productsquads.co/"
+    },
+    {
+      "id": "quickops",
+      "name": "QuickOps India Private Limited",
+      "company": "QuickOps India Private Limited",
+      "companyType": "Services company",
+      "sector": "Web/UI design,brand assets and IT services",
+      "focus": "Web/UI design,brand assets and IT services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative Possible preference based on evidenced work and geography;not hiring odds,quality endorsement or offer.",
+      "careersUrl": "https://quickops.in/careers/",
+      "locationNote": "Ahmedabad on-site",
+      "openingStatus": "Normal exact Indeed a9262a7d9a157456 readable. Internship body5–10kINR/month based on skills/portfolio conflicts with annual pay field216–312kINR/year. Annual field is not converted into monthly stipend;5k lower bound below10k floor,only upper endpoint reaches floor. No guaranteed matching offer. Mixed website UI and brand/social/pitch-deck work. Official site corroborates IT/UIUX identity;careers route redirects to not-found. Original posting date/current cohort/duration unconfirmed. Glassdoor matching employer-provided copy corroborates same conflict,not a salary benchmark or separate vacancy.",
+      "currentOpeningVerified": false,
+      "payNote": "Body5–10kINR/month;annual216–312k field conflicts. Below-floor lower bound;no active recommendation.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-11",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456",
+          "label": "11November public role evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact Indeed a9262a7d9a157456 readable. Internship body5–10kINR/month based on skills/portfolio conflicts with annual pay field216–312kINR/year. Annual field is not converted into monthly stipend;5k lower bound below10k floor,only upper endpoint reaches floor. No guaranteed matching offer. Mixed website UI and brand/social/pitch-deck work. Official site corroborates IT/UIUX identity;careers route redirects to not-found. Original posting date/current cohort/duration unconfirmed. Glassdoor matching employer-provided copy corroborates same conflict,not a salary benchmark or separate vacancy."
+        },
+        {
+          "url": "https://www.glassdoor.co.in/job-listing/ui-ux-brand-design-intern-quickops-india-private-limited-JV_IC2935226_KO0%2C25_KE26%2C56.htm?jl=1010136194173",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Indexedmatchingemployer-providedadvertretains5–10kmonthlybodyversusannual216–312kfield;last-monthcrawl isnotfreshposting. Not a salarysurvey orcurrentoffer."
+        },
+        {
+          "url": "https://quickops.in/",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "OfficialIT/UIUXservicesidentityreadable;careersroute redirectsnot-found,notcurrentintakeevidence."
+        }
+      ],
+      "roles": [
+        {
+          "id": "quickops-design-evidence",
+          "title": "UI/UX & Brand Design Intern — pay conflict",
+          "url": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456",
+          "seniority": "Internship evidence;not a confirmed stipend match",
+          "location": "Ahmedabad on-site",
+          "requirements": [
+            {
+              "id": "1d1893792ae2",
+              "text": "Basic Figma,Canva,Photoshop,Illustrator or similar tool",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456"
+            },
+            {
+              "id": "cc1bb51461d8",
+              "text": "Portfolio,practice designs or samples preferred;onsite Ahmedabad",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456"
+            },
+            {
+              "id": "b6a0f1f774ea",
+              "text": "Website UI/landing pages plusbrand,social andpitch-deck assets",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456"
+            }
+          ],
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact Indeed a9262a7d9a157456 readable. Internship body5–10kINR/month based on skills/portfolio conflicts with annual pay field216–312kINR/year. Annual field is not converted into monthly stipend;5k lower bound below10k floor,only upper endpoint reaches floor. No guaranteed matching offer. Mixed website UI and brand/social/pitch-deck work. Official site corroborates IT/UIUX identity;careers route redirects to not-found. Original posting date/current cohort/duration unconfirmed. Glassdoor matching employer-provided copy corroborates same conflict,not a salary benchmark or separate vacancy."
+        }
+      ],
+      "contact": {
+        "email": "talent@quickops.in",
+        "kind": "Recruitment address printed in exact employer Indeed description;no message sent",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456"
+      },
+      "website": "https://quickops.in/"
+    },
+    {
+      "id": "travel-on-tips",
+      "name": "Travel On Tips Holidays",
+      "company": "Travel On Tips Holidays",
+      "companyType": "Travel services company",
+      "sector": "Travel products,websites and customer interfaces",
+      "focus": "Travel products,websites and customer interfaces",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative Possible preference based on evidenced work and geography;not hiring odds,quality endorsement or offer.",
+      "careersUrl": "https://travelontips.co.in/",
+      "locationNote": "Ahmedabad office,Monday–Saturday,six months",
+      "openingStatus": "Normal exact Indeed ffeba8fc64341436 readable. Stipend5–10kINR/month,body andMONTH metadata agree;lower bound below10k Gujarat floor,10k upper endpoint not guaranteed. Six-month full-time office internship,Monday–Saturday;students including M.Des and academic/personal portfolios accepted. Structured platform date21September2026 is older,not the category11November date. Employer website corroborates travel identity;no separate original careers role established. Company-only conditional future consideration,not a confirmed stipend match.",
+      "currentOpeningVerified": false,
+      "payNote": "Verified advertised5–10kINR/month,below10k lower bound;only upper endpoint meetsminimum.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-11",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=ffeba8fc64341436",
+          "label": "11November public role evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact Indeed ffeba8fc64341436 readable. Stipend5–10kINR/month,body andMONTH metadata agree;lower bound below10k Gujarat floor,10k upper endpoint not guaranteed. Six-month full-time office internship,Monday–Saturday;students including M.Des and academic/personal portfolios accepted. Structured platform date21September2026 is older,not the category11November date. Employer website corroborates travel identity;no separate original careers role established. Company-only conditional future consideration,not a confirmed stipend match."
+        },
+        {
+          "url": "https://travelontips.co.in/",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Officialtravelbusinessidentityreadable;no separatecareersrole orsalarycorroboration."
+        }
+      ],
+      "roles": [
+        {
+          "id": "travel-on-tips-design-evidence",
+          "title": "UI/UX Designer Internship — below-floor lower bound",
+          "url": "https://in.indeed.com/viewjob?jk=ffeba8fc64341436",
+          "seniority": "Internship evidence;not a confirmed stipend match",
+          "location": "Ahmedabad office,Monday–Saturday,six months",
+          "requirements": [
+            {
+              "id": "6679ff678b3a",
+              "text": "Figma,Auto Layout,components,variants andprototyping",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=ffeba8fc64341436"
+            },
+            {
+              "id": "4c9a79ced2dd",
+              "text": "Responsive interfaces,user flows anddeveloper handoff",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=ffeba8fc64341436"
+            },
+            {
+              "id": "cfcb2225f31f",
+              "text": "Students/recentgraduates/self-taught accepted;academic orpersonal portfolio",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=ffeba8fc64341436"
+            },
+            {
+              "id": "49fa842a4e3b",
+              "text": "Six months,full-time Ahmedabad office,Monday–Saturday",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=ffeba8fc64341436"
+            }
+          ],
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact Indeed ffeba8fc64341436 readable. Stipend5–10kINR/month,body andMONTH metadata agree;lower bound below10k Gujarat floor,10k upper endpoint not guaranteed. Six-month full-time office internship,Monday–Saturday;students including M.Des and academic/personal portfolios accepted. Structured platform date21September2026 is older,not the category11November date. Employer website corroborates travel identity;no separate original careers role established. Company-only conditional future consideration,not a confirmed stipend match."
+        }
+      ],
+      "contact": {
+        "url": "https://in.indeed.com/viewjob?jk=ffeba8fc64341436",
+        "kind": "Published Indeed application route;official homepage is general business contact",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=ffeba8fc64341436"
+      },
+      "website": "https://travelontips.co.in/"
+    },
+    {
+      "id": "saawahi-it-solution",
+      "name": "Saawahi IT Solution LLP",
+      "company": "Saawahi IT Solution LLP",
+      "companyType": "Services company",
+      "sector": "Web/mobile UI and software design",
+      "focus": "Web/mobile UI and software design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative Possible preference based on evidenced work and geography;not hiring odds,quality endorsement or offer.",
+      "careersUrl": "https://in.indeed.com/viewjob?jk=2992fde70d9a8620",
+      "locationNote": "Thaltej,Ahmedabad on-site",
+      "openingStatus": "Normal exact Indeed2992fde70d9a8620 explicitly says expired. Historical UIUXDesignerIntern header butbody full-time UIUXTrainee,fresher–sixmonths;6–18kINR/month salary,not verified internship stipend. No active feedcard or inferred renewed cohort. Official careers URL not verified;domain here is from published hiring address,not a confirmed accessible employer careers page.",
+      "currentOpeningVerified": false,
+      "payNote": "Historical6–18kINR/month full-time trainee salary;exact Indeed expired,not current offer.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-11",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=2992fde70d9a8620",
+          "label": "11November public role evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact Indeed2992fde70d9a8620 explicitly says expired. Historical UIUXDesignerIntern header butbody full-time UIUXTrainee,fresher–sixmonths;6–18kINR/month salary,not verified internship stipend. No active feedcard or inferred renewed cohort. Official careers URL not verified;domain here is from published hiring address,not a confirmed accessible employer careers page."
+        }
+      ],
+      "roles": [
+        {
+          "id": "saawahi-it-solution-design-evidence",
+          "title": "UI/UX Designer Intern / Trainee — expired",
+          "url": "https://in.indeed.com/viewjob?jk=2992fde70d9a8620",
+          "seniority": "Expired evidence",
+          "location": "Thaltej,Ahmedabad on-site",
+          "requirements": [
+            {
+              "id": "4121cd43189e",
+              "text": "Historical:Figma,wireframes,prototypes andresponsive UI",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=2992fde70d9a8620"
+            },
+            {
+              "id": "14a705be5742",
+              "text": "Historical:fresher–sixmonths;academic/personal/internship portfolio",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=2992fde70d9a8620"
+            }
+          ],
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact Indeed2992fde70d9a8620 explicitly says expired. Historical UIUXDesignerIntern header butbody full-time UIUXTrainee,fresher–sixmonths;6–18kINR/month salary,not verified internship stipend. No active feedcard or inferred renewed cohort. Official careers URL not verified;domain here is from published hiring address,not a confirmed accessible employer careers page."
+        }
+      ],
+      "contact": {
+        "email": "hiring@saawahiitsolution.com",
+        "kind": "Historical recruitment address in expired exact employer advert;not current opening confirmation",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=2992fde70d9a8620"
+      },
+      "officialCareersUrl": null,
+      "careersUrlNote": "Public expired role used as evidence;official employer careers URL not established."
+    },
+    {
+      "id": "frontend-arena",
+      "name": "Frontend Arena",
+      "company": "Frontend Arena",
+      "companyType": "Learning/community platform",
+      "sector": "Frontend projects and beginner design practice",
+      "focus": "Frontend projects and beginner design practice",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable qualitative Possible preference based on evidenced work and geography;not hiring odds,quality endorsement or offer.",
+      "careersUrl": "https://unstop.com/internships/uiux-developer-internship-frontend-arena-1803520",
+      "locationNote": "Remote;three-month programme",
+      "openingStatus": "Exact Unstop normal page is client shell;public AMP body readable,three-month beginnerUIUXprogramme,registration23November2026 andseparateinterview12December. Matching insiderOne crosspost explicitly classifies Unpaid andgives12Decemberdeadline,not same as original registration date. Original readable body doesnot establish a stipend;no paid current intake verified. No active recommendation. Unstop platform no-fee policy is not proof of paidemployment or employer quality.",
+      "currentOpeningVerified": false,
+      "payNote": "Matching crosspost explicitly Unpaid;original readable body doesnot establish stipend. Excluded from paid shortlist.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-11",
+      "sources": [
+        {
+          "url": "https://unstop.com/internships/uiux-developer-internship-frontend-arena-1803520/amp",
+          "label": "11November public role evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Exact Unstop normal page is client shell;public AMP body readable,three-month beginnerUIUXprogramme,registration23November2026 andseparateinterview12December. Matching insiderOne crosspost explicitly classifies Unpaid andgives12Decemberdeadline,not same as original registration date. Original readable body doesnot establish a stipend;no paid current intake verified. No active recommendation. Unstop platform no-fee policy is not proof of paidemployment or employer quality."
+        },
+        {
+          "url": "https://www.insiderone.in/jobs/ui-ux-developer-internship-at-frontend-arena-remote-89484d01-4d78-4443-91f7-970268ef1337",
+          "label": "11November public evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "NormalmatchingcrosspostexplicitlyUnpaid,12Decemberapplydeadline;sourceAMPregistration23Novemberdiffers. No paidshortlistaddition."
+        }
+      ],
+      "roles": [
+        {
+          "id": "frontend-arena-design-evidence",
+          "title": "UI/UX Developer Internship — unpaid crosspost",
+          "url": "https://unstop.com/internships/uiux-developer-internship-frontend-arena-1803520/amp",
+          "seniority": "Internship evidence;not a confirmed stipend match",
+          "location": "Remote;three-month programme",
+          "requirements": [
+            {
+              "id": "80ba9c48a612",
+              "text": "Figma,wireframing,prototyping andresponsive design",
+              "sourceUrl": "https://unstop.com/internships/uiux-developer-internship-frontend-arena-1803520/amp"
+            },
+            {
+              "id": "8146991697a4",
+              "text": "Beginners/students;three-month UIUXprogramme",
+              "sourceUrl": "https://unstop.com/internships/uiux-developer-internship-frontend-arena-1803520/amp"
+            },
+            {
+              "id": "9bf40e508b0c",
+              "text": "Website/app interfaces,user journeys anddeveloper collaboration",
+              "sourceUrl": "https://unstop.com/internships/uiux-developer-internship-frontend-arena-1803520/amp"
+            }
+          ],
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Exact Unstop normal page is client shell;public AMP body readable,three-month beginnerUIUXprogramme,registration23November2026 andseparateinterview12December. Matching insiderOne crosspost explicitly classifies Unpaid andgives12Decemberdeadline,not same as original registration date. Original readable body doesnot establish a stipend;no paid current intake verified. No active recommendation. Unstop platform no-fee policy is not proof of paidemployment or employer quality."
+        }
+      ],
+      "contact": {
+        "url": "https://unstop.com/internships/uiux-developer-internship-frontend-arena-1803520",
+        "kind": "Public programme application route;no account or submission",
+        "sourceUrl": "https://unstop.com/internships/uiux-developer-internship-frontend-arena-1803520"
+      }
+    },
+    {
+      "id": "ftfl-technology",
+      "name": "FTFL Technology Private Limited",
+      "company": "FTFL Technology Private Limited",
+      "companyType": "Services company",
+      "sector": "Web/mobile UI and software services",
+      "focus": "Web/mobile UI and software services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible suggestion based on interface work and remote evidence; not hiring odds or a quality endorsement.",
+      "careersUrl": "https://www.ftfltechnology.com/careers",
+      "locationNote": "Remote India on the internship; careers-wide hybrid/remote options",
+      "openingStatus": "Named exact Indeed internship; pay, legal employer and paid/volunteer track unresolved",
+      "currentOpeningVerified": false,
+      "payNote": "Pay information not provided; volunteer job-type tag requires clarification. No verified stipend or current offer.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-11",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0",
+          "label": "11 November exact Indeed detail",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact employer-authored Indeed UI/UX Design Intern is remote India and accepts students/freshers with 0–1 year, college/personal projects and Figma. Pay is explicitly not provided. Job-type tags mix internship, volunteer, student, part/full-time and contract; these are not proof of a paid internship. Structured platform date28October2026, not the11November category date. Employer metadata name FTFL Technology links a Saveinpe24 Innovation company profile, so legal employer identity needs clarification. Official ftfltechnology.com careers separately lists one UI/UX Designer vacancy but does not establish that it is the same internship or give stipend/cohort terms. Hold for written confirmation of paid/no-fee employment, fixed monthly stipend, legal employer, duration, hours and current student intake. No application sent."
+        },
+        {
+          "url": "https://www.ftfltechnology.com/careers",
+          "label": "Official careers: normal shell and indexed role evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal careers page shows general hiring and resume route but category inventory is not rendered. Indexed careers extract names one UI/UX Designer vacancy; not verified as this internship, a paid position or current student intake."
+        }
+      ],
+      "roles": [
+        {
+          "id": "indeed-ftfl-uiux-intern-c2ce29c74607f1e0",
+          "jobId": "indeed-ftfl-uiux-intern-c2ce29c74607f1e0",
+          "title": "UI/UX Design Intern",
+          "url": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0",
+          "seniority": "Internship;terms to confirm",
+          "location": "Remote — India",
+          "requirements": [
+            {
+              "id": "6b4dcc2e0077",
+              "text": "Figma and basic UI/UX principles, wireframing and prototyping",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
+            },
+            {
+              "id": "57a0ebc03c89",
+              "text": "Students/freshers, 0–1 year; personal or college projects accepted",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
+            },
+            {
+              "id": "4c3a3c040916",
+              "text": "Remote independent work, developer collaboration and design consistency",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
+            }
+          ],
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact employer-authored Indeed UI/UX Design Intern is remote India and accepts students/freshers with 0–1 year, college/personal projects and Figma. Pay is explicitly not provided. Job-type tags mix internship, volunteer, student, part/full-time and contract; these are not proof of a paid internship. Structured platform date28October2026, not the11November category date. Employer metadata name FTFL Technology links a Saveinpe24 Innovation company profile, so legal employer identity needs clarification. Official ftfltechnology.com careers separately lists one UI/UX Designer vacancy but does not establish that it is the same internship or give stipend/cohort terms. Hold for written confirmation of paid/no-fee employment, fixed monthly stipend, legal employer, duration, hours and current student intake. No application sent."
+        }
+      ],
+      "contact": {
+        "url": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0",
+        "kind": "Exact employer-platform application route; official general inbox also accepts resumes, not a role-specific recruiter",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
+      },
+      "website": "https://www.ftfltechnology.com/"
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-10",
+    "researchedAt": "2026-11-11",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 261
+    "directoryCount": 266
   }
 }
