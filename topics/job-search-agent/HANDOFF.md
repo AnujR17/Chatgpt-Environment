@@ -2,7 +2,7 @@
 
 Updated 11 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 11 November established employers and workplace screening — preparing release
+## 11 November established employers and workplace screening — published
 
 User requested more recognisable employers and a Lala-company flag after
 checking the term online. Business Standard18August2022 public extract was
@@ -40,7 +40,18 @@ private flag/reason persistence, backup/CSV andmobile restore checks pass. Zero
 runtime errors/POSTs/overflow; representative images inspected. Research and
 synthetic private QA artifacts stay outside Git in
 /workspace/employer-screening-review/. Preserve exact topic-branch production
-release workflow and existing protection; verify live data before claiming release.
+release workflow and existing protection.
+
+Published exact commit `b39afa2542b4cce84565876b0d85b1164e8444cd`,
+`topic/job-search-agent`, existing project `prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`.
+READY production deployment `dpl_9RKhW46S6uNKCM5MBY3yoBSJxZ5B`; exact SHA/ref,
+project, target and public alias verified. Default authenticated scope/no teamId,
+AnujR17 GitHub identity; main untouched. One production/no preview listed for
+this SHA; protection/account/framework/Node settings unchanged. Seven live
+JSON/CSV/XLSX/report files returned200 and matched committed bytes. Live
+feature/filter/private-fixture desktop/mobile checks passed with zero runtime
+errors, POSTs or mobile overflow. No actual private browser state accessed.
+Documentation-only follow-up records this release; no second deployment needed.
 
 ## 11 November Assistant removal — published
 

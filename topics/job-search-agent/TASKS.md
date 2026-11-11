@@ -1,5 +1,15 @@
 # Tasks
 
+## 11 November established employers and workplace screening
+
+- [x] Research the informal Lala-company term and preserve source/access limits.
+- [x] Add16 sourced established-employer profiles andthree recurring-programme targets,not fabricated vacancies.
+- [x] Separate published processes, specific hiring-term concerns and unassessed companies; no unsupported culture verdicts.
+- [x] Add visible badges/filter/shortcut and private Yes/No/Unknown reasons in existing companyOverrides/backups.
+- [x] Extend public workbook/CSV with sourced screening only; preserve prior research/IDs/private-state compatibility.
+- [x] Pass five JS suites, collector checks, preservation audit, desktop/mobile/private export/restore and board regression checks.
+- [x] Publish b39afa2542b4cce84565876b0d85b1164e8444cd; READY dpl_9RKhW46S6uNKCM5MBY3yoBSJxZ5B. Exact live files and feature checks verified; protection/main unchanged.
+
 ## 11 November Assistant removal and board publication
 
 - [x] Remove Assistant UI, server generation, API, AI dependency and Gateway checks.
