@@ -1,3 +1,4 @@
+// Compatibility for legacy browser backups; application preparation UI and API were removed.
 // Private application packets. No network calls, model calls or status updates.
 export const REQUEST_FORMAT = 'design-search.application-request';
 export const RESULT_FORMAT = 'design-search.application-result';

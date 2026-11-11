@@ -48,4 +48,4 @@ Supported workbook, Company directory, Role requirements and company-directory.c
 
 Private browser profile, notes, stages, blacklist and assessments remain inaccessible. Compatibility checks use synthetic fixtures only; no applicant data published.
 
-Publication pending: Vercel access restored, but branch includes a separately developed preview-only Assistant page awaiting explicit release authorization. Do not silently promote it as a data-only update. Live board checked: still9November feed. A push alone is not publication.
+The application Assistant was removed at the user's request after this research pass. Publication follows the existing exact topic-commit workflow; no Gateway or Assistant release dependency remains. Verify the deployed commit and live files before claiming refresh.

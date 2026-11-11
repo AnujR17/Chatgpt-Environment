@@ -2,6 +2,20 @@
 
 Updated 11 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 11 November Assistant removal — release in progress
+
+The user explicitly removed the application assistant. Removed its page/nav,
+application workspace, generation API/backend, Vite middleware, Gateway check,
+AI dependency and feature-only tests. Existing factual email draft and its
+saved edits remain. Legacy document data validation/50MB backup compatibility
+remain without a generation interface; no browser-local records were deleted.
+Old /assistant links redirect to the board. Current skill/README supersede the
+historical preview-only/Gateway release instructions below. Daily public-feed
+releases no longer depend on the removed feature. Latest researched data remain
+11November:114 retained/99 active/15 archived,266 companies,37 coverage rows.
+Clean npm ci, full four-suite JS checks, desktop/mobile and saved local email-draft checks pass; no generation requests or runtime errors. Source coverage tests now check evidence rather than a frozen HN count or fixed status wording. Public JSON/Excel/CSV bytes remain identical to e9a5cb8. Publish the tested exact removal commit to the existing production project,
+verify READY and exact live feeds, then record deployment evidence.
+
 ## 11 November public research refresh — prepared; production release pending
 
 - Existing checkout fast-forwarded to remote `ee0d03a5c4bd1b36761df3a0b3cef73728d75b3a`; preserved the separately developed preview-only Assistant/application workspace. This refresh changes public research, exports and handoff only. Main, UI/model, API, extension, tests, seed and collector main untouched.

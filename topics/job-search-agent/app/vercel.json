@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
   "headers": [
@@ -34,19 +35,16 @@
       ]
     }
   ],
-  "rewrites": [
+  "redirects": [
     {
       "source": "/assistant",
-      "destination": "/index.html"
+      "destination": "/",
+      "permanent": false
     },
     {
       "source": "/assistant/",
-      "destination": "/index.html"
+      "destination": "/",
+      "permanent": false
     }
-  ],
-  "functions": {
-    "api/assistant.js": {
-      "maxDuration": 180
-    }
-  }
+  ]
 }

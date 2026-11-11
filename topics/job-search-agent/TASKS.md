@@ -1,5 +1,15 @@
 # Tasks
 
+## 11 November Assistant removal and board publication
+
+- [x] Remove Assistant UI, server generation, API, AI dependency and Gateway checks.
+- [x] Preserve researched feeds, saved-state keys, factual email drafts and legacy backups.
+- [x] Remove the obsolete preview-only release gate from current instructions.
+- [x] Verify board desktop/mobile, backup/state compatibility, tests and build.
+- [ ] Publish exact topic-branch commit to existing production project and verify live data.
+
+Older task sections below are historical; removed Assistant tasks do not authorize rebuilding it.
+
 ## 10 November: separate page with direct website generation
 
 - [x] Add /assistant with visible navigation, role deep links, back/forward/refresh and shared existing profile/progress.

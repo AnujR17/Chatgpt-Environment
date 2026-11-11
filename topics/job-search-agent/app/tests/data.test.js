@@ -21,8 +21,8 @@ test('retained employer roles preserve unknown pay, honest role types and source
 });
 test('expanded sources retain older dates, annual units and access limits',()=>{
  const sourceData=JSON.parse(fs.readFileSync(new URL('../public/data/sources.json',import.meta.url)));
- assert.ok(sourceData.coverage.some(c=>c.source==='Naukri'&&c.status.includes('robots')));
- assert.ok(sourceData.coverage.some(c=>c.source.includes('Hacker News')&&c.findings.includes('266')));
+ assert.ok(sourceData.coverage.some(c=>c.source==='Naukri'&&/robots/i.test([c.status,c.findings,c.limits].join(' '))));
+ assert.ok(sourceData.coverage.some(c=>c.source.includes('Hacker News')&&c.checkedAt&&/\d+\s*top-level/i.test(c.findings)),'HN coverage must record checked source counts without freezing a changing thread size');
  const yc=jobs.filter(j=>j.sourceType==='YC / Work at a Startup');assert.equal(yc.length,2);
  for(const j of yc){assert.ok(j.postedAt.startsWith('2024'));assert.equal(j.listingVerification,'older-listing');assert.equal(j.status,'on_hold');assert.equal(j.payMin,null);}
  const superkalam=yc.find(j=>j.company==='SuperKalam');assert.equal(superkalam.advertisedCompensation.verified,false);

@@ -1,85 +1,36 @@
-# Reference comparison and integration
+# Reference comparison
 
-Reviewed 10 November 2026. Reference:
+Reference reviewed10November2026:
 [ai-job-search-dev/ai-job-search](https://github.com/ai-job-search-dev/ai-job-search)
-at `e9ab29dcc20b3d802356077b02898cd97db0d312`. Existing board baseline:
-`f235c4d` on `topic/job-search-agent`. The reference README, license, agent
-entry point and application command were inspected. Its tests and reported
-hiring outcomes were not independently reproduced.
+at `e9ab29dcc20b3d802356077b02898cd97db0d312`. Its README, license, agent
+entry point and application command were inspected. Tests and hiring outcomes
+were not independently reproduced. No upstream source was copied.
 
-## What the reference does
+## Current status —11November2026
 
-It is an agent workflow that runs around local files, primarily in Claude Code.
-Setup builds a career profile; search finds roles; rank evaluates and shortlists;
-apply evaluates fit, drafts a CV/letter, runs a separate reviewer, revises,
-compiles PDFs and checks their layout and extracted text. Interview/outcome
-commands use the submitted materials and feedback. It also documents learning
-plans, extensible templates and portals, an offline report, and optional Gmail
-and Notion workflows. Core criteria are market independent. Its four Danish
-portal examples are joined by multi-market LinkedIn and Freehire adapters;
-it is inaccurate to describe the whole reference as Denmark-only.
+The user removed the application assistant. The dedicated page, application
+workspace, model-generation API and Gateway dependency are gone. The existing
+job board remains the canonical product: public design-role research, company
+directory, source evidence, local tracking, profile, editable factual email
+drafts, clipper import and backups. Old document fields are retained only for
+backup compatibility; no assistant workflow is exposed.
 
-## Current differences
+The reference is a file-based agent workflow with profile setup, search,
+ranking, tailored CV/letter drafting, separate review, PDF/layout/text checks,
+interview preparation and outcomes. It has market-independent criteria plus
+Danish and multi-market adapters. Those capabilities are reference context,
+not claims that this board currently implements them.
 
-| Area | Existing board before this integration | Reference workflow | Integrated change / remaining gap |
-| --- | --- | --- | --- |
-| Personal UX/design discovery | India/remote research, role feed, company directory, source coverage, pay caveats, local clipper | Portable portal search and custom adapters | Preserve the existing market-specific discovery and evidence. No search refresh was performed by this change. |
-| Application preparation | Generic email built from the profile; draft edits were lost when the drawer closed | Tailored CV and letter with factual review | Added a private role-specific Codex request/result round trip, persisted email drafts and an application document workspace. A later enhancement adds a dedicated /assistant page and a real server-side AI Gateway draft/review pipeline; manual chat exchange remains optional. |
-| Evidence | Source-backed role requirements and browser-local Met/Partly/Gap checklists | Profile-grounded factual and fit evaluation | Export candidate-confirmed fact IDs and full posting; validate returned quotes and IDs. Validation cannot establish truth or exhaustive coverage. |
-| Continuity | Stable researched IDs and private localStorage overrides/backups | Local tracker and application archives | Requests/results retain the existing board role ID. Drafts and frozen submitted copies use the existing overrides and JSON backup; no parallel tracker or cloud private-data store. |
-| Review | No application-specific review record | Separate drafter/reviewer with revision | A reviewed result contract checks role/request/source identity and cited facts. Draft edits invalidate its review. Actual review quality still needs a real application pilot. |
-| Interview prep | Interview date/notes | Role-specific packs and mock interviews based on submitted documents | Workspace stores an imported prep pack and submitted documents; chat skill handles preparation. No interview is booked or conducted by the static page. |
-| Final files | Editable email text | Compiled, visually checked PDF plus text-layer/keyword review | Markdown document export added. PDF/DOCX generation, layout inspection and text-layer checks remain gaps. |
-| Follow-up and feedback | User-entered next action and due date | Outcome history, silence follow-up drafts and calibration | Existing dates and stages preserved. Structured feedback-driven recalibration and automated follow-up suggestions remain future work. |
-| Integrations | Browser clipper, backups, public research updates | Documented optional Gmail/Notion workflows | No email/Notion connection or permissions added. Sending and submission remain manual. |
+| Area | Current board |
+| --- | --- |
+| Discovery | India/remote design-role research, company directory and source/pay/freshness caveats |
+| Tracking | Stable IDs and browser-local stages, notes, follow-ups and assessments |
+| Applications | Editable factual email template; manual sending and submission |
+| Documents | No assistant generation, CV/letter workbench or PDF/ATS verification |
+| Continuity | Existing browser storage and JSON backups; no cloud private-profile database |
+| Integrations | Browser clipper and researched public-feed publication; no employer messaging |
 
-The smaller `topic/ai-job-search` starter remains a historical prototype. Its
-source/profile snapshots and evidence-review ideas are now adapted to the
-existing board's data model. The board is the canonical product. No upstream
-source code was copied; retain the reference's MIT notice if copying code later.
-
-## How to use the integration
-
-1. On the board, open a role and choose **Prepare with Codex**. Existing profile
-   information stays in the same browser; no new account or onboarding store.
-2. Paste the complete job description, review your saved facts, confirm them and
-   download the request. It includes contact links and confirmed experience,
-   but excludes notes, blacklists, assessment judgments and other applications.
-3. Attach the request in Codex and ask it to prepare the application. Alternatively,
-   copy the request from the board. The repository skill specifies evaluation,
-   tailoring, interview prep and the factual-review response format.
-4. Import the returned JSON in the same role. Wrong-role, obsolete or malformed
-   results are rejected before any update. Source/profile changes require a new
-   request. Imported text is editable; editing removes the previous review.
-5. Download documents or the application kit. After submitting externally, save
-   the exact submitted copy. Later working edits leave it unchanged. Change the
-   application stage yourself after the real event. JSON backup includes it all.
-
-The dedicated /assistant page can now generate directly through AI Gateway after confirmation, as documented in the app README. It shares the existing browser profile and tracking records. The manual chat handoff remains optional; the chat still cannot automatically read browser-local data. Neither mode submits applications. Public research files remain unchanged.
-
-## What would establish better results
-
-Current verification establishes software behavior, not better hiring outcomes.
-For a fair writing/ranking comparison, use the same candidate-confirmed profile
-and five real postings, including a strong fit, adjacent fit, mandatory-eligibility
-gap, unknown pay and an older listing. Compare unsupported factual claims,
-missed mandatory requirements, whether unknowns remain visible, useful tailoring,
-source/date fidelity and time needed for candidate review. These are proposed
-measures; no baseline, uplift or hiring-probability claim has been established.
-
-The next useful extensions are verified PDF/text extraction, outcome and
-follow-up calibration, and source adapters chosen for real coverage gaps.
-Prioritize them after a real request-to-reviewed-application pilot, rather than
-adding another scraper or a numerical fit score without evidence.
-
-
-## Dedicated website generation follow-up
-
-The user clarified that the assistant should be separately visible on the same
-site and generate directly in the website. It now has a dedicated /assistant
-route, role selection, deep links, direct server generation, a factual review
-pass and shared profile/progress. AI credentials stay server-side. Current
-provider deployment/credit verification is recorded in HANDOFF.md. This adds a
-real model service; older descriptions of chat-only generation are superseded.
-Seeing this route on the fixed production hostname requires releasing the
-changed app there, even while all Git work remains on the topic branch.
+The earlier `topic/ai-job-search` starter is a historical prototype, not a
+second app to run or republish. Keep private applicant data out of public
+research and preserve the existing board. Tests establish software behavior,
+not better ranking, writing, ATS success or hiring probabilities.

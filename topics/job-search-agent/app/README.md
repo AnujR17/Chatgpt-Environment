@@ -1,17 +1,5 @@
 # Design internship tracker
 
-Dedicated assistant preview (10 November):
-https://chatgpt-environment-fj1kih2u1-anujrai1701-gmailcoms-projects.vercel.app/assistant
-
-The separate page and server generation pipeline are deployed from `f9960b4`.
-The explicit live Gateway check returned403, mapped to
-`gateway_activation_required`; real generation is blocked pending Gateway
-activation/access. The protected preview itself is READY. Production below is
-unchanged. A preview hostname has separate browser storage; use JSON
-backup/restore for existing profile/progress while testing. Once released on
-the original hostname, / and /assistant share the existing browser state.
-Do not promote without the user's explicit release authorization.
-
 Live board: https://chatgpt-environment.vercel.app
 
 Production is READY from the board branch in the existing Vercel project `chatgpt-environment`.
@@ -24,15 +12,15 @@ Personal internship discovery and application Kanban for Anuj. Primary GitHub ow
 
 114 retained roles (99 active/held,15 archived),266 companies and37 source-coverage records. Three older internships are new to the feed: FTFL on Indeed and Attira/Cop&Drop on Wellfound, all on hold for pay/intake or eligibility clarification. Zero new verified monthly stipend matches and no newly retired records. Existing role/company/requirement IDs and browser-local state compatibility are preserved; workbook and directory CSV regenerated. See [the research report](public/data/collection-report.md).
 
-Production release is pending because this branch also contains the separately developed preview-only Assistant page. The public board was checked and still serves the9November feed. Publishing this research branch must explicitly resolve that feature release scope and verify the exact production commit/live files; a push alone is not a refresh.
+The preview-only Assistant has been removed. Daily public-feed publication uses the existing exact topic-commit production workflow and does not require AI Gateway. Verify deployment and live files before claiming a refresh.
 
 ## Included
 
-- 111 retained role records (96 active,15 archived), updated 10 November 2026. Three new internships remain on_hold: Priberry Review Flows advertises INR40,000–60,000/month near Pune; FLIP and AICines have unresolved compensation-period conflicts. The exact Websar Indeed role expired and is archived with its salary/history retained. See [the current research report](public/data/collection-report.md).
+- 114 retained role records (99 active/held,15 archived), researched11November2026. Three older listings are new to the feed: FTFL, Attira and Cop&Drop; all remain on hold. See [the current research report](public/data/collection-report.md).
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat and remote India minimum ₹10,000/month, with ₹15,000+ preferred; other eligible cities minimum ₹15,000/month. Higher pay remains welcome. Earlier dated research may use former thresholds.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with261 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with266 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.
@@ -95,58 +83,12 @@ Do not commit résumé files, personal profile data, credentials or browser back
 
 ## Application readiness
 
-### Separate assistant page with direct AI generation
-
-The job board stays at `/`; the dedicated application assistant is at
-`/assistant`, with an **Assistant** entry beside Discover. A role's **Open
-assistant** action links directly to `/assistant?role=JOB_ID`. Direct links,
-refresh and browser back/forward work. Both pages use the same browser profile,
-application IDs, private overrides and JSON backups on a given hostname.
-
-Choose a role, paste its complete posting, review/confirm the profile facts,
-then choose **Generate application**. A server function makes a draft pass and
-an independent review pass through AI Gateway. It returns evaluation, CV,
-letter and interview preparation. Quote/fact/source checks must pass before
-existing documents are replaced. No status, notes or company preferences are
-changed. Cancellation and failures preserve current drafts; edited documents
-lose their previous review. After a real external submission, save the exact
-submitted copy and update application stage yourself.
-
-The selected posting and confirmed profile/contact links are sent to the model
-only when Generate is clicked. Private notes, blacklists, assessment judgments
-and other applications are excluded. No application or email is sent. Stored
-profile/documents remain browser-local; server processing is transient, and
-Gateway/provider logging follows the account's service settings. Review the
-outputs yourself; source-reference validation cannot prove truth or exhaustive
-coverage. Outputs remain Markdown, without PDF layout or ATS verification.
-
-Server setup uses Vercel OIDC automatically, or an optional private
-`AI_GATEWAY_API_KEY`. Do not use a VITE-prefixed key or put a key in chat/source.
-`AI_GATEWAY_MODEL` can override the default `openai/gpt-5.4-mini`, confirmed in
-the complete live catalog on10November2026. AI SDK7.0.166 is pinned and its
-installed docs/source were checked. Node24 is retained. Gateway activation and
-credits are separate from a ChatGPT/Codex subscription. Missing authentication,
-verification, credits/budget, rate limits and timeouts have explicit errors and
-an AI settings link where appropriate. No key, credit purchase or budget change
-was made by this implementation. Keep the existing Vercel Deployment Protection
-on this personal app; same-origin input checks do not replace authentication.
-
-`GET /api/assistant` reports connection configuration only, with no paid call
-or secret value. `POST /api/assistant` validates the request/origin/size, uses two
-bounded model calls with no automatic retry and a140second deadline, then
-validates the result. The standard build never makes model calls. Build command comes from the project or explicit per-deployment settings; vercel.json does not override it.
-`npm run verify:gateway` explicitly runs a live two-pass check with fictional
-facts and uses AI credits; use it only when authorized. It logs a sanitized
-success or setup blocker, never a token, prompt or real candidate profile.
-Vite's dev middleware serves the same API handler locally; an ignored
-`.env.local` or exported development credential is needed for real local calls.
-
-Manual Codex export/copy/import remains an optional fallback. Returned JSON can
-be checked with `node scripts/check_application_result.mjs REQUEST.json RESULT.json`.
-The private ignored directory remains `topics/job-search-agent/private/`.
-Backup/restore includes the entire workspace, with a50MB import limit; local
-storage quotas still apply. API requests are limited to250KB. No cloud profile
-or progress database was introduced.
+The application assistant was removed on11November2026 at the user's request.
+The board has no AI generation page, application workspace or generation API.
+Old `/assistant` links redirect to `/`. Existing profile, stages, notes,
+company preferences and backup fields remain compatible. Older document
+archives are retained in backups without a document-generation interface.
+The existing editable factual email draft remains local and sends nothing.
 
 - ShramikSathi and BThree publish an application email, so drafts can be prepared without browser form automation.
 - Hevo's public Lever form appears suitable for assisted filling once accurate profile/résumé information is supplied. Submission rules and CAPTCHA remain unverified.
