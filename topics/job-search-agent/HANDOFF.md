@@ -2,7 +2,7 @@
 
 Updated 11 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 11 November Assistant removal — release in progress
+## 11 November Assistant removal — published
 
 The user explicitly removed the application assistant. Removed its page/nav,
 application workspace, generation API/backend, Vite middleware, Gateway check,
@@ -13,8 +13,30 @@ Old /assistant links redirect to the board. Current skill/README supersede the
 historical preview-only/Gateway release instructions below. Daily public-feed
 releases no longer depend on the removed feature. Latest researched data remain
 11November:114 retained/99 active/15 archived,266 companies,37 coverage rows.
-Clean npm ci, full four-suite JS checks, desktop/mobile and saved local email-draft checks pass; no generation requests or runtime errors. Source coverage tests now check evidence rather than a frozen HN count or fixed status wording. Public JSON/Excel/CSV bytes remain identical to e9a5cb8. Publish the tested exact removal commit to the existing production project,
-verify READY and exact live feeds, then record deployment evidence.
+Clean npm ci, all four JS suites, production build, local/live desktop/mobile
+and saved local email-draft checks pass. Source tests now check evidence rather
+than a frozen HN count/status wording. Public JSON/Excel/CSV bytes remain
+identical to e9a5cb8; only the report publication note was updated.
+
+Exact production commit `6f7166177e3c8ffcba3d87a933d665220f48c778` on
+`topic/job-search-agent`, pushed as AnujR17. Existing project
+`prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`, deployment
+`dpl_7ZY5WmqxT8skwMQMnhpCikycvES9` READY, production target, exact SHA/ref/project
+and public alias verified. Default scope, no teamId; main untouched. The only
+deployment listed for this SHA is production, preserving preview isolation.
+Account/framework/Node/password/SSO/trusted-IP settings unchanged.
+
+All seven live research/export files returned200 and matched committed bytes.
+Live JSON confirms11November/114 retained/99 active-held/15 archived. Live
+/assistant and /assistant/ return307 to /; /api/assistant returns404. Published
+JS has no Assistant UI or generation endpoint references. Live desktop/mobile
+and synthetic profile/blacklist/criteria/saved-application checks pass with zero
+runtime errors. Clipper hash unchanged. Real browser-private state was not
+read; no data cleared, applications, messages or paid model calls.
+
+QA artifacts: `/workspace/job-refresh-nov11-review/`, including removal-live
+file hashes. Subsequent handoff/README/TASKS changes are documentation only;
+do not redeploy them as another feed release.
 
 ## 11 November public research refresh — prepared; production release pending
 

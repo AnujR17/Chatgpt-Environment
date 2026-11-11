@@ -6,7 +6,7 @@
 - [x] Preserve researched feeds, saved-state keys, factual email drafts and legacy backups.
 - [x] Remove the obsolete preview-only release gate from current instructions.
 - [x] Verify board desktop/mobile, backup/state compatibility, tests and build.
-- [ ] Publish exact topic-branch commit to existing production project and verify live data.
+- [x] Publish6f7166177e3c8ffcba3d87a933d665220f48c778: READY dpl_7ZY5WmqxT8skwMQMnhpCikycvES9; seven live files match,11November feed, removed API404/old route redirects, live desktop/mobile pass.
 
 Older task sections below are historical; removed Assistant tasks do not authorize rebuilding it.
 
