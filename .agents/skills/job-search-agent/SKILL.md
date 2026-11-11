@@ -54,3 +54,22 @@ finish authorized research/checks and report the specific failure honestly.
 
 Read `topics/job-search-agent/REFERENCE_COMPARISON.md` for the earlier reference
 review. Software tests do not establish better hiring outcomes or writing.
+
+## Employer reputation and Lala-style screening
+
+Prioritise established product/design employers alongside relevant smaller
+teams. Preserve employerProfile, workplaceReview and sources.employerScreeningPolicy.
+The visibility label records documented organisational/product presence, not
+workplace quality or a live vacancy. Public screening states are unassessed,
+processes-documented and terms-concerns. Cite exact sources, date, confidence,
+limits and useful next action. Brand/family ownership/company size/low pay or
+missing evidence alone must not become a Yes/No culture classification. A
+specific advert conflict supports a terms check, not a company-wide allegation.
+Formal policies are not proof of consistent team practice. Anonymous reviews
+need attributable dates/sample/limitations; do not invent ratings or consensus.
+Keep recurring programmes, out-of-geography/senior positions and actual current
+eligible vacancies separate. Preserve all stable source and requirement IDs.
+Private lalaAssessment Yes/No/Unknown values and reasons live in companyOverrides;
+never put them in public feeds, exports, memory or research handoff. Include
+only public screening evidence in supported static CSV/Excel exports. Keep
+unknown companies unassessed and never infer internship pay from a known brand.

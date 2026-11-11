@@ -58,12 +58,12 @@ if company_path.exists():
  cs.freeze_panes='C2';cs.auto_filter.ref=cs.dimensions
  tiers=DataValidation(type='list',formula1='"Dream,Workable,Possible"');cs.add_data_validation(tiers);tiers.add('B2:B10000')
 directory=wb.create_sheet('Company directory')
-directory.append(['Company','Category','Company type','Sector','Locations / remote limits','Opening status','Likely roles (inferred)','Careers URL','Public email','Contact page','Contact kind','Notes','Checked'])
+directory.append(['Company','Category','Company type','Sector','Locations / remote limits','Opening status','Likely roles (inferred)','Careers URL','Public email','Contact page','Contact kind','Notes','Checked','Employer visibility','Workplace screen','Workplace evidence','Workplace check date','Screening limits'])
 requirements=wb.create_sheet('Role requirements')
 requirements.append(['Company','Role','Seniority','Location','Role source','Evidence / access caveat','Requirement','Self assessment','Portfolio / resume evidence'])
 for company in company_records:
  contact=company.get('contact') or {}
- directory.append([company['name'],company['tier'],company.get('companyType','Unclassified'),company.get('focus',''),company.get('locationNote',''),company.get('openingStatus','No current opening verified'),'; '.join(company.get('likelyRoles',[])),company.get('careersUrl',''),contact.get('email',''),contact.get('url',''),contact.get('kind',''),company.get('notes',''),company.get('researchedAt','')])
+ directory.append([company['name'],company['tier'],company.get('companyType','Unclassified'),company.get('focus',''),company.get('locationNote',''),company.get('openingStatus','No current opening verified'),'; '.join(company.get('likelyRoles',[])),company.get('careersUrl',''),contact.get('email',''),contact.get('url',''),contact.get('kind',''),company.get('notes',''),company.get('researchedAt',''),'Established employer' if company.get('employerProfile',{}).get('status')=='established' else 'Not classified',company.get('workplaceReview',{}).get('status','unassessed'),'; '.join(x['url'] for x in company.get('workplaceReview',{}).get('sources',[])),company.get('workplaceReview',{}).get('checkedAt',''),company.get('workplaceReview',{}).get('limits','No reviewed workplace evidence;unknown is not a culture verdict')])
  for role in company.get('roles',[]):
   reqs=role.get('requirements') or ['No detailed requirements captured; open source']
   for requirement in reqs:
@@ -84,6 +84,7 @@ for row in [
  ['Stipend','Gujarat and remote India: INR10,000/month minimum, INR15,000+ preferred. Other eligible cities: INR15,000/month minimum. Higher pay remains welcome; unknown pay stays on hold.'],
  ['Evidence','Only employer-stated minimums count as confirmed. Undisclosed-pay roles stay on hold. Glassdoor and other company reports are historical context, never a current offer. Annual figures stay annual.'],
  ['Company groups','Dream / Workable / Possible are editable suggestions, not hiring probabilities. The company watchlist does not assert current vacancies or offers.'],
+ ['Employer screening','Established employer visibility, published process evidence and hiring-term concerns are separate. None is a guaranteed good workplace or a Yes/No Lala verdict. Unknown stays unassessed; personal flags stay browser-local.'],
  ['Personal fit','Public exports contain no personal assessment. Browser-only criteria can be reviewed separately; Met/partial/gap is an evidence checklist, not hiring odds.'],
  ['Blacklist','Browser-local blacklist hides recommendations, including future matching feed items. Saved application history is retained. Use JSON backup to transfer preferences; daily task cannot read local blacklist.'],
  ['Freshness','Discovery date is not posting date. An accessible listing does not guarantee current hiring.'],
@@ -107,10 +108,10 @@ print('Exported internships.xlsx')
 # Public research CSV; private blacklist/preferences/evidence are exported only by the browser.
 with (ROOT/'public/data/company-directory.csv').open('w', newline='', encoding='utf-8-sig') as output:
  writer=csv.writer(output,lineterminator='\n')
- writer.writerow(['Company','Category','Type','Sector','Location notes','Opening status','Likely roles (inferred)','Careers URL','Public email','Contact route','Contact kind','Contact caveat','Role','Seniority','Role location','Role URL','Role evidence','Requirements','Personal fit','Pay note','Notes','Sources'])
+ writer.writerow(['Company','Category','Type','Sector','Location notes','Opening status','Likely roles (inferred)','Careers URL','Public email','Contact route','Contact kind','Contact caveat','Role','Seniority','Role location','Role URL','Role evidence','Requirements','Personal fit','Pay note','Notes','Sources','Employer visibility','Workplace screen','Workplace evidence','Workplace check date','Screening limits'])
  for company in company_records:
   contact=company.get('contact') or {}
   for role in company.get('roles') or [{}]:
-   row=[company['name'],company['tier'],company.get('companyType','Unclassified'),company.get('focus',''),company.get('locationNote',''),company.get('openingStatus','No current role verified'),'; '.join(company.get('likelyRoles',[])),company.get('careersUrl',''),contact.get('email',''),contact.get('url',''),contact.get('kind',''),contact.get('note',''),role.get('title',''),role.get('seniority',''),role.get('location',''),role.get('url',''),role.get('evidenceStatus',''),'; '.join(r if isinstance(r,str) else r['text'] for r in role.get('requirements',[])),'Unassessed',company.get('payNote','Current pay unconfirmed'),company.get('notes',''),'; '.join(s['url'] for s in company.get('sources',[]))]
+   row=[company['name'],company['tier'],company.get('companyType','Unclassified'),company.get('focus',''),company.get('locationNote',''),company.get('openingStatus','No current role verified'),'; '.join(company.get('likelyRoles',[])),company.get('careersUrl',''),contact.get('email',''),contact.get('url',''),contact.get('kind',''),contact.get('note',''),role.get('title',''),role.get('seniority',''),role.get('location',''),role.get('url',''),role.get('evidenceStatus',''),'; '.join(r if isinstance(r,str) else r['text'] for r in role.get('requirements',[])),'Unassessed',company.get('payNote','Current pay unconfirmed'),company.get('notes',''),'; '.join(s['url'] for s in company.get('sources',[])),'Established employer' if company.get('employerProfile',{}).get('status')=='established' else 'Not classified',company.get('workplaceReview',{}).get('status','unassessed'),'; '.join(x['url'] for x in company.get('workplaceReview',{}).get('sources',[])),company.get('workplaceReview',{}).get('checkedAt',''),company.get('workplaceReview',{}).get('limits','No reviewed workplace evidence;unknown is not a culture verdict')]
    writer.writerow(["'"+v if isinstance(v,str) and v.lstrip().startswith(('=','+','-','@')) else v for v in row])
 print('Exported company-directory.csv')

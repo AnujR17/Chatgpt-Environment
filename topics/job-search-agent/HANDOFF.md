@@ -2,6 +2,46 @@
 
 Updated 11 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 11 November established employers and workplace screening — preparing release
+
+User requested more recognisable employers and a Lala-company flag after
+checking the term online. Business Standard18August2022 public extract was
+reviewed; definition is a management/process pattern, not company size, family
+ownership, low pay or an unknown brand. Do not publish unsupported Yes/No
+company-culture verdicts or numerical reputation/hiring scores.
+
+Implemented established-employer badges/filter/sort and Discover shortcut;
+16 sourced visibility profiles,269 company targets including new Intuit,SAP,
+ServiceNow programme records. Four published-process reviews andfour specific
+listing-term concern reviews; others unassessed. Sources, access status, dates,
+confidence and limits are visible. Formal governance is not proof of daily
+practice; a pay conflict supports a terms check, not an employer-wide claim.
+
+Private lalaAssessment {value:yes/no/unknown,note,checkedAt} lives only in
+companyOverrides. Browser backups/filter CSV include it; public feeds/static
+exports do not. Partial imports preserve reasons and existing blacklist,
+criteria, stages and notes. Invalid assessment imports are rejected. No
+Assistant UI/API returned and no applications/messages or model calls.
+
+Intuit official India recurring programme includes paid product design and
+returning-student eligibility; Atlassian official paid programme gives India
+recruitingJuly–December/summerMay–August. No exact current role inferred.
+ServiceNow744000158130527 is US-based, bachelor graduation2029+ and12week summer;
+not India-remote. SAP student/STAR pages readable; STAR is multi-year. SAP
+governance normal page restricted, indexed official evidence explicitly labelled.
+New company entries/programmes are targets/evidence, not feed vacancies.
+
+All114 job records and prior266 companies/role requirements/contacts/source
+prefixes/exclusions/review queue/collector timestamp/clipper retained. Only
+company-directory count metadata changed in jobs. Supported workbook andpublic
+CSV include sourced screening evidence; no private flags. Source count2445,
+coverage38. Five JS suites, Pythoncollector checks, desktop/mobile filtering,
+private flag/reason persistence, backup/CSV andmobile restore checks pass. Zero
+runtime errors/POSTs/overflow; representative images inspected. Research and
+synthetic private QA artifacts stay outside Git in
+/workspace/employer-screening-review/. Preserve exact topic-branch production
+release workflow and existing protection; verify live data before claiming release.
+
 ## 11 November Assistant removal — published
 
 The user explicitly removed the application assistant. Removed its page/nav,

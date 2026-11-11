@@ -14,6 +14,28 @@ Personal internship discovery and application Kanban for Anuj. Primary GitHub ow
 
 The preview-only Assistant has been removed. Daily public-feed publication uses the existing exact topic-commit production workflow and does not require AI Gateway. Verify deployment and live files before claiming a refresh.
 
+## Established employers and workplace screening
+
+The company directory puts16 researched established employers first and has an
+Established employers filter. Discover has the same filter and a shortcut to
+the directory. Added Intuit, SAP and ServiceNow programme targets; these are not
+new verified India design vacancies. The directory now has269 companies and38
+source-coverage records. Existing114 role records and pay/status/history remain.
+
+A sourced Lala-style screening badge distinguishes published processes,
+specific hiring terms to check and unassessed companies. The definition and
+limits appear in an expandable explanation. Public process evidence is not
+independent proof of a good team; low pay, small size or family ownership alone
+are not a culture verdict. Current scope: four documented-process reviews and
+four listing-term reviews, with dates, confidence and sources.
+
+Users can record a private Yes/No/Unknown Lala assessment and reasons in Roles
+& fit or a role drawer. It uses companyOverrides and the existing JSON backup.
+Research refreshes preserve it. Browser filtered CSV includes those private
+fields; public research CSV/Excel never do. Static exports contain only sourced
+employer visibility and screening evidence. No blacklist or application stage
+is changed by an assessment. No Assistant page or AI backend was reintroduced.
+
 ## Included
 
 - 114 retained role records (99 active/held,15 archived), researched11November2026. Three older listings are new to the feed: FTFL, Attira and Cop&Drop; all remain on hold. See [the current research report](public/data/collection-report.md).

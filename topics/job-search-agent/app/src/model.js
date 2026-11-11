@@ -69,6 +69,7 @@ export function mergeCompanyPreferences(existing, incoming) {
     const assessments = {...previous.assessments};
     for (const [role, criteria] of Object.entries(update.assessments || {})) assessments[role] = {...assessments[role], ...criteria};
     merged[id] = {...previous, ...update, ...(Object.keys(assessments).length ? {assessments} : {})};
+    if (update.lalaAssessment) merged[id].lalaAssessment = {...previous.lalaAssessment, ...update.lalaAssessment};
   }
   return merged;
 }
@@ -127,6 +128,8 @@ export function validateBackup(value) {
     if (!value.companyOverrides || typeof value.companyOverrides !== 'object' || Array.isArray(value.companyOverrides)) throw new Error('Backup contains invalid company preferences.');
     for (const update of Object.values(value.companyOverrides)) {
       if (!update || typeof update !== 'object' || Array.isArray(update) || (update.blacklisted !== undefined && typeof update.blacklisted !== 'boolean')) throw new Error('Backup contains invalid company preferences.');
+      const assessment = update.lalaAssessment;
+      if (assessment !== undefined && (!assessment || typeof assessment !== 'object' || Array.isArray(assessment) || (assessment.value !== undefined && !['yes','no','unknown'].includes(assessment.value)) || (assessment.note !== undefined && (typeof assessment.note !== 'string' || assessment.note.length > 20000)) || (assessment.checkedAt !== undefined && typeof assessment.checkedAt !== 'string'))) throw new Error('Backup contains an invalid workplace assessment.');
     }
   }
   return value;

@@ -49,3 +49,24 @@ Supported workbook, Company directory, Role requirements and company-directory.c
 Private browser profile, notes, stages, blacklist and assessments remain inaccessible. Compatibility checks use synthetic fixtures only; no applicant data published.
 
 The application Assistant was removed at the user's request after this research pass. Publication follows the existing exact topic-commit workflow; no Gateway or Assistant release dependency remains. Verify the deployed commit and live files before claiming refresh.
+
+
+## 11 November employer visibility and workplace screening follow-up
+
+Added Intuit, SAP and ServiceNow recurring-programme targets;269 companies,
+16 established-employer profiles and38 coverage records. No new matching India
+UX vacancy or current salary invented;114 existing job records remain intact.
+Intuit India programme explicitly includes paid product design; Atlassian paid
+programme and India calendar are recurring evidence, not current requisitions.
+ServiceNow design744000158130527 is US-based and not India-remote. SAP STAR is
+multi-year, not assumed to be a short UX internship. SAP governance normal page
+was restricted; indexed evidence is labelled. Other normal/indexed/shell access
+limits remain explicit.
+
+Business Standard18August2022 public extract gives context for the informal
+Lala-company term. Four official published-process reviews and four specific
+hiring-term reviews distinguish source evidence from a culture verdict.
+Unreviewed employers stay unassessed. Recognised brands are not guaranteed good
+workplaces; small/family-owned firms or low pay alone are not a classification.
+Public research has no private Yes/No/Unknown flags or reasons. Static workbook
+and directory CSV contain only sourced visibility/screening fields.

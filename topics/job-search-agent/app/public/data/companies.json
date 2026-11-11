@@ -70,6 +70,12 @@
           "label": "Indeed internship detail; limits",
           "checkedAt": "2026-10-27",
           "evidenceStatus": "Indeed detail readable via direct verified HTTPS; tool page unavailable. Product Design INTERN, India with no city/remote permission, no pay. Board JSON-LD10September2026 is a board source date, not independently verified employer publication. Original employer requisition/current intake and eligible location remain unresolved; company evidence only."
+        },
+        {
+          "url": "https://www.microsoft.com/investor/reports/ar26/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Global software employer with published annual report,human-capital processes and formal governance. Official internship eligibility is role/country/cohort specific; not a confirmed current design vacancy."
         }
       ],
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
@@ -99,7 +105,37 @@
           ],
           "evidenceStatus": "Indeed detail readable via direct verified HTTPS; tool page unavailable. Product Design INTERN, India with no city/remote permission, no pay. Board JSON-LD10September2026 is a board source date, not independently verified employer publication. Original employer requisition/current intake and eligible location remain unresolved; company evidence only."
         }
-      ]
+      ],
+      "employerProfile": {
+        "status": "established",
+        "basis": "Global software employer with published annual report,human-capital processes and formal governance. Official internship eligibility is role/country/cohort specific; not a confirmed current design vacancy.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.microsoft.com/investor/reports/ar26/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "processes-documented",
+        "summary": "Normal annual report describes formal governance,human-capital programmes,pay-equity monitoring and employee listening. This documents policies and processes,not consistent treatment by every manager.",
+        "confidence": "Medium for published process; insufficient for team culture",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.microsoft.com/investor/reports/ar26/",
+            "label": "Published governance / employee policy",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "adobe",
@@ -161,9 +197,45 @@
           "url": "https://careers.adobe.com/us/en/university",
           "label": "Previously researched careers route",
           "evidenceStatus": "Retained prior research; not rechecked in this expansion"
+        },
+        {
+          "url": "https://careers.adobe.com/us/en/university",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Established creative-software product employer with an official university recruiting route. Current design internship location/cohort must be checked; US listings and India PhD roles are not an India UX internship."
         }
       ],
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Established creative-software product employer with an official university recruiting route. Current design internship location/cohort must be checked; US listings and India PhD roles are not an India UX internship.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://careers.adobe.com/us/en/university",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://careers.adobe.com/us/en/university",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "atlassian",
@@ -225,9 +297,46 @@
           "url": "https://www.atlassian.com/company/careers/earlycareers",
           "label": "Previously researched careers route",
           "evidenceStatus": "Retained prior research; not rechecked in this expansion"
+        },
+        {
+          "url": "https://www.atlassian.com/company/careers/earlycareers",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Global collaboration-software employer. Normal official early-careers page describes paid full-time internships,design pathways and India recruitingJuly–December/summerMay–August. Recurring programme,not a specific current design opening."
         }
       ],
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Global collaboration-software employer. Normal official early-careers page describes paid full-time internships,design pathways and India recruitingJuly–December/summerMay–August. Recurring programme,not a specific current design opening.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.atlassian.com/company/careers/earlycareers",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.atlassian.com/company/careers/earlycareers",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      },
+      "programmeNote": "Official early-careers programme says full-time paid internships for penultimate-year UG/PG;India recruitingJuly–December,summerMay–August. Exact current design role,cohort,eligibility and amount still unverified."
     },
     {
       "id": "tekion",
@@ -1305,6 +1414,12 @@
           "detail": "Current employer board title found. Senior role recorded as team evidence only, not a suitable internship recommendation.",
           "evidenceStatus": "Official job indexed; detailed requirements not assessed",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://razorpay.com/careers/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Recognised payments-product employer with an official careers/design recruiting route. Retained design-team evidence is not a verified internship; exact seniority and current openings remain separate."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -1313,7 +1428,37 @@
       "focus": "Payments and business banking",
       "rationale": "Product team working in payments and business banking. Watch published internship and early-career roles; current evidence is recorded below.",
       "researchedAt": "2026-10-24",
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Recognised payments-product employer with an official careers/design recruiting route. Retained design-team evidence is not a verified internship; exact seniority and current openings remain separate.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://razorpay.com/careers/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://razorpay.com/careers/",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "phonepe",
@@ -1367,6 +1512,12 @@
           "detail": "Lead-level vacancy. Third-party intern claims were not verified against an official current internship and were not promoted.",
           "evidenceStatus": "Official job indexed; detailed requirements not assessed",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://www.phonepe.com/careers/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Recognised payments-product employer with official careers and retained design-team evidence. A lead-designer role is not an internship; do not infer an early-career vacancy."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -1375,7 +1526,37 @@
       "focus": "Consumer payments and financial services",
       "rationale": "Product team working in consumer payments and financial services. Watch published internship and early-career roles; current evidence is recorded below.",
       "researchedAt": "2026-10-24",
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Recognised payments-product employer with official careers and retained design-team evidence. A lead-designer role is not an internship; do not infer an early-career vacancy.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.phonepe.com/careers/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.phonepe.com/careers/",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "groww",
@@ -1498,6 +1679,12 @@
           "evidenceStatus": "Official careers page fetched",
           "checkedAt": "2026-10-24",
           "detail": "HTTP 200; career-page content was accessible. A career page does not establish a matching opening."
+        },
+        {
+          "url": "https://www.zoho.com/careers/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Established software-product employer with an official careers route. Employer identity and product presence support this visibility label,not a company-wide culture verdict or open internship."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -1506,7 +1693,37 @@
       "focus": "Business software suite",
       "rationale": "Product team working in business software suite. Watch published internship and early-career roles; current evidence is recorded below.",
       "researchedAt": "2026-10-24",
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Established software-product employer with an official careers route. Employer identity and product presence support this visibility label,not a company-wide culture verdict or open internship.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.zoho.com/careers/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.zoho.com/careers/",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "freshworks",
@@ -1539,6 +1756,12 @@
           "evidenceStatus": "Official careers page fetched",
           "checkedAt": "2026-10-24",
           "detail": "HTTP 200; career-page content was accessible. A career page does not establish a matching opening."
+        },
+        {
+          "url": "https://careers.smartrecruiters.com/Freshworks",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Established enterprise-software employer with official recruitment on SmartRecruiters. Normal public careers page is sparse; no current design-intern requisition established by this check."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -1547,7 +1770,37 @@
       "focus": "Customer and employee service software",
       "rationale": "Product team working in customer and employee service software. Watch published internship and early-career roles; current evidence is recorded below.",
       "researchedAt": "2026-10-24",
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Established enterprise-software employer with official recruitment on SmartRecruiters. Normal public careers page is sparse; no current design-intern requisition established by this check.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://careers.smartrecruiters.com/Freshworks",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://careers.smartrecruiters.com/Freshworks",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "chargebee",
@@ -1863,6 +2116,12 @@
           "evidenceStatus": "Official careers page fetched",
           "checkedAt": "2026-10-24",
           "detail": "HTTP 200; career-page content was accessible. A career page does not establish a matching opening."
+        },
+        {
+          "url": "https://www.postman.com/company/careers/open-positions/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Recognised developer-tools product employer with an official current-opportunities route. No current India UX internship verified in this targeted check."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -1871,7 +2130,37 @@
       "focus": "API developer platform",
       "rationale": "Product team working in api developer platform. Watch published internship and early-career roles; current evidence is recorded below.",
       "researchedAt": "2026-10-24",
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Recognised developer-tools product employer with an official current-opportunities route. No current India UX internship verified in this targeted check.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.postman.com/company/careers/open-positions/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.postman.com/company/careers/open-positions/",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "browserstack",
@@ -2593,6 +2882,12 @@
           "evidenceStatus": "Official page fetched; dynamic listings need manual check",
           "checkedAt": "2026-10-24",
           "detail": "HTTP 200; only a shell or no full listing text was available. Do not infer an opening from a successful response."
+        },
+        {
+          "url": "https://careers.swiggy.in/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Recognised consumer-product employer and existing target. Normal careers page is a61-character client shell; no exact current UX internship or workplace practice was verified from it."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -2601,7 +2896,37 @@
       "focus": "Consumer delivery and logistics",
       "rationale": "Product team working in consumer delivery and logistics. Watch published internship and early-career roles; current evidence is recorded below.",
       "researchedAt": "2026-10-24",
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Recognised consumer-product employer and existing target. Normal careers page is a61-character client shell; no exact current UX internship or workplace practice was verified from it.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://careers.swiggy.in/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://careers.swiggy.in/",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "meesho",
@@ -3325,6 +3650,12 @@
           "label": "8 November retained terms",
           "checkedAt": "2026-11-08",
           "evidenceStatus": "Fresh Greenhouse original retains Bengaluru six-month intern andstudent/recentdegree or equivalent experience,portfolio andmentorship. Pay/cohort undisclosed;mirror deadlines not employer-confirmed."
+        },
+        {
+          "url": "https://job-boards.greenhouse.io/project44/jobs/8101750",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Established enterprise logistics-software product employer with a retained original Bengaluru six-month Product Design Intern advert. Numerical stipend,current cohort and joining eligibility still need confirmation."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -3333,7 +3664,37 @@
       "focus": "Supply chain decision intelligence SaaS",
       "rationale": "Product team working in supply chain decision intelligence saas. Watch published internship and early-career roles; current evidence is recorded below.",
       "researchedAt": "2026-11-05",
-      "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
+      "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Established enterprise logistics-software product employer with a retained original Bengaluru six-month Product Design Intern advert. Numerical stipend,current cohort and joining eligibility still need confirmation.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://job-boards.greenhouse.io/project44/jobs/8101750",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://job-boards.greenhouse.io/project44/jobs/8101750",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "frappe",
@@ -7734,6 +8095,12 @@
           "label": "8 November retained terms",
           "checkedAt": "2026-11-08",
           "evidenceStatus": "Fresh original retains design-student/recent-graduate route,process/craft portfolio andinteraction work. Numerical stipend andjoiningdate unknown."
+        },
+        {
+          "url": "https://job-boards.greenhouse.io/glance/jobs/7916115",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Recognised consumer-product/design organisation with a retained original Bengaluru UX Design Intern advert. Exact stipend,current duration and student intake require confirmation; visibility is not a culture guarantee."
         }
       ],
       "contact": {
@@ -7773,7 +8140,37 @@
           ],
           "evidenceStatus": "Official role accessible; pay/intake unconfirmed."
         }
-      ]
+      ],
+      "employerProfile": {
+        "status": "established",
+        "basis": "Recognised consumer-product/design organisation with a retained original Bengaluru UX Design Intern advert. Exact stipend,current duration and student intake require confirmation; visibility is not a culture guarantee.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://job-boards.greenhouse.io/glance/jobs/7916115",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://job-boards.greenhouse.io/glance/jobs/7916115",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "salesforce",
@@ -7803,6 +8200,12 @@
           "label": "Public careers evidence",
           "evidenceStatus": "Summer2027 M.Des class-of2027 role. Original indexed deadline17 October has passed despite later mirror dates; no current card added. Check for reopened cohorts.",
           "checkedAt": "2026-10-25"
+        },
+        {
+          "url": "https://www.salesforce.com/company/careers/university-recruiting/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Global enterprise-software employer with an official university recruiting route. Normal URL redirects to current university page. Previously retained summer2027 UX role evidence is separate from a current eligible India opening."
         }
       ],
       "roles": [
@@ -7815,7 +8218,37 @@
           "requirements": [],
           "evidenceStatus": "Summer2027 M.Des class-of2027 role. Original indexed deadline17 October has passed despite later mirror dates; no current card added. Check for reopened cohorts."
         }
-      ]
+      ],
+      "employerProfile": {
+        "status": "established",
+        "basis": "Global enterprise-software employer with an official university recruiting route. Normal URL redirects to current university page. Previously retained summer2027 UX role evidence is separate from a current eligible India opening.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.salesforce.com/company/careers/university-recruiting/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.salesforce.com/company/careers/university-recruiting/",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "ecolibrium",
@@ -11080,6 +11513,12 @@
           "label": "Public evidence observation",
           "checkedAt": "2026-11-01",
           "evidenceStatus": "Original Google detail now readable:Summer2027,Bengaluru,graduating2028 and returning full-time enrollment;application27October–4November2026. Cohort-specific directory evidence,not a general winter internship. Prior indexed source/requirement IDs retained."
+        },
+        {
+          "url": "https://www.google.com/about/careers/applications/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Established global product/design employer. The retained YouTube summer2027 Bengaluru internship has its own2028-graduation and closed4November application window; brand recognition does not renew it."
         }
       ],
       "roles": [
@@ -11117,7 +11556,37 @@
       "aliases": [
         "Google",
         "YouTube"
-      ]
+      ],
+      "employerProfile": {
+        "status": "established",
+        "basis": "Established global product/design employer. The retained YouTube summer2027 Bengaluru internship has its own2028-graduation and closed4November application window; brand recognition does not renew it.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.google.com/about/careers/applications/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "Established employer visibility is documented; this pass does not establish whether day-to-day team management is Lala-style or not.",
+        "confidence": "Insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.google.com/about/careers/applications/",
+            "label": "Identity/programme evidence only",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     },
     {
       "id": "arventiq-labs",
@@ -13765,6 +14234,30 @@
         "email": "it@hellcraft.in",
         "kind": "Published general IT/company contact;not a verified recruitment inbox",
         "sourceUrl": "https://careers.hellcraft.in/careers/6a9bda77f0dfe509105af0df"
+      },
+      "workplaceReview": {
+        "status": "terms-concerns",
+        "summary": "The public internship leaves paid versus unpaid status dependent on interview performance. That is a material hiring-term question,not a proven culture verdict.",
+        "confidence": "Listing evidence; insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://careers.hellcraft.in/careers/6a9bda77f0dfe509105af0df",
+            "label": "Retained11November exact role evidence",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "signals": [
+          {
+            "id": "terms-317273788a",
+            "text": "Paid/Unpaid is decided by interview performance; a paid minimum is not guaranteed.",
+            "sourceUrl": "https://careers.hellcraft.in/careers/6a9bda77f0dfe509105af0df",
+            "checkedAt": "2026-11-11"
+          }
+        ],
+        "limits": "No employee testimony,management investigation or representative review sample assessed. Low pay or a small company alone is not a Lala classification.",
+        "nextAction": "Confirm paid status and fixed stipend in writing; a certificate or learning promise is not compensation."
       }
     },
     {
@@ -18051,7 +18544,31 @@
         "kind": "Specific employer careers listing;later application mechanism not submitted",
         "sourceUrl": "https://aicines.com/careers/ui-ux-design-intern"
       },
-      "website": "https://aicines.com/"
+      "website": "https://aicines.com/",
+      "workplaceReview": {
+        "status": "terms-concerns",
+        "summary": "The employer role has conflicting pay periods and a broad multilevel range. No employer-wide culture conclusion follows.",
+        "confidence": "Listing evidence; insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://aicines.com/careers/ui-ux-design-intern",
+            "label": "Retained11November exact role evidence",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "signals": [
+          {
+            "id": "terms-aff3b9937e",
+            "text": "Role body25–100kINR/month conflicts with structured YEAR metadata; advertised range covers multiple seniorities/contracts.",
+            "sourceUrl": "https://aicines.com/careers/ui-ux-design-intern",
+            "checkedAt": "2026-11-11"
+          }
+        ],
+        "limits": "No employee testimony,management investigation or representative review sample assessed. Low pay or a small company alone is not a Lala classification.",
+        "nextAction": "Obtain exact fixed internship pay,period,legal engagement and separate bonus terms in writing."
+      }
     },
     {
       "id": "webearl-technologies",
@@ -18328,7 +18845,31 @@
         "kind": "Recruitment address printed in exact employer Indeed description;no message sent",
         "sourceUrl": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456"
       },
-      "website": "https://quickops.in/"
+      "website": "https://quickops.in/",
+      "workplaceReview": {
+        "status": "terms-concerns",
+        "summary": "Specific compensation inconsistency in the public internship advert needs clarification. It does not establish a company-wide management culture.",
+        "confidence": "Listing evidence; insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456",
+            "label": "Retained11November exact role evidence",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "signals": [
+          {
+            "id": "terms-d9230fa313",
+            "text": "Body says5–10kINR/month while annual salary fields say216–312kINR/year; the lower monthly bound is also below the search floor.",
+            "sourceUrl": "https://in.indeed.com/viewjob?jk=a9262a7d9a157456",
+            "checkedAt": "2026-11-11"
+          }
+        ],
+        "limits": "No employee testimony,management investigation or representative review sample assessed. Low pay or a small company alone is not a Lala classification.",
+        "nextAction": "Obtain the fixed monthly stipend and work scope in writing before assessing this opportunity. Do not convert the annual field into a stipend."
+      }
     },
     {
       "id": "travel-on-tips",
@@ -18611,7 +19152,357 @@
         "kind": "Exact employer-platform application route; official general inbox also accepts resumes, not a role-specific recruiter",
         "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
       },
-      "website": "https://www.ftfltechnology.com/"
+      "website": "https://www.ftfltechnology.com/",
+      "workplaceReview": {
+        "status": "terms-concerns",
+        "summary": "The public hiring terms contain pay/engagement and identity questions. They are screening flags,not proof of abusive management.",
+        "confidence": "Listing evidence; insufficient for culture verdict",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0",
+            "label": "Retained11November exact role evidence",
+            "checkedAt": "2026-11-11",
+            "access": "retained-original"
+          }
+        ],
+        "signals": [
+          {
+            "id": "terms-d72cd7a61f",
+            "text": "Pay is not provided; volunteer/employee tags are mixed and employer metadata links a different company profile.",
+            "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0",
+            "checkedAt": "2026-11-11"
+          }
+        ],
+        "limits": "No employee testimony,management investigation or representative review sample assessed. Low pay or a small company alone is not a Lala classification.",
+        "nextAction": "Confirm legal employer,paid/no-fee employment track,fixed stipend,hours,duration and manager before applying."
+      }
+    },
+    {
+      "id": "intuit",
+      "name": "Intuit",
+      "company": "Intuit",
+      "companyType": "Product company",
+      "sector": "Financial software,QuickBooks,TurboTax and Mailchimp",
+      "focus": "Financial software,QuickBooks,TurboTax and Mailchimp",
+      "tier": "Dream",
+      "categorySuggested": "Dream",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable aspirational preference for a documented global product/design organisation and student programme. Not hiring odds,student eligibility,team-culture guarantee or an offer.",
+      "careersUrl": "https://www.intuit.com/in/careers/internships/",
+      "locationNote": "Bengaluru,India programme; each job sets location/work arrangement",
+      "openingStatus": "Recurring student programme; no current matching India UX internship verified",
+      "currentOpeningVerified": false,
+      "payNote": "Official programme says paid; current India design-intern amount is undisclosed. No numerical stipend or salary benchmark inferred.",
+      "payConfidence": "Official programme statement only; role-specific amount and intake unknown",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future design role families, not additional advertised vacancies.",
+      "roles": [
+        {
+          "id": "intuit-student-programme",
+          "title": "Internship & co-op programme — India, product design included",
+          "seniority": "Recurring programme; no verified matching current vacancy",
+          "url": "https://www.intuit.com/in/careers/internships/",
+          "location": "Bengaluru,India programme; each job sets location/work arrangement",
+          "requirements": [
+            {
+              "id": "2a168a5164c6",
+              "text": "Enrolled in an accredited university degree programme and returning to study after internship/co-op",
+              "sourceUrl": "https://www.intuit.com/in/careers/internships/"
+            },
+            {
+              "id": "c5527e90d23c",
+              "text": "Programme includes Product Design;10–12week internships and4+month co-ops, paid without a stated amount",
+              "sourceUrl": "https://www.intuit.com/in/careers/internships/"
+            }
+          ],
+          "evidenceStatus": "Normal India programme explicitly includes product design, paid10–12week internships/4+month co-ops and returning-student eligibility. This is a recurring programme,not a verified current India design requisition or guaranteed stipend. Talent community is not an opening. Confirm current role,cohort,degree eligibility,joining and fixed monthly amount.",
+          "checkedAt": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.intuit.com/in/careers/internships/",
+          "label": "11November official programme evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal India programme explicitly includes product design, paid10–12week internships/4+month co-ops and returning-student eligibility. This is a recurring programme,not a verified current India design requisition or guaranteed stipend. Talent community is not an opening. Confirm current role,cohort,degree eligibility,joining and fixed monthly amount."
+        },
+        {
+          "url": "https://www.intuit.com/in/careers/internships/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Global financial-software employer; official India programme explicitly includes paid product-design internships and co-ops,returning-student eligibility and Bengaluru location. Programme evidence,not a live design requisition."
+        },
+        {
+          "url": "https://www.intuit.com/in/company/code-of-conduct-and-ethics/",
+          "label": "Official employee Code of Conduct",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal India Code of Conduct describes professional conduct,anti-harassment,equal opportunity and conflict-of-interest policies. Published policy is not independent evidence of daily team practice."
+        }
+      ],
+      "contact": {
+        "url": "https://www.intuit.com/in/careers/internships/",
+        "kind": "Official careers/programme route,not an inferred recruiter email",
+        "sourceUrl": "https://www.intuit.com/in/careers/internships/"
+      },
+      "researchedAt": "2026-11-11",
+      "governanceSource": "https://www.intuit.com/in/company/code-of-conduct-and-ethics/",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Global financial-software employer; official India programme explicitly includes paid product-design internships and co-ops,returning-student eligibility and Bengaluru location. Programme evidence,not a live design requisition.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.intuit.com/in/careers/internships/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "processes-documented",
+        "summary": "Normal India Code of Conduct describes professional conduct,anti-harassment,equal opportunity and conflict-of-interest policies. Published policy is not independent evidence of daily team practice.",
+        "confidence": "Medium for published process; insufficient for team culture",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.intuit.com/in/company/code-of-conduct-and-ethics/",
+            "label": "Published governance / employee policy",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
+    },
+    {
+      "id": "servicenow",
+      "name": "ServiceNow",
+      "company": "ServiceNow",
+      "companyType": "Product company",
+      "sector": "Enterprise workflow software and platform UX",
+      "focus": "Enterprise workflow software and platform UX",
+      "tier": "Dream",
+      "categorySuggested": "Dream",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable aspirational preference for a documented global product/design organisation and student programme. Not hiring odds,student eligibility,team-culture guarantee or an offer.",
+      "careersUrl": "https://careers.servicenow.com/early-careers/",
+      "locationNote": "India offices and Asia-Pacific programme context; exact role location must be checked",
+      "openingStatus": "Recurring student programme; no current matching India UX internship verified",
+      "currentOpeningVerified": false,
+      "payNote": "Official programme says paid; current India design-intern amount is undisclosed. No numerical stipend or salary benchmark inferred.",
+      "payConfidence": "Official programme statement only; role-specific amount and intake unknown",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future design role families, not additional advertised vacancies.",
+      "roles": [
+        {
+          "id": "servicenow-student-programme",
+          "title": "Internship & co-op programmes — India design vacancy unverified",
+          "seniority": "Recurring programme; no verified matching current vacancy",
+          "url": "https://careers.servicenow.com/early-careers/",
+          "location": "India offices and Asia-Pacific programme context; exact role location must be checked",
+          "requirements": [
+            {
+              "id": "f7f530881d30",
+              "text": "Internship eligibility varies by role; review the exact current job description",
+              "sourceUrl": "https://careers.servicenow.com/early-careers/"
+            },
+            {
+              "id": "39782d28e6c6",
+              "text": "Official programme says internships are paid; no India design amount or cohort established",
+              "sourceUrl": "https://careers.servicenow.com/early-careers/"
+            }
+          ],
+          "evidenceStatus": "Normal official early-careers page names global internships/co-ops,mentoring and paid programmes. It does not establish a current India UX vacancy. Exact Associate Product Design744000158130527 is SanDiego/US locations,summer2027,12weeks,bachelor graduationMay2029or later; not India-remote. No active India feed card or foreign-pay benchmark inferred.",
+          "checkedAt": "2026-11-11"
+        },
+        {
+          "id": "servicenow-us-product-design-744000158130527",
+          "title": "Associate Product Design Internships — Summer2027,US only in reviewed advert",
+          "url": "https://careers.servicenow.com/jobs/744000158130527/experience-team-associate-product-design-internships-summer-2027/",
+          "seniority": "Current advertised internship outside India search geography",
+          "location": "SanDiego/other listed US offices;not India-remote",
+          "requirements": [
+            {
+              "id": "f8fd7b21e9fd",
+              "text": "Currently pursuing a related bachelor degree;graduatingMay2029or later",
+              "sourceUrl": "https://careers.servicenow.com/jobs/744000158130527/experience-team-associate-product-design-internships-summer-2027/"
+            },
+            {
+              "id": "332a3cc68ef0",
+              "text": "Full-time12-week summer availability and Figma/AI prototyping",
+              "sourceUrl": "https://careers.servicenow.com/jobs/744000158130527/experience-team-associate-product-design-internships-summer-2027/"
+            },
+            {
+              "id": "d066afab261c",
+              "text": "Portfolio/work examples requested at interview",
+              "sourceUrl": "https://careers.servicenow.com/jobs/744000158130527/experience-team-associate-product-design-internships-summer-2027/"
+            }
+          ],
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal exact employer advert,platform27October2026,JB0076612. Reviewed locations are US; flexible/remote work persona is not India permission. Not added to India jobs feed;foreign pay is not an India stipend benchmark."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://careers.servicenow.com/early-careers/",
+          "label": "11November official programme evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal official early-careers page names global internships/co-ops,mentoring and paid programmes. It does not establish a current India UX vacancy. Exact Associate Product Design744000158130527 is SanDiego/US locations,summer2027,12weeks,bachelor graduationMay2029or later; not India-remote. No active India feed card or foreign-pay benchmark inferred."
+        },
+        {
+          "url": "https://careers.servicenow.com/early-careers/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Global enterprise-software employer with documented UX organisation and paid early-career programmes. Sampled design internship is US-based; no India-remote opening inferred."
+        }
+      ],
+      "contact": {
+        "url": "https://careers.servicenow.com/early-careers/",
+        "kind": "Official careers/programme route,not an inferred recruiter email",
+        "sourceUrl": "https://careers.servicenow.com/early-careers/"
+      },
+      "researchedAt": "2026-11-11",
+      "governanceSource": "https://investor.servicenow.com/governance/corporate-governance/default.aspx",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Global enterprise-software employer with documented UX organisation and paid early-career programmes. Sampled design internship is US-based; no India-remote opening inferred.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://careers.servicenow.com/early-careers/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "processes-documented",
+        "summary": "Normal corporate governance page publishes ethics/report-concerns routes and an explicit non-retaliation policy. These are grievance routes,not recruiter contacts or proof of effective handling.",
+        "confidence": "Medium for published process; insufficient for team culture",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://investor.servicenow.com/governance/corporate-governance/default.aspx",
+            "label": "Published governance / employee policy",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
+    },
+    {
+      "id": "sap",
+      "name": "SAP",
+      "company": "SAP",
+      "companyType": "Product company",
+      "sector": "Enterprise software and design systems",
+      "focus": "Enterprise software and design systems",
+      "tier": "Dream",
+      "categorySuggested": "Dream",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable aspirational preference for a documented global product/design organisation and student programme. Not hiring odds,student eligibility,team-culture guarantee or an offer.",
+      "careersUrl": "https://jobs.sap.com/en/students-and-graduates/students/",
+      "locationNote": "India programmes exist; role-specific city,degree and cohort eligibility unverified",
+      "openingStatus": "Recurring student programme; no current matching India UX internship verified",
+      "currentOpeningVerified": false,
+      "payNote": "Official programme says paid; current India design-intern amount is undisclosed. No numerical stipend or salary benchmark inferred.",
+      "payConfidence": "Official programme statement only; role-specific amount and intake unknown",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer",
+        "Interaction Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future design role families, not additional advertised vacancies.",
+      "roles": [
+        {
+          "id": "sap-student-programme",
+          "title": "Student internships & working-student programmes — not a current design requisition",
+          "seniority": "Recurring programme; no verified matching current vacancy",
+          "url": "https://jobs.sap.com/en/students-and-graduates/students/",
+          "location": "India programmes exist; role-specific city,degree and cohort eligibility unverified",
+          "requirements": [
+            {
+              "id": "fa769897c5bd",
+              "text": "Published student programme includes paid internships and working-student opportunities",
+              "sourceUrl": "https://jobs.sap.com/en/students-and-graduates/students/"
+            },
+            {
+              "id": "5556b8e8220d",
+              "text": "STAR is a separate paid multi-year programme; not assumed to be a3–6month UX internship",
+              "sourceUrl": "https://jobs.sap.com/en/students-and-graduates/students/"
+            }
+          ],
+          "evidenceStatus": "Normal current SAP student and STAR programme pages readable. Paid internships/working-student programmes exist across functions/locations; STAR is multi-year and has an India route. No exact current India UX role or monthly stipend established. Earlier sap.com programme/governance normal pages restricted; governance evidence used only from accessible indexed official extract.",
+          "checkedAt": "2026-11-11"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://jobs.sap.com/en/students-and-graduates/students/",
+          "label": "11November official programme evidence",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Normal current SAP student and STAR programme pages readable. Paid internships/working-student programmes exist across functions/locations; STAR is multi-year and has an India route. No exact current India UX role or monthly stipend established. Earlier sap.com programme/governance normal pages restricted; governance evidence used only from accessible indexed official extract."
+        },
+        {
+          "url": "https://jobs.sap.com/en/students-and-graduates/students/",
+          "label": "11November established-employer visibility",
+          "checkedAt": "2026-11-11",
+          "evidenceStatus": "Global enterprise-software employer with documented paid student programmes. Design-specific current India intake and student eligibility remain to confirm; STAR is multi-year,not a short UX internship."
+        }
+      ],
+      "contact": {
+        "url": "https://jobs.sap.com/en/students-and-graduates/students/",
+        "kind": "Official careers/programme route,not an inferred recruiter email",
+        "sourceUrl": "https://jobs.sap.com/en/students-and-graduates/students/"
+      },
+      "researchedAt": "2026-11-11",
+      "governanceSource": "https://www.sap.com/investors/en/governance-and-sustainability.html",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Global enterprise-software employer with documented paid student programmes. Design-specific current India intake and student eligibility remain to confirm; STAR is multi-year,not a short UX internship.",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://jobs.sap.com/en/students-and-graduates/students/",
+            "label": "Employer identity / careers / programme evidence",
+            "checkedAt": "2026-11-11",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent reputation ranking,good-manager guarantee,current vacancy,stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "processes-documented",
+        "summary": "Accessible indexed official governance extract describes employee Code of Ethics and governance/accountability. Normal page was robots-restricted; only indexed evidence claimed.",
+        "confidence": "Medium for published process; insufficient for team culture",
+        "checkedAt": "2026-11-11",
+        "sources": [
+          {
+            "url": "https://www.sap.com/investors/en/governance-and-sustainability.html",
+            "label": "Published governance / employee policy",
+            "checkedAt": "2026-11-11",
+            "access": "indexed"
+          }
+        ],
+        "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
+        "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
+      }
     }
   ],
   "meta": {
@@ -18619,6 +19510,9 @@
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 266
+    "directoryCount": 269,
+    "employerScreeningUpdatedAt": "2026-11-11",
+    "establishedEmployerCount": 16,
+    "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local."
   }
 }
