@@ -1174,27 +1174,20 @@
       "latestPass": "IndeednewWebsarfresherandproject44dedupe;Naukrirobots/Keyideasemptyshell;X403;Instahyre520;Wellfoundunpaid/410;remoteUSA/oldFoodHunt;HN219IDs/187posts/43broadmatches.25coveragefamiliesrefreshed;unsampleddatespreserved."
     },
     "companyWatchlistAt": "2026-11-05",
-    "companyDirectoryCount": 271,
+    "companyDirectoryCount": 274,
     "coverageNote": "Expanded public research across YC, Wellfound, remote boards, Who is hiring, startup maps and India job boards. Newly discovered is not newly posted; older listings and access limits are labelled.",
     "lastResearchRefresh": {
       "date": "2026-11-12",
-      "newRoles": 3,
-      "newInternships": 3,
+      "kind": "Focused hiring-post follow-up",
+      "newRoles": 2,
+      "newInternships": 2,
       "newJuniorAlternatives": 0,
-      "retiredRoles": 1,
-      "retainedRecords": 117,
-      "activeRecords": 101,
-      "existingPrimaryUrlsAttempted": 98,
-      "publicPagesFetched": 86,
-      "collectorBlocked": 10,
-      "missingOriginals": 2,
-      "sourceErrors": 0,
-      "shellResponses": 7,
-      "existingTermsReviewed": 24,
-      "newCompanyRecords": 2,
+      "retiredRoles": 0,
+      "retainedRecords": 119,
+      "activeRecords": 103,
+      "newCompanyRecords": 3,
       "newConfirmedMonthlyStipendMatches": 1,
-      "note": "Three new-to-feed internships: Moon explicit monthly listing pay, conditional intake/broad range; CACTUS mirror original restricted/pay unknown; Polus older official page/intake unknown. All on hold. One exact expired Icogz requisition archived; current cohort confirmation is not implied by listing pay.",
-      "scope": "All98 available active primary URLs attempted, rotating terms reviews and targeted public employer/platform/social/map samples; best effort, not exhaustive."
+      "note": "Onething official15k/month six-month Gurgaon exception and Devoq explicit student/fresher internship on hold; HireDesigners agency target with3year client UX evidence, not an internship. Lokal hiring post deduplicated. Focused follow-up, not another whole-board recheck."
     },
     "researchRuns": [
       {
@@ -1560,27 +1553,33 @@
         "newConfirmedMonthlyStipendMatches": 1,
         "note": "Three new-to-feed internships: Moon explicit monthly listing pay, conditional intake/broad range; CACTUS mirror original restricted/pay unknown; Polus older official page/intake unknown. All on hold. One exact expired Icogz requisition archived; current cohort confirmation is not implied by listing pay.",
         "scope": "All98 available active primary URLs attempted, rotating terms reviews and targeted public employer/platform/social/map samples; best effort, not exhaustive."
+      },
+      {
+        "date": "2026-11-12",
+        "kind": "Focused hiring-post follow-up",
+        "newRoles": 2,
+        "newInternships": 2,
+        "newJuniorAlternatives": 0,
+        "retiredRoles": 0,
+        "retainedRecords": 119,
+        "activeRecords": 103,
+        "newCompanyRecords": 3,
+        "newConfirmedMonthlyStipendMatches": 1,
+        "note": "Onething official15k/month six-month Gurgaon exception and Devoq explicit student/fresher internship on hold; HireDesigners agency target with3year client UX evidence, not an internship. Lokal hiring post deduplicated. Focused follow-up, not another whole-board recheck."
       }
     ],
     "refreshSummary": {
       "date": "2026-11-12",
-      "newRoles": 3,
-      "newInternships": 3,
+      "kind": "Focused hiring-post follow-up",
+      "newRoles": 2,
+      "newInternships": 2,
       "newJuniorAlternatives": 0,
-      "retiredRoles": 1,
-      "retainedRecords": 117,
-      "activeRecords": 101,
-      "existingPrimaryUrlsAttempted": 98,
-      "publicPagesFetched": 86,
-      "collectorBlocked": 10,
-      "missingOriginals": 2,
-      "sourceErrors": 0,
-      "shellResponses": 7,
-      "existingTermsReviewed": 24,
-      "newCompanyRecords": 2,
+      "retiredRoles": 0,
+      "retainedRecords": 119,
+      "activeRecords": 103,
+      "newCompanyRecords": 3,
       "newConfirmedMonthlyStipendMatches": 1,
-      "note": "Three new-to-feed internships: Moon explicit monthly listing pay, conditional intake/broad range; CACTUS mirror original restricted/pay unknown; Polus older official page/intake unknown. All on hold. One exact expired Icogz requisition archived; current cohort confirmation is not implied by listing pay.",
-      "scope": "All98 available active primary URLs attempted, rotating terms reviews and targeted public employer/platform/social/map samples; best effort, not exhaustive."
+      "note": "Onething official15k/month six-month Gurgaon exception and Devoq explicit student/fresher internship on hold; HireDesigners agency target with3year client UX evidence, not an internship. Lokal hiring post deduplicated. Focused follow-up, not another whole-board recheck."
     },
     "stipendPolicy": {
       "effectiveAt": "2026-11-05",
@@ -8522,6 +8521,13 @@
           "sourceLabel": "Built In Bengaluru",
           "note": "Genuine same-role cross-post: six-month Bengaluru office internship and matching responsibilities. Its Posted22DaysAgo label is relative mirror timing, not the original employer date. Original Workable published field remains29September2026. No stipend amount.",
           "observedAt": "2026-10-26"
+        },
+        {
+          "id": "lokal-linkedin-post-7511146843515461632",
+          "platform": "LinkedIn post",
+          "url": "https://www.linkedin.com/posts/abhishek-das-9b39a411a_we-at-lokal-dont-design-for-what-works-for-activity-7511146843515461632-eqXG",
+          "checkedAt": "2026-11-12",
+          "note": "Indexed design-lead hiring post explicitly names Lokal Product Design Intern, six months, on-site Bangalore, strong UI craft/flows and mentorship. Matching role already retained. Last-month crawl and relative1w do not establish current original publication or renewed intake; no pay stated. One additional post source, no duplicate card."
         }
       ],
       "lastPageFetched": "2026-11-12",
@@ -16519,6 +16525,161 @@
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
       "webpagePublishedAt": "2025-07-14",
       "webpageModifiedAt": "2025-10-30"
+    },
+    {
+      "id": "careers-onething-product-design-intern-gurgaon",
+      "companyId": "onething-design",
+      "company": "Onething Design",
+      "title": "Product Design Intern — Gurugram location exception",
+      "roleType": "Internship",
+      "sourceUrl": "https://www.onething.design/careers/product-design-intern-gurgaon",
+      "applicationUrl": "https://www.onething.design/careers/product-design-intern-gurgaon",
+      "sourceType": "Company careers",
+      "location": "Gurgaon / Gurugram — four office days; Wednesdays from home",
+      "workMode": "Hybrid",
+      "region": "Outside usual geography",
+      "payMin": 15000,
+      "payMax": 15000,
+      "payVerified": true,
+      "status": "on_hold",
+      "firstSeen": "2026-11-12",
+      "feedAddedAt": "2026-11-12",
+      "checkedAt": "2026-11-12",
+      "postedAt": null,
+      "postedLabel": "Original employer publication date unspecified;12November is discovery/check date",
+      "summary": "Six-month product-design internship; official15kINR/month. Gurgaon location exception; student cohort/eligibility and joining date to confirm.",
+      "evidence": "Normal exact official employer role and current careers index both advertise Product Design Intern, Gurgaon, six months. Role body explicitly states15,000INR/month,10AM–7PM, four office days and Wednesday from home. This is local hybrid Gurgaon work, not India-wide remote. Requirements: basic Figma, wireframing/prototyping, design thinking portfolio, curiosity and teamwork; assist research, usability and design-system documentation. Original job-post date/current cohort unspecified. Public indexed company Updates separately invite final-semester design students for Product Design/ARVR/AI/motion/content programmes; current eligibility must be confirmed rather than assuming every student qualifies. Relative6d company-page label is not a verified original date. Exact Indeed39b40844e84bd9b6 corroborates role, monthly amount and office model; deduplicated here, no extra card. Gurugram is outside the usual location set and is explicitly flagged as a location exception. Named published opportunity, not a received offer, acceptance or workplace-quality verdict. No form submitted.",
+      "nextAction": "Confirm current student/final-semester eligibility, intake and joining dates. Confirm ability to work from Gurgaon four days a week, fixed15k monthly stipend, hours and six-month agreement before applying. Wednesday home working is not an India-remote role.",
+      "requirements": "Basic Figma and wireframing/prototyping; Portfolio showing design thinking, creativity and problem solving; User research/usability support, visual assets and design-system documentation; Six months; Gurgaon four office days, Wednesday home working,10AM–7PM",
+      "requirementItems": [
+        {
+          "id": "d1d14edae303",
+          "text": "Basic Figma and wireframing/prototyping",
+          "sourceUrl": "https://www.onething.design/careers/product-design-intern-gurgaon"
+        },
+        {
+          "id": "4224cabe756c",
+          "text": "Portfolio showing design thinking, creativity and problem solving",
+          "sourceUrl": "https://www.onething.design/careers/product-design-intern-gurgaon"
+        },
+        {
+          "id": "e9aad878b3b1",
+          "text": "User research/usability support, visual assets and design-system documentation",
+          "sourceUrl": "https://www.onething.design/careers/product-design-intern-gurgaon"
+        },
+        {
+          "id": "8979ee3b374f",
+          "text": "Six months; Gurgaon four office days, Wednesday home working,10AM–7PM",
+          "sourceUrl": "https://www.onething.design/careers/product-design-intern-gurgaon"
+        }
+      ],
+      "tags": [
+        "Listed monthly stipend",
+        "Location exception: Gurugram",
+        "Student cohort to confirm"
+      ],
+      "listingVerification": "public-job-detail",
+      "applicationMethod": "Published public application route; manual user submission only",
+      "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
+      "additionalSources": [
+        {
+          "id": "onething-indeed-39b40844e84bd9b6",
+          "platform": "Indeed",
+          "url": "https://in.indeed.com/viewjob?jk=39b40844e84bd9b6",
+          "checkedAt": "2026-11-12",
+          "note": "Normal exact matching employer advert corroborates Product Design Intern, Gurgaon, six months,15kINR/month and four office days/Wednesday home working. Same opening, not a second vacancy."
+        },
+        {
+          "id": "onething-linkedin-company-intern-cohort",
+          "platform": "LinkedIn post",
+          "url": "https://in.linkedin.com/company/onething-design",
+          "checkedAt": "2026-11-12",
+          "note": "Indexed company Updates explicitly invite final-semester students for Product Design and other internships. Company update evidence, not a captured exact post ID or guaranteed eligibility for this role. Relative6d is not verified publication date; normal original access restricted."
+        }
+      ],
+      "socialDiscovery": {
+        "kind": "company-update-and-employer-role",
+        "postId": null,
+        "author": "Onething Design company page",
+        "postUrl": "https://in.linkedin.com/company/onething-design",
+        "access": "indexed-company-updates; normal official role and index readable",
+        "originalPostedAt": null,
+        "visibleDateLabel": "6d in indexed company Updates; unverified relative label",
+        "checkedAt": "2026-11-12",
+        "limits": "Exact permalink/current final-semester cohort date not established; no claim to see an authenticated feed."
+      }
+    },
+    {
+      "id": "careers-devoq-uiux-designer-intern",
+      "companyId": "devoq-design",
+      "company": "Devoq Design",
+      "title": "UI/UX Designer — internship route",
+      "roleType": "Internship",
+      "sourceUrl": "https://www.devoqdesign.com/career/ui-ux-designer/",
+      "applicationUrl": "https://www.devoqdesign.com/career/ui-ux-designer/",
+      "sourceType": "Company careers",
+      "location": "Ahmedabad — on-site social advert; Bopal/Bodakdev office to confirm",
+      "workMode": "On-site",
+      "region": "Gujarat",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-12",
+      "feedAddedAt": "2026-11-12",
+      "checkedAt": "2026-11-12",
+      "postedAt": null,
+      "postedLabel": "Employer-original posting date not established; source dates are recorded separately",
+      "summary": "Official careers explicitly accepts interns without commercial experience. Stipend/duration and exact Ahmedabad office unconfirmed.",
+      "evidence": "Normal official UI/UX Designer detail and current careers index list Ahmedabad, experience Internship to4years, and a separate For interns statement: no commercial experience needed; college/personal projects or app redesigns accepted. Role includes research, flows/IA, production Figma, component libraries, prototypes, accessibility and developer handoff; strong Figma auto-layout/components/variants and clear English expected. This mixed-level page has an explicit intern route; do not impose senior-band experience on interns or assume senior compensation applies. Pay and duration/cohort dates not stated; monthly fields null. Two indexed LinkedIn employer posts4479408427/devoqtech and4476716067/Devoq advertise an on-site intern in Bopal with basic Figma and app/dashboard work. Normal LinkedIn originals restricted, relative labels not verified dates. Official current page footer gives Bodakdev office, so exact intern office needs confirmation rather than silently resolving Bopal/Bodakdev. One deduplicated internship card, not three openings. No form/message sent.",
+      "nextAction": "Confirm current intern intake, paid/no-fee status, fixed monthly stipend, duration, student eligibility and joining dates. Clarify Bopal versus Bodakdev office and intern-specific supervision, scope and Figma expectations before applying.",
+      "requirements": "No commercial experience required for interns; college/personal projects or app redesigns accepted; Strong Figma auto-layout, components, variants and styles; design-thinking portfolio; Research, flows/IA, prototypes, accessibility basics and developer handoff; English communication; SaaS/data-heavy interfaces and HTML/CSS helpful, not mandatory",
+      "requirementItems": [
+        {
+          "id": "364ce1f66a08",
+          "text": "No commercial experience required for interns; college/personal projects or app redesigns accepted",
+          "sourceUrl": "https://www.devoqdesign.com/career/ui-ux-designer/"
+        },
+        {
+          "id": "9a3f35756865",
+          "text": "Strong Figma auto-layout, components, variants and styles; design-thinking portfolio",
+          "sourceUrl": "https://www.devoqdesign.com/career/ui-ux-designer/"
+        },
+        {
+          "id": "75bde62b5e08",
+          "text": "Research, flows/IA, prototypes, accessibility basics and developer handoff",
+          "sourceUrl": "https://www.devoqdesign.com/career/ui-ux-designer/"
+        },
+        {
+          "id": "d7a1bd3e8f29",
+          "text": "English communication; SaaS/data-heavy interfaces and HTML/CSS helpful, not mandatory",
+          "sourceUrl": "https://www.devoqdesign.com/career/ui-ux-designer/"
+        }
+      ],
+      "tags": [
+        "Pay undisclosed",
+        "Explicit internship route",
+        "Exact office to confirm"
+      ],
+      "listingVerification": "public-job-detail",
+      "applicationMethod": "Published public application route; manual user submission only",
+      "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
+      "additionalSources": [
+        {
+          "id": "devoq-linkedin-4479408427",
+          "platform": "LinkedIn job",
+          "url": "https://in.linkedin.com/jobs/view/intern-ui-ux-designer-at-devoqtech-4479408427",
+          "checkedAt": "2026-11-12",
+          "note": "Indexed employer advert: on-site Bopal internship, basic Figma, websites/mobile/dashboard work. Normal exact restricted; relative3weeks label not verified posting date. Same studio opportunity, not extra card."
+        },
+        {
+          "id": "devoq-linkedin-4476716067",
+          "platform": "LinkedIn job",
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-designer-intern-at-devoq-4476716067",
+          "checkedAt": "2026-11-12",
+          "note": "Indexed second employer-platform UI/UX internship advert. No distinct requisition/seat established; retained as other evidence, not extra opening."
+        }
+      ]
     }
   ]
 }

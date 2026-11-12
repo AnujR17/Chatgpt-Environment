@@ -109,3 +109,53 @@ project and READY/live bytes verified before calling this a published refresh.
 No applications, selection tasks or employer messages sent.
 
 Coverage: 27 of38 existing rows refreshed; other dates retained. Sources:2609.
+
+
+## 12 November hiring-post discovery follow-up
+
+This focused follow-up searches LinkedIn Posts and company Updates separately
+from Jobs, plus public X and Naukri. It is not another whole-board recheck.
+Two new internship records bring119 retained/103 active-held/16 archived;
+274 directory targets and40 coverage rows. Prior daily research remains above.
+
+Onething official exact Product Design Intern Gurgaon:15,000INR/month,sixmonths,
+four office days/Wednesday home working,10AM–7PM. Marked on_hold and outside usual
+geography. Company indexed Updates mention final-semester cohorts; student
+eligibility and joining require confirmation. Original role date unspecified.
+Indeed39b40844e84bd9b6 is matching corroboration, not a second role. Naukri-attributed
+FirstHire mirror is not normal Naukri access or original posting-date evidence.
+
+Devoq official UI/UX page explicitly accepts interns without commercial work;
+college/personal projects accepted. Current Ahmedabad page lists Internship to4years,
+with strong Figma/research/handoff expectations. Pay/duration unknown, on_hold;
+Bopal LinkedIn advert versus Bodakdev footer means exact office needs confirmation.
+Two employer LinkedIn adverts are additionalSources, not extra openings.
+Older indexed company Updates count3intern seats; not a current seat-count claim.
+
+HireDesigners is a recruitment source/target, not automatically the hiring employer.
+Current exact UIUX client200GGN-UD-AA requires3years, up to15lakhINR/year cap;
+not a fresher internship or monthly stipend. Client unnamed; identity not guessed.
+Historical Jaipur product-design evidence is industrial/CAD4–6years, internal
+Graphic Designer Intern is separate and not a confirmed core-UX opportunity.
+Lokal design-lead post7511146843515461632 is attached to the existing role, not
+another card or renewed intake. Nimit Mangal Gurgaon post has no verified employer
+relationship in the excerpt and is not attached to Onething based on similarity.
+SNB/WeHear exact indexed adverts explicitly closed; no active card added.
+
+Added separate LinkedIn hiring-post and design-recruitment coverage. Recorded
+actual queries, access limits, useful exclusions and source-date distinctions.
+X normal restricted; no eligible original post verified. Naukri category empty,
+search original restricted; old contests/guides not counted as vacancies.
+
+The versioned social-watchlist has9targets: Onething,HireDesigners,Devoq every
+pass, with Lokal/Parallel/NetBramha/Lollypop/F1studioz/yuj rotating deeper.
+The supported script generates31 dated public search links labelled not_searched;
+generation itself does not browse. Actual checks are recorded in sources.coverage.
+The existing recurring task prompt now requires this workflow; schedule preserved.
+No new task, private feed access, login automation, scraper, model assistant,
+applications or employer messages. Complete social coverage is not guaranteed.
+
+Current browser clipper is unchanged: it reads job details, not a dedicated
+social-post parser. Post-only captures need manual review/fields or Add role;
+imports remain private/on_hold. Public feeds and directory exports contain no
+private applicant context, assessment, exclusions or browser application state.

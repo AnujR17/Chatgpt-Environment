@@ -55,6 +55,18 @@ finish authorized research/checks and report the specific failure honestly.
 Read `topics/job-search-agent/REFERENCE_COMPARISON.md` for the earlier reference
 review. Software tests do not establish better hiring outcomes or writing.
 
+## Hiring-post discovery
+
+Read `topics/job-search-agent/SOCIAL_RESEARCH.md` and the public social-watchlist
+before each pass. LinkedIn Posts/company Updates/founder/design-lead/recruiter
+posts and X hiring posts require separate searches from job listings. Check
+Onething Design and HireDesigners every pass, distinguish agency client roles
+from internal jobs, and record exact post IDs/URLs, original/relative/index dates,
+access limits and employer corroboration. No Jobs-tab duplicate is required to
+retain a credible post-only lead on hold. Generated search-plan links are not
+search results; execute and log actual checks. Preserve the existing task and
+schedule. Never promise complete feed access or zero missed posts.
+
 ## Employer reputation and Lala-style screening
 
 Prioritise established product/design employers alongside relevant smaller

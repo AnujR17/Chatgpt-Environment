@@ -2,6 +2,25 @@
 
 Updated 12 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 12 November hiring-post follow-up — validation/publication pending
+
+119retained/103active-held/16archived,274companies,18established,40coverage.
+Added Onething exact six-month15k/month Gurgaon hybrid internship,explicit
+outside-geography flag and student cohort question; Devoq explicit no-commercial-
+experience intern route, Ahmedabad pay/duration unknown. HireDesigners recruitment
+channel has3year client UIUX evidence,not a new internship or guessed employer.
+Lokal design-lead post attached to existing stable role. No prior feed record,
+requirement,public workplace screen,contact or private compatibility discarded.
+
+Added SOCIAL_RESEARCH.md,9-target social-watchlist,offline31-query link generator
+and tests. Generated queries remain not_searched; actual checks are in separate
+LinkedIn-post/X/recruitment coverage. Existing enabled7amIST task prompt updated
+with post/company/founder/design-lead/recruiter checks and these files; schedule
+unchanged, no new task. Query plan does not scrape or log in. Browser clipper
+unchanged; post-only capture fields need manual review. UI/Assistant untouched.
+Research and synthetic QA: /workspace/social-job-search-nov12-review/ outside Git.
+No private applicant/assessment/state data or employer messages/applications.
+
 ## 12 November public research — published
 
 117 retained roles/101 active-held/16 archived;271 companies,17 established

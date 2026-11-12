@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-12",
+  "purpose": "Public employer/recruiter post discovery targets; neither open vacancies nor workplace endorsements.",
+  "limits": "Actual post searches, source access and findings must be recorded separately. No authenticated feed, live subscription or no-missed-post guarantee.",
+  "targets": [
+    {
+      "id": "onething-design",
+      "companyId": "onething-design",
+      "name": "Onething Design",
+      "type": "Design studio",
+      "check": "every_pass",
+      "careersUrl": "https://www.onething.design/careers",
+      "linkedinUrl": "https://in.linkedin.com/company/onething-design",
+      "notes": "Read company Updates and hiring posts, then exact employer role. Current Gurgaon internship outside usual location set; student cohort needs confirmation."
+    },
+    {
+      "id": "hiredesigners",
+      "companyId": "hiredesigners",
+      "name": "HireDesigners",
+      "type": "Design recruitment agency",
+      "check": "every_pass",
+      "careersUrl": "https://hiredesigners.in/all-jobs/",
+      "linkedinUrl": "https://www.linkedin.com/company/hiredesigners",
+      "notes": "Separate client recruitment from internal hiring. No guessed client employer or role from a talent pool; digital UX differs from industrial/fashion/interior design."
+    },
+    {
+      "id": "devoq-design",
+      "companyId": "devoq-design",
+      "name": "Devoq Design",
+      "type": "UX/product studio",
+      "check": "every_pass",
+      "careersUrl": "https://www.devoqdesign.com/career/",
+      "linkedinUrl": "https://www.linkedin.com/company/devoq/",
+      "notes": "Official UI/UX page accepts interns; source pay and current cohort, rather than assuming advertised senior bands apply to interns."
+    },
+    {
+      "id": "lokal",
+      "companyId": "lokal",
+      "name": "Lokal",
+      "type": "Product company",
+      "check": "rotate_deeper",
+      "careersUrl": "https://apply.workable.com/lokal-app/",
+      "linkedinUrl": null,
+      "notes": "Named design-lead hiring post and retained employer role must be deduplicated; older indexed post is not renewed intake."
+    },
+    {
+      "id": "parallel",
+      "companyId": "parallel",
+      "name": "Parallel",
+      "type": "Product/design studio",
+      "check": "rotate_deeper",
+      "careersUrl": "https://www.parallelhq.com/careers",
+      "linkedinUrl": null,
+      "notes": "Target to search, not a new vacancy; inspect public company/founder/design-team posts."
+    },
+    {
+      "id": "netbramha-studios",
+      "companyId": "netbramha-studios",
+      "name": "NetBramha Studios",
+      "type": "UX/product studio",
+      "check": "rotate_deeper",
+      "careersUrl": "https://www.netbramha.com/careers",
+      "linkedinUrl": null,
+      "notes": "Existing researched studio target; search employer/design-team posts. No new internship inferred from this watchlist entry."
+    },
+    {
+      "id": "lollypop-design-studio",
+      "companyId": "lollypop-design-studio",
+      "name": "Lollypop Design Studio",
+      "type": "UX/product studio",
+      "check": "rotate_deeper",
+      "careersUrl": "https://lollypop.design/careers/",
+      "linkedinUrl": null,
+      "notes": "Existing researched studio target; search employer/design-team posts. No new internship inferred from this watchlist entry."
+    },
+    {
+      "id": "f1studioz",
+      "companyId": "f1studioz",
+      "name": "F1studioz",
+      "type": "UX/product studio",
+      "check": "rotate_deeper",
+      "careersUrl": "https://f1studioz.com/careers",
+      "linkedinUrl": null,
+      "notes": "Existing researched studio target; search employer/design-team posts. No new internship inferred from this watchlist entry."
+    },
+    {
+      "id": "yuj",
+      "companyId": "yuj",
+      "name": "yuj",
+      "type": "UX/product studio",
+      "check": "rotate_deeper",
+      "careersUrl": "https://www.yujdesigns.com/careers",
+      "linkedinUrl": null,
+      "notes": "Existing researched studio target; search employer/design-team posts. No new internship inferred from this watchlist entry."
+    }
+  ]
+}
