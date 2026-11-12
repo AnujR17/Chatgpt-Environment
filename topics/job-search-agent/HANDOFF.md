@@ -2,7 +2,7 @@
 
 Updated 12 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 12 November public research — validated release pending
+## 12 November public research — published
 
 117 retained roles/101 active-held/16 archived;271 companies,17 established
 profiles,38 coverage rows (27 refreshed). Three new-to-feed internships,
@@ -19,8 +19,17 @@ synthetic state/filter/backup checks passed. No UI/model/seed/collector-main
 changes; Assistant remains removed. See current
 public collection-report.md for detailed source coverage, dates and limitations.
 No applications/messages/private data. Research and synthetic QA outside Git:
-/workspace/job-refresh-nov12-review/. Exact topic-commit publication verification
-must replace this pending note after READY and seven live-file byte checks.
+/workspace/job-refresh-nov12-review/. Published exact commit `dc8841445053d4d45cfda9b82930d7473155e023` on the requested topic branch.
+READY production `dpl_EpbgWh1GYx42scwts2PuBxVvYZAu` in existing project
+`prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`; exact SHA/ref/project/production
+alias verified. Seven public files returned200 and match committed bytes.
+Live desktop/mobile tests passed:101active/16archived,271company/38coverage,
+17established profiles/three established-role filter matches; synthetic private
+flags/reasons/blacklist/criteria/profile/archive stages, backup/restore and salary
+units preserved. No runtime errors,POSTs or mobile overflow. Default scope,
+AnujR17 GitHub identity; project/account/protection/framework/Node unchanged.
+One production/no preview deployment listed for the release SHA. This follow-up
+changes documentation only; no second deployment or feed regeneration needed.
 
 ## 11 November established employers and workplace screening — published
 
