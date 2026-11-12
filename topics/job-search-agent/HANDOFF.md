@@ -2,7 +2,7 @@
 
 Updated 12 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 12 November hiring-post follow-up — validation/publication pending
+## 12 November hiring-post follow-up — published
 
 119retained/103active-held/16archived,274companies,18established,40coverage.
 Added Onething exact six-month15k/month Gurgaon hybrid internship,explicit
@@ -20,6 +20,19 @@ unchanged, no new task. Query plan does not scrape or log in. Browser clipper
 unchanged; post-only capture fields need manual review. UI/Assistant untouched.
 Research and synthetic QA: /workspace/social-job-search-nov12-review/ outside Git.
 No private applicant/assessment/state data or employer messages/applications.
+
+Published exact commit `1e005012181d7797eb5ae46c14aa4c930971b3aa` from the requested topic
+branch, existing project `prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`. READY production
+`dpl_GmVtgR6MxJbRi19F5nvHy463BaAr`; exact SHA/ref/project/public alias verified.
+Nine live JSON/CSV/XLSX/report/watchlist/query-plan files returned200 and matched
+committed bytes. Five JS suites,seven Python checks,build,preservation audit and
+local/live desktop/mobile checks passed. Counts103active/16archived,274companies,
+40coverage,18established/four established-role matches; synthetic blacklist,
+private assessments/reasons,criteria/profile,archive stages and backup/restore
+preserved. No runtime errors,POSTs or mobile overflow. Project/account/protection,
+framework/Node unchanged. One production/no preview deployment for this SHA.
+Existing task update succeeded with schedule preserved; next13November7amIST.
+Documentation-only follow-up records verification; no second deployment needed.
 
 ## 12 November public research — published
 
