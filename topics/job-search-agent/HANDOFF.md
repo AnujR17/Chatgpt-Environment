@@ -1,6 +1,26 @@
 # Job search agent handoff
 
-Updated 11 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 12 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 12 November public research — validated release pending
+
+117 retained roles/101 active-held/16 archived;271 companies,17 established
+profiles,38 coverage rows (27 refreshed). Three new-to-feed internships,
+all on hold: Moon Indeed eaa533209a303dc0 explicit monthly range conditional on
+cohort/broad-range confirmation; CACTUS Remotive6564118 pay unknown/exact employer
+2353 restricted; Polus older official page/current-index discrepancy, pay unknown.
+One exact expired Icogz3d84294c02b4aced archived; stable history retained.
+98 primary URLs attempted,86 fetched,10 restricted,two404,seven small shells;
+24 rotating term/availability reviews. New CACTUS/Polus targets, editable tiers;
+no culture certification or inferred stipend. Prior employer screening, public
+source prefixes, requirements, contacts and browser-state compatibility retained.
+Five JS suites, five Python checks, build, preservation audit and desktop/mobile
+synthetic state/filter/backup checks passed. No UI/model/seed/collector-main
+changes; Assistant remains removed. See current
+public collection-report.md for detailed source coverage, dates and limitations.
+No applications/messages/private data. Research and synthetic QA outside Git:
+/workspace/job-refresh-nov12-review/. Exact topic-commit publication verification
+must replace this pending note after READY and seven live-file byte checks.
 
 ## 11 November established employers and workplace screening — published
 

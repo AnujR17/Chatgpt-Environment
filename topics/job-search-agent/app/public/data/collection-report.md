@@ -1,72 +1,111 @@
-# Public design-role research — 11 November 2026
+# Public design-job research — 12 November 2026
 
-Targeted best effort, not a complete internet inventory. Check/discovery dates remain separate from original, platform and mirror posting dates. No applications, forms, selection exercises, AI interviews or employer messages were submitted.
+117 retained records:101 active/held,16 archived. Three new-to-feed internships,
+all on hold; no new junior vacancy invented. Two new company targets make271.
+One advertised monthly range meets the Gujarat floor, with current intake and
+individual stipend still conditional. Listing-pay verification is not an offer.
 
-## Changes
+## New and conditional leads
 
-114 retained roles: 99 active/held, 15 archived. Three older advertisements are new to the feed, all on hold; zero newly verified monthly stipend matches and zero new retirements. Five company additions bring the directory to266. Existing permanent alternatives remain separate from internships.
+- Indeed: Moon Technolabs UI/UX Design Intern, exact eaa533209a303dc0,
+  Ahmedabad in person,3–6months, students/freshers. Body/header and MONTH metadata
+  explicitly state ₹11,283.96–48,560.89/month. Minimum meets Gujarat10k but is
+  below15k preference. Broad precise range needs employer confirmation. Platform
+  date2November, not today's discovery; official visible careers inventory does
+  not list it. Separate permanent trainee45ad3491be217187 remains unchanged.
+- Remotive: CACTUS/Editage Intern, Product Design6564118, six months India
+  remote per mirror, websites/CRM plus visual abstracts. Pay unknown. Exact
+  official application2353 restricted; official corporate/careers identity and
+  remote-first routes readable. Matching LinkedIn4489038604 is additional
+  evidence on one card. RemotiveToday is not original publication: older mirrors
+  already exist. Confirm current intake, paid/no-fee terms, stipend, student
+  route, joining and India/Mumbai work arrangement.
+- Company careers: Polus UI/UX Internship, Trivandrum. Older official standalone
+  page readable, pay/duration unknown, current index does not list it. WebPage
+  publication14July2025/modified30October2025 are not verified vacancy dates.
+  Confirm current paid cohort before treating it as an available opportunity.
 
-- **FTFL Technology, Indeed c2ce29c74607f1e0:** remote India, Figma, students/freshers and college/personal projects welcome. Pay is not provided. Internship/volunteer/contract/part-time/full-time tags do not prove paid employment. Employer metadata links a Saveinpe24 Innovation profile; confirm legal employer, paid/no-fee terms, fixed stipend, hours, duration and current cohort. Official careers is a category shell; indexed UI/UX Designer evidence is not verified as this internship. Platform28October is distinct from11November discovery.
-- **Attira, Wellfound4823701:** separate UI/UX and QA seats; this card represents UI/UX only. No experience required, remote India metadata. INR15–25k header has no period, structured salary says YEAR and body has no compensation. Monthly fields stay null. Official careers now lists three content/social/campus-marketing positions, not this UI/UX internship: current intake is unresolved, not declared closed. Platform8October is older. Existing company role and requirement IDs reused.
-- **Cop&Drop, Wellfound4261038:** marketplace discovery research and mobile-first design, India remote or Bangalore. Header INR5–15k lacks period, metadata says YEAR, body has no pay. No verified monthly stipend; if monthly,5k lower bound is below floor and15k maximum is not guaranteed. One-year header needs eligibility clarification. Platform11August is older. Existing directory role and requirement IDs reused; official marketplace corroborates identity only.
+## Existing board maintenance
 
-## Existing board
+98 active primary URLs attempted:86 fetched,10 restricted,two404,zero fetch
+errors; seven fetched responses are small/client templates. Access does not
+verify every term.24 rotating term/availability reviews completed. Icogz exact
+Indeed3d84294c02b4aced explicitly expired and is archived, retaining its record,
+requirements, source history and separate user application progress. YTT and
+Nonlinear404 remain unresolved; inaccessibility alone is not closure.
 
-All96 previously active primary URLs attempted:84 fetched,10 restricted, two404; six fetched responses are small/client shells. Twenty-eight rotating terms reviews. Fetch success is not full intake verification. YTT Global/Nonlinear404 remain unresolved; inaccessibility alone is not closure.
+Retained monthly listings: AI Certs Gandhinagar15–18k, DOGSTER Bengaluru35–40k,
+Aiva Bengaluru15–18k and three Priberry40–60k roles with different India-wide,
+Bengaluru-near and Pune-near limits. AI Certs three-month header versus3–6month
+body remains; DOGSTER/AI Certs joining windows and student intake need confirmation.
+Priberry shared-operator/platform verification is not an independent audit or
+offer. TheInterviews paid amount is set at offer; SutharTech December programme
+pay unknown; Glance/project44/Hevo originals remain with undisclosed stipend.
 
-AI Certs retains15–18kINR/month Gandhinagar, joining3November–8December/apply5December; three versus3–6months and graphic/UIUX split need confirmation. DOGSTER/Felicity Games retains35–40kINR/month, six months Bengaluru office, joining4November–9December/apply4December. These are advertised ranges, not offers or confirmed eligibility.
+Rechecked full-time alternatives, not new internships: Pixster Ahmedabad0–1
+header/body1+year with internships accepted; Enterprise Bot Bengaluru permanent
+0–1,45hours/week,six-month probation,ASAP; Pixel Arc Hyderabad fresher. Pay,
+student eligibility and joining arrangements remain to confirm. Original annual
+or foreign salaries elsewhere stay in original units; no conversion to stipend.
 
-TheInterviews retains paid November/December approximately12weeks, India remote/Hyderabad option,20–40hours, stipend at offer stage and direct Delaware-entity agreement. SutharTech retains December12weeks/24November deadline with amount undisclosed. Hevo, project44 and Glance originals remain readable. Priberry Expert Tools is India-wide remote; Customer Dashboards requires residence near Bengaluru and Review Flows near Pune. Shared Aurist operator/platform-verification limits retained.
+## Directory and established employers
 
-Enterprise Bot, Pixster and Pixel Arc remain permanent/fresher alternatives. Enterprise Bot old board ID redirects16889988 with45-hour week/six-month probation/ASAP terms. Pixster0–1 header versus1+years body accepts internships; eligibility/pay need confirmation. Pixel Arc still names two fresher UI/UX seats; salary and work mode remain unconfirmed. No task submitted.
+Added CACTUS as editable Workable and Polus as Possible suggestions. CACTUS has
+documented research products and organisational visibility; no independent
+team-culture audit, current original intake or stipend inferred.17 established
+profiles now; existing16 plus four process/four term-concern reviews preserved.
+New workplace review stays unassessed. Employer identity is not a good-manager
+guarantee or hiring probability. Private assessments remain browser-local.
 
-Ungrammary original is restricted; exact Cutshort fellowship redirects to generic Mumbai category. Historical10–12k/month could meet revised remote10k floor only after current eligible remote cohort confirmation; below Mumbai15k. Separate1–2lakh/year stays annual. FLIP, Cravv and AICines period conflicts remain unresolved; AICines10August/30November stays an older listing.
-
-## Directory and negatives
-
-Added FTFL Technology, QuickOps, Travel On Tips, Saawahi IT Solution and Frontend Arena. Suggested tiers are editable preferences, not hiring odds or offers. Existing Attira/Cop&Drop now link stable roles into the feed.
-
-QuickOps body5–10k/month conflicts with216–312k/year field; no conversion. Travel On Tips5–10k/month lower bound is below floor; six-month Ahmedabad office, Monday–Saturday, platform21September. Only upper endpoints reach10k; neither is a guaranteed floor match. Saawahi exact Indeed is expired; historical6–18k/month full-time trainee salary is not internship stipend. Frontend Arena matching cross-post explicitly says Unpaid; original readable body does not establish stipend. No active paid card. Published contact purposes and official-careers limits retained; no guessed inboxes.
-
-VigorousONE1–2k/month explicitly asks acceptance of unpaid work. Movenetics5–8k remote is below floor. Cornixe5–15k lower bound is below floor and official site is a commercial training ecosystem; no claim that the exact role charges a fee. Duhzine200–400k/year remains annual, with duration/cohort applicability unresolved. GymHopp unpaid; Coprotect/STEMbotix physical/industrial design; PRAXINFO datesFebruary2020. MAVR unpaid; BetterStory explicitly excludes UX/product; Timbre/hussh exact details410 despite older indexed copies.
+Moon student internship evidence appended without changing the permanent role's
+requirements/contact. Polus business-development inbox is not recruitment.
+Whatfix Unstop1751971 deadline23September expired; current Trakstar index lists
+Product Design Lead/Manager, not internship. RevRag exact explicitly Closed;
+Atlabs application404 remains archived. Cached bodies do not reopen them.
 
 ## Source coverage
 
-26 existing coverage rows refreshed,37 total;11 unsampled dates retained. Explicit Indeed, Naukri, X, LinkedIn, employer careers, YC/Work at a Startup, Wellfound, Cutshort, Unstop, Internshala, Instahyre, remote boards and startup maps sampled. No source quota filled with unsuitable roles.
+Explicit Indeed,Naukri,X,LinkedIn,employer careers,Wellfound,YC/Work at a Startup,
+Cutshort,Unstop,Internshala,Instahyre,remote boards and startup maps searched.
+Naukri search robots restrictions and normal empty shells prevent terms/intake
+verification. X normal public search restricted; no original suitable social
+post verified. LinkedIn indexed extracts are distinct from normal original
+access. Retained Internshala normal exact details readable despite search-tool
+restrictions. Instahyre homepage is not a full vacancy inventory. No sign-in,
+CAPTCHA bypass, authenticated browser or complete-web coverage claimed.
 
-Indeed exact details readable. Naukri search robots and normal empty category/detail shells prevent original terms/intake verification. X normal search restricted; no original eligible social post verified. LinkedIn indexed extracts are separate from restricted normal originals. Internshala retained normal details readable despite search-tool restrictions. Instahyre homepage yielded no distinct verified role. No signed-in session, CAPTCHA bypass or access-control workaround.
+Rewyoo1806024 explicitly unpaid; Integra3–5k/month remote, EmbarkingOnVoyage
+Pune5–10k/month, Digju Chennai first-six-month8k training below revised floors.
+Coprotect is physical CAD/industrial design; Arrow/eInfochips Junior asks3–5years.
+Useful exclusions recorded without padding shortlist. Historical Ungrammary
+remote10–12k/month may meet10k floor only after current eligible remote cohort
+confirmation; below Mumbai15k. Separate1–2lakh/year and graduate constraints
+remain; no annual conversion or current student eligibility assumed.
 
-Frontend Arena Unstop default page is a shell; public AMP gives23November registration and separate12December interview. Matching insiderOne marks Unpaid and uses12December deadline; source/mirror dates stay distinct.
+YC sampled US/graphic/senior/out-of-region roles;2024Coulomb/SuperKalam stay old
+and held. WWR sample senior/non-India, Himalayas mostly graphic/country-limited,
+Remote OK filters, Working Nomads client/premium template, Remote.co sampled
+geography restrictions. Remotive produced the CACTUS mirror; no paid inventory
+unlocked. StartupMap Ahmedabad, StartupBlink Gandhinagar and Indian Startup Map
+registration discovery are not vacancies or employer-quality ratings.
 
-YC samples include Gurugram graphic and senior/US roles; Work at a Startup client template. Himalayas mostly graphic/country-limited sample; WWR senior/non-India; Remote.co US/Canada; Remotive limited public mid/senior sample; Working Nomads category/premium template; Remote OK no distinct verified eligible lead. These limits are not proof that platforms have no vacancies.
-
-StartupMap Ahmedabad, StartupBlink Gandhinagar and Indian Startup Map discovery do not establish vacancies. HN50338728 API:267 top-level IDs,222 non-deleted/non-dead text posts,58 broad design/UX/UI matches, zero errors. Manual new-post/retained-match screen found no eligible India early-career UX vacancy. Broad matches are not58 design jobs; October history unchanged.
+HN50338728 API snapshot:280 top-level IDs,232 non-deleted/non-dead text posts,
+59 broad design/UX/UI matches,zero API errors. One added broad match versus
+11November is a backend job-seeker post, not employer hiring. No new suitable
+early-career UX role. Broad matches are not59 design vacancies; October untouched.
 
 ## Preservation and publication
 
-Supported workbook, Company directory, Role requirements and company-directory.csv regenerated. Prior role/company/source/requirement IDs, exact requirements, contacts, compensation/date evidence, statuses, exclusions and source prefixes/history preserved. Review queue, collector timestamp and clipper unchanged; existing duplicate source ID still exactly twice, no new collision. No UI/model/extension/test/seed/collector-main changes by this refresh.
+Prior stable role/company/source/requirement IDs, unchanged requirements,
+contacts, pay units, dates, source prefixes/history, exclusions and employer
+screening retained. Only evidence-backed Icogz status retired. Review queue,
+collector timestamp and clipper unchanged. UI/model untouched; Assistant stays
+removed. Workbook, Company directory, Role requirements and public CSV regenerated.
+Private profile, application stages, reasons, blacklist and assessment edits
+are inaccessible. Compatibility checks use synthetic fixtures only.
 
-Private browser profile, notes, stages, blacklist and assessments remain inaccessible. Compatibility checks use synthetic fixtures only; no applicant data published.
+Exact researched topic-branch commit must be deployed to the existing Vercel
+project and READY/live bytes verified before calling this a published refresh.
+No applications, selection tasks or employer messages sent.
 
-The application Assistant was removed at the user's request after this research pass. Publication follows the existing exact topic-commit workflow; no Gateway or Assistant release dependency remains. Verify the deployed commit and live files before claiming refresh.
-
-
-## 11 November employer visibility and workplace screening follow-up
-
-Added Intuit, SAP and ServiceNow recurring-programme targets;269 companies,
-16 established-employer profiles and38 coverage records. No new matching India
-UX vacancy or current salary invented;114 existing job records remain intact.
-Intuit India programme explicitly includes paid product design; Atlassian paid
-programme and India calendar are recurring evidence, not current requisitions.
-ServiceNow design744000158130527 is US-based and not India-remote. SAP STAR is
-multi-year, not assumed to be a short UX internship. SAP governance normal page
-was restricted; indexed evidence is labelled. Other normal/indexed/shell access
-limits remain explicit.
-
-Business Standard18August2022 public extract gives context for the informal
-Lala-company term. Four official published-process reviews and four specific
-hiring-term reviews distinguish source evidence from a culture verdict.
-Unreviewed employers stay unassessed. Recognised brands are not guaranteed good
-workplaces; small/family-owned firms or low pay alone are not a classification.
-Public research has no private Yes/No/Unknown flags or reasons. Static workbook
-and directory CSV contain only sourced visibility/screening fields.
+Coverage: 27 of38 existing rows refreshed; other dates retained. Sources:2609.

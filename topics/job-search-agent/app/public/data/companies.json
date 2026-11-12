@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-11",
+  "researchedAt": "2026-11-12",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -1128,7 +1128,7 @@
       "payLabel": "Pay needs confirmation",
       "payBenchmark": null,
       "paySources": [],
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-12",
       "currentOpeningVerified": false,
       "companyType": "Services",
       "likelyRoles": [
@@ -1141,6 +1141,18 @@
           "url": "https://www.moontechnolabs.com/career-with-us/",
           "label": "Previously researched careers route",
           "evidenceStatus": "Retained prior research; not rechecked in this expansion"
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=eaa533209a303dc0",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal exact employer-authored Indeed advert explicitly names UI/UX Design Intern, Ahmedabad in person, freshers/0–1 year, pursuing or recently completed related design degree/diploma and3–6months. Body and header both state INR11,283.96–48,560.89 per month; MONTH structured metadata agrees. This is a verified advertised monthly range, not a received offer or guaranteed individual award. The unusually broad, precise range requires employer confirmation; its minimum meets Gujarat10k floor but is below15k preference. Platform date2November2026, not12November discovery. Full-time header describes hours; body explicitly calls this an internship. Distinct from retained permanent Trainee UI/UX Designer45ad3491be217187; do not combine salary or degree-year constraints. Official career-with-us page is readable and lists other vacancies/general recruitment route but no UI/UX internship in its visible inventory, so current intake remains conditional. Glassdoor indexed employer-provided copy corroborates role/range but its relative dates/crawl are not original posting dates. No application or message sent."
+        },
+        {
+          "url": "https://www.moontechnolabs.com/career-with-us/",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Official current careers and general recruitment route readable; visible dropdown has other functions but no UI/UX internship. Confirms employer identity/contact purpose, not current internship cohort or individual stipend. Existing permanent trainee evidence remains separate."
         }
       ],
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
@@ -1160,8 +1172,41 @@
               "sourceUrl": "https://in.indeed.com/viewjob?jk=45ad3491be217187"
             }
           ]
+        },
+        {
+          "id": "indeed-moontechnolabs-uiux-intern-eaa533209a303dc0",
+          "jobId": "indeed-moontechnolabs-uiux-intern-eaa533209a303dc0",
+          "title": "UI/UX Design Intern",
+          "url": "https://in.indeed.com/viewjob?jk=eaa533209a303dc0",
+          "seniority": "Internship; current intake/terms to confirm",
+          "location": "Ahmedabad, Gujarat — in person",
+          "requirements": [
+            {
+              "id": "3f47648e3d53",
+              "text": "Pursuing or recently completed related design degree/diploma; freshers or0–1 year",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=eaa533209a303dc0"
+            },
+            {
+              "id": "0ae7a20ea4af",
+              "text": "Figma preferred; basic UX, responsive design and visual hierarchy",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=eaa533209a303dc0"
+            },
+            {
+              "id": "28e593955bca",
+              "text": "User flows, wireframes, prototypes, basic research and developer collaboration",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=eaa533209a303dc0"
+            },
+            {
+              "id": "dbdd5d2ea171",
+              "text": "Portfolio or academic/personal design projects advantageous;3–6months in person",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=eaa533209a303dc0"
+            }
+          ],
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal exact employer-authored Indeed advert explicitly names UI/UX Design Intern, Ahmedabad in person, freshers/0–1 year, pursuing or recently completed related design degree/diploma and3–6months. Body and header both state INR11,283.96–48,560.89 per month; MONTH structured metadata agrees. This is a verified advertised monthly range, not a received offer or guaranteed individual award. The unusually broad, precise range requires employer confirmation; its minimum meets Gujarat10k floor but is below15k preference. Platform date2November2026, not12November discovery. Full-time header describes hours; body explicitly calls this an internship. Distinct from retained permanent Trainee UI/UX Designer45ad3491be217187; do not combine salary or degree-year constraints. Official career-with-us page is readable and lists other vacancies/general recruitment route but no UI/UX internship in its visible inventory, so current intake remains conditional. Glassdoor indexed employer-provided copy corroborates role/range but its relative dates/crawl are not original posting dates. No application or message sent."
         }
-      ]
+      ],
+      "openingStatus": "Separate Indeed student/fresher internship advert readable; official visible careers inventory does not confirm its cohort. Permanent trainee record remains separate."
     },
     {
       "id": "zunderdog",
@@ -2263,6 +2308,12 @@
           "detail": "Senior/manager role only; not treated as entry-level eligibility.",
           "evidenceStatus": "Official board indexed; detailed requirements not assessed",
           "checkedAt": "2026-10-24"
+        },
+        {
+          "url": "https://unstop.com/internships/product-design-internship-whatfix-1751971/amp",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal matching Unstop product-design internship deadline23September2026 is expired. Fresh normal Trakstar employer inventory has Product Design Lead (Manager), not internship. No current suitable vacancy added; cached internship index and speculative mirrors do not establish reopening."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -2270,7 +2321,7 @@
       "tier": "Possible",
       "focus": "Digital adoption platform",
       "rationale": "Product team working in digital adoption platform. Watch published internship and early-career roles; current evidence is recorded below.",
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-12",
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
     },
     {
@@ -6334,7 +6385,7 @@
       "focus": "Enterprise AI / business intelligence",
       "careersUrl": "https://www.icogz.com/careers",
       "locationNote": "Oshiwara, Mumbai, Maharashtra",
-      "openingStatus": "Indeed detail publicly opened. Three-month UI/UX and web/landing-page internship, in person in Mumbai. Employer careers page confirms company and publishes general HR contact, but this internship was not visible in extracted official openings. Pay/current intake unconfirmed.",
+      "openingStatus": "Retained Indeed Intern-UI/UX requisition expired; no current replacement internship verified.",
       "payNote": "Current stipend undisclosed; confirm before proceeding.",
       "contact": {
         "url": "https://www.icogz.com/careers",
@@ -6349,7 +6400,7 @@
       ],
       "likelyRolesEvidence": "Inferred role families from business/current role; not additional advertised openings.",
       "rationale": "Relevant public design role found; confirm pay and eligibility. Category is a suggested preference, not hiring odds.",
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-12",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced",
@@ -6362,6 +6413,12 @@
           "label": "Employer recruitment/context route",
           "evidenceStatus": "Official career page opened",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal exact Indeed now explicitly marks this requisition expired. Archive exact Intern-UI/UX advert, not employer hiring as a whole; original role/requirements/source history and browser application stages retained. No claim it was filled or that all Icogz recruitment stopped."
         }
       ],
       "roles": [
@@ -6409,7 +6466,8 @@
               "sourceUrl": "https://in.indeed.com/viewjob?jk=3d84294c02b4aced"
             }
           ],
-          "evidenceStatus": "Indeed detail publicly opened. Three-month UI/UX and web/landing-page internship, in person in Mumbai. Employer careers page confirms company and publishes general HR contact, but this internship was not visible in extracted official openings. Pay/current intake unconfirmed."
+          "evidenceStatus": "Normal exact Indeed now explicitly marks this requisition expired. Archive exact Intern-UI/UX advert, not employer hiring as a whole; original role/requirements/source history and browser application stages retained. No claim it was filled or that all Icogz recruitment stopped.",
+          "checkedAt": "2026-11-12"
         }
       ]
     },
@@ -8677,7 +8735,7 @@
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
-      "researchedAt": "2026-11-07",
+      "researchedAt": "2026-11-12",
       "sources": [
         {
           "url": "https://www.revrag.ai/careers/product-design-intern",
@@ -8690,6 +8748,12 @@
           "label": "7 November original closure",
           "checkedAt": "2026-11-07",
           "evidenceStatus": "Fresh original exact Product Design Intern page explicitly labels this Bengaluru six-month role Closed. Current employer careers index does not establish a renewed open internship. Archive this requisition, not all company hiring and not a claim it was filled."
+        },
+        {
+          "url": "https://www.revrag.ai/careers/product-design-intern",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal exact role now readable and explicitly Closed, despite detailed cached job body. Retain archived internship; no revival from search results."
         }
       ],
       "contact": {
@@ -19503,14 +19567,213 @@
         "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
         "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
       }
+    },
+    {
+      "id": "cactus-communications",
+      "name": "Cactus Communications",
+      "company": "Cactus Communications",
+      "companyType": "Product and services company",
+      "sector": "Research technology: Editage, Paperpal, Mind the Graph and scholarly workflows",
+      "focus": "Research technology: Editage, Paperpal, Mind the Graph and scholarly workflows",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable preference suggestion for evidenced research products and supervised web/CRM design scope. Not a workplace endorsement, hiring probability or offer.",
+      "careersUrl": "https://cactusglobal.com/careers/",
+      "locationNote": "Remote-first employer; exact internship India/Mumbai arrangement needs confirmation",
+      "openingStatus": "Mirrored six-month product internship; official exact requisition restricted, current intake unverified",
+      "currentOpeningVerified": false,
+      "payNote": "Current internship salary unspecified. No numerical stipend or benchmark inferred from organisation size or reputation.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-12",
+      "sources": [
+        {
+          "url": "https://remotive.com/remote/jobs/design/intern-product-design-6564118",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal public Remotive exact6564118 advertises CACTUS/Editage Intern, Product Design, India remote, six months, websites and CRM dashboards plus graphical abstracts/visual assets. Figma, Illustrator, Photoshop, portfolio and visual design fundamentals required; introductory work supervised by designers. Salary unspecified; numerical stipend fields remain null. Remotive says Posted Today, but matching other public mirrors were indexed last month: original employer publication and renewed intake are unverified, not a freshly posted employer vacancy. Exact employer destination jobs.cactusglobal.com/jobs/2353 is restricted by robots-policy/access checks; no original job terms or authenticated access claimed. Official cactusglobal.com corporate/careers pages are normally readable and establish Editage/Paperpal/Mind the Graph research products/services and remote-first careers; this does not independently confirm this requisition or its India work arrangement. LinkedIn4489038604 indexed matching employer post corroborates title/six-month scope; its relative label is not an original date. Hold for fixed monthly pay, student eligibility, joining dates, exact legal employer and current role availability."
+        },
+        {
+          "url": "https://cactusglobal.com/",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normally readable official corporate page describes research products/services and international organisation. Not independent team-quality evidence."
+        },
+        {
+          "url": "https://cactusglobal.com/careers/",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normally readable careers page describes remote-first work and separate internship route. No exact job2353 terms or stipend verified."
+        },
+        {
+          "url": "https://jobs.cactusglobal.com/jobs/2353",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Exact original is restricted; normal request stopped at robots-policy/access check, web homepage returned403. No bypass, login access or current original intake claim."
+        }
+      ],
+      "roles": [
+        {
+          "id": "remotive-cactus-product-design-intern-6564118",
+          "jobId": "remotive-cactus-product-design-intern-6564118",
+          "title": "Intern, Product Design — Editage",
+          "url": "https://remotive.com/remote/jobs/design/intern-product-design-6564118",
+          "seniority": "Internship; current intake/terms to confirm",
+          "location": "Remote India per Remotive; Mumbai employer location; arrangement to confirm",
+          "requirements": [
+            {
+              "id": "85ada5654bad",
+              "text": "Figma, Adobe Illustrator and Photoshop",
+              "sourceUrl": "https://remotive.com/remote/jobs/design/intern-product-design-6564118"
+            },
+            {
+              "id": "8a9c4edf0c5b",
+              "text": "Mandatory design portfolio; typography, colour and layout fundamentals",
+              "sourceUrl": "https://remotive.com/remote/jobs/design/intern-product-design-6564118"
+            },
+            {
+              "id": "7ec9e7ffdc7d",
+              "text": "Supervised web/CRM UX design plus research-oriented graphical abstracts/visual assets",
+              "sourceUrl": "https://remotive.com/remote/jobs/design/intern-product-design-6564118"
+            },
+            {
+              "id": "bf53687e5e85",
+              "text": "Six-month internship; country work authorization and collaboration across timezones",
+              "sourceUrl": "https://remotive.com/remote/jobs/design/intern-product-design-6564118"
+            }
+          ],
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal public Remotive exact6564118 advertises CACTUS/Editage Intern, Product Design, India remote, six months, websites and CRM dashboards plus graphical abstracts/visual assets. Figma, Illustrator, Photoshop, portfolio and visual design fundamentals required; introductory work supervised by designers. Salary unspecified; numerical stipend fields remain null. Remotive says Posted Today, but matching other public mirrors were indexed last month: original employer publication and renewed intake are unverified, not a freshly posted employer vacancy. Exact employer destination jobs.cactusglobal.com/jobs/2353 is restricted by robots-policy/access checks; no original job terms or authenticated access claimed. Official cactusglobal.com corporate/careers pages are normally readable and establish Editage/Paperpal/Mind the Graph research products/services and remote-first careers; this does not independently confirm this requisition or its India work arrangement. LinkedIn4489038604 indexed matching employer post corroborates title/six-month scope; its relative label is not an original date. Hold for fixed monthly pay, student eligibility, joining dates, exact legal employer and current role availability."
+        }
+      ],
+      "contact": {
+        "url": "https://jobs.cactusglobal.com/jobs/2353",
+        "kind": "Exact official application destination; access restricted, no message sent",
+        "sourceUrl": "https://remotive.com/remote/jobs/design/intern-product-design-6564118"
+      },
+      "website": "https://cactusglobal.com/",
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "No representative role/team workplace review completed.",
+        "confidence": "Unknown",
+        "checkedAt": "2026-11-12",
+        "sources": [
+          {
+            "url": "https://cactusglobal.com/careers/",
+            "label": "Reviewed official careers identity only; no independent team assessment",
+            "checkedAt": "2026-11-12",
+            "access": "normal"
+          }
+        ],
+        "limits": "Corporate remote-first and recognition claims are employer statements, not an independent culture audit.",
+        "nextAction": "Confirm supervisor, feedback cadence, paid terms, hours and internship learning scope directly before accepting."
+      },
+      "employerProfile": {
+        "status": "established",
+        "basis": "Official corporate/careers pages document a research-technology organisation operating Editage, Paperpal and Mind the Graph with an international presence. Public organisational visibility only.",
+        "checkedAt": "2026-11-12",
+        "sources": [
+          {
+            "url": "https://cactusglobal.com/",
+            "label": "Official products and organisation",
+            "checkedAt": "2026-11-12",
+            "access": "normal"
+          },
+          {
+            "url": "https://cactusglobal.com/careers/",
+            "label": "Official careers and remote-first routes",
+            "checkedAt": "2026-11-12",
+            "access": "normal"
+          }
+        ],
+        "limits": "Employer self-description is not a good-manager guarantee, independent culture ranking, current vacancy confirmation, stipend evidence or hiring probability."
+      }
+    },
+    {
+      "id": "polus-solutions",
+      "name": "Polus Solutions",
+      "company": "Polus Solutions",
+      "companyType": "Product and services company",
+      "sector": "Fibi research/grants management software and enterprise software services",
+      "focus": "Fibi research/grants management software and enterprise software services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Possible qualitative target for research-administration products and UX learning scope; not current hiring odds or a workplace endorsement.",
+      "careersUrl": "https://www.polussolutions.com/careers/",
+      "locationNote": "Trivandrum, Kerala; exact work arrangement unconfirmed",
+      "openingStatus": "Older standalone official internship; absent from current careers index, current intake unresolved",
+      "currentOpeningVerified": false,
+      "payNote": "No stipend stated on exact official role. Duration/current cohort unverified; no salary benchmark inferred.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-12",
+      "sources": [
+        {
+          "url": "https://www.polussolutions.com/ui-ux-internship/",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal official UI/UX Internship detail remains readable: full-time Trivandrum, students/freshers/final-year/recent graduates, related design/CS degree or diploma, Figma/Photoshop/Canva and responsive/mobile-first basics; HTML/CSS/WordPress plus. No numerical pay, duration, cohort or original job-post date stated. WebPage schema published14July2025 and modified30October2025 are webpage metadata, not verified vacancy posting/intake dates. Current official careers index lists other technical/business roles and no UI/UX internship, so this older standalone page is an unresolved lead, not confirmed current hiring. Do not infer closure from index absence or infer stipend from services/products. Hold until current paid, no-fee eligible intake and duration are confirmed. Public business-development email retains its sales purpose, not a guessed recruitment contact; form was not submitted."
+        },
+        {
+          "url": "https://www.polussolutions.com/careers/",
+          "label": "12 November public evidence",
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal current careers inventory shows technical/business roles, not UI/UX internship. Index absence is an availability discrepancy, not proof of closure; older standalone page stays on hold."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-polus-uiux-internship",
+          "jobId": "careers-polus-uiux-internship",
+          "title": "UI/UX Internship — older page, intake to confirm",
+          "url": "https://www.polussolutions.com/ui-ux-internship/",
+          "seniority": "Internship; current intake/terms to confirm",
+          "location": "Trivandrum / Thiruvananthapuram, Kerala — full-time; work arrangement to confirm",
+          "requirements": [
+            {
+              "id": "a8b787510647",
+              "text": "Pursuing/completed Design, Computer Science or related degree/diploma; fresher/final-year/recent graduate",
+              "sourceUrl": "https://www.polussolutions.com/ui-ux-internship/"
+            },
+            {
+              "id": "c0dccbb353da",
+              "text": "UI/UX fundamentals; Figma, Photoshop or Canva; layout, colour and typography",
+              "sourceUrl": "https://www.polussolutions.com/ui-ux-internship/"
+            },
+            {
+              "id": "4150e2a247ff",
+              "text": "Responsive/mobile-first basics and collaboration; HTML/CSS/WordPress exposure is a plus",
+              "sourceUrl": "https://www.polussolutions.com/ui-ux-internship/"
+            }
+          ],
+          "checkedAt": "2026-11-12",
+          "evidenceStatus": "Normal official UI/UX Internship detail remains readable: full-time Trivandrum, students/freshers/final-year/recent graduates, related design/CS degree or diploma, Figma/Photoshop/Canva and responsive/mobile-first basics; HTML/CSS/WordPress plus. No numerical pay, duration, cohort or original job-post date stated. WebPage schema published14July2025 and modified30October2025 are webpage metadata, not verified vacancy posting/intake dates. Current official careers index lists other technical/business roles and no UI/UX internship, so this older standalone page is an unresolved lead, not confirmed current hiring. Do not infer closure from index absence or infer stipend from services/products. Hold until current paid, no-fee eligible intake and duration are confirmed. Public business-development email retains its sales purpose, not a guessed recruitment contact; form was not submitted."
+        }
+      ],
+      "contact": {
+        "url": "https://www.polussolutions.com/ui-ux-internship/#apply-now",
+        "kind": "Official role application form; no submission. Published bd address is business development, not recruitment.",
+        "sourceUrl": "https://www.polussolutions.com/ui-ux-internship/"
+      },
+      "website": "https://www.polussolutions.com/"
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-11",
+    "researchedAt": "2026-11-12",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 269,
+    "directoryCount": 271,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 16,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local."
