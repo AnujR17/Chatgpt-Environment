@@ -8,26 +8,26 @@ Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The p
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
-## 12 November research snapshot
+## 13 November research snapshot
 
-119 retained roles (103 active/held,16 archived),274 companies and40 coverage
-records. The first pass added three internships: Moon Technolabs on Indeed with an
-explicit monthly range/current-cohort caveat, CACTUS on Remotive with pay and
-original availability unverified, and Polus with an older official page/current
-intake unresolved. All on hold; one expired Icogz advert archived.18 established
-employer profiles. Existing IDs/history and browser-local compatibility preserved;
-workbook/directory CSV regenerated. The hiring-post follow-up added Onething
-(Gurgaon exception,15k/month) and Devoq (Ahmedabad,pay undisclosed), both held.
-HireDesigners is monitored as a recruitment channel. See [the research report](public/data/collection-report.md).
+123 retained roles (106 active/held,17 archived),279 company targets and40
+coverage records. Four new-to-feed internships remain on hold:Sure employer
+careers,SRV InfoTech on Indeed,Saral on Wellfound and an older ZeonAI LinkedIn
+hiring post. No newly confirmed monthly stipend match. One removed Hevo
+requisition archived with exact original404 plus current employer-index evidence.
+Five new company targets;18 established profiles retained. Existing IDs,source
+history,public screening and browser-state compatibility preserved. See
+[the current research report](public/data/collection-report.md).
 
-The preview-only Assistant has been removed. Daily public-feed publication uses the existing exact topic-commit production workflow and does not require AI Gateway. Verify deployment and live files before claiming a refresh.
+Assistant remains removed. Daily research uses the existing exact topic-commit
+production workflow;verify READY and live files before claiming publication.
 
 ## Established employers and workplace screening
 
 The company directory puts18 researched established employers first and has an
 Established employers filter. Discover has the same filter and a shortcut to
 the directory. Added Intuit, SAP and ServiceNow programme targets; these are not
-new verified India design vacancies. The directory now has274 companies and40
+new verified India design vacancies. The directory now has279 companies and40
 source-coverage records. Existing role records and pay/history remain; one exact expired advert is archived.
 
 A sourced Lala-style screening badge distinguishes published processes,
@@ -46,11 +46,11 @@ is changed by an assessment. No Assistant page or AI backend was reintroduced.
 
 ## Included
 
-- 119 retained role records (103 active/held,16 archived), researched12November2026. Five internships added to the feed today remain on hold; exact current intake requires confirmation. See [the current research report](public/data/collection-report.md).
+- 123 retained role records (106 active/held,17 archived), researched13November2026. Four internships added to the feed today remain on hold; pay/current intake requires confirmation. See [the current research report](public/data/collection-report.md).
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat and remote India minimum ₹10,000/month, with ₹15,000+ preferred; other eligible cities minimum ₹15,000/month. Higher pay remains welcome. Earlier dated research may use former thresholds.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with274 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with279 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.
@@ -109,7 +109,7 @@ Each run produces `public/data/collection-report.md` and an updated Excel workbo
 
 ## Deploy to Vercel
 
-Use the existing project **chatgpt-environment** and source branch **topic/job-search-agent** in **AnujR17/Chatgpt-Environment**. Root directory is **topics/job-search-agent/app**, framework **Vite**, install command `npm ci`, build command `npm run build`, output directory `dist`. Direct AI generation uses server-side Vercel OIDC or a private AI Gateway key. Preserve the existing deployment protection. `vercel.json` includes the app configuration.
+Use the existing project **chatgpt-environment** and source branch **topic/job-search-agent** in **AnujR17/Chatgpt-Environment**. Root directory is **topics/job-search-agent/app**, framework **Vite**, install command `npm ci`, build command `npm run build`, output directory `dist`. Preserve the existing deployment protection. `vercel.json` includes the app configuration.
 
 Project-level automatic preview deployments are disabled (`previewDeploymentsDisabled: true`). This repository contains independent topic branches: `topic/checkpoint`, for example, contains a Windows app and has no job-board directory. A preview of that branch in this project fails before the build starts. Do not change the job-board root directory to accommodate another topic or merge unrelated apps into this branch.
 
@@ -133,7 +133,7 @@ archives are retained in backups without a document-generation interface.
 The existing editable factual email draft remains local and sends nothing.
 
 - ShramikSathi and BThree publish an application email, so drafts can be prepared without browser form automation.
-- Hevo's public Lever form appears suitable for assisted filling once accurate profile/résumé information is supplied. Submission rules and CAPTCHA remain unverified.
+- Hevo's removed internship requisition is archived;an older Lever form is not a current application route.
 - LinkedIn applications need a signed-in user session. Google/third-party forms need inspection of their actual requirements.
 - No applications have been submitted. No employer has been contacted. No application is marked applied until the user records submission.
 

@@ -1,6 +1,29 @@
 # Job search agent handoff
 
-Updated 12 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 13 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 13 November public research — validated, publication pending
+
+123retained/106active-held/17archived,279companies,18established,40coverage.
+Four new held internships across employer careers(Sure Mumbai),Indeed(SRV Kannur),
+Wellfound(Saral remote,period/identity conflict) andolder LinkedInpost(ZeonAI,
+original restricted). No new numerical monthly stipend match. Five new directory
+targets including KrisAtWork two-month route,which is directory-only. Hevo exact
+removed requisition archived using404 plus current readable employer inventory;
+Nonlinear/YTT missing remain unresolved. TensorGo410/[x]cube applicationclosed
+not revived from crossposts. Existing Genz exact advert retained directory-only
+with trial/programme ambiguity. OriginalAndrocid7March metadata now labelledolder.
+102primarychecks:90fetched,9restricted,3missing. Broader source/post/map coverage
+and actual query limits recorded separately from generated31-query plan.
+Existing roles/requirements/source prefix/coverage history/exclusions/public
+screening/contacts/private-state compatibility retained. No UI/model/Assistant/
+collector-main/seed/schedule change or applications/messages. Workbook/directory
+exports regenerated. Five JS suites,seven Python checks,build,preservation audit
+and local desktop/mobile checks passed:106active/17archived,279companies,40coverage;
+18 established/four established-role matches,synthetic saved stages/blacklist/
+assessments/profile/backup compatible,zero runtimeerrors or POSTs.
+Research and synthetic QA outsideGit:
+/workspace/job-refresh-nov13-review/. Exact topic production verification pending.
 
 ## 12 November hiring-post follow-up — published
 

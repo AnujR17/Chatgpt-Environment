@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-12",
+  "researchedAt": "2026-11-13",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -4330,6 +4330,12 @@
           "label": "Official careers/contact source",
           "evidenceStatus": "Search-indexed official page; not directly opened",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://lollypop.design/careers/associate-ux-researcher-jobs/",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "NormalAssociateUXResearcher retains1–3years and completed relevantdegree. Existing role/requirementIDs retained,not promoted as fresher internship."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -4341,7 +4347,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Bengaluru, Mumbai, Chennai, Hyderabad. Check each role for remote eligibility.",
-      "researchedAt": "2026-10-24"
+      "researchedAt": "2026-11-13"
     },
     {
       "id": "yuj",
@@ -9589,6 +9595,12 @@
           "label": "6 November retained-role terms",
           "checkedAt": "2026-11-06",
           "evidenceStatus": "Original retains three-month compensated internship,any study year/graduates and web/mobile UI. Amount and current intake unconfirmed."
+        },
+        {
+          "url": "https://androcid.freshteam.com/jobs/_KvFSyux1O8C/ui-ux-design-intern",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact three-month Panaji programme retainsunknownpay; newlyread employer7March2026metadata is olderoriginaldate,not renewedintake."
         }
       ],
       "roles": [
@@ -9634,7 +9646,7 @@
       "openingStatus": "Employer Freshteam detail and application form accessible; students in any year or graduates accepted. Financial compensation promised without amount. No reliable original date, start window or explicit remote arrangement. Original Freshteam captcha/form was not submitted or bypassed.",
       "payNote": "Stipend amount not stated; no qualifying monthly payment established.",
       "currentOpeningVerified": true,
-      "researchedAt": "2026-10-31"
+      "researchedAt": "2026-11-13"
     },
     {
       "id": "sola",
@@ -12129,14 +12141,14 @@
       "rationale": "Suggested preference/fit tier based on published product or UX work and location; no hiring probability or offer implied.",
       "careersUrl": "https://www.tensorgo.com/careers/",
       "locationNote": "Hyderabad; historical design internship work from office",
-      "payNote": "Current stipend undisclosed. Historical role-specific report is below30k target and not current pay.",
+      "payNote": "Current stipend undisclosed. Historical23–27k/month one-report benchmark exceeds revised15k Hyderabad floor, but is not current compensation or proof of renewed intake.",
       "openingStatus": "Historical Indeed advert conflicts with410 original; renewed intake unverified",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
-      "researchedAt": "2026-10-30",
+      "researchedAt": "2026-11-13",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=5e25dd89f059fecc",
@@ -12161,6 +12173,18 @@
           "label": "Public source observation",
           "checkedAt": "2026-10-30",
           "evidenceStatus": "Role-specific public Glassdoor table: one report1June2023,Hyderabad0–1years,23–27kINR/month. Low-confidence historical benchmark; modeled header differs, not current listing pay."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=5e25dd89f059fecc",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal Indeed5e25dd89f059fecc retains historical PDI282506,Hyderabad office,six months,0–1years,pursuing/completed relevant degree; platform/body22August2026. Exact employer https://tensorgo.com/job-type/pdi282506/ stillHTTP410Gone. No renewed eligible intake established; directory only. Historical role-specific23–27k/month report exceeds revised15k location floor but is one2023 self-report,not current stipend/intake. Earlier30k-target comparison is historical policy only."
+        },
+        {
+          "url": "https://tensorgo.com/job-type/pdi282506/",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact original still410Gone; cached/crossposted description not renewed intake."
         }
       ],
       "roles": [
@@ -12222,7 +12246,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families, not additional advertised vacancies.",
-      "researchedAt": "2026-10-30",
+      "researchedAt": "2026-11-13",
       "sources": [
         {
           "url": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f?source=careers",
@@ -12235,6 +12259,18 @@
           "label": "Public source observation",
           "checkedAt": "2026-10-30",
           "evidenceStatus": "Original application says currently not accepting applications. CAPTCHA not entered/bypassed."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=955578ad6f2ec9bf",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal Indeed copy retains InternUIUX,Hyderabad,three months,0–1years,unknownpay,codeKL-85UMEFA9. Same historical ATS role,not a new vacancy."
+        },
+        {
+          "url": "https://jobs.klimb.io/purpletalk/61239b0fde0a6e4a69cf151f/apply?source=careers",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact linked application explicitly says currently not accepting applications. Readable job detail does not override closure. Directory-only role/requirements/contact retained unchanged."
         }
       ],
       "roles": [
@@ -17340,16 +17376,16 @@
       "rationale": "Potential services-team target only; recurring programme pay/fees/current intake unverified. No senior vacancy recommended as internship.",
       "careersUrl": "https://www.genzmastery.com/careers",
       "locationNote": "Siruseri,Chennai; programme remote eligibility not established",
-      "openingStatus": "Fresh official careers page lists a Senior UIUX Designer and a separate recurring Next-Gen Internship Program including UIUX/Product Design. Internship directory shows generic four-week project/domain options and1/3/6month flexible durations,without a verified paid employment requisition. Indexed Indeed category claims remote10–20k/month for Genz Mastery,but normal category returned different employers and an exact matching role URL was not recovered. Do not treat senior role,programme enrolment or category pay as a verified paid UX vacancy.",
+      "openingStatus": "Recovered normal exact Indeed91083109afa926bd remoteIndia mixed UIUXDesigner/Intern advert10–20kINR/month,students/freshers intern route,1–3years designer preference. Three-day design trial with payment terms if applicable unresolved. Separate indexed Indeed0a804008b017d7a7 says up to15k/month,not a guaranteed minimum. Official internship page remains broad four-week certificate/project catalogue with flexible1/3/6month durations; exact paid employment cohort versus programme not corroborated. Keep directory-only pending no-fee,trial-pay,contract and fixed stipend verification; not known unpaid by inference.",
       "currentOpeningVerified": false,
-      "payNote": "Current pay unverified; no received offer inferred.",
+      "payNote": "Exact Indeed mixed-level advert10–20k/month; separate copy cap15k/month. Intern-specific fixed minimum,three-day trial pay and distinction from recurring certificate programme unresolved. Directory evidence only.",
       "payConfidence": "Limited; inspect exact role evidence",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-07",
+      "researchedAt": "2026-11-13",
       "sources": [
         {
           "url": "https://www.genzmastery.com/careers",
@@ -17362,6 +17398,18 @@
           "label": "Official recurring programme directory",
           "checkedAt": "2026-11-07",
           "evidenceStatus": "Project/domain programmes with duration options; these are not independently verified paid job offers."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=91083109afa926bd",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Recovered normal exact Indeed91083109afa926bd remoteIndia mixed UIUXDesigner/Intern advert10–20kINR/month,students/freshers intern route,1–3years designer preference. Three-day design trial with payment terms if applicable unresolved. Separate indexed Indeed0a804008b017d7a7 says up to15k/month,not a guaranteed minimum. Official internship page remains broad four-week certificate/project catalogue with flexible1/3/6month durations; exact paid employment cohort versus programme not corroborated. Keep directory-only pending no-fee,trial-pay,contract and fixed stipend verification; not known unpaid by inference."
+        },
+        {
+          "url": "https://www.genzmastery.com/internships",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal broad certificate/project programme catalogue does not confirm the exact Indeed paid job/current cohort. No enrolment,payment,trial or application performed."
         }
       ],
       "roles": [
@@ -19789,7 +19837,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-12",
+      "researchedAt": "2026-11-13",
       "sources": [
         {
           "url": "https://www.onething.design/careers/product-design-intern-gurgaon",
@@ -19814,6 +19862,12 @@
           "label": "12 November hiring-post follow-up",
           "checkedAt": "2026-11-12",
           "evidenceStatus": "Normal official portfolio shows digital product design work for named brands. Employer project claims support organisational visibility, not independent client verification or a good-team guarantee."
+        },
+        {
+          "url": "https://www.onething.design/careers/product-design-intern-gurgaon",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact15k/month six-month Gurgaonhybrid internship retained,final-semester/currentcohort toconfirm; named locationexception."
         }
       ],
       "roles": [
@@ -19899,7 +19953,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-12",
+      "researchedAt": "2026-11-13",
       "sources": [
         {
           "url": "https://www.devoqdesign.com/career/ui-ux-designer/",
@@ -19918,6 +19972,12 @@
           "label": "Indexed company hiring Updates",
           "checkedAt": "2026-11-12",
           "evidenceStatus": "Indexed company Updates describe3 UI/UX intern openings alongside separate SEO internships; older3month crawl/relative labels are not verified original dates or current seat count. Normal exact employer careers explicitly accepts interns without commercial experience. Same studio opportunity, not three new feed cards; pay/cohort unknown."
+        },
+        {
+          "url": "https://www.devoqdesign.com/career/ui-ux-designer/",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal explicit internroute retained,pay/duration and Bopal/Bodakdev office unresolved."
         }
       ],
       "roles": [
@@ -19984,7 +20044,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-12",
+      "researchedAt": "2026-11-13",
       "sources": [
         {
           "url": "https://hiredesigners.in/jobs/all-jobs-november-2026-uiux-designer-gurgaon-200ggn-ud-aa/",
@@ -20015,6 +20075,12 @@
           "label": "12 November hiring-post follow-up",
           "checkedAt": "2026-11-12",
           "evidenceStatus": "Indexed public company profile/updates describe staffing/design recruitment. Original normal page restricted. Public posts sampled include fashion WFH0–2 and experienced branding/interior roles; no matching core-UX internship verified."
+        },
+        {
+          "url": "https://hiredesigners.in/all-jobs/",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Current publicclient inventory sampled;200GGN-UD-AA still3years and15lakh/year cap,no currentcoreUXintern verified."
         }
       ],
       "roles": [
@@ -20062,14 +20128,385 @@
         "sourceUrl": "https://hiredesigners.in/"
       },
       "website": "https://hiredesigners.in/"
+    },
+    {
+      "id": "saral-groups",
+      "name": "Saral Groups / Saral Recruitments",
+      "company": "Saral Groups / Saral Recruitments",
+      "companyType": "Technology services and recruitment",
+      "sector": "Software,digital services,recruitment and training",
+      "focus": "Software,digital services,recruitment and training",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Possible editable discovery suggestion from a named remote internship. Recruitment/training services need role-specific contract and no-fee verification; not an employer-quality verdict.",
+      "careersUrl": "https://www.saralgroups.com/",
+      "locationNote": "Remote India in exact Wellfound advert; employment entity to confirm",
+      "openingStatus": "Older exact paid internship advert readable; current intake and stipend period unresolved",
+      "currentOpeningVerified": false,
+      "payNote": "Body10–15k lacks period; header1.2–1.8lakh/structuredYEAR conflicts. No verified monthly stipend.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-13",
+      "sources": [
+        {
+          "url": "https://wellfound.com/jobs/4225414-ui-ux-designer",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact Wellfound4225414 advert names Saral Recruitments in header and Saral Tech in body. Remote India,four months,35–40hours/week,paid UI/UX internship, pursuing/recent relevant degree. Body says Stipend:10–15k without period; visible1.2–1.8lakh header also lacks period and structured metadata uses YEAR120000–180000. Neither establishes monthly stipend; monthly fields remain null and numerical annual offer is not asserted across conflicting fields. Platform datePosted24August2026 is older listing evidence, not a new13November posting. Linked official Saral Groups site corroborates technology/recruitment/training services and SG ELITE PRIVATE LIMITED footer, not this role current intake or legal employing entity."
+        },
+        {
+          "url": "https://www.saralgroups.com/",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal official site corroborates technology/recruitment/training identity and SG ELITE PRIVATE LIMITED footer; no exact internship pay/current-cohort confirmation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "wellfound-saral-4225414",
+          "jobId": "wellfound-saral-4225414",
+          "title": "UI/UX Designer Intern",
+          "url": "https://wellfound.com/jobs/4225414-ui-ux-designer",
+          "seniority": "Internship; eligibility/current intake to confirm",
+          "location": "Remote — India",
+          "requirements": [
+            {
+              "id": "3567ef87382e",
+              "text": "Pursuing or recently completed design,computer science,multimedia or related degree",
+              "sourceUrl": "https://wellfound.com/jobs/4225414-ui-ux-designer"
+            },
+            {
+              "id": "ccd35ff8a224",
+              "text": "Figma,wireframes,user flows,prototypes and basic UX research",
+              "sourceUrl": "https://wellfound.com/jobs/4225414-ui-ux-designer"
+            },
+            {
+              "id": "b242bac5dc00",
+              "text": "Responsive web/mobile design,visual consistency and developer collaboration",
+              "sourceUrl": "https://wellfound.com/jobs/4225414-ui-ux-designer"
+            }
+          ],
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact Wellfound4225414 advert names Saral Recruitments in header and Saral Tech in body. Remote India,four months,35–40hours/week,paid UI/UX internship, pursuing/recent relevant degree. Body says Stipend:10–15k without period; visible1.2–1.8lakh header also lacks period and structured metadata uses YEAR120000–180000. Neither establishes monthly stipend; monthly fields remain null and numerical annual offer is not asserted across conflicting fields. Platform datePosted24August2026 is older listing evidence, not a new13November posting. Linked official Saral Groups site corroborates technology/recruitment/training services and SG ELITE PRIVATE LIMITED footer, not this role current intake or legal employing entity."
+        }
+      ],
+      "contact": {
+        "url": "https://www.saralgroups.com/",
+        "kind": "Published public route; purpose and verification limits in role evidence",
+        "sourceUrl": "https://www.saralgroups.com/"
+      },
+      "website": "https://www.saralgroups.com/"
+    },
+    {
+      "id": "zeonai-labs",
+      "name": "ZeonAI Labs",
+      "company": "ZeonAI Labs",
+      "companyType": "Product company",
+      "sector": "Enterprise AI document intelligence and regulated financial workflows",
+      "focus": "Enterprise AI document intelligence and regulated financial workflows",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable editable product-company suggestion based on sourced enterprise-AI product scope. Pay,student intake and team practice unknown; no hiring-probability or workplace guarantee.",
+      "careersUrl": "https://www.zeonai.com/",
+      "locationNote": "Remote post; India employment eligibility to confirm",
+      "openingStatus": "Older hiring post names product-design intern; current intake unverified",
+      "currentOpeningVerified": false,
+      "payNote": "Internship pay undisclosed. Separate experienced full-time7–9lakh/year advert not an intern benchmark.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-13",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Public indexed Biswa G Singh post explicitly names ZeonAI Labs Product Design Intern(UI/UX),remote full-time,enterprise AI products for regulated sectors. Public author profile associates him with ZeonAI Labs; precise hiring authority not independently established. Post describes flows,UI prototypes,Figma auto-layout/components/design systems,AI-assisted prototyping with Claude/Cursor,portfolio and communication. Pay,duration,student cohort and exact original date unstated. Indexed crawl approximately two months old and relative2mo wording are not exact original dates or current intake. Normal original post restricted by robots policy; no authenticated access. Official zeonai.com corroborates document/finance AI products,not internship pay/availability. Published route is DM author; no message sent. Separate experienced Indeed designer7–9lakh/year is not intern pay and not used as a benchmark."
+        },
+        {
+          "url": "https://www.zeonai.com/",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal official DeepDelve/DeepProbe enterprise document/financial AI product site; no exact internship careers URL found. Homepage is identity evidence only."
+        },
+        {
+          "url": "https://in.linkedin.com/in/biswagsingh",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Indexed author profile associates Biswa G Singh with ZeonAI Labs and surfaces same internship post; no signed-in feed or exact original publication established."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-post-zeonai-7488830458227556352",
+          "jobId": "linkedin-post-zeonai-7488830458227556352",
+          "title": "Product Design Intern (UI/UX)",
+          "url": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c",
+          "seniority": "Internship; eligibility/current intake to confirm",
+          "location": "Remote — India eligibility to confirm",
+          "requirements": [
+            {
+              "id": "111321c89790",
+              "text": "Portfolio with UI/UX craft,user flows and interactive prototypes",
+              "sourceUrl": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c"
+            },
+            {
+              "id": "7adc9bea9574",
+              "text": "Figma auto-layout,components and design systems",
+              "sourceUrl": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c"
+            },
+            {
+              "id": "a1c7a16bf1ad",
+              "text": "AI-assisted prototyping with Claude/Cursor; clear communication",
+              "sourceUrl": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c"
+            }
+          ],
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Public indexed Biswa G Singh post explicitly names ZeonAI Labs Product Design Intern(UI/UX),remote full-time,enterprise AI products for regulated sectors. Public author profile associates him with ZeonAI Labs; precise hiring authority not independently established. Post describes flows,UI prototypes,Figma auto-layout/components/design systems,AI-assisted prototyping with Claude/Cursor,portfolio and communication. Pay,duration,student cohort and exact original date unstated. Indexed crawl approximately two months old and relative2mo wording are not exact original dates or current intake. Normal original post restricted by robots policy; no authenticated access. Official zeonai.com corroborates document/finance AI products,not internship pay/availability. Published route is DM author; no message sent. Separate experienced Indeed designer7–9lakh/year is not intern pay and not used as a benchmark."
+        }
+      ],
+      "contact": {
+        "url": "https://www.zeonai.com/",
+        "kind": "Published public route; purpose and verification limits in role evidence",
+        "sourceUrl": "https://www.zeonai.com/"
+      },
+      "website": "https://www.zeonai.com/"
+    },
+    {
+      "id": "srv-infotech",
+      "name": "SRV InfoTech",
+      "company": "SRV InfoTech",
+      "companyType": "Technology services team",
+      "sector": "Web/mobile applications,UI/UX,digital services and security products",
+      "focus": "Web/mobile applications,UI/UX,digital services and security products",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Possible editable services-team suggestion for explicit fresher UI/UX advert and corroborated Kannur business identity. Contract,stipend and current student eligibility need confirmation.",
+      "careersUrl": "https://www.srvinfotech.com/careers",
+      "locationNote": "Kannur Kerala in person; relocation/student cohort to confirm",
+      "openingStatus": "Exact Indeed UI/UX internship body readable; official current internship inventory not established",
+      "currentOpeningVerified": false,
+      "payNote": "Intern pay unknown; old official2022 developer/graphic salaries and aggregate company salaries are not intern evidence.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-13",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=e2539e49511a709d",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact Indeede2539e49511a709d body advertises UI/UX Design Intern, freshers, in-person Kannur Kerala; mandatory Figma,UI fundamentals,wireframes/prototypes/responsive design and reusable components. Relevant degree/diploma, final-year/recent graduates or relevant courses/certifications welcomed. Header instead says Permanent,Fresher,Full-time, so actual internship contract needs confirmation. No pay,duration or joining date stated. Platform JobPosting datePosted12November2026 06:22:17UTC, not independently established employer-original date. Official srvinfotech.com identifies SRV IT Hub Private Limited in Kannur and UI/UX services. Official careers page shows2022 developer/graphic adverts with placeholder descriptions, not this exact internship; those salaries do not establish intern pay. Mirror12November date is mirror listing metadata only."
+        },
+        {
+          "url": "https://www.srvinfotech.com/careers",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal official careers page has older2022 developer/graphic roles and placeholder descriptions; exact current UI/UX internship not corroborated there. Corporate footer SRV IT Hub Private Limited,Kannur; no guess of recruiting email."
+        }
+      ],
+      "roles": [
+        {
+          "id": "indeed-srv-infotech-e2539e49511a709d",
+          "jobId": "indeed-srv-infotech-e2539e49511a709d",
+          "title": "UI/UX Design Intern",
+          "url": "https://in.indeed.com/viewjob?jk=e2539e49511a709d",
+          "seniority": "Internship; eligibility/current intake to confirm",
+          "location": "Kannur, Kerala — in person",
+          "requirements": [
+            {
+              "id": "d546c942ca2c",
+              "text": "Figma mandatory; basic UX,wireframing,prototyping and responsive design",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=e2539e49511a709d"
+            },
+            {
+              "id": "5a0b979a4e02",
+              "text": "Relevant degree/diploma; final-year/recent graduates or relevant UI/UX course/certification accepted",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=e2539e49511a709d"
+            },
+            {
+              "id": "9d9e50d4b2b1",
+              "text": "Typography,colour,layout,visual hierarchy,communication and reusable components",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=e2539e49511a709d"
+            }
+          ],
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact Indeede2539e49511a709d body advertises UI/UX Design Intern, freshers, in-person Kannur Kerala; mandatory Figma,UI fundamentals,wireframes/prototypes/responsive design and reusable components. Relevant degree/diploma, final-year/recent graduates or relevant courses/certifications welcomed. Header instead says Permanent,Fresher,Full-time, so actual internship contract needs confirmation. No pay,duration or joining date stated. Platform JobPosting datePosted12November2026 06:22:17UTC, not independently established employer-original date. Official srvinfotech.com identifies SRV IT Hub Private Limited in Kannur and UI/UX services. Official careers page shows2022 developer/graphic adverts with placeholder descriptions, not this exact internship; those salaries do not establish intern pay. Mirror12November date is mirror listing metadata only."
+        }
+      ],
+      "contact": {
+        "url": "https://www.srvinfotech.com/careers",
+        "kind": "Published public route; purpose and verification limits in role evidence",
+        "sourceUrl": "https://www.srvinfotech.com/careers"
+      },
+      "website": "https://www.srvinfotech.com/"
+    },
+    {
+      "id": "sure-financial",
+      "name": "Sure (Vittancial Technovations)",
+      "company": "Sure (Vittancial Technovations)",
+      "companyType": "Product company",
+      "sector": "Consumer fintech,home-loan analysis and financial savings",
+      "focus": "Consumer fintech,home-loan analysis and financial savings",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable editable product-company suggestion based on a current named UX internship and documented consumer-finance product. No culture audit,hiring probability or stipend inferred.",
+      "careersUrl": "https://www.sure.financial/careers",
+      "locationNote": "MulundWest,Mumbai,on site",
+      "openingStatus": "Current exact employer careers/index list Product Design(UX)Intern,0–1years;pay/duration/cohort unknown",
+      "currentOpeningVerified": true,
+      "payNote": "Exact internship amount and duration unstated. Product/press/customer claims do not establish stipend.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-13",
+      "sources": [
+        {
+          "url": "https://www.sure.financial/careers/product-design-ux-intern",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact employer detail and current careers index both list Product Design(UX)Intern,Mumbai on-site,MulundWest,0–1years. Consumer fintech/home-loan product work: problem framing,user feedback,flows,prototypes,UI,product/engineering collaboration and gradual implementation. AI curiosity expected;HTML/CSS/React helpful,not mandatory. Interview starts with aptitude/logic test then interview,possible design assignment. Pay,duration,student cohort/start and original publication date unstated. Official footer identifies Vittancial Technovations Private Limited; brand is Sure financial app,not a guessed insurance-company identity. Homepage product/customer/press claims are self-published and not an independent employer-quality or stipend guarantee. No test/form/message performed."
+        },
+        {
+          "url": "https://www.sure.financial/careers",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal current employer inventory links exact ProductDesign(UX)Intern separately from full-time ProductDesigner; no duplicate full-time internship card. Published careers inbox retained with actual general-careers purpose."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-sure-financial-product-design-ux-intern",
+          "jobId": "careers-sure-financial-product-design-ux-intern",
+          "title": "Product Design (UX) Intern",
+          "url": "https://www.sure.financial/careers/product-design-ux-intern",
+          "seniority": "Internship; eligibility/current intake to confirm",
+          "location": "Mulund West,Mumbai — on site",
+          "requirements": [
+            {
+              "id": "6e50e2649526",
+              "text": "0–1years; student eligibility and required academic stage unstated",
+              "sourceUrl": "https://www.sure.financial/careers/product-design-ux-intern"
+            },
+            {
+              "id": "6607935a0234",
+              "text": "Problem framing,user insight,flows,prototypes and thoughtful UI",
+              "sourceUrl": "https://www.sure.financial/careers/product-design-ux-intern"
+            },
+            {
+              "id": "e1efd560b8f2",
+              "text": "Comfort with ambiguity and AI-assisted work;HTML/CSS/React useful,not required",
+              "sourceUrl": "https://www.sure.financial/careers/product-design-ux-intern"
+            }
+          ],
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal exact employer detail and current careers index both list Product Design(UX)Intern,Mumbai on-site,MulundWest,0–1years. Consumer fintech/home-loan product work: problem framing,user feedback,flows,prototypes,UI,product/engineering collaboration and gradual implementation. AI curiosity expected;HTML/CSS/React helpful,not mandatory. Interview starts with aptitude/logic test then interview,possible design assignment. Pay,duration,student cohort/start and original publication date unstated. Official footer identifies Vittancial Technovations Private Limited; brand is Sure financial app,not a guessed insurance-company identity. Homepage product/customer/press claims are self-published and not an independent employer-quality or stipend guarantee. No test/form/message performed."
+        }
+      ],
+      "contact": {
+        "email": "careers@getsure.app",
+        "url": "https://www.sure.financial/careers",
+        "kind": "Published careers inbox for roles not listed; exact internship has its own application route. No message sent.",
+        "sourceUrl": "https://www.sure.financial/careers"
+      },
+      "website": "https://www.sure.financial/"
+    },
+    {
+      "id": "krisatwork",
+      "name": "KrisAtWork",
+      "company": "KrisAtWork",
+      "companyType": "Product company",
+      "sector": "AI-native go-to-market and revenue workflows",
+      "focus": "AI-native go-to-market and revenue workflows",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Possible editable product-company target; explicit short duration and unknown pay prevent standard internship recommendation without extension confirmation.",
+      "careersUrl": "https://www.krisatwork.ai/",
+      "locationNote": "RemoteIndia body/BangaloreUrban header; two-month internship",
+      "openingStatus": "Indexed two-month internship only; no paid3–6month cohort verified",
+      "currentOpeningVerified": false,
+      "payNote": "Undisclosed; no senior/reputation inference.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-13",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-krisatwork-4489286000",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Public indexed exact LinkedIn4489286000 body names Product Design Intern,two months,remoteIndia despite BangaloreUrban header. Pursuing/recent design/UIUX degree or course,basic UX and Figma,flows/components/customer insights and B2B SaaS mentorship. Pay/current original posting date/student cohort unknown; normal original restricted. Two-month term is explicit and extension unverified. Official krisatwork.ai corroborates AI-native GTM/revenue product,not an exact paid intake. Directory-only conditional lead; no matching3–6month vacancy invented."
+        },
+        {
+          "url": "https://www.krisatwork.ai/",
+          "label": "13 November public research",
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Normal official AI-native GTM product site readable. Guessed careers path404 is not evidence this LinkedIn vacancy closed; no official exact application route recovered."
+        }
+      ],
+      "roles": [
+        {
+          "id": "krisatwork-linkedin-4489286000",
+          "title": "Product Design Intern — two-month programme",
+          "seniority": "Internship; shorter programme,extension unverified",
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-krisatwork-4489286000",
+          "location": "Remote India in body; BangaloreUrban header",
+          "requirements": [
+            {
+              "id": "0b0f11eb72dc",
+              "text": "Two-month internship; extension not established",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-krisatwork-4489286000"
+            },
+            {
+              "id": "a2486c84ad0d",
+              "text": "Pursuing or recent design/UIUX degree or course; basic Figma and UX",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-krisatwork-4489286000"
+            },
+            {
+              "id": "daec78f3e209",
+              "text": "User journeys,components,customer insights and B2B SaaS product collaboration",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-krisatwork-4489286000"
+            }
+          ],
+          "checkedAt": "2026-11-13",
+          "evidenceStatus": "Public indexed exact LinkedIn4489286000 body names Product Design Intern,two months,remoteIndia despite BangaloreUrban header. Pursuing/recent design/UIUX degree or course,basic UX and Figma,flows/components/customer insights and B2B SaaS mentorship. Pay/current original posting date/student cohort unknown; normal original restricted. Two-month term is explicit and extension unverified. Official krisatwork.ai corroborates AI-native GTM/revenue product,not an exact paid intake. Directory-only conditional lead; no matching3–6month vacancy invented."
+        }
+      ],
+      "contact": {
+        "url": "https://www.krisatwork.ai/",
+        "kind": "Published public route; purpose and verification limits in role evidence",
+        "sourceUrl": "https://www.krisatwork.ai/"
+      },
+      "website": "https://www.krisatwork.ai/"
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-12",
+    "researchedAt": "2026-11-13",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 274,
+    "directoryCount": 279,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 16,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local."
