@@ -2,7 +2,7 @@
 
 Updated 13 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 13 November public research — validated, publication pending
+## 13 November public research — published
 
 123retained/106active-held/17archived,279companies,18established,40coverage.
 Four new held internships across employer careers(Sure Mumbai),Indeed(SRV Kannur),
@@ -23,7 +23,18 @@ and local desktop/mobile checks passed:106active/17archived,279companies,40cover
 18 established/four established-role matches,synthetic saved stages/blacklist/
 assessments/profile/backup compatible,zero runtimeerrors or POSTs.
 Research and synthetic QA outsideGit:
-/workspace/job-refresh-nov13-review/. Exact topic production verification pending.
+/workspace/job-refresh-nov13-review/. Published exact commit `fcbbbad4d4630738d3f6a9f9d74dc8923f6c6f04`
+from the requested topic branch to existing project
+`prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`,default authenticated scope.
+READY production `dpl_5yTswyfGLfJ2aiHrr6Vkrpc8ReW5`;exact SHA/ref/project,
+production alias and nine live JSON/CSV/XLSX/report/watchlist/query-plan files
+verified. All nine returned200 and matched committed bytes. Live desktop/mobile
+checks passed with106active/17archived,279companies,40coverage and no runtime
+errors,POSTs or overflow. Synthetic saved stages,blacklist,assessments,criteria,
+profile and backup restore preserved;no actual browser state inspected.
+Account/protection/framework/Node unchanged. One production/no preview deployment
+for release SHA. This verification follow-up changes documentation only;no second
+deployment or feed regeneration.
 
 ## 12 November hiring-post follow-up — published
 
