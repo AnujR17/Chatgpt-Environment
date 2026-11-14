@@ -1,6 +1,30 @@
 # Job search agent handoff
 
-Updated 13 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 14 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 14 November public research — validated,publication pending
+
+126 retained/109 active-held/17 archived,283 companies,20 established,40 coverage.
+Three new held internships:BON Credit older indexed India-remote35k/month post
+(activity7474744068116381696,student year/current intake/duration unresolved),
+Snapmint4488413092 product interaction/motion Bengaluru,pay unknown,andFeelpixel
+current original UIUX internship,Pune,pay unknown,form401. No new current cohort
+confirmed. Gunadhya existing stablee4310669941f4c75 enriched with exactIndeedb51
+crosspost andemployeraccordion;F1studioz older employerpost appended,no duplicate.
+Four new company targets:BON,Snapmint,Feelpixel Workable andNykaa Dream preference.
+Snapmint/Nykaa established product/organisation profiles,workplaceunassessed.
+Nykaa1yoldMumbai studentpost/currentportalnojob:directoryonly,notactivevacancy.
+105primarychecks:94fetched,9restricted,2missing,no explicitclosure/retirement.
+All old IDs,requirements,pay,benchmarks,contacts,source prefix/history/exclusions,
+public screening andprivate-state compatibility preserved. Source coverage26
+rows refreshed;otherrowsleftdated,generated31queriesnotsearchresults. Workbook/
+CSV regenerated. No UI/model/assistant/seed/collector-main/schedule change or
+applications/messages. Research/QA outsideGit:/workspace/job-refresh-nov14-review/.
+Five JS suites,seven Python checks,build,preservation audit andlocal desktop/mobile
+checks passed:109active/17archived,283companies,40coverage,20established/five
+established-role matches. Synthetic saved stages,blacklist,assessments,criteria,
+profile andbackup compatibility retained;zero runtimeerrors,POSTs oroverflow.
+Exact topic production verification pending.
 
 ## 13 November public research — published
 

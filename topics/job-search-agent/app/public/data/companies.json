@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-13",
+  "researchedAt": "2026-11-14",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -1055,7 +1055,7 @@
         "note": "Low-confidence page displays about ₹10k/month and5 submissions, updated4 June2025. Historical report is below your target; verify whether this current role has a different budget."
       },
       "paySources": [],
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-14",
       "currentOpeningVerified": false,
       "company": "F1studioz",
       "category": "Possible",
@@ -1108,6 +1108,18 @@
           "label": "Employer UX internship social post",
           "evidenceStatus": "Indexed employer LinkedIn post",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://www.linkedin.com/posts/f1studioz_hiring-uxdesign-uxjobs-activity-7446791304879075328-v-9z",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Indexed employer f1Studioz post explicitly separates UXDesigners2–3years from UXInterns6months. Intern programme corroboration,not proof of separate requisition/seat/current intake. Exact post says6mo,crawl4weeks;normal original restricted. UX fundamentals,Figma,prototyping/usability,accessibility/responsive design,systems and research expected;no stipend amount. Published Satish Singh application address not contacted. Employer careers self-publishes five-day week,hybrid,POSH and mentorship claims;no independent team audit."
+        },
+        {
+          "url": "https://f1studioz.com/careers",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal employer culture/careers page readable,opening inventory not exposed as exact role detail. Self-published five-day/hybrid/POSH/perks are not independent workplace quality proof."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -4378,6 +4390,12 @@
           "label": "Official careers/contact source",
           "evidenceStatus": "Official page opened",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://www.yujdesigns.com/careers",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal current role inventory includes experienced seniorUX/design/sales/motion contractors,not a named coreUX intern. Published talent@yujdesigns.com is Careers&Internships query route,not a vacancy or guessed recruiter. General application form not submitted."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -4389,7 +4407,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Pune. Check each role for remote eligibility.",
-      "researchedAt": "2026-10-24"
+      "researchedAt": "2026-11-14"
     },
     {
       "id": "think-design-collaborative",
@@ -6669,7 +6687,7 @@
       ],
       "likelyRolesEvidence": "Inferred role families from business/current role; not additional advertised openings.",
       "rationale": "Relevant public design role found; confirm pay and eligibility. Category is a suggested preference, not hiring odds.",
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-14",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=e4310669941f4c75",
@@ -6682,6 +6700,18 @@
           "label": "Employer recruitment/context route",
           "evidenceStatus": "Official career page opened",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://www.gunadhyasoft.com/career/index#collapse-4",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal official careers accordion explicitly names UI/UX Intern(0–1),DOM role data-id MjMy,current source-backed anchor collapse-4. Figma,UX fundamentals,flows,prototypes,responsive UI,components and product/development/QA/business collaboration. Bachelor degree or pursuing graduation in relevant design/IT/CS fields,freshers and academic/personal projects welcomed. Pay,duration,exact student cohort/start and attendance not specified. Employer careers identity is Pune/Baner;page contains Pashan location for other roles,not established as this internship exact office. Normal exact Indeedb51e6ea1383be413 corroborates same UIUX body with Maharashtra location and no pay;platform metadata14May2026,not employer-original date or renewed intake. Company profile fromjk c35cf19d7024f7fa actually opens BusinessDevelopment&OperationsIntern:excluded as UIUX evidence after inspection. No guessed job ID from company profile page or salary transfer."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=b51e6ea1383be413",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal matching UIUXIntern crosspost retained as evidence on existing stable record,not a new job/company. Original requirements,contact,tier and firstSeen preserved."
         }
       ],
       "roles": [
@@ -14700,7 +14730,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families;not unadvertised vacancies.",
-      "researchedAt": "2026-11-11",
+      "researchedAt": "2026-11-14",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/4722763-visual-design-intern",
@@ -14713,6 +14743,12 @@
           "label": "11November public evidence",
           "checkedAt": "2026-11-11",
           "evidenceStatus": "Normal exact remains25kINR/month,pure visualdesign explicitly NOT product/UX;body October-endobjective older. No UXfeed addition or inferred currentUX vacancy."
+        },
+        {
+          "url": "https://wellfound.com/jobs/4722763-visual-design-intern",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal exact visualDesignIntern explicitly NOT product/UX.25,000INR/month,remoteIndia/student acceptance does not change scope. Possible futureUX extension is not currentUX vacancy;directory-only evidence retained."
         }
       ],
       "roles": [
@@ -19837,7 +19873,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-13",
+      "researchedAt": "2026-11-14",
       "sources": [
         {
           "url": "https://www.onething.design/careers/product-design-intern-gurgaon",
@@ -19868,6 +19904,12 @@
           "label": "13 November public research",
           "checkedAt": "2026-11-13",
           "evidenceStatus": "Normal exact15k/month six-month Gurgaonhybrid internship retained,final-semester/currentcohort toconfirm; named locationexception."
+        },
+        {
+          "url": "https://in.linkedin.com/company/onething-design",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Indexed company Updates invite final-semester students for ProductDesign/ARVR/AI/motion/content and link official careers;relative1w/crawl today are not verified original publication. Exact Gurgaon15k six-month internship retained;locationexception/student cohort toconfirm."
         }
       ],
       "roles": [
@@ -19953,7 +19995,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-13",
+      "researchedAt": "2026-11-14",
       "sources": [
         {
           "url": "https://www.devoqdesign.com/career/ui-ux-designer/",
@@ -19978,6 +20020,12 @@
           "label": "13 November public research",
           "checkedAt": "2026-11-13",
           "evidenceStatus": "Normal explicit internroute retained,pay/duration and Bopal/Bodakdev office unresolved."
+        },
+        {
+          "url": "https://www.devoqdesign.com/career/ui-ux-designer/",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal official explicit no-commercial-experience intern route retained,pay/duration/exact office unknown. DevoqLabs is a separate company name;its generic marketing/development posts not merged into DevoqDesign."
         }
       ],
       "roles": [
@@ -20044,7 +20092,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-13",
+      "researchedAt": "2026-11-14",
       "sources": [
         {
           "url": "https://hiredesigners.in/jobs/all-jobs-november-2026-uiux-designer-gurgaon-200ggn-ud-aa/",
@@ -20081,6 +20129,12 @@
           "label": "13 November public research",
           "checkedAt": "2026-11-13",
           "evidenceStatus": "Current publicclient inventory sampled;200GGN-UD-AA still3years and15lakh/year cap,no currentcoreUXintern verified."
+        },
+        {
+          "url": "https://hiredesigners.in/jobs/all-jobs-november-2026-uiux-designer-gurgaon-200ggn-ud-aa/",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal client200GGN-UD-AA still3years,Gurgaon,annualcap15lakh;unnamed client not guessed. Internal graphic intern not coreUX,older all-open-positions post7435928290499919873 is recruitment-channel discovery,not a specific new internship."
         }
       ],
       "roles": [
@@ -20499,14 +20553,439 @@
         "sourceUrl": "https://www.krisatwork.ai/"
       },
       "website": "https://www.krisatwork.ai/"
+    },
+    {
+      "id": "bon-credit",
+      "name": "BON Credit",
+      "company": "BON Credit",
+      "companyType": "Product company",
+      "sector": "Consumer credit,debt and personal-finance AI",
+      "focus": "Consumer credit,debt and personal-finance AI",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable editable product-company suggestion for explicit India remote product-design scope. Degree-year eligibility and renewed intake are unresolved; not a hiring probability or workplace endorsement.",
+      "careersUrl": "https://www.boncredit.ai/",
+      "locationNote": "Exact hiring post says remoteIndia; product serves US credit users",
+      "openingStatus": "Older company-linked35k/month design-intern post; current intake unknown",
+      "currentOpeningVerified": false,
+      "payNote": "Older exact post explicitly35,000INR/month; current intake,contract and stipend continuation unconfirmed. Not salary benchmark or received offer.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-14",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Public indexed exact Abhinav Jain activity7474744068116381696 advertises Product Design Intern,India remote,35,000INR/month,second- or third-year student,strong Figma/product thinking,Lottie bonus,and best two design works to published abhinav@boncredit.ai. Public author profile identifies BON Credit; public Uplers client testimonial identifies him as Founding Designer & PM at BON Credit. No guessed founder title or legal hiring authority. Exact index shows2mo Edited; search crawl labels vary2–4months and no exact original publication is verified. Normal original post/profile restricted. Current intake,duration,degree-year interpretation,start date and fixed contract remain unconfirmed. Official BON product site corroborates consumer credit/money AI app,not current internship. Advertised monthly amount established in older post,not a new current offer; hold until renewed intake is confirmed."
+        },
+        {
+          "url": "https://www.boncredit.ai/",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal official personal-finance AI product site readable and links BON company profile. Guessed /careers404 is not closure evidence for the hiring post; no current exact careers inventory recovered."
+        },
+        {
+          "url": "https://www.uplers.com/about-us/",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Public indexed client testimonial identifies Abhinav Jain as Founding Designer & PM at BON Credit; role relationship corroboration,not current internship availability or endorsement."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-post-boncredit-7474744068116381696",
+          "jobId": "linkedin-post-boncredit-7474744068116381696",
+          "title": "Product Design Intern",
+          "url": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_",
+          "seniority": "Internship; student cohort/current intake to confirm",
+          "location": "Remote — India",
+          "requirements": [
+            {
+              "id": "5a82ac86c8f7",
+              "text": "Second- or third-year student; exact degree programme interpretation to confirm",
+              "sourceUrl": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_"
+            },
+            {
+              "id": "487bc3d859fd",
+              "text": "Strong Figma and product thinking",
+              "sourceUrl": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_"
+            },
+            {
+              "id": "90aafe71763d",
+              "text": "Send two strongest design works; Lottie animation knowledge a bonus",
+              "sourceUrl": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_"
+            }
+          ],
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Public indexed exact Abhinav Jain activity7474744068116381696 advertises Product Design Intern,India remote,35,000INR/month,second- or third-year student,strong Figma/product thinking,Lottie bonus,and best two design works to published abhinav@boncredit.ai. Public author profile identifies BON Credit; public Uplers client testimonial identifies him as Founding Designer & PM at BON Credit. No guessed founder title or legal hiring authority. Exact index shows2mo Edited; search crawl labels vary2–4months and no exact original publication is verified. Normal original post/profile restricted. Current intake,duration,degree-year interpretation,start date and fixed contract remain unconfirmed. Official BON product site corroborates consumer credit/money AI app,not current internship. Advertised monthly amount established in older post,not a new current offer; hold until renewed intake is confirmed."
+        }
+      ],
+      "contact": {
+        "email": "abhinav@boncredit.ai",
+        "url": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_",
+        "kind": "Published application address in older internship post; current intake unconfirmed,no message sent",
+        "sourceUrl": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_"
+      },
+      "website": "https://www.boncredit.ai/"
+    },
+    {
+      "id": "snapmint",
+      "name": "Snapmint",
+      "company": "Snapmint",
+      "companyType": "Product company",
+      "sector": "Consumer payments,UPI instalments and EMI commerce",
+      "focus": "Consumer payments,UPI instalments and EMI commerce",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable editable product-company suggestion for explicit product-interaction scope and documented payments product. Motion-tool requirements need evidence; no stipend,culture or hiring-odds inference.",
+      "careersUrl": "https://snapmint.com/careers",
+      "locationNote": "Bengaluru office five days/week for exact internship;other offices not automatic eligibility",
+      "openingStatus": "Indexed employer job and company Update name fresher interaction/motion internship; numerical pay/duration unknown",
+      "currentOpeningVerified": false,
+      "payNote": "Exact internship pay undisclosed. Company scale/customer claims and senior salaries do not establish intern stipend.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-14",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/motion-graphics-interaction-design-intern-at-snapmint-4488413092",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Public indexed exact LinkedIn4488413092 advert names Motion Graphics & Interaction Design Intern,Product Design department,fresher,Bangalore,office five days/week,entity Snapmint Credit Advisory Private Limited. Scope: digital-product animations and micro-interactions,UX through motion and collaboration with product designers. Hands-on Figma,Lottie,Figma Make or animation tools such as After Effects/Rive expected. Stipend,duration,student cohort,start and exact employer-original posting date unstated. Relative20hours/6days/companyUpdate labels differ from crawl dates and are not verified publication. Normal original/company feed restricted. Indexed employer Updates corroborate same named role; official product/business sites corroborate payments/EMI business,not internship pay. No salary inferred from scale or brand. Title variants MotionGraphicsDesignIntern and MotionGraphics&Interaction refer to same4488413092,not two roles."
+        },
+        {
+          "url": "https://snapmint.com/careers",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal official careers URL returns18-character client shell; not a readable exact inventory or closure evidence. Official consumer/business sites establish product identity only."
+        },
+        {
+          "url": "https://www.snapmintbusiness.com/case-studies",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal official merchant case-study route documents product/customer work; employer self-published evidence,not internship pay or team-culture certification."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-snapmint-4488413092",
+          "jobId": "linkedin-snapmint-4488413092",
+          "title": "Motion Graphics & Interaction Design Intern",
+          "url": "https://in.linkedin.com/jobs/view/motion-graphics-interaction-design-intern-at-snapmint-4488413092",
+          "seniority": "Internship; student cohort/current intake to confirm",
+          "location": "Bengaluru — office five days per week",
+          "requirements": [
+            {
+              "id": "f247cb5556d1",
+              "text": "Fresher internship; Bangalore office five days/week",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/motion-graphics-interaction-design-intern-at-snapmint-4488413092"
+            },
+            {
+              "id": "35d475f7d585",
+              "text": "Animation,motion graphics,interaction design and basic UX principles",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/motion-graphics-interaction-design-intern-at-snapmint-4488413092"
+            },
+            {
+              "id": "9478548217a9",
+              "text": "Hands-on Figma,Lottie,Figma Make or similar tools such as After Effects/Rive",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/motion-graphics-interaction-design-intern-at-snapmint-4488413092"
+            },
+            {
+              "id": "315166f23abc",
+              "text": "Create digital-product micro-interactions and collaborate with product designers",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/motion-graphics-interaction-design-intern-at-snapmint-4488413092"
+            }
+          ],
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Public indexed exact LinkedIn4488413092 advert names Motion Graphics & Interaction Design Intern,Product Design department,fresher,Bangalore,office five days/week,entity Snapmint Credit Advisory Private Limited. Scope: digital-product animations and micro-interactions,UX through motion and collaboration with product designers. Hands-on Figma,Lottie,Figma Make or animation tools such as After Effects/Rive expected. Stipend,duration,student cohort,start and exact employer-original posting date unstated. Relative20hours/6days/companyUpdate labels differ from crawl dates and are not verified publication. Normal original/company feed restricted. Indexed employer Updates corroborate same named role; official product/business sites corroborate payments/EMI business,not internship pay. No salary inferred from scale or brand. Title variants MotionGraphicsDesignIntern and MotionGraphics&Interaction refer to same4488413092,not two roles."
+        }
+      ],
+      "contact": {
+        "url": "https://snapmint.com/careers",
+        "kind": "Published public route; purpose and verification limits in role evidence",
+        "sourceUrl": "https://snapmint.com/careers"
+      },
+      "website": "https://www.snapmint.com/",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Official consumer EMI/payments app and business merchant-platform/case-study sites document public product and organisational presence. Employer scale/customer claims are self-published,not independently audited.",
+        "checkedAt": "2026-11-14",
+        "sources": [
+          {
+            "url": "https://www.snapmint.com/",
+            "label": "Official organisation / product evidence",
+            "checkedAt": "2026-11-14",
+            "access": "normal"
+          },
+          {
+            "url": "https://www.snapmintbusiness.com/",
+            "label": "Official organisation / product evidence",
+            "checkedAt": "2026-11-14",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent workplace ranking, good-manager guarantee, current internship intake, stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "No representative role/team workplace review completed.",
+        "confidence": "Unknown",
+        "checkedAt": "2026-11-14",
+        "sources": [
+          {
+            "url": "https://www.snapmint.com/",
+            "label": "Employer identity only; no independent team assessment",
+            "checkedAt": "2026-11-14",
+            "access": "normal"
+          }
+        ],
+        "limits": "Employer product/customer/policy claims do not establish daily team practice.",
+        "nextAction": "Confirm manager, design mentorship, paid contract, hours, leave and learning scope; speak with recent interns from the same team before accepting."
+      }
+    },
+    {
+      "id": "feelpixel",
+      "name": "Feelpixel",
+      "company": "Feelpixel",
+      "companyType": "UX/product studio",
+      "sector": "Web/mobile UX,enterprise SaaS,AI experiences,research and design systems",
+      "focus": "Web/mobile UX,enterprise SaaS,AI experiences,research and design systems",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable editable studio suggestion for current named supervised UX internship and documented digital-product services. Employer testimonials are not representative independent culture evidence.",
+      "careersUrl": "https://www.feelpixel.in/ux-careers/",
+      "locationNote": "Pune exact internship;Mumbai office does not imply Mumbai intern intake",
+      "openingStatus": "Current employer index and exact UIUX internship readable;form401,pay/cohort unknown",
+      "currentOpeningVerified": true,
+      "payNote": "No current numerical stipend stated;older/mirror posts also undisclosed. No inference from testimonials or brand clients.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-14",
+      "sources": [
+        {
+          "url": "https://www.feelpixel.in/ui-ux-designer/",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal exact employer page explicitly titled UI/UX Design Intern,Pune;current official careers index links it. Interns support research/problem framing,rapid testing/iteration,user flows,wireframes,prototypes and visual UI under senior guidance. Requires UX/UI fundamentals,Figma/Sketch/XD or similar,attention to detail and communication. No numerical pay,duration,student cohort,start or original date stated. Exact published ApplyNow GoogleForm returns401; access gate not bypassed,no submission. Older employer LinkedInpost7305161950034890752 names Pune on-site six-month UIUX internship; current exact cohort/duration not automatically established. Matching UknowUX1334 labels23October posted/25October checked:mirror dates,not employer-original dates. Separate older AIProductDesignerIntern post7463091011439722496 is different wording/scope,not an extra verified current vacancy."
+        },
+        {
+          "url": "https://www.feelpixel.in/ux-careers/",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal official inventory explicitly lists UIUXDesignIntern,Pune. Published employee testimonials and work-life claims are employer-selected,not independent culture audit. Shared info inbox purpose retained."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/valentina-james-7a3521246_were-hiring-ai-product-designer-intern-activity-7463091011439722496-OP8U",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Indexed Valentina James post4mo Edited explicitlynames Feelpixel AIProductDesignerIntern,Pune,six months,UX research/interaction,AI workflows,prompt experiences,systems/prototyping. Shortlink restricted;current exact AI intake/pay not corroborated. Distinct older role wording retained as directory evidence,no second verified feed vacancy."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-feelpixel-uiux-design-intern",
+          "jobId": "careers-feelpixel-uiux-design-intern",
+          "title": "UI/UX Design Intern",
+          "url": "https://www.feelpixel.in/ui-ux-designer/",
+          "seniority": "Internship; student cohort/current intake to confirm",
+          "location": "Pune — on site per older employer post;current arrangement to confirm",
+          "requirements": [
+            {
+              "id": "3c4301553eef",
+              "text": "UX/UI fundamentals and Figma,Sketch,Adobe XD or similar",
+              "sourceUrl": "https://www.feelpixel.in/ui-ux-designer/"
+            },
+            {
+              "id": "e20a14e171a9",
+              "text": "User research/problem framing,rapid testing,flows,wireframes and prototypes",
+              "sourceUrl": "https://www.feelpixel.in/ui-ux-designer/"
+            },
+            {
+              "id": "8424333b5c3d",
+              "text": "Visual interface detail,communication,collaboration and willingness to learn",
+              "sourceUrl": "https://www.feelpixel.in/ui-ux-designer/"
+            }
+          ],
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal exact employer page explicitly titled UI/UX Design Intern,Pune;current official careers index links it. Interns support research/problem framing,rapid testing/iteration,user flows,wireframes,prototypes and visual UI under senior guidance. Requires UX/UI fundamentals,Figma/Sketch/XD or similar,attention to detail and communication. No numerical pay,duration,student cohort,start or original date stated. Exact published ApplyNow GoogleForm returns401; access gate not bypassed,no submission. Older employer LinkedInpost7305161950034890752 names Pune on-site six-month UIUX internship; current exact cohort/duration not automatically established. Matching UknowUX1334 labels23October posted/25October checked:mirror dates,not employer-original dates. Separate older AIProductDesignerIntern post7463091011439722496 is different wording/scope,not an extra verified current vacancy."
+        },
+        {
+          "id": "feelpixel-ai-intern-post-7463091011439722496",
+          "title": "AI Product Designer Intern — older post,current intake unverified",
+          "seniority": "Older indexed internship post;not additional current confirmed vacancy",
+          "url": "https://www.linkedin.com/posts/valentina-james-7a3521246_were-hiring-ai-product-designer-intern-activity-7463091011439722496-OP8U",
+          "location": "Pune,six months per older post",
+          "requirements": [
+            {
+              "id": "d95a6b6df7df",
+              "text": "AI-powered UX research and interaction design",
+              "sourceUrl": "https://www.linkedin.com/posts/valentina-james-7a3521246_were-hiring-ai-product-designer-intern-activity-7463091011439722496-OP8U"
+            },
+            {
+              "id": "864e79379b41",
+              "text": "AI workflows,prompt-driven experiences,design systems and rapid prototyping",
+              "sourceUrl": "https://www.linkedin.com/posts/valentina-james-7a3521246_were-hiring-ai-product-designer-intern-activity-7463091011439722496-OP8U"
+            }
+          ],
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Indexed4moEdited;author explicitlynames employer,precisecurrent recruiting relationship/intake unverified. Normal post/shortlink restricted,pay unknown.",
+          "socialEvidence": {
+            "activityId": "7463091011439722496",
+            "author": "Valentina James",
+            "authorRelationship": "Post explicitly names Feelpixel;precise current recruiting relationship unverified",
+            "originalPublishedAt": null,
+            "dateWording": "Indexed4mo Edited;not an exact original date",
+            "access": "Indexed public original;normal post/shortlink restricted"
+          }
+        }
+      ],
+      "contact": {
+        "email": "info@feelpixel.in",
+        "url": "https://www.feelpixel.in/ux-careers/",
+        "kind": "Official careers page says Join us at this shared/general inbox;exact role links GoogleForm. No message sent.",
+        "sourceUrl": "https://www.feelpixel.in/ux-careers/"
+      },
+      "website": "https://www.feelpixel.in/"
+    },
+    {
+      "id": "nykaa",
+      "name": "Nykaa",
+      "company": "Nykaa",
+      "companyType": "Product company",
+      "sector": "Consumer beauty,fashion and lifestyle ecommerce",
+      "focus": "Consumer beauty,fashion and lifestyle ecommerce",
+      "tier": "Dream",
+      "categorySuggested": "Dream",
+      "categorySuggestedOnly": true,
+      "rationale": "Dream editable product/company preference for documented consumer ecommerce scope. Watchlist only:current eligible UX internship and stipend unknown;not a hiring probability or job offer.",
+      "careersUrl": "https://careers.nykaa.com/",
+      "locationNote": "Older design postMumbai office;other location eligibility not established",
+      "openingStatus": "Official portal currently no postings;older design-intern post not renewed",
+      "currentOpeningVerified": false,
+      "payNote": "No current or historical numerical stipend verified from exact design-intern evidence. No inference from company reputation.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-14",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/posts/amey-malankar-6607a2b4_were-hiring-a-product-design-intern-at-nykaa-activity-7354004376878825472-AKwv",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Indexed Amey Malankar post explicitly names Nykaa ProductDesignIntern,three months,on-siteMumbai,final-year master design student,and published designhiring@nykaa.com. Extract says1yEdited despite latercrawl labels;not a fresh/current cohort. Normal original restricted;author relationship is claimed in post,precise current hiring authority not verified. Normal official careers.nykaa.com currently says no job postings available and hiring never charges a fee. That portal sample does not prove every social/off-campus channel closed,or reopen this year-old intake. Directory historical-programme evidence only;no new active feed card or salary inferred."
+        },
+        {
+          "url": "https://careers.nykaa.com/",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Normal employer portal says currently no job postings and explicitly no hiring fee. Support address is for candidate privacy/data access,not applications. Public/indexed corporate ecommerce identity verified;no role inferred from portal/homepage."
+        },
+        {
+          "url": "https://www.nykaa.com/who_are_we-app/lp",
+          "label": "14 November public research",
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Indexed official corporate identity identifies digital-first consumer ecommerce company. Normal automated original restricted;no original-access claim or numerical stipend derived."
+        }
+      ],
+      "roles": [
+        {
+          "id": "nykaa-post-7354004376878825472",
+          "title": "Product Design Intern — older Mumbai student post,current intake unverified",
+          "seniority": "Historical/older internship post,not a current verified opening",
+          "url": "https://www.linkedin.com/posts/amey-malankar-6607a2b4_were-hiring-a-product-design-intern-at-nykaa-activity-7354004376878825472-AKwv",
+          "location": "Mumbai,on site,three months per older post",
+          "requirements": [
+            {
+              "id": "d54d7c17956a",
+              "text": "Final-year master student in design per older post",
+              "sourceUrl": "https://www.linkedin.com/posts/amey-malankar-6607a2b4_were-hiring-a-product-design-intern-at-nykaa-activity-7354004376878825472-AKwv"
+            },
+            {
+              "id": "aed3effd7ee1",
+              "text": "Curiosity,portfolio and willingness to learn",
+              "sourceUrl": "https://www.linkedin.com/posts/amey-malankar-6607a2b4_were-hiring-a-product-design-intern-at-nykaa-activity-7354004376878825472-AKwv"
+            },
+            {
+              "id": "62b2a6085577",
+              "text": "Three-month Mumbai office availability;current cohort unverified",
+              "sourceUrl": "https://www.linkedin.com/posts/amey-malankar-6607a2b4_were-hiring-a-product-design-intern-at-nykaa-activity-7354004376878825472-AKwv"
+            }
+          ],
+          "checkedAt": "2026-11-14",
+          "evidenceStatus": "Indexed Amey Malankar post explicitly names Nykaa ProductDesignIntern,three months,on-siteMumbai,final-year master design student,and published designhiring@nykaa.com. Extract says1yEdited despite latercrawl labels;not a fresh/current cohort. Normal original restricted;author relationship is claimed in post,precise current hiring authority not verified. Normal official careers.nykaa.com currently says no job postings available and hiring never charges a fee. That portal sample does not prove every social/off-campus channel closed,or reopen this year-old intake. Directory historical-programme evidence only;no new active feed card or salary inferred.",
+          "socialEvidence": {
+            "activityId": "7354004376878825472",
+            "author": "Amey Malankar",
+            "authorRelationship": "Post claims hiring at Nykaa;precise current hiring authority unverified",
+            "originalPublishedAt": null,
+            "dateWording": "Indexed1y Edited;later crawl is not renewed intake",
+            "access": "Indexed public original;normal original restricted"
+          }
+        }
+      ],
+      "contact": {
+        "url": "https://careers.nykaa.com/",
+        "kind": "Official careers portal;support@nykaa.com there is a privacy/data-rights route,not recruitment. No message sent.",
+        "sourceUrl": "https://careers.nykaa.com/"
+      },
+      "website": "https://www.nykaa.com/",
+      "employerProfile": {
+        "status": "established",
+        "basis": "Official employer careers portal identifies established consumer beauty,fashion and lifestyle ecommerce organisation and links nykaa.com. Public organisational presence only;no current design vacancy or culture guarantee.",
+        "checkedAt": "2026-11-14",
+        "sources": [
+          {
+            "url": "https://careers.nykaa.com/",
+            "label": "Official organisation / product evidence",
+            "checkedAt": "2026-11-14",
+            "access": "normal"
+          }
+        ],
+        "limits": "Public organisational/product presence only. Not an independent workplace ranking, good-manager guarantee, current internship intake, stipend evidence or hiring probability."
+      },
+      "workplaceReview": {
+        "status": "unassessed",
+        "summary": "No representative role/team workplace review completed.",
+        "confidence": "Unknown",
+        "checkedAt": "2026-11-14",
+        "sources": [
+          {
+            "url": "https://careers.nykaa.com/",
+            "label": "Employer identity only; no independent team assessment",
+            "checkedAt": "2026-11-14",
+            "access": "normal"
+          }
+        ],
+        "limits": "Employer product/customer/policy claims do not establish daily team practice.",
+        "nextAction": "Confirm manager, design mentorship, paid contract, hours, leave and learning scope; speak with recent interns from the same team before accepting."
+      }
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-13",
+    "researchedAt": "2026-11-14",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 279,
+    "directoryCount": 283,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 16,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local."
