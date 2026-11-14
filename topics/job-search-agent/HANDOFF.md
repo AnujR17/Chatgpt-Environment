@@ -2,7 +2,7 @@
 
 Updated 14 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 14 November public research — validated,publication pending
+## 14 November public research — published
 
 126 retained/109 active-held/17 archived,283 companies,20 established,40 coverage.
 Three new held internships:BON Credit older indexed India-remote35k/month post
@@ -24,7 +24,17 @@ Five JS suites,seven Python checks,build,preservation audit andlocal desktop/mob
 checks passed:109active/17archived,283companies,40coverage,20established/five
 established-role matches. Synthetic saved stages,blacklist,assessments,criteria,
 profile andbackup compatibility retained;zero runtimeerrors,POSTs oroverflow.
-Exact topic production verification pending.
+Published exact commit `64ef63ba9ee751eb597fdde9b5391830778395ca` from requested topic branch
+in existing project `prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`,default scope.
+READY production `dpl_8cwJ9d4UYfe39MV2E9U2hKmo3W2L`;exact SHA/ref/project,
+production alias and nine live JSON/CSV/XLSX/report/watchlist/query-plan files
+verified. All nine returned200 and match committed bytes. Live desktop/mobile
+checks passed:109active/17archived,283companies,40coverage,20established/five
+established-role matches;synthetic saved stages,blacklist,assessments,criteria,
+profile andbackup compatible,zero runtimeerrors,POSTs oroverflow. No actual
+browser-local state inspected. Project/account/protection/framework/Node
+unchanged. One production/no preview deployment for release SHA. This follow-up
+changes documentation only;no second deployment or feed regeneration.
 
 ## 13 November public research — published
 
