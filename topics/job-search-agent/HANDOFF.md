@@ -1,6 +1,30 @@
 # Job search agent handoff
 
-Updated 14 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 15 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 15 November public research — validated,publication pending
+
+128retained/110active-held/18archived,286companies,20established,40coverage.
+New held olderpost-only internships:Reney7493276893811712000 MumbaiVileParle and
+BecomingQuotient7475050721864957952 hybridMumbai,paidamountunknown/immediatestart
+flag,laterjoining/studentcohort/durationrequireconfirmation. No newconfirmed
+currentcohort/numericalstipend or verifiedjuniorvacancyinvented. AuthorBecoming
+relationship corroborated byofficialcareers;Reneyofficialproduct/legalidentity,
+preciseauthorhiringauthorityunknown. AddedEmaDreamproductcompanytargetonly,current
+IndiaProductdesignerfulltime/experienceunverified,notintern/fresher. Reney/BQ
+Workablepreferences,notodds. ExistingArihant70c42IndeedalreadyadditionalSource:
+recheckedunchanged,no newcard/source;Lokalolder740778postappended,notnewintake.
+BrainoidexactSorryThisjobhasexpired archived,company/rolepaststatushistoryretained;
+allstableIDs/requirements/pay/benchmarks/sourceprefix/exclusions/contacts/screens/
+private-statecompatibilitypreserved.108primary:95fetched,11restricted,2missing.
+25coverageupdated,othersleftdated;31generatedqueriesnotsearchproof. Workbook/
+directoryCSVregenerated. No UI/model/assistant/seed/collector-main/task/schedule
+change or applications/messages. Research/QA outsideGit:
+/workspace/job-refresh-nov15-review/. Five JS suites,seven Python checks,build,
+preservation audit andlocal desktop/mobile checks passed:110active/18archived,
+286companies,40coverage,20established/fiveestablished-role matches. Synthetic
+saved stages,blacklist,assessments,criteria,profile andbackup compatible;zero
+runtimeerrors,POSTs oroverflow. Exact topic production verification pending.
 
 ## 14 November public research — published
 
