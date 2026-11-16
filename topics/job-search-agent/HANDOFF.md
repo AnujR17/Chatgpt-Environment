@@ -1,6 +1,37 @@
 # Job search agent handoff
 
-Updated 15 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 16 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 16 November public research — publication pending
+
+131 retained/112 active-held/19 archived,289 companies,20 established profiles,
+40 coverage rows(25 updated). New held roles:Usability Designs original remote
+UX internship with unknown pay;distinct Cehpoint AI/SaaS product-design intern
+10–20k/month with five-day pre-offer project payment/use/ownership unresolved;
+older0xTeam post7474817212743081984,now Vaultline Security,paid amount,duration,
+India/current intake unknown. Tagged employee/company and official rebrand
+corroborated;unrelated0xteam/leval not merged. Gnixar stable card upgraded from
+JobLeads to exact employer25–40k/month,six months,India remote;mirror/history/
+firstSeen retained,student cohort and joining unknown. Exact Moon permanent
+trainee45ad expired on Indeed plus no current official inventory entry;archived
+only this record,separate eaa student internship retained. No new junior or
+confirmed student start invented. Added Gnixar/Usability Workable andVaultline
+Possible preference targets;not quality/hiring odds. Existing screenings,tiers,
+contacts,source prefixes,requirement IDs and browser-state compatibility retained.
+
+109 retained active primaries:94 fetched,13 restricted,2missing,no errors.
+Nonlinear/YTT missing unresolved. Broad jobs/post/company/remote/map coverage
+recorded with access/date limits. Onething/HireDesigners/Devoq checked;NetBramha/
+Lollypop/yuj rotation and established-employer author/post samples. RADexpired,
+WhatfixSeptemberdeadline,NeuraCite/baeshunpaid,Refactor/Timbre410 excluded. FirstHire
+indexedNaukrimirror normalbody mismatches not genuineadditionalSources. No forms,
+accounts,exercises,messages,applications,UI/model/Assistant/seed/collector-main/
+task/schedule changes. Research and synthetic QA outside Git:
+/workspace/job-refresh-nov16-review/. Workbook and directory CSV regenerated. Five JS suites,seven Python checks,build,
+preservation audit and local desktop/mobile checks passed:112 active/19 archived,
+289 companies,40 coverage,20 established/five established-role matches. Synthetic
+private saved-state/backup compatibility preserved;no actual browser-local data
+accessed. Zero runtime errors,POSTs or mobile overflow. Publication pending.
 
 ## 15 November public research — published
 

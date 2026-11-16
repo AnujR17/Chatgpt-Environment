@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-15",
+  "researchedAt": "2026-11-16",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -1138,7 +1138,7 @@
       "tier": "Workable",
       "categorySuggested": "Workable",
       "categorySuggestedOnly": true,
-      "rationale": "Employer careers lists a fresher UI/UX trainee role in Gujarat. Confirm starting pay and graduate requirements.",
+      "rationale": "Editable Gujarat services-team preference based on a separate advertised student UIUX internship;older permanent trainee requisition expired. Current cohort and individual terms need confirmation.",
       "locationNote": "Ahmedabad, Gujarat · office based",
       "careersUrl": "https://www.moontechnolabs.com/career-with-us/",
       "focus": "Digital products & services",
@@ -1146,7 +1146,7 @@
       "payLabel": "Pay needs confirmation",
       "payBenchmark": null,
       "paySources": [],
-      "researchedAt": "2026-11-12",
+      "researchedAt": "2026-11-16",
       "currentOpeningVerified": false,
       "companyType": "Services",
       "likelyRoles": [
@@ -1171,6 +1171,18 @@
           "label": "12 November public evidence",
           "checkedAt": "2026-11-12",
           "evidenceStatus": "Official current careers and general recruitment route readable; visible dropdown has other functions but no UI/UX internship. Confirms employer identity/contact purpose, not current internship cohort or individual stipend. Existing permanent trainee evidence remains separate."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=45ad3491be217187",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal exact Indeed trainee45ad3491be217187 now explicitly states This job has expired on Indeed. Normal official current careers inventory has no visible UI/UX trainee entry;general talent submission is not a current role. Retire this permanent trainee requisition only. Separate student/fresher UIUX internship eaa533209a303dc0 remains readable and held;its stipend is not transferred to this trainee. Old requirements,pay/source evidence and browser-local application history remain separate."
+        },
+        {
+          "url": "https://www.moontechnolabs.com/career-with-us/",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal official inventory lacks the former trainee and design internship;general recruitment contact retains its actual purpose. Readable separate Indeed internship is not established by generic talent submission."
         }
       ],
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
@@ -1181,15 +1193,23 @@
           "title": "Trainee UI/UX Designer",
           "url": "https://in.indeed.com/viewjob?jk=45ad3491be217187",
           "location": "Ahmedabad, Gujarat",
-          "seniority": "Junior / fresher",
-          "evidenceStatus": "Indeed detail accessible; official careers page lists Trainee UI/UX Designer with experience Fresher. Submission not tested; this is a junior job alternative, not an internship.",
+          "seniority": "Junior / fresher — exact platform listing expired",
+          "evidenceStatus": "Normal exact Indeed trainee45ad3491be217187 now explicitly states This job has expired on Indeed. Normal official current careers inventory has no visible UI/UX trainee entry;general talent submission is not a current role. Retire this permanent trainee requisition only. Separate student/fresher UIUX internship eaa533209a303dc0 remains readable and held;its stipend is not transferred to this trainee. Old requirements,pay/source evidence and browser-local application history remain separate.",
           "requirements": [
             {
               "id": "listing-summary",
               "text": "Figma or Adobe XD; Wireframes, prototypes, research and design systems; Bachelor's graduate and developer handoff skills.",
               "sourceUrl": "https://in.indeed.com/viewjob?jk=45ad3491be217187"
             }
-          ]
+          ],
+          "evidenceHistory": [
+            {
+              "checkedAt": null,
+              "seniority": "Junior / fresher",
+              "evidenceStatus": "Indeed detail accessible; official careers page lists Trainee UI/UX Designer with experience Fresher. Submission not tested; this is a junior job alternative, not an internship."
+            }
+          ],
+          "checkedAt": "2026-11-16"
         },
         {
           "id": "indeed-moontechnolabs-uiux-intern-eaa533209a303dc0",
@@ -1224,7 +1244,13 @@
           "evidenceStatus": "Normal exact employer-authored Indeed advert explicitly names UI/UX Design Intern, Ahmedabad in person, freshers/0–1 year, pursuing or recently completed related design degree/diploma and3–6months. Body and header both state INR11,283.96–48,560.89 per month; MONTH structured metadata agrees. This is a verified advertised monthly range, not a received offer or guaranteed individual award. The unusually broad, precise range requires employer confirmation; its minimum meets Gujarat10k floor but is below15k preference. Platform date2November2026, not12November discovery. Full-time header describes hours; body explicitly calls this an internship. Distinct from retained permanent Trainee UI/UX Designer45ad3491be217187; do not combine salary or degree-year constraints. Official career-with-us page is readable and lists other vacancies/general recruitment route but no UI/UX internship in its visible inventory, so current intake remains conditional. Glassdoor indexed employer-provided copy corroborates role/range but its relative dates/crawl are not original posting dates. No application or message sent."
         }
       ],
-      "openingStatus": "Separate Indeed student/fresher internship advert readable; official visible careers inventory does not confirm its cohort. Permanent trainee record remains separate."
+      "openingStatus": "Exact permanent trainee Indeed45ad3491be217187 expired. Separate student UIUX internship eaa533209a303dc0 remains held with current-cohort and broad-range caveats;not company-wide closure.",
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-12",
+          "openingStatus": "Separate Indeed student/fresher internship advert readable; official visible careers inventory does not confirm its cohort. Permanent trainee record remains separate."
+        }
+      ]
     },
     {
       "id": "zunderdog",
@@ -2332,6 +2358,12 @@
           "label": "12 November public evidence",
           "checkedAt": "2026-11-12",
           "evidenceStatus": "Normal matching Unstop product-design internship deadline23September2026 is expired. Fresh normal Trakstar employer inventory has Product Design Lead (Manager), not internship. No current suitable vacancy added; cached internship index and speculative mirrors do not establish reopening."
+        },
+        {
+          "url": "https://unstop.com/internships/product-design-internship-whatfix-1751971/amp",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal exact Unstop1751971 registrationdeadline23September2026. Relative9daysleft/crawltoday inconsistent;expireddeadline retained asnegative,not a currentinternship."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -2339,7 +2371,7 @@
       "tier": "Possible",
       "focus": "Digital adoption platform",
       "rationale": "Product team working in digital adoption platform. Watch published internship and early-career roles; current evidence is recorded below.",
-      "researchedAt": "2026-11-12",
+      "researchedAt": "2026-11-16",
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
     },
     {
@@ -4279,6 +4311,12 @@
           "label": "Official careers/contact source",
           "evidenceStatus": "Official page opened",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://www.netbramha.com/careers",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal careers andindexedposts sampled:contentcreator/businessdevelopmentinterns are not coreUXinterns;experienceddesignroles not studentopenings."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -4290,7 +4328,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Bengaluru. Check each role for remote eligibility.",
-      "researchedAt": "2026-10-24"
+      "researchedAt": "2026-11-16"
     },
     {
       "id": "lollypop-design-studio",
@@ -4366,6 +4404,12 @@
           "label": "13 November public research",
           "checkedAt": "2026-11-13",
           "evidenceStatus": "NormalAssociateUXResearcher retains1–3years and completed relevantdegree. Existing role/requirementIDs retained,not promoted as fresher internship."
+        },
+        {
+          "url": "https://lollypop.design/careers/",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal careers/indexedhiring posts distinguish associateUXresearcher from seniorUX/UIroles andvideo/marketing/salesinternships;academytraining promotionsnot a verifiedpaidUXvacancy."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -4377,7 +4421,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Bengaluru, Mumbai, Chennai, Hyderabad. Check each role for remote eligibility.",
-      "researchedAt": "2026-11-13"
+      "researchedAt": "2026-11-16"
     },
     {
       "id": "yuj",
@@ -4414,6 +4458,12 @@
           "label": "14 November public research",
           "checkedAt": "2026-11-14",
           "evidenceStatus": "Normal current role inventory includes experienced seniorUX/design/sales/motion contractors,not a named coreUX intern. Published talent@yujdesigns.com is Careers&Internships query route,not a vacancy or guessed recruiter. General application form not submitted."
+        },
+        {
+          "url": "https://www.yujdesigns.com/careers",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal careers andindexedcompanyUpdates sampled;prior4Novemberdeadlineexplicitlynotinternship andjoining/reflectionposts not current vacancies."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -4425,7 +4475,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Pune. Check each role for remote eligibility.",
-      "researchedAt": "2026-11-14"
+      "researchedAt": "2026-11-16"
     },
     {
       "id": "think-design-collaborative",
@@ -15197,21 +15247,33 @@
       "rationale": "Suggested preference based on public product/design scope and location evidence;not personal fit,hiring probability or an offer.",
       "careersUrl": "https://www.cehpoint.co.in/careers.html",
       "locationNote": "RemoteIndia;freshers/final-year wording",
-      "payNote": "Original paid internship8,000–15,000INR/month;below target.",
-      "openingStatus": "Exact original states8–15k/month and five-working-day practical evaluation before offer. Fellowship/PPO headings do not establish guaranteed conversion;not a stipend match.",
+      "payNote": "Original distinct UIUX internship8–15k/month minimum below remote floor. Separate AI/SaaS product-designer internship10–20k/month;pre-offer five-day project payment/use/ownership unknown. No conversion guarantee or received offer.",
+      "openingStatus": "Two distinct original design adverts:older UIUXIntern8–15k below10k minimum;new AI/SaaS UIUXProductDesignerIntern10–20k monthly held pending five-day pre-offer project terms,duration and student cohort.",
       "evidenceConfidence": "Original/public employer evidence for stated terms;unresolved intake,location and pay limits remain explicit.",
       "likelyRoles": [
         "Product Designer",
         "UX Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-04",
+      "researchedAt": "2026-11-16",
       "sources": [
         {
           "url": "https://www.cehpoint.co.in/careers/uiux-design-intern",
           "label": "4November public role evidence",
           "checkedAt": "2026-11-04",
           "evidenceStatus": "Exact original states8–15k/month and five-working-day practical evaluation before offer. Fellowship/PPO headings do not establish guaranteed conversion;not a stipend match."
+        },
+        {
+          "url": "https://www.cehpoint.co.in/careers/ui-ux-product-designer-intern",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal exact employer original and current careers index list UI/UX Product Designer (AI & Dark-mode SaaS Interfaces),Internship,RemoteIndia,INR10,000–20,000/month. Separate from older UIUXDesignIntern8–15k/month,whose minimum remains below remote10k floor. New role asks Figma auto-layout/components/variants,design tokens,typography,prototypes,responsiveSaaS and portfolio. Duration,student cohort and joining unstated. Employer requires written integrity check and five working days of real practical project before an offer;payment,commercial use and ownership for that evaluation are not established. Monthly internship paid wording does not prove pre-offer project pay. FullPPO heading conflicts with potential/conditional selection language;conversion is not guaranteed. No skill-fit upload,account,answers,test,application or exercise performed."
+        },
+        {
+          "url": "https://www.cehpoint.co.in/careers.html",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal current index lists both distinct design titles. Paid monthly internships do not establish payment for the pre-offer five-working-day project. Original contact purpose retained unchanged."
         }
       ],
       "roles": [
@@ -15240,13 +15302,57 @@
           ],
           "evidenceStatus": "Exact original states8–15k/month and five-working-day practical evaluation before offer. Fellowship/PPO headings do not establish guaranteed conversion;not a stipend match.",
           "checkedAt": "2026-11-04"
+        },
+        {
+          "id": "careers-cehpoint-ui-ux-product-designer-intern",
+          "jobId": "careers-cehpoint-ui-ux-product-designer-intern",
+          "title": "UI/UX Product Designer Intern — AI & SaaS",
+          "url": "https://www.cehpoint.co.in/careers/ui-ux-product-designer-intern",
+          "seniority": "Internship; current cohort and student eligibility to confirm",
+          "location": "Remote, India",
+          "requirements": [
+            {
+              "id": "b5672d01874f",
+              "text": "Figma auto-layout,components,variants and interactive prototypes",
+              "sourceUrl": "https://www.cehpoint.co.in/careers/ui-ux-product-designer-intern"
+            },
+            {
+              "id": "b369be81e669",
+              "text": "Design tokens,typography and responsiveSaaS workflows",
+              "sourceUrl": "https://www.cehpoint.co.in/careers/ui-ux-product-designer-intern"
+            },
+            {
+              "id": "aa5fb0d6a950",
+              "text": "Portfolio of personal/freelance UI work;visual hierarchy and micro-interactions",
+              "sourceUrl": "https://www.cehpoint.co.in/careers/ui-ux-product-designer-intern"
+            },
+            {
+              "id": "105ae093708f",
+              "text": "Five-day pre-offer practical project;payment/use/ownership terms unverified",
+              "sourceUrl": "https://www.cehpoint.co.in/careers/ui-ux-product-designer-intern"
+            }
+          ],
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal exact employer original and current careers index list UI/UX Product Designer (AI & Dark-mode SaaS Interfaces),Internship,RemoteIndia,INR10,000–20,000/month. Separate from older UIUXDesignIntern8–15k/month,whose minimum remains below remote10k floor. New role asks Figma auto-layout/components/variants,design tokens,typography,prototypes,responsiveSaaS and portfolio. Duration,student cohort and joining unstated. Employer requires written integrity check and five working days of real practical project before an offer;payment,commercial use and ownership for that evaluation are not established. Monthly internship paid wording does not prove pre-offer project pay. FullPPO heading conflicts with potential/conditional selection language;conversion is not guaranteed. No skill-fit upload,account,answers,test,application or exercise performed."
         }
       ],
       "contact": {
         "email": "uiux-design-intern-careers@cehpoint.co.in",
         "kind": "Dedicated role inquiry inbox explicitly published by employer",
         "sourceUrl": "https://www.cehpoint.co.in/careers/uiux-design-intern"
-      }
+      },
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-04",
+          "openingStatus": "Exact original states8–15k/month and five-working-day practical evaluation before offer. Fellowship/PPO headings do not establish guaranteed conversion;not a stipend match."
+        }
+      ],
+      "payEvidenceHistory": [
+        {
+          "checkedAt": "2026-11-04",
+          "payNote": "Original paid internship8,000–15,000INR/month;below target."
+        }
+      ]
     },
     {
       "id": "louis-polo",
@@ -20154,7 +20260,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-15",
+      "researchedAt": "2026-11-16",
       "sources": [
         {
           "url": "https://hiredesigners.in/jobs/all-jobs-november-2026-uiux-designer-gurgaon-200ggn-ud-aa/",
@@ -20203,6 +20309,12 @@
           "label": "15 November public research",
           "checkedAt": "2026-11-15",
           "evidenceStatus": "Normal exactclient200GGN-UD-AA still3years,Gurgaon,annualcap15lakh;clientunnamed,not guessed. Alljobs/internal andcompanyposts sampled,no new matchingcoreUXinternverified."
+        },
+        {
+          "url": "https://hiredesigners.in/all-jobs/",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal inventory/companyUpdates sampled;clientmotiongraphic2years/fashion7+years outsidecoreUX;generic talent pool/recruitment posts not internal design vacancy. PriorUIUX200GGN-UD-AA3years remainsexperienced,clientnotguessed."
         }
       ],
       "roles": [
@@ -21266,14 +21378,265 @@
         "sourceUrl": "https://www.ema.ai/careers/jobs"
       },
       "website": "https://www.ema.ai/"
+    },
+    {
+      "id": "gnixar-academy",
+      "name": "Gnixar Academy",
+      "company": "Gnixar Academy",
+      "companyType": "Education product / services company",
+      "sector": "Learning portal and professional education",
+      "focus": "Learning portal and professional education",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable editable product/education preference based on learner-portal design scope and sourced remote India terms. Academy marketing and placement claims are not independently verified quality or employment guarantees.",
+      "careersUrl": "https://www.gnixar.in/careers",
+      "locationNote": "RemoteIndia exact internship;six months;current student cohort unknown",
+      "openingStatus": "Exact original Product Design Intern and monthly INR25–40k advertised;current joining/student intake unconfirmed",
+      "currentOpeningVerified": false,
+      "payNote": "Exact current job states INR25,000–40,000/month;not an individual offer. Confirm fixed stipend and a paid,no-fee employment route separate from training admissions.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://www.gnixar.in/careers/product-design-intern",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal exact Gnixar employer page explicitly advertises Product Design Intern,Remote India,six months,0–1years and INR25–40k/month. Duties include learner-portal/site flows,prototypes/testing and design-system contributions;portfolio,Figma and willingness to learn. Exact application form is visible and was not submitted. The normal careers index returns Loading roles/Loading openings,so it does not independently corroborate current inventory. This establishes the stated advertised monthly range and India work mode,not an individual offer or confirmed joining/student cohort. Prior JobLeads location/pay header conflict and old Bebee Until26August2026 are retained as older mirror evidence;they do not override the readable original or establish a fresh posting date. No training enrolment/fee requirement is stated in this job;academy admissions/placement claims are separate,not verified employer quality or internship terms."
+        },
+        {
+          "url": "https://www.gnixar.in/careers",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal employer index is a loading template;exact role detail is the advertised-pay evidence. Admissions/ISO/placement claims not independently audited and not salary evidence."
+        }
+      ],
+      "roles": [
+        {
+          "id": "gnixar-design-intern",
+          "jobId": "gnixar-design-intern",
+          "title": "Product Design Intern",
+          "url": "https://www.gnixar.in/careers/product-design-intern",
+          "seniority": "Internship; current cohort and student eligibility to confirm",
+          "location": "Remote, India",
+          "requirements": [
+            {
+              "id": "03c044d9a2d2",
+              "text": "Portfolio showing visual and interaction design;Figma familiarity",
+              "sourceUrl": "https://www.gnixar.in/careers/product-design-intern"
+            },
+            {
+              "id": "92b85c02b276",
+              "text": "Design flows/components for the website and learner portal",
+              "sourceUrl": "https://www.gnixar.in/careers/product-design-intern"
+            },
+            {
+              "id": "58e72e09cb48",
+              "text": "Prototype,test,iterate and contribute to design systems",
+              "sourceUrl": "https://www.gnixar.in/careers/product-design-intern"
+            },
+            {
+              "id": "7b2ff3b02a1e",
+              "text": "Six-month remote India internship;0–1years;student eligibility and joining to confirm",
+              "sourceUrl": "https://www.gnixar.in/careers/product-design-intern"
+            }
+          ],
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal exact Gnixar employer page explicitly advertises Product Design Intern,Remote India,six months,0–1years and INR25–40k/month. Duties include learner-portal/site flows,prototypes/testing and design-system contributions;portfolio,Figma and willingness to learn. Exact application form is visible and was not submitted. The normal careers index returns Loading roles/Loading openings,so it does not independently corroborate current inventory. This establishes the stated advertised monthly range and India work mode,not an individual offer or confirmed joining/student cohort. Prior JobLeads location/pay header conflict and old Bebee Until26August2026 are retained as older mirror evidence;they do not override the readable original or establish a fresh posting date. No training enrolment/fee requirement is stated in this job;academy admissions/placement claims are separate,not verified employer quality or internship terms."
+        }
+      ],
+      "contact": {
+        "url": "https://www.gnixar.in/careers/product-design-intern",
+        "kind": "Exact published job application form;not submitted",
+        "sourceUrl": "https://www.gnixar.in/careers/product-design-intern"
+      },
+      "website": "https://www.gnixar.in/"
+    },
+    {
+      "id": "usability-designs",
+      "name": "Usability Designs",
+      "company": "Usability Designs",
+      "companyType": "UX/product studio / services team",
+      "sector": "UX research,UI design and web/mobile development",
+      "focus": "UX research,UI design and web/mobile development",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable editable studio preference from explicit UX research,prototyping and collaboration scope. Presence on a careers index is not a confirmed current student intake or workplace endorsement.",
+      "careersUrl": "https://usabilitydesigns.com/careers/",
+      "locationNote": "Pune employer;exact role saysRemote,confirm India employment arrangement",
+      "openingStatus": "Current careers index and exact UX internship;pay,duration and student cohort unknown",
+      "currentOpeningVerified": false,
+      "payNote": "Competitive salary wording only;no numerical stipend and paid internship status unconfirmed.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://usabilitydesigns.com/jobs/ux-designer-fresher/",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal exact original title UX Designer–Intern,full-time,Remote;current employer careers index lists the same role. Duties include flows,wireframes/prototypes,research/usability tests,design systems and developer collaboration. Degree in design/HCI/related or equivalent experience;personal/internship portfolio accepted,Figma/AdobeXD/Sketch and basic user-centred design. Frontend HTML/CSS is optional. Normal official contact identifies Pune Maharashtra,corroborating India employer identity;LinkedIn4477270279 indexed PuneDivision/Remote mirrors the role,normal LinkedIn restricted. Competitive salary wording provides no amount or confirmed paid internship. Duration,current student eligibility,joining and remote-from-India employment terms unconfirmed. Search index labels page2.2years old;no exact original date or fresh posting claim."
+        },
+        {
+          "url": "https://usabilitydesigns.com/contact/",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal official contact identifies Narhe Pune and sales@usabilitydesigns.com for business inquiries. Web-search contact snapshot showed bot-verification;normal allowed current read supplied address. No sales inbox reclassified as recruitment."
+        },
+        {
+          "url": "https://usabilitydesigns.com/careers/",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Current index links same exact internship;duplicate evidence,not second seat."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-usabilitydesigns-ux-designer-intern",
+          "jobId": "careers-usabilitydesigns-ux-designer-intern",
+          "title": "UX Designer – Intern",
+          "url": "https://usabilitydesigns.com/jobs/ux-designer-fresher/",
+          "seniority": "Internship; current cohort and student eligibility to confirm",
+          "location": "Remote;Pune India employer — exact remote eligibility to confirm",
+          "requirements": [
+            {
+              "id": "937ffdf9fd70",
+              "text": "Degree in UX/Graphic Design/HCI or equivalent experience;student eligibility to confirm",
+              "sourceUrl": "https://usabilitydesigns.com/jobs/ux-designer-fresher/"
+            },
+            {
+              "id": "205ca36456d2",
+              "text": "Personal/internship portfolio,Figma/AdobeXD/Sketch and user-centred design basics",
+              "sourceUrl": "https://usabilitydesigns.com/jobs/ux-designer-fresher/"
+            },
+            {
+              "id": "14c255bd8ec0",
+              "text": "Research/usability tests,user flows,wireframes and prototypes",
+              "sourceUrl": "https://usabilitydesigns.com/jobs/ux-designer-fresher/"
+            },
+            {
+              "id": "b44f9f90b334",
+              "text": "Design systems and developer collaboration;HTML/CSS optional",
+              "sourceUrl": "https://usabilitydesigns.com/jobs/ux-designer-fresher/"
+            }
+          ],
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal exact original title UX Designer–Intern,full-time,Remote;current employer careers index lists the same role. Duties include flows,wireframes/prototypes,research/usability tests,design systems and developer collaboration. Degree in design/HCI/related or equivalent experience;personal/internship portfolio accepted,Figma/AdobeXD/Sketch and basic user-centred design. Frontend HTML/CSS is optional. Normal official contact identifies Pune Maharashtra,corroborating India employer identity;LinkedIn4477270279 indexed PuneDivision/Remote mirrors the role,normal LinkedIn restricted. Competitive salary wording provides no amount or confirmed paid internship. Duration,current student eligibility,joining and remote-from-India employment terms unconfirmed. Search index labels page2.2years old;no exact original date or fresh posting claim."
+        }
+      ],
+      "contact": {
+        "email": "sales@usabilitydesigns.com",
+        "url": "https://usabilitydesigns.com/contact/",
+        "kind": "General sales/business inbox,not a recruitment address;use exact job application form",
+        "sourceUrl": "https://usabilitydesigns.com/contact/"
+      },
+      "website": "https://usabilitydesigns.com/"
+    },
+    {
+      "id": "vaultline-security",
+      "name": "Vaultline Security (formerly 0xTeam)",
+      "company": "Vaultline Security (formerly 0xTeam)",
+      "companyType": "Security product / services team",
+      "sector": "Web3/application/AI security and in-house security products",
+      "focus": "Web3/application/AI security and in-house security products",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Possible editable preference for sourced security-product/interface scope. Older post,current identity and unknown India intake require confirmation;not workplace quality or hiring probability.",
+      "careersUrl": "https://www.vaultlinegroup.com/careers",
+      "locationNote": "Bengaluru company presence in indexed company page;oldRemoteinternshipIndia eligibility unconfirmed",
+      "openingStatus": "Older paid design-intern post only;current official index does not corroborate renewed design intake",
+      "currentOpeningVerified": false,
+      "payNote": "Old exact post says paid only;no numerical design-intern stipend. Current corporate generic competitivepay is not intern salary evidence.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-16",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Public indexed exact Manojgowda K S activity7474817212743081984 advertises paid UIUX/ProductDesignIntern at0xTeamSpace-Web3Security,Remote,students/recentgraduates,Figma,portfolio,web/mobile interfaces,prototypes and design-system collaboration. No numerical stipend,duration,joining or explicit India-employment eligibility. Tagged employer resolves to VaultlineSecurity(formerly0xTeam);company page lists Manojgowda among employees andBengaluru among locations,not a confirmed hiring title. Normal official vaultlinegroup.com independently confirms former0xTeam identity. Current official careers lists BusinessDeveloper and coming-soon security families,not this internship;absence alone does not establish this older post closed. Normal LinkedIn/short application destination restricted;no form inspected or submitted. Index relative1mo/other2–3monthcrawl labels are not original publication. Unrelated0xteam/leval.ai namesake not merged."
+        },
+        {
+          "url": "https://www.vaultlinegroup.com/",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal official site explicitly states formerly0xTeam and security services/in-houseLeonAI product. Client testimonials and marketing totals not independently audited."
+        },
+        {
+          "url": "https://www.vaultlinegroup.com/careers",
+          "label": "16 November public research",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal current careers:BusinessDeveloper1–3years andcoming-soon security positions;no exact design-intern renewal. General hello inbox is not guessed recruitment."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-post-0xteam-7474817212743081984",
+          "jobId": "linkedin-post-0xteam-7474817212743081984",
+          "title": "UI/UX & Product Design Intern",
+          "url": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI",
+          "seniority": "Internship; current cohort and student eligibility to confirm",
+          "location": "Remote;India eligibility unconfirmed,Bengaluru company presence",
+          "requirements": [
+            {
+              "id": "3a67b1232ce7",
+              "text": "Students/recentgraduates;portfolio/design projects preferred",
+              "sourceUrl": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI"
+            },
+            {
+              "id": "b4446ab847ce",
+              "text": "Figma or similar tools and UIUX fundamentals",
+              "sourceUrl": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI"
+            },
+            {
+              "id": "c1dde17a48f2",
+              "text": "Web/mobile interfaces,wireframes,prototypes and design-system collaboration",
+              "sourceUrl": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI"
+            },
+            {
+              "id": "4d06939ccea0",
+              "text": "Remote;India eligibility,duration and joining to confirm",
+              "sourceUrl": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI"
+            }
+          ],
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Public indexed exact Manojgowda K S activity7474817212743081984 advertises paid UIUX/ProductDesignIntern at0xTeamSpace-Web3Security,Remote,students/recentgraduates,Figma,portfolio,web/mobile interfaces,prototypes and design-system collaboration. No numerical stipend,duration,joining or explicit India-employment eligibility. Tagged employer resolves to VaultlineSecurity(formerly0xTeam);company page lists Manojgowda among employees andBengaluru among locations,not a confirmed hiring title. Normal official vaultlinegroup.com independently confirms former0xTeam identity. Current official careers lists BusinessDeveloper and coming-soon security families,not this internship;absence alone does not establish this older post closed. Normal LinkedIn/short application destination restricted;no form inspected or submitted. Index relative1mo/other2–3monthcrawl labels are not original publication. Unrelated0xteam/leval.ai namesake not merged."
+        }
+      ],
+      "contact": {
+        "url": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI",
+        "kind": "Published older hiring post and short application link,restricted;not contacted",
+        "sourceUrl": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI"
+      },
+      "website": "https://www.vaultlinegroup.com/",
+      "aliases": [
+        "0xTeam Space",
+        "0xTeam"
+      ]
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-15",
+    "researchedAt": "2026-11-16",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 286,
+    "directoryCount": 289,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 16,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local."

@@ -1,150 +1,171 @@
-# Public design-job research — 15 November 2026
+# Public design-job research — 16 November 2026
 
-128 retained records:110 active/held,18 archived. Two new-to-feed post-only
-internships remain on hold;no newly confirmed current intake or numerical monthly
-stipend match.286 company targets,20 established profiles,40 coverage records.
-No applications,employer messages,selection exercises or form submissions.
+131 retained records:112 active/held and19 archived. Three new internships remain
+on hold;one existing role gained employer-backed monthly pay evidence.289 company
+targets,20 established profiles,40 coverage records(25 updated today). No newly
+confirmed student cohort/individual offer. No applications,employer messages,
+selection exercises,accounts or form submissions.
 
-## Shortlist: new posts and existing employer/board opportunities
+## Shortlist and next actions
 
-| Status/source | Opportunity | Terms and next action |
+| Source/status | Opportunity | Advertised terms and next action |
 | --- | --- | --- |
-| New-to-feed LinkedIn post | [Reney — Product Design Intern](https://www.linkedin.com/posts/raj-jadhav-92ba99254_were-hiring-aproduct-design-intern-at-reney-activity-7493276893811712000-ZiBg) | Mumbai Vile Parle,on site. Product UI/UX and AI experiences plus landing-page/brand work. Pay,duration and student intake unknown. Older indexed excerpts vary2wEdited/3moEdited;normal original restricted. Confirm renewed paid/no-fee cohort,at least15k/month,duration,start and scope. |
-| New-to-feed LinkedIn post | [Becoming Quotient — Product Design Intern](https://www.linkedin.com/posts/rishwin-jethi_linkedin-do-what-you-do-best-and-please-activity-7475050721864957952-tilu) | Hybrid Mumbai,full-time,0–2years,paid amount unspecified. Figma components/auto-layout,product UI,accessibility and handoff;Claude workflow. Explicit immediate start:held pending later-joining flexibility,current student intake,duration and at least15k/month. Older indexed1–2mo/crawl labels are not verified publication. |
-| Existing employer + Indeed | [Arihant AI — UIUX/Product Design Intern85](https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85) | Prahladnagar Ahmedabad office,6or12months,two advertised seats. Final-year MDes/design/technical or recent/self-taught route. Monthly stipend discussed at interview,no number. Exact [Indeed70c42f8628e172c7](https://in.indeed.com/viewjob?jk=70c42f8628e172c7) was already an additionalSource:rechecked without duplicating card/source or resetting firstSeen. Confirm six-month cohort,student/start eligibility and at least10k/month,prefer15k+. |
-| Retained conditional paid listing | [AI CERTs — Graphic/UIUX Intern](https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702) | Gandhinagar office,15–18k/month,header3months/body3–6. Joining3Nov–8Dec/apply5Dec retained. Confirm duration,fixed stipend and student/current-seat/start eligibility. |
+| Existing card,employer pay upgrade | [Gnixar Academy — Product Design Intern](https://www.gnixar.in/careers/product-design-intern) | Exact employer page states RemoteIndia,six months,0–1years,INR25–40k/month. Confirm current student cohort,joining,fixed stipend and paid/no-fee employment separate from academy admissions. Stable card and old mirror conflicts retained;not a newly posted role. |
+| New employer original,conditional pay | [Cehpoint — UI/UX Product Designer Intern,AI/SaaS](https://www.cehpoint.co.in/careers/ui-ux-product-designer-intern) | RemoteIndia,INR10–20k/month. **Five working days of real practical project precede an offer**;evaluation payment,commercial use/ownership,duration and student cohort unknown. Confirm those before any exercise. Separate older8–15kUIUXintern minimum remains below remote10k floor. PPO heading is not guaranteed conversion. |
+| New employer original,undisclosed pay | [Usability Designs — UX Designer–Intern](https://usabilitydesigns.com/jobs/ux-designer-fresher/) | Full-timeRemote on exact role/current index,Pune employer. Competitive salary wording gives no numerical stipend or confirmed paid internship. Confirm paid,no-fee Indiaremote terms,3–6months,student eligibility,start and10kminimum/prefer15k. |
+| New-to-feed older LinkedIn post,paid amount unknown | [Vaultline Security/formerly0xTeam — UIUX & Product Design Intern](https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI) | Older remote paid post welcomes students/recentgraduates;no amount,duration or explicit India eligibility. Official site confirms rebrand;tagged company lists author among employees/Bengaluru location. Current careers does not corroborate renewed design intake. Confirm India eligibility,cohort,joining,duration and10kminimum before sharing documents. Short application destination restricted. |
+| Retained conditional paid listing | [AI CERTs — Graphic/UIUX Intern,Gandhinagar](https://internshala.com/internship/detail/graphic-uiux-design-internship-in-gandhinagar-at-ai-certs1793856702) | INR15–18k/month,office,header3months/body3–6,joining3Nov–8Dec/apply5Dec. Confirm current student seat,fixed stipend,duration and start. |
+| Retained employer + Indeed,unknown pay | [Arihant AI — UIUX/Product Design Intern,Ahmedabad](https://arihantai.com/jobs/uiux-product-design-internship-web-mobile-ai-systems-85) | Six/12months,office;monthly stipend discussed at interview,no amount. Six-month option/student cohort/current joining and10kminimum/prefer15k need confirmation. Existing Indeed crosspost stays on one card. |
 
-All new listing payMin/payMax remain null. Paid/competitive wording is not a
-numerical stipend. New-to-feed does not mean newly posted. No social lead was
-invented to satisfy a platform quota;no new qualifying original Naukri/X job was
-verified. Existing non-LinkedIn opportunities remain separate from new posts.
+Gnixar/Cehpoint payMin/payMax represent explicitly stated monthly INR ranges,
+not applicant-received offers or confirmed cohort dates. New Usability/Vaultline
+payMin/payMax remain null. On_hold is retained until the remaining terms are
+resolved. Old listing,index,crawl/repost and check dates remain separate.
 
-Becoming's official careers page identifies author Rishwin Jethi as Product Lead
-and Chief of Staff. It corroborates the company relationship,not current exact
-internship intake. Official footer Longitudinal Human Private Limited. Reney's
-normal about page identifies Renate Global Private Limited,Vile Parle Mumbai and
-its AI hiring product. Raj Jadhav's precise title/hiring authority remains
-unverified;published company-domain address is in the post. Product demo job
-screens and client vacancies were not treated as Reney's internal openings.
-Published email routes remain manual;no messages or exercises were performed.
+Usability exact older page is still linked in current employer inventory;index
+labels2.2years are not a verified publication date. Its LinkedIn4477270279 copy
+is additionalSources on the same role. Official contact is Pune and publishes
+sales@usabilitydesigns.com for business,not recruitment;use exact job form.
 
-## Existing board maintenance
+Vaultline author Manojgowda K S/activity7474817212743081984 is company-linked
+through tagged employer employee listing;precise hiring title not verified.
+Indexed relative1mo and2–3monthcrawl variants do not establish an original date.
+Normal post and short application destination restricted. Official current
+careers lists BusinessDeveloper1–3years and future security families,not this
+internship;absence alone is not closure. Unrelated0xteam/leval.ai not merged.
 
-108 primary URLs attempted:95 fetched,11 restricted,2missing,zero fetch errors.
-Fetch verifies access,not every term,current intake or application availability.
-Some responses are client templates. Rotating deeper reviews covered student,
-paid,junior,product and studio opportunities below.
+## Board maintenance
 
-BrainoidTech exact UX internship now explicitly says Sorry! This job has expired.
-Archived stable careers-brainoidtech-ux-design-intern. Old description,requirement
-IDs,reported-pay evidence and source history retained;directory status updated
-for this exact role only. No company-wide closure or saved application stage
-inferred. Missing Nonlinear/YTT remain unresolved;inaccessibility alone is not
-closure. Seventeen previously archived roles remain unchanged.
+109 retained active primary URLs attempted:94 fetched,13 restricted,2missing,
+zero fetch errors. These figures include readable small/client templates;
+HTTP success alone does not confirm terms or availability. Normal responses and
+robots checks used bounded requests;no access controls bypassed.
 
-Retained DOGSTER Bengaluru35–40k/month,six months,joining4Nov–9Dec/apply4Dec;
-Moon Ahmedabad11,283.96–48,560.89/month broad range;three Priberry40–60k/month roles
-with distinct India-wide/Bengaluru-near/Pune-near limits and shared-operator
-verification caveats. These are existing adverts,not new offers or independently
-audited employers. Fixed stipend,current student cohort and joining need confirmation.
+Exact Moon Technolabs permanent Trainee UIUX requisition45ad3491be217187 now
+says This job has expired on Indeed. Current official visible inventory also
+lacks that trainee. Archived only this stable card;old pay/requirements/source
+history and application compatibility retained. The separate eaa533209a303dc0
+student internship remains readable with3–6months and unusually broad
+INR11,283.96–48,560.89/month;current cohort/fixed individual stipend remain
+conditional. Neither closure nor stipend transferred between these roles.
+Eighteen previously archived records unchanged. Missing Nonlinear/YTT remain
+unresolved;no retirement from inaccessible pages alone.
 
-Onething named Gurgaon exception retains15k/month,six months,local hybrid with
-four office days/Wednesday home. Company Updates separately invite final-semester
-students;exact cohort eligibility unresolved. Devoq official explicit intern route
-retains unknown pay,duration and Bopal/Bodakdev office. DevoqLabs is a distinct
-company and was not merged from generic marketing/development posts.
+Gnixar stable ID unchanged,primary upgraded from JobLeads to exact employer.
+Old mirror source,firstSeen,location/pay-conflict evidence retained in history
+andadditionalSources. Normal careers index returns Loading roles/Loading openings;
+it does not independently establish a current role inventory. Old Bebee Until26August label is a mirror date,not current
+original closure. Academy/course marketing and placement claims do not establish
+workplace quality,no-fee employment or individual hiring outcomes.
 
-Lokal exact six-month Bangalore employer internship remains held with unknown
-stipend/current cohort. Added older design-lead post7407780438557069312 as genuine
-programme evidence on the same stable card;retained7511146843515461632 and employer
-role unchanged. Joining/welcome posts are not new vacancies. Cravv20k header,
-paid-monthly body and structuredYEAR conflict stays unresolved:monthly fields
-remain null. Duhzine200–400kINR/year stays in original units/directory-only with
-prior one-month cohort/eligibility conflict;new indexed publication does not prove
-an eligible3–6month paid intake. Official9character React shell is not closure.
+Cehpoint old UIUX8–15k and new AI/SaaS10–20k are distinct employer titles. Neither
+internship pay nor monthly-paid FAQ establishes payment for the five-day
+pre-offer practical project. No skill-fit/CV upload,answers/account or project
+performed. Old source and dedicated contact purpose retained historically.
 
-Sure Mumbai,Feelpixel Pune,Saral remote andSRV Kannur retained with their stipend,
-duration,employment-type/pay-period and student/cohort limits. Glance/project44
-originals remain;SutharTech December12weeks/apply24November andTheInterviews paid
-amount-at-offer12weeks/20–40hours/eveningIST overlap still require terms confirmation.
-No actual interviews or private application progress inspected.
+AIcerts/DOGSTER bodies retain stipend/joining windows;navigation/applicant counts
+changed,not new seats or posting dates. DOGSTER Bengaluru35–40k/month,six months,
+joining4Nov–9Dec/apply4Dec remains conditional. Priberry40–60k/month records retain
+operator-verification and distinct Indiawide/Bengaluru-near/Pune-near limits.
+TheInterviews November/December12weeks20–40hours with eveningIST overlap still
+sets monthly pay at offer. SutharTech December12weeks/apply24November remains
+pay-unknown. None is a new applicant offer.
 
-Retained clearly marked junior/full-time alternatives:Pixster Ahmedabad0–1header/
-body1+with internships accepted;Enterprise Bot Bengaluru permanent0–1,45hours/week,
-six-month probation,ASAP;Pixel Arc Hyderabad fresher. Pay/student/start eligibility
-unresolved. Annual/foreign salaries elsewhere remain in original units without
-monthly stipend conversion. No new verified junior role invented.
+Clearly marked retained junior/full-time alternatives:
+[Pixster Ahmedabad](https://www.pixsterstudio.com/jobs-opening/jr-product-designer),
+[Enterprise Bot Bengaluru](https://join.com/companies/enterprisebot/16830986-ui-designer-0-1-years-experience),
+[Pixel Arc Hyderabad](https://pixelarc.co.in/syndicates/join/).
+Pixster0–1header/body1+withinternshipsaccepted;EnterpriseBot permanent0–1,
+45hours/week,six-monthprobation,ASAP;PixelArc fresher. Pay,student/start eligibility
+unresolved. No new verified junior vacancy invented. Annual/foreign salary
+records stay in original units without monthly stipend conversion.
 
-## Company watchlist
+## Company directory
 
-Added Reney andBecoming Quotient as editable Workable product-company preferences,
-with public author/company evidence and current-intake/timing limits. Added Ema
-as Dream company target for enterprise AI employee/workflow product scope. Ema's
-current official index has Product designer,India;exact Ashby is a JavaScript
-shell,experience/pay/workmode incomplete. Not promoted as internship/fresher role.
-Plum current SeniorProductDesigner is not an intern opening. No funding/brand
-salary inference.20 established profiles andfour process/four listing-term
-reviews retained;new company workplace quality unassessed. Preference tiers are
-not hiring odds,received offers or independent workplace endorsements.
+Added Gnixar Academy andUsability Designs as Workable editable preferences,and
+Vaultline Security as Possible. These reflect sourced scope/preferences,not
+hiring probability,employer endorsement or received offers. Gnixar is an
+education-product/services employer,Usability a UX/services studio,Vaultline a
+security product/services team. All new workplace-quality assessments remain
+unassessed. No new established-employer badge inferred;20 researched profiles
+and prior public screening evidence remain.
 
-Published contacts retain their purposes. General business,privacy/support and
-recruitment routes are not interchangeable. No email guessed. Brainoid directory
-expiry history retained;Duhzine,Plum,Parallel,Lokal,Onething,HireDesigners andDevoq
-sources rechecked without losing stable roles,requirements or contacts.
+Cehpoint retains its existing tier/contact/history and adds a separate sourced
+role. Moon directory distinguishes the expired trainee from conditional student
+internship. NetBramha,Lollypop,yuj,HireDesigners andWhatfix sources updated without
+inventing an internship from senior roles,training or careers landing pages.
 
-## Source coverage and limits
+## Coverage and exclusions
 
-Indeed,Naukri,X andLinkedIn explicitly searched,including separate Posts,
-/feed/update/,company Updates and author queries. Onething,HireDesigners,Devoq
-checked;Parallel/Lokal deeper rotation plus Ema/Plum/PhonePe/Razorpay samples.
-HireDesigners exact client200GGN-UD-AA still3years,Gurgaon,annualcap15lakh;unnamed
-client not guessed. Agency internal graphic internship and generic all-jobs post
-not coreUX vacancies. PhonePe intern stories and Razorpay broad design/AI hiring
-posts are not automatically current eligible internships. Parallel US namesake
-not merged with Indian studio. No guarantee of catching every post.
+Separate LinkedIn Posts,/feed/update/,company Updates and founder/design-lead/
+recruiter queries executed,alongside Jobs. Onething,HireDesigners andDevoq checked;
+NetBramha,Lollypop,yuj rotated deeper. Onething exact15k/monthsix-monthGurgaon
+hybrid retains named geography exception;companyUpdatesfinalsemester invitation
+requires cohort confirmation. Devoq official explicit intern route/payunknown
+remains;older post seat counts not current openings. HireDesigners agency/client
+motion2years/fashion7years andpriorUX3years not eligible UXinternships;clients
+not guessed. Generic talent pool/internalmanagementroles not digitalUX openings.
 
-Naukri search originals robots restricted;normalAhmedabad category empty. X normal
-search robots restricted;indexed named-company/India/Gujarat queries yielded no
-distinct verified eligible original. Internshala search restricted while allowed
-retained exact details readable. No authenticated account/feed or shared browser
-claimed. Blocked/empty/unsearched feeds do not mean no openings. No bypass.
+NetBramha contentcreator/BDinterns andexperienceddesignroles not coreUXinterns.
+Lollypop seniorUX/UI,researchassociate andvideo/marketing/sales roles remain
+separate;academy promotions not paid-employment proof. Yuj indexed4November
+programme explicitly notinternship;join/wrap-up posts not vacancies. Intuit,
+SAP,Microsoft,PhonePe,Razorpay targeted author/post samples largely joining,
+wrap-up,nonIndia orolder deadline material. Established brands do not imply pay
+or a currently eligible opening. EverythingUX older client-facing Mumbaiintern
+post remains unresolved discovery in this sample,not a claimed current offer.
 
-Indeed negatives:SORc53d978d673c7530 exact expired and10–12k/month below15k Hyderabad.
-Hawk Aerospace15–25k/month category also says3lakh annualCTC;three-month-old index
-and mirrorUntil27September not current intake. No role invented or salary units
-silently resolved. Horrazon cap10k/body5k+ andbrochure/90second video assignment
-minimum below remote10k;no assignment performed. WebEarl cap8k,Potenz5k andPopPop
-Pune5–8k remain below revised floors. Earlier0101digitall expired exact not revived
-from cached descriptions. New source quota never overrides eligibility evidence.
+Indeed,Naukri,X explicitly searched. Naukri public search robotsblocked and
+normalAhmedabad/Keyideasemptytextshell;X normalsearchrobotsrestricted. Indexed
+FirstHireNaukrimirror claimsOnething/Hypersonic were checked against normalURL
+bodies,which did not match. Not added as genuine crossposts or original access.
+Hypersonic indexed engineering-training programme not a digitalUXpaidinternship.
+Accessible employer Onething evidence retained instead. No signed-in feed or
+shared browser/session claimed. Restricted/empty/unsearched feeds not zero jobs.
 
-Wellfound Ourora/Sequoia explicitly unpaid;ZuAI4295584 andRootcode4262928 originals
-410 despite indexed bodies. Existing FLIP/Cravv roles deduplicated. Cutshort
-samples mainly graphic/AIvisual scope or below-floor adverts;Honeybee unpaid,
-Integra3–5k andUngrammary10–12k/month/annual conflict remain. Ungrammary could meet
-revised remote10k only after renewed eligible remote cohort;Mumbai office below15k.
-UnstopAdwaita1770687 deadline29October expired. Instahyre searches returned public
-help/inventory limits,no distinct eligible original;no private matching read.
+RADimpression attractive10kremoteindexedbody excluded:normalexactGlassdoor
+explicit Jobexpired/2September2026/no longeravailable. Original company identity
+not renewedintake. 0101digitall exactIndeedstill expired. Horrazon cap10k and
+mandatorybrochure/90secvideo/immediatejoining do not establish fixed minimum10k
+or later start;older5k+report retained historically,no assignment performed.
+Whatbytes8–15kminimum8kbelowremote10k;OpalCodeindexed18–25ktwomonthsbelow3–6month
+commitment. WebEarlmax8k remainsbelowfloor. No match from maximum rather than
+minimum,or unrelated category salary.
 
-YC/Work at a Startup category/shared inventory and Ashby/Greenhouse samples:
-retained2024SuperKalam/Coulomb still older/held;AiPriseDesignerII/USfounding/
-principal/graphic/senior roles not promoted. LevelAI Delhi outside geography;other Ashby/Greenhouse indexed country/cohort
-samples were not established as India-eligible before inclusion.
-Himalayas IndiaUXintern filters and candidate biographies are not individual
-vacancies. WeWorkRemotely/RemoteOK/Remote.co/WorkingNomads category samples and
-RemotiveCACTUS retained,other graphic/countrylimited/experienced roles not new
-eligible coreUX leads. Targeted checks,not exhaustive inventory.
+Wellfound RefactorFactory4435512/Timbre4505494 originals410;Falcon retained15k
+monthlybody/structuredannualcaveat,currentcohortunknown. MAVRknownunpaid;
+Cravv20kheader/monthlybody/YEARconflict remains with nullmonthlyfields. Cutshort
+samples mainlyexperienced/graphic orbelowfloor;Ungrammary10–12kremote couldclear
+10konlywithrenewedeligiblecohort,graduate/studentlimit andannualconflict remain.
+Mumbai15kminimum unmet. No annual conversion.
 
-HN November50338728:297topIDs,244nondeletedtext comments,61broadUX/UI/designmatches,
-zeroerrors,no new broadmatches versus14November andno distinct eligible intern.
-These are not61designvacancies. StartupMap root,StartupBlinkGandhinagar and
-IndianStartupMap Augustdesignregister samples are discovery,not vacancies from
-map entries,funding,sector registration or hiring filters.
+UnstopWhatfix1751971 exactdeadline23September2026 overrides9daysleft/crawltoday
+labels;expired notadded. Other Microsoft/Newton/Niyo/Leapindexedresults not
+verified renewedeligiblecurrentoriginal. Fee-warningboilerplate notpaidproof.
+Internshala search restricted,allowedretained exactdetails readable. Instahyre
+publicsearch/help/inventorysample no distincteligibleoriginal;no private matching.
 
-40 coverage rows retained;25 updated today with actual queries/findings/limits;
-other unsearched rows remain dated.9-target watchlist unchanged;31 Nov15 generated
-query links remain not_searched because generation itself does not search.
-WorkbookCompany directory/Role requirements andCSV regenerated. No UI/model,
-seed,collector-main,assistant,new task or schedule changes. Browser-local progress
-compatibility preserved;no real private profile,stages,blacklist or assessments
-read or published. Publication requires exact topic commit,existing Vercel project,
-READY,alias andlive file comparison;push alone is not production refresh.
+YC/WorkataStartup normalcategory/sharedinventory/clienttemplates andindexedIndia
+samples:no distinctneweligibleUXintern. Existing2024SuperKalam/Coulomb olderheld,
+compensationconflicts preserved. USbrand/graphic/founding/senior not promoted.
+Himalayas IndiaUXintern filters/candidatebiographies not vacancies. WWR,RemoteOK,
+Remote.co,WorkingNomads targetedcategorysamples:no distincteligibleoriginal.
+RemoteOKPlaypower2Dart not coreUX,Mercuryclosed,KnowBe4USnotIndia.
+RemotiveInnovexis6141465 normal410;baesh6584147 normalunpaidmandatoryBerlinplacement.
+NeuraCite exactunpaid/UKbased excluded. RetainedCACTUS6564118 sameIndiaopportunity,
+4dagoboardlabelnot originalpublication. UnitedoverretainedDoverJSshellnotnewrole.
+
+HN November50338728:299topIDs,245nondeletedtextcomments,61broadUX/UI/designmatches,
+zeroerrors. KeywordmatchedIDs/text unchanged versus15November;no distincteligible
+intern. These are not61designvacancies. Octobercoverage not claimed rechecked.
+StartupMaproot,StartupBlinkGandhinagar andIndianStartupMapdesignAugustsnapshot
+andindexedAhmedabad/eChai discovery used as maps,not vacancies from registration,
+funding,headcount or generic hiring filters.
+
+40 coverage rows retained;25 updated with actual queries/findings/access limits;
+other rows remain dated. Existing9-targetwatchlistunchanged;31datedgeneratedquery
+links remain not_searched because generation itself does not search. Best-effort
+sampledcoverage cannot guarantee no missed posts. No UI/model/assistant/seed/
+collector-main/task/schedule changes. Browser-local state is inaccessible;public
+research contains no private profile,blacklist,assessments,notes or application
+history. Synthetic compatibility checks use separate local fixtures only.
