@@ -166,8 +166,8 @@
         }
       ],
       "currentOpeningVerified": false,
-      "openingStatus": "Company watchlist; not a verified current vacancy",
-      "researchedAt": "2026-10-24",
+      "openingStatus": "Indexed2027 Product Design Intern R172738; employer availability unresolved and conflicting mirrors. Directory-only lead, not a current verified recommendation.",
+      "researchedAt": "2026-11-16",
       "tier": "Dream",
       "rationale": "Creative tools and digital experience products. Watch India university and early-career design roles.",
       "locationNote": "India early-career roles; target Bengaluru or eligible remote listings",
@@ -203,6 +203,36 @@
           "label": "11November established-employer visibility",
           "checkedAt": "2026-11-11",
           "evidenceStatus": "Established creative-software product employer with an official university recruiting route. Current design internship location/cohort must be checked; US listings and India PhD roles are not an India UX internship."
+        },
+        {
+          "url": "https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/Bangalore/XMLNAME-2027-Intern---Product-Design-Intern_R172738",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "2027 Product Design Intern R172738 indexed Bengaluru/Noida. Official Workday detail is a small JavaScript shell; linked public job API403, no bypass. Exact Indeed ca0e67b3594a9262 body onlyTBD. Prosple supplies a matching official destination but no substantive requirements. Mirrors conflict: Urbanodx says closed/taken down, Firstjobby says open. Neither establishes reliable current employer availability or closure. Directory-only unresolved lead, no active job card and no invented requirements/pay."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=ca0e67b3594a9262",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "2027 Product Design Intern R172738 indexed Bengaluru/Noida. Official Workday detail is a small JavaScript shell; linked public job API403, no bypass. Exact Indeed ca0e67b3594a9262 body onlyTBD. Prosple supplies a matching official destination but no substantive requirements. Mirrors conflict: Urbanodx says closed/taken down, Firstjobby says open. Neither establishes reliable current employer availability or closure. Directory-only unresolved lead, no active job card and no invented requirements/pay."
+        },
+        {
+          "url": "https://in.prosple.com/graduate-employers/adobe-india/jobs-internships/2027-intern-product-design-intern",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "2027 Product Design Intern R172738 indexed Bengaluru/Noida. Official Workday detail is a small JavaScript shell; linked public job API403, no bypass. Exact Indeed ca0e67b3594a9262 body onlyTBD. Prosple supplies a matching official destination but no substantive requirements. Mirrors conflict: Urbanodx says closed/taken down, Firstjobby says open. Neither establishes reliable current employer availability or closure. Directory-only unresolved lead, no active job card and no invented requirements/pay."
+        },
+        {
+          "url": "https://jobs.urbanodx.com/job/2027-intern-product-design-intern-at-adobe-6af554aafc7d34f21c71b479",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "2027 Product Design Intern R172738 indexed Bengaluru/Noida. Official Workday detail is a small JavaScript shell; linked public job API403, no bypass. Exact Indeed ca0e67b3594a9262 body onlyTBD. Prosple supplies a matching official destination but no substantive requirements. Mirrors conflict: Urbanodx says closed/taken down, Firstjobby says open. Neither establishes reliable current employer availability or closure. Directory-only unresolved lead, no active job card and no invented requirements/pay."
+        },
+        {
+          "url": "https://firstjobby.com/companies/adobeorwd5orexternalexperienced/2027-intern-product-design-intern-adobe-6e7322",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "2027 Product Design Intern R172738 indexed Bengaluru/Noida. Official Workday detail is a small JavaScript shell; linked public job API403, no bypass. Exact Indeed ca0e67b3594a9262 body onlyTBD. Prosple supplies a matching official destination but no substantive requirements. Mirrors conflict: Urbanodx says closed/taken down, Firstjobby says open. Neither establishes reliable current employer availability or closure. Directory-only unresolved lead, no active job card and no invented requirements/pay."
         }
       ],
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
@@ -235,7 +265,25 @@
         ],
         "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
         "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
-      }
+      },
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-10-24",
+          "openingStatus": "Company watchlist; not a verified current vacancy"
+        }
+      ],
+      "roles": [
+        {
+          "id": "adobe-product-design-intern-r172738",
+          "title": "2027 Intern – Product Design Intern",
+          "url": "https://adobe.wd5.myworkdayjobs.com/en-US/external_experienced/job/Bangalore/XMLNAME-2027-Intern---Product-Design-Intern_R172738",
+          "seniority": "Indexed internship; availability and student cohort unverified",
+          "location": "Bengaluru / Noida; Noida outside usual geography",
+          "requirements": [],
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "2027 Product Design Intern R172738 indexed Bengaluru/Noida. Official Workday detail is a small JavaScript shell; linked public job API403, no bypass. Exact Indeed ca0e67b3594a9262 body onlyTBD. Prosple supplies a matching official destination but no substantive requirements. Mirrors conflict: Urbanodx says closed/taken down, Firstjobby says open. Neither establishes reliable current employer availability or closure. Directory-only unresolved lead, no active job card and no invented requirements/pay."
+        }
+      ]
     },
     {
       "id": "atlassian",
@@ -5966,8 +6014,73 @@
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred role families from published services; not vacancies or eligibility requirements.",
-      "openingStatus": "Official internship application route; exact role intake needs confirmation",
-      "roles": [],
+      "openingStatus": "Two distinct readable Indeed internship adverts: UX Designer and UX Research, platform dated12November2026. Pay, duration and student cohort unconfirmed; employer-linked Keka exact inventory restricted.",
+      "roles": [
+        {
+          "id": "indeed-lemon-yellow-ux-designer-intern-360b40f98498d7cd",
+          "jobId": "indeed-lemon-yellow-ux-designer-intern-360b40f98498d7cd",
+          "title": "Intern – UX Designer",
+          "url": "https://in.indeed.com/viewjob?jk=360b40f98498d7cd",
+          "seniority": "Internship; current student intake and duration to confirm",
+          "location": "Thane District, Maharashtra; work arrangement to confirm",
+          "requirements": [
+            {
+              "id": "a69556be013f",
+              "text": "At least two projects demonstrating design process and UX outcomes",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=360b40f98498d7cd"
+            },
+            {
+              "id": "4368033d8b28",
+              "text": "Better-than-basic Figma and practised design process",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=360b40f98498d7cd"
+            },
+            {
+              "id": "e129f22cc20c",
+              "text": "Research, personas, journeys, information architecture, flows, wireframes, prototypes and usability testing",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=360b40f98498d7cd"
+            },
+            {
+              "id": "58827c2b081b",
+              "text": "UI consistency, design systems, developer and stakeholder collaboration",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=360b40f98498d7cd"
+            }
+          ],
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal Indeed exact advert is readable with Apply now and no expired banner. Pay information not provided. Official Lemon Yellow careers independently publishes an internship route and links lydesign.keka.com/careers; Keka exact inventory is restricted, so no exact original ATS requisition/current cohort is independently confirmed. Indeed structured datePosted is a platform date, not established employer-original publication. Platform validThrough is not an employer application deadline. No application or contact sent. Designer requires at least two projects demonstrating process and UX outcomes, better-than-basic Figma, practised design process, research, flows, prototypes, usability tests, design systems and collaboration."
+        },
+        {
+          "id": "indeed-lemon-yellow-ux-research-intern-cf79349ac7c5986b",
+          "jobId": "indeed-lemon-yellow-ux-research-intern-cf79349ac7c5986b",
+          "title": "Intern – UX Research",
+          "url": "https://in.indeed.com/viewjob?jk=cf79349ac7c5986b",
+          "seniority": "Internship; current student intake and duration to confirm",
+          "location": "Thane District, Maharashtra; work arrangement to confirm",
+          "requirements": [
+            {
+              "id": "655b3fec4d8d",
+              "text": "UX research specialization or related background",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=cf79349ac7c5986b"
+            },
+            {
+              "id": "50ab6833e0ff",
+              "text": "Industry experience planning/conducting interviews, usability tests, competitor analysis, UX audits or personas; years unstated",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=cf79349ac7c5986b"
+            },
+            {
+              "id": "4f0b453e3bbb",
+              "text": "Primary, secondary, qualitative and quantitative research; demographic and market understanding",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=cf79349ac7c5986b"
+            },
+            {
+              "id": "8b05ec56cfc0",
+              "text": "Figma, research documentation and clear stakeholder/user communication",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=cf79349ac7c5986b"
+            }
+          ],
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal Indeed exact advert is readable with Apply now and no expired banner. Pay information not provided. Official Lemon Yellow careers independently publishes an internship route and links lydesign.keka.com/careers; Keka exact inventory is restricted, so no exact original ATS requisition/current cohort is independently confirmed. Indeed structured datePosted is a platform date, not established employer-original publication. Platform validThrough is not an employer application deadline. No application or contact sent. Research requires specialization in UX research/related background and industry experience conducting interviews, testing, competitor analysis, UX audits or personas; no years stated. Student/project equivalence must be clarified, not assumed."
+        }
+      ],
       "contact": {
         "url": "https://lemonyellow.design/career/",
         "email": null,
@@ -5991,18 +6104,48 @@
           "label": "Employer-linked Keka application board",
           "evidenceStatus": "Dynamic board; no role text extracted",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=360b40f98498d7cd",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal Indeed exact advert is readable with Apply now and no expired banner. Pay information not provided. Official Lemon Yellow careers independently publishes an internship route and links lydesign.keka.com/careers; Keka exact inventory is restricted, so no exact original ATS requisition/current cohort is independently confirmed. Indeed structured datePosted is a platform date, not established employer-original publication. Platform validThrough is not an employer application deadline. No application or contact sent. Designer requires at least two projects demonstrating process and UX outcomes, better-than-basic Figma, practised design process, research, flows, prototypes, usability tests, design systems and collaboration."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=cf79349ac7c5986b",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal Indeed exact advert is readable with Apply now and no expired banner. Pay information not provided. Official Lemon Yellow careers independently publishes an internship route and links lydesign.keka.com/careers; Keka exact inventory is restricted, so no exact original ATS requisition/current cohort is independently confirmed. Indeed structured datePosted is a platform date, not established employer-original publication. Platform validThrough is not an employer application deadline. No application or contact sent. Research requires specialization in UX research/related background and industry experience conducting interviews, testing, competitor analysis, UX audits or personas; no years stated. Student/project equivalence must be clarified, not assumed."
+        },
+        {
+          "url": "https://lemonyellow.design/career/",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Normal official careers publishes internship application route and links Keka. Exact Keka inventory restricted; do not assume generic application confirms current intake."
         }
       ],
       "checkedAt": "2026-10-24",
       "notes": "Official careers site is intern-friendly and lists UI/UX role families; Keka dynamically renders exact vacancies. FAQ explicitly accepts freshers/interns and limits remote to people away from HQ vicinity; confirm role arrangement.",
-      "payNote": "Current internship stipend not confirmed; hold until threshold is checked.",
+      "payNote": "Both exact Indeed internship adverts say pay information not provided. Matching Jobiba mirrors claim INR15–25k/month with low confidence; employer amount not corroborated, so current job pay fields remain null.",
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
       "name": "Lemon Yellow",
       "tier": "Workable",
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Thane / Mumbai, Conditional remote India. Check each role for remote eligibility.",
-      "researchedAt": "2026-10-24"
+      "researchedAt": "2026-11-16",
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-10-24",
+          "openingStatus": "Official internship application route; exact role intake needs confirmation"
+        }
+      ],
+      "payEvidenceHistory": [
+        {
+          "checkedAt": "2026-11-16",
+          "payNote": "Current internship stipend not confirmed; hold until threshold is checked."
+        }
+      ]
     },
     {
       "id": "goprotoz",
@@ -8439,7 +8582,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not advertised openings.",
-      "researchedAt": "2026-11-09",
+      "researchedAt": "2026-11-16",
       "sources": [
         {
           "url": "https://www.ecolibrium.io/careers/",
@@ -8464,6 +8607,18 @@
           "label": "9November recheck",
           "checkedAt": "2026-11-09",
           "evidenceStatus": "Official static careers still names UI/UX Intern,but current linked ATS shows Product Designer requiring3–5years and Visual Design & Marketing Intern. Normal exact ATS bodies reviewed;neither establishes a current qualifying coreUX internship. No new card;prior source/requirement IDs retained."
+        },
+        {
+          "url": "https://www.ecolibrium.io/careers/",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Static page still names UI/UX Intern. Linked EmploymentHero inventory shows Product Designer and Visual Design & Marketing Intern with15October dates; neither re-establishes current coreUX intern intake. Prior source and requirement IDs retained."
+        },
+        {
+          "url": "https://employmenthero.com/jobs/organisations/ecolibrium-zemtu/",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Current normal linked inventory sample; visual-marketing intern is not automatically the static UI/UX internship. No new qualifying job added."
         }
       ],
       "roles": [
@@ -20449,7 +20604,7 @@
       "rationale": "Workable editable product-company suggestion based on sourced enterprise-AI product scope. Pay,student intake and team practice unknown; no hiring-probability or workplace guarantee.",
       "careersUrl": "https://www.zeonai.com/",
       "locationNote": "Remote post; India employment eligibility to confirm",
-      "openingStatus": "Older hiring post names product-design intern; current intake unverified",
+      "openingStatus": "Historical social-only design lead archived by14-day research age rule; renewed current intake not verified. This does not establish employer closure.",
       "currentOpeningVerified": false,
       "payNote": "Internship pay undisclosed. Separate experienced full-time7–9lakh/year advert not an intern benchmark.",
       "payConfidence": "Limited; inspect exact role evidence",
@@ -20458,7 +20613,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-13",
+      "researchedAt": "2026-11-16",
       "sources": [
         {
           "url": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c",
@@ -20477,6 +20632,12 @@
           "label": "13 November public research",
           "checkedAt": "2026-11-13",
           "evidenceStatus": "Indexed author profile associates Biswa G Singh with ZeonAI Labs and surfaces same internship post; no signed-in feed or exact original publication established."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Indexed approximately two-month-old wording; exact original publication unverified. No independently current exact employer intake established. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained."
         }
       ],
       "roles": [
@@ -20485,7 +20646,7 @@
           "jobId": "linkedin-post-zeonai-7488830458227556352",
           "title": "Product Design Intern (UI/UX)",
           "url": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c",
-          "seniority": "Internship; eligibility/current intake to confirm",
+          "seniority": "Historical internship lead; outside current social recommendation age policy",
           "location": "Remote — India eligibility to confirm",
           "requirements": [
             {
@@ -20504,8 +20665,15 @@
               "sourceUrl": "https://www.linkedin.com/posts/biswagsingh_hiring-nowhiring-productdesign-activity-7488830458227556352-Z_7c"
             }
           ],
-          "checkedAt": "2026-11-13",
-          "evidenceStatus": "Public indexed Biswa G Singh post explicitly names ZeonAI Labs Product Design Intern(UI/UX),remote full-time,enterprise AI products for regulated sectors. Public author profile associates him with ZeonAI Labs; precise hiring authority not independently established. Post describes flows,UI prototypes,Figma auto-layout/components/design systems,AI-assisted prototyping with Claude/Cursor,portfolio and communication. Pay,duration,student cohort and exact original date unstated. Indexed crawl approximately two months old and relative2mo wording are not exact original dates or current intake. Normal original post restricted by robots policy; no authenticated access. Official zeonai.com corroborates document/finance AI products,not internship pay/availability. Published route is DM author; no message sent. Separate experienced Indeed designer7–9lakh/year is not intern pay and not used as a benchmark."
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Indexed approximately two-month-old wording; exact original publication unverified. No independently current exact employer intake established. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained.",
+          "evidenceHistory": [
+            {
+              "checkedAt": "2026-11-13",
+              "seniority": "Internship; eligibility/current intake to confirm",
+              "evidenceStatus": "Public indexed Biswa G Singh post explicitly names ZeonAI Labs Product Design Intern(UI/UX),remote full-time,enterprise AI products for regulated sectors. Public author profile associates him with ZeonAI Labs; precise hiring authority not independently established. Post describes flows,UI prototypes,Figma auto-layout/components/design systems,AI-assisted prototyping with Claude/Cursor,portfolio and communication. Pay,duration,student cohort and exact original date unstated. Indexed crawl approximately two months old and relative2mo wording are not exact original dates or current intake. Normal original post restricted by robots policy; no authenticated access. Official zeonai.com corroborates document/finance AI products,not internship pay/availability. Published route is DM author; no message sent. Separate experienced Indeed designer7–9lakh/year is not intern pay and not used as a benchmark."
+            }
+          ]
         }
       ],
       "contact": {
@@ -20513,7 +20681,13 @@
         "kind": "Published public route; purpose and verification limits in role evidence",
         "sourceUrl": "https://www.zeonai.com/"
       },
-      "website": "https://www.zeonai.com/"
+      "website": "https://www.zeonai.com/",
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-13",
+          "openingStatus": "Older hiring post names product-design intern; current intake unverified"
+        }
+      ]
     },
     {
       "id": "srv-infotech",
@@ -20747,7 +20921,7 @@
       "rationale": "Workable editable product-company suggestion for explicit India remote product-design scope. Degree-year eligibility and renewed intake are unresolved; not a hiring probability or workplace endorsement.",
       "careersUrl": "https://www.boncredit.ai/",
       "locationNote": "Exact hiring post says remoteIndia; product serves US credit users",
-      "openingStatus": "Older company-linked35k/month design-intern post; current intake unknown",
+      "openingStatus": "Historical social-only design lead archived by14-day research age rule; renewed current intake not verified. This does not establish employer closure.",
       "currentOpeningVerified": false,
       "payNote": "Older exact post explicitly35,000INR/month; current intake,contract and stipend continuation unconfirmed. Not salary benchmark or received offer.",
       "payConfidence": "Limited; inspect exact role evidence",
@@ -20756,7 +20930,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-14",
+      "researchedAt": "2026-11-16",
       "sources": [
         {
           "url": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_",
@@ -20775,6 +20949,12 @@
           "label": "14 November public research",
           "checkedAt": "2026-11-14",
           "evidenceStatus": "Public indexed client testimonial identifies Abhinav Jain as Founding Designer & PM at BON Credit; role relationship corroboration,not current internship availability or endorsement."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Indexed two-month-old/edited wording; crawl dates do not renew the original. Previously stated35k/month retained as historical post pay, not current intake. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained."
         }
       ],
       "roles": [
@@ -20783,7 +20963,7 @@
           "jobId": "linkedin-post-boncredit-7474744068116381696",
           "title": "Product Design Intern",
           "url": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_",
-          "seniority": "Internship; student cohort/current intake to confirm",
+          "seniority": "Historical internship lead; outside current social recommendation age policy",
           "location": "Remote — India",
           "requirements": [
             {
@@ -20802,8 +20982,15 @@
               "sourceUrl": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_"
             }
           ],
-          "checkedAt": "2026-11-14",
-          "evidenceStatus": "Public indexed exact Abhinav Jain activity7474744068116381696 advertises Product Design Intern,India remote,35,000INR/month,second- or third-year student,strong Figma/product thinking,Lottie bonus,and best two design works to published abhinav@boncredit.ai. Public author profile identifies BON Credit; public Uplers client testimonial identifies him as Founding Designer & PM at BON Credit. No guessed founder title or legal hiring authority. Exact index shows2mo Edited; search crawl labels vary2–4months and no exact original publication is verified. Normal original post/profile restricted. Current intake,duration,degree-year interpretation,start date and fixed contract remain unconfirmed. Official BON product site corroborates consumer credit/money AI app,not current internship. Advertised monthly amount established in older post,not a new current offer; hold until renewed intake is confirmed."
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Indexed two-month-old/edited wording; crawl dates do not renew the original. Previously stated35k/month retained as historical post pay, not current intake. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained.",
+          "evidenceHistory": [
+            {
+              "checkedAt": "2026-11-14",
+              "seniority": "Internship; student cohort/current intake to confirm",
+              "evidenceStatus": "Public indexed exact Abhinav Jain activity7474744068116381696 advertises Product Design Intern,India remote,35,000INR/month,second- or third-year student,strong Figma/product thinking,Lottie bonus,and best two design works to published abhinav@boncredit.ai. Public author profile identifies BON Credit; public Uplers client testimonial identifies him as Founding Designer & PM at BON Credit. No guessed founder title or legal hiring authority. Exact index shows2mo Edited; search crawl labels vary2–4months and no exact original publication is verified. Normal original post/profile restricted. Current intake,duration,degree-year interpretation,start date and fixed contract remain unconfirmed. Official BON product site corroborates consumer credit/money AI app,not current internship. Advertised monthly amount established in older post,not a new current offer; hold until renewed intake is confirmed."
+            }
+          ]
         }
       ],
       "contact": {
@@ -20812,7 +20999,13 @@
         "kind": "Published application address in older internship post; current intake unconfirmed,no message sent",
         "sourceUrl": "https://www.linkedin.com/posts/abhinavjain-_hiring-a-product-design-intern-looking-activity-7474744068116381696-Ba4_"
       },
-      "website": "https://www.boncredit.ai/"
+      "website": "https://www.boncredit.ai/",
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-14",
+          "openingStatus": "Older company-linked35k/month design-intern post; current intake unknown"
+        }
+      ]
     },
     {
       "id": "snapmint",
@@ -21172,7 +21365,7 @@
       "rationale": "Workable editable product-company suggestion based on sourced AI hiring product and named Mumbai design internship. Current cohort and working terms unresolved;not hiring probability or employer endorsement.",
       "careersUrl": "https://reney.ai/",
       "locationNote": "Vile Parle Mumbai office in exact post and official company page",
-      "openingStatus": "Older post-only product-design internship;current pay,intake and duration unknown",
+      "openingStatus": "Historical social-only design lead archived by14-day research age rule; renewed current intake not verified. This does not establish employer closure.",
       "currentOpeningVerified": false,
       "payNote": "No current numerical design-intern stipend established. Product/pricing/customer claims are not intern pay evidence.",
       "payConfidence": "Limited; inspect exact role evidence",
@@ -21181,7 +21374,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-15",
+      "researchedAt": "2026-11-16",
       "sources": [
         {
           "url": "https://www.linkedin.com/posts/raj-jadhav-92ba99254_were-hiring-aproduct-design-intern-at-reney-activity-7493276893811712000-ZiBg",
@@ -21194,6 +21387,12 @@
           "label": "15 November public research",
           "checkedAt": "2026-11-15",
           "evidenceStatus": "Normal official company page identifies Renate Global Private Limited,Vile Parle Mumbai and AI recruitment product. General hi inbox is business contact,not substituted as recruitment. Guessed /careers404 does not prove the social role closed."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/raj-jadhav-92ba99254_were-hiring-aproduct-design-intern-at-reney-activity-7493276893811712000-ZiBg",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Conflicting indexed two-week-edited/three-month-edited wording cannot establish original publication within14days. Employer identity is not a current exact vacancy. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained."
         }
       ],
       "roles": [
@@ -21202,7 +21401,7 @@
           "jobId": "linkedin-post-reney-7493276893811712000",
           "title": "Product Design Intern",
           "url": "https://www.linkedin.com/posts/raj-jadhav-92ba99254_were-hiring-aproduct-design-intern-at-reney-activity-7493276893811712000-ZiBg",
-          "seniority": "Internship; current cohort and student eligibility to confirm",
+          "seniority": "Historical internship lead; outside current social recommendation age policy",
           "location": "Vile Parle,Mumbai — on site",
           "requirements": [
             {
@@ -21221,8 +21420,15 @@
               "sourceUrl": "https://www.linkedin.com/posts/raj-jadhav-92ba99254_were-hiring-aproduct-design-intern-at-reney-activity-7493276893811712000-ZiBg"
             }
           ],
-          "checkedAt": "2026-11-15",
-          "evidenceStatus": "Public indexed Raj Jadhav activity7493276893811712000 explicitly names Reney Product Design Intern,on-site Mumbai Vile Parle. Scope spans product UI/UX,AI experiences,landing pages,brand/carousels and collaboration with CEO/tech team,using Figma and a work portfolio. Published application address raj@reney.ai. Normal original/profile restricted;post states company relationship but precise hiring authority/title not independently verified. Search versions show2w Edited/3mo Edited and crawl labels vary;exact original publication and renewed intake unverified. Official reney.ai/about identifies Renate Global Private Limited and Vile Parle Mumbai product office,corroborating AI recruitment product identity,not internship pay/current intake. Pay,duration,student eligibility and start date unstated. No external-client vacancy inferred from product demo/job-post screenshots."
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Conflicting indexed two-week-edited/three-month-edited wording cannot establish original publication within14days. Employer identity is not a current exact vacancy. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained.",
+          "evidenceHistory": [
+            {
+              "checkedAt": "2026-11-15",
+              "seniority": "Internship; current cohort and student eligibility to confirm",
+              "evidenceStatus": "Public indexed Raj Jadhav activity7493276893811712000 explicitly names Reney Product Design Intern,on-site Mumbai Vile Parle. Scope spans product UI/UX,AI experiences,landing pages,brand/carousels and collaboration with CEO/tech team,using Figma and a work portfolio. Published application address raj@reney.ai. Normal original/profile restricted;post states company relationship but precise hiring authority/title not independently verified. Search versions show2w Edited/3mo Edited and crawl labels vary;exact original publication and renewed intake unverified. Official reney.ai/about identifies Renate Global Private Limited and Vile Parle Mumbai product office,corroborating AI recruitment product identity,not internship pay/current intake. Pay,duration,student eligibility and start date unstated. No external-client vacancy inferred from product demo/job-post screenshots."
+            }
+          ]
         }
       ],
       "contact": {
@@ -21231,7 +21437,13 @@
         "kind": "Published application address in older hiring post;not contacted",
         "sourceUrl": "https://www.linkedin.com/posts/raj-jadhav-92ba99254_were-hiring-aproduct-design-intern-at-reney-activity-7493276893811712000-ZiBg"
       },
-      "website": "https://reney.ai/"
+      "website": "https://reney.ai/",
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-15",
+          "openingStatus": "Older post-only product-design internship;current pay,intake and duration unknown"
+        }
+      ]
     },
     {
       "id": "becoming-quotient",
@@ -21246,7 +21458,7 @@
       "rationale": "Workable editable product-company suggestion from documented B2B product and company-linked design hiring. Immediate-start wording and advanced component/handoff expectations need clarification;not a candidate-fit score or hiring probability.",
       "careersUrl": "https://becomingquotient.com/careers",
       "locationNote": "Mumbai hybrid in older internship post;later-joining flexibility unconfirmed",
-      "openingStatus": "Older paid product-design intern post,immediate start;official careers is generic,current cohort unknown",
+      "openingStatus": "Historical social-only design lead archived by14-day research age rule; renewed current intake not verified. This does not establish employer closure.",
       "currentOpeningVerified": false,
       "payNote": "Paid wording only;amount not disclosed. Competitive/better-than-market is not numerical compensation.",
       "payConfidence": "Limited; inspect exact role evidence",
@@ -21255,7 +21467,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-15",
+      "researchedAt": "2026-11-16",
       "sources": [
         {
           "url": "https://www.linkedin.com/posts/rishwin-jethi_linkedin-do-what-you-do-best-and-please-activity-7475050721864957952-tilu",
@@ -21268,6 +21480,12 @@
           "label": "15 November public research",
           "checkedAt": "2026-11-15",
           "evidenceStatus": "Normal official careers page identifies author as Product Lead and Chief of Staff and product/design team;selected testimonials are employer material,not independent team-quality proof. Generic open conversation does not confirm exact internship intake."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/rishwin-jethi_linkedin-do-what-you-do-best-and-please-activity-7475050721864957952-tilu",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Indexed one/two-month-old wording and much older mirror age. Generic open conversations on employer careers do not renew this exact internship. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained."
         }
       ],
       "roles": [
@@ -21276,7 +21494,7 @@
           "jobId": "linkedin-post-becomingquotient-7475050721864957952",
           "title": "Product Design Intern",
           "url": "https://www.linkedin.com/posts/rishwin-jethi_linkedin-do-what-you-do-best-and-please-activity-7475050721864957952-tilu",
-          "seniority": "Internship; current cohort and student eligibility to confirm",
+          "seniority": "Historical internship lead; outside current social recommendation age policy",
           "location": "Mumbai HQ — hybrid",
           "requirements": [
             {
@@ -21305,8 +21523,15 @@
               "sourceUrl": "https://www.linkedin.com/posts/rishwin-jethi_linkedin-do-what-you-do-best-and-please-activity-7475050721864957952-tilu"
             }
           ],
-          "checkedAt": "2026-11-15",
-          "evidenceStatus": "Public indexed Rishwin Chandra Jethi activity7475050721864957952 explicitly advertises Becoming Quotient Product Design Intern,full-time,hybrid Mumbai HQ,0–2years,paid amount unspecified,and immediate start. Requires Figma components/auto-layout/design systems,real product UI portfolio,engineering handoff and accessibility including AAA contrast;HR-tech/B2B optional. Claude/AI-assisted workflow expected;selection includes design exercise,no test performed. Normal official careers page identifies Rishwin Jethi as Product Lead and Chief of Staff,corroborating author relationship,and corporate footer Longitudinal Human Private Limited. Careers page is generic open-conversation route,not exact current internship confirmation. Indexed labels vary1mo/2mo with older crawl;no verified original date/renewed cohort. Immediate-start wording conflicts with a deferred joining plan unless employer confirms flexibility. No monthly amount inferred from competitive/better-than-market wording. Hopin mirror143days/immediate labels and scam/competition claims are not independent employer verification or candidate odds."
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Indexed one/two-month-old wording and much older mirror age. Generic open conversations on employer careers do not renew this exact internship. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained.",
+          "evidenceHistory": [
+            {
+              "checkedAt": "2026-11-15",
+              "seniority": "Internship; current cohort and student eligibility to confirm",
+              "evidenceStatus": "Public indexed Rishwin Chandra Jethi activity7475050721864957952 explicitly advertises Becoming Quotient Product Design Intern,full-time,hybrid Mumbai HQ,0–2years,paid amount unspecified,and immediate start. Requires Figma components/auto-layout/design systems,real product UI portfolio,engineering handoff and accessibility including AAA contrast;HR-tech/B2B optional. Claude/AI-assisted workflow expected;selection includes design exercise,no test performed. Normal official careers page identifies Rishwin Jethi as Product Lead and Chief of Staff,corroborating author relationship,and corporate footer Longitudinal Human Private Limited. Careers page is generic open-conversation route,not exact current internship confirmation. Indexed labels vary1mo/2mo with older crawl;no verified original date/renewed cohort. Immediate-start wording conflicts with a deferred joining plan unless employer confirms flexibility. No monthly amount inferred from competitive/better-than-market wording. Hopin mirror143days/immediate labels and scam/competition claims are not independent employer verification or candidate odds."
+            }
+          ]
         }
       ],
       "contact": {
@@ -21315,7 +21540,13 @@
         "kind": "Published exact hiring-post application address;no message sent",
         "sourceUrl": "https://www.linkedin.com/posts/rishwin-jethi_linkedin-do-what-you-do-best-and-please-activity-7475050721864957952-tilu"
       },
-      "website": "https://becomingquotient.com/"
+      "website": "https://becomingquotient.com/",
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-15",
+          "openingStatus": "Older paid product-design intern post,immediate start;official careers is generic,current cohort unknown"
+        }
+      ]
     },
     {
       "id": "ema",
@@ -21555,7 +21786,7 @@
       "rationale": "Possible editable preference for sourced security-product/interface scope. Older post,current identity and unknown India intake require confirmation;not workplace quality or hiring probability.",
       "careersUrl": "https://www.vaultlinegroup.com/careers",
       "locationNote": "Bengaluru company presence in indexed company page;oldRemoteinternshipIndia eligibility unconfirmed",
-      "openingStatus": "Older paid design-intern post only;current official index does not corroborate renewed design intake",
+      "openingStatus": "Historical social-only design lead archived by14-day research age rule; renewed current intake not verified. This does not establish employer closure.",
       "currentOpeningVerified": false,
       "payNote": "Old exact post says paid only;no numerical design-intern stipend. Current corporate generic competitivepay is not intern salary evidence.",
       "payConfidence": "Limited; inspect exact role evidence",
@@ -21583,6 +21814,12 @@
           "label": "16 November public research",
           "checkedAt": "2026-11-16",
           "evidenceStatus": "Normal current careers:BusinessDeveloper1–3years andcoming-soon security positions;no exact design-intern renewal. General hello inbox is not guessed recruitment."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI",
+          "label": "16 November freshness follow-up",
+          "checkedAt": "2026-11-16",
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Indexed one-month/older crawl wording. Current Vaultline identity confirmed, but official careers does not corroborate a renewed design-intern intake. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained."
         }
       ],
       "roles": [
@@ -21591,7 +21828,7 @@
           "jobId": "linkedin-post-0xteam-7474817212743081984",
           "title": "UI/UX & Product Design Intern",
           "url": "https://www.linkedin.com/posts/manojgowdaks_were-hiring-uiux-product-design-intern-activity-7474817212743081984-5lRI",
-          "seniority": "Internship; current cohort and student eligibility to confirm",
+          "seniority": "Historical internship lead; outside current social recommendation age policy",
           "location": "Remote;India eligibility unconfirmed,Bengaluru company presence",
           "requirements": [
             {
@@ -21616,7 +21853,14 @@
             }
           ],
           "checkedAt": "2026-11-16",
-          "evidenceStatus": "Public indexed exact Manojgowda K S activity7474817212743081984 advertises paid UIUX/ProductDesignIntern at0xTeamSpace-Web3Security,Remote,students/recentgraduates,Figma,portfolio,web/mobile interfaces,prototypes and design-system collaboration. No numerical stipend,duration,joining or explicit India-employment eligibility. Tagged employer resolves to VaultlineSecurity(formerly0xTeam);company page lists Manojgowda among employees andBengaluru among locations,not a confirmed hiring title. Normal official vaultlinegroup.com independently confirms former0xTeam identity. Current official careers lists BusinessDeveloper and coming-soon security families,not this internship;absence alone does not establish this older post closed. Normal LinkedIn/short application destination restricted;no form inspected or submitted. Index relative1mo/other2–3monthcrawl labels are not original publication. Unrelated0xteam/leval.ai namesake not merged."
+          "evidenceStatus": "Archived from active research recommendations under the maximum14-day social-publication rule, not an employer closure. Indexed one-month/older crawl wording. Current Vaultline identity confirmed, but official careers does not corroborate a renewed design-intern intake. Employer vacancy status remains unverified. Stable record, original evidence, pay, requirement IDs and browser-local application history retained.",
+          "evidenceHistory": [
+            {
+              "checkedAt": "2026-11-16",
+              "seniority": "Internship; current cohort and student eligibility to confirm",
+              "evidenceStatus": "Public indexed exact Manojgowda K S activity7474817212743081984 advertises paid UIUX/ProductDesignIntern at0xTeamSpace-Web3Security,Remote,students/recentgraduates,Figma,portfolio,web/mobile interfaces,prototypes and design-system collaboration. No numerical stipend,duration,joining or explicit India-employment eligibility. Tagged employer resolves to VaultlineSecurity(formerly0xTeam);company page lists Manojgowda among employees andBengaluru among locations,not a confirmed hiring title. Normal official vaultlinegroup.com independently confirms former0xTeam identity. Current official careers lists BusinessDeveloper and coming-soon security families,not this internship;absence alone does not establish this older post closed. Normal LinkedIn/short application destination restricted;no form inspected or submitted. Index relative1mo/other2–3monthcrawl labels are not original publication. Unrelated0xteam/leval.ai namesake not merged."
+            }
+          ]
         }
       ],
       "contact": {
@@ -21628,6 +21872,12 @@
       "aliases": [
         "0xTeam Space",
         "0xTeam"
+      ],
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-16",
+          "openingStatus": "Older paid design-intern post only;current official index does not corroborate renewed design intake"
+        }
       ]
     }
   ],

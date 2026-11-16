@@ -18,6 +18,24 @@ the schedule; do not start another scheduler or duplicate task.
 
 ## Every pass
 
+### Publication-age rule — updated 16 November 2026
+
+Social-only recommendations must come from an original hiring post published
+within the last 14 days. Verify its publication date; a recent crawl, edit,
+repost, firstSeen date, comment or search-engine date filter does not reset age.
+Unverifiable or older posts stay as historical research, outside active
+recommendations. Archive their public feed records using the supported closed
+stage with an explicit research-age reason, not an employer-closure claim;
+retain IDs, source evidence and browser-local application overrides/history.
+An independently current employer vacancy can remain a recommendation on its
+own evidence, with an old social post retained only as historical additionalSource.
+Never infer an open role merely from a careers landing page or declare a vacancy
+closed because a post is old. A genuinely new, dated employer hiring post can
+support a renewed cohort after verification; do not reset old dates silently.
+
+The generator now includes dated social queries and additional public job-board
+queries. Execute and log the searches; generation alone is not source coverage.
+
 1. Run broad LinkedIn **Posts** searches, including `/posts/` and `/feed/update/`,
    plus public X hiring-post searches. Search wording such as product design
    intern, UX intern, interaction-design internship, hiring interns, portfolio,

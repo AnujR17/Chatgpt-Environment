@@ -2,34 +2,33 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `1612ad2cfbeb96c6d0c42ad96b6d2a11a738f933` in existing Vercel project `chatgpt-environment`. Verified16November2026:131 retained roles/112 active-held/19 archived,289 companies,20 established profiles and40 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
+Most recently verified production before this follow-up: `topic/job-search-agent` commit `1612ad2cfbeb96c6d0c42ad96b6d2a11a738f933`. The freshness follow-up below is awaiting exact-commit publication verification. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
-## 16 November research snapshot
+## 16 November freshness follow-up
 
-131 retained roles (112 active/held,19 archived),289 company targets and40
-coverage records. New held internships:Usability Designs(pay unknown),Cehpoint
-separate AI/SaaS role(10–20k/month;five-day pre-offer project terms unresolved),
-and older Vaultline/former0xTeam post(paid amount and India eligibility unknown).
-Existing Gnixar stable card now has exact employer25–40k/month,six-monthIndia
-remote evidence;student cohort/start unconfirmed. Exact Moon permanent trainee
-expired and archived;separate student internship retained. Three new company
-targets,20 established profiles unchanged. See
-[the current research report](public/data/collection-report.md).
+133 retained roles (108active/held,25archived),289company targets and48coverage
+records. Two new Indeed Lemon Yellow Thane internships: UX Designer and UX
+Research, both platform dated12November, pay/duration/student intake unknown.
+Six older or unverifiable-age social-only recommendations archived under the
+14-day rule;this does not establish employer closure. Source/history and
+browser-local application compatibility retained.44 rolling query links now
+cover expanded boards and date-filtered posts. Existing daily automation keeps
+07:00Asia/Kolkata schedule. See [the current research report](public/data/collection-report.md).
 
-Assistant remains removed. Daily research uses exact topic-commit production
-publication;verify READY and live files before claiming refresh.
+The earlier16November pass remains historical in HANDOFF.md. Publication of
+this follow-up is pending exact-commit READY/live-data verification.
 
 ## Established employers and workplace screening
 
 The company directory puts20 researched established employers first and has an
 Established employers filter. Discover has the same filter and a shortcut to
 the directory. Added Intuit, SAP and ServiceNow programme targets; these are not
-new verified India design vacancies. The directory now has289 companies and40
-source-coverage records. Existing role records and pay/history remain;all19 archived records retain their evidence.
+new verified India design vacancies. The directory now has289 companies and48
+source-coverage records. Existing role records and pay/history remain;all25 archived records retain their evidence.
 
 A sourced Lala-style screening badge distinguishes published processes,
 specific hiring terms to check and unassessed companies. The definition and
@@ -47,7 +46,7 @@ is changed by an assessment. No Assistant page or AI backend was reintroduced.
 
 ## Included
 
-- 131 retained role records (112 active/held,19 archived), researched16November2026. Three new internships on hold and an existing employer-backed pay upgrade;current intake and timing need confirmation. See [the current research report](public/data/collection-report.md).
+- 133 retained role records (108active/held,25archived), researched16November2026. Two new Indeed internships on hold and six historical social-only leads archived for the14-day age rule;current intake and timing need confirmation. See [the current research report](public/data/collection-report.md).
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat and remote India minimum ₹10,000/month, with ₹15,000+ preferred; other eligible cities minimum ₹15,000/month. Higher pay remains welcome. Earlier dated research may use former thresholds.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.

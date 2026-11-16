@@ -87,7 +87,7 @@ for row in [
  ['Employer screening','Established employer visibility, published process evidence and hiring-term concerns are separate. None is a guaranteed good workplace or a Yes/No Lala verdict. Unknown stays unassessed; personal flags stay browser-local.'],
  ['Personal fit','Public exports contain no personal assessment. Browser-only criteria can be reviewed separately; Met/partial/gap is an evidence checklist, not hiring odds.'],
  ['Blacklist','Browser-local blacklist hides recommendations, including future matching feed items. Saved application history is retained. Use JSON backup to transfer preferences; daily task cannot read local blacklist.'],
- ['Freshness','Discovery date is not posting date. An accessible listing does not guarantee current hiring.'],
+ ['Freshness','Social-only recommendations require verified original publication within14days; edits, reposts, crawls and discovery dates do not reset age. Archived age-policy leads are not employer-confirmed closed. An accessible listing does not guarantee current hiring.'],
  ['Applications','No applications have been submitted. Status and application fields are for you to update.'],
  ['Board vs Excel','This workbook contains the research snapshot. Browser board changes are exported separately using CSV or JSON backup.'],
  ['Privacy','Initial workbook contains no résumé or personal contact data. Employer application contacts are public listing details.'],

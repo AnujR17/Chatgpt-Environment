@@ -18,6 +18,17 @@ class SocialPlanTest(unittest.TestCase):
         self.assertTrue(all(q['status']=='not_searched' for q in plan['queries']))
         self.assertEqual(plan['timezone'], 'Asia/Kolkata')
 
+    def test_social_window_crosses_month_and_year_without_dating_board_results(self):
+        plan = mod.build_plan({'version':1,'targets':[]}, '2027-01-05')
+        queries = {q['id']:q for q in plan['queries']}
+        self.assertEqual(plan['socialPublicationCutoff'], '2026-12-22')
+        social = queries['linkedin-posts-broad']
+        self.assertEqual(social['publicationWindow'], {'from':'2026-12-22','through':'2027-01-05'})
+        self.assertIn('after:2026-12-21 before:2027-01-06', social['query'])
+        self.assertNotIn('publicationWindow', queries['indeed-design-broad'])
+        for key in ['indeed','wellfound','cutshort','unstop','internshala','instahyre','prosple','hirist','foundit','apna','shine','peerlist','freshersworld']:
+            self.assertIn(key+'-design-broad', queries)
+
     def test_invalid_identity_and_credential_links_are_rejected(self):
         for targets in [[{'id':'a','name':''}], [{'id':'a','name':'A'},{'id':'a','name':'B'}], [{'id':'a','name':'A','careersUrl':'https://user:secret@example.com'}]]:
             with self.assertRaises(ValueError):

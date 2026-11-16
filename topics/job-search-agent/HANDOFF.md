@@ -2,7 +2,35 @@
 
 Updated 16 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 16 November public research — published
+## 16 November freshness follow-up — publication pending
+
+133retained/108active-held/25archived,289companies,20established profiles,48coverage
+rows. Two new exact Indeed Lemon Yellow Thane internships, platform12November:
+UX Designer360b40f98498d7cd and UX Researchcf79349ac7c5986b. Pay/duration/student
+cohort unconfirmed;current pay fields null. Jobiba15–25k/month is uncorroborated
+mirror evidence only. Employer internship/Keka route recorded, exact ATS restricted.
+Six social-only cards archived for age policy,not employer closure: Wint,ZeonAI,
+BON,Reney,BecomingQuotient,Vaultline. Stable records,requirements,pay/history and
+browser-local progress compatibility retained. Current independently employer-backed
+roles remain with old social crossposts labeled historical. Adobe R172738 directory-only
+unresolved;no fabricated requirements/current intake. Ecolibrium mismatch retained.
+
+Fresh social-only recommendation requires verified original publication within14days.
+Unknown date,edits,reposts,crawls/firstSeen do not establish recency. Generator44queries
+preserves IDs and adds13board queries. Actual targeted checks recorded independently;
+111primaryURLs:95fetched,14restricted,2missing,noerrors. No verified new qualifying
+social post within14days. Existing daily automation updated with same07:00ISTschedule.
+No new assistant/task/account/UI/model;no applications/messages. Broad board coverage
+is targeted,best-effort,not exhaustive/authenticated. See current public report.
+Research/QA outsideGit:/workspace/job-freshness-nov16-review/.
+Five JS suites,eight Python tests,build and preservation audit passed. Local desktop/mobile
+checks confirm108active/25archived/2newheld/48coverage,synthetic saved application
+stages and blacklist persist through age-policy archive/reload. Discover/Companies
+mobile checks passed,no runtime errors or POSTs. Sources mobile navigation retains
+a pre-existing horizontal overflow(390px viewport,current696px document;prior903px),
+reproduced with prior sources.json;UI was not modified in this research refresh.
+
+## Earlier16November public research — historical published snapshot
 
 131 retained/112 active-held/19 archived,289 companies,20 established profiles,
 40 coverage rows(25 updated). New held roles:Usability Designs original remote

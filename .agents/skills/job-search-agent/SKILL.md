@@ -85,3 +85,14 @@ Private lalaAssessment Yes/No/Unknown values and reasons live in companyOverride
 never put them in public feeds, exports, memory or research handoff. Include
 only public screening evidence in supported static CSV/Excel exports. Keep
 unknown companies unassessed and never infer internship pay from a known brand.
+
+### Social publication age
+
+Social-only active recommendations require a verifiable original hiring post no
+older than14days. Unknown original dates, edits, reposts, crawls and discovery
+dates do not establish recency. Retain older source/role history; archive
+social-only cards using the existing schema with an explicit age-policy reason,
+never implying employer closure. Independently current exact employer vacancies
+may stand on their own evidence, with old social crossposts marked historical.
+Use the rolling social-search-plan and check its expanded job-board families;
+generated queries are not executed searches. Preserve coverage histories.
