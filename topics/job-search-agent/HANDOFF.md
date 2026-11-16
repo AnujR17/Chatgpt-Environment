@@ -2,7 +2,7 @@
 
 Updated 16 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 16 November public research — publication pending
+## 16 November public research — published
 
 131 retained/112 active-held/19 archived,289 companies,20 established profiles,
 40 coverage rows(25 updated). New held roles:Usability Designs original remote
@@ -31,7 +31,21 @@ task/schedule changes. Research and synthetic QA outside Git:
 preservation audit and local desktop/mobile checks passed:112 active/19 archived,
 289 companies,40 coverage,20 established/five established-role matches. Synthetic
 private saved-state/backup compatibility preserved;no actual browser-local data
-accessed. Zero runtime errors,POSTs or mobile overflow. Publication pending.
+accessed. Zero runtime errors,POSTs or mobile overflow.
+
+Published exact commit `1612ad2cfbeb96c6d0c42ad96b6d2a11a738f933` from
+`topic/job-search-agent` to existing project `prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`
+using the default authenticated scope. READY production
+`dpl_AoEJtVu55jAtGAm1cDkuWH6vD2h1`; exact SHA/ref/project and production alias
+verified. All nine live JSON/CSV/XLSX/report/watchlist/query-plan files returned
+200 and matched the committed bytes. Live desktop/mobile checks passed:
+112 active/19 archived,289 companies,40 coverage,20 established/five established
+role-filter matches. Synthetic saved stages,blacklist,assessments,criteria,
+profile and backup restore remained compatible;zero runtime errors,POSTs or
+mobile overflow. No actual browser-local state inspected. Account,protection,
+framework and Node unchanged. One production/no preview deployment for this
+release SHA. This follow-up records verification in documentation only;no
+second deployment or feed regeneration.
 
 ## 15 November public research — published
 
