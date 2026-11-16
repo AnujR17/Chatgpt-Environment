@@ -2,7 +2,7 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Most recently verified production before this follow-up: `topic/job-search-agent` commit `1612ad2cfbeb96c6d0c42ad96b6d2a11a738f933`. The freshness follow-up below is awaiting exact-commit publication verification. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `83a329f74a6cb3ac64a685b9da26dce1d52a1fe9` in existing Vercel project `chatgpt-environment`. Verified16November2026:133retained roles/108active-held/25archived,289companies,20established profiles and48coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
@@ -19,8 +19,8 @@ browser-local application compatibility retained.44 rolling query links now
 cover expanded boards and date-filtered posts. Existing daily automation keeps
 07:00Asia/Kolkata schedule. See [the current research report](public/data/collection-report.md).
 
-The earlier16November pass remains historical in HANDOFF.md. Publication of
-this follow-up is pending exact-commit READY/live-data verification.
+The earlier16November pass remains historical in HANDOFF.md. This follow-up
+is published and exact-commit READY/live-data verification passed.
 
 ## Established employers and workplace screening
 

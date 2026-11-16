@@ -2,7 +2,7 @@
 
 Updated 16 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 16 November freshness follow-up — publication pending
+## 16 November freshness follow-up — published
 
 133retained/108active-held/25archived,289companies,20established profiles,48coverage
 rows. Two new exact Indeed Lemon Yellow Thane internships, platform12November:
@@ -29,6 +29,20 @@ stages and blacklist persist through age-policy archive/reload. Discover/Compani
 mobile checks passed,no runtime errors or POSTs. Sources mobile navigation retains
 a pre-existing horizontal overflow(390px viewport,current696px document;prior903px),
 reproduced with prior sources.json;UI was not modified in this research refresh.
+
+Production verified READY: `83a329f74a6cb3ac64a685b9da26dce1d52a1fe9` from `topic/job-search-agent`, deployment
+`dpl_HxXBLFqXZveSEdY7FdT5Cs7ieMBK` in existing project
+`prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`. Production alias
+https://chatgpt-environment.vercel.app points to it. All nine live feed/export/
+watchlist/query-plan files match Git bytes; live desktop/mobile checks passed,
+including two held Indeed cards,six historical age archives,48coverage rows,
+synthetic saved application and blacklist persistence. Pre-existing Sources
+mobile navigation overflow remains documented above; no UI change. Default
+connection scope used,no teamId. Project/account and protection unchanged;
+SHA-filtered deployment inventory has exactly one production and no preview.
+Existing enabled automation verified14-day rule and unchanged daily07:00IST,
+next scheduled17November. This verification-only documentation commit is not
+redeployed; production intentionally remains the exact researched data commit.
 
 ## Earlier16November public research — historical published snapshot
 
