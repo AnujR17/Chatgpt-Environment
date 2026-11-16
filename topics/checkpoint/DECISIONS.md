@@ -20,3 +20,8 @@
 
 - User clarifies that a useful gaming companion should reflect a sustained period rather than copy each facial frame. Default to Reflection with stated evidence window/hold, and retain Face preview for diagnostics. Confirmed human check-ins take priority; face patterns cannot establish inner emotion or CMA. Full automatic 43-feeling inference is not supported by available evidence. Keep all 43 as meaningful authored selectable states and show eight-class model scores honestly.
 - CMA report should answer how reported pleasantness/activation changed and what to reflect on next, without a sensor-event log or inferred emotional duration. Export PDF natively and to the paired phone. Nori is the new name. Draggability uses explicit Ctrl+Alt or a temporary tray move mode, retaining no-focus/click-through play and remembering placement.
+
+
+## 16 November 2026 — concrete player value in the improvement branch
+
+Scope Next attempt to casual/first-time Getting Over It practice, with explicit section selection, source-linked technique prompts, player-controlled help, user-rated usefulness and reusable personal lessons. CMA changes explanation density or target size using a recent explicit check-in, not facial categories. Unknown remains unknown; thresholds/expiry are authored prototype rules. Source evidence and working flow: app/docs/NEXT-ATTEMPT.md. No invented interviews, automatic route/anger truth, game modifications or claims of reduced frustration. Continue only on the isolated improvement branch; no OTA publication.

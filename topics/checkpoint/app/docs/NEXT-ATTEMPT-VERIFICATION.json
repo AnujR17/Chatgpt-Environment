@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-11-16",
+  "branch": "topic/checkpoint-session-20261116",
+  "tested_source_commit": "ee3e54616fe70090f9c219f6a24cecd7afa7c227",
+  "windows": {
+    "run_id": 43825458950,
+    "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/43825458950",
+    "conclusion": "success",
+    "support_policy_tests": 9,
+    "attempt_policy_tests": 8,
+    "native_practice_flow": "passed",
+    "native_tracking_regression": "passed",
+    "portable_package": "assembled and uploaded",
+    "artifact_id": 14205938907,
+    "artifact_bytes": 241224441,
+    "artifact_sha256": "fc21f50c3726292825935d0c8285427f8b47cf720a067816ea7c4b8319ff9467",
+    "download": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/43825458950/artifacts/14205938907",
+    "artifact_access": "GitHub login required; 14-day retention"
+  },
+  "linux": {
+    "pytest_passed": 111,
+    "pytest_skipped": 5,
+    "native_flow": "passed",
+    "phone_browser": "Chromium 390x844; selected cue, outcome clearing, PDF and disconnected-state checks passed; no JS errors",
+    "existing_phone_face_rendering_regression": "passed"
+  },
+  "screenshots": {
+    "docs/previews/next-attempt.png": "Actual Linux Qt render; synthetic check-in; not emotion accuracy evidence",
+    "docs/previews/next-attempt-phone.png": "Actual Chromium render connected to native app via loopback; synthetic check-in",
+    "windows_screenshots": "Included in Windows workflow artifact"
+  },
+  "not_established": [
+    "Usefulness or performance benefit during real gameplay",
+    "Facial recognition accuracy for the target player",
+    "Physical phone and Windows webcam behaviour"
+  ],
+  "publication": "Branch review artifact only. No OTA manifest, GitHub release, main or stable-branch changes."
+}

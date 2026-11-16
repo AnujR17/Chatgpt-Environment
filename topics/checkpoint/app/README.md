@@ -6,7 +6,7 @@ This branch adds **Next attempt**: choose the Getting Over It problem you are st
 
 [Research, rationale and working flow](docs/NEXT-ATTEMPT.md) · [Windows review workflow](https://github.com/AnujR17/Chatgpt-Environment/actions/workflows/checkpoint-session-review.yml)
 
-Download **checkpoint-session-study** from the latest successful run for this branch. Extract it, then extract **Checkpoint-Session-Study.zip** into a separate folder and run **Start Checkpoint.cmd**. This is a review artifact; it does not update your stable installation or OTA channel. GitHub Actions downloads require a GitHub login and expire after 14 days.
+[Download the verified Windows preview](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/43825458950/artifacts/14205938907) (**checkpoint-session-study**, GitHub login required). Extract it, then extract **Checkpoint-Session-Study.zip** into a separate folder and run **Start Checkpoint.cmd**. This is a review artifact; it does not update your stable installation or OTA channel. GitHub Actions downloads require a GitHub login and expire after 14 days.
 
 Open **Next attempt** on the session screen or tray. Optional cue text appears beside Nori for 12 seconds; the paired phone shows the same chosen cue. **Review attempt** records your verdict and an optional note. Notes survive a new session only when saved summaries are enabled in Settings and the session is saved. The PDF includes actual cue feedback alongside your CMA check-ins.
 
@@ -14,7 +14,7 @@ Camera recognition and automatic game-scene limitations remain. These source-lin
 
 ![Next-attempt native screen with a synthetic CMA check-in](docs/previews/next-attempt.png)
 
-[Native flow verification](docs/PRACTICE-VERIFICATION.json) · [Native-to-phone browser verification](docs/PRACTICE-PHONE-VERIFICATION.json)
+[Build and verification record](docs/NEXT-ATTEMPT-VERIFICATION.json) · [Native flow verification](docs/PRACTICE-VERIFICATION.json) · [Native-to-phone browser verification](docs/PRACTICE-PHONE-VERIFICATION.json)
 
 ## Development and evidence
 

@@ -53,5 +53,5 @@
 - [x] Research gamer recording/practice patterns and game-specific technique sources.
 - [x] Implement player-requested cues, CMA guidance presentation, explicit feedback, saved-note recall, overlay/phone and CMA PDF integration.
 - [x] Local regression/native/browser flow checks; no invented effectiveness claims.
-- [ ] Verify Windows review artifact for the new code.
+- [x] Verify Windows review artifact for the new code (run 43825458950).
 - [ ] Actual Getting Over It player trial: cue usefulness, interruption cost and recognition failures remain unknown.
