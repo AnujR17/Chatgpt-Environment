@@ -1,0 +1,69 @@
+name: Checkpoint session branch review
+on:
+  push:
+    branches: [topic/checkpoint-session-20261116]
+    paths:
+      - topics/checkpoint/app/checkpoint/**
+      - topics/checkpoint/app/tests/**
+      - topics/checkpoint/app/scripts/**
+      - .github/workflows/checkpoint-session-review.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: checkpoint-session-review
+  cancel-in-progress: true
+jobs:
+  review:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: topics/checkpoint/app
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Fetch pinned Windows runtime
+        run: python -m scripts.fetch_windows_runtime
+      - name: Assemble isolated native preview
+        run: |
+          python -m scripts.assemble_windows
+          if ($LASTEXITCODE -ne 0) { throw 'Assembly failed' }
+      - name: Compile branch source
+        run: |
+          python -m compileall -q checkpoint scripts tests
+          if ($LASTEXITCODE -ne 0) { throw 'Syntax check failed' }
+      - name: CMA support policy tests
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe -m unittest discover -s tests -p test_session_support.py -v
+          if ($LASTEXITCODE -ne 0) { throw 'Support policy tests failed' }
+      - name: Real Windows service flow and viewport checks
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_session_branch.py
+          if ($LASTEXITCODE -ne 0) { throw 'Native session review failed' }
+      - name: Existing native tracking regression checks
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_tracking.py
+          if ($LASTEXITCODE -ne 0) { throw 'Tracking regression failed' }
+      - name: Prepare review-only portable package
+        run: |
+          New-Item -ItemType Directory -Force build/Checkpoint-Windows/docs | Out-Null
+          Copy-Item docs/SESSION-BRANCH.md build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/session-review/verification.json build/Checkpoint-Windows/docs/
+          python -m scripts.package_windows
+          if ($LASTEXITCODE -ne 0) { throw 'Review package failed' }
+          Copy-Item ../Checkpoint-Windows-Preview.zip ../Checkpoint-Session-Study.zip
+      - name: Save screenshots, checks and portable preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: checkpoint-session-study
+          path: |
+            topics/checkpoint/Checkpoint-Session-Study.zip
+            topics/checkpoint/app/artifacts/session-review/
+            topics/checkpoint/app/artifacts/windows-tracking-smoke.json
+          if-no-files-found: warn
+          retention-days: 14

@@ -51,6 +51,8 @@ def cma_summary(session,activity=None):
     result.update(insight=insight,next_step=prompt)
     report={'schema':3,'game':session.game,'intention':session.intention,'duration_seconds':round(session.elapsed(),1),
             'cma':result,'basis':'Player check-ins; facial estimates and input timings do not establish pleasantness or activation.'}
+    from checkpoint.support import support_summary
+    report['support']=support_summary(getattr(session,'support_events',[]))
     if activity:report['activity_summary']=activity
     return report
 
@@ -92,6 +94,12 @@ def report_html(report):
     if observed and any(patterns.values()):
         label='Visual context (includes video testing)' if observed.get('video_test') else 'Visual context'
         parts.append('<h2>'+label+'</h2><p>'+e(observed.get('usable_face_seconds',0))+' seconds of usable observation, with '+e(sum(patterns.values()))+' smoothed expression transitions. These describe visual tracking, not time spent feeling an emotion.</p>')
+    support=report.get('support',{})
+    if support.get('resets') or support.get('focus_goals') or support.get('kept_playing'):
+        parts.append('<h2>Your choices</h2><p>'+e(support.get('resets',0))+' short resets chosen; '+e(support.get('focus_goals',0))+' practice goals set; '+e(support.get('kept_playing',0))+' choices to keep playing.</p>')
+        if support.get('rated_helpful') or support.get('rated_unhelpful'):
+            parts.append('<p>'+e(support.get('rated_helpful',0))+' resets rated helpful; '+e(support.get('rated_unhelpful',0))+' rated not helpful. '+e(support.get('unrated_resets',0))+' not rated.</p>')
+        else:parts.append('<p class="muted">No reset feedback yet. Choosing a reset does not establish that it helped.</p>')
     parts.extend(['<h2>What stands out</h2><p>'+e(c['insight'])+'</p>','<h2>For your next session</h2><p>'+e(c['next_step'])+'</p>',
                   '<p class="muted">CMA describes pleasantness and activation. Coordinates are adjustable check-in values, not clinical measurements. Facial estimates, hand gestures and input activity are not used to invent an emotional history.</p></body></html>'])
     return ''.join(parts)

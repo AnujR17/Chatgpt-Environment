@@ -42,5 +42,5 @@ class CompanionState:
             'checkin':{'title':session.affect[0],'pleasantness':session.affect[1],'activation':session.affect[2]},
             'model_estimate':category_estimate(session.cue) if display and display.source in ('face_movement','expression_estimate','visual_pattern') else None,
             'input':input_stats or {'status':'Input observation off'},'nudge':self.nudge,
-            'cma_report':{k:report['cma'][k] for k in ('count','trend','insight','next_step','latest')}}
+            'support':report['support'],'cma_report':{k:report['cma'][k] for k in ('count','trend','insight','next_step','latest')}}
         return state,report

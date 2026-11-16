@@ -57,45 +57,33 @@ print('Native window created. Close it to finish this check.')
 app.exec()
 print('Setup check completed.')
 ''')
-(OUT/'READ ME FIRST.txt').write_text('''Checkpoint with Nori — Windows portable preview
+(OUT/'READ ME FIRST.txt').write_text('''Checkpoint - Session study branch preview
 
-1. Extract the entire ZIP to a normal folder on your Windows PC.
-2. Double-click Start Checkpoint.cmd.
-3. Choose a game and intention. Camera starts off.
-4. Select your camera and enable Track face and hands. Reflection is the default.
-   It uses sustained visual patterns and your confirmed check-ins.
-   Choose Face preview for immediate mouth, brow, eye, teeth and hand tests.
-5. Show Nori enables the transparent, frameless, click-through desktop buddy.
-6. Phone dashboard displays a pairing QR. Choose your Wi-Fi adapter and scan it on the same trusted Wi-Fi.
-   If the phone cannot connect, use Test this link on the laptop and the Private-network firewall instructions.
-7. Settings offers HSEmotion expression estimates, game observation and optional input timing/nudges.
-8. Settings > Check for updates offers Update and restart for future releases.
-   Small app updates reuse the runtime/models; a changed runtime uses the full package automatically.
-9. Report shows your CMA journey and exports a readable PDF. It does not log facial events. No camera/game images or typed text are sent to your phone.
+Keep this in a separate folder from your stable Checkpoint installation.
+Extract the complete package and run Start Checkpoint.cmd.
 
-Neutral and loss of detection use a flat neutral appearance. The status still
-says when no face is detected. Set my neutral face optionally calibrates a few
-seconds of relaxed tracking in memory; no personal photo collection is needed.
+Session tools:
+- Check in: choose a feeling and adjust pleasantness and activation.
+- An unpleasant/high-energy check-in can offer one optional short reset.
+- Keep going silences further reset suggestions for this session.
+- A low-energy unpleasant check-in can offer a smaller practice goal.
+- Reset pauses sensing, not the game. Back to session returns early.
+- Reset feedback is optional and recorded separately from CMA.
 
-No separate Python installation or package downloads are required.
-Keep the runtime, checkpoint and artifacts folders beside the launcher.
-For diagnostics, run Check setup.cmd. Startup errors are written under
-%LOCALAPPDATA%\\CheckpointResearch\\Checkpoint\\startup-error.log.
+Camera reflection, manual CMA, the frameless Nori and local phone pairing remain
+available. Sources start off and remain off after a reset until you restart them.
+No raw camera/game images or typed keys are uploaded. User-entered practice goals
+are intentional session data, with normal local opt-in summary retention.
 
-Camera and video are explicit choices. No microphone or gameplay recording.
-Expression analysis is experimental, off by default and never sets your CMA.
-History is off by default; opting in stores derived summaries locally.
-This research preview is not code-signed. Automated Windows launch and fixture
-checks run before publication. Physical-camera access, actual game behaviour,
-phone Wi-Fi/firewall access and device performance still need a target-device check. The included numerical/runtime libraries are
-Windows x64 wheels. Windows 10/11 x64 is the target.
+This package is a branch review artifact, not an OTA release.
+Use the Checkpoint session branch review workflow for newer branch artifacts.
+The stable app and its release channel have not been changed.
+Model weights are unchanged; recognition and intervention benefit remain
+experimental. See docs/SESSION-BRANCH.md for scope and verification limits.
 
-Runtime: official Python embedded distribution and PyPI wheels. Third-party
-licenses are retained in runtime and package metadata. PySide6/Qt is dynamically
-linked and replaceable. App source is in checkpoint/. Qt/PySide source:
-https://code.qt.io/cgit/pyside/pyside-setup.git/
-https://code.qt.io/cgit/qt/
-''')
+Python/Qt/PySide vendor licenses and source references remain in third_party
+and the bundled runtime. App source is in checkpoint/.
+''',encoding='utf-8')
 # Validate machine code, imports present, plugin, provenance and trained model hash.
 def amd64(path):
     data=path.read_bytes();assert data[:2]==b'MZ';offset=struct.unpack_from('<I',data,0x3c)[0];assert data[offset:offset+4]==b'PE\0\0';assert struct.unpack_from('<H',data,offset+4)[0]==0x8664
