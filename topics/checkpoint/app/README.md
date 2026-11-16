@@ -10,6 +10,10 @@ Download **checkpoint-session-study** from the successful branch workflow run. E
 
 Camera reflection and player-reported CMA remain separate. Existing recognition limitations are unchanged. The new support policy is a prototype, not a proven frustration intervention.
 
+![Native Windows session view with synthetic check-in data](docs/previews/session-reset.png)
+
+[Verified Windows review build](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/43801388981) · [Verification record](docs/SESSION-VERIFICATION.json)
+
 ## Development and evidence
 
 Source uses native PySide6/OpenCV/ONNXRuntime/MediaPipe, without a desktop browser engine. Runtime wheels and hashes are pinned in design/windows-runtime-sources.json. Create a venv, install requirements-runtime.txt and install this project with `python -m pip install --no-deps -e .`; run `python -m checkpoint.app`. Tests use pytest; separately sourced research videos and the provider hand example are not committed. Linux development can require system EGL/GLES libraries.

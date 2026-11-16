@@ -1,0 +1,68 @@
+{
+  "fixture": "Synthetic check-ins; not emotion accuracy or intervention efficacy",
+  "cma_routing": "passed",
+  "keep_going_suppression": "passed",
+  "real_reset_and_feedback": "passed",
+  "real_practice_goal_dialog": "passed",
+  "checkins_preserved": "passed",
+  "cma_pdf_choices": "passed",
+  "viewports": [
+    {
+      "name": "session-empty-1024",
+      "actual_width": 1024,
+      "actual_height": 749
+    },
+    {
+      "name": "session-reset",
+      "actual_width": 1028,
+      "actual_height": 749
+    },
+    {
+      "name": "session-goal-1024",
+      "actual_width": 1024,
+      "actual_height": 749
+    },
+    {
+      "name": "session-dark-1024",
+      "actual_width": 1024,
+      "actual_height": 768
+    }
+  ],
+  "physical_camera_game_phone": "not tested",
+  "ota_or_release": "not published",
+  "branch": "topic/checkpoint-session-20261116",
+  "based_on": "60586998046df9e1ba39563dd2974a4b9fdf2df5",
+  "tested_code_commit": "f49549b49586b7ff2cb9616412787abfb81ada17",
+  "windows_run": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/43801388981",
+  "policy_tests": {
+    "run": 9,
+    "passed": 9
+  },
+  "existing_native_tracking_regressions": "passed",
+  "local_execution": "Unavailable; Windows verification ran on GitHub Actions.",
+  "model_weights": "unchanged",
+  "review_artifact": {
+    "id": 14196930520,
+    "name": "checkpoint-session-study",
+    "size_in_bytes": 241071237,
+    "url": "https://api.github.com/repos/AnujR17/Chatgpt-Environment/actions/artifacts/14196930520",
+    "archive_download_url": "https://api.github.com/repos/AnujR17/Chatgpt-Environment/actions/artifacts/14196930520/zip",
+    "expired": false,
+    "created_at": "2026-11-16T04:01:26Z",
+    "expires_at": "2026-11-30T04:01:19Z",
+    "updated_at": "2026-11-16T04:01:26Z",
+    "digest": "sha256:d1e1c2b5b46f6c70d29015233a12d69cac196c3d3557e98d28c18cd1a6b3cd62",
+    "workflow_run": {
+      "id": 43801388981,
+      "repository_id": 1408350067,
+      "head_repository_id": 1408350067,
+      "head_branch": "topic/checkpoint-session-20261116",
+      "head_sha": "f49549b49586b7ff2cb9616412787abfb81ada17"
+    }
+  },
+  "limits": [
+    "Synthetic CMA inputs; not evidence of emotion accuracy or frustration reduction",
+    "Physical webcam, actual game and phone Wi-Fi not tested",
+    "No OTA manifest or GitHub Release published"
+  ]
+}

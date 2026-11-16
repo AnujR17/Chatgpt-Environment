@@ -30,3 +30,9 @@ Check in with Frustrated, with unpleasantness/high activation, to see the reset 
 The branch-only Windows workflow compiles source, runs nine support-policy tests, exercises actual native reset/feedback and practice-goal dialogs, checks light/dark layouts and tab/action bounds, exports a CMA PDF and reruns the existing native tracking/overlay/model-load fixtures. Its permissions are read-only and it uploads review artifacts only. There are no release commands and no app-update packaging step. Synthetic screenshots are labelled in their verification report; they do not establish emotion accuracy or intervention effectiveness.
 
 The editing workspace was unavailable during this task. Changes are made through the connected GitHub provider and validated on the Windows runner; do not claim local tests or a local screenshot session occurred. Physical webcam/gameplay, phone Wi-Fi, hardware performance and gamer usefulness still require target-context checks.
+
+## Completed branch verification
+
+Windows run 43801388981 passed for source commit f49549b49586b7ff2cb9616412787abfb81ada17: source compilation, all nine policy tests, actual reset/feedback and focus-goal UI flows, CMA/PDF reporting, initial tab/action/CMA visibility checks, dark/light layouts and the existing native tracking/overlay/model-load regression fixtures. Actual screenshot sizes are recorded in SESSION-VERIFICATION.json; the runner constrained requested larger windows to approximately 1024 pixels. No broad local suite, physical camera or real gameplay validation is claimed.
+
+The inherited release job is additionally guarded to refs/heads/topic/checkpoint in this branch, so dispatching that workflow from the session-study branch cannot publish stable assets. The original stable branch's workflow file is untouched.

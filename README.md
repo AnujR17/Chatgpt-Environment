@@ -1,5 +1,7 @@
 # Topic workspace
 
+**Current branch: Checkpoint session study.** [Open the improved app and Windows preview instructions](topics/checkpoint/app/README.md). Stable Checkpoint and its OTA channel remain unchanged.
+
 This repository keeps research, planning, and project discussions in reviewable Git branches. Each topic has a dedicated brief, task tracker, decisions, and handoff so a future conversation can continue from written context.
 
 | Topic | Branch | Entry point |
