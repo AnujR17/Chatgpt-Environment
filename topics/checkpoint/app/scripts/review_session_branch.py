@@ -30,6 +30,9 @@ def capture(name, width, height):
     start = window.camera_controls[0]
     assert start.mapTo(window, QPoint()).y() + start.height() < window.height(), "Camera action below viewport"
     assert window.scroll.widget().minimumSizeHint().width() <= window.scroll.viewport().width(), "Horizontal overflow"
+    for text,key in window.state_labels:
+        if key in ('valence','energy') and text.isVisible():
+            assert text.mapTo(window,QPoint()).y()+text.height()<window.height(), "CMA value below initial viewport"
     reset=window.break_button
     if reset.isVisible():
         assert reset.mapTo(window,QPoint()).y()+reset.height()<window.height(), "Reset choice below viewport"
@@ -84,7 +87,7 @@ try:
     window.toggle_theme()
     capture("session-dark-1024", 1024, 768)
     markup = report_html(window.latest_report)
-    assert "Your choices" in markup and "1 resets rated helpful" in markup
+    assert "Your choices" in markup and "1 rated helpful" in markup
     pdf = make_pdf(window.latest_report)
     assert pdf.startswith(b"%PDF-") and len(pdf) > 5000
     (OUT / "session-report-fixture.pdf").write_bytes(pdf)

@@ -271,10 +271,11 @@ class MainWindow(QMainWindow):
         em=NoriWidget(174,mode=mode);self.emblems.append(em);hero.addWidget(em,alignment=Qt.AlignmentFlag.AlignVCenter)
         words=QVBoxLayout();words.setSpacing(10);words.addStretch()
         title=label('',29,bold=True);desc=label('',14,True)
-        self.state_labels.extend([(title,'title'),(desc,'description')]);words.addWidget(title);words.addWidget(desc);words.addStretch();hero.addLayout(words,1)
+        self.state_labels.extend([(title,'title'),(desc,'description')]);words.addWidget(title);words.addWidget(desc)
+        words.addWidget(label('YOUR CMA CHECK-IN',11,True));self.add_dimensions(words)
+        words.addStretch();hero.addLayout(words,1)
         stage_layout.addLayout(hero);sl.addWidget(stage,1)
         focus=label('',15,bold=True);focus.setVisible(False);self.focus_labels.append(focus);sl.addWidget(focus)
-        dimensions,dl=panel('stateCard',14);dl.addWidget(label('YOUR CHECK-IN',11,True));self.add_dimensions(dl);sl.addWidget(dimensions)
         actions=QHBoxLayout();check=button('Check in',self.primary_action,True);self.checkin_controls.append(check)
         if mode==0:self.checkin_button=check
         actions.addWidget(check);actions.addStretch();actions.addWidget(label('Face signals and check-ins stay separate.',12,True));sl.addLayout(actions)
@@ -426,7 +427,7 @@ class MainWindow(QMainWindow):
     def add_dimensions(self,layout):
         row=QHBoxLayout();row.setSpacing(16)
         for key,title in [("valence","Pleasantness"),("energy","Energy / activation")]:
-            col=QVBoxLayout();col.addWidget(label(title,13,True));value=label("",20,bold=True);self.state_labels.append((value,key));col.addWidget(value);row.addLayout(col,1)
+            col=QVBoxLayout();col.addWidget(label(title,13,True));value=label("",18,bold=True);self.state_labels.append((value,key));col.addWidget(value);row.addLayout(col,1)
         layout.addLayout(row)
 
     def change_view(self,index):
@@ -511,7 +512,9 @@ class MainWindow(QMainWindow):
             elif displayed.source=='visual_pattern':source='Smoothed expression'
             elif displayed.source=='player_report':source='Your last check-in'
         if displayed is not None and displayed.source=='visual_pattern' and not s.camera_active:
-            title='Tracking is off';desc='Start the camera for a live reflection. You can check in with the camera off.'
+            title='Tracking is off';desc='Use the camera for face signals, or check in yourself.'
+        elif displayed is not None and displayed.source=='visual_pattern':
+            desc='No reliable face signal right now.' if displayed.artwork is None else 'A face signal. Your CMA check-in stays separate.'
         for obj,key in self.state_labels:
             if key=='cue':obj.setVisible(s.experimental_analysis and self.live_view)
             obj.setText({"title":title,"valence":valence,"energy":energy,"description":desc,"source":source,"cue":cue_text,"capture":"Video file" if s.source_kind=="video" else ("On · "+worker.backend if worker is not None and worker.frames else "Starting…") if s.camera_active else "Off"}[key])
