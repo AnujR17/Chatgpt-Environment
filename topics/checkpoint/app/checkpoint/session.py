@@ -39,6 +39,7 @@ class Session:
     reports: list = field(default_factory=list)
     support_events: list = field(default_factory=list)
     practice_goal: str = ""
+    attempts: list = field(default_factory=list)
     context: str = "Manual game context"
     break_deadline: float | None = None
     ended: float | None = None
@@ -101,7 +102,7 @@ class Session:
     def summary(self):
         return {"schema":1,"started_at":self.started_at,"duration_seconds":round(self.elapsed(),2),"game":self.game,
                 "intention":self.intention,"check_ins":list(self.reports),"support_choices":list(self.support_events),
-                "practice_goal":self.practice_goal,"capture_stopped":not self.camera_active}
+                "practice_goal":self.practice_goal,"attempts":list(self.attempts),"capture_stopped":not self.camera_active}
 
 
 class History:

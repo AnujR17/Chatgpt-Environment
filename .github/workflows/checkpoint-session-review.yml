@@ -44,6 +44,12 @@ jobs:
         run: |
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_session_branch.py
           if ($LASTEXITCODE -ne 0) { throw 'Native session review failed' }
+      - name: Next-attempt policy and native practice desk
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe -m unittest discover -s tests -p test_attempts.py -v
+          if ($LASTEXITCODE -ne 0) { throw 'Attempt policy tests failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_practice.py
+          if ($LASTEXITCODE -ne 0) { throw 'Native practice flow failed' }
       - name: Existing native tracking regression checks
         run: |
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_tracking.py
@@ -52,7 +58,9 @@ jobs:
         run: |
           New-Item -ItemType Directory -Force build/Checkpoint-Windows/docs | Out-Null
           Copy-Item docs/SESSION-BRANCH.md build/Checkpoint-Windows/docs/
+          Copy-Item docs/NEXT-ATTEMPT.md build/Checkpoint-Windows/docs/
           Copy-Item artifacts/session-review/verification.json build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/session-review/practice-verification.json build/Checkpoint-Windows/docs/
           python -m scripts.package_windows
           if ($LASTEXITCODE -ne 0) { throw 'Review package failed' }
           Copy-Item ../Checkpoint-Windows-Preview.zip ../Checkpoint-Session-Study.zip

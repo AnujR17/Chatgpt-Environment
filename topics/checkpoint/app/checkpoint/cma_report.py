@@ -53,6 +53,8 @@ def cma_summary(session,activity=None):
             'cma':result,'basis':'Player check-ins; facial estimates and input timings do not establish pleasantness or activation.'}
     from checkpoint.support import support_summary
     report['support']=support_summary(getattr(session,'support_events',[]))
+    from checkpoint.attempts import attempt_summary
+    report['practice']=attempt_summary(session)
     if activity:report['activity_summary']=activity
     return report
 
@@ -100,6 +102,16 @@ def report_html(report):
         if support.get('rated_helpful') or support.get('rated_unhelpful'):
             parts.append('<p>'+e(support.get('rated_helpful',0))+' rated helpful; '+e(support.get('rated_unhelpful',0))+' rated not helpful. '+e(support.get('unrated_resets',0))+' not rated.</p>')
         else:parts.append('<p class="muted">No reset feedback yet. Choosing a reset does not establish that it helped.</p>')
+    practice=report.get('practice',{})
+    if practice.get('started'):
+        parts.append('<h2>What helped your next attempt?</h2><p>'+e(practice['helped'])+' cues rated helpful; '+e(practice['still_stuck'])+' still stuck; '+e(practice['unrated'])+' awaiting feedback.</p>')
+        for row in practice['lessons']:
+            parts.append('<p><b>'+e(row['section'])+'</b> · '+e('Helped' if row['outcome']=='helped' else 'Still stuck')+'<br>'+e(row['cue'])+('<br>Your note: '+e(row['lesson']) if row['lesson'] else '')+'</p>')
+            before,after=row.get('cma_before'),row.get('cma_after')
+            if before:
+                parts.append('<p class="muted">Check-in at cue selection: '+e(zone(before['valence'],before['arousal']))+'.'+
+                             (' Later check-in: '+e(zone(after['valence'],after['arousal']))+'.' if after else ' No later check-in recorded.')+'</p>')
+        parts.append('<p class="muted">'+e(practice['basis'])+'</p>')
     parts.extend(['<h2>What stands out</h2><p>'+e(c['insight'])+'</p>','<h2>For your next session</h2><p>'+e(c['next_step'])+'</p>',
                   '<p class="muted">CMA describes pleasantness and activation. Coordinates are adjustable check-in values, not clinical measurements. Facial estimates, hand gestures and input activity are not used to invent an emotional history.</p></body></html>'])
     return ''.join(parts)

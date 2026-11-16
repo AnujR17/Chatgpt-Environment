@@ -79,7 +79,9 @@ This package is a branch review artifact, not an OTA release.
 Use the Checkpoint session branch review workflow for newer branch artifacts.
 The stable app and its release channel have not been changed.
 Model weights are unchanged; recognition and intervention benefit remain
-experimental. See docs/SESSION-BRANCH.md for scope and verification limits.
+experimental. Open Next attempt for source-linked Getting Over It practice cues,
+optional overlay/phone guidance and your own reusable lesson. See docs/NEXT-ATTEMPT.md
+and docs/SESSION-BRANCH.md for scope and verification limits.
 
 Python/Qt/PySide vendor licenses and source references remain in third_party
 and the bundled runtime. App source is in checkpoint/.

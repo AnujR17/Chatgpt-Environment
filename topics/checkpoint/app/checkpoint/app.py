@@ -238,6 +238,7 @@ class MainWindow(QMainWindow):
         self.support_title=label('',19,bold=True);self.support_copy=label('',13,True)
         copy.addWidget(self.support_title);copy.addWidget(self.support_copy);support_row.addLayout(copy,1)
         self.support_checkin=button('Check in',self.primary_action,True);self.checkin_controls.append(self.support_checkin);support_row.addWidget(self.support_checkin)
+        self.attempt_button=button('Next attempt',self.show_practice,True);support_row.addWidget(self.attempt_button)
         self.keepgoing_button=button('Keep going',self.keep_playing);support_row.addWidget(self.keepgoing_button)
         self.focus_button=button('Set a practice goal',self.choose_practice_goal);support_row.addWidget(self.focus_button)
         self.break_button=button('30-second reset',self.toggle_break);support_row.addWidget(self.break_button)
@@ -251,7 +252,7 @@ class MainWindow(QMainWindow):
             shortcut=QShortcut(QKeySequence(key),self);shortcut.activated.connect(callback);self.shortcuts.append(shortcut)
         if QSystemTrayIcon.isSystemTrayAvailable():
             self.tray=QSystemTrayIcon(QIcon(str(ASSETS/"unknown.svg")),self);menu=QMenu(self)
-            menu.addAction("Open Checkpoint",self.showNormal);menu.addAction('Check for updates',self.show_updates);menu.addAction("Show / hide Nori",self.toggle_overlay);menu.addAction("Move Nori",self.edit_overlay_position);menu.addAction("Pause all sources",self.pause_all);menu.addAction("Check in",self.check_in);menu.addAction("Take a break",self.toggle_break);menu.addAction("Quit",self.close);self.tray.setContextMenu(menu);self.tray.show()
+            menu.addAction("Open Checkpoint",self.showNormal);menu.addAction("Next attempt",self.show_practice);menu.addAction('Check for updates',self.show_updates);menu.addAction("Show / hide Nori",self.toggle_overlay);menu.addAction("Move Nori",self.edit_overlay_position);menu.addAction("Pause all sources",self.pause_all);menu.addAction("Check in",self.check_in);menu.addAction("Take a break",self.toggle_break);menu.addAction("Quit",self.close);self.tray.setContextMenu(menu);self.tray.show()
         from checkpoint.update_ui import last_update_error
         self.last_status=last_update_error(Path(__file__).resolve().parents[1])
         self.refresh()
@@ -555,6 +556,10 @@ class MainWindow(QMainWindow):
     def refresh_support(self):
         s=self.session;offer=self.support.sync(s);feedback=self.support.feedback_reset is not None
         active=s.active and s.break_deadline is None
+        from checkpoint.attempts import active_attempt
+        pending=active_attempt(s)
+        self.attempt_button.setEnabled(active and s.game=='Getting Over It')
+        self.attempt_button.setText('Review attempt' if pending else 'Next attempt')
         for control in (self.support_checkin,self.break_button,self.focus_button,self.keepgoing_button,self.feedback_yes,self.feedback_no):
             control.setVisible(False);control.setEnabled(active)
         self.break_button.setText('30-second reset')
@@ -575,9 +580,9 @@ class MainWindow(QMainWindow):
             self.break_button.setVisible(True);self.break_button.setProperty('primary',offer.kind=='reset')
             self.focus_button.setVisible(offer.kind=='focus')
         else:
-            self.support_title.setText('Session tools')
-            self.support_copy.setText('Reset suggestions are off for this session.' if self.support.suppressed else 'A reset pauses tracking, not the game.')
-            self.support_checkin.setVisible(True);self.focus_button.setVisible(True);self.break_button.setVisible(True);self.break_button.setProperty('primary',False)
+            self.support_title.setText('One thing for the next attempt.' if not pending else pending['section']+' · cue in play')
+            self.support_copy.setText(pending['cue'] if pending else 'Choose the problem. Try a cue. Keep what helps.')
+            self.support_checkin.setVisible(True);self.focus_button.setVisible(False);self.break_button.setVisible(True);self.break_button.setProperty('primary',False)
         self.break_button.style().unpolish(self.break_button);self.break_button.style().polish(self.break_button)
 
     def keep_playing(self):
@@ -589,6 +594,16 @@ class MainWindow(QMainWindow):
         if not self.session.active or self.session.break_deadline is not None:return
         text,accepted=QInputDialog.getText(self,'Next attempt','One thing you want to practise:',text=self.session.practice_goal)
         if accepted:self.support.set_focus(self.session,text);self.next_export=0.;self.refresh()
+
+    def show_practice(self):
+        if not self.session.active or self.session.break_deadline is not None or self.session.game!='Getting Over It':return
+        from checkpoint.practice_ui import PracticeDialog
+        dialog=PracticeDialog(self)
+        def changed():
+            self.next_export=0.;self.refresh()
+        dialog.changed.connect(changed)
+        dialog.exec()
+        changed()
 
     def rate_reset(self,helpful):
         self.support.feedback(self.session,helpful);self.next_export=0.;self.refresh()

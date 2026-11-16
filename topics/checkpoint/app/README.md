@@ -2,17 +2,19 @@
 
 New branch: **topic/checkpoint-session-20261116**, based on the existing Windows build. The stable branch and OTA channel remain unchanged.
 
-This version replaces the large rounded-card session screen with a flatter paper/ink workspace, compact Nori reflection, a separate camera column and visible session actions. Confirmed CMA check-ins can offer a short reset or one smaller practice goal. Keep going silences further suggestions for this session. Reports use actual choices and optional feedback rather than inferring benefit.
+This branch adds **Next attempt**: choose the Getting Over It problem you are stuck on, get one practical cue, try it, and mark **Helped / Still stuck**. Keep your own useful adjustment for later. Recent player-reported CMA changes the amount of guidance; it does not invent an emotion from the camera.
 
-[What changed and how to try it](docs/SESSION-BRANCH.md) · [Windows review workflow](https://github.com/AnujR17/Chatgpt-Environment/actions/workflows/checkpoint-session-review.yml)
+[Research, rationale and working flow](docs/NEXT-ATTEMPT.md) · [Windows review workflow](https://github.com/AnujR17/Chatgpt-Environment/actions/workflows/checkpoint-session-review.yml)
 
-Download **checkpoint-session-study** from the successful branch workflow run. Extract it, then extract **Checkpoint-Session-Study.zip** into a separate folder and run **Start Checkpoint.cmd**. This is a review artifact, not a GitHub Release or OTA package.
+Download **checkpoint-session-study** from the latest successful run for this branch. Extract it, then extract **Checkpoint-Session-Study.zip** into a separate folder and run **Start Checkpoint.cmd**. This is a review artifact; it does not update your stable installation or OTA channel. GitHub Actions downloads require a GitHub login and expire after 14 days.
 
-Camera reflection and player-reported CMA remain separate. Existing recognition limitations are unchanged. The new support policy is a prototype, not a proven frustration intervention.
+Open **Next attempt** on the session screen or tray. Optional cue text appears beside Nori for 12 seconds; the paired phone shows the same chosen cue. **Review attempt** records your verdict and an optional note. Notes survive a new session only when saved summaries are enabled in Settings and the session is saved. The PDF includes actual cue feedback alongside your CMA check-ins.
 
-![Native Windows session view with synthetic check-in data](docs/previews/session-reset.png)
+Camera recognition and automatic game-scene limitations remain. These source-linked prompts and CMA presentation rules are a working prototype, not validated coaching or proof of frustration reduction.
 
-[Verified Windows review build](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/43801388981) · [Verification record](docs/SESSION-VERIFICATION.json)
+![Next-attempt native screen with a synthetic CMA check-in](docs/previews/next-attempt.png)
+
+[Native flow verification](docs/PRACTICE-VERIFICATION.json) · [Native-to-phone browser verification](docs/PRACTICE-PHONE-VERIFICATION.json)
 
 ## Development and evidence
 

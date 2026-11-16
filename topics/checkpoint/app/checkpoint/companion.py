@@ -43,4 +43,6 @@ class CompanionState:
             'model_estimate':category_estimate(session.cue) if display and display.source in ('face_movement','expression_estimate','visual_pattern') else None,
             'input':input_stats or {'status':'Input observation off'},'nudge':self.nudge,
             'support':report['support'],'cma_report':{k:report['cma'][k] for k in ('count','trend','insight','next_step','latest')}}
+        from checkpoint.attempts import phone_attempt
+        state['practice']=phone_attempt(session)
         return state,report

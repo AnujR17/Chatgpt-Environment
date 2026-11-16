@@ -46,3 +46,12 @@
 - [x] Verify replay, actual video smoke, 98 local tests and paired browser/PDF; expose substantial recognition uncertainty in the research plan.
 - [x] Verify/publish 0.5.0-preview.3 Windows release and public app update payload (run 42274766631); actual Windows viewport/OTA checks passed.
 - [ ] Evaluate subject-separated natural gaming/webcam recognition and usefulness; no reliable 43-emotion claim.
+
+
+### Next-attempt improvement branch — 16 November 2026
+
+- [x] Research gamer recording/practice patterns and game-specific technique sources.
+- [x] Implement player-requested cues, CMA guidance presentation, explicit feedback, saved-note recall, overlay/phone and CMA PDF integration.
+- [x] Local regression/native/browser flow checks; no invented effectiveness claims.
+- [ ] Verify Windows review artifact for the new code.
+- [ ] Actual Getting Over It player trial: cue usefulness, interruption cost and recognition failures remain unknown.

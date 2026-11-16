@@ -1,5 +1,11 @@
 # Checkpoint session study
 
+## Latest revision: Next attempt
+
+The app now includes a player-requested Getting Over It practice desk, optional overlay/phone cue, useful-note recall and cue feedback in the CMA report. See [the research and working flow](NEXT-ATTEMPT.md). The sections below describe the earlier session-support revision.
+
+The workspace is now available. Current work is edited locally, with a Linux native flow check, the repository regression suite and an actual loopback phone/browser/PDF check. Current Windows checks are produced by the branch-only workflow. Earlier verification statements below refer only to their named commits.
+
 New branch: topic/checkpoint-session-20261116. Based on topic/checkpoint at 60586998046df9e1ba39563dd2974a4b9fdf2df5. This branch is a separate interface/service study. It does not publish a GitHub release or OTA manifest. The stable branch and main are not modified.
 
 ## What changes

@@ -1,0 +1,11 @@
+{
+  "fixture": "Synthetic check-ins and player actions",
+  "native_selection_and_cma": "passed",
+  "cue_to_overlay_and_phone_state": "passed",
+  "feedback_and_cross_session_recall": "passed",
+  "small_target_and_still_stuck": "passed",
+  "pdf": "passed",
+  "compact_native_viewport": "820x600 passed",
+  "physical_game_camera_phone": "not tested",
+  "usefulness_in_actual_play": "not established"
+}
