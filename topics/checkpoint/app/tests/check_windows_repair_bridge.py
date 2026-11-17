@@ -44,7 +44,9 @@ release=json.loads(get('https://api.github.com/repos/AnujR17/Chatgpt-Environment
 assets={a['name']:a for a in release['assets']}
 with tempfile.TemporaryDirectory(prefix='checkpoint-real-repair-') as directory:
     parent=Path(directory);root=parent/'Checkpoint-Windows';root.mkdir()
+    print('Downloading the published runtime fixture',flush=True)
     full=parent/'full.zip';full.write_bytes(get(BASE+'Checkpoint-Windows-Preview.zip'))
+    print('Published runtime downloaded',flush=True)
     assert hashlib.sha256(full.read_bytes()).hexdigest()==manifest['full']['sha256']
     unpack(full,root,prefix='Checkpoint-Windows/')
     # Actual legacy application source, with the unchanged compatible vendor runtime.
@@ -62,8 +64,12 @@ with tempfile.TemporaryDirectory(prefix='checkpoint-real-repair-') as directory:
         deadline=time.monotonic()+10
         while not held.exists() and time.monotonic()<deadline:time.sleep(.1)
         assert held.exists()
-        repaired=subprocess.run([str(root/'runtime/python.exe'),'-B',str(folder/'repair_update.py'),str(root)],cwd=folder,capture_output=True,text=True,timeout=100)
-        assert repaired.returncode==0,(repaired.stdout,repaired.stderr)
+        print('Running published repair against legacy source',flush=True)
+        repair_log=parent/'repair-console.log'
+        with repair_log.open('w',encoding='utf8') as output:
+            repaired=subprocess.run([str(root/'runtime/python.exe'),'-B',str(folder/'repair_update.py'),str(root)],cwd=folder,stdout=output,stderr=subprocess.STDOUT,timeout=100)
+        assert repaired.returncode==0,repair_log.read_text()
+        print('Published repair process returned; waiting for GUI acknowledgement',flush=True)
         result=parent/'.checkpoint-updates/last-result.json';deadline=time.monotonic()+100;status={}
         while time.monotonic()<deadline:
             try:status=json.loads(result.read_text(encoding='utf-8-sig'))
@@ -75,8 +81,9 @@ with tempfile.TemporaryDirectory(prefix='checkpoint-real-repair-') as directory:
         assert startup['tag']==TAG
         close_app(startup['pid']);time.sleep(1)
         (root/'.checkpoint-startup.json').unlink()
-        launched=subprocess.run(['cmd.exe','/c',str(root/'Start Checkpoint.cmd')],cwd=parent,capture_output=True,text=True,timeout=15)
-        assert launched.returncode==0,(launched.stdout,launched.stderr)
+        with (parent/'launcher.log').open('w',encoding='utf8') as output:
+            launched=subprocess.run(['cmd.exe','/c',str(root/'Start Checkpoint.cmd')],cwd=parent,stdout=output,stderr=subprocess.STDOUT,timeout=15)
+        assert launched.returncode==0
         deadline=time.monotonic()+30
         while not (root/'.checkpoint-startup.json').exists() and time.monotonic()<deadline:time.sleep(.1)
         normal=json.loads((root/'.checkpoint-startup.json').read_text());live.append(normal['pid'])
@@ -88,5 +95,12 @@ with tempfile.TemporaryDirectory(prefix='checkpoint-real-repair-') as directory:
         (APP/'artifacts/windows-repair-bridge.json').write_text(json.dumps(output,indent=2))
         print(json.dumps(output))
     finally:
+        try:
+            identity=json.loads((root/'.checkpoint-startup.json').read_text())
+            if identity.get('pid') not in live:live.append(identity['pid'])
+        except (OSError,ValueError):pass
         for pid in live:close_app(pid)
-        time.sleep(1);locker.terminate();locker.wait(timeout=10)
+        time.sleep(1)
+        for pid in live:
+            subprocess.run(['taskkill','/PID',str(pid),'/T','/F'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+        locker.terminate();locker.wait(timeout=10)
