@@ -1,6 +1,42 @@
 # Job search agent handoff
 
-Updated 16 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 17 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 17 November public research — publication pending
+
+135retained/110active-held/25archived,293companies,20established profiles,
+50coverage rows(36checkedtoday). NewWibits UIUXintern4180,Nagercoil15k/month:
+older20April advert,displayed30November employer closing;exactIndeed891600c7
+corroborates,notPHP e155 orGraphic2759. Role-specific duration/student cohort
+unknown;do not borrow6month/graduate criteria from neighboringroles. NewElectrifex
+role62 Kochijunior/fresher,payunknown;exactIndeedff67platform13November;notintern.
+OfficialInfoparkcompanyprofile corroborates location/scope;companyUpdate3d lacks
+exactpermalink/date soindependentemployer evidence,notfreshsocial-only recommendation.
+
+Four obsolete threshold next-actions corrected:Techolution,Keyideas,ArihantAI,
+Unitedover;old notes saved,advertisedpay/requirement IDs untouched. ExistingFLIP/
+Arihantduplicates preserved. TheInterviews selection interview20to30minutes copy
+noted,not employer assessmentperformed. FalconWellfound410/profile404,current
+employerhome insufficient renewedintake;availabilityunresolved,notcompanyclosed.
+Nonlinear/YTT404 andNeuraitimeout similarly unresolved. No new archives;prior25
+kept. Existing sixsocial-agearchives stayhistorical. UnicraftfreshUnstoporiginal
+Unpaidmetadata/visibleblank conflicts withpaid10–15kmirrors;notpaidrecommendation.
+
+NewdirectoryWibits/ElectrifexWorkable exactroles;CrelioHealthWorkable producttarget
+only;IITGNCCLPossible officialtoy/game+graphic adjacenttitles,no verifiedcoreUX/pay/
+requirements,directoryonly. Originalsources/oldcontacts/tiers/benchmarks/screenings
+retained.107primaryURLs:95fetched,8restricted,3missing,1timeout. HN300topIDs,
+245text,62broadmatches,newLisbonsoftwarecomment notIndiaUX. Generated44queryplan
+cutoff3November;actualsearches coverageindependent. No newverified14daystandalone
+socialpost. NoUI/model/clipper/seed/collector-main/task/schedule/contactchanges.
+Research/QA outsideGit:/workspace/job-refresh-nov17-review/.
+Five JS suites,eight Python tests,build and preservation audit passed. Local
+desktop/mobile tests verify110active/25archived,293companies,50coverage,20established
+profiles/five established-role matches,newWibits15k/month andElectrifexjunior,
+plus synthetic blacklist/profile/notes/assessment and archived-application override
+persistence. No actual browser-local data read. Zero runtime errors or POSTs.
+Discover/Companies mobile nooverflow;existing Sources navigation overflow remains
+(390px viewport/710px document),recorded without modifying UI.
 
 ## 16 November freshness follow-up — published
 
