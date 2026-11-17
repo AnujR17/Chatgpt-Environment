@@ -1,0 +1,29 @@
+name: Checkpoint published repair bridge
+on:
+  push:
+    branches: [topic/checkpoint]
+    paths:
+      - .github/workflows/checkpoint-repair-review.yml
+      - topics/checkpoint/app/tests/check_windows_repair_bridge.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  repair:
+    runs-on: windows-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify published repair on actual legacy source and normal reopen
+        working-directory: topics/checkpoint/app
+        run: python tests/check_windows_repair_bridge.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checkpoint-published-repair-verification
+          path: topics/checkpoint/app/artifacts/windows-repair-bridge.json
+          if-no-files-found: error
