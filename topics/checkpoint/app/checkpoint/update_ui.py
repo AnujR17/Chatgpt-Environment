@@ -1,10 +1,10 @@
 """Native update controls. Network and preparation run outside the UI thread."""
 from pathlib import Path
 import json
-from PySide6.QtCore import QThread,Signal,QTimer
+from PySide6.QtCore import Qt,QThread,Signal,QTimer
 from PySide6.QtWidgets import QDialog,QVBoxLayout,QLabel,QPushButton,QProgressBar
 from checkpoint.version import RELEASE_TAG
-from checkpoint.updates import check_updates,prepare_update,launch_update,portable_root,package_kind,Cancelled
+from checkpoint.updates import check_updates,prepare_update,launch_update,portable_root,package_kind,Cancelled,last_update_result
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -26,6 +26,10 @@ class UpdateDialog(QDialog):
         layout=QVBoxLayout(self);layout.setContentsMargins(28,24,28,24);layout.setSpacing(16)
         heading=QLabel('App updates');heading.setStyleSheet('font-size:26px;font-weight:600;');layout.addWidget(heading)
         self.version=QLabel('Installed: '+RELEASE_TAG.removeprefix('checkpoint-v'));layout.addWidget(self.version)
+        location=QLabel('Installation: '+str(ROOT));location.setWordWrap(True);location.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse);layout.addWidget(location)
+        previous=last_update_result(ROOT)
+        if previous and previous.get('status')=='failed':
+            failure=QLabel('Previous update: '+str(previous.get('message','Could not apply the update.')));failure.setWordWrap(True);layout.addWidget(failure)
         self.status=QLabel('Checking the Checkpoint releases on GitHub…');self.status.setWordWrap(True);self.status.setAccessibleName('Update status');layout.addWidget(self.status)
         self.progress=QProgressBar();self.progress.setRange(0,100);self.progress.hide();layout.addWidget(self.progress)
         copy=QLabel('Updates are installed only when you choose. Camera, game tracking and phone sharing stop for the restart. Your saved check-ins stay in Windows app data.');copy.setWordWrap(True);layout.addWidget(copy)
@@ -64,7 +68,7 @@ class UpdateDialog(QDialog):
         try:portable_root(ROOT);kind=package_kind(ROOT,result)
         except ValueError as ex:self.status.setText(str(ex));self.manifest=None;return
         size=result[kind]['bytes']/1024**2
-        self.status.setText(f'An update is available ({size:.1f} MB). '+('Your existing runtime and models can be reused.' if kind=='app' else 'This version needs the full runtime package.'))
+        self.status.setText(f'An update is available ({size:.1f} MB). '+('The runtime stays in place. A verified previous download will be reused.' if kind=='app' else 'This version needs the full runtime package.'))
         self.action.setText('Update and restart')
 
     def request_cancel(self):
@@ -81,7 +85,5 @@ class UpdateDialog(QDialog):
 
 
 def last_update_error(root):
-    try:
-        result=json.loads((root.parent/'.checkpoint-updates/last-result.json').read_text(encoding='utf-8-sig'))
-        return 'The last update could not be applied. Open Settings > App updates to retry.' if isinstance(result,dict) and result.get('status')=='failed' else ''
-    except (OSError,ValueError):return ''
+    result=last_update_result(root)
+    return 'Last update: '+str(result.get('message','Could not apply; open App updates to retry.')) if result and result.get('status')=='failed' else ''

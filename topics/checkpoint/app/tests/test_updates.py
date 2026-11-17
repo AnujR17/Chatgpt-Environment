@@ -151,3 +151,56 @@ def test_startup_acknowledgement_is_confined_to_this_install_job(monkeypatch,tmp
     u.signal_update_ready(root);assert (job.parent/'ready.json').exists()
     (job.parent/'ready.json').unlink();job.write_text(json.dumps({'original':str(root),'tag':'checkpoint-v99.0.0'}))
     u.signal_update_ready(root);assert not (job.parent/'ready.json').exists()
+
+
+def test_app_update_never_replaces_runtime_or_install_directory(monkeypatch,tmp_path):
+    root,manifest,data=fixture(tmp_path)
+    manifest['app']['files']['docs/readme.md']=hashlib.sha256(b'notes').hexdigest()
+    files={'checkpoint/version.py':b'new version','checkpoint/__init__.py':b'', 'checkpoint/new.py':b'new code','docs/readme.md':b'notes'}
+    data=zip_bytes(files);manifest['app'].update(bytes=len(data),sha256=hashlib.sha256(data).hexdigest(),files={p:hashlib.sha256(v).hexdigest() for p,v in files.items()})
+    monkeypatch.setattr(u.urllib.request,'urlopen',lambda *a,**k:io.BytesIO(data))
+    config=json.loads(u.prepare_update(root,manifest).read_text())
+    assert config['kind']=='app'
+    assert 'checkpoint' in config['components'] and 'docs' in config['components']
+    assert not any(name.startswith('runtime') or name.endswith('.onnx') for name in config['components'])
+
+
+def test_retry_reuses_verified_cached_payload_and_does_not_request_network(monkeypatch,tmp_path):
+    root,manifest,data=fixture(tmp_path)
+    calls=[]
+    def fetch(*args,**kwargs):calls.append(1);return io.BytesIO(data)
+    monkeypatch.setattr(u.urllib.request,'urlopen',fetch)
+    u.prepare_update(root,manifest)
+    assert len(calls)==1
+    u.prepare_update(root,manifest)
+    assert len(calls)==1
+    cache=root.parent/'.checkpoint-updates/downloads'/(manifest['app']['sha256']+'.zip')
+    cache.write_bytes(b'corrupt')
+    u.prepare_update(root,manifest)
+    assert len(calls)==2, 'Modified cached packages must be downloaded and verified again'
+
+
+def test_installed_version_is_read_without_executing_installation_code(tmp_path):
+    root,_,_=fixture(tmp_path)
+    (root/'checkpoint/version.py').write_text("RELEASE_TAG='checkpoint-v0.4.0-preview.2'\nraise RuntimeError('never execute')\n")
+    assert u.installed_tag(root)=='checkpoint-v0.4.0-preview.2'
+
+
+def test_other_running_copies_block_before_download(monkeypatch,tmp_path):
+    root,manifest,_=fixture(tmp_path)
+    monkeypatch.setattr(u,'other_install_processes',lambda path:['python.exe (PID 1234)'])
+    monkeypatch.setattr(u.urllib.request,'urlopen',lambda *a,**k:pytest.fail('Must not download while another app copy is running'))
+    with pytest.raises(OSError,match='Close other Checkpoint'):u.prepare_update(root,manifest)
+
+
+def test_ready_receipt_is_published_atomically(monkeypatch,tmp_path):
+    root,_,_=fixture(tmp_path);job=root.parent/'.checkpoint-updates/job/job.json';job.parent.mkdir(parents=True)
+    job.write_text(json.dumps({'original':str(root),'tag':u.RELEASE_TAG}));monkeypatch.setenv('CHECKPOINT_UPDATE_JOB',str(job))
+    replace=u.os.replace;seen=[]
+    def check(source,destination):
+        seen.append(json.loads(Path(source).read_text()))
+        assert not Path(destination).exists()
+        replace(source,destination)
+    monkeypatch.setattr(u.os,'replace',check)
+    u.signal_update_ready(root)
+    assert seen[0]['tag']==u.RELEASE_TAG and (job.parent/'ready.json').exists()

@@ -94,6 +94,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Package verification failed' }
           python -m scripts.package_app_update
           if ($LASTEXITCODE -ne 0) { throw 'Package verification failed' }
+          python -m scripts.package_updater_repair
+          if ($LASTEXITCODE -ne 0) { throw 'Updater repair package failed' }
           $hash = (Get-FileHash ../Checkpoint-Windows-Preview.zip -Algorithm SHA256).Hash.ToLower()
           "$hash  Checkpoint-Windows-Preview.zip" | Set-Content -Encoding ascii ../SHA256SUMS.txt
       - name: Preserve package and launch evidence
@@ -105,6 +107,7 @@ jobs:
             topics/checkpoint/SHA256SUMS.txt
             topics/checkpoint/Checkpoint-App-Update.zip
             topics/checkpoint/Checkpoint-update.json
+            topics/checkpoint/Checkpoint-Updater-Repair.zip
             topics/checkpoint/app/build/Checkpoint-Windows/windows-smoke.png
             topics/checkpoint/app/artifacts/windows-package-verification.json
             topics/checkpoint/app/artifacts/windows-tracking-smoke.json
@@ -118,10 +121,10 @@ jobs:
           $tag = python -c "from checkpoint.version import RELEASE_TAG; print(RELEASE_TAG)"
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint 0.6 — expressions and game tracking' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint 0.6.1 — persistent updates and file-lock repair' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
-          gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip --clobber
+          gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip ../Checkpoint-Updater-Repair.zip --clobber
           if ($LASTEXITCODE -ne 0) { throw 'Release asset upload failed' }
           gh release upload $tag ../Checkpoint-update.json --clobber
           if ($LASTEXITCODE -ne 0) { throw 'Update manifest upload failed' }

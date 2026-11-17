@@ -17,3 +17,13 @@ Update work is under `.checkpoint-updates` beside the portable folder. Previous 
 The Windows CI fixture exercises the actual helper, embedded Python restart and failed-start rollback using disposable folders. It does not modify a user's installation. Software tests separately check the native button flow, corrupt download/cancellation isolation, repository filtering, package compatibility and unsafe archives. Publication verification checks both the full and small assets. User-device security policy, disk/file locks and network conditions can still affect an actual update.
 
 0.4 adds a bundled hand model in the app payload. The native runtime and existing face weights remain identical, so a compatible 0.3 installation can use the small in-app package.
+
+## 0.6.1: rollback to 0.4 after a sharing violation
+
+A message such as "The process cannot access the file because it is being used by another process" means the previous helper could not replace the whole installation folder. It preserved and reopened the old app. This was an update failure, not a new-version setting being reset.
+
+Compatible app-only updates now leave the installation directory, native runtime and model files in place. Only app components are swapped, with a rollback journal and retries for temporary locks. Verified ZIP downloads are kept under `.checkpoint-updates/downloads` and checked again before reuse. Another running Checkpoint/setup instance is listed before a download begins. App updates shows both the exact installation path and the previous failure message. Backups for an app-only update contain replaced components; the shared runtime remains in the live installation.
+
+An old 0.4 updater cannot run the new helper while its own whole-folder swap keeps failing. Use [the small one-time repair package](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.1-preview.1/Checkpoint-Updater-Repair.zip): extract it anywhere, run **Repair Checkpoint update.cmd**, paste the existing **Checkpoint-Windows** folder path, close app/setup windows when prompted, then press Enter. It verifies and reuses/downloads the small app package with your existing runtime. It does not ask you to download or replace the full runtime. A genuinely incompatible runtime is reported rather than silently replaced by this repair.
+
+After repair, reopen **Start Checkpoint.cmd** from the same installation folder. Settings should show 0.6.1-preview.1. Future releases use the in-app button normally. This is a software repair; the exact process holding the user's file was not identified by the error alone.

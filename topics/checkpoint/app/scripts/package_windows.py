@@ -8,11 +8,11 @@ copytree(ROOT/'checkpoint',APP/'checkpoint',dirs_exist_ok=True,ignore=lambda d,n
 (APP/'docs').mkdir(exist_ok=True)
 for p in ['MODEL-CARD.md','release-gates.json']:copyfile(ROOT/'artifacts'/p,APP/'artifacts'/p)
 # Exact source and runtime provenance are shipped for review, without training images or reference downloads.
-manifest={str(p.relative_to(APP)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in APP.rglob('*') if p.is_file() and p.name!='application-manifest.json'}
+manifest={str(p.relative_to(APP)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in APP.rglob('*') if p.is_file() and p.name!='application-manifest.json' and not p.name.startswith('.checkpoint-startup.')}
 (APP/'application-manifest.json').write_text(json.dumps(manifest,indent=2))
 with ZipFile(OUT,'w',ZIP_DEFLATED,compresslevel=6) as z:
     for p in sorted(APP.rglob('*')):
-        if p.is_file():z.write(p,'Checkpoint-Windows/'+str(p.relative_to(APP)))
+        if p.is_file() and not p.name.startswith('.checkpoint-startup.'):z.write(p,'Checkpoint-Windows/'+str(p.relative_to(APP)))
 with ZipFile(OUT) as z:
     assert z.testzip() is None
     for name in ['Start Checkpoint.cmd','launch.py','runtime/pythonw.exe','runtime/python313.dll','runtime/Lib/site-packages/PySide6/plugins/platforms/qwindows.dll','checkpoint/vocabulary.py','checkpoint/assets/phone.html','checkpoint/blob.py','checkpoint/assets/nori-visual.js','checkpoint/assets/hand_landmarker.task','checkpoint/cma_report.py','checkpoint/reflection.py','artifacts/face_landmarker.task','artifacts/hsemotion-afew.onnx']:

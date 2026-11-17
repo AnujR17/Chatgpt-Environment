@@ -3,6 +3,7 @@ No credentials, silent installs, self-modifying running code or global policy ch
 """
 from pathlib import Path, PurePosixPath
 import base64
+import ast
 import hashlib
 import json
 import os
@@ -138,24 +139,63 @@ def unpack(package,destination,*,prefix='',files=None,cancel=lambda:False):
             if files is not None and digest(target)!=files[name]:raise ValueError('App file checksum mismatch')
 
 
+def installed_tag(root):
+    """Read version data without executing another installation's Python files."""
+    try:
+        tree=ast.parse((Path(root)/'checkpoint/version.py').read_text(encoding='utf-8-sig'))
+        for node in tree.body:
+            if isinstance(node,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='RELEASE_TAG' for t in node.targets):
+                value=ast.literal_eval(node.value);version_key(value);return value
+    except (OSError,ValueError,SyntaxError,TypeError):pass
+    return RELEASE_TAG
+
+
+def other_install_processes(root):
+    if sys.platform!='win32':return []
+    import psutil
+    runtime=Path(root).resolve()/'runtime';found=[]
+    for process in psutil.process_iter(['pid','name','exe']):
+        try:
+            if process.pid!=os.getpid() and process.info['exe'] and Path(process.info['exe']).resolve().is_relative_to(runtime):
+                found.append((process.info['name'] or 'Checkpoint')+' (PID '+str(process.pid)+')')
+        except (psutil.Error,OSError,ValueError):continue
+    return found
+
+
+def last_update_result(root):
+    try:
+        value=json.loads((Path(root).parent/'.checkpoint-updates/last-result.json').read_text(encoding='utf-8-sig'))
+        if not isinstance(value,dict):return None
+        if value.get('original') and Path(value['original']).resolve()!=Path(root).resolve():return None
+        return value
+    except (OSError,ValueError,TypeError):return None
+
+
 def prepare_update(root,manifest,progress=lambda value,message:None,cancel=lambda:False):
     root=portable_root(root)
-    if version_key(manifest['tag'])<=version_key(RELEASE_TAG):raise ValueError('This update is not newer than the installed app')
+    if version_key(manifest['tag'])<=version_key(installed_tag(root)):raise ValueError('This update is not newer than the installed app')
+    blockers=other_install_processes(root)
+    if blockers:raise OSError('Close other Checkpoint/setup windows before updating: '+', '.join(blockers))
     kind=package_kind(root,manifest);payload=manifest[kind]
     job=root.parent/'.checkpoint-updates'/uuid.uuid4().hex;job.mkdir(parents=True)
     stage=job/root.name;package=job/'download.zip'
+    cache=root.parent/'.checkpoint-updates/downloads'/(payload['sha256']+'.zip')
+    cached=cache.is_file() and not cache.is_symlink() and cache.stat().st_size==payload['bytes'] and digest(cache)==payload['sha256']
     try:
-        req=urllib.request.Request(DOWNLOAD+manifest['tag']+'/'+payload['name'],headers={'User-Agent':'Checkpoint-updater'})
-        size=0;h=hashlib.sha256()
-        with urllib.request.urlopen(req,timeout=30) as response,package.open('wb') as output:
-            while True:
-                if cancel():raise Cancelled()
-                block=response.read(512*1024)
-                if not block:break
-                size+=len(block)
-                if size>payload['bytes']:raise ValueError('Package exceeds expected size')
-                output.write(block);h.update(block);progress(min(75,round(size/payload['bytes']*75)),'Downloading '+('app update' if kind=='app' else 'full runtime update'))
-        if size!=payload['bytes'] or h.hexdigest()!=payload['sha256']:raise ValueError('Downloaded package checksum mismatch')
+        if cached:
+            package=cache;progress(75,'Reusing the verified download; no new download needed')
+        else:
+            req=urllib.request.Request(DOWNLOAD+manifest['tag']+'/'+payload['name'],headers={'User-Agent':'Checkpoint-updater'})
+            size=0;h=hashlib.sha256()
+            with urllib.request.urlopen(req,timeout=30) as response,package.open('wb') as output:
+                while True:
+                    if cancel():raise Cancelled()
+                    block=response.read(512*1024)
+                    if not block:break
+                    size+=len(block)
+                    if size>payload['bytes']:raise ValueError('Package exceeds expected size')
+                    output.write(block);h.update(block);progress(min(75,round(size/payload['bytes']*75)),'Downloading '+('app update' if kind=='app' else 'full runtime update'))
+            if size!=payload['bytes'] or h.hexdigest()!=payload['sha256']:raise ValueError('Downloaded package checksum mismatch')
         progress(80,'Preparing the next installation')
         if kind=='app':
             def copy(src,dst):
@@ -176,9 +216,14 @@ def prepare_update(root,manifest,progress=lambda value,message:None,cancel=lambd
         portable_root(stage)
         if not (stage/'checkpoint/version.py').is_file():raise ValueError('Updated version information is missing')
         if cancel():raise Cancelled()
-        package.unlink()
+        if not cached:
+            cache.parent.mkdir(parents=True,exist_ok=True);os.replace(package,cache)
         backup=root.parent/'.checkpoint-backups'/job.name/root.name
-        config={'original':str(root),'staged':str(stage),'backup':str(backup),'pid':os.getpid(),'tag':manifest['tag']}
+        components=sorted({name if PurePosixPath(name).parts[0]=='artifacts' else PurePosixPath(name).parts[0]
+                           for name in manifest['app']['files']}) if kind=='app' else []
+        if kind=='app':components.append('application-manifest.json')
+        config={'original':str(root),'staged':str(stage),'backup':str(backup),'pid':os.getpid(),'tag':manifest['tag'],
+                'kind':kind,'components':components}
         path=job/'job.json';path.write_text(json.dumps(config),encoding='utf8')
         progress(100,'Ready to restart')
         return path
@@ -195,9 +240,21 @@ $root = $config.original; $stage = $config.staged; $backup = $config.backup
 $jobDir = Split-Path -Parent $jobPath
 $receipt = Join-Path $jobDir 'ready.json'
 $result = Join-Path (Split-Path -Parent $jobDir) 'last-result.json'
-$oldMoved = $false; $newMoved = $false
+$oldMoved = $false; $newMoved = $false; $oldExited = $false; $started = $null
+$journal = [System.Collections.Generic.List[object]]::new()
+$componentMode = $config.kind -eq 'app'
 function Status($state, $message) {
-    @{status=$state; tag=$config.tag; message=$message; backup=$backup} | ConvertTo-Json | Set-Content -LiteralPath $result -Encoding UTF8
+    @{status=$state; tag=$config.tag; message=$message; backup=$backup; original=$root; kind=$config.kind} | ConvertTo-Json | Set-Content -LiteralPath $result -Encoding UTF8
+}
+function Move-Retry($source, $destination) {
+    $deadline = (Get-Date).AddSeconds(15)
+    do {
+        try { Move-Item -LiteralPath $source -Destination $destination -ErrorAction Stop; return }
+        catch {
+            if ((Get-Date) -ge $deadline) { throw "Cannot replace '$source': $($_.Exception.Message) Close other Checkpoint or setup windows and retry. The verified download is retained." }
+            Start-Sleep -Milliseconds 250
+        }
+    } while ($true)
 }
 function Launch {
     Start-Process -FilePath (Join-Path $root 'runtime\pythonw.exe') -ArgumentList ('"' + (Join-Path $root 'launch.py') + '" --no-setup') -WorkingDirectory $root -PassThru -ErrorAction Stop
@@ -205,30 +262,53 @@ function Launch {
 try {
     $process = Get-Process -Id $config.pid -ErrorAction SilentlyContinue
     if ($process -and -not $process.WaitForExit(90000)) { throw 'Checkpoint did not exit. Close its other windows and retry.' }
+    $oldExited = $true
     if (!(Test-Path -LiteralPath (Join-Path $stage 'runtime\pythonw.exe')) -or !(Test-Path -LiteralPath (Join-Path $stage 'launch.py'))) { throw 'Prepared installation is incomplete.' }
-    New-Item -ItemType Directory -Force -Path (Split-Path -Parent $backup) | Out-Null
-    Move-Item -LiteralPath $root -Destination $backup -ErrorAction Stop; $oldMoved = $true
-    Move-Item -LiteralPath $stage -Destination $root -ErrorAction Stop; $newMoved = $true
+    if (Test-Path -LiteralPath $receipt) { Remove-Item -LiteralPath $receipt -ErrorAction Stop }
+    if ($componentMode) {
+        if (!$config.components -or $config.components -notcontains 'checkpoint') { throw 'App update component list is missing.' }
+        foreach ($name in $config.components) {
+            if ($name -notmatch '^(checkpoint|docs|third_party|launch\.py|Start Checkpoint\.cmd|Check setup\.cmd|check_setup\.py|READ ME FIRST\.txt|application-manifest\.json|artifacts/[A-Za-z0-9_.-]+\.(json|md))$') { throw 'Unsafe app update component.' }
+            $source = Join-Path $stage $name; $destination = Join-Path $root $name; $saved = Join-Path $backup $name
+            if (!(Test-Path -LiteralPath $source)) { throw "Missing prepared component: $name" }
+            New-Item -ItemType Directory -Force -Path (Split-Path -Parent $saved) | Out-Null
+            $entry = [pscustomobject]@{name=$name; oldMoved=$false; newMoved=$false}
+            $journal.Add($entry)
+            if (Test-Path -LiteralPath $destination) { Move-Retry $destination $saved; $entry.oldMoved = $true }
+            Move-Retry $source $destination; $entry.newMoved = $true
+        }
+    } else {
+        New-Item -ItemType Directory -Force -Path (Split-Path -Parent $backup) | Out-Null
+        Move-Retry $root $backup; $oldMoved = $true
+        Move-Retry $stage $root; $newMoved = $true
+    }
     Status 'starting' 'Starting the updated app'
     $started = Launch
-    $deadline = (Get-Date).AddSeconds(35)
+    $deadline = (Get-Date).AddSeconds(90)
     while (!(Test-Path -LiteralPath $receipt)) {
-        if ($started.HasExited -or (Get-Date) -gt $deadline) { throw 'The updated app did not finish starting.' }
+        $started.Refresh()
+        if ($started.HasExited -or (Get-Date) -gt $deadline) { throw 'The updated app did not finish starting. See startup-error.log for details.' }
         Start-Sleep -Milliseconds 250
     }
     $ready = Get-Content -LiteralPath $receipt -Raw -Encoding UTF8 | ConvertFrom-Json
     if ($ready.tag -ne $config.tag) { throw 'The restarted app has the wrong version.' }
-    Status 'applied' 'Update installed successfully'
+    Status 'applied' 'Update installed successfully. The installed version will be used on the next launch.'
 } catch {
     $message = $_.Exception.Message
     try {
-        if ($newMoved) {
-            if ($started -and !$started.HasExited) { Stop-Process -Id $started.Id -ErrorAction SilentlyContinue; $started.WaitForExit(10000) | Out-Null }
-            Move-Item -LiteralPath $root -Destination ($stage + '.failed') -ErrorAction Stop
+        if ($started -and !$started.HasExited) { Stop-Process -Id $started.Id -ErrorAction SilentlyContinue; $started.WaitForExit(10000) | Out-Null }
+        if ($componentMode) {
+            for ($i=$journal.Count-1; $i -ge 0; $i--) {
+                $entry=$journal[$i]; $destination=Join-Path $root $entry.name; $saved=Join-Path $backup $entry.name; $prepared=Join-Path $stage $entry.name
+                if ($entry.newMoved) { Move-Retry $destination $prepared }
+                if ($entry.oldMoved) { Move-Retry $saved $destination }
+            }
+        } else {
+            if ($newMoved) { Move-Retry $root ($stage + '.failed') }
+            if ($oldMoved) { Move-Retry $backup $root }
         }
-        if ($oldMoved) { Move-Item -LiteralPath $backup -Destination $root -ErrorAction Stop }
-        Status 'failed' ($message + ' The previous installation was preserved.')
-        if (Test-Path -LiteralPath (Join-Path $root 'runtime\pythonw.exe')) { Launch | Out-Null }
+        Status 'failed' ($message + ' The previous installation was preserved. Retry will reuse a verified cached download.')
+        if ($oldExited -and (Test-Path -LiteralPath (Join-Path $root 'runtime\pythonw.exe'))) { Launch | Out-Null }
     } catch { Status 'failed' ($message + ' Recovery details: ' + $_.Exception.Message) }
     exit 1
 }
@@ -243,6 +323,12 @@ def launch_update(job):
 
 
 def signal_update_ready(root):
+    root=Path(root).resolve()
+    try:
+        temporary=root/('.checkpoint-startup.'+str(os.getpid())+'.tmp')
+        temporary.write_text(json.dumps({'tag':RELEASE_TAG,'pid':os.getpid(),'root':str(root)}),encoding='utf8')
+        os.replace(temporary,root/'.checkpoint-startup.json')
+    except OSError:pass
     job=os.environ.get('CHECKPOINT_UPDATE_JOB')
     if not job:return
     try:
@@ -250,5 +336,7 @@ def signal_update_ready(root):
         if not path.is_relative_to(root.parent/'.checkpoint-updates') or path.name!='job.json':return
         config=json.loads(path.read_text(encoding='utf8'))
         if Path(config['original']).resolve()!=root or config['tag']!=RELEASE_TAG:return
-        (path.parent/'ready.json').write_text(json.dumps({'tag':RELEASE_TAG,'pid':os.getpid()}),encoding='utf8')
+        temporary=path.parent/('ready.'+str(os.getpid())+'.tmp')
+        temporary.write_text(json.dumps({'tag':RELEASE_TAG,'pid':os.getpid(),'root':str(root)}),encoding='utf8')
+        os.replace(temporary,path.parent/'ready.json')
     except (OSError,ValueError,KeyError):pass
