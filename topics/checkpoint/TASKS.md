@@ -46,3 +46,14 @@
 - [x] Verify replay, actual video smoke, 98 local tests and paired browser/PDF; expose substantial recognition uncertainty in the research plan.
 - [x] Verify/publish 0.5.0-preview.3 Windows release and public app update payload (run 42274766631); actual Windows viewport/OTA checks passed.
 - [ ] Evaluate subject-separated natural gaming/webcam recognition and usefulness; no reliable 43-emotion claim.
+
+
+## 0.6 expression/game-state update — 17 November 2026
+
+- [x] Separate brow/lid signals and implement tentative confusion plus multi-region surprise fallback.
+- [x] Replace default commentary with short expression names; keep CMA independent.
+- [x] Soft original character, curved brows, mitten and shared native/phone easing.
+- [x] One-action game-window vision, structured state and session-only named-view recognition.
+- [x] Local suite100passed/5skips, native policy/render checks and phone browser/PDF regression.
+- [ ] Windows native/provider/capture/updater checks and OTA publication verification.
+- [ ] Physical player webcam/game state/phone trial; recognition and usefulness remain unvalidated.

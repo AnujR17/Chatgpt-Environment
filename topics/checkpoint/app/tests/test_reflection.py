@@ -63,7 +63,7 @@ def test_model_disagreement_does_not_force_anger_or_smile():
 
 def test_trend_is_separate_from_quick_reflection_and_sparse_frames_do_not_qualify():
     s,e=setup();d=feed(e,s,1000,5,smile=.8)
-    assert e.trend=='happiness' and 'Recent trend' in d.detail
+    assert e.trend=='happiness' and d.title=='Happy' and 'Recent trend' not in d.detail
     d=feed(e,s,1005,1,brow=.8,pressed=.6,label='anger')
     assert d.artwork=='angry' and e.trend=='happiness'
     d=feed(e,s,1006,4,brow=.8,pressed=.6,label='anger')

@@ -1,2 +1,2 @@
-APP_VERSION = '0.5.0'
-RELEASE_TAG = 'checkpoint-v0.5.0-preview.3'
+APP_VERSION = '0.6.0'
+RELEASE_TAG = 'checkpoint-v0.6.0-preview.1'

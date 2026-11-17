@@ -10,7 +10,7 @@ from PySide6.QtCore import Qt, QTimer, QStandardPaths, QEvent, QUrl
 from PySide6.QtGui import QFont, QFontDatabase, QImage, QPixmap, QCloseEvent, QIcon, QShortcut, QKeySequence, QDesktopServices
 from PySide6.QtSvgWidgets import QSvgWidget
 from PySide6.QtWidgets import (QApplication,QMainWindow,QWidget,QFrame,QLabel,QPushButton,QVBoxLayout,QHBoxLayout,
- QStackedWidget,QTabBar,QDialog,QDialogButtonBox,QComboBox,QLineEdit,QCheckBox,QDoubleSpinBox,QMessageBox,QFileDialog,QMenu,QScrollArea,QSystemTrayIcon,QGridLayout,QSlider,QSizePolicy,QTextBrowser)
+ QStackedWidget,QTabBar,QDialog,QDialogButtonBox,QComboBox,QLineEdit,QCheckBox,QDoubleSpinBox,QMessageBox,QFileDialog,QMenu,QScrollArea,QSystemTrayIcon,QGridLayout,QSlider,QSizePolicy,QTextBrowser,QInputDialog)
 from checkpoint.session import Session, History, FEELINGS
 from checkpoint.theme import STYLE, make_style, PALETTES
 from checkpoint.affect import ANCHORS, REFERENCES, dimension_words
@@ -190,7 +190,7 @@ class PreferencesDialog(QDialog):
         root.addWidget(label('Research only. Expression categories cannot establish mood, frustration or either CMA dimension. They never change your check-in.',13,True))
         root.addWidget(label('Game context',18,bold=True));self.detect_games=QCheckBox('Detect supported foreground games on Windows');self.detect_games.setChecked(parent.detect_games);root.addWidget(self.detect_games)
         self.screen_tracking=QCheckBox('Observe the Getting Over It game window');self.screen_tracking.setChecked(parent.screen_tracking);root.addWidget(self.screen_tracking)
-        root.addWidget(label('Only the foreground Getting Over It window is sampled, twice per second. Possible climb/fall cues use camera motion and are not validated event labels. No screen images are saved. Other windows are not analysed.',13,True))
+        root.addWidget(label('Only the foreground Getting Over It window is sampled, twice per second. Climb/fall estimates use background motion; named sections can be recognised after you mark a view. These are estimates, not confirmed game events. No screen images are saved. Other windows are not analysed.',13,True))
         self.input_timing=QCheckBox('Observe game-focused mouse and key timing');self.input_timing.setChecked(parent.input_observer.enabled);root.addWidget(self.input_timing)
         root.addWidget(label('Counts movement, clicks, key intervals and hold times only while a supported game has focus. No typed text or key identities are exported. Activity is not a mood measurement.',13,True))
         self.nudges=QCheckBox('Let Nori offer a quiet pause after possible setbacks');self.nudges.setChecked(parent.nudges_enabled);root.addWidget(self.nudges)
@@ -222,8 +222,8 @@ class MainWindow(QMainWindow):
         h=QHBoxLayout();words=QVBoxLayout();words.setSpacing(6);self.title=label('Your session',30,bold=True);self.subtitle=label('',14,True);words.addWidget(self.title);words.addWidget(self.subtitle);h.addLayout(words,1)
         self.game_tag=label('',12,True);h.addWidget(self.game_tag);h.addSpacing(24);self.end_control=button('End session',self.end_or_new);h.addWidget(self.end_control);root.addLayout(h)
         context_row=QHBoxLayout();self.game_status=label('Game detection is off · Game events are not being observed.',13,True);context_row.addWidget(self.game_status,1)
-        self.game_detection_control=button('Detect game',self.toggle_game_tracking);context_row.addWidget(self.game_detection_control)
-        self.mark_start_control=button('Mark start view',self.mark_start_view);self.mark_start_control.setVisible(False);context_row.addWidget(self.mark_start_control);root.addLayout(context_row)
+        self.game_detection_control=button('Track game',self.toggle_game_tracking);context_row.addWidget(self.game_detection_control)
+        self.mark_start_control=button('Mark section',self.mark_start_view);self.mark_start_control.setVisible(False);context_row.addWidget(self.mark_start_control);root.addLayout(context_row)
         self.pip_control=button('Show Nori',self.toggle_overlay);context_row.addWidget(self.pip_control)
         self.phone_control=button('Phone dashboard',self.show_phone);context_row.addWidget(self.phone_control)
         self.view_buttons=[];self.camera_controls=[];self.file_controls=[];self.checkin_controls=[];self.motion_controls=[]
@@ -251,7 +251,7 @@ class MainWindow(QMainWindow):
     def build_body(self,mode):
         body=QWidget();row=QHBoxLayout(body);row.setContentsMargins(0,0,0,0);row.setSpacing(18)
         state_panel,sl=panel(padding=24);sl.setSpacing(14)
-        header=QHBoxLayout();selector=QTabBar();[selector.addTab(name) for name in ['Live reflection','Movement test','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);header.addWidget(selector);header.addStretch()
+        header=QHBoxLayout();selector=QTabBar();[selector.addTab(name) for name in ['Expressions','Movement test','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);header.addWidget(selector);header.addStretch()
         toolbar=QHBoxLayout();source=label('',12,True);self.state_labels.append((source,'source'));toolbar.addWidget(source,1)
         motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(36);motion.setObjectName('navButton');toolbar.addWidget(motion);self.motion_controls.append(motion)
         if mode==0:self.motion_button=motion
@@ -295,7 +295,7 @@ class MainWindow(QMainWindow):
 
     def toggle_game_tracking(self):
         if self.detect_games:self.stop_game_tracking();self.refresh()
-        else:self.configure_game_tracking(True,False)
+        else:self.configure_game_tracking(True,True)
 
     def configure_game_tracking(self,enabled,screen):
         if not self.stop_game_tracking():return
@@ -373,7 +373,10 @@ class MainWindow(QMainWindow):
 
     def mark_start_view(self):
         if self.game_worker is not None and self.screen_tracking:
-            self.game_worker.mark_requested.set();self.game_status.setText('Switch to the game at your start view. The next captured game frame will be marked in memory.')
+            name,accepted=QInputDialog.getText(self,'Mark a game section','Name the view to recognise again (stored in memory only):',text='My current section')
+            if accepted and name.strip():
+                self.game_worker.mark_name=name.strip()[:48];self.game_worker.mark_requested.set()
+                self.game_status.setText('Switch to the game. The next captured view will be remembered for this session.')
     def select_camera(self,index):
         self.camera_index=index;self.refresh()
 
@@ -443,12 +446,13 @@ class MainWindow(QMainWindow):
         self.game_tag.setText('Windows game detection' if self.detect_games else "Competitive session" if s.competitive else "Manual game context")
         observation=self.game_observation
         status=(observation.game+' · ' if observation and observation.game else '')+(observation.status if observation else 'Looking for a supported foreground game…' if sys.platform=='win32' else 'Live game-window tracking requires Windows')
-        if observation and observation.cue:status+=' · '+observation.cue
+        if observation and observation.state:status+=' · '+observation.state['title']
+        elif observation and observation.cue:status+=' · '+observation.cue
         if self.detect_games:
-            if self.game_worker is not None and self.game_worker.mark_requested.is_set():status='Switch to Getting Over It at the start view to mark it.'
+            if self.game_worker is not None and self.game_worker.mark_requested.is_set():status='Switch to Getting Over It to mark the section.'
             self.game_status.setText(status+(' · Screen sampling on' if self.screen_tracking else ' · Screen sampling off'))
         else:self.game_status.setText('Game detection is off · Game events are not being observed.')
-        self.game_detection_control.setText('Stop game tracking' if self.detect_games else 'Detect game');self.game_detection_control.setEnabled(s.active and s.break_deadline is None)
+        self.game_detection_control.setText('Stop game tracking' if self.detect_games else 'Track game');self.game_detection_control.setEnabled(s.active and s.break_deadline is None)
         self.mark_start_control.setVisible(self.screen_tracking and self.game_worker is not None)
         for control in self.expression_controls:
             control.setText('Track face and hands' if s.face_mapping and s.hand_tracking else 'Track my face');control.blockSignals(True);control.setChecked(s.experimental_analysis);control.blockSignals(False);control.setEnabled(s.active and s.break_deadline is None)
@@ -496,10 +500,11 @@ class MainWindow(QMainWindow):
         if displayed is not None:
             title=displayed.title;desc=displayed.detail;source='Experimental estimate';artwork=displayed.artwork
             if displayed.source=='face_movement':source='Visible movement preview'
-            elif displayed.source=='visual_pattern':source='Smoothed expression'
+            elif displayed.source=='visual_pattern':source='Expression estimate'
             elif displayed.source=='player_report':source='Your last check-in'
         for obj,key in self.state_labels:
             if key=='cue':obj.setVisible(s.experimental_analysis and self.live_view)
+            if key=='description':obj.setVisible(displayed is None or self.live_view)
             obj.setText({"title":title,"valence":valence,"energy":energy,"description":desc,"source":source,"cue":cue_text,"capture":"Video file" if s.source_kind=="video" else ("On · "+worker.backend if worker is not None and worker.frames else "Starting…") if s.camera_active else "Off"}[key])
         for control in self.motion_controls:control.setText('Motion reduced' if self.reduced_motion else 'Resume animation' if self.motion_paused else 'Pause animation');control.setEnabled(not self.reduced_motion)
         for em in self.emblems:
@@ -515,6 +520,8 @@ class MainWindow(QMainWindow):
         if not reported_view:self.overlay.blob.set_state(artwork)
         else:self.overlay.blob.set_state(s.report,s.valence,s.arousal)
         self.overlay.blob.set_movement(displayed.movement if displayed else None,authored=bool(displayed and displayed.source=='visual_pattern'))
+        self.overlay.expression_label=title if not self.live_view and self.source_mode==0 else ''
+        self.overlay.update()
         now=time.monotonic()
         if now>=self.next_export:
             self.next_export=now+.25

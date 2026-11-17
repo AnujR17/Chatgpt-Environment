@@ -4,10 +4,12 @@ import time
 from checkpoint.expression_view import ExpressionDisplay,EXPRESSIONS,category_estimate
 from checkpoint.signal_filter import OneEuro
 
-TITLES={'neutral':'Neutral expression','happiness':'Smile-like expression','laugh':'Laugh-like expression',
-        'anger':'Tense expression','sadness':'Downturned expression','surprise':'Surprised-looking expression',
-        'disgust':'Disgust-like expression','fear':'Fear-like expression','contempt':'One-sided expression','tension':'Mouth and brows tense'}
-ARTWORK={key:value[1] for key,value in EXPRESSIONS.items()};ARTWORK['laugh']='happy';ARTWORK['tension']='frustrated'
+TITLES={'neutral':'Neutral','happiness':'Happy','laugh':'Laughing',
+        'anger':'Angry','sadness':'Sad','surprise':'Surprised',
+        'disgust':'Disgusted','fear':'Fearful','contempt':'Smirk','tension':'Tense',
+        'confusion':'Confused?'}
+ARTWORK={key:value[1] for key,value in EXPRESSIONS.items()}
+ARTWORK.update(laugh='happy',tension='frustrated',confusion='confused')
 
 
 class ReflectionEngine:
@@ -46,7 +48,16 @@ class ReflectionEngine:
             return None,'The expression model is unsure.'
         smile=m.get('smile',0);brow=m.get('brow',0);jaw=m.get('jaw',0)
         tense=brow>.25 and max(m.get('pressed',0),m.get('mouth_wide',0),m.get('snarl',0))>.22 and smile<.25
-        # Learned classes are primary. Unvalidated hand rules must not redefine them.
+        # AU1+AU4 with lid tightening can look confused, but overlaps with effort.
+        # This is an explicitly tentative visual heuristic, never a ninth model class.
+        questioning=(m.get('brow_furrow',0)>.25 and m.get('brow_inner_raise',0)>.18
+                     and m.get('eye_squint',0)>.18 and m.get('blink',0)<.35
+                     and abs(smile)<.18 and jaw<.35 and m.get('pressed',0)<.22
+                     and m.get('mouth_wide',0)<.25 and m.get('snarl',0)<.15)
+        if questioning and (not trusted or label=='neutral'):
+            return 'confusion','Tentative confusion-like facial configuration; effort may look similar.'
+        # Learned classes are primary for the eight trained categories.
+
         if trusted and label in ARTWORK:
             positive=smile>.28 and m.get('cheek',0)>.25
             if label=='happiness' and tense or label in ('anger','disgust','fear','sadness','contempt') and positive:
@@ -60,6 +71,9 @@ class ReflectionEngine:
         if smile>.28 and not tense and m.get('cheek',0)>.25:
             return ('laugh' if m.get('laugh',0)>.2 and jaw>.22 else 'happiness'),'Smile and cheek evidence.'
         if tense:return 'tension','Tension is visible; anger, effort and focus remain ambiguous.'
+        if (m.get('eye_wide',0)>.35 and brow<-.18 and jaw>.35
+                and abs(smile)<.2 and m.get('pressed',0)<.2 and m.get('snarl',0)<.15):
+            return 'surprise','Raised brows, widened eyes and open mouth; not mouth opening alone.'
         resting=abs(smile)<.16 and abs(brow)<.2 and jaw<.18 and m.get('mouth_wide',0)<.2 and m.get('snarl',0)<.15
         if resting:return 'neutral','A relaxed-looking facial configuration, not a claim of calm.'
         return None,'No clear agreement yet. Nori stays neutral-looking.'
@@ -112,12 +126,12 @@ class ReflectionEngine:
         now=time.monotonic() if now is None else now;self.observe(session,now)
         if not session.experimental_analysis or not session.camera_active:
             self.reset_tracking()
-            return ExpressionDisplay('Ready when you are',None,'Start face tracking to see a live reflection. Choose a feeling whenever you want to check in.',source='visual_pattern')
+            return ExpressionDisplay('Tracking off',None,'',source='visual_pattern')
         if now-self.last_valid>self.MAX_GAP or self.pattern is None:
             detail=self.reason if session.cue else 'Starting the tracker. Your preview can appear before the models are ready.'
-            return ExpressionDisplay('Expression unclear' if session.cue else 'Looking for your face',None,detail,source='visual_pattern')
-        title=TITLES[self.pattern];detail='A smoothed visual signal. Your check-in records how you feel.'
-        if self.trend:detail=f'Recent trend: {TITLES[self.trend].lower()}. Your check-in records how you feel.'
+            return ExpressionDisplay(('No face' if 'no face' in detail.lower() else 'Unclear') if session.cue else 'Looking for face',None,'',source='visual_pattern')
+        title=TITLES[self.pattern]
+        detail='Tentative expression estimate' if self.pattern=='confusion' else 'Facial expression estimate'
         movement=None
         if self.pattern=='laugh':
             # Authored companion pose, not a copy of every camera movement.

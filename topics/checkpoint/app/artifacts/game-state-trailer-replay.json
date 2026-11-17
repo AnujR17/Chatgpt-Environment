@@ -1,0 +1,14 @@
+{
+  "source": "Official Steam trailer 256696623, Steam app 240720",
+  "source_api": "https://store.steampowered.com/api/appdetails?appids=240720",
+  "copy": "Video-only 640px research transcode; raw video not redistributed",
+  "sha256_of_test_copy": "a446d7531f3480715bbb684c396a9642bffb19179f051b4ac61a8bb4576b1232",
+  "samples": 87,
+  "state_counts": {
+    "unavailable": 5,
+    "uncertain": 11,
+    "steady": 38,
+    "view_changed": 33
+  },
+  "basis": "Actual video replay and visual contact-sheet inspection. No annotated continuous-play ground truth, no event accuracy claim. The trailer contains horizontal movement, cuts, subtitles and title frames; no sustained climb/fall event was emitted."
+}

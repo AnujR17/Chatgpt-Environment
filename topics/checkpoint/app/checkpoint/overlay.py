@@ -14,7 +14,7 @@ class NoriOverlay(QWidget):
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground);self.setAttribute(Qt.WidgetAttribute.WA_ShowWithoutActivating)
         self.setStyleSheet('background:transparent;');self.setWindowTitle('Nori');self.resize(164,190)
         self.blob=NoriWidget(132);self.blob.setParent(self);self.blob.move(16,48);self.blob.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents)
-        self.message='';self.message_until=0.;self.dragging=False;self.drag_offset=QPoint();self.editing=False;self.manual_until=0.;self.preference_file=None;self.recreating=False
+        self.expression_label='';self.message='';self.message_until=0.;self.dragging=False;self.drag_offset=QPoint();self.editing=False;self.manual_until=0.;self.preference_file=None;self.recreating=False
         self.setAccessibleName('Nori desktop companion · hold Ctrl+Alt to drag; release to lock');self.place('bottom-right')
         self.expiry=QTimer(self);self.expiry.timeout.connect(self.clear_expired);self.expiry.start(500)
         self.modifiers=QTimer(self);self.modifiers.setInterval(50);self.modifiers.timeout.connect(self.check_modifiers)
@@ -85,8 +85,14 @@ class NoriOverlay(QWidget):
         if self.editing and not self.dragging:self.check_modifiers()
 
     def paintEvent(self,event):
-        if not self.message and not self.editing:return
-        p=QPainter(self);p.setRenderHint(QPainter.RenderHint.Antialiasing);p.setPen(Qt.PenStyle.NoPen);p.setBrush(QColor('#FFFCF4'));p.drawRoundedRect(3,3,self.width()-6,46,13,13)
+        if not self.message and not self.editing and not self.expression_label:return
+        p=QPainter(self);p.setRenderHint(QPainter.RenderHint.Antialiasing);p.setPen(Qt.PenStyle.NoPen)
+        if self.expression_label:
+            font=QFont('DM Sans');font.setPixelSize(13);font.setBold(True);p.setFont(font)
+            p.setPen(QColor('#FFFCF4'));p.drawText(1,173,self.width()-2,18,Qt.AlignmentFlag.AlignCenter,self.expression_label)
+            p.setPen(QColor('#29334B'));p.drawText(0,172,self.width(),18,Qt.AlignmentFlag.AlignCenter,self.expression_label)
+        if not self.message and not self.editing:p.end();return
+        p.setPen(Qt.PenStyle.NoPen);p.setBrush(QColor('#FFFCF4'));p.drawRoundedRect(3,3,self.width()-6,46,13,13)
         p.setPen(QColor('#34453E'));font=QFont('DM Sans');font.setPixelSize(11);p.setFont(font)
         p.drawText(10,7,self.width()-20,37,Qt.AlignmentFlag.AlignCenter|Qt.TextFlag.TextWordWrap,'Drag Nori; release to lock' if self.editing else self.message);p.end()
 

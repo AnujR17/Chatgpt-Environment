@@ -34,6 +34,8 @@ jobs:
           python-version: '3.13'
       - name: Fetch the reviewed Windows runtime
         run: python -m scripts.fetch_windows_runtime
+      - name: Check phone character JavaScript syntax
+        run: node --check checkpoint/assets/nori-visual.js
       - name: Assemble native application
         run: python -m scripts.assemble_windows
       - name: Include instructions and test evidence
@@ -45,6 +47,7 @@ jobs:
           Copy-Item docs/EXPRESSIVE-PIP.md build/Checkpoint-Windows/docs/
           Copy-Item docs/NORI-REFLECTION-AND-CMA.md build/Checkpoint-Windows/docs/
           Copy-Item docs/REBUILD-RESEARCH-AND-PLAN.md build/Checkpoint-Windows/docs/
+          Copy-Item docs/EXPRESSIONS-AND-GAME-STATE.md build/Checkpoint-Windows/docs/
           Copy-Item artifacts/reflection-replay.json build/Checkpoint-Windows/docs/
           Copy-Item artifacts/rebuild-model-comparison.json build/Checkpoint-Windows/docs/
           Copy-Item artifacts/rebuild-mobileface-comparison.json build/Checkpoint-Windows/docs/
@@ -77,6 +80,14 @@ jobs:
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_updates.py
           if ($LASTEXITCODE -ne 0) { throw 'Windows updater restart/rollback fixtures failed' }
           Copy-Item artifacts/windows-updater-smoke.json build/Checkpoint-Windows/docs/
+      - name: Check expression names, game-state vision and actual face provider
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_expressions.py
+          if ($LASTEXITCODE -ne 0) { throw 'Expression and game-state checks failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/check_provider_face.py
+          if ($LASTEXITCODE -ne 0) { throw 'Actual provider face check failed' }
+          Copy-Item artifacts/expression-review/verification.json build/Checkpoint-Windows/docs/
+          Copy-Item artifacts/expression-review/provider-face-check.json build/Checkpoint-Windows/docs/
       - name: Package and verify archive
         run: |
           python -m scripts.package_windows
@@ -97,6 +108,7 @@ jobs:
             topics/checkpoint/app/build/Checkpoint-Windows/windows-smoke.png
             topics/checkpoint/app/artifacts/windows-package-verification.json
             topics/checkpoint/app/artifacts/windows-tracking-smoke.json
+            topics/checkpoint/app/artifacts/expression-review/
       - name: Publish downloadable research preview
         env:
           GH_TOKEN: ${{ github.token }}
@@ -106,7 +118,7 @@ jobs:
           $tag = python -c "from checkpoint.version import RELEASE_TAG; print(RELEASE_TAG)"
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint 0.5 — responsive Nori reflection' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint 0.6 — expressions and game tracking' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip --clobber

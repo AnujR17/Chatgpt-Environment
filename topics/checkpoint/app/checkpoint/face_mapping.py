@@ -10,7 +10,8 @@ from checkpoint.face_detail import mouth_polygon,hand_mouth,visible_teeth
 
 def neutral_movement():
     return dict(smile=0.,brow=0.,eyes=1.,eye_left=1.,eye_right=1.,brow_skew=0.,jaw=0.,tension=0.,laugh=0.,
-                cheek=0.,mouth_wide=0.,pressed=0.,pucker=0.,snarl=0.,asymmetry=0.,teeth=0.,hand=0.,hand_side=1.,mouth_visible=1.)
+                cheek=0.,mouth_wide=0.,pressed=0.,pucker=0.,snarl=0.,asymmetry=0.,teeth=0.,hand=0.,hand_side=1.,mouth_visible=1.,
+                brow_furrow=0.,brow_inner_raise=0.,eye_squint=0.,eye_wide=0.,blink=0.,corner_down=0.)
 
 
 def movement_parameters(scores,baseline=None,gain=1.5):
@@ -39,7 +40,10 @@ def movement_parameters(scores,baseline=None,gain=1.5):
         eye_left=eyes[0],eye_right=eyes[1],jaw=deadband(jaw),tension=clip(down*gain+press*gain*.35,0,.7),laugh=laughing,
         cheek=clip(floor(cheek)*gain*2.8),mouth_wide=clip(floor(stretch)*gain*2.5),pressed=clip(floor(press)*gain*2.8),pucker=clip(max(value('mouthPucker'),value('mouthFunnel'))*gain),
         snarl=clip(floor(snarl)*gain*3),asymmetry=clip((value('mouthSmileLeft')-value('mouthSmileRight'))*gain*2,-1,1),
-        brow_skew=clip((value('browOuterUpLeft')-value('browOuterUpRight'))*gain*2,-1,1))
+        brow_skew=clip((value('browOuterUpLeft')-value('browOuterUpRight'))*gain*2,-1,1),
+        brow_furrow=clip(floor(down)*gain*2.8),brow_inner_raise=clip(floor(value('browInnerUp'))*gain*2.8),
+        eye_squint=clip(floor(average('eyeSquint'))*gain*2.5),eye_wide=clip(floor(average('eyeWide'))*gain*2.5),
+        blink=clip(average('eyeBlink')),corner_down=clip(floor(frown)*gain*2.5))
     return result
 
 
@@ -118,7 +122,7 @@ class LandmarkPipeline:
         if self.calibrating and not gesture['occluded']:
             self.calibration.append(scores);movement=neutral_movement();key='neutral';label=f'Hold a relaxed face · {len(self.calibration)}/8'
             if len(self.calibration)>=8:
-                names=['mouthSmileLeft','mouthSmileRight','mouthFrownLeft','mouthFrownRight','browDownLeft','browDownRight','browInnerUp','jawOpen']
+                names=['mouthSmileLeft','mouthSmileRight','mouthFrownLeft','mouthFrownRight','browDownLeft','browDownRight','browInnerUp','browOuterUpLeft','browOuterUpRight','eyeSquintLeft','eyeSquintRight','jawOpen']
                 self.baseline={name:min(.12 if name=='jawOpen' else .18,float(np.median([x.get(name,0) for x in self.calibration]))) for name in names}
                 self.calibrating=False;label='Neutral face calibrated'
         else:

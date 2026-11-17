@@ -10,7 +10,7 @@ from checkpoint.character import CHARACTER_NAME,FEELING_LOOKS,COLOURS
 from checkpoint.vocabulary import CARDS
 
 
-BASE = dict(red=151., green=190., blue=175., stretch=0., tension=0., smile=0., eyes=1., brow=0., energy=.2,jaw=0.,laugh=0.,eye_left=1.,eye_right=1.,brow_skew=0.,mouth_wide=0.,pressed=0.,pucker=0.,snarl=0.,asymmetry=0.,teeth=0.,hand=0.,hand_side=1.,mouth_visible=1.,tears=0.,lean=0.)
+BASE = dict(red=131., green=210., blue=187., stretch=0., tension=0., smile=0., eyes=1., brow=0., energy=.2,jaw=0.,laugh=0.,eye_left=1.,eye_right=1.,brow_skew=0.,mouth_wide=0.,pressed=0.,pucker=0.,snarl=0.,asymmetry=0.,teeth=0.,hand=0.,hand_side=1.,mouth_visible=1.,tears=0.,lean=0.)
 LOOKS = {
     'happy': dict(red=235,green=188,blue=102,smile=.9,eyes=.65,energy=.55,stretch=.06),
     'excited': dict(red=235,green=178,blue=103,smile=1.,eyes=1.15,energy=.8,stretch=.12),
@@ -37,6 +37,7 @@ def parameters(key,valence=None,arousal=None):
         result.update(zip(('red','green','blue'),COLOURS[CARDS[key]['colour']]))
         result.update(FEELING_LOOKS[key])
     else:result.update(LOOKS.get(ALIASES.get(key,key),{}))
+    if key in ('confused','bewildered'):result.update(red=176.,green=170.,blue=222.)
     result['eye_left']=result['eyes'];result['eye_right']=result['eyes']
     # Only self-report coordinates modulate the body. Camera movements pass no CMA.
     if valence is not None and arousal is not None:
@@ -76,13 +77,22 @@ def follow_visual(current,target,dt):
 
 
 def contour(params, phase=0.):
+    """One rounded, grounded silhouette with a shallow notch between two soft feet."""
     points=[]
     for i in range(64):
         angle=2*math.pi*i/64
-        radius=.76 + .045*math.sin(3*angle+.5) + .025*math.cos(2*angle-.8)
-        radius += params['tension']*.02*math.cos(4*angle)
-        radius += .012*math.sin(phase)*math.sin(angle)**2
-        points.append((math.cos(angle)*radius*(1-params['stretch']*.35)+params.get('lean',0)*math.sin(angle), math.sin(angle)*radius*(1+params['stretch'])))
+        c,s=math.cos(angle),math.sin(angle)
+        x=math.copysign(abs(c)**.78,c)*.67
+        y=math.copysign(abs(s)**.88,s)*.78
+        x*=1+.10*s
+        if s>0:
+            y-=.10*math.exp(-(x/.22)**2)*s**6
+            x+=.035*s**3
+        breathe=.007*math.sin(phase)
+        x*=1-params['stretch']*.28+breathe
+        y*=1+params['stretch']-breathe
+        x+=params.get('lean',0)*s*.45
+        points.append((x,y))
     return points
 
 
@@ -93,9 +103,7 @@ class NoriWidget(AffectWidget):
         super().__init__(size,mode)
 
     def set_state(self,state,valence=None,arousal=None):
-        if state is None:
-            self.pip_current=parameters(None);self.pip_to=parameters(None);self.pip_clock=time.monotonic()
-        elif (state,valence,arousal)!=self.profile_key:
+        if (state,valence,arousal)!=self.profile_key:
             self.interpolated();self.pip_to=parameters(state,valence,arousal)
         self.profile_key=(state,valence,arousal);self.report_coords=(valence,arousal)
         super().set_state(state,valence,arousal)
@@ -130,18 +138,20 @@ class NoriWidget(AffectWidget):
         v=self.interpolated();self.pip_current=v
         size=min(self.width(),self.height());centre=QPointF(self.width()/2,self.height()*.50);scale=size*.48
         phase=0. if self.reduced_motion or self.paused else self.motion_phase
-        ink=QColor('#34453E')
+        ink=QColor('#29334B')
         unknown=self.current_state is None or self.target is None
-        if unknown:v=parameters(None);phase=0.
+        if unknown:
+            # Reset expression immediately; retain smooth body/colour interpolation.
+            v.update(smile=0.,brow=0.,brow_skew=0.,jaw=0.,laugh=0.,teeth=0.,hand=0.,
+                     eyes=1.,eye_left=1.,eye_right=1.,mouth_wide=0.,pucker=0.,pressed=0.,asymmetry=0.,snarl=0.,mouth_visible=1.,tears=0.)
+            phase=0.
         # Less than 1% body-height movement: a small laugh, no screen shake.
         if not self.reduced_motion and not self.paused:
             centre.setY(centre.y()-scale*.016*v['laugh']*(.5+.5*math.sin(phase*6)))
         body=QColor(round(v['red']),round(v['green']),round(v['blue']))
         p.setPen(Qt.PenStyle.NoPen);shadow=QColor('#34453E');shadow.setAlpha(19);p.setBrush(shadow)
         p.drawEllipse(QPointF(centre.x(),centre.y()+scale*.83),scale*.64,scale*.07)
-        pen=QPen(ink, max(1.5,size*.009));pen.setJoinStyle(Qt.PenJoinStyle.RoundJoin);p.setPen(pen)
-        if unknown:pen.setColor(QColor('#8B9D92'));p.setPen(pen)
-        p.setBrush(body);p.drawPath(painter_path(contour(v,phase),centre,scale))
+        p.setPen(Qt.PenStyle.NoPen);p.setBrush(body);p.drawPath(painter_path(contour(v,phase),centre,scale))
         centre.setX(centre.x()+v['lean']*scale*.25)
         eye_y=centre.y()-scale*.02;eye_x=scale*.23
         blink=.12 if not unknown and not self.reduced_motion and self.animation_time%7.8>7.63 else 1.
@@ -159,9 +169,11 @@ class NoriWidget(AffectWidget):
         pen=QPen(ink,max(1.5,size*.009));pen.setCapStyle(Qt.PenCapStyle.RoundCap);p.setPen(pen);p.setBrush(Qt.BrushStyle.NoBrush)
         if max(abs(v['brow']),abs(v['brow_skew']))>.15:
             for direction in (-1,1):
-                x=centre.x()+direction*eye_x;y=eye_y-scale*.18
+                x=centre.x()+direction*eye_x;y=eye_y-scale*(.18+direction*v['brow_skew']*.10)
                 brow=v['brow']+direction*v['brow_skew']
-                p.drawLine(QPointF(x-scale*.075,y+direction*brow*scale*.09),QPointF(x+scale*.075,y-direction*brow*scale*.09))
+                curve=QPainterPath(QPointF(x-scale*.075,y+direction*brow*scale*.09))
+                curve.quadTo(x,y-scale*(.055+.035*abs(brow)),x+scale*.075,y-direction*brow*scale*.09)
+                p.drawPath(curve)
         if v['mouth_visible']>.5:
             width=scale*(.14+.065*v['mouth_wide']+.055*max(0.,v['smile'])-.055*v['pucker'])
             y=eye_y+scale*.21;left_y=y+v['asymmetry']*scale*.045;right_y=y-v['asymmetry']*scale*.045
@@ -184,14 +196,15 @@ class NoriWidget(AffectWidget):
             p.setPen(Qt.PenStyle.NoPen);p.setBrush(QColor('#8CBAC5'))
             for d in (-1,1):p.drawEllipse(QPointF(centre.x()+d*eye_x,eye_y+scale*.18),scale*.027,scale*.065*v['tears'])
         if v['hand']>.025:
+            # A small mitten of the same material, with no drawn finger stripes.
             side=1 if v['hand_side']>=0 else -1;reach=v['hand']
-            start=QPointF(centre.x()+side*scale*.56,centre.y()+scale*.43)
-            end=QPointF(start.x()+(centre.x()+side*scale*.06-start.x())*reach,start.y()+(eye_y+scale*.24-start.y())*reach)
-            arm=QPainterPath(start);arm.quadTo(start.x(),end.y()+scale*.18,end.x(),end.y())
-            p.setOpacity(reach);p.setPen(QPen(ink,scale*.145,Qt.PenStyle.SolidLine,Qt.PenCapStyle.RoundCap));p.setBrush(Qt.BrushStyle.NoBrush);p.drawPath(arm)
-            p.setPen(QPen(body,scale*.11,Qt.PenStyle.SolidLine,Qt.PenCapStyle.RoundCap));p.drawPath(arm)
-            p.setPen(QPen(ink,max(1.,size*.008)));p.setBrush(body);p.drawEllipse(end,scale*.12,scale*.095)
-            for dy in (-.025,.025):p.drawLine(QPointF(end.x()-scale*.03,end.y()+scale*dy),QPointF(end.x()+scale*.055,end.y()+scale*dy))
+            x=centre.x()+side*scale*(.52-.42*reach)
+            y=centre.y()+scale*(.43-.20*reach)
+            p.setPen(Qt.PenStyle.NoPen);p.setBrush(body);p.setOpacity(reach)
+            mitt=QPainterPath(QPointF(x-side*scale*.10,y+scale*.08))
+            mitt.cubicTo(x-side*scale*.16,y-scale*.05,x-side*scale*.03,y-scale*.15,x+side*scale*.06,y-scale*.08)
+            mitt.cubicTo(x+side*scale*.18,y-scale*.10,x+side*scale*.20,y+scale*.08,x+side*scale*.06,y+scale*.12)
+            mitt.closeSubpath();p.drawPath(mitt)
         p.end()
 
 

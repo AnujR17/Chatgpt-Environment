@@ -1,6 +1,6 @@
 """Nori's 43 self-report compositions. They are not 43 camera-model classes."""
 CHARACTER_NAME='Nori'
-COLOURS={'yellow':(218,205,137),'coral':(226,155,134),'blue':(164,180,206),'teal':(151,190,175),'ochre':(220,186,130)}
+COLOURS={'yellow':(237,207,127),'coral':(229,156,143),'blue':(157,181,222),'teal':(131,210,187),'ochre':(231,189,137)}
 FEELING_LOOKS={
  'afraid':dict(eyes=1.3,brow=-.55,jaw=.2,stretch=.13,lean=-.04),
  'amused':dict(smile=.75,eyes=.55,laugh=.45,jaw=.32,lean=.05,teeth=.6),

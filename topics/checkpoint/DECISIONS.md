@@ -20,3 +20,8 @@
 
 - User clarifies that a useful gaming companion should reflect a sustained period rather than copy each facial frame. Default to Reflection with stated evidence window/hold, and retain Face preview for diagnostics. Confirmed human check-ins take priority; face patterns cannot establish inner emotion or CMA. Full automatic 43-feeling inference is not supported by available evidence. Keep all 43 as meaningful authored selectable states and show eight-class model scores honestly.
 - CMA report should answer how reported pleasantness/activation changed and what to reflect on next, without a sensor-event log or inferred emotional duration. Export PDF natively and to the paired phone. Nori is the new name. Draggability uses explicit Ctrl+Alt or a temporary tray move mode, retaining no-focus/click-through play and remembering placement.
+
+
+## 17 November 2026 — user-authorised 0.6 OTA on topic/checkpoint
+
+User explicitly requests the main checkpoint branch and OTA publication, superseding the prior no-OTA restriction for the separate study. Implement short expression names, tentative multi-feature Confused?, separated brow/eye features, soft original Nori contour/curved brows/mitten and smooth colour/shape changes. CMA stays player-reported. Track game enables screen observation directly; structured background-motion estimates and session-only named view recognition reach the phone. Do not call motion a confirmed death/restart or infer involuntary emotion. Model/runtime assets unchanged. The separate session-study branch remains unchanged. Research and limits: app/docs/EXPRESSIONS-AND-GAME-STATE.md.

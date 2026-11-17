@@ -32,6 +32,7 @@ class GameObservation:
     game: str | None
     status: str
     cue: str = ''
+    state: dict | None = None
 
 
 def active_game():
@@ -111,19 +112,32 @@ class GettingOverItAnalyzer:
     def __init__(self):
         self.previous = None; self.direction = 0; self.streak = 0; self.reference = None
         self.orb = cv2.ORB_create(nfeatures=700)
+        self.landmarks = {}; self.marked_name = 'Marked start view'
+        self.state = self._state('waiting', 'Waiting for game view')
+        self.falls = 0; self.climbs = 0; self.last_motion = None
+
+    def _state(self, kind, title, section=None):
+        return {'kind':kind, 'title':title, 'section':section,
+                'possible_falls':getattr(self,'falls',0), 'possible_climbs':getattr(self,'climbs',0),
+                'basis':'Foreground game-window computer vision; motion is an estimate, not a confirmed game event.'}
 
     def reset_motion(self):
-        self.previous = None; self.direction = 0; self.streak = 0
+        self.previous = None; self.direction = 0; self.streak = 0; self.last_motion=None
 
     def clear(self):
         self.reset_motion(); self.reference = None
+        self.landmarks.clear(); self.falls=0; self.climbs=0; self.last_motion=None
+        self.state=self._state('waiting','Waiting for game view')
 
-    def mark_start(self, frame):
+    def mark_start(self, frame, name='Marked start view'):
         gray = self._gray(frame)
         keys, descriptors = self.orb.detectAndCompute(gray, None)
         if descriptors is None or len(keys) < 35:
             return False
         self.reference = (keys, descriptors, gray.shape)
+        self.marked_name = str(name).strip()[:48] or 'Marked start view'
+        self.landmarks[self.marked_name] = self.reference
+        while len(self.landmarks)>8:self.landmarks.pop(next(iter(self.landmarks)))
         return True
 
     @staticmethod
@@ -132,9 +146,9 @@ class GettingOverItAnalyzer:
         small = cv2.resize(frame, (int(w * scale), int(h * scale)))
         return cv2.cvtColor(small, cv2.COLOR_BGR2GRAY) if small.ndim == 3 else small
 
-    def _matches_start(self, gray):
+    def _matches_start(self, gray, features=None):
         if self.reference is None or gray.shape != self.reference[2]: return False
-        keys, descriptors = self.orb.detectAndCompute(gray, None)
+        keys, descriptors = features if features is not None else self.orb.detectAndCompute(gray, None)
         if descriptors is None or len(keys) < 35: return False
         reference_keys, reference_descriptors, _ = self.reference
         matches = cv2.BFMatcher(cv2.NORM_HAMMING).knnMatch(reference_descriptors, descriptors, k=2)
@@ -151,13 +165,40 @@ class GettingOverItAnalyzer:
                 and abs(matrix[1, 2]) < gray.shape[0] * .05)
 
     def observe(self, frame):
+        cue=self._observe_motion(frame)
+        section=None
+        if cue.startswith('Marked start view'):
+            section=self.marked_name
+            kind,title='marked_view',section
+        elif cue.startswith('Possible climb'):kind,title='climbing','Climbing?'
+        elif cue.startswith('Possible fall'):kind,title='falling','Falling?'
+        elif 'unavailable' in cue.lower():kind,title='unavailable','Game view unavailable'
+        elif cue.startswith('View changed'):kind,title='view_changed','View changed'
+        elif cue.startswith('No clear vertical'):kind,title='steady','No clear climb or fall'
+        else:kind,title='uncertain','Observing game movement'
+        # Count one transition per sustained run, not one event per sampled frame.
+        if kind in ('climbing','falling') and kind!=self.last_motion:
+            if kind=='climbing':self.climbs+=1
+            else:self.falls+=1
+            self.last_motion=kind
+        elif kind in ('marked_view','steady','view_changed','unavailable'):
+            self.last_motion=None
+        self.state=self._state(kind,title,section)
+        return cue
+
+    def _observe_motion(self, frame):
         if frame is None or frame.size == 0:
             self.reset_motion(); return 'Screen unavailable'
         gray = self._gray(frame)
         if gray.std() < 7:
             self.reset_motion(); return 'Screen unavailable or too little visual detail'
         old = self.previous; self.previous = gray
-        if self._matches_start(gray):
+        match=False
+        features=self.orb.detectAndCompute(gray,None) if self.landmarks else None
+        for name,reference in reversed(list(self.landmarks.items())):
+            self.reference=reference
+            if self._matches_start(gray,features):self.marked_name=name;match=True;break
+        if match:
             self.direction = 0; self.streak = 0
             return 'Marked start view visible · no restart inferred'
         if old is None or old.shape != gray.shape:
@@ -177,6 +218,14 @@ class GettingOverItAnalyzer:
         if good.sum() < 35 or good.mean() < .5:
             self.streak = 0; return 'View changed · movement uncertain'
         delta = (moved - points).reshape(-1, 2)[good]
+        # Estimate the background transform and reject zoom/rotation as climb/fall.
+        src=points.reshape(-1,2)[good];dst=moved.reshape(-1,2)[good]
+        affine,inliers=cv2.estimateAffinePartial2D(src,dst,method=cv2.RANSAC,ransacReprojThreshold=2.5)
+        if affine is None or inliers is None or inliers.mean()<.65:
+            self.direction=0;self.streak=0;return 'View changed · movement uncertain'
+        zoom=float(np.hypot(affine[0,0],affine[1,0]));rotation=abs(float(np.arctan2(affine[1,0],affine[0,0])))
+        if abs(zoom-1)>.025 or rotation>.025:
+            self.direction=0;self.streak=0;return 'View changed · zoom or rotation'
         dx, dy = np.median(delta, axis=0)
         coherent = np.mean(np.abs(delta[:, 1] - dy) < max(2., abs(dy) * .4))
         if abs(dy) < gray.shape[0] * .008 or abs(dy) < abs(dx) * 1.4 or coherent < .65:
@@ -193,6 +242,7 @@ class GameWorker(QThread):
     def __init__(self, *, screen=False, detector=active_game, capture=capture_game):
         super().__init__(); self.screen = screen; self.detector = detector; self.capture = capture
         self.mark_requested = threading.Event(); self.analyzer = GettingOverItAnalyzer(); self.last_pid = None
+        self.mark_name='Marked start view'
         self.foreground = ActiveGame(None)
 
     def run(self):
@@ -210,11 +260,18 @@ class GameWorker(QThread):
                     frame = self.capture(game)
                     if frame is not None and self.mark_requested.is_set():
                         self.mark_requested.clear()
-                        cue = 'Start view marked in memory' if self.analyzer.mark_start(frame) else 'Could not mark start view · try a detailed scene'
+                        marked=self.analyzer.mark_start(frame,self.mark_name)
+                        cue = 'View marked in memory' if marked else 'Could not mark view · try a detailed scene'
+                        self.analyzer.observe(frame)
+                        if not marked:self.analyzer.state=self.analyzer._state('mark_failed','Could not mark view; try a more detailed scene')
                     else: cue = self.analyzer.observe(frame)
                 elif self.screen and game.name:
                     cue = 'Screen events supported only for Getting Over It'
-                self.observation.emit(GameObservation(game.name, 'Foreground process detected' if game.name else game.status, cue))
+                state=self.analyzer.state if self.screen and game.name=='Getting Over It' else {
+                    'kind':'out_of_focus' if not game.name else 'unsupported' if self.screen else 'screen_off',
+                    'title':game.status if not game.name else 'Screen events unavailable' if self.screen else 'Screen observation off',
+                    'section':None,'basis':'Foreground process detection'}
+                self.observation.emit(GameObservation(game.name, 'Foreground process detected' if game.name else game.status, cue,state))
                 for _ in range(10):
                     if self.isInterruptionRequested(): break
                     self.msleep(50)
@@ -247,7 +304,7 @@ def main():
             if not ok: break
             if frame_index % step == 0:
                 print(json.dumps({'seconds': round(frame_index / fps, 2), 'cue': analyzer.observe(frame),
-                                  'status': 'experimental heuristic; not validated game-event recognition'}))
+                                  'state': analyzer.state, 'status': 'experimental heuristic; not validated game-event recognition'}))
             frame_index += 1
     finally:
         capture.release(); analyzer.clear()

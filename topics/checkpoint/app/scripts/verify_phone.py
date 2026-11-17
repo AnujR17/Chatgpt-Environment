@@ -67,7 +67,7 @@ async def main():
             for _ in range(12):
                 window.session.receive_cue(Cue('accepted','happiness',movement={**happy,'cheek':.5},mapping_label='Smile movement'),generation)
                 window.next_export=0.;window.refresh();await asyncio.sleep(.125)
-            await page.get_by_role('heading',name='Smile-like expression',exact=True).wait_for()
+            await page.get_by_role('heading',name='Happy',exact=True).wait_for()
             assert await page.evaluate('latest.source==="visual_pattern" && latest.blob.smile>0.5')
             await page.screenshot(path=str(ROOT/'artifacts/nori-phone-reflection.png'),full_page=True)
             assert window.latest_report['cma']['count']==0, 'Face cues must not invent CMA check-ins'

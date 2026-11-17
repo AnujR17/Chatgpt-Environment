@@ -38,6 +38,7 @@ class CompanionState:
         state={'version':2,'character':CHARACTER_NAME,'updated_at':time.time(),'elapsed_seconds':elapsed,
             'animate':bool(motion_enabled and session.active and session.break_deadline is None),'active':session.active,'paused':session.break_deadline is not None,'game':session.game,
             'detail':display.detail if display else '', 'title':title,'source':source,'artwork':artwork,'blob':visual,'unknown':artwork is None,
+            'game_state':getattr(game,'state',None) if game else None,
             'camera_active':session.camera_active,'capture_source':session.source_kind,'game_status':game_status,'game_cue':cue,
             'checkin':{'title':session.affect[0],'pleasantness':session.affect[1],'activation':session.affect[2]},
             'model_estimate':category_estimate(session.cue) if display and display.source in ('face_movement','expression_estimate','visual_pattern') else None,

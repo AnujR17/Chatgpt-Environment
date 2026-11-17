@@ -19,3 +19,6 @@ build/
 
 artifacts/*.log
 artifacts/pip-existing-tests.xml
+
+artifacts/session-review/
+artifacts/expression-review/
