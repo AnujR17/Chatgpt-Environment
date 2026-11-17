@@ -55,5 +55,5 @@
 - [x] Soft original character, curved brows, mitten and shared native/phone easing.
 - [x] One-action game-window vision, structured state and session-only named-view recognition.
 - [x] Local suite100passed/5skips, native policy/render checks and phone browser/PDF regression.
-- [ ] Windows native/provider/capture/updater checks and OTA publication verification.
+- [x] Windows native/provider/capture/updater checks and OTA publication verification (run44067117607; all83 app files verified by previous-version download/staging fixture).
 - [ ] Physical player webcam/game state/phone trial; recognition and usefulness remain unvalidated.

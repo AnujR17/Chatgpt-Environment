@@ -54,3 +54,9 @@ No new target-player accuracy, 43-class recognition, involuntary-expression dete
 ## Update and use
 
 Use **Settings > Check for updates > Update and restart**. The compatible app-only payload keeps the existing runtime and model weights. Camera and screen observation start off after restart. Choose **Start face tracking** for expressions; choose **Track game** while playing Getting Over It for game vision. Use **Mark section** if you want a specific view recognised on return. Phone pairing works as before on a trusted private LAN.
+
+## Publication verified
+
+Release `checkpoint-v0.6.0-preview.1` targets code commit `c223b27b127f2d0c52834067843bcc97f26a08fc`. [Windows run 44067117607](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44067117607) passed all release checks, including actual model inference on Google's public portrait, new native expression/game-state cases, game-window capture and actual Windows updater restart/rollback fixtures.
+
+The public previous-version updater discovery and actual download/staging passed for the 6,148,689-byte app-only payload: all 83 declared file hashes match; runtime/model compatibility chooses the small package; the disposable old installation is preserved. No downloaded code was executed during staging. The full public ZIP returns HTTP 200 with a ZIP signature, and its checksum agrees across the manifest, sums and GitHub asset digest; this public check did not download the entire full ZIP. See [the release verification record](../../RELEASE-VERIFICATION.json). Additional native-to-Chromium checks show Confused? and a named game section together without commentary or JavaScript errors. These remain software fixtures, not a user-device or real-play validation.
