@@ -57,3 +57,12 @@
 - [x] Local suite100passed/5skips, native policy/render checks and phone browser/PDF regression.
 - [x] Windows native/provider/capture/updater checks and OTA publication verification (run44067117607; all83 app files verified by previous-version download/staging fixture).
 - [ ] Physical player webcam/game state/phone trial; recognition and usefulness remain unvalidated.
+
+
+## Persistent updater repair — 17 November 2026
+
+- [x] Use supplied rollback log to identify confirmed Windows file-lock failure.
+- [x] Keep runtime/install directory stable for app updates, add component rollback/retries, verified cache reuse, atomic receipts and actionable diagnostics.
+- [x] Publish 0.6.1 and a 3.8 KB legacy repair bridge.
+- [x] Test actual public repair with real 0.4 source, locked folder, real Qt start and original CMD reopen on Windows (run44077487729).
+- [ ] User runs repair against existing installation; physical user-device result remains unknown.

@@ -1,41 +1,39 @@
 {
   "checked_at": "2026-11-17",
-  "release": "checkpoint-v0.6.0-preview.1",
-  "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.6.0-preview.1",
-  "source_commit": "c223b27b127f2d0c52834067843bcc97f26a08fc",
+  "release": "checkpoint-v0.6.1-preview.1",
+  "source_commit": "d99de2546d6589e078cbd355aac048c1578dc27d",
   "branch": "topic/checkpoint",
-  "windows_run": {
-    "id": 44067117607,
-    "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44067117607",
+  "reported_failure": "Windows sharing violation caused the previous whole-folder updater to preserve/reopen 0.4; specific locking process not identified",
+  "windows_release_run": {
+    "id": 44075074794,
+    "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44075074794",
     "conclusion": "success",
-    "native_launch": "passed",
-    "game_window_capture_fixture": "passed",
-    "overlay_transparency_no_focus": "passed",
-    "actual_model_graph_loading": "passed",
-    "public_provider_portrait_inference": "passed; separate action features available; not emotion accuracy",
-    "new_expression_and_game_state_checks": "6 policy/vision cases plus native UI passed",
-    "updater_successful_restart": "passed",
-    "updater_failed_start_rollback": "passed",
-    "archive_integrity": "passed by Windows packaging job"
+    "legacy_root_lock": "reproduced",
+    "actual_qt_startup_after_component_update": "passed",
+    "normal_reopen_stays_updated": "passed",
+    "runtime_and_install_root_preserved": "passed",
+    "component_and_full_rollback": "passed"
+  },
+  "published_repair_bridge": {
+    "id": 44077487729,
+    "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44077487729",
+    "conclusion": "success",
+    "legacy_source": "actual 0.4.0-preview.2 source",
+    "public_repair_zip_download_and_execution": "passed",
+    "held_open_folder": "passed",
+    "actual_gui_startup": "passed",
+    "original_Start_Checkpoint_cmd_reopen": "0.6.1-preview.1 persisted",
+    "runtime": "existing compatible vendor runtime reused",
+    "physical_user_installation": "not modified"
   },
   "local_suite": {
-    "passed": 100,
+    "passed": 105,
     "skipped": 5
   },
-  "native_preview": "Actual Qt renders using synthetic facial signals and authored poses",
-  "phone_browser": {
-    "fixture": "Synthetic confusion features and marked-view state from native app through actual HTTP server",
-    "confusion_name": "passed",
-    "named_game_view": "passed",
-    "commentary_hidden": "passed",
-    "viewport": "390x844 no horizontal overflow",
-    "javascript_errors": [],
-    "physical_phone": "not tested"
-  },
   "public_update": {
-    "tag": "checkpoint-v0.6.0-preview.1",
-    "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.6.0-preview.1",
-    "source_commit": "c223b27b127f2d0c52834067843bcc97f26a08fc",
+    "tag": "checkpoint-v0.6.1-preview.1",
+    "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.6.1-preview.1",
+    "source_commit": "d99de2546d6589e078cbd355aac048c1578dc27d",
     "manifest_discovery_using_previous_version_identity": "passed",
     "small_download_and_all_declared_file_hashes": "passed",
     "declared_app_files": 83,
@@ -43,20 +41,19 @@
     "disposable_previous_install_preserved": "passed",
     "new_source_features_present": "passed",
     "full_public_zip": "HTTP 200 and ZIP signature; full-file hash agrees with published manifest, sums and GitHub asset digest; entire ZIP not downloaded in this check",
-    "app_bytes": 6148689,
-    "app_sha256": "66ca07d071dbd1ffa60c80ad62857164aa8f194ca77ee0aaef77a95fabe3bf05",
-    "full_bytes": 243486116,
-    "full_sha256": "5f740c08690a954aabfcd88842dedc628fcb497e61f90b40ad47575e9c9c2068",
+    "app_bytes": 6151504,
+    "app_sha256": "bf2ed2706d7ca5f83da4d22d43b6b528861a0648e4a8af704ee704b66c49a69e",
+    "full_bytes": 243492657,
+    "full_sha256": "ac1ee39501d6ff5bf43da2140931ecc11c117409e60bc8840a0388b3f25e1bfe",
     "execution": "No downloaded code or runtime executed; actual Windows restart/rollback is covered by CI",
-    "user_device_update": "not performed"
+    "user_device_update": "not performed",
+    "retry_reuses_cache_without_network": "passed",
+    "app_components_exclude_runtime_and_models": "passed",
+    "repair_zip_bytes": 3808,
+    "repair_zip_sha256": "9095a32cc831ec1c53946c26886c4064e508484aa64fc41f066741d82db38a8b",
+    "repair_zip_integrity": "passed"
   },
-  "limits": [
-    "Physical user webcam and phone Wi-Fi not tested",
-    "Continuous actual game-event accuracy not established; trailer replay is not ground truth",
-    "Confused? is an unvalidated visual heuristic; no new 43-class or involuntary-expression claim"
-  ],
-  "unchanged_refs": {
-    "main": "7d32cda393902f130eb3446d03da7cddcff0795c",
-    "topic/checkpoint-session-20261116": "4910360c5e4a0c8951e10998dff32b4d871a8472"
-  }
+  "compatibility": "0.4 and current Windows runtime-source lock files are byte-identical (SHA256 604e87f78f58fe6f557ccc11e4baa62b08824a0d30c10e3d664750a0a8c6be6d)",
+  "repair_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.1-preview.1/Checkpoint-Updater-Repair.zip",
+  "scope": "Updater repair only; facial models, game tracking and CMA behaviour unchanged"
 }
