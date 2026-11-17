@@ -2,7 +2,7 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `83a329f74a6cb3ac64a685b9da26dce1d52a1fe9` in existing Vercel project `chatgpt-environment`. Verified16November2026:133retained roles/108active-held/25archived,289companies,20established profiles and48coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `e4d9b48c1d6bf23d9df97b4287c00032b2e93c12` in existing Vercel project `chatgpt-environment`. Verified17November2026:135retained roles/110active-held/25archived,293companies,20established profiles and50coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
@@ -17,8 +17,8 @@ New Electrifex Kochi junior/fresher alternative:salaryundisclosed,not internship
 Four obsolete next-action thresholds corrected with history retained. No new
 verified14daystandalone social post or confirmed student joining. Four company
 targets added,including product-only CrelioHealth and adjacent-design-only IITGNCCL.
-See [today's report](public/data/collection-report.md). Publication pending exact-
-commit READY/live verification;previous release remains recorded above.
+See [today's report](public/data/collection-report.md). Exact-commit production
+READY,live feed/export bytes and desktop/mobile checks verified17November.
 
 ## Established employers and workplace screening
 
