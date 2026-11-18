@@ -2,9 +2,9 @@
   "project": "regen-case-study",
   "projectId": "prj_5TrsYqWsyuPksudhkXFIqxQ1HnnV",
   "branch": "topic/regen-case-study-site",
-  "sourceCommit": "d0cd2ec9e89b8a366f568cba07ba3131c9bbd8dc",
-  "deploymentId": "dpl_D1YXAQLJewxQQD6YxKzPJv8k18Mk",
-  "url": "https://regen-case-study-q23s64yln-anujrai1701-gmailcoms-projects.vercel.app",
+  "sourceCommit": "f8787f23e3918a77f4c922ce1489c08c43829629",
+  "deploymentId": "dpl_54e4jJo1EWdHwGigrnQRzBsMyeqA",
+  "url": "https://regen-case-study-jqckmrcak-anujrai1701-gmailcoms-projects.vercel.app",
   "status": "READY",
   "target": "preview",
   "access": "Existing Vercel team sign-in protection retained",
@@ -14,36 +14,46 @@
       {
         "path": "case-study.js",
         "status": 200,
-        "ok": true,
-        "bodyLength": 6316
+        "bodyLength": 8485
       },
       {
         "path": "case-study.css",
         "status": 200,
-        "ok": true,
-        "bodyLength": 24962
+        "bodyLength": 27489
       },
       {
         "path": "project.html",
         "status": 200,
-        "ok": true,
-        "bodyLength": 3124
+        "bodyLength": 3363
       },
       {
         "path": "research.html",
         "status": 200,
-        "ok": true,
-        "bodyLength": 7126
+        "bodyLength": 8785
       },
       {
         "path": "feasibility.html",
         "status": 200,
-        "ok": true,
-        "bodyLength": 4515
+        "bodyLength": 5270
+      },
+      {
+        "path": "play-support-verification.json",
+        "status": 200,
+        "bodyLength": 436
+      },
+      {
+        "path": "recovery-verification.json",
+        "status": 200,
+        "bodyLength": 431
+      },
+      {
+        "path": "windows-verification.json",
+        "status": 200,
+        "bodyLength": 1581
       }
     ],
-    "interaction": "Chromium local static-site check passed at 1440, 390 and 320px; CMA presets, stable cue, feedback, themes and reduced motion",
-    "deployedHttp": "Verified using authenticated Vercel connector",
+    "interaction": "Generated website passed local Chromium interaction checks at 1440, 390 and 320px, including simulated fall/mute, CMA choices, follow-up, helpfulness, themes and reduced motion",
+    "deployedHttp": "Verified with authenticated Vercel connector",
     "liveBrowser": "Not separately exercised behind Vercel sign-in; deployed static sources match the locally exercised website"
   }
 }

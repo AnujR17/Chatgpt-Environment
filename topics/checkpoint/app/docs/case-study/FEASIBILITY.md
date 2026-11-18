@@ -42,4 +42,4 @@ Observe interruption, unwanted spoilers, misread expressions and confusion betwe
 
 124 local checks passed, five skipped. Native flow and the real loopback/Chromium phone/PDF checks passed. The visual case-study interaction passed at desktop, 390px and 320px, including feedback and reduced motion. [Current evidence](verification.json).
 
-[Windows run 44270123364](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44270123364) passed at the branded application commit `89792b195a9bc4a9219c15928ec4dccc590af43c`. It covers native session/recovery, fall-to-support fixtures, model/hand inference, GDI capture, overlay, Windows shortcut dispatch and loopback fixtures. No physical camera/game/phone study or actual-play usefulness result is claimed.
+[Windows run 44271249558](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44271249558) passed at the branded application commit `b10788c47ae9925a64be8c46d6bda519cd886a97`. It covers native session/recovery, fall-to-support fixtures, model/hand inference, GDI capture, overlay, Windows shortcut dispatch and loopback fixtures. No physical camera/game/phone study or actual-play usefulness result is claimed.

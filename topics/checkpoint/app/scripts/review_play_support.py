@@ -27,6 +27,7 @@ def run():
     w.grab().save(str(OUT/'play-support.png'));w.overlay.grab().save(str(OUT/'setback-overlay.png'))
     w.support_toggle.click();assert not w.last_nudge and not w.overlay.message
     w.setback_control.click();assert w.last_nudge and w.latest_companion['play_support']['basis']=='Player marked a setback'
+    assert not w.nudges_enabled  # Manual help preserves the player's mute preference.
     for width,height in ((1440,900),(1024,768)):
         w.resize(width,height);app.processEvents()
         for b in (w.capture_control,w.checkin_button,w.setback_control,w.game_detection_control):

@@ -1,6 +1,6 @@
 # Regen case-study website
 
-**[Open the interactive case study](https://regen-case-study-q23s64yln-anujrai1701-gmailcoms-projects.vercel.app)**
+**[Open the interactive case study](https://regen-case-study-jqckmrcak-anujrai1701-gmailcoms-projects.vercel.app)**
 
 Live Vercel preview. Sign in with your Vercel account if prompted.
 

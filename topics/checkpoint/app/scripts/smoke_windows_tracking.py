@@ -105,6 +105,7 @@ finally:
     game_module.active_game = original
 # Register actual Windows hotkeys, but post messages only to our own fixture window.
 assert window.play_hotkeys.start(),'Play shortcuts could not register on the Windows runner'
+window.set_support_enabled(True)
 user=ctypes.WinDLL('user32');user.PostMessageW.argtypes=[wintypes.HWND,wintypes.UINT,wintypes.WPARAM,wintypes.LPARAM]
 user.PostMessageW(int(window.winId()),0x0312,0x5247,0);QTest.qWait(100)
 assert window.latest_companion['play_support']['basis']=='Player marked a setback'

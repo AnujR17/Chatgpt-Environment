@@ -360,7 +360,7 @@ class MainWindow(QMainWindow):
 
     def mark_setback(self):
         if not self.session.active or self.session.break_deadline is not None:return
-        self.nudges_enabled=True;self.overlay_enabled=True
+        self.overlay_enabled=True
         self.companion.support.manual(time.monotonic(),response_mode(self.session,self.support_mode))
         self.next_export=0.;self.refresh()
 
