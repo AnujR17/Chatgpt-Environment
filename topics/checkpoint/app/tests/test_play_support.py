@@ -47,7 +47,8 @@ def test_disabled_paused_ended_clear_and_manual_support_never_sets_cma():
     p=PlaySupport()
     assert p.manual(100,'Quiet pause')=='A breath before the next try, if you want.'
     assert p.basis=='Player marked a setback'
-    for enabled,active,paused in ((False,True,False),(True,False,False),(True,True,True)):
+    assert p.update(None,101,enabled=False,active=True,paused=False)
+    for enabled,active,paused in ((True,False,False),(True,True,True)):
         p.manual(101)
         assert not p.update(None,102,enabled=enabled,active=active,paused=paused)
         assert p.pending_at is None

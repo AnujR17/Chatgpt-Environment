@@ -49,8 +49,13 @@ class PlaySupport:
 
     def update(self, game, now, *, enabled, active, paused, input_stats=None, mode='Next move'):
         if now - self.message_at >= 9: self.message = ''
-        if not enabled or not active or paused:
+        if not active or paused:
             self.clear(); return ''
+        if not enabled:
+            self.pending_at = None; self.settled_at = None
+            # A one-off player request does not opt back into automatic tips.
+            if self.basis != 'Player marked a setback': self.message = ''
+            return self.message
         if game is not self.last_observation:
             self.last_observation = game; self.observed_at = now
         state = (getattr(game, 'state', None) or {})
