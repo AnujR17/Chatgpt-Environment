@@ -39,7 +39,7 @@ def test_confusion_dwell_unknown_and_checkin_separation():
         s.cue=Cue('accepted','neutral',movement=m);s.cue_received_at=now
         d=e.display(s,now)
         if i<3:assert d.artwork is None
-    assert d.title=='Confused?' and d.artwork=='confused'
+    assert d.title=='Confused' and d.artwork=='confused'
     assert (s.report,s.valence,s.arousal)==('happy',.7,.4)
     s.cue=Cue('unavailable',reason='No face detected');s.cue_received_at=101.
     assert e.display(s,101.).artwork is None

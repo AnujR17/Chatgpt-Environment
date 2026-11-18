@@ -39,11 +39,11 @@ def run():
     w.session.started-=30;w.break_button.click();assert w.session.responses[-1]['kind']=='pause'
     assert w.session.break_deadline is not None and not w.session.camera_active
     w.toggle_break();assert w.session.break_deadline is None and not w.session.camera_active
-    w.session.started-=90;check_in(w,'calm',.3,-.2,'No context')
+    w.session.started-=90;check_in(w,'neutral',.3,-.2,'No context')
     w.rate_response('yes');w.next_export=0.;w.refresh();app.processEvents()
     assert not w.break_button.property('primary') and not w.goal_control.property('primary')
     report=w.latest_report;row=report['recovery']['choices'][0]
-    assert row['before']['feeling']=='Frustrated' and row['after']['feeling']=='Calm'
+    assert row['before']['feeling']=='Frustrated' and row['after']['feeling']=='Neutral'
     assert row['helpful']=='yes' and report['recovery']['helpful']=={'Take a pause':1}
     assert report['cma']['count']==2 and 'not detected causes' in report_html(report)
     w.grab().save(str(OUT/'recovery-later.png'))

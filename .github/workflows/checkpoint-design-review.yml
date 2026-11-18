@@ -36,6 +36,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Frustration and recovery checks failed' }
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_play_support.py
           if ($LASTEXITCODE -ne 0) { throw 'Play support fixtures failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_widget.py
+          if ($LASTEXITCODE -ne 0) { throw 'Nori widget checks failed' }
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_tracking.py
           if ($LASTEXITCODE -ne 0) { throw 'Windows model and game-window fixtures failed' }
       - uses: actions/upload-artifact@v4

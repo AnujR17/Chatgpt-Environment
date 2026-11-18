@@ -12,6 +12,7 @@ from PySide6.QtSvgWidgets import QSvgWidget
 from PySide6.QtWidgets import (QApplication,QMainWindow,QWidget,QFrame,QLabel,QPushButton,QVBoxLayout,QHBoxLayout,
  QStackedWidget,QTabBar,QDialog,QDialogButtonBox,QComboBox,QLineEdit,QCheckBox,QDoubleSpinBox,QMessageBox,QFileDialog,QMenu,QScrollArea,QSystemTrayIcon,QGridLayout,QSlider,QSizePolicy,QTextBrowser,QInputDialog)
 from checkpoint.session import Session, History, FEELINGS
+from checkpoint.primary import PRIMARY_KEYS,PRIMARY_LABELS,primary_key,public_estimate
 from checkpoint.theme import STYLE, make_style, PALETTES
 from checkpoint.affect import ANCHORS, REFERENCES, dimension_words
 from checkpoint.motion import AffectWidget
@@ -74,42 +75,24 @@ class VideoPreview(QLabel):
 class EmotionCard(QPushButton):
     def __init__(self,key,parent_window,callback):
         super().__init__();self.key=key;self.setObjectName('emotionCard');self.setCursor(Qt.CursorShape.PointingHandCursor)
-        self.setMinimumSize(190,184);self.setAccessibleName(CARDS[key]['label']);self.clicked.connect(lambda checked=False:callback(key))
+        self.setMinimumSize(190,184);self.setAccessibleName(PRIMARY_LABELS[key]);self.clicked.connect(lambda checked=False:callback(key))
         layout=QVBoxLayout(self);layout.setContentsMargins(12,8,12,12);layout.setSpacing(0)
         self.art=Emblem(154);self.art.configure(theme=parent_window.theme,reduced_motion=True);self.art.set_state(key);self.art.fade_override=1.
         self.art.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents);layout.addWidget(self.art,alignment=Qt.AlignmentFlag.AlignCenter)
-        title=label(CARDS[key]['label'],17,bold=True);title.setAlignment(Qt.AlignmentFlag.AlignCenter);title.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents);layout.addWidget(title)
+        title=label(PRIMARY_LABELS[key],17,bold=True);title.setAlignment(Qt.AlignmentFlag.AlignCenter);title.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents);layout.addWidget(title)
 
 
 class EmotionLibraryDialog(QDialog):
     def __init__(self,parent):
-        super().__init__(parent);self.setWindowTitle('Choose a feeling');self.resize(min(1100,max(900,parent.width()-40)),min(780,max(600,parent.height()-40)));self.setMinimumSize(900,600);self.chosen=None;self.common=True
-        root=QVBoxLayout(self);root.setContentsMargins(28,24,28,24);root.setSpacing(16)
-        root.addWidget(label('How are you feeling?',30,bold=True));root.addWidget(label('43 feeling words for your check-in. Camera expression estimates are separate.',15,True))
-        controls=QHBoxLayout();self.common_button=button('Common feelings',lambda:self.set_group(True),True);self.all_button=button(f'All feelings ({len(CARDS)})',lambda:self.set_group(False));controls.addWidget(self.common_button);controls.addWidget(self.all_button);controls.addStretch()
-        self.search=QLineEdit();self.search.setPlaceholderText('Search feelings, e.g. annoyed');self.search.setClearButtonEnabled(True);self.search.setAccessibleName('Search all feelings');self.search.setMinimumWidth(340);self.search.textChanged.connect(self.search_changed);self.search.returnPressed.connect(self.choose_search_result);controls.addWidget(self.search);root.addLayout(controls)
-        self.scroll=QScrollArea();self.scroll.setWidgetResizable(True);content=QWidget();self.scroll.setWidget(content);container=QVBoxLayout(content);container.setContentsMargins(0,0,0,0);self.grid=QGridLayout();self.grid.setSpacing(12)
-        for column in range(4):self.grid.setColumnStretch(column,1)
-        container.addLayout(self.grid);container.addStretch();root.addWidget(self.scroll,1)
-        self.cards={key:EmotionCard(key,parent,self.choose) for key in CARDS}
-        self.empty=label('No matching feelings. Try another word, or choose Not sure.',17,True);self.empty.setAlignment(Qt.AlignmentFlag.AlignCenter);container.addWidget(self.empty)
-        footer=QHBoxLayout();footer.addWidget(button('Not sure',lambda:self.choose('mixed')));footer.addStretch();self.count=label('',13,True);footer.addWidget(self.count);footer.addSpacing(16);footer.addWidget(button('Cancel',self.reject));root.addLayout(footer);self.filter_cards()
-
-    def choose_search_result(self):
-        if len(self.visible_keys)==1:self.choose(self.visible_keys[0])
-    def set_group(self,common):self.common=common;self.filter_cards()
-    def search_changed(self,text):
-        if text.strip():self.common=False
-        self.filter_cards()
-    def filter_cards(self):
-        while self.grid.count():self.grid.takeAt(0)
-        for card in self.cards.values():card.hide()
-        keys=search_cards(self.search.text(),self.common);self.visible_keys=keys
-        for i,key in enumerate(keys):self.grid.addWidget(self.cards[key],i//4,i%4);self.cards[key].show()
-        self.empty.setVisible(not keys);self.count.setText(f"{len(keys)} {'feeling' if len(keys)==1 else 'feelings'}" if keys else '')
-        for b,active in [(self.common_button,self.common),(self.all_button,not self.common)]:b.setProperty('primary',active);b.style().unpolish(b);b.style().polish(b)
-        self.scroll.verticalScrollBar().setValue(0)
-    def choose(self,key):self.chosen=key;self.accept()
+        super().__init__(parent);self.setWindowTitle('Choose an emotion');self.resize(720,590);self.chosen=None
+        root=QVBoxLayout(self);root.setContentsMargins(24,24,24,20);root.setSpacing(16)
+        root.addWidget(label('How are you feeling?',28,bold=True));grid=QGridLayout();grid.setSpacing(12)
+        self.cards={key:EmotionCard(key,parent,self.choose) for key in PRIMARY_KEYS};self.visible_keys=list(PRIMARY_KEYS)
+        for i,key in enumerate(PRIMARY_KEYS):grid.addWidget(self.cards[key],i//3,i%3)
+        root.addLayout(grid,1);root.addWidget(button('Cancel',self.reject))
+    def choose(self,key):
+        if key not in PRIMARY_KEYS:return
+        self.chosen=key;self.accept()
 
 
 class CheckinDialog(QDialog):
@@ -126,7 +109,7 @@ class CheckinDialog(QDialog):
             slider=QSlider(Qt.Orientation.Horizontal);slider.setRange(-100,100);slider.setAccessibleName(heading);slider.setEnabled(False);slider.valueChanged.connect(self.adjust);dimensions.addWidget(slider);self.sliders.append(slider)
             ends=QHBoxLayout();ends.addWidget(label(left,12,True));ends.addStretch();ends.addWidget(label(right,12,True));dimensions.addLayout(ends);dimensions.addSpacing(24)
         dimensions.addWidget(label('What was happening?',13,bold=True));self.context=QComboBox();self.context.setEditable(True);self.context.addItems(['No context','Repeated setback','Lost progress','Difficult section','Technical issue','Teammate / chat','Other']);self.context.setAccessibleName('Context for this check-in');dimensions.addWidget(self.context);dimensions.addStretch();main.addLayout(dimensions,1);root.addLayout(main,1)
-        footer=QHBoxLayout();footer.addWidget(button('Not sure',lambda:self.choose('mixed')));footer.addStretch();footer.addWidget(button('Cancel',self.reject));self.save=button('Save check-in',self.commit,True);self.save.setEnabled(False);self.save.setDefault(True);footer.addWidget(self.save);root.addLayout(footer)
+        footer=QHBoxLayout();footer.addStretch();footer.addWidget(button('Cancel',self.reject));self.save=button('Save check-in',self.commit,True);self.save.setEnabled(False);self.save.setDefault(True);footer.addWidget(self.save);root.addLayout(footer)
         key=initial if initial in FEELINGS else parent.session.report
         if key in FEELINGS:
             self.select(key)
@@ -135,13 +118,15 @@ class CheckinDialog(QDialog):
 
     def select(self,key):
         if key not in FEELINGS:raise ValueError('Unknown feeling')
-        self.chosen=key;self.feeling_label.setText(FEELINGS[key][0]);self.save.setEnabled(True)
+        reference_key=key
+        if key!='mixed':key=primary_key(key)
+        self.chosen=key;self.feeling_label.setText(PRIMARY_LABELS[primary_key(key)]);self.save.setEnabled(True)
         if key=='mixed':
             self.valence=None;self.arousal=None
             for slider in self.sliders:slider.setEnabled(False)
             for readout in self.readouts:readout.setText('Not specified')
             self.preview.set_state(None);return
-        for slider,value in zip(self.sliders,REFERENCES[key][1:3]):slider.blockSignals(True);slider.setEnabled(True);slider.setValue(round(value*100));slider.blockSignals(False)
+        for slider,value in zip(self.sliders,REFERENCES[reference_key][1:3]):slider.blockSignals(True);slider.setEnabled(True);slider.setValue(round(value*100));slider.blockSignals(False)
         self.adjust()
     def change_feeling(self):
         dialog=EmotionLibraryDialog(self.parentWidget())
@@ -179,16 +164,16 @@ class PreferencesDialog(QDialog):
         scroll=QScrollArea();scroll.setWidgetResizable(True);content=QWidget();scroll.setWidget(content);root=QVBoxLayout(content);root.setContentsMargins(4,4,12,8);root.setSpacing(14);outer.addWidget(scroll,1)
         root.addWidget(label('Display',18,bold=True));self.reduced=QCheckBox('Reduce animation');self.reduced.setChecked(parent.reduced_motion);root.addWidget(self.reduced)
         self.pip=QCheckBox('Show Nori on the desktop');self.pip.setChecked(parent.overlay_enabled);root.addWidget(self.pip)
-        root.addWidget(label('Nori is transparent, frameless and click-through while playing. Borderless/windowed games are recommended; exclusive fullscreen and protected game surfaces may hide a separate desktop window.',13,True))
+        root.addWidget(label('Nori is transparent and frameless. Click for check-in and break controls; drag to move. Borderless/windowed games are recommended; exclusive fullscreen and protected game surfaces may hide a separate desktop window.',13,True))
         self.corner=QComboBox();self.corner.addItems(['bottom-right','bottom-left','top-right','top-left']);self.corner.setCurrentText(parent.overlay_corner);root.addWidget(self.corner)
         if parent.overlay_enabled:
             def move_pip():self.reject();QTimer.singleShot(0,parent.edit_overlay_position)
             root.addWidget(button('Move Nori on the desktop',move_pip))
         root.addWidget(label('History',18,bold=True));self.retention=QCheckBox('Save session summaries on this device');self.retention.setChecked(parent.retain);root.addWidget(self.retention);root.addWidget(label('Stores your check-ins, context, choices, feedback and any practice notes. Camera frames are never saved.',13,True))
         root.addWidget(label('Expression research',18,bold=True));self.experimental=QCheckBox('Enable experimental facial-expression cues');self.experimental.setChecked(parent.session.experimental_analysis);root.addWidget(self.experimental)
-        self.engine=QComboBox();self.engine.addItems(['Face and hands + expression estimates','Eight-class category model only']);self.engine.setCurrentIndex(0 if parent.session.face_mapping else 1);root.addWidget(self.engine)
+        self.engine=QComboBox();self.engine.addItems(['Face and hand tracking','Expression model']);self.engine.setCurrentIndex(0 if parent.session.face_mapping else 1);root.addWidget(self.engine)
         self.hands=QCheckBox('Track hands near the mouth');self.hands.setChecked(parent.session.hand_tracking);root.addWidget(self.hands)
-        self.categories=QCheckBox('Show eight-class expression model estimates');self.categories.setChecked(parent.session.category_estimates);root.addWidget(self.categories)
+        self.categories=QCheckBox('Use expression model');self.categories.setChecked(parent.session.category_estimates);root.addWidget(self.categories)
         strength=QHBoxLayout();strength.addWidget(label('Nori facial movement strength',14),1);self.face_gain=QDoubleSpinBox();self.face_gain.setRange(.7,3.);self.face_gain.setSingleStep(.1);self.face_gain.setValue(parent.session.face_gain);strength.addWidget(self.face_gain);root.addLayout(strength)
         root.addWidget(label('Camera estimates and your CMA check-in are separate sources.',13,True))
         root.addWidget(label('Game context',18,bold=True));self.detect_games=QCheckBox('Detect supported foreground games on Windows');self.detect_games.setChecked(parent.detect_games);root.addWidget(self.detect_games)
@@ -210,7 +195,7 @@ class MainWindow(QMainWindow):
         super().__init__();self.setWindowTitle(APP_NAME);self.resize(1440,940);self.setMinimumSize(1000,640)
         self.session=Session();self.worker=None;self.frequency=8.;self.retain=False;self.saved=False;self.current_view=0;self.theme="light";self.reduced_motion=False;self.motion_paused=False;self.last_image=None;self.last_status="";self._closing=False;self.update_dialog=None
         self.live_view=False;self.source_mode=2;self.source_chosen=False;self.reflection=ReflectionEngine();self.expression_controls=[];self.neutral_controls=[];self.detail_controls=[];self.view_selectors=[];self.detect_games=False;self.screen_tracking=False;self.game_worker=None;self.game_observation=None;self.last_game_context={};self.last_game_context_at=0.
-        self.overlay=NoriOverlay();self.overlay_enabled=False;self.overlay_corner='bottom-right';self.nudges_enabled=False;self.support_mode='Match my check-in';self.last_nudge=''
+        self.overlay=NoriOverlay();self.overlay.actionRequested.connect(self.overlay_action);self.break_resume_options=None;self.overlay_enabled=False;self.overlay_corner='bottom-right';self.nudges_enabled=False;self.support_mode='Match my check-in';self.last_nudge=''
         from checkpoint.cma_report import PdfService
         self.pdf_service=PdfService(self);self.phone_bridge=PhoneBridge();self.phone_bridge.pdf_renderer=self.pdf_service.render;self.phone_server=None;self.companion=CompanionState();self.latest_report={};self.latest_companion={};self.next_export=0.
         self.input_observer=InputObserver(QApplication.instance(),int(self.winId()))
@@ -367,7 +352,7 @@ class MainWindow(QMainWindow):
     def configure_game_tracking(self,enabled,screen):
         if not self.stop_game_tracking():return
         self.detect_games=bool(enabled or screen);self.screen_tracking=bool(screen);self.game_observation=None
-        if self.detect_games and sys.platform=='win32' and self.session.active:
+        if self.detect_games and sys.platform=='win32' and self.session.active and self.session.break_deadline is None:
             worker=GameWorker(screen=self.screen_tracking);self.game_worker=worker
             worker.observation.connect(lambda observation,w=worker:self.receive_game_observation(w,observation));worker.start()
         elif self.detect_games:self.game_status.setText('Live game-window tracking requires Windows.')
@@ -481,7 +466,7 @@ class MainWindow(QMainWindow):
 
     def build_break_body(self):
         body=QWidget();row=QHBoxLayout(body);row.setContentsMargins(0,0,0,0);row.setSpacing(24)
-        card,layout=panel(padding=40);layout.addWidget(label("A short pause is available.",32,bold=True));self.countdown=label("00:30",104,bold=True);layout.addWidget(self.countdown)
+        card,layout=panel(padding=40);layout.addWidget(label("A short pause is available.",32,bold=True));self.countdown=label("0:30",64,bold=True);layout.addWidget(self.countdown)
         layout.addWidget(label("Pause the game yourself when you are ready. Take a moment away from the next attempt.",24,True));layout.addWidget(label("Skip or finish whenever you want. There is no need to complete the timer.",16,True));layout.addStretch();layout.addWidget(button("Back to session",self.toggle_break,True));row.addWidget(card,2)
         privacy,layout=panel(padding=32);layout.addWidget(label("Your sources are off.",28,bold=True));layout.addWidget(label("Camera and video stay paused when you return to the session.",20,True));layout.addStretch();row.addWidget(privacy,1)
         return body
@@ -518,6 +503,7 @@ class MainWindow(QMainWindow):
 
     def refresh(self):
         s=self.session;title,valence,energy,desc=s.affect
+        if s.report:title=PRIMARY_LABELS[primary_key(s.report)]
         if s.camera_active and not self.source_chosen:self.source_mode=0;self.live_view=False
         self.bodies.setCurrentIndex(4 if not s.active else 3 if s.break_deadline is not None else self.current_view)
         if not s.active:self.title.setText("Session complete")
@@ -565,7 +551,7 @@ class MainWindow(QMainWindow):
             if control.property('primary')!=active:control.setProperty('primary',active);control.style().unpolish(control);control.style().polish(control)
             with_icon(control,glyph,PALETTES[self.theme]['on_accent'] if active else PALETTES[self.theme]['text'])
         self.practice_control.setText("Rate technique cue" if active_attempt(s) else "Technique cues")
-        for reported in self.reported_titles:reported.setText('Your last check-in: '+s.affect[0] if s.report else 'Your CMA check-in');reported.setVisible(self.source_mode!=2 or not s.report)
+        for reported in self.reported_titles:reported.setText('Your last check-in: '+PRIMARY_LABELS[primary_key(s.report)] if s.report else 'Your CMA check-in');reported.setVisible(self.source_mode!=2 or not s.report)
         for stage in self.stages:stage.set_theme(self.theme)
         for control in (self.continue_control,self.goal_control):control.setEnabled(s.active and s.break_deadline is None)
         input_on=self.input_observer.enabled and bool(self.input_observer.target)
@@ -584,13 +570,6 @@ class MainWindow(QMainWindow):
             if s.cue is None:cue_text="Expression cue: unavailable"+(" / "+self.last_status if self.last_status else "")
             elif s.cue.status=="accepted":cue_text=('Face mapping · '+str(s.cue.mapping_label)) if s.cue.movement is not None else "Experimental expression cue: "+s.cue.expression+" / not a mood or CMA estimate"
             else:cue_text="Expression cue: uncertain / "+s.cue.reason
-        if s.experimental_analysis and s.cue is not None and s.cue.model_estimate and time.monotonic()-s.cue_received_at<3:
-            estimate=s.cue.model_estimate
-            if estimate.get('label'):cue_text+=' · Eight-class model: '+estimate['label']+' (score '+f"{estimate.get('score',0):.2f}"+')'
-            elif estimate.get('scores'):
-                top=sorted(estimate['scores'].items(),key=lambda row:-row[1])[:2]
-                cue_text+=' · Model unsure: '+', '.join(name+' '+f'{score:.2f}' for name,score in top)
-            else:cue_text+=' · Category estimate unavailable'
         source='Your last check-in' if s.report else 'Not reported'
         if s.report:
             elapsed=int(s.reports[-1]['elapsed_seconds']);desc=f'Checked in at {elapsed//60:02d}:{elapsed%60:02d} into this session.'
@@ -598,7 +577,7 @@ class MainWindow(QMainWindow):
         displayed=expression_display(s,max_age=max(3.,2/self.frequency)) if self.live_view else self.reflection.display(s) if self.source_mode==0 else None
         if self.live_view:self.reflection.observe(s,time.monotonic())
         reported_view=displayed is None or displayed.source=='player_report'
-        artwork=s.report
+        artwork=primary_key(s.report) if s.report else None
         if displayed is not None:
             title=displayed.title;desc=displayed.detail;source='Experimental estimate';artwork=displayed.artwork
             if displayed.source=='face_movement':source='Visible movement preview'
@@ -615,15 +594,19 @@ class MainWindow(QMainWindow):
                 # Visual reflections have no inferred CMA coordinates.
                 em.set_state(artwork)
                 em.setAccessibleName(title)
-            else:em.set_state(s.report,s.valence,s.arousal)
+            else:em.set_state(primary_key(s.report) if s.report else None,s.valence,s.arousal)
             em.set_movement(displayed.movement if displayed else None,authored=bool(displayed and displayed.source=='visual_pattern'))
         self.pip_control.setText('Hide Nori' if self.overlay_enabled else 'Show Nori');self.overlay.setVisible(self.overlay_enabled)
         self.overlay.blob.configure(theme=self.theme,reduced_motion=self.reduced_motion,paused=self.motion_paused,enabled=s.active and s.break_deadline is None)
         if not reported_view:self.overlay.blob.set_state(artwork)
-        else:self.overlay.blob.set_state(s.report,s.valence,s.arousal)
+        else:self.overlay.blob.set_state(primary_key(s.report) if s.report else None,s.valence,s.arousal)
         self.overlay.blob.set_movement(displayed.movement if displayed else None,authored=bool(displayed and displayed.source=='visual_pattern'))
-        self.overlay.expression_label=title if not self.live_view and self.source_mode==0 else ''
-        self.overlay.update()
+        if remaining is not None:
+            caption='Break complete' if remaining==0 else 'Break time';value=f'{remaining//60}:{remaining%60:02d}'
+        elif self.nudges_enabled and self.detect_games:
+            seconds=max(0,math.ceil(self.companion.support.REMINDER_SECONDS-self.companion.support.play_seconds));caption='Next reminder';value=f'{seconds//60}:{seconds%60:02d}'
+        else:caption='Take a break';value='0:30'
+        self.overlay.update_status(artwork,caption,value,active=s.active,paused=remaining is not None,reminders=self.nudges_enabled,camera=s.camera_active)
         now=time.monotonic()
         if now>=self.next_export:
             self.next_export=now+.25
@@ -641,7 +624,7 @@ class MainWindow(QMainWindow):
             elif s.camera_active:preview.clear_image("Starting the selected source…")
             else:preview.clear_image("Camera is off\n\n"+(self.last_status or "Optional. Your check-in works without it."))
         if remaining is not None:
-            self.countdown.setText(f"00:{remaining:02d}")
+            self.countdown.setText(f"{remaining//60}:{remaining%60:02d}")
         if not s.active:
             self.summary_stats.setText(f"{int(s.elapsed())//60:02d}:{int(s.elapsed())%60:02d} session time\n{len(s.reports)} player check-ins\nCapture off")
             self.summary_retention.setText("Derived summary saved on this device." if self.retain and self.saved else "No summary retained." if not self.retain else "Summary was not saved. "+self.last_status)
@@ -678,6 +661,7 @@ class MainWindow(QMainWindow):
         self.refresh();return True
 
     def pause_all(self):
+        self.break_resume_options=None
         if self.pause():self.stop_game_tracking();self.next_export=0.;self.refresh()
 
     def show_emotion_library(self):
@@ -702,14 +686,37 @@ class MainWindow(QMainWindow):
         elif self.session.report:self.check_in()
         else:self.show_emotion_library()
 
+    def start_break(self,seconds=30):
+        if not self.session.active or not self.pause():return
+        self.break_resume_options=(self.detect_games,self.screen_tracking)
+        if not self.stop_game_tracking():return
+        self.session.take_break(seconds);self.next_export=0.;self.refresh()
+
     def toggle_break(self):
         if not self.session.active:return
-        if self.session.break_deadline is not None:self.session.finish_break()
-        else:
-            if not self.pause():return
-            self.stop_game_tracking()
-            self.session.take_break()
-        self.refresh()
+        if self.session.break_deadline is None:self.start_break();return
+        self.session.finish_break();resume=self.break_resume_options;self.break_resume_options=None
+        if resume and resume[0]:
+            self.configure_game_tracking(True,resume[1])
+            if sys.platform=='win32':self.play_hotkeys.start()
+        self.next_export=0.;self.refresh()
+
+    def overlay_action(self,command):
+        if command.startswith('checkin:'):
+            key=command.split(':',1)[1]
+            if key in PRIMARY_KEYS:
+                before=len(self.session.reports);self.check_in(key)
+                if len(self.session.reports)>before:self.select_card_source(2)
+        elif command.startswith('break:'):
+            seconds=int(command.split(':',1)[1])
+            if seconds in (30,60,120):self.start_break(seconds)
+        elif command=='continue':
+            if self.session.break_deadline is not None:self.toggle_break()
+        elif command=='setback':self.mark_setback()
+        elif command=='mute':self.set_support_enabled(not self.nudges_enabled)
+        elif command=='move':self.edit_overlay_position()
+        elif command=='camera' and self.session.camera_active:self.select_card_source(0)
+        elif command=='open':self.showNormal();self.raise_();self.activateWindow()
 
     def end_or_new(self):
         if not self.session.active:self.new_session();return
@@ -759,15 +766,15 @@ class MainWindow(QMainWindow):
             import html
             cue=self.session.cue
             if cue is None:content.setPlainText('Start face tracking or open a local video.');return
-            movement=cue.movement or {};estimate=category_estimate(cue) or {}
+            movement=cue.movement or {};estimate=public_estimate(category_estimate(cue)) or {}
             rows=['<h2>Visible movement details</h2><p>'+html.escape(cue.mapping_label or cue.reason)+'</p><table>']
             for key in ('smile','mouth_wide','pressed','jaw','teeth','brow','eye_left','eye_right','snarl','hand','mouth_visible'):
                 if key in movement:rows.append('<tr><td>'+html.escape(key.replace('_',' '))+'</td><td>'+f'{movement[key]:.2f}'+'</td></tr>')
             rows.append('</table>')
             if cue.gesture and cue.gesture.get('status')=='unavailable':rows.append('<p>Hand tracker unavailable: '+html.escape(cue.gesture.get('reason',''))+'</p>')
-            rows.append('<h3>Eight-class expression model</h3><p>Model scores are not probabilities of your felt emotion.</p><table>')
+            rows.append('<h3>Primary expression signals</h3><table>')
             scores=estimate.get('scores',{})
-            for name in LABELS:rows.append('<tr><td>'+html.escape(name.title())+'</td><td>'+(f'{scores[name]:.2f}' if name in scores else 'Unavailable')+'</td></tr>')
+            for name in PRIMARY_KEYS:rows.append('<tr><td>'+html.escape(PRIMARY_LABELS[name])+'</td><td>'+(f'{scores[name]:.2f}' if name in scores else 'Unavailable')+'</td></tr>')
             rows.append('</table><p>'+html.escape(estimate.get('reason',''))+'</p>');content.setHtml(''.join(rows))
         timer=QTimer(dialog);timer.timeout.connect(update);timer.start(250);dialog.finished.connect(timer.stop);update()
         layout.addWidget(button('Close',dialog.accept));dialog.exec()
@@ -839,7 +846,7 @@ def create_application(argv=None):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument("--theme",choices=["light","dark"],default="light");parser.add_argument("--feeling",choices=list(FEELINGS));parser.add_argument("--view",type=int,choices=[0,1,2],default=0);parser.add_argument("--video");parser.add_argument("--analyze",action="store_true");parser.add_argument("--no-setup",action="store_true");parser.add_argument("--screenshot");parser.add_argument("--screenshot-delay",type=int,default=1500);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument("--theme",choices=["light","dark"],default="light");parser.add_argument("--feeling",choices=list(PRIMARY_KEYS));parser.add_argument("--view",type=int,choices=[0,1,2],default=0);parser.add_argument("--video");parser.add_argument("--analyze",action="store_true");parser.add_argument("--no-setup",action="store_true");parser.add_argument("--screenshot");parser.add_argument("--screenshot-delay",type=int,default=1500);args=parser.parse_args()
     app=create_application();window=MainWindow(no_setup=args.no_setup or bool(args.video) or bool(args.screenshot));
     if not args.screenshot:
         screen=app.primaryScreen()

@@ -4,6 +4,7 @@ from checkpoint.blob import parameters,movement_visual
 from checkpoint.character import CHARACTER_NAME
 from checkpoint.cma_report import cma_summary
 from checkpoint.expression_view import category_estimate
+from checkpoint.primary import public_estimate,primary_key,PRIMARY_LABELS
 from checkpoint.play_support import PlaySupport,response_mode
 
 
@@ -15,6 +16,8 @@ class CompanionState:
     def update(self,session,display,game,*,input_stats=None,nudges=False,support_mode='Match my check-in',motion_enabled=True,reflection_summary=None,now=None):
         now=time.monotonic() if now is None else now;elapsed=round(session.elapsed(),1)
         title=display.title if display else session.affect[0];artwork=display.artwork if display else session.report
+        if artwork is not None:artwork=primary_key(artwork)
+        title=PRIMARY_LABELS[primary_key(artwork)]
         source=display.source if display else 'player_report' if session.report else 'unassigned'
         cue=game.cue if game else '';game_status=game.status if game else 'Game observation off'
         if input_stats and now-self.last_activity>=5:
@@ -37,8 +40,8 @@ class CompanionState:
             'detail':display.detail if display else '', 'title':title,'source':source,'artwork':artwork,'blob':visual,'unknown':artwork is None,
             'game_state':getattr(game,'state',None) if game else None,
             'camera_active':session.camera_active,'capture_source':session.source_kind,'game_status':game_status,'game_cue':cue,
-            'checkin':{'title':session.affect[0],'pleasantness':session.affect[1],'activation':session.affect[2]},
-            'model_estimate':category_estimate(session.cue) if display and display.source in ('face_movement','expression_estimate','visual_pattern') else None,
+            'checkin':{'title':PRIMARY_LABELS[primary_key(session.report)] if session.report else 'Not reported','pleasantness':session.affect[1],'activation':session.affect[2]},
+            'model_estimate':public_estimate(category_estimate(session.cue)) if display and display.source in ('face_movement','expression_estimate','visual_pattern') else None,
             'input':input_stats or {'status':'Input observation off'},'nudge':self.nudge,
             'play_support':{'enabled':nudges,'preference':support_mode,'mode':resolved_mode,'basis':self.support.basis if self.nudge else ''},
             'cma_report':{k:report['cma'][k] for k in ('count','trend','insight','next_step','latest')}}

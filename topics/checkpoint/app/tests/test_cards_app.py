@@ -9,34 +9,33 @@ from checkpoint.vocabulary import POSTER,CARDS,COMMON
 from checkpoint.theme import PALETTES
 
 
-def test_reference_vocabulary_search_and_whole_card_save(tmp_path):
+def test_five_primary_cards_and_whole_card_save(tmp_path):
     app=create_application([]);w=MainWindow(no_setup=True,data_dir=tmp_path);w.show()
-    assert len(POSTER)==39 and len(CARDS)==43 and len(COMMON)==8
+    from checkpoint.primary import PRIMARY_KEYS
     def select():
         d=app.activeModalWidget();assert isinstance(d,EmotionLibraryDialog)
-        assert len(d.visible_keys)==8
-        app.processEvents();assert d.cards['calm'].height()>=184
-        assert d.cards['calm'].art.geometry().bottom()<d.cards['calm'].height()
-        d.search.setText('gratitude');assert d.visible_keys==['grateful']
+        assert tuple(d.visible_keys)==PRIMARY_KEYS
+        app.processEvents();assert d.cards['neutral'].height()>=184
+        assert d.cards['neutral'].art.geometry().bottom()<d.cards['neutral'].height()
         assert w.session.report is None
         QTimer.singleShot(0,save)
-        QTest.mouseClick(d.cards['grateful'],Qt.MouseButton.LeftButton)
+        QTest.mouseClick(d.cards['happy'],Qt.MouseButton.LeftButton)
     def save():
-        d=app.activeModalWidget();assert isinstance(d,CheckinDialog) and d.chosen=='grateful'
+        d=app.activeModalWidget();assert isinstance(d,CheckinDialog) and d.chosen=='happy'
         d.sliders[0].setValue(65);d.sliders[1].setValue(-20)
         QTest.mouseClick(d.save,Qt.MouseButton.LeftButton)
     QTimer.singleShot(0,select);w.show_emotion_library()
-    assert w.session.report=='grateful' and len(w.session.reports)==1
+    assert w.session.report=='happy' and len(w.session.reports)==1
     assert (w.session.valence,w.session.arousal)==(.65,-.2)
     assert not w.session.camera_active and w.worker is None
     w.close();w.deleteLater();app.processEvents()
 
 
-def test_library_search_empty_keyboard_and_cancel(tmp_path):
+def test_library_has_only_five_choices_and_cancel_preserves_report(tmp_path):
     app=create_application([]);w=MainWindow(no_setup=True,data_dir=tmp_path);w.session.check_in('happy')
-    d=EmotionLibraryDialog(w);d.show();d.search.setText('unfindable-feeling');assert not d.visible_keys and d.empty.isVisible()
-    d.search.setText('annoyed');QTest.keyClick(d.search,Qt.Key.Key_Return)
-    assert d.chosen=='annoyed' and w.session.report=='happy'
+    d=EmotionLibraryDialog(w);d.show();assert set(d.cards)=={'neutral','happy','frustrated','sad','confused'}
+    assert not hasattr(d,'all_button') and not hasattr(d,'search')
+    d.reject();assert d.chosen is None and w.session.report=='happy'
     d.deleteLater();w.close();w.deleteLater();app.processEvents()
 
 
