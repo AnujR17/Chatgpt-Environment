@@ -2,7 +2,7 @@
 
 Updated 18 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 18 November public research — publication pending
+## 18 November public research — published
 
 137 retained / 109 active-held / 28 archived; 298 companies, 20 established
 profiles, 50 coverage rows (34 checked today). Two new held internships:
@@ -51,7 +51,19 @@ both age-archived BON and newly removed Lokal persist, as do synthetic blacklist
 private assessment, notes and backup/restore. No actual browser-local data read.
 Zero runtime errors or POSTs. Discover/Companies have no mobile overflow; existing
 Sources navigation overflow remains (390px viewport/545px document). No UI change.
-Exact production publication and live verification pending below.
+Production READY verified 18 November: `ed80f4e7cfc2201b27d4eed4f5939df6464a09cb`,
+`topic/job-search-agent`, deployment `dpl_AcHghFeoL9KD3vdn3sP4oyXvn4oL`, existing
+project `prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg`. Production alias
+https://chatgpt-environment.vercel.app points to this exact deployment. All nine
+live JSON/export/report/watchlist/query-plan files match Git bytes. Live desktop/
+mobile checks confirm counts, two held cards, all three exact-requisition archives,
+synthetic saved application overrides and blacklist/assessment/backup persistence.
+Zero runtime errors or POSTs. Existing Sources mobile navigation overflow remains
+(390px viewport/545px document); Discover/Companies have no overflow. Protection,
+account and project unchanged; default connection scope, no teamId. SHA-filtered
+inventory contains exactly one production deployment and no preview. No task or
+schedule changes. This verification-only documentation commit is not redeployed;
+production intentionally remains the exact researched data commit above.
 
 ## 17 November public research — published
 

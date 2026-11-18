@@ -2,7 +2,7 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `e4d9b48c1d6bf23d9df97b4287c00032b2e93c12` in existing Vercel project `chatgpt-environment`. Verified17November2026:135retained roles/110active-held/25archived,293companies,20established profiles and50coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `ed80f4e7cfc2201b27d4eed4f5939df6464a09cb` in existing Vercel project `chatgpt-environment`. Verified 18 November 2026: 137 retained roles / 109 active-held / 28 archived, 298 companies, 20 established profiles and 50 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
@@ -18,8 +18,8 @@ unverified). No new confirmed stipend match or verified fresh social-only post.
 Exact Lokal, Glance and project44 employer requisitions removed and archived
 with history. Five company targets added, including FamApp, SurveySparrow and
 The Whole Truth; older mirrors/pay conflicts do not establish active paid roles.
-See [today's report](public/data/collection-report.md). Publication pending exact
-commit READY/live verification; the previous verified release is recorded above.
+See [today's report](public/data/collection-report.md). Exact commit READY, live
+feed/export bytes and desktop/mobile verification completed 18 November.
 
 ## Established employers and workplace screening
 
