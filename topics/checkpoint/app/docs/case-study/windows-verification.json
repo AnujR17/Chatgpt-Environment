@@ -1,7 +1,7 @@
 {
-  "head_sha": "bb423a3dcb382ded544b420e1317a5703f0c295f",
+  "head_sha": "1ead5a783bdc7cfc9b3765a4e17d092f80fefdca",
   "conclusion": "success",
-  "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44249331998",
+  "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44256785585",
   "jobs": [
     {
       "name": "native-review",
@@ -46,6 +46,6 @@
       ]
     }
   ],
-  "scope": "Automated Windows software fixtures, not physical camera/game/phone validation",
-  "artifact_download": "Blocked by artifact-host HTTP 403 in this workspace; Windows screenshots not inspected here"
+  "scope": "Regen native practice/model/GDI/overlay/loopback software fixtures, not physical camera/game/phone validation",
+  "artifact_download": "Step status confirmed through the connected GitHub plugin; Windows screenshots not inspected here"
 }

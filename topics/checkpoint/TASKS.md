@@ -75,3 +75,10 @@
 - [x] 113 local checks, native flow, Chromium phone/PDF and Windows run44249331998.
 - [x] Classroom brief mapping, Empathize/Define/Ideate/Prototype, actual-screen case study/PDF, feasibility discussion.
 - [ ] Real play, physical device compatibility, overhead and perceived usefulness validation.
+
+## Regen visual revision
+
+- [x] Sage/evergreen native controls, brand/name/icon and clearer main actions.
+- [x] Visual gaming case study, interactive CMA example and concise copy without classroom framing.
+- [x] One-file offline export, visual PDF, responsive/reduced-motion checks and contrast measurements.
+- [x] Native/phone regression and Windows run44256785585 passed.

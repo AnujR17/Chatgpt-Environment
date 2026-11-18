@@ -6,5 +6,7 @@
   "theme_preview": "passed",
   "reduced_motion": "passed",
   "reflow": "1440, 390 and 320px passed",
-  "javascript_errors": []
+  "javascript_errors": [],
+  "standalone_html": "CMA interaction, theme previews and no external asset requests passed",
+  "body_classroom_wording": "absent"
 }

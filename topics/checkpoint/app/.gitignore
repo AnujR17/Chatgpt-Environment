@@ -26,3 +26,6 @@ artifacts/expression-review/
 .checkpoint-startup.*
 
 artifacts/design-review/
+
+# Reproducible single-file visual case export
+docs/case-study/Regen.html
