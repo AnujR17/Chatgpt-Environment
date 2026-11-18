@@ -11,7 +11,7 @@ EXPRESSIONS = {
     'anger': ('Angry expression', 'angry'),
     'disgust': ('Disgust-like expression', 'disgust'),
     'fear': ('Fear-like expression', 'afraid'),
-    'contempt': ('Contempt-like expression', 'annoyed'),
+    'contempt': ('Contempt-like expression', 'contempt'),
 }
 
 
@@ -24,7 +24,7 @@ class ExpressionDisplay:
     source: str = 'expression_estimate'
 
 
-def expression_display(session, *, max_age=5):
+def _expression_display(session, *, max_age=5):
     source='face_movement' if session.face_mapping else 'expression_estimate'
     if not session.experimental_analysis:
         return ExpressionDisplay('Tracking is off', None, 'Enable Track my face, then start your camera.',source=source)
@@ -53,3 +53,8 @@ def category_estimate(cue):
     if len(cue.probabilities)==len(EXPRESSIONS):
         return {'status':cue.status,'label':cue.expression,'score':cue.confidence,'scores':dict(zip(EXPRESSIONS,cue.probabilities)),'reason':cue.reason}
     return None
+
+
+def expression_display(session, *, max_age=5):
+    from checkpoint.primary import limit_display
+    return limit_display(_expression_display(session,max_age=max_age))

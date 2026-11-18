@@ -1,36 +1,35 @@
 # Project context
 
-## Human Computer Interaction Design
+## AI for behavior design
 
-A player chooses what the system observes, reports how a moment feels and controls the amount of help.
+Designed by Anuj Rai. Subject: Interaction design. Professor: Anupam Rana.
 
-## AI for Society / Social Cause
+## Subject
 
-The intended benefit is a useful next step during difficult play. The target player is learning a challenging game; anger and professional play are not prerequisites. Support should earn its interruption and leave the player in control. This benefit remains a hypothesis to test.
+Interaction design explores how a player chooses sources, recognises feedback and controls support during a difficult gaming session.
 
-## Circumplex Model of Affect
+## Theme
 
-Pleasantness and activation shape optional guidance. Player-adjustable check-ins supply the coordinates; facial estimates remain separate.
+AI for Society / Social Cause. The project focuses on agency during challenging play and access to support when the player wants it.
 
-## Technology
+## Framework
 
-A Windows laptop provides the webcam, local face/hand inference, optional game-window observation and aggregate input timing. The phone is a paired display. No images are sent to it.
+The Circumplex Model of Affect describes pleasantness and activation. Player check-ins supply the coordinates; those reports can shape the style of optional support and the session recap.
 
-## Tools
+## Technology and tools
 
-Codex, Python, PySide6, QPainter, MediaPipe, HSE, Playwright, Chromium, Git and GitHub. Image generation produced the original papercraft brand world. Figma and new model training were not used for this revision.
+A Windows laptop provides the camera and foreground game window. Local MediaPipe face/hand features, HSE expression estimates, OpenCV observations and aggregate input timing provide separate sources. Python, PySide6 and QPainter produce the native interface. The phone displays derived state over a paired connection.
 
-## From input to human benefit
+Codex, GitHub, Playwright and Chromium support implementation and verification. Image generation produced the papercraft brand artwork.
 
-- Input: player check-in, chosen problem and optional local observations.
-- AI / computer: uncertain expression and game-motion estimates, plus transparent guidance rules.
-- System: native session, local analysis, overlay and paired phone.
-- Service: notice a possible setback, wait for a settled view, offer a short response, then leave the player in control. Optional check-ins and feedback support reflection.
-- Product: Regen with Nori and a CMA session recap.
-- Human output: an informed next choice and a player-owned takeaway. Wider impact is unproven.
+## Core concept
+
+Player input and local analysis inform a native system. The service offers a short response during play and an optional recap afterward. Regen is the product; Nori carries the interaction across desktop and phone.
 
 ## Design process
 
-Empathize uses secondary evidence and five clearly fictional scenarios. Define frames the loss-of-rhythm problem after a setback. Ideate compares companion, launcher, venue service and automatic coach. Prototype implements the chosen flow and checks its behaviour.
+Empathize connects research themes with player needs. Define focuses on the next step after losing progress. Ideate compares ways to provide help alongside the game. Prototype implements the selected flow and checks its behaviour.
 
-This is an individual design project with AI assistance. No primary interviews or performance/wellbeing improvement are claimed.
+## Information architecture
+
+The supplied architecture informed the grouping of Session, Recap, Saved, Tracking and Settings. The Nori overlay and phone extend the same session. Processing and data remain separate system layers.

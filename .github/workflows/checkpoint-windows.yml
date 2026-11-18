@@ -83,6 +83,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'CMA recap checks failed' }
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_play_support.py
           if ($LASTEXITCODE -ne 0) { throw 'Play reminder checks failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_widget.py
+          if ($LASTEXITCODE -ne 0) { throw 'Nori widget checks failed' }
       - name: Check Windows updater restart and rollback
         run: |
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_updates.py
@@ -96,6 +98,14 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Actual provider face check failed' }
           Copy-Item artifacts/expression-review/verification.json build/Checkpoint-Windows/docs/
           Copy-Item artifacts/expression-review/provider-face-check.json build/Checkpoint-Windows/docs/
+      - name: Build the visual case study PDF
+        run: |
+          python -m pip install playwright==1.65.2
+          if ($LASTEXITCODE -ne 0) { throw 'PDF tooling install failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/build_case_data.py
+          if ($LASTEXITCODE -ne 0) { throw 'Case data export failed' }
+          python -m scripts.build_release_case
+          if ($LASTEXITCODE -ne 0) { throw 'Case study PDF failed' }
       - name: Package and verify archive
         run: |
           python -m scripts.package_windows
@@ -113,6 +123,8 @@ jobs:
           path: |
             topics/checkpoint/Checkpoint-Windows-Preview.zip
             topics/checkpoint/SHA256SUMS.txt
+            topics/checkpoint/Regen-case-study.pdf
+            topics/checkpoint/app/artifacts/design-review/widget-*.png
             topics/checkpoint/Checkpoint-App-Update.zip
             topics/checkpoint/Checkpoint-update.json
             topics/checkpoint/Checkpoint-Updater-Repair.zip
@@ -129,10 +141,10 @@ jobs:
           $tag = python -c "from checkpoint.version import RELEASE_TAG; print(RELEASE_TAG)"
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Regen 0.6.2 - session UI and play reminders' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Regen 0.6.3 - five emotions and clickable Nori' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
-          gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip ../Checkpoint-Updater-Repair.zip --clobber
+          gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip ../Checkpoint-Updater-Repair.zip ../Regen-case-study.pdf --clobber
           if ($LASTEXITCODE -ne 0) { throw 'Release asset upload failed' }
           gh release upload $tag ../Checkpoint-update.json --clobber
           if ($LASTEXITCODE -ne 0) { throw 'Update manifest upload failed' }

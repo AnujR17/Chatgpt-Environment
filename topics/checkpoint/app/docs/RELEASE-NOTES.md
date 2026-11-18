@@ -1,8 +1,10 @@
-# Regen 0.6.2
+# Regen 0.6.3
 
-- Updated session UI with a larger Nori stage, sage colours and camera controls.
-- A short reminder after about 2½ minutes of active gaming, plus support after a possible fall.
-- Reminders pause outside the game and respect mute. I fell provides one-off help.
-- Short curved eyebrows, smooth expression colours, optional phone display and a CMA recap.
+- Five primary emotions across the app, Nori widget and phone: Neutral, Happy, Frustrated, Sad and Confused.
+- A visible emotion name and a larger break countdown on Nori.
+- Click Nori to check in, take a 30-second, one-minute or two-minute break, mark a fall or mute reminders. Drag to move.
+- Breaks finish at 0:00 until you choose Continue playing. The camera stays off after a break.
+- Play reminders follow about 2½ minutes of foreground gaming or a settled view after a possible fall.
 
-Download Checkpoint-Windows-Preview.zip, extract the entire folder and run Start Checkpoint.cmd. Existing installations can use Settings > Check for updates > Update and restart.
+Existing installations: Settings > Check for updates > Update and restart.
+For a first install, extract the entire Checkpoint-Windows-Preview.zip and run Start Checkpoint.cmd.

@@ -70,7 +70,7 @@ def test_partial_face_with_hand_shows_gesture_without_inventing_a_mouth(tmp_path
         movement=neutral_movement();movement.update(hand=1.,mouth_visible=0.)
         w.session.receive_cue(Cue('unavailable',reason='Face partly hidden',movement=movement,gesture={'near':True,'occluded':True}),generation)
         w.refresh();display=expression_display(w.session)
-        assert display.title=='Hand near mouth' and display.movement['smile']==display.movement['teeth']==0
+        assert display.title=='Neutral' and display.movement['smile']==display.movement['teeth']==0
         assert w.session.report is None and w.session.valence is None
     finally:w.close();w.deleteLater();app.processEvents()
 
@@ -88,7 +88,7 @@ def test_drag_release_relocks_and_remembers_position(tmp_path):
     try:
         overlay=w.overlay;overlay.begin_move();QTest.qWait(150);assert overlay.editing;overlay.move(120,130)
         QTest.mousePress(overlay,Qt.MouseButton.LeftButton,pos=QPoint(80,110));QTest.mouseRelease(overlay,Qt.MouseButton.LeftButton,pos=QPoint(80,110))
-        assert not overlay.editing and overlay.windowFlags()&Qt.WindowType.WindowTransparentForInput
+        assert not overlay.editing and not overlay.windowFlags()&Qt.WindowType.WindowTransparentForInput
         point=overlay.pos();assert (tmp_path/'preferences.ini').exists()
         from checkpoint.overlay import NoriOverlay
         other=NoriOverlay();other.restore_position(tmp_path/'preferences.ini');assert other.pos()==point

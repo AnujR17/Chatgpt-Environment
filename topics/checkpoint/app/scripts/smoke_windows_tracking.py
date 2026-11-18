@@ -28,7 +28,7 @@ generation = window.session.start_capture('camera')
 window.select_card_source(1)
 window.session.receive_cue(Cue('accepted', 'anger', .9), generation)
 window.refresh(); app.processEvents()
-assert window.emblems[0].current_state == 'angry'
+assert window.emblems[0].current_state == 'frustrated'
 assert (window.session.report, window.session.valence, window.session.arousal) == ('calm', .6, -.4)
 # Exercise default reflection through the real Qt refresh path and preserve check-ins.
 from checkpoint.face_mapping import neutral_movement
@@ -47,7 +47,7 @@ for _ in range(10):
     estimate={'status':'accepted','label':'anger','score':.9,'scores':{'anger':.9,'neutral':.1}}
     window.session.receive_cue(Cue('accepted','neutral',movement=neutral_movement(),model_estimate=estimate),generation)
     window.refresh();QTest.qWait(125)
-assert window.emblems[0].current_state=='angry','Learned anger was overridden by geometry'
+assert window.emblems[0].current_state=='frustrated','Learned anger was overridden by geometry'
 # Confident happiness plus tense geometry is ambiguous, never a forced tense pose.
 for _ in range(10):
     m=neutral_movement();m.update(brow=.8,pressed=.6)
@@ -64,7 +64,7 @@ before=user.GetForegroundWindow();window.toggle_overlay();QTest.qWait(150)
 assert user.GetForegroundWindow()==before,'Overlay stole focus'
 get_style=user.GetWindowLongPtrW;get_style.argtypes=[wintypes.HWND,ctypes.c_int];get_style.restype=ctypes.c_ssize_t
 style=get_style(int(window.overlay.winId()),-20)
-assert style&0x20 and style&0x08000000,'Overlay is not click-through/no-activate'
+assert not style&0x20 and style&0x08000000,'Overlay must accept deliberate clicks without taking focus'
 window.overlay.grab().save(str(ROOT/'build/Checkpoint-Windows/windows-pip-overlay.png'))
 assert window.overlay.grab().toImage().pixelColor(0,0).alpha()==0,'Overlay has an opaque background rectangle'
 window.input_observer.start();assert window.input_observer.enabled;window.input_observer.stop()
@@ -116,7 +116,7 @@ window.pause(); assert window.emblems[0].current_state is None
 window.close(); app.processEvents()
 result = {'windows_native_initial_controls_visible':'passed','windows_native_model_primary_and_conflict_fixture':'passed','windows_native_responsive_reflection_fixture':'passed','checkin_does_not_pin_live_reflection':'passed','windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_fixture': 'passed',
           'reject_wrong_window': 'passed', 'pause_clears_live_card': 'passed',
-          'player_report_preserved': 'passed','overlay_no_focus_steal':'passed','overlay_native_clickthrough_style':'passed',
+          'player_report_preserved': 'passed','overlay_no_focus_steal':'passed','overlay_click_controls_and_no_activate':'passed',
           'raw_input_registration':'passed','face_landmarker_native_load':'passed','hsemotion_inference':'passed','phone_loopback_api':'passed',
           'cma_pdf_native_render':'passed','hand_landmarker_native_load':'passed','face_landmarker_non_ascii_path':'passed','face_landmarker_native_graph_inference':'passed',
           'windows_play_hotkey_registration_dispatch_cleanup':'passed',

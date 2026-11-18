@@ -23,11 +23,11 @@ for name,fn in tests.items():
 with tempfile.TemporaryDirectory() as directory:
     w=MainWindow(no_setup=True,data_dir=directory);w.reduced_motion=True;w.resize(1024,768);w.show()
     w.session.experimental_analysis=True;generation=w.session.start_capture('video')
-    cases=[('Neutral','composed',{},'neutral'),('Happy','happy',dict(smile=.8,cheek=.5),'happiness'),
-           ('Laughing','happy',dict(smile=.8,cheek=.5,jaw=.6,laugh=.6,teeth=.5),'happiness'),
-           ('Angry','angry',dict(brow=.7,pressed=.6),'anger'),
-           ('Confused?','confused',dict(brow_furrow=.6,brow_inner_raise=.5,eye_squint=.4),None),
-           ('Surprised','surprised',dict(brow=-.5,eye_wide=.8,jaw=.7),'surprise')]
+    cases=[('Neutral','neutral',{},'neutral'),('Happy','happy',dict(smile=.8,cheek=.5),'happiness'),
+           ('Happy','happy',dict(smile=.8,cheek=.5,jaw=.6,laugh=.6,teeth=.5),'happiness'),
+           ('Frustrated','frustrated',dict(brow=.7,pressed=.6),'anger'),
+           ('Confused','confused',dict(brow_furrow=.6,brow_inner_raise=.5,eye_squint=.4),None),
+           ('Neutral',None,dict(brow=-.5,eye_wide=.8,jaw=.7),'surprise')]
     for title,key,features,model in cases:
         for _ in range(14):
             m=neutral_movement();m.update(features)
@@ -50,12 +50,13 @@ with tempfile.TemporaryDirectory() as directory:
     w.session.receive_cue(Cue('unavailable',reason='No face detected'),generation)
     w.next_export=0.;w.refresh();app.processEvents()
     assert w.latest_companion['unknown'] and w.latest_companion['blob']['smile']==0
-    assert w.overlay.expression_label=='No face'
+    assert w.overlay.expression_label=='Neutral'
     w.close();app.processEvents()
 
 gallery=QWidget();gallery.setWindowTitle('Nori expression study · authored fixtures')
 gallery.setStyleSheet('background:#F5F3ED;color:#29334B;');grid=QGridLayout(gallery)
-for i,(key,title) in enumerate([('composed','Neutral'),('happy','Happy'),('amused','Laughing'),('angry','Angry'),('confused','Confused?'),('surprised','Surprised')]):
+from checkpoint.primary import PRIMARY_LABELS
+for i,(key,title) in enumerate(PRIMARY_LABELS.items()):
     cell=QWidget();layout=QVBoxLayout(cell)
     art=NoriWidget(180);art.set_state(key);art.configure(reduced_motion=True)
     layout.addWidget(art,alignment=Qt.AlignmentFlag.AlignCenter)

@@ -35,7 +35,7 @@ def test_pip_overlay_has_transparent_corners_and_no_window_chrome(tmp_path):
     app=create_application([]);window=MainWindow(no_setup=True,data_dir=tmp_path);window.show();window.toggle_overlay();app.processEvents()
     overlay=window.overlay
     assert overlay.windowFlags() & Qt.WindowType.FramelessWindowHint
-    assert overlay.windowFlags() & Qt.WindowType.WindowTransparentForInput
+    assert not overlay.windowFlags() & Qt.WindowType.WindowTransparentForInput
     assert overlay.windowFlags() & Qt.WindowType.WindowDoesNotAcceptFocus
     assert overlay.testAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
     overlay.blob.set_state('angry',0,0);overlay.blob.configure(reduced_motion=True)
@@ -45,7 +45,7 @@ def test_pip_overlay_has_transparent_corners_and_no_window_chrome(tmp_path):
     neutral=overlay.blob.grab().toImage()
     assert neutral.pixelColor(neutral.width()//2,neutral.height()//2).name()=='#83d2bb'
     overlay.set_editable(True);assert not overlay.windowFlags() & Qt.WindowType.WindowTransparentForInput
-    overlay.set_editable(False);assert overlay.windowFlags() & Qt.WindowType.WindowTransparentForInput
+    overlay.set_editable(False);assert not overlay.windowFlags() & Qt.WindowType.WindowTransparentForInput
     window.close();window.deleteLater();app.processEvents()
 
 
