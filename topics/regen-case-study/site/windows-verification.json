@@ -1,0 +1,51 @@
+{
+  "head_sha": "1ead5a783bdc7cfc9b3765a4e17d092f80fefdca",
+  "conclusion": "success",
+  "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44256785585",
+  "jobs": [
+    {
+      "name": "native-review",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Assemble the existing reviewed Windows runtime",
+          "conclusion": "success"
+        },
+        {
+          "name": "Exercise the native session and practice flow",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/upload-artifact@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "scope": "Regen native practice/model/GDI/overlay/loopback software fixtures, not physical camera/game/phone validation",
+  "artifact_download": "Step status confirmed through the connected GitHub plugin; Windows screenshots not inspected here"
+}
