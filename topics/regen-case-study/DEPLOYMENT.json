@@ -1,0 +1,49 @@
+{
+  "project": "regen-case-study",
+  "projectId": "prj_5TrsYqWsyuPksudhkXFIqxQ1HnnV",
+  "branch": "topic/regen-case-study-site",
+  "sourceCommit": "d0cd2ec9e89b8a366f568cba07ba3131c9bbd8dc",
+  "deploymentId": "dpl_D1YXAQLJewxQQD6YxKzPJv8k18Mk",
+  "url": "https://regen-case-study-q23s64yln-anujrai1701-gmailcoms-projects.vercel.app",
+  "status": "READY",
+  "target": "preview",
+  "access": "Existing Vercel team sign-in protection retained",
+  "verification": {
+    "rootStatus": 200,
+    "assets": [
+      {
+        "path": "case-study.js",
+        "status": 200,
+        "ok": true,
+        "bodyLength": 6316
+      },
+      {
+        "path": "case-study.css",
+        "status": 200,
+        "ok": true,
+        "bodyLength": 24962
+      },
+      {
+        "path": "project.html",
+        "status": 200,
+        "ok": true,
+        "bodyLength": 3124
+      },
+      {
+        "path": "research.html",
+        "status": 200,
+        "ok": true,
+        "bodyLength": 7126
+      },
+      {
+        "path": "feasibility.html",
+        "status": 200,
+        "ok": true,
+        "bodyLength": 4515
+      }
+    ],
+    "interaction": "Chromium local static-site check passed at 1440, 390 and 320px; CMA presets, stable cue, feedback, themes and reduced motion",
+    "deployedHttp": "Verified using authenticated Vercel connector",
+    "liveBrowser": "Not separately exercised behind Vercel sign-in; deployed static sources match the locally exercised website"
+  }
+}

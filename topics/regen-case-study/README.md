@@ -1,5 +1,9 @@
 # Regen case-study website
 
+**[Open the interactive case study](https://regen-case-study-q23s64yln-anujrai1701-gmailcoms-projects.vercel.app)**
+
+Live Vercel preview. Sign in with your Vercel account if prompted.
+
 The interactive case study is available as a standalone static website on this branch. It needs no account, camera, native runtime, package installation or database. Vercel preview access follows the existing project’s authentication settings.
 
 Branch: `topic/regen-case-study-site`.
