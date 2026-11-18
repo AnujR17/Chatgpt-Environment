@@ -1,7 +1,7 @@
 """Regen: sage, evergreen and warm neutral native UI tokens."""
 PALETTES={
- 'light':{'canvas':'#F3F3EA','sidebar':'#243D32','surface':'#FFFEF8','surface_alt':'#E5EADC','text':'#25392E','secondary':'#5B6D60','muted':'#788579','border':'#D4DDCD','accent':'#315D45','on_accent':'#FFFFFF','hover':'#274D38','soft':'#DAE5CD','on_soft':'#294532','pleasant':'#28766C','unpleasant':'#B45C4C'},
- 'dark':{'canvas':'#18291F','sidebar':'#20372A','surface':'#233C2D','surface_alt':'#304A37','text':'#F2F4E8','secondary':'#BDCCB9','muted':'#91A18D','border':'#49634A','accent':'#C8DBAD','on_accent':'#223A29','hover':'#D9E8C5','soft':'#3A553D','on_soft':'#E3EDD6','pleasant':'#9CCDC0','unpleasant':'#E7A18E'}
+ 'light':{'canvas':'#F2F0E6','sidebar':'#243D32','surface':'#FFFEF8','surface_alt':'#E5EADC','text':'#25392E','secondary':'#5B6D60','muted':'#788579','border':'#D4DDCD','accent':'#315D45','on_accent':'#FFFFFF','hover':'#274D38','soft':'#DAE5CD','on_soft':'#294532','pleasant':'#28766C','unpleasant':'#B45C4C'},
+ 'dark':{'canvas':'#152D2D','sidebar':'#20372A','surface':'#233C2D','surface_alt':'#304A37','text':'#F2F4E8','secondary':'#BDCCB9','muted':'#91A18D','border':'#49634A','accent':'#C8DBAD','on_accent':'#223A29','hover':'#D9E8C5','soft':'#3A553D','on_soft':'#E3EDD6','pleasant':'#9CCDC0','unpleasant':'#E7A18E'}
 }
 # Character colours describe authored expressions, not measured CMA coordinates.
 ART={'face_ink':'#34483E','art_shadow':'#7D7968','body_calm':'#B9CFC0','body_frustrated':'#D8B09E','body_bewildered':'#C9C2D4','body_confused':'#D5CBAB','body_happy':'#E6C981','body_excited':'#E3B49A','body_sad':'#B9C9D1','body_angry':'#CBA393','body_frustrated_shade':'#B38A79','body_excited_shade':'#D9927B','poster_ink':'#343C36','poster_eye':'#FFFCF6','poster_tongue':'#E9A599','poster_coral':'#E97460','poster_blue':'#97A8CE','poster_teal':'#92B9B0','poster_ochre':'#E6AE58','poster_yellow':'#D8D85D'}
@@ -17,6 +17,9 @@ QMainWindow,QDialog {{ background:{c['canvas']}; }}
 QLabel {{ background:transparent; border:0; }}
 QLabel#secondary {{ color:{c['secondary']}; }}
 QLabel#accent {{ color:{c['accent']}; }}
+QFrame#topNav {{ background:{c["canvas"]}; border:0; border-bottom:1px solid {c["border"]}; }}
+QWidget#sessionBody,QWidget#sourceDock,QFrame#emotionStage {{ background:transparent; border:0; }}
+QFrame#emotionStage QLabel {{ background:transparent; }}
 QFrame#sidebar {{ background:{c['sidebar']}; border:0; }}
 QFrame#sidebar QLabel {{ color:#F3F6E8; }}
 QFrame#sidebar QLabel#secondary {{ color:#BDCEB8; }}

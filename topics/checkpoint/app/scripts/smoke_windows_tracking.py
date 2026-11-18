@@ -103,6 +103,14 @@ try:
     assert game_module.capture_game(fixture) is None
 finally:
     game_module.active_game = original
+# Register actual Windows hotkeys, but post messages only to our own fixture window.
+assert window.play_hotkeys.start(),'Play shortcuts could not register on the Windows runner'
+user=ctypes.WinDLL('user32');user.PostMessageW.argtypes=[wintypes.HWND,wintypes.UINT,wintypes.WPARAM,wintypes.LPARAM]
+user.PostMessageW(int(window.winId()),0x0312,0x5247,0);QTest.qWait(100)
+assert window.latest_companion['play_support']['basis']=='Player marked a setback'
+user.PostMessageW(int(window.winId()),0x0312,0x5248,0);QTest.qWait(100)
+assert not window.nudges_enabled and not window.overlay.message
+window.play_hotkeys.stop();assert not window.play_hotkeys.registered
 window.pause(); assert window.emblems[0].current_state is None
 window.close(); app.processEvents()
 result = {'windows_native_initial_controls_visible':'passed','windows_native_model_primary_and_conflict_fixture':'passed','windows_native_responsive_reflection_fixture':'passed','checkin_does_not_pin_live_reflection':'passed','windows_native_live_card_fixture': 'passed', 'windows_gdi_own_window_fixture': 'passed',
@@ -110,6 +118,7 @@ result = {'windows_native_initial_controls_visible':'passed','windows_native_mod
           'player_report_preserved': 'passed','overlay_no_focus_steal':'passed','overlay_native_clickthrough_style':'passed',
           'raw_input_registration':'passed','face_landmarker_native_load':'passed','hsemotion_inference':'passed','phone_loopback_api':'passed',
           'cma_pdf_native_render':'passed','hand_landmarker_native_load':'passed','face_landmarker_non_ascii_path':'passed','face_landmarker_native_graph_inference':'passed',
+          'windows_play_hotkey_registration_dispatch_cleanup':'passed',
           'physical_camera_and_actual_game': 'not tested','physical_phone_wifi':'not tested'}
 (ROOT / 'artifacts/windows-tracking-smoke.json').write_text(json.dumps(result, indent=2))
 print(json.dumps(result))

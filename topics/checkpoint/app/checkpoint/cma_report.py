@@ -24,7 +24,8 @@ def cma_summary(session,activity=None):
         key=item.get('feeling','mixed')
         from checkpoint.session import FEELINGS
         points.append({'feeling':FEELINGS.get(key,(key,))[0],'pleasantness':v,'activation':a,
-                       'elapsed_seconds':max(0.,float(item.get('elapsed_seconds',0))),'zone':zone(v,a)})
+                       'elapsed_seconds':max(0.,float(item.get('elapsed_seconds',0))),'zone':zone(v,a),
+                       'context':str(item.get('context','')),'game_context':dict(item.get('game_context') or {})})
     points.sort(key=lambda p:p['elapsed_seconds']);counts=Counter(p['zone'] for p in points)
     result={'count':len(points),'points':points,'zones':dict(counts),'first':points[0] if points else None,'latest':points[-1] if points else None,
             'most_activated':max(points,key=lambda p:p['activation']) if points else None,'change':None}
@@ -53,6 +54,10 @@ def cma_summary(session,activity=None):
             'cma':result,'basis':'Player check-ins; facial estimates and input timings do not establish pleasantness or activation.'}
     from checkpoint.attempts import attempt_summary
     report['practice']=attempt_summary(session)
+    from checkpoint.recovery import recovery_summary
+    report['recovery']=recovery_summary(session,points)
+    helpful=report['recovery']['helpful']
+    if helpful:result['next_step']='You marked these choices helpful: '+', '.join(helpful)+'. Consider one when a similar moment returns.'
     if activity:report['activity_summary']=activity
     return report
 
@@ -74,7 +79,7 @@ def journey_svg(points,duration):
 def report_html(report):
     e=lambda v:html.escape(str(v));c=report['cma'];minutes=int(report['duration_seconds'])//60
     parts=['<html><head><meta charset="utf-8"><style>body{font-family:"DM Sans",sans-serif;color:#293b32;background:white;font-size:12px;line-height:1.2}h1{font-size:27px;margin-bottom:8px}h2{font-size:17px;margin-top:14px;margin-bottom:6px}p{margin:8px 0}.muted{color:#6c786e;font-size:11px}td{padding:9px;vertical-align:top}th{text-align:left;padding:8px;background:#e9ece3}table{border-collapse:collapse;width:100%}.card{background:#f6f4ee}li{margin:6px}</style></head><body>',
-           '<p class="muted">REGEN / CMA SESSION RECAP</p><h1>Your session, in your words</h1>',
+           '<p class="muted">REGEN / CMA SESSION RECAP</p><h1>Frustration and recovery</h1>',
            f'<p>{e(report["game"])} · {minutes} minutes · {c["count"]} CMA check-ins</p><p class="muted">{e(report["intention"])}</p>',
            '<h2>Pleasantness and activation</h2><p>'+e(c['trend'])+'</p>']
     if c['count']:
@@ -82,18 +87,31 @@ def report_html(report):
         parts.append('<img alt="Two journeys of your reported pleasantness and activation" src="data:image/svg+xml;base64,'+svg+'" width="680" height="160"/>')
         parts.append('<p class="muted">Each dot is a check-in. Dashed connections guide the eye; unreported time is unknown. Both scales run from −1 to +1.</p><table width="100%"><tr>')
         for title,key in [('First check-in','first'),('Most activated check-in','most_activated'),('Latest check-in','latest')]:
-            p=c[key];parts.append(f'<td class="card"><b>{title}</b><p>{e(p["feeling"])}</p><p class="muted">{e(p["zone"])}</p></td>')
+            p=c[key];parts.append(f'<td class="card"><b>{title}</b><p>{e(p["feeling"])}</p><p class="muted">{e(p["zone"])}</p>'+('<p>Your context: '+e(p['context'])+'</p>' if p.get('context') else '')+('<p class="muted">Recent game estimate: '+e(p['game_context'].get('title',''))+'</p>' if p.get('game_context',{}).get('title') else '')+'</td>')
         parts.append('</tr></table>')
         if c['change']:
             d=c['change'];parts.append(f'<p>First to latest: pleasantness {d["pleasantness"]:+.2f}; activation {d["activation"]:+.2f}.</p>')
         parts.append('<h2>Where your check-ins landed</h2><p>')
         parts.append(' · '.join(f'{e(name)}: <b>{count} of {c["count"]}</b>' for name,count in sorted(c['zones'].items(),key=lambda p:-p[1])))
         parts.append('</p><p class="muted">Counts refer to check-ins, not time spent in a feeling.</p>')
-    observed=report.get('observations')
-    patterns=(observed or {}).get('expression_transitions',(observed or {}).get('sustained_patterns',{}))
-    if observed and any(patterns.values()):
-        label='Visual context (includes video testing)' if observed.get('video_test') else 'Visual context'
-        parts.append('<h2>'+label+'</h2><p>'+e(observed.get('usable_face_seconds',0))+' seconds of usable observation, with '+e(sum(patterns.values()))+' smoothed expression transitions. These describe visual tracking, not time spent feeling an emotion.</p>')
+    recovery=report.get('recovery',{})
+    if recovery.get('contexts'):
+        parts.append('<h2>Around your difficult moments</h2>')
+        for context,count in recovery['contexts'].items():parts.append('<p>'+e(context)+': '+e(count)+' unpleasant, highly activated check-ins.</p>')
+        parts.append('<p class="muted">Contexts you entered, not detected causes.</p>')
+    if recovery.get('choices'):
+        parts.append('<h2>Your choices and later check-ins</h2>')
+        for row in recovery['choices']:
+            stamp=int(row['elapsed_seconds']);parts.append('<p><b>'+f'{stamp//60:02d}:{stamp%60:02d} / '+e(row['title'])+'</b>'+('<br>'+e(row['detail']) if row.get('detail') else '')+'</p>')
+            before,after=row.get('before'),row.get('after')
+            if before:parts.append('<p>Before: '+e(before['feeling'])+' / '+e(before['zone'])+'.</p>')
+            if after:parts.append('<p>Next reported moment: '+e(after['feeling'])+' / '+e(after['zone'])+'.</p>')
+            else:parts.append('<p class="muted">No later check-in before the next choice.</p>')
+            if row.get('helpful'):parts.append('<p>Your feedback: '+e({'yes':'Helpful','no':'Not helpful','unsure':'Not sure'}[row['helpful']])+'.</p>')
+        parts.append('<p class="muted">'+e(recovery['basis'])+'</p>')
+    if recovery.get('helpful'):
+        parts.append('<h2>What you found useful</h2>')
+        for title,count in recovery['helpful'].items():parts.append('<p>'+e(title)+': marked helpful '+e(count)+' time(s).</p>')
     practice=report.get('practice',{})
     if practice.get('started'):
         parts.append('<h2>What helped your next attempt?</h2><p>'+e(practice['helped'])+' cues rated helpful; '+e(practice['still_stuck'])+' still stuck; '+e(practice['unrated'])+' awaiting feedback.</p>')

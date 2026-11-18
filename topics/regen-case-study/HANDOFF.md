@@ -9,3 +9,8 @@ Local Chromium interaction checks pass at1440/390/320, including CMA, feedback, 
 The shell GH_TOKEN is expired in this environment. Publishing succeeded through connected GitHub Git-data tools, reusing existing binary blob SHAs. A local-branch/remote-branch ambiguity in automatic review was resolved with the remote branches API and ls-remote before creation; no existing remote history was rewound. Future commits can use connected GitHub writes with a branch-head lease. Local fetch still works for this public repository without credentials.
 
 Preserve the sage Regen design, concise titles/descriptions and organic game-focused narrative. No classroom framing. Five persona scenarios remain fictional. Keep runtime/models/native app outside the published site.
+
+
+Current revision merges app review commit 89792b195a9bc4a9219c15928ec4dccc590af43c. Case study now leads with a player learning a difficult game, support after a possible fall, a settled-view delay and player choice. The recap is secondary. Interactive fall/mute demonstration and CMA follow-up demo pass locally at 1440/390/320. New native play-support and recovery fixtures are included. 124 app tests passed, five skipped. Automatic game-event accuracy and player benefit remain unverified; use the new Windows review run for platform evidence. Refresh DEPLOYMENT.json after the new preview is READY.
+
+Windows review run 44270123364 passed at application commit 89792b195a9bc4a9219c15928ec4dccc590af43c, including the new support and recovery scripts and native shortcut dispatch. Current windows-verification.json records the exact tested code commit.

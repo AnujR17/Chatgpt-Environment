@@ -2,14 +2,16 @@
 
 ## Recommended scope
 
-A native companion for casual and committed hobby players, starting with Getting Over It. One chosen cue, CMA-adjusted help and a useful practice note provide a concrete service to test.
+A native companion for casual and committed hobby players, starting with Getting Over It. The first service is support during play: a possible fall, a settled view and one short response. CMA check-ins can adjust its style. A recap is optional.
 
 A launcher, club-booking service or professional coach would add another product problem and infrastructure. Automatic recognition of 43 felt emotions is not a credible promise for this prototype.
 
 ## Implemented
 
 - Adjustable CMA check-ins and 43 authored feeling cards.
-- Recent-report rules for brief guidance or a smaller target.
+- Optional next-move, encouragement or quiet-pause responses; recent explicit CMA reports can choose a default.
+- Deduplicated possible-fall events, settled-view timing, stale-event rejection and a two-minute cooldown.
+- Visible mute, manual I fell fallback and Windows global shortcuts while support runs.
 - Five manually selected practice cues, player feedback and consented note recall.
 - Native session UI, frameless companion, paired phone and PDF recap.
 - Existing face/hand estimates, optional game-window observations and aggregate input timing.
@@ -18,7 +20,7 @@ A launcher, club-booking service or professional coach would add another product
 
 Face movement cannot establish a person’s felt emotion. The model remains imperfect; confused appearance is tentative. The existing 62.5% result on 208 acted clips is not gamer mood accuracy.
 
-Game vision estimates background movement and recognises views the player marks. It does not understand the entire route, exact altitude or confirmed deaths. Cue selection remains manual.
+Game vision estimates background movement and recognises views the player marks. It does not understand the entire route, exact altitude or confirmed deaths. Automatic support uses those uncertain estimates; it must be validated against labelled actual gameplay. It can miss falls that do not move the camera, mistake scene movement for a fall, and fail under occlusion or exclusive fullscreen. Manual I fell remains available.
 
 The phone receives derived state over local HTTP. Physical Wi-Fi, firewall conditions and the laptop remaining open still matter. Exclusive fullscreen can hide a separate desktop overlay.
 
@@ -32,12 +34,12 @@ The public name changes to Regen. Internal storage, pairing and update identifie
 
 ## Test in play
 
-Use one consenting target player as a formative check. Let them find a check-in, choose a cue, try it and explain the recap. Ask whether the cue saved more effort than opening the app cost.
+Use one consenting target player as a formative check. Let them start support and play without prompting them to feel frustrated. Label falls and non-falls, count false and missed responses, measure event-to-tip delay, and ask whether the tip helped or interrupted the next attempt. Then offer the optional check-in and recap.
 
 Observe interruption, unwanted spoilers, misread expressions and confusion between a face estimate and a CMA report. Start manual-only, then check whether the sensors add value. One session can reveal usability problems; it cannot validate a population-level benefit.
 
 ## Verification
 
-113 local checks passed, five skipped. Native flow and the real loopback/Chromium phone/PDF checks passed. The visual case-study interaction passed at desktop, 390px and 320px, including feedback and reduced motion. [Current evidence](verification.json).
+124 local checks passed, five skipped. Native flow and the real loopback/Chromium phone/PDF checks passed. The visual case-study interaction passed at desktop, 390px and 320px, including feedback and reduced motion. [Current evidence](verification.json).
 
-[Windows run 44256785585](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44256785585) passed at the branded application commit `1ead5a783bdc7cfc9b3765a4e17d092f80fefdca`. It covers native practice, model/hand inference, GDI capture, overlay and loopback fixtures. No physical camera/game/phone study or actual-play usefulness result is claimed.
+[Windows run 44270123364](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44270123364) passed at the branded application commit `89792b195a9bc4a9219c15928ec4dccc590af43c`. It covers native session/recovery, fall-to-support fixtures, model/hand inference, GDI capture, overlay, Windows shortcut dispatch and loopback fixtures. No physical camera/game/phone study or actual-play usefulness result is claimed.

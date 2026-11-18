@@ -2,11 +2,9 @@
   "fixture": "Authored local case-study demo, no real camera/game data",
   "cma_presets_and_rules": "passed",
   "in_flight_stability": "passed",
-  "feedback_and_smaller_target": "passed",
+  "choice_followup_and_helpfulness": "passed",
   "theme_preview": "passed",
   "reduced_motion": "passed",
   "reflow": "1440, 390 and 320px passed",
-  "javascript_errors": [],
-  "standalone_html": "CMA interaction, theme previews and no external asset requests passed",
-  "body_classroom_wording": "absent"
+  "javascript_errors": []
 }

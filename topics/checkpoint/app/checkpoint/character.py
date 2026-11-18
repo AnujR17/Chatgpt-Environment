@@ -46,3 +46,14 @@ FEELING_LOOKS={
  'excited':dict(smile=.95,eyes=1.1,jaw=.45,teeth=.6,stretch=.13,energy=.85),
  'bewildered':dict(brow_skew=.9,eyes=1.2,pucker=.35,asymmetry=-.3,jaw=.2,lean=-.13),
 }
+
+# Display identity, not universal emotion-colour associations or CMA scores.
+EXPRESSION_COLOURS={
+ 'happy':(243,202,89),'delighted':(243,202,89),'amused':(246,161,91),'hysterical':(246,161,91),'silly':(246,161,91),
+ 'angry':(229,104,82),'combative':(229,104,82),'hate':(229,104,82),'frustrated':(217,133,112),'annoyed':(203,130,126),
+ 'calm':(114,184,179),'serene':(114,184,179),'composed':(131,210,187),'contented':(163,197,137),
+ 'confused':(157,139,203),'bewildered':(157,139,203),'curious':(180,157,208),
+ 'sad':(108,151,189),'miserable':(108,151,189),'weepy':(108,151,189),'withdrawn':(135,163,181),
+ 'excited':(244,181,69),'exhilarated':(244,181,69),'surprised':(119,197,222),'astonished':(119,197,222),
+ 'exhausted':(163,166,178),'bored':(163,166,178),'determined':(148,181,115),'afraid':(205,138,161),'disgust':(160,174,104)
+}

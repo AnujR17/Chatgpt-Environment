@@ -51,7 +51,7 @@ def markdown(text):
 
 def build():
  SITE.mkdir(parents=True,exist_ok=True)
- for name in ('index.html','case-study.css','case-study.js','case-data.js','Regen-case-study.pdf','sample-session-report.pdf','verification.json','phone-verification.json','visual-case-verification.json','windows-verification.json'):
+ for name in ('index.html','case-study.css','case-study.js','case-data.js','Regen-case-study.pdf','sample-session-report.pdf','verification.json','phone-verification.json','visual-case-verification.json','windows-verification.json','recovery-verification.json','play-support-verification.json'):
   shutil.copy2(SOURCE/name,SITE/name)
  shutil.copytree(SOURCE/'assets',SITE/'assets',dirs_exist_ok=True)
  index=(SITE/'index.html').read_text()

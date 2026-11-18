@@ -11,5 +11,5 @@ for key,title,v,a in [('frustrated','Frustrated',-.7,.8),('exhausted','Drained',
  s=Session();s.check_in(key,v,a)
  rows.append({'key':key,'label':title,'pleasantness':v,'activation':a,'mode':guidance_mode(s)[0],'art':parameters(None if key=='mixed' else key)})
 family=[{'key':key,'label':title,'art':parameters(key)} for key,title in [('composed','Neutral'),('happy','Happy'),('amused','Laughing'),('frustrated','Frustrated'),('confused','Confused'),('determined','Determined'),('sad','Sad'),('surprised','Surprised')]]
-data={'presets':rows,'family':family,'cue':BY_KEY['grip'].__dict__,'thresholds':{'pleasantness':-.18,'activation':.4,'freshness_seconds':300},'basis':'Authored interactive example. Not participant data or camera inference.'}
+data={'presets':rows,'family':family,'cue':BY_KEY['grip'].__dict__,'responses':{'pause':'Take a pause','continue':'Keep playing','smaller_goal':'Smaller goal'},'thresholds':{'pleasantness':-.18,'activation':.4,'freshness_seconds':300},'basis':'Authored interactive example. Not participant data or camera inference.'}
 (ROOT/'docs/case-study/case-data.js').write_text('window.REGEN_CASE='+json.dumps(data,separators=(',',':'))+';\n')

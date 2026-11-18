@@ -16,6 +16,13 @@ async def main():
   await page.evaluate('document.fonts.ready')
   assert await page.title()=='Regen / Gaming, feeling, trying again'
   assert not await page.get_by_text('classroom',exact=False).count()
+  await page.locator('#simulate-fall').click()
+  assert 'Waiting for a steadier view' in await page.locator('#play-message').inner_text()
+  await page.wait_for_function("document.querySelector('#play-message').textContent.includes('One secure hold')")
+  await page.locator('#mute-play').click()
+  await page.locator('#simulate-fall').click()
+  assert await page.locator('#play-message').inner_text()=='Tips are muted. Keep playing.'
+  await page.locator('#mute-play').click()
   assert await page.evaluate('regenCase.state.mode')=='brief'
   for key,expected in [('exhausted','small'),('calm','choice'),('excited','choice'),('mixed','choice'),('frustrated','brief')]:
    await page.locator(f'#presets [data-key="{key}"]').click()
@@ -23,11 +30,18 @@ async def main():
   await page.locator('#try-cue').click()
   assert await page.evaluate('regenCase.state.phase')=='playing'
   assert await page.locator('#presets button').first.is_disabled()
-  await page.locator('#lesson').fill('Settle before pulling')
-  await page.locator('#stuck').click()
-  assert await page.evaluate('regenCase.state.mode')=='small'
-  await page.locator('#try-cue').click();await page.locator('#helped').click()
-  assert 'Marked helpful' in await page.locator('#demo-status').inner_text()
+  await page.locator('#follow-up').click()
+  assert await page.evaluate('regenCase.state.phase')=='followup'
+  await page.locator('#presets [data-key="calm"]').click()
+  await page.locator('#lesson').fill('A pause gave me a choice')
+  await page.locator('#helped').click()
+  assert await page.evaluate('regenCase.state.outcome')=='yes'
+  assert 'Later: Calm' in await page.locator('#demo-status').inner_text()
+  await page.locator('#reset').click()
+  await page.locator('#smaller').click()
+  assert await page.evaluate('regenCase.state.response')=='smaller_goal'
+  await page.locator('#follow-up').click();await page.locator('#stuck').click()
+  assert await page.evaluate('regenCase.state.outcome')=='no'
   await page.locator('#reset').click()
   assert await page.evaluate('regenCase.state.mode')=='brief'
   await page.locator('[data-theme="dark"]').click()
@@ -43,7 +57,7 @@ async def main():
   await page.screenshot(path=str(OUT/'case-cma.png'))
   assert not errors,errors
   await browser.close()
- result={'fixture':'Authored local case-study demo, no real camera/game data','cma_presets_and_rules':'passed','in_flight_stability':'passed','feedback_and_smaller_target':'passed','theme_preview':'passed','reduced_motion':'passed','reflow':'1440, 390 and 320px passed','javascript_errors':errors}
+ result={'fixture':'Authored local case-study demo, no real camera/game data','cma_presets_and_rules':'passed','in_flight_stability':'passed','choice_followup_and_helpfulness':'passed','theme_preview':'passed','reduced_motion':'passed','reflow':'1440, 390 and 320px passed','javascript_errors':errors}
  (OUT/'visual-case-verification.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
 
 

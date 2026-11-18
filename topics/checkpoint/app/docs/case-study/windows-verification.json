@@ -1,7 +1,7 @@
 {
-  "head_sha": "1ead5a783bdc7cfc9b3765a4e17d092f80fefdca",
+  "head_sha": "89792b195a9bc4a9219c15928ec4dccc590af43c",
   "conclusion": "success",
-  "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44256785585",
+  "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44270123364",
   "jobs": [
     {
       "name": "native-review",
@@ -46,6 +46,6 @@
       ]
     }
   ],
-  "scope": "Regen native practice/model/GDI/overlay/loopback software fixtures, not physical camera/game/phone validation",
+  "scope": "Regen session, recovery and fall-to-support fixtures; native models, GDI, overlay, phone loopback and Windows shortcut registration/dispatch. No physical camera, actual gameplay or gamer-usefulness validation.",
   "artifact_download": "Step status confirmed through the connected GitHub plugin; Windows screenshots not inspected here"
 }
