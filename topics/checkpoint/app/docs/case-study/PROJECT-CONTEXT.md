@@ -1,47 +1,35 @@
 # Project context
 
-AI for behavior design
+## AI for behavior design
 
 Designed by Anuj Rai. Subject: Interaction design. Professor: Anupam Rana.
 
-## Human Computer Interaction Design
+## Subject
 
-A player chooses what the system observes, reports how a moment feels and controls the amount of help.
+Interaction design explores how a player chooses sources, recognises feedback and controls support during a difficult gaming session.
 
-## AI for Society / Social Cause
+## Theme
 
-The intended benefit is a useful next step during difficult play. The target player is learning a challenging game; anger and professional play are not prerequisites. Support should earn its interruption and leave the player in control. This benefit remains a hypothesis to test.
+AI for Society / Social Cause. The project focuses on agency during challenging play and access to support when the player wants it.
 
-## Circumplex Model of Affect
+## Framework
 
-Pleasantness and activation shape optional guidance. Player-adjustable check-ins supply the coordinates; facial estimates remain separate.
+The Circumplex Model of Affect describes pleasantness and activation. Player check-ins supply the coordinates; those reports can shape the style of optional support and the session recap.
 
-## Technology
+## Technology and tools
 
-A Windows laptop provides the webcam, local face/hand inference, optional game-window observation and aggregate input timing. The phone is a paired display. No images are sent to it.
+A Windows laptop provides the camera and foreground game window. Local MediaPipe face/hand features, HSE expression estimates, OpenCV observations and aggregate input timing provide separate sources. Python, PySide6 and QPainter produce the native interface. The phone displays derived state over a paired connection.
 
-## Tools
+Codex, GitHub, Playwright and Chromium support implementation and verification. Image generation produced the papercraft brand artwork.
 
-Codex, Python, PySide6, QPainter, MediaPipe, HSE, Playwright, Chromium, Git and GitHub. Image generation produced the original papercraft brand world. Figma and new model training were not used for this revision.
+## Core concept
 
-## From input to human benefit
-
-- Input: player check-in, chosen problem and optional local observations.
-- AI / computer: uncertain expression and game-motion estimates, plus transparent guidance rules.
-- System: native session, local analysis, overlay and paired phone.
-- Service: notice a possible setback, wait for a settled view, offer a short response, then leave the player in control. Optional check-ins and feedback support reflection.
-- Product: Regen with Nori and a CMA session recap.
-- Human output: an informed next choice and a player-owned takeaway. Wider impact is unproven.
+Player input and local analysis inform a native system. The service offers a short response during play and an optional recap afterward. Regen is the product; Nori carries the interaction across desktop and phone.
 
 ## Design process
 
-Empathize uses secondary evidence and five clearly fictional scenarios. Define frames the loss-of-rhythm problem after a setback. Ideate compares companion, launcher, venue service and automatic coach. Prototype implements the chosen flow and checks its behaviour.
-
-This is an individual design project with AI assistance. No primary interviews or performance/wellbeing improvement are claimed.
-
+Empathize connects research themes with player needs. Define focuses on the next step after losing progress. Ideate compares ways to provide help alongside the game. Prototype implements the selected flow and checks its behaviour.
 
 ## Information architecture
 
-The supplied Claude export proposes setup, permissions, baseline, live session, check-in, summary and settings, with separate processing/data layers. Its final architecture appears on page 97. This revision adapts that structure to the implemented native Regen design rather than treating the document as implementation instructions.
-
-Regen has five destinations: Session, Recap, Saved, Tracking and Settings. Session contains the check-in and support controls. Nori overlay and paired phone are connected displays of the same derived session state. Local processing and saved summaries are system layers, not extra player-facing screens. Microphone analysis, four-game orchestration, automatic CMA inference and learned intervention selection in the document are outside this implementation.
+The supplied architecture informed the grouping of Session, Recap, Saved, Tracking and Settings. The Nori overlay and phone extend the same session. Processing and data remain separate system layers.

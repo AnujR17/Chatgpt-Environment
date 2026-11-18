@@ -9,7 +9,7 @@ SOURCE=ROOT.parent/'checkpoint/app/docs/case-study'
 SITE=ROOT/'site'
 SOURCE_REF='topic/checkpoint-case-study-20261118'
 REPO='https://github.com/AnujR17/Chatgpt-Environment/blob/'+SOURCE_REF+'/'
-PAGES={'PROJECT-CONTEXT.md':'project.html','CASE-STUDY.md':'research.html','FEASIBILITY.md':'feasibility.html','RESEARCH-EVIDENCE.md':'evidence.html','INTERVIEW-REHEARSALS.md':'scenarios.html','INTERVIEW-GUIDE.md':'interview-guide.html'}
+PAGES={'PROJECT-CONTEXT.md':'project.html','CASE-STUDY.md':'research.html','FEASIBILITY.md':'feasibility.html','RESEARCH-EVIDENCE.md':'evidence.html','INTERVIEW-GUIDE.md':'interview-guide.html'}
 
 
 def target(value):
@@ -63,7 +63,9 @@ def markdown(text):
 
 def build():
  SITE.mkdir(parents=True,exist_ok=True)
- for name in ('index.html','case-study.css','case-study.js','case-data.js','Regen-case-study.pdf','sample-session-report.pdf','verification.json','phone-verification.json','visual-case-verification.json','windows-verification.json','recovery-verification.json','play-support-verification.json'):
+ for stale in ('scenarios.html','verification.json','phone-verification.json','visual-case-verification.json','windows-verification.json','recovery-verification.json','play-support-verification.json'):
+  (SITE/stale).unlink(missing_ok=True)
+ for name in ('index.html','case-study.css','case-study.js','case-data.js','Regen-case-study.pdf','sample-session-report.pdf'):
   shutil.copy2(SOURCE/name,SITE/name)
  shutil.copytree(SOURCE/'assets',SITE/'assets',dirs_exist_ok=True)
  index=(SITE/'index.html').read_text()

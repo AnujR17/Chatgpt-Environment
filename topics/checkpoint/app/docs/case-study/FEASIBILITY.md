@@ -1,45 +1,32 @@
-# Regen feasibility
+# Technology and feasibility
 
-## Recommended scope
+## Native desktop
 
-A native companion for casual and committed hobby players, starting with Getting Over It. The first service is support during play: a possible fall, a settled view and one short response. CMA check-ins can adjust its style. A recap is optional.
+PySide6 supports the Windows session interface, local camera processing and frameless companion. Nori stays click-through during play and can be repositioned. Borderless or windowed play keeps the desktop overlay visible.
 
-A launcher, club-booking service or professional coach would add another product problem and infrastructure. Automatic recognition of 43 felt emotions is not a credible promise for this prototype.
+## Local sources
 
-## Implemented
+- Camera: MediaPipe face and hand features, with optional HSE expression estimates.
+- Game: foreground Getting Over It window observations, background-motion estimates and marked-view recognition.
+- Input: optional game-focused timing and activity aggregates.
+- CMA: the player’s pleasantness and activation check-ins.
 
-- Adjustable CMA check-ins and 43 authored feeling cards.
-- Optional next-move, encouragement or quiet-pause responses; recent explicit CMA reports can choose a default.
-- Deduplicated possible-fall events, settled-view timing, stale-event rejection and a two-minute cooldown.
-- Visible mute, manual I fell fallback and Windows global shortcuts while support runs.
-- Five manually selected practice cues, player feedback and consented note recall.
-- Native session UI, frameless companion, paired phone and PDF recap.
-- Existing face/hand estimates, optional game-window observations and aggregate input timing.
+## Support during play
 
-## Limits
+Start play support enables game observation and the overlay. A possible fall followed by a settled view can prompt a short next-move reminder, encouragement or optional pause. Automatic invitations are spaced two minutes apart.
 
-Face movement cannot establish a person’s felt emotion. The model remains imperfect; confused appearance is tentative. The existing 62.5% result on 208 acted clips is not gamer mood accuracy.
+I fell requests a response directly. Windows shortcuts provide manual setback marking and mute while support is running. A one-off request preserves the automatic-tip mute preference.
 
-Game vision estimates background movement and recognises views the player marks. It does not understand the entire route, exact altitude or confirmed deaths. Automatic support uses those uncertain estimates; it must be validated against labelled actual gameplay. It can miss falls that do not move the camera, mistake scene movement for a fall, and fail under occlusion or exclusive fullscreen. Manual I fell remains available.
+## Recap and phone
 
-The phone receives derived state over local HTTP. Physical Wi-Fi, firewall conditions and the laptop remaining open still matter. Exclusive fullscreen can hide a separate desktop overlay.
+The recap relates check-ins, context, choices, later feelings and helpfulness feedback. It is available as a native PDF. A paired phone receives derived state and the report over trusted Wi-Fi.
 
-## Native practicality
+## Privacy and storage
 
-PySide6 fits the Windows overlay, local camera and foreground-window features. Native architecture alone does not prove lower power use. Compare game FPS, CPU, memory and update latency with sensing on and off before making a low-overhead claim.
+The player enables each source. Images are processed locally. Saving summaries requires consent; saved history can be deleted. Phone sharing can be stopped from the app.
 
-The existing portable distribution is roughly 243 MB compressed. Regen reuses its runtime and models; there is no cloud inference bill for the core flow. Device compatibility and game-specific observation still carry maintenance cost.
+## Software checks
 
-The public name changes to Regen. Internal storage, pairing and update identifiers stay compatible with existing installations. This review does not publish an OTA.
+The application revision passed 124 local tests. [Windows review](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44271249558) exercised the native session, support/recovery flows, model loading, GDI capture, overlay, shortcut dispatch and loopback phone connection.
 
-## Test in play
-
-Use one consenting target player as a formative check. Let them start support and play without prompting them to feel frustrated. Label falls and non-falls, count false and missed responses, measure event-to-tip delay, and ask whether the tip helped or interrupted the next attempt. Then offer the optional check-in and recap.
-
-Observe interruption, unwanted spoilers, misread expressions and confusion between a face estimate and a CMA report. Start manual-only, then check whether the sensors add value. One session can reveal usability problems; it cannot validate a population-level benefit.
-
-## Verification
-
-124 local checks passed, five skipped. Native flow and the real loopback/Chromium phone/PDF checks passed. The visual case-study interaction passed at desktop, 390px and 320px, including feedback and reduced motion. [Current evidence](verification.json).
-
-[Windows run 44271249558](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44271249558) passed at the branded application commit `b10788c47ae9925a64be8c46d6bda519cd886a97`. It covers native session/recovery, fall-to-support fixtures, model/hand inference, GDI capture, overlay, Windows shortcut dispatch and loopback fixtures. No physical camera/game/phone study or actual-play usefulness result is claimed.
+The visual case study is checked at desktop and phone widths for navigation, interactive examples, reduced motion, readable research pages and overflow.

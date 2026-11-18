@@ -1,46 +1,29 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Regen / Regen</title><link rel="icon" href="assets/regen.svg"><link rel="stylesheet" href="case-study.css"><style>.notes{max-width:920px;margin:0 auto;padding:60px 32px 90px}.notes h1{font-size:48px;margin-bottom:30px}.notes h2{font-size:27px;letter-spacing:-1px;line-height:1.2;margin:40px 0 15px}.notes p,.notes li{font-size:16px;line-height:1.75}.notes li{margin:8px 0}.notes a{overflow-wrap:anywhere}.notes code{font-size:13px;overflow-wrap:anywhere}.notes ul{padding-left:22px}.table-wrap{max-width:100%;overflow:auto;margin:20px 0 30px}.notes table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.6}.notes th,.notes td{min-width:170px;padding:14px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #cbd4c5}.notes th{background:#e5eadc;font-weight:600}.table-wrap:focus-visible{outline:2px solid #315d45;outline-offset:3px}@media(max-width:600px){.notes{padding:35px 23px}.notes h1{font-size:37px}.notes h2{font-size:24px}.notes p,.notes li{font-size:14px}}</style></head><body><header class="sitebar"><a class="wordmark" href="/"><img src="assets/regen.svg" alt="" width="30" height="30">regen</a><a href="/">Back to the case study</a></header><main class="notes"><h1>Regen</h1>
-<p>A gaming companion for your next attempt.</p>
-<p><a href="index.html">Open the visual case study</a>. It includes the product, character, player flow and an interactive CMA example. These are the supporting research and design notes.</p>
-<h2>The player problem</h2>
-<p>Being stuck does not always mean wanting to stop. A player may still enjoy the challenge and need one adjustment, less explanation or a smaller goal.</p>
-<p>Regen starts with casual and committed hobby players in Getting Over It. Its immediate job is to offer a useful next step after a setback, without leaving the game. The audience is someone learning a difficult game, including someone who remains calm or laughs when falling. The recap is optional. Better performance, reduced anger and wellbeing remain untested outcomes.</p>
-<h2>Empathize</h2>
-<p>The main case study connects four published findings to explicit design responses. Seven publications, six community threads and game/platform documentation form a rapid secondary review, not a systematic review. Access levels and limits are retained in the <a href="evidence.html">evidence register</a>.</p>
-<p>The existing secondary review covers published affect and gaming research plus public player accounts. Cregan and colleagues’ survey of 1,007 gamers associates competitive motives with tilt risk. Getting Over It’s premise also makes single-player progress loss relevant. Barrett and colleagues describe limits to inferring felt emotion from facial movement.</p>
-<p>Five fictional personas rehearse different situations: Rohan, Kavya and Aman in Indian contexts; Alex as a challenge-oriented player; Morgan as a player/streamer. They are design exercises, not primary interviews or participant quotations.</p>
-<p><a href="https://github.com/AnujR17/Chatgpt-Environment/blob/topic/checkpoint-case-study-20261118/topics/checkpoint/research/04-evidence-register.md">Evidence register</a> · <a href="https://github.com/AnujR17/Chatgpt-Environment/blob/topic/checkpoint-case-study-20261118/topics/checkpoint/research/02-interview-guide.md">Interview guide</a> · <a href="https://github.com/AnujR17/Chatgpt-Environment/blob/topic/checkpoint-case-study-20261118/topics/checkpoint/research/03-simulated-interviews.md">Simulated answers</a></p>
-<h2>Define</h2>
-<p>After I lose progress, help me find my next step without leaving the game. Falling does not imply anger, and becoming calmer is not the only successful outcome.</p>
-<p>Camera estimates describe visible cues. The player reports pleasantness and activation. Optional input timing and game-window observations provide context, not emotional truth.</p>
-<h2>Ideate</h2>
-<p>A full launcher adds library-management scope. A venue platform adds booking, operations and payments. An automatic emotional coach needs evidence this prototype lacks.</p>
-<p>The selected direction is a personal companion: opt into play support, notice a possible fall, wait for the game view to settle, and offer one short suggestion. Encouragement, a next-move reminder and an optional pause are selectable styles. The player can ignore or mute support. The layout plan in the visual story describes this revision; it is not a previously tested wireframe.</p>
-<h2>Information architecture</h2>
-<p>The native destinations are Session, Recap, Saved, Tracking and Settings. Check-ins and support live inside Session. Overlay and phone are connected displays. Processing and storage are separate system layers. The hierarchy in the visual case study is adapted from the supplied Claude-export architecture to the actual prototype; it adds no unimplemented microphone, automatic mood inference or four-game study.</p>
-<h2>Prototype</h2>
-<p>The native PySide6 app uses evergreen actions, sage surfaces and conventional icons. Start play support, I fell, check-in and camera controls remain visible at 1024×768. The open layout gives Nori the main stage. Camera is secondary; play support does not require one.</p>
-<p>Nori remains the character. Regen is the app. The 43 authored looks are a check-in vocabulary, not 43 trained camera classes.</p>
-<p>Automatic responses use a new possible-fall event followed by two seconds of steady or marked-view observations. Optional input idle can also establish a quiet moment. Repeated fall frames do not restart the waiting period. Events expire after 25 seconds; stale, unavailable or unfocused observations cannot initiate a response. Automatic invitations have a two-minute cooldown. These are engineering defaults to test, not validated optimal timings.</p>
-<p>Match my check-in uses an explicit report no older than two minutes. Unpleasant/high-activation reports offer a quiet pause; pleasant reports offer encouragement; otherwise the default is a small next move. The thresholds (pleasantness ±0.2 and activation +0.2) are authored interaction rules. Camera estimates never set either CMA dimension or determine the offer. The player can override the style.</p>
-<p>I fell is an explicit manual fallback. While play support runs on Windows, Ctrl+Alt+F8 marks a setback and Ctrl+Alt+F9 mutes/unmutes tips. Registration can fail if another app owns the shortcuts. The overlay does not pause, inject input into or control the game. Borderless/windowed play is the initial target.</p>
-<p>A player can optionally record context, choose a pause/continue/smaller goal, report a later moment and rate the choice. The CMA recap relates those reported moments without filling gaps or claiming causation. Reports are secondary to help during play. Saved summaries require local-history consent. Technique cues and notes remain an optional deeper path.</p>
-<h2>Brand</h2>
-<p>Regen draws on the gaming idea of regeneration. Evergreen, sage and mint carry the identity; butter and apricot add energy to the case study. DM Sans, an original R mark, native vector characters and a generated papercraft gaming world form the visual system.</p>
-<p>The four supplied Behance pages were inaccessible. Their detailed designs and outcomes were not inspected or copied.</p>
-<h2>Technology and tools</h2>
-<p>Windows application, laptop webcam, MediaPipe face/hand features, HSE eight-class estimates, optional game-window capture and aggregate input timing. The phone displays derived state over paired local HTTP; it does not perform recognition.</p>
-<p>Codex assisted implementation and writing. Python, PySide6 and QPainter produce the native UI; Playwright/Chromium and GitHub provide software checks; image generation produced the brand illustration. Existing model weights and updater logic remain unchanged.</p>
-<h2>Evidence and next step</h2>
-<p>124 local tests passed, with four missing-video fixtures and one Windows-only check skipped. Native task and phone/PDF flows passed. The interactive case-study example passed at 1440, 390 and 320px, including CMA choices, feedback and reduced motion. Windows run evidence is linked separately and identified by commit.</p>
-<p>These are software checks. Actual play, physical camera/phone compatibility, device overhead and participant benefit remain to evaluate. The next useful test labels actual falls and non-falls, measures missed and false invitations plus response delay, then asks target players whether each suggestion helped their next attempt or interrupted it. Continued enjoyment and a useful next choice matter more than forcing calm.</p>
-<p><a href="project.html">Project context</a> · <a href="feasibility.html">Feasibility</a> · <a href="verification.json">Native checks</a> · <a href="visual-case-verification.json">Visual interaction checks</a></p>
-<p><a href="scenarios.html">Scenario responses</a> remain synthetic and have no evidential status as primary interviews.</p>
-<h2>Sources</h2>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research and design decisions / Regen</title><link rel="icon" href="assets/regen.svg"><link rel="stylesheet" href="case-study.css"><style>.notes{max-width:920px;margin:0 auto;padding:60px 32px 90px}.notes h1{font-size:48px;margin-bottom:30px}.notes h2{font-size:27px;letter-spacing:-1px;line-height:1.2;margin:40px 0 15px}.notes p,.notes li{font-size:16px;line-height:1.75}.notes li{margin:8px 0}.notes a{overflow-wrap:anywhere}.notes code{font-size:13px;overflow-wrap:anywhere}.notes ul{padding-left:22px}.table-wrap{max-width:100%;overflow:auto;margin:20px 0 30px}.notes table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.6}.notes th,.notes td{min-width:170px;padding:14px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #cbd4c5}.notes th{background:#e5eadc;font-weight:600}.table-wrap:focus-visible{outline:2px solid #315d45;outline-offset:3px}@media(max-width:600px){.notes{padding:35px 23px}.notes h1{font-size:37px}.notes h2{font-size:24px}.notes p,.notes li{font-size:14px}}</style></head><body><header class="sitebar"><a class="wordmark" href="/"><img src="assets/regen.svg" alt="" width="30" height="30">regen</a><a href="/">Back to the case study</a></header><main class="notes"><h1>Research and design decisions</h1>
+<h2>The player</h2>
+<p>Regen supports hobby players learning Getting Over It. After losing progress, the player wants a useful next step while remaining in control of the challenge.</p>
+<h2>Research</h2>
+<p>Published research, public gaming discussions and game documentation informed four decisions:</p>
 <ul>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11082399/">Cregan, Toth and Campbell, 2024</a></li>
-<li><a href="https://doi.org/10.1037/h0077714">Russell, 1980: A circumplex model of affect</a></li>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/">Barrett and colleagues, 2019</a></li>
-<li><a href="https://store.steampowered.com/app/240720/Getting_Over_It_with_Bennett_Foddy/">Getting Over It on Steam</a></li>
-<li><a href="https://theasc.com/article/forget-me-not-eternal-sunshine-of-the-spotless-mind/">ASC: lighting in Eternal Sunshine</a></li>
-<li><a href="https://github.com/AnujR17/Chatgpt-Environment/blob/topic/checkpoint-case-study-20261118/topics/checkpoint/app/docs/VIDEO-AND-MODEL-RESEARCH.md">Model and video research</a></li>
-</ul></main></body></html>
+<li>Competence: offer one manageable action after a setback. <a href="https://pubmed.ncbi.nlm.nih.gov/24377357/">Przybylski and colleagues, 2014</a>.</li>
+<li>Context: keep visible facial movement separate from player-reported feeling. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/">Barrett and colleagues, 2019</a>.</li>
+<li>Motivation: make encouragement, a next move and a pause available as player choices. <a href="https://doi.org/10.1177/15554120211056126">Pusey, Wong and Rappa, 2022</a>.</li>
+<li>Tilt: include the player’s goal, situation and helpfulness feedback when reviewing a difficult moment. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11082399/">Cregan, Toth and Campbell, 2024</a>.</li>
+</ul>
+<p><a href="evidence.html">Evidence register</a></p>
+<p><a href="interview-guide.html">Interview guide</a></p>
+<h2>Design personas</h2>
+<p>Rohan values competitive progress and respectful communication. Kavya values participation, privacy and control over labels. Aman wants a short session that fits his time and energy. Alex enjoys difficult climbs and wants to preserve discovery. Morgan needs control over what appears during a broadcast.</p>
+<p>Together, these profiles focus the design on optional help, suitable timing, private check-ins and the freedom to keep playing.</p>
+<h2>Interaction direction</h2>
+<p>Start play support, notice a possible setback, wait for a settled view, then offer one short suggestion. The player can continue, pause, mute or request help directly.</p>
+<p>A recent CMA check-in can select a support style. Pleasantness and activation come from the player. Camera observations remain a separate source in the interface.</p>
+<h2>Information architecture</h2>
+<p>Session contains the game context, play support, check-in, camera/test view, technique cues and session controls. Recap contains reported CMA moments, choices, helpfulness and PDF export. Saved contains consented summaries and deletion. Tracking describes the sources and their status. Settings contains support, face/hand, overlay, motion, history and update preferences.</p>
+<p>The Nori overlay and phone are connected displays. Local processing and session data sit beneath these player-facing destinations.</p>
+<h2>Prototype</h2>
+<p>The native interface gives Nori a large stage, compact source controls, conventional icons and sage-green actions. The transparent overlay brings a brief response into play. The paired phone shows derived state while the game remains in focus.</p>
+<p>The recap connects reported feelings, context, choices and later check-ins. The player can rate a choice and save the summary on their own device.</p>
+<h2>Visual identity</h2>
+<p>Regen draws on regeneration and another attempt. Nori carries expressions through soft features, shape and colour. DM Sans, sage surfaces, evergreen actions and the papercraft game world connect the application and case study.</p>
+<h2>Technology</h2>
+<p>Python, PySide6, QPainter, MediaPipe, HSE expression estimates, OpenCV game-window observations and aggregate input timing support the native prototype. Playwright and Chromium verify the visual case-study interactions and responsive layouts.</p></main></body></html>

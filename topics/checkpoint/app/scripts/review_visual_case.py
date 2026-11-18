@@ -20,9 +20,7 @@ async def main():
   assert await page.locator('.hero-credits').get_by_text('Interaction design',exact=True).count()==1
   assert await page.locator('.ia-branches > li').count()==5
   assert await page.locator('.research-findings > article').count()==4
-  await page.locator('.scenario-answers summary').first.click()
-  assert await page.locator('.scenario-answers').first.locator('div').first.is_visible()
-  await page.locator('.scenario-answers summary').first.click()
+  assert await page.locator('.people > article').count()==5
   assert not await page.get_by_text('classroom',exact=False).count()
   await page.locator('#simulate-fall').click()
   assert 'Waiting for a steadier view' in await page.locator('#play-message').inner_text()
@@ -67,7 +65,7 @@ async def main():
   await page.set_viewport_size({'width':1440,'height':1000});await page.locator('#cma').scroll_into_view_if_needed()
   await page.screenshot(path=str(OUT/'case-cma.png'))
   if os.environ.get('REGEN_CASE_SITE'):
-   for note in ('evidence.html','scenarios.html','interview-guide.html'):
+   for note in ('evidence.html','interview-guide.html'):
     response=await page.goto(os.environ['REGEN_CASE_URL']+note)
     assert response.status==200
     assert await page.locator('table').count()>0 if note!='interview-guide.html' else await page.locator('h1').count()==1
@@ -75,7 +73,7 @@ async def main():
     assert await page.evaluate('document.documentElement.scrollWidth<=innerWidth')
   assert not errors,errors
   await browser.close()
- result={'fixture':'Authored local case-study demo, no real camera/game data','hero_authorship_and_subject':'passed','five_destination_architecture':'passed','source_linked_insights_and_scenario_disclosure':'passed','cma_presets_and_rules':'passed','in_flight_stability':'passed','choice_followup_and_helpfulness':'passed','theme_preview':'passed','reduced_motion':'passed','reflow':'1440, 390 and 320px passed','javascript_errors':errors}
+ result={'fixture':'Authored local case-study demo, no real camera/game data','hero_authorship_and_subject':'passed','five_destination_architecture':'passed','source_linked_insights_and_design_personas':'passed','cma_presets_and_rules':'passed','in_flight_stability':'passed','choice_followup_and_helpfulness':'passed','theme_preview':'passed','reduced_motion':'passed','reflow':'1440, 390 and 320px passed','javascript_errors':errors}
  (OUT/'visual-case-verification.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
 
 

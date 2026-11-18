@@ -27,3 +27,8 @@ User supplied a 98-page Claude export and requested its architecture adapted to 
 Four visible research findings have original source links, stated limits and design responses. Five persona cards expose existing synthetic answers, explicitly not primary interviews. New evidence, scenarios and interview-guide HTML pages retain provenance and readable tables. No native app/model/updater change and no OTA. Browser reflow/interactions and visual PDF export are the applicable checks. Source is on the existing website branch; preserve the job-search Vercel project and protection settings. Topic memory lookup returned cached network failure; no retry.
 
 Browser verification passed at 1440/390/320 with hero author/subject/professor, five-destination IA, source-led findings, expandable scenario answers, existing fall/CMA interactions and readable evidence/scenario/interview-guide pages. All generated links resolve locally. Visual PDF refreshed to 15 pages; cover and architecture inspected.
+
+
+## Presentation refinement
+
+User selected existing research and design personas, then explicitly requested no presentation note. Remove repeated limitation callouts and hypothetical wording from all rendered case-study pages. Use source-linked research, normal design personas, a questionnaire and concrete design decisions. Do not claim the author conducted interviews or attribute generated answers to real participants. Canonical research records in topics/checkpoint/research remain intact. Remove simulated-answer presentation copies and diagnostic JSON exports from the website; keep technical verification in source. This is editorial presentation work, with no native model/app or OTA change.

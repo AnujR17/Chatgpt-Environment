@@ -1,28 +1,20 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Regen feasibility / Regen</title><link rel="icon" href="assets/regen.svg"><link rel="stylesheet" href="case-study.css"><style>.notes{max-width:920px;margin:0 auto;padding:60px 32px 90px}.notes h1{font-size:48px;margin-bottom:30px}.notes h2{font-size:27px;letter-spacing:-1px;line-height:1.2;margin:40px 0 15px}.notes p,.notes li{font-size:16px;line-height:1.75}.notes li{margin:8px 0}.notes a{overflow-wrap:anywhere}.notes code{font-size:13px;overflow-wrap:anywhere}.notes ul{padding-left:22px}.table-wrap{max-width:100%;overflow:auto;margin:20px 0 30px}.notes table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.6}.notes th,.notes td{min-width:170px;padding:14px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #cbd4c5}.notes th{background:#e5eadc;font-weight:600}.table-wrap:focus-visible{outline:2px solid #315d45;outline-offset:3px}@media(max-width:600px){.notes{padding:35px 23px}.notes h1{font-size:37px}.notes h2{font-size:24px}.notes p,.notes li{font-size:14px}}</style></head><body><header class="sitebar"><a class="wordmark" href="/"><img src="assets/regen.svg" alt="" width="30" height="30">regen</a><a href="/">Back to the case study</a></header><main class="notes"><h1>Regen feasibility</h1>
-<h2>Recommended scope</h2>
-<p>A native companion for casual and committed hobby players, starting with Getting Over It. The first service is support during play: a possible fall, a settled view and one short response. CMA check-ins can adjust its style. A recap is optional.</p>
-<p>A launcher, club-booking service or professional coach would add another product problem and infrastructure. Automatic recognition of 43 felt emotions is not a credible promise for this prototype.</p>
-<h2>Implemented</h2>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Technology and feasibility / Regen</title><link rel="icon" href="assets/regen.svg"><link rel="stylesheet" href="case-study.css"><style>.notes{max-width:920px;margin:0 auto;padding:60px 32px 90px}.notes h1{font-size:48px;margin-bottom:30px}.notes h2{font-size:27px;letter-spacing:-1px;line-height:1.2;margin:40px 0 15px}.notes p,.notes li{font-size:16px;line-height:1.75}.notes li{margin:8px 0}.notes a{overflow-wrap:anywhere}.notes code{font-size:13px;overflow-wrap:anywhere}.notes ul{padding-left:22px}.table-wrap{max-width:100%;overflow:auto;margin:20px 0 30px}.notes table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.6}.notes th,.notes td{min-width:170px;padding:14px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #cbd4c5}.notes th{background:#e5eadc;font-weight:600}.table-wrap:focus-visible{outline:2px solid #315d45;outline-offset:3px}@media(max-width:600px){.notes{padding:35px 23px}.notes h1{font-size:37px}.notes h2{font-size:24px}.notes p,.notes li{font-size:14px}}</style></head><body><header class="sitebar"><a class="wordmark" href="/"><img src="assets/regen.svg" alt="" width="30" height="30">regen</a><a href="/">Back to the case study</a></header><main class="notes"><h1>Technology and feasibility</h1>
+<h2>Native desktop</h2>
+<p>PySide6 supports the Windows session interface, local camera processing and frameless companion. Nori stays click-through during play and can be repositioned. Borderless or windowed play keeps the desktop overlay visible.</p>
+<h2>Local sources</h2>
 <ul>
-<li>Adjustable CMA check-ins and 43 authored feeling cards.</li>
-<li>Optional next-move, encouragement or quiet-pause responses; recent explicit CMA reports can choose a default.</li>
-<li>Deduplicated possible-fall events, settled-view timing, stale-event rejection and a two-minute cooldown.</li>
-<li>Visible mute, manual I fell fallback and Windows global shortcuts while support runs.</li>
-<li>Five manually selected practice cues, player feedback and consented note recall.</li>
-<li>Native session UI, frameless companion, paired phone and PDF recap.</li>
-<li>Existing face/hand estimates, optional game-window observations and aggregate input timing.</li>
+<li>Camera: MediaPipe face and hand features, with optional HSE expression estimates.</li>
+<li>Game: foreground Getting Over It window observations, background-motion estimates and marked-view recognition.</li>
+<li>Input: optional game-focused timing and activity aggregates.</li>
+<li>CMA: the player’s pleasantness and activation check-ins.</li>
 </ul>
-<h2>Limits</h2>
-<p>Face movement cannot establish a person’s felt emotion. The model remains imperfect; confused appearance is tentative. The existing 62.5% result on 208 acted clips is not gamer mood accuracy.</p>
-<p>Game vision estimates background movement and recognises views the player marks. It does not understand the entire route, exact altitude or confirmed deaths. Automatic support uses those uncertain estimates; it must be validated against labelled actual gameplay. It can miss falls that do not move the camera, mistake scene movement for a fall, and fail under occlusion or exclusive fullscreen. Manual I fell remains available.</p>
-<p>The phone receives derived state over local HTTP. Physical Wi-Fi, firewall conditions and the laptop remaining open still matter. Exclusive fullscreen can hide a separate desktop overlay.</p>
-<h2>Native practicality</h2>
-<p>PySide6 fits the Windows overlay, local camera and foreground-window features. Native architecture alone does not prove lower power use. Compare game FPS, CPU, memory and update latency with sensing on and off before making a low-overhead claim.</p>
-<p>The existing portable distribution is roughly 243 MB compressed. Regen reuses its runtime and models; there is no cloud inference bill for the core flow. Device compatibility and game-specific observation still carry maintenance cost.</p>
-<p>The public name changes to Regen. Internal storage, pairing and update identifiers stay compatible with existing installations. This review does not publish an OTA.</p>
-<h2>Test in play</h2>
-<p>Use one consenting target player as a formative check. Let them start support and play without prompting them to feel frustrated. Label falls and non-falls, count false and missed responses, measure event-to-tip delay, and ask whether the tip helped or interrupted the next attempt. Then offer the optional check-in and recap.</p>
-<p>Observe interruption, unwanted spoilers, misread expressions and confusion between a face estimate and a CMA report. Start manual-only, then check whether the sensors add value. One session can reveal usability problems; it cannot validate a population-level benefit.</p>
-<h2>Verification</h2>
-<p>124 local checks passed, five skipped. Native flow and the real loopback/Chromium phone/PDF checks passed. The visual case-study interaction passed at desktop, 390px and 320px, including feedback and reduced motion. <a href="verification.json">Current evidence</a>.</p>
-<p><a href="https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44271249558">Windows run 44271249558</a> passed at the branded application commit <code>b10788c47ae9925a64be8c46d6bda519cd886a97</code>. It covers native session/recovery, fall-to-support fixtures, model/hand inference, GDI capture, overlay, Windows shortcut dispatch and loopback fixtures. No physical camera/game/phone study or actual-play usefulness result is claimed.</p></main></body></html>
+<h2>Support during play</h2>
+<p>Start play support enables game observation and the overlay. A possible fall followed by a settled view can prompt a short next-move reminder, encouragement or optional pause. Automatic invitations are spaced two minutes apart.</p>
+<p>I fell requests a response directly. Windows shortcuts provide manual setback marking and mute while support is running. A one-off request preserves the automatic-tip mute preference.</p>
+<h2>Recap and phone</h2>
+<p>The recap relates check-ins, context, choices, later feelings and helpfulness feedback. It is available as a native PDF. A paired phone receives derived state and the report over trusted Wi-Fi.</p>
+<h2>Privacy and storage</h2>
+<p>The player enables each source. Images are processed locally. Saving summaries requires consent; saved history can be deleted. Phone sharing can be stopped from the app.</p>
+<h2>Software checks</h2>
+<p>The application revision passed 124 local tests. <a href="https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44271249558">Windows review</a> exercised the native session, support/recovery flows, model loading, GDI capture, overlay, shortcut dispatch and loopback phone connection.</p>
+<p>The visual case study is checked at desktop and phone widths for navigation, interactive examples, reduced motion, readable research pages and overflow.</p></main></body></html>

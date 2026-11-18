@@ -31,7 +31,7 @@ function render(){
  byId('mode-label').textContent=choosing?(m==='brief'?'Unpleasant / high activation':m==='small'?'Unpleasant / low activation':'Your next choice'):follow?'Later check-in':rated?'Your reported sequence':'Your choice';
  byId('cue-heading').textContent=choosing?(m==='brief'?'A pause is available':m==='small'?'One smaller goal':'Choose how to continue'):playing?titles[response]:follow?'A later moment':'Frustration and recovery';
  byId('cue-target').textContent=choosing?'Every response remains your choice.':playing?'First report: '+before.label:follow?'The next check-in can stay the same or change.':'';
- byId('cue-explanation').textContent='CMA combines pleasantness and activation. The prototype can highlight a pause or a smaller goal from a recent check-in. These are design choices to test, not automatic instructions.';
+ byId('cue-explanation').textContent='CMA combines pleasantness and activation. Your recent check-in highlights a pause or a smaller goal. You choose the response.';
  byId('cue-details').open=false;byId('cue-details').hidden=!choosing;
  byId('smaller').hidden=!choosing;byId('keep-playing').hidden=!choosing;
  byId('cue-feedback').hidden=!follow;byId('try-cue').hidden=!choosing;byId('follow-up').hidden=!playing;
