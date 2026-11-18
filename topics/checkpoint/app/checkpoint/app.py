@@ -190,7 +190,7 @@ class PreferencesDialog(QDialog):
         self.hands=QCheckBox('Track hands near the mouth');self.hands.setChecked(parent.session.hand_tracking);root.addWidget(self.hands)
         self.categories=QCheckBox('Show eight-class expression model estimates');self.categories.setChecked(parent.session.category_estimates);root.addWidget(self.categories)
         strength=QHBoxLayout();strength.addWidget(label('Nori facial movement strength',14),1);self.face_gain=QDoubleSpinBox();self.face_gain.setRange(.7,3.);self.face_gain.setSingleStep(.1);self.face_gain.setValue(parent.session.face_gain);strength.addWidget(self.face_gain);root.addLayout(strength)
-        root.addWidget(label('Research only. Expression categories cannot establish mood, frustration or either CMA dimension. They never change your check-in.',13,True))
+        root.addWidget(label('Camera estimates and your CMA check-in are separate sources.',13,True))
         root.addWidget(label('Game context',18,bold=True));self.detect_games=QCheckBox('Detect supported foreground games on Windows');self.detect_games.setChecked(parent.detect_games);root.addWidget(self.detect_games)
         self.screen_tracking=QCheckBox('Observe the Getting Over It game window');self.screen_tracking.setChecked(parent.screen_tracking);root.addWidget(self.screen_tracking)
         root.addWidget(label('Only the foreground Getting Over It window is sampled, twice per second. Climb/fall estimates use background motion; named sections can be recognised after you mark a view. These are estimates, not confirmed game events. No screen images are saved. Other windows are not analysed.',13,True))
@@ -199,7 +199,7 @@ class PreferencesDialog(QDialog):
         self.nudges=QCheckBox('Offer support after possible setbacks');self.nudges.setChecked(parent.nudges_enabled);root.addWidget(self.nudges)
         self.support_mode=QComboBox();self.support_mode.addItems(MODES);self.support_mode.setCurrentText(parent.support_mode);root.addWidget(self.support_mode)
         root.addWidget(label('Match my check-in uses only your last two-minute CMA report: unpleasant and activated offers a pause; pleasant offers encouragement. Otherwise a small next step. These are adjustable design rules, not a diagnosis.',13,True))
-        root.addWidget(label('Waits until the game view settles after a possible fall. Input timing and a camera are optional. Automatic tips are at least two minutes apart. Ctrl+Alt+F8 marks a setback; Ctrl+Alt+F9 mutes tips while play support is running. Use Start play support to show Nori over the game. Borderless or windowed play is recommended.',13,True))
+        root.addWidget(label('A brief reminder after about 2½ minutes of active play or when the view settles after a fall. Camera optional. Ctrl+Alt+F8: I fell. Ctrl+Alt+F9: mute reminders. Use borderless or windowed play for Nori.',13,True))
         frequency=QHBoxLayout();frequency.addWidget(label('Analysis frames per second',14),1);self.frequency=QDoubleSpinBox();self.frequency.setRange(.25,15);self.frequency.setSingleStep(.25);self.frequency.setValue(parent.frequency);self.frequency.setEnabled(self.experimental.isChecked());self.experimental.toggled.connect(self.frequency.setEnabled);frequency.addWidget(self.frequency);root.addLayout(frequency)
         root.addWidget(label('Applies to this app launch. Saving settings pauses an active camera or video; resume it when you choose.',13,True));root.addStretch()
         box=QDialogButtonBox(QDialogButtonBox.StandardButton.Save|QDialogButtonBox.StandardButton.Cancel);box.accepted.connect(self.accept);box.rejected.connect(self.reject);outer.addWidget(box)
@@ -244,7 +244,7 @@ class MainWindow(QMainWindow):
         self.mark_start_control=with_icon(button('Mark section',self.mark_start_view),'flag');self.mark_start_control.setMinimumHeight(32);self.mark_start_control.hide();tools.addWidget(self.mark_start_control)
         self.pip_control=with_icon(button('Show Nori',self.toggle_overlay),'overlay');self.pip_control.setMinimumHeight(32);tools.addWidget(self.pip_control)
         self.phone_control=with_icon(button('Phone',self.show_phone),'phone');self.phone_control.setMinimumHeight(32);tools.addWidget(self.phone_control)
-        self.support_toggle=QCheckBox('Setback tips');self.support_toggle.toggled.connect(self.set_support_enabled);tools.addWidget(self.support_toggle)
+        self.support_toggle=QCheckBox('Reminders');self.support_toggle.toggled.connect(self.set_support_enabled);tools.addWidget(self.support_toggle)
         self.setback_control=with_icon(button('I fell',self.mark_setback),'flag');self.setback_control.setMinimumHeight(30);tools.addWidget(self.setback_control);root.addLayout(tools)
         self.support_status=label('A small next step after a setback. Camera optional.',12,True);root.addWidget(self.support_status)
         foot=QHBoxLayout();self.footer=label('',11,True);foot.addWidget(self.footer,1)
@@ -634,7 +634,7 @@ class MainWindow(QMainWindow):
             self.last_nudge=state['nudge']
         self.support_toggle.blockSignals(True);self.support_toggle.setChecked(self.nudges_enabled);self.support_toggle.blockSignals(False)
         self.support_toggle.setEnabled(s.active and s.break_deadline is None);self.setback_control.setEnabled(s.active and s.break_deadline is None)
-        self.support_status.setText(self.last_nudge or ('Watching for a possible fall. Tips wait for the view to settle.' if self.detect_games and self.nudges_enabled else 'Automatic tips muted.' if self.detect_games else 'I fell: a manual next step. Start play support for screen estimates.'))
+        self.support_status.setText(self.last_nudge or ('A reminder after a setback or about 2½ minutes of play.' if self.detect_games and self.nudges_enabled else 'Reminders muted.' if self.detect_games else 'I fell: a manual next step. Start play support for screen estimates.'))
         for preview in self.preview_widgets:
             if s.camera_active and self.last_image is not None:
                 if preview.isVisible():preview.set_image(self.last_image)

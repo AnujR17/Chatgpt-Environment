@@ -1,5 +1,5 @@
 """Real Qt interaction with scripted game events; never a game-accuracy claim."""
-import json,tempfile
+import json,tempfile,time
 from pathlib import Path
 from PySide6.QtCore import QCoreApplication,QEvent,Qt,QPoint
 from PySide6.QtTest import QTest
@@ -28,6 +28,11 @@ def run():
     w.support_toggle.click();assert not w.last_nudge and not w.overlay.message
     w.setback_control.click();assert w.last_nudge and w.latest_companion['play_support']['basis']=='Player marked a setback'
     assert not w.nudges_enabled  # Manual help preserves the player's mute preference.
+    w.nudges_enabled=True;policy=w.companion.support;policy.play_seconds=149.9;policy.last_tick=time.monotonic()-.5;policy.was_foreground=True;policy.last_prompt=time.monotonic()-151
+    w.next_export=0.;scene('steady');app.processEvents()
+    assert w.last_nudge=='A quick reset? Relax your grip, then go again.'
+    assert w.latest_companion['play_support']['basis']=='Active gaming reminder'
+    w.overlay.grab().save(str(OUT/'reminder-overlay.png'));w.grab().save(str(OUT/'play-reminder.png'))
     for width,height in ((1440,900),(1024,768)):
         w.resize(width,height);app.processEvents()
         for b in (w.capture_control,w.checkin_button,w.setback_control,w.game_detection_control):
@@ -39,7 +44,7 @@ def run():
     gallery.show();QTest.qWait(800);gallery.grab().save(str(OUT/'expression-gallery.png'));gallery.close();gallery.deleteLater();QCoreApplication.sendPostedEvents(None,QEvent.Type.DeferredDelete)
  result={'fixture':'Scripted game observations and authored expression poses; no real-game accuracy or user benefit established',
          'fall_then_settled_view_to_native_overlay_and_phone_payload':'passed','no_camera_input_or_checkin_required':'passed',
-         'mute_and_manual_fallback':'passed','1440_and_1024_controls_visible':'passed',
+         'active_play_reminder_to_overlay_and_phone':'passed','mute_and_manual_fallback':'passed','1440_and_1024_controls_visible':'passed',
          'short_brow_native_gallery':'rendered','windows_global_shortcuts':'requires Windows check'}
  (OUT/'play-support-verification.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
 
