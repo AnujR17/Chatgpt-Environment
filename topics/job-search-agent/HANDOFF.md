@@ -1,6 +1,57 @@
 # Job search agent handoff
 
-Updated 17 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 18 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 18 November public research — publication pending
+
+137 retained / 109 active-held / 28 archived; 298 companies, 20 established
+profiles, 50 coverage rows (34 checked today). Two new held internships:
+IMIT Park exact Indeed73215745dfd91098, Irinjalakuda/Thrissur, pay/duration
+unknown; BNP Group indexed LinkedIn4419310045, remote India, three months,
+paid wording without amount, normal original restricted/current intake unknown.
+No new verified monthly stipend match, junior role or current student intake.
+Both current pay fields null. Platform dates distinct from employer originals.
+
+Three exact employer requisitions removed and archived: LokalCB2EDD7186 has
+explicit ?not_found redirect plus public detail404; Glance7916115 and
+project44 8101750 have ?error redirects, exact detail404 and absence from their
+current public inventories. Retain stable IDs, listing/source/pay/requirement
+history and browser-local overrides. No company-wide closure inferred.
+Other missing/restricted pages remain unresolved; changed-page comparison mostly
+shows navigation, related jobs and relative dates. Neurai now readable after
+yesterday's timeout, not a new posting or reconfirmed paid cohort.
+
+Five directory targets: FamApp Dream, SurveySparrow Dream, The Whole Truth
+Workable, IMIT Park and BNP Group Possible. Brand presence is not workplace
+quality, hiring probability or a vacancy. Fam public Lever14jobs has no design
+title; older Peerlist Apply mirror is not renewed intake. SurveySparrow older
+Indeed10–20k/year and2025graduate wording must not become a monthly match.
+The Whole Truth Unstop visible pay blank versus Unpaid/YEAR metadata and city
+unknown is directory-only. Existing company sources/status history updated;
+ProCreator5–15k minimum fails other-city floor; Juspay global noopen/oldPDEshell
+not active intake. All old requirements,contacts,tiers,benchmarks,screenings retained.
+
+109 active primaries:98 fetched,8 restricted,3 missing,zero errors. Broad
+public/indexed board/remote/startup/map coverage recorded; no new eligible
+Gandhinagar/Ahmedabad original verified. Onething/HireDesigners/Devoq checked,
+NetBramha/Lollypop/yuj/FlytBase rotation. Dated4–18November LinkedIn Posts,
+Updates,authors and X queries; no new verified14daystandalone social post.
+X/LinkedIn search restrictions,Naukri robots/client shells,Internshala search
+restrictions remain gaps,not zero openings.44query plan date18November/cutoff4Nov;
+generation is not execution. HN300topIDs/243texts/61broadkeywords,zeroerrors,
+no newly changed keyword-matched text versus17November. Research and synthetic
+QA outside Git: /workspace/job-refresh-nov18-review/. No actual private browser
+state read. No UI/model/clipper/seed/collector-main/assistant/task/schedule changes.
+No applications, employer messages or assessments submitted. Supported exports
+regenerated. Five JS suites, eight Python tests, build and preservation audit pass.
+Local desktop/mobile checks confirm 109 active/28 archived, 298 companies,
+20 established profiles/three established-role matches and 50 coverage rows.
+Two new held cards show unknown pay. Synthetic saved application overrides for
+both age-archived BON and newly removed Lokal persist, as do synthetic blacklist,
+private assessment, notes and backup/restore. No actual browser-local data read.
+Zero runtime errors or POSTs. Discover/Companies have no mobile overflow; existing
+Sources navigation overflow remains (390px viewport/545px document). No UI change.
+Exact production publication and live verification pending below.
 
 ## 17 November public research — published
 

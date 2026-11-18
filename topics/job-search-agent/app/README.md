@@ -8,25 +8,26 @@ Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The p
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
-## 17 November research snapshot
+## 18 November research snapshot
 
-135 retained roles (110active/held,25archived),293company targets and50coverage
-records. New Wibits UI/UX internship in Nagercoil:15kINR/month,olderApril advert
-with displayed30November closing;duration/student cohort and joining unconfirmed.
-New Electrifex Kochi junior/fresher alternative:salaryundisclosed,not internship.
-Four obsolete next-action thresholds corrected with history retained. No new
-verified14daystandalone social post or confirmed student joining. Four company
-targets added,including product-only CrelioHealth and adjacent-design-only IITGNCCL.
-See [today's report](public/data/collection-report.md). Exact-commit production
-READY,live feed/export bytes and desktop/mobile checks verified17November.
+137 retained roles (109 active/held, 28 archived), 298 company targets and 50
+coverage records. Two new held internships: IMIT Park on Indeed (Kerala,
+pay/duration unknown) and BNP Group on indexed LinkedIn Jobs (remote, three
+months, paid wording without an amount; original restricted/current intake
+unverified). No new confirmed stipend match or verified fresh social-only post.
+Exact Lokal, Glance and project44 employer requisitions removed and archived
+with history. Five company targets added, including FamApp, SurveySparrow and
+The Whole Truth; older mirrors/pay conflicts do not establish active paid roles.
+See [today's report](public/data/collection-report.md). Publication pending exact
+commit READY/live verification; the previous verified release is recorded above.
 
 ## Established employers and workplace screening
 
 The company directory puts20 researched established employers first and has an
 Established employers filter. Discover has the same filter and a shortcut to
 the directory. Added Intuit, SAP and ServiceNow programme targets; these are not
-new verified India design vacancies. The directory now has293 companies and50
-source-coverage records. Existing role records and pay/history remain;all25 archived records retain their evidence.
+new verified India design vacancies. The directory now has298 companies and50
+source-coverage records. Existing role records and pay/history remain;all 28 archived records retain their evidence.
 
 A sourced Lala-style screening badge distinguishes published processes,
 specific hiring terms to check and unassessed companies. The definition and
@@ -44,11 +45,11 @@ is changed by an assessment. No Assistant page or AI backend was reintroduced.
 
 ## Included
 
-- 135 retained role records (110active/held,25archived),researched17November2026. One new internship and one clearly marked junior alternative on hold;current cohort/eligibility unknown. See [today's report](public/data/collection-report.md).
+- 137 retained role records (109 active/held, 28 archived), researched 18 November 2026. Two new held internships; pay and current student intake unresolved. See [today's report](public/data/collection-report.md).
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat and remote India minimum ₹10,000/month, with ₹15,000+ preferred; other eligible cities minimum ₹15,000/month. Higher pay remains welcome. Earlier dated research may use former thresholds.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with293 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with 298 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.

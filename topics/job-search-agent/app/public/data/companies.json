@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-17",
+  "researchedAt": "2026-11-18",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -2060,6 +2060,12 @@
           "evidenceStatus": "Official careers page fetched",
           "checkedAt": "2026-10-24",
           "detail": "HTTP 200; career-page content was accessible. A career page does not establish a matching opening."
+        },
+        {
+          "url": "https://joinus.juspay.in/?jobId=PDE01",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal oldPDE 01 portal is 7 character Join Us client shell; indexed Product Designer Intern title has no independently current cohort. Current official juspay.in/careers redirectsjuspay.io/careers and says no open global roles. Old Talentd 40 k-up-to and oldsocialposts are not current pay/intake; do not add active card."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -2067,7 +2073,7 @@
       "tier": "Workable",
       "focus": "Payments infrastructure",
       "rationale": "Product team working in payments infrastructure. Watch published internship and early-career roles; current evidence is recorded below.",
-      "researchedAt": "2026-10-24",
+      "researchedAt": "2026-11-18",
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed."
     },
     {
@@ -3710,7 +3716,7 @@
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred role families from the company product area; these are watch targets, not advertised vacancies or promises of internships.",
-      "openingStatus": "Verified official internship; stipend undisclosed",
+      "openingStatus": "Exact internship requisition 8101750 removed from employer ATS; no renewed eligible internship verified. Other hiring is separate.",
       "roles": [
         {
           "title": "Product Design Intern",
@@ -3742,15 +3748,22 @@
               "sourceUrl": "https://job-boards.greenhouse.io/project44/jobs/8101750"
             }
           ],
-          "seniority": "Internship",
+          "seniority": "Historical internship; exact employer requisition removed",
           "location": "Bengaluru, India; office five days/week",
-          "evidenceStatus": "Fresh retained original and Indeed crosspost describe same six-month Bengaluru role. Indeed Convey header is existing mislabelled crosspost already saved;no duplicate vacancy. Five-day office condition retained.",
+          "evidenceStatus": "Exact employer Greenhouse requisition 8101750 redirects to the employer job index with ?error=true; its public detail endpoint returns HTTP 404. The current public employer inventory does not contain this requisition. This supports removal of this exact listing, not company-wide closure or an outcome for saved applications. Prior pay, requirements and source history are retained; browser-local application stages still override feed defaults.",
           "notes": "Employer listing checked directly and corroborated on company product-team page. Pay undisclosed; hold until stipend confirmed.",
-          "checkedAt": "2026-11-05",
+          "checkedAt": "2026-11-18",
           "pay": null,
           "payVerified": false,
           "id": "project44-51a9c17948",
-          "jobId": "careers-project44-51a9c17948"
+          "jobId": "careers-project44-51a9c17948",
+          "evidenceHistory": [
+            {
+              "checkedAt": "2026-11-05",
+              "seniority": "Internship",
+              "evidenceStatus": "Fresh retained original and Indeed crosspost describe same six-month Bengaluru role. Indeed Convey header is existing mislabelled crosspost already saved;no duplicate vacancy. Five-day office condition retained."
+            }
+          ]
         }
       ],
       "contact": {
@@ -3811,6 +3824,12 @@
           "label": "11November established-employer visibility",
           "checkedAt": "2026-11-11",
           "evidenceStatus": "Established enterprise logistics-software product employer with a retained original Bengaluru six-month Product Design Intern advert. Numerical stipend,current cohort and joining eligibility still need confirmation."
+        },
+        {
+          "url": "https://boards-api.greenhouse.io/v1/boards/project44/jobs/8101750",
+          "label": "18 November exact employer requisition check",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Exact employer Greenhouse requisition 8101750 redirects to the employer job index with ?error=true; its public detail endpoint returns HTTP 404. The current public employer inventory does not contain this requisition. This supports removal of this exact listing, not company-wide closure or an outcome for saved applications. Prior pay, requirements and source history are retained; browser-local application stages still override feed defaults."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -3818,7 +3837,7 @@
       "tier": "Workable",
       "focus": "Supply chain decision intelligence SaaS",
       "rationale": "Product team working in supply chain decision intelligence saas. Watch published internship and early-career roles; current evidence is recorded below.",
-      "researchedAt": "2026-11-05",
+      "researchedAt": "2026-11-18",
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
       "employerProfile": {
         "status": "established",
@@ -3849,7 +3868,13 @@
         ],
         "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
         "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
-      }
+      },
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-05",
+          "openingStatus": "Verified official internship; stipend undisclosed"
+        }
+      ]
     },
     {
       "id": "frappe",
@@ -4216,7 +4241,7 @@
         "UX Designer"
       ],
       "likelyRolesEvidence": "Role family; current role evidence appears separately below.",
-      "openingStatus": "Previously indexed directory role now corroborated through the public employer Workable API: state published, on_site, six months. Listing stipend is absent. Figma/Rive/After Effects appear as good-to-have tools; no claim of mandatory motion-tool mastery.",
+      "openingStatus": "Exact Product Designer Intern shortcodeCB2EDD7186 removed from employer ATS;no renewed internship verified. This does not establish company-wide closure.",
       "roles": [
         {
           "title": "Product Designer Intern",
@@ -4248,15 +4273,22 @@
               "sourceUrl": "https://apply.workable.com/lokal-app/j/CB2EDD7186"
             }
           ],
-          "seniority": "Internship",
+          "seniority": "Historical internship; exact employer requisition removed",
           "location": "Bengaluru, Karnataka, India",
-          "evidenceStatus": "Previously indexed directory role now corroborated through the public employer Workable API: state published, on_site, six months. Listing stipend is absent. Figma/Rive/After Effects appear as good-to-have tools; no claim of mandatory motion-tool mastery.",
+          "evidenceStatus": "Exact employer Workable shortcodeCB2EDD7186 now redirects to https://apply.workable.com/lokal-app/?not_found=true. Normal published public detail endpoint /api/v2/accounts/lokal-app/jobs/CB2EDD7186 returns404 with bodyNotFound. This establishes removal of this exact advertised requisition,not company-wide hiring closure or an inferred outcome for any saved application. Foundit/GrabJobs older mirrors also sayclosed,but mirror dates/status are supplementary,not the original basis. Prior role,requirements,compensation and source/history retained;browser-local stages continue to override the feed default.",
           "notes": "Current employer ATS published state verified; compensation and intake dates still unresolved.",
-          "checkedAt": "2026-10-26",
+          "checkedAt": "2026-11-18",
           "pay": null,
           "payVerified": false,
           "id": "lokal-4ed59247db",
-          "jobId": "careers-lokal-product-designer-intern-cb2edd7186"
+          "jobId": "careers-lokal-product-designer-intern-cb2edd7186",
+          "evidenceHistory": [
+            {
+              "checkedAt": "2026-10-26",
+              "seniority": "Internship",
+              "evidenceStatus": "Previously indexed directory role now corroborated through the public employer Workable API: state published, on_site, six months. Listing stipend is absent. Figma/Rive/After Effects appear as good-to-have tools; no claim of mandatory motion-tool mastery."
+            }
+          ]
         }
       ],
       "contact": {
@@ -4302,6 +4334,12 @@
           "label": "15 November public research",
           "checkedAt": "2026-11-15",
           "evidenceStatus": "Normal exact retained six-month Bangalore internship;older AbhishekDas7407780438557069312 post and retained7511146843515461632 corroborate same programme. Join announcements not vacancies;unknown stipend/currentcohort."
+        },
+        {
+          "url": "https://apply.workable.com/lokal-app/j/CB2EDD7186",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Exact employer Workable shortcode CB 2 EDD 7186 now redirects to https://apply.workable.com/lokal-app/?not_found=true. Normal published public detail endpoint /api/v 2/accounts/lokal-app/jobs/CB 2 EDD 7186 returns 404 with body Not Found. This establishes removal of this exact advertised requisition, not company-wide hiring closure or an inferred outcome for any saved application. Foundit/Grab Jobs older mirrors also sayclosed, but mirror dates/status are supplementary, not the original basis. Prior role, requirements, compensation and source/history retained; browser-local stages continue to override the feed default."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -4309,10 +4347,16 @@
       "tier": "Workable",
       "focus": "Local-language consumer app",
       "rationale": "Product team working in local-language consumer app. Watch published internship and early-career roles; current evidence is recorded below.",
-      "researchedAt": "2026-11-15",
+      "researchedAt": "2026-11-18",
       "personalFitStatus": "Unassessed; no resume or portfolio reviewed.",
       "payNote": "Stipend amount not stated; no qualifying monthly payment established.",
-      "currentOpeningVerified": true
+      "currentOpeningVerified": true,
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-11-15",
+          "openingStatus": "Previously indexed directory role now corroborated through the public employer Workable API: state published, on_site, six months. Listing stipend is absent. Figma/Rive/After Effects appear as good-to-have tools; no claim of mandatory motion-tool mastery."
+        }
+      ]
     },
     {
       "id": "netbramha-studios",
@@ -5984,6 +6028,12 @@
           "label": "LinkedIn internship cross-post",
           "evidenceStatus": "Indexed listing, older",
           "observedAt": "2026-10-24"
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=e342842eceeabd8a",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal exact older UI/UXintern Navi Mumbai advert 5–15 k/month, minimum 5 k below 15 k floor; not an eligible stipend match. Prosple mirror omits amount; Shine annual 60–180 k and Weekday 5–10 LPA must not override exact lower monthly range or be called current internship offer."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -5995,7 +6045,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Navi Mumbai. Check each role for remote eligibility.",
-      "researchedAt": "2026-10-24"
+      "researchedAt": "2026-11-18"
     },
     {
       "id": "lemon-yellow",
@@ -8386,14 +8436,14 @@
       "rationale": "Published UX internship; pay and intake still need confirmation.",
       "careersUrl": "https://glance.com/careers/latest",
       "locationNote": "Bengaluru; remote eligibility not stated",
-      "openingStatus": "Official UX internship detail and application available",
+      "openingStatus": "Exact internship requisition 7916115 removed from employer ATS; no renewed eligible internship verified. Other hiring is separate.",
       "payNote": "No employer-stated amount; aggregator INR30–40k/month is unverified.",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not additional vacancies.",
-      "researchedAt": "2026-10-25",
+      "researchedAt": "2026-11-18",
       "sources": [
         {
           "url": "https://job-boards.greenhouse.io/glance/jobs/7916115",
@@ -8418,6 +8468,12 @@
           "label": "11November established-employer visibility",
           "checkedAt": "2026-11-11",
           "evidenceStatus": "Recognised consumer-product/design organisation with a retained original Bengaluru UX Design Intern advert. Exact stipend,current duration and student intake require confirmation; visibility is not a culture guarantee."
+        },
+        {
+          "url": "https://boards-api.greenhouse.io/v1/boards/glance/jobs/7916115",
+          "label": "18 November exact employer requisition check",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Exact employer Greenhouse requisition 7916115 redirects to the employer job index with ?error=true; its public detail endpoint returns HTTP 404. The current public employer inventory does not contain this requisition. This supports removal of this exact listing, not company-wide closure or an outcome for saved applications. Prior pay, requirements and source history are retained; browser-local application stages still override feed defaults."
         }
       ],
       "contact": {
@@ -8431,7 +8487,7 @@
           "jobId": "glance-ux-intern",
           "title": "UX Design Intern",
           "url": "https://job-boards.greenhouse.io/glance/jobs/7916115",
-          "seniority": "Internship",
+          "seniority": "Historical internship; exact employer requisition removed",
           "location": "Bengaluru",
           "requirements": [
             {
@@ -8455,7 +8511,15 @@
               "sourceUrl": "https://job-boards.greenhouse.io/glance/jobs/7916115"
             }
           ],
-          "evidenceStatus": "Official role accessible; pay/intake unconfirmed."
+          "evidenceStatus": "Exact employer Greenhouse requisition 7916115 redirects to the employer job index with ?error=true; its public detail endpoint returns HTTP 404. The current public employer inventory does not contain this requisition. This supports removal of this exact listing, not company-wide closure or an outcome for saved applications. Prior pay, requirements and source history are retained; browser-local application stages still override feed defaults.",
+          "evidenceHistory": [
+            {
+              "checkedAt": null,
+              "seniority": "Internship",
+              "evidenceStatus": "Official role accessible; pay/intake unconfirmed."
+            }
+          ],
+          "checkedAt": "2026-11-18"
         }
       ],
       "employerProfile": {
@@ -8487,7 +8551,13 @@
         ],
         "limits": "No representative employee-review sample or workplace investigation completed. Team/manager experience may differ.",
         "nextAction": "Confirm reporting manager,design mentorship,written pay,hours,leave and grievance process. Speak to recent interns from the same team."
-      }
+      },
+      "openingStatusHistory": [
+        {
+          "checkedAt": "2026-10-25",
+          "openingStatus": "Official UX internship detail and application available"
+        }
+      ]
     },
     {
       "id": "salesforce",
@@ -20208,7 +20278,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-17",
+      "researchedAt": "2026-11-18",
       "sources": [
         {
           "url": "https://www.onething.design/careers/product-design-intern-gurgaon",
@@ -20257,6 +20327,12 @@
           "label": "17 November public research",
           "checkedAt": "2026-11-17",
           "evidenceStatus": "Normal careers index and retained15k/month six-monthGurgaon exception retained. Indexed current companyUpdates says1w/final-semester,but exact original publication/permalink unverified;independent employer role supports held card,not freshsocial-only claim."
+        },
+        {
+          "url": "https://www.onething.design/careers",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal currentcareers retains employer-backed Gurgaonexception; indexed company Update 1 w/finalsemester lacks exactpermalink/date. No freshsocial-only recommendation; student cohort remainsunconfirmed."
         }
       ],
       "roles": [
@@ -20342,7 +20418,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-17",
+      "researchedAt": "2026-11-18",
       "sources": [
         {
           "url": "https://www.devoqdesign.com/career/ui-ux-designer/",
@@ -20385,6 +20461,12 @@
           "label": "17 November public research",
           "checkedAt": "2026-11-17",
           "evidenceStatus": "Normal career route still accepts UIUX interns;design role stipend,current student cohort and joining unknown. Indexed olderpost/career copy not a verified new post within14days."
+        },
+        {
+          "url": "https://www.devoqdesign.com/career/",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal employer internship route retained, pay/student intake unknown. Old six-month Linked In reactions and 3 week Jobs copy not verified new posts."
         }
       ],
       "roles": [
@@ -20451,7 +20533,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-17",
+      "researchedAt": "2026-11-18",
       "sources": [
         {
           "url": "https://hiredesigners.in/jobs/all-jobs-november-2026-uiux-designer-gurgaon-200ggn-ud-aa/",
@@ -20512,6 +20594,12 @@
           "label": "17 November public research",
           "checkedAt": "2026-11-17",
           "evidenceStatus": "Normal current all-jobs inventory and indexed companyUpdates checked. RecentJuniorArchitect0–1year Delhi and fashion/experienced roles are not UX internships. Beryl graphic intern exactLinkedIn4480655268 says no longer accepting;not added. Client recruitment,own vacancies and talent database separated."
+        },
+        {
+          "url": "https://hiredesigners.in/all-jobs/",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal currentalljobs andindexedcompany/client posts checked. Berylgraphic intern indexedclosed; Noida/fashion/architecture not eligiblecoreUX. Client recruitment is distinct from ownhiring and talentpool."
         }
       ],
       "roles": [
@@ -22201,14 +22289,408 @@
         "sourceUrl": "https://ccl.iitgn.ac.in/jobs/toy-and-game-design-intern"
       },
       "website": "https://ccl.iitgn.ac.in/"
+    },
+    {
+      "id": "imit-park",
+      "name": "IMIT Park",
+      "company": "IMIT Park",
+      "companyType": "IT / design services team — legal employer to confirm",
+      "sector": "Web/mobile interface design and development",
+      "focus": "Web/mobile interface design and development",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Possible editable services-team preference from explicit early-career UI/UX work. Legal employer, paid/no-fee status, mentorship and current intake require confirmation; not workplace endorsement.",
+      "careersUrl": "https://in.indeed.com/viewjob?jk=73215745dfd91098",
+      "locationNote": "Irinjalakuda, Thrissur, Kerala, in person; not remote",
+      "openingStatus": "Readable original-platform internship; paid terms, duration and current student cohort unknown",
+      "currentOpeningVerified": false,
+      "payNote": "Exact advert says pay information not provided. No stipend amount or paid status inferred from other roles, training programmes or employer reputation.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-18",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=73215745dfd91098",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "The exact Indeed advert names IMIT Park, UI/UX Design Intern, Irinjalakuda/Thrissur, Kerala, in person, Internship/Fresher. Pay information is not provided. It requests Figma, wireframes/prototypes, visual hierarchy, typography/color, responsive web/mobile UI, basic research and developer collaboration. Degree/diploma or strong design interest and a personal portfolio are accepted; freshers are welcome. The 5 November 2026 timestamp is a platform date, not a verified employer-original posting date. Duration, stipend, joining and current enrolled-student eligibility are unstated. The normal company homepage is an eight-character client shell; indexed careers/contact PHP routes return 404. Employer identity and employment terms need confirmation. This advert states no fee requirement; unrelated training offers do not establish internship pay or fees."
+        },
+        {
+          "url": "https://www.imitpark.com/",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal homepage client shell; indexed careers.php/contact.php routes 404. No original-site current recruitment or legal employer terms claimed verified."
+        }
+      ],
+      "roles": [
+        {
+          "id": "indeed-imit-park-uiux-intern-73215745dfd91098",
+          "jobId": "indeed-imit-park-uiux-intern-73215745dfd91098",
+          "title": "UI/UX Design Intern",
+          "url": "https://in.indeed.com/viewjob?jk=73215745dfd91098",
+          "seniority": "Internship; current paid student intake unconfirmed",
+          "location": "Irinjalakuda, Thrissur, Kerala",
+          "requirements": [
+            {
+              "id": "eb39c2bf0f3e",
+              "text": "Basic UI/UX principles, Figma, wireframing and prototyping",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=73215745dfd91098"
+            },
+            {
+              "id": "2d42b6941c10",
+              "text": "Typography, color, layout and responsive web/mobile interface design",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=73215745dfd91098"
+            },
+            {
+              "id": "52fd3575559f",
+              "text": "Basic research, user feedback and developer collaboration",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=73215745dfd91098"
+            },
+            {
+              "id": "7a7bf829deab",
+              "text": "Degree/diploma or strong design interest; freshers with personal projects/portfolio welcome",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=73215745dfd91098"
+            }
+          ],
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "The exact Indeed advert names IMIT Park, UI/UX Design Intern, Irinjalakuda/Thrissur, Kerala, in person, Internship/Fresher. Pay information is not provided. It requests Figma, wireframes/prototypes, visual hierarchy, typography/color, responsive web/mobile UI, basic research and developer collaboration. Degree/diploma or strong design interest and a personal portfolio are accepted; freshers are welcome. The 5 November 2026 timestamp is a platform date, not a verified employer-original posting date. Duration, stipend, joining and current enrolled-student eligibility are unstated. The normal company homepage is an eight-character client shell; indexed careers/contact PHP routes return 404. Employer identity and employment terms need confirmation. This advert states no fee requirement; unrelated training offers do not establish internship pay or fees."
+        }
+      ],
+      "contact": {
+        "url": "https://in.indeed.com/viewjob?jk=73215745dfd91098",
+        "kind": "Exact public Indeed application route; not submitted",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=73215745dfd91098"
+      },
+      "website": "https://www.imitpark.com/"
+    },
+    {
+      "id": "bnp-group-events",
+      "name": "BNP Group",
+      "company": "BNP Group",
+      "companyType": "Event-support / production services company",
+      "sector": "Event infrastructure, production and IT/marketing services",
+      "focus": "Event infrastructure, production and IT/marketing services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Possible editable remote-interface scope preference from a named public advert. Event-services identity corroborated; current design intake, legal employer, pay and workplace quality unverified.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045",
+      "locationNote": "Indexed jobremote India/Bengaluru; current remote employment arrangement unconfirmed",
+      "openingStatus": "Indexed UI/UXintern says paid 3 months; normal original restricted and renewed intake unconfirmed",
+      "currentOpeningVerified": false,
+      "payNote": "Indexed exact advert says paid only; no numerical stipend. No current monthly amount inferred from company identity or unrelated employers.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-18",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "The public indexed exact Linked In Jobs advert 4419310045 names BNP Group, UI/UX Design Intern (Remote), Bengaluru/India, three months and Paid Internship. No stipend amount, student-year condition or joining date is stated. It requests flows, wireframes, high-fidelity UI, Figma prototypes, components, accessibility and developer handoff; Photoshop/Illustrator basics, with Adobe XD and motion/interaction knowledge preferred. Normal original job/company pages are restricted. Indexed text does not establish original access, posting date or renewed current intake. The normal bnpgroup.in site identifies an event-support/production and IT/marketing services business; it corroborates identity only, not this design vacancy. The exact legal employer, remote India recruitment and stipend still need confirmation. hr@bnpgroup.in is published in the indexed job; it was not guessed or contacted. No bank affiliation is inferred from the acronym."
+        },
+        {
+          "url": "https://www.bnpgroup.in/",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal original site identifies event-support/production and IT/marketing scope. This corroborates identity, not the UI/UX internship/current cohort. Company contact route 404; no recruitment inbox guessed from general contacts."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-bnp-group-uiux-intern-4419310045",
+          "jobId": "linkedin-bnp-group-uiux-intern-4419310045",
+          "title": "UI/UX Design Intern — remote intake unverified",
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045",
+          "seniority": "Internship; current paid student intake unconfirmed",
+          "location": "Remote India per indexed advert; Bengaluru header",
+          "requirements": [
+            {
+              "id": "38b82034d6b2",
+              "text": "Figma, flows, wireframes, prototypes and reusable UI components",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045"
+            },
+            {
+              "id": "678f4bd60ca1",
+              "text": "Responsive/mobile-first design, accessibility and usability",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045"
+            },
+            {
+              "id": "eefdf1af6860",
+              "text": "Developer handoff and iterative design reviews",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045"
+            },
+            {
+              "id": "374af11eaf42",
+              "text": "Photoshop/Illustrator basics; AdobeXD, motion/interaction knowledge and portfolio preferred",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045"
+            }
+          ],
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "The public indexed exact Linked In Jobs advert 4419310045 names BNP Group, UI/UX Design Intern (Remote), Bengaluru/India, three months and Paid Internship. No stipend amount, student-year condition or joining date is stated. It requests flows, wireframes, high-fidelity UI, Figma prototypes, components, accessibility and developer handoff; Photoshop/Illustrator basics, with Adobe XD and motion/interaction knowledge preferred. Normal original job/company pages are restricted. Indexed text does not establish original access, posting date or renewed current intake. The normal bnpgroup.in site identifies an event-support/production and IT/marketing services business; it corroborates identity only, not this design vacancy. The exact legal employer, remote India recruitment and stipend still need confirmation. hr@bnpgroup.in is published in the indexed job; it was not guessed or contacted. No bank affiliation is inferred from the acronym."
+        }
+      ],
+      "contact": {
+        "email": "hr@bnpgroup.in",
+        "url": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045",
+        "kind": "Recruitment inbox in indexed exact Linked In Jobs; not independently verified on company site, not contacted",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-design-intern-remote-at-bnp-group-4419310045"
+      },
+      "website": "https://www.bnpgroup.in/"
+    },
+    {
+      "id": "famapp-fampay",
+      "name": "FamApp (formerly FamPay)",
+      "company": "FamApp (formerly FamPay)",
+      "companyType": "Product company",
+      "sector": "Consumer payments, UPI/card experiences and financial interfaces",
+      "focus": "Consumer payments, UPI/card experiences and financial interfaces",
+      "tier": "Dream",
+      "categorySuggested": "Dream",
+      "categorySuggestedOnly": true,
+      "rationale": "Dream editable consumer-product preference for payment usability and mobile design problems. Current hiring, stipend, student eligibility and workplace quality are not implied by brand, funding or this target tier.",
+      "careersUrl": "https://jobs.lever.co/fampay",
+      "locationNote": "Older mirror:Bengaluru onsite 3 months; no current design-role geography/cohort verified",
+      "openingStatus": "Company watchlist; older mirrored design internship not corroborated by current 14-role employer public ATS inventory",
+      "currentOpeningVerified": false,
+      "payNote": "No current design-intern stipend established. Mirror perks/funding/brand are not salary evidence.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-18",
+      "sources": [
+        {
+          "url": "https://peerlist.io/company/famapp/careers/product-design-intern/jobh8oernp689gkppc79ejgp68a7nr",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal Peerlist mirror lists Bengaluru-onsite 3 month Product Design Intern, portfolio/personalprojects, Figma, consumer UX/interaction/visual fundamentals. No pay amount. Normal employer Lever public inventory/API currently contains 14 jobs and no design-title position. Built In 9499288 mirror says removed 22 July 2026; this is a mirror date/status, not employer-confirmed original posting or current closure. No exact renewed employer design intake established; do not add active card from surviving mirror Apply button. Funding/user counts in mirrors are not job/pay evidence."
+        },
+        {
+          "url": "https://api.lever.co/v0/postings/fampay?mode=json",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal public employer ATS 14 roles, no design-title entry; not authenticated/internal inventory or a companywide no-hiring claim."
+        },
+        {
+          "url": "https://www.famapp.in/",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal official product landing page corroborates brand/product route; no design vacancy or salary inferred."
+        }
+      ],
+      "roles": [
+        {
+          "id": "famapp-product-design-intern-peerlist-jobh8oernp689gkppc79ejgp68a7nr",
+          "title": "Product Design Intern",
+          "url": "https://peerlist.io/company/famapp/careers/product-design-intern/jobh8oernp689gkppc79ejgp68a7nr",
+          "seniority": "Older mirrored internship; renewed employer intake unverified",
+          "location": "Bengaluru onsite per mirror",
+          "requirements": [
+            {
+              "id": "0d49ae2a4829",
+              "text": "UX, interaction and visual-design fundamentals; Figma/prototyping",
+              "sourceUrl": "https://peerlist.io/company/famapp/careers/product-design-intern/jobh8oernp689gkppc79ejgp68a7nr"
+            },
+            {
+              "id": "6b9a71f07119",
+              "text": "Portfolio of product, internship or personal work; consumer mobile interest",
+              "sourceUrl": "https://peerlist.io/company/famapp/careers/product-design-intern/jobh8oernp689gkppc79ejgp68a7nr"
+            },
+            {
+              "id": "7c9a830775b7",
+              "text": "User flows, research, usability feedback and design-system contributions",
+              "sourceUrl": "https://peerlist.io/company/famapp/careers/product-design-intern/jobh8oernp689gkppc79ejgp68a7nr"
+            },
+            {
+              "id": "8e5dfd625828",
+              "text": "Previous startup/B 2 C freelance/internship experience, motion/illustration and AI tools are bonuses",
+              "sourceUrl": "https://peerlist.io/company/famapp/careers/product-design-intern/jobh8oernp689gkppc79ejgp68a7nr"
+            }
+          ],
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal Peerlist mirror lists Bengaluru-onsite 3 month Product Design Intern, portfolio/personalprojects, Figma, consumer UX/interaction/visual fundamentals. No pay amount. Normal employer Lever public inventory/API currently contains 14 jobs and no design-title position. Built In 9499288 mirror says removed 22 July 2026; this is a mirror date/status, not employer-confirmed original posting or current closure. No exact renewed employer design intake established; do not add active card from surviving mirror Apply button. Funding/user counts in mirrors are not job/pay evidence."
+        }
+      ],
+      "contact": {
+        "url": "https://jobs.lever.co/fampay",
+        "kind": "Current employer public ATS; no current design requisition verified",
+        "sourceUrl": "https://jobs.lever.co/fampay"
+      },
+      "website": "https://www.famapp.in/"
+    },
+    {
+      "id": "the-whole-truth-foods",
+      "name": "The Whole Truth Foods",
+      "company": "The Whole Truth Foods",
+      "companyType": "Product company",
+      "sector": "Consumer food products and e-commerce conversion experience",
+      "focus": "Consumer food products and e-commerce conversion experience",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Workable editable consumer-product/e-commerce design preference. Current paid student intake, city and workplace practice unconfirmed; official marketing/culture wording is not a quality guarantee.",
+      "careersUrl": "https://thewholetruthfoods.com/pages/careers",
+      "locationNote": "Exact Unstop says in-office/Pan India without a verified city; no remote or eligible city assumed",
+      "openingStatus": "Directory-only UI/UX internship lead; paid status and exact location unresolved",
+      "currentOpeningVerified": false,
+      "payNote": "Original Unstop visible Salary Not Disclosed and structured Unpaid/YEAR conflict. No numerical stipend established; not a paid match.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-18",
+      "sources": [
+        {
+          "url": "https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal exact Unstop 1812322 platform date 15 November 2026, deadline 29 November 00:00 IST, full time in-office 5 days, city unestablished. ConversionUX responsibilities:session recordings, heatmaps, GA 4, A/Bvariants, Figma components/prototypes and clean handoff. Visible Salary Not Disclosed conflicts with structured base Salary Unpaid/unit YEAR. Could be platform default, but paid status cannot be established. Official careers site corroborates consumer-food employer identity/generic careers, not an exact paid UI/UX intake. No role added as paid or eligible geography based on brand. No current salary or location invented."
+        },
+        {
+          "url": "https://thewholetruthfoods.com/pages/careers",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal official careers information andemployer-owned culture testimonials, not independently verified work conditions or exact UI/UX paid intake."
+        }
+      ],
+      "roles": [
+        {
+          "id": "whole-truth-uiux-intern-unstop-1812322",
+          "title": "UI/UX Internship",
+          "url": "https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp",
+          "seniority": "Advertised internship; compensation and city unresolved, not active paid recommendation",
+          "location": "In-office; exact city unverified",
+          "requirements": [
+            {
+              "id": "b5b3d777771e",
+              "text": "Figma component-based design, interactive prototypes and clean engineering handoff",
+              "sourceUrl": "https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp"
+            },
+            {
+              "id": "bacb70f3f01c",
+              "text": "Session recordings, heatmaps and GA 4 to diagnose UX friction",
+              "sourceUrl": "https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp"
+            },
+            {
+              "id": "f5050ebf3d33",
+              "text": "A/B test variants, mobile-first commerce funnels and basic statistical reasoning",
+              "sourceUrl": "https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp"
+            },
+            {
+              "id": "d61d3a0972e6",
+              "text": "Design-system documentation and structured insight reporting",
+              "sourceUrl": "https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp"
+            }
+          ],
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal exact Unstop 1812322 platform date 15 November 2026, deadline 29 November 00:00 IST, full time in-office 5 days, city unestablished. ConversionUX responsibilities:session recordings, heatmaps, GA 4, A/Bvariants, Figma components/prototypes and clean handoff. Visible Salary Not Disclosed conflicts with structured base Salary Unpaid/unit YEAR. Could be platform default, but paid status cannot be established. Official careers site corroborates consumer-food employer identity/generic careers, not an exact paid UI/UX intake. No role added as paid or eligible geography based on brand. No current salary or location invented."
+        }
+      ],
+      "contact": {
+        "url": "https://thewholetruthfoods.com/pages/careers",
+        "kind": "Official careers information; exact role/application eligibility unverified",
+        "sourceUrl": "https://thewholetruthfoods.com/pages/careers"
+      },
+      "website": "https://thewholetruthfoods.com/"
+    },
+    {
+      "id": "surveysparrow",
+      "name": "SurveySparrow",
+      "company": "SurveySparrow",
+      "companyType": "Product company",
+      "sector": "Survey, customer-experience and feedback SaaS",
+      "focus": "Survey, customer-experience and feedback SaaS",
+      "tier": "Dream",
+      "categorySuggested": "Dream",
+      "categorySuggestedOnly": true,
+      "rationale": "Dream editable enterprise-product/UX research preference from survey and customer-experience scope. No current eligible internship or salary/hiring odds inferred.",
+      "careersUrl": "https://surveysparrow.com/careers/",
+      "locationNote": "Older Indeed Chennai on site; current cohort/student eligibility unknown",
+      "openingStatus": "Directory-only older UX-intern advert; annual compensation unit and 2025 cohort require clarification",
+      "currentOpeningVerified": false,
+      "payNote": "Exact older Indeed advert states INR 10,000–20,000/year in header and schema, not monthly. No conversion to monthly stipend and no employer-period correction inferred. No current eligible stipend established.",
+      "payConfidence": "Limited; inspect exact role evidence",
+      "likelyRoles": [
+        "UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future families, not additional active openings.",
+      "researchedAt": "2026-11-18",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=418f4508c13b1c25",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal exact Indeed InternUXDesign Chennai on site,0–1 years,2025 graduate or graduating soon wording. Header and structured salary both 10,000–20,000 INR per YEAR; body no monthly amount. Platform date 7 April 2026, not fresh. Unit may be erroneous but cannot be silently converted to monthly stipend. Current official careers redirects to Keka, normal extracted body 0 chars; no independently renewed/current eligible cohort verified. Keep company/older role evidence outside paid internship shortlist."
+        },
+        {
+          "url": "https://surveysparrow.com/careers/",
+          "label": "18 November public research",
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal officialcareers redirects https://surveysparrow.keka.com/careers with empty extracted body. Access is not readable role inventory or current design recruitment."
+        }
+      ],
+      "roles": [
+        {
+          "id": "surveysparrow-intern-ux-indeed-418f4508c13b1c25",
+          "title": "Intern – UX Design",
+          "url": "https://in.indeed.com/viewjob?jk=418f4508c13b1c25",
+          "seniority": "Older 2025 graduate/0–1 year advert; current eligibility unconfirmed",
+          "location": "Chennai onsite",
+          "requirements": [
+            {
+              "id": "b719bfbc0030",
+              "text": "2025 graduate or graduating soon from design/related field; 0–1 years wording",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=418f4508c13b1c25"
+            },
+            {
+              "id": "630f266bdd62",
+              "text": "Portfolio explaining user-centred process and qualitative/quantitative research",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=418f4508c13b1c25"
+            },
+            {
+              "id": "9058f6eddab8",
+              "text": "Figma, prototyping, testing and design-system foundations",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=418f4508c13b1c25"
+            },
+            {
+              "id": "d3011c19ca1b",
+              "text": "Product/engineering collaboration and translating requirements into flows",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=418f4508c13b1c25"
+            }
+          ],
+          "checkedAt": "2026-11-18",
+          "evidenceStatus": "Normal exact Indeed InternUXDesign Chennai on site,0–1 years,2025 graduate or graduating soon wording. Header and structured salary both 10,000–20,000 INR per YEAR; body no monthly amount. Platform date 7 April 2026, not fresh. Unit may be erroneous but cannot be silently converted to monthly stipend. Current official careers redirects to Keka, normal extracted body 0 chars; no independently renewed/current eligible cohort verified. Keep company/older role evidence outside paid internship shortlist."
+        }
+      ],
+      "contact": {
+        "url": "https://surveysparrow.com/careers/",
+        "kind": "Official careers route redirects to Keka; exact current design intake not readable",
+        "sourceUrl": "https://surveysparrow.com/careers/"
+      },
+      "website": "https://surveysparrow.com/"
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-17",
+    "researchedAt": "2026-11-18",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 293,
+    "directoryCount": 298,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 16,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local."
