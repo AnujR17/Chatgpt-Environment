@@ -15,3 +15,5 @@ Current OTA: **0.6.1-preview.1**. Use Settings > Check for updates > Update and 
 
 
 **Update keeps returning to 0.4?** [Download the one-time 3.8 KB updater repair](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.1-preview.1/Checkpoint-Updater-Repair.zip), extract it and run Repair Checkpoint update.cmd. Point it at your existing Checkpoint-Windows folder. It reuses your runtime, and future updates use the in-app button. [Instructions](app/docs/IN-APP-UPDATES.md#061-rollback-to-04-after-a-sharing-violation).
+
+**Design review, 18 November:** [Case-study PDF](app/docs/case-study/Checkpoint-case-study.pdf), [classroom brief mapping](app/docs/case-study/BRIEF-MAPPING.md) and [feasibility discussion](app/docs/case-study/FEASIBILITY.md) are on `topic/checkpoint-case-study-20261118`. Includes the gaming UI, native screens and CMA-guided Next attempt flow. This review does not publish a new OTA; the stable download above remains 0.6.1.
