@@ -1,0 +1,11 @@
+{
+  "fixture": "Scripted self-reports and game context; no participant or real-game result",
+  "default_self_report_stage": "passed",
+  "context_and_game_estimate_separated": "passed",
+  "pause_then_later_cma": "passed",
+  "player_helpfulness_rating": "passed",
+  "report_and_pdf": "passed",
+  "camera_stays_off": "passed",
+  "end_does_not_invent_response": "passed",
+  "real_frustration_or_recovery_detection": "not established"
+}

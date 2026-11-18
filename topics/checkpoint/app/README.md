@@ -2,6 +2,11 @@
 
 Regen is a local Windows gaming companion with Nori. [Explore the visual case study](docs/case-study/index.html). This review uses the existing storage and update channel; the stable download still carries its earlier name.
 
+This design-review branch adds **Start play support**: opt-in foreground game-window estimates, a short response after a possible fall settles, and optional CMA check-ins. The camera and input tracker are not required. Choose a support style in Settings. **I fell** requests help manually; while play support runs on Windows, **Ctrl+Alt+F8** marks a setback and **Ctrl+Alt+F9** mutes tips. Use borderless/windowed play for the overlay.
+
+Automatic fall recognition remains experimental. The 43 cards describe player check-ins; they are not 43 recognised camera emotions. This branch does not publish an OTA or change the stable download.
+
+
  **Expressions** shows short facial-expression estimates with a soft character, curved brows and smooth colour/shape changes. **Confused?** is a tentative multi-feature cue; it is not a newly trained class. **Movement test** inspects the tracker; **My check-in** records your own feeling and CMA. [Expression and game-state research](docs/EXPRESSIONS-AND-GAME-STATE.md).
 
 **Stuck returning to 0.4 after an update?** Use the [small one-time updater repair](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.1-preview.1/Checkpoint-Updater-Repair.zip). It reuses your existing runtime; [instructions](docs/IN-APP-UPDATES.md#061-rollback-to-04-after-a-sharing-violation).

@@ -36,9 +36,14 @@ async def main():
                 await page.locator('#practiceCue').get_by_text('Try a shorter reach and a slower pull.',exact=True).wait_for()
                 assert await page.locator('#practice').is_visible()
                 assert await page.evaluate('document.documentElement.scrollWidth<=innerWidth')
-                await page.screenshot(path=str(OUT/'phone.png'),full_page=True)
                 finish_attempt(w.session,'helped');w.practice_changed()
                 await page.locator('#practice').wait_for(state='hidden')
+                w.mark_setback()
+                await page.locator('#nudge').wait_for(state='visible')
+                assert 'breath before the next try' in await page.locator('#nudge').inner_text()
+                await page.screenshot(path=str(OUT/'phone.png'),full_page=True)
+                w.set_support_enabled(False)
+                await page.locator('#nudge').wait_for(state='hidden')
                 async with page.expect_download() as download_info:await page.locator('#report').click()
                 download=await download_info.value
                 assert Path(await download.path()).read_bytes().startswith(b'%PDF-')
@@ -52,7 +57,7 @@ async def main():
                 await browser.close()
             result={'fixture':'Scripted player choices, real native HTTP bridge and Chromium 390x844',
                     'selected_cue_above_character':'passed','resolved_cue_hidden':'passed','disconnected_cue_hidden':'passed',
-                    'native_pdf_download':'passed','horizontal_overflow':'none','javascript_errors':errors,
+                    'native_pdf_download':'passed','setback_tip_and_mute':'passed','horizontal_overflow':'none','javascript_errors':errors,
                     'physical_phone_wifi':'not tested'}
             (OUT/'phone-verification.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
         finally:

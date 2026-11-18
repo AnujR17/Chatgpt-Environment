@@ -54,7 +54,8 @@ def guidance_mode(session):
     if not all(isinstance(x, (int, float)) and not isinstance(x, bool) and math.isfinite(x)
                for x in (v, a, stamp)) or not (-1 <= v <= 1 and -1 <= a <= 1):
         return 'choice', 'CMA not specified · choose the amount of help'
-    if not 0 <= session.elapsed() - stamp <= 300:
+    # Check-in timestamps are rounded to hundredths; a fresh one can lead by 5ms.
+    if not -.01 <= session.elapsed() - stamp <= 300:
         return 'choice', 'Earlier check-in · choose what fits now'
     if v < -.18 and a > .4:
         return 'brief', 'Your check-in: unpleasant + high activation · one cue first'

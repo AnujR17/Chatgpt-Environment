@@ -8,7 +8,7 @@ A gaming companion for your next attempt.
 
 Being stuck does not always mean wanting to stop. A player may still enjoy the challenge and need one adjustment, less explanation or a smaller goal.
 
-Regen starts with casual and committed hobby players in Getting Over It. Its intended benefit is agency over the next choice. Better performance, reduced anger and wellbeing remain untested outcomes.
+Regen starts with casual and committed hobby players in Getting Over It. Its immediate job is to offer a useful next step after a setback, without leaving the game. The audience is someone learning a difficult game, including someone who remains calm or laughs when falling. The recap is optional. Better performance, reduced anger and wellbeing remain untested outcomes.
 
 ## Empathize
 
@@ -20,7 +20,7 @@ Five fictional personas rehearse different situations: Rohan, Kavya and Aman in 
 
 ## Define
 
-When I keep missing a section but still want the challenge, help me choose one adjustment without taking over my play.
+After I lose progress, help me find my next step without leaving the game. Falling does not imply anger, and becoming calmer is not the only successful outcome.
 
 Camera estimates describe visible cues. The player reports pleasantness and activation. Optional input timing and game-window observations provide context, not emotional truth.
 
@@ -28,19 +28,21 @@ Camera estimates describe visible cues. The player reports pleasantness and acti
 
 A full launcher adds library-management scope. A venue platform adds booking, operations and payments. An automatic emotional coach needs evidence this prototype lacks.
 
-The selected direction is a personal companion: check in, select a problem, try one cue and keep an adjustment the player found useful. The layout plan in the visual story describes this revision; it is not a previously tested wireframe.
+The selected direction is a personal companion: opt into play support, notice a possible fall, wait for the game view to settle, and offer one short suggestion. Encouragement, a next-move reminder and an optional pause are selectable styles. The player can ignore or mute support. The layout plan in the visual story describes this revision; it is not a previously tested wireframe.
 
 ## Prototype
 
-The native PySide6 app uses evergreen actions, sage surfaces and conventional icons. Check-in and camera controls remain visible at 1024×768. Camera is secondary; Get a cue is a direct session action.
+The native PySide6 app uses evergreen actions, sage surfaces and conventional icons. Start play support, I fell, check-in and camera controls remain visible at 1024×768. The open layout gives Nori the main stage. Camera is secondary; play support does not require one.
 
 Nori remains the character. Regen is the app. The 43 authored looks are a check-in vocabulary, not 43 trained camera classes.
 
-A recent unpleasant/high-activation report starts with one brief cue. An unpleasant/low-activation report suggests a smaller target. Other, mixed, missing or stale reports leave the amount of help open. The player can override the suggestion; an in-flight cue stays stable.
+Automatic responses use a new possible-fall event followed by two seconds of steady or marked-view observations. Optional input idle can also establish a quiet moment. Repeated fall frames do not restart the waiting period. Events expire after 25 seconds; stale, unavailable or unfocused observations cannot initiate a response. Automatic invitations have a two-minute cooldown. These are engineering defaults to test, not validated optimal timings.
 
-Pleasantness −0.18, activation ±0.4 and a 300-second expiry are authored prototype parameters, not CMA-prescribed thresholds.
+Match my check-in uses an explicit report no older than two minutes. Unpleasant/high-activation reports offer a quiet pause; pleasant reports offer encouragement; otherwise the default is a small next move. The thresholds (pleasantness ±0.2 and activation +0.2) are authored interaction rules. Camera estimates never set either CMA dimension or determine the offer. The player can override the style.
 
-Helped or Still stuck records the player’s verdict. Optional notes persist only with local-history consent. The frameless overlay and paired phone can show the chosen cue. The recap shows explicit CMA samples and player-rated usefulness.
+I fell is an explicit manual fallback. While play support runs on Windows, Ctrl+Alt+F8 marks a setback and Ctrl+Alt+F9 mutes/unmutes tips. Registration can fail if another app owns the shortcuts. The overlay does not pause, inject input into or control the game. Borderless/windowed play is the initial target.
+
+A player can optionally record context, choose a pause/continue/smaller goal, report a later moment and rate the choice. The CMA recap relates those reported moments without filling gaps or claiming causation. Reports are secondary to help during play. Saved summaries require local-history consent. Technique cues and notes remain an optional deeper path.
 
 ## Brand
 
@@ -56,9 +58,9 @@ Codex assisted implementation and writing. Python, PySide6 and QPainter produce 
 
 ## Evidence and next step
 
-113 local tests passed, with four missing-video fixtures and one Windows-only check skipped. Native task and phone/PDF flows passed. The interactive case-study example passed at 1440, 390 and 320px, including CMA choices, feedback and reduced motion. Windows run evidence is linked separately and identified by commit.
+124 local tests passed, with four missing-video fixtures and one Windows-only check skipped. Native task and phone/PDF flows passed. The interactive case-study example passed at 1440, 390 and 320px, including CMA choices, feedback and reduced motion. Windows run evidence is linked separately and identified by commit.
 
-These are software checks. Actual play, physical camera/phone compatibility, device overhead and participant benefit remain to evaluate. The next useful test asks whether a cue earns the time spent opening the app.
+These are software checks. Actual play, physical camera/phone compatibility, device overhead and participant benefit remain to evaluate. The next useful test labels actual falls and non-falls, measures missed and false invitations plus response delay, then asks target players whether each suggestion helped their next attempt or interrupted it. Continued enjoyment and a useful next choice matter more than forcing calm.
 
 [Project context](PROJECT-CONTEXT.md) · [Feasibility](FEASIBILITY.md) · [Native checks](verification.json) · [Visual interaction checks](visual-case-verification.json)
 
@@ -68,4 +70,5 @@ These are software checks. Actual play, physical camera/phone compatibility, dev
 - [Russell, 1980: A circumplex model of affect](https://doi.org/10.1037/h0077714)
 - [Barrett and colleagues, 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/)
 - [Getting Over It on Steam](https://store.steampowered.com/app/240720/Getting_Over_It_with_Bennett_Foddy/)
+- [ASC: lighting in Eternal Sunshine](https://theasc.com/article/forget-me-not-eternal-sunshine-of-the-spotless-mind/)
 - [Model and video research](../VIDEO-AND-MODEL-RESEARCH.md)

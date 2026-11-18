@@ -63,3 +63,19 @@ class SessionHeader(QFrame):
         path=QPainterPath();path.moveTo(x+62,122);path.lineTo(x+120,90);path.lineTo(x+163,90);path.lineTo(x+213,42);path.lineTo(x+251,42);path.lineTo(x+293,0)
         p.setPen(QPen(QColor('#839A6F'),3));p.drawPath(path);p.restore()
         p.end()
+
+
+class EmotionStage(QFrame):
+    """An open colour field. Cyan shade and warm light frame the expression."""
+    def __init__(self):
+        super().__init__();self.setObjectName('emotionStage');self.scene_theme='light'
+    def set_theme(self,theme):
+        if theme!=self.scene_theme:self.scene_theme=theme;self.update()
+    def paintEvent(self,event):
+        from PySide6.QtGui import QRadialGradient
+        p=QPainter(self);p.setRenderHint(QPainter.RenderHint.Antialiasing)
+        w,h=self.width(),self.height()
+        cyan=QRadialGradient(w*.34,h*.55,max(w,h)*.5)
+        cyan.setColorAt(0,QColor(108,173,180,33 if self.scene_theme=='light' else 22));cyan.setColorAt(1,QColor(108,173,180,0));p.fillRect(self.rect(),cyan)
+        warm=QRadialGradient(w*.62,h*.2,max(w,h)*.48)
+        warm.setColorAt(0,QColor(243,196,105,28 if self.scene_theme=='light' else 17));warm.setColorAt(1,QColor(243,196,105,0));p.fillRect(self.rect(),warm);p.end()
