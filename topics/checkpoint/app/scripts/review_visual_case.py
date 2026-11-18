@@ -14,7 +14,15 @@ async def main():
   page.on('pageerror',lambda e:errors.append(str(e)))
   await page.goto(os.environ.get('REGEN_CASE_URL','http://127.0.0.1:8123/'),wait_until='networkidle')
   await page.evaluate('document.fonts.ready')
-  assert await page.title()=='Regen / Gaming, feeling, trying again'
+  assert await page.title()=='AI for behavior design / Anuj Rai / Regen'
+  assert await page.locator('.hero-credits').get_by_text('Anuj Rai',exact=True).count()==1
+  assert await page.locator('.hero-credits').get_by_text('Anupam Rana',exact=True).count()==1
+  assert await page.locator('.hero-credits').get_by_text('Interaction design',exact=True).count()==1
+  assert await page.locator('.ia-branches > li').count()==5
+  assert await page.locator('.research-findings > article').count()==4
+  await page.locator('.scenario-answers summary').first.click()
+  assert await page.locator('.scenario-answers').first.locator('div').first.is_visible()
+  await page.locator('.scenario-answers summary').first.click()
   assert not await page.get_by_text('classroom',exact=False).count()
   await page.locator('#simulate-fall').click()
   assert 'Waiting for a steadier view' in await page.locator('#play-message').inner_text()
@@ -53,11 +61,21 @@ async def main():
    await page.set_viewport_size({'width':width,'height':height});await page.evaluate('scrollTo(0,0)');await page.wait_for_timeout(150)
    assert await page.evaluate('document.documentElement.scrollWidth<=innerWidth'),f'Overflow at {width}'
    await page.screenshot(path=str(OUT/(name+'.png')),full_page=True)
+   if width in (1440,390):
+    for selector,label in [('#top','hero'),('#architecture','architecture'),('#empathize','research')]:
+     await page.locator(selector).screenshot(path=str(OUT/(label+'-'+str(width)+'.png')))
   await page.set_viewport_size({'width':1440,'height':1000});await page.locator('#cma').scroll_into_view_if_needed()
   await page.screenshot(path=str(OUT/'case-cma.png'))
+  if os.environ.get('REGEN_CASE_SITE'):
+   for note in ('evidence.html','scenarios.html','interview-guide.html'):
+    response=await page.goto(os.environ['REGEN_CASE_URL']+note)
+    assert response.status==200
+    assert await page.locator('table').count()>0 if note!='interview-guide.html' else await page.locator('h1').count()==1
+    await page.set_viewport_size({'width':390,'height':844})
+    assert await page.evaluate('document.documentElement.scrollWidth<=innerWidth')
   assert not errors,errors
   await browser.close()
- result={'fixture':'Authored local case-study demo, no real camera/game data','cma_presets_and_rules':'passed','in_flight_stability':'passed','choice_followup_and_helpfulness':'passed','theme_preview':'passed','reduced_motion':'passed','reflow':'1440, 390 and 320px passed','javascript_errors':errors}
+ result={'fixture':'Authored local case-study demo, no real camera/game data','hero_authorship_and_subject':'passed','five_destination_architecture':'passed','source_linked_insights_and_scenario_disclosure':'passed','cma_presets_and_rules':'passed','in_flight_stability':'passed','choice_followup_and_helpfulness':'passed','theme_preview':'passed','reduced_motion':'passed','reflow':'1440, 390 and 320px passed','javascript_errors':errors}
  (OUT/'visual-case-verification.json').write_text(json.dumps(result,indent=2));print(json.dumps(result))
 
 

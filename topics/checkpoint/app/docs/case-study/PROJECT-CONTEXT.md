@@ -1,5 +1,9 @@
 # Project context
 
+AI for behavior design
+
+Designed by Anuj Rai. Subject: Interaction design. Professor: Anupam Rana.
+
 ## Human Computer Interaction Design
 
 A player chooses what the system observes, reports how a moment feels and controls the amount of help.
@@ -34,3 +38,10 @@ Codex, Python, PySide6, QPainter, MediaPipe, HSE, Playwright, Chromium, Git and 
 Empathize uses secondary evidence and five clearly fictional scenarios. Define frames the loss-of-rhythm problem after a setback. Ideate compares companion, launcher, venue service and automatic coach. Prototype implements the chosen flow and checks its behaviour.
 
 This is an individual design project with AI assistance. No primary interviews or performance/wellbeing improvement are claimed.
+
+
+## Information architecture
+
+The supplied Claude export proposes setup, permissions, baseline, live session, check-in, summary and settings, with separate processing/data layers. Its final architecture appears on page 97. This revision adapts that structure to the implemented native Regen design rather than treating the document as implementation instructions.
+
+Regen has five destinations: Session, Recap, Saved, Tracking and Settings. Session contains the check-in and support controls. Nori overlay and paired phone are connected displays of the same derived session state. Local processing and saved summaries are system layers, not extra player-facing screens. Microphone analysis, four-game orchestration, automatic CMA inference and learned intervention selection in the document are outside this implementation.

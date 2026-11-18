@@ -18,3 +18,12 @@ Windows review run 44270123364 passed at application commit 89792b195a9bc4a9219c
 Updated preview dpl_54e4jJo1EWdHwGigrnQRzBsMyeqA is READY at website source f8787f23e3918a77f4c922ce1489c08c43829629. Authenticated deployed root, CSS, JS, all three supporting HTML pages and play-support/recovery/Windows evidence files returned 200. Generated-site browser interaction passed at 1440/390/320 locally. Existing team sign-in protection remains. See DEPLOYMENT.json.
 
 Final follow-up b10788c47ae9925a64be8c46d6bda519cd886a97 preserves automatic mute during one-off manual help. 124 tests and the native support fixture pass after this correction; Windows run 44271249558 passed at b10788c47ae9925a64be8c46d6bda519cd886a97, including manual-help mute preservation and shortcut dispatch.
+
+
+## 18 November 2026: authorship, research and information architecture
+
+User supplied a 98-page Claude export and requested its architecture adapted to the actual Regen case study. Extracted page 97 structure, retaining source distinctions: do not add the document’s microphone, four-game study, baseline-based mood/CMA inference or learning claims. The map covers Session, Recap, Saved, Tracking and Settings, plus connected overlay/phone and separate processing/data layers. Hero title is AI for behavior design; author Anuj Rai; subject Interaction design; Professor Anupam Rana, with sentence-case labels. Keep the original papercraft artwork, sage palette, DM Sans and game-first narrative.
+
+Four visible research findings have original source links, stated limits and design responses. Five persona cards expose existing synthetic answers, explicitly not primary interviews. New evidence, scenarios and interview-guide HTML pages retain provenance and readable tables. No native app/model/updater change and no OTA. Browser reflow/interactions and visual PDF export are the applicable checks. Source is on the existing website branch; preserve the job-search Vercel project and protection settings. Topic memory lookup returned cached network failure; no retry.
+
+Browser verification passed at 1440/390/320 with hero author/subject/professor, five-destination IA, source-led findings, expandable scenario answers, existing fall/CMA interactions and readable evidence/scenario/interview-guide pages. All generated links resolve locally. Visual PDF refreshed to 15 pages; cover and architecture inspected.

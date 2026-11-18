@@ -9,7 +9,7 @@ SOURCE=ROOT.parent/'checkpoint/app/docs/case-study'
 SITE=ROOT/'site'
 SOURCE_REF='topic/checkpoint-case-study-20261118'
 REPO='https://github.com/AnujR17/Chatgpt-Environment/blob/'+SOURCE_REF+'/'
-PAGES={'PROJECT-CONTEXT.md':'project.html','CASE-STUDY.md':'research.html','FEASIBILITY.md':'feasibility.html'}
+PAGES={'PROJECT-CONTEXT.md':'project.html','CASE-STUDY.md':'research.html','FEASIBILITY.md':'feasibility.html','RESEARCH-EVIDENCE.md':'evidence.html','INTERVIEW-REHEARSALS.md':'scenarios.html','INTERVIEW-GUIDE.md':'interview-guide.html'}
 
 
 def target(value):
@@ -28,10 +28,21 @@ def inline(value):
 
 
 def markdown(text):
- out=[];paragraph=[];listing=False
+ lines=text.splitlines();out=[];paragraph=[];listing=False;table=False
  def flush():
   if paragraph:out.append('<p>'+inline(' '.join(paragraph))+'</p>');paragraph.clear()
- for line in text.splitlines():
+ def cells(line):return [part.strip() for part in line.strip().strip('|').split('|')]
+ for i,line in enumerate(lines):
+  if line.startswith('|'):
+   flush()
+   if listing:out.append('</ul>');listing=False
+   parts=cells(line)
+   if all(re.fullmatch(r':?-+:?',part) for part in parts):continue
+   if not table:
+    out.append('<div class="table-wrap" role="region" tabindex="0" aria-label="Research table"><table><thead><tr>'+''.join('<th scope="col">'+inline(c)+'</th>' for c in parts)+'</tr></thead><tbody>');table=True
+   else:out.append('<tr>'+''.join('<td>'+inline(c)+'</td>' for c in parts)+'</tr>')
+   continue
+  if table:out.append('</tbody></table></div>');table=False
   if line.startswith('#'):
    flush()
    if listing:out.append('</ul>');listing=False
@@ -46,6 +57,7 @@ def markdown(text):
   else:paragraph.append(line.strip())
  flush()
  if listing:out.append('</ul>')
+ if table:out.append('</tbody></table></div>')
  return '\n'.join(out)
 
 
@@ -59,7 +71,7 @@ def build():
  (SITE/'index.html').write_text(index)
  for name,url in PAGES.items():
   content=markdown((SOURCE/name).read_text());title=(SOURCE/name).read_text().splitlines()[0].lstrip('# ')
-  document='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'''+html.escape(title)+''' / Regen</title><link rel="icon" href="assets/regen.svg"><link rel="stylesheet" href="case-study.css"><style>.notes{max-width:920px;margin:0 auto;padding:60px 32px 90px}.notes h1{font-size:48px;margin-bottom:30px}.notes h2{font-size:27px;letter-spacing:-1px;line-height:1.2;margin:40px 0 15px}.notes p,.notes li{font-size:16px;line-height:1.75}.notes li{margin:8px 0}.notes a{overflow-wrap:anywhere}.notes code{font-size:13px;overflow-wrap:anywhere}.notes ul{padding-left:22px}@media(max-width:600px){.notes{padding:35px 23px}.notes h1{font-size:37px}.notes h2{font-size:24px}.notes p,.notes li{font-size:14px}}</style></head><body><header class="sitebar"><a class="wordmark" href="/"><img src="assets/regen.svg" alt="" width="30" height="30">regen</a><a href="/">Back to the case study</a></header><main class="notes">'''+content+'''</main></body></html>'''
+  document='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'''+html.escape(title)+''' / Regen</title><link rel="icon" href="assets/regen.svg"><link rel="stylesheet" href="case-study.css"><style>.notes{max-width:920px;margin:0 auto;padding:60px 32px 90px}.notes h1{font-size:48px;margin-bottom:30px}.notes h2{font-size:27px;letter-spacing:-1px;line-height:1.2;margin:40px 0 15px}.notes p,.notes li{font-size:16px;line-height:1.75}.notes li{margin:8px 0}.notes a{overflow-wrap:anywhere}.notes code{font-size:13px;overflow-wrap:anywhere}.notes ul{padding-left:22px}.table-wrap{max-width:100%;overflow:auto;margin:20px 0 30px}.notes table{border-collapse:collapse;width:100%;font-size:13px;line-height:1.6}.notes th,.notes td{min-width:170px;padding:14px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #cbd4c5}.notes th{background:#e5eadc;font-weight:600}.table-wrap:focus-visible{outline:2px solid #315d45;outline-offset:3px}@media(max-width:600px){.notes{padding:35px 23px}.notes h1{font-size:37px}.notes h2{font-size:24px}.notes p,.notes li{font-size:14px}}</style></head><body><header class="sitebar"><a class="wordmark" href="/"><img src="assets/regen.svg" alt="" width="30" height="30">regen</a><a href="/">Back to the case study</a></header><main class="notes">'''+content+'''</main></body></html>'''
   (SITE/url).write_text(document)
  (SITE/'vercel.json').write_text('''{\n  "$schema": "https://openapi.vercel.sh/vercel.json",\n  "version": 2,\n  "framework": null,\n  "buildCommand": "",\n  "installCommand": "",\n  "outputDirectory": "."\n}\n''')
  (SITE/'robots.txt').write_text('User-agent: *\nDisallow: /\n')

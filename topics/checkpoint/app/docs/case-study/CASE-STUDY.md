@@ -12,6 +12,9 @@ Regen starts with casual and committed hobby players in Getting Over It. Its imm
 
 ## Empathize
 
+The main case study connects four published findings to explicit design responses. Seven publications, six community threads and game/platform documentation form a rapid secondary review, not a systematic review. Access levels and limits are retained in the [evidence register](RESEARCH-EVIDENCE.md).
+
+
 The existing secondary review covers published affect and gaming research plus public player accounts. Cregan and colleagues’ survey of 1,007 gamers associates competitive motives with tilt risk. Getting Over It’s premise also makes single-player progress loss relevant. Barrett and colleagues describe limits to inferring felt emotion from facial movement.
 
 Five fictional personas rehearse different situations: Rohan, Kavya and Aman in Indian contexts; Alex as a challenge-oriented player; Morgan as a player/streamer. They are design exercises, not primary interviews or participant quotations.
@@ -29,6 +32,10 @@ Camera estimates describe visible cues. The player reports pleasantness and acti
 A full launcher adds library-management scope. A venue platform adds booking, operations and payments. An automatic emotional coach needs evidence this prototype lacks.
 
 The selected direction is a personal companion: opt into play support, notice a possible fall, wait for the game view to settle, and offer one short suggestion. Encouragement, a next-move reminder and an optional pause are selectable styles. The player can ignore or mute support. The layout plan in the visual story describes this revision; it is not a previously tested wireframe.
+
+## Information architecture
+
+The native destinations are Session, Recap, Saved, Tracking and Settings. Check-ins and support live inside Session. Overlay and phone are connected displays. Processing and storage are separate system layers. The hierarchy in the visual case study is adapted from the supplied Claude-export architecture to the actual prototype; it adds no unimplemented microphone, automatic mood inference or four-game study.
 
 ## Prototype
 
@@ -63,6 +70,8 @@ Codex assisted implementation and writing. Python, PySide6 and QPainter produce 
 These are software checks. Actual play, physical camera/phone compatibility, device overhead and participant benefit remain to evaluate. The next useful test labels actual falls and non-falls, measures missed and false invitations plus response delay, then asks target players whether each suggestion helped their next attempt or interrupted it. Continued enjoyment and a useful next choice matter more than forcing calm.
 
 [Project context](PROJECT-CONTEXT.md) · [Feasibility](FEASIBILITY.md) · [Native checks](verification.json) · [Visual interaction checks](visual-case-verification.json)
+
+[Scenario responses](INTERVIEW-REHEARSALS.md) remain synthetic and have no evidential status as primary interviews.
 
 ## Sources
 

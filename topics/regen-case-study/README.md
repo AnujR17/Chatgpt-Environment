@@ -1,6 +1,6 @@
 # Regen case-study website
 
-**[Open the interactive case study](https://regen-case-study-jqckmrcak-anujrai1701-gmailcoms-projects.vercel.app)**
+**[Open the interactive case study](https://regen-case-study-git-topi-a380c7-anujrai1701-gmailcoms-projects.vercel.app)**
 
 Live Vercel preview. Sign in with your Vercel account if prompted.
 
@@ -25,3 +25,6 @@ Vercel uses a separate `regen-case-study` project linked to this repository. Its
 The root `vercel.json` also supports repository-root static deployment when the hosting project has no nested Root Directory set. It cannot override a Root Directory configured in Vercel Project Settings.
 
 The existing native app and OTA release are unaffected. The demonstration uses authored check-ins and fictional persona scenarios.
+
+
+The case-study hero presents AI for behavior design, Anuj Rai, Interaction design and Professor Anupam Rana. The information architecture follows the native app’s five destinations. Four source-linked findings connect research to design decisions; evidence, interview guide and synthetic scenario answers have readable supporting pages. The current game-focused design remains intact.
