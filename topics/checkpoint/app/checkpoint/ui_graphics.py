@@ -29,7 +29,7 @@ PATHS = {
 
 
 @lru_cache(maxsize=192)
-def icon(name, color='#34445D'):
+def icon(name, color='#344D39'):
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="'+color+'" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+PATHS[name]+'</svg>')
     result = QIcon()
     for scale in (1, 2):
@@ -39,24 +39,27 @@ def icon(name, color='#34445D'):
     return result
 
 
-def with_icon(button, name, color='#34445D'):
-    button.setIcon(icon(name, color));button.setIconSize(QSize(19,19));return button
+def with_icon(button, name, color='#344D39'):
+    key=name+color
+    if button.property('regenIcon')!=key:
+        button.setIcon(icon(name,color));button.setIconSize(QSize(19,19));button.setProperty('regenIcon',key)
+    return button
 
 
 class SessionHeader(QFrame):
     """Authored terrain motif for the session identity, never a live game view."""
     def __init__(self):
-        super().__init__();self.setFixedHeight(122);self.setObjectName('sessionHeader')
+        super().__init__();self.setFixedHeight(112);self.setObjectName('sessionHeader')
 
     def paintEvent(self, event):
         p=QPainter(self);p.setRenderHint(QPainter.RenderHint.Antialiasing)
-        p.setPen(Qt.PenStyle.NoPen);p.setBrush(QColor('#23334F'));p.drawRoundedRect(self.rect(),12,12)
+        p.setPen(Qt.PenStyle.NoPen);p.setBrush(QColor('#D5E1C5'));p.drawRoundedRect(self.rect(),12,12)
         # Cropped ascending ledges give this a game identity without a fake HUD.
         x=self.width()*.54
         p.save();p.setClipRect(QRectF(x,0,self.width()-x,122))
         for offset in (-22,6,34):
             path=QPainterPath();path.moveTo(x+offset,128);path.lineTo(x+70+offset,83);path.lineTo(x+112+offset,83);path.lineTo(x+170+offset,28);path.lineTo(x+205+offset,28);path.lineTo(x+260+offset,-12)
-            p.setPen(QPen(QColor('#3C5274'),1.2));p.drawPath(path)
+            p.setPen(QPen(QColor('#B6C7A3'),1.2));p.drawPath(path)
         path=QPainterPath();path.moveTo(x+62,122);path.lineTo(x+120,90);path.lineTo(x+163,90);path.lineTo(x+213,42);path.lineTo(x+251,42);path.lineTo(x+293,0)
-        p.setPen(QPen(QColor('#E3B95F'),3));p.drawPath(path);p.restore()
+        p.setPen(QPen(QColor('#839A6F'),3));p.drawPath(path);p.restore()
         p.end()

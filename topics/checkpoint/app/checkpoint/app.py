@@ -26,6 +26,7 @@ from checkpoint.phone import PhoneBridge,PhoneServer,local_networks,private_fire
 from checkpoint.companion import CompanionState
 from checkpoint.input_activity import InputObserver
 from checkpoint.ui_graphics import SessionHeader, with_icon
+from checkpoint.brand import APP_NAME
 
 ASSETS=Path(__file__).with_name("assets")
 
@@ -51,7 +52,7 @@ Emblem = NoriWidget
 class VideoPreview(QLabel):
     def __init__(self):
         super().__init__("Camera is off\n\nResume only when you choose.");self.setAlignment(Qt.AlignmentFlag.AlignCenter);self.setWordWrap(True)
-        self.setMinimumSize(280,210);self.setObjectName("cameraPreview");self.setStyleSheet("background:#EEEEE6; border-radius:14px; color:#626B65;");self.image=None
+        self.setMinimumSize(280,210);self.setObjectName("cameraPreview");self.setStyleSheet("background:#E5EADC; border-radius:14px; color:#5B6D60;");self.image=None
         self.setAccessibleName("Local camera or video preview")
 
     def set_image(self,image):
@@ -203,7 +204,7 @@ class PreferencesDialog(QDialog):
 
 class MainWindow(QMainWindow):
     def __init__(self, *, no_setup=False, data_dir=None):
-        super().__init__();self.setWindowTitle("Checkpoint");self.resize(1440,940);self.setMinimumSize(1000,640)
+        super().__init__();self.setWindowTitle(APP_NAME);self.resize(1440,940);self.setMinimumSize(1000,640)
         self.session=Session();self.worker=None;self.frequency=8.;self.retain=False;self.saved=False;self.current_view=0;self.theme="light";self.reduced_motion=False;self.motion_paused=False;self.last_image=None;self.last_status="";self._closing=False;self.update_dialog=None
         self.live_view=False;self.source_mode=0;self.reflection=ReflectionEngine();self.expression_controls=[];self.neutral_controls=[];self.detail_controls=[];self.view_selectors=[];self.detect_games=False;self.screen_tracking=False;self.game_worker=None;self.game_observation=None
         self.overlay=NoriOverlay();self.overlay_enabled=False;self.overlay_corner='bottom-right';self.nudges_enabled=False;self.last_nudge=''
@@ -216,22 +217,22 @@ class MainWindow(QMainWindow):
         shell=QHBoxLayout(outer);shell.setContentsMargins(0,0,0,0);shell.setSpacing(0)
         nav=QFrame();nav.setObjectName('sidebar');nav.setFixedWidth(194)
         nl=QVBoxLayout(nav);nl.setContentsMargins(16,28,16,18);nl.setSpacing(6)
-        brand=QHBoxLayout();brand.addWidget(label('checkpoint',20,bold=True));nl.addLayout(brand);nl.addWidget(label('YOUR PLAY COMPANION',10,True));nl.addSpacing(34)
+        brand=QHBoxLayout();mark=QSvgWidget(str(ASSETS/'regen.svg'));mark.setFixedSize(34,34);mark.setStyleSheet('background:transparent');brand.addWidget(mark);brand.addWidget(label('regen',29,bold=True));brand.addStretch();nl.addLayout(brand);nl.addWidget(label('YOUR NEXT ATTEMPT',10,True));nl.addSpacing(30)
         self.practice_control=None
-        for text,cb,glyph in [('Session',self.return_to_session,'session'),('Next attempt',self.show_practice,'flag'),('Check in',self.show_emotion_library,'feeling'),('CMA report',self.show_report,'report'),('Saved sessions',self.show_history,'history')]:
-            b=button(text,cb);b.setObjectName('sideNav');b.setProperty('selected',text=='Session');with_icon(b,glyph,'#253628' if text=='Session' else '#D3DEEF');nl.addWidget(b)
+        for text,cb,glyph in [('Session',self.return_to_session,'session'),('Next attempt',self.show_practice,'flag'),('Check in',self.show_emotion_library,'feeling'),('Session recap',self.show_report,'report'),('Saved sessions',self.show_history,'history')]:
+            b=button(text,cb);b.setObjectName('sideNav');b.setProperty('selected',text=='Session');with_icon(b,glyph,'#29412C' if text=='Session' else '#DDE8D7');nl.addWidget(b)
             if text=='Check in':self.library_control=b
             if text=='Next attempt':self.practice_control=b
-        nl.addStretch();self.break_button=with_icon(button('Take a break',self.toggle_break),'pause','#D3DEEF');nl.addWidget(self.break_button)
+        nl.addStretch();self.break_button=with_icon(button('Take a break',self.toggle_break),'pause','#DDE8D7');nl.addWidget(self.break_button)
         self.support_title=label('Need a break?',13,bold=True);self.support_copy=label('Sources pause while you step away.',11,True)
         nl.addWidget(self.support_title);nl.addWidget(self.support_copy);nl.addSpacing(12)
         for text,cb,glyph in [('Support options',self.show_support,'help'),('Settings',self.show_preferences,'settings')]:
-            b=with_icon(button(text,cb),glyph,'#D3DEEF');b.setObjectName('sideNav');nl.addWidget(b)
-        self.theme_button=with_icon(button('Dark theme',self.toggle_theme),'moon','#D3DEEF');self.theme_button.setObjectName('sideNav');nl.addWidget(self.theme_button);shell.addWidget(nav)
+            b=with_icon(button(text,cb),glyph,'#DDE8D7');b.setObjectName('sideNav');nl.addWidget(b)
+        self.theme_button=with_icon(button('Dark theme',self.toggle_theme),'moon','#DDE8D7');self.theme_button.setObjectName('sideNav');nl.addWidget(self.theme_button);shell.addWidget(nav)
         self.scroll=QScrollArea();self.scroll.setWidgetResizable(True);shell.addWidget(self.scroll,1)
         canvas=QWidget();self.scroll.setWidget(canvas);root=QVBoxLayout(canvas);root.setContentsMargins(24,24,24,16);root.setSpacing(18)
         banner=SessionHeader();h=QHBoxLayout(banner);h.setContentsMargins(22,18,22,18);words=QVBoxLayout();words.setSpacing(5);words.addWidget(label('PLAY SESSION',10,True,bold=True));self.title=label('Your session',30,bold=True);self.subtitle=label('',14,True);words.addWidget(self.title);words.addWidget(self.subtitle);h.addLayout(words,1)
-        self.game_tag=label('',12,True);self.game_tag.hide();self.end_control=with_icon(button('End session',self.end_or_new),'stop','#FFFFFF');h.addWidget(self.end_control);root.addWidget(banner)
+        self.game_tag=label('',12,True);self.game_tag.hide();self.practice_shortcut=with_icon(button('Get a cue',self.show_practice,True),'flag','#FFFFFF');h.addWidget(self.practice_shortcut);self.end_control=with_icon(button('End session',self.end_or_new),'stop','#2B4733');h.addWidget(self.end_control);root.addWidget(banner)
         self.view_buttons=[];self.camera_controls=[];self.file_controls=[];self.checkin_controls=[];self.motion_controls=[];self.reported_titles=[]
         for i in range(3):
             b=button('Development view',lambda checked=False,idx=i:self.change_view(idx));b.setParent(self);b.hide();self.view_buttons.append(b)
@@ -251,8 +252,8 @@ class MainWindow(QMainWindow):
         for key,callback in [("Ctrl+Shift+P",self.pause_all),("Ctrl+Shift+C",self.check_in),("Ctrl+Shift+B",self.toggle_break)]:
             shortcut=QShortcut(QKeySequence(key),self);shortcut.activated.connect(callback);self.shortcuts.append(shortcut)
         if QSystemTrayIcon.isSystemTrayAvailable():
-            self.tray=QSystemTrayIcon(QIcon(str(ASSETS/"unknown.svg")),self);menu=QMenu(self)
-            menu.addAction("Open Checkpoint",self.showNormal);menu.addAction('Check for updates',self.show_updates);menu.addAction("Show / hide Nori",self.toggle_overlay);menu.addAction("Move Nori",self.edit_overlay_position);menu.addAction("Pause all sources",self.pause_all);menu.addAction("Check in",self.check_in);menu.addAction("Take a break",self.toggle_break);menu.addAction("Quit",self.close);self.tray.setContextMenu(menu);self.tray.show()
+            self.tray=QSystemTrayIcon(QIcon(str(ASSETS/"regen.svg")),self);menu=QMenu(self)
+            menu.addAction("Open Regen",self.showNormal);menu.addAction('Check for updates',self.show_updates);menu.addAction("Show / hide Nori",self.toggle_overlay);menu.addAction("Move Nori",self.edit_overlay_position);menu.addAction("Pause all sources",self.pause_all);menu.addAction("Check in",self.check_in);menu.addAction("Take a break",self.toggle_break);menu.addAction("Quit",self.close);self.tray.setContextMenu(menu);self.tray.show()
         from checkpoint.update_ui import last_update_error
         self.last_status=last_update_error(Path(__file__).resolve().parents[1])
         self.refresh()
@@ -261,27 +262,27 @@ class MainWindow(QMainWindow):
 
     def build_body(self,mode):
         body=QWidget();row=QHBoxLayout(body);row.setContentsMargins(0,0,0,0);row.setSpacing(18)
-        state_panel,sl=panel(padding=18);sl.setSpacing(10)
+        state_panel,sl=panel("companionPanel",padding=0);sl.setSpacing(10)
         header=QHBoxLayout();header.addWidget(label('Nori',18,bold=True),1)
         motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(32);motion.setObjectName('navButton');header.addWidget(motion);self.motion_controls.append(motion)
         if mode==0:self.motion_button=motion
         sl.addLayout(header)
-        selector=QTabBar();[selector.addTab(name) for name in ['Expressions','Movement test','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);sl.addWidget(selector)
+        selector=QTabBar();[selector.addTab(name) for name in ['Face estimate','Test view','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);sl.addWidget(selector)
         stage,stage_layout=panel('artStage',6);stage_layout.setSpacing(4);stage_layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        em=NoriWidget(150,mode=mode);self.emblems.append(em);stage_layout.addWidget(em,alignment=Qt.AlignmentFlag.AlignCenter)
+        em=NoriWidget(180,mode=mode);self.emblems.append(em);stage_layout.addWidget(em,alignment=Qt.AlignmentFlag.AlignCenter)
         title=label('',24,bold=True);title.setAlignment(Qt.AlignmentFlag.AlignCenter);self.state_labels.append((title,'title'));stage_layout.addWidget(title)
         source=label('',11,True);source.setAlignment(Qt.AlignmentFlag.AlignCenter);self.state_labels.append((source,'source'));stage_layout.addWidget(source);sl.addWidget(stage,1)
         desc=label('',12,True);self.state_labels.append((desc,'description'));sl.addWidget(desc)
         dimensions,dl=panel('stateCard',12);dl.setSpacing(8)
-        top=QHBoxLayout();top.addWidget(label('YOUR CMA CHECK-IN',11,bold=True),1)
+        top=QHBoxLayout();top.addWidget(label('YOUR CHECK-IN',11,bold=True),1)
         reported=label('',14,bold=True);self.reported_titles.append(reported);top.addWidget(reported);dl.addLayout(top)
         self.add_dimensions(dl)
         check=with_icon(button('Choose a feeling',self.primary_action,True),'feeling','#FFFFFF');check.setMinimumHeight(40);self.checkin_controls.append(check)
         if mode==0:self.checkin_button=check
         dl.addWidget(check);sl.addWidget(dimensions);row.addWidget(state_panel,6)
-        camera,cl=panel(padding=18);cl.setSpacing(12)
+        camera,cl=panel("cameraPanel",padding=18);cl.setSpacing(12)
         ch=QHBoxLayout();ch.addWidget(label('Your camera',18,bold=True),1);status=label('',12,True);self.state_labels.append((status,'capture'));ch.addWidget(status);cl.addLayout(ch)
-        capture=with_icon(button('Start face tracking',self.toggle_camera,True),'camera','#FFFFFF');self.camera_controls.append(capture);cl.addWidget(capture)
+        capture=with_icon(button('Start camera',self.toggle_camera),'camera','#294532');capture.setProperty('tone','soft');self.camera_controls.append(capture);cl.addWidget(capture)
         preview=VideoPreview();preview.setMinimumSize(280,180);preview.setMaximumHeight(248);self.preview_widgets.append(preview);cl.addWidget(preview,1)
         actions=QHBoxLayout();devices=QComboBox();devices.setAccessibleName('Camera device');devices.addItems(['Camera 1 · default']+[f'Camera {i+1}' for i in range(1,10)]);devices.currentIndexChanged.connect(self.select_camera);self.camera_selectors.append(devices);actions.addWidget(devices,1)
         file=with_icon(button('Test a video',self.open_video),'video');file.setMinimumHeight(40);self.file_controls.append(file);actions.addWidget(file);cl.addLayout(actions)
@@ -289,8 +290,8 @@ class MainWindow(QMainWindow):
         track=QCheckBox('Track my face');track.setAccessibleName('Track expressions');track.toggled.connect(self.toggle_expression_tracking);self.expression_controls.append(track);track.hide()
         calibration=QHBoxLayout();neutral=button('Set neutral',self.calibrate_neutral);neutral.setMinimumHeight(36);self.neutral_controls.append(neutral);calibration.addWidget(neutral)
         details=with_icon(button('Face signals',self.show_face_details),'sliders');details.setMinimumHeight(36);self.detail_controls.append(details);calibration.addWidget(details);cl.addLayout(calibration)
-        cl.addWidget(label('Expression estimates describe visible cues. Your check-in describes how you feel.',12,True))
-        cl.addWidget(label('On this device. No recording. No microphone.',11,True))
+        cl.addWidget(label('Camera estimates stay separate from how you say you feel.',12,True))
+        cl.addWidget(label('Local processing. No recording.',11,True))
         cue=label('',11,True);cue.setVisible(False);self.state_labels.append((cue,'cue'));cl.addWidget(cue)
         if mode==0:self.capture_control=capture
         row.addWidget(camera,5)
@@ -418,7 +419,7 @@ class MainWindow(QMainWindow):
             self.session.experimental_analysis=True;self.select_card_source(1);self.start_source(path)
 
     def toggle_theme(self):
-        self.theme='dark' if self.theme=='light' else 'light';QApplication.instance().setStyleSheet(make_style(self.theme));self.theme_button.setText('Light theme' if self.theme=='dark' else 'Dark theme');with_icon(self.theme_button,'sun' if self.theme=='dark' else 'moon','#D3DEEF')
+        self.theme='dark' if self.theme=='light' else 'light';QApplication.instance().setStyleSheet(make_style(self.theme));self.theme_button.setText('Light theme' if self.theme=='dark' else 'Dark theme');with_icon(self.theme_button,'sun' if self.theme=='dark' else 'moon','#DDE8D7')
         c=PALETTES[self.theme]
         for preview in self.preview_widgets:preview.setStyleSheet('background:'+c['surface_alt']+';border-radius:14px;color:'+c['secondary']+';')
         self.refresh()
@@ -487,7 +488,7 @@ class MainWindow(QMainWindow):
         for control in self.neutral_controls:control.setVisible(s.camera_active and s.experimental_analysis and s.face_mapping)
         for selector in self.view_selectors:
             selector.blockSignals(True);selector.setCurrentIndex(1 if self.live_view else self.source_mode);selector.blockSignals(False)
-        if self.tray is not None:self.tray.setToolTip("Checkpoint / "+("Capture active" if s.camera_active else "Capture off"))
+        if self.tray is not None:self.tray.setToolTip("Regen / "+("Capture active" if s.camera_active else "Capture off"))
         for selector in self.camera_selectors:
             selector.blockSignals(True);selector.setCurrentIndex(self.camera_index);selector.blockSignals(False);selector.setEnabled(not s.camera_active and s.active and s.break_deadline is None)
         worker=self.worker
@@ -495,18 +496,18 @@ class MainWindow(QMainWindow):
         if worker is not None and not worker.frames:feedback=f'Opening Camera {self.camera_index+1}…' if s.source_kind=='camera' else 'Opening the selected video…'
         for message in self.camera_messages:message.setText(feedback);message.setVisible(bool(feedback))
         for control in self.camera_controls:
-            control.setText('Pause video' if s.source_kind=='video' else 'Pause camera' if s.camera_active else 'Start face tracking');control.setEnabled(s.active and s.break_deadline is None)
+            control.setText('Pause video' if s.source_kind=='video' else 'Pause camera' if s.camera_active else 'Start camera');control.setEnabled(s.active and s.break_deadline is None)
         ink=PALETTES[self.theme]['text'];on_accent=PALETTES[self.theme]['on_accent']
-        for control in self.camera_controls:with_icon(control,'pause' if s.camera_active else 'camera',on_accent)
+        for control in self.camera_controls:with_icon(control,'pause' if s.camera_active else 'camera',PALETTES[self.theme]['on_soft'])
         for control in self.checkin_controls:with_icon(control,'feeling',on_accent)
         for control in self.file_controls:control.setEnabled(s.active and s.break_deadline is None);with_icon(control,'video',ink)
         for control,glyph in [(self.game_detection_control,'game'),(self.mark_start_control,'flag'),(self.pip_control,'overlay'),(self.phone_control,'phone')]:with_icon(control,glyph,ink)
         self.library_control.setEnabled(s.active and s.break_deadline is None)
         with_icon(self.context_control,'edit',PALETTES[self.theme]['text'])
         for control in self.detail_controls:with_icon(control,'sliders',PALETTES[self.theme]['text'])
-        self.practice_control.setEnabled(s.active and s.break_deadline is None)
+        self.practice_control.setEnabled(s.active and s.break_deadline is None);self.practice_shortcut.setEnabled(s.active and s.break_deadline is None)
         from checkpoint.attempts import active_attempt
-        self.practice_control.setText("Rate my attempt" if active_attempt(s) else "Next attempt")
+        self.practice_control.setText("Rate my attempt" if active_attempt(s) else "Next attempt");self.practice_shortcut.setText("Rate attempt" if active_attempt(s) else "Get a cue")
         for reported in self.reported_titles:reported.setText(s.affect[0] if s.report else "Not checked in")
         self.end_control.setText("End session" if s.active else "New session")
         for control in self.checkin_controls:control.setEnabled(s.active and s.break_deadline is None);control.setText('Update check-in' if s.report else 'Choose a feeling')
@@ -571,7 +572,7 @@ class MainWindow(QMainWindow):
             if s.camera_active and self.last_image is not None:
                 if preview.isVisible():preview.set_image(self.last_image)
             elif s.camera_active:preview.clear_image("Starting the selected source…")
-            else:preview.clear_image("Camera is off\n\n"+(self.last_status or "Start the camera to see your own preview."))
+            else:preview.clear_image("Camera is off\n\n"+(self.last_status or "Optional. Your check-in works without it."))
         if remaining is not None:
             self.countdown.setText(f"00:{remaining:02d}")
         if not s.active:
@@ -704,7 +705,7 @@ class MainWindow(QMainWindow):
         layout=QVBoxLayout(dialog);layout.setContentsMargins(22,20,22,20)
         content=QTextBrowser();content.setOpenExternalLinks(False);content.setHtml(report_html(self.latest_report));layout.addWidget(content,1)
         def save():
-            path,_=QFileDialog.getSaveFileName(dialog,'Save CMA report','checkpoint-cma-report.pdf','PDF (*.pdf)')
+            path,_=QFileDialog.getSaveFileName(dialog,'Save CMA report','regen-session-recap.pdf','PDF (*.pdf)')
             if path:
                 try:Path(path).write_bytes(make_pdf(self.latest_report))
                 except Exception as ex:QMessageBox.warning(dialog,'Report unavailable',str(ex))
@@ -759,7 +760,7 @@ class MainWindow(QMainWindow):
 
 
 def create_application(argv=None):
-    app=QApplication.instance() or QApplication(argv or []);app.setApplicationName("Checkpoint");app.setOrganizationName("CheckpointResearch");app.setWindowIcon(QIcon(str(ASSETS/"checkpoint.svg")))
+    app=QApplication.instance() or QApplication(argv or []);app.setApplicationName("Checkpoint");app.setApplicationDisplayName(APP_NAME);app.setOrganizationName("CheckpointResearch");app.setWindowIcon(QIcon(str(ASSETS/"regen.svg")))
     if QFontDatabase.addApplicationFont(str(ASSETS/"DM-Sans.ttf"))<0:raise RuntimeError("Bundled DM Sans font could not be loaded")
     font=QFont("DM Sans");font.setPixelSize(14);app.setFont(font);app.setStyleSheet(STYLE);return app
 

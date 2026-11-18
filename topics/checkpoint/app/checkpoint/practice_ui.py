@@ -36,7 +36,7 @@ class PracticeDialog(QDialog):
         self.colors = PALETTES[window.theme]
         self.window = window
         self.session = window.session
-        self.setWindowTitle('Checkpoint: Next attempt')
+        self.setWindowTitle('Regen: Next attempt')
         self.resize(960, 700)
         self.setMinimumSize(820, 600)
         self.last_outcome = None
@@ -51,8 +51,8 @@ class PracticeDialog(QDialog):
         root.setSpacing(16)
         head = QHBoxLayout()
         heading = QVBoxLayout()
-        heading.addWidget(text('GETTING OVER IT / PRACTICE DESK', 11, True))
-        heading.addWidget(text('Make the next attempt different.', 30, True))
+        heading.addWidget(text('GETTING OVER IT / NEXT ATTEMPT', 11, True))
+        heading.addWidget(text('Try one thing differently', 30, True))
         head.addLayout(heading, 1)
         head.addWidget(action('Close', self.reject))
         root.addLayout(head)
@@ -60,7 +60,7 @@ class PracticeDialog(QDialog):
         self.cma.setStyleSheet(f"padding:10px; background:{self.colors['surface_alt']}; color:{self.colors['text']}; border-radius:6px;")
         cma_row = QHBoxLayout()
         cma_row.addWidget(self.cma, 1)
-        self.checkin = action('Update my CMA check-in', self.check_in)
+        self.checkin = action('Update check-in', self.check_in)
         cma_row.addWidget(self.checkin)
         root.addLayout(cma_row)
         body = QHBoxLayout()

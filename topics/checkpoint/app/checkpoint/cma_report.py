@@ -74,7 +74,7 @@ def journey_svg(points,duration):
 def report_html(report):
     e=lambda v:html.escape(str(v));c=report['cma'];minutes=int(report['duration_seconds'])//60
     parts=['<html><head><meta charset="utf-8"><style>body{font-family:"DM Sans",sans-serif;color:#293b32;background:white;font-size:12px;line-height:1.2}h1{font-size:27px;margin-bottom:8px}h2{font-size:17px;margin-top:14px;margin-bottom:6px}p{margin:8px 0}.muted{color:#6c786e;font-size:11px}td{padding:9px;vertical-align:top}th{text-align:left;padding:8px;background:#e9ece3}table{border-collapse:collapse;width:100%}.card{background:#f6f4ee}li{margin:6px}</style></head><body>',
-           '<p class="muted">CHECKPOINT / CMA SESSION REPORT</p><h1>Your session, in your words</h1>',
+           '<p class="muted">REGEN / CMA SESSION RECAP</p><h1>Your session, in your words</h1>',
            f'<p>{e(report["game"])} · {minutes} minutes · {c["count"]} CMA check-ins</p><p class="muted">{e(report["intention"])}</p>',
            '<h2>Pleasantness and activation</h2><p>'+e(c['trend'])+'</p>']
     if c['count']:
@@ -111,7 +111,7 @@ def report_html(report):
 
 def make_pdf(report):
     buffer=QBuffer();buffer.open(QIODevice.OpenModeFlag.WriteOnly)
-    writer=QPdfWriter(buffer);writer.setPageSize(QPageSize(QPageSize.PageSizeId.A4));writer.setResolution(96);writer.setTitle('Checkpoint CMA session report')
+    writer=QPdfWriter(buffer);writer.setPageSize(QPageSize(QPageSize.PageSizeId.A4));writer.setResolution(96);writer.setTitle('Regen session recap')
     document=QTextDocument();document.setDefaultFont(QFont('DM Sans',11));document.setHtml(report_html(report));document.print_(writer)
     del writer
     return bytes(buffer.data())
