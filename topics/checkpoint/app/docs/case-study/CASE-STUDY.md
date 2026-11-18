@@ -25,7 +25,7 @@ Together, these profiles focus the design on optional help, suitable timing, pri
 
 ## Interaction direction
 
-Start play support, notice a possible setback, wait for a settled view, then offer one short suggestion. The player can continue, pause, mute or request help directly.
+Start play support, then offer a short response after a possible setback or about 2½ minutes of active gaming. The player can continue, pause, mute or request help directly.
 
 A recent CMA check-in can select a support style. Pleasantness and activation come from the player. Camera observations remain a separate source in the interface.
 
@@ -48,3 +48,11 @@ Regen draws on regeneration and another attempt. Nori carries expressions throug
 ## Technology
 
 Python, PySide6, QPainter, MediaPipe, HSE expression estimates, OpenCV game-window observations and aggregate input timing support the native prototype. Playwright and Chromium verify the visual case-study interactions and responsive layouts.
+
+## Five primary emotions
+
+Neutral, Happy, Frustrated, Sad and Confused form the shared vocabulary across the session, Nori widget, check-in and phone. Laughter sits within Happy; anger and tension cues sit within Frustrated. Player check-ins supply pleasantness and activation.
+
+## Widget interaction
+
+The emotion name and break countdown remain visible. Click Nori to check in, take a timed break, mark a fall or mute reminders. Drag to move the widget. Continue playing ends a completed break.

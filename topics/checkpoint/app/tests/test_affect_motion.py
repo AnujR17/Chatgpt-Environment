@@ -23,7 +23,7 @@ def test_continuous_dimensions_validate_and_face_cues_cannot_overwrite():
 
 
 def test_geometry_is_bounded_and_continuous_across_state_space():
-    assert len(ANCHORS)==14
+    assert len(ANCHORS)==15
     for v in [-1,-.2,0,.7,1]:
         for a in [-1,0,1]:
             paths=contours(v,a,1.3);assert [len(p) for p in paths]==[96]*5
@@ -43,7 +43,7 @@ def test_motion_lifecycle_and_two_slider_checkin(tmp_path):
     w.toggle_motion();assert all(not e.timer.isActive() for e in w.emblems)
     w.toggle_motion();w.reduced_motion=True;w.refresh();assert all(not e.timer.isActive() for e in w.emblems)
     d=CheckinDialog(w);d.select('afraid');d.sliders[0].setValue(70);d.sliders[1].setValue(-60)
-    assert d.chosen=='afraid' and (d.valence,d.arousal)==(.7,-.6)
+    assert d.chosen=='neutral' and (d.valence,d.arousal)==(.7,-.6)
     assert d.preview.target==(.7,-.6)
     d.choose('mixed');assert d.valence is None and d.arousal is None;d.deleteLater()
     w.reduced_motion=False;w.toggle_break();assert all(not e.timer.isActive() for e in w.emblems)
@@ -63,8 +63,8 @@ def test_semantic_library_has_distinct_geometry_and_real_dialog_selection(tmp_pa
             for item in scene(key,t):
                 numbers=([item['x'],item['y'],item['r']] if item['kind']=='dot' else [v for c in item['commands'] for v in c[1:]])
                 assert all(math.isfinite(v) and 0<=v<=360 for v in numbers)
-    d=EmotionLibraryDialog(w);d.show();app.processEvents();d.choose('bewildered')
-    assert d.chosen=='bewildered' and w.session.report is None
+    d=EmotionLibraryDialog(w);d.show();app.processEvents();d.choose('confused')
+    assert d.chosen=='confused' and w.session.report is None
     d.deleteLater();w.close();w.deleteLater();app.processEvents()
 
 

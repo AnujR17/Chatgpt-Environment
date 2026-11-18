@@ -41,7 +41,7 @@ async def main():
                 w.mark_setback()
                 await page.locator('#nudge').wait_for(state='visible')
                 assert 'breath before the next try' in await page.locator('#nudge').inner_text()
-                await page.screenshot(path=str(OUT/'phone.png'),full_page=True)
+                await page.screenshot(path=str(OUT/'phone.png'),full_page=False)
                 w.set_support_enabled(False)
                 await page.locator('#nudge').wait_for(state='hidden')
                 async with page.expect_download() as download_info:await page.locator('#report').click()

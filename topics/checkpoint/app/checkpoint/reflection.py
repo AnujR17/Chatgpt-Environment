@@ -122,7 +122,7 @@ class ReflectionEngine:
                 key,span=durations.most_common(1)[0]
                 if span/coverage>=.75:self.trend=key
 
-    def display(self,session,now=None):
+    def _display(self,session,now=None):
         now=time.monotonic() if now is None else now;self.observe(session,now)
         if not session.experimental_analysis or not session.camera_active:
             self.reset_tracking()
@@ -142,7 +142,14 @@ class ReflectionEngine:
             movement.update(teeth=min(.7,self.smoothed['teeth']),jaw=.35 if self.pattern in ('happiness','laugh') else .2)
         return ExpressionDisplay(title,ARTWORK[self.pattern],detail,movement,source='visual_pattern')
 
+    def display(self,session,now=None):
+        from checkpoint.primary import limit_display
+        return limit_display(self._display(session,now))
+
     def summary(self):
+        from checkpoint.primary import primary_key
+        grouped=Counter()
+        for key,count in self.pattern_counts.items():grouped[primary_key(key)]+=count
         return {'usable_face_seconds':round(self.valid_seconds,1),'mouth_hidden_seconds':round(self.hidden_seconds,1),
-                'expression_transitions':dict(self.pattern_counts),'video_test':self.video_test,
-                'recent_visual_trend':self.trend,'basis':'Smoothed expression transitions, not emotion durations; no facial event log retained'}
+                'expression_transitions':dict(grouped),'video_test':self.video_test,
+                'recent_visual_trend':primary_key(self.trend) if self.trend else None,'basis':'Smoothed expression transitions, not emotion durations; no facial event log retained'}

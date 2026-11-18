@@ -90,3 +90,56 @@ def test_immediate_rounded_checkin_does_not_drop_its_guidance():
     assert guidance_mode(s)[0]=='brief'
     s.reports[-1]['elapsed_seconds']=11
     assert guidance_mode(s)[0]=='choice'
+
+
+def test_reminder_after_150_seconds_of_fresh_foreground_play():
+    p=PlaySupport()
+    for now in range(150):assert not tick(p,'steady',now)
+    assert tick(p,'steady',150)=='A quick reset? Relax your grip, then go again.'
+    assert p.basis=='Active gaming reminder' and p.play_seconds==0
+    for now in range(151,300):tick(p,'steady',now)
+    assert tick(p,'steady',300)=='A quick reset? Relax your grip, then go again.'
+
+
+def test_clock_pauses_outside_game_and_does_not_count_stale_or_suspended_time():
+    p=PlaySupport()
+    for now in range(100):tick(p,'steady',now)
+    before=p.play_seconds
+    for now in range(100,300):
+        p.update(GameObservation(None,'Other app',state={'kind':'out_of_focus'}),now,enabled=True,active=True,paused=False)
+    assert p.play_seconds==before
+    assert not tick(p,'steady',300)
+    stale=observation('steady')
+    p.update(stale,301,enabled=True,active=True,paused=False)
+    p.update(stale,900,enabled=True,active=True,paused=False)
+    assert p.play_seconds<105
+
+
+def test_timer_respects_mute_pause_and_camera_independence():
+    p=PlaySupport()
+    for now in range(100):tick(p,'steady',now)
+    assert not p.update(observation('steady'),100,enabled=False,active=True,paused=False)
+    assert p.play_seconds==0
+    for now in range(101,201):tick(p,'steady',now)
+    p.update(observation('steady'),201,enabled=True,active=True,paused=True)
+    assert p.play_seconds==0
+    for now in range(202,350):assert not tick(p,'steady',now)
+
+
+def test_timer_and_fall_share_cooldown_and_wait_for_motion_to_settle():
+    p=PlaySupport()
+    for now in range(149):tick(p,'steady',now,count=0)
+    assert not tick(p,'falling',149)
+    assert not tick(p,'falling',150)
+    assert not tick(p,'falling',151)
+    tick(p,'steady',152)
+    assert tick(p,'steady',154).startswith('Possible fall.')
+    assert p.play_seconds==0
+    assert p.basis=='Experimental game-window motion estimate'
+
+
+def test_process_only_observation_can_give_a_time_reminder():
+    p=PlaySupport()
+    for now in range(151):
+        text=p.update(GameObservation('Valorant','Foreground process detected',state={'kind':'unsupported'}),now,enabled=True,active=True,paused=False)
+    assert text=='A quick reset? Relax your grip, then go again.'

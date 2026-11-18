@@ -5,6 +5,7 @@ import math
 
 # label, pleasantness, activation, description. No inference from facial cues.
 ANCHORS = {
+    'neutral': ('Neutral',0.,0.,'A neutral moment. Adjust the balance for yourself.'),
     'confused': ('Confused', .0, .0, 'A moment of uncertainty; pleasantness and activation can vary.'),
     'bewildered': ('Bewildered', -.20, .70, 'Surprised and disoriented; adjust both dimensions for yourself.'),
     'happy': ('Happy', .85, .20, 'A pleasant moment with some lift.'),

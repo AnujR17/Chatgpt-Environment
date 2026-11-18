@@ -21,8 +21,8 @@ def setup():
 
 def test_sustained_smile_is_responsive_but_one_frame_spike_is_ignored():
     s,e=setup();feed(e,s,1000,1)
-    assert feed(e,s,1001,.125,smile=.9).artwork=='composed'
-    assert feed(e,s,1001.125,1).artwork=='composed'
+    assert feed(e,s,1001,.125,smile=.9).artwork=='neutral'
+    assert feed(e,s,1001.125,1).artwork=='neutral'
     assert feed(e,s,1002.125,1,smile=.9).artwork=='happy'
     assert cma_summary(s)['cma']['count']==0
 
@@ -37,8 +37,8 @@ def test_brow_and_mouth_tension_without_model_do_not_claim_anger():
     s,e=setup()
     assert feed(e,s,1000,2,brow=.8).artwork is None
     assert feed(e,s,1002,2,brow=.8,pressed=.6).artwork=='frustrated'
-    assert feed(e,s,1004,2,brow=.8,pressed=.6,label='anger').artwork=='angry'
-    assert feed(e,s,1006,1).artwork=='composed'
+    assert feed(e,s,1004,2,brow=.8,pressed=.6,label='anger').artwork=='frustrated'
+    assert feed(e,s,1006,1).artwork=='neutral'
 
 
 def test_laugh_has_authored_open_mouth_and_subtle_animation():
@@ -53,7 +53,7 @@ def test_hand_occlusion_and_loss_clear_immediately_and_recovery_does_not_wait_30
     assert feed(e,s,1003,1,smile=.8).artwork=='happy'
     s.cue=Cue('unavailable',reason='No face detected');s.cue_received_at=1004
     assert e.display(s,1004).artwork is None
-    assert feed(e,s,1004.125,1).artwork=='composed'
+    assert feed(e,s,1004.125,1).artwork=='neutral'
     assert e.display(s,1010).artwork is None
 
 
@@ -65,7 +65,7 @@ def test_trend_is_separate_from_quick_reflection_and_sparse_frames_do_not_qualif
     s,e=setup();d=feed(e,s,1000,5,smile=.8)
     assert e.trend=='happiness' and d.title=='Happy' and 'Recent trend' not in d.detail
     d=feed(e,s,1005,1,brow=.8,pressed=.6,label='anger')
-    assert d.artwork=='angry' and e.trend=='happiness'
+    assert d.artwork=='frustrated' and e.trend=='happiness'
     d=feed(e,s,1006,4,brow=.8,pressed=.6,label='anger')
     assert e.trend=='anger'
     s,e=setup()
@@ -73,13 +73,15 @@ def test_trend_is_separate_from_quick_reflection_and_sparse_frames_do_not_qualif
     assert d.artwork is None
 
 
-def test_category_only_model_supports_eight_classes_without_movement_mapping():
+def test_category_only_model_maps_supported_inputs_to_primary_states():
     from checkpoint.runtime import LABELS
     for label in LABELS:
         s,e=setup();s.face_mapping=False
         for i in range(8):
             s.cue=Cue('accepted',label,.9);s.cue_received_at=1000+i/8;d=e.display(s,1000+i/8)
-        assert d.artwork is not None
+        assert d.title in {'Neutral','Happy','Frustrated','Sad','Confused'}
+        if label in ('neutral','happiness','anger','sadness'):assert d.artwork is not None
+        else:assert d.artwork is None
 
 
 def test_mouth_widening_and_speech_like_smile_without_cheek_or_model_do_not_become_happy():
@@ -93,7 +95,7 @@ def test_smile_can_use_model_support_and_anger_teeth_do_not_turn_into_happy():
     d=feed(e,s,1000,2,smile=.7,cheek=0.,label='happiness')
     assert d.artwork=='happy'
     d=feed(e,s,1002,2,brow=.8,pressed=.6,teeth=.8,label='anger')
-    assert d.artwork=='angry' and d.movement['teeth']>.5 and 'smile' not in d.movement
+    assert d.artwork=='frustrated' and d.movement['teeth']>.5 and 'smile' not in d.movement
 
 
 def test_irregular_timestamps_duplicate_refresh_and_source_change_are_safe():
@@ -122,7 +124,7 @@ def test_adaptive_filter_reduces_resting_jitter_and_follows_a_step_without_a_lon
 
 def test_confident_model_does_not_require_an_unvalidated_anger_geometry_threshold():
     s,e=setup()
-    assert feed(e,s,1000,1,label='anger').artwork=='angry'
+    assert feed(e,s,1000,1,label='anger').artwork=='frustrated'
 
 
 def test_confident_happy_model_and_tense_geometry_are_unclear_not_frustrated():

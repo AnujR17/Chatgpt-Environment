@@ -1,59 +1,28 @@
 {
-  "checked_at": "2026-11-17",
-  "release": "checkpoint-v0.6.1-preview.1",
-  "source_commit": "d99de2546d6589e078cbd355aac048c1578dc27d",
-  "branch": "topic/checkpoint",
-  "reported_failure": "Windows sharing violation caused the previous whole-folder updater to preserve/reopen 0.4; specific locking process not identified",
-  "windows_release_run": {
-    "id": 44075074794,
-    "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44075074794",
-    "conclusion": "success",
-    "legacy_root_lock": "reproduced",
-    "actual_qt_startup_after_component_update": "passed",
-    "normal_reopen_stays_updated": "passed",
-    "runtime_and_install_root_preserved": "passed",
-    "component_and_full_rollback": "passed"
-  },
-  "published_repair_bridge": {
-    "id": 44077487729,
-    "url": "https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44077487729",
-    "conclusion": "success",
-    "legacy_source": "actual 0.4.0-preview.2 source",
-    "public_repair_zip_download_and_execution": "passed",
-    "held_open_folder": "passed",
-    "actual_gui_startup": "passed",
-    "original_Start_Checkpoint_cmd_reopen": "0.6.1-preview.1 persisted",
-    "runtime": "existing compatible vendor runtime reused",
-    "physical_user_installation": "not modified"
-  },
-  "local_suite": {
-    "passed": 105,
+  "tag": "checkpoint-v0.6.2-preview.1",
+  "version": "0.6.2",
+  "source_commit": "092935032b2814cdeb6bc5337c140422f15e8007",
+  "windows_run": 44280866344,
+  "url": "https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.2-preview.1/Checkpoint-Windows-Preview.zip",
+  "http_status": 200,
+  "bytes": 243764863,
+  "sha256": "f4427f80f2f2d5b4dc64764cf97dab49f339bdb4c00fd8addba5781a57d72e90",
+  "archive_integrity": "passed",
+  "packaged_version": "passed",
+  "current_ui": "passed",
+  "foreground_reminder": "passed",
+  "model_hash": "b0e28051075f6f9ed200bbd9e510c451d2e05ceb3fab0d548cb5e9b3942da466",
+  "manifest_matches": "passed",
+  "app_update_bytes": 6168235,
+  "local_tests": {
+    "passed": 129,
     "skipped": 5
   },
-  "public_update": {
-    "tag": "checkpoint-v0.6.1-preview.1",
-    "release_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/tag/checkpoint-v0.6.1-preview.1",
-    "source_commit": "d99de2546d6589e078cbd355aac048c1578dc27d",
-    "manifest_discovery_using_previous_version_identity": "passed",
-    "small_download_and_all_declared_file_hashes": "passed",
-    "declared_app_files": 83,
-    "compatible_runtime_and_models": "app-only selected",
-    "disposable_previous_install_preserved": "passed",
-    "new_source_features_present": "passed",
-    "full_public_zip": "HTTP 200 and ZIP signature; full-file hash agrees with published manifest, sums and GitHub asset digest; entire ZIP not downloaded in this check",
-    "app_bytes": 6151504,
-    "app_sha256": "bf2ed2706d7ca5f83da4d22d43b6b528861a0648e4a8af704ee704b66c49a69e",
-    "full_bytes": 243492657,
-    "full_sha256": "ac1ee39501d6ff5bf43da2140931ecc11c117409e60bc8840a0388b3f25e1bfe",
-    "execution": "No downloaded code or runtime executed; actual Windows restart/rollback is covered by CI",
-    "user_device_update": "not performed",
-    "retry_reuses_cache_without_network": "passed",
-    "app_components_exclude_runtime_and_models": "passed",
-    "repair_zip_bytes": 3808,
-    "repair_zip_sha256": "9095a32cc831ec1c53946c26886c4064e508484aa64fc41f066741d82db38a8b",
-    "repair_zip_integrity": "passed"
-  },
-  "compatibility": "0.4 and current Windows runtime-source lock files are byte-identical (SHA256 604e87f78f58fe6f557ccc11e4baa62b08824a0d30c10e3d664750a0a8c6be6d)",
-  "repair_url": "https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.1-preview.1/Checkpoint-Updater-Repair.zip",
-  "scope": "Updater repair only; facial models, game tracking and CMA behaviour unchanged"
+  "in_app_discovery": {
+    "from": "checkpoint-v0.6.1-preview.1",
+    "offered": "checkpoint-v0.6.2-preview.1",
+    "available": true,
+    "app_bytes": 6168235,
+    "files": 91
+  }
 }

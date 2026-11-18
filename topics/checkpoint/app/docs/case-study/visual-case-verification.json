@@ -1,13 +1,9 @@
 {
-  "fixture": "Authored local case-study demo, no real camera/game data",
-  "hero_authorship_and_subject": "passed",
-  "five_destination_architecture": "passed",
-  "source_linked_insights_and_design_personas": "passed",
-  "cma_presets_and_rules": "passed",
-  "in_flight_stability": "passed",
-  "choice_followup_and_helpfulness": "passed",
-  "theme_preview": "passed",
-  "reduced_motion": "passed",
-  "reflow": "1440, 390 and 320px passed",
+  "hero_authorship": "passed",
+  "full_visible_artwork": "passed",
+  "static_presentation_without_navigation_or_demo_controls": "passed",
+  "flat_desktop_and_phone_mockups": "passed",
+  "information_architecture_and_research": "passed",
+  "reflow": "1440, 1024, 390 and 320px passed",
   "javascript_errors": []
 }

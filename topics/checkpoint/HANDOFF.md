@@ -107,3 +107,17 @@ Open native layout gives Nori a large stage, top navigation and compact Sources.
 Case study leads with help after a fall and includes opt-in, event/settling, choice and optional reflection. Research remains secondary with fictional personas, not primary interviews. Warm light/cyan shadow direction interprets the film reference without film imagery. Pinterest could not be inspected. Update the separate website branch/project after the app review commit; do not alter the job-search Vercel project.
 
 Final manual-help correction b10788c47ae9925a64be8c46d6bda519cd886a97 preserves muted automatic tips. 124 tests, native support fixtures and actual loopback phone tests pass. Windows review run 44271249558 passed on that exact code. Website source f8787f23e3918a77f4c922ce1489c08c43829629 is live as preview dpl_54e4jJo1EWdHwGigrnQRzBsMyeqA; deployed HTTP and local generated-site browser checks pass. Stable OTA and job-search deployment remain unchanged.
+
+
+## 18 November 2026: published Regen 0.6.2
+
+User authorised the current UI and a simple gaming reminder on topic/checkpoint. Version 0.6.2-preview.1 was merged at 092935032b2814cdeb6bc5337c140422f15e8007 after Windows review f416700b0fa20dd5d04a7c61aa09323edeb7ef2a passed. Publish run 44280866344 passed native session, reminder, model/provider, GDI, updater restart/rollback, packaging and release upload. Public full ZIP downloaded with HTTP 200; size 243764863; SHA256 f4427f80f2f2d5b4dc64764cf97dab49f339bdb4c00fd8addba5781a57d72e90 matches checksum and manifest. ZIP integrity, packaged version, reminder, current UI and unchanged model hash verified. 129 local tests passed, five skipped.
+
+Play reminders count 150 seconds of fresh foreground gaming, pause outside the game, respect mute/breaks and share cooldown with fall responses. Manual help retains mute. Native app navigation stays; user explicitly removes only the case-study navigation. Case study is static, with no demo controls, straight laptop/phone mockups and fully visible hero art (no faded overlay). Keep source-backed research and design personas without presentation notes; do not invent interviews. Source memory lookup returned cached network failure; no retry.
+
+
+## 19 November 2026: five states and widget controls
+
+The shared presentation vocabulary is Neutral, Happy, Frustrated, Sad and Confused. Existing raw eight-category provider outputs remain internal; no new model training or accuracy claim. Check-in choices and public expression payloads show only five states. Unsupported/missing estimates render flat Neutral. Nori is deliberately clickable (not click-through), keeps the emotion name and a 30px m:ss countdown visible, and offers check-in, 30/60/120-second breaks, manual setback and mute controls. Drag to reposition. Break completion waits for Continue playing; capture stays off. Native navigation stays intact.
+
+134 local tests passed, five skipped. Native session/recovery/play/expression/widget scripts and phone bridge/browser checks passed. The case study is static, has no navbar or demo controls, and uses flat screens with unfaded original artwork. Four source-linked findings, five design personas and an interview guide remain; no conducted interviews are claimed. Large visual PDFs are generated in Windows CI and published as release assets rather than Git blobs.

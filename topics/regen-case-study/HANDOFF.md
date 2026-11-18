@@ -32,3 +32,17 @@ Browser verification passed at 1440/390/320 with hero author/subject/professor, 
 ## Presentation refinement
 
 User selected existing research and design personas, then explicitly requested no presentation note. Remove repeated limitation callouts and hypothetical wording from all rendered case-study pages. Use source-linked research, normal design personas, a questionnaire and concrete design decisions. Do not claim the author conducted interviews or attribute generated answers to real participants. Canonical research records in topics/checkpoint/research remain intact. Remove simulated-answer presentation copies and diagnostic JSON exports from the website; keep technical verification in source. This is editorial presentation work, with no native model/app or OTA change.
+
+
+## Static presentation and native release
+
+User requests full, unfaded artwork; straight actual desktop/phone screen mockups; no case-study navigation, sliders, theme switch, simulated gameplay or other demo controls. Keep native application navigation (explicit clarification). The case study now renders authored character poses once and presents static CMA examples. Public presentation omits the previously rejected research labels/notes; canonical research records remain separate.
+
+Native Regen 0.6.2-preview.1 is published from topic/checkpoint at 092935032b2814cdeb6bc5337c140422f15e8007, with 150-second foreground play reminders and existing setback support. Full ZIP and manifest verified after download; Windows run 44280866344 and 129 local tests passed. Case-study source/screens are synchronised to that UI. Preserve the separate hosting project and the job-search project.
+
+
+## 19 November 2026: five states and widget controls
+
+The shared presentation vocabulary is Neutral, Happy, Frustrated, Sad and Confused. Existing raw eight-category provider outputs remain internal; no new model training or accuracy claim. Check-in choices and public expression payloads show only five states. Unsupported/missing estimates render flat Neutral. Nori is deliberately clickable (not click-through), keeps the emotion name and a 30px m:ss countdown visible, and offers check-in, 30/60/120-second breaks, manual setback and mute controls. Drag to reposition. Break completion waits for Continue playing; capture stays off. Native navigation stays intact.
+
+134 local tests passed, five skipped. Native session/recovery/play/expression/widget scripts and phone bridge/browser checks passed. The case study is static, has no navbar or demo controls, and uses flat screens with unfaded original artwork. Four source-linked findings, five design personas and an interview guide remain; no conducted interviews are claimed. Large visual PDFs are generated in Windows CI and published as release assets rather than Git blobs.

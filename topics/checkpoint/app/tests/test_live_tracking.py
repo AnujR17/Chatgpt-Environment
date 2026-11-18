@@ -22,15 +22,15 @@ def test_live_model_result_changes_card_without_overwriting_report(tmp_path):
     for _ in range(3):
         window.session.receive_cue(smoother.update(Cue('accepted', 'anger', .9)), generation)
     window.refresh(); app.processEvents()
-    assert window.emblems[0].current_state == 'angry'
-    assert any(obj.text() == 'Angry expression' for obj, key in window.state_labels if key == 'title')
+    assert window.emblems[0].current_state == 'frustrated'
+    assert any(obj.text() == 'Frustrated' for obj, key in window.state_labels if key == 'title')
     assert (window.session.report, window.session.valence, window.session.arousal) == ('calm', .6, -.4)
     window.session.receive_cue(Cue('unavailable', reason='No face in frame'), generation); window.refresh()
     assert window.emblems[0].current_state is None
-    assert expression_display(window.session).title == 'No face detected'
-    window.select_card_source(2); assert window.emblems[0].current_state == 'calm'
+    assert expression_display(window.session).title == 'Neutral'
+    window.select_card_source(2); assert window.emblems[0].current_state == 'neutral'
     window.select_card_source(1); window.pause(); assert window.emblems[0].current_state is None
-    assert expression_display(window.session).title == 'Camera paused'
+    assert expression_display(window.session).title == 'Neutral'
     window.close(); window.deleteLater(); app.processEvents()
 
 
