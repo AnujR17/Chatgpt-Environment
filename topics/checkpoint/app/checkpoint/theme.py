@@ -1,7 +1,7 @@
 """Semantic native UI tokens. Default warm light theme and optional dark theme."""
 PALETTES={
- 'light':{'canvas':'#F4F2EC','sidebar':'#FFFEFA','surface':'#FFFEFA','surface_alt':'#EEEEE6','text':'#252D29','secondary':'#626B65','muted':'#7A817B','border':'#DADDD3','accent':'#235C49','on_accent':'#FFFFFF','pleasant':'#28766C','unpleasant':'#B45C4C'},
- 'dark':{'canvas':'#151C19','sidebar':'#1B2420','surface':'#1E2823','surface_alt':'#29352E','text':'#EDF1E8','secondary':'#B4BEB4','muted':'#87978B','border':'#3B4C40','accent':'#C7D8A8','on_accent':'#203025','pleasant':'#9CCDC0','unpleasant':'#E7A18E'}
+ 'light':{'canvas':'#F2F3F5','sidebar':'#202C40','surface':'#FFFEFA','surface_alt':'#EEEEE6','text':'#252D29','secondary':'#626B65','muted':'#7A817B','border':'#DADDD3','accent':'#3B55B5','on_accent':'#FFFFFF','pleasant':'#28766C','unpleasant':'#B45C4C'},
+ 'dark':{'canvas':'#151E2D','sidebar':'#202C40','surface':'#202C40','surface_alt':'#2B3850','text':'#F2F4F9','secondary':'#BBC5D4','muted':'#8799AF','border':'#40516A','accent':'#CAD7FF','on_accent':'#23334F','pleasant':'#9CCDC0','unpleasant':'#E7A18E'}
 }
 # Illustration colours are categorical art direction, not CMA scores.
 ART={
@@ -23,12 +23,24 @@ def make_style(theme='light'):
 QWidget { font-family:'DM Sans'; color:@text; background:@canvas; }
 QMainWindow, QDialog { background:@canvas; }
 QLabel { background:transparent; border:0; }
+QFrame#sidebar { background:@sidebar; border:0; }
+QFrame#sidebar QLabel { color:#FFFFFF; }
+QFrame#sidebar QLabel#secondary { color:#B8C6DA; }
+QFrame#sidebar QPushButton { color:#D3DEEF; background:transparent; border-color:#53637A; padding:8px; }
+QFrame#sidebar QPushButton#sideNav { background:transparent; border:0; text-align:left; padding:10px; font-size:13px; }
+QFrame#sidebar QPushButton#sideNav:hover { background:#344561; }
+QFrame#sidebar QPushButton#sideNav[selected="true"] { background:#D1E69A; color:#253628; }
+QFrame#sidebar QPushButton:disabled { color:#8393A9; }
+QFrame#sessionHeader QLabel { color:#FFFFFF; }
+QFrame#sessionHeader QLabel#secondary { color:#CCD6E7; }
+QFrame#sessionHeader QPushButton { background:#364864; color:#FFFFFF; border:1px solid #566B87; }
+QFrame#gamePanel { background:@surface; border:1px solid @border; border-radius:8px; }
 QFrame#nav { background:@sidebar; border:0; border-bottom:1px solid @border; }
-QFrame#panel { background:@surface; border:1px solid @border; border-radius:20px; }
-QFrame#stateCard { background:@surface_alt; border:0; border-radius:14px; }
+QFrame#panel { background:@surface; border:1px solid @border; border-radius:12px; }
+QFrame#stateCard { background:@surface_alt; border:0; border-radius:8px; }
 QLabel#secondary { color:@secondary; }
 QLabel#accent { color:@accent; }
-QPushButton { background:@surface; border:1px solid @border; border-radius:10px; padding:10px 18px; min-height:22px; }
+QPushButton { background:@surface; border:1px solid @border; border-radius:6px; padding:10px 18px; min-height:22px; }
 QPushButton:hover { background:@surface_alt; }
 QPushButton:pressed { background:@border; }
 QPushButton:focus { border:2px solid @accent; padding:9px 17px; }
@@ -63,7 +75,7 @@ QPushButton#emotionCard {{ min-height: 208px; min-width: 190px; background: {c['
 QPushButton#emotionCard:hover {{ border: 2px solid {c['accent']}; background: {c['surface_alt']}; }}
 QPushButton#emotionCard:focus {{ border: 3px solid {c['accent']}; padding: 0; }}
 QLineEdit {{ min-height: 22px; }}
-QTabBar::tab {{ background: {c['surface_alt']}; color: {c['secondary']}; padding: 10px 12px; border: 0; margin-right: 4px; border-radius: 7px; }}
+QTabBar::tab {{ background: {c['surface_alt']}; color: {c['secondary']}; padding: 8px 9px; font-size: 12px; border: 0; margin-right: 4px; border-radius: 7px; }}
 QTabBar::tab:selected {{ background: {c['accent']}; color: {c['on_accent']}; }}
 QTabBar::tab:focus {{ border: 2px solid {c['accent']}; }}
 '''

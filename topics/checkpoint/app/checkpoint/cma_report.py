@@ -51,6 +51,8 @@ def cma_summary(session,activity=None):
     result.update(insight=insight,next_step=prompt)
     report={'schema':3,'game':session.game,'intention':session.intention,'duration_seconds':round(session.elapsed(),1),
             'cma':result,'basis':'Player check-ins; facial estimates and input timings do not establish pleasantness or activation.'}
+    from checkpoint.attempts import attempt_summary
+    report['practice']=attempt_summary(session)
     if activity:report['activity_summary']=activity
     return report
 
@@ -92,6 +94,16 @@ def report_html(report):
     if observed and any(patterns.values()):
         label='Visual context (includes video testing)' if observed.get('video_test') else 'Visual context'
         parts.append('<h2>'+label+'</h2><p>'+e(observed.get('usable_face_seconds',0))+' seconds of usable observation, with '+e(sum(patterns.values()))+' smoothed expression transitions. These describe visual tracking, not time spent feeling an emotion.</p>')
+    practice=report.get('practice',{})
+    if practice.get('started'):
+        parts.append('<h2>What helped your next attempt?</h2><p>'+e(practice['helped'])+' cues rated helpful; '+e(practice['still_stuck'])+' still stuck; '+e(practice['unrated'])+' awaiting feedback.</p>')
+        for row in practice['lessons']:
+            parts.append('<p><b>'+e(row['section'])+'</b> · '+e('Helped' if row['outcome']=='helped' else 'Still stuck')+'<br>'+e(row['cue'])+('<br>Your note: '+e(row['lesson']) if row['lesson'] else '')+'</p>')
+            before,after=row.get('cma_before'),row.get('cma_after')
+            if before:
+                parts.append('<p class="muted">Check-in at cue selection: '+e(zone(before['valence'],before['arousal']))+'.'+
+                             (' Later check-in: '+e(zone(after['valence'],after['arousal']))+'.' if after else ' No later check-in recorded.')+'</p>')
+        parts.append('<p class="muted">'+e(practice['basis'])+'</p>')
     parts.extend(['<h2>What stands out</h2><p>'+e(c['insight'])+'</p>','<h2>For your next session</h2><p>'+e(c['next_step'])+'</p>',
                   '<p class="muted">CMA describes pleasantness and activation. Coordinates are adjustable check-in values, not clinical measurements. Facial estimates, hand gestures and input activity are not used to invent an emotional history.</p></body></html>'])
     return ''.join(parts)

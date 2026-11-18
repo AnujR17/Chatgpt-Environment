@@ -1,0 +1,44 @@
+name: Checkpoint design review
+on:
+  push:
+    branches: [topic/checkpoint-case-study-20261118]
+    paths:
+      - topics/checkpoint/app/checkpoint/**
+      - topics/checkpoint/app/scripts/**
+      - .github/workflows/checkpoint-design-review.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-review:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: topics/checkpoint/app
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Assemble the existing reviewed Windows runtime
+        run: |
+          python -m scripts.fetch_windows_runtime
+          if ($LASTEXITCODE -ne 0) { throw 'Runtime fetch failed' }
+          python -m scripts.assemble_windows
+          if ($LASTEXITCODE -ne 0) { throw 'Assembly failed' }
+      - name: Exercise the native session and practice flow
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_session_design.py
+          if ($LASTEXITCODE -ne 0) { throw 'Native design review failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_tracking.py
+          if ($LASTEXITCODE -ne 0) { throw 'Windows model and game-window fixtures failed' }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checkpoint-design-review-evidence
+          path: |
+            topics/checkpoint/app/artifacts/design-review/
+            topics/checkpoint/app/artifacts/windows-tracking-smoke.json
+            topics/checkpoint/app/build/Checkpoint-Windows/windows-live-tracking.png
+          if-no-files-found: error

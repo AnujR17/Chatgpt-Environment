@@ -25,6 +25,7 @@ from checkpoint.overlay import NoriOverlay
 from checkpoint.phone import PhoneBridge,PhoneServer,local_networks,private_firewall_command
 from checkpoint.companion import CompanionState
 from checkpoint.input_activity import InputObserver
+from checkpoint.ui_graphics import SessionHeader, with_icon
 
 ASSETS=Path(__file__).with_name("assets")
 
@@ -181,7 +182,7 @@ class PreferencesDialog(QDialog):
         if parent.overlay_enabled:
             def move_pip():self.reject();QTimer.singleShot(0,parent.edit_overlay_position)
             root.addWidget(button('Move Nori on the desktop',move_pip))
-        root.addWidget(label('History',18,bold=True));self.retention=QCheckBox('Save session summaries on this device');self.retention.setChecked(parent.retain);root.addWidget(self.retention);root.addWidget(label('Stores your check-ins, game and session duration. Camera frames are never saved.',13,True))
+        root.addWidget(label('History',18,bold=True));self.retention=QCheckBox('Save session summaries on this device');self.retention.setChecked(parent.retain);root.addWidget(self.retention);root.addWidget(label('Stores your check-ins, game, session duration and any practice cues and notes you choose. Camera frames are never saved.',13,True))
         root.addWidget(label('Expression research',18,bold=True));self.experimental=QCheckBox('Enable experimental facial-expression cues');self.experimental.setChecked(parent.session.experimental_analysis);root.addWidget(self.experimental)
         self.engine=QComboBox();self.engine.addItems(['Face and hands + expression estimates','Eight-class category model only']);self.engine.setCurrentIndex(0 if parent.session.face_mapping else 1);root.addWidget(self.engine)
         self.hands=QCheckBox('Track hands near the mouth');self.hands.setChecked(parent.session.hand_tracking);root.addWidget(self.hands)
@@ -211,30 +212,40 @@ class MainWindow(QMainWindow):
         self.input_observer=InputObserver(QApplication.instance(),int(self.winId()))
         directory=data_dir or os.environ.get("CHECKPOINT_DATA_DIR") or QStandardPaths.writableLocation(QStandardPaths.StandardLocation.AppLocalDataLocation)
         self.history=History(directory);self.overlay.restore_position(Path(directory)/'preferences.ini');self.preview_widgets=[];self.emblems=[];self.state_labels=[];self.camera_index=0;self.camera_selectors=[];self.camera_messages=[]
-        outer=QWidget();self.setCentralWidget(outer);all_layout=QVBoxLayout(outer);all_layout.setContentsMargins(0,0,0,0);all_layout.setSpacing(0)
-        nav=QFrame();nav.setObjectName('nav');nav.setFixedHeight(72);nl=QHBoxLayout(nav);nl.setContentsMargins(28,8,28,8);nl.setSpacing(12)
-        mark=label('c.',26,bold=True);mark.setFixedSize(36,36);mark.setAlignment(Qt.AlignmentFlag.AlignCenter);mark.setStyleSheet('background:#235C49;color:#FFFFFF;border-radius:12px;');nl.addWidget(mark);nl.addWidget(label('checkpoint',18,bold=True));nl.addSpacing(36)
-        for text,cb in [('Session',self.return_to_session),('Feelings',self.show_emotion_library),('Check-ins',self.show_history),('Report',self.show_report),('Settings',self.show_preferences)]:
-            b=button(text,cb);b.setObjectName('navButton');nl.addWidget(b)
-            if text=='Feelings':self.library_control=b
-        nl.addStretch();self.theme_button=button('Dark theme',self.toggle_theme);nl.addWidget(self.theme_button);all_layout.addWidget(nav)
-        self.scroll=QScrollArea();self.scroll.setWidgetResizable(True);all_layout.addWidget(self.scroll,1);canvas=QWidget();self.scroll.setWidget(canvas);root=QVBoxLayout(canvas);root.setContentsMargins(28,24,28,20);root.setSpacing(16)
-        h=QHBoxLayout();words=QVBoxLayout();words.setSpacing(6);self.title=label('Your session',30,bold=True);self.subtitle=label('',14,True);words.addWidget(self.title);words.addWidget(self.subtitle);h.addLayout(words,1)
-        self.game_tag=label('',12,True);h.addWidget(self.game_tag);h.addSpacing(24);self.end_control=button('End session',self.end_or_new);h.addWidget(self.end_control);root.addLayout(h)
-        context_row=QHBoxLayout();self.game_status=label('Game detection is off · Game events are not being observed.',13,True);context_row.addWidget(self.game_status,1)
-        self.game_detection_control=button('Track game',self.toggle_game_tracking);context_row.addWidget(self.game_detection_control)
-        self.mark_start_control=button('Mark section',self.mark_start_view);self.mark_start_control.setVisible(False);context_row.addWidget(self.mark_start_control);root.addLayout(context_row)
-        self.pip_control=button('Show Nori',self.toggle_overlay);context_row.addWidget(self.pip_control)
-        self.phone_control=button('Phone dashboard',self.show_phone);context_row.addWidget(self.phone_control)
-        self.view_buttons=[];self.camera_controls=[];self.file_controls=[];self.checkin_controls=[];self.motion_controls=[]
+        outer=QWidget();self.setCentralWidget(outer)
+        shell=QHBoxLayout(outer);shell.setContentsMargins(0,0,0,0);shell.setSpacing(0)
+        nav=QFrame();nav.setObjectName('sidebar');nav.setFixedWidth(194)
+        nl=QVBoxLayout(nav);nl.setContentsMargins(16,28,16,18);nl.setSpacing(6)
+        brand=QHBoxLayout();brand.addWidget(label('checkpoint',20,bold=True));nl.addLayout(brand);nl.addWidget(label('YOUR PLAY COMPANION',10,True));nl.addSpacing(34)
+        self.practice_control=None
+        for text,cb,glyph in [('Session',self.return_to_session,'session'),('Next attempt',self.show_practice,'flag'),('Check in',self.show_emotion_library,'feeling'),('CMA report',self.show_report,'report'),('Saved sessions',self.show_history,'history')]:
+            b=button(text,cb);b.setObjectName('sideNav');b.setProperty('selected',text=='Session');with_icon(b,glyph,'#253628' if text=='Session' else '#D3DEEF');nl.addWidget(b)
+            if text=='Check in':self.library_control=b
+            if text=='Next attempt':self.practice_control=b
+        nl.addStretch();self.break_button=with_icon(button('Take a break',self.toggle_break),'pause','#D3DEEF');nl.addWidget(self.break_button)
+        self.support_title=label('Need a break?',13,bold=True);self.support_copy=label('Sources pause while you step away.',11,True)
+        nl.addWidget(self.support_title);nl.addWidget(self.support_copy);nl.addSpacing(12)
+        for text,cb,glyph in [('Support options',self.show_support,'help'),('Settings',self.show_preferences,'settings')]:
+            b=with_icon(button(text,cb),glyph,'#D3DEEF');b.setObjectName('sideNav');nl.addWidget(b)
+        self.theme_button=with_icon(button('Dark theme',self.toggle_theme),'moon','#D3DEEF');self.theme_button.setObjectName('sideNav');nl.addWidget(self.theme_button);shell.addWidget(nav)
+        self.scroll=QScrollArea();self.scroll.setWidgetResizable(True);shell.addWidget(self.scroll,1)
+        canvas=QWidget();self.scroll.setWidget(canvas);root=QVBoxLayout(canvas);root.setContentsMargins(24,24,24,16);root.setSpacing(18)
+        banner=SessionHeader();h=QHBoxLayout(banner);h.setContentsMargins(22,18,22,18);words=QVBoxLayout();words.setSpacing(5);words.addWidget(label('PLAY SESSION',10,True,bold=True));self.title=label('Your session',30,bold=True);self.subtitle=label('',14,True);words.addWidget(self.title);words.addWidget(self.subtitle);h.addLayout(words,1)
+        self.game_tag=label('',12,True);self.game_tag.hide();self.end_control=with_icon(button('End session',self.end_or_new),'stop','#FFFFFF');h.addWidget(self.end_control);root.addWidget(banner)
+        self.view_buttons=[];self.camera_controls=[];self.file_controls=[];self.checkin_controls=[];self.motion_controls=[];self.reported_titles=[]
         for i in range(3):
             b=button('Development view',lambda checked=False,idx=i:self.change_view(idx));b.setParent(self);b.hide();self.view_buttons.append(b)
-        self.bodies=QStackedWidget();self.bodies.setMinimumHeight(620);root.addWidget(self.bodies,1)
+        self.bodies=QStackedWidget();self.bodies.setMinimumHeight(452);root.addWidget(self.bodies,1)
         for mode in range(3):self.bodies.addWidget(self.build_body(mode))
         self.bodies.addWidget(self.build_break_body());self.bodies.addWidget(self.build_summary_body())
-        support,sl=panel(padding=18);support.setMinimumHeight(82);support_row=QHBoxLayout();copy=QVBoxLayout();copy.setSpacing(4);self.support_title=label('Need a break?',18,bold=True);self.support_copy=label('Your camera pauses while you step away.',13,True);copy.addWidget(self.support_title);copy.addWidget(self.support_copy);support_row.addLayout(copy,1)
-        self.break_button=button('30-second break',self.toggle_break);support_row.addWidget(self.break_button);support_row.addWidget(button('Support options',self.show_support));sl.addLayout(support_row);root.addWidget(support)
-        foot=QHBoxLayout();self.footer=label('',12,True);foot.addWidget(self.footer,1);context=button('Edit game context',self.edit_context);context.setObjectName('navButton');foot.addWidget(context);root.addLayout(foot)
+        context,cl=panel('gamePanel',16);cl.setSpacing(10)
+        context_row=QHBoxLayout();context_row.addWidget(label('GAME CONNECTION',11,bold=True));context_row.addStretch()
+        self.game_detection_control=with_icon(button('Track game',self.toggle_game_tracking),'game');self.game_detection_control.setMinimumHeight(38);context_row.addWidget(self.game_detection_control)
+        self.mark_start_control=with_icon(button('Mark section',self.mark_start_view),'flag');self.mark_start_control.setMinimumHeight(38);self.mark_start_control.setVisible(False);context_row.addWidget(self.mark_start_control)
+        self.pip_control=with_icon(button('Show Nori',self.toggle_overlay),'overlay');self.pip_control.setMinimumHeight(38);context_row.addWidget(self.pip_control)
+        self.phone_control=with_icon(button('Phone dashboard',self.show_phone),'phone');self.phone_control.setMinimumHeight(38);context_row.addWidget(self.phone_control);cl.addLayout(context_row)
+        self.game_status=label('',13,True);cl.addWidget(self.game_status);root.addWidget(context)
+        foot=QHBoxLayout();self.footer=label('',11,True);foot.addWidget(self.footer,1);context=with_icon(button('Edit session',self.edit_context),'edit');self.context_control=context;context.setObjectName('navButton');context.setMinimumHeight(32);foot.addWidget(context);root.addLayout(foot)
         self.timer=QTimer(self);self.timer.timeout.connect(self.poll);self.timer.start(66);self.tray=None
         self.shortcuts=[]
         for key,callback in [("Ctrl+Shift+P",self.pause_all),("Ctrl+Shift+C",self.check_in),("Ctrl+Shift+B",self.toggle_break)]:
@@ -250,33 +261,49 @@ class MainWindow(QMainWindow):
 
     def build_body(self,mode):
         body=QWidget();row=QHBoxLayout(body);row.setContentsMargins(0,0,0,0);row.setSpacing(18)
-        state_panel,sl=panel(padding=24);sl.setSpacing(14)
-        header=QHBoxLayout();selector=QTabBar();[selector.addTab(name) for name in ['Expressions','Movement test','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);header.addWidget(selector);header.addStretch()
-        toolbar=QHBoxLayout();source=label('',12,True);self.state_labels.append((source,'source'));toolbar.addWidget(source,1)
-        motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(36);motion.setObjectName('navButton');toolbar.addWidget(motion);self.motion_controls.append(motion)
+        state_panel,sl=panel(padding=18);sl.setSpacing(10)
+        header=QHBoxLayout();header.addWidget(label('Nori',18,bold=True),1)
+        motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(32);motion.setObjectName('navButton');header.addWidget(motion);self.motion_controls.append(motion)
         if mode==0:self.motion_button=motion
-        sl.addLayout(header);sl.addLayout(toolbar)
-        stage,stage_layout=panel('artStage',10);stage.setMinimumHeight(210)
-        em=NoriWidget(200,mode=mode);self.emblems.append(em)
-        stage_layout.addWidget(em,alignment=Qt.AlignmentFlag.AlignCenter);sl.addWidget(stage,1)
-        title=label('',28,bold=True);desc=label('',14,True)
-        self.state_labels.extend([(title,'title'),(desc,'description')]);sl.addWidget(title);sl.addWidget(desc)
-        check=button('Check in with a feeling',self.primary_action,True);self.checkin_controls.append(check)
+        sl.addLayout(header)
+        selector=QTabBar();[selector.addTab(name) for name in ['Expressions','Movement test','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);sl.addWidget(selector)
+        stage,stage_layout=panel('artStage',6);stage_layout.setSpacing(4);stage_layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        em=NoriWidget(150,mode=mode);self.emblems.append(em);stage_layout.addWidget(em,alignment=Qt.AlignmentFlag.AlignCenter)
+        title=label('',24,bold=True);title.setAlignment(Qt.AlignmentFlag.AlignCenter);self.state_labels.append((title,'title'));stage_layout.addWidget(title)
+        source=label('',11,True);source.setAlignment(Qt.AlignmentFlag.AlignCenter);self.state_labels.append((source,'source'));stage_layout.addWidget(source);sl.addWidget(stage,1)
+        desc=label('',12,True);self.state_labels.append((desc,'description'));sl.addWidget(desc)
+        dimensions,dl=panel('stateCard',12);dl.setSpacing(8)
+        top=QHBoxLayout();top.addWidget(label('YOUR CMA CHECK-IN',11,bold=True),1)
+        reported=label('',14,bold=True);self.reported_titles.append(reported);top.addWidget(reported);dl.addLayout(top)
+        self.add_dimensions(dl)
+        check=with_icon(button('Choose a feeling',self.primary_action,True),'feeling','#FFFFFF');check.setMinimumHeight(40);self.checkin_controls.append(check)
         if mode==0:self.checkin_button=check
-        sl.addWidget(check)
-        dimensions,dl=panel('stateCard',14);dl.addWidget(label('Your check-in · pleasantness and energy',12,True));self.add_dimensions(dl);sl.addWidget(dimensions);row.addWidget(state_panel,7)
-        camera,cl=panel(padding=24);cl.setSpacing(14);ch=QHBoxLayout();ch.addWidget(label('Face tracking',18,bold=True),1);status=label('',12,True);self.state_labels.append((status,'capture'));ch.addWidget(status);cl.addLayout(ch)
-        actions=QHBoxLayout();capture=button('Start face tracking',self.toggle_camera,True);self.camera_controls.append(capture);actions.addWidget(capture,1);file=button('Open video',self.open_video);self.file_controls.append(file);actions.addWidget(file,1);cl.addLayout(actions)
-        preview=VideoPreview();preview.setMinimumSize(300,230);preview.setMaximumHeight(260);self.preview_widgets.append(preview);cl.addWidget(preview)
-        devices=QComboBox();devices.setAccessibleName('Camera device');devices.addItems(['Camera 1 · default']+[f'Camera {i+1}' for i in range(1,10)]);devices.currentIndexChanged.connect(self.select_camera);self.camera_selectors.append(devices);cl.addWidget(devices)
-        feedback=label('',13,True);self.camera_messages.append(feedback);cl.addWidget(feedback)
+        dl.addWidget(check);sl.addWidget(dimensions);row.addWidget(state_panel,6)
+        camera,cl=panel(padding=18);cl.setSpacing(12)
+        ch=QHBoxLayout();ch.addWidget(label('Your camera',18,bold=True),1);status=label('',12,True);self.state_labels.append((status,'capture'));ch.addWidget(status);cl.addLayout(ch)
+        capture=with_icon(button('Start face tracking',self.toggle_camera,True),'camera','#FFFFFF');self.camera_controls.append(capture);cl.addWidget(capture)
+        preview=VideoPreview();preview.setMinimumSize(280,180);preview.setMaximumHeight(248);self.preview_widgets.append(preview);cl.addWidget(preview,1)
+        actions=QHBoxLayout();devices=QComboBox();devices.setAccessibleName('Camera device');devices.addItems(['Camera 1 · default']+[f'Camera {i+1}' for i in range(1,10)]);devices.currentIndexChanged.connect(self.select_camera);self.camera_selectors.append(devices);actions.addWidget(devices,1)
+        file=with_icon(button('Test a video',self.open_video),'video');file.setMinimumHeight(40);self.file_controls.append(file);actions.addWidget(file);cl.addLayout(actions)
+        feedback=label('',12,True);self.camera_messages.append(feedback);cl.addWidget(feedback)
         track=QCheckBox('Track my face');track.setAccessibleName('Track expressions');track.toggled.connect(self.toggle_expression_tracking);self.expression_controls.append(track);track.hide()
-        neutral=button('Set my neutral face',self.calibrate_neutral);self.neutral_controls.append(neutral);cl.addWidget(neutral)
-        details=button('Inspect face signals',self.show_face_details);self.detail_controls.append(details);cl.addWidget(details)
-        cl.addWidget(label('Face signals stay on your computer.',14,True))
+        calibration=QHBoxLayout();neutral=button('Set neutral',self.calibrate_neutral);neutral.setMinimumHeight(36);self.neutral_controls.append(neutral);calibration.addWidget(neutral)
+        details=with_icon(button('Face signals',self.show_face_details),'sliders');details.setMinimumHeight(36);self.detail_controls.append(details);calibration.addWidget(details);cl.addLayout(calibration)
+        cl.addWidget(label('Expression estimates describe visible cues. Your check-in describes how you feel.',12,True))
+        cl.addWidget(label('On this device. No recording. No microphone.',11,True))
+        cue=label('',11,True);cue.setVisible(False);self.state_labels.append((cue,'cue'));cl.addWidget(cue)
         if mode==0:self.capture_control=capture
-        cl.addWidget(label('On this device · No recording · Microphone off',12,True));cue=label('',12,True);cue.setVisible(False);self.state_labels.append((cue,'cue'));cl.addWidget(cue);cl.addStretch();row.addWidget(camera,4)
+        row.addWidget(camera,5)
         return body
+
+    def show_practice(self):
+        if self.session.game!='Getting Over It':
+            QMessageBox.information(self,'Next attempt','Practice cues currently cover Getting Over It. You can still check in or take a break for other games.');return
+        from checkpoint.practice_ui import PracticeDialog
+        dialog=PracticeDialog(self);dialog.changed.connect(self.practice_changed);dialog.exec();self.practice_changed()
+
+    def practice_changed(self):
+        self.next_export=0.;self.refresh()
 
     def return_to_session(self):self.refresh();self.scroll.verticalScrollBar().setValue(0)
     def select_card_source(self,index):
@@ -391,7 +418,7 @@ class MainWindow(QMainWindow):
             self.session.experimental_analysis=True;self.select_card_source(1);self.start_source(path)
 
     def toggle_theme(self):
-        self.theme='dark' if self.theme=='light' else 'light';QApplication.instance().setStyleSheet(make_style(self.theme));self.theme_button.setText('Light theme' if self.theme=='dark' else 'Dark theme')
+        self.theme='dark' if self.theme=='light' else 'light';QApplication.instance().setStyleSheet(make_style(self.theme));self.theme_button.setText('Light theme' if self.theme=='dark' else 'Dark theme');with_icon(self.theme_button,'sun' if self.theme=='dark' else 'moon','#D3DEEF')
         c=PALETTES[self.theme]
         for preview in self.preview_widgets:preview.setStyleSheet('background:'+c['surface_alt']+';border-radius:14px;color:'+c['secondary']+';')
         self.refresh()
@@ -415,7 +442,7 @@ class MainWindow(QMainWindow):
     def add_dimensions(self,layout):
         row=QHBoxLayout();row.setSpacing(16)
         for key,title in [("valence","Pleasantness"),("energy","Energy / activation")]:
-            col=QVBoxLayout();col.addWidget(label(title,13,True));value=label("",20,bold=True);self.state_labels.append((value,key));col.addWidget(value);row.addLayout(col,1)
+            col=QVBoxLayout();col.addWidget(label(title,11,True));value=label("",16,bold=True);self.state_labels.append((value,key));col.addWidget(value);row.addLayout(col,1)
         layout.addLayout(row)
 
     def change_view(self,index):
@@ -441,8 +468,8 @@ class MainWindow(QMainWindow):
         self.bodies.setCurrentIndex(4 if not s.active else 3 if s.break_deadline is not None else self.current_view)
         if not s.active:self.title.setText("Session complete")
         elif s.break_deadline is not None:self.title.setText("A moment away")
-        else:self.title.setText("Your session")
-        self.subtitle.setText(s.game+"  ·  "+s.intention)
+        else:self.title.setText(s.game)
+        self.subtitle.setText(s.intention if s.active and s.break_deadline is None else s.game)
         self.game_tag.setText('Windows game detection' if self.detect_games else "Competitive session" if s.competitive else "Manual game context")
         observation=self.game_observation
         status=(observation.game+' · ' if observation and observation.game else '')+(observation.status if observation else 'Looking for a supported foreground game…' if sys.platform=='win32' else 'Live game-window tracking requires Windows')
@@ -469,8 +496,18 @@ class MainWindow(QMainWindow):
         for message in self.camera_messages:message.setText(feedback);message.setVisible(bool(feedback))
         for control in self.camera_controls:
             control.setText('Pause video' if s.source_kind=='video' else 'Pause camera' if s.camera_active else 'Start face tracking');control.setEnabled(s.active and s.break_deadline is None)
-        for control in self.file_controls:control.setEnabled(s.active and s.break_deadline is None)
+        ink=PALETTES[self.theme]['text'];on_accent=PALETTES[self.theme]['on_accent']
+        for control in self.camera_controls:with_icon(control,'pause' if s.camera_active else 'camera',on_accent)
+        for control in self.checkin_controls:with_icon(control,'feeling',on_accent)
+        for control in self.file_controls:control.setEnabled(s.active and s.break_deadline is None);with_icon(control,'video',ink)
+        for control,glyph in [(self.game_detection_control,'game'),(self.mark_start_control,'flag'),(self.pip_control,'overlay'),(self.phone_control,'phone')]:with_icon(control,glyph,ink)
         self.library_control.setEnabled(s.active and s.break_deadline is None)
+        with_icon(self.context_control,'edit',PALETTES[self.theme]['text'])
+        for control in self.detail_controls:with_icon(control,'sliders',PALETTES[self.theme]['text'])
+        self.practice_control.setEnabled(s.active and s.break_deadline is None)
+        from checkpoint.attempts import active_attempt
+        self.practice_control.setText("Rate my attempt" if active_attempt(s) else "Next attempt")
+        for reported in self.reported_titles:reported.setText(s.affect[0] if s.report else "Not checked in")
         self.end_control.setText("End session" if s.active else "New session")
         for control in self.checkin_controls:control.setEnabled(s.active and s.break_deadline is None);control.setText('Update check-in' if s.report else 'Choose a feeling')
         remaining=max(0,math.ceil(s.break_deadline-time.monotonic())) if s.break_deadline is not None else None
