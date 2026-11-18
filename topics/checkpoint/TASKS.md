@@ -66,3 +66,19 @@
 - [x] Publish 0.6.1 and a 3.8 KB legacy repair bridge.
 - [x] Test actual public repair with real 0.4 source, locked folder, real Qt start and original CMD reopen on Windows (run44077487729).
 - [ ] User runs repair against existing installation; physical user-device result remains unknown.
+
+## Gaming UI and case-study review, 18 November 2026
+
+- [x] Separate review branch; stable OTA preserved.
+- [x] Native gaming visual identity, original icons/header, task navigation and compact CMA/camera actions.
+- [x] CMA-adjusted selected cue, feedback, consented recall and report; overlay/phone cue integration.
+- [x] 113 local checks, native flow, Chromium phone/PDF and Windows run44249331998.
+- [x] Classroom brief mapping, Empathize/Define/Ideate/Prototype, actual-screen case study/PDF, feasibility discussion.
+- [ ] Real play, physical device compatibility, overhead and perceived usefulness validation.
+
+## Regen visual revision
+
+- [x] Sage/evergreen native controls, brand/name/icon and clearer main actions.
+- [x] Visual gaming case study, interactive CMA example and concise copy without classroom framing.
+- [x] One-file offline export, visual PDF, responsive/reduced-motion checks and contrast measurements.
+- [x] Native/phone regression and Windows run44256785585 passed.

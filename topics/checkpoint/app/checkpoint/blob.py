@@ -6,11 +6,19 @@ import time
 from PySide6.QtCore import Qt, QPointF
 from PySide6.QtGui import QColor, QPainter, QPainterPath, QPen
 from checkpoint.motion import AffectWidget, painter_path
-from checkpoint.character import CHARACTER_NAME,FEELING_LOOKS,COLOURS
+from checkpoint.character import CHARACTER_NAME,FEELING_LOOKS,COLOURS,EXPRESSION_COLOURS
 from checkpoint.vocabulary import CARDS
 
 
 BASE = dict(red=131., green=210., blue=187., stretch=0., tension=0., smile=0., eyes=1., brow=0., energy=.2,jaw=0.,laugh=0.,eye_left=1.,eye_right=1.,brow_skew=0.,mouth_wide=0.,pressed=0.,pucker=0.,snarl=0.,asymmetry=0.,teeth=0.,hand=0.,hand_side=1.,mouth_visible=1.,tears=0.,lean=0.)
+
+
+def eyebrow_curve(brow, skew, direction):
+    """Short soft brows; all coordinates relative to the eye centre and scale."""
+    b=max(-1.,min(1.,brow));k=max(-1.,min(1.,skew))
+    y=-.19-direction*k*.025
+    tilt=direction*max(-1.,min(1.,b+direction*k))*.025
+    return ((-.055,y+tilt),(0.,y-.035),(.055,y-tilt))
 LOOKS = {
     'happy': dict(red=235,green=188,blue=102,smile=.9,eyes=.65,energy=.55,stretch=.06),
     'excited': dict(red=235,green=178,blue=103,smile=1.,eyes=1.15,energy=.8,stretch=.12),
@@ -37,7 +45,7 @@ def parameters(key,valence=None,arousal=None):
         result.update(zip(('red','green','blue'),COLOURS[CARDS[key]['colour']]))
         result.update(FEELING_LOOKS[key])
     else:result.update(LOOKS.get(ALIASES.get(key,key),{}))
-    if key in ('confused','bewildered'):result.update(red=176.,green=170.,blue=222.)
+    if key in EXPRESSION_COLOURS:result.update(zip(('red','green','blue'),EXPRESSION_COLOURS[key]))
     result['eye_left']=result['eyes'];result['eye_right']=result['eyes']
     # Only self-report coordinates modulate the body. Camera movements pass no CMA.
     if valence is not None and arousal is not None:
@@ -169,10 +177,10 @@ class NoriWidget(AffectWidget):
         pen=QPen(ink,max(1.5,size*.009));pen.setCapStyle(Qt.PenCapStyle.RoundCap);p.setPen(pen);p.setBrush(Qt.BrushStyle.NoBrush)
         if max(abs(v['brow']),abs(v['brow_skew']))>.15:
             for direction in (-1,1):
-                x=centre.x()+direction*eye_x;y=eye_y-scale*(.18+direction*v['brow_skew']*.10)
-                brow=v['brow']+direction*v['brow_skew']
-                curve=QPainterPath(QPointF(x-scale*.075,y+direction*brow*scale*.09))
-                curve.quadTo(x,y-scale*(.055+.035*abs(brow)),x+scale*.075,y-direction*brow*scale*.09)
+                x=centre.x()+direction*eye_x
+                start,control,end=eyebrow_curve(v['brow'],v['brow_skew'],direction)
+                curve=QPainterPath(QPointF(x+start[0]*scale,eye_y+start[1]*scale))
+                curve.quadTo(x+control[0]*scale,eye_y+control[1]*scale,x+end[0]*scale,eye_y+end[1]*scale)
                 p.drawPath(curve)
         if v['mouth_visible']>.5:
             width=scale*(.14+.065*v['mouth_wide']+.055*max(0.,v['smile'])-.055*v['pucker'])

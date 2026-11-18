@@ -75,6 +75,14 @@ jobs:
           Copy-Item artifacts/live-tracking-tests.xml build/Checkpoint-Windows/docs/
           Copy-Item artifacts/pip-tests.xml build/Checkpoint-Windows/docs/
           Copy-Item artifacts/nori-phone-verification.json build/Checkpoint-Windows/docs/
+      - name: Check native session and play reminders
+        run: |
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_session_design.py
+          if ($LASTEXITCODE -ne 0) { throw 'Native session checks failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_recovery.py
+          if ($LASTEXITCODE -ne 0) { throw 'CMA recap checks failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_play_support.py
+          if ($LASTEXITCODE -ne 0) { throw 'Play reminder checks failed' }
       - name: Check Windows updater restart and rollback
         run: |
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/smoke_windows_updates.py
@@ -112,7 +120,7 @@ jobs:
             topics/checkpoint/app/artifacts/windows-package-verification.json
             topics/checkpoint/app/artifacts/windows-tracking-smoke.json
             topics/checkpoint/app/artifacts/expression-review/
-      - name: Publish downloadable research preview
+      - name: Publish downloadable Regen preview
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -121,7 +129,7 @@ jobs:
           $tag = python -c "from checkpoint.version import RELEASE_TAG; print(RELEASE_TAG)"
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Checkpoint 0.6.1 — persistent updates and file-lock repair' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Regen 0.6.2 - session UI and play reminders' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip ../Checkpoint-Updater-Repair.zip --clobber

@@ -4,14 +4,15 @@ from checkpoint.blob import parameters,movement_visual
 from checkpoint.character import CHARACTER_NAME
 from checkpoint.cma_report import cma_summary
 from checkpoint.expression_view import category_estimate
+from checkpoint.play_support import PlaySupport,response_mode
 
 
 class CompanionState:
     def __init__(self):
-        self.nudge='';self.nudge_at=0.;self.last_prompt=-1000.;self.last_fall=-1000.;self.fall_pending=False
+        self.nudge='';self.support=PlaySupport()
         self.activity_sums={};self.activity_count=0;self.last_activity=-100.
 
-    def update(self,session,display,game,*,input_stats=None,nudges=False,motion_enabled=True,reflection_summary=None,now=None):
+    def update(self,session,display,game,*,input_stats=None,nudges=False,support_mode='Match my check-in',motion_enabled=True,reflection_summary=None,now=None):
         now=time.monotonic() if now is None else now;elapsed=round(session.elapsed(),1)
         title=display.title if display else session.affect[0];artwork=display.artwork if display else session.report
         source=display.source if display else 'player_report' if session.report else 'unassigned'
@@ -21,13 +22,9 @@ class CompanionState:
                 value=input_stats.get(key)
                 if isinstance(value,(int,float)):self.activity_sums[key]=self.activity_sums.get(key,0)+value
             self.activity_count+=1;self.last_activity=now
-        if cue.startswith('Possible fall'):self.last_fall=now;self.fall_pending=True
-        idle=(input_stats or {}).get('idle_seconds')
-        if (nudges and self.fall_pending and 3<now-self.last_fall<25 and idle is not None and idle>=3
-                and now-self.last_prompt>=120 and session.active and session.break_deadline is None):
-            self.nudge='A setback? Take a moment if you want.';self.nudge_at=now;self.last_prompt=now;self.fall_pending=False
-        if now-self.nudge_at>=10:self.nudge=''
-        if not nudges or not session.active or session.break_deadline is not None:self.nudge=''
+        resolved_mode=response_mode(session,support_mode)
+        self.nudge=self.support.update(game,now,enabled=nudges,active=session.active,
+            paused=session.break_deadline is not None,input_stats=input_stats,mode=resolved_mode)
         activity={k:round(v/self.activity_count,2) for k,v in self.activity_sums.items()} if self.activity_count else None
         report=cma_summary(session,activity)
         if reflection_summary:report['observations']=reflection_summary
@@ -43,5 +40,8 @@ class CompanionState:
             'checkin':{'title':session.affect[0],'pleasantness':session.affect[1],'activation':session.affect[2]},
             'model_estimate':category_estimate(session.cue) if display and display.source in ('face_movement','expression_estimate','visual_pattern') else None,
             'input':input_stats or {'status':'Input observation off'},'nudge':self.nudge,
+            'play_support':{'enabled':nudges,'preference':support_mode,'mode':resolved_mode,'basis':self.support.basis if self.nudge else ''},
             'cma_report':{k:report['cma'][k] for k in ('count','trend','insight','next_step','latest')}}
+        from checkpoint.attempts import phone_attempt
+        state['practice']=phone_attempt(session)
         return state,report

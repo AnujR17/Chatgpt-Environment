@@ -57,45 +57,8 @@ print('Native window created. Close it to finish this check.')
 app.exec()
 print('Setup check completed.')
 ''')
-(OUT/'READ ME FIRST.txt').write_text('''Checkpoint with Nori — Windows portable preview
+(OUT/'READ ME FIRST.txt').write_text('Regen with Nori - Windows 10/11 x64\n\n1. Extract the entire ZIP and open Checkpoint-Windows.\n2. Double-click Start Checkpoint.cmd.\n3. Choose Start play support, then switch to the game.\n\nNori gives a short reminder after about 2½ minutes of active play and after a\npossible fall in Getting Over It. Use borderless or windowed play for the overlay.\nCamera is optional. Reminders pause when you switch away from the game.\n\nReminders: mute or unmute. Ctrl+Alt+F8: I fell. Ctrl+Alt+F9: mute reminders.\nHold Ctrl+Alt to move Nori. Phone pairs a display over the same trusted Wi-Fi.\nYour check-in supplies CMA; camera estimates are a separate source.\n\nFuture updates: Settings > Check for updates > Update and restart.\nKeep runtime, checkpoint and artifacts beside the launcher. No separate Python\ninstallation is required. For startup diagnostics, run Check setup.cmd.\n\nRuntime: official Python embedded distribution and PyPI wheels. Third-party\nlicenses are retained in runtime and package metadata. PySide6/Qt is dynamically\nlinked and replaceable. App source is in checkpoint/. Qt/PySide source:\nhttps://code.qt.io/cgit/pyside/pyside-setup.git/\nhttps://code.qt.io/cgit/qt/\n',encoding='utf8')
 
-1. Extract the entire ZIP to a normal folder on your Windows PC.
-2. Double-click Start Checkpoint.cmd.
-3. Choose a game and intention. Camera starts off.
-4. Select your camera and enable Track face and hands. Reflection is the default.
-   It uses sustained visual patterns and your confirmed check-ins.
-   Choose Face preview for immediate mouth, brow, eye, teeth and hand tests.
-5. Show Nori enables the transparent, frameless, click-through desktop buddy.
-6. Phone dashboard displays a pairing QR. Choose your Wi-Fi adapter and scan it on the same trusted Wi-Fi.
-   If the phone cannot connect, use Test this link on the laptop and the Private-network firewall instructions.
-7. Settings offers HSEmotion expression estimates, game observation and optional input timing/nudges.
-8. Settings > Check for updates offers Update and restart for future releases.
-   Small app updates reuse the runtime/models; a changed runtime uses the full package automatically.
-9. Report shows your CMA journey and exports a readable PDF. It does not log facial events. No camera/game images or typed text are sent to your phone.
-
-Neutral and loss of detection use a flat neutral appearance. The status still
-says when no face is detected. Set my neutral face optionally calibrates a few
-seconds of relaxed tracking in memory; no personal photo collection is needed.
-
-No separate Python installation or package downloads are required.
-Keep the runtime, checkpoint and artifacts folders beside the launcher.
-For diagnostics, run Check setup.cmd. Startup errors are written under
-%LOCALAPPDATA%\\CheckpointResearch\\Checkpoint\\startup-error.log.
-
-Camera and video are explicit choices. No microphone or gameplay recording.
-Expression analysis is experimental, off by default and never sets your CMA.
-History is off by default; opting in stores derived summaries locally.
-This research preview is not code-signed. Automated Windows launch and fixture
-checks run before publication. Physical-camera access, actual game behaviour,
-phone Wi-Fi/firewall access and device performance still need a target-device check. The included numerical/runtime libraries are
-Windows x64 wheels. Windows 10/11 x64 is the target.
-
-Runtime: official Python embedded distribution and PyPI wheels. Third-party
-licenses are retained in runtime and package metadata. PySide6/Qt is dynamically
-linked and replaceable. App source is in checkpoint/. Qt/PySide source:
-https://code.qt.io/cgit/pyside/pyside-setup.git/
-https://code.qt.io/cgit/qt/
-''')
 # Validate machine code, imports present, plugin, provenance and trained model hash.
 def amd64(path):
     data=path.read_bytes();assert data[:2]==b'MZ';offset=struct.unpack_from('<I',data,0x3c)[0];assert data[offset:offset+4]==b'PE\0\0';assert struct.unpack_from('<H',data,offset+4)[0]==0x8664

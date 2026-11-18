@@ -37,6 +37,9 @@ class Session:
     valence: float | None = None
     arousal: float | None = None
     reports: list = field(default_factory=list)
+    responses: list = field(default_factory=list)
+    attempts: list = field(default_factory=list)
+    practice_goal: str = ""
     context: str = "Manual game context"
     break_deadline: float | None = None
     ended: float | None = None
@@ -67,7 +70,7 @@ class Session:
         self.cue=cue;self.cue_received_at=time.monotonic()
         return True
 
-    def check_in(self, feeling, valence=None, arousal=None):
+    def check_in(self, feeling, valence=None, arousal=None, *, context="", game_context=None):
         if not self.active: raise ValueError("Session has ended")
         if feeling not in FEELINGS: raise ValueError("Unknown check-in")
         if feeling == 'mixed':
@@ -80,10 +83,26 @@ class Session:
                 raise ValueError('Both dimensions must be finite values between -1 and 1')
         self.report=feeling;self.valence=valence;self.arousal=arousal
         self.reports.append({"feeling":feeling,"valence":valence,"arousal":arousal,
-                             "elapsed_seconds":round(time.monotonic()-self.started,2),"source":"player_report"})
+                             "elapsed_seconds":round(time.monotonic()-self.started,2),"source":"player_report",
+                             "context":str(context).strip()[:160],"game_context":dict(game_context or {})})
+
+    def record_response(self, kind, detail=''):
+        from checkpoint.recovery import CHOICES
+        if not self.active or self.break_deadline is not None or kind not in CHOICES:return None
+        stamp=round(self.elapsed(),2)
+        if self.responses and self.responses[-1]['kind']==kind and stamp-self.responses[-1]['elapsed_seconds']<5:return None
+        row={'kind':kind,'detail':str(detail).strip()[:160],'elapsed_seconds':stamp,'helpful':None}
+        self.responses.append(row);return row
+
+    def rate_response(self, helpful):
+        if helpful not in ('yes','no','unsure') or not self.responses:return False
+        row=self.responses[-1]
+        if row['helpful'] is not None:return False
+        row['helpful']=helpful;return True
 
     def take_break(self, seconds=30, now=None):
         if not self.active: raise ValueError("Session has ended")
+        self.record_response('pause')
         self.stop_capture();self.break_deadline=(time.monotonic() if now is None else now)+seconds
 
     def finish_break(self):
@@ -98,7 +117,7 @@ class Session:
 
     def summary(self):
         return {"schema":1,"started_at":self.started_at,"duration_seconds":round(self.elapsed(),2),"game":self.game,
-                "intention":self.intention,"check_ins":list(self.reports),"capture_stopped":not self.camera_active}
+                "intention":self.intention,"check_ins":list(self.reports),"attempts":list(self.attempts),"responses":list(self.responses),"capture_stopped":not self.camera_active}
 
 
 class History:

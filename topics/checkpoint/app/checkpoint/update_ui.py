@@ -22,7 +22,7 @@ class UpdateWorker(QThread):
 
 class UpdateDialog(QDialog):
     def __init__(self,parent):
-        super().__init__(parent);self.setWindowTitle('Checkpoint updates');self.resize(520,390);self.worker=None;self.manifest=None;self.installing=False;self.cancel_requested=False
+        super().__init__(parent);self.setWindowTitle('Regen updates');self.resize(520,390);self.worker=None;self.manifest=None;self.installing=False;self.cancel_requested=False
         layout=QVBoxLayout(self);layout.setContentsMargins(28,24,28,24);layout.setSpacing(16)
         heading=QLabel('App updates');heading.setStyleSheet('font-size:26px;font-weight:600;');layout.addWidget(heading)
         self.version=QLabel('Installed: '+RELEASE_TAG.removeprefix('checkpoint-v'));layout.addWidget(self.version)

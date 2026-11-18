@@ -58,8 +58,8 @@ def private_firewall_command(port,executable=None):
     lines=[]
     for program in programs:
         name='CheckpointPhone-'+hashlib.sha256((program.lower()+':'+str(port)).encode()).hexdigest()[:16]
-        lines.append(f"if (-not (Get-NetFirewallRule -Name {quote(name)} -ErrorAction SilentlyContinue)) {{ New-NetFirewallRule -Name {quote(name)} -DisplayName 'Checkpoint phone dashboard' -Direction Inbound -Action Allow -Enabled True -Protocol TCP -LocalPort {port} -Program {quote(program)} -Profile Private -RemoteAddress LocalSubnet -ErrorAction Stop | Out-Null }}")
-    lines.append("Write-Output 'Checkpoint private-network rule is ready. Keep the app open and rescan its QR code.'")
+        lines.append(f"if (-not (Get-NetFirewallRule -Name {quote(name)} -ErrorAction SilentlyContinue)) {{ New-NetFirewallRule -Name {quote(name)} -DisplayName 'Regen phone dashboard' -Direction Inbound -Action Allow -Enabled True -Protocol TCP -LocalPort {port} -Program {quote(program)} -Profile Private -RemoteAddress LocalSubnet -ErrorAction Stop | Out-Null }}")
+    lines.append("Write-Output 'Regen private-network rule is ready. Keep the app open and rescan its QR code.'")
     return '\n'.join(lines)
 
 
