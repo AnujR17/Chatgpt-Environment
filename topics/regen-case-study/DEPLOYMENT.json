@@ -2,58 +2,34 @@
   "project": "regen-case-study",
   "projectId": "prj_5TrsYqWsyuPksudhkXFIqxQ1HnnV",
   "branch": "topic/regen-case-study-site",
-  "sourceCommit": "f8787f23e3918a77f4c922ce1489c08c43829629",
-  "deploymentId": "dpl_54e4jJo1EWdHwGigrnQRzBsMyeqA",
-  "url": "https://regen-case-study-jqckmrcak-anujrai1701-gmailcoms-projects.vercel.app",
+  "sourceCommit": "1de8f8cedb35f850e1a4cb8e9eaf673852385ec1",
+  "deploymentId": "dpl_GXFn8Jm4GxTd5jqpaA966Hd9hfFD",
+  "url": "https://regen-case-study-git-topi-a380c7-anujrai1701-gmailcoms-projects.vercel.app",
   "status": "READY",
   "target": "preview",
   "access": "Existing Vercel team sign-in protection retained",
   "verification": {
     "rootStatus": 200,
-    "assets": [
-      {
-        "path": "case-study.js",
-        "status": 200,
-        "bodyLength": 8485
-      },
-      {
-        "path": "case-study.css",
-        "status": 200,
-        "bodyLength": 27489
-      },
-      {
-        "path": "project.html",
-        "status": 200,
-        "bodyLength": 3363
-      },
-      {
-        "path": "research.html",
-        "status": 200,
-        "bodyLength": 8785
-      },
-      {
-        "path": "feasibility.html",
-        "status": 200,
-        "bodyLength": 5270
-      },
-      {
-        "path": "play-support-verification.json",
-        "status": 200,
-        "bodyLength": 436
-      },
-      {
-        "path": "recovery-verification.json",
-        "status": 200,
-        "bodyLength": 431
-      },
-      {
-        "path": "windows-verification.json",
-        "status": 200,
-        "bodyLength": 1581
-      }
+    "assets": {
+      "case-data.js": 200,
+      "case-study.css": 200,
+      "research.html": 200
+    },
+    "primary_emotions": [
+      "Neutral",
+      "Happy",
+      "Frustrated",
+      "Sad",
+      "Confused"
     ],
-    "interaction": "Generated website passed local Chromium interaction checks at 1440, 390 and 320px, including simulated fall/mute, CMA choices, follow-up, helpfulness, themes and reduced motion",
-    "deployedHttp": "Verified with authenticated Vercel connector",
-    "liveBrowser": "Not separately exercised behind Vercel sign-in; deployed static sources match the locally exercised website"
+    "presentation": "Static; no navbar or demo controls; flat native mockups; fully visible artwork",
+    "local_browser_widths": [
+      1440,
+      1024,
+      390,
+      320
+    ],
+    "live_http": "Verified with authenticated Vercel connector",
+    "visual_pdf": "Published in the 0.6.3 Windows release"
   }
 }
