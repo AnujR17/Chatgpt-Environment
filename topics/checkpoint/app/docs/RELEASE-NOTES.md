@@ -1,10 +1,9 @@
-# Regen 0.6.3
+# Regen 0.6.4
 
-- Five primary emotions across the app, Nori widget and phone: Neutral, Happy, Frustrated, Sad and Confused.
-- A visible emotion name and a larger break countdown on Nori.
-- Click Nori to check in, take a 30-second, one-minute or two-minute break, mark a fall or mute reminders. Drag to move.
-- Breaks finish at 0:00 until you choose Continue playing. The camera stays off after a break.
-- Play reminders follow about 2½ minutes of foreground gaming or a settled view after a possible fall.
-
-Existing installations: Settings > Check for updates > Update and restart.
-For a first install, extract the entire Checkpoint-Windows-Preview.zip and run Start Checkpoint.cmd.
+- Open session layout groups check-in, breaks, setback support and display tools by purpose.
+- Nori’s emotion and countdown use light lettering with dark outlines, with no backing boxes.
+- An optional thought-cloud break prompt starts 30 seconds after enabling. Adjust the interval in Session or Settings. No camera or game tracking is needed.
+- Breaks pause the reminder and explicit continuation starts a full interval. Session end stops prompts.
+- Setback support remains a separate opt-in; starting game observation does not enable either reminder type.
+- Updated static case study, real UI screenshots and visual PDF explain the design decisions and relevant UX principles.
+- Five shared states remain Neutral, Happy, Frustrated, Sad and Confused. Model weights and inference are unchanged.

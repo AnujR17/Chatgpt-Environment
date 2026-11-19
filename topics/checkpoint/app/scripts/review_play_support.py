@@ -28,11 +28,14 @@ def run():
     w.support_toggle.click();assert not w.last_nudge and not w.overlay.message
     w.setback_control.click();assert w.last_nudge and w.latest_companion['play_support']['basis']=='Player marked a setback'
     assert not w.nudges_enabled  # Manual help preserves the player's mute preference.
-    w.nudges_enabled=True;policy=w.companion.support;policy.play_seconds=149.9;policy.last_tick=time.monotonic()-.5;policy.was_foreground=True;policy.last_prompt=time.monotonic()-151
+    w.set_break_reminders(True)
+    policy=w.companion.reminder;policy.deadline=time.monotonic()-.1
     w.next_export=0.;scene('steady');app.processEvents()
-    assert w.last_nudge=='A quick reset? Relax your grip, then go again.'
-    assert w.latest_companion['play_support']['basis']=='Active gaming reminder'
+    assert w.last_nudge=="Let's take a break?"
+    assert w.latest_companion['break_reminder']['enabled']
     w.overlay.grab().save(str(OUT/'reminder-overlay.png'));w.grab().save(str(OUT/'play-reminder.png'))
+    w.set_break_reminders(False)
+    assert w.overlay.message!=policy.MESSAGE and w.overlay.timer_value.text()==''
     for width,height in ((1440,900),(1024,768)):
         w.resize(width,height);app.processEvents()
         for b in (w.capture_control,w.checkin_button,w.setback_control,w.game_detection_control):

@@ -82,3 +82,11 @@
 - [x] Visual gaming case study, interactive CMA example and concise copy without classroom framing.
 - [x] One-file offline export, visual PDF, responsive/reduced-motion checks and contrast measurements.
 - [x] Native/phone regression and Windows run44256785585 passed.
+
+## Open layout and reminder refinement, 19 November 2026
+
+- [x] Group actions by purpose and remove Nori label surfaces.
+- [x] Thought-cloud prompts; separate opt-in 30-second reminder and adjustable interval.
+- [x] Update source case study and generate native screenshots; 139 tests and native review scripts pass.
+- [ ] Verify Windows 0.6.4 release and updated case-study deployment.
+- [ ] Check readability and usefulness during physical gameplay.

@@ -49,3 +49,14 @@ The shared presentation vocabulary is Neutral, Happy, Frustrated, Sad and Confus
 
 
 Publication complete: native review 6684749874b88e1a5cbfd9d72beb0c248736ff2e passed Windows run 44392120784. Release checkpoint-v0.6.3-preview.1 targets topic/checkpoint code commit 18d6edab55bfb377affd246e56b0fc31696bb6b2; Windows release run 44392746679 passed all steps, including updater restart/rollback and case PDF export. Downloaded small update (6,170,072 bytes), verified all 92 file hashes and version/five-state/widget code; 0.6.2 discovers 0.6.3. Downloaded case PDF (3,980,342 bytes). Full ZIP hash is dd0a7aadb7514d36da4f479a8799c5a628e6dbf5ea016aa8feaafbc85b408982. Website UI commit 1de8f8cedb35f850e1a4cb8e9eaf673852385ec1 is READY at deployment dpl_GXFn8Jm4GxTd5jqpaA966Hd9hfFD. Authenticated root, CSS, five-state data and research page returned 200. Stable preview alias points to this deployment. Local branch matches published UI tree. Repository main and job-search production are untouched.
+
+
+## 19 November 2026: open UI and opt-in break reminders
+
+User rejects boxed/capsule labels and a flat cluster of unrelated actions. Native session now groups check-in, breaks/reminder interval, setback support, header session actions and footer display tools through proximity and whitespace. Secondary surfaces and tabs have reduced rounding; selected source uses an underline. Continue playing appears after a response.
+
+Nori mood/countdown labels have transparent backing with white glyphs and a dark outline. A scalloped thought cloud offers “Let’s take a break?” without activating a window or starting a break. No game pixels are sampled for adaptive text; dense-motion readability remains a physical-device check.
+
+Break reminders are a separate explicit opt-in, initially off. The first prompt arrives 30 seconds after enabling, adjustable with Session presets or Settings (30–3600 seconds). Camera/game observation is unnecessary. Taking a break clears the pending reminder; continuing starts a full interval; end stops prompts. Game observation no longer opts into setback support or break reminders. Five primary states are unchanged.
+
+Local verification: 139 tests passed, five fixture/Windows-dependent checks skipped. Actual Qt session/widget/recovery/play-support review scripts passed, including desktop 1440x900 and compact 1024x768, clicked check-in/break controls, phone-payload propagation, interval changes and transparent glyph rendering. Source case study adds concrete UX decisions and refreshed native screenshots. Windows 0.6.4 release and Vercel preview verification are pending publication at this checkpoint. No physical camera/game testing or user outcome claim.
