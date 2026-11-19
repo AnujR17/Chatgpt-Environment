@@ -1,6 +1,53 @@
 # Job search agent handoff
 
-Updated 18 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 19 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 19 November public research — publication pending
+
+141 retained / 112 active-held / 29 archived;308companies,20 established profiles,
+50coverage rows(36 checked today). Four new held roles: Novyte employer-Wellfound
+5094852 annualINR360,000/YEAR, remote considered/Mumbai, internship duration unknown;
+Taskly exact six-month India-remote internship,pay undisclosed; StudioCarbon exact
+Gandhinagar junior0–2years,salary unknown; indexed Transket via TechGlora4491479532
+junior full-time remote15k/month,immediate joining/current-student terms unresolved.
+All new monthly stipend fields null; no new monthly stipend match or confirmed
+current student joining. Novyte annual units verified from normal listing schema;
+Transket normal original restricted,salary not employer-confirmed and not stipend.
+No private applicant context committed. No applications/messages/assessments sent.
+
+DomainExpansion exact Indeed now explicitly expired; archive only this listing,
+retain prior status/evidence/action history, requirements/pay/sources and browser
+application overrides. Nonlinear robots restriction,YTT404/Falcon410 unresolved.
+Existing HMMBiz,Sure,Polus,Androcid,Gnixar,Suthar,TheInterviews,Cravv,Arihant and
+Devoq rechecked,not new duplicate cards. Sure genuine indexed LinkedIn4475213313
+added as additionalSource with normal-access/date limits. Current normal Devoq
+detail/index retain explicit interns despite differing indexed snapshot; no
+requirements changed. Cravv September header20k/bodymonthly/schemaYEAR conflict
+retained. Gnixar current25–40k/month retained;Suthar24Novemberdeadline,December
+start,stipend unknown;TheInterviews paid amount unknown,12weeks20–40hours retained.
+
+Ten company targets:Novyte,Taskly,StudioCarbon,Transket,Stratziai,Variabl,PardyPanda,
+SandCup,AtliQ,Promact. Tiers qualitative preferences,no hiring probability or culture
+verdict. StudioCarbon cohort2027 pays15–30k but original8November application deadline
+passed; separate junior salary unknown. Stratziai1–2years annual4–6lakh,inactive-review
+warning,directory-only. Variabl intern header/founding body and10–20kYEAR conflict,
+directory-only. Pardy junior social3weeks historical; no current design internship
+verified. SandCup2+years/5+years only,AtliQ team evidence,Promact ATS shell not vacancies.
+eLeoRex1Octoberdeadline expired;TravelOnTips5–10k minimum belowfloor;Ethqan applicant
+state restriction;GoKreativ paid header/unpaid question;Parqis exact expired excluded.
+Old IDs/requirements,pay,contacts,tiers,benchmarks,screenings and exclusions retained.
+
+108 active primaries:96fetched,10restricted,2missing,zeroerrors.44query generator
+executed with actual public/indexed result log outside Git; social cutoff5November.
+Onething/HireDesigners/Devoq plus required rotation and author queries checked.
+No new verified14daystandalone social post; restricted/indexed feeds are not zero
+openings. Broad boards,remote/startup/maps and smaller-city samples recorded with
+limits. HN300topIDs/243texts/61broadkeywords,zeroerrors,no changed keyword text
+versus18November. No UI/model/clipper/seed/collector-main/task/schedule changes.
+Research and synthetic QA: /workspace/job-refresh-nov19-review/; prior same-day
+startup source fetches reused from /workspace/job-startup-nov19-review/.
+Supported workbook/Company directory/Role requirements/CSV regenerated.
+Data-preservation audit,5JS and8Python tests,Vite build and desktop/mobile browser checks PASS. Synthetic saved applications survive the new DomainExpansion expiry archive; blacklist and private company assessments survive reload/backup/mobile restore. Annual salary units and junior labels render correctly. No runtime errors or POSTs. Discover/Companies have no horizontal overflow; pre-existing Sources mobile navigation overflow remains unchanged. Exact production publication pending READY/live verification.
 
 ## 18 November public research — published
 

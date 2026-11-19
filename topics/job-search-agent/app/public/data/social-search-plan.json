@@ -1,46 +1,46 @@
 {
   "version": 1,
-  "generatedFor": "2026-11-18",
+  "generatedFor": "2026-11-19",
   "timezone": "Asia/Kolkata",
   "kind": "Research query plan — not search results",
   "maxSocialPostAgeDays": 14,
-  "socialPublicationCutoff": "2026-11-04",
+  "socialPublicationCutoff": "2026-11-05",
   "limits": "Generation performs no search or login. Social-only recommendations require a verified original publication within 14 days; crawl/repost/firstSeen dates and search date filters are not publication evidence. Older or undated posts remain historical research unless an independently current employer vacancy supports a separate recommendation. Record actual searches and limits in sources.coverage.",
   "queries": [
     {
       "id": "linkedin-posts-broad",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ (\"product design intern\" OR \"UX intern\" OR \"interaction design intern\") (hiring OR internship) (India OR Ahmedabad OR Bengaluru OR Mumbai OR remote) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22product+design+intern%22+OR+%22UX+intern%22+OR+%22interaction+design+intern%22%29+%28hiring+OR+internship%29+%28India+OR+Ahmedabad+OR+Bengaluru+OR+Mumbai+OR+remote%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ (\"product design intern\" OR \"UX intern\" OR \"interaction design intern\") (hiring OR internship) (India OR Ahmedabad OR Bengaluru OR Mumbai OR remote) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22product+design+intern%22+OR+%22UX+intern%22+OR+%22interaction+design+intern%22%29+%28hiring+OR+internship%29+%28India+OR+Ahmedabad+OR+Bengaluru+OR+Mumbai+OR+remote%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "linkedin-updates-broad",
       "platform": "LinkedIn updates",
-      "query": "site:linkedin.com/feed/update/ (\"design intern\" OR \"UX internship\") (India OR remote) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Ffeed%2Fupdate%2F+%28%22design+intern%22+OR+%22UX+internship%22%29+%28India+OR+remote%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/feed/update/ (\"design intern\" OR \"UX internship\") (India OR remote) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Ffeed%2Fupdate%2F+%28%22design+intern%22+OR+%22UX+internship%22%29+%28India+OR+remote%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "x-posts-broad",
       "platform": "X",
-      "query": "site:x.com (\"product design intern\" OR \"UX intern\" OR \"design internship\") (hiring OR portfolio) (India OR remote) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%28%22product+design+intern%22+OR+%22UX+intern%22+OR+%22design+internship%22%29+%28hiring+OR+portfolio%29+%28India+OR+remote%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com (\"product design intern\" OR \"UX intern\" OR \"design internship\") (hiring OR portfolio) (India OR remote) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%28%22product+design+intern%22+OR+%22UX+intern%22+OR+%22design+internship%22%29+%28hiring+OR+portfolio%29+%28India+OR+remote%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
@@ -49,7 +49,7 @@
       "query": "site:naukri.com/job-listings (\"UX\" OR \"product design\") (intern OR internship) (Ahmedabad OR Gandhinagar OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Anaukri.com%2Fjob-listings+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28Ahmedabad+OR+Gandhinagar+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "indeed-design-broad",
@@ -57,7 +57,7 @@
       "query": "site:in.indeed.com/viewjob (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ain.indeed.com%2Fviewjob+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "wellfound-design-broad",
@@ -65,7 +65,7 @@
       "query": "site:wellfound.com/jobs (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Awellfound.com%2Fjobs+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "cutshort-design-broad",
@@ -73,7 +73,7 @@
       "query": "site:cutshort.io/job (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Acutshort.io%2Fjob+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "unstop-design-broad",
@@ -81,7 +81,7 @@
       "query": "site:unstop.com/internships (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Aunstop.com%2Finternships+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "internshala-design-broad",
@@ -89,7 +89,7 @@
       "query": "site:internshala.com/internship/detail (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ainternshala.com%2Finternship%2Fdetail+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "instahyre-design-broad",
@@ -97,7 +97,7 @@
       "query": "site:instahyre.com (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ainstahyre.com+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "prosple-design-broad",
@@ -105,7 +105,7 @@
       "query": "site:in.prosple.com (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ain.prosple.com+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "hirist-design-broad",
@@ -113,7 +113,7 @@
       "query": "site:hirist.tech (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ahirist.tech+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "foundit-design-broad",
@@ -121,7 +121,7 @@
       "query": "site:foundit.in (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Afoundit.in+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "apna-design-broad",
@@ -129,7 +129,7 @@
       "query": "site:apna.co/job (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Aapna.co%2Fjob+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "shine-design-broad",
@@ -137,7 +137,7 @@
       "query": "site:shine.com/jobs (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ashine.com%2Fjobs+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "peerlist-design-broad",
@@ -145,7 +145,7 @@
       "query": "site:peerlist.io/company (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Apeerlist.io%2Fcompany+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "freshersworld-design-broad",
@@ -153,330 +153,330 @@
       "query": "site:freshersworld.com (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Afreshersworld.com+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "not_searched",
-      "generatedFor": "2026-11-18"
+      "generatedFor": "2026-11-19"
     },
     {
       "id": "onething-design-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Onething Design\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Onething+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"Onething Design\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Onething+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "onething-design-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Onething Design\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Onething+Design%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"Onething Design\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Onething+Design%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "onething-design-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Onething Design\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Onething+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"Onething Design\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Onething+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "hiredesigners-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"HireDesigners\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22HireDesigners%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"HireDesigners\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22HireDesigners%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "hiredesigners-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"HireDesigners\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22HireDesigners%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"HireDesigners\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22HireDesigners%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "hiredesigners-x-posts",
       "platform": "X",
-      "query": "site:x.com \"HireDesigners\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22HireDesigners%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"HireDesigners\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22HireDesigners%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "devoq-design-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Devoq Design\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Devoq+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"Devoq Design\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Devoq+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "devoq-design-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Devoq Design\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Devoq+Design%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"Devoq Design\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Devoq+Design%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "devoq-design-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Devoq Design\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Devoq+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"Devoq Design\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Devoq+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "lokal-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Lokal\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lokal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"Lokal\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lokal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "lokal-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Lokal\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Lokal%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"Lokal\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Lokal%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "lokal-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Lokal\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Lokal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"Lokal\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Lokal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "parallel-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Parallel\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Parallel%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"Parallel\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Parallel%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "parallel-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Parallel\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Parallel%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"Parallel\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Parallel%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "parallel-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Parallel\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Parallel%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"Parallel\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Parallel%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "netbramha-studios-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"NetBramha Studios\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22NetBramha+Studios%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"NetBramha Studios\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22NetBramha+Studios%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "netbramha-studios-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"NetBramha Studios\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22NetBramha+Studios%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"NetBramha Studios\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22NetBramha+Studios%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "netbramha-studios-x-posts",
       "platform": "X",
-      "query": "site:x.com \"NetBramha Studios\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22NetBramha+Studios%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"NetBramha Studios\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22NetBramha+Studios%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "lollypop-design-studio-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Lollypop Design Studio\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lollypop+Design+Studio%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"Lollypop Design Studio\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lollypop+Design+Studio%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "lollypop-design-studio-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Lollypop Design Studio\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Lollypop+Design+Studio%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"Lollypop Design Studio\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Lollypop+Design+Studio%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "lollypop-design-studio-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Lollypop Design Studio\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Lollypop+Design+Studio%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"Lollypop Design Studio\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Lollypop+Design+Studio%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "f1studioz-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"F1studioz\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22F1studioz%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"F1studioz\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22F1studioz%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "f1studioz-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"F1studioz\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22F1studioz%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"F1studioz\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22F1studioz%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "f1studioz-x-posts",
       "platform": "X",
-      "query": "site:x.com \"F1studioz\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22F1studioz%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"F1studioz\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22F1studioz%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "yuj-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"yuj\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22yuj%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/posts/ \"yuj\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22yuj%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "yuj-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"yuj\" (\"intern\" OR \"internship\") after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22yuj%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:linkedin.com/company/ \"yuj\" (\"intern\" OR \"internship\") after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22yuj%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     },
     {
       "id": "yuj-x-posts",
       "platform": "X",
-      "query": "site:x.com \"yuj\" (intern OR internship OR hiring) after:2026-11-03 before:2026-11-19",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22yuj%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-03+before%3A2026-11-19",
+      "query": "site:x.com \"yuj\" (intern OR internship OR hiring) after:2026-11-04 before:2026-11-20",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22yuj%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-04+before%3A2026-11-20",
       "status": "not_searched",
-      "generatedFor": "2026-11-18",
+      "generatedFor": "2026-11-19",
       "publicationWindow": {
-        "from": "2026-11-04",
-        "through": "2026-11-18"
+        "from": "2026-11-05",
+        "through": "2026-11-19"
       }
     }
   ]
