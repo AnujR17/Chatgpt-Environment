@@ -49,3 +49,9 @@ Break reminders are a separate explicit opt-in, initially off. The first prompt 
 Local verification: 139 tests passed, five fixture/Windows-dependent checks skipped. Actual Qt session/widget/recovery/play-support review scripts passed, including desktop 1440x900 and compact 1024x768, clicked check-in/break controls, phone-payload propagation, interval changes and transparent glyph rendering. Source case study adds concrete UX decisions and refreshed native screenshots. Windows 0.6.4 release and Vercel preview verification are pending publication at this checkpoint. No physical camera/game testing or user outcome claim.
 
 User correction before 0.6.4 publication: remove the Next break reminder label and its countdown entirely. Nori shows only the emotion between prompts; a timer appears only during an actual break. Regen retains the interval setting and a static on/off status, with no ticking next-reminder readout. Canceled the first Windows run before publication and rebuilt with this correction.
+
+## 19 November 2026: report and five-state correction
+
+Use the same vector recap artwork for native Recap, completed-session dashboard and exported landscape PDF. Graphs encode only reported check-ins; dashed links are not continuous emotion measurements. Keep a text alternative and paginate the full recorded trail. Use drawn native selectors and switches with keyboard behavior, meaningful hover feedback and reduced-motion support.
+
+Surprised replaces Confused in the current five-state presentation. Require both separate raised outer eyebrows and a slight visible mouth opening. Suppress mouth-only, one-brow, blinking, occluded or conflicting configurations. These authored thresholds and synthetic checks do not establish recognition accuracy on people. Preserve old stored data rather than relabelling past confusion as surprise. Keep the existing opt-in break reminders and no next-reminder readout.

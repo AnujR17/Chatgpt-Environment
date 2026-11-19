@@ -10,7 +10,7 @@ def test_report_uses_checkins_not_facial_events_or_time_coverage():
     session.reports[0]['elapsed_seconds']=30;session.reports[1]['elapsed_seconds']=200
     report=cma_summary(session);c=report['cma']
     assert report['schema']==3 and c['count']==2 and c['change']=={'pleasantness':1.3,'activation':-1.4}
-    assert 'More pleasant' in c['trend'] and c['most_activated']['feeling']=='Angry'
+    assert 'More pleasant' in c['trend'] and c['most_activated']['feeling']=='Frustrated'
     assert sum(c['zones'].values())==2
     assert 'moments' not in report and 'input_activity' not in report
     markup=report_html(report)

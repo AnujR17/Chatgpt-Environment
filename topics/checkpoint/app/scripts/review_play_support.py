@@ -39,7 +39,10 @@ def run():
     for width,height in ((1440,900),(1024,768)):
         w.resize(width,height);app.processEvents()
         for b in (w.capture_control,w.checkin_button,w.setback_control,w.game_detection_control):
-            assert b.mapTo(w,QPoint(b.width(),b.height())).y()<=height
+            if b.mapTo(w,QPoint(b.width(),b.height())).y()>height:
+                w.grab().save(str(OUT/'compact-failure.png'))
+                print('Layout',w.bodies.geometry().getRect(),w.bodies.minimumHeight(),w.bodies.minimumSizeHint().height(),w.session_actions.geometry().getRect(),w.session_layout.spacing())
+            assert b.mapTo(w,QPoint(b.width(),b.height())).y()<=height, (b.text(),width,height,b.mapTo(w,QPoint(b.width(),b.height())).y())
     w.close();w.deleteLater();QCoreApplication.sendPostedEvents(None,QEvent.Type.DeferredDelete);app.processEvents()
     gallery=QWidget();gallery.setStyleSheet('background:#f7f5ec;color:#29334b');grid=QGridLayout(gallery)
     from checkpoint.primary import PRIMARY_LABELS

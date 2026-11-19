@@ -79,7 +79,7 @@ def test_category_only_model_maps_supported_inputs_to_primary_states():
         s,e=setup();s.face_mapping=False
         for i in range(8):
             s.cue=Cue('accepted',label,.9);s.cue_received_at=1000+i/8;d=e.display(s,1000+i/8)
-        assert d.title in {'Neutral','Happy','Frustrated','Sad','Confused'}
+        assert d.title in {'Neutral','Happy','Frustrated','Sad','Surprised'}
         if label in ('neutral','happiness','anger','sadness'):assert d.artwork is not None
         else:assert d.artwork is None
 

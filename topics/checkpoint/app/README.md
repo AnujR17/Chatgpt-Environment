@@ -2,7 +2,7 @@
 
 A Windows gaming companion with Nori, short play reminders and CMA check-ins.
 
-**[Download the latest Windows build](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.4-preview.1/Checkpoint-Windows-Preview.zip)**
+**[Download the latest Windows build](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.5-preview.1/Checkpoint-Windows-Preview.zip)**
 
 1. Extract the entire ZIP.
 2. Open Checkpoint-Windows and run Start Checkpoint.cmd.
@@ -18,4 +18,6 @@ Already installed: Settings > Check for updates > Update and restart.
 
 [Case study](https://regen-case-study-git-topi-a380c7-anujrai1701-gmailcoms-projects.vercel.app)
 
-The five primary emotions are Neutral, Happy, Frustrated, Sad and Confused.
+The five primary emotions are Neutral, Happy, Frustrated, Sad and Surprised.
+
+The graphical Session recap and session-complete dashboard share the PDF design: check-in timelines, a CMA map, choices and a chronological trail. Drawn selectors and switches replace default-looking native controls. Surprised requires both raised eyebrows and a slightly open mouth in the default face tracker.

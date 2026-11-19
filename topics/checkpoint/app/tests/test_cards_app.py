@@ -33,7 +33,7 @@ def test_five_primary_cards_and_whole_card_save(tmp_path):
 
 def test_library_has_only_five_choices_and_cancel_preserves_report(tmp_path):
     app=create_application([]);w=MainWindow(no_setup=True,data_dir=tmp_path);w.session.check_in('happy')
-    d=EmotionLibraryDialog(w);d.show();assert set(d.cards)=={'neutral','happy','frustrated','sad','confused'}
+    d=EmotionLibraryDialog(w);d.show();assert set(d.cards)=={'neutral','happy','frustrated','sad','surprised'}
     assert not hasattr(d,'all_button') and not hasattr(d,'search')
     d.reject();assert d.chosen is None and w.session.report=='happy'
     d.deleteLater();w.close();w.deleteLater();app.processEvents()

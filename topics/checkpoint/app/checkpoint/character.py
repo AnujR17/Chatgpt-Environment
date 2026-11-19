@@ -37,7 +37,7 @@ FEELING_LOOKS={
  'shy':dict(smile=.22,eyes=.9,brow=-.1,lean=-.18,pucker=.1),
  'sneaky':dict(asymmetry=.65,smile=.3,eyes=.5,brow_skew=-.3,lean=.1),
  'silly':dict(laugh=.6,teeth=.4,jaw=.45,asymmetry=.4,eyes=.65,lean=-.1,smile=.7),
- 'surprised':dict(jaw=.75,eyes=1.5,pucker=.6,stretch=.16,brow=-.5),
+ 'surprised':dict(jaw=.30,eyes=1.3,pucker=.38,stretch=.08,brow=-.65,brow_skew=0.),
  'weepy':dict(eyes=.7,smile=-.9,brow=-.8,stretch=-.07,jaw=.15,tears=.8),
  'withdrawn':dict(eyes=.45,smile=-.1,brow=-.15,stretch=-.16,lean=-.13,energy=.03),
  'wonder':dict(eyes=1.3,jaw=.25,brow=-.4,lean=.18),

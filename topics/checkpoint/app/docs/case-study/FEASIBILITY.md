@@ -34,3 +34,12 @@ The player enables each source. Images are processed locally. Saving summaries r
 Automated checks exercise five-state mapping, widget input and break timing. [Windows review](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44280866344) exercised the native session, support/recovery flows, model loading, GDI capture, overlay, shortcut dispatch and loopback phone connection.
 
 The visual case study is checked at desktop and phone widths for static scenes, straight mockups, visible artwork, readable research pages and overflow.
+
+
+## Graphical recap and Surprised
+
+The in-app recap, session-complete dashboard and landscape PDF share one vector design: a terrain header, reported check-in timelines, a CMA map and recorded choices. Additional pages preserve the chronological trail and long notes. Empty and single-point reports do not invent a mood journey. Read report data provides a text alternative.
+
+Custom-drawn selectors, menu items and animated switches preserve keyboard input and Qt control semantics. Reduced animation is respected. Inactive document pages do not determine the live session height.
+
+The five states are Neutral, Happy, Frustrated, Sad and Surprised. Default face tracking requires both separate outer-eyebrow raise signals and a slightly open mouth for Surprised. One raised brow, mouth opening alone, blinking and an occluded mouth do not meet the rule. This is a visual heuristic with scripted regression checks, not measured recognition accuracy on people. Original historical data and research vocabulary remain preserved; retired check-ins are not relabelled as Surprised.

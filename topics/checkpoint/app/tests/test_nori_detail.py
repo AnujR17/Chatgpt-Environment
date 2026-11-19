@@ -99,7 +99,7 @@ def test_drag_release_relocks_and_remembers_position(tmp_path):
 def test_all_eight_physical_prototypes_have_distinct_broad_label_routes():
     # Synthetic route coverage, not evidence of recognition accuracy on people.
     fixtures={
-      'neutral':{},'happiness':{'mouthSmileLeft':.3,'mouthSmileRight':.3},'surprise':{'jawOpen':.4},
+      'neutral':{},'happiness':{'mouthSmileLeft':.3,'mouthSmileRight':.3},'surprise':{'jawOpen':.12,'browOuterUpLeft':.3,'browOuterUpRight':.3},
       'sadness':{'mouthFrownLeft':.3,'mouthFrownRight':.3},
       'anger':{'browDownLeft':.3,'browDownRight':.3,'mouthPressLeft':.2,'mouthPressRight':.2},
       'disgust':{'noseSneerLeft':.4,'noseSneerRight':.4},
