@@ -1,26 +1,27 @@
 {
-  "tag": "checkpoint-v0.6.3-preview.1",
-  "version": "0.6.3",
-  "source_commit": "18d6edab55bfb377affd246e56b0fc31696bb6b2",
-  "windows_run": 44392746679,
-  "windows_review_run": 44392120784,
+  "tag": "checkpoint-v0.6.4-preview.1",
+  "version": "0.6.4",
+  "source_commit": "f07c31f995917466887e53ba2ca61f31c7568b6f",
+  "windows_run": 44474927298,
   "windows_checks": "passed",
-  "url": "https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.3-preview.1/Checkpoint-Windows-Preview.zip",
-  "bytes": 243778421,
-  "sha256": "dd0a7aadb7514d36da4f479a8799c5a628e6dbf5ea016aa8feaafbc85b408982",
+  "url": "https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.4-preview.1/Checkpoint-Windows-Preview.zip",
+  "bytes": 243761115,
+  "sha256": "2da7d71b28ee9c38e979421c72c0198d7ff3a206fcaa288c5317c334f552498f",
+  "full_asset_digest": "sha256:2da7d71b28ee9c38e979421c72c0198d7ff3a206fcaa288c5317c334f552498f",
   "app_update_download_and_integrity": "passed",
-  "app_update_bytes": 6170072,
-  "app_update_sha256": "97a230270d87ee0c6fe9ad5a17ed74931723192443f96cac6e08a30aad503f4e",
-  "app_update_file_hashes": 92,
-  "packaged_five_emotions_and_widget": "passed",
-  "pdf_bytes": 3980342,
+  "app_update_bytes": 6171950,
+  "app_update_sha256": "8cff1e924c0fc3fd08b4df79f62da53293ba0f881b0df061b54fb29519dfb560",
+  "app_update_file_hashes": 93,
+  "packaged_no_next_reminder_label_or_timer": "passed",
+  "pdf_bytes": 3985720,
   "local_tests": {
-    "passed": 134,
+    "passed": 139,
     "skipped": 5
   },
   "in_app_discovery": {
-    "from": "checkpoint-v0.6.2-preview.1",
-    "offered": "checkpoint-v0.6.3-preview.1",
+    "from": "checkpoint-v0.6.3-preview.1",
+    "offered": "checkpoint-v0.6.4-preview.1",
     "available": true
-  }
+  },
+  "physical_user_device_update": "not tested"
 }

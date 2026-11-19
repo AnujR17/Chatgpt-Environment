@@ -88,5 +88,5 @@
 - [x] Group actions by purpose and remove Nori label surfaces.
 - [x] Thought-cloud prompts; separate opt-in 30-second reminder and adjustable interval.
 - [x] Update source case study and generate native screenshots; 139 tests and native review scripts pass.
-- [ ] Verify Windows 0.6.4 release and updated case-study deployment.
+- [x] Verify Windows 0.6.4 release, 0.6.3 OTA discovery, downloaded package hashes and updated case-study deployment.
 - [ ] Check readability and usefulness during physical gameplay.
