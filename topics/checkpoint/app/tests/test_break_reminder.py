@@ -43,16 +43,18 @@ def test_session_controls_apply_interval_and_opt_out_immediately(tmp_path):
         assert not w.break_reminders_enabled and not w.companion.reminder.deadline
         w.reminder_toggle.click()
         assert w.break_reminders_enabled and w.overlay_enabled
-        assert w.overlay.timer_value.text()=='0:30'
+        assert w.overlay.timer_value.text()=='' and w.overlay.timer_caption.text()==''
+        assert w.companion.reminder.remaining(__import__('time').monotonic())==30
         w.reminder_interval.setCurrentIndex(w.reminder_interval.findData(120))
-        assert w.reminder_seconds==120 and w.overlay.timer_value.text()=='2:00'
+        assert w.reminder_seconds==120 and w.overlay.timer_value.text()==''
+        assert w.companion.reminder.remaining(__import__('time').monotonic())==120
         w.overlay_action('reminders')
         assert not w.break_reminders_enabled and not w.overlay.message
         assert w.overlay.timer_value.text()==''
         w.set_break_reminders(True);w.start_break(30)
         assert w.companion.reminder.deadline is None
         w.overlay_action('continue')
-        assert w.overlay.timer_value.text()=='2:00'
+        assert w.overlay.timer_value.text()==''
     finally:
         w.close();w.deleteLater();QCoreApplication.sendPostedEvents(None,QEvent.Type.DeferredDelete)
 
@@ -67,7 +69,8 @@ def test_settings_custom_interval_and_transparent_label_rendering(tmp_path):
             dialog.break_reminders.setChecked(True);dialog.reminder_seconds.setValue(75);dialog.accept()
         QTimer.singleShot(10,save);w.show_preferences()
         assert w.reminder_seconds==75 and w.reminder_interval.currentData()==75
-        assert w.overlay.timer_value.text()=='1:15'
+        assert w.overlay.timer_value.text()=='' and w.overlay.timer_caption.text()==''
+        assert w.companion.reminder.remaining(__import__('time').monotonic())==75
         w.overlay.show();app.processEvents();image=w.overlay.grab().toImage()
         assert image.pixelColor(25,230).alpha()==0  # No label backing box.
         pixels=[image.pixelColor(x,y) for x in range(65,155) for y in range(225,253)]

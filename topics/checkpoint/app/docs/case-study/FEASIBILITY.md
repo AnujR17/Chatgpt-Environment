@@ -17,7 +17,7 @@ Break reminders are off initially and use an independent monotonic timer. Enabli
 
 Start play support enables game observation and the overlay. Setback support is separately enabled. A possible fall followed by a settled view can prompt a next move, encouragement or optional pause. Automatic setback suggestions retain their two-minute cooldown.
 
-Mood and countdown text have light fills and dark outlines, with no label surface. Thought-cloud prompts do not activate the game window or read its pixels. Readability over visually dense motion still needs physical-device evaluation.
+The mood label and actual break timer have light fills and dark outlines, with no label surface. Nori shows no next-reminder label or countdown. Thought-cloud prompts do not activate the game window or read its pixels. Readability over visually dense motion still needs physical-device evaluation.
 
 I fell requests a response directly. Windows shortcuts provide manual setback marking and mute while support is running. A one-off request preserves the automatic-tip mute preference.
 

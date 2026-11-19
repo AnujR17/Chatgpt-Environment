@@ -37,7 +37,7 @@ class NoriOverlay(QWidget):
         self.name_label=self.make_label(18,True,QRect(24,225,172,28))
         self.timer_caption=self.make_label(12,False,QRect(24,263,172,18))
         self.timer_value=self.make_label(30,True,QRect(24,281,172,35))
-        self.update_status('neutral','Take a break','0:30')
+        self.update_status('neutral','','')
         self.setAccessibleName('Nori. Click for check-in and break controls. Drag to move.');self.setCursor(Qt.CursorShape.PointingHandCursor);self.place('bottom-right')
         self.expiry=QTimer(self);self.expiry.timeout.connect(self.clear_expired);self.expiry.start(250)
         self.modifiers=QTimer(self);self.modifiers.setInterval(50);self.modifiers.timeout.connect(self.check_modifiers)
@@ -51,12 +51,14 @@ class NoriOverlay(QWidget):
     def update_status(self,emotion,caption,value,*,active=True,paused=False,reminders=False,camera=False):
         self.expression_label=PRIMARY_LABELS[primary_key(emotion)];self.name_label.setText(self.expression_label)
         self.timer_caption.setText(caption);self.timer_value.setText(value)
+        self.timer_caption.setVisible(bool(caption));self.timer_value.setVisible(bool(value))
         self.session_active=active;self.break_active=paused;self.reminders_enabled=reminders;self.has_camera=camera
         self.update_mask();self.update()
 
     def update_mask(self):
         path=QPainterPath();path.addRoundedRect(32,67,156,158,55,55)
-        region=QRegion(path.toFillPolygon().toPolygon())|QRegion(QRect(23,223,174,32))|QRegion(QRect(23,258,174,64))
+        region=QRegion(path.toFillPolygon().toPolygon())|QRegion(QRect(23,223,174,32))
+        if self.timer_caption.text() or self.timer_value.text():region=region|QRegion(QRect(23,258,174,64))
         if self.message or self.editing:region=region|QRegion(thought_cloud().toFillPolygon().toPolygon())
         if getattr(self,'_mask_region',None)!=region:
             self._mask_region=region;self.setMask(region)
