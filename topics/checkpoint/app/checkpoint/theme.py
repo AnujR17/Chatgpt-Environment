@@ -40,7 +40,7 @@ QFrame#companionPanel {{ background:transparent; border:0; }}
 QFrame#gamePanel {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:4px; }}
 QFrame#stateCard {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:4px; }}
 QFrame#artStage {{ background:transparent; border:0; border-radius:0; }}
-QPushButton {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:4px; padding:10px 16px; min-height:22px; }}
+QPushButton {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:7px; padding:10px 16px; min-height:22px; }}
 QPushButton:hover {{ background:{c['surface_alt']}; border-color:{c['secondary']}; }}
 QPushButton:pressed {{ background:{c['border']}; }}
 QPushButton:focus {{ border:2px solid {c['accent']}; padding:9px 15px; }}
@@ -51,7 +51,9 @@ QFrame#sessionHeader QPushButton:disabled {{ background:transparent; color:#7183
 QPushButton[primary="true"]:hover {{ background:{c['hover']}; }}
 QPushButton[tone="soft"] {{ background:{c['soft']}; color:{c['on_soft']}; border:1px solid {c['border']}; }}
 QPushButton[tone="soft"]:hover {{ border-color:{c['accent']}; }}
-QPushButton#navButton {{ background:transparent; border:0; text-align:left; }}
+QPushButton#navButton {{background:transparent;border:0;text-align:left;padding:10px 14px;}}
+QPushButton#navButton[selected="true"] {{border-bottom:2px solid {c['accent']};font-weight:600;}}
+QPushButton#navButton:hover {{background:{c['surface_alt']};}}
 QLineEdit,QComboBox,QDoubleSpinBox,QListWidget {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:4px; padding:10px; }}
 QLineEdit {{ min-height:22px; selection-background-color:{c['accent']}; }}
 QLineEdit:focus,QComboBox:focus,QDoubleSpinBox:focus {{ border:2px solid {c['accent']}; }}
@@ -72,6 +74,14 @@ QPushButton#emotionCard:focus {{ border:3px solid {c['accent']}; padding:0; }}
 QTabBar::tab {{ background:transparent; color:{c['secondary']}; padding:8px 9px; font-size:12px; border:0; margin-right:4px; border-radius:0px; }}
 QTabBar::tab:selected {{ background:transparent; color:{c['text']}; border-bottom:2px solid {c['accent']}; }}
 QTabBar::tab:focus {{ border:2px solid {c['accent']}; }}
-QTabBar::tear {{ width:0; }}
+QComboBox::drop-down {{border:0;width:30px;background:transparent;}}
+QComboBox::down-arrow {{image:none;width:0;height:0;}}
+QComboBox QAbstractItemView {{outline:0;border:1px solid {c['border']};padding:6px;selection-background-color:{c['soft']};selection-color:{c['text']};}}
+QComboBox:editable {{padding:6px 34px 6px 12px;}}
+QComboBox QLineEdit {{background:transparent;border:0;padding:0;}}
+QTabBar::tab {{padding:10px 14px;}}
+QTabBar::tear {{width:0;}}
+QDialogButtonBox QPushButton {{min-width:90px;}}
+
 '''
 STYLE=make_style()

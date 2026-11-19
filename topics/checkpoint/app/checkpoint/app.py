@@ -11,6 +11,7 @@ from PySide6.QtGui import QFont, QFontDatabase, QImage, QPixmap, QCloseEvent, QI
 from PySide6.QtSvgWidgets import QSvgWidget
 from PySide6.QtWidgets import (QApplication,QMainWindow,QWidget,QFrame,QLabel,QPushButton,QVBoxLayout,QHBoxLayout,
  QStackedWidget,QTabBar,QDialog,QDialogButtonBox,QComboBox,QLineEdit,QCheckBox,QDoubleSpinBox,QMessageBox,QFileDialog,QMenu,QScrollArea,QSystemTrayIcon,QGridLayout,QSlider,QSizePolicy,QTextBrowser,QInputDialog)
+from checkpoint.controls import Select as QComboBox, Switch as QCheckBox, PageStack as QStackedWidget, ActionButton
 from checkpoint.session import Session, History, FEELINGS
 from checkpoint.primary import PRIMARY_KEYS,PRIMARY_LABELS,primary_key,public_estimate
 from checkpoint.theme import STYLE, make_style, PALETTES
@@ -41,7 +42,7 @@ def label(text="",size=14,secondary=False,bold=False):
 
 
 def button(text,callback,primary=False):
-    obj=QPushButton(text);obj.setProperty("primary",primary);obj.setCursor(Qt.CursorShape.PointingHandCursor);obj.setMinimumHeight(48);obj.clicked.connect(callback);obj.setAccessibleName(text);return obj
+    obj=ActionButton(text);obj.setProperty("primary",primary);obj.setCursor(Qt.CursorShape.PointingHandCursor);obj.setMinimumHeight(48);obj.clicked.connect(callback);obj.setAccessibleName(text);return obj
 
 
 def panel(name="panel",padding=24):
@@ -212,13 +213,15 @@ class MainWindow(QMainWindow):
         outer=QWidget();self.setCentralWidget(outer);shell=QVBoxLayout(outer);shell.setContentsMargins(0,0,0,0);shell.setSpacing(0)
         nav=QFrame();nav.setObjectName('topNav');nl=QHBoxLayout(nav);nl.setContentsMargins(32,10,32,10);nl.setSpacing(14)
         mark=QSvgWidget(str(ASSETS/'regen.svg'));mark.setFixedSize(30,30);mark.setStyleSheet('background:transparent');nl.addWidget(mark);nl.addWidget(label('regen',25,bold=True));nl.addSpacing(28)
+        self.navigation_buttons=[]
         for text,cb,glyph in [('Session',self.return_to_session,'session'),('Recap',self.show_report,'report'),('Saved',self.show_history,'history')]:
-            b=with_icon(button(text,cb),glyph);b.setMinimumHeight(36);b.setObjectName('navButton');nl.addWidget(b)
+            b=with_icon(button(text,cb),glyph);b.setMinimumHeight(36);b.setObjectName('navButton');self.navigation_buttons.append(b);nl.addWidget(b)
+        self.navigation_buttons[0].setProperty('selected',True)
         nl.addStretch();nl.addWidget(with_icon(button('Tracking',self.show_sources),'sliders'));nl.addWidget(with_icon(button('Settings',self.show_preferences),'settings'))
         self.theme_button=with_icon(button('Dark',self.toggle_theme),'moon');self.theme_button.setMinimumHeight(36);self.theme_button.setObjectName('navButton');nl.addWidget(self.theme_button);shell.addWidget(nav)
         self.scroll=QScrollArea();self.scroll.setWidgetResizable(True);shell.addWidget(self.scroll,1);canvas=QWidget();canvas.setObjectName('sessionCanvas');self.scroll.setWidget(canvas)
-        root=QVBoxLayout(canvas);root.setContentsMargins(40,24,40,18);root.setSpacing(18)
-        h=QHBoxLayout();words=QVBoxLayout();words.setSpacing(4);self.title=label('',28,bold=True);self.subtitle=label('',13,True);words.addWidget(self.title);words.addWidget(self.subtitle);h.addLayout(words,1)
+        root=QVBoxLayout(canvas);self.session_layout=root;root.setContentsMargins(40,24,40,18);root.setSpacing(18)
+        h=QHBoxLayout();words=QVBoxLayout();words.setSpacing(4);self.title=label('',34,bold=True);self.subtitle=label('',13,True);words.addWidget(self.title);words.addWidget(self.subtitle);h.addLayout(words,1)
         self.game_tag=label('',11,True);self.game_tag.hide();self.game_detection_control=with_icon(button('Start play support',self.toggle_game_tracking),'game');self.end_control=with_icon(button('End session',self.end_or_new),'stop');self.end_control.setObjectName('navButton');self.session_header=h;root.addLayout(h)
         self.view_buttons=[];self.camera_controls=[];self.file_controls=[];self.checkin_controls=[];self.motion_controls=[];self.reported_titles=[];self.tracking_labels=[];self.response_labels=[];self.response_feedback=[];self.stages=[]
         for i in range(3):
@@ -227,7 +230,7 @@ class MainWindow(QMainWindow):
         for mode in range(3):self.bodies.addWidget(self.build_body(mode))
         self.bodies.addWidget(self.build_break_body());self.bodies.addWidget(self.build_summary_body())
         # Place decisions beside their subject: breaks, setbacks, then display tools.
-        actions=QHBoxLayout();actions.setSpacing(42)
+        self.session_actions=QWidget();actions=QHBoxLayout(self.session_actions);actions.setContentsMargins(0,0,0,0);actions.setSpacing(42)
         breaks=QVBoxLayout();breaks.setSpacing(8);breaks.addWidget(label('Breaks',16,bold=True))
         break_row=QHBoxLayout();self.break_button=with_icon(button('Take a break',self.toggle_break),'pause');break_row.addWidget(self.break_button)
         self.continue_control=with_icon(button('Continue playing',self.continue_playing),'play');break_row.addWidget(self.continue_control);break_row.addStretch();breaks.addLayout(break_row)
@@ -242,7 +245,7 @@ class MainWindow(QMainWindow):
         self.practice_control=with_icon(button('Technique cues',self.show_practice),'help');self.practice_control.setObjectName('navButton');support_row.addWidget(self.practice_control);self.practice_shortcut=self.practice_control;support_row.addStretch();support.addLayout(support_row)
         settings_row=QHBoxLayout();self.support_toggle=QCheckBox('Setback support');self.support_toggle.toggled.connect(self.set_support_enabled);settings_row.addWidget(self.support_toggle);self.game_detection_control.setObjectName('navButton');settings_row.addWidget(self.game_detection_control)
         self.mark_start_control=with_icon(button('Mark section',self.mark_start_view),'flag');self.mark_start_control.setObjectName('navButton');self.mark_start_control.hide();settings_row.addWidget(self.mark_start_control);settings_row.addStretch();support.addLayout(settings_row)
-        self.support_status=label('Mark a fall for one next step.',12,True);support.addWidget(self.support_status);actions.addLayout(support,1);root.addLayout(actions)
+        self.support_status=label('Mark a fall for one next step.',12,True);support.addWidget(self.support_status);actions.addLayout(support,1);root.addWidget(self.session_actions)
         self.support_title=label('');self.support_copy=label('');self.support_title.hide();self.support_copy.hide()
         self.game_status=label('',11,True);root.addWidget(self.game_status)
         foot=QHBoxLayout();self.footer=label('',11,True);foot.addWidget(self.footer,1)
@@ -262,10 +265,18 @@ class MainWindow(QMainWindow):
         QApplication.instance().applicationStateChanged.connect(self.application_state)
         if not no_setup:QTimer.singleShot(0,self.new_session)
 
+    def resizeEvent(self,event):
+        super().resizeEvent(event)
+        if hasattr(self,'session_layout'):
+            compact=self.height()<820
+            self.session_layout.setSpacing(12 if compact else 18)
+            self.session_layout.setContentsMargins(32 if compact else 40,18 if compact else 24,32 if compact else 40,12 if compact else 18)
+            self.bodies.setMinimumHeight(320 if compact else 370)
+
     def build_body(self,mode):
         body=QWidget();body.setObjectName('sessionBody');row=QHBoxLayout(body);row.setContentsMargins(0,0,0,0);row.setSpacing(30)
         stage=EmotionStage();self.stages.append(stage);sl=QVBoxLayout(stage);sl.setContentsMargins(0,0,18,0);sl.setSpacing(8)
-        header=QHBoxLayout();selector=QTabBar();[selector.addTab(name) for name in ['Face estimate','Test view','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);header.addWidget(selector);header.addStretch()
+        header=QHBoxLayout();selector=QTabBar();[selector.addTab(name) for name in ['Camera estimate','Camera preview','My check-in']];selector.setExpanding(False);selector.setAccessibleName('Card source');selector.currentChanged.connect(self.select_card_source);self.view_selectors.append(selector);header.addWidget(selector);header.addStretch()
         motion=button('Pause animation',self.toggle_motion);motion.setMinimumHeight(30);motion.setObjectName('navButton');header.addWidget(motion);self.motion_controls.append(motion)
         if mode==0:self.motion_button=motion
         sl.addLayout(header)
@@ -277,7 +288,7 @@ class MainWindow(QMainWindow):
         if mode==0:self.checkin_button=check;self.library_control=check
         words.addStretch();composition.addLayout(words,4);sl.addLayout(composition,1);row.addWidget(stage,1)
         camera=QWidget();camera.setObjectName('sourceDock');camera.setFixedWidth(254);cl=QVBoxLayout(camera);cl.setContentsMargins(0,4,0,0);cl.setSpacing(8)
-        ch=QHBoxLayout();ch.addWidget(label('Sources',14,bold=True),1);status=label('',11,True);self.state_labels.append((status,'capture'));ch.addWidget(status);cl.addLayout(ch)
+        ch=QHBoxLayout();ch.addWidget(label('Camera',15,bold=True),1);status=label('',11,True);self.state_labels.append((status,'capture'));ch.addWidget(status);cl.addLayout(ch)
         capture=with_icon(button('Start camera',self.toggle_camera),'camera');capture.setProperty('tone','soft');capture.setMinimumHeight(36);self.camera_controls.append(capture);cl.addWidget(capture)
         preview=VideoPreview();preview.setMinimumSize(230,124);preview.setMaximumHeight(148);self.preview_widgets.append(preview);cl.addWidget(preview)
         actions=QHBoxLayout();devices=QComboBox();devices.setAccessibleName('Camera device');devices.addItems(['Camera 1']+[f'Camera {i+1}' for i in range(1,10)]);devices.currentIndexChanged.connect(self.select_camera);self.camera_selectors.append(devices);actions.addWidget(devices,1)
@@ -482,7 +493,7 @@ class MainWindow(QMainWindow):
             self.session.experimental_analysis=True;self.select_card_source(1);self.start_source(path)
 
     def toggle_theme(self):
-        self.theme='dark' if self.theme=='light' else 'light';QApplication.instance().setStyleSheet(make_style(self.theme));self.theme_button.setText('Light' if self.theme=='dark' else 'Dark');with_icon(self.theme_button,'sun' if self.theme=='dark' else 'moon','#DDE8D7')
+        self.theme='dark' if self.theme=='light' else 'light';QApplication.instance().setStyleSheet(make_style(self.theme));self.theme_button.setText('Light' if self.theme=='dark' else 'Dark');with_icon(self.theme_button,'sun' if self.theme=='dark' else 'moon',PALETTES[self.theme]['text'])
         c=PALETTES[self.theme]
         for preview in self.preview_widgets:preview.setStyleSheet('background:'+c['surface_alt']+';border-radius:4px;color:'+c['secondary']+';')
         self.refresh()
@@ -498,9 +509,12 @@ class MainWindow(QMainWindow):
         return body
 
     def build_summary_body(self):
-        body=QWidget();row=QHBoxLayout(body);row.setContentsMargins(0,0,0,0);row.setSpacing(24)
-        card,layout=panel(padding=40);layout.addWidget(label("Session complete.",56,bold=True));layout.addWidget(label("A check-in is a reflection, not a rating.",24,True));self.summary_stats=label("",32,bold=True);layout.addWidget(self.summary_stats);self.summary_retention=label("",18,True);layout.addWidget(self.summary_retention);layout.addStretch();layout.addWidget(button("View CMA report",self.show_report,True));layout.addWidget(button("Start a new session",self.new_session,True));row.addWidget(card,2)
-        privacy,layout=panel(padding=32);layout.addWidget(label("Start on your terms.",36,bold=True));layout.addWidget(label("All sensing has stopped. Your next session starts with sources off.",22,True));layout.addStretch();row.addWidget(privacy,1)
+        from checkpoint.report_visual import ReportSheet,overview_svg
+        from checkpoint.cma_report import cma_summary
+        body=QWidget();layout=QVBoxLayout(body);layout.setContentsMargins(0,0,0,0);layout.setSpacing(12)
+        self.summary_stats=label('');self.summary_retention=label('',13,True);self.summary_stats.hide()
+        self.summary_graphic=ReportSheet(overview_svg(cma_summary(self.session)));self.summary_graphic_revision=None;layout.addWidget(self.summary_graphic)
+        controls=QHBoxLayout();controls.addWidget(self.summary_retention,1);controls.addWidget(button('Open full recap',self.show_report));layout.addLayout(controls)
         return body
 
     def add_dimensions(self,layout):
@@ -568,7 +582,8 @@ class MainWindow(QMainWindow):
         for control in self.file_controls:control.setEnabled(s.active and s.break_deadline is None);with_icon(control,'video',ink)
         for control,glyph in [(self.game_detection_control,'game'),(self.mark_start_control,'flag'),(self.pip_control,'overlay'),(self.phone_control,'phone')]:with_icon(control,glyph,on_accent if control.property('primary') else ink)
         self.library_control.setEnabled(s.active and s.break_deadline is None)
-        with_icon(self.context_control,'edit',PALETTES[self.theme]['text'])
+        with_icon(self.context_control,'edit',PALETTES[self.theme]['text']);self.context_control.setVisible(s.active)
+        with_icon(self.end_control,'stop' if s.active else 'play',PALETTES[self.theme]['text'])
         for control in self.detail_controls:with_icon(control,'sliders',PALETTES[self.theme]['text'])
         self.practice_control.setEnabled(s.active and s.break_deadline is None);self.practice_shortcut.setEnabled(s.active and s.break_deadline is None)
         from checkpoint.attempts import active_attempt,guidance_mode
@@ -577,7 +592,7 @@ class MainWindow(QMainWindow):
             if control.property('primary')!=active:control.setProperty('primary',active);control.style().unpolish(control);control.style().polish(control)
             with_icon(control,glyph,PALETTES[self.theme]['on_accent'] if active else PALETTES[self.theme]['text'])
         self.practice_control.setText("Rate technique cue" if active_attempt(s) else "Technique cues")
-        for reported in self.reported_titles:reported.setText('Your last check-in: '+PRIMARY_LABELS[primary_key(s.report)] if s.report else 'Your CMA check-in');reported.setVisible(self.source_mode!=2 or not s.report)
+        for reported in self.reported_titles:reported.setText('Your last check-in: '+PRIMARY_LABELS[primary_key(s.report)] if s.report else 'How this moment feels');reported.setVisible(self.source_mode!=2 or not s.report)
         for stage in self.stages:stage.set_theme(self.theme)
         for control in (self.continue_control,self.goal_control):control.setEnabled(s.active and s.break_deadline is None)
         input_on=self.input_observer.enabled and bool(self.input_observer.target)
@@ -656,7 +671,13 @@ class MainWindow(QMainWindow):
             else:preview.clear_image("Camera is off\n\n"+(self.last_status or "Optional. Your check-in works without it."))
         if remaining is not None:
             self.countdown.setText(f"{remaining//60}:{remaining%60:02d}")
+        self.session_actions.setVisible(s.active);self.game_status.setVisible(s.active)
         if not s.active:
+            revision=(len(s.reports),len(s.responses),len(s.attempts),s.ended)
+            if self.summary_graphic_revision!=revision:
+                from checkpoint.report_visual import overview_svg
+                from checkpoint.cma_report import cma_summary
+                self.summary_graphic.set_report(cma_summary(s));self.summary_graphic_revision=revision
             self.summary_stats.setText(f"{int(s.elapsed())//60:02d}:{int(s.elapsed())%60:02d} session time\n{len(s.reports)} player check-ins\nCapture off")
             self.summary_retention.setText("Derived summary saved on this device." if self.retain and self.saved else "No summary retained." if not self.retain else "Summary was not saved. "+self.last_status)
         minutes,seconds=divmod(int(s.elapsed()),60);self.footer.setText(f"{minutes:02d}:{seconds:02d} elapsed · {len(s.reports)} {'check-in' if len(s.reports)==1 else 'check-ins'} · On-device session"+(" / "+self.last_status if self.last_status else ""))
@@ -754,7 +775,7 @@ class MainWindow(QMainWindow):
         if not self.session.active:self.new_session();return
         if not self.pause():return
         self.stop_game_tracking()
-        self.session.end()
+        self.session.end();self.next_export=0.
         if not self.saved:
             try:self.history.save(self.session.summary(),consent=self.retain);self.saved=True
             except Exception as ex:self.last_status="Summary could not be saved: "+str(ex)
@@ -806,7 +827,7 @@ class MainWindow(QMainWindow):
             if cue is None:content.setPlainText('Start face tracking or open a local video.');return
             movement=cue.movement or {};estimate=public_estimate(category_estimate(cue)) or {}
             rows=['<h2>Visible movement details</h2><p>'+html.escape(cue.mapping_label or cue.reason)+'</p><table>']
-            for key in ('smile','mouth_wide','pressed','jaw','teeth','brow','eye_left','eye_right','snarl','hand','mouth_visible'):
+            for key in ('smile','mouth_wide','pressed','jaw','teeth','brow','brow_raise_left','brow_raise_right','eye_left','eye_right','snarl','hand','mouth_visible'):
                 if key in movement:rows.append('<tr><td>'+html.escape(key.replace('_',' '))+'</td><td>'+f'{movement[key]:.2f}'+'</td></tr>')
             rows.append('</table>')
             if cue.gesture and cue.gesture.get('status')=='unavailable':rows.append('<p>Hand tracker unavailable: '+html.escape(cue.gesture.get('reason',''))+'</p>')
@@ -818,16 +839,8 @@ class MainWindow(QMainWindow):
         layout.addWidget(button('Close',dialog.accept));dialog.exec()
 
     def show_report(self):
-        from checkpoint.cma_report import report_html,make_pdf
-        self.next_export=0.;self.refresh();dialog=QDialog(self);dialog.setWindowTitle('CMA session report');dialog.resize(840,750)
-        layout=QVBoxLayout(dialog);layout.setContentsMargins(22,20,22,20)
-        content=QTextBrowser();content.setOpenExternalLinks(False);content.setHtml(report_html(self.latest_report));layout.addWidget(content,1)
-        def save():
-            path,_=QFileDialog.getSaveFileName(dialog,'Save CMA report','regen-session-recap.pdf','PDF (*.pdf)')
-            if path:
-                try:Path(path).write_bytes(make_pdf(self.latest_report))
-                except Exception as ex:QMessageBox.warning(dialog,'Report unavailable',str(ex))
-        layout.addWidget(button('Save PDF report',save,True));layout.addWidget(button('Close',dialog.accept));dialog.exec()
+        from checkpoint.report_visual import RecapDialog
+        self.next_export=0.;self.refresh();dialog=RecapDialog(self,self.latest_report);dialog.exec()
 
     def show_history(self):
         dialog=QDialog(self);dialog.setWindowTitle("Local session history");dialog.resize(800,560);root=QVBoxLayout(dialog);root.setContentsMargins(28,28,28,28);root.addWidget(label("Your saved summaries",28,bold=True))
@@ -837,7 +850,7 @@ class MainWindow(QMainWindow):
         if self.session.reports:
             items.addWidget(label('This session',22,bold=True))
             for report in reversed(self.session.reports):
-                row,lay=panel(padding=16);elapsed=int(report['elapsed_seconds']);lay.addWidget(label(FEELINGS[report['feeling']][0],20,bold=True));lay.addWidget(label(f'{elapsed//60:02d}:{elapsed%60:02d} into this session',13,True));items.addWidget(row)
+                row,lay=panel(padding=16);elapsed=int(report['elapsed_seconds']);lay.addWidget(label(PRIMARY_LABELS[primary_key(report['feeling'])],20,bold=True));lay.addWidget(label(f'{elapsed//60:02d}:{elapsed%60:02d} into this session',13,True));items.addWidget(row)
         if not records:items.addWidget(label('No past sessions saved. You can enable history in Settings.',15,True))
         else:items.addWidget(label('Saved sessions',22,bold=True))
         for item in reversed(records):
@@ -878,7 +891,7 @@ class MainWindow(QMainWindow):
 
 
 def create_application(argv=None):
-    app=QApplication.instance() or QApplication(argv or []);app.setApplicationName("Checkpoint");app.setApplicationDisplayName(APP_NAME);app.setOrganizationName("CheckpointResearch");app.setWindowIcon(QIcon(str(ASSETS/"regen.svg")))
+    app=QApplication.instance() or QApplication(argv or []);app.setStyle("Fusion");app.setApplicationName("Checkpoint");app.setApplicationDisplayName(APP_NAME);app.setOrganizationName("CheckpointResearch");app.setWindowIcon(QIcon(str(ASSETS/"regen.svg")))
     if QFontDatabase.addApplicationFont(str(ASSETS/"DM-Sans.ttf"))<0:raise RuntimeError("Bundled DM Sans font could not be loaded")
     font=QFont("DM Sans");font.setPixelSize(14);app.setFont(font);app.setStyleSheet(STYLE);return app
 

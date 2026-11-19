@@ -53,7 +53,7 @@ Python, PySide6, QPainter, MediaPipe, HSE expression estimates, OpenCV game-wind
 
 ## Five primary emotions
 
-Neutral, Happy, Frustrated, Sad and Confused form the shared vocabulary across the session, Nori widget, check-in and phone. Laughter sits within Happy; anger and tension cues sit within Frustrated. Player check-ins supply pleasantness and activation.
+Neutral, Happy, Frustrated, Sad and Surprised form the shared vocabulary across the session, Nori widget, check-in and phone. Laughter sits within Happy; anger and tension cues sit within Frustrated. Player check-ins supply pleasantness and activation.
 
 ## Widget interaction
 
@@ -68,3 +68,12 @@ Hick’s law and progressive disclosure guide the five-emotion chooser and conte
 User control and visibility of system status guide the explicit opt-in, adjustable interval and visible countdown. A reminder offers a break without stealing focus or starting one automatically. The player explicitly continues after a timed break.
 
 Figure-ground contrast uses white glyphs with a dark outline to keep mood text readable over varied backgrounds. No game image is sampled for text colour. Fast motion, visually dense scenes and physical game compatibility still need target-device evaluation.
+
+
+## Graphical recap and Surprised
+
+The in-app recap, session-complete dashboard and landscape PDF share one vector design: a terrain header, reported check-in timelines, a CMA map and recorded choices. Additional pages preserve the chronological trail and long notes. Empty and single-point reports do not invent a mood journey. Read report data provides a text alternative.
+
+Custom-drawn selectors, menu items and animated switches preserve keyboard input and Qt control semantics. Reduced animation is respected. Inactive document pages do not determine the live session height.
+
+The five states are Neutral, Happy, Frustrated, Sad and Surprised. Default face tracking requires both separate outer-eyebrow raise signals and a slightly open mouth for Surprised. One raised brow, mouth opening alone, blinking and an occluded mouth do not meet the rule. This is a visual heuristic with scripted regression checks, not measured recognition accuracy on people. Original historical data and research vocabulary remain preserved; retired check-ins are not relabelled as Surprised.

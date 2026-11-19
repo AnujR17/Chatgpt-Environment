@@ -29,7 +29,7 @@ def test_later_choice_prevents_attributing_the_next_report_to_an_earlier_one():
     s.record_response('smaller_goal','One hold')['elapsed_seconds']=5
     s.check_in('calm',.5,-.4);s.reports[-1]['elapsed_seconds']=10
     rows=cma_summary(s)['recovery']['choices']
-    assert rows[0]['after'] is None and rows[1]['after']['feeling']=='Calm'
+    assert rows[0]['after'] is None and rows[1]['after']['feeling']=='Neutral'
 
 
 def test_response_rating_bounds_debounce_and_history():

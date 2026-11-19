@@ -63,8 +63,8 @@ def test_semantic_library_has_distinct_geometry_and_real_dialog_selection(tmp_pa
             for item in scene(key,t):
                 numbers=([item['x'],item['y'],item['r']] if item['kind']=='dot' else [v for c in item['commands'] for v in c[1:]])
                 assert all(math.isfinite(v) and 0<=v<=360 for v in numbers)
-    d=EmotionLibraryDialog(w);d.show();app.processEvents();d.choose('confused')
-    assert d.chosen=='confused' and w.session.report is None
+    d=EmotionLibraryDialog(w);d.show();app.processEvents();d.choose('surprised')
+    assert d.chosen=='surprised' and w.session.report is None
     d.deleteLater();w.close();w.deleteLater();app.processEvents()
 
 
@@ -73,7 +73,7 @@ def test_cancelling_word_or_dimension_change_preserves_report(tmp_path):
     app=create_application([]);w=MainWindow(no_setup=True,data_dir=tmp_path);w.session.check_in('happy',.8,.4)
     before=w.session.summary()['check_ins'].copy()
     def cancel():
-        dialog=app.activeModalWidget();dialog.select('confused');dialog.sliders[0].setValue(-90);dialog.reject()
+        dialog=app.activeModalWidget();dialog.select('surprised');dialog.sliders[0].setValue(-90);dialog.reject()
     QTimer.singleShot(0,cancel);w.check_in()
     assert w.session.reports==before and w.session.report=='happy'
     assert (w.session.valence,w.session.arousal)==(.8,.4)

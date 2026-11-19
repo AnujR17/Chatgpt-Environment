@@ -90,3 +90,12 @@
 - [x] Update source case study and generate native screenshots; 139 tests and native review scripts pass.
 - [x] Verify Windows 0.6.4 release, 0.6.3 OTA discovery, downloaded package hashes and updated case-study deployment.
 - [ ] Check readability and usefulness during physical gameplay.
+
+## Graphical recap and Surprised, 19 November 2026
+
+- [x] Shared graphical native/PDF recap, actual completed-session dashboard and text alternative.
+- [x] Drawn selectors, styled menus, animated switches and compact-window layout.
+- [x] Surprised primary state with separate two-brow/open-mouth mapping, native/phone/case-study consistency and legacy data preservation.
+- [x] 143 local tests and native/browser flow checks.
+- [ ] Verify 0.6.5 Windows release, published OTA hashes/discovery and updated Vercel case study.
+- [ ] Check real-device expression behavior and gameplay performance.

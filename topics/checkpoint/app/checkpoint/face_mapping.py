@@ -11,7 +11,7 @@ from checkpoint.face_detail import mouth_polygon,hand_mouth,visible_teeth
 def neutral_movement():
     return dict(smile=0.,brow=0.,eyes=1.,eye_left=1.,eye_right=1.,brow_skew=0.,jaw=0.,tension=0.,laugh=0.,
                 cheek=0.,mouth_wide=0.,pressed=0.,pucker=0.,snarl=0.,asymmetry=0.,teeth=0.,hand=0.,hand_side=1.,mouth_visible=1.,
-                brow_furrow=0.,brow_inner_raise=0.,eye_squint=0.,eye_wide=0.,blink=0.,corner_down=0.)
+                brow_furrow=0.,brow_inner_raise=0.,brow_raise_left=0.,brow_raise_right=0.,eye_squint=0.,eye_wide=0.,blink=0.,corner_down=0.)
 
 
 def movement_parameters(scores,baseline=None,gain=1.5):
@@ -41,14 +41,26 @@ def movement_parameters(scores,baseline=None,gain=1.5):
         cheek=clip(floor(cheek)*gain*2.8),mouth_wide=clip(floor(stretch)*gain*2.5),pressed=clip(floor(press)*gain*2.8),pucker=clip(max(value('mouthPucker'),value('mouthFunnel'))*gain),
         snarl=clip(floor(snarl)*gain*3),asymmetry=clip((value('mouthSmileLeft')-value('mouthSmileRight'))*gain*2,-1,1),
         brow_skew=clip((value('browOuterUpLeft')-value('browOuterUpRight'))*gain*2,-1,1),
+        brow_raise_left=clip(floor(value('browOuterUpLeft'))*gain*2.8),
+        brow_raise_right=clip(floor(value('browOuterUpRight'))*gain*2.8),
         brow_furrow=clip(floor(down)*gain*2.8),brow_inner_raise=clip(floor(value('browInnerUp'))*gain*2.8),
         eye_squint=clip(floor(average('eyeSquint'))*gain*2.5),eye_wide=clip(floor(average('eyeWide'))*gain*2.5),
         blink=clip(average('eyeBlink')),corner_down=clip(floor(frown)*gain*2.5))
     return result
 
 
+def surprise_configuration(m):
+    """Authored visual rule: both brows raised and a slightly open visible mouth."""
+    return (min(m.get('brow_raise_left',0),m.get('brow_raise_right',0))>=.24
+            and .12<=m.get('jaw',0)<=.85 and abs(m.get('smile',0))<.25
+            and m.get('blink',0)<.35 and m.get('brow_furrow',0)<.25
+            and max(m.get('pressed',0),m.get('snarl',0))<.2
+            and m.get('mouth_visible',1)>=.5)
+
+
 def movement_label(m):
     if m.get('hand',0)>.5:return 'neutral','Hand near mouth'
+    if surprise_configuration(m):return 'surprise','Both brows raised, mouth slightly open'
     if m['brow']>.2 and max(m.get('pressed',0),m.get('mouth_wide',0),m.get('snarl',0))>.22 and m['smile']<.45:return 'anger','Drawn brows and tense mouth'
     if m.get('snarl',0)>.3 and m['smile']<.3:return 'disgust','Nose and upper lip raised'
     if abs(m.get('asymmetry',0))>.4 and m['smile']<.45:return 'contempt','One-sided mouth lift'
@@ -56,7 +68,7 @@ def movement_label(m):
     if m['brow']>.15:return 'anger','Brows drawn'
     if m.get('eyes',1)>1.12 and m['brow']<-.12 and m.get('mouth_wide',0)>.15 and m['jaw']<.35:return 'fear','Wide eyes and tense mouth'
     if m['smile']<-.15:return 'sadness','Mouth corners lowered'
-    if m['jaw']>.2:return 'surprise','Mouth open'
+    if m['jaw']>.2:return 'neutral','Mouth open'
     if m.get('mouth_wide',0)>.2:return 'neutral','Mouth widened'
     if m.get('pucker',0)>.25:return 'neutral','Lips rounded'
     if m.get('teeth',0)>.15:return 'neutral','Teeth visible'

@@ -1,11 +1,11 @@
 """The five presentation states shared by check-in, reflection and companion."""
-PRIMARY_KEYS=('neutral','happy','frustrated','sad','confused')
-PRIMARY_LABELS={'neutral':'Neutral','happy':'Happy','frustrated':'Frustrated','sad':'Sad','confused':'Confused'}
+PRIMARY_KEYS=('neutral','happy','frustrated','sad','surprised')
+PRIMARY_LABELS={'neutral':'Neutral','happy':'Happy','frustrated':'Frustrated','sad':'Sad','surprised':'Surprised'}
 ALIASES={'composed':'neutral','calm':'neutral','relaxed':'neutral','neutral':'neutral',
  'happiness':'happy','laugh':'happy','laughing':'happy','amused':'happy','excited':'happy','engaged':'happy','content':'happy','contented':'happy','delighted':'happy','satisfied':'happy',
  'anger':'frustrated','angry':'frustrated','tension':'frustrated','tense':'frustrated','annoyed':'frustrated',
  'sadness':'sad','low':'sad','bored':'sad','exhausted':'sad','miserable':'sad','withdrawn':'sad','disappointed':'sad',
- 'confusion':'confused','bewildered':'confused','confused?':'confused'}
+ 'surprise':'surprised','astonished':'surprised','confused':'neutral','confusion':'neutral','bewildered':'neutral','confused?':'neutral'}
 
 def primary_key(key):
     key=(key or '').lower()
@@ -14,14 +14,19 @@ def primary_key(key):
 def limit_display(display):
     from checkpoint.expression_view import ExpressionDisplay
     if display.artwork is None:return ExpressionDisplay('Neutral',None,display.detail,source=display.source)
-    supported=display.artwork in PRIMARY_KEYS or display.artwork in ALIASES
+    supported=(display.artwork in PRIMARY_KEYS or display.artwork in ALIASES) and display.artwork not in ('confused','confusion','confused?','bewildered')
     key=primary_key(display.artwork)
     return ExpressionDisplay(PRIMARY_LABELS[key],key if supported else None,display.detail,display.movement if supported else None,display.source)
 
 def public_estimate(estimate):
     if not estimate:return None
-    groups={'neutral':'neutral','happiness':'happy','anger':'frustrated','sadness':'sad'}
+    groups={'neutral':'neutral','happiness':'happy','anger':'frustrated','sadness':'sad','surprise':'surprised'}
     raw=estimate.get('scores',{})
     scores={key:raw[name] for name,key in groups.items() if name in raw}
     key=groups.get(estimate.get('label'))
     return {**estimate,'label':key,'scores':scores,'status':estimate.get('status') if key else 'uncertain'}
+
+
+def feeling_label(key):
+    if key in ('confused','confusion','bewildered'):return 'Previous check-in'
+    return PRIMARY_LABELS[primary_key(key)]

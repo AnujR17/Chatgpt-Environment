@@ -14,7 +14,7 @@ REVIEW = ROOT / 'artifacts/design-review'
 
 def run():
     for name in ('session.png', 'play-reminder.png', 'recovery-frustrated.png',
-                 'recovery-later.png', 'widget-break.png', 'reminder-overlay.png'):
+                 'recovery-later.png', 'widget-break.png', 'reminder-overlay.png', 'recap.png', 'session-recap.png'):
         assert (REVIEW / name).is_file(), name
         shutil.copy2(REVIEW / name, SOURCE / 'assets' / name)
     candidates = [shutil.which('chromium'), shutil.which('google-chrome')]

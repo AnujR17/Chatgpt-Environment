@@ -26,7 +26,7 @@ with tempfile.TemporaryDirectory() as directory:
     cases=[('Neutral','neutral',{},'neutral'),('Happy','happy',dict(smile=.8,cheek=.5),'happiness'),
            ('Happy','happy',dict(smile=.8,cheek=.5,jaw=.6,laugh=.6,teeth=.5),'happiness'),
            ('Frustrated','frustrated',dict(brow=.7,pressed=.6),'anger'),
-           ('Confused','confused',dict(brow_furrow=.6,brow_inner_raise=.5,eye_squint=.4),None),
+           ('Surprised','surprised',dict(brow_raise_left=.6,brow_raise_right=.5,jaw=.2),None),
            ('Neutral',None,dict(brow=-.5,eye_wide=.8,jaw=.7),'surprise')]
     for title,key,features,model in cases:
         for _ in range(14):

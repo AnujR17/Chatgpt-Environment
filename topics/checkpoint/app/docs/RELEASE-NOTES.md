@@ -1,9 +1,7 @@
-# Regen 0.6.4
+# Regen 0.6.5
 
-- Open session layout groups check-in, breaks, setback support and display tools by purpose.
-- Nori’s emotion and countdown use light lettering with dark outlines, with no backing boxes.
-- An optional thought-cloud break prompt starts 30 seconds after enabling. Adjust the interval in Session or Settings. No camera or game tracking is needed.
-- Nori shows no next-reminder label or countdown. A timer appears only during an actual break. Breaks pause reminders; continuing starts a full interval. Session end stops prompts.
-- Setback support remains a separate opt-in; starting game observation does not enable either reminder type.
-- Updated static case study, real UI screenshots and visual PDF explain the design decisions and relevant UX principles.
-- Five shared states remain Neutral, Happy, Frustrated, Sad and Confused. Model weights and inference are unchanged.
+- Graphical session recap and session-complete dashboard replace the text report. The landscape PDF uses the same vector artwork, check-in timelines, CMA map and recorded choices. Long reports add pages; a text alternative is available in the app.
+- Drawn selectors, styled menus and animated switches replace default-looking controls, with keyboard operation and reduced-motion support.
+- Surprised replaces Confused in the five-state interface, widget, phone, case study and reports. Its default visual rule requires both separate eyebrow raises and a slightly open mouth; one brow or an open mouth alone is insufficient. Historical stored data is preserved.
+- Surprised is a facial-expression heuristic, separate from player-reported CMA. Model weights and runtime dependencies are unchanged.
+- Break reminders retain explicit opt-in, adjustable 30-second timing and thought clouds. No next-reminder label or countdown appears on Nori.

@@ -13,41 +13,40 @@ def pose(engine, **features):
     return engine.classify(Cue('accepted','neutral',movement=m), 100.)[0]
 
 
-def test_confusion_requires_a_combination_and_stays_tentative():
-    features=dict(brow_furrow=.6,brow_inner_raise=.5,eye_squint=.4,brow=.2)
-    assert pose(ReflectionEngine(),**features)=='confusion'
-    for key in ('brow_furrow','brow_inner_raise','eye_squint'):
-        partial={**features,key:0.}
-        assert pose(ReflectionEngine(),**partial)!='confusion'
-    for change in ({'smile':.8,'cheek':.5},{'pressed':.8},{'jaw':.7},{'blink':.8},{'snarl':.5}):
-        assert pose(ReflectionEngine(),**{**features,**change})!='confusion'
+def test_surprise_requires_both_brows_and_a_slightly_open_mouth():
+    features=dict(brow_raise_left=.6,brow_raise_right=.5,jaw=.2,brow=-.4)
+    assert pose(ReflectionEngine(),**features)=='surprise'
+    for key in ('brow_raise_left','brow_raise_right','jaw'):
+        assert pose(ReflectionEngine(),**{**features,key:0.})!='surprise'
+    for change in ({'smile':.8,'cheek':.5},{'pressed':.8},{'blink':.8},{'snarl':.5},{'mouth_visible':0.}):
+        assert pose(ReflectionEngine(),**{**features,**change})!='surprise'
 
 
-def test_separate_brow_and_lid_features_survive_mapping():
-    scores={'browDownLeft':.25,'browDownRight':.25,'browInnerUp':.25,
-            'eyeSquintLeft':.25,'eyeSquintRight':.25}
+def test_left_and_right_brow_features_survive_mapping_independently():
+    scores={'browOuterUpLeft':.25,'browOuterUpRight':.25,'browInnerUp':.2,'jawOpen':.11}
     m=movement_parameters(scores)
-    assert m['brow_furrow']>.4 and m['brow_inner_raise']>.4 and m['eye_squint']>.4
-    assert pose(ReflectionEngine(),**m)=='confusion'
+    assert m['brow_raise_left']>.4 and m['brow_raise_right']>.4
+    assert pose(ReflectionEngine(),**m)=='surprise'
+    m=movement_parameters({**scores,'browOuterUpRight':0.,'browInnerUp':.7})
+    assert pose(ReflectionEngine(),**m)!='surprise'
 
 
-def test_confusion_dwell_unknown_and_checkin_separation():
+def test_surprise_dwell_unknown_and_checkin_separation():
     s=Session();s.experimental_analysis=True;s.start_capture('camera');s.check_in('happy',.7,.4)
     e=ReflectionEngine()
     for i in range(8):
-        now=100+i/8;m=neutral_movement();m.update(brow_furrow=.6,brow_inner_raise=.5,eye_squint=.4)
-        s.cue=Cue('accepted','neutral',movement=m);s.cue_received_at=now
-        d=e.display(s,now)
+        now=100+i/8;m=neutral_movement();m.update(brow_raise_left=.6,brow_raise_right=.5,jaw=.2)
+        s.cue=Cue('accepted','surprise',movement=m);s.cue_received_at=now;d=e.display(s,now)
         if i<3:assert d.artwork is None
-    assert d.title=='Confused' and d.artwork=='confused'
+    assert d.title=='Surprised' and d.artwork=='surprised'
     assert (s.report,s.valence,s.arousal)==('happy',.7,.4)
     s.cue=Cue('unavailable',reason='No face detected');s.cue_received_at=101.
     assert e.display(s,101.).artwork is None
 
 
-def test_surprise_needs_eyes_and_brows_not_just_an_open_mouth():
+def test_mouth_open_or_single_raised_brow_does_not_claim_surprise():
     assert pose(ReflectionEngine(),jaw=.8) is None
-    assert pose(ReflectionEngine(),jaw=.8,brow=-.5,eye_wide=.8)=='surprise'
+    assert pose(ReflectionEngine(),jaw=.2,brow_raise_left=.8) is None
 
 
 def scene(seed=1):

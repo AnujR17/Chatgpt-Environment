@@ -14,7 +14,7 @@ def test_open_smile_has_laugh_animation_but_talking_alone_does_not():
     laugh=movement_parameters({'mouthSmileLeft':.35,'mouthSmileRight':.35,'jawOpen':.3,'eyeSquintLeft':.4,'eyeSquintRight':.4})
     assert movement_label(laugh)==('happiness','Open smile') and laugh['laugh']>.7 and laugh['eyes']<.9
     talking=movement_parameters({'jawOpen':.3})
-    assert movement_label(talking)==('surprise','Mouth open') and talking['laugh']==0
+    assert movement_label(talking)==('neutral','Mouth open') and talking['laugh']==0
 
 
 def test_drawn_brows_are_not_erased_by_inner_brow_raise_or_need_a_frown():
