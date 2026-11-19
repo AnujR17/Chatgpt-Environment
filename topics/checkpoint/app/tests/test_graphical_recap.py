@@ -57,3 +57,18 @@ def test_drawn_controls_keep_keyboard_selection_and_toggle_behavior():
     select.showPopup();app.processEvents();assert select.view().isVisible();select.hidePopup();select.close()
     switch=Switch('Break reminders');switch.show();switch.setFocus();app.processEvents();QTest.keyClick(switch,Qt.Key.Key_Space)
     assert switch.isChecked();switch.close()
+
+
+def test_saved_legacy_checkin_keeps_original_data_without_relabelling_it_surprised(tmp_path):
+    from PySide6.QtCore import QTimer
+    from PySide6.QtWidgets import QLabel
+    app=create_application([]);w=MainWindow(no_setup=True,data_dir=tmp_path);w.timer.stop();legacy=Session();legacy.check_in('confused',0.,0.)
+    w.history.save(legacy.summary(),consent=True);texts=[]
+    def inspect():
+        dialog=app.activeModalWidget()
+        texts.extend(x.text() for x in dialog.findChildren(QLabel));dialog.accept()
+    try:
+        QTimer.singleShot(10,inspect);w.show_history()
+        assert any('Check-ins: Previous check-in' in x for x in texts)
+        assert w.history.read()[0]['check_ins'][0]['feeling']=='confused'
+    finally:w.close();w.deleteLater();QCoreApplication.sendPostedEvents(None,QEvent.Type.DeferredDelete)

@@ -13,7 +13,7 @@ from PySide6.QtWidgets import (QApplication,QMainWindow,QWidget,QFrame,QLabel,QP
  QStackedWidget,QTabBar,QDialog,QDialogButtonBox,QComboBox,QLineEdit,QCheckBox,QDoubleSpinBox,QMessageBox,QFileDialog,QMenu,QScrollArea,QSystemTrayIcon,QGridLayout,QSlider,QSizePolicy,QTextBrowser,QInputDialog)
 from checkpoint.controls import Select as QComboBox, Switch as QCheckBox, PageStack as QStackedWidget, ActionButton
 from checkpoint.session import Session, History, FEELINGS
-from checkpoint.primary import PRIMARY_KEYS,PRIMARY_LABELS,primary_key,public_estimate
+from checkpoint.primary import PRIMARY_KEYS,PRIMARY_LABELS,primary_key,public_estimate,feeling_label
 from checkpoint.theme import STYLE, make_style, PALETTES
 from checkpoint.affect import ANCHORS, REFERENCES, dimension_words
 from checkpoint.motion import AffectWidget
@@ -850,11 +850,11 @@ class MainWindow(QMainWindow):
         if self.session.reports:
             items.addWidget(label('This session',22,bold=True))
             for report in reversed(self.session.reports):
-                row,lay=panel(padding=16);elapsed=int(report['elapsed_seconds']);lay.addWidget(label(PRIMARY_LABELS[primary_key(report['feeling'])],20,bold=True));lay.addWidget(label(f'{elapsed//60:02d}:{elapsed%60:02d} into this session',13,True));items.addWidget(row)
+                row,lay=panel(padding=16);elapsed=int(report['elapsed_seconds']);lay.addWidget(label(feeling_label(report['feeling']),20,bold=True));lay.addWidget(label(f'{elapsed//60:02d}:{elapsed%60:02d} into this session',13,True));items.addWidget(row)
         if not records:items.addWidget(label('No past sessions saved. You can enable history in Settings.',15,True))
         else:items.addWidget(label('Saved sessions',22,bold=True))
         for item in reversed(records):
-            box,lay=panel(padding=16);lay.addWidget(label(item.get("game","Session"),20,bold=True));lay.addWidget(label(item.get("started_at","")+" / "+str(round(item.get("duration_seconds",0)/60,1))+" minutes",14,True));lay.addWidget(label("Check-ins: "+", ".join(x["feeling"] for x in item.get("check_ins",[])),16));items.addWidget(box)
+            box,lay=panel(padding=16);lay.addWidget(label(item.get("game","Session"),20,bold=True));lay.addWidget(label(item.get("started_at","")+" / "+str(round(item.get("duration_seconds",0)/60,1))+" minutes",14,True));lay.addWidget(label("Check-ins: "+", ".join(feeling_label(x["feeling"]) for x in item.get("check_ins",[])),16));items.addWidget(box)
         items.addStretch();scroll.setWidget(content);root.addWidget(scroll,1)
         def delete():
             if QMessageBox.question(dialog,"Delete saved summaries?","Delete this app's local derived summaries? Your imported video files will not be changed.")==QMessageBox.StandardButton.Yes:
