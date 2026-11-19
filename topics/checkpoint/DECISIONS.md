@@ -36,3 +36,14 @@ Use separate `topic/checkpoint-case-study-20261118`; do not publish an OTA for t
 - 18 November 2026: User authorises publication of the current Regen UI and a simple 2–3 minute reminder to topic/checkpoint, superseding the earlier review-only hold. Publish 0.6.2-preview.1; retain compatible updater/runtime identities.
 - Count 150 seconds of foreground play for a brief reminder; pause outside the game and respect mute/breaks. Share cooldown with setback tips.
 - Keep native application navigation. Remove only case-study navigation and demo controls. Use straight device mockups and the complete original artwork with no faded overlay.
+
+
+## 19 November 2026: open UI and opt-in break reminders
+
+User rejects boxed/capsule labels and a flat cluster of unrelated actions. Native session now groups check-in, breaks/reminder interval, setback support, header session actions and footer display tools through proximity and whitespace. Secondary surfaces and tabs have reduced rounding; selected source uses an underline. Continue playing appears after a response.
+
+Nori mood/countdown labels have transparent backing with white glyphs and a dark outline. A scalloped thought cloud offers “Let’s take a break?” without activating a window or starting a break. No game pixels are sampled for adaptive text; dense-motion readability remains a physical-device check.
+
+Break reminders are a separate explicit opt-in, initially off. The first prompt arrives 30 seconds after enabling, adjustable with Session presets or Settings (30–3600 seconds). Camera/game observation is unnecessary. Taking a break clears the pending reminder; continuing starts a full interval; end stops prompts. Game observation no longer opts into setback support or break reminders. Five primary states are unchanged.
+
+Local verification: 139 tests passed, five fixture/Windows-dependent checks skipped. Actual Qt session/widget/recovery/play-support review scripts passed, including desktop 1440x900 and compact 1024x768, clicked check-in/break controls, phone-payload propagation, interval changes and transparent glyph rendering. Source case study adds concrete UX decisions and refreshed native screenshots. Windows 0.6.4 release and Vercel preview verification are pending publication at this checkpoint. No physical camera/game testing or user outcome claim.

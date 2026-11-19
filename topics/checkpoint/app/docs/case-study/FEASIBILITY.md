@@ -13,7 +13,11 @@ PySide6 supports the Windows session interface, local camera processing and fram
 
 ## Support during play
 
-Start play support enables game observation and the overlay. A brief reminder follows about 2½ minutes of active foreground gaming. A possible fall followed by a settled view can prompt a next-move reminder, encouragement or optional pause. Automatic invitations are spaced two minutes apart.
+Break reminders are off initially and use an independent monotonic timer. Enabling starts a fresh 30 seconds. Session provides interval presets; Settings accepts 30–3600 seconds. Camera and game tracking are optional. Taking a break clears the pending reminder; continuing starts a full interval. Session end stops prompts.
+
+Start play support enables game observation and the overlay. Setback support is separately enabled. A possible fall followed by a settled view can prompt a next move, encouragement or optional pause. Automatic setback suggestions retain their two-minute cooldown.
+
+Mood and countdown text have light fills and dark outlines, with no label surface. Thought-cloud prompts do not activate the game window or read its pixels. Readability over visually dense motion still needs physical-device evaluation.
 
 I fell requests a response directly. Windows shortcuts provide manual setback marking and mute while support is running. A one-off request preserves the automatic-tip mute preference.
 

@@ -35,12 +35,12 @@ QFrame#sessionHeader QPushButton[primary="true"] {{ background:#315D45; color:wh
 QFrame#sessionHeader QPushButton[primary="true"]:disabled {{ background:{c['surface_alt']}; color:{c['muted']}; border-color:{c['border']}; }}
 QFrame#sessionHeader QPushButton:disabled {{ background:transparent; color:#718368; border-color:#A7B698; }}
 QPushButton[primary="true"]:hover {{ background:#274D38; }}
-QFrame#panel,QFrame#cameraPanel {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:16px; }}
+QFrame#panel,QFrame#cameraPanel {{ background:transparent; border:0; border-radius:0; }}
 QFrame#companionPanel {{ background:transparent; border:0; }}
-QFrame#gamePanel {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:12px; }}
-QFrame#stateCard {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:12px; }}
-QFrame#artStage {{ background:{'#E3EAD5' if theme=='light' else '#35513A'}; border:0; border-radius:20px; }}
-QPushButton {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:9px; padding:10px 16px; min-height:22px; }}
+QFrame#gamePanel {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:4px; }}
+QFrame#stateCard {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:4px; }}
+QFrame#artStage {{ background:transparent; border:0; border-radius:0; }}
+QPushButton {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:4px; padding:10px 16px; min-height:22px; }}
 QPushButton:hover {{ background:{c['surface_alt']}; border-color:{c['secondary']}; }}
 QPushButton:pressed {{ background:{c['border']}; }}
 QPushButton:focus {{ border:2px solid {c['accent']}; padding:9px 15px; }}
@@ -52,7 +52,7 @@ QPushButton[primary="true"]:hover {{ background:{c['hover']}; }}
 QPushButton[tone="soft"] {{ background:{c['soft']}; color:{c['on_soft']}; border:1px solid {c['border']}; }}
 QPushButton[tone="soft"]:hover {{ border-color:{c['accent']}; }}
 QPushButton#navButton {{ background:transparent; border:0; text-align:left; }}
-QLineEdit,QComboBox,QDoubleSpinBox,QListWidget {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:8px; padding:10px; }}
+QLineEdit,QComboBox,QDoubleSpinBox,QListWidget {{ background:{c['surface']}; border:1px solid {c['border']}; border-radius:4px; padding:10px; }}
 QLineEdit {{ min-height:22px; selection-background-color:{c['accent']}; }}
 QLineEdit:focus,QComboBox:focus,QDoubleSpinBox:focus {{ border:2px solid {c['accent']}; }}
 QCheckBox {{ spacing:10px; padding:8px 0; }}
@@ -65,12 +65,12 @@ QScrollBar::handle:vertical {{ background:{c['border']}; border-radius:4px; min-
 QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical {{ height:0; }}
 QSlider::groove:horizontal {{ height:4px; background:{c['border']}; border-radius:2px; }}
 QSlider::sub-page:horizontal {{ background:{c['accent']}; border-radius:2px; }}
-QSlider::handle:horizontal {{ background:{c['accent']}; width:18px; margin:-7px 0; border-radius:9px; }}
-QPushButton#emotionCard {{ min-height:208px; min-width:190px; background:{c['surface']}; border:1px solid {c['border']}; border-radius:16px; padding:0; }}
+QSlider::handle:horizontal {{ background:{c['accent']}; width:18px; margin:-7px 0; border-radius:4px; }}
+QPushButton#emotionCard {{ min-height:208px; min-width:190px; background:transparent; border:1px solid transparent; border-radius:0; padding:0; }}
 QPushButton#emotionCard:hover {{ border:2px solid {c['accent']}; background:{c['surface_alt']}; }}
 QPushButton#emotionCard:focus {{ border:3px solid {c['accent']}; padding:0; }}
-QTabBar::tab {{ background:transparent; color:{c['secondary']}; padding:8px 9px; font-size:12px; border:0; margin-right:4px; border-radius:7px; }}
-QTabBar::tab:selected {{ background:{c['soft']}; color:{c['on_soft']}; }}
+QTabBar::tab {{ background:transparent; color:{c['secondary']}; padding:8px 9px; font-size:12px; border:0; margin-right:4px; border-radius:0px; }}
+QTabBar::tab:selected {{ background:transparent; color:{c['text']}; border-bottom:2px solid {c['accent']}; }}
 QTabBar::tab:focus {{ border:2px solid {c['accent']}; }}
 QTabBar::tear {{ width:0; }}
 '''

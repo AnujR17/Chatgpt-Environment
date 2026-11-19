@@ -6,14 +6,15 @@ from checkpoint.cma_report import cma_summary
 from checkpoint.expression_view import category_estimate
 from checkpoint.primary import public_estimate,primary_key,PRIMARY_LABELS
 from checkpoint.play_support import PlaySupport,response_mode
+from checkpoint.break_reminder import BreakReminder
 
 
 class CompanionState:
     def __init__(self):
-        self.nudge='';self.support=PlaySupport()
+        self.nudge='';self.support=PlaySupport();self.reminder=BreakReminder()
         self.activity_sums={};self.activity_count=0;self.last_activity=-100.
 
-    def update(self,session,display,game,*,input_stats=None,nudges=False,support_mode='Match my check-in',motion_enabled=True,reflection_summary=None,now=None):
+    def update(self,session,display,game,*,input_stats=None,nudges=False,break_reminders=False,reminder_seconds=30,support_mode='Match my check-in',motion_enabled=True,reflection_summary=None,now=None):
         now=time.monotonic() if now is None else now;elapsed=round(session.elapsed(),1)
         title=display.title if display else session.affect[0];artwork=display.artwork if display else session.report
         if artwork is not None:artwork=primary_key(artwork)
@@ -28,6 +29,9 @@ class CompanionState:
         resolved_mode=response_mode(session,support_mode)
         self.nudge=self.support.update(game,now,enabled=nudges,active=session.active,
             paused=session.break_deadline is not None,input_stats=input_stats,mode=resolved_mode)
+        reminder=self.reminder.update(now,enabled=break_reminders,active=session.active,
+            paused=session.break_deadline is not None,seconds=reminder_seconds)
+        self.nudge=reminder or self.nudge
         activity={k:round(v/self.activity_count,2) for k,v in self.activity_sums.items()} if self.activity_count else None
         report=cma_summary(session,activity)
         if reflection_summary:report['observations']=reflection_summary
@@ -43,7 +47,8 @@ class CompanionState:
             'checkin':{'title':PRIMARY_LABELS[primary_key(session.report)] if session.report else 'Not reported','pleasantness':session.affect[1],'activation':session.affect[2]},
             'model_estimate':public_estimate(category_estimate(session.cue)) if display and display.source in ('face_movement','expression_estimate','visual_pattern') else None,
             'input':input_stats or {'status':'Input observation off'},'nudge':self.nudge,
-            'play_support':{'enabled':nudges,'preference':support_mode,'mode':resolved_mode,'basis':self.support.basis if self.nudge else ''},
+            'play_support':{'enabled':nudges,'preference':support_mode,'mode':resolved_mode,'basis':self.support.basis if self.support.message else ''},
+            'break_reminder':{'enabled':break_reminders,'interval_seconds':reminder_seconds,'remaining_seconds':self.reminder.remaining(now)},
             'cma_report':{k:report['cma'][k] for k in ('count','trend','insight','next_step','latest')}}
         from checkpoint.attempts import phone_attempt
         state['practice']=phone_attempt(session)

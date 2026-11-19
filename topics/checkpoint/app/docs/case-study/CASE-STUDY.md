@@ -25,7 +25,9 @@ Together, these profiles focus the design on optional help, suitable timing, pri
 
 ## Interaction direction
 
-Start play support, then offer a short response after a possible setback or about 2½ minutes of active gaming. The player can continue, pause, mute or request help directly.
+Break reminders start off. Turning them on starts a fresh 30-second timer. The interval is adjustable in Session and Settings, independently of the camera and game tracking. Nori offers “Let’s take a break?” in a thought cloud. The timer pauses during breaks and stops at session end.
+
+Setback support is a separate opt-in. A possible fall and settled view can prompt one next step. The player can continue, pause, mute or request help directly.
 
 A recent CMA check-in can select a support style. Pleasantness and activation come from the player. Camera observations remain a separate source in the interface.
 
@@ -55,4 +57,14 @@ Neutral, Happy, Frustrated, Sad and Confused form the shared vocabulary across t
 
 ## Widget interaction
 
-The emotion name and break countdown remain visible. Click Nori to check in, take a timed break, mark a fall or mute reminders. Drag to move the widget. Continue playing ends a completed break.
+The emotion name uses light lettering with a dark outline and no backing box. The break countdown appears during a break or while reminders are enabled. Click Nori to check in, take a timed break, mark a fall or turn break reminders on or off. Drag to move the widget. Continue playing ends a completed break.
+
+## UI decisions and UX principles
+
+Gestalt proximity groups the check-in beside its feeling, break controls beside reminder timing, and fall responses beside technique cues. Session editing and ending stay with the session header. Display tools stay in the footer.
+
+Hick’s law and progressive disclosure guide the five-emotion chooser and contextual expression details. Continue playing appears after a response, avoiding an extra initial choice. These principles explain the arrangement; they do not establish measured task success.
+
+User control and visibility of system status guide the explicit opt-in, adjustable interval and visible countdown. A reminder offers a break without stealing focus or starting one automatically. The player explicitly continues after a timed break.
+
+Figure-ground contrast uses white glyphs with a dark outline to keep mood text readable over varied backgrounds. No game image is sampled for text colour. Fast motion, visually dense scenes and physical game compatibility still need target-device evaluation.
