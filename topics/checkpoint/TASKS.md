@@ -97,5 +97,5 @@
 - [x] Drawn selectors, styled menus, animated switches and compact-window layout.
 - [x] Surprised primary state with separate two-brow/open-mouth mapping, native/phone/case-study consistency and legacy data preservation.
 - [x] 143 local tests and native/browser flow checks.
-- [ ] Verify 0.6.5 Windows release, published OTA hashes/discovery and updated Vercel case study.
+- [x] Verify 0.6.5-preview.2 Windows release, downloaded OTA hashes/discovery and updated Vercel case study (145 local tests).
 - [ ] Check real-device expression behavior and gameplay performance.
