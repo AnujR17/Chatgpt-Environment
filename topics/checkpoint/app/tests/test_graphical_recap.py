@@ -72,3 +72,14 @@ def test_saved_legacy_checkin_keeps_original_data_without_relabelling_it_surpris
         assert any('Check-ins: Previous check-in' in x for x in texts)
         assert w.history.read()[0]['check_ins'][0]['feeling']=='confused'
     finally:w.close();w.deleteLater();QCoreApplication.sendPostedEvents(None,QEvent.Type.DeferredDelete)
+
+
+def test_practice_notes_use_their_recorded_time_and_legacy_notes_do_not_invent_one():
+    from checkpoint.attempts import start_attempt,finish_attempt,BY_KEY
+    s=Session();s.elapsed=lambda:10.;start_attempt(s,next(iter(BY_KEY)))
+    s.elapsed=lambda:20.;finish_attempt(s,'helped','A shorter reach worked')
+    s.elapsed=lambda:100.;report=cma_summary(s)
+    assert report['practice']['lessons'][0]['elapsed_seconds']==10.
+    assert '0:10 / PRACTICE' in ''.join(report_pages(report))
+    report['practice']['lessons'][0].pop('elapsed_seconds')
+    assert 'Time not recorded / PRACTICE' in ''.join(report_pages(report))

@@ -100,8 +100,8 @@ def detail_pages(report):
         if after:details+=' / Next check-in: '+after['feeling']
         events.append((row['elapsed_seconds'],'CHOICE',row['title'],details or 'No feedback recorded'))
     for row in report.get('practice',{}).get('lessons',[]):
-        events.append((row.get('elapsed_seconds',report['duration_seconds']),'PRACTICE',row.get('section','Technique cue'),row.get('cue','')+' / '+row.get('lesson','')+' / '+row.get('outcome','')))
-    events.sort(key=lambda x:x[0])
+        events.append((row.get('elapsed_seconds'),'PRACTICE',row.get('section','Technique cue'),row.get('cue','')+' / '+row.get('lesson','')+' / '+row.get('outcome','')))
+    events.sort(key=lambda x:x[0] if x[0] is not None else float('inf'))
     if not events:return []
     # Long notes continue onto subsequent rows/pages rather than being silently clipped.
     expanded=[]
@@ -112,7 +112,7 @@ def detail_pages(report):
     for offset in range(0,len(expanded),5):
         number=len(pages)+2;p=[txt(44,38,'REGEN / SESSION RECAP',12,GREEN,600),txt(44,91,'Your session trail',34,INK,600),txt(44,122,'Check-ins, choices and practice notes in the order you recorded them.',15,MUTED),line(75,164,75,728,'#A8BBA0',2)]
         for index,(stamp,kind,title,detail) in enumerate(expanded[offset:offset+5]):
-            y=184+index*114;p.extend([circle(75,y-4,8,GREEN,PAPER,3),txt(104,y-1,clock(stamp)+' / '+kind,11,MUTED,600),txt(104,y+27,title[:80],20,INK,600)])
+            y=184+index*114;p.extend([circle(75,y-4,8,GREEN,PAPER,3),txt(104,y-1,(clock(stamp) if stamp is not None else 'Time not recorded')+' / '+kind,11,MUTED,600),txt(104,y+27,title[:80],20,INK,600)])
             for j,row in enumerate(detail.splitlines()):p.append(txt(104,y+50+j*17,row,12,MUTED))
         p.extend([line(44,785,1156,785),lines(44,809,report.get('basis','Player-reported moments; changes do not establish causes.'),width=135,size=10,max_lines=2),txt(1156,824,f'{number:02d} / SESSION TRAIL',10,MUTED,600,'end')]);pages.append(wrap_svg(p,'Regen chronological session trail'))
     return pages
