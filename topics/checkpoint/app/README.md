@@ -2,7 +2,7 @@
 
 A Windows gaming companion with Nori, short play reminders and CMA check-ins.
 
-**[Download the latest Windows build](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.5-preview.1/Checkpoint-Windows-Preview.zip)**
+**[Download the latest Windows build](https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.5-preview.2/Checkpoint-Windows-Preview.zip)**
 
 1. Extract the entire ZIP.
 2. Open Checkpoint-Windows and run Start Checkpoint.cmd.
