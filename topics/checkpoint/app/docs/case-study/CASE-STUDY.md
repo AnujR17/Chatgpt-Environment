@@ -57,7 +57,7 @@ Neutral, Happy, Frustrated, Sad and Confused form the shared vocabulary across t
 
 ## Widget interaction
 
-The emotion name uses light lettering with a dark outline and no backing box. The break countdown appears during a break or while reminders are enabled. Click Nori to check in, take a timed break, mark a fall or turn break reminders on or off. Drag to move the widget. Continue playing ends a completed break.
+The emotion name uses light lettering with a dark outline and no backing box. A countdown appears only during an actual break. Nori shows no next-reminder label or countdown. Click Nori to check in, take a timed break, mark a fall or turn break reminders on or off. Drag to move the widget. Continue playing ends a completed break.
 
 ## UI decisions and UX principles
 

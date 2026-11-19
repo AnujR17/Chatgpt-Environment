@@ -10,7 +10,7 @@ A Windows gaming companion with Nori, short play reminders and CMA check-ins.
 
 Break reminders start off. Turn them on for a thought-cloud prompt after 30 seconds, adjustable in Session or Settings. They pause during breaks and stop at session end, independently of camera and game tracking. Setback support is a separate option.
 
-Use Break reminders to turn the timer off. Ctrl+Alt+F8 marks a setback; Ctrl+Alt+F9 mutes setback support. Click Nori to check in, start a break or mute reminders. Drag to move. The emotion name has no backing box. The countdown appears while reminders are enabled or a break is running. Camera estimates remain separate from your CMA check-in.
+Use Break reminders to turn the timer off. Ctrl+Alt+F8 marks a setback; Ctrl+Alt+F9 mutes setback support. Click Nori to check in, start a break or mute reminders. Drag to move. The emotion name has no backing box. A countdown appears only while a break is running. Nori shows no next-reminder label or countdown. Camera estimates remain separate from your CMA check-in.
 
 Phone opens a paired display on the same Wi-Fi. The laptop performs the analysis; the phone shows derived state and the recap.
 

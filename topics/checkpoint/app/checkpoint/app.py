@@ -638,14 +638,12 @@ class MainWindow(QMainWindow):
         seconds=self.companion.reminder.remaining(now)
         if remaining is not None:
             caption='Break complete' if remaining==0 else 'Break time';value=f'{remaining//60}:{remaining%60:02d}'
-        elif self.break_reminders_enabled and s.active and seconds is not None:
-            caption='Next break reminder';value=f'{seconds//60}:{seconds%60:02d}'
-        else:caption='Break reminders off';value=''
+        else:caption='';value=''
         self.overlay.update_status(artwork,caption,value,active=s.active,paused=remaining is not None,reminders=self.break_reminders_enabled,camera=s.camera_active)
         self.overlay.support_enabled=self.nudges_enabled
         self.reminder_toggle.blockSignals(True);self.reminder_toggle.setChecked(self.break_reminders_enabled);self.reminder_toggle.blockSignals(False)
         self.reminder_toggle.setEnabled(s.active and remaining is None);self.reminder_interval.setEnabled(s.active and remaining is None)
-        self.reminder_status.setText('Paused during your break.' if remaining is not None else f'Next reminder in {seconds//60}:{seconds%60:02d}' if self.break_reminders_enabled and s.active and seconds is not None else 'Off. Turn on when you want a reminder.' if s.active else 'Session ended. Reminders stopped.')
+        self.reminder_status.setText('Paused during your break.' if remaining is not None else f'On. Every {self.reminder_seconds} seconds.' if self.break_reminders_enabled and s.active else 'Off. Turn on when you want a reminder.' if s.active else 'Session ended. Reminders stopped.')
         latest_choice=s.responses[-1] if s.responses else None
         self.continue_control.setVisible(s.active and remaining is None and bool(latest_choice))
         self.support_toggle.blockSignals(True);self.support_toggle.setChecked(self.nudges_enabled);self.support_toggle.blockSignals(False)
