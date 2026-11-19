@@ -30,3 +30,5 @@ The existing native app and OTA release are unaffected. The presentation include
 The case-study hero presents AI for behavior design, Anuj Rai, Interaction design and Professor Anupam Rana. The information architecture follows the native app’s five destinations. Four source-linked findings connect research to design decisions; evidence, interview guide and design personas have readable supporting pages. The current game-focused design remains intact.
 
 The case study is a static presentation with straight desktop/phone mockups, fully visible artwork and no top navigation or demo controls. Regen 0.6.2 brings the current native UI and brief play reminders to the Checkpoint release branch.
+
+Regen 0.6.4 updates the native session to group actions by task. Break reminders are off initially, start 30 seconds after enabling and are adjustable in Session or Settings. Nori shows a thought-cloud prompt and an unboxed mood label, with no next-reminder readout. A timer appears only during an actual break. The source presentation, real UI screenshots and release PDF match this behavior.

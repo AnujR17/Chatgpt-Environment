@@ -2,8 +2,8 @@
   "project": "regen-case-study",
   "projectId": "prj_5TrsYqWsyuPksudhkXFIqxQ1HnnV",
   "branch": "topic/regen-case-study-site",
-  "sourceCommit": "1de8f8cedb35f850e1a4cb8e9eaf673852385ec1",
-  "deploymentId": "dpl_GXFn8Jm4GxTd5jqpaA966Hd9hfFD",
+  "sourceCommit": "1e7096ad88e844442d33d893f29883e05e3b5282",
+  "deploymentId": "dpl_85Lwh2zTwK19GYr8vnS44Uq4ty84",
   "url": "https://regen-case-study-git-topi-a380c7-anujrai1701-gmailcoms-projects.vercel.app",
   "status": "READY",
   "target": "preview",
@@ -22,7 +22,7 @@
       "Sad",
       "Confused"
     ],
-    "presentation": "Static; no navbar or demo controls; flat native mockups; fully visible artwork",
+    "presentation": "Static open layout, no navbar/demo controls, grouped native actions, thought-cloud prompt, no next-reminder label or countdown",
     "local_browser_widths": [
       1440,
       1024,
@@ -30,6 +30,11 @@
       320
     ],
     "live_http": "Verified with authenticated Vercel connector",
-    "visual_pdf": "Published in the 0.6.3 Windows release"
+    "visual_pdf": "Published and downloaded from the verified 0.6.4 Windows release",
+    "native_release": "checkpoint-v0.6.4-preview.1",
+    "local_tests": {
+      "passed": 139,
+      "skipped": 5
+    }
   }
 }
