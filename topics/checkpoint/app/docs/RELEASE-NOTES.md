@@ -1,10 +1,9 @@
-# Regen 0.6.3
+# Regen 0.6.5 preview 2
 
-- Five primary emotions across the app, Nori widget and phone: Neutral, Happy, Frustrated, Sad and Confused.
-- A visible emotion name and a larger break countdown on Nori.
-- Click Nori to check in, take a 30-second, one-minute or two-minute break, mark a fall or mute reminders. Drag to move.
-- Breaks finish at 0:00 until you choose Continue playing. The camera stays off after a break.
-- Play reminders follow about 2½ minutes of foreground gaming or a settled view after a possible fall.
+- Graphical session recap and session-complete dashboard replace the text report. The landscape PDF uses the same vector artwork, check-in timelines, CMA map and recorded choices. Long reports add pages; a text alternative is available in the app.
+- Drawn selectors, styled menus and animated switches replace default-looking controls, with keyboard operation and reduced-motion support.
+- Surprised replaces Confused in the five-state interface, widget, phone, case study and reports. Its default visual rule requires both separate eyebrow raises and a slightly open mouth; one brow or an open mouth alone is insufficient. Historical stored data is preserved.
+- Surprised is a facial-expression heuristic, separate from player-reported CMA. Model weights and runtime dependencies are unchanged.
+- Break reminders retain explicit opt-in, adjustable 30-second timing and thought clouds. No next-reminder label or countdown appears on Nori.
 
-Existing installations: Settings > Check for updates > Update and restart.
-For a first install, extract the entire Checkpoint-Windows-Preview.zip and run Start Checkpoint.cmd.
+- Practice notes retain their recorded times. Older notes without timestamps are explicitly untimed.

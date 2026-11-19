@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 
 ROOT=Path(__file__).resolve().parent
-BASE='https://github.com/AnujR17/Chatgpt-Environment/blob/topic/checkpoint-case-study-20261118/topics/checkpoint/app/docs/case-study/'
+BASE='https://github.com/AnujR17/Chatgpt-Environment/blob/topic/regen-case-study-site/topics/checkpoint/app/docs/case-study/'
 
 
 def data(path):

@@ -16,7 +16,7 @@ BASE = dict(red=131., green=210., blue=187., stretch=0., tension=0., smile=0., e
 def eyebrow_curve(brow, skew, direction):
     """Short soft brows; all coordinates relative to the eye centre and scale."""
     b=max(-1.,min(1.,brow));k=max(-1.,min(1.,skew))
-    y=-.19-direction*k*.025
+    y=-.19+min(0.,b)*.12-direction*k*.025
     tilt=direction*max(-1.,min(1.,b+direction*k))*.025
     return ((-.055,y+tilt),(0.,y-.035),(.055,y-tilt))
 LOOKS = {

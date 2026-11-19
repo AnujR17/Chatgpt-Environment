@@ -82,3 +82,20 @@
 - [x] Visual gaming case study, interactive CMA example and concise copy without classroom framing.
 - [x] One-file offline export, visual PDF, responsive/reduced-motion checks and contrast measurements.
 - [x] Native/phone regression and Windows run44256785585 passed.
+
+## Open layout and reminder refinement, 19 November 2026
+
+- [x] Group actions by purpose and remove Nori label surfaces.
+- [x] Thought-cloud prompts; separate opt-in 30-second reminder and adjustable interval.
+- [x] Update source case study and generate native screenshots; 139 tests and native review scripts pass.
+- [x] Verify Windows 0.6.4 release, 0.6.3 OTA discovery, downloaded package hashes and updated case-study deployment.
+- [ ] Check readability and usefulness during physical gameplay.
+
+## Graphical recap and Surprised, 19 November 2026
+
+- [x] Shared graphical native/PDF recap, actual completed-session dashboard and text alternative.
+- [x] Drawn selectors, styled menus, animated switches and compact-window layout.
+- [x] Surprised primary state with separate two-brow/open-mouth mapping, native/phone/case-study consistency and legacy data preservation.
+- [x] 143 local tests and native/browser flow checks.
+- [x] Verify 0.6.5-preview.2 Windows release, downloaded OTA hashes/discovery and updated Vercel case study (145 local tests).
+- [ ] Check real-device expression behavior and gameplay performance.

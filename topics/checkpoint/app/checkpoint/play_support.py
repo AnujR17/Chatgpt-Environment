@@ -81,7 +81,6 @@ class PlaySupport:
                   and now - self.observed_at <= 3.)
         if not usable:
             self.pending_at = None; self.settled_at = None
-            self.timed_reminder(now,foreground,kind)
             return self.message
         count = state.get('possible_falls')
         new_fall = kind == 'falling' and (self.last_kind != 'falling' if count is None else count != self.last_count)
@@ -102,13 +101,4 @@ class PlaySupport:
                 self.manual(now, mode)
                 self.message = 'Possible fall. ' + self.message
                 self.basis = 'Experimental game-window motion estimate'
-        self.timed_reminder(now,foreground,kind)
         return self.message
-
-    def timed_reminder(self, now, foreground, kind):
-        if (foreground and self.play_seconds>=self.REMINDER_SECONDS
-                and self.pending_at is None and kind not in ('falling','climbing')
-                and now-self.last_prompt>=self.COOLDOWN):
-            self.manual(now)
-            self.message='A quick reset? Relax your grip, then go again.'
-            self.basis='Active gaming reminder'

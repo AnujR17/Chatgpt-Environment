@@ -1,0 +1,40 @@
+{
+  "project": "regen-case-study",
+  "projectId": "prj_5TrsYqWsyuPksudhkXFIqxQ1HnnV",
+  "branch": "topic/regen-case-study-site",
+  "sourceCommit": "17d00a9ef060d6f0829d62a90b73598642daca52",
+  "deploymentId": "dpl_J5rLpuA7riWwViKmELb6UAtzcTja",
+  "url": "https://regen-case-study-git-topi-a380c7-anujrai1701-gmailcoms-projects.vercel.app",
+  "status": "READY",
+  "target": "preview",
+  "access": "Existing Vercel team sign-in protection retained",
+  "verification": {
+    "rootStatus": 200,
+    "assets": {
+      "case-data.js": 200,
+      "case-study.css": 200,
+      "research.html": 200
+    },
+    "primary_emotions": [
+      "Neutral",
+      "Happy",
+      "Frustrated",
+      "Sad",
+      "Surprised"
+    ],
+    "presentation": "Static, actual native screenshots, graphical native/PDF Recap, drawn controls and Surprised state",
+    "local_browser_widths": [
+      1440,
+      1024,
+      390,
+      320
+    ],
+    "live_http": "Verified with authenticated Vercel connector",
+    "visual_pdf": "Downloaded from the verified Windows preview 0.6.5-preview.2 release",
+    "native_release": "checkpoint-v0.6.5-preview.2",
+    "local_tests": {
+      "passed": 145,
+      "skipped": 5
+    }
+  }
+}

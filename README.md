@@ -4,6 +4,7 @@ This repository keeps research, planning, and project discussions in reviewable 
 
 | Topic | Branch | Entry point |
 | --- | --- | --- |
+| Regen case-study website | `topic/regen-case-study-site` | [Read the interactive case study](https://regen-case-study-q23s64yln-anujrai1701-gmailcoms-projects.vercel.app) |
 | Checkpoint Windows app | `topic/checkpoint` | [App and download](https://github.com/AnujR17/Chatgpt-Environment/blob/topic/checkpoint/topics/checkpoint/README.md) |
 | Digital Cheque | `topic/digital-cheque` | [Topic overview](https://github.com/AnujR17/Chatgpt-Environment/blob/topic/digital-cheque/topics/digital-cheque/README.md) |
 

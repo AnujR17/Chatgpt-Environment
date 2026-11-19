@@ -2,10 +2,28 @@
 from pathlib import Path
 import sys,time
 from PySide6.QtCore import Qt,QPoint,QTimer,QSettings,QRect,Signal
-from PySide6.QtGui import QGuiApplication,QPainter,QColor,QFont,QRegion,QPainterPath
+from PySide6.QtGui import QGuiApplication,QPainter,QColor,QFont,QRegion,QPainterPath,QPen,QFontMetricsF
 from PySide6.QtWidgets import QWidget,QLabel,QMenu
 from checkpoint.blob import NoriWidget
 from checkpoint.primary import PRIMARY_KEYS,PRIMARY_LABELS,primary_key
+
+class OutlinedLabel(QLabel):
+    """Two-tone letter edges stay legible without a rectangular backing surface."""
+    def paintEvent(self,event):
+        p=QPainter(self);p.setRenderHint(QPainter.RenderHint.Antialiasing)
+        metrics=QFontMetricsF(self.font());path=QPainterPath()
+        path.addText((self.width()-metrics.horizontalAdvance(self.text()))/2,
+                     (self.height()-metrics.height())/2+metrics.ascent(),self.font(),self.text())
+        p.setPen(QPen(QColor('#17241E'),3,Qt.PenStyle.SolidLine,Qt.PenCapStyle.RoundCap,Qt.PenJoinStyle.RoundJoin))
+        p.setBrush(Qt.BrushStyle.NoBrush);p.drawPath(path)
+        p.fillPath(path,QColor('#FFFFFF'));p.end()
+
+def thought_cloud():
+    path=QPainterPath()
+    for x,y,w,h in ((9,15,56,36),(35,4,66,48),(79,1,66,54),(127,7,65,44),(165,19,45,32),(32,25,155,32)):
+        part=QPainterPath();part.addEllipse(x,y,w,h);path=path.united(part)
+    path.addEllipse(137,58,10,8);path.addEllipse(126,69,5,5)
+    return path
 
 class NoriOverlay(QWidget):
     actionRequested=Signal(str)
@@ -19,13 +37,13 @@ class NoriOverlay(QWidget):
         self.name_label=self.make_label(18,True,QRect(24,225,172,28))
         self.timer_caption=self.make_label(12,False,QRect(24,263,172,18))
         self.timer_value=self.make_label(30,True,QRect(24,281,172,35))
-        self.update_status('neutral','Take a break','0:30')
+        self.update_status('neutral','','')
         self.setAccessibleName('Nori. Click for check-in and break controls. Drag to move.');self.setCursor(Qt.CursorShape.PointingHandCursor);self.place('bottom-right')
         self.expiry=QTimer(self);self.expiry.timeout.connect(self.clear_expired);self.expiry.start(250)
         self.modifiers=QTimer(self);self.modifiers.setInterval(50);self.modifiers.timeout.connect(self.check_modifiers)
 
     def make_label(self,size,bold,rect):
-        label=QLabel(self);label.setGeometry(rect);label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        label=OutlinedLabel(self);label.setGeometry(rect);label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         font=QFont('DM Sans');font.setPixelSize(size);font.setBold(bold);label.setFont(font)
         label.setStyleSheet('background:transparent;color:#29334b;border:0;padding:0;');label.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents)
         return label
@@ -33,13 +51,15 @@ class NoriOverlay(QWidget):
     def update_status(self,emotion,caption,value,*,active=True,paused=False,reminders=False,camera=False):
         self.expression_label=PRIMARY_LABELS[primary_key(emotion)];self.name_label.setText(self.expression_label)
         self.timer_caption.setText(caption);self.timer_value.setText(value)
+        self.timer_caption.setVisible(bool(caption));self.timer_value.setVisible(bool(value))
         self.session_active=active;self.break_active=paused;self.reminders_enabled=reminders;self.has_camera=camera
         self.update_mask();self.update()
 
     def update_mask(self):
         path=QPainterPath();path.addRoundedRect(32,67,156,158,55,55)
-        region=QRegion(path.toFillPolygon().toPolygon())|QRegion(QRect(23,223,174,32))|QRegion(QRect(23,258,174,64))
-        if self.message or self.editing:region=region|QRegion(QRect(5,3,210,61))
+        region=QRegion(path.toFillPolygon().toPolygon())|QRegion(QRect(23,223,174,32))
+        if self.timer_caption.text() or self.timer_value.text():region=region|QRegion(QRect(23,258,174,64))
+        if self.message or self.editing:region=region|QRegion(thought_cloud().toFillPolygon().toPolygon())
         if getattr(self,'_mask_region',None)!=region:
             self._mask_region=region;self.setMask(region)
 
@@ -113,16 +133,16 @@ class NoriOverlay(QWidget):
             breaks=menu.addMenu('Take a break');breaks.setEnabled(self.session_active)
             for seconds,title in ((30,'30 seconds'),(60,'1 minute'),(120,'2 minutes')):add(breaks,title,'break:'+str(seconds))
         add(menu,'I fell','setback',self.session_active and not self.break_active)
-        add(menu,'Mute reminders' if self.reminders_enabled else 'Resume reminders','mute',self.session_active)
+        add(menu,'Turn off break reminders' if self.reminders_enabled else 'Turn on break reminders','reminders',self.session_active)
+        add(menu,'Mute setback support' if getattr(self,'support_enabled',False) else 'Enable setback support','mute',self.session_active)
         menu.addSeparator();add(menu,'Move Nori','move');add(menu,'Open Regen','open')
         menu.popup(self.mapToGlobal(QPoint(15,self.height()-20)))
 
     def paintEvent(self,event):
         p=QPainter(self);p.setRenderHint(QPainter.RenderHint.Antialiasing);p.setPen(Qt.PenStyle.NoPen);p.setBrush(QColor('#FFFCF4'))
-        p.drawRoundedRect(23,223,174,32,13,13);p.drawRoundedRect(23,258,174,64,15,15)
         if self.message or self.editing:
-            p.drawRoundedRect(5,3,210,61,13,13);p.setPen(QColor('#34453E'));font=QFont('DM Sans');font.setPixelSize(12);p.setFont(font)
-            p.drawText(14,8,192,50,Qt.AlignmentFlag.AlignCenter|Qt.TextFlag.TextWordWrap,'Drag Nori; release to lock' if self.editing else self.message)
+            p.setPen(QPen(QColor('#34453E'),1.2));p.drawPath(thought_cloud());p.setPen(QColor('#25392E'));font=QFont('DM Sans');font.setPixelSize(12 if len(self.message)>50 else 14);p.setFont(font)
+            p.drawText(24,9,172,43,Qt.AlignmentFlag.AlignCenter|Qt.TextFlag.TextWordWrap,'Drag Nori to move' if self.editing else self.message)
         p.end()
 
     def mousePressEvent(self,event):

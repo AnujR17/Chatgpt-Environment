@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#243D32"><meta name="description" content="AI for behavior design by Anuj Rai. An interaction design case study of Regen, gaming, the circumplex model of affect and player-controlled support.">
+<title>AI for behavior design / Anuj Rai / Regen</title>
+<link rel="icon" href="assets/regen.svg"><link rel="stylesheet" href="case-study.css">
+<script defer src="assets/nori-visual.js"></script><script defer src="case-data.js"></script><script defer src="case-study.js"></script>
+</head>
+<body>
+<a class="skip" href="#story">Skip to the case study</a>
+<main id="story">
+<section id="top" class="hero sheet">
+<img class="world" src="assets/regen-world.png" alt="Original papercraft gaming world with Nori characters trying a climb, showing surprise, determination and delight">
+<div class="hero-copy"><p class="hero-project">AI For Behavior Design</p><h1>Regen<br>Gaming Companion</h1><p class="hero-summary">Support for the next attempt<br>in Getting Over It.</p><dl class="hero-credits"><div><dt>Designed by</dt><dd>Anuj Rai</dd></div><div><dt>Subject</dt><dd>Interaction design</dd></div><div><dt>Professor</dt><dd>Anupam Rana</dd></div></dl></div>
+</section>
+<section class="intro wrap">
+<div><p class="eyebrow">The project</p><h2>Help for the<br>next attempt</h2></div>
+<div class="intro-copy"><p class="large-copy">Regen stays beside players learning Getting Over It. After a possible fall, it offers one small next step. A check-in helps the player choose support that fits.</p><div class="brief-grid"><div><span>Subject</span><strong>Interaction<br>design</strong></div><div><span>Theme</span><strong>AI for Society /<br>Social Cause</strong></div><div><span>Framework</span><strong>Circumplex Model<br>of Affect</strong></div><div><span>Technology</span><strong>Camera, local vision<br>and input timing</strong></div></div></div>
+</section>
+<section id="empathize" class="sheet empathy">
+<div class="section-head"><p class="stage">01 / Empathize</p><h2>Research<br>and insights</h2><p>What makes a setback difficult,<br>and when does support help?</p></div>
+<div class="emotion-parade" id="emotion-parade" aria-label="Different authored character expressions"></div>
+<div class="research-findings">
+<article><span class="finding-index">01</span><div><h3>Blocked progress can threaten competence</h3><p>Seven studies linked competence-impeding play with aggression-related outcomes.</p><a href="https://pubmed.ncbi.nlm.nih.gov/24377357/">Przybylski and colleagues, 2014</a></div><div class="design-response"><h4>Design response</h4><p>Offer one manageable next step after a possible setback. Keep the player in control of continuing.</p></div></article>
+<article><span class="finding-index">02</span><div><h3>A face needs context</h3><p>Facial movements do not reliably identify a particular felt emotion across situations.</p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6640856/">Barrett and colleagues, 2019</a></div><div class="design-response"><h4>Design response</h4><p>Keep camera estimates separate. Let the player report CMA pleasantness and activation.</p></div></article>
+<article><span class="finding-index">03</span><div><h3>The same difficulty can feel different</h3><p>A case study with 27 puzzle players examined how needs and motives shape enjoyment and persistence.</p><a href="https://doi.org/10.1177/15554120211056126">Pusey, Wong and Rappa, 2022</a></div><div class="design-response"><h4>Design response</h4><p>Support enjoyable struggle. Offer encouragement, a next move or a pause, with mute always available.</p></div></article>
+<article><span class="finding-index">04</span><div><h3>Tilt involves more than an expression</h3><p>A survey of 1,007 gamers found associations between competitive motivation and reported tilt risk.</p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11082399/">Cregan, Toth and Campbell, 2024</a></div><div class="design-response"><h4>Design response</h4><p>Ask what happened and what the player wanted. Use context and helpfulness feedback in the optional recap.</p></div></article>
+</div>
+<div class="research-links"><a href="evidence.html">Evidence register</a><a href="interview-guide.html">Interview guide</a></div>
+<div class="people-heading"><h3>Design personas</h3><p>Five player perspectives. Three Indian contexts.</p></div>
+<div class="people"><article><span class="person-tag">Rohan / India</span><h4>Ranked gets personal</h4><p>Needs a way back to the next round after teammate conflict.</p></article><article><span class="person-tag">Kavya / India</span><h4>Context gets misread</h4><p>Needs control over labels, camera use and who sees them.</p></article><article><span class="person-tag">Aman / India</span><h4>Only half an hour to play</h4><p>Wants one useful takeaway from a short session.</p></article><article><span class="person-tag">Alex</span><h4>The struggle is the fun</h4><p>Wants a hint without losing the discovery.</p></article><article><span class="person-tag">Morgan</span><h4>Playing to an audience</h4><p>Needs a way to separate performance from personal experience.</p></article></div>
+</section>
+<section id="define" class="sheet define">
+<div class="section-head"><p class="stage">02 / Define</p><h2>One more try<br>One thing to change</h2></div>
+<div class="job"><p>After I lose progress, help me find my next step without leaving the game.</p><canvas width="640" height="640" data-look="happy" aria-label="Nori looking happy"></canvas></div>
+<div class="audience"><div><span>For</span><h3>Players learning<br>a difficult game</h3></div><div><span>Starting with</span><h3>Getting Over It<br>on Windows</h3></div><div><span>Intended benefit</span><h3>A better next attempt<br>on your own terms</h3></div></div>
+
+</section>
+<section id="ideate" class="sheet ideate">
+<div class="section-head"><p class="stage">03 / Ideate</p><h2>A companion<br>beside the game</h2><p>A launcher adds another library. A venue platform adds a business.<br>Regen stays with one player and one next choice.</p></div>
+<div id="architecture" class="architecture-wrap">
+<div class="architecture-heading"><h3>Information architecture</h3><p>Five destinations in the native app.<br>Support stays within the session.</p></div>
+<div class="ia-tree" aria-label="Regen information architecture">
+<div class="ia-root">Regen</div>
+<ul class="ia-branches">
+<li><h4>Session</h4><ul><li>Game and intention</li><li>Play support and manual setback</li><li>My check-in</li><li>Face estimate and test view</li><li>Technique cues</li><li>Pause or end session</li></ul></li>
+<li><h4>Recap</h4><ul><li>Reported CMA moments</li><li>Context and choices</li><li>Helpfulness feedback</li><li>Export PDF</li></ul></li>
+<li><h4>Saved</h4><ul><li>Consented summaries</li><li>Past check-ins</li><li>Delete history</li></ul></li>
+<li><h4>Tracking</h4><ul><li>Camera and test video</li><li>Game-window estimates</li><li>Optional input timing</li><li>Source status</li></ul></li>
+<li><h4>Settings</h4><ul><li>Break timer and opt-in</li><li>Setback support preferences</li><li>Face and hand options</li><li>Overlay and motion</li><li>History consent</li><li>App updates</li></ul></li>
+</ul></div>
+<div class="ia-connected"><h4>Connected displays</h4><div><h5>Nori overlay</h5><p>Five emotions, unboxed labels, optional break reminders and click controls over the game.</p></div><div><h5>Paired phone</h5><p>Derived session state and PDF recap over trusted Wi-Fi.</p></div></div>
+<div class="ia-system"><div><h4>On-device processing</h4><p>Optional face and hand features, expression estimates, game motion and response rules. Player check-ins supply CMA coordinates.</p></div><div><h4>Session data</h4><p>Check-ins, context, choices and ratings. Saving summaries requires consent. No camera or game frames are retained.</p></div></div>
+</div>
+<h3 class="artifact-title">Player journey</h3>
+<div class="flow" aria-label="The player journey"><article><span>01</span><h3>Start play support</h3><p>Choose your help.<br>Camera optional.</p></article><article><span>02</span><h3>Notice a setback</h3><p>Estimate a fall.<br>Or mark it yourself.</p></article><article><span>03</span><h3>Wait, then offer</h3><p>Let the view settle.<br>One short suggestion.</p></article><article><span>04</span><h3>Keep your rhythm</h3><p>Try, pause or mute.<br>Reflect when useful.</p></article></div>
+<h3 class="artifact-title">Wireframe</h3>
+<div class="layout-plan open-plan"><div class="wire-nav"><b>regen</b><span>Session</span><span>Recap</span><span>Tracking</span></div><div class="wire-main"><div class="wire-header"><b>Getting Over It</b><span>End session</span></div><div class="wire-body"><div class="wire-companion"><canvas width="640" height="640" data-look="neutral" aria-label="Character at the centre of the layout plan"></canvas><div>Your check-in</div></div><div class="wire-camera"><span class="camera-outline" aria-hidden="true"></span><b>Sources</b><span>Camera / game / input timing</span></div></div><div class="wire-foot"><span>Breaks / Reminders and timing</span><span>After a setback / I fell and technique cues</span></div></div></div>
+</section>
+<section id="prototype" class="sheet prototype"><div class="section-head"><p class="stage">04 / Prototype</p><h2>Your session<br>in one place</h2></div><figure class="desktop-mockup"><div class="display-bezel"><img src="assets/session.png" width="1440" height="900" alt="Regen native session with the Nori stage, source controls and play support"></div><div class="device-base" aria-hidden="true"></div></figure></section>
+<section class="sheet interaction-decisions">
+<div class="section-head"><p class="stage">Interaction decisions</p><h2>Space to play<br>Clearer choices</h2><p>Controls follow the task.<br>Nori stays free of panels and labels in capsules.</p></div>
+<div class="decision-rows">
+<article><h3>Group by purpose</h3><div><h4>Gestalt law of proximity</h4><p>Check-in stays beside the feeling. Break actions and reminder timing share one area. Setback support has its own area. Display tools sit in the footer.</p></div></article>
+<article><h3>Show what matters now</h3><div><h4>Hick’s law and progressive disclosure</h4><p>One main check-in action leads to five emotions. Drawn selectors and switches replace system-looking controls. Expression details appear when that source is enabled. Continue playing appears after a choice, rather than competing with the first action.</p></div></article>
+<article><h3>Let the player choose the timing</h3><div><h4>User control and visibility of system status</h4><p>Break reminders start off. Turning them on starts a fresh 30-second timer, adjustable from Regen. Nori has no countdown between reminders. A timer appears only during an actual break; reminders stop at session end. A thought cloud offers a break without opening a dialog or taking focus.</p></div></article>
+<article><h3>Keep Nori readable over the game</h3><div><h4>Figure-ground contrast</h4><p>The emotion name and timer use light lettering with a dark outline. Both edges travel with the text across light, dark and mixed scenes, without a backing box or sampling the game screen.</p></div></article>
+</div></section>
+<section id="in-play" class="sheet in-play"><div class="section-head"><p class="stage">During the game</p><h2>A small reset<br>while you play</h2><p>Turn on break reminders when you want them. The first arrives after 30 seconds.<br>Change the interval in Regen. Click Nori to check in or start a break.</p></div><div class="in-play-screens"><figure class="desktop-mockup"><div class="display-bezel"><img src="assets/play-reminder.png" width="1440" height="900" alt="Native Regen showing the active-play reminder"></div><div class="device-base" aria-hidden="true"></div></figure><img class="overlay-screen" src="assets/reminder-overlay.png" width="220" height="330" alt="Nori thinking Let’s take a break, with only an unboxed emotion label beneath the character"></div></section>
+<section id="cma" class="sheet cma"><div class="section-head"><p class="stage">The framework</p><h2>Your check-in<br>shapes the support</h2><p>CMA describes pleasantness and activation.<br>The player chooses how to continue.</p></div><div class="cma-scenes">
+<article class="cma-scene"><canvas width="640" height="640" data-look="frustrated" aria-label="Nori representing frustration"></canvas><h3>Frustrated</h3><dl><div><dt>Pleasantness</dt><dd>−0.70</dd></div><div><dt>Activation</dt><dd>+0.80</dd></div></dl><p>A pause is available.</p></article>
+<article class="cma-scene"><canvas width="640" height="640" data-look="sad" aria-label="Nori representing low energy"></canvas><h3>Sad</h3><dl><div><dt>Pleasantness</dt><dd>−0.65</dd></div><div><dt>Activation</dt><dd>−0.55</dd></div></dl><p>Choose a smaller next goal.</p></article>
+<article class="cma-scene"><canvas width="640" height="640" data-look="happy" aria-label="Nori representing excitement"></canvas><h3>Happy</h3><dl><div><dt>Pleasantness</dt><dd>+0.70</dd></div><div><dt>Activation</dt><dd>+0.80</dd></div></dl><p>Keep the challenge going.</p></article>
+</div></section>
+<section class="sheet character">
+<div class="section-head"><p class="stage">The face of Regen</p><h2>Nori has range</h2><p>Neutral, Happy, Frustrated, Sad and Surprised.<br>Five primary emotions across the app and widget.</p></div>
+<div id="character-family" class="character-family" aria-label="Authored emotion character library"></div>
+<div class="character-copy"><p><strong>Neutral stays neutral</strong><br>A flat mouth. No pretend smile when tracking is missing.</p><p><strong>Expressions have detail</strong><br>Both brows rise with a slightly open mouth for Surprised. Eyes, mouth and hand cues keep each expression distinct.</p><p><strong>Movement has a purpose</strong><br>Subtle transitions keep the same character recognisable.</p></div>
+</section>
+<section class="sheet practice">
+<div class="section-head"><p class="stage">Practice, then reflect</p><h2>A difficult moment<br>A later report</h2><p>The player reports frustration, chooses a pause<br>and describes the next moment.</p></div>
+<div class="recap-screens"><figure class="desktop-mockup"><div class="display-bezel"><img src="assets/recovery-frustrated.png" width="1440" height="900" alt="Regen with a frustrated CMA check-in"></div><div class="device-base" aria-hidden="true"></div></figure><figure class="desktop-mockup"><div class="display-bezel"><img src="assets/recovery-later.png" width="1440" height="900" alt="Regen with a later check-in and helpfulness feedback"></div><div class="device-base" aria-hidden="true"></div></figure></div>
+</section>
+<section class="sheet recap-story"><div class="section-head"><p class="stage">Session recap</p><h2>Your session<br>as a visual report</h2><p>The same graphical recap in Regen and the exported PDF.<br>Check-in timelines, a CMA map and the choices you recorded.</p></div><figure class="desktop-mockup"><div class="display-bezel"><img src="assets/recap.png" width="1250" height="850" alt="Regen graphical recap with reported pleasantness and activation, a CMA map, and player choices"></div><div class="device-base" aria-hidden="true"></div></figure><div class="recap-explanation"><div><h3>Read the reported moments</h3><p>Numbered samples connect the time graphs with the CMA map. Dashed lines connect reports; time between check-ins stays unknown.</p></div><div><h3>Keep the full trail</h3><p>Longer reports add pages for check-ins, choices and practice notes. Empty reports remain empty. Read report data provides a text version in the app.</p></div></div></section>
+<section class="sheet companion">
+<div class="companion-copy"><p class="stage">System / Service / Product</p><h2>On desktop<br>On your phone</h2><p>A frameless Nori brings a brief suggestion into play. The paired phone shows the same derived state while the game stays in focus.</p><div class="desktop-buddy"><canvas width="640" height="640" data-look="neutral" aria-label="Nori in a neutral desktop companion example"></canvas><p>Your check-in<br>Neutral / steady activation</p></div><p class="short-note">The laptop does the analysis. The phone receives derived state over trusted Wi-Fi. No face or game images are sent.</p><a class="outline-button" href="sample-session-report.pdf">Open a sample session recap</a></div><div class="phone-mockup"><div class="phone-camera" aria-hidden="true"></div><img src="assets/phone.png" width="390" height="844" alt="Regen paired phone screen"><div class="phone-home" aria-hidden="true"></div></div>
+</section>
+<section id="brand" class="sheet brand-studio"><div><p class="stage">Brand and visual language</p><h2 class="brand-word">regen</h2><p>From the gaming idea of regeneration.<br>A fresh attempt, with the player still in control.</p><p class="short-note">Nori is the character. Regen is the app.</p></div><div class="brand-palette"><img src="assets/regen.svg" width="132" height="132" alt="Regen R mark"><div class="swatches"><span style="--swatch:#243D32">Evergreen</span><span style="--swatch:#ACBE9F">Sage</span><span style="--swatch:#83D2BB">Mint</span><span style="--swatch:#F0D68D">Butter</span><span style="--swatch:#EDB7A2">Apricot</span></div><div class="type-sample">DM Sans<br><span>Aa Bb Cc / 0123</span></div></div></section>
+<section id="feasibility" class="sheet feasibility">
+<div class="section-head"><p class="stage">Feasibility</p><h2>Built around<br>the gaming session</h2></div>
+<div class="feasibility-grid"><article><span class="status-label ready">Windows app</span><h3>Native session<br>and local analysis</h3><p>A dedicated desktop interface, optional camera and game observation, and a frameless Nori overlay.</p></article><article><span class="status-label testing">During play</span><h3>One next step<br>at the right moment</h3><p>Player-selected support, a settled-view delay, manual setback marking, mute and a paired phone display.</p></article><article><span class="status-label later">After play</span><h3>Feelings, choices<br>and recovery</h3><p>CMA check-ins, context, helpfulness feedback and a recap available as PDF.</p></article></div>
+<div class="tools"><h3>Tools used</h3><p>Codex / Python / PySide6 / QPainter / MediaPipe / HSE / Playwright / Chromium / GitHub / Image generation</p></div>
+<div class="case-resources"><h3>Project resources</h3><div class="resource-links"><a href="project.html">Project context</a><a href="research.html">Research and decisions</a><a href="evidence.html">Evidence register</a><a href="interview-guide.html">Interview guide</a><a href="feasibility.html">Technology and feasibility</a><a href="https://doi.org/10.1037/h0077714">Russell’s CMA</a></div></div>
+</section>
+</main>
+<footer><a class="wordmark" href="#top"><img src="assets/regen.svg" width="30" height="30" alt="">regen</a><span>Your next attempt</span><a href="https://github.com/AnujR17/Chatgpt-Environment/releases/download/checkpoint-v0.6.5-preview.2/Regen-case-study.pdf">Visual PDF</a></footer>
+</body></html>

@@ -9,11 +9,11 @@ from checkpoint.expression_view import ExpressionDisplay
 
 
 def test_primary_routes_collapse_extra_labels_without_adding_new_states():
-    cases={'happy':'Happy','amused':'Happy','angry':'Frustrated','frustrated':'Frustrated','sad':'Sad','confused':'Confused','composed':'Neutral'}
+    cases={'happy':'Happy','amused':'Happy','angry':'Frustrated','frustrated':'Frustrated','sad':'Sad','surprised':'Surprised','composed':'Neutral'}
     for artwork,title in cases.items():
         display=limit_display(ExpressionDisplay('Raw',artwork,''))
         assert display.title==title and display.artwork in PRIMARY_KEYS
-    for artwork in ('surprised','afraid','disgust'):
+    for artwork in ('confused','afraid','disgust'):
         d=limit_display(ExpressionDisplay('Raw',artwork,''));assert d.title=='Neutral' and d.artwork is None
 
 

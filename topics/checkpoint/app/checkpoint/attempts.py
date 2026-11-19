@@ -121,7 +121,7 @@ def attempt_summary(session):
             'still_stuck': sum(r['outcome'] == 'stuck' for r in completed),
             'unrated': sum(r.get('outcome') is None for r in rows),
             'dismissed': sum(r.get('outcome') == 'dismissed' for r in rows),
-            'lessons': [{'section': r['section'], 'cue': r['target'] if r['mode']=='small' else r['cue'],
+            'lessons': [{'elapsed_seconds':r['elapsed_seconds'],'section': r['section'], 'cue': r['target'] if r['mode']=='small' else r['cue'],
                          'lesson': r['lesson'], 'outcome': r['outcome'],
                          'cma_before': r.get('cma_before'), 'cma_after': r.get('cma_after')} for r in completed],
             'basis': 'Player-rated usefulness, not measured skill or emotion improvement.'}

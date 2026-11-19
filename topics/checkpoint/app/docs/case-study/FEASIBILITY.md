@@ -13,7 +13,11 @@ PySide6 supports the Windows session interface, local camera processing and fram
 
 ## Support during play
 
-Start play support enables game observation and the overlay. A brief reminder follows about 2½ minutes of active foreground gaming. A possible fall followed by a settled view can prompt a next-move reminder, encouragement or optional pause. Automatic invitations are spaced two minutes apart.
+Break reminders are off initially and use an independent monotonic timer. Enabling starts a fresh 30 seconds. Session provides interval presets; Settings accepts 30–3600 seconds. Camera and game tracking are optional. Taking a break clears the pending reminder; continuing starts a full interval. Session end stops prompts.
+
+Start play support enables game observation and the overlay. Setback support is separately enabled. A possible fall followed by a settled view can prompt a next move, encouragement or optional pause. Automatic setback suggestions retain their two-minute cooldown.
+
+The mood label and actual break timer have light fills and dark outlines, with no label surface. Nori shows no next-reminder label or countdown. Thought-cloud prompts do not activate the game window or read its pixels. Readability over visually dense motion still needs physical-device evaluation.
 
 I fell requests a response directly. Windows shortcuts provide manual setback marking and mute while support is running. A one-off request preserves the automatic-tip mute preference.
 
@@ -30,3 +34,12 @@ The player enables each source. Images are processed locally. Saving summaries r
 Automated checks exercise five-state mapping, widget input and break timing. [Windows review](https://github.com/AnujR17/Chatgpt-Environment/actions/runs/44280866344) exercised the native session, support/recovery flows, model loading, GDI capture, overlay, shortcut dispatch and loopback phone connection.
 
 The visual case study is checked at desktop and phone widths for static scenes, straight mockups, visible artwork, readable research pages and overflow.
+
+
+## Graphical recap and Surprised
+
+The in-app recap, session-complete dashboard and landscape PDF share one vector design: a terrain header, reported check-in timelines, a CMA map and recorded choices. Additional pages preserve the chronological trail and long notes. Empty and single-point reports do not invent a mood journey. Read report data provides a text alternative.
+
+Custom-drawn selectors, menu items and animated switches preserve keyboard input and Qt control semantics. Reduced animation is respected. Inactive document pages do not determine the live session height.
+
+The five states are Neutral, Happy, Frustrated, Sad and Surprised. Default face tracking requires both separate outer-eyebrow raise signals and a slightly open mouth for Surprised. One raised brow, mouth opening alone, blinking and an occluded mouth do not meet the rule. This is a visual heuristic with scripted regression checks, not measured recognition accuracy on people. Original historical data and research vocabulary remain preserved; retired check-ins are not relabelled as Surprised.

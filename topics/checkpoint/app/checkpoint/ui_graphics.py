@@ -72,10 +72,10 @@ class EmotionStage(QFrame):
     def set_theme(self,theme):
         if theme!=self.scene_theme:self.scene_theme=theme;self.update()
     def paintEvent(self,event):
-        from PySide6.QtGui import QRadialGradient
         p=QPainter(self);p.setRenderHint(QPainter.RenderHint.Antialiasing)
-        w,h=self.width(),self.height()
-        cyan=QRadialGradient(w*.34,h*.55,max(w,h)*.5)
-        cyan.setColorAt(0,QColor(108,173,180,33 if self.scene_theme=='light' else 22));cyan.setColorAt(1,QColor(108,173,180,0));p.fillRect(self.rect(),cyan)
-        warm=QRadialGradient(w*.62,h*.2,max(w,h)*.48)
-        warm.setColorAt(0,QColor(243,196,105,28 if self.scene_theme=='light' else 17));warm.setColorAt(1,QColor(243,196,105,0));p.fillRect(self.rect(),warm);p.end()
+        w,h=self.width(),self.height();p.setPen(Qt.PenStyle.NoPen)
+        p.save();p.setClipRect(QRectF(0,45,w*.54,h-45))
+        for offset,colour in [(0,'#E4E9D9'),(.10,'#D6E0CA'),(.20,'#CBD8BB')]:
+            path=QPainterPath();path.moveTo(-20,h);path.lineTo(-20,h*(.90-offset));path.lineTo(w*.10,h*(.75-offset));path.lineTo(w*.21,h*(.85-offset));path.lineTo(w*.36,h*(.69-offset));path.lineTo(w*.54,h);path.closeSubpath()
+            color=QColor(colour if self.scene_theme=='light' else '#3A5542');color.setAlpha(95 if self.scene_theme=='light' else 80);p.setBrush(color);p.drawPath(path)
+        p.restore();p.end()

@@ -92,13 +92,9 @@ def test_immediate_rounded_checkin_does_not_drop_its_guidance():
     assert guidance_mode(s)[0]=='choice'
 
 
-def test_reminder_after_150_seconds_of_fresh_foreground_play():
+def test_setback_support_never_implicitly_enables_break_reminders():
     p=PlaySupport()
-    for now in range(150):assert not tick(p,'steady',now)
-    assert tick(p,'steady',150)=='A quick reset? Relax your grip, then go again.'
-    assert p.basis=='Active gaming reminder' and p.play_seconds==0
-    for now in range(151,300):tick(p,'steady',now)
-    assert tick(p,'steady',300)=='A quick reset? Relax your grip, then go again.'
+    for now in range(301):assert not tick(p,'steady',now)
 
 
 def test_clock_pauses_outside_game_and_does_not_count_stale_or_suspended_time():
@@ -138,8 +134,7 @@ def test_timer_and_fall_share_cooldown_and_wait_for_motion_to_settle():
     assert p.basis=='Experimental game-window motion estimate'
 
 
-def test_process_only_observation_can_give_a_time_reminder():
+def test_process_observation_does_not_enable_break_reminders():
     p=PlaySupport()
     for now in range(151):
-        text=p.update(GameObservation('Valorant','Foreground process detected',state={'kind':'unsupported'}),now,enabled=True,active=True,paused=False)
-    assert text=='A quick reset? Relax your grip, then go again.'
+        assert not p.update(GameObservation('Valorant','Foreground process detected',state={'kind':'unsupported'}),now,enabled=True,active=True,paused=False)

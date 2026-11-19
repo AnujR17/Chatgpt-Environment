@@ -22,8 +22,8 @@ def cma_summary(session,activity=None):
         if a is None:a=item.get('arousal')
         if not all(isinstance(x,(int,float)) and not isinstance(x,bool) and math.isfinite(x) and -1<=x<=1 for x in (v,a)):continue
         key=item.get('feeling','mixed')
-        from checkpoint.session import FEELINGS
-        points.append({'feeling':FEELINGS.get(key,(key,))[0],'pleasantness':v,'activation':a,
+        from checkpoint.primary import feeling_label
+        points.append({'feeling':feeling_label(key),'pleasantness':v,'activation':a,
                        'elapsed_seconds':max(0.,float(item.get('elapsed_seconds',0))),'zone':zone(v,a),
                        'context':str(item.get('context','')),'game_context':dict(item.get('game_context') or {})})
     points.sort(key=lambda p:p['elapsed_seconds']);counts=Counter(p['zone'] for p in points)
@@ -76,7 +76,7 @@ def journey_svg(points,duration):
     return ''.join(parts)
 
 
-def report_html(report):
+def report_html(report,graphical=True):
     e=lambda v:html.escape(str(v));c=report['cma'];minutes=int(report['duration_seconds'])//60
     parts=['<html><head><meta charset="utf-8"><style>body{font-family:"DM Sans",sans-serif;color:#293b32;background:white;font-size:12px;line-height:1.2}h1{font-size:27px;margin-bottom:8px}h2{font-size:17px;margin-top:14px;margin-bottom:6px}p{margin:8px 0}.muted{color:#6c786e;font-size:11px}td{padding:9px;vertical-align:top}th{text-align:left;padding:8px;background:#e9ece3}table{border-collapse:collapse;width:100%}.card{background:#f6f4ee}li{margin:6px}</style></head><body>',
            '<p class="muted">REGEN / CMA SESSION RECAP</p><h1>Frustration and recovery</h1>',
@@ -124,13 +124,29 @@ def report_html(report):
         parts.append('<p class="muted">'+e(practice['basis'])+'</p>')
     parts.extend(['<h2>What stands out</h2><p>'+e(c['insight'])+'</p>','<h2>For your next session</h2><p>'+e(c['next_step'])+'</p>',
                   '<p class="muted">CMA describes pleasantness and activation. Coordinates are adjustable check-in values, not clinical measurements. Facial estimates, hand gestures and input activity are not used to invent an emotional history.</p></body></html>'])
-    return ''.join(parts)
+    markup=''.join(parts)
+    if graphical:
+        from checkpoint.report_visual import overview_svg
+        image=base64.b64encode(overview_svg(report).encode()).decode()
+        markup=markup.replace('<body>','<body><img alt="Graphical session recap" width="100%" src="data:image/svg+xml;base64,'+image+'"/>')
+    return markup
 
 
 def make_pdf(report):
+    from checkpoint.report_visual import report_pages
+    from PySide6.QtSvg import QSvgRenderer
+    from PySide6.QtCore import QByteArray,QRectF,QMarginsF
+    from PySide6.QtGui import QPainter,QPageLayout
     buffer=QBuffer();buffer.open(QIODevice.OpenModeFlag.WriteOnly)
-    writer=QPdfWriter(buffer);writer.setPageSize(QPageSize(QPageSize.PageSizeId.A4));writer.setResolution(96);writer.setTitle('Regen session recap')
-    document=QTextDocument();document.setDefaultFont(QFont('DM Sans',11));document.setHtml(report_html(report));document.print_(writer)
+    writer=QPdfWriter(buffer);writer.setPageSize(QPageSize(QPageSize.PageSizeId.A4));writer.setPageOrientation(QPageLayout.Orientation.Landscape);writer.setPageMargins(QMarginsF(0,0,0,0));writer.setResolution(144);writer.setTitle('Regen session recap')
+    painter=QPainter(writer)
+    try:
+        for i,svg in enumerate(report_pages(report)):
+            if i:writer.newPage()
+            renderer=QSvgRenderer(QByteArray(svg.encode()))
+            if not renderer.isValid():raise ValueError('The session graphic could not be rendered')
+            renderer.render(painter,QRectF(0,0,writer.width(),writer.height()))
+    finally:painter.end()
     del writer
     return bytes(buffer.data())
 

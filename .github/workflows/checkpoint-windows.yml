@@ -83,6 +83,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'CMA recap checks failed' }
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_play_support.py
           if ($LASTEXITCODE -ne 0) { throw 'Play reminder checks failed' }
+          & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_graphical_recap.py
+          if ($LASTEXITCODE -ne 0) { throw 'Graphical recap and custom controls failed' }
           & ./build/Checkpoint-Windows/runtime/python.exe ./scripts/review_widget.py
           if ($LASTEXITCODE -ne 0) { throw 'Nori widget checks failed' }
       - name: Check Windows updater restart and rollback
@@ -141,7 +143,7 @@ jobs:
           $tag = python -c "from checkpoint.version import RELEASE_TAG; print(RELEASE_TAG)"
           gh release view $tag *> $null
           if ($LASTEXITCODE -ne 0) {
-            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Regen 0.6.3 - five emotions and clickable Nori' --notes-file docs/RELEASE-NOTES.md
+            gh release create $tag --target $env:RELEASE_COMMIT --prerelease --title 'Regen 0.6.5 - graphical recap and Surprised expression' --notes-file docs/RELEASE-NOTES.md
             if ($LASTEXITCODE -ne 0) { throw 'Release creation failed' }
           }
           gh release upload $tag ../Checkpoint-Windows-Preview.zip ../SHA256SUMS.txt ../Checkpoint-App-Update.zip ../Checkpoint-Updater-Repair.zip ../Regen-case-study.pdf --clobber

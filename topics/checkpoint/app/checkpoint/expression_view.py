@@ -41,8 +41,12 @@ def _expression_display(session, *, max_age=5):
         title='No face detected' if 'no face' in cue.reason.lower() else 'Face tracking unavailable' if session.face_mapping else 'Expression uncertain'
         return ExpressionDisplay(title, None, cue.reason or 'No stable expression estimate is available.',source=source)
     if cue.movement is not None:
+        if cue.expression=='surprise':
+            from checkpoint.face_mapping import surprise_configuration
+            if not surprise_configuration(cue.movement):return ExpressionDisplay('Unclear',None,'Waiting for both raised brows and a slightly open mouth.',source=source)
         return ExpressionDisplay(cue.mapping_label or 'Facial movement',EXPRESSIONS[cue.expression][1],
             'Your face movements are mapped to Nori. Your feelings remain your check-in.',cue.movement,'face_movement')
+    if cue.expression=='surprise':return ExpressionDisplay('Tracking needed',None,'Surprised needs both-brow and mouth tracking.',source=source)
     title, artwork = EXPRESSIONS[cue.expression]
     return ExpressionDisplay(title, artwork, 'Experimental face estimate · Your feeling and CMA remain your check-in.')
 
