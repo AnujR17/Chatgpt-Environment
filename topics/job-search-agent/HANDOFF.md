@@ -2,7 +2,7 @@
 
 Updated 19 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 19 November public research — publication pending
+## 19 November public research — published
 
 141 retained / 112 active-held / 29 archived;308companies,20 established profiles,
 50coverage rows(36 checked today). Four new held roles: Novyte employer-Wellfound
@@ -47,7 +47,25 @@ versus18November. No UI/model/clipper/seed/collector-main/task/schedule changes.
 Research and synthetic QA: /workspace/job-refresh-nov19-review/; prior same-day
 startup source fetches reused from /workspace/job-startup-nov19-review/.
 Supported workbook/Company directory/Role requirements/CSV regenerated.
-Data-preservation audit,5JS and8Python tests,Vite build and desktop/mobile browser checks PASS. Synthetic saved applications survive the new DomainExpansion expiry archive; blacklist and private company assessments survive reload/backup/mobile restore. Annual salary units and junior labels render correctly. No runtime errors or POSTs. Discover/Companies have no horizontal overflow; pre-existing Sources mobile navigation overflow remains unchanged. Exact production publication pending READY/live verification.
+Data-preservation audit,5JS and8Python tests,Vite build and desktop/mobile browser checks PASS. Synthetic saved applications survive the new DomainExpansion expiry archive; blacklist and private company assessments survive reload/backup/mobile restore. Annual salary units and junior labels render correctly. No runtime errors or POSTs. Discover/Companies have no horizontal overflow; pre-existing Sources mobile navigation overflow remains unchanged. Production READY from data commit126ef4206f0a42184d1f9bbd2f4efaf3b777bf62 on
+existing topic/job-search-agent, deployment dpl_7qz35ZcF16vBAa2idaN9Q4CG8nd4:
+https://chatgpt-environment-mm8fxu3bb-anujrai1701-gmailcoms-projects.vercel.app
+Existing project prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg/account verified; target
+production, Vite/root topics/job-search-agent/app, npm ci/npm run build/dist,
+Node24.x. Default connection scope, no teamId, no unrelated settings changed.
+READY metadata and exact SHA/ref/project confirmed, production alias assigned:
+https://chatgpt-environment.vercel.app . Exactly one production deployment for
+this SHA, no new preview. Protection settings unchanged. All nine live feed/
+export/watchlist/query-plan files HTTP200 and byte-identical to exact Git data
+commit. Local and live desktop/mobile synthetic QA pass:112active/29archive/
+308companies/20established/3established-rolefilter/50coverage; new annual salary
+and junior labels, DomainExpansion retained applied override, private blacklist/
+assessment/reasons/reload/backup/mobile restore intact; no runtime errors/POSTs.
+Discover/Companies have no horizontal overflow; existing Sources mobile navigation
+overflow remains unchanged. No actual private browser state read. Verification
+artifacts outside Git at /workspace/job-refresh-nov19-review/. This following
+verification-only docs commit requires no deployment; nine public files remain
+identical to the published data commit. Main unchanged; no merge/new project/task.
 
 ## 18 November public research — published
 

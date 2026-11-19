@@ -2,7 +2,7 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `ed80f4e7cfc2201b27d4eed4f5939df6464a09cb` in existing Vercel project `chatgpt-environment`. Verified 18 November 2026: 137 retained roles / 109 active-held / 28 archived, 298 companies, 20 established profiles and 50 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `126ef4206f0a42184d1f9bbd2f4efaf3b777bf62` in existing Vercel project `chatgpt-environment`. Verified 19 November 2026: 141 retained roles / 112 active-held / 29 archived, 308 companies, 20 established profiles and 50 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
@@ -17,8 +17,8 @@ No new verified monthly internship-stipend match. Domain Expansion exact Indeed
 expiry archived with history. Ten company targets added, including local studios
 and product startups; expired programmes and ambiguous roles stay directory-only.
 All 44 generated query links executed; actual checks/limits remain separate.
-See [today's report](public/data/collection-report.md). Exact production publication
-pending READY/live verification; previous verified release is recorded above.
+See [today's report](public/data/collection-report.md). Published to the existing production project; exact READY commit and nine live
+files verified. Desktop/mobile synthetic application/blacklist/assessment checks pass.
 
 ## Established employers and workplace screening
 
