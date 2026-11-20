@@ -1,6 +1,47 @@
 # Job search agent handoff
 
-Updated 19 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 20 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 20 November public research — publication pending
+
+143retained/113active-held/30archived;310companies,20established,50coverage
+rows(36checkedtoday). Two new Internshala originals remoteIndia3months:
+Unicraft1794991599 fixedadvertised10–15k/month,start16Nov–21Dec,deadline18Dec;
+ScoutSubs1795094502 fixedadvertised12–15k/month,start18Nov–23Dec,deadline19Dec.
+Normal body/MONTH schema verified;platform dates18/19November distinct from
+unverified employer-original publication. Both onhold for actual joining,
+student/writtenterms/supervision/no-fees;no received offer. Exact Jobsii mirror
+links preserved inadditionalSources. Unstop1813245 not proven same cohort;
+requirements/deadlines/old compensation conflict not transferred.
+Two company targets:ScoutSubsWorkable(product),UnicraftPossible(services),
+editable preferences,not hiring probability/culture guarantee. Current official
+Unicraftcareers and both product/business identities checked. No guessed emails.
+
+Exact AICines normal role now repeatedly Page not found;old exact role absent
+from careers response. Archive removed original only;retain oldID,August date,
+compensation conflict/requirements/source/application compatibility. Nonlinear,
+YTT404/Falcon410 remain unresolved.111activeprimaries98fetched/11restricted/
+2missing/zeroerrors;changed text mainly navigation/related/relative labels.
+Existing Moon Ahmedabad monthlypaid role,StudioCarbon junior,Qoruz annual4–6lakh,
+Gnixar25–40k/month,Taskly/Novyte rechecked,not new. AdobeR172738Workday redirect/
+publicdetail403,not proven closed;Innovexisnewin296normal1month versusindexed
+15hours does not reopen archivedin295. SeniorLollypop1–3years/NetBramha5+,
+Pardy historical social andCarbonexpiredcohort remain directory/history.
+
+44query plan executed,cutoff6November,6–20Nov socialwindow. SeparatePosts/
+Updates/author/Xqueries;Onething/HireDesigners/Devoq everypass andstudio rotation.
+No new verified14daystandalone socialpost;restricted/indexed feeds not zerojobs.
+Broad boards/remote/maps/smallercities sampled,normal exact Internshaladetails
+readable despite blocked search route,Naukrirobots recorded. HN300IDs/242texts/
+60keywordmatches/zeroerrors,no changed matched text versus19Nov. No private
+applicant/browser state committed/read;no applications/messages/assessments.
+Research and synthetic QA:/workspace/job-refresh-nov20-review/. Supported exports
+regenerated. Preservation audit,5JS/8Python tests,Vite build and desktop/mobile
+synthetic browser checks PASS. New monthly-pay cards render correctly; AICines
+saved applied override survives archive/reload. Blacklist/private assessments,
+CSV/backup/mobile restore preserved. No runtime errors/POSTs. Discover/Companies
+no overflow; pre-existing Sources mobile navigation overflow remains. Exact
+production publication pending READY/live verification.
 
 ## 19 November public research — published
 
