@@ -2,6 +2,36 @@
 
 Updated 20 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 20 November discovery repair — publication pending
+
+148retained/118active-held/30archived,316companies,20established,51coverage.
+Five new held internships:PollHallremote3–6months paidamountunknown;TradeTrust
+Surathybrid3–6monthspayunknown;SaptabandhuAhmedabad/Remoteapproval,pay/duration
+unknown;NaxzantPunefresherpay/duration/degreeeligibilityunknown;We-internexact
+Indeed2d010bbf835df53d10–20k/month,identity/duration/currentjoiningunresolved.
+One listing monthlymatch,fourunknownstipends,no receivedoffer/currentjoining
+confirmation. Six new companytargets includeBrahmaverse;editabletierpreferences.
+Brahmaverseexactindexed4468586366requires3+years despiteEntry level;separate
+0–2yearprofilehiring evidence deadline12October,exactpost/dateunknown. Gurugram
+outsideusualgeography;no new eligible role invented. AliasesBrahmaa.ai/Fastor7
+andpublicauthorAbhinavDwivedi addedtoevery-passwatchlist withsourcecaveats.
+
+Repair:social_search_plan workflowVersion2 adds10discovery-firstqueries,target
+post-authorqueries,source-backedaliases/people and--phase selector. Current74
+links:30newexecuted,44identicalsame-dayqueries reused from earlierdaily evidence.
+409batch retried normally;no query-count completeness claim. SOCIAL_RESEARCH.md
+updated. Existing dailyautomationpromptupdated,enabled7amAsia/Kolkata schedule
+unchanged;no newtask/assistant/UI/collector/seed/session/contacts. Newcoverage
+familyrecorded. Oldrecords/pay/requirements/source/tiers/contacts/private-state
+compatibility preserved. Freshnormal originals andqueryreceipt outsideGit:
+/workspace/job-discovery-nov20-review/. Supportedexports regenerated;preservation audit,5JS/10Python tests,Vite build
+and local desktop/mobile browser checks PASS. Five new pay/unknown-pay cards
+render correctly;Brahmaverse absent fromactive roles. Synthetic application
+archive overrides,blacklist/private assessment/reload/backup/mobile restore
+preserved;no runtimeerrors/POSTs. Existing Sources mobile navoverflow recorded.
+Exactproduction publication pending READY/live verification. Dailyresearch
+belowretained ashistory.
+
 ## 20 November public research — published
 
 143retained/113active-held/30archived;310companies,20established,50coverage

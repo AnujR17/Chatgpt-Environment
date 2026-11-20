@@ -34,6 +34,25 @@ class SocialPlanTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 mod.build_plan({'version':1,'targets':targets}, '2026-11-12')
 
+    def test_new_employer_discovery_precedes_targets_and_keeps_eligibility_separate(self):
+        config = {'version':1,'targets':[{'id':'brand','name':'Brand','aliases':['Previous Brand','Parent Company'], 'publicHiringPeople':['Public Design Lead']}]}
+        plan = mod.build_plan(config, '2026-11-20')
+        queries = {q['id']:q for q in plan['queries']}
+        self.assertEqual(plan['queries'][0]['phase'], 'discovery')
+        self.assertIn('"Parent Company"', queries['brand-alias-1-careers']['query'])
+        self.assertIn('"Public Design Lead"', queries['brand-person-0-posts']['query'])
+        self.assertIn('site:linkedin.com/posts/', queries['brand-linkedin-authors']['query'])
+        self.assertNotIn('India', queries['discovery-linkedin-posts']['query'])
+        self.assertEqual(queries['discovery-linkedin-posts']['publicationWindow']['from'], '2026-11-06')
+        self.assertNotIn('publicationWindow', queries['brand-alias-1-careers'])
+        self.assertTrue(all(q['status']=='not_searched' for q in plan['queries']))
+        self.assertEqual(len(queries), len(plan['queries']))
+
+    def test_alias_and_author_fields_reject_malformed_config(self):
+        for fields in [{'aliases':'Name'}, {'aliases':['']}, {'publicHiringPeople':{}}, {'publicHiringPeople':[None]}]:
+            with self.assertRaises(ValueError):
+                mod.build_plan({'version':1,'targets':[{'id':'a','name':'A',**fields}]}, '2026-11-20')
+
 
 if __name__ == '__main__':
     unittest.main()

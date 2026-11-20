@@ -18,6 +18,43 @@ the schedule; do not start another scheduler or duplicate task.
 
 ## Every pass
 
+### Discover employers before rechecking the watchlist — 20 November repair
+
+The former 44-query checklist concentrated on known names. A completed checklist
+did not establish that new employers, former brands, parent studios or public
+hiring authors had been found. Query totals must never serve as a completeness
+claim. The generator now emits workflowVersion2, with discovery queries first,
+then board checks and named-target searches. The current watchlist produces74
+links; that number changes with its source-backed aliases and hiring people.
+
+1. Run the **discovery** phase first: employer careers/ATS, broader startup/studio
+   and regional queries, spelling variants UI/UX/UIUX, intern/junior/fresher,
+   and location-free social-post searches. Apply eligibility after discovery;
+   outside-region company awareness does not broaden active recommendations.
+2. Follow a bounded sample of newly encountered employer names to original roles
+   and their public hiring people. Inspect a named author's actual posts where
+   accessible, not just biographies. Resolve former/parent brands only from
+   published evidence; similar names do not establish the same employer.
+3. Record candidates checked, existing-record duplicates, next actions, exclusions
+   and access limits. A new employer can remain a watchlist target even when its
+   currently found role is senior, expired or outside usual geography. Such a
+   target is not a current suitable vacancy. Keep the active shortlist separate.
+4. Execute new query links and keep a dated receipt. Reuse exact fresh same-day
+   searches with their timestamp; do not repeat checks merely to inflate totals.
+   If a query fails, log/retry normally or mark unresolved. A generated link,
+   restricted feed or empty extraction is not a completed vacancy check.
+
+Use `python app/scripts/social_search_plan.py --phase discovery --output /tmp/design-discovery.json`
+for a focused checklist, or omit `--phase` for the full plan. Generation performs
+no network calls. Continue the existing scheduled task; do not start another one.
+
+Brahmaverse AI is an every-pass discovery target, including published aliases
+Brahmaa.ai/Fastor7 Technology and public author Abhinav Kumar Dwivedi. The indexed
+0–2year post has12October2026 deadline and no verified exact dated permalink.
+Separate Jobs4468586366 requires3+years in its body despiteEntry level metadata.
+Keep those distinct. No current internship, remote approval or NCR-wide eligibility
+is inferred; do not confuse unrelated BRAHMA AI/brahma.io with this employer.
+
 ### Publication-age rule — updated 16 November 2026
 
 Social-only recommendations must come from an original hiring post published

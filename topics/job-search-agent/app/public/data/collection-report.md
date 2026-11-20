@@ -1,3 +1,37 @@
+# 20 November discovery follow-up
+
+**148 retained roles:118 active/held,30 archived;316 company targets,20 established profiles,51coverage rows.** This follow-up adds five held internships and six company targets after a named-employer discovery review. Four new stipends undisclosed;one original-platform monthly range verified. No applications,messages or assessments submitted. Earlier daily research is retained below.
+
+## Discovery repair
+
+The earlier checklist concentrated on nine named targets and broad board queries. It did not ensure new-employer,alias or public hiring-author follow-through. Workflowv2 now starts with10discovery queries,adds direct target-author searches,and supports source-backed aliases/public hiring people. Current plan74queries:30new links actually executed;44identical same-day daily queries reused with their existing evidence. A409searchbatch was retried normally. Query totals do not guarantee all jobs or posts are found.
+
+Existing daily automation instructions updated;its enabled7:00amAsia/Kolkata schedule unchanged. No new task,assistant,UI,authenticated session or contact. New source coverage records candidates,duplicates,negative pay and gaps. All existing eligibility/pay/freshness/privacy/publication rules remain.
+
+## Brahmaverse findings
+
+[Brahmaverse's indexed exact UIUX job4468586366](https://in.linkedin.com/jobs/view/ui-ux-designer-at-brahmaverse-ai-4468586366) requires **3+years professional design** despite itsEntry level tag. The body describes Fastor7 as parent and usesBrahmaa.ai. Normal LinkedIn original restricted;indexed16hours/lastmonth is not verified fresh publication.
+
+Separately,[Abhinav Kumar Dwivedi's indexed public profile](https://in.linkedin.com/in/abhinavbuilds) reproduces0–2year office hiring with **deadline12October2026**. Exact original post/date unavailable. Another older2–4year post saysHIRED/deadline30September;that closure cannot be transferred to the0–2year post. Gurugram is outside usual geography. Added company/watchlist evidence without inventing a current eligible internship. SimilarBRAHMA AI/brahma.io is not assumed the same employer. NormalBrahmaverse/Fastor7 sites corroborate business identity only;Fastor7's linkedcareers404 is not company-wide closure. No current design-intern pay established.
+
+## Additional held opportunities
+
+- **[PollHall—UI/UX Design Intern](https://pollhall.com/careers/ui-ux-design-intern):**remoteIndia/worldwide,3–6months,students/recent graduates,Figma/college portfolio. Paid wording without amount;scope includes product screens,share cards and social graphics. Confirm fixed stipend≥10kprefer15k+,joining,supervision and product-versus-marketing split. Employer saysno fees/pay before task;practice independently unverified.
+- **[TradeTrust—UI/UX Designer Intern1012](https://www.tradetrust.in/careers/ui-ux-designer-intern):**Surat hybrid,3–6months,B2B textile buyer/supplier research and commerce workflows. Numeric stipend undisclosed. Confirm≥10kprefer15k+,student cohort,joining and Surat expectations.
+- **[Saptabandhu—UI/UX Design Intern](https://saptabandhuinfotech.com/careers):**Ahmedabad/Remote internship block,students/freshers,Figma/research/prototyping. FAQoffice-first;remote approval not guaranteed. Pay/duration unknown. Confirm paid/no-fee terms,≥10kprefer15k+,3–6months,current joining and remote approval. Public careers inbox retains recruitment purpose.
+- **[Naxzant—Intern UI/UX Designer](https://naxzant.com/careers.php):**Pune,fresher,degree/portfolio/Figma/Adobe requirements. Pay/duration/student eligibility unknown. Confirm paid/no-fee≥15k/month and3–6months. Separate marketingFreeIntership wording is not proof of UIUX pay. Role exists in careers-page block/shared form;no unique requisition URL invented.
+- **[We-intern—Indeed UI/UX Design Intern](https://in.indeed.com/viewjob?jk=2d010bbf835df53d):**normal original-platform listing saysremote/Pune,student/fresher0–1year,**INR10–20k/month**. Verified listing amount/unit only;legal employer,independent official domain,duration,joining and no-fee terms unresolved. Not a received offer. Mirror20November date is not original posting. Keep onhold until those checks are resolved.
+
+Suggested preference tiers:PollHall/TradeTrust/SaptabandhuWorkable;Naxzant/We-intern/BrahmaversePossible. No hiring probability,culture certification or new offer inferred. Requirement objects and public routes recorded;old sources/stages/requirements preserved.
+
+## Exclusions and duplicates
+
+AGRIVISIONexactdesign/data internship explicitly unpaid,Hyderabad-onlyIndia,8–12weeks20hoursEastern. AVYAM exactsix-month remote internship explicitlyunpaid. Linescripts5–10kminimum,Calibiumup-to8k andWebEarlup-to8k belowfloor. LLMP remote role saysPakistan. Rootcode exact410 not accepted as a fresh vacancy. ProIndieUX ispart-time/freelance,not internship. ExistingZavio,Chiblu,KRMR,99px andTriosphere are duplicates. Established/employer ATS examples includedUS-onlyAmplify/Pinterest andunpaidHireHangar,not new India matches. Unknown/older social dates remain historical;no newly verified≤14daystandalonepost accepted. Naukrirobots/LinkedIn/X restrictions remain gaps.
+
+Supported exports regenerated. Exact production READY/commit/live verification to be recorded in HANDOFF after publication.
+
+---
+
 # 20 November 2026 public research
 
 **143 retained roles:113 active/held,30 archived;310 company targets,20 established profiles,50 coverage rows(36 checked today).** Two new remote India internships meet the revised minimum using verified monthly employer-platform listing pay. Both remain on hold for current joining,student eligibility and written terms. No received offer,application,message or assessment. Actual private browser state was not read.

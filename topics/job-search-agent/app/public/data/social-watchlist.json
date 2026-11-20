@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-20",
   "purpose": "Public employer/recruiter post discovery targets; neither open vacancies nor workplace endorsements.",
   "limits": "Actual post searches, source access and findings must be recorded separately. No authenticated feed, live subscription or no-missed-post guarantee.",
   "targets": [
@@ -93,6 +93,28 @@
       "careersUrl": "https://www.yujdesigns.com/careers",
       "linkedinUrl": null,
       "notes": "Existing researched studio target; search employer/design-team posts. No new internship inferred from this watchlist entry."
+    },
+    {
+      "id": "brahmaverse-ai",
+      "companyId": "brahmaverse-ai",
+      "name": "Brahmaverse AI",
+      "type": "AI product company; parent-brand relationship reported in job description",
+      "check": "every_pass",
+      "careersUrl": "https://www.brahmaverse.ai/",
+      "linkedinUrl": "https://www.linkedin.com/company/brahmaverse-ai",
+      "aliases": [
+        "Brahmaa.ai",
+        "Fastor7 Technology"
+      ],
+      "publicHiringPeople": [
+        "Abhinav Kumar Dwivedi"
+      ],
+      "notes": "Discovery target, not a current eligible vacancy. Exact LinkedIn4468586366 body requires3+years; older indexed0–2year hiring post deadline12October2026, exact permalink/date unavailable. Gurugram is outside usual geography; do not silently broaden all NCR recommendations. Parent/alias wording from published job description, not independent legal-ownership verification.",
+      "identitySources": [
+        "https://in.linkedin.com/jobs/view/ui-ux-designer-at-brahmaverse-ai-4468586366",
+        "https://in.linkedin.com/in/abhinavbuilds",
+        "https://www.fastor7.com/"
+      ]
     }
   ]
 }
