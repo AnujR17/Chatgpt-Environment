@@ -2,7 +2,7 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `126ef4206f0a42184d1f9bbd2f4efaf3b777bf62` in existing Vercel project `chatgpt-environment`. Verified 19 November 2026: 141 retained roles / 112 active-held / 29 archived, 308 companies, 20 established profiles and 50 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `dd9b177b1672aeaaa516a1b6761d59ab7cb74b3f` in existing Vercel project `chatgpt-environment`. Verified 20 November 2026: 143 retained roles / 113 active-held / 30 archived, 310 companies, 20 established profiles and 50 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
@@ -16,8 +16,8 @@ ScoutSubs12–15k/month,three months each. Monthly listing pay verified;actual
 joining/student terms remain onhold,no received offers. AICines exact original
 now Page not found and archived with history. Existing junior alternatives
 remain in original salary units. All44queries executed;social cutoff6November.
-See [today's report](public/data/collection-report.md). Publication pending
-READY/live verification;previous verified production release remains above.
+See [today's report](public/data/collection-report.md). Published to existing production project;exact READY commit and nine live files
+verified. Local/live desktop/mobile synthetic preservation checks pass.
 
 ## Established employers and workplace screening
 

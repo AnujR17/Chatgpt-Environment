@@ -2,7 +2,7 @@
 
 Updated 20 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 20 November public research — publication pending
+## 20 November public research — published
 
 143retained/113active-held/30archived;310companies,20established,50coverage
 rows(36checkedtoday). Two new Internshala originals remoteIndia3months:
@@ -41,7 +41,23 @@ synthetic browser checks PASS. New monthly-pay cards render correctly; AICines
 saved applied override survives archive/reload. Blacklist/private assessments,
 CSV/backup/mobile restore preserved. No runtime errors/POSTs. Discover/Companies
 no overflow; pre-existing Sources mobile navigation overflow remains. Exact
-production publication pending READY/live verification.
+production READY from data commit dd9b177b1672aeaaa516a1b6761d59ab7cb74b3f,
+branch topic/job-search-agent,existing project prj_o1CANE3Uj8jY3AWgGku9nV0qjqPg,
+deployment dpl_9pz1aP89ATBK8wkTxDhs5MgXYL59:
+https://chatgpt-environment-1yj5q2tnl-anujrai1701-gmailcoms-projects.vercel.app
+Alias https://chatgpt-environment.vercel.app assigned. Exact READY/SHA/ref/project/
+account verified;one production deployment forSHA,no new preview. Root/app,Vite,
+npmci/npmrunbuild/dist,Node24.x;defaultconnection scope,no teamId. Protection
+settings unchanged. All9live feed/export/watchlist/query-plan files HTTP200 and
+byte-identical to exactGit dataSHA. Live desktop/mobile synthetic QA PASS:
+113active/30archived/310companies/20established/3establishedrolefilter/50coverage;
+new monthlypay cards,archived AICines applied override,blacklist/private
+assessment/reload/CSV/backup/mobile restore intact. No runtimeerrors/POSTs;
+Discover/Companies nooverflow;existing Sources mobile navigation overflow
+recorded (390viewport/591document). Actual privatebrowserstate notread.
+Verification artifacts outsideGit:/workspace/job-refresh-nov20-review/.
+Following verification-onlydocs commit does not alter the9public files and
+requires no second deployment. Main unchanged;no merge/newproject/task.
 
 ## 19 November public research — published
 
