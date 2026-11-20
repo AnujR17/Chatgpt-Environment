@@ -2,7 +2,7 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `dd9b177b1672aeaaa516a1b6761d59ab7cb74b3f` in existing Vercel project `chatgpt-environment`. Verified 20 November 2026: 143 retained roles / 113 active-held / 30 archived, 310 companies, 20 established profiles and 50 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `7bfed3608c67244d1648f601917943891e5c3268` in existing Vercel project `chatgpt-environment`. Verified 20 November 2026 discovery follow-up: 148 retained roles / 118 active-held / 30 archived, 316 companies, 20 established profiles and 51 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
@@ -21,7 +21,8 @@ careers/ATS/regional/startup queries,UIUX/junior/fresher variants,public authors
 verified aliases/parent brands. Current74links,30newqueriesexecuted plus44fresh
 same-dayreuses. Generation never means searched or complete. Existing dailytask
 instructions updated,7am schedule unchanged. NoUI/assistant/session/contact changes.
-Publication pending exact READY/live verification;previous production is above.
+Published to existing production project;exact READY SHA and nine live files
+verified. Live desktop/mobile preservation checks pass.
 
 ## Earlier 20 November daily snapshot
 

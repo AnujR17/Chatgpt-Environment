@@ -2,7 +2,7 @@
 
 Updated 20 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 20 November discovery repair — publication pending
+## 20 November discovery repair — published
 
 148retained/118active-held/30archived,316companies,20established,51coverage.
 Five new held internships:PollHallremote3–6months paidamountunknown;TradeTrust
@@ -29,7 +29,24 @@ and local desktop/mobile browser checks PASS. Five new pay/unknown-pay cards
 render correctly;Brahmaverse absent fromactive roles. Synthetic application
 archive overrides,blacklist/private assessment/reload/backup/mobile restore
 preserved;no runtimeerrors/POSTs. Existing Sources mobile navoverflow recorded.
-Exactproduction publication pending READY/live verification. Dailyresearch
+Production READY from data/workflow commit7bfed3608c67244d1648f601917943891e5c3268,
+branch topic/job-search-agent,existingprojectprj_o1CANE3Uj8jY3AWgGku9nV0qjqPg,
+deploymentdpl_5nrxh7vm29GKavqr6GKP7UNgrh3H:
+https://chatgpt-environment-5gydlrvcx-anujrai1701-gmailcoms-projects.vercel.app
+Alias https://chatgpt-environment.vercel.app assigned. Exact READY/SHA/ref/project/
+account verified;one production deploy forSHA,no newpreview. Root/app,Vite,
+npmci/npmrunbuild/dist,Node24.x;default scope,no teamId. Protection unchanged.
+All9live feed/export/watchlist/planfilesHTTP200 andbyte-identical toexactGitSHA.
+Live desktop/mobile QA PASS:118active/30archived/316companies/20established/
+3establishedrolefilter/51coverage;five new held cards with correct pay labels,
+Brahmaverse no fabricated active role,synthetic applied/blacklist/private
+assessment/CSV/backup/reload/mobile restore intact,no runtimeerrors/POSTs.
+Discover/Companies nooverflow;existing Sources mobile navoverflow580/390recorded.
+Automation reread verifies updatedprompt,unchanged enabled7amAsia/Kolkata exact
+schedule/timezone/thread/inheritedenvironment,next21Nov7am. No privateprompt/
+applicant/browser data committed. Publication/QA artifacts outsideGit at
+/workspace/job-discovery-nov20-review/. Following verification-onlydocs commit
+requires no seconddeploy;9publicfiles unchanged. No mainmerge/newtask/project. Dailyresearch
 belowretained ashistory.
 
 ## 20 November public research — published
