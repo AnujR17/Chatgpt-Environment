@@ -2,6 +2,12 @@
 
 Updated 21 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 21 November manual UI split — publication pending
+
+User explicitly requested immediate jobs UI separation within 15 minutes. Changed existing App.jsx/styles.css and added focused browser regression check only; public feeds and localStorage schema are unchanged. Default grouped Internships (105) and Junior/fresher (17), type buttons, synchronized filter/status/source counts, salary-aware guidance and unknown-type fallback. Current counts are retained records, not new research.
+
+Unit tests, build and browser regression pass, including keyboard, 320/390/1440px Discover, salary units, archives and synthetic saved application/notes/blacklist preservation. Pre-existing narrow-screen Sources overflow was observed and left unchanged. QA artifacts: /workspace/job-ui-tracks-nov21/ outside Git. Publish exact topic commit to existing Vercel production, verify READY/live UI/ten unchanged data exports/protection. No schedule changes, private data or new task.
+
 ## 21 November discovery accountability —published
 
 153retained/122active-held/31archived,322companies,21established,52coverage.

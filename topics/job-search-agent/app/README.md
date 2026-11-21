@@ -8,6 +8,14 @@ Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The p
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
+## Separate jobs UI — 21 November 2026
+
+The Discover view now separates Internships and Junior / fresher roles, with category buttons, counts and grouped results. The current retained active/held feed contains 105 internships and 17 junior roles; these are existing records, not new openings. Category selection synchronizes the role-type filter, status tabs and source counts. Internship stipend guidance remains separate from junior salary units. Unknown custom role types retain a review section.
+
+No public feed records or browser storage formats changed. Application stages, notes, archived applications and company blacklists are preserved. Research continues in two independent tracks from 22 November; the UI split was requested for immediate publication on 21 November.
+
+Validation: npm test and npm run build pass. tests/role_tracks_check.py verifies keyboard selection, filters, empty recovery, original annual salary units, archives, 320/390/1440px Discover layouts and synthetic saved-progress/blacklist preservation. The pre-existing Sources view horizontal overflow on narrow screens remains outside this focused change. Publication verification follows below.
+
 ## Discovery accountability and tomorrow's two tracks —published
 
 Two indexed job-detail internships added onhold:VitaCure remote UXResearch and
@@ -19,7 +27,7 @@ The [discovery ledger](public/data/discovery-ledger.json) retains relevant unres
 historical,excluded andduplicate research separately fromactive jobs. Receipt audit
 accounts for149keyword matches;39unresolved,not149vacancies or complete search.
 From22November the same7am task researches Junior/fresher and Internships as two
-independent tracks;today's UI unchanged. [Report](public/data/collection-report.md).
+independent tracks; the UI split is documented above. [Report](public/data/collection-report.md).
 Production READY onexact2c172bb;all10livefiles HTTP200 and byte-identical.
 Local/live browserchecks pass,protection unchanged,oneproduction deploy forSHA.
 Following verification-only docs do not require redeployment.
