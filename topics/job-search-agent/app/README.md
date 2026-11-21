@@ -2,13 +2,13 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `7bfed3608c67244d1648f601917943891e5c3268` in existing Vercel project `chatgpt-environment`. Verified 20 November 2026 discovery follow-up: 148 retained roles / 118 active-held / 30 archived, 316 companies, 20 established profiles and 51 coverage rows. Nine live feed/export/watchlist/query-plan files match this commit. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `72906e80dfe17833b4cf413aa65556e7aebda447` in existing Vercel project `chatgpt-environment`. Verified21November2026:151retained roles /120active-held /31archived,319companies,20established profiles and51coverage rows. Nine live feed/export/watchlist/query-plan files match this exact commit. Local/live desktop/mobile preservation checks pass. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
-## 21 November research — publication pending verification
+## 21 November research — published
 
 Three new employer-original held internships: ScaleDesk remote, RoomSaathi
 Pune/remote and Onbyz Trivandrum. All numerical stipends undisclosed. Exact Moon
@@ -23,6 +23,9 @@ Excel/CSV exports regenerated;preservation audit,5JS/10Python tests,Vite build
 and local desktop/mobile browser QA pass. New held/expired records and synthetic
 pre-expiry application overrides checked. Existing Sources mobile navigation
 overflow remains documented;no UI change in this refresh.
+Production READY verified on exact72906e8;all9live files HTTP200 and byte-identical.
+Deployment protection and preview isolation preserved;one production deployment
+for this SHA. Following documentation-only verification does not need redeployment.
 
 ## Discovery follow-up — 20 November
 

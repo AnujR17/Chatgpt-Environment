@@ -2,7 +2,7 @@
 
 Updated 21 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 21 November public research — publication pending verification
+## 21 November public research — published
 
 151 retained /120active-held/31archived;319companies,20established,51coverage.
 Three new employer-original held internships: ScaleDesk SDT-INT-003remote,
@@ -29,7 +29,23 @@ checks pass:three new held unknown-pay cards,two distinct archived Moon adverts,
 synthetic saved application before internship expiry,blacklist,private assessment,
 CSV/backup/reload/mobile restore preserved. No runtime errors/POSTs. Existing
 Sources mobile navigation overflow documented;Discover/Companies fit. Publication
-pending exact READY/SHA/live-file verification.
+verified:production READY from72906e80dfe17833b4cf413aa65556e7aebda447,
+branch topic/job-search-agent,existingprojectprj_o1CANE3Uj8jY3AWgGku9nV0qjqPg,
+accountteam_wbMCzPWEpuswtIa2AekWJJLh,repo1408350067. Deployment
+dpl_7CxWd6G291xjdD2Hd5oAckote3w1:
+https://chatgpt-environment-ldzc74306-anujrai1701-gmailcoms-projects.vercel.app
+Alias https://chatgpt-environment.vercel.app assigned. Vite,app root,npmci,
+npmrunbuild,dist,Node24.x requested;defaultconnection scope,no teamId.
+Exact READY/SHA/ref/project/production alias verified;one deployment forSHA,
+no newpreview. Protection unchanged. All9livefeed/export/watchlist/planfiles
+HTTP200 byte-identical to72906e8. Live desktop/mobile QA PASS:120active/31archived,
+319companies/20established,51coverage;three new unknown-pay held cards,two
+separate Moon archives,synthetic saved pre-expiry application preserved alongside
+blacklist/private assessment,CSV/backup/reload/mobile restore. No runtimeerrors
+or POSTs. Discover/Companies fit;existing Sources mobile navoverflow545/390
+recorded. Artifacts/publication receipt outsideGit atdailyresearch path above.
+Following verification-only documentation commit requires no second deployment;
+ninepublicfiles unchanged. Existing task/schedule/UI and main remain untouched.
 
 ## 20 November discovery repair — published
 
