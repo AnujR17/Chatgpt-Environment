@@ -2,7 +2,7 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `2c172bbd5341b890187cf2deb1cea8f845078d9b` in existing Vercel project `chatgpt-environment`. Verified21November2026 follow-up:153retained roles /122active-held /31archived,322companies,21established profiles and52coverage rows. Ten live feed/export/watchlist/query-plan/discovery-ledger files match this exact commit. Local/live desktop/mobile preservation checks pass. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `f2253b946f699b752eafdec5fe5dd77a8c77f4c4` in existing Vercel project `chatgpt-environment`. Verified 21 November 2026: separate Internships and Junior / fresher UI; 153 retained roles / 122 active-held / 31 archived and 322 companies. Ten live feed/export/watchlist/query-plan/discovery-ledger files match this exact commit; live JS/CSS match the local build. Local/live desktop/mobile preservation checks pass. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
@@ -14,7 +14,7 @@ The Discover view now separates Internships and Junior / fresher roles, with cat
 
 No public feed records or browser storage formats changed. Application stages, notes, archived applications and company blacklists are preserved. Research continues in two independent tracks from 22 November; the UI split was requested for immediate publication on 21 November.
 
-Validation: npm test and npm run build pass. tests/role_tracks_check.py verifies keyboard selection, filters, empty recovery, original annual salary units, archives, 320/390/1440px Discover layouts and synthetic saved-progress/blacklist preservation. The pre-existing Sources view horizontal overflow on narrow screens remains outside this focused change. Publication verification follows below.
+Validation: npm test and npm run build pass. tests/role_tracks_check.py verifies keyboard selection, filters, empty recovery, original annual salary units, archives, 320/390/1440px Discover layouts and synthetic saved-progress/blacklist preservation. The pre-existing Sources view horizontal overflow on narrow screens remains outside this focused change. Published UI commit `f2253b946f699b752eafdec5fe5dd77a8c77f4c4` in production deployment `dpl_EzA98VdhzZVJ71peQkQJW4BYJP6j`, READY with the existing live domain. Live browser regression passed; ten unchanged data/export files and both JS/CSS assets match. Protection settings are unchanged. Verification-only documentation commits need no redeploy.
 
 ## Discovery accountability and tomorrow's two tracks —published
 
