@@ -8,6 +8,22 @@ Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The p
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
+## 21 November research — publication pending verification
+
+Three new employer-original held internships: ScaleDesk remote, RoomSaathi
+Pune/remote and Onbyz Trivandrum. All numerical stipends undisclosed. Exact Moon
+Indeed internship now expired and archived. CACTUS indexed employer corroboration,
+Proof of Skill platform-date history and Ungrammary revised remote-floor action
+updated.151retained/120active-held/31archived,319companies,20established,
+51coverage records;35checked today.74planqueries plus44adaptive queries executed,
+social cutoff7November;no new eligible fresh post verified. Original normal
+access restrictions remain explicit. See [research report](public/data/collection-report.md).
+UI, existing schedule, browser state and all stable IDs preserved. Supported
+Excel/CSV exports regenerated;preservation audit,5JS/10Python tests,Vite build
+and local desktop/mobile browser QA pass. New held/expired records and synthetic
+pre-expiry application overrides checked. Existing Sources mobile navigation
+overflow remains documented;no UI change in this refresh.
+
 ## Discovery follow-up — 20 November
 
 Five additional held internships:PollHall,TradeTrust(Surat),Saptabandhu(Ahmedabad/
@@ -40,8 +56,8 @@ verified. Local/live desktop/mobile synthetic preservation checks pass.
 The company directory puts20 researched established employers first and has an
 Established employers filter. Discover has the same filter and a shortcut to
 the directory. Added Intuit, SAP and ServiceNow programme targets; these are not
-new verified India design vacancies. The directory now has 316 companies and51
-source-coverage records. Existing role records and pay/history remain;all 30 archived records retain their evidence.
+new verified India design vacancies. The directory now has 319 companies and51
+source-coverage records. Existing role records and pay/history remain;all 31 archived records retain their evidence.
 
 A sourced Lala-style screening badge distinguishes published processes,
 specific hiring terms to check and unassessed companies. The definition and
@@ -59,11 +75,11 @@ is changed by an assessment. No Assistant page or AI backend was reintroduced.
 
 ## Included
 
-- 148 retained role records (118 active/held,30 archived), researched20November2026 including discovery follow-up. Current eligible joining remains to confirm. See [today's report](public/data/collection-report.md).
+- 151 retained role records (120 active/held,31 archived), researched21November2026. Current eligible joining remains to confirm. See [today's report](public/data/collection-report.md).
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat and remote India minimum ₹10,000/month, with ₹15,000+ preferred; other eligible cities minimum ₹15,000/month. Higher pay remains welcome. Earlier dated research may use former thresholds.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with 316 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with 319 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.

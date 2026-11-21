@@ -1,6 +1,35 @@
 # Job search agent handoff
 
-Updated 20 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 21 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 21 November public research — publication pending verification
+
+151 retained /120active-held/31archived;319companies,20established,51coverage.
+Three new employer-original held internships: ScaleDesk SDT-INT-003remote,
+RoomSaathiPune/remote and OnbyzTrivandrum. Pay/duration/current eligible student
+intake unresolved;no new confirmed monthly stipend. Exact Moon Indeed internship
+eaa533209a303dc0 explicitly expired,archived with history. Existing CACTUS2353
+indexed original corroboration includes possibleMumbai travel;normal403/access
+restricted. ProofofSkill platform date now2July versus prior30October,retained
+both. Ungrammary historical10–12k/month could clear remote10k only with current
+eligible India-remote cohort;still belowMumbai15k,graduates-only wording.
+74planqueries executed discovery-first plus44adaptive queries;35of51coverage
+rows checked,not exhaustive source coverage.117whole-board primary attempts,
+104responses including shells,11restricted,2missing. One HN change is filled
+US-only software engineer,not suitable design role. LinkedIn/X exact eligible
+original post within14days not verified;cutoff7November. Onething,HireDesigners,
+Devoq,Brahmaverse/Brahmaa/Fastor7/Abhinav searched;no current eligible Brahmaverse
+intake inferred. Naukri blocked/empty; Onbyz FirstHire viaNaukri mirror17November
+is not original Naukri date/access. No new UI,assistant,task,schedule,seed,
+collector,mainbranch or contact changes. Public evidence only;local applicant
+state inaccessible. Research artifacts outside Git:
+/workspace/job-refresh-nov21-review/. Supported exports regenerated;151internships/319directory/838requirement rows.
+Preservation audit,5JS/10Python tests,Vite build and local desktop/mobile browser
+checks pass:three new held unknown-pay cards,two distinct archived Moon adverts,
+synthetic saved application before internship expiry,blacklist,private assessment,
+CSV/backup/reload/mobile restore preserved. No runtime errors/POSTs. Existing
+Sources mobile navigation overflow documented;Discover/Companies fit. Publication
+pending exact READY/SHA/live-file verification.
 
 ## 20 November discovery repair — published
 
