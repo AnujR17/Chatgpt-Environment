@@ -2,6 +2,41 @@
 
 Updated 21 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
+## 21 November discovery accountability —publication pending
+
+153retained/122active-held/31archived,322companies,21established,52coverage.
+Two new held numerical-pay-unknown internships:Vitacure remote research4481045101,
+TransformNXT Bengaluru3–6month productdesign4491953688. Indexed exactJobs terms;
+normal originals restricted,no freshpost/pay/currentintake claim. Snapdeal new
+established Dream awareness only:25kmirror versusExpiredmirror/exactform401,
+Gurugram outsideusualgeography;oldauthorsnotrenewed. Brahmaverse existingaliases/
+author/history rechecked,no eligiblefreshrole. No unrelatedidentities/closureclaims.
+
+Actual earlier same-day Snapdeal profile hiring snippet lackedfollow-through.
+Added discovery_audit.py:reconciles actual suppliedreceipt keywordmatches with
+sourced dispositions;failsmissing/invalid/sourceerrors/omissions.149accounted,
+39unresolved(includingnoise),not149vacancies/fullwebcoverage. Publicdiscovery-ledger
+53relevant source observations,27pending. No unrelatedCV/contact/profile noise
+published. Read dueunresolved entries beforefixedtargets.12newqueries executed,
+74earlierexactfreshqueriesreused. Workflowv3 simpletitle/UXResearch/trainee/
+roundup/form queries andSnapdeal/publicauthors. Existing IDs/requirements/history
+preserved. Artifacts /workspace/job-discovery-repair-nov21/ outsideGit.
+
+Effective22November userrequested separate Junior/fresher andInternshipresearch
+sections. Date-gated generator adds8juniorqueries tomorrow,notsearched today;
+existingboardroleType used,no UIchange today. Same dailyautomationpromptupdated
+andverified;enabled7amAsia/Kolkata exactschedule/thread/environment unchanged.
+No newtask/assistant/application/messages/accounts/login/schedulechange.
+Supported workbook/CSV regenerated:153roles,322companies,850requirements,
+4531sources,52coverage. Preservation audit:all151oldjobs unchanged,319oldcompany
+records/tiers/contacts/requirements and4506sources preserved;onlyBrahma observation
+appended. Actual missing-Snapdeal receipt regression fails as intended.5JS/15Python
+tests,Vitebuild andcandidateaccounting pass. Local desktop/mobile browserchecks PASS:122active/31archived,322companies/
+21established,52coverage;new unknown-pay cards andsynthetic application/blacklist/
+private-assessment/backup/reload/mobile restore preserved. No runtimeerrors/POSTs;
+existing Sources mobile navoverflow545/390 remains,Discover/Companies fit.
+Exact production publication pending. No UI or privateprogress changes.
+
 ## 21 November public research — published
 
 151 retained /120active-held/31archived;319companies,20established,51coverage.

@@ -1,14 +1,77 @@
 {
   "version": 1,
-  "workflowVersion": 2,
+  "workflowVersion": 3,
   "generatedFor": "2026-11-21",
   "timezone": "Asia/Kolkata",
   "kind": "Research query plan — not search results",
   "maxSocialPostAgeDays": 14,
   "socialPublicationCutoff": "2026-11-07",
+  "roleTracksEffectiveFrom": "2026-11-22",
+  "roleTracks": [
+    "Internships with clearly marked junior alternatives"
+  ],
   "discoveryPolicy": "Run discovery before watchlist rechecks. Follow new employer names to exact role pages, public hiring people and source-backed aliases/parents. Location-free social searches are discovery only; apply geography, age, level, pay and eligibility rules before recommending. Log actual queries, candidates, duplicates, exclusions and access gaps; never use query counts as a no-missed-jobs claim.",
+  "reviewPolicy": "Reconcile plausible leads from supplied search receipts with discovery_audit.py. Account for profile hiring snippets, referral roundups and form destinations; preserve unresolved and outside-geography awareness separately from active recommendations. A recorded disposition is not vacancy verification. Read the discovery ledger and retry due unresolved leads before fixed-target rechecks.",
   "limits": "Generation performs no search or login. Social-only recommendations require a verified original publication within 14 days; crawl/repost/firstSeen dates and search date filters are not publication evidence. Older or undated posts remain historical research unless an independently current employer vacancy supports a separate recommendation. Record actual searches and limits in sources.coverage.",
   "queries": [
+    {
+      "id": "discovery-product-intern-simple",
+      "platform": "Employer discovery",
+      "query": "\"product design intern\" hiring",
+      "searchUrl": "https://www.google.com/search?q=%22product+design+intern%22+hiring",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "discovery"
+    },
+    {
+      "id": "discovery-ux-research-simple",
+      "platform": "Employer discovery",
+      "query": "\"UX research intern\" hiring India",
+      "searchUrl": "https://www.google.com/search?q=%22UX+research+intern%22+hiring+India",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "discovery"
+    },
+    {
+      "id": "discovery-design-trainee-simple",
+      "platform": "Employer discovery",
+      "query": "\"UI UX\" (trainee OR apprentice) India hiring",
+      "searchUrl": "https://www.google.com/search?q=%22UI+UX%22+%28trainee+OR+apprentice%29+India+hiring",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "discovery"
+    },
+    {
+      "id": "discovery-referral-roundups",
+      "platform": "Employer discovery",
+      "query": "(\"product design\" OR \"UX research\") (intern OR internship) (referral OR PPO)",
+      "searchUrl": "https://www.google.com/search?q=%28%22product+design%22+OR+%22UX+research%22%29+%28intern+OR+internship%29+%28referral+OR+PPO%29",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "discovery"
+    },
+    {
+      "id": "discovery-form-destinations",
+      "platform": "Employer discovery",
+      "query": "(\"product design intern\" OR \"UX research intern\") (\"forms.gle\" OR \"docs.google.com/forms\")",
+      "searchUrl": "https://www.google.com/search?q=%28%22product+design+intern%22+OR+%22UX+research+intern%22%29+%28%22forms.gle%22+OR+%22docs.google.com%2Fforms%22%29",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "discovery"
+    },
+    {
+      "id": "discovery-linkedin-simple",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"product design intern\" after:2026-11-06 before:2026-11-22",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22product+design+intern%22+after%3A2026-11-06+before%3A2026-11-22",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "discovery",
+      "publicationWindow": {
+        "from": "2026-11-07",
+        "through": "2026-11-21"
+      }
+    },
     {
       "id": "discovery-employer-product",
       "platform": "Employer discovery",
@@ -871,6 +934,84 @@
       "platform": "LinkedIn posts",
       "query": "site:linkedin.com/posts/ \"Abhinav Kumar Dwivedi\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-06 before:2026-11-22",
       "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Abhinav+Kumar+Dwivedi%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-06+before%3A2026-11-22",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "targets",
+      "publicationWindow": {
+        "from": "2026-11-07",
+        "through": "2026-11-21"
+      }
+    },
+    {
+      "id": "snapdeal-linkedin-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Snapdeal\" (intern OR internship OR hiring) after:2026-11-06 before:2026-11-22",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Snapdeal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-06+before%3A2026-11-22",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "targets",
+      "publicationWindow": {
+        "from": "2026-11-07",
+        "through": "2026-11-21"
+      }
+    },
+    {
+      "id": "snapdeal-linkedin-updates",
+      "platform": "LinkedIn company updates",
+      "query": "site:linkedin.com/company/ \"Snapdeal\" (\"intern\" OR \"internship\") after:2026-11-06 before:2026-11-22",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Snapdeal%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-06+before%3A2026-11-22",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "targets",
+      "publicationWindow": {
+        "from": "2026-11-07",
+        "through": "2026-11-21"
+      }
+    },
+    {
+      "id": "snapdeal-x-posts",
+      "platform": "X",
+      "query": "site:x.com \"Snapdeal\" (intern OR internship OR hiring) after:2026-11-06 before:2026-11-22",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Snapdeal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-06+before%3A2026-11-22",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "targets",
+      "publicationWindow": {
+        "from": "2026-11-07",
+        "through": "2026-11-21"
+      }
+    },
+    {
+      "id": "snapdeal-linkedin-authors",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Snapdeal\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-06 before:2026-11-22",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Snapdeal%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-06+before%3A2026-11-22",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "targets",
+      "publicationWindow": {
+        "from": "2026-11-07",
+        "through": "2026-11-21"
+      }
+    },
+    {
+      "id": "snapdeal-person-0-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Navya Grover\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-06 before:2026-11-22",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Navya+Grover%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-06+before%3A2026-11-22",
+      "status": "not_searched",
+      "generatedFor": "2026-11-21",
+      "phase": "targets",
+      "publicationWindow": {
+        "from": "2026-11-07",
+        "through": "2026-11-21"
+      }
+    },
+    {
+      "id": "snapdeal-person-1-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Prateek Dayal\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-06 before:2026-11-22",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Prateek+Dayal%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-06+before%3A2026-11-22",
       "status": "not_searched",
       "generatedFor": "2026-11-21",
       "phase": "targets",

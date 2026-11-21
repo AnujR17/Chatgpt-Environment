@@ -18,6 +18,66 @@ the schedule; do not start another scheduler or duplicate task.
 
 ## Every pass
 
+### Candidate accounting and two research tracks — 21 November repair
+
+Discovery found a Snapdeal hiring snippet in a saved search receipt, but that
+lead had no follow-through or recorded disposition. Executing a query checklist
+did not prevent that review failure. The repaired workflow adds simple title
+queries, explicit UX-research and trainee variants, referral-roundup discovery
+and exact public form destinations. Follow newly encountered employers; adding
+Snapdeal to the named targets is not a substitute for broad discovery.
+
+Read `app/public/data/discovery-ledger.json` before fixed-target rechecks. Retry
+due unresolved leads, keeping current eligible roles separate from historical,
+outside-geography, unpaid and unverified awareness. Record each plausible lead
+in the supplied result corpus as feed, duplicate, watchlist, historical,
+excluded, unresolved or not_role, with reason, evidence and next action. An
+unresolved disposition needs a next-check date. Never erase a lead merely
+because its location, salary or original date is not yet eligible/verified.
+Do not promote it to an active recommendation just to avoid a missing result.
+
+Save actual public-search tool receipts outside Git in JSON `batches`, each
+with its `result.content` text. Reconcile them using:
+
+```sh
+python app/scripts/discovery_audit.py --receipts /path/outside-git/search-receipts.json \
+  --inventory /path/outside-git/candidate-inventory.json
+python app/scripts/discovery_audit.py --receipts /path/outside-git/search-receipts.json \
+  --decisions /path/outside-git/accounting-decisions.json \
+  --jobs app/public/data/jobs.json --companies app/public/data/companies.json
+```
+
+The audit fails for missing/invalid decisions, source receipt errors or omitted
+keyword matches. Its broad matcher includes false positives, generic job counts
+and personal profiles; explicitly classify them. Publish only relevant public
+role/hiring-author evidence, never unrelated CVs/contact aggregates or applicant
+data. A passing audit establishes accounting for the supplied corpus, not
+vacancy truth, exhaustive internet search or zero missed posts. Keep unresolved
+checks visible and report source-access gaps. Generated query links are not
+executed searches; reuse exact fresh same-day receipts with timestamps.
+
+Snapdeal is now an every-pass awareness target with public hiring authors
+Navya Grover and Prateek Dayal. Carrerlift's reported25k/month and2day label
+conflict with matching FirstOffer's Expired state and linked Googleform401.
+Normal employer application access/current intake are unverified. Old author
+posts and edited referral roundups do not renew publication. Gurugram remains
+outside usual active geography; the existing Onething exception does not extend
+to all NCR roles. Brahmaverse aliases/author and distinct historical/experienced
+roles remain separately checked as before.
+
+**Effective22November2026:** the same scheduled task runs two independent tracks:
+**Junior / fresher** and **Internships**, with separate discovery, verification,
+coverage, unresolved actions and digest sections. Junior roles must not depend
+on an internship-title query or leftover slots. The generator date-switch adds
+dedicated junior queries only from22November and tags query tracks. Keep the
+existing board roleType categories and stable crosspost IDs; classify by actual
+responsibilities, experience and employment terms, not a misleading entry-level
+tag. Record junior salary in original units and never apply monthly internship
+stipend matching to an annual salary. Internships retain region-specific floors,
+student/cohort/joining checks and paid/no-fee requirements. Shared discovery can
+feed either track, but duplicates remain one role. Do not change today's UI,
+create another task/assistant or alter the existing7amAsia/Kolkata schedule.
+
 ### Discover employers before rechecking the watchlist — 20 November repair
 
 The former 44-query checklist concentrated on known names. A completed checklist

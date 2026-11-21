@@ -53,6 +53,27 @@ class SocialPlanTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 mod.build_plan({'version':1,'targets':[{'id':'a','name':'A',**fields}]}, '2026-11-20')
 
+    def test_simple_research_roundup_and_form_discovery_are_not_geography_gated(self):
+        plan=mod.build_plan({'version':1,'targets':[]},'2026-11-21')
+        queries={q['id']:q for q in plan['queries']}
+        self.assertEqual(plan['workflowVersion'],3)
+        self.assertEqual(queries['discovery-product-intern-simple']['query'],'"product design intern" hiring')
+        self.assertIn('UX research intern',queries['discovery-ux-research-simple']['query'])
+        self.assertIn('docs.google.com/forms',queries['discovery-form-destinations']['query'])
+        self.assertIn('referral',queries['discovery-referral-roundups']['query'])
+        self.assertIn('discovery_audit.py',plan['reviewPolicy'])
+
+    def test_independent_junior_track_starts_tomorrow_not_retroactively(self):
+        config={'version':1,'targets':[]}
+        today=mod.build_plan(config,'2026-11-21');tomorrow=mod.build_plan(config,'2026-11-22')
+        self.assertFalse(any(q['id'].startswith('junior-') for q in today['queries']))
+        juniors=[q for q in tomorrow['queries'] if q['id'].startswith('junior-')]
+        self.assertEqual(len(juniors),8)
+        self.assertTrue(all(q['roleTrack']=='Junior / fresher' for q in juniors))
+        self.assertEqual(tomorrow['roleTracks'],['Junior / fresher','Internships'])
+        self.assertEqual(tomorrow['socialPublicationCutoff'],'2026-11-08')
+        self.assertTrue(all(q['status']=='not_searched' for q in tomorrow['queries']))
+
 
 if __name__ == '__main__':
     unittest.main()

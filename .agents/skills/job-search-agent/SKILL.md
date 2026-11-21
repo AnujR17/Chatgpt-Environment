@@ -96,3 +96,19 @@ never implying employer closure. Independently current exact employer vacancies
 may stand on their own evidence, with old social crossposts marked historical.
 Use the rolling social-search-plan and check its expanded job-board families;
 generated queries are not executed searches. Preserve coverage histories.
+
+## Discovery accounting and separate tracks —21November2026
+
+Read the public discovery-ledger before fixed-target rechecks;retry due unresolved
+checks. Use scripts/discovery_audit.py on actual supplied public-search receipts
+and disposition decisions before calling a pass complete. Missing leads,source
+errors and omitted matches must remain explicit. The audit is recording only,not
+verified vacancies or internet completeness. Keep profile hiring snippets,roundups
+and exact form destinations in discovery;never publish unrelated personal CVs or
+contact aggregates. Preserve nonmatching awareness separately from active roles.
+
+From22November,the existing daily task researches Junior/fresher and Internships
+independently with separate discovery/coverage/digest sections and existing board
+roleType categories. Use the date-gated query plan;do not redesign today's UI or
+create another task/assistant. Salary units,student/experience/cohort/geography,
+14day social freshness and all existing privacy/publication rules remain.

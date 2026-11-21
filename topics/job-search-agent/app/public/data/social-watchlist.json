@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-21",
   "purpose": "Public employer/recruiter post discovery targets; neither open vacancies nor workplace endorsements.",
   "limits": "Actual post searches, source access and findings must be recorded separately. No authenticated feed, live subscription or no-missed-post guarantee.",
   "targets": [
@@ -115,6 +115,25 @@
         "https://in.linkedin.com/in/abhinavbuilds",
         "https://www.fastor7.com/"
       ]
+    },
+    {
+      "id": "snapdeal",
+      "companyId": "snapdeal",
+      "name": "Snapdeal",
+      "type": "Established e-commerce product company",
+      "check": "every_pass",
+      "careersUrl": "https://www.linkedin.com/company/snapdeal/jobs/",
+      "linkedinUrl": "https://www.linkedin.com/company/snapdeal",
+      "publicHiringPeople": [
+        "Navya Grover",
+        "Prateek Dayal"
+      ],
+      "identitySources": [
+        "https://m.snapdeal.com/page/about-us",
+        "https://in.linkedin.com/in/navyagrover2619",
+        "https://in.linkedin.com/in/prateek-dayal-b012b0220"
+      ],
+      "notes": "Awareness target requested for discovery, not a verified current eligible opening. Gurugram outside usual geography; no automatic NCR expansion. Product Design Intern mirror25k/month conflicts with another expired mirror and exact form401. Old employer-author posts retained as historical, not new intake; verify renewed original and student cohort."
     }
   ]
 }

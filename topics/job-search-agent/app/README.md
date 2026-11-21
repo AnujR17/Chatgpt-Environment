@@ -8,6 +8,19 @@ Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The p
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
+## Discovery accountability and tomorrow's two tracks —publication pending
+
+Two indexed job-detail internships added onhold:VitaCure remote UXResearch and
+TransformNXT Bengaluru3–6months. Pay/currentstudent intake unconfirmed;normal
+LinkedIn originals restricted. Snapdeal added asestablished Dream awareness target,
+not verified active role:mirror25k/month versusExpired mirror andexactform401.
+153retained/122active-held/31archived,322companies,21established,52coverage.
+The [discovery ledger](public/data/discovery-ledger.json) retains relevant unresolved,
+historical,excluded andduplicate research separately fromactive jobs. Receipt audit
+accounts for149keyword matches;39unresolved,not149vacancies or complete search.
+From22November the same7am task researches Junior/fresher and Internships as two
+independent tracks;today's UI unchanged. [Report](public/data/collection-report.md).
+
 ## 21 November research — published
 
 Three new employer-original held internships: ScaleDesk remote, RoomSaathi
@@ -56,10 +69,10 @@ verified. Local/live desktop/mobile synthetic preservation checks pass.
 
 ## Established employers and workplace screening
 
-The company directory puts20 researched established employers first and has an
+The company directory puts21 researched established employers first and has an
 Established employers filter. Discover has the same filter and a shortcut to
 the directory. Added Intuit, SAP and ServiceNow programme targets; these are not
-new verified India design vacancies. The directory now has 319 companies and51
+new verified India design vacancies. The directory now has 322 companies and51
 source-coverage records. Existing role records and pay/history remain;all 31 archived records retain their evidence.
 
 A sourced Lala-style screening badge distinguishes published processes,
@@ -78,11 +91,11 @@ is changed by an assessment. No Assistant page or AI backend was reintroduced.
 
 ## Included
 
-- 151 retained role records (120 active/held,31 archived), researched21November2026. Current eligible joining remains to confirm. See [today's report](public/data/collection-report.md).
+- 153 retained role records (122 active/held,31 archived), researched21November2026 including discovery-accountability follow-up. Current eligible joining remains to confirm. See [today's report](public/data/collection-report.md).
 - Separate employer-confirmed pay, conditional pay and unconfirmed stipend labels. Uses the **minimum** advertised stipend, not the maximum.
 - Remote India first; Gujarat, Maharashtra, Goa and southern India considered. Gujarat and remote India minimum ₹10,000/month, with ₹15,000+ preferred; other eligible cities minimum ₹15,000/month. Higher pay remains welcome. Earlier dated research may use former thresholds.
 - Discover card/list views with platform, role type, location and pay-evidence filters; a separate application Kanban; on-hold review; notes, deadlines and interviews. New roles appear first by default.
-- Separate company directory with 319 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
+- Separate company directory with 322 researched targets grouped into editable Dream, Workable and Possible suggestions. Following/categories stay browser-local and are included in JSON backups.
 - Historical company pay reports include original units, sources and limitations. They never count as a current role’s confirmed stipend. Undisclosed-pay roles stay on hold.
 - Local application profile and editable factual email draft. No automatic submission or email sending.
 - Current-board CSV export (opens in Excel), a researched-listings `.xlsx`, and JSON backup/restore for personal updates.
