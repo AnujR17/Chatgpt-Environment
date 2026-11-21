@@ -2,13 +2,13 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `72906e80dfe17833b4cf413aa65556e7aebda447` in existing Vercel project `chatgpt-environment`. Verified21November2026:151retained roles /120active-held /31archived,319companies,20established profiles and51coverage rows. Nine live feed/export/watchlist/query-plan files match this exact commit. Local/live desktop/mobile preservation checks pass. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `2c172bbd5341b890187cf2deb1cea8f845078d9b` in existing Vercel project `chatgpt-environment`. Verified21November2026 follow-up:153retained roles /122active-held /31archived,322companies,21established profiles and52coverage rows. Ten live feed/export/watchlist/query-plan/discovery-ledger files match this exact commit. Local/live desktop/mobile preservation checks pass. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
-## Discovery accountability and tomorrow's two tracks —publication pending
+## Discovery accountability and tomorrow's two tracks —published
 
 Two indexed job-detail internships added onhold:VitaCure remote UXResearch and
 TransformNXT Bengaluru3–6months. Pay/currentstudent intake unconfirmed;normal
@@ -20,6 +20,9 @@ historical,excluded andduplicate research separately fromactive jobs. Receipt au
 accounts for149keyword matches;39unresolved,not149vacancies or complete search.
 From22November the same7am task researches Junior/fresher and Internships as two
 independent tracks;today's UI unchanged. [Report](public/data/collection-report.md).
+Production READY onexact2c172bb;all10livefiles HTTP200 and byte-identical.
+Local/live browserchecks pass,protection unchanged,oneproduction deploy forSHA.
+Following verification-only docs do not require redeployment.
 
 ## 21 November research — published
 

@@ -2,7 +2,7 @@
 
 Updated 21 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 21 November discovery accountability —publication pending
+## 21 November discovery accountability —published
 
 153retained/122active-held/31archived,322companies,21established,52coverage.
 Two new held numerical-pay-unknown internships:Vitacure remote research4481045101,
@@ -35,7 +35,23 @@ tests,Vitebuild andcandidateaccounting pass. Local desktop/mobile browserchecks 
 21established,52coverage;new unknown-pay cards andsynthetic application/blacklist/
 private-assessment/backup/reload/mobile restore preserved. No runtimeerrors/POSTs;
 existing Sources mobile navoverflow545/390 remains,Discover/Companies fit.
-Exact production publication pending. No UI or privateprogress changes.
+Production READY verified from2c172bbd5341b890187cf2deb1cea8f845078d9b,
+branchtopic/job-search-agent,projectprj_o1CANE3Uj8jY3AWgGku9nV0qjqPg,
+accountteam_wbMCzPWEpuswtIa2AekWJJLh,repo1408350067. Deployment
+dpl_7DWJXTDn9YXaMeC3dtpKBvhL4bnS:
+https://chatgpt-environment-6z08q915f-anujrai1701-gmailcoms-projects.vercel.app
+Aliashttps://chatgpt-environment.vercel.app assigned. Exact READY/SHA/ref/project/
+alias verified,one production deployment forSHA,no newpreview. Vite,approot,
+npmci/npmrunbuild/dist,Node24.x,defaultscope,no teamId;protection unchanged.
+All10livefeed/export/watchlist/plan/discovery-ledgerfilesHTTP200 byte-identical
+to2c172bb. Live desktop/mobile QA PASS122active/31archived,322companies/
+21established,52coverage;synthetic application/blacklist/privateassessment,
+CSV/backup/reload/mobile restore preserved,no runtimeerrors/POSTs. Existing
+Sourcesmobileoverflow545/390 recorded. No UI or privateprogress changes.
+Followingverification-only docs commit requires no redeploy;publicfiles unchanged.
+Automation reread verifies promptupdated,two independent tracks effective22Nov,
+next22Nov7amIST,sameenabledexact7amAsia/Kolkata schedule/thread/inheritedenv.
+No privateprompt/profile/assessment data committed. No mainmerge/newtask/project.
 
 ## 21 November public research — published
 
