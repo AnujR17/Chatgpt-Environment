@@ -2,13 +2,13 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` commit `f2253b946f699b752eafdec5fe5dd77a8c77f4c4` in existing Vercel project `chatgpt-environment`. Verified 21 November 2026: separate Internships and Junior / fresher UI; 153 retained roles / 122 active-held / 31 archived and 322 companies. Ten live feed/export/watchlist/query-plan/discovery-ledger files match this exact commit; live JS/CSS match the local build. Local/live desktop/mobile preservation checks pass. Assistant remains removed.
+Production is READY from `topic/job-search-agent` commit `3f123521d1ec1776e56bb6eef98ee13e826031da` in existing Vercel project `chatgpt-environment`. Verified22November2026:158retained roles /127active-held /31archived,107internships /20junior-fresher,325companies and54coverage records. Ten live feed/export/watchlist/query-plan/discovery-ledger files are HTTP200 and byte-identical to this exact commit. Live desktop/mobile category and synthetic saved-progress checks pass;protection unchanged. Assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
-## 22 November independent research tracks — publication pending
+## 22 November independent research tracks — published
 
 Five new on-hold cards: junior Moon Technolabs (15–18k INR/month employment salary), CredXHire (3–5lakh INR/year;1–3years stretch) and aggregated Webential trainee (salary unknown); internships Techolution (remote, stipend unknown) and The Whole Truth employer88593 (Salary Not Disclosed versus Unpaid metadata, exact office city unresolved). No new confirmed monthly internship stipend match. Older expired Moon adverts remain archived. [Full report](public/data/collection-report.md).
 
@@ -16,7 +16,7 @@ Five new on-hold cards: junior Moon Technolabs (15–18k INR/month employment sa
 
 94plan+48adaptive searches executed independently across both tracks;767supplied keyword matches accounted,403unresolved including noise,not767vacancies or full web coverage. All27prior pending public-ledger records retried;35of54coverage rows checked today. Naukri listing robots restriction/empty search,Internshala blocked detail search andX restricted public search remain explicit. No new eligible social-only original within8–22November verified.
 
-Supported workbook/CSV regenerated. Preservation audit,5JavaScript test files,15Python tests,Vite build and local desktop/mobile category/company checks pass. Synthetic saved progress,blacklist,private assessment and backup/restore preserved. Existing Sources narrow-screen overflow remains (662px at390/320),while Discover/Companies fit;no UI changes in this research refresh. Production verification follows after exact topic-branch publication.
+Supported workbook/CSV regenerated. Preservation audit,5JavaScript test files,15Python tests,Vite build and local desktop/mobile category/company checks pass. Synthetic saved progress,blacklist,private assessment and backup/restore preserved. Existing Sources narrow-screen overflow remains (662px at390/320),while Discover/Companies fit;no UI changes in this research refresh. Production READY on exact `3f123521d1ec1776e56bb6eef98ee13e826031da`, deployment `dpl_6sVMw9VYhe1NaTTTJkYoVZc81Yyo`, existing live alias. All10live files byte-identical;live desktop/mobile category and synthetic saved-progress checks PASS,protection unchanged. Following verification-only documentation needs no redeploy.
 
 ## Separate jobs UI — 21 November 2026
 
