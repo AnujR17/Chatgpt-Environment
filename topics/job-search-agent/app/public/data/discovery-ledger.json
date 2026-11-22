@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-22",
   "purpose": "Research discovery/accountability ledger,not active job recommendations or received offers.",
   "limits": "Dispositions account for discovered leads;unresolved is not verified open. No company-wide closure from access failure. Research dates do not establish original publication. Irrelevant personal CV/contact/profile result noise is not published.",
   "entries": [
@@ -8,12 +8,25 @@
       "id": "discovery-c8a3715a3d176e",
       "sourceUrl": "https://sprinklr.wd1.myworkdayjobs.com/en-US/careers/job/Research-Intern_113313-JOB",
       "title": "UX Research Intern",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Named discovery is Gurugram/Noida in the source, outside usual active geography;current paid student intake unverified. This remains visible awareness,not an employer-closure claim.",
-      "nextAction": "Check exact employer country,level,cohort and pay. Retain outside-geography awareness;do not expand active recommendations without a specific location exception.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-c8a3715a3d176e",
+          "sourceUrl": "https://sprinklr.wd1.myworkdayjobs.com/en-US/careers/job/Research-Intern_113313-JOB",
+          "title": "UX Research Intern",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Named discovery is Gurugram/Noida in the source, outside usual active geography;current paid student intake unverified. This remains visible awareness,not an employer-closure claim.",
+          "nextAction": "Check exact employer country,level,cohort and pay. Retain outside-geography awareness;do not expand active recommendations without a specific location exception.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-f3394a2157dffd",
@@ -30,12 +43,25 @@
       "id": "discovery-27529da1a12855",
       "sourceUrl": "https://smyhire.com/jobs/ea2d612c-2966-431b-8194-1ebe20666970",
       "title": "UI/UX Design Trainee at Hi-Tech in Bengaluru",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Normal Hi-Tech trainee mirror readable, but exact employer identity, compensation and current eligible intake unresolved.",
+      "nextAction": "Trace named employer original requisition and paid/no-fee employment terms.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-27529da1a12855",
+          "sourceUrl": "https://smyhire.com/jobs/ea2d612c-2966-431b-8194-1ebe20666970",
+          "title": "UI/UX Design Trainee at Hi-Tech in Bengaluru",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-5a55dbe8961120",
@@ -81,23 +107,49 @@
       "id": "discovery-c7967992e510b1",
       "sourceUrl": "https://wellfound.com/jobs/4980138-product-designer-clone",
       "title": "Product Design Intern at Konji • San Francisco • Remote (Work from Home) | Wellfound",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Exact Konji Wellfound returned410. Indexed SanFrancisco/Summer2027 remote copy does not establish India eligibility or current intake.",
+      "nextAction": "Confirm country, original employer requisition and current paid intake.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-c7967992e510b1",
+          "sourceUrl": "https://wellfound.com/jobs/4980138-product-designer-clone",
+          "title": "Product Design Intern at Konji • San Francisco • Remote (Work from Home) | Wellfound",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-c0636215c1fb5f",
       "sourceUrl": "https://job-boards.greenhouse.io/figma/jobs/6180005004?gh_jid=6180005004",
       "title": "Job Application for Product Design Intern (2027) at Figma",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Figma exact requisition6180005004 appears with different tracking parameters. India location/engagement not verified in this pass;not three separate jobs.",
-      "nextAction": "Resolve one canonical employer requisition and geography before recommending;do not add tracking duplicates.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Normal exact Figma requisition lists SanFrancisco/NewYork, UnitedStates. Tracking URL variants are one requisition, not India vacancies.",
+      "nextAction": "Retain awareness; require explicit India eligibility on a separate current role.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-c0636215c1fb5f",
+          "sourceUrl": "https://job-boards.greenhouse.io/figma/jobs/6180005004?gh_jid=6180005004",
+          "title": "Job Application for Product Design Intern (2027) at Figma",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Figma exact requisition6180005004 appears with different tracking parameters. India location/engagement not verified in this pass;not three separate jobs.",
+          "nextAction": "Resolve one canonical employer requisition and geography before recommending;do not add tracking duplicates.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-c55445eeddc80c",
@@ -124,89 +176,195 @@
       "id": "discovery-8f47e761ef0789",
       "sourceUrl": "https://job-boards.greenhouse.io/figma/jobs/6180005004?gh_src=Purpose+job+board",
       "title": "Job Application for Product Design Intern (2027) at Figma",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Figma exact requisition6180005004 appears with different tracking parameters. India location/engagement not verified in this pass;not three separate jobs.",
+      "reason": "Figma exact requisition6180005004 appears with different tracking parameters. India location/engagement not verified in this pass;not three separate jobs. 22November normal retry: fetched. A shell/restriction alone is not vacancy closure.",
       "nextAction": "Resolve one canonical employer requisition and geography before recommending;do not add tracking duplicates.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-8f47e761ef0789",
+          "sourceUrl": "https://job-boards.greenhouse.io/figma/jobs/6180005004?gh_src=Purpose+job+board",
+          "title": "Job Application for Product Design Intern (2027) at Figma",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Figma exact requisition6180005004 appears with different tracking parameters. India location/engagement not verified in this pass;not three separate jobs.",
+          "nextAction": "Resolve one canonical employer requisition and geography before recommending;do not add tracking duplicates.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-c116e3864de85f",
       "sourceUrl": "https://www.insiderone.in/jobs/user-research-intern-at-insiderone-ai-remote-83f6b78b-62cf-4a43-ac8d-98972ff7d2bc",
       "title": "User Research Intern (work from home) at insiderOne AI · insiderOne",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+      "checkedAt": "2026-11-22",
+      "disposition": "watchlist",
+      "reason": "Known company/role research source; not independent proof of an additional eligible opening.",
+      "nextAction": "Review the company source and exact advertised role; verify current intake, location, level and pay before promotion.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-c116e3864de85f",
+          "sourceUrl": "https://www.insiderone.in/jobs/user-research-intern-at-insiderone-ai-remote-83f6b78b-62cf-4a43-ac8d-98972ff7d2bc",
+          "title": "User Research Intern (work from home) at insiderOne AI · insiderOne",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ],
+      "companyId": "insiderone-ai"
     },
     {
       "id": "discovery-239d066206d048",
       "sourceUrl": "https://job-boards.greenhouse.io/figma/jobs/6180005004?gh_jid=6180005004&gh_src=rolewire.app",
       "title": "Job Application for Product Design Intern (2027) at Figma",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Figma exact requisition6180005004 appears with different tracking parameters. India location/engagement not verified in this pass;not three separate jobs.",
-      "nextAction": "Resolve one canonical employer requisition and geography before recommending;do not add tracking duplicates.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Normal exact Figma requisition lists SanFrancisco/NewYork, UnitedStates. Tracking URL variants are one requisition, not India vacancies.",
+      "nextAction": "Retain awareness; require explicit India eligibility on a separate current role.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-239d066206d048",
+          "sourceUrl": "https://job-boards.greenhouse.io/figma/jobs/6180005004?gh_jid=6180005004&gh_src=rolewire.app",
+          "title": "Job Application for Product Design Intern (2027) at Figma",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Figma exact requisition6180005004 appears with different tracking parameters. India location/engagement not verified in this pass;not three separate jobs.",
+          "nextAction": "Resolve one canonical employer requisition and geography before recommending;do not add tracking duplicates.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-ee6dda47d87d32",
       "sourceUrl": "https://in.linkedin.com/jobs/view/ux-design-and-research-intern-at-olx-india-4464766365",
       "title": "OLX India hiring UX Design and Research Intern in Gurugram, Haryana, India | LinkedIn",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Named discovery is Gurugram/Noida in the source, outside usual active geography;current paid student intake unverified. This remains visible awareness,not an employer-closure claim.",
-      "nextAction": "Check exact employer country,level,cohort and pay. Retain outside-geography awareness;do not expand active recommendations without a specific location exception.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Source title identifies a geography, seniority, unpaid status or role family outside this active shortlist; no broader geography exception or internship inferred.",
+      "nextAction": "Reconsider only if exact employer evidence establishes an eligible different intake. Preserve this source, not an employer-wide closure claim.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-ee6dda47d87d32",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/ux-design-and-research-intern-at-olx-india-4464766365",
+          "title": "OLX India hiring UX Design and Research Intern in Gurugram, Haryana, India | LinkedIn",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Named discovery is Gurugram/Noida in the source, outside usual active geography;current paid student intake unverified. This remains visible awareness,not an employer-closure claim.",
+          "nextAction": "Check exact employer country,level,cohort and pay. Retain outside-geography awareness;do not expand active recommendations without a specific location exception.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-2d101fee3e5388",
       "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-designer-apprentice-at-d-square-consulting-services-pvt-ltd-4430348831",
       "title": "D Square Consulting Services Pvt Ltd hiring UI/UX Designer Apprentice in Bengaluru, Karnataka, India | LinkedIn",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-2d101fee3e5388",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-designer-apprentice-at-d-square-consulting-services-pvt-ltd-4430348831",
+          "title": "D Square Consulting Services Pvt Ltd hiring UI/UX Designer Apprentice in Bengaluru, Karnataka, India | LinkedIn",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-129f0675f57360",
       "sourceUrl": "https://in.linkedin.com/jobs/view/apprentice-at-atkinsr%C3%A9alis-4454565745",
       "title": "AtkinsRéalis hiring Apprentice in Noida, Uttar Pradesh, India | LinkedIn",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Named discovery is Gurugram/Noida in the source, outside usual active geography;current paid student intake unverified. This remains visible awareness,not an employer-closure claim.",
-      "nextAction": "Check exact employer country,level,cohort and pay. Retain outside-geography awareness;do not expand active recommendations without a specific location exception.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Source title identifies a geography, seniority, unpaid status or role family outside this active shortlist; no broader geography exception or internship inferred.",
+      "nextAction": "Reconsider only if exact employer evidence establishes an eligible different intake. Preserve this source, not an employer-wide closure claim.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-129f0675f57360",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/apprentice-at-atkinsr%C3%A9alis-4454565745",
+          "title": "AtkinsRéalis hiring Apprentice in Noida, Uttar Pradesh, India | LinkedIn",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Named discovery is Gurugram/Noida in the source, outside usual active geography;current paid student intake unverified. This remains visible awareness,not an employer-closure claim.",
+          "nextAction": "Check exact employer country,level,cohort and pay. Retain outside-geography awareness;do not expand active recommendations without a specific location exception.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-c07e98a7d912b0",
       "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-engineer-trainee-at-saasta-software-services-4453234065",
       "title": "Saasta Software & Services hiring UI / UX Engineer Trainee in Salem, Tamil Nadu, India | LinkedIn",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-c07e98a7d912b0",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-engineer-trainee-at-saasta-software-services-4453234065",
+          "title": "Saasta Software & Services hiring UI / UX Engineer Trainee in Salem, Tamil Nadu, India | LinkedIn",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-a7ce777cba1a12",
       "sourceUrl": "https://nextraise.ai/jobs/ui-ux-designer-trainee-at-webential-technologies-ecaea83de8da",
       "title": "[Remote] UI/UX Designer - Trainee at Webential Technologies",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+      "checkedAt": "2026-11-22",
+      "disposition": "feed",
+      "reason": "Exact retained role/source matched by stable URL or established crosspost. One card only; listing/current eligibility caveats retained.",
+      "nextAction": "Verify the exact trainee vacancy with the official careers route, fixed salary, paid/no-fee employment terms, Ahmedabad/remote arrangement, student eligibility and joining before treating this as a current opportunity. Do not interpret an aggregator refresh as a new cohort.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-a7ce777cba1a12",
+          "sourceUrl": "https://nextraise.ai/jobs/ui-ux-designer-trainee-at-webential-technologies-ecaea83de8da",
+          "title": "[Remote] UI/UX Designer - Trainee at Webential Technologies",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ],
+      "jobId": "shine-webential-uiux-trainee-19864934"
     },
     {
       "id": "discovery-fbe0527c8bbd68",
@@ -222,34 +380,73 @@
       "id": "discovery-3f4f80b436375f",
       "sourceUrl": "https://in.linkedin.com/jobs/view/design-internship-at-qubehealth-pay-4415491969",
       "title": "QubeHealth-Pay hiring Junior Designer in Mumbai, Maharashtra, India | LinkedIn",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-3f4f80b436375f",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/design-internship-at-qubehealth-pay-4415491969",
+          "title": "QubeHealth-Pay hiring Junior Designer in Mumbai, Maharashtra, India | LinkedIn",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-6e9814d9e8af43",
       "sourceUrl": "https://in.linkedin.com/jobs/view/mobile-ux-ui-trainee-freshers-at-agumentik-software-private-limited-4366482521",
       "title": "Agumentik Software Private Limited hiring Mobile UX/UI Trainee (Freshers) in India | LinkedIn",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-6e9814d9e8af43",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/mobile-ux-ui-trainee-freshers-at-agumentik-software-private-limited-4366482521",
+          "title": "Agumentik Software Private Limited hiring Mobile UX/UI Trainee (Freshers) in India | LinkedIn",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-0b2778f5e4aac3",
       "sourceUrl": "https://wellfound.com/jobs/4261304-ux-research-intern",
       "title": "UX Research Intern at ClickPost • Bengaluru | Wellfound",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Exact ClickPost Wellfound role returned410; no current eligible intake established.",
+      "nextAction": "Check ClickPost official careers for a distinct current UX-research requisition.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-0b2778f5e4aac3",
+          "sourceUrl": "https://wellfound.com/jobs/4261304-ux-research-intern",
+          "title": "UX Research Intern at ClickPost • Bengaluru | Wellfound",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-e4c51fd2fc65a1",
@@ -316,12 +513,25 @@
       "id": "discovery-2a3eb8d970f9c9",
       "sourceUrl": "https://app.joinrunway.io/job/cmwe5n9vh0018bu2hnw5nqc0s/get-an-intro",
       "title": "User Experience (UX) Research Intern @ Dell Technologies | Runway",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-2a3eb8d970f9c9",
+          "sourceUrl": "https://app.joinrunway.io/job/cmwe5n9vh0018bu2hnw5nqc0s/get-an-intro",
+          "title": "User Experience (UX) Research Intern @ Dell Technologies | Runway",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-4dda23f0ea6f3f",
@@ -338,23 +548,49 @@
       "id": "discovery-36fa70739c5002",
       "sourceUrl": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&jobid=623431&partnerid=25397&siteid=5259",
       "title": "UX Research Intern - Deltek, Inc - Job Details",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Normal Deltek exact UX Research Intern623431/11222BR is US-Herndon/US-Tampa;29September2026 detail, not India-remote.",
+      "nextAction": "Retain sourced geography exclusion; do not infer India permission from remote language.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-36fa70739c5002",
+          "sourceUrl": "https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&jobid=623431&partnerid=25397&siteid=5259",
+          "title": "UX Research Intern - Deltek, Inc - Job Details",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-31abf50071da20",
       "sourceUrl": "https://careers.hushh.ai/open-roles/ui-ux-product-design-intern-pune",
       "title": "UI/UX & Product Design Intern in Pune · Careers at hussh",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Indexed Hushh Pune role found,normal exact original410. No renewed current intake verified;missing alone is not employer closure.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Exact normal Hushh role returned410; current intake unavailable, not proof company hiring closed.",
+      "nextAction": "Locate a renewed employer requisition and confirm paid student cohort before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-31abf50071da20",
+          "sourceUrl": "https://careers.hushh.ai/open-roles/ui-ux-product-design-intern-pune",
+          "title": "UI/UX & Product Design Intern in Pune · Careers at hussh",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Indexed Hushh Pune role found,normal exact original410. No renewed current intake verified;missing alone is not employer closure.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-09c0dfa6813388",
@@ -371,23 +607,49 @@
       "id": "discovery-d9363cca4a0eb8",
       "sourceUrl": "https://www.foundit.in/job/product-design-intern-marbles-health-gurugram-55310406",
       "title": "Product Design Intern with 0 - 1 Years of Experience at marbles health in Gurugram,Gurgaon / Gurugram,India",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Named discovery is Gurugram/Noida in the source, outside usual active geography;current paid student intake unverified. This remains visible awareness,not an employer-closure claim.",
-      "nextAction": "Check exact employer country,level,cohort and pay. Retain outside-geography awareness;do not expand active recommendations without a specific location exception.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Source title identifies a geography, seniority, unpaid status or role family outside this active shortlist; no broader geography exception or internship inferred.",
+      "nextAction": "Reconsider only if exact employer evidence establishes an eligible different intake. Preserve this source, not an employer-wide closure claim.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-d9363cca4a0eb8",
+          "sourceUrl": "https://www.foundit.in/job/product-design-intern-marbles-health-gurugram-55310406",
+          "title": "Product Design Intern with 0 - 1 Years of Experience at marbles health in Gurugram,Gurgaon / Gurugram,India",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Named discovery is Gurugram/Noida in the source, outside usual active geography;current paid student intake unverified. This remains visible awareness,not an employer-closure claim.",
+          "nextAction": "Check exact employer country,level,cohort and pay. Retain outside-geography awareness;do not expand active recommendations without a specific location exception.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-4c812e5cab900f",
       "sourceUrl": "https://careers.regiscorp.co.in/jobs/13794fb1-da7a-49ef-8fc0-f9cada40bad1",
       "title": "Mobile-first UX Research and Design Intern at RegisCommunity… | RegisCareers",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Normal employer detail explicitly unpaid,15–20hours/week for4months. No stipend; certificate/PPO is not payment.",
+      "nextAction": "No paid recommendation; recheck only if employer publishes a distinct paid intake.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-4c812e5cab900f",
+          "sourceUrl": "https://careers.regiscorp.co.in/jobs/13794fb1-da7a-49ef-8fc0-f9cada40bad1",
+          "title": "Mobile-first UX Research and Design Intern at RegisCommunity… | RegisCareers",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-e4db2f60d04e29",
@@ -403,12 +665,25 @@
       "id": "discovery-0f56aa20279ef4",
       "sourceUrl": "https://in.linkedin.com/jobs/view/industrial-design-intern-with-ppo-at-bhuyantra-waste-management-pvt-ltd-4485406083",
       "title": "Industrial Design Intern with PPO at BhuYantra Waste Management Pvt. Ltd. — Bangalore Urban district, India | LinkedIn Jobs",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Source title identifies a geography, seniority, unpaid status or role family outside this active shortlist; no broader geography exception or internship inferred.",
+      "nextAction": "Reconsider only if exact employer evidence establishes an eligible different intake. Preserve this source, not an employer-wide closure claim.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-0f56aa20279ef4",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/industrial-design-intern-with-ppo-at-bhuyantra-waste-management-pvt-ltd-4485406083",
+          "title": "Industrial Design Intern with PPO at BhuYantra Waste Management Pvt. Ltd. — Bangalore Urban district, India | LinkedIn Jobs",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-529ab359f2b68c",
@@ -425,34 +700,73 @@
       "id": "discovery-f7a48cb0168bc1",
       "sourceUrl": "https://careerhub.students.duke.edu/jobs/faishion-inc-ui-ux-design-intern/",
       "title": "UI/UX Design Intern – Career Hub | Duke University",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up. 22November normal retry: HTTP 410. A shell/restriction alone is not vacancy closure.",
       "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-f7a48cb0168bc1",
+          "sourceUrl": "https://careerhub.students.duke.edu/jobs/faishion-inc-ui-ux-design-intern/",
+          "title": "UI/UX Design Intern – Career Hub | Duke University",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-a057bb2f78cfa5",
       "sourceUrl": "https://in.linkedin.com/jobs/view/industrial-designer-intern-at-coratia-technologies-pvt-ltd-4476670618",
       "title": "Industrial Designer Intern at Coratia Technologies Pvt. Ltd. — Greater Bengaluru Area | LinkedIn Jobs",
-      "checkedAt": "2026-11-21",
-      "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+      "checkedAt": "2026-11-22",
+      "disposition": "excluded",
+      "reason": "Source title identifies a geography, seniority, unpaid status or role family outside this active shortlist; no broader geography exception or internship inferred.",
+      "nextAction": "Reconsider only if exact employer evidence establishes an eligible different intake. Preserve this source, not an employer-wide closure claim.",
       "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-a057bb2f78cfa5",
+          "sourceUrl": "https://in.linkedin.com/jobs/view/industrial-designer-intern-at-coratia-technologies-pvt-ltd-4476670618",
+          "title": "Industrial Designer Intern at Coratia Technologies Pvt. Ltd. — Greater Bengaluru Area | LinkedIn Jobs",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-b19c077b3e1034",
       "sourceUrl": "https://in.linkedin.com/company/oliandhue",
       "title": "Oli & Hue | LinkedIn",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
-      "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-b19c077b3e1034",
+          "sourceUrl": "https://in.linkedin.com/company/oliandhue",
+          "title": "Oli & Hue | LinkedIn",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-9ad25260507e50",
@@ -511,23 +825,49 @@
       "id": "discovery-34f45e62f0271e",
       "sourceUrl": "https://builtin.com/job/product-design-intern/11473630",
       "title": "Product Design Intern - Tractian Technologies Inc. | Built In",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up. 22November normal retry: fetched. A shell/restriction alone is not vacancy closure.",
       "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-34f45e62f0271e",
+          "sourceUrl": "https://builtin.com/job/product-design-intern/11473630",
+          "title": "Product Design Intern - Tractian Technologies Inc. | Built In",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-685c2af7a9d37b",
       "sourceUrl": "https://remotenex.us/remote-jobs/remote-product-design-intern-3",
       "title": "[Remote] Product Design Intern | remotenex.us",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+      "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up. 22November normal retry: fetched. A shell/restriction alone is not vacancy closure.",
       "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-685c2af7a9d37b",
+          "sourceUrl": "https://remotenex.us/remote-jobs/remote-product-design-intern-3",
+          "title": "[Remote] Product Design Intern | remotenex.us",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Discovery result only; exact employer identity,current intake,original date,pay and eligible engagement not fully verified in this bounded follow-up.",
+          "nextAction": "Trace exact original role/application and publication; confirm country,level,paid/no-fee terms and current intake before any recommendation.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-aacea18d8c5e11",
@@ -555,12 +895,25 @@
       "id": "discovery-6c1c3fb420b5c7",
       "sourceUrl": "https://in.linkedin.com/company/sde-jobs-and-internships",
       "title": "SDE Jobs and Internships | LinkedIn",
-      "checkedAt": "2026-11-21",
+      "checkedAt": "2026-11-22",
       "disposition": "unresolved",
-      "reason": "Referral community mentions Snapdeal in an edited roundup;community is not employer. Original publication,current intake and25k stipend unverified;comments/likes or posting an email are not required actions for this task.",
-      "nextAction": "Trace published employer destination without commenting,DMs or exposing applicant contact details;retain Snapdeal mirror conflict.",
-      "recheckAfter": "2026-11-22",
-      "evidenceStatus": "Indexed discovery,not verified vacancy"
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "22November retry; source limitations retained",
+      "history": [
+        {
+          "id": "discovery-6c1c3fb420b5c7",
+          "sourceUrl": "https://in.linkedin.com/company/sde-jobs-and-internships",
+          "title": "SDE Jobs and Internships | LinkedIn",
+          "checkedAt": "2026-11-21",
+          "disposition": "unresolved",
+          "reason": "Referral community mentions Snapdeal in an edited roundup;community is not employer. Original publication,current intake and25k stipend unverified;comments/likes or posting an email are not required actions for this task.",
+          "nextAction": "Trace published employer destination without commenting,DMs or exposing applicant contact details;retain Snapdeal mirror conflict.",
+          "recheckAfter": "2026-11-22",
+          "evidenceStatus": "Indexed discovery,not verified vacancy"
+        }
+      ]
     },
     {
       "id": "discovery-1de553e38a52f3",
@@ -572,6 +925,287 @@
       "reason": "Distinct3+year experienced role,not internship/fresher. Historical0–2year author post deadline12October not renewed;Gurugram outside usual geography.",
       "nextAction": "Continue alias/author checks for an independently current eligible junior/intern cohort;do not infer open vacancy from brand/product presence.",
       "evidenceStatus": "Indexed original withnormal access restricted"
+    },
+    {
+      "id": "discovery-6ff33b0eeef9f8",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=4cfe642e4876a868",
+      "title": "UI/UX Designer Fresher - Mota Varachha, Surat, Gujarat - Indeed.com",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Clarify employment versus internship, minimum fixed pay, local-residency restriction and current student eligibility.",
+      "disposition": "unresolved",
+      "reason": "Exact Aperions advert is full-time, fresher/intern ambiguous, INR7–12k/month, Surat candidates only. It is not a verified eligible internship at Gujarat floor.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-ae57d5bbe0799d",
+      "sourceUrl": "https://wellfound.com/jobs/5126930-junior-ui-ux-designer",
+      "title": "Junior UI/UX Designer at CredX • Hyderabad | Wellfound",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "disposition": "unresolved",
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-489489384fe1c2",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=0bd3b6429ce89f4a",
+      "title": "UI/UX and Graphics Designer Intern - Ahmedabad, Gujarat - Indeed.com",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Recheck only for a new verified stipend at or above floor.",
+      "disposition": "excluded",
+      "reason": "Indeed exact WebEarl internship header is up to INR8k/month, below Gujarat10k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-c53324902fac4f",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=d46cfa9c8a3a5802",
+      "title": "UI/UX Design Intern - Bengaluru, Karnataka - Indeed.com",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Only reconsider on a verified new paid/no-fee employer intake.",
+      "disposition": "excluded",
+      "reason": "Exact normal Indeed explicitly expired and body/questions say unpaid3–6months despite INR14–16k/month header. Do not recommend or treat header as paid stipend.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-a4c38b7fc93f5e",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=4733669d725a112f",
+      "title": "UI/UX Intern - Bangalore City, Bengaluru, Karnataka - Indeed.com",
+      "checkedAt": "2026-11-22",
+      "nextAction": "No paid-floor recommendation without a new verified stipend.",
+      "disposition": "excluded",
+      "reason": "Normal exact Fortune Group UI/UX internship lists INR3–5k/month Bangalore, below15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-1e788189a0e688",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=8116055f489fee15",
+      "title": "UX/UI design Interns - Remote - Indeed.com",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Confirm paid/no-fee stipend at least INR10,000/month, preferably15,000+, India remote eligibility, qualification/student acceptance, current intake and joining. Ask the actual internship duration separately; do not treat3–6months experience as the placement length.",
+      "disposition": "feed",
+      "jobId": "indeed-techolution-ux-design-intern-8116055f489fee15",
+      "reason": "Exact retained role/source matched by stable URL or established crosspost. One card only; listing/current eligibility caveats retained.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-c2720aa08dd089",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=5bce55ea5a3e57c2",
+      "title": "UI/UX Designer Intern - Remote - Indeed.com",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Recheck only for a new verified stipend.",
+      "disposition": "excluded",
+      "reason": "Normal Accemberg India-remote internship lists INR1–3k/month, below10k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-37be3bb32b21fb",
+      "sourceUrl": "https://peerlist.io/company/scrobits/careers/uiux-designer/jobh8oeeaoj7opda837mkner6kb86m",
+      "title": "UI/UX Designer at Scrobits Technologies",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a verified new eligible stipend or explicitly approved remoteIndia arrangement.",
+      "disposition": "excluded",
+      "reason": "Readable employer careers/Peerlist UI/UX internship lists INR10k/month hybrid Pune, below the revised15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-796d5c737838bb",
+      "sourceUrl": "https://jobs.scrobits.com/",
+      "title": "Scrobits Technologies Careers and Jobs",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a verified new eligible stipend or explicitly approved remoteIndia arrangement.",
+      "disposition": "excluded",
+      "reason": "Readable employer careers/Peerlist UI/UX internship lists INR10k/month hybrid Pune, below the revised15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-9b0623fd1eb4a8",
+      "sourceUrl": "https://peerlist.io/company/scrobits/careers/uiux-designer/jobh8oeeaoj7opda837mkner6kb86m?jobType=Internship",
+      "title": "UI/UX Designer at Scrobits Technologies",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a verified new eligible stipend or explicitly approved remoteIndia arrangement.",
+      "disposition": "excluded",
+      "reason": "Readable employer careers/Peerlist UI/UX internship lists INR10k/month hybrid Pune, below the revised15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-b30fa5fe82b306",
+      "sourceUrl": "https://wellfound.com/jobs/5130402-ui-ux-designer",
+      "title": "UI/UX Designer at CredxHire • Hyderabad | Wellfound",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Confirm whether internships/projects satisfy the1–3year requirement, current student/full-time eligibility and joining. Verify the exact salary and which related requisition is current; review visual/motion/handoff expectations before attempting the48-hour challenge.",
+      "disposition": "feed",
+      "jobId": "wellfound-credxhire-uiux-5130402",
+      "reason": "Exact retained role/source matched by stable URL or established crosspost. One card only; listing/current eligibility caveats retained.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-1ca4de1db3a3e9",
+      "sourceUrl": "https://wellfound.com/jobs/4967226-junior-ui-ux-desginer",
+      "title": "Junior UI/UX desginer at CredX • Hyderabad | Wellfound",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Review the company source and exact advertised role; verify current intake, location, level and pay before promotion.",
+      "disposition": "watchlist",
+      "companyId": "credxhire",
+      "reason": "Known company/role research source; not independent proof of an additional eligible opening.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-f613a72616ed44",
+      "sourceUrl": "https://peerlist.io/company/scrobits/careers/ui--ux-designer/jobhnn7egobbgeq7jinpj8opq6e8pl",
+      "title": "UI / UX Designer at Scrobits Technologies",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a verified new eligible stipend or explicitly approved remoteIndia arrangement.",
+      "disposition": "excluded",
+      "reason": "Readable employer careers/Peerlist UI/UX internship lists INR10k/month hybrid Pune, below the revised15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-361b477700a376",
+      "sourceUrl": "https://hopincareers.com/jobs/ui-ux-designer-intern-scrobits-technologies-4e25387b",
+      "title": "UI/UX Designer Intern at ScroBits, Pune | Hopin Careers",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a verified new eligible stipend or explicitly approved remoteIndia arrangement.",
+      "disposition": "excluded",
+      "reason": "Readable employer careers/Peerlist UI/UX internship lists INR10k/month hybrid Pune, below the revised15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-19ca950abfa046",
+      "sourceUrl": "https://peerlist.io/company/scrobits/careers/uiux-designer/jobhnn6errabpenmk1o6abkmgjbdgq",
+      "title": "UI/UX Designer at Scrobits Technologies",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a verified new eligible stipend or explicitly approved remoteIndia arrangement.",
+      "disposition": "excluded",
+      "reason": "Readable employer careers/Peerlist UI/UX internship lists INR10k/month hybrid Pune, below the revised15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-baf2ea4eab14ae",
+      "sourceUrl": "https://peerlist.io/company/scrobits",
+      "title": "Scrobits Technologies | Peerlist Company Profile",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a verified new eligible stipend or explicitly approved remoteIndia arrangement.",
+      "disposition": "excluded",
+      "reason": "Readable employer careers/Peerlist UI/UX internship lists INR10k/month hybrid Pune, below the revised15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-8df9c9572c0b46",
+      "sourceUrl": "https://www.signalhire.com/companies/scrobits-technologies",
+      "title": "Scrobits Technologies Information | SignalHire Company Profile",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a verified new eligible stipend or explicitly approved remoteIndia arrangement.",
+      "disposition": "excluded",
+      "reason": "Readable employer careers/Peerlist UI/UX internship lists INR10k/month hybrid Pune, below the revised15k floor.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-75b571ad51ef6e",
+      "sourceUrl": "https://wellfound.com/jobs/5126930-ui-ux-designer",
+      "title": "UI/UX Designer at CredX • Hyderabad | Wellfound",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Review the company source and exact advertised role; verify current intake, location, level and pay before promotion.",
+      "disposition": "watchlist",
+      "companyId": "credxhire",
+      "reason": "Known company/role research source; not independent proof of an additional eligible opening.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-3bcd3f680b6bde",
+      "sourceUrl": "https://www.shine.com/jobs/ui-ux-designer-trainee/webential/19864934",
+      "title": "UI/UX Designer - Trainee Job in Webential at Ahmedabad - Shine.com",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Verify the exact trainee vacancy with the official careers route, fixed salary, paid/no-fee employment terms, Ahmedabad/remote arrangement, student eligibility and joining before treating this as a current opportunity. Do not interpret an aggregator refresh as a new cohort.",
+      "disposition": "feed",
+      "jobId": "shine-webential-uiux-trainee-19864934",
+      "reason": "Exact retained role/source matched by stable URL or established crosspost. One card only; listing/current eligibility caveats retained.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-51bc28127c3451",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=dd5d86affe937da3",
+      "title": "Trainee UI/UX Designer - Ahmedabad, Gujarat - Indeed.com",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Confirm this exact new advert still recruits, enrolled-student/full-time eligibility, joining and whether the preferred 2025/26 pass-out condition is flexible. Verify salary and probation terms; do not revive either archived Indeed advert.",
+      "disposition": "feed",
+      "jobId": "indeed-moontechnolabs-trainee-uiux-dd5d86affe937da3",
+      "reason": "Exact retained role/source matched by stable URL or established crosspost. One card only; listing/current eligibility caveats retained.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-b4408a480ff7a6",
+      "sourceUrl": "https://people.binated.com/careers/01a11a1c-e6ef-7b69-9642-9e6178cc0a88",
+      "title": "Open role · Binated",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Confirm a renewed original employer requisition and distinguish new cohort from old closing date.",
+      "disposition": "unresolved",
+      "reason": "Indexed exact employer advert says closes30October2026; normal page is a fetching shell. Recent LinkedIn/mirror observations do not establish renewed original intake.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-3b76ccacf68aa7",
+      "sourceUrl": "https://esparkinfo.zohorecruit.in/jobs/Careers/10040000015572001/",
+      "title": "eSparkBiz Technologies Pvt Ltd - UI/UX Designer(Q3 - 2026) Fresher in Ahmedabad",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Trace the exact employer role, country, level, current intake, compensation and eligibility before recommending.",
+      "disposition": "unresolved",
+      "reason": "Plausible keyword match in a bounded public discovery corpus. Exact current intake, country, role level and pay were not fully verified in this pass; not an active recommendation.",
+      "recheckAfter": "2026-11-23",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-15a4c21d808dfc",
+      "sourceUrl": "https://jobs.lever.co/Smile.io/acd4b6c0-a872-4bb4-9153-eef83065003a",
+      "title": "Smile.io - Junior Product Designer",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a distinct employer role explicitly open to India.",
+      "disposition": "excluded",
+      "reason": "Normal employer Lever detail explicitly considers only Canada-based applicants, despite remote labels elsewhere. CAD85–95k is an annual Canadian salary, not India stipend.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-fc8b8e55252b9e",
+      "sourceUrl": "https://jobs.lever.co/Smile.io/acd4b6c0-a872-4bb4-9153-eef83065003a/apply",
+      "title": "Smile.io - Junior Product Designer",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Reconsider only for a distinct employer role explicitly open to India.",
+      "disposition": "excluded",
+      "reason": "Normal employer Lever detail explicitly considers only Canada-based applicants, despite remote labels elsewhere. CAD85–95k is an annual Canadian salary, not India stipend.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
+    },
+    {
+      "id": "discovery-332921cc3a20ed",
+      "sourceUrl": "https://thewholetruthfoods.keka.com/careers/jobdetails/88593",
+      "title": "UI/UX Design Intern",
+      "checkedAt": "2026-11-22",
+      "nextAction": "Resolve paid versus Unpaid metadata conflict first; exclude if unpaid is confirmed. Confirm current Keka88593 intake, exact eligible office city (Unstop previously said in-office), fixed stipend at least INR15,000/month for Mumbai, duration, student eligibility and joining before the required audit. Do not assume PanIndia means remote.",
+      "disposition": "feed",
+      "jobId": "careers-wholetruth-uiux-design-intern-88593",
+      "reason": "Exact retained role/source matched by stable URL or established crosspost. One card only; listing/current eligibility caveats retained.",
+      "evidenceStatus": "Public research lead/disposition, not a received offer"
     }
-  ]
+  ],
+  "history": [
+    {
+      "checkedAt": "2026-11-22",
+      "suppliedKeywordMatches": 767,
+      "accounted": 767,
+      "unresolved": 403,
+      "limits": "Only supplied receipt text and the declared sample are audited. A pass is accounting, not vacancy verification, full source coverage or a no-missed-jobs guarantee."
+    }
+  ],
+  "latestAudit": {
+    "checkedAt": "2026-11-22",
+    "passed": true,
+    "candidateCount": 767,
+    "accountedCount": 767,
+    "unresolvedCount": 403,
+    "receiptErrors": [],
+    "omittedCandidates": 0,
+    "sampleOnly": false,
+    "limits": "Only supplied receipt text and the declared sample are audited. A pass is accounting, not vacancy verification, full source coverage or a no-missed-jobs guarantee."
+  }
 }

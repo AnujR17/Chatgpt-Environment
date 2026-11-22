@@ -8,6 +8,16 @@ Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The p
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
+## 22 November independent research tracks — publication pending
+
+Five new on-hold cards: junior Moon Technolabs (15–18k INR/month employment salary), CredXHire (3–5lakh INR/year;1–3years stretch) and aggregated Webential trainee (salary unknown); internships Techolution (remote, stipend unknown) and The Whole Truth employer88593 (Salary Not Disclosed versus Unpaid metadata, exact office city unresolved). No new confirmed monthly internship stipend match. Older expired Moon adverts remain archived. [Full report](public/data/collection-report.md).
+
+158retained/127active-held/31archived;107internships and20junior roles;325companies. Three new directory profiles:CredXHire,Webential,Kovra; Kovra's remote junior role lacks India country permission and stays awareness only. Existing company tiers/contacts and requirement IDs preserved.
+
+94plan+48adaptive searches executed independently across both tracks;767supplied keyword matches accounted,403unresolved including noise,not767vacancies or full web coverage. All27prior pending public-ledger records retried;35of54coverage rows checked today. Naukri listing robots restriction/empty search,Internshala blocked detail search andX restricted public search remain explicit. No new eligible social-only original within8–22November verified.
+
+Supported workbook/CSV regenerated. Preservation audit,5JavaScript test files,15Python tests,Vite build and local desktop/mobile category/company checks pass. Synthetic saved progress,blacklist,private assessment and backup/restore preserved. Existing Sources narrow-screen overflow remains (662px at390/320),while Discover/Companies fit;no UI changes in this research refresh. Production verification follows after exact topic-branch publication.
+
 ## Separate jobs UI — 21 November 2026
 
 The Discover view now separates Internships and Junior / fresher roles, with category buttons, counts and grouped results. The current retained active/held feed contains 105 internships and 17 junior roles; these are existing records, not new openings. Category selection synchronizes the role-type filter, status tabs and source counts. Internship stipend guidance remains separate from junior salary units. Unknown custom role types retain a review section.
