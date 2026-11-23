@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-22",
+  "researchedAt": "2026-11-23",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -12063,7 +12063,7 @@
       "payNote": "No stipend stated. Certificate/mentorship are not evidence of pay.",
       "payConfidence": "Unconfirmed",
       "currentOpeningVerified": false,
-      "researchedAt": "2026-11-22",
+      "researchedAt": "2026-11-23",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
@@ -12105,6 +12105,12 @@
           "label": "22 November independent-track research",
           "checkedAt": "2026-11-22",
           "evidenceStatus": "22November normal exact employer-linked form explicitly no longer accepts responses, although careers/home still say open. Existing company-only pending status retained; no new active internship or employer-wide closure inferred."
+        },
+        {
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScLOwa6O_McDXujdHTrDAmGE-MTUgyVhcUMI2_1h3BVWyhTDA/viewform",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "23November exact employer-linked form remains no longer accepting responses while generic careers advert says open. Pending company-only status retained; no current paid student cohort inferred."
         }
       ],
       "roles": [
@@ -18409,7 +18415,7 @@
       "rationale": "Product/design/research work andstudent route fit the directory scope. Editable qualitative preference;no hiring probability or quality guarantee.",
       "careersUrl": "https://www.insiderone.in/companies/insiderone-ai",
       "locationNote": "Remote,anywhere in India.",
-      "openingStatus": "1 specific six-month design/research internship advert(s),40–60kINR/month;current joining confirmation needed.",
+      "openingStatus": "Two distinct retained employer adverts: UXResearch and UI/UXDesign, six months remoteIndia,40–60k/month stated;current cohort/joining and actual headcount require confirmation.",
       "currentOpeningVerified": true,
       "payNote": "Explicit role adverts40–60kINR/month for six-month internships. Listing evidence only;written offer/startnotconfirmed.",
       "payConfidence": "Explicit advertised monthly range;not offer/intake acceptance",
@@ -18418,7 +18424,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-22",
+      "researchedAt": "2026-11-23",
       "sources": [
         {
           "url": "https://www.insiderone.in/jobs/ux-research-intern-at-insiderone-ai-remote-5e98ec57-34a6-4dfe-9382-71fdeb9d46d8",
@@ -18437,6 +18443,12 @@
           "label": "22 November independent-track research",
           "checkedAt": "2026-11-22",
           "evidenceStatus": "22November normal related User Research Intern advert states40–60kINR/month, six months full-time, remote anywhereIndia, students/recent graduates and no application/training/joining fee. Related Bengaluru UXResearch advert limits residence to nearBengaluru. These are source-specific employer adverts, not verified extra headcount or proof existing cohort renewed. Current joining and employer terms require confirmation."
+        },
+        {
+          "url": "https://www.insiderone.in/jobs/ui-ux-design-intern-at-insiderone-ai-remote-ef26d395-21ef-4ecc-a18e-167935bae08e",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal exact employer/platform advert ef26d395 names UI/UX Design Intern: paid full-time six months,remote anywhereIndia,INR40,000–60,000/month,students/recent graduates,0–1year. Visible terms and MONTH metadata agree. Responsibilities are screen design,usability testing,flow improvement and consistency,with a reasoning portfolio andFigma. This is distinct from retained UXResearch5e98ec57 and its research-focused requirements; no duplicate research card or additional headcount inferred. Platform date31October2026 and apply-by27January2027 retained; discovered23November,not freshly posted. Current joining/cohort and actual contract remain unconfirmed. Platform/employer verified labels are self-reported,not independent audits. Account/application gate not accessed; no fees to apply/train/join are stated."
         }
       ],
       "roles": [
@@ -18476,6 +18488,38 @@
             "confidence": "High for explicit advertised amount/unit;not a received offer",
             "note": "Role-body and structured units agree;current cohort and written terms to confirm."
           }
+        },
+        {
+          "id": "insiderone-uiux-design-intern-ef26d395",
+          "jobId": "insiderone-uiux-design-intern-ef26d395",
+          "title": "UI/UX Design Intern",
+          "seniority": "Internship; current employment/cohort eligibility unconfirmed",
+          "url": "https://www.insiderone.in/jobs/ui-ux-design-intern-at-insiderone-ai-remote-ef26d395-21ef-4ecc-a18e-167935bae08e",
+          "location": "Remote, anywhere in India",
+          "requirements": [
+            {
+              "id": "67f8fb18c5e1",
+              "text": "Students/recent graduates,0–1year; six-month full-time engagement",
+              "sourceUrl": "https://www.insiderone.in/jobs/ui-ux-design-intern-at-insiderone-ai-remote-ef26d395-21ef-4ecc-a18e-167935bae08e"
+            },
+            {
+              "id": "7c6b7833efcf",
+              "text": "Portfolio explaining UI/UX reasoning and confident Figma use",
+              "sourceUrl": "https://www.insiderone.in/jobs/ui-ux-design-intern-at-insiderone-ai-remote-ef26d395-21ef-4ecc-a18e-167935bae08e"
+            },
+            {
+              "id": "5ded42b39eea",
+              "text": "Design interfaces,run usability checks and improve confusing flows",
+              "sourceUrl": "https://www.insiderone.in/jobs/ui-ux-design-intern-at-insiderone-ai-remote-ef26d395-21ef-4ecc-a18e-167935bae08e"
+            },
+            {
+              "id": "6298c1645cd2",
+              "text": "Keep designs consistent and communicate observations accurately",
+              "sourceUrl": "https://www.insiderone.in/jobs/ui-ux-design-intern-at-insiderone-ai-remote-ef26d395-21ef-4ecc-a18e-167935bae08e"
+            }
+          ],
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal exact employer/platform advert ef26d395 names UI/UX Design Intern: paid full-time six months,remote anywhereIndia,INR40,000–60,000/month,students/recent graduates,0–1year. Visible terms and MONTH metadata agree. Responsibilities are screen design,usability testing,flow improvement and consistency,with a reasoning portfolio andFigma. This is distinct from retained UXResearch5e98ec57 and its research-focused requirements; no duplicate research card or additional headcount inferred. Platform date31October2026 and apply-by27January2027 retained; discovered23November,not freshly posted. Current joining/cohort and actual contract remain unconfirmed. Platform/employer verified labels are self-reported,not independent audits. Account/application gate not accessed; no fees to apply/train/join are stated."
         }
       ],
       "contact": {
@@ -18488,6 +18532,15 @@
       "aliases": [
         "insiderOne AI",
         "Aurist Private Limited"
+      ],
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-22",
+          "supersededAt": "2026-11-23",
+          "fields": {
+            "openingStatus": "1 specific six-month design/research internship advert(s),40–60kINR/month;current joining confirmation needed."
+          }
+        }
       ]
     },
     {
@@ -19084,7 +19137,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-20",
+      "researchedAt": "2026-11-23",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/4829685-ui-ux-designer-intern",
@@ -19097,6 +19150,12 @@
           "label": "20 November discovery follow-up",
           "checkedAt": "2026-11-20",
           "evidenceStatus": "Exact indexed employer-platform body explicitly six-month unpaid internship. No feed card added despite remoteIndia title/header. Generic employer branding does not override unpaid terms."
+        },
+        {
+          "url": "https://wellfound.com/jobs/4829685-ui-ux-designer-intern",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "23November normal exact advert explicitly six-month unpaid remote UI/UX internship. Retain below-floor/unpaid research; no paid card."
         }
       ],
       "roles": [
@@ -22991,7 +23050,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-22",
+      "researchedAt": "2026-11-23",
       "sources": [
         {
           "url": "https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp",
@@ -23028,6 +23087,12 @@
           "label": "22 November normal exact Unstop recheck",
           "checkedAt": "2026-11-22",
           "evidenceStatus": "22November normal exact Unstop1812322/amp again shows Salary Not Disclosed, full-time in-office5days and29November00:00IST deadline; structured salary remains Unpaid/YEAR, platform date15November2026. Employer Keka88593 indexed detail does not resolve paid status, current cohort or exact office city. Keep on_hold with explicit negative compensation conflict; not a confirmed paid opportunity."
+        },
+        {
+          "url": "https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "23November normal exact amp still exposes SalaryNotDisclosed versusUnpaid/YEAR metadata,in-office5days,29Novemberdeadline and15Novemberplatform date. Pay/location/cohort conflict unresolved; no paid stipend inferred from brand or indexed Keka description."
         }
       ],
       "roles": [
@@ -23640,7 +23705,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-21",
+      "researchedAt": "2026-11-23",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/5101358-product-designer-intern-ai-native-ui-ux",
@@ -23653,6 +23718,12 @@
           "label": "21 November public research",
           "checkedAt": "2026-11-21",
           "evidenceStatus": "Normal original still has Intern/noexperience header but founding-design remit and shipped SaaS portfolio in body; INR10–20k header lacks verified period. Bengaluru office, not remote. Existing directory-only conflict retained; no fresh eligible card or monthly stipend inferred."
+        },
+        {
+          "url": "https://wellfound.com/jobs/5101358-product-designer-intern-ai-native-ui-ux",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "23November normal exact Wellfound header says Internship/no experience/10–20kINR without visible period, but body calls it founding ProductDesigner with shipped SaaS portfolio,end-to-end design-system andAI agent ownership. A matching Broxer mirror calls10–20k/month; not original-unit confirmation and10k minimum belowBengaluru15k. Keep directory-only compensation/seniority conflict,no active internship inferred."
         }
       ],
       "roles": [
@@ -24463,7 +24534,7 @@
         "UX Designer"
       ],
       "likelyRolesEvidence": "Inferred future families,not vacancies.",
-      "researchedAt": "2026-11-22",
+      "researchedAt": "2026-11-23",
       "aliases": [
         "Brahmaa.ai"
       ],
@@ -24523,6 +24594,12 @@
           "label": "22 November independent-track research",
           "checkedAt": "2026-11-22",
           "evidenceStatus": "22November name/alias/author queries executed for Brahmaverse AI,Brahmaa.ai,Fastor7 Technology and Abhinav Kumar Dwivedi. Old0–2year post12Octoberdeadline and separate4468586366 requiring3+years remain historical/out-of-scope; no new dated eligible post established. Search returned unrelated juniorSEO/business-development roles and personal activity, not a current design vacancy."
+        },
+        {
+          "url": "https://in.linkedin.com/in/abhinavbuilds",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "23November dated queries executed for Brahmaverse,Brahmaa.ai,Fastor7 andAbhinav. No current eligible design intake verified;12Octoberdeadline historical junior post and separate3+year4468586366 remain distinct. Indexed SEO/business development roles and unrelated same-name companies not design vacancies."
         }
       ],
       "roles": [
@@ -24966,7 +25043,7 @@
         "UX Researcher"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-22",
+      "researchedAt": "2026-11-23",
       "sources": [
         {
           "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
@@ -25009,6 +25086,12 @@
           "label": "22 November independent-track research",
           "checkedAt": "2026-11-22",
           "evidenceStatus": "22November indexed hiring-author copy remains months old, not a verified original post within8–22November. Normal Snapdeal mirror/form follow-up preserves prior expired-mirror/401 conflict; no current eligible NCR intake or geography exception inferred."
+        },
+        {
+          "url": "https://in.linkedin.com/in/prateek-dayal-b012b0220",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "23November dated named-author queries/indexed profile copy still show months-old hiring activity; no exact9–23November original eligible post verified. Normal mirror/form follow-up again returnsform401; mirror25k is not verified current eligible intake. Gurugram geography exception not inferred."
         }
       ],
       "roles": [
@@ -25311,17 +25394,265 @@
         "sourceUrl": "https://www.kovragroup.com/careers"
       },
       "website": "https://www.kovragroup.com/"
+    },
+    {
+      "id": "blueera-softech",
+      "name": "BlueEra Softech",
+      "company": "BlueEra Softech",
+      "companyType": "Services team",
+      "sector": "Software/product engineering, enterprise platforms and UX/UI services",
+      "focus": "Software/product engineering, enterprise platforms and UX/UI services",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and geography; not a hiring probability, workplace-quality verdict or received offer.",
+      "careersUrl": "https://blueerasoftech.com/careers/",
+      "locationNote": "Vadodara, Gujarat; full-time on-site",
+      "openingStatus": "Exact employer advert readable; compensation,student employment and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical salary or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current offer; official listing terms only",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://blueerasoftech.com/careers/ui-ux-designer/",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal exact employer UI/UX Designer page and careers index advertise Vadodara full-time on-site, experience Open for all and explicitly welcome freshers with strong portfolio/tool knowledge. It lists design orComputerScience/related qualification,UX/HCI training,web/mobile/SaaS portfolio,Figma or similar,visual tools,responsive design,accessibility,research anddeveloper handoff. Salary,original posting date andjoining window are unstated. Exact public application form is visible and names the HR manager; no form/CAPTCHA completed. General contact addresses are not guessed recruitment emails. Published employer promises are not an independent workplace-quality assessment."
+        },
+        {
+          "url": "https://blueerasoftech.com/careers/",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal official careers index also lists UI/UX Designer. Apply form is public,not submitted; no salary or current student/joining confirmation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-blueera-softech-uiux-designer",
+          "jobId": "careers-blueera-softech-uiux-designer",
+          "title": "UI/UX Designer — freshers welcome",
+          "seniority": "Junior / fresher; current employment/cohort eligibility unconfirmed",
+          "url": "https://blueerasoftech.com/careers/ui-ux-designer/",
+          "location": "Vadodara, Gujarat; full-time on-site",
+          "requirements": [
+            {
+              "id": "e212a920cbdb",
+              "text": "Freshers welcomed; design/ComputerScience/related qualification or UX/HCI training",
+              "sourceUrl": "https://blueerasoftech.com/careers/ui-ux-designer/"
+            },
+            {
+              "id": "77d32a739596",
+              "text": "Strong portfolio of web/mobile/SaaS UI/UX work",
+              "sourceUrl": "https://blueerasoftech.com/careers/ui-ux-designer/"
+            },
+            {
+              "id": "62aa0207a8fe",
+              "text": "Figma or similar,visual tools,responsive and accessible interface design",
+              "sourceUrl": "https://blueerasoftech.com/careers/ui-ux-designer/"
+            },
+            {
+              "id": "41add83c9604",
+              "text": "Research,prototyping and developer-ready design handoff",
+              "sourceUrl": "https://blueerasoftech.com/careers/ui-ux-designer/"
+            }
+          ],
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal exact employer UI/UX Designer page and careers index advertise Vadodara full-time on-site, experience Open for all and explicitly welcome freshers with strong portfolio/tool knowledge. It lists design orComputerScience/related qualification,UX/HCI training,web/mobile/SaaS portfolio,Figma or similar,visual tools,responsive design,accessibility,research anddeveloper handoff. Salary,original posting date andjoining window are unstated. Exact public application form is visible and names the HR manager; no form/CAPTCHA completed. General contact addresses are not guessed recruitment emails. Published employer promises are not an independent workplace-quality assessment."
+        }
+      ],
+      "contact": {
+        "url": "https://blueerasoftech.com/careers/",
+        "kind": "Published employer careers/application route; no message or submission",
+        "sourceUrl": "https://blueerasoftech.com/careers/"
+      },
+      "website": "https://blueerasoftech.com/"
+    },
+    {
+      "id": "we3vision",
+      "name": "We3vision",
+      "company": "We3vision",
+      "companyType": "Services team",
+      "sector": "Digital product services, UX/UI, web/mobile, AI and immersive experiences",
+      "focus": "Digital product services, UX/UI, web/mobile, AI and immersive experiences",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and geography; not a hiring probability, workplace-quality verdict or received offer.",
+      "careersUrl": "https://we3vision.com/careers",
+      "locationNote": "Surat, Gujarat; full-time on-site,1–3years requested",
+      "openingStatus": "Exact employer advert readable; compensation,student employment and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical salary or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current offer; official listing terms only",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://we3vision.com/careers/ui-ux-designer",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal exact We3vision UI/UX Designer page lists one full-time on-site Surat opening,1–3years,with a visible application form and published HR-purpose contact. Work includes user flows,wireframes,Figma interfaces/design systems,prototyping,testing anddeveloper review. Requires portfolio,Figma,visual fundamentals and explanation of decisions. Salary/student employment/joining unstated. Visible Posted5weeksago is relative,not an exact original timestamp or new cohort. Careers index separately lists a generic student/fresher Intern role with a design-team option; that does not establish a second specific UI/UX vacancy or stipend."
+        },
+        {
+          "url": "https://we3vision.com/careers/intern",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Generic Intern advert: students/freshers choose web/mobile/AI/design/3D/marketing team,on-site Surat,one opening,mentor and real project. Salary andduration unstated; exact UI/UX track/current placement not established. Awareness only,not a named UI/UX internship or second job card."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-we3vision-uiux-designer",
+          "jobId": "careers-we3vision-uiux-designer",
+          "title": "UI/UX Designer — 1–3 years stretch",
+          "seniority": "Junior / fresher; current employment/cohort eligibility unconfirmed",
+          "url": "https://we3vision.com/careers/ui-ux-designer",
+          "location": "Surat, Gujarat; full-time on-site,1–3years requested",
+          "requirements": [
+            {
+              "id": "b05d6c521af4",
+              "text": "1–3years requested; not guaranteed fresher eligibility",
+              "sourceUrl": "https://we3vision.com/careers/ui-ux-designer"
+            },
+            {
+              "id": "fcc742e5e5c0",
+              "text": "Web/app portfolio and strong Figma skills",
+              "sourceUrl": "https://we3vision.com/careers/ui-ux-designer"
+            },
+            {
+              "id": "9dad3695bb4c",
+              "text": "User flows,wireframes,design systems and prototypes",
+              "sourceUrl": "https://we3vision.com/careers/ui-ux-designer"
+            },
+            {
+              "id": "5fdf476b7ba1",
+              "text": "Visual fundamentals,design rationale and developer collaboration",
+              "sourceUrl": "https://we3vision.com/careers/ui-ux-designer"
+            }
+          ],
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal exact We3vision UI/UX Designer page lists one full-time on-site Surat opening,1–3years,with a visible application form and published HR-purpose contact. Work includes user flows,wireframes,Figma interfaces/design systems,prototyping,testing anddeveloper review. Requires portfolio,Figma,visual fundamentals and explanation of decisions. Salary/student employment/joining unstated. Visible Posted5weeksago is relative,not an exact original timestamp or new cohort. Careers index separately lists a generic student/fresher Intern role with a design-team option; that does not establish a second specific UI/UX vacancy or stipend."
+        },
+        {
+          "id": "we3vision-generic-intern-design-option",
+          "title": "Intern — design team option, UX track unconfirmed",
+          "seniority": "Generic student/fresher internship; awareness only",
+          "url": "https://we3vision.com/careers/intern",
+          "location": "Surat,on-site",
+          "requirements": [
+            {
+              "id": "d96286dd5d1d",
+              "text": "Student or fresher interested in technology/design",
+              "sourceUrl": "https://we3vision.com/careers/intern"
+            },
+            {
+              "id": "6d0ed607ed76",
+              "text": "Basic knowledge of chosen team and ability to work from Surat office",
+              "sourceUrl": "https://we3vision.com/careers/intern"
+            }
+          ],
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Generic Intern advert: students/freshers choose web/mobile/AI/design/3D/marketing team,on-site Surat,one opening,mentor and real project. Salary andduration unstated; exact UI/UX track/current placement not established. Awareness only,not a named UI/UX internship or second job card."
+        }
+      ],
+      "contact": {
+        "email": "hr@we3vision.com",
+        "url": "https://we3vision.com/careers/ui-ux-designer",
+        "kind": "HR questions/application contact explicitly published on employer role",
+        "sourceUrl": "https://we3vision.com/careers/ui-ux-designer"
+      },
+      "website": "https://we3vision.com/"
+    },
+    {
+      "id": "corpswell",
+      "name": "Corpswell",
+      "company": "Corpswell",
+      "companyType": "Services team",
+      "sector": "Web/software,e-commerce and digital design services",
+      "focus": "Web/software,e-commerce and digital design services",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and geography; not a hiring probability, workplace-quality verdict or received offer.",
+      "careersUrl": "https://corpswell.com/career/",
+      "locationNote": "Chennai, Tamil Nadu; sampled fresher role explicitly applications closed",
+      "openingStatus": "Exact UI/UX Designer fresher advert explicitly DeadlineClosed/ApplicationsClosed. Historical company awareness only; no active job card.",
+      "currentOpeningVerified": false,
+      "payNote": "Closed advert labels Avg.Salary4–5LPA; historical employer-page average,not a current salary offer or stipend.",
+      "payConfidence": "Limited historical closed advert; no current compensation established",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-23",
+      "sources": [
+        {
+          "url": "https://corpswell.com/career/ui-ux-designer/",
+          "label": "23 November public research",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal exact Corpswell UI/UX fresher advert says Chennai,0–1year/full-time but explicitly DeadlineClosed andApplicationsClosed. Avg.Salary4–5LPA is a closed-page average,not a current offer. Retain as employer research only. Generic Ongoing date/careers listing does not override explicit exact-role closure."
+        }
+      ],
+      "roles": [
+        {
+          "id": "corpswell-uiux-designer-fresher-closed",
+          "title": "UI/UX Designer (Fresher) — applications closed",
+          "seniority": "Historical fresher employment; closed original",
+          "url": "https://corpswell.com/career/ui-ux-designer/",
+          "location": "Chennai",
+          "checkedAt": "2026-11-23",
+          "evidenceStatus": "Normal exact Corpswell UI/UX fresher advert says Chennai,0–1year/full-time but explicitly DeadlineClosed andApplicationsClosed. Avg.Salary4–5LPA is a closed-page average,not a current offer. Retain as employer research only. Generic Ongoing date/careers listing does not override explicit exact-role closure.",
+          "requirements": [
+            {
+              "id": "d224841b5808",
+              "text": "Recent graduate/fresher with UI/UX interest",
+              "sourceUrl": "https://corpswell.com/career/ui-ux-designer/"
+            },
+            {
+              "id": "01d895d03382",
+              "text": "Basic Figma/AdobeXD/Sketch and user-centred design",
+              "sourceUrl": "https://corpswell.com/career/ui-ux-designer/"
+            },
+            {
+              "id": "74a3c4aba6b6",
+              "text": "Academic/personal/internship portfolio preferred",
+              "sourceUrl": "https://corpswell.com/career/ui-ux-designer/"
+            },
+            {
+              "id": "074685687831",
+              "text": "Communication,feedback iteration and basic HTML/CSS helpful",
+              "sourceUrl": "https://corpswell.com/career/ui-ux-designer/"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "url": "https://corpswell.com/career/",
+        "kind": "Published employer careers/application route; no message or submission",
+        "sourceUrl": "https://corpswell.com/career/"
+      }
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-22",
+    "researchedAt": "2026-11-23",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 325,
+    "directoryCount": 328,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 21,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local.",
-    "lastResearchRefresh": "2026-11-22"
+    "lastResearchRefresh": "2026-11-23"
   }
 }

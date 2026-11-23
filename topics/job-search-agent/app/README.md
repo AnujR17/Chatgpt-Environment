@@ -8,6 +8,17 @@ Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The p
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
+## 23 November independent research — publication pending
+
+Three new held cards: `insiderone-uiux-design-intern-ef26d395` (remote India, employer/platform INR40–60k/month, six months, original31 October/current joining unconfirmed), `careers-blueera-softech-uiux-designer` (Vadodara, explicitly freshers welcome, salary unknown), and `careers-we3vision-uiux-designer` (Surat,1–3year stretch, salary unknown). New BlueEra/We3vision Workable and Corpswell Possible profiles. Corpswell exact original explicitly closed; historical4–5LPA average not current salary. We3vision generic design-team internship stays company-only, exact UX/pay/cohort unknown. No duplicate research card inferred from insiderOne's distinct advert. No received offer, guaranteed eligibility or employer-quality verdict.
+
+161 retained/130 active-held/31 archived;108 internships/22 junior;328 companies,4810 source records,54 coverage rows. All158 prior roles and prior company/source/pay/requirement histories retained;0 retired. All126 eligible retained primary URLs attempted:108 responses including shells,14 restricted,3 missing,1 error. Inaccessible YTT/Falcon/Pixelarc and Esperlife/Predigle timeout are unresolved, not closures. UFT2–5year contract, Taali toy design/conditional pay, AVYAM/Opportune unpaid, Potenz5k/LearniLMfrom1/Linescripts5–10k and expired Parqis excluded. Variabl level/pay conflict remains company-only. Snapdeal/Brahmaverse aliases/authors rechecked without inferring renewed eligible intake.
+
+94 planned+40 adaptive queries actually executed, discovery first and independent tracks. Social original window9–23 November; no eligible newly dated social-only original verified. Public Naukri/Internshala/X restrictions explicit.36 of54 coverage rows updated. Discovery accounting PASS734 keyword matches/383 unresolved including noise, not vacancies or internet recall. All20 prior pending URLs retried;89 public ledger entries with24 November unresolved actions. Actual receipts/HTML/decisions/QA outside Git: `/workspace/job-refresh-nov23/`. No incidental CV/profile/contact noise or private applicant data published. No UI, localStorage schema, assistant, task or schedule changes; no applications/messages.
+
+Supported Excel/CSV regenerated:161 roles,328 companies,891 requirements,4810 sources and54 coverage rows. Preservation audit,5 JavaScript test files,15 Python tests and build PASS. Local browser category and company checks PASS, including320/390/1440 Discover layouts, original salary units, synthetic saved applications, notes, private evidence and blacklist/backup restoration. No submissions. Existing Sources mobile overflow545px at390/320 remains; Discover/Companies fit. Exact topic-commit production publication remains pending; a push is not live verification.
+
+
 ## 22 November independent research tracks — published
 
 Five new on-hold cards: junior Moon Technolabs (15–18k INR/month employment salary), CredXHire (3–5lakh INR/year;1–3years stretch) and aggregated Webential trainee (salary unknown); internships Techolution (remote, stipend unknown) and The Whole Truth employer88593 (Salary Not Disclosed versus Unpaid metadata, exact office city unresolved). No new confirmed monthly internship stipend match. Older expired Moon adverts remain archived. [Full report](public/data/collection-report.md).

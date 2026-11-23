@@ -1,47 +1,47 @@
-# Design jobs research — 22 November 2026
+# Design jobs research — 23 November 2026
 
-Two independent research tracks ran in the existing task. The existing UI, schedule and browser-local state were not changed. All five new cards are on hold; public advertisements are not received offers.
-
-## Junior / fresher employment
-
-| Employer / source | Listing compensation | Verification / next action |
-| --- | --- | --- |
-| [Moon Technolabs — Indeed dd5d86affe937da3](https://in.indeed.com/viewjob?jk=dd5d86affe937da3) | INR15,000–18,000/month employment salary | Normal exact detail and application route readable; Ahmedabad, fresher/0–1year, full-time. Bachelor/2025–26 pass-out preference needs clarification, as do student eligibility and joining. Two other salary-undisclosed trainee IDs are related research, not extra headcount or transferable salary. Older expired trainee45ad3491be217187 and intern eaa533209a303dc0 stay archived. |
-| [CredXHire — Wellfound5130402](https://wellfound.com/jobs/5130402-ui-ux-designer) | INR3–5lakh/year | Visible range and YEAR metadata agree. Hyderabad in-office;1–3years is a stretch requirement, not guaranteed fresher intake. Strong UI/motion/Figma/handoff expectations and a48-hour challenge. Clarify experience, current-student employment and joining before applying. Related4967226 shows3–4lakh/year;5126930 has no salary. These are not three verified headcounts. |
-| [Webential — Shine19864934](https://www.shine.com/jobs/ui-ux-designer-trainee/webential/19864934) | Undisclosed | Shine explicitly says externally aggregated; Ahmedabad full-time trainee. Official careers page readable without exact requisition. NextRaise's3September/remote/internship wording conflicts with Shine. Confirm employer intake, paid/no-fee salary, work mode and student eligibility. Mirror refreshes do not renew original publication. |
-
-These salaries retain their advertised periods; payMin/payMax remain null because they are employment salaries, not internship stipends.
+Independent Internships and Junior / fresher tracks ran in the existing task. Three new cards are on hold; listing compensation is not a received offer. No UI, schedule or browser-local state changes.
 
 ## Internships
 
-| Employer / source | Listing pay | Verification / next action |
+[insiderOne — UI/UX Design Intern](https://www.insiderone.in/jobs/ui-ux-design-intern-at-insiderone-ai-remote-ef26d395-21ef-4ecc-a18e-167935bae08e): exact public employer/platform advert states **INR40,000–60,000/month**, six months full-time, remote anywhere in India, students/recent graduates and0–1year. Visible pay and MONTH metadata agree. Requires a reasoning portfolio, Figma, interface design and usability checks. Original platform date **31 October2026**, apply-by27 January2027; discovered23 November, not newly posted. This design advert differs from retained research-oriented5e98ec57; no extra research card or headcount inferred. Confirm the current cohort, joining, fixed stipend and contract before applying. Platform self-verification is not an independent employer audit; account/application gate not entered.
+
+We3vision's generic [Intern](https://we3vision.com/careers/intern) advert includes a design-team option for students/freshers in Surat. Exact UX/UI slot, pay, duration and cohort are unknown: company-directory research only, not a specific UX internship card.
+
+Ungrammary historical10–12k/month could meet the revised remote10k floor only after current remote cohort/pay confirmation. It remains below Mumbai15k; graduate/no-academic-placement language and separate annual-pay evidence persist. No pay transferred or converted.
+
+## Junior / fresher employment
+
+| Employer / original source | Compensation | Verification and next action |
 | --- | --- | --- |
-| [Techolution — Indeed8116055f489fee15](https://in.indeed.com/viewjob?jk=8116055f489fee15) | Undisclosed | Normal exact remote internship detail readable; three openings advertised. The3–6month wording is requested experience, not placement duration. Confirm India country eligibility, paid/no-fee stipend, actual duration, design qualification/student acceptance and joining. Historical company pay reports are separate, not a current offer. |
-| [The Whole Truth Foods — employer Keka88593](https://thewholetruthfoods.keka.com/careers/jobdetails/88593) | Compensation conflict | Indexed employer UX/analytics intern description; normal Keka robots-restricted. Normal [Unstop1812322/amp](https://unstop.com/internships/uiux-internship-the-whole-truth-1812322/amp) shows Salary Not Disclosed but structured Unpaid/YEAR. Paid status is unestablished. In-office5days/PanIndia metadata does not establish a qualifying city or remote permission.29November00:00IST deadline and15November platform date retained. Resolve pay/location/student intake before the required mobile-site design audit. Existing directory role and requirement IDs preserved; employer and board evidence combined. |
+| [BlueEra Softech — UI/UX Designer](https://blueerasoftech.com/careers/ui-ux-designer/) | Undisclosed | Official detail and careers index readable; Vadodara full-time on-site, explicitly welcomes freshers. Design/CS/related qualification or UX/HCI training, strong web/mobile/SaaS portfolio, Figma or similar, research, accessibility and handoff. Confirm current intake, fixed salary, student/full-time eligibility and joining. Public form not submitted. |
+| [We3vision — UI/UX Designer](https://we3vision.com/careers/ui-ux-designer) | Undisclosed | Official detail advertises one Surat on-site full-time opening and1–3years, a stretch rather than guaranteed fresher eligibility. Portfolio, Figma, flows, prototypes, design systems and developer collaboration. Confirm experience interpretation, salary, student eligibility and joining. Relative Posted5weeksago retained without inventing an exact date. Published HR-purpose contact retained; no contact made. |
 
-No new verified monthly internship stipend match. Gujarat/approved India-remote floor remains10k/month, preferring15k+; other eligible office cities15k/month. Ungrammary's historical10–12k could clear the remote floor only after current remote cohort/pay approval; graduate/no-academic-placement wording and annual-pay conflict remain.
+Employment salary remains in original units when actually stated; payMin/payMax for both junior cards remain null. No salary benchmark invented from brand or other roles.
 
-## Exclusions and retained evidence
+## Exclusions and pending evidence
 
-- GoKreativ: normal Indeed explicitly expired; body/questions describe an unpaid3–6month placement despite14–16k/month header. Excluded.
-- RegisCommunity: exact employer says unpaid. Scrobits hybrid Pune10k, WebEarl Gujarat<=8k, Fortune Bengaluru3–5k and Accemberg remote1–3k fall below internship floors.
-- Nngtw: careers still says open, but its exact linked Google form no longer accepts responses. Company-only pending evidence retained. RevRag's careers index still labels the internship Closed; archived role stays archived.
-- Figma exact requisition is SanFrancisco/NewYork; Deltek is US-Herndon/Tampa. Smile.io's employer Lever explicitly accepts Canada-based applicants only, despite remote/category labels. No India eligibility inferred.
-- Snapdeal author posts remain months old; mirror expiry and exact form401 conflict persist. Brahmaverse/Brahmaa.ai/Fastor7/Abhinav checks found no newly dated eligible design intake. Old12October deadline and separate3+year role stay distinct. No all-NCR expansion.
-- No newly verified employer closure among retained active cards this pass. YTT404/Falcon410 are unresolved availability checks, not company-closure claims. All31 archived records remain.
+- Corpswell's [exact Chennai fresher advert](https://corpswell.com/career/ui-ux-designer/) explicitly says Deadline Closed / Applications Closed. Added Possible company awareness only, no active job. Its Avg.Salary4–5LPA is a closed-page average, not current compensation.
+- UFT Bengaluru Junior UX contract asks2–5years; not a fresher match despite title. TaaliToys indexed internship is physical/toy design with partial sales-contingent remuneration; normal LinkedIn restricted. Neither added.
+- Variabl Wellfound5101358 intern/no-experience header conflicts with founding/full-time/shipped-SaaS duties and an unstated original pay period. A monthly10–20k mirror does not verify units;10k is below Bengaluru15k. Directory-only conflict retained.
+- AVYAM six-month internship and Opportune research programme explicitly unpaid. Potenz Ahmedabad5k, LearniLM remote fromINR1 and Linescripts5–10k/month are below applicable floors. Parqis exact Indeed expired. No active cards added.
+- JustJi pages are a CV/talent pool, explicitly not employer vacancies. No vacancy inferred from membership, matching forms or category counts.
+- Nngtw linked form still closed; RevRag careers still marks the internship Closed. WholeTruth pay-undisclosed versus Unpaid/YEAR and office-city conflict remains unresolved, not a verified paid opportunity.
+- Snapdeal authors remain months old; mirror expiry/form401 conflict persists. Brahmaverse/Brahmaa.ai/Fastor7/Abhinav checks did not verify a new eligible intake; old12 October deadline and distinct3+year4468586366 stay separate. No all-NCR exception inferred.
+- No reliable new employer closure established among retained active cards. YTT404, Falcon410, Pixelarc404 and Esperlife/Predigle timeout remain unresolved availability checks, not closure claims.31 archived records retained.
 
 ## Company directory
 
-New CredXHire and Webential Workable suggestions, and Kovra Possible awareness target. Kovra's exact remote junior web/CRO role welcomes study/personal projects, but country permission and salary are absent; no India-eligible vacancy inferred. Existing Moon, Techolution, WholeTruth, Nngtw, RevRag, InsiderOne, Snapdeal and Brahmaverse evidence expanded/rechecked. Suggestions are editable preferences, not workplace endorsements or hiring probabilities. Existing tiers, contacts, salary history and stable requirements retained.
+New BlueEra and We3vision Workable suggestions, with official role requirements and application/contact purpose. New Corpswell Possible awareness profile explicitly records closed original evidence. These editable preferences do not assess workplace quality or hiring probability. Existing tiers, sources, contacts, pay history, stable role/requirement IDs and browser-local override compatibility preserved. InsiderOne's two distinct adverts are labelled with cohort/headcount uncertainty.
 
 ## Actual coverage and limits
 
-94 versioned plan queries and48 adaptive queries executed, discovery before fixed-target conclusions. Dedicated junior queries were independent of internship discovery. LinkedIn Posts/company Updates/author searches and X checks used8–22November original-publication window; no new eligible social-only post with a verified original date within14days. Crawl/edit/repost/firstSeen labels did not reset age.
+94 versioned plan queries and40 adaptive queries executed; broad discovery preceded fixed-target conclusions. Junior and internship queries were independent. Targeted public samples covered Indeed, Naukri, Cutshort, Unstop, Internshala, Instahyre, Wellfound, YC/Work at a Startup, six remote boards, Hacker News, Prosple, Peerlist, Hirist, Foundit, Apna, Shine, Freshersworld, AICTE and startup maps. Query count is not a completeness guarantee.
 
-Targeted public samples covered Indeed, Naukri, Cutshort, Unstop, Internshala, Instahyre, Wellfound, YC/WorkatAStartup, six remote boards, HackerNews, Prosple, Peerlist, Hirist, Foundit, Apna, Shine, Freshersworld, AICTE and startup directories. Naukri listing search is robots-blocked and normal search returned no readable content; Internshala detail search is blocked. X normal public search is restricted. One transient HireDesigners query error succeeded on retry; actual receipts retained outside Git. Restricted or unsearched feeds do not mean no openings.
+LinkedIn Posts/company Updates/founder/design-lead/recruiter and X searches used9–23 November original-publication window. Onething, HireDesigners and rotating studios checked separately from job listings. No new eligible social-only post verified within14days; crawl/edit/repost/firstSeen did not renew age. Public index access is not authenticated access. Naukri listing search and Internshala detail search restricted; normal Naukri search empty and X search robots-restricted. Restricted feeds do not mean no openings.
 
-121 retained active primaries attempted:106 public responses including shells,13 restricted,2 missing. Fetch access is not revalidation of every role term.35 of54 coverage rows checked today; older rows retain their dates. The current HackerNews thread was fetched and21 design keyword contexts sampled, not every external vacancy followed.
+126 retained active primary URLs attempted:108 public responses including shells,14 restricted,3 missing,1 error. This is access checking, not every-term revalidation.36 of54 coverage rows updated; other dates retained. Current Hacker News thread fetched and bounded design-keyword contexts reviewed, not every external role followed.
 
-Discovery audit accounts for767 keyword matches in supplied receipts;403 remain unresolved, including incidental profiles, noise and unverified listings. This is accounting, not767 vacancies, completed employer checks or exhaustive internet recall. All27 prior pending ledger records received normal URL/index retries. The public ledger now retains78 relevant records; unrelated CVs/profiles/contact aggregates stay outside Git. Due unresolved actions are dated23November. Further bounded checks remain necessary.
+Discovery accounting PASS:734 keyword matches in supplied actual receipts,383 unresolved including incidental profiles/noise/unverified listings. This is not734 vacancies or exhaustive internet recall. All20 prior pending ledger URLs normally retried;89 relevant public ledger records retained with24 November next-check actions where unresolved. Irrelevant personal CVs/profiles/contact aggregates and raw tool receipts remain outside Git.
 
-Feed:158 retained roles,127 active/held (107 internships,20 junior/fresher),31 archived;325 companies. New:2 internship cards,3 junior cards,3 companies. Retired:0. Supported Excel and directory CSV regenerated. Production publication must be verified separately against the exact commit and live bytes.
+Feed:161 retained roles,130 active/held (108 internships,22 junior/fresher),31 archived;328 companies. New:1 internship,2 junior cards,3 companies. Retired:0. Supported Excel/Company directory/Role requirements and CSV regenerated. Exact production publication and live bytes require separate verification.
