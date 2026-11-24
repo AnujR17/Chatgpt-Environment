@@ -2,7 +2,7 @@
 
 Updated 23 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
 
-## 23 November independent research — publication pending
+## 23 November independent research — published
 
 Three new held cards: `insiderone-uiux-design-intern-ef26d395` (remote India, employer/platform INR40–60k/month, six months, original31 October/current joining unconfirmed), `careers-blueera-softech-uiux-designer` (Vadodara, explicitly freshers welcome, salary unknown), and `careers-we3vision-uiux-designer` (Surat,1–3year stretch, salary unknown). New BlueEra/We3vision Workable and Corpswell Possible profiles. Corpswell exact original explicitly closed; historical4–5LPA average not current salary. We3vision generic design-team internship stays company-only, exact UX/pay/cohort unknown. No duplicate research card inferred from insiderOne's distinct advert. No received offer, guaranteed eligibility or employer-quality verdict.
 
@@ -10,7 +10,7 @@ Three new held cards: `insiderone-uiux-design-intern-ef26d395` (remote India, em
 
 94 planned+40 adaptive queries actually executed, discovery first and independent tracks. Social original window9–23 November; no eligible newly dated social-only original verified. Public Naukri/Internshala/X restrictions explicit.36 of54 coverage rows updated. Discovery accounting PASS734 keyword matches/383 unresolved including noise, not vacancies or internet recall. All20 prior pending URLs retried;89 public ledger entries with24 November unresolved actions. Actual receipts/HTML/decisions/QA outside Git: `/workspace/job-refresh-nov23/`. No incidental CV/profile/contact noise or private applicant data published. No UI, localStorage schema, assistant, task or schedule changes; no applications/messages.
 
-Supported Excel/CSV regenerated:161 roles,328 companies,891 requirements,4810 sources and54 coverage rows. Preservation audit,5 JavaScript test files,15 Python tests and build PASS. Local browser category and company checks PASS, including320/390/1440 Discover layouts, original salary units, synthetic saved applications, notes, private evidence and blacklist/backup restoration. No submissions. Existing Sources mobile overflow545px at390/320 remains; Discover/Companies fit. Exact topic-commit production publication remains pending; a push is not live verification.
+Supported Excel/CSV regenerated:161 roles,328 companies,891 requirements,4810 sources and54 coverage rows. Preservation audit,5 JavaScript test files,15 Python tests and build PASS. Local browser category and company checks PASS, including320/390/1440 Discover layouts, original salary units, synthetic saved applications, notes, private evidence and blacklist/backup restoration. No submissions. Existing Sources mobile overflow545px at390/320 remains; Discover/Companies fit. Production READY on exact data commit `437ed44c4600326bbb8122ebbecdf7860b2c1e53`, deployment `dpl_AiiouTqdvEJJ9ty7g9ZFSUqCVMWN`, existing project/account/topic branch and live alias verified23 November. All ten public feed/export/watchlist/query-plan/ledger files returned HTTP200 and byte-identical content. Live320/390/1440 category and synthetic saved-progress/blacklist/notes regression PASS; no submissions. Protection unchanged; default authenticated scope, no teamId. One explicit production deployment; verification-only documentation needs no redeploy.
 
 ## 22 November two-track research — published
 
