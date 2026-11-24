@@ -1,11 +1,11 @@
 {
   "version": 1,
   "workflowVersion": 3,
-  "generatedFor": "2026-11-23",
+  "generatedFor": "2026-11-24",
   "timezone": "Asia/Kolkata",
   "kind": "Research query plan — not search results",
   "maxSocialPostAgeDays": 14,
-  "socialPublicationCutoff": "2026-11-09",
+  "socialPublicationCutoff": "2026-11-10",
   "roleTracksEffectiveFrom": "2026-11-22",
   "roleTracks": [
     "Junior / fresher",
@@ -21,10 +21,10 @@
       "query": "\"product design intern\" hiring",
       "searchUrl": "https://www.google.com/search?q=%22product+design+intern%22+hiring",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.557Z",
+      "checkedAt": "2026-11-24T01:32:52.995Z",
       "receiptBatch": "discovery-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -34,10 +34,10 @@
       "query": "\"UX research intern\" hiring India",
       "searchUrl": "https://www.google.com/search?q=%22UX+research+intern%22+hiring+India",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.557Z",
+      "checkedAt": "2026-11-24T01:32:52.995Z",
       "receiptBatch": "discovery-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -47,10 +47,10 @@
       "query": "\"UI UX\" (trainee OR apprentice) India hiring",
       "searchUrl": "https://www.google.com/search?q=%22UI+UX%22+%28trainee+OR+apprentice%29+India+hiring",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Cross-track discovery",
-      "checkedAt": "2026-11-23T01:27:51.557Z",
+      "checkedAt": "2026-11-24T01:32:52.995Z",
       "receiptBatch": "discovery-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -60,10 +60,10 @@
       "query": "(\"product design\" OR \"UX research\") (intern OR internship) (referral OR PPO)",
       "searchUrl": "https://www.google.com/search?q=%28%22product+design%22+OR+%22UX+research%22%29+%28intern+OR+internship%29+%28referral+OR+PPO%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.557Z",
+      "checkedAt": "2026-11-24T01:32:52.995Z",
       "receiptBatch": "discovery-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -73,27 +73,27 @@
       "query": "(\"product design intern\" OR \"UX research intern\") (\"forms.gle\" OR \"docs.google.com/forms\")",
       "searchUrl": "https://www.google.com/search?q=%28%22product+design+intern%22+OR+%22UX+research+intern%22%29+%28%22forms.gle%22+OR+%22docs.google.com%2Fforms%22%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:51.559Z",
       "receiptBatch": "discovery-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "discovery-linkedin-simple",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"product design intern\" after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22product+design+intern%22+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"product design intern\" after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22product+design+intern%22+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:51.559Z",
       "receiptBatch": "discovery-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -103,10 +103,10 @@
       "query": "(\"product design intern\" OR \"UI/UX intern\" OR \"UX design intern\") (careers OR hiring) (India OR remote) -site:linkedin.com -site:myinternships.in",
       "searchUrl": "https://www.google.com/search?q=%28%22product+design+intern%22+OR+%22UI%2FUX+intern%22+OR+%22UX+design+intern%22%29+%28careers+OR+hiring%29+%28India+OR+remote%29+-site%3Alinkedin.com+-site%3Amyinternships.in",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:51.559Z",
       "receiptBatch": "discovery-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -116,10 +116,10 @@
       "query": "(\"design intern\" OR \"junior UX designer\") (studio OR SaaS OR startup) (careers OR \"join us\") (India OR remote)",
       "searchUrl": "https://www.google.com/search?q=%28%22design+intern%22+OR+%22junior+UX+designer%22%29+%28studio+OR+SaaS+OR+startup%29+%28careers+OR+%22join+us%22%29+%28India+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:51.559Z",
       "receiptBatch": "discovery-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -129,10 +129,10 @@
       "query": "(\"UI/UX\" OR \"product design\") (intern OR fresher OR \"0–2\") (Gandhinagar OR Ahmedabad OR Vadodara OR Surat) (careers OR hiring)",
       "searchUrl": "https://www.google.com/search?q=%28%22UI%2FUX%22+OR+%22product+design%22%29+%28intern+OR+fresher+OR+%220%E2%80%932%22%29+%28Gandhinagar+OR+Ahmedabad+OR+Vadodara+OR+Surat%29+%28careers+OR+hiring%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:55.485Z",
       "receiptBatch": "discovery-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -142,61 +142,61 @@
       "query": "(\"UX intern\" OR \"product design intern\") (Pune OR Mumbai OR Hyderabad OR Bengaluru OR Chennai OR Goa OR Kerala) careers",
       "searchUrl": "https://www.google.com/search?q=%28%22UX+intern%22+OR+%22product+design+intern%22%29+%28Pune+OR+Mumbai+OR+Hyderabad+OR+Bengaluru+OR+Chennai+OR+Goa+OR+Kerala%29+careers",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:55.485Z",
       "receiptBatch": "discovery-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "discovery-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ (\"UI/UX\" OR UIUX OR \"product design\") (intern OR fresher OR \"0–2 years\") (hiring OR portfolio) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22UI%2FUX%22+OR+UIUX+OR+%22product+design%22%29+%28intern+OR+fresher+OR+%220%E2%80%932+years%22%29+%28hiring+OR+portfolio%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ (\"UI/UX\" OR UIUX OR \"product design\") (intern OR fresher OR \"0–2 years\") (hiring OR portfolio) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22UI%2FUX%22+OR+UIUX+OR+%22product+design%22%29+%28intern+OR+fresher+OR+%220%E2%80%932+years%22%29+%28hiring+OR+portfolio%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Cross-track discovery",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:55.485Z",
       "receiptBatch": "discovery-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "discovery-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ (\"design intern\" OR \"UX intern\") (founder OR recruiter OR \"design lead\" OR \"send me\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22design+intern%22+OR+%22UX+intern%22%29+%28founder+OR+recruiter+OR+%22design+lead%22+OR+%22send+me%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ (\"design intern\" OR \"UX intern\") (founder OR recruiter OR \"design lead\" OR \"send me\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22design+intern%22+OR+%22UX+intern%22%29+%28founder+OR+recruiter+OR+%22design+lead%22+OR+%22send+me%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:55.485Z",
       "receiptBatch": "discovery-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "discovery-x-posts",
       "platform": "X",
-      "query": "site:x.com (\"UI/UX\" OR UIUX OR \"product designer\") (intern OR junior OR fresher) (hiring OR portfolio) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%28%22UI%2FUX%22+OR+UIUX+OR+%22product+designer%22%29+%28intern+OR+junior+OR+fresher%29+%28hiring+OR+portfolio%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com (\"UI/UX\" OR UIUX OR \"product designer\") (intern OR junior OR fresher) (hiring OR portfolio) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%28%22UI%2FUX%22+OR+UIUX+OR+%22product+designer%22%29+%28intern+OR+junior+OR+fresher%29+%28hiring+OR+portfolio%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Cross-track discovery",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:54.345Z",
       "receiptBatch": "discovery-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -206,10 +206,10 @@
       "query": "(site:jobs.lever.co OR site:jobs.ashbyhq.com OR site:boards.greenhouse.io) (\"design intern\" OR \"UX intern\") (India OR remote)",
       "searchUrl": "https://www.google.com/search?q=%28site%3Ajobs.lever.co+OR+site%3Ajobs.ashbyhq.com+OR+site%3Aboards.greenhouse.io%29+%28%22design+intern%22+OR+%22UX+intern%22%29+%28India+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:54.345Z",
       "receiptBatch": "discovery-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -219,10 +219,10 @@
       "query": "(site:wellfound.com/jobs OR site:cutshort.io/job OR site:in.indeed.com/viewjob) (\"design intern\" OR \"junior UX\") (India OR remote)",
       "searchUrl": "https://www.google.com/search?q=%28site%3Awellfound.com%2Fjobs+OR+site%3Acutshort.io%2Fjob+OR+site%3Ain.indeed.com%2Fviewjob%29+%28%22design+intern%22+OR+%22junior+UX%22%29+%28India+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Cross-track discovery",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:54.345Z",
       "receiptBatch": "discovery-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -232,10 +232,10 @@
       "query": "(\"UI/UX\" OR \"product design\") (intern OR junior) (\"parent company\" OR \"formerly\" OR \"part of\") hiring",
       "searchUrl": "https://www.google.com/search?q=%28%22UI%2FUX%22+OR+%22product+design%22%29+%28intern+OR+junior%29+%28%22parent+company%22+OR+%22formerly%22+OR+%22part+of%22%29+hiring",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Cross-track discovery",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:32:54.345Z",
       "receiptBatch": "discovery-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -245,10 +245,10 @@
       "query": "\"junior product designer\" (India OR remote) hiring",
       "searchUrl": "https://www.google.com/search?q=%22junior+product+designer%22+%28India+OR+remote%29+hiring",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Junior / fresher",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:33:16.872Z",
       "receiptBatch": "discovery-16",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -258,10 +258,10 @@
       "query": "\"junior UX designer\" India careers",
       "searchUrl": "https://www.google.com/search?q=%22junior+UX+designer%22+India+careers",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Junior / fresher",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:33:16.872Z",
       "receiptBatch": "discovery-16",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -271,10 +271,10 @@
       "query": "\"UI/UX designer\" (fresher OR trainee) (India OR remote)",
       "searchUrl": "https://www.google.com/search?q=%22UI%2FUX+designer%22+%28fresher+OR+trainee%29+%28India+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Junior / fresher",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:33:16.872Z",
       "receiptBatch": "discovery-16",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -284,10 +284,10 @@
       "query": "(site:jobs.lever.co OR site:jobs.ashbyhq.com OR site:boards.greenhouse.io) (\"junior designer\" OR \"associate designer\") India",
       "searchUrl": "https://www.google.com/search?q=%28site%3Ajobs.lever.co+OR+site%3Ajobs.ashbyhq.com+OR+site%3Aboards.greenhouse.io%29+%28%22junior+designer%22+OR+%22associate+designer%22%29+India",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Junior / fresher",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:33:16.872Z",
       "receiptBatch": "discovery-16",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -297,10 +297,10 @@
       "query": "(site:wellfound.com/jobs OR site:cutshort.io/job OR site:in.indeed.com/viewjob) (junior OR fresher) (UX OR \"product design\") India",
       "searchUrl": "https://www.google.com/search?q=%28site%3Awellfound.com%2Fjobs+OR+site%3Acutshort.io%2Fjob+OR+site%3Ain.indeed.com%2Fviewjob%29+%28junior+OR+fresher%29+%28UX+OR+%22product+design%22%29+India",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Junior / fresher",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
+      "checkedAt": "2026-11-24T01:33:18.304Z",
       "receiptBatch": "discovery-20",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -310,96 +310,96 @@
       "query": "site:naukri.com/job-listings (junior OR fresher) (UX OR \"product designer\")",
       "searchUrl": "https://www.google.com/search?q=site%3Anaukri.com%2Fjob-listings+%28junior+OR+fresher%29+%28UX+OR+%22product+designer%22%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Junior / fresher",
-      "checkedAt": "2026-11-23T01:27:51.558Z",
-      "receiptBatch": "discovery-20",
+      "checkedAt": "2026-11-24T01:33:52.492Z",
+      "receiptBatch": "boards-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "junior-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ (\"junior product designer\" OR \"junior UX designer\" OR \"UIUX fresher\") hiring after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22junior+product+designer%22+OR+%22junior+UX+designer%22+OR+%22UIUX+fresher%22%29+hiring+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ (\"junior product designer\" OR \"junior UX designer\" OR \"UIUX fresher\") hiring after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22junior+product+designer%22+OR+%22junior+UX+designer%22+OR+%22UIUX+fresher%22%29+hiring+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Junior / fresher",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:27:51.558Z",
-      "receiptBatch": "discovery-20",
+      "checkedAt": "2026-11-24T01:34:51.811Z",
+      "receiptBatch": "targets-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "junior-x-posts",
       "platform": "X",
-      "query": "site:x.com (\"junior product designer\" OR \"junior UX designer\" OR \"UIUX fresher\") hiring after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%28%22junior+product+designer%22+OR+%22junior+UX+designer%22+OR+%22UIUX+fresher%22%29+hiring+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com (\"junior product designer\" OR \"junior UX designer\" OR \"UIUX fresher\") hiring after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%28%22junior+product+designer%22+OR+%22junior+UX+designer%22+OR+%22UIUX+fresher%22%29+hiring+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Junior / fresher",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:27:51.558Z",
-      "receiptBatch": "discovery-20",
+      "checkedAt": "2026-11-24T01:34:51.811Z",
+      "receiptBatch": "targets-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "linkedin-posts-broad",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ (\"product design intern\" OR \"UX intern\" OR \"interaction design intern\") (hiring OR internship) (India OR Ahmedabad OR Bengaluru OR Mumbai OR remote) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22product+design+intern%22+OR+%22UX+intern%22+OR+%22interaction+design+intern%22%29+%28hiring+OR+internship%29+%28India+OR+Ahmedabad+OR+Bengaluru+OR+Mumbai+OR+remote%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ (\"product design intern\" OR \"UX intern\" OR \"interaction design intern\") (hiring OR internship) (India OR Ahmedabad OR Bengaluru OR Mumbai OR remote) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%28%22product+design+intern%22+OR+%22UX+intern%22+OR+%22interaction+design+intern%22%29+%28hiring+OR+internship%29+%28India+OR+Ahmedabad+OR+Bengaluru+OR+Mumbai+OR+remote%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:28:48.543Z",
-      "receiptBatch": "boards-0",
+      "checkedAt": "2026-11-24T01:34:51.811Z",
+      "receiptBatch": "targets-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "linkedin-updates-broad",
       "platform": "LinkedIn updates",
-      "query": "site:linkedin.com/feed/update/ (\"design intern\" OR \"UX internship\") (India OR remote) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Ffeed%2Fupdate%2F+%28%22design+intern%22+OR+%22UX+internship%22%29+%28India+OR+remote%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/feed/update/ (\"design intern\" OR \"UX internship\") (India OR remote) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Ffeed%2Fupdate%2F+%28%22design+intern%22+OR+%22UX+internship%22%29+%28India+OR+remote%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:28:48.543Z",
-      "receiptBatch": "boards-0",
+      "checkedAt": "2026-11-24T01:34:51.811Z",
+      "receiptBatch": "targets-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "x-posts-broad",
       "platform": "X",
-      "query": "site:x.com (\"product design intern\" OR \"UX intern\" OR \"design internship\") (hiring OR portfolio) (India OR remote) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%28%22product+design+intern%22+OR+%22UX+intern%22+OR+%22design+internship%22%29+%28hiring+OR+portfolio%29+%28India+OR+remote%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com (\"product design intern\" OR \"UX intern\" OR \"design internship\") (hiring OR portfolio) (India OR remote) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%28%22product+design+intern%22+OR+%22UX+intern%22+OR+%22design+internship%22%29+%28hiring+OR+portfolio%29+%28India+OR+remote%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:28:48.543Z",
-      "receiptBatch": "boards-0",
+      "checkedAt": "2026-11-24T01:34:54.157Z",
+      "receiptBatch": "targets-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -408,10 +408,10 @@
       "query": "site:naukri.com/job-listings (\"UX\" OR \"product design\") (intern OR internship) (Ahmedabad OR Gandhinagar OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Anaukri.com%2Fjob-listings+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28Ahmedabad+OR+Gandhinagar+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.543Z",
+      "checkedAt": "2026-11-24T01:33:52.492Z",
       "receiptBatch": "boards-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -421,11 +421,11 @@
       "query": "site:in.indeed.com/viewjob (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ain.indeed.com%2Fviewjob+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
-      "receiptBatch": "boards-4",
+      "checkedAt": "2026-11-24T01:33:52.492Z",
+      "receiptBatch": "boards-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -434,11 +434,11 @@
       "query": "site:wellfound.com/jobs (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Awellfound.com%2Fjobs+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
-      "receiptBatch": "boards-4",
+      "checkedAt": "2026-11-24T01:33:52.492Z",
+      "receiptBatch": "boards-0",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -447,10 +447,10 @@
       "query": "site:cutshort.io/job (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Acutshort.io%2Fjob+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
+      "checkedAt": "2026-11-24T01:33:53.646Z",
       "receiptBatch": "boards-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -460,10 +460,10 @@
       "query": "site:unstop.com/internships (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Aunstop.com%2Finternships+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
+      "checkedAt": "2026-11-24T01:33:53.646Z",
       "receiptBatch": "boards-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -473,11 +473,11 @@
       "query": "site:internshala.com/internship/detail (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ainternshala.com%2Finternship%2Fdetail+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
-      "receiptBatch": "boards-8",
+      "checkedAt": "2026-11-24T01:33:53.646Z",
+      "receiptBatch": "boards-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -486,11 +486,11 @@
       "query": "site:instahyre.com (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ainstahyre.com+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
-      "receiptBatch": "boards-8",
+      "checkedAt": "2026-11-24T01:33:53.646Z",
+      "receiptBatch": "boards-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -499,10 +499,10 @@
       "query": "site:in.prosple.com (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ain.prosple.com+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
+      "checkedAt": "2026-11-24T01:33:55.090Z",
       "receiptBatch": "boards-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -512,10 +512,10 @@
       "query": "site:hirist.tech (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ahirist.tech+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
+      "checkedAt": "2026-11-24T01:33:55.090Z",
       "receiptBatch": "boards-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -525,11 +525,11 @@
       "query": "site:foundit.in (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Afoundit.in+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
-      "receiptBatch": "boards-12",
+      "checkedAt": "2026-11-24T01:33:55.090Z",
+      "receiptBatch": "boards-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -538,11 +538,11 @@
       "query": "site:apna.co/job (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Aapna.co%2Fjob+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
-      "receiptBatch": "boards-12",
+      "checkedAt": "2026-11-24T01:33:55.090Z",
+      "receiptBatch": "boards-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -551,10 +551,10 @@
       "query": "site:shine.com/jobs (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Ashine.com%2Fjobs+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
+      "checkedAt": "2026-11-24T01:33:51.379Z",
       "receiptBatch": "boards-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -564,10 +564,10 @@
       "query": "site:peerlist.io/company (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Apeerlist.io%2Fcompany+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
+      "checkedAt": "2026-11-24T01:33:51.379Z",
       "receiptBatch": "boards-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
@@ -577,708 +577,708 @@
       "query": "site:freshersworld.com (\"UX\" OR \"product design\") (intern OR internship) (India OR Ahmedabad OR Gandhinagar OR Bengaluru OR remote)",
       "searchUrl": "https://www.google.com/search?q=site%3Afreshersworld.com+%28%22UX%22+OR+%22product+design%22%29+%28intern+OR+internship%29+%28India+OR+Ahmedabad+OR+Gandhinagar+OR+Bengaluru+OR+remote%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "boards",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:28:48.544Z",
-      "receiptBatch": "boards-16",
+      "checkedAt": "2026-11-24T01:33:51.379Z",
+      "receiptBatch": "boards-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "onething-design-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Onething Design\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Onething+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Onething Design\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Onething+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-0",
+      "checkedAt": "2026-11-24T01:34:54.157Z",
+      "receiptBatch": "targets-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "onething-design-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Onething Design\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Onething+Design%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"Onething Design\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Onething+Design%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-0",
+      "checkedAt": "2026-11-24T01:34:54.157Z",
+      "receiptBatch": "targets-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "onething-design-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Onething Design\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Onething+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Onething Design\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Onething+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-0",
+      "checkedAt": "2026-11-24T01:34:54.157Z",
+      "receiptBatch": "targets-4",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "onething-design-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Onething Design\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Onething+Design%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Onething Design\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Onething+Design%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-0",
+      "checkedAt": "2026-11-24T01:34:49.758Z",
+      "receiptBatch": "targets-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "hiredesigners-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"HireDesigners\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22HireDesigners%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"HireDesigners\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22HireDesigners%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-4",
+      "checkedAt": "2026-11-24T01:34:49.758Z",
+      "receiptBatch": "targets-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "hiredesigners-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"HireDesigners\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22HireDesigners%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"HireDesigners\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22HireDesigners%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-4",
+      "checkedAt": "2026-11-24T01:34:49.758Z",
+      "receiptBatch": "targets-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "hiredesigners-x-posts",
       "platform": "X",
-      "query": "site:x.com \"HireDesigners\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22HireDesigners%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"HireDesigners\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22HireDesigners%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-4",
+      "checkedAt": "2026-11-24T01:34:49.758Z",
+      "receiptBatch": "targets-8",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "hiredesigners-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"HireDesigners\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22HireDesigners%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"HireDesigners\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22HireDesigners%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-4",
+      "checkedAt": "2026-11-24T01:34:53.095Z",
+      "receiptBatch": "targets-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "devoq-design-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Devoq Design\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Devoq+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Devoq Design\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Devoq+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-8",
+      "checkedAt": "2026-11-24T01:34:53.095Z",
+      "receiptBatch": "targets-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "devoq-design-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Devoq Design\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Devoq+Design%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"Devoq Design\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Devoq+Design%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-8",
+      "checkedAt": "2026-11-24T01:34:53.095Z",
+      "receiptBatch": "targets-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "devoq-design-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Devoq Design\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Devoq+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Devoq Design\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Devoq+Design%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-8",
+      "checkedAt": "2026-11-24T01:34:53.095Z",
+      "receiptBatch": "targets-12",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "devoq-design-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Devoq Design\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Devoq+Design%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Devoq Design\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Devoq+Design%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-8",
+      "checkedAt": "2026-11-24T01:34:50.894Z",
+      "receiptBatch": "targets-16",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "lokal-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Lokal\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lokal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Lokal\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lokal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-12",
+      "checkedAt": "2026-11-24T01:34:50.894Z",
+      "receiptBatch": "targets-16",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "lokal-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Lokal\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Lokal%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"Lokal\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Lokal%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-12",
+      "checkedAt": "2026-11-24T01:34:50.894Z",
+      "receiptBatch": "targets-16",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "lokal-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Lokal\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Lokal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Lokal\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Lokal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-12",
+      "checkedAt": "2026-11-24T01:34:50.894Z",
+      "receiptBatch": "targets-16",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "lokal-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Lokal\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lokal%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Lokal\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lokal%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-12",
+      "checkedAt": "2026-11-24T01:34:48.624Z",
+      "receiptBatch": "targets-20",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "parallel-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Parallel\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Parallel%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Parallel\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Parallel%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-16",
+      "checkedAt": "2026-11-24T01:34:48.624Z",
+      "receiptBatch": "targets-20",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "parallel-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Parallel\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Parallel%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"Parallel\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Parallel%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-16",
+      "checkedAt": "2026-11-24T01:34:48.624Z",
+      "receiptBatch": "targets-20",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "parallel-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Parallel\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Parallel%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Parallel\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Parallel%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-16",
+      "checkedAt": "2026-11-24T01:34:48.624Z",
+      "receiptBatch": "targets-20",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "parallel-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Parallel\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Parallel%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Parallel\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Parallel%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-16",
+      "checkedAt": "2026-11-24T01:35:37.757Z",
+      "receiptBatch": "targets-24",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "netbramha-studios-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"NetBramha Studios\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22NetBramha+Studios%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"NetBramha Studios\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22NetBramha+Studios%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-20",
+      "checkedAt": "2026-11-24T01:35:37.757Z",
+      "receiptBatch": "targets-24",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "netbramha-studios-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"NetBramha Studios\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22NetBramha+Studios%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"NetBramha Studios\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22NetBramha+Studios%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-20",
+      "checkedAt": "2026-11-24T01:35:37.757Z",
+      "receiptBatch": "targets-24",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "netbramha-studios-x-posts",
       "platform": "X",
-      "query": "site:x.com \"NetBramha Studios\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22NetBramha+Studios%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"NetBramha Studios\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22NetBramha+Studios%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-20",
+      "checkedAt": "2026-11-24T01:35:37.757Z",
+      "receiptBatch": "targets-24",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "netbramha-studios-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"NetBramha Studios\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22NetBramha+Studios%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"NetBramha Studios\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22NetBramha+Studios%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-20",
+      "checkedAt": "2026-11-24T01:35:33.282Z",
+      "receiptBatch": "targets-28",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "lollypop-design-studio-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Lollypop Design Studio\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lollypop+Design+Studio%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Lollypop Design Studio\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lollypop+Design+Studio%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-24",
+      "checkedAt": "2026-11-24T01:35:33.282Z",
+      "receiptBatch": "targets-28",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "lollypop-design-studio-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Lollypop Design Studio\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Lollypop+Design+Studio%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"Lollypop Design Studio\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Lollypop+Design+Studio%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-24",
+      "checkedAt": "2026-11-24T01:35:33.282Z",
+      "receiptBatch": "targets-28",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "lollypop-design-studio-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Lollypop Design Studio\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Lollypop+Design+Studio%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Lollypop Design Studio\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Lollypop+Design+Studio%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-24",
+      "checkedAt": "2026-11-24T01:35:33.282Z",
+      "receiptBatch": "targets-28",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "lollypop-design-studio-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Lollypop Design Studio\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lollypop+Design+Studio%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Lollypop Design Studio\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Lollypop+Design+Studio%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:14.783Z",
-      "receiptBatch": "targets-a-24",
+      "checkedAt": "2026-11-24T01:35:29.949Z",
+      "receiptBatch": "targets-32",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "f1studioz-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"F1studioz\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22F1studioz%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"F1studioz\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22F1studioz%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.055Z",
-      "receiptBatch": "targets-b-0",
+      "checkedAt": "2026-11-24T01:35:29.949Z",
+      "receiptBatch": "targets-32",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "f1studioz-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"F1studioz\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22F1studioz%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"F1studioz\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22F1studioz%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.055Z",
-      "receiptBatch": "targets-b-0",
+      "checkedAt": "2026-11-24T01:35:29.949Z",
+      "receiptBatch": "targets-32",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "f1studioz-x-posts",
       "platform": "X",
-      "query": "site:x.com \"F1studioz\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22F1studioz%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"F1studioz\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22F1studioz%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.055Z",
-      "receiptBatch": "targets-b-0",
+      "checkedAt": "2026-11-24T01:35:29.949Z",
+      "receiptBatch": "targets-32",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "f1studioz-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"F1studioz\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22F1studioz%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"F1studioz\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22F1studioz%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.055Z",
-      "receiptBatch": "targets-b-0",
+      "checkedAt": "2026-11-24T01:35:32.200Z",
+      "receiptBatch": "targets-36",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "yuj-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"yuj\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22yuj%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"yuj\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22yuj%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-4",
+      "checkedAt": "2026-11-24T01:35:32.200Z",
+      "receiptBatch": "targets-36",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "yuj-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"yuj\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22yuj%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"yuj\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22yuj%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-4",
+      "checkedAt": "2026-11-24T01:35:32.200Z",
+      "receiptBatch": "targets-36",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "yuj-x-posts",
       "platform": "X",
-      "query": "site:x.com \"yuj\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22yuj%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"yuj\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22yuj%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-4",
+      "checkedAt": "2026-11-24T01:35:32.200Z",
+      "receiptBatch": "targets-36",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "yuj-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"yuj\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22yuj%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"yuj\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22yuj%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-4",
+      "checkedAt": "2026-11-24T01:35:34.380Z",
+      "receiptBatch": "targets-40",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Brahmaverse AI\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Brahmaverse+AI%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Brahmaverse AI\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Brahmaverse+AI%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-8",
+      "checkedAt": "2026-11-24T01:35:34.380Z",
+      "receiptBatch": "targets-40",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Brahmaverse AI\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Brahmaverse+AI%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"Brahmaverse AI\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Brahmaverse+AI%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-8",
+      "checkedAt": "2026-11-24T01:35:34.380Z",
+      "receiptBatch": "targets-40",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Brahmaverse AI\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Brahmaverse+AI%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Brahmaverse AI\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Brahmaverse+AI%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-8",
+      "checkedAt": "2026-11-24T01:35:34.380Z",
+      "receiptBatch": "targets-40",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Brahmaverse AI\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Brahmaverse+AI%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Brahmaverse AI\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Brahmaverse+AI%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-8",
+      "checkedAt": "2026-11-24T01:35:31.190Z",
+      "receiptBatch": "targets-44",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-alias-0-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Brahmaa.ai\" (\"UI/UX\" OR design) (intern OR junior OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Brahmaa.ai%22+%28%22UI%2FUX%22+OR+design%29+%28intern+OR+junior+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Brahmaa.ai\" (\"UI/UX\" OR design) (intern OR junior OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Brahmaa.ai%22+%28%22UI%2FUX%22+OR+design%29+%28intern+OR+junior+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-12",
+      "checkedAt": "2026-11-24T01:35:31.190Z",
+      "receiptBatch": "targets-44",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -1287,45 +1287,45 @@
       "query": "\"Brahmaa.ai\" (\"UI/UX\" OR \"product design\") (intern OR junior OR careers)",
       "searchUrl": "https://www.google.com/search?q=%22Brahmaa.ai%22+%28%22UI%2FUX%22+OR+%22product+design%22%29+%28intern+OR+junior+OR+careers%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-12",
+      "checkedAt": "2026-11-24T01:33:18.304Z",
+      "receiptBatch": "discovery-20",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-alias-0-x",
       "platform": "X",
-      "query": "site:x.com \"Brahmaa.ai\" (design OR UX) (intern OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Brahmaa.ai%22+%28design+OR+UX%29+%28intern+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Brahmaa.ai\" (design OR UX) (intern OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Brahmaa.ai%22+%28design+OR+UX%29+%28intern+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-12",
+      "checkedAt": "2026-11-24T01:35:31.190Z",
+      "receiptBatch": "targets-44",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-alias-1-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Fastor7 Technology\" (\"UI/UX\" OR design) (intern OR junior OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Fastor7+Technology%22+%28%22UI%2FUX%22+OR+design%29+%28intern+OR+junior+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Fastor7 Technology\" (\"UI/UX\" OR design) (intern OR junior OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Fastor7+Technology%22+%28%22UI%2FUX%22+OR+design%29+%28intern+OR+junior+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-12",
+      "checkedAt": "2026-11-24T01:35:31.190Z",
+      "receiptBatch": "targets-44",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
@@ -1334,147 +1334,147 @@
       "query": "\"Fastor7 Technology\" (\"UI/UX\" OR \"product design\") (intern OR junior OR careers)",
       "searchUrl": "https://www.google.com/search?q=%22Fastor7+Technology%22+%28%22UI%2FUX%22+OR+%22product+design%22%29+%28intern+OR+junior+OR+careers%29",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "discovery",
       "roleTrack": "Internships",
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-16",
+      "checkedAt": "2026-11-24T01:33:18.304Z",
+      "receiptBatch": "discovery-20",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-alias-1-x",
       "platform": "X",
-      "query": "site:x.com \"Fastor7 Technology\" (design OR UX) (intern OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Fastor7+Technology%22+%28design+OR+UX%29+%28intern+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Fastor7 Technology\" (design OR UX) (intern OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Fastor7+Technology%22+%28design+OR+UX%29+%28intern+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-16",
+      "checkedAt": "2026-11-24T01:35:36.654Z",
+      "receiptBatch": "targets-48",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "brahmaverse-ai-person-0-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Abhinav Kumar Dwivedi\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Abhinav+Kumar+Dwivedi%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Abhinav Kumar Dwivedi\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Abhinav+Kumar+Dwivedi%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-16",
+      "checkedAt": "2026-11-24T01:35:36.654Z",
+      "receiptBatch": "targets-48",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "snapdeal-linkedin-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Snapdeal\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Snapdeal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Snapdeal\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Snapdeal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-16",
+      "checkedAt": "2026-11-24T01:35:36.654Z",
+      "receiptBatch": "targets-48",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "snapdeal-linkedin-updates",
       "platform": "LinkedIn company updates",
-      "query": "site:linkedin.com/company/ \"Snapdeal\" (\"intern\" OR \"internship\") after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Snapdeal%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/company/ \"Snapdeal\" (\"intern\" OR \"internship\") after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Snapdeal%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-20",
+      "checkedAt": "2026-11-24T01:35:36.654Z",
+      "receiptBatch": "targets-48",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "snapdeal-x-posts",
       "platform": "X",
-      "query": "site:x.com \"Snapdeal\" (intern OR internship OR hiring) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Snapdeal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:x.com \"Snapdeal\" (intern OR internship OR hiring) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Snapdeal%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-20",
+      "checkedAt": "2026-11-24T01:35:35.326Z",
+      "receiptBatch": "targets-52",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "snapdeal-linkedin-authors",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Snapdeal\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Snapdeal%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Snapdeal\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Snapdeal%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-20",
+      "checkedAt": "2026-11-24T01:35:35.326Z",
+      "receiptBatch": "targets-52",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "snapdeal-person-0-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Navya Grover\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Navya+Grover%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Navya Grover\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Navya+Grover%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-20",
+      "checkedAt": "2026-11-24T01:35:35.326Z",
+      "receiptBatch": "targets-52",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     },
     {
       "id": "snapdeal-person-1-posts",
       "platform": "LinkedIn posts",
-      "query": "site:linkedin.com/posts/ \"Prateek Dayal\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-08 before:2026-11-24",
-      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Prateek+Dayal%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-08+before%3A2026-11-24",
+      "query": "site:linkedin.com/posts/ \"Prateek Dayal\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-09 before:2026-11-25",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Prateek+Dayal%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-09+before%3A2026-11-25",
       "status": "searched_public_index",
-      "generatedFor": "2026-11-23",
+      "generatedFor": "2026-11-24",
       "phase": "targets",
       "roleTrack": "Internships",
       "publicationWindow": {
-        "from": "2026-11-09",
-        "through": "2026-11-23"
+        "from": "2026-11-10",
+        "through": "2026-11-24"
       },
-      "checkedAt": "2026-11-23T01:29:40.056Z",
-      "receiptBatch": "targets-b-24",
+      "checkedAt": "2026-11-24T01:35:35.326Z",
+      "receiptBatch": "targets-52",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
     }
   ]

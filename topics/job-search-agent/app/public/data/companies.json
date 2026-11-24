@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-23",
+  "researchedAt": "2026-11-24",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -5200,6 +5200,12 @@
           "label": "21 November public research",
           "checkedAt": "2026-11-21",
           "evidenceStatus": "Normal exact original retains Mumbai/Remote, six months, graduates-only and not for academic projects wording. Historical matching Cutshort10–12k/month could meet revised remoteIndia10k floor only if the employer confirms a current India-remote eligible cohort; it remains below Mumbai15k floor. Separate company1–2lakh/year and all compensation conflict history retained. Original currently states no numeric stipend, so payMin/payMax remain null."
+        },
+        {
+          "url": "https://club.ungrammary.com/jobs/ux%2Fui-trainee-designer",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "24November normal graduate/no-academic-project rule andMumbai/Remote wording remain. Historical10–12k/month only potentially clears10kremote floor after current remote approval; belowMumbai15k. Separate annual-pay conflict retained."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -5211,7 +5217,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Mumbai, Remote India. Check each role for remote eligibility.",
-      "researchedAt": "2026-11-21",
+      "researchedAt": "2026-11-24",
       "payBenchmark": {
         "min": 10000,
         "max": 12000,
@@ -8867,7 +8873,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not advertised openings.",
-      "researchedAt": "2026-11-16",
+      "researchedAt": "2026-11-24",
       "sources": [
         {
           "url": "https://www.ecolibrium.io/careers/",
@@ -8904,6 +8910,12 @@
           "label": "16 November freshness follow-up",
           "checkedAt": "2026-11-16",
           "evidenceStatus": "Current normal linked inventory sample; visual-marketing intern is not automatically the static UI/UX internship. No new qualifying job added."
+        },
+        {
+          "url": "https://employmenthero.com/jobs/organisations/ecolibrium-zemtu/",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "24November normal official careers still names UI/UX Intern, but linked live ATS sampled12jobs lists Visual Design & Marketing Intern(15October),not a verified coreUX internship. Static title alone not renewed cohort; no new active card."
         }
       ],
       "roles": [
@@ -9285,7 +9297,7 @@
         "Interaction Designer"
       ],
       "likelyRolesEvidence": "Inferred families, not additional advertised vacancies.",
-      "researchedAt": "2026-11-22",
+      "researchedAt": "2026-11-24",
       "sources": [
         {
           "url": "https://www.revrag.ai/careers/product-design-intern",
@@ -9310,6 +9322,12 @@
           "label": "22 November independent-track research",
           "checkedAt": "2026-11-22",
           "evidenceStatus": "22November indexed/current careers index still marks Product Design Intern Closed despite readable detailed description. Archived stable role remains archived; no renewed intake inferred from recent crawl."
+        },
+        {
+          "url": "https://www.revrag.ai/careers/",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "24November normal careers still marks Product Design Intern Closed. Existing archived role not reopened by readable detail/crawl."
         }
       ],
       "contact": {
@@ -11637,11 +11655,11 @@
       "rationale": "Remote15k gross can qualify under revised floor, conditional on actual product/UIUX track and three-month agreement. Preference suggestion, not odds.",
       "careersUrl": "https://neuraitech.com/careers/",
       "locationNote": "Remote; India primary focus",
-      "openingStatus": "INR15,000/month gross; product/UI/UX focus is selectable, while advertised core duties include social and video work. Confirm a product/UI/UX assignment and mentor, a three-month duration, joining window, student eligibility and fixed gross stipend in writing. Clarify deductions and incentive terms.",
-      "currentOpeningVerified": true,
+      "openingStatus": "Sampled exact Design Intern — Product/UI/UX track to confirm advert closed/expired; other company hiring not inferred.",
+      "currentOpeningVerified": false,
       "payNote": "Current role description:INR15,000–15,000/month; listed stipend, not a received offer. Gross before deductions; incentives not guaranteed.",
       "payConfidence": "Limited",
-      "researchedAt": "2026-11-06",
+      "researchedAt": "2026-11-24",
       "likelyRoles": [
         "UX Designer",
         "Product Designer"
@@ -11682,6 +11700,12 @@
           "label": "8 November retained terms",
           "checkedAt": "2026-11-08",
           "evidenceStatus": "Fresh original retains15kINR/month gross,two-to-three-month remote internship,students/no full-time experience and selectable productUIUX focus. Core social/video duties require track/mentor confirmation."
+        },
+        {
+          "url": "https://neuraitech.com/careers/design-intern/",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal exact employer detail explicitly Applications closed and no longer accepting applications for this role. Talent-network invitation is not a renewed vacancy. Retire only this advert, not employer-wide hiring or user application outcome."
         }
       ],
       "roles": [
@@ -11713,8 +11737,8 @@
               "sourceUrl": "https://neuraitech.com/careers/design-intern/"
             }
           ],
-          "evidenceStatus": "Fresh employer original explicitly states INR15,000/month gross before deductions, plus unspecified conditional incentives; two to three months agreed before joining. College students with no full-time experience are invited. Product/UI/UX is an application focus, but the core responsibilities remain social creatives, simple layouts and short video edits. Revised remote floor is met; this is a conditional product-design track rather than a confirmed pure UX placement. Earlier below-target observations are historical.",
-          "checkedAt": "2026-11-06",
+          "evidenceStatus": "Normal exact employer detail explicitly Applications closed and no longer accepting applications for this role. Talent-network invitation is not a renewed vacancy. Retire only this advert, not employer-wide hiring or user application outcome.",
+          "checkedAt": "2026-11-24",
           "payEvidence": {
             "role": "Design Intern — Product/UI/UX track to confirm",
             "min": 15000,
@@ -11725,7 +11749,51 @@
             "checkedAt": "2026-11-06",
             "confidence": "Explicit role-body monthly stipend",
             "note": "Listing evidence, not received offer; current cohort and conditions to confirm."
-          }
+          },
+          "history": [
+            {
+              "id": "neurai-technologies-design-evidence",
+              "title": "Design Intern — Product/UI/UX track to confirm",
+              "url": "https://neuraitech.com/careers/design-intern/",
+              "seniority": "Internship; on_hold for stated evidence limits",
+              "location": "Remote; India primary focus",
+              "requirements": [
+                {
+                  "id": "83e37a579d2e",
+                  "text": "College students; no full-time experience required",
+                  "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+                },
+                {
+                  "id": "0ba307e9c726",
+                  "text": "Social creatives, simple layouts and short video edits",
+                  "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+                },
+                {
+                  "id": "64dfcea1735d",
+                  "text": "Two-to-three-month remote internship",
+                  "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+                },
+                {
+                  "id": "0c73b98dbeb7",
+                  "text": "Product/UI/UX focus is selectable; confirm actual product responsibilities",
+                  "sourceUrl": "https://neuraitech.com/careers/design-intern/"
+                }
+              ],
+              "evidenceStatus": "Fresh employer original explicitly states INR15,000/month gross before deductions, plus unspecified conditional incentives; two to three months agreed before joining. College students with no full-time experience are invited. Product/UI/UX is an application focus, but the core responsibilities remain social creatives, simple layouts and short video edits. Revised remote floor is met; this is a conditional product-design track rather than a confirmed pure UX placement. Earlier below-target observations are historical.",
+              "checkedAt": "2026-11-06",
+              "payEvidence": {
+                "role": "Design Intern — Product/UI/UX track to confirm",
+                "min": 15000,
+                "max": 15000,
+                "currency": "INR",
+                "period": "month",
+                "sourceUrl": "https://neuraitech.com/careers/design-intern/",
+                "checkedAt": "2026-11-06",
+                "confidence": "Explicit role-body monthly stipend",
+                "note": "Listing evidence, not received offer; current cohort and conditions to confirm."
+              }
+            }
+          ]
         }
       ],
       "payBenchmark": {
@@ -11740,7 +11808,17 @@
         "confidence": "Limited: indexed official detail; direct fetch timeout",
         "note": "Specific visual/media design internship range, below target; not a UX/product-design stipend inference or a received offer."
       },
-      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities."
+      "evidenceConfidence": "Role detail readable where stated; intake, location, pay and eligibility caveats remain explicit. Tiers are preference suggestions, not hiring probabilities.",
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-06",
+          "supersededAt": "2026-11-24",
+          "fields": {
+            "openingStatus": "INR15,000/month gross; product/UI/UX focus is selectable, while advertised core duties include social and video work. Confirm a product/UI/UX assignment and mentor, a three-month duration, joining window, student eligibility and fixed gross stipend in writing. Clarify deductions and incentive terms.",
+            "currentOpeningVerified": true
+          }
+        }
+      ]
     },
     {
       "id": "jio",
@@ -23556,7 +23634,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-19",
+      "researchedAt": "2026-11-24",
       "sources": [
         {
           "url": "https://in.linkedin.com/jobs/view/junior-product-designer-%E2%80%93-ai-prototyping-at-techglora-integrated-it-services-4491479532",
@@ -23569,6 +23647,12 @@
           "label": "19 November public research",
           "checkedAt": "2026-11-19",
           "evidenceStatus": "Normal product site corroborates WhatsApp/CRM/AI engagement identity, not the recruiter vacancy or salary. Published support route retains support purpose; no recruitment inbox guessed."
+        },
+        {
+          "url": "https://getfirsthire.com/jobs/379dcc16fa5cd6174e47ef8c29c4f79e33736680bfe586e50894c4f70714769b",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Indexed FirstHire mirror matches retained TechGlora recruiter/client Transket junior AI-prototyping advert.19November mirror date, not original publication; normal mirror restricted. Existing remote/onsite metadata and immediate-joining/employer-authority caveats retained; no extra role or salary inferred."
         }
       ],
       "roles": [
@@ -24453,7 +24537,7 @@
       "rationale": "Possible held original-platform lead;independent employing entity/programme terms unresolved. Monthly listing pay does not establish payment,no-fee policy or employer quality.",
       "careersUrl": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d",
       "locationNote": "Remote / Pune;India eligibility and arrangement to confirm",
-      "openingStatus": "Public original lists an internship; current joining,student terms and written compensation need confirmation",
+      "openingStatus": "Sampled exact UI/UX Design Intern advert closed/expired; other company hiring not inferred.",
       "currentOpeningVerified": false,
       "payNote": "Normal exact Indeed advert statesINR10,000–20,000/month;current written terms/identity unresolved.",
       "payConfidence": "High for visible listing amount/unit;limited for current employer agreement",
@@ -24462,13 +24546,19 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-20",
+      "researchedAt": "2026-11-24",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d",
           "label": "20 November discovery follow-up",
           "checkedAt": "2026-11-20",
           "evidenceStatus": "Normal exact original-platform Indeed2d010bbf835df53d advertises UIUX internship,freshers0–1year,students/recent graduates,remote/Pune,INR10,000–20,000/month in visible pay/body. Figma,user research,responsive screens,design systems/prototypes and implementation review;academic/personal/freelance portfolio accepted. HeaderFull-time versus bodyInternship. Duration,current intake,original posting date and independently verified official employer domain/legal entity are not established. Mirror20November date is not original publication. Listing amount is verified evidence,not a received offer or proof of payment/no-fee terms."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal exact Indeed advert explicitly This job has expired on Indeed. Retire the exact platform advert; no filled position, employer-wide closure or private application outcome inferred."
         }
       ],
       "roles": [
@@ -24501,15 +24591,58 @@
               "sourceUrl": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d"
             }
           ],
-          "checkedAt": "2026-11-20",
-          "evidenceStatus": "Normal exact original-platform Indeed2d010bbf835df53d advertises UIUX internship,freshers0–1year,students/recent graduates,remote/Pune,INR10,000–20,000/month in visible pay/body. Figma,user research,responsive screens,design systems/prototypes and implementation review;academic/personal/freelance portfolio accepted. HeaderFull-time versus bodyInternship. Duration,current intake,original posting date and independently verified official employer domain/legal entity are not established. Mirror20November date is not original publication. Listing amount is verified evidence,not a received offer or proof of payment/no-fee terms."
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal exact Indeed advert explicitly This job has expired on Indeed. Retire the exact platform advert; no filled position, employer-wide closure or private application outcome inferred.",
+          "history": [
+            {
+              "id": "indeed-we-intern-uiux-2d010bbf835df53d",
+              "jobId": "indeed-we-intern-uiux-2d010bbf835df53d",
+              "title": "UI/UX Design Intern",
+              "url": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d",
+              "seniority": "Internship; current eligible intake to confirm",
+              "location": "Remote / Pune;India eligibility and arrangement to confirm",
+              "requirements": [
+                {
+                  "id": "eef5fbfda390",
+                  "text": "Fresher0–1year;students,recent graduates and aspiring designers",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d"
+                },
+                {
+                  "id": "0cfbbd42aa91",
+                  "text": "Figma/basicUIUX,typography,grids,responsive wireframes and prototypes",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d"
+                },
+                {
+                  "id": "e3f4eaf7b829",
+                  "text": "Academic,personal,freelance or practice portfolio preferred",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d"
+                },
+                {
+                  "id": "c107ba281aa5",
+                  "text": "User research,design systems and developer collaboration;HTML/CSS/accessibility helpful",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d"
+                }
+              ],
+              "checkedAt": "2026-11-20",
+              "evidenceStatus": "Normal exact original-platform Indeed2d010bbf835df53d advertises UIUX internship,freshers0–1year,students/recent graduates,remote/Pune,INR10,000–20,000/month in visible pay/body. Figma,user research,responsive screens,design systems/prototypes and implementation review;academic/personal/freelance portfolio accepted. HeaderFull-time versus bodyInternship. Duration,current intake,original posting date and independently verified official employer domain/legal entity are not established. Mirror20November date is not original publication. Listing amount is verified evidence,not a received offer or proof of payment/no-fee terms."
+            }
+          ]
         }
       ],
       "contact": {
         "url": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d",
         "kind": "Published recruitment application route; not submitted",
         "sourceUrl": "https://in.indeed.com/viewjob?jk=2d010bbf835df53d"
-      }
+      },
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-20",
+          "supersededAt": "2026-11-24",
+          "fields": {
+            "openingStatus": "Public original lists an internship; current joining,student terms and written compensation need confirmation"
+          }
+        }
+      ]
     },
     {
       "id": "brahmaverse-ai",
@@ -24534,7 +24667,7 @@
         "UX Designer"
       ],
       "likelyRolesEvidence": "Inferred future families,not vacancies.",
-      "researchedAt": "2026-11-23",
+      "researchedAt": "2026-11-24",
       "aliases": [
         "Brahmaa.ai"
       ],
@@ -24600,6 +24733,12 @@
           "label": "23 November public research",
           "checkedAt": "2026-11-23",
           "evidenceStatus": "23November dated queries executed for Brahmaverse,Brahmaa.ai,Fastor7 andAbhinav. No current eligible design intake verified;12Octoberdeadline historical junior post and separate3+year4468586366 remain distinct. Indexed SEO/business development roles and unrelated same-name companies not design vacancies."
+        },
+        {
+          "url": "https://in.linkedin.com/in/abhinavbuilds",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "24November public Brahmaverse/Brahmaa.ai/Fastor7 and Abhinav queries checked. Old12October deadline and distinct3+year4468586366 remain historical/out-of-scope. No newly dated eligible intake verified."
         }
       ],
       "roles": [
@@ -25043,7 +25182,7 @@
         "UX Researcher"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-23",
+      "researchedAt": "2026-11-24",
       "sources": [
         {
           "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
@@ -25092,6 +25231,12 @@
           "label": "23 November public research",
           "checkedAt": "2026-11-23",
           "evidenceStatus": "23November dated named-author queries/indexed profile copy still show months-old hiring activity; no exact9–23November original eligible post verified. Normal mirror/form follow-up again returnsform401; mirror25k is not verified current eligible intake. Gurugram geography exception not inferred."
+        },
+        {
+          "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "24November mirror and dated named-author searches checked; no verified10–24November original renewed eligible intake. Mirror25k/month versus expired/form401 conflict remains. Gurugram not a general location exception."
         }
       ],
       "roles": [
@@ -25642,17 +25787,388 @@
         "kind": "Published employer careers/application route; no message or submission",
         "sourceUrl": "https://corpswell.com/career/"
       }
+    },
+    {
+      "id": "arm-infotech",
+      "name": "ARM InfoTech",
+      "company": "ARM InfoTech",
+      "companyType": "Services team",
+      "sector": "Web/mobile, blockchain and software development with UI/UX services",
+      "focus": "Web/mobile, blockchain and software development with UI/UX services",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://www.arminfotech.com/careers/",
+      "locationNote": "Madurai, Tamil Nadu; exact trainee work arrangement to confirm",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-24",
+      "sources": [
+        {
+          "url": "https://www.arminfotech.com/ui-ux-trainee/",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal exact employer UI/UX Trainee detail and application form readable. Design/Computer Science-related bachelor or master qualification; user-centred design, research, flows, prototypes, Figma/Adobe tools and basic HTML/CSS. Official contact page identifies Madurai office. Salary, joining, employment hours and exact trainee location not stated; a FirstHire mirror calls it on-site Tamil Nadu, with23 November mirror date, not original publication. Careers index separately lists UI/UX Designer1–3years; that is not a trainee experience requirement. Confirm that the exact trainee form represents current paid employment, not a fee-based training programme. No fees are stated on the exact employer page; no application submitted."
+        },
+        {
+          "url": "https://www.arminfotech.com/contact-us/",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal official contact page lists239 First Floor, Ram Nagar5th Street, Bye Pass Road, Madurai. Office evidence does not independently establish exact trainee location or remote approval."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-arm-infotech-uiux-trainee",
+          "jobId": "careers-arm-infotech-uiux-trainee",
+          "title": "UI/UX Trainee",
+          "seniority": "Junior / fresher; current intake/eligibility unconfirmed",
+          "url": "https://www.arminfotech.com/ui-ux-trainee/",
+          "location": "Madurai, Tamil Nadu; exact trainee work arrangement to confirm",
+          "requirements": [
+            {
+              "id": "521ade84f229",
+              "text": "Computer Science/design-related bachelor or master qualification",
+              "sourceUrl": "https://www.arminfotech.com/ui-ux-trainee/"
+            },
+            {
+              "id": "e56389f89269",
+              "text": "User-centred design, research, design thinking and problem solving",
+              "sourceUrl": "https://www.arminfotech.com/ui-ux-trainee/"
+            },
+            {
+              "id": "98d90f3e32a3",
+              "text": "Figma/Sketch/Adobe tools for wireframes, mockups and prototypes",
+              "sourceUrl": "https://www.arminfotech.com/ui-ux-trainee/"
+            },
+            {
+              "id": "25f774103c22",
+              "text": "Basic HTML/CSS and developer communication",
+              "sourceUrl": "https://www.arminfotech.com/ui-ux-trainee/"
+            }
+          ],
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal exact employer UI/UX Trainee detail and application form readable. Design/Computer Science-related bachelor or master qualification; user-centred design, research, flows, prototypes, Figma/Adobe tools and basic HTML/CSS. Official contact page identifies Madurai office. Salary, joining, employment hours and exact trainee location not stated; a FirstHire mirror calls it on-site Tamil Nadu, with23 November mirror date, not original publication. Careers index separately lists UI/UX Designer1–3years; that is not a trainee experience requirement. Confirm that the exact trainee form represents current paid employment, not a fee-based training programme. No fees are stated on the exact employer page; no application submitted."
+        }
+      ],
+      "contact": {
+        "email": "hr@arminfotech.com",
+        "url": "https://www.arminfotech.com/ui-ux-trainee/",
+        "kind": "HR questions explicitly published beside this role application form",
+        "sourceUrl": "https://www.arminfotech.com/ui-ux-trainee/"
+      }
+    },
+    {
+      "id": "gdrb-technologies",
+      "name": "GDRB Technologies",
+      "company": "GDRB Technologies",
+      "companyType": "Product company",
+      "sector": "Retail/e-commerce/pharmacy software products plus web, mobile and design services",
+      "focus": "Retail/e-commerce/pharmacy software products plus web, mobile and design services",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://www.gdrbtechnologies.com/career",
+      "locationNote": "Hyderabad, Telangana; office location published, exact work mode to confirm",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-24",
+      "sources": [
+        {
+          "url": "https://www.gdrbtechnologies.com/career",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal official careers page explicitly advertises UI/UX Intern in Hyderabad, qualification B.E./B.Tech/MCA, experience0–6months. The0–6months is requested experience, not internship duration. Work mixes web/mobile interfaces, wireframes/prototypes and developer collaboration with posters, social creatives, banners and marketing assets. Figma, typography, colour/layout, communication; portfolio a plus. Pay, duration, student cohort and original date unstated. Role-specific Apply section publishes Send Your Resume through info@gdrbtechnologies.com and office/walk-in route; this is a general inbox explicitly used on the career page, not a guessed HR address. No contact or submission."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-gdrb-uiux-intern",
+          "jobId": "careers-gdrb-uiux-intern",
+          "title": "UI/UX Intern — interfaces and marketing design",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://www.gdrbtechnologies.com/career",
+          "location": "Hyderabad, Telangana; office location published, exact work mode to confirm",
+          "requirements": [
+            {
+              "id": "0d4b2c49e16c",
+              "text": "B.E./B.Tech/MCA qualification;0–6months experience requested, not duration",
+              "sourceUrl": "https://www.gdrbtechnologies.com/career"
+            },
+            {
+              "id": "ad6208483aa9",
+              "text": "Figma, UI/UX principles, typography, colour and layout",
+              "sourceUrl": "https://www.gdrbtechnologies.com/career"
+            },
+            {
+              "id": "bde5c5f50e6a",
+              "text": "Web/mobile interfaces, wireframes, mockups and prototypes",
+              "sourceUrl": "https://www.gdrbtechnologies.com/career"
+            },
+            {
+              "id": "853e83c833ee",
+              "text": "Posters/social/marketing assets; collaborate with developers and marketing",
+              "sourceUrl": "https://www.gdrbtechnologies.com/career"
+            }
+          ],
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal official careers page explicitly advertises UI/UX Intern in Hyderabad, qualification B.E./B.Tech/MCA, experience0–6months. The0–6months is requested experience, not internship duration. Work mixes web/mobile interfaces, wireframes/prototypes and developer collaboration with posters, social creatives, banners and marketing assets. Figma, typography, colour/layout, communication; portfolio a plus. Pay, duration, student cohort and original date unstated. Role-specific Apply section publishes Send Your Resume through info@gdrbtechnologies.com and office/walk-in route; this is a general inbox explicitly used on the career page, not a guessed HR address. No contact or submission."
+        }
+      ],
+      "contact": {
+        "email": "info@gdrbtechnologies.com",
+        "url": "https://www.gdrbtechnologies.com/career",
+        "kind": "General inbox explicitly linked by career-page Send Your Resume; not a dedicated HR address",
+        "sourceUrl": "https://www.gdrbtechnologies.com/career"
+      }
+    },
+    {
+      "id": "gamegenesis",
+      "name": "GameGenesis",
+      "company": "GameGenesis",
+      "companyType": "Product company",
+      "sector": "Game development; game interface and interaction design",
+      "focus": "Game development; game interface and interaction design",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260",
+      "locationNote": "Ahmedabad Jobs header; role body says remote; country/joining to confirm",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-24",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Exact indexed LinkedIn Jobs4491826260 names GameGenesis and public poster Yaman Dosad. Body says remote three-month Game UI/UX internship and welcomes student/personal portfolio work; header/mirrors label Ahmedabad/on-site. Requires game menus/HUDs, flows, responsive interfaces and collaboration; Figma/FigJam/Adobe, Unity/Unreal UI are listed tools, game portfolio/engine experience bonus. Explicitly prohibits AI tools and AI-generated assets for design work, concepts, assignments and portfolio submissions. Pay and original employer publication date unestablished. Normal LinkedIn restricted; normal Freehire mirror corroborates body but is not original access. FirstHire18 November14:49IST is a mirror date. Verify recruitment identity and current cohort; no extra headcount or fresh original post inferred."
+        },
+        {
+          "url": "https://freehire.me/jobs/game-ui-ux-designer-internship-gamegenesis-i4tqw4n3",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal mirror readable24 November; body corroborates remote three months, student portfolio and no-AI rule. Mirror/crawl dates not original publication."
+        },
+        {
+          "url": "https://getfirsthire.com/jobs/fdada1b1dabfc100411b1cdbe581db02202dfe4c3871991cc13c602e877997cb",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Indexed mirror18 November2026,14:49IST; Ahmedabad/on-site header conflicts with remote body. Normal mirror restricted. Not original publication or authenticated access."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-gamegenesis-game-uiux-intern-4491826260",
+          "jobId": "linkedin-gamegenesis-game-uiux-intern-4491826260",
+          "title": "Game UI/UX Designer Intern",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260",
+          "location": "Ahmedabad Jobs header; role body says remote; country/joining to confirm",
+          "requirements": [
+            {
+              "id": "4dc646235b1c",
+              "text": "Student/personal game UI/UX portfolio welcome; game-interface interest",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260"
+            },
+            {
+              "id": "f7f9c175cef7",
+              "text": "Design menus, HUDs, player flows and responsive PC/mobile interfaces",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260"
+            },
+            {
+              "id": "5ef79f837ce6",
+              "text": "Figma/FigJam and visual tools; Unity/Unreal UI knowledge a bonus",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260"
+            },
+            {
+              "id": "6c58898ebe68",
+              "text": "Employer prohibits AI tools/assets in design work, assignments and portfolio submissions",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260"
+            }
+          ],
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Exact indexed LinkedIn Jobs4491826260 names GameGenesis and public poster Yaman Dosad. Body says remote three-month Game UI/UX internship and welcomes student/personal portfolio work; header/mirrors label Ahmedabad/on-site. Requires game menus/HUDs, flows, responsive interfaces and collaboration; Figma/FigJam/Adobe, Unity/Unreal UI are listed tools, game portfolio/engine experience bonus. Explicitly prohibits AI tools and AI-generated assets for design work, concepts, assignments and portfolio submissions. Pay and original employer publication date unestablished. Normal LinkedIn restricted; normal Freehire mirror corroborates body but is not original access. FirstHire18 November14:49IST is a mirror date. Verify recruitment identity and current cohort; no extra headcount or fresh original post inferred."
+        }
+      ],
+      "contact": {
+        "url": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260",
+        "kind": "Published LinkedIn Jobs application route; original normal read restricted",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/game-ui-ux-designer-internship-at-gamegenesis-4491826260"
+      }
+    },
+    {
+      "id": "ovia-world",
+      "name": "ovia.world",
+      "company": "ovia.world",
+      "companyType": "Unclassified",
+      "sector": "Early-stage website/digital project per advert; legal employer identity unverified",
+      "focus": "Early-stage website/digital project per advert; legal employer identity unverified",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://in.indeed.com/viewjob?jk=bd9348158552cfce",
+      "locationNote": "Remote via India Indeed; employer country permission and exact identity to confirm",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-24",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=bd9348158552cfce",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal exact India Indeed advert bd9348158552cfce readable with Apply now and no expired language. Remote UI/UX internship,1–3months,students/freshers and personal/college projects welcome. Website Figma layouts, responsive interfaces, icons/illustrations/SVGs, motion/microinteractions and developer handoff. Illustrator/Photoshop, Lottie/Rive and HTML/CSS are good-to-have; do not infer tested proficiency. Pay information not provided. Original posting, legal employer, India country permission and current joining not independently established. Normal ovia.world domain read restricted; employer identity not authenticated. No fee or unpaid statement in sampled exact advert; neither paid status nor minimum stipend inferred."
+        }
+      ],
+      "roles": [
+        {
+          "id": "indeed-ovia-world-uiux-intern-bd9348158552cfce",
+          "jobId": "indeed-ovia-world-uiux-intern-bd9348158552cfce",
+          "title": "UI/UX Design Intern — website and motion",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://in.indeed.com/viewjob?jk=bd9348158552cfce",
+          "location": "Remote via India Indeed; employer country permission and exact identity to confirm",
+          "requirements": [
+            {
+              "id": "ec958de6f837",
+              "text": "Students/freshers and personal/college projects welcome",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=bd9348158552cfce"
+            },
+            {
+              "id": "1873eddc866a",
+              "text": "Figma, responsive website UI, wireframes and prototypes",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=bd9348158552cfce"
+            },
+            {
+              "id": "051a5edf7f22",
+              "text": "Icons/illustrations, SVG assets and interaction/motion basics",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=bd9348158552cfce"
+            },
+            {
+              "id": "a82f7f001f99",
+              "text": "Developer handoff; Illustrator/Photoshop/Lottie/Rive and HTML/CSS good-to-have",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=bd9348158552cfce"
+            }
+          ],
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal exact India Indeed advert bd9348158552cfce readable with Apply now and no expired language. Remote UI/UX internship,1–3months,students/freshers and personal/college projects welcome. Website Figma layouts, responsive interfaces, icons/illustrations/SVGs, motion/microinteractions and developer handoff. Illustrator/Photoshop, Lottie/Rive and HTML/CSS are good-to-have; do not infer tested proficiency. Pay information not provided. Original posting, legal employer, India country permission and current joining not independently established. Normal ovia.world domain read restricted; employer identity not authenticated. No fee or unpaid statement in sampled exact advert; neither paid status nor minimum stipend inferred."
+        }
+      ],
+      "contact": {
+        "url": "https://in.indeed.com/viewjob?jk=bd9348158552cfce",
+        "kind": "Published role/careers route; no contact or submission",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=bd9348158552cfce"
+      },
+      "website": "https://ovia.world/"
+    },
+    {
+      "id": "mamo-technolabs",
+      "name": "MaMo TechnoLabs",
+      "company": "MaMo TechnoLabs",
+      "companyType": "Services team",
+      "sector": "Software/web/mobile and design services; separate academy/programme terms need verification",
+      "focus": "Software/web/mobile and design services; separate academy/programme terms need verification",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://mamotechnolabs.com/internship",
+      "locationNote": "Vadodara, Gujarat; office/hybrid on main programme; separate portal remote/hybrid wording",
+      "openingStatus": "Programme awareness only; fixed stipend and fee terms conflict/unresolved. No active internship card.",
+      "currentOpeningVerified": false,
+      "payNote": "Main programme says performance-based stipend without amount and100%free; indexed separate portal FAQ says nominal registration fee. No numerical guaranteed stipend or no-fee cohort established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-24",
+      "sources": [
+        {
+          "url": "https://mamotechnolabs.com/internship",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal main programme page lists UI/UX Design Intern, Vadodara,3–6months and office/hybrid, performance-based stipend without amount and100%free wording. Header4–6weeks conflicts with3–6months detail. Separate same-brand portal indexed FAQ says2–3months,remote/hybrid and nominal registration fee covering mentorship/resources/certificate. Normal portal returns a24-character JavaScript shell; indexed FAQ is not fresh normal-body verification. Do not merge different programme/cohort terms, infer payment, or recommend fee-based training. AICTE/CMMI claims are self-published, not independently certified here. No active paid job card added."
+        },
+        {
+          "url": "https://portal.mamotechnolabs.com/",
+          "label": "24 November public research",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal public portal is a JavaScript shell. Indexed public FAQ states a nominal registration fee; conflicts with main programme100%free wording. No no-fee paid cohort verified; not an active recommendation."
+        }
+      ],
+      "roles": [
+        {
+          "id": "mamo-uiux-programme-unverified-terms",
+          "title": "UI/UX Design Intern programme — pay/fee terms unresolved",
+          "seniority": "Programme research only; not verified eligible paid employment",
+          "url": "https://mamotechnolabs.com/internship",
+          "location": "Vadodara; office/hybrid main-page wording",
+          "checkedAt": "2026-11-24",
+          "evidenceStatus": "Normal main programme page lists UI/UX Design Intern, Vadodara,3–6months and office/hybrid, performance-based stipend without amount and100%free wording. Header4–6weeks conflicts with3–6months detail. Separate same-brand portal indexed FAQ says2–3months,remote/hybrid and nominal registration fee covering mentorship/resources/certificate. Normal portal returns a24-character JavaScript shell; indexed FAQ is not fresh normal-body verification. Do not merge different programme/cohort terms, infer payment, or recommend fee-based training. AICTE/CMMI claims are self-published, not independently certified here. No active paid job card added.",
+          "requirements": [
+            {
+              "id": "419f29c44f39",
+              "text": "Basic design skills, creativity and interest in user-friendly interfaces",
+              "sourceUrl": "https://mamotechnolabs.com/internship"
+            },
+            {
+              "id": "8ae80484049c",
+              "text": "Figma/Adobe XD web/mobile design learning; programme terms need confirmation",
+              "sourceUrl": "https://mamotechnolabs.com/internship"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "url": "https://mamotechnolabs.com/internship",
+        "kind": "Published role/careers route; no contact or submission",
+        "sourceUrl": "https://mamotechnolabs.com/internship"
+      }
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-23",
+    "researchedAt": "2026-11-24",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 328,
+    "directoryCount": 333,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 21,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local.",
-    "lastResearchRefresh": "2026-11-23"
+    "lastResearchRefresh": "2026-11-24"
   }
 }
