@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-24",
+  "researchedAt": "2026-11-25",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -5206,6 +5206,12 @@
           "label": "24 November public research",
           "checkedAt": "2026-11-24",
           "evidenceStatus": "24November normal graduate/no-academic-project rule andMumbai/Remote wording remain. Historical10–12k/month only potentially clears10kremote floor after current remote approval; belowMumbai15k. Separate annual-pay conflict retained."
+        },
+        {
+          "url": "https://club.ungrammary.com/jobs/ux%2Fui-trainee-designer",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "25November normal graduate/no-academic-placement andMumbai/Remote wording retained. Historical10–12k only potentially clearsremote10kafter current remote approval;belowMumbai15k. Annual conflict not converted."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -5217,7 +5223,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Mumbai, Remote India. Check each role for remote eligibility.",
-      "researchedAt": "2026-11-24",
+      "researchedAt": "2026-11-25",
       "payBenchmark": {
         "min": 10000,
         "max": 12000,
@@ -21463,8 +21469,8 @@
       "rationale": "Workable editable product-company suggestion based on a current named UX internship and documented consumer-finance product. No culture audit,hiring probability or stipend inferred.",
       "careersUrl": "https://www.sure.financial/careers",
       "locationNote": "MulundWest,Mumbai,on site",
-      "openingStatus": "Current exact employer careers/index list Product Design(UX)Intern,0–1years;pay/duration/cohort unknown",
-      "currentOpeningVerified": true,
+      "openingStatus": "Exact Product Design (UX) Intern advert closed;other company hiring not inferred.",
+      "currentOpeningVerified": false,
       "payNote": "Exact internship amount and duration unstated. Product/press/customer claims do not establish stipend.",
       "payConfidence": "Limited; inspect exact role evidence",
       "likelyRoles": [
@@ -21472,7 +21478,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-19",
+      "researchedAt": "2026-11-25",
       "sources": [
         {
           "url": "https://www.sure.financial/careers/product-design-ux-intern",
@@ -21491,6 +21497,12 @@
           "label": "19 November public research",
           "checkedAt": "2026-11-19",
           "evidenceStatus": "Normal exact employer internship and index retain Mumbai MulundWest0–1years. New indexed LinkedIn4475213313 copy matches the exact role/address, not a separate vacancy. No current stipend, duration or student cohort established."
+        },
+        {
+          "url": "https://www.sure.financial/careers/product-design-ux-intern",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal exact SURE employer detail explicitly This position is no longer accepting applications. Retire only this exact internship advert;no employer-wide hiring closure orprivate application outcome inferred."
         }
       ],
       "roles": [
@@ -21518,8 +21530,37 @@
               "sourceUrl": "https://www.sure.financial/careers/product-design-ux-intern"
             }
           ],
-          "checkedAt": "2026-11-13",
-          "evidenceStatus": "Normal exact employer detail and current careers index both list Product Design(UX)Intern,Mumbai on-site,MulundWest,0–1years. Consumer fintech/home-loan product work: problem framing,user feedback,flows,prototypes,UI,product/engineering collaboration and gradual implementation. AI curiosity expected;HTML/CSS/React helpful,not mandatory. Interview starts with aptitude/logic test then interview,possible design assignment. Pay,duration,student cohort/start and original publication date unstated. Official footer identifies Vittancial Technovations Private Limited; brand is Sure financial app,not a guessed insurance-company identity. Homepage product/customer/press claims are self-published and not an independent employer-quality or stipend guarantee. No test/form/message performed."
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal exact SURE employer detail explicitly This position is no longer accepting applications. Retire only this exact internship advert;no employer-wide hiring closure orprivate application outcome inferred.",
+          "history": [
+            {
+              "id": "careers-sure-financial-product-design-ux-intern",
+              "jobId": "careers-sure-financial-product-design-ux-intern",
+              "title": "Product Design (UX) Intern",
+              "url": "https://www.sure.financial/careers/product-design-ux-intern",
+              "seniority": "Internship; eligibility/current intake to confirm",
+              "location": "Mulund West,Mumbai — on site",
+              "requirements": [
+                {
+                  "id": "6e50e2649526",
+                  "text": "0–1years; student eligibility and required academic stage unstated",
+                  "sourceUrl": "https://www.sure.financial/careers/product-design-ux-intern"
+                },
+                {
+                  "id": "6607935a0234",
+                  "text": "Problem framing,user insight,flows,prototypes and thoughtful UI",
+                  "sourceUrl": "https://www.sure.financial/careers/product-design-ux-intern"
+                },
+                {
+                  "id": "e1efd560b8f2",
+                  "text": "Comfort with ambiguity and AI-assisted work;HTML/CSS/React useful,not required",
+                  "sourceUrl": "https://www.sure.financial/careers/product-design-ux-intern"
+                }
+              ],
+              "checkedAt": "2026-11-13",
+              "evidenceStatus": "Normal exact employer detail and current careers index both list Product Design(UX)Intern,Mumbai on-site,MulundWest,0–1years. Consumer fintech/home-loan product work: problem framing,user feedback,flows,prototypes,UI,product/engineering collaboration and gradual implementation. AI curiosity expected;HTML/CSS/React helpful,not mandatory. Interview starts with aptitude/logic test then interview,possible design assignment. Pay,duration,student cohort/start and original publication date unstated. Official footer identifies Vittancial Technovations Private Limited; brand is Sure financial app,not a guessed insurance-company identity. Homepage product/customer/press claims are self-published and not an independent employer-quality or stipend guarantee. No test/form/message performed."
+            }
+          ]
         }
       ],
       "contact": {
@@ -21528,7 +21569,17 @@
         "kind": "Published careers inbox for roles not listed; exact internship has its own application route. No message sent.",
         "sourceUrl": "https://www.sure.financial/careers"
       },
-      "website": "https://www.sure.financial/"
+      "website": "https://www.sure.financial/",
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-19",
+          "supersededAt": "2026-11-25",
+          "fields": {
+            "openingStatus": "Current exact employer careers/index list Product Design(UX)Intern,0–1years;pay/duration/cohort unknown",
+            "currentOpeningVerified": true
+          }
+        }
+      ]
     },
     {
       "id": "krisatwork",
@@ -22687,7 +22738,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-17",
+      "researchedAt": "2026-11-25",
       "sources": [
         {
           "url": "https://talents.electrifex.com/#headingOne-62",
@@ -22706,6 +22757,12 @@
           "label": "17 November public research",
           "checkedAt": "2026-11-17",
           "evidenceStatus": "Normal official Infoparks Kerala company profile verifies Kochi location and embedded/cloud automotive product-engineering scope;info@electrifex.com is general company contact,not substituted for explicit design recruitment inbox. Company homepage normal read is a client shell;indexed text is not normal rendered access."
+        },
+        {
+          "url": "https://talents.electrifex.com/",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "25November normal employer portal readable;existingJuniorUIUX Designer62 remains a retained alternative,not a new role. Salary/current student/joining restrictions preserved;category/mirror dates not original publication."
         }
       ],
       "roles": [
@@ -24667,7 +24724,7 @@
         "UX Designer"
       ],
       "likelyRolesEvidence": "Inferred future families,not vacancies.",
-      "researchedAt": "2026-11-24",
+      "researchedAt": "2026-11-25",
       "aliases": [
         "Brahmaa.ai"
       ],
@@ -24739,6 +24796,12 @@
           "label": "24 November public research",
           "checkedAt": "2026-11-24",
           "evidenceStatus": "24November public Brahmaverse/Brahmaa.ai/Fastor7 and Abhinav queries checked. Old12October deadline and distinct3+year4468586366 remain historical/out-of-scope. No newly dated eligible intake verified."
+        },
+        {
+          "url": "https://in.linkedin.com/in/abhinavbuilds",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "25November Brahmaverse/Brahmaa.ai/Fastor7/Abhinav searches checked;old12October deadline anddistinct3+year4468586366 stay historical/out-of-scope. No renewed eligible intake verified."
         }
       ],
       "roles": [
@@ -25182,7 +25245,7 @@
         "UX Researcher"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-24",
+      "researchedAt": "2026-11-25",
       "sources": [
         {
           "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
@@ -25237,6 +25300,12 @@
           "label": "24 November public research",
           "checkedAt": "2026-11-24",
           "evidenceStatus": "24November mirror and dated named-author searches checked; no verified10–24November original renewed eligible intake. Mirror25k/month versus expired/form401 conflict remains. Gurugram not a general location exception."
+        },
+        {
+          "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "25November mirror andnamed-author searches rechecked;exact sourcedGoogleform401. No new11–25November original eligible intake verified;mirror25k/expired/form conflict andGurugram limits retained."
         }
       ],
       "roles": [
@@ -26158,17 +26227,453 @@
         "kind": "Published role/careers route; no contact or submission",
         "sourceUrl": "https://mamotechnolabs.com/internship"
       }
+    },
+    {
+      "id": "comming",
+      "name": "Comming",
+      "company": "Comming",
+      "companyType": "Product company",
+      "sector": "Local-helper customer/helper mobile app startup per public hiring post",
+      "focus": "Local-helper customer/helper mobile app startup per public hiring post",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
+      "locationNote": "Remote; app launch in Nagpur, India; work hours and current cohort to confirm",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-25",
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Public research-tool extract of the exact original author post is readable: UI/UX Design Intern at Comming, remote, six months, paid without numerical stipend, students/recent graduates, portfolio/projects and Figma, customer/helper app flows and component library. Author Nishij Sontakke announces hiring for Comming; mirror profile calls him Founder/CEO, not independent legal-employer verification. Original post displays2d when checked25November. Activity7529988955732140032 independently decodes to21November2026 UTC; that is a derived timestamp, not a verified absolute employer publication date. Both support the11–25November age window. Normal automated original read robots-restricted; public original extract is not logged-in access. Tal mirror relative ages differ and do not reset the original. Email and requested resume/portfolio/two-line design rationale are explicitly published; no application or contact made."
+        },
+        {
+          "url": "https://jobsinthewild.tal.club/j/7279",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal Tal mirror readable; source names exact original post. Mirror7h/3d relative labels vary; not original publication evidence or renewal."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-post-comming-uiux-intern-7529988955732140032",
+          "jobId": "linkedin-post-comming-uiux-intern-7529988955732140032",
+          "title": "UI/UX Design Intern — customer/helper apps",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
+          "location": "Remote; app launch in Nagpur, India; work hours and current cohort to confirm",
+          "requirements": [
+            {
+              "id": "64bda5d9158c",
+              "text": "Students/recent graduates with UI/UX portfolio or projects",
+              "sourceUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL"
+            },
+            {
+              "id": "f72ae7a716f2",
+              "text": "Figma, customer/helper app screens andclear user journeys",
+              "sourceUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL"
+            },
+            {
+              "id": "9fb9f031a3d0",
+              "text": "Component library andcare with wording, empty states andedge cases",
+              "sourceUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL"
+            },
+            {
+              "id": "cee5d6f83f02",
+              "text": "Six-month remote engagement; amount and working hours unstated",
+              "sourceUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL"
+            }
+          ],
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Public research-tool extract of the exact original author post is readable: UI/UX Design Intern at Comming, remote, six months, paid without numerical stipend, students/recent graduates, portfolio/projects and Figma, customer/helper app flows and component library. Author Nishij Sontakke announces hiring for Comming; mirror profile calls him Founder/CEO, not independent legal-employer verification. Original post displays2d when checked25November. Activity7529988955732140032 independently decodes to21November2026 UTC; that is a derived timestamp, not a verified absolute employer publication date. Both support the11–25November age window. Normal automated original read robots-restricted; public original extract is not logged-in access. Tal mirror relative ages differ and do not reset the original. Email and requested resume/portfolio/two-line design rationale are explicitly published; no application or contact made."
+        }
+      ],
+      "contact": {
+        "email": "comming.hq@gmail.com",
+        "url": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
+        "kind": "Application email explicitly published by hiring-post author;no message sent",
+        "sourceUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL"
+      }
+    },
+    {
+      "id": "quin-quintessential-innovations",
+      "name": "Quin",
+      "company": "Quin",
+      "companyType": "Product company",
+      "sector": "Digital product interaction/motion; public hiring context links Quintessential Innovations",
+      "focus": "Digital product interaction/motion; public hiring context links Quintessential Innovations",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923",
+      "locationNote": "Hyderabad, in-office mirror wording; January–July2027 six-month cohort to confirm",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-25",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Exact indexed LinkedIn Jobs4494359923 advertises Motion & Interaction Design Intern, Hyderabad, six months betweenJanuary–July2027, final-year B.Des/M.Des inCommunication, Interaction, Graphic orAnimation Design, graduation project. Mandatory portfolio of motion principles, UI/interaction and visual storytelling; hands-on motion/prototyping tools e.g.After Effects, Figma, Rive, Lottie. Body states30,000/month without explicit currency marker in sampled original text. Matching exact FirstHire mirror explicitly prints₹30,000/month, but original INR unit is not independently established; payMin/payMax remain null andadvertisedCompensation unverified. Do not transfer the distinct industrial-design internship salary. Normal original andJobaaj reads restricted; public original-open tool also unavailable, indexed exact wording is not original access. Mirror24November/relative labels andJobaaj23January2027 closing date are not verified original dates. Confirm employer, cohort/student status, currency andwritten terms."
+        },
+        {
+          "url": "https://getfirsthire.com/jobs/af47365b5efce62569988d5dc844ec68cc34b2a178b22afab2d91bb056cef657",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Indexed exact motion-role mirror prints₹30,000/month; normal read restricted.24November mirror date is not original publication."
+        },
+        {
+          "url": "https://www.jobaaj.com/job/quintessential-innovations-motion-interaction-design-intern-hyderabad-india-0-to-1-years-2140239",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Indexed matching motion role,0–1 year, in-office,23January2027 mirror closing date; normal restricted. No original date/current employer intake inferred."
+        },
+        {
+          "url": "https://applychill.com/jobs/motion-interaction-design-intern-quintessential-innovations-k26tx2in",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal matching mirror readable;30,000/month wording, not independent employer currency confirmation. Distinct industrial-design role not merged."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-quin-motion-interaction-intern-4494359923",
+          "jobId": "linkedin-quin-motion-interaction-intern-4494359923",
+          "title": "Motion & Interaction Design Intern — January2027 cohort",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923",
+          "location": "Hyderabad, in-office mirror wording; January–July2027 six-month cohort to confirm",
+          "requirements": [
+            {
+              "id": "cff727a43ce5",
+              "text": "Final-yearB.Des/M.Des inCommunication, Interaction, Graphic orAnimation Design",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923"
+            },
+            {
+              "id": "53c394a80100",
+              "text": "Mandatory portfolio:motion principles, UI/interaction and visual storytelling",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923"
+            },
+            {
+              "id": "22fdd3bb4c84",
+              "text": "Hands-on After Effects, Figma, Rive orLottie andinteractive prototypes",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923"
+            },
+            {
+              "id": "c8afaf1f26a3",
+              "text": "Design interaction library, onboarding motion and developer handoff; six-month 2027 cohort",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923"
+            }
+          ],
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Exact indexed LinkedIn Jobs4494359923 advertises Motion & Interaction Design Intern, Hyderabad, six months betweenJanuary–July2027, final-year B.Des/M.Des inCommunication, Interaction, Graphic orAnimation Design, graduation project. Mandatory portfolio of motion principles, UI/interaction and visual storytelling; hands-on motion/prototyping tools e.g.After Effects, Figma, Rive, Lottie. Body states30,000/month without explicit currency marker in sampled original text. Matching exact FirstHire mirror explicitly prints₹30,000/month, but original INR unit is not independently established; payMin/payMax remain null andadvertisedCompensation unverified. Do not transfer the distinct industrial-design internship salary. Normal original andJobaaj reads restricted; public original-open tool also unavailable, indexed exact wording is not original access. Mirror24November/relative labels andJobaaj23January2027 closing date are not verified original dates. Confirm employer, cohort/student status, currency andwritten terms."
+        }
+      ],
+      "contact": {
+        "url": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923",
+        "kind": "Published role/careers route; no contact or submission",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/motion-interaction-design-intern-at-quin-4494359923"
+      },
+      "aliases": [
+        "Quintessential Innovations"
+      ],
+      "aliasEvidence": "Matching exact motion-intern descriptions underQuin LinkedIn andQuintessential Innovations mirrors; hiring-context relationship, not independent legal ownership proof."
+    },
+    {
+      "id": "pixlogix",
+      "name": "Pixlogix",
+      "company": "Pixlogix",
+      "companyType": "Services team",
+      "sector": "Web/app design andengineering, UX/UI andresponsive interface services",
+      "focus": "Web/app design andengineering, UX/UI andresponsive interface services",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://www.pixlogix.com/careers/",
+      "locationNote": "Ahmedabad, Gujarat; full-time,0–1 year",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-25",
+      "sources": [
+        {
+          "url": "https://www.pixlogix.com/careers/ui-ux-designer/",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal exact employer UI/UX Designer detail andform readable:0–1 year, full-time, Ahmedabad, one opening, anyCS/IT background. Work under senior designers onflows, wireframes, responsive interfaces, Figma reusablecomponents, developer/QA handoff andbasic competitor research. Salary andoriginal publication unstated. Form explicitly includesFresher option. Published HR contact retained; employee testimonials are self-published, not independent workplace evidence. Student/full-time eligibility andjoining unconfirmed; no form submission."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-pixlogix-uiux-designer",
+          "jobId": "careers-pixlogix-uiux-designer",
+          "title": "UI/UX Designer — 0–1 year",
+          "seniority": "Junior / fresher; current intake/eligibility unconfirmed",
+          "url": "https://www.pixlogix.com/careers/ui-ux-designer/",
+          "location": "Ahmedabad, Gujarat; full-time,0–1 year",
+          "requirements": [
+            {
+              "id": "6d75aa232e6a",
+              "text": "Any CS/IT background;0–1 year, Fresher form option",
+              "sourceUrl": "https://www.pixlogix.com/careers/ui-ux-designer/"
+            },
+            {
+              "id": "8da89db68394",
+              "text": "Figma, wireframes, flows, responsive web/mobile interfaces",
+              "sourceUrl": "https://www.pixlogix.com/careers/ui-ux-designer/"
+            },
+            {
+              "id": "53016eb7bba0",
+              "text": "Reusable UI components, visual consistency andaccessibility basics",
+              "sourceUrl": "https://www.pixlogix.com/careers/ui-ux-designer/"
+            },
+            {
+              "id": "e09b24e54235",
+              "text": "Collaborate with senior designers, developers andQA; prepare handoff",
+              "sourceUrl": "https://www.pixlogix.com/careers/ui-ux-designer/"
+            }
+          ],
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal exact employer UI/UX Designer detail andform readable:0–1 year, full-time, Ahmedabad, one opening, anyCS/IT background. Work under senior designers onflows, wireframes, responsive interfaces, Figma reusablecomponents, developer/QA handoff andbasic competitor research. Salary andoriginal publication unstated. Form explicitly includesFresher option. Published HR contact retained; employee testimonials are self-published, not independent workplace evidence. Student/full-time eligibility andjoining unconfirmed; no form submission."
+        }
+      ],
+      "contact": {
+        "email": "hr@pixlogix.com",
+        "url": "https://www.pixlogix.com/careers/ui-ux-designer/",
+        "kind": "HR team email explicitly published on exact employer role",
+        "sourceUrl": "https://www.pixlogix.com/careers/ui-ux-designer/"
+      }
+    },
+    {
+      "id": "cafs-infotech",
+      "name": "CAFS Infotech",
+      "company": "CAFS Infotech",
+      "companyType": "Services team",
+      "sector": "Digital product web/mobile interface design per employer role",
+      "focus": "Digital product web/mobile interface design per employer role",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://cafsinfotech.com/careers",
+      "locationNote": "Chennai, India; full-time, fresher to 2 years",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-25",
+      "sources": [
+        {
+          "url": "https://cafsinfotech.com/careers/ui-ux-designer",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Exact employer-role public index text names UI/UX Designer, Chennai, full-time, two openings left, PostedNovember2026 andfresher to 2 years; strong fresher portfolios welcomed. Figma/Adobe XD, research/interviews/usability testing, flows/journeys/IA, web/mobile interfaces, design systems, WCAG and developer collaboration; HTML/CSS bonus. Salary unstated. Normal exact page andpublic-open extraction areJavaScript/empty shells; indexed employer text is not fresh normal-body access or independent intake confirmation. November2026 is a month label, not exact day. Published HR email retained with indexed-source caveat; no application submitted."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-cafs-infotech-uiux-designer",
+          "jobId": "careers-cafs-infotech-uiux-designer",
+          "title": "UI/UX Designer — freshers to 2 years",
+          "seniority": "Junior / fresher; current intake/eligibility unconfirmed",
+          "url": "https://cafsinfotech.com/careers/ui-ux-designer",
+          "location": "Chennai, India; full-time, fresher to 2 years",
+          "requirements": [
+            {
+              "id": "d5cfaca9de81",
+              "text": "Fresher to 2 years; strong web/mobile portfolio",
+              "sourceUrl": "https://cafsinfotech.com/careers/ui-ux-designer"
+            },
+            {
+              "id": "eab4881052d5",
+              "text": "Figma or Adobe XD and user-centred design",
+              "sourceUrl": "https://cafsinfotech.com/careers/ui-ux-designer"
+            },
+            {
+              "id": "db0d2d7c902a",
+              "text": "Research, testing, flows, journeys andinformation architecture",
+              "sourceUrl": "https://cafsinfotech.com/careers/ui-ux-designer"
+            },
+            {
+              "id": "dd26ccce4453",
+              "text": "Responsive design, WCAG, components and developer collaboration; HTML/CSS bonus",
+              "sourceUrl": "https://cafsinfotech.com/careers/ui-ux-designer"
+            }
+          ],
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Exact employer-role public index text names UI/UX Designer, Chennai, full-time, two openings left, PostedNovember2026 andfresher to 2 years; strong fresher portfolios welcomed. Figma/Adobe XD, research/interviews/usability testing, flows/journeys/IA, web/mobile interfaces, design systems, WCAG and developer collaboration; HTML/CSS bonus. Salary unstated. Normal exact page andpublic-open extraction areJavaScript/empty shells; indexed employer text is not fresh normal-body access or independent intake confirmation. November2026 is a month label, not exact day. Published HR email retained with indexed-source caveat; no application submitted."
+        }
+      ],
+      "contact": {
+        "email": "hr@cafsinfotech.com",
+        "url": "https://cafsinfotech.com/careers/ui-ux-designer",
+        "kind": "HR email stated in indexed exact employer role;normal page is a shell",
+        "sourceUrl": "https://cafsinfotech.com/careers/ui-ux-designer"
+      }
+    },
+    {
+      "id": "agentanalytics-ai",
+      "name": "AgentAnalytics.AI",
+      "company": "AgentAnalytics.AI",
+      "companyType": "Product company",
+      "sector": "AI/vector retrieval andanalytics product per official website",
+      "focus": "AI/vector retrieval andanalytics product per official website",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://www.agentanalytics.ai/careers",
+      "locationNote": "Hyderabad, on-site; sampledUX/UI contract is2months",
+      "openingStatus": "Older programme research only:official careers index datesUX/UI Intern24September2025; current eligible intake unconfirmed. No active card.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-25",
+      "sources": [
+        {
+          "url": "https://www.agentanalytics.ai/careers/UiIntern",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal official careers index listsUX/UI Intern, Hyderabad, on-site,24September2025. Normal exact role is aLoadingJobDetails shell; indexed employer description specifies a2-month UX contract, internship/fresher, wireframes/prototypes/Figma andcompetitive startup salary without amount. Genericremote-friendly culture doesnotoverrideInOffice field. Older2025origin, shorter duration andcurrent cohort/pay unresolved; not a newly posted/current eligible internship inferred."
+        },
+        {
+          "url": "https://www.agentanalytics.ai/careers",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal official careers index explicitly datesUX/UI Intern24September2025; recent crawl doesnotrenew cohort."
+        }
+      ],
+      "roles": [
+        {
+          "id": "agentanalytics-uiux-intern-2025-research",
+          "title": "UX/UI Intern — older2025 listing, two-month contract",
+          "seniority": "Historical/unverified cohort, not active recommendation",
+          "url": "https://www.agentanalytics.ai/careers/UiIntern",
+          "location": "Hyderabad, on-site",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal official careers index listsUX/UI Intern, Hyderabad, on-site,24September2025. Normal exact role is aLoadingJobDetails shell; indexed employer description specifies a2-month UX contract, internship/fresher, wireframes/prototypes/Figma andcompetitive startup salary without amount. Genericremote-friendly culture doesnotoverrideInOffice field. Older2025origin, shorter duration andcurrent cohort/pay unresolved; not a newly posted/current eligible internship inferred.",
+          "requirements": [
+            {
+              "id": "7662f82c33f8",
+              "text": "Figma/Adobe XD/Sketch, wireframes, prototypes and user research",
+              "sourceUrl": "https://www.agentanalytics.ai/careers/UiIntern"
+            },
+            {
+              "id": "da34dc888d5b",
+              "text": "Design/HCI degree or equivalent experience; two-month contract stated",
+              "sourceUrl": "https://www.agentanalytics.ai/careers/UiIntern"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "url": "https://www.agentanalytics.ai/careers",
+        "kind": "Published role/careers route; no contact or submission",
+        "sourceUrl": "https://www.agentanalytics.ai/careers"
+      }
+    },
+    {
+      "id": "wri-india",
+      "name": "WRI India",
+      "company": "WRI India",
+      "companyType": "Nonprofit / research organisation",
+      "sector": "Research-led digital public-interest products anddata tools",
+      "focus": "Research-led digital public-interest products anddata tools",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://wri-india.org/careers",
+      "locationNote": "Sampled role listsMumbai, NewDelhi, Bengaluru andRemote; September2026 deadline expired",
+      "openingStatus": "Historical junior UX requisition2026-JR100318; indexed employer end date4September2026. No current eligible intake inferred.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-25",
+      "sources": [
+        {
+          "url": "https://wri.wd501.myworkdayjobs.com/en-US/WRI_India/job/Mumbai-India/Program-Associate---UX-UI-designer_2026-JR100318?source=LinkedIn",
+          "label": "25 November public research",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Exact indexed Workday requisition2026-JR100318 describes juniorUX work inProduct/Data teams andlistsMumbai, NewDelhi, Bangalore, Remote, but explicitlyEndDate4September2026. PostedYesterday is stale-relative indexed wording, not renewal. Normal public detail is a147-character redirect shell. No current eligible vacancy, compensation orstudent acceptance established; outside-geography awareness doesnotexpand recommendations."
+        },
+        {
+          "url": "https://wri-india.org/careers",
+          "label": "25 November access limit",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Normal official-careers URL returned403 on25 November. No access, current job inventory or closure inferred; the historical Workday deadline remains the only exact role evidence."
+        }
+      ],
+      "roles": [
+        {
+          "id": "wri-india-program-associate-ux-2026-jr100318-historical",
+          "title": "Program Associate — UX/UI designer (historical deadline)",
+          "seniority": "Historical junior evidence; not current intake",
+          "url": "https://wri.wd501.myworkdayjobs.com/en-US/WRI_India/job/Mumbai-India/Program-Associate---UX-UI-designer_2026-JR100318?source=LinkedIn",
+          "location": "Sampled role listsMumbai, NewDelhi, Bengaluru andRemote; September2026 deadline expired",
+          "checkedAt": "2026-11-25",
+          "evidenceStatus": "Exact indexed Workday requisition2026-JR100318 describes juniorUX work inProduct/Data teams andlistsMumbai, NewDelhi, Bangalore, Remote, but explicitlyEndDate4September2026. PostedYesterday is stale-relative indexed wording, not renewal. Normal public detail is a147-character redirect shell. No current eligible vacancy, compensation orstudent acceptance established; outside-geography awareness doesnotexpand recommendations.",
+          "requirements": []
+        }
+      ],
+      "contact": {
+        "url": "https://wri-india.org/careers",
+        "kind": "Published role/careers route; no contact or submission",
+        "sourceUrl": "https://wri-india.org/careers"
+      }
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-24",
+    "researchedAt": "2026-11-25",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 333,
+    "directoryCount": 339,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 21,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local.",
-    "lastResearchRefresh": "2026-11-24"
+    "lastResearchRefresh": "2026-11-25"
   }
 }
