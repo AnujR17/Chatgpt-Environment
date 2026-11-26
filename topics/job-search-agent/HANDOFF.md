@@ -1,6 +1,16 @@
 # Job search agent handoff
 
-Updated 25 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 26 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 26 November independent research — prepared
+
+One new held internship: `careers-bluepixel-uiux-designer-intern`, Ahmedabad fresher, exact employer detail and careers index readable. Pay/duration/original date unknown; fixed stipend, current student cohort and joining remain to confirm. The separate designer URL redirects to this internship, not a new junior role. FirstHire's “via Naukri” 25 November 16:37 IST date is a mirror date; no original Naukri access claimed. No new verified junior role or monthly stipend match. Existing Dogster/Felicity Games Bengaluru35–40k/month, six months, 4 December deadline and joining through9 December rechecked, not new. Akshora's listed8–15k/month now recorded; lower bound below remote floor, so stable record archived for research pay eligibility, not employer closure or employer pay change. Old source text already contained the range.
+
+170 retained/135 active-held/35 archived;110 internships/25 junior;342 companies,5249 sources,54 coverage rows. New Bluepixel Workable, Occora Possible and Flexonixs Possible profiles. Occora remote India INR60–96k/YEAR advert and immediate joining stay company-only; Flexonixs Surat 5 October deadline/indexed unpaid wording stay historical. BeBetta-header/Nudge matching-copy crosspost retained without legal-alias/new-headcount inference. DietCode Goa board explicitly closed; no active card.
+
+94 planned+24 adaptive searches executed plus4 retry query attempts after one transient failed batch. Discovery first, independent tracks, social original window12–26 November; no new verified eligible social-only original. Comming's prior cached relative-age observation and derived21 November timestamp not renewed. Naukri/Internshala/X restrictions explicit.134 retained active primary attempts:110 responses including shells,18 restricted,6 missing; no newly confirmed employer closure. Missing Aeron/Suthartech/YTT/Pixelarc404 and Falcon/FLIP410 unresolved.37of54 coverage rows checked. Accounting PASS635 supplied matches/309 unresolved including noise;130 relevant public ledger entries,22 unresolved. All20 prior due URLs retried; next checks27 November. Actual receipts/HTML/audit/QA outside Git: `/workspace/job-refresh-nov26/`. No private applicant data, UI/task/schedule changes, applications or messages.
+
+Supported Excel/CSV regenerated:170 roles,342 companies,940 requirements,5249 sources and54 coverage rows. Preservation audit,5 JavaScript test files,15 Python tests and Vite build PASS. Local category/company browser checks PASS,including320/390/1440 Discover layouts, original salary units and synthetic saved applications/notes/blacklist/private evidence/backup restoration. No submissions or runtime errors. Existing Sources mobile overflow545px at390/320 remains;Discover/Companies fit. Exact production publication pending;the prior25 November release remains live until verification succeeds. [Full report](app/public/data/collection-report.md).
 
 ## 25 November independent research — published
 
