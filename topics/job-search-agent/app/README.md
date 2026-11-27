@@ -2,13 +2,13 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` data commit `75cfb7db24ab1ef156ebd4978c971b0179002504`. Verified 26 November 2026: 170 retained/135 active-held/35 archived roles, 110 internships/25 junior-fresher, 342 companies and 54 coverage records. Ten live data/export files byte-identical; live desktop/mobile saved-progress tests pass. Protection unchanged; assistant remains removed.
+Production is READY from `topic/job-search-agent` data commit `ede09b23baa87b07c6d8aa212f9c686b06b63088`. Verified27 November2026:173 retained/139 active-held/34 archived roles,113 internships/26 junior-fresher,345 companies and54 coverage records. Ten live data/export files byte-identical; live desktop/mobile saved-progress tests pass. Protection unchanged; assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
-## 27 November independent research — prepared
+## 27 November independent research — published
 
 Three new held cards: `indeed-smytten-uiux-intern-80b56b75690cc29b` (normal Indeed, Bengaluru office,4–6months, student/recent design graduates, pay unknown; LinkedIn4495017726 genuine crosspost), `careers-outfindr-product-design-intern` (official paid3–6months Pune office, PG students welcome, amount unknown), and `careers-toddle-product-designer-54457` (official current index/exact research extract,1–3year employment stretch, salary unknown). No new verified monthly stipend match. Toddle internship36030 reopened on normal official current open list plus exact employer research extract, preserving8September posting date, prior closure and stable requirements. Index Part-Time/six-month body/pay/hours/cohort held. Existing Toddle85790 rechecked:0–2years explicitly counts internships/projects/freelance; distinct from54457.
 
@@ -16,7 +16,7 @@ Three new held cards: `indeed-smytten-uiux-intern-80b56b75690cc29b` (normal Inde
 
 94 planned+40 adaptive queries executed,134 total,no failed batches. Discovery first,independent tracks,social original window13–27November. No new eligible social-only lead. Onething/HireDesigners/Devoq/rotating studios/Snapdeal/Brahmaverse aliases/authors checked. Naukri/Internshala/X/Keka normal access limits explicit.134 retained primary attempts:111 responses including shells,17 restricted,6 missing;no newly confirmed closure. Toddle official index normal,exact Keka research-tool extracts separately attributed.40of54 coverage checked. Accounting PASS690 supplied matches/336 unresolved including noise;153 public ledger entries,23 unresolved with28November actions. All22 prior pending URLs retried. Receipts/HTML/audit/QA outside Git:/workspace/job-refresh-nov27/. No private applicant data,UI,task,schedule,applications ormessages changed.
 
-Supported Excel/CSV regenerated:173 roles,345 companies,956 requirements,5402 sources and54 coverage rows. Preservation audit,5 JavaScript test files,15 Python tests and Vite build PASS. Local category/company browser checks PASS,including320/390/1440 Discover,original salary units and synthetic saved applications/notes/blacklist/private evidence/backup restoration. No runtime errors or submissions. Existing Sources mobile overflow545px at390/320 remains;Discover/Companies fit. Exact production publication pending;prior26November release remains live until verification succeeds. [Full report](public/data/collection-report.md).
+Supported Excel/CSV regenerated:173 roles,345 companies,956 requirements,5402 sources and54 coverage rows. Preservation audit,5 JavaScript test files,15 Python tests and Vite build PASS. Local category/company browser checks PASS,including320/390/1440 Discover,original salary units and synthetic saved applications/notes/blacklist/private evidence/backup restoration. No runtime errors or submissions. Existing Sources mobile overflow545px at390/320 remains;Discover/Companies fit. Production READY on exact data commit `ede09b23baa87b07c6d8aa212f9c686b06b63088`, deployment `dpl_DExh3DAFNsCr6nen1NjE6q62Qrfm`, existing project/account/topic branch and live alias verified 27 November. All ten public feed/export/watchlist/query-plan/ledger files HTTP200 and byte-identical. Live320/390/1440 category and synthetic saved applications/blacklist/notes checks PASS; no runtime errors or submissions. Protection unchanged; default authenticated scope, no teamId; one explicit production deployment. This verification-only documentation commit needs no redeploy. [Full report](public/data/collection-report.md).
 
 ## 26 November independent research — published
 
