@@ -1,6 +1,6 @@
 {
   "meta": {
-    "researchedAt": "2026-11-26",
+    "researchedAt": "2026-11-27",
     "collectorLastRun": "2026-10-23T15:37:35+00:00",
     "scheduleStatus": "Daily exact07:00 Asia/Kolkata search enabled from26October2026. Existing browser-local blacklist/progress preserved; background task cannot read private overrides.",
     "coverage": "Employer careers and public ATS, Indeed, Naukri, X, LinkedIn, YC, startup directories, Wellfound, India job boards, remote boards and Hacker News; access and zero-result limitations are recorded in sources.json.",
@@ -1910,9 +1910,34 @@
         "archivedRecords": 35,
         "primarySourceAttempts": 134,
         "note": "Dogster currentlisted35–40k rechecked,not new. Bluepixelunknownpayheld;Occoraannualrange/Flexonixsexpired-unpaid not addedactive. No UI/private-state/schedule/contact changes."
+      },
+      {
+        "date": "2026-11-27",
+        "checkedAt": "2026-11-27T01:37:48+00:00",
+        "kind": "Independent internship and junior discovery",
+        "newRoleIds": [
+          "indeed-smytten-uiux-intern-80b56b75690cc29b",
+          "careers-outfindr-product-design-intern",
+          "careers-toddle-product-designer-54457"
+        ],
+        "newRoles": 3,
+        "newInternships": 2,
+        "newJuniorRoles": 1,
+        "newConfirmedMonthlyStipendMatches": 0,
+        "newCompanyRecords": 3,
+        "retiredRoles": 0,
+        "reopenedRoles": 1,
+        "reopenedRoleIds": [
+          "careers-toddle-product-design-intern-36030"
+        ],
+        "retainedRecords": 173,
+        "activeRecords": 139,
+        "archivedRecords": 34,
+        "primarySourceAttempts": 134,
+        "note": "Toddle normal current careers index plus exact employer research-tool body supports reopened stable internship;pay/hours/cohort held. No private profile,state,UI,schedule,applications ormessages changed."
       }
     ],
-    "refreshSummary": "One newheldBluepixelAhmedabad internship,pay unknown. No newverified junior card;Nudge/BeBetta overlap deduplicated. Akshora employer8–15k/month recorded andarchived forbelow-floor research eligibility,not closure. ExistingDogster35–40k/month rechecked.170 retained/135active-held/35archived.",
+    "refreshSummary": "Three new held roles: Smytten Indeed and OutFindr employer internships; Toddle 1–3 year Product Designer experience stretch. Toddle36030 reopened on current exact employer index/detail; prior 8 September date retained. 173 retained / 139 active-held / 34 archived. No new verified monthly internship stipend or employer closure.",
     "stipendPolicy": {
       "effectiveAt": "2026-11-05",
       "currency": "INR",
@@ -1960,7 +1985,7 @@
       "summary": "Figma, reusable components, design tokens, responsive and accessible interfaces, research and Hindi/English communication.",
       "nextAction": "Confirm current intake and three-to-six-month start window; employer description states remote India and INR30,000/month.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -2104,6 +2129,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -2298,7 +2328,7 @@
       "summary": "Portfolio showing design decisions and process, Figma, user research and design systems.",
       "nextAction": "Confirm cohort start date and three-to-six-month Bengaluru office commitment; INR35,000/month remains stated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -2442,6 +2472,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -3010,11 +3045,11 @@
           "currentEmployerOfferVerified": false
         }
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "companyId": "chiblu",
       "listingVerification": "older-listing",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3953 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -3162,6 +3197,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3953 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3953 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10",
@@ -3208,10 +3248,10 @@
       "automationNotes": "Use the company’s email link to prepare an application with work samples and availability. Confirm the stipend first.",
       "roleType": "Internship",
       "summary": "Figma, UI, prototypes and a portfolio.",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "companyId": "neuralpath-technologies",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 6178 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -3359,6 +3399,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 6178 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 6178 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10",
@@ -3399,9 +3444,9 @@
       "automationNotes": "Application link leads toward LinkedIn; signed-in flow and exact fields are unverified.",
       "roleType": "Internship",
       "summary": "Portfolio showing layout, typography and colour; Figma auto-layout and prototypes; component documentation and development handoff..",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1082 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -3549,6 +3594,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1082 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1082 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "companyId": "fit-krmrsolutions",
@@ -3602,10 +3652,10 @@
       "automationNotes": "Open the original company Apply link. The final destination and form requirements need manual verification.",
       "roleType": "Internship",
       "summary": "Research, wireframes, user flows and high-fidelity interfaces for financial education products..",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "companyId": "zavio",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2591 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -3753,6 +3803,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2591 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2591 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10",
@@ -3795,9 +3850,9 @@
       "roleType": "Internship",
       "summary": "Employer-listed six-month remote India product-design internship,INR25–40k/month;student intake and joining need confirmation.",
       "listingVerification": "employer-original-advertised-pay-current-cohort-unconfirmed",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2601 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -3943,6 +3998,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 2601 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 2601 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -4318,11 +4378,11 @@
         "note": "Visible reports range from ₹15k in May2024 to ₹25k–₹29k in2025. The page also models ₹18k–₹30k/month across10 submissions. Reports are not the current role’s offer; confirm ₹25k–₹30k and remote terms."
       },
       "benchmarkSummary": "Reported 15000–29000 INR/month; current listing pay undisclosed",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 5465 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 5457 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "sourceCheckHistory": [
         {
@@ -4468,6 +4528,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 5465 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 5465 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10",
@@ -4567,9 +4632,9 @@
         "note": "Low-confidence page displays about ₹10k/month and5 submissions, updated4 June2025. Historical report is below your target; verify whether this current role has a different budget."
       },
       "benchmarkSummary": "Reported 10000–10000 INR/month; current listing pay undisclosed",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4250 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -4715,6 +4780,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 4250 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 4250 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -5042,9 +5112,9 @@
         "note": "Cross-company salary page reports ₹19k–₹21k/month for Keyideas in New Delhi. Sample/date unavailable and location differs from the remote posting. This is below the general target and does not establish current pay."
       },
       "benchmarkSummary": "Reported 19000–21000 INR/month; current listing pay undisclosed",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 0 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -5190,6 +5260,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 0 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 0 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -5797,9 +5872,9 @@
         "Product company",
         "Pay to confirm"
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2078 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -5945,6 +6020,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 2078 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 2078 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -6155,9 +6235,9 @@
           "currentEmployerOfferVerified": false
         }
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3776 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -6305,6 +6385,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3776 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3776 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -6440,7 +6525,7 @@
       ],
       "lastPageFetched": "2026-11-08",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -6586,6 +6671,11 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -6648,9 +6738,9 @@
         "Design studio",
         "Pay to confirm"
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3153 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -6796,6 +6886,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 3153 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 3153 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -6846,9 +6941,9 @@
         "Design studio",
         "Pay to confirm"
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3153 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -6994,6 +7089,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 3153 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 3153 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -7094,9 +7194,9 @@
         "Verify current intake",
         "Pay units unclear"
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4900 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -7244,6 +7344,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4900 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4900 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -7330,9 +7435,9 @@
         "1+ years header",
         "Older listing"
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4627 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -7478,6 +7583,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 4627 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 4627 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -7722,9 +7832,9 @@
         }
       ],
       "companyId": "victorflow",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3525 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -7870,6 +7980,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 3525 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 3525 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -8019,9 +8134,9 @@
         }
       ],
       "companyId": "gunadhya-software-solutions",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4661 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -8169,6 +8284,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4661 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4661 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10",
@@ -8262,9 +8382,9 @@
         "note": "Employer/recruiter-posted annual listing range, not a verified offer or monthly stipend."
       },
       "companyId": "qoruz",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1609 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -8418,6 +8538,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1609 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1609 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "dateObservations": [
@@ -8545,11 +8670,11 @@
           "checkedAt": "2026-10-24"
         }
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 10225 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 9982 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "sourceCheckHistory": [
         {
@@ -8695,6 +8820,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 9962 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 10225 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -8773,7 +8903,7 @@
       ],
       "automationNotes": "Read-only research. Application gates and eligibility have not been tested.",
       "companyCareersUrl": "https://arihantai.com/jobs",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "additionalSources": [
         {
           "platform": "Indeed",
@@ -8783,7 +8913,7 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 16714 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -8927,6 +9057,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 16714 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 16714 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -9119,9 +9254,9 @@
           "evidence": "Indexed same employer/title and remote India role; direct403. Relative mirror age not an original posting date; current intake unverified."
         }
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 376 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -9267,6 +9402,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 376 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 376 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -9667,11 +9807,11 @@
           "note": "Mirror salary claim INR30–50k/month is unconfirmed by the original ATS."
         }
       ],
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 6594 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 6599 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "sourceCheckHistory": [
         {
@@ -9817,6 +9957,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 6523 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 6594 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "termReviewHistory": [
@@ -9930,9 +10075,9 @@
       "automationNotes": "No application submitted or employer message sent.",
       "nextAction": "Confirm paid status, monthly stipend, duration and joining window; review AI/mobile-design expectations.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 22 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -10080,6 +10225,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 22 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 22 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -10134,9 +10284,9 @@
       "automationNotes": "No application submitted or employer message sent.",
       "nextAction": "Confirm stipend, hours, India work arrangement and a suitable 3–4 month duration; use the employer internship form.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 22171 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -10284,6 +10434,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 22171 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 22171 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -10352,9 +10507,9 @@
       "listingVerification": "employer-detail",
       "email": "careers@formas.ai",
       "applicationInstructions": "Employer requests portfolio, resume and a short note about design technology and AI.",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 52040 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -10502,6 +10657,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 52040 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 52040 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -10575,9 +10735,9 @@
       "listingVerification": "employer-detail",
       "email": "daankart.com@gmail.com",
       "applicationInstructions": "Published careers contact for the Hyderabad product/UI internship; confirm paid terms before sending an application.",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 13173 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -10725,6 +10885,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 13173 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 13173 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -10791,11 +10956,11 @@
       "applicationMethod": "Published employer application route; manual review",
       "automationNotes": "Read-only research; no application or employer message sent.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-25",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
-        "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "checkedAt": "2026-11-27",
+        "status": "fetched",
+        "note": "Normal public response extracted 5112 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "sourceCheckHistory": [
         {
@@ -10941,6 +11106,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 5112 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -11000,9 +11170,9 @@
       "applicationMethod": "Published employer application route; manual review",
       "automationNotes": "Read-only research; no application or employer message sent.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2448 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -11150,6 +11320,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2448 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2448 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -11221,9 +11396,9 @@
       "applicationMethod": "Published employer application route; manual review",
       "automationNotes": "Read-only research; no application or employer message sent.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2106 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -11369,6 +11544,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 2106 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 2106 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -11699,7 +11879,7 @@
       "listingVerification": "employer-detail",
       "lastPageFetched": "2026-11-25",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "missing",
         "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -11847,6 +12027,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 6782 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "missing",
+          "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -11918,9 +12103,9 @@
       "applicationMethod": "Published employer application route; manual review",
       "automationNotes": "Read-only research; no application or employer message sent.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2735 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -12068,6 +12253,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2735 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2735 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "termReviewHistory": [
@@ -12159,7 +12349,7 @@
       "duration": "12 weeks",
       "lastPageFetched": "2026-11-24",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "missing",
         "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -12307,6 +12497,11 @@
           "checkedAt": "2026-11-25",
           "status": "missing",
           "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "missing",
+          "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "termReviewHistory": [
@@ -12448,11 +12643,11 @@
       "automationNotes": "Read-only research; no application, form or employer message submitted.",
       "listingVerification": "employer-detail",
       "applicationDeadline": "2027-01-24",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 13344 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 13429 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "sourceCheckHistory": [
         {
@@ -12598,6 +12793,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 13344 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 13344 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "termReviewHistory": [
@@ -12670,9 +12870,9 @@
       "applicationMethod": "Published employer/board route; manual review",
       "automationNotes": "Read-only research; no application, form or employer message submitted.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2873 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -12820,6 +13020,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2873 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2873 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -12847,18 +13052,18 @@
       "region": "Southern India",
       "postedAt": "2026-09-08",
       "postedLabel": "8September2026 in official employer API publishedOn field",
-      "summary": "Six-month Bengaluru internship; Figma, design reviews, accessibility and systems. Keka header says Part-Time: confirm hours.",
-      "evidence": "Current public employer feed contains job36030 and readable new /jobdetails/ route. Legacy /careers/36030 redirects to index, not proof of closure. No salary range. API published8September2026; Built In relative age is not original date. Header Part-Time conflicts with assumptions of full-time internship. Exact employer Keka detail public research extract says The Job posting is not available anymore;may be deleted or hidden. Extract crawl labelled3days ago at2November check;not a fresh direct body fetch. Collector/active-feed restricted and junior85790 unresolved. Prior27October active-feed evidence retained. Retired on explicit unavailable notice,not on inaccessibility alone;not claimed filled.",
-      "nextAction": "Archived listing;reopen only after employer-confirmed renewed requisition/intake. Browser-local saved stages and history remain separate.",
+      "summary": "Reopened on current employer index and exact-role evidence: six-month Bengaluru internship, pay and Part-Time hours/cohort to confirm.",
+      "evidence": "27 November normal official careers.toddleapp.com current open-position list explicitly links internship 36030, 0–1year, Bangalore, Part-Time. Public research-tool exact Keka employer advert now readable with six-month design internship, current/recent formal design students, Figma and academic/personal portfolio, and Apply button; today-labelled crawl is access evidence, not a new employer publication date. This positive current employer index/detail replaces prior2 November unavailable evidence; prior closure/history retained. Mirror26 November timestamps do not renew the original 8 September2026 API posting date. Pay unstated. Part-Time header and six-month body require exact hours/cohort clarification; individual joining/student eligibility and fixed stipend remain unconfirmed. Normal Keka automated read restricted; no authenticated session.",
+      "nextAction": "Confirm this renewed student cohort accepts applications, fixed stipend at least INR 15, 000/month, exact six-month dates and hours. Official index says Part-Time; do not assume full-time or India remote permission. Review the exact employer form manually only after terms are clear.",
       "roleType": "Internship",
       "sourceType": "Company careers",
       "applicationUrl": "https://toddle.keka.com/careers/jobdetails/36030",
       "payMin": null,
       "payMax": null,
       "payVerified": false,
-      "status": "closed",
+      "status": "on_hold",
       "firstSeen": "2026-10-27",
-      "checkedAt": "2026-11-02",
+      "checkedAt": "2026-11-27",
       "requirements": "Pursuing or recently completed relevant formal design education; Figma and portfolio of academic/personal product-design work; Communication, detail, curiosity and openness to feedback; Six-month internship; actual hours/work arrangement require clarification",
       "requirementItems": [
         {
@@ -12889,7 +13094,7 @@
       ],
       "applicationMethod": "Published employer/board route; manual review",
       "automationNotes": "Read-only research; no application, form or employer message submitted.",
-      "listingVerification": "unavailable-original",
+      "listingVerification": "current-employer-relisted-intake-terms-unconfirmed",
       "sourceChecks": [
         {
           "url": "https://toddle.keka.com/careers/api/embedjobs/default/active/033c739a-87b3-4ce8-98f5-e3e4bfb943f7",
@@ -12905,12 +13110,17 @@
           "sourceLabel": "Built In",
           "observedAt": "2026-10-27",
           "note": "Matching six-month internship cross-post. In-office claim is mirror evidence; employer header Part-Time needs hours confirmation. Mirror relative age15DaysAgo is not original publication date; employer API date8September2026 retained."
+        },
+        {
+          "platform": "Company careers",
+          "url": "https://careers.toddleapp.com/",
+          "note": "Normal employer index now links36030 as an open0–1year Part-Time Bengaluru internship. Positive renewed availability, not a mirror-date reset."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-02",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
-        "note": "Robots policy unavailable or disallows automated read"
+        "note": "Normal Keka read robots-restricted. Normal official careers index positively links the role; exact employer public research-tool extract separately readable. No authenticated access."
       },
       "sourceCheckHistory": [
         {
@@ -12932,10 +13142,106 @@
           "checkedAt": "2026-11-01",
           "status": "blocked",
           "note": "Robots unavailable/disallowed; no bypass or closure inference."
+        },
+        {
+          "checkedAt": "2026-11-02",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read"
         }
       ],
-      "retiredAt": "2026-11-02",
-      "closureReason": "Exact employer Keka detail public research extract says The Job posting is not available anymore;may be deleted or hidden. Extract crawl labelled3days ago at2November check;not a fresh direct body fetch. Collector/active-feed restricted and junior85790 unresolved. Prior27October active-feed evidence retained. Retired on explicit unavailable notice,not on inaccessibility alone;not claimed filled."
+      "listingHistory": [
+        {
+          "checkedAt": "2026-11-27",
+          "action": "reopened-on-current-employer-evidence",
+          "prior": {
+            "id": "careers-toddle-product-design-intern-36030",
+            "companyId": "toddle",
+            "company": "Toddle",
+            "title": "Intern, Product Designer",
+            "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030",
+            "location": "Bengaluru, Karnataka, India",
+            "workMode": "Unconfirmed",
+            "region": "Southern India",
+            "postedAt": "2026-09-08",
+            "postedLabel": "8September2026 in official employer API publishedOn field",
+            "summary": "Six-month Bengaluru internship; Figma, design reviews, accessibility and systems. Keka header says Part-Time: confirm hours.",
+            "evidence": "Current public employer feed contains job36030 and readable new /jobdetails/ route. Legacy /careers/36030 redirects to index, not proof of closure. No salary range. API published8September2026; Built In relative age is not original date. Header Part-Time conflicts with assumptions of full-time internship. Exact employer Keka detail public research extract says The Job posting is not available anymore;may be deleted or hidden. Extract crawl labelled3days ago at2November check;not a fresh direct body fetch. Collector/active-feed restricted and junior85790 unresolved. Prior27October active-feed evidence retained. Retired on explicit unavailable notice,not on inaccessibility alone;not claimed filled.",
+            "nextAction": "Archived listing;reopen only after employer-confirmed renewed requisition/intake. Browser-local saved stages and history remain separate.",
+            "roleType": "Internship",
+            "sourceType": "Company careers",
+            "applicationUrl": "https://toddle.keka.com/careers/jobdetails/36030",
+            "payMin": null,
+            "payMax": null,
+            "payVerified": false,
+            "status": "closed",
+            "firstSeen": "2026-10-27",
+            "checkedAt": "2026-11-02",
+            "requirements": "Pursuing or recently completed relevant formal design education; Figma and portfolio of academic/personal product-design work; Communication, detail, curiosity and openness to feedback; Six-month internship; actual hours/work arrangement require clarification",
+            "requirementItems": [
+              {
+                "id": "d7db4e8279",
+                "text": "Pursuing or recently completed relevant formal design education",
+                "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
+              },
+              {
+                "id": "b28940081e",
+                "text": "Figma and portfolio of academic/personal product-design work",
+                "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
+              },
+              {
+                "id": "6603ca5302",
+                "text": "Communication, detail, curiosity and openness to feedback",
+                "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
+              },
+              {
+                "id": "1f6a697b83",
+                "text": "Six-month internship; actual hours/work arrangement require clarification",
+                "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
+              }
+            ],
+            "tags": [
+              "UX",
+              "Product",
+              "Pay to confirm"
+            ],
+            "applicationMethod": "Published employer/board route; manual review",
+            "automationNotes": "Read-only research; no application, form or employer message submitted.",
+            "listingVerification": "unavailable-original",
+            "sourceChecks": [
+              {
+                "url": "https://toddle.keka.com/careers/api/embedjobs/default/active/033c739a-87b3-4ce8-98f5-e3e4bfb943f7",
+                "label": "Official public employer feed",
+                "checkedAt": "2026-10-27",
+                "evidenceStatus": "Current active list and full description read; numeric compensation absent."
+              }
+            ],
+            "additionalSources": [
+              {
+                "platform": "Job board",
+                "url": "https://builtin.com/job/intern-product-designer/11182292",
+                "sourceLabel": "Built In",
+                "observedAt": "2026-10-27",
+                "note": "Matching six-month internship cross-post. In-office claim is mirror evidence; employer header Part-Time needs hours confirmation. Mirror relative age15DaysAgo is not original publication date; employer API date8September2026 retained."
+              }
+            ],
+            "lastSourceCheck": {
+              "checkedAt": "2026-11-02",
+              "status": "restricted",
+              "note": "Robots policy unavailable or disallows automated read"
+            },
+            "retiredAt": "2026-11-02",
+            "closureReason": "Exact employer Keka detail public research extract says The Job posting is not available anymore;may be deleted or hidden. Extract crawl labelled3days ago at2November check;not a fresh direct body fetch. Collector/active-feed restricted and junior85790 unresolved. Prior27October active-feed evidence retained. Retired on explicit unavailable notice,not on inaccessibility alone;not claimed filled."
+          }
+        }
+      ],
+      "reopenedAt": "2026-11-27",
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-27",
+          "sourceUrl": "https://careers.toddleapp.com/",
+          "note": "27 November normal official careers.toddleapp.com current open-position list explicitly links internship 36030, 0–1year, Bangalore, Part-Time. Public research-tool exact Keka employer advert now readable with six-month design internship, current/recent formal design students, Figma and academic/personal portfolio, and Apply button; today-labelled crawl is access evidence, not a new employer publication date. This positive current employer index/detail replaces prior2 November unavailable evidence; prior closure/history retained. Mirror26 November timestamps do not renew the original 8 September2026 API posting date. Pay unstated. Part-Time header and six-month body require exact hours/cohort clarification; individual joining/student eligibility and fixed stipend remain unconfirmed. Normal Keka automated read restricted; no authenticated session."
+        }
+      ]
     },
     {
       "id": "careers-toddle-junior-visual-ui-85790",
@@ -12959,7 +13265,7 @@
       "payVerified": false,
       "status": "on_hold",
       "firstSeen": "2026-10-27",
-      "checkedAt": "2026-10-27",
+      "checkedAt": "2026-11-27",
       "requirements": "0–2 relevant years; internships, academic projects and freelance work count; Portfolio showing UI, interaction, icon or design-system work; Figma auto-layout, components, variants, variables, vectors and prototyping; Responsive design, accessibility, flows and developer handoff; SVG/HTML/CSS/motion helpful",
       "requirementItems": [
         {
@@ -13000,7 +13306,7 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -13146,6 +13452,18 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        }
+      ],
+      "researchObservations": [
+        {
+          "checkedAt": "2026-11-27",
+          "sourceUrl": "https://careers.toddleapp.com/",
+          "note": "27 November normal employer open list links 85790 as Visual UI Designer, 0–2years, Bangalore/full-time. Exact public employer research extract (crawl3days) still calls it Junior Visual UI and explicitly counts internships, academic projects and freelance work. Figma components/variables/icons/accessibility/handoff requirements retained. Salary and role-specific remote/student employment terms remain unknown; generic benefits not role approval. Normal Keka read restricted."
         }
       ]
     },
@@ -13209,7 +13527,7 @@
       "automationNotes": "Read-only research; no application, form or employer message submitted.",
       "listingVerification": "board-detail",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -13355,6 +13673,11 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ]
     },
@@ -13482,9 +13805,9 @@
       "applicationMethod": "Published employer/board route; manual review",
       "automationNotes": "Read-only research; no application, form or employer message submitted.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4677 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -13632,6 +13955,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4677 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4677 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -13703,9 +14031,9 @@
       "applicationMethod": "Published employer/board application route; manual review",
       "automationNotes": "Read-only public research; no application, form or employer message submitted.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1923 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -13853,6 +14181,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1923 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1923 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -13928,9 +14261,9 @@
       "automationNotes": "Read-only public research; no application, form or employer message submitted.",
       "listingVerification": "public-job-detail",
       "email": "careers@alignminds.com",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1803 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -14078,6 +14411,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1803 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1803 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -14131,7 +14469,7 @@
       "automationNotes": "Read-only public research; no application, form or employer message submitted.",
       "listingVerification": "public-job-detail",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -14277,6 +14615,11 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ]
     },
@@ -14334,9 +14677,9 @@
       "applicationMethod": "Published employer/board application route; manual review",
       "automationNotes": "Read-only public research; no application, form or employer message submitted.",
       "listingVerification": "employer-detail",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 6369 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -14484,6 +14827,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 6369 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 6369 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "termReviewHistory": [
@@ -14598,9 +14946,9 @@
       "listingVerification": "employer-index",
       "applicationMethod": "Published employer route; manual review",
       "automationNotes": "Public read-only research. No form, application or employer message sent.",
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2275 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -14743,6 +15091,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2275 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2275 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10",
@@ -14828,9 +15181,9 @@
         "confidence": "Low for current intake/pay",
         "note": "March2026 body30–35k/month; header30–50k conflict retained. Employer site unavailable. Historical advert, not a current stipend or received offer."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3254 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -14973,6 +15326,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3254 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3254 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -15032,11 +15390,11 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, form or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 5312 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-10-31",
@@ -15171,6 +15529,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 5298 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 5312 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "termReviewHistory": [
@@ -15311,11 +15674,11 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, form or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-10-31",
@@ -15450,6 +15813,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -15525,11 +15893,11 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, form or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3989 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-10-31",
@@ -15664,6 +16032,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3989 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3989 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -15730,11 +16103,11 @@
       "email": "careers@storestory.in",
       "applicationMethod": "Published role application email; no email sent",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1897 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-11-01",
@@ -15864,6 +16237,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1897 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1897 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -15958,11 +16336,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 92 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-11-01",
@@ -16092,6 +16470,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 92 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 92 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "termReviewHistory": [
@@ -16160,11 +16543,11 @@
       "automationNotes": "Public read-only research; no application, form or employer message sent.",
       "email": "hrpaoyaila@gmail.com",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3501 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-11-01",
@@ -16294,6 +16677,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3501 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3501 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -16375,11 +16763,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4101 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-11-01",
@@ -16509,6 +16897,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4143 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4101 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -16561,11 +16954,11 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, message or form submission initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1904 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "termReviewHistory": [
         {
           "checkedAt": "2026-11-02",
@@ -16698,6 +17091,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1904 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1904 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -16761,11 +17159,11 @@
       "listingVerification": "original-detail",
       "automationNotes": "Public read-only research; no application, interview, message or form submission initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1924 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "termReviewHistory": [
         {
           "checkedAt": "2026-11-02",
@@ -16896,6 +17294,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1924 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1924 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -16995,11 +17398,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3190 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "termReviewHistory": [
         {
           "checkedAt": "2026-11-02",
@@ -17134,6 +17537,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3190 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3190 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -17223,11 +17631,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 10953 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "termReviewHistory": [
         {
           "checkedAt": "2026-11-03",
@@ -17353,6 +17761,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 10953 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 10953 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "researchObservations": [
@@ -17414,11 +17827,11 @@
       "applicationMethod": "Employer-published route; manual review required",
       "automationNotes": "Read-only public research; no application, form, interview or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4268 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "termReviewHistory": [
         {
           "checkedAt": "2026-11-03",
@@ -17542,6 +17955,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 4268 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 4268 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -17843,7 +18261,7 @@
       "applicationMethod": "Employer-published route;manual review required",
       "automationNotes": "Read-only public research;no application,form,AI interview or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "missing",
         "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -17979,6 +18397,11 @@
           "checkedAt": "2026-11-25",
           "status": "missing",
           "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "missing",
+          "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -18034,11 +18457,11 @@
       "applicationMethod": "Employer-published route;manual review required",
       "automationNotes": "Read-only public research;no application,form,AI interview or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 716 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-04",
@@ -18165,6 +18588,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 716 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 716 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -18219,11 +18647,11 @@
       "applicationMethod": "Employer-published route;manual review required",
       "automationNotes": "Read-only public research;no application,form,AI interview or employer message initiated.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 6273 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-04",
@@ -18345,6 +18773,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 6273 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 6273 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -18399,11 +18832,11 @@
       "applicationMethod": "Published employer form;manual review and submission",
       "automationNotes": "Research only;no form,exercise,application or message sent.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3315 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-05",
@@ -18518,6 +18951,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "fetched",
+          "note": "Normal public response extracted 3315 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "fetched",
           "note": "Normal public response extracted 3315 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -18879,11 +19317,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 5527 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-06",
@@ -18995,6 +19433,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 5701 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 5527 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -19051,11 +19494,11 @@
       "automationNotes": "No application or employer message sent. A readable public page does not mean authenticated account access.",
       "applicationDeadline": "2026-12-05",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 13033 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-06",
@@ -19217,6 +19660,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 12924 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 13033 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -19286,11 +19734,11 @@
         "verifiedMonthlyAmount": false
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 6135 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-07",
@@ -19422,6 +19870,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 6135 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 6135 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -19489,7 +19942,7 @@
         "resolution": "Monthly listing amount established from explicit description; confirm written terms"
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "missing",
         "note": "HTTP 410. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -19623,6 +20076,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "missing",
+          "note": "HTTP 410. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "missing",
           "note": "HTTP 410. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -19882,11 +20340,11 @@
       "automationNotes": "No application, form submission or employer message sent. Public evidence does not establish authenticated browser access.",
       "applicationEmail": "hr.fute3@gmail.com",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 5177 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-07",
@@ -20008,6 +20466,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 5167 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 5177 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -20079,11 +20542,11 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 58 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "sourceCheckHistory": [
         {
           "checkedAt": "2026-11-07",
@@ -20183,6 +20646,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 58 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 58 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -20241,11 +20709,11 @@
       "platformPostedAt": "2026-07-02",
       "applicationDeadline": "2026-12-29",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 8496 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 8542 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-07",
@@ -20362,6 +20830,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 8490 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 8496 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10",
@@ -20432,11 +20905,11 @@
       "automationNotes": "No application, form submission or employer message sent. Public evidence does not establish authenticated browser access.",
       "applicationEmail": "mayur.lunawat@99px.in",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1654 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-07",
@@ -20548,6 +21021,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1654 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1654 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -20617,7 +21095,7 @@
         "note": "Older advert now redirects to category. Not pay for current4476413333, not a received offer."
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -20718,6 +21196,11 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ]
     },
@@ -20799,7 +21282,7 @@
         "note": "Historical/indexed advertised stipend, not a verified current offer or salary survey. Mirror updated13October2026; original date unknown."
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -20898,6 +21381,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -21137,11 +21625,11 @@
         "note": "Platform/mirror date, not employer-original posting. Amount not independently corroborated; not a received offer."
       },
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 5266 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 5534 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-08",
@@ -21243,6 +21731,11 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 5263 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 5266 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastPageFetchedAt": "2026-11-10"
@@ -21301,9 +21794,9 @@
       "platformPostedAt": "2026-11-05",
       "applicationDeadline": "2026-12-14",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 8186 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 8069 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "lastPageFetchedAt": "2026-11-10",
       "researchObservations": [
@@ -21427,9 +21920,14 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 8116 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 8186 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "insiderone-priberry-uiux-dashboards-9ec82483",
@@ -21486,9 +21984,9 @@
       "platformPostedAt": "2026-11-05",
       "applicationDeadline": "2027-01-06",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 8299 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 8131 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "lastPageFetchedAt": "2026-11-10",
       "researchObservations": [
@@ -21612,9 +22110,14 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 8178 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 8299 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "insiderone-ux-research-intern-5e98ec57",
@@ -21670,9 +22173,9 @@
       "platformPostedAt": "2026-11-05",
       "applicationDeadline": "2026-12-07",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 8366 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 8265 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "lastPageFetchedAt": "2026-11-10",
       "researchObservations": [
@@ -21771,9 +22274,14 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 8290 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 8366 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-admark-digitals-uiux-intern",
@@ -21825,7 +22333,7 @@
       "applicationMethod": "Careers page links to general website contact section for portfolio/CV with role title;internship-enquiry purpose,not a guessed HR email",
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1432 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -21926,9 +22434,14 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1432 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1432 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "internshala-dogster-ux-design-1793796912",
@@ -22004,9 +22517,9 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 11104 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 11046 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
       "lastPageFetchedAt": "2026-11-10",
       "researchObservations": [
@@ -22131,9 +22644,14 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 10962 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 11104 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-techtel-product-design-intern",
@@ -22188,7 +22706,7 @@
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2560 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -22280,9 +22798,14 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2560 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2560 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-hmmbiz-graphic-uiux-intern",
@@ -22339,7 +22862,7 @@
       "applicationMethod": "Published public application route; manual user submission only",
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 18421 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -22441,9 +22964,14 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 18421 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 18421 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-triosphere-web-app-uiux-intern",
@@ -22495,7 +23023,7 @@
       "applicationMethod": "Published public application route; manual user submission only",
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3638 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -22592,9 +23120,14 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3638 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3638 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-pixelarc-uiux-design-associate",
@@ -22642,7 +23175,7 @@
       "applicationMethod": "Published public application route; manual user submission only",
       "automationNotes": "No application or employer message sent. Public page access does not provide a signed-in account or authenticated browser session.",
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "missing",
         "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -22757,6 +23290,11 @@
         },
         {
           "checkedAt": "2026-11-25",
+          "status": "missing",
+          "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
           "status": "missing",
           "note": "HTTP 404. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
@@ -22902,14 +23440,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 8219 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 8315 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 8315 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 8203 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-11",
@@ -23097,10 +23640,15 @@
           "checkedAt": "2026-11-25",
           "status": "missing",
           "note": "HTTP 410. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "missing",
+          "note": "HTTP 410. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "missing",
         "note": "HTTP 410. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -23444,14 +23992,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3311 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3447 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 3447 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 3309 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-12",
@@ -23604,14 +24157,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4251 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4251 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4251 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-12",
@@ -23747,14 +24305,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4290 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4298 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 4298 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 4290 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-12",
@@ -24080,14 +24643,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 7138 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 7092 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 7092 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 7040 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "listingHistory": [
         {
           "evidence": "Normal public Remotive exact6564118 advertises CACTUS/Editage Intern, Product Design, India remote, six months, websites and CRM dashboards plus graphical abstracts/visual assets. Figma, Illustrator, Photoshop, portfolio and visual design fundamentals required; introductory work supervised by designers. Salary unspecified; numerical stipend fields remain null. Remotive says Posted Today, but matching other public mirrors were indexed last month: original employer publication and renewed intake are unverified, not a freshly posted employer vacancy. Exact employer destination jobs.cactusglobal.com/jobs/2353 is restricted by robots-policy/access checks; no original job terms or authenticated access claimed. Official cactusglobal.com corporate/careers pages are normally readable and establish Editage/Paperpal/Mind the Graph research products/services and remote-first careers; this does not independently confirm this requisition or its India work arrangement. LinkedIn4489038604 indexed matching employer post corroborates title/six-month scope; its relative label is not an original date. Hold for fixed monthly pay, student eligibility, joining dates, exact legal employer and current role availability.",
@@ -24227,14 +24795,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-19",
@@ -24395,14 +24968,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2769 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2769 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2769 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-13",
@@ -24572,14 +25150,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 10056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 10056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 10056 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-13",
@@ -24734,14 +25317,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4721 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4721 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4721 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-14",
@@ -24993,14 +25581,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3595 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3595 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 3595 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 3585 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-14",
@@ -25407,10 +26000,15 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       }
@@ -25547,14 +26145,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4006 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4006 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4006 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-15",
@@ -25901,14 +26504,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2911 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2911 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2911 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-cehpoint-ui-ux-product-designer-intern",
@@ -26015,14 +26623,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 10340 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 10340 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 10340 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "linkedin-post-0xteam-7474817212743081984",
@@ -26275,14 +26888,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4152 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4144 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 4144 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 4152 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-17",
@@ -26435,14 +27053,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2868 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2868 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2868 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-17",
@@ -26561,14 +27184,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 35116 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 34928 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 34928 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-18",
@@ -26695,14 +27323,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 10597 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 10597 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 10597 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-18",
@@ -26802,14 +27435,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3783 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3791 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 3791 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 3783 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "linkedin-bnp-group-uiux-intern-4419310045",
@@ -26903,10 +27541,15 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       }
@@ -27007,19 +27650,29 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 5317 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 5317 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 5317 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-20",
           "sourceUrl": "https://wellfound.com/jobs/5094852-ui-ux-design-intern",
           "note": "Normal exact Wellfound primary rechecked; retained annual INR360,000/YEAR,not monthly stipend. Current duration/student joining and remote approval remain to confirm; not newly posted today."
+        },
+        {
+          "checkedAt": "2026-11-27",
+          "sourceUrl": "https://wellfound.com/jobs/5094852-ui-ux-design-intern",
+          "note": "27 November normal exact Wellfound still states current/recent Design/HCI/CS students, 1year header, design/frontend work, Mumbai office with remote India considered. INR 360, 000/YEAR and platform17 November15:29:50UTC metadata retained; not30k/month verified stipend. No new card, post date reset or remote approval inferred."
         }
       ]
     },
@@ -27113,14 +27766,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 12798 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 13121 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 13121 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-20",
@@ -27214,14 +27872,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 8760 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 8760 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 8760 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-20",
@@ -27330,10 +27993,15 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -27444,14 +28112,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 11237 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 11335 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 11335 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 11346 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-21",
@@ -27564,14 +28237,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 11857 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 11955 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 11955 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 11966 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-21",
@@ -27659,14 +28337,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3296 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3296 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3296 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-21",
@@ -27760,14 +28443,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3859 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3859 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 3859 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26",
+      "lastPageFetched": "2026-11-27",
       "researchObservations": [
         {
           "checkedAt": "2026-11-21",
@@ -27855,14 +28543,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 8864 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 8864 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 8864 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-naxzant-uiux-intern",
@@ -27943,14 +28636,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4008 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4008 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4008 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "indeed-we-intern-uiux-2d010bbf835df53d",
@@ -28114,14 +28812,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 1994 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 1994 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 1994 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-roomsaathi-uiux-design-intern",
@@ -28192,14 +28895,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 2573 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 2573 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 2573 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-onbyz-web-designer-uiux-intern",
@@ -28296,14 +29004,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4775 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4775 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4775 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "linkedin-vitacure-ux-research-intern-4481045101",
@@ -28386,10 +29099,15 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       }
@@ -28492,10 +29210,15 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       }
@@ -28593,14 +29316,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3057 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3057 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 3057 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 3049 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "wellfound-credxhire-uiux-5130402",
@@ -28701,14 +29429,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 7132 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 7132 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 7132 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "shine-webential-uiux-trainee-19864934",
@@ -28790,14 +29523,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4965 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4974 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4974 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "indeed-techolution-ux-design-intern-8116055f489fee15",
@@ -28875,14 +29613,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 5289 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 5297 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 5297 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 5279 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-wholetruth-uiux-design-intern-88593",
@@ -28971,10 +29714,15 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       }
@@ -29047,14 +29795,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 8113 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 8230 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 8230 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 8063 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-blueera-softech-uiux-designer",
@@ -29120,14 +29873,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 21700 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 21714 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 21714 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 21715 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-we3vision-uiux-designer",
@@ -29194,14 +29952,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 3647 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 3647 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
-        "note": "Normal public response extracted 3647 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        "note": "Normal public response extracted 3563 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-arm-infotech-uiux-trainee",
@@ -29269,14 +30032,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 7577 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 7577 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 7577 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-gdrb-uiux-intern",
@@ -29338,14 +30106,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 7362 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 7362 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 7362 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "linkedin-gamegenesis-game-uiux-intern-4491826260",
@@ -29422,10 +30195,15 @@
           "checkedAt": "2026-11-25",
           "status": "restricted",
           "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       }
@@ -29491,14 +30269,19 @@
           "checkedAt": "2026-11-25",
           "status": "fetched",
           "note": "Normal public response extracted 4815 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        },
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 4823 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
         }
       ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 4823 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "linkedin-post-comming-uiux-intern-7529988955732140032",
@@ -29563,12 +30346,26 @@
         "author": "Nishij Sontakke",
         "authorRelationship": "Author announces Comming hiring; Founder/CEO label from public mirror profile, not legal-employer verification",
         "originalPostUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
-        "observedPublishedLabel": "2d on original public research extract",
-        "checkedAt": "2026-11-25",
+        "observedPublishedLabel": "4d on original public research extract; crawl-labelled today",
+        "checkedAt": "2026-11-27",
         "derivedPublicationDate": "2026-11-21",
         "dateDerivation": "LinkedIn activity ID bit shift; derived, not employer-confirmed absolute publication",
-        "freshness": "Original relative age corroborated by derived activity date, within11–25November",
-        "access": "Normal robots-restricted; original public research-tool extract readable, not authenticated"
+        "freshness": "Original relative age4d observed27November, within13–27November; derived21November activity date retained as derived, not a new post or cohort",
+        "access": "Normal robots-restricted; original public research-tool extract readable, not authenticated",
+        "history": [
+          {
+            "postId": "7529988955732140032",
+            "author": "Nishij Sontakke",
+            "authorRelationship": "Author announces Comming hiring; Founder/CEO label from public mirror profile, not legal-employer verification",
+            "originalPostUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
+            "observedPublishedLabel": "2d on original public research extract",
+            "checkedAt": "2026-11-25",
+            "derivedPublicationDate": "2026-11-21",
+            "dateDerivation": "LinkedIn activity ID bit shift; derived, not employer-confirmed absolute publication",
+            "freshness": "Original relative age corroborated by derived activity date, within11–25November",
+            "access": "Normal robots-restricted; original public research-tool extract readable, not authenticated"
+          }
+        ]
       },
       "additionalSources": [
         {
@@ -29577,9 +30374,15 @@
           "note": "Normal Tal mirror readable; source names exact original post. Mirror7h/3d relative labels vary; not original publication evidence or renewal."
         }
       ],
-      "sourceCheckHistory": [],
+      "sourceCheckHistory": [
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        }
+      ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
@@ -29588,6 +30391,11 @@
           "checkedAt": "2026-11-26",
           "sourceUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
           "note": "26November public original-post extract isreadable butlabelled crawled yesterday,still showing2d. Existing21November activity timestamp remains derived;25November relative-age observation retained. Body stillsaysremote,sixmonths,paid without amount,students welcome. This cached extract isnot renewed original publication,current cohort acceptance ornewpay. Normal original automated read restricted."
+        },
+        {
+          "checkedAt": "2026-11-27",
+          "sourceUrl": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
+          "note": "27 November public original post extract is readable and crawl-labelled today, visible original relative label 4d (previously2d). Body still remote, six months, paid without amount, students/recent graduates. Original activity-ID-derived 21 November date retained as derived, not employer-confirmed absolute date. The changing relative label supports original age under14days; this is a retained lead, not a new post or renewed cohort."
         }
       ]
     },
@@ -29676,9 +30484,15 @@
           "note": "Normal matching mirror readable;30,000/month wording, not independent employer currency confirmation. Distinct industrial-design role not merged."
         }
       ],
-      "sourceCheckHistory": [],
+      "sourceCheckHistory": [
+        {
+          "checkedAt": "2026-11-26",
+          "status": "restricted",
+          "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        }
+      ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "restricted",
         "note": "Robots policy unavailable or disallows automated read. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       }
@@ -29737,13 +30551,19 @@
       "listingVerification": "public-role-evidence-intake-eligibility-unconfirmed",
       "applicationMethod": "Published role/application route; manual user submission only",
       "automationNotes": "No application, employer message, form submission or account access performed.",
-      "sourceCheckHistory": [],
+      "sourceCheckHistory": [
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 7436 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        }
+      ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 7436 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-cafs-infotech-uiux-designer",
@@ -29799,13 +30619,19 @@
       "listingVerification": "public-role-evidence-intake-eligibility-unconfirmed",
       "applicationMethod": "Published role/application route; manual user submission only",
       "automationNotes": "No application, employer message, form submission or account access performed.",
-      "sourceCheckHistory": [],
+      "sourceCheckHistory": [
+        {
+          "checkedAt": "2026-11-26",
+          "status": "fetched",
+          "note": "Normal public response extracted 12 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+        }
+      ],
       "lastSourceCheck": {
-        "checkedAt": "2026-11-26",
+        "checkedAt": "2026-11-27",
         "status": "fetched",
         "note": "Normal public response extracted 12 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
       },
-      "lastPageFetched": "2026-11-26"
+      "lastPageFetched": "2026-11-27"
     },
     {
       "id": "careers-bluepixel-uiux-designer-intern",
@@ -29866,6 +30692,233 @@
           "platform": "Job board",
           "url": "https://getfirsthire.com/jobs/818cb9ecbfa0e6417c08e91e35bea9b2086ba08b48094fc885280e493723c9c7",
           "note": "Indexed FirstHire mirror identifies via Naukri and 25 November 16:37 IST mirror date. Normal mirror restricted; employer corroboration independently readable. No original Naukri access, freshness or posting ID claimed."
+        }
+      ],
+      "sourceCheckHistory": [],
+      "lastSourceCheck": {
+        "checkedAt": "2026-11-27",
+        "status": "fetched",
+        "note": "Normal public response extracted 8483 characters. Access alone does not reconfirm role terms/current intake. Inaccessible alone is not closure."
+      },
+      "lastPageFetched": "2026-11-27"
+    },
+    {
+      "id": "indeed-smytten-uiux-intern-80b56b75690cc29b",
+      "companyId": "smytten",
+      "company": "Smytten",
+      "title": "UI/UX Intern — Smytten Pulse",
+      "roleType": "Internship",
+      "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
+      "applicationUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
+      "sourceType": "Indeed",
+      "location": "Bengaluru office; exact joining/cohort to confirm",
+      "workMode": "On-site",
+      "region": "Southern India",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-27",
+      "feedAddedAt": "2026-11-27",
+      "checkedAt": "2026-11-27",
+      "postedAt": null,
+      "postedLabel": "Indeed platform datePosted:26 November2026 at06:39:51.882UTC; employer-original publication not independently established. Discovered27 November.",
+      "summary": "UI/UX Intern — Smytten Pulse; compensation and current eligible joining need confirmation.",
+      "evidence": "Normal exact Indeed job 80b56b75690cc29b is readable: UI | UX Intern, Smytten Pulse B2B products, Bengaluru office, four to six months, pursuing/recently completed Design/UIUX-related degree. Figma, user flows, wireframes, prototypes, dashboards, data visualisation, research/testing and developer collaboration. Pay information not provided. Indeed JobPosting datePosted26 November2026 06:39:51.882UTC is a platform publication field, not independently established employer-original date. LinkedIn Jobs 4495017726 indexed body matches; normal original read restricted. FirstHire26 November18:26IST and RemJobs26 November are mirror dates. RemJobs gates its employer apply link behind membership; no gated destination accessed. DBERT adds conflicting3month and12–25k/month/project/certification-dependent terms absent from the readable employer-platform JD; not verified current pay, no inference that Smytten requires fees. Exact stipend, no-fee terms and joining remain to confirm.",
+      "nextAction": "Confirm fixed stipend at least INR 15, 000/month, paid/no-fee terms, four-to-six-month student cohort and exact joining. Apply through the published employer/platform route only after checking terms. Do not rely on DBERT compensation or three-month metadata.",
+      "requirements": "Pursuing or recently completed Design/UIUX-related degree; portfolio of design projects; Figma, wireframes, prototypes and user flows for B2B products; Dashboards/data visualisation, research feedback and usability testing; Collaborate with product/engineering; communication and visual craft; motion skills optional",
+      "requirementItems": [
+        {
+          "id": "8dd5cd3d2e84",
+          "text": "Pursuing or recently completed Design/UIUX-related degree; portfolio of design projects",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+        },
+        {
+          "id": "aa8c0b83bca0",
+          "text": "Figma, wireframes, prototypes and user flows for B2B products",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+        },
+        {
+          "id": "5e93756c9027",
+          "text": "Dashboards/data visualisation, research feedback and usability testing",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+        },
+        {
+          "id": "5e6771de2dc6",
+          "text": "Collaborate with product/engineering; communication and visual craft; motion skills optional",
+          "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+        }
+      ],
+      "tags": [
+        "Pay undisclosed",
+        "Current cohort/joining to confirm"
+      ],
+      "listingVerification": "public-role-evidence-intake-eligibility-unconfirmed",
+      "applicationMethod": "Published role/application route; manual user submission only",
+      "automationNotes": "No application, employer message, form submission or account access performed.",
+      "sourceJobId": "80b56b75690cc29b",
+      "platformPostedAt": "2026-11-26T06:39:51.882Z",
+      "additionalSources": [
+        {
+          "platform": "LinkedIn",
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-smytten-4495017726",
+          "sourceJobId": "4495017726",
+          "note": "Indexed matching UI/UX internship body; normal original restricted. LinkedIn Associate/Full-time tags do not override the four-to-six-month internship body."
+        },
+        {
+          "platform": "Job board",
+          "url": "https://getfirsthire.com/jobs/f07e8becc6d2842eeeacd50b7b51bfcafc5c964a5763ab0383a425ee9cea5563",
+          "observedMirrorDate": "2026-11-26",
+          "note": "Indexed via-LinkedIn matching crosspost; 26 November18:26IST is mirror date, pay unstated."
+        },
+        {
+          "platform": "Job board",
+          "url": "https://www.remjobs.works/job/smytten/ui-ux-intern-cdfa0c433dc53092",
+          "observedMirrorDate": "2026-11-26",
+          "note": "Matching public excerpt; 26 November is mirror attribution, not independently verified employer date. Full description/original apply link membership-gated; not accessed."
+        },
+        {
+          "platform": "Job board",
+          "url": "https://lms.dbert.in/internship/lead/6761/ui-ux-intern-smytten",
+          "note": "Conflicting mirror only:3months, 12–25k/month, contingent paid-project/certification terms not corroborated in exact Indeed/LinkedIn JD. Do not transfer numerical pay or fee conditions to employer."
+        },
+        {
+          "platform": "Job board",
+          "url": "https://www.jobaaj.com/job/smytten-ui-ux-intern-bangalore-india-0-to-1-years-2150656",
+          "sourceJobId": "2150656",
+          "note": "Indexed matching Smytten UI/UX four-to-six-month Bengaluru body;0–1year/closing dates are mirror metadata, not independently verified employer intake."
+        },
+        {
+          "platform": "Job board",
+          "url": "https://nextraise.ai/jobs/ui-ux-intern-at-smytten-54fb19800083",
+          "sourceJobId": "54fb19800083",
+          "note": "Indexed matching Smytten UI/UX internship body;26November is mirror date. Frontend Engineer category is mirror classification, not a different role or headcount."
+        }
+      ]
+    },
+    {
+      "id": "careers-outfindr-product-design-intern",
+      "companyId": "outfindr",
+      "company": "OutFindr",
+      "title": "Product Design Intern (UI/UX)",
+      "roleType": "Internship",
+      "sourceUrl": "https://outfindr.co/internships/",
+      "applicationUrl": "https://outfindr.co/internships/",
+      "sourceType": "Company careers",
+      "location": "Pune office, five days a week; no remote or part-time internship",
+      "workMode": "On-site",
+      "region": "Maharashtra",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-27",
+      "feedAddedAt": "2026-11-27",
+      "checkedAt": "2026-11-27",
+      "postedAt": null,
+      "postedLabel": "Original publication not established; 27 November is discovery/check date.",
+      "summary": "Paid three-to-six-month Pune product-design internship; postgraduate students welcome, stipend amount and cohort to confirm.",
+      "evidence": "Normal official internships page advertises Product Design Intern (UI/UX), three to six months, full-time Pune office, paid for the whole duration. It explicitly welcomes diploma/postgraduate students and applicants from colleges outside the listed campuses. Stipend amount disclosed on the first call, not published. Mid-semester applicants should choose a later window; cohort/dates to confirm. Official full-time product-designer detail links this internship and describes screens/design-system work; its separate2+years shipped-consumer-product employment requirements are not intern requirements. Exact internship selector/application form visible, not submitted. Original posting date unstated. PPO depends on work and an available role, not guaranteed.",
+      "nextAction": "Confirm fixed paid stipend of at least INR 15, 000/month before proceeding beyond the first call, exact three-to-six-month cohort and joining, and full-time Pune attendance. Postgraduate eligibility is stated; individual dates still require confirmation. No guaranteed PPO.",
+      "requirements": "Diploma/postgraduate students welcome; other-college applicants can select Other; Three to six months full-time in Pune office, five days a week; no remote/part-time arrangement; Design app screens and maintain part of the design system with a mentor; Include a project/design link; design task and team review; confirm current cohort and stipend",
+      "requirementItems": [
+        {
+          "id": "3e2315fb6f6d",
+          "text": "Diploma/postgraduate students welcome; other-college applicants can select Other",
+          "sourceUrl": "https://outfindr.co/internships/"
+        },
+        {
+          "id": "1ec401dead71",
+          "text": "Three to six months full-time in Pune office, five days a week; no remote/part-time arrangement",
+          "sourceUrl": "https://outfindr.co/internships/"
+        },
+        {
+          "id": "b8c572a8b4a6",
+          "text": "Design app screens and maintain part of the design system with a mentor",
+          "sourceUrl": "https://outfindr.co/internships/"
+        },
+        {
+          "id": "e6012af2ed89",
+          "text": "Include a project/design link; design task and team review; confirm current cohort and stipend",
+          "sourceUrl": "https://outfindr.co/internships/"
+        }
+      ],
+      "tags": [
+        "Paid; amount undisclosed",
+        "Postgraduate students welcome",
+        "Pune office"
+      ],
+      "listingVerification": "public-role-evidence-intake-eligibility-unconfirmed",
+      "applicationMethod": "Published role/application route; manual user submission only",
+      "automationNotes": "No application, employer message, form submission or account access performed.",
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://outfindr.co/careers/product-designer/",
+          "note": "Official full-time2+year detail separately links an intern version. Do not transfer full-time experience requirements or hiring terms to the internship."
+        }
+      ]
+    },
+    {
+      "id": "careers-toddle-product-designer-54457",
+      "companyId": "toddle",
+      "company": "Toddle",
+      "title": "Product Designer — 1–3 years (experience stretch)",
+      "roleType": "Junior / fresher",
+      "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457",
+      "applicationUrl": "https://toddle.keka.com/careers/jobdetails/54457",
+      "sourceType": "Company careers",
+      "location": "Bengaluru, India; full-time; role-specific remote permission unconfirmed",
+      "workMode": "Unconfirmed",
+      "region": "Southern India",
+      "payMin": null,
+      "payMax": null,
+      "payVerified": false,
+      "status": "on_hold",
+      "firstSeen": "2026-11-27",
+      "feedAddedAt": "2026-11-27",
+      "checkedAt": "2026-11-27",
+      "postedAt": null,
+      "postedLabel": "Original publication not established; 27 November is discovery/check date.",
+      "summary": "Product Designer — 1–3 years (experience stretch); compensation and current eligible joining need confirmation.",
+      "evidence": "Normal official careers.toddleapp.com current open-position list links Product Designer 54457, 1–3years, Bengaluru, full-time. Public research-tool exact employer advert readable, crawl labelled yesterday: one to three years designing web/mobile, formal design training, Figma, prior digital product/SaaS/B2B experience, storyboards/prototypes, user research and end-to-end design ownership. Scope includes primary feature ownership and later mentoring. This is an experienced early-career stretch, not a fresher guarantee. Pay unstated. Normal Keka automated read restricted. Generic work-from-anywhere benefit does not establish role-specific India remote approval. Employer original publication date unstated; crawl/discovery dates are not posting dates.",
+      "nextAction": "Confirm one-year relevant product-design experience requirement and whether internships/projects qualify, current-student full-time employment/joining eligibility, salary in original units and role-specific work location. Scope includes independent feature ownership; do not assume fresher eligibility.",
+      "requirements": "One to three years designing web/mobile products; formal design training; Prior digital product experience, ideally SaaS/B2B; research and problem framing through UI; Figma, detailed storyboards, mockups and prototypes; Independent feature ownership and developer collaboration; later mentoring and initiative ownership",
+      "requirementItems": [
+        {
+          "id": "bbe0b9bdbe51",
+          "text": "One to three years designing web/mobile products; formal design training",
+          "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457"
+        },
+        {
+          "id": "a31b8976a619",
+          "text": "Prior digital product experience, ideally SaaS/B2B; research and problem framing through UI",
+          "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457"
+        },
+        {
+          "id": "8f55ed118f2a",
+          "text": "Figma, detailed storyboards, mockups and prototypes",
+          "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457"
+        },
+        {
+          "id": "89cffa3cc527",
+          "text": "Independent feature ownership and developer collaboration; later mentoring and initiative ownership",
+          "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457"
+        }
+      ],
+      "tags": [
+        "Experience stretch: 1–3 years",
+        "Employment/student eligibility to confirm",
+        "Salary undisclosed"
+      ],
+      "listingVerification": "public-role-evidence-intake-eligibility-unconfirmed",
+      "applicationMethod": "Published role/application route; manual user submission only",
+      "automationNotes": "No application, employer message, form submission or account access performed.",
+      "additionalSources": [
+        {
+          "platform": "Company careers",
+          "url": "https://careers.toddleapp.com/",
+          "note": "Normal current employer open-position list explicitly links requisition54457 as1–3years/full-time/Bangalore. Not inferred from a landing page."
         }
       ]
     }

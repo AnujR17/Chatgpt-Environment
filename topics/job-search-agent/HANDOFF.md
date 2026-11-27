@@ -1,6 +1,16 @@
 # Job search agent handoff
 
-Updated 26 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+Updated 27 November 2026. Continue in the existing checkout on branch `topic/job-search-agent`. The latest release is recorded immediately below; older sections retain historical snapshots.
+
+## 27 November independent research — prepared
+
+Three new held cards: `indeed-smytten-uiux-intern-80b56b75690cc29b` (normal Indeed, Bengaluru office,4–6months, student/recent design graduates, pay unknown; LinkedIn4495017726 genuine crosspost), `careers-outfindr-product-design-intern` (official paid3–6months Pune office, PG students welcome, amount unknown), and `careers-toddle-product-designer-54457` (official current index/exact research extract,1–3year employment stretch, salary unknown). No new verified monthly stipend match. Toddle internship36030 reopened on normal official current open list plus exact employer research extract, preserving8September posting date, prior closure and stable requirements. Index Part-Time/six-month body/pay/hours/cohort held. Existing Toddle85790 rechecked:0–2years explicitly counts internships/projects/freelance; distinct from54457.
+
+173 retained/139 active-held/34 archived;113 internships/26 junior;345 companies,5402 sources,54 coverage. New Smytten and OutFindr Workable;tk accelis/thyssenkrupp Possible awareness only. Its Junior title actually requires3–5years; employer404 not a closure. Applied AI Lab fee-based training,Sorsiri/magpylabs unpaid,Hrzworkz unpaid/closed,Supercode expired/below floor and MirMia packaging scope excluded. Smytten DBERT stipend/duration/certification conflict recorded without attributing unverified pay/fees to employer. Novyte annual units unchanged. Comming current original4d label retained without resetting derived21November date.
+
+94 planned+40 adaptive queries executed,134 total,no failed batches. Discovery first,independent tracks,social original window13–27November. No new eligible social-only lead. Onething/HireDesigners/Devoq/rotating studios/Snapdeal/Brahmaverse aliases/authors checked. Naukri/Internshala/X/Keka normal access limits explicit.134 retained primary attempts:111 responses including shells,17 restricted,6 missing;no newly confirmed closure. Toddle official index normal,exact Keka research-tool extracts separately attributed.40of54 coverage checked. Accounting PASS690 supplied matches/336 unresolved including noise;153 public ledger entries,23 unresolved with28November actions. All22 prior pending URLs retried. Receipts/HTML/audit/QA outside Git:/workspace/job-refresh-nov27/. No private applicant data,UI,task,schedule,applications ormessages changed.
+
+Supported Excel/CSV regenerated:173 roles,345 companies,956 requirements,5402 sources and54 coverage rows. Preservation audit,5 JavaScript test files,15 Python tests and Vite build PASS. Local category/company browser checks PASS,including320/390/1440 Discover,original salary units and synthetic saved applications/notes/blacklist/private evidence/backup restoration. No runtime errors or submissions. Existing Sources mobile overflow545px at390/320 remains;Discover/Companies fit. Exact production publication pending;prior26November release remains live until verification succeeds. [Full report](app/public/data/collection-report.md).
 
 ## 26 November independent research — published
 

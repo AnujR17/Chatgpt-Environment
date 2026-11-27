@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-26",
+  "researchedAt": "2026-11-27",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -5218,6 +5218,12 @@
           "label": "26 November public research",
           "checkedAt": "2026-11-26",
           "evidenceStatus": "26November normal graduate/no-academic-placement andMumbai/Remote wording remains. Historical10–12k only potentiallyclearsremote10kafter current remote pay/cohort approval;belowMumbai15k. Separateannual evidence not converted."
+        },
+        {
+          "url": "https://club.ungrammary.com/jobs/ux%2Fui-trainee-designer",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27 November normal employer graduate/no-academic-placement and Mumbai/Remote wording rechecked. Historical10–12k may clear India-remote10k only after current remote cohort/pay approval; below Mumbai15k. Separate annual compensation conflict retained, not converted."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -5229,7 +5235,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Mumbai, Remote India. Check each role for remote eligibility.",
-      "researchedAt": "2026-11-26",
+      "researchedAt": "2026-11-27",
       "payBenchmark": {
         "min": 10000,
         "max": 12000,
@@ -10699,9 +10705,44 @@
               "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
             }
           ],
-          "checkedAt": "2026-11-02",
-          "evidenceStatus": "Exact employer Keka detail public research extract says The Job posting is not available anymore;may be deleted or hidden. Extract crawl labelled3days ago at2November check;not a fresh direct body fetch. Collector/active-feed restricted and junior85790 unresolved. Prior27October active-feed evidence retained. Retired on explicit unavailable notice,not on inaccessibility alone;not claimed filled.",
-          "openingStatus": "Archived / unavailable listing"
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27November normal official careers.toddleapp.com current open-position list explicitly links internship36030,0–1year,Bangalore,Part-Time. Public research-tool exact Keka employer advert now readable with six-month design internship, current/recent formal design students, Figma and academic/personal portfolio, and Apply button; today-labelled crawl is access evidence, not a new employer publication date. This positive current employer index/detail replaces prior2November unavailable evidence; prior closure/history retained. Mirror26November timestamps do not renew the original8September2026 API posting date. Pay unstated. Part-Time header and six-month body require exact hours/cohort clarification; individual joining/student eligibility and fixed stipend remain unconfirmed. Normal Keka automated read restricted; no authenticated session.",
+          "openingStatus": "Reopened; current cohort, pay and hours to confirm",
+          "history": [
+            {
+              "id": "careers-toddle-product-design-intern-36030",
+              "jobId": "careers-toddle-product-design-intern-36030",
+              "title": "Intern, Product Designer",
+              "url": "https://toddle.keka.com/careers/jobdetails/36030",
+              "seniority": "Internship",
+              "location": "Bengaluru, Karnataka, India",
+              "requirements": [
+                {
+                  "id": "d7db4e8279",
+                  "text": "Pursuing or recently completed relevant formal design education",
+                  "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
+                },
+                {
+                  "id": "b28940081e",
+                  "text": "Figma and portfolio of academic/personal product-design work",
+                  "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
+                },
+                {
+                  "id": "6603ca5302",
+                  "text": "Communication, detail, curiosity and openness to feedback",
+                  "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
+                },
+                {
+                  "id": "1f6a697b83",
+                  "text": "Six-month internship; actual hours/work arrangement require clarification",
+                  "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
+                }
+              ],
+              "checkedAt": "2026-11-02",
+              "evidenceStatus": "Exact employer Keka detail public research extract says The Job posting is not available anymore;may be deleted or hidden. Extract crawl labelled3days ago at2November check;not a fresh direct body fetch. Collector/active-feed restricted and junior85790 unresolved. Prior27October active-feed evidence retained. Retired on explicit unavailable notice,not on inaccessibility alone;not claimed filled.",
+              "openingStatus": "Archived / unavailable listing"
+            }
+          ]
         },
         {
           "id": "careers-toddle-junior-visual-ui-85790",
@@ -10732,8 +10773,74 @@
               "sourceUrl": "https://toddle.keka.com/careers/jobdetails/85790"
             }
           ],
-          "checkedAt": "2026-10-27",
-          "evidenceStatus": "Employer active feed and exact detail verified. Full-Time,0–2 relevant years; internships, academic projects and freelance work count. Salary unstated. Generic work-from-anywhere benefits do not establish role-specific India remote permission. Not an internship or received offer."
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27 November normal employer open list links 85790 as Visual UI Designer, 0–2years, Bangalore/full-time. Exact public employer research extract (crawl3days) still calls it Junior Visual UI and explicitly counts internships, academic projects and freelance work. Figma components/variables/icons/accessibility/handoff requirements retained. Salary and role-specific remote/student employment terms remain unknown; generic benefits not role approval. Normal Keka read restricted.",
+          "history": [
+            {
+              "id": "careers-toddle-junior-visual-ui-85790",
+              "jobId": "careers-toddle-junior-visual-ui-85790",
+              "title": "Junior Visual UI Designer",
+              "url": "https://toddle.keka.com/careers/jobdetails/85790",
+              "seniority": "Junior / fresher",
+              "location": "Bengaluru, Karnataka, India; remote permission unconfirmed",
+              "requirements": [
+                {
+                  "id": "6f123e126d",
+                  "text": "0–2 relevant years; internships, academic projects and freelance work count",
+                  "sourceUrl": "https://toddle.keka.com/careers/jobdetails/85790"
+                },
+                {
+                  "id": "e97b74099c",
+                  "text": "Portfolio showing UI, interaction, icon or design-system work",
+                  "sourceUrl": "https://toddle.keka.com/careers/jobdetails/85790"
+                },
+                {
+                  "id": "9e40c3a927",
+                  "text": "Figma auto-layout, components, variants, variables, vectors and prototyping",
+                  "sourceUrl": "https://toddle.keka.com/careers/jobdetails/85790"
+                },
+                {
+                  "id": "23c1fab20d",
+                  "text": "Responsive design, accessibility, flows and developer handoff; SVG/HTML/CSS/motion helpful",
+                  "sourceUrl": "https://toddle.keka.com/careers/jobdetails/85790"
+                }
+              ],
+              "checkedAt": "2026-10-27",
+              "evidenceStatus": "Employer active feed and exact detail verified. Full-Time,0–2 relevant years; internships, academic projects and freelance work count. Salary unstated. Generic work-from-anywhere benefits do not establish role-specific India remote permission. Not an internship or received offer."
+            }
+          ]
+        },
+        {
+          "id": "careers-toddle-product-designer-54457",
+          "jobId": "careers-toddle-product-designer-54457",
+          "title": "Product Designer — 1–3 years (experience stretch)",
+          "seniority": "Junior / fresher; current intake/eligibility unconfirmed",
+          "url": "https://toddle.keka.com/careers/jobdetails/54457",
+          "location": "Bengaluru, India; full-time; role-specific remote permission unconfirmed",
+          "requirements": [
+            {
+              "id": "bbe0b9bdbe51",
+              "text": "One to three years designing web/mobile products; formal design training",
+              "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457"
+            },
+            {
+              "id": "a31b8976a619",
+              "text": "Prior digital product experience, ideally SaaS/B2B; research and problem framing through UI",
+              "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457"
+            },
+            {
+              "id": "8f55ed118f2a",
+              "text": "Figma, detailed storyboards, mockups and prototypes",
+              "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457"
+            },
+            {
+              "id": "89cffa3cc527",
+              "text": "Independent feature ownership and developer collaboration; later mentoring and initiative ownership",
+              "sourceUrl": "https://toddle.keka.com/careers/jobdetails/54457"
+            }
+          ],
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Normal official careers.toddleapp.com current open-position list links Product Designer 54457, 1–3years, Bengaluru, full-time. Public research-tool exact employer advert readable, crawl labelled yesterday: one to three years designing web/mobile, formal design training, Figma, prior digital product/SaaS/B2B experience, storyboards/prototypes, user research and end-to-end design ownership. Scope includes primary feature ownership and later mentoring. This is an experienced early-career stretch, not a fresher guarantee. Pay unstated. Normal Keka automated read restricted. Generic work-from-anywhere benefit does not establish role-specific India remote approval. Employer original publication date unstated; crawl/discovery dates are not posting dates."
         }
       ],
       "sources": [
@@ -10766,6 +10873,30 @@
           "label": "2 November public evidence",
           "checkedAt": "2026-11-02",
           "evidenceStatus": "Exact employer Keka detail public research extract says The Job posting is not available anymore;may be deleted or hidden. Extract crawl labelled3days ago at2November check;not a fresh direct body fetch. Collector/active-feed restricted and junior85790 unresolved. Prior27October active-feed evidence retained. Retired on explicit unavailable notice,not on inaccessibility alone;not claimed filled."
+        },
+        {
+          "url": "https://toddle.keka.com/careers/jobdetails/54457",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Normal official careers.toddleapp.com current open-position list links Product Designer 54457, 1–3years, Bengaluru, full-time. Public research-tool exact employer advert readable, crawl labelled yesterday: one to three years designing web/mobile, formal design training, Figma, prior digital product/SaaS/B2B experience, storyboards/prototypes, user research and end-to-end design ownership. Scope includes primary feature ownership and later mentoring. This is an experienced early-career stretch, not a fresher guarantee. Pay unstated. Normal Keka automated read restricted. Generic work-from-anywhere benefit does not establish role-specific India remote approval. Employer original publication date unstated; crawl/discovery dates are not posting dates."
+        },
+        {
+          "url": "https://careers.toddleapp.com/",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Normal official careers.toddleapp.com current open-position list links Product Designer 54457, 1–3years, Bengaluru, full-time. Public research-tool exact employer advert readable, crawl labelled yesterday: one to three years designing web/mobile, formal design training, Figma, prior digital product/SaaS/B2B experience, storyboards/prototypes, user research and end-to-end design ownership. Scope includes primary feature ownership and later mentoring. This is an experienced early-career stretch, not a fresher guarantee. Pay unstated. Normal Keka automated read restricted. Generic work-from-anywhere benefit does not establish role-specific India remote approval. Employer original publication date unstated; crawl/discovery dates are not posting dates."
+        },
+        {
+          "url": "https://toddle.keka.com/careers/jobdetails/36030",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27 November normal official careers.toddleapp.com current open-position list explicitly links internship 36030, 0–1year, Bangalore, Part-Time. Public research-tool exact Keka employer advert now readable with six-month design internship, current/recent formal design students, Figma and academic/personal portfolio, and Apply button; today-labelled crawl is access evidence, not a new employer publication date. This positive current employer index/detail replaces prior2 November unavailable evidence; prior closure/history retained. Mirror26 November timestamps do not renew the original 8 September2026 API posting date. Pay unstated. Part-Time header and six-month body require exact hours/cohort clarification; individual joining/student eligibility and fixed stipend remain unconfirmed. Normal Keka automated read restricted; no authenticated session."
+        },
+        {
+          "url": "https://toddle.keka.com/careers/jobdetails/85790",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27 November normal employer open list links 85790 as Visual UI Designer, 0–2years, Bangalore/full-time. Exact public employer research extract (crawl3days) still calls it Junior Visual UI and explicitly counts internships, academic projects and freelance work. Figma components/variables/icons/accessibility/handoff requirements retained. Salary and role-specific remote/student employment terms remain unknown; generic benefits not role approval. Normal Keka read restricted."
         }
       ],
       "contact": {
@@ -10773,10 +10904,17 @@
         "kind": "Published careers/application route",
         "sourceUrl": "https://toddle.keka.com/careers/jobdetails/36030"
       },
-      "openingStatus": "Intern36030 explicitly unavailable;Junior Visual UI85790 current body/feed inaccessible,not proven closed.",
+      "openingStatus": "Current official index links internship36030 again, junior Visual UI85790 and Product Designer54457; each has separate pay/experience/student/hours caveats.",
       "payNote": "Current role compensation amount unstated; keep separate from any historical benchmark.",
-      "researchedAt": "2026-11-02",
-      "currentOpeningVerified": false
+      "researchedAt": "2026-11-27",
+      "currentOpeningVerified": true,
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-27",
+          "openingStatus": "Intern36030 explicitly unavailable;Junior Visual UI85790 current body/feed inaccessible,not proven closed.",
+          "currentOpeningVerified": false
+        }
+      ]
     },
     {
       "id": "mojro",
@@ -23496,7 +23634,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-19",
+      "researchedAt": "2026-11-27",
       "sources": [
         {
           "url": "https://wellfound.com/jobs/5094852-ui-ux-design-intern",
@@ -23509,6 +23647,12 @@
           "label": "19 November public research",
           "checkedAt": "2026-11-19",
           "evidenceStatus": "Normal company product site corroborates materials-R&D software identity; it does not independently confirm this internship, salary or remote terms."
+        },
+        {
+          "url": "https://wellfound.com/jobs/5094852-ui-ux-design-intern",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27 November normal exact Wellfound still states current/recent Design/HCI/CS students, 1year header, design/frontend work, Mumbai office with remote India considered. INR 360, 000/YEAR and platform17 November15:29:50UTC metadata retained; not30k/month verified stipend. No new card, post date reset or remote approval inferred."
         }
       ],
       "roles": [
@@ -24795,7 +24939,7 @@
         "UX Designer"
       ],
       "likelyRolesEvidence": "Inferred future families,not vacancies.",
-      "researchedAt": "2026-11-26",
+      "researchedAt": "2026-11-27",
       "aliases": [
         "Brahmaa.ai"
       ],
@@ -24879,6 +25023,12 @@
           "label": "26 November public research",
           "checkedAt": "2026-11-26",
           "evidenceStatus": "26November Brahmaverse/Brahmaa.ai/Fastor7/Abhinav public queries checked;old12October deadline anddistinct3+year4468586366 stay historical/out-of-scope. No current eligible newintake verified."
+        },
+        {
+          "url": "https://www.fastor7.com/",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27 November Brahmaverse/Brahmaa.ai/Fastor7/Abhinav queries and normal Fastor7 site checked. Old12October deadline and distinct3+years4468586366 remain historical/out-of-scope; no new eligible intake inferred."
         }
       ],
       "roles": [
@@ -25322,7 +25472,7 @@
         "UX Researcher"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-26",
+      "researchedAt": "2026-11-27",
       "sources": [
         {
           "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
@@ -25389,6 +25539,12 @@
           "label": "26 November public research",
           "checkedAt": "2026-11-26",
           "evidenceStatus": "26November mirror andnamed-author discovery rechecked;exact sourcedGoogleform401. No verified new12–26November eligible original intake. Mirror25k/expired/form conflict andGurugram limit remain."
+        },
+        {
+          "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27 November mirror/named author queries and exact linked form rechecked; form401. No verified renewed eligible original intake; old25k/expiry/form conflict and geography caveat retained."
         }
       ],
       "roles": [
@@ -26333,7 +26489,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
-      "researchedAt": "2026-11-26",
+      "researchedAt": "2026-11-27",
       "sources": [
         {
           "url": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
@@ -26352,6 +26508,12 @@
           "label": "26 November public research",
           "checkedAt": "2026-11-26",
           "evidenceStatus": "26November public original-post extract isreadable butlabelled crawled yesterday,still showing2d. Existing21November activity timestamp remains derived;25November relative-age observation retained. Body stillsaysremote,sixmonths,paid without amount,students welcome. This cached extract isnot renewed original publication,current cohort acceptance ornewpay. Normal original automated read restricted."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "27 November public original post extract is readable and crawl-labelled today, visible original relative label 4d (previously2d). Body still remote, six months, paid without amount, students/recent graduates. Original activity-ID-derived 21 November date retained as derived, not employer-confirmed absolute date. The changing relative label supports original age under14days; this is a retained lead, not a new post or renewed cohort."
         }
       ],
       "roles": [
@@ -26992,17 +27154,280 @@
         "kind": "Published recruitment email forhistorical exact role;no active intake confirmed",
         "sourceUrl": "https://flexonixs.com/careers/ui-ux-designer-internship"
       }
+    },
+    {
+      "id": "smytten",
+      "name": "Smytten",
+      "company": "Smytten",
+      "companyType": "Product company",
+      "sector": "Consumer product discovery/commerce and Smytten Pulse B2B insights",
+      "focus": "Consumer product discovery/commerce and Smytten Pulse B2B insights",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
+      "locationNote": "Bengaluru office; exact joining/cohort to confirm",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-27",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Normal exact Indeed job 80b56b75690cc29b is readable: UI | UX Intern, Smytten Pulse B2B products, Bengaluru office, four to six months, pursuing/recently completed Design/UIUX-related degree. Figma, user flows, wireframes, prototypes, dashboards, data visualisation, research/testing and developer collaboration. Pay information not provided. Indeed JobPosting datePosted26 November2026 06:39:51.882UTC is a platform publication field, not independently established employer-original date. LinkedIn Jobs 4495017726 indexed body matches; normal original read restricted. FirstHire26 November18:26IST and RemJobs26 November are mirror dates. RemJobs gates its employer apply link behind membership; no gated destination accessed. DBERT adds conflicting3month and12–25k/month/project/certification-dependent terms absent from the readable employer-platform JD; not verified current pay, no inference that Smytten requires fees. Exact stipend, no-fee terms and joining remain to confirm."
+        },
+        {
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-intern-at-smytten-4495017726",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Indexed matching UI/UX internship body; normal original restricted. LinkedIn Associate/Full-time tags do not override the four-to-six-month internship body."
+        },
+        {
+          "url": "https://getfirsthire.com/jobs/f07e8becc6d2842eeeacd50b7b51bfcafc5c964a5763ab0383a425ee9cea5563",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Indexed via-LinkedIn matching crosspost; 26 November18:26IST is mirror date, pay unstated."
+        },
+        {
+          "url": "https://www.remjobs.works/job/smytten/ui-ux-intern-cdfa0c433dc53092",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Matching public excerpt; 26 November is mirror attribution, not independently verified employer date. Full description/original apply link membership-gated; not accessed."
+        },
+        {
+          "url": "https://lms.dbert.in/internship/lead/6761/ui-ux-intern-smytten",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Conflicting mirror only:3months, 12–25k/month, contingent paid-project/certification terms not corroborated in exact Indeed/LinkedIn JD. Do not transfer numerical pay or fee conditions to employer."
+        },
+        {
+          "url": "https://www.jobaaj.com/job/smytten-ui-ux-intern-bangalore-india-0-to-1-years-2150656",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Indexed matching Smytten UI/UX four-to-six-month Bengaluru body;0–1year/closing dates are mirror metadata, not independently verified employer intake."
+        },
+        {
+          "url": "https://nextraise.ai/jobs/ui-ux-intern-at-smytten-54fb19800083",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Indexed matching Smytten UI/UX internship body;26November is mirror date. Frontend Engineer category is mirror classification, not a different role or headcount."
+        }
+      ],
+      "roles": [
+        {
+          "id": "indeed-smytten-uiux-intern-80b56b75690cc29b",
+          "jobId": "indeed-smytten-uiux-intern-80b56b75690cc29b",
+          "title": "UI/UX Intern — Smytten Pulse",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
+          "location": "Bengaluru office; exact joining/cohort to confirm",
+          "requirements": [
+            {
+              "id": "8dd5cd3d2e84",
+              "text": "Pursuing or recently completed Design/UIUX-related degree; portfolio of design projects",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+            },
+            {
+              "id": "aa8c0b83bca0",
+              "text": "Figma, wireframes, prototypes and user flows for B2B products",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+            },
+            {
+              "id": "5e93756c9027",
+              "text": "Dashboards/data visualisation, research feedback and usability testing",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+            },
+            {
+              "id": "5e6771de2dc6",
+              "text": "Collaborate with product/engineering; communication and visual craft; motion skills optional",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+            }
+          ],
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Normal exact Indeed job 80b56b75690cc29b is readable: UI | UX Intern, Smytten Pulse B2B products, Bengaluru office, four to six months, pursuing/recently completed Design/UIUX-related degree. Figma, user flows, wireframes, prototypes, dashboards, data visualisation, research/testing and developer collaboration. Pay information not provided. Indeed JobPosting datePosted26 November2026 06:39:51.882UTC is a platform publication field, not independently established employer-original date. LinkedIn Jobs 4495017726 indexed body matches; normal original read restricted. FirstHire26 November18:26IST and RemJobs26 November are mirror dates. RemJobs gates its employer apply link behind membership; no gated destination accessed. DBERT adds conflicting3month and12–25k/month/project/certification-dependent terms absent from the readable employer-platform JD; not verified current pay, no inference that Smytten requires fees. Exact stipend, no-fee terms and joining remain to confirm."
+        }
+      ],
+      "contact": {
+        "url": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
+        "kind": "Public Indeed role/application route; official ATS destination not independently established",
+        "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+      },
+      "website": "https://smytten.com/",
+      "careersUrlNote": "Official employer ATS destination not established;careersUrl uses the verified exact public Indeed role route. The official site is recorded separately."
+    },
+    {
+      "id": "outfindr",
+      "name": "OutFindr",
+      "company": "OutFindr",
+      "companyType": "Product company",
+      "sector": "Consumer app for group activities, discovery, bookings and local experiences",
+      "focus": "Consumer app for group activities, discovery, bookings and local experiences",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://outfindr.co/careers/",
+      "locationNote": "Pune office, five days a week; no remote or part-time internship",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-27",
+      "sources": [
+        {
+          "url": "https://outfindr.co/internships/",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Normal official internships page advertises Product Design Intern (UI/UX), three to six months, full-time Pune office, paid for the whole duration. It explicitly welcomes diploma/postgraduate students and applicants from colleges outside the listed campuses. Stipend amount disclosed on the first call, not published. Mid-semester applicants should choose a later window; cohort/dates to confirm. Official full-time product-designer detail links this internship and describes screens/design-system work; its separate2+years shipped-consumer-product employment requirements are not intern requirements. Exact internship selector/application form visible, not submitted. Original posting date unstated. PPO depends on work and an available role, not guaranteed."
+        },
+        {
+          "url": "https://outfindr.co/careers/product-designer/",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Official full-time2+year detail separately links an intern version. Do not transfer full-time experience requirements or hiring terms to the internship."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-outfindr-product-design-intern",
+          "jobId": "careers-outfindr-product-design-intern",
+          "title": "Product Design Intern (UI/UX)",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://outfindr.co/internships/",
+          "location": "Pune office, five days a week; no remote or part-time internship",
+          "requirements": [
+            {
+              "id": "3e2315fb6f6d",
+              "text": "Diploma/postgraduate students welcome; other-college applicants can select Other",
+              "sourceUrl": "https://outfindr.co/internships/"
+            },
+            {
+              "id": "1ec401dead71",
+              "text": "Three to six months full-time in Pune office, five days a week; no remote/part-time arrangement",
+              "sourceUrl": "https://outfindr.co/internships/"
+            },
+            {
+              "id": "b8c572a8b4a6",
+              "text": "Design app screens and maintain part of the design system with a mentor",
+              "sourceUrl": "https://outfindr.co/internships/"
+            },
+            {
+              "id": "e6012af2ed89",
+              "text": "Include a project/design link; design task and team review; confirm current cohort and stipend",
+              "sourceUrl": "https://outfindr.co/internships/"
+            }
+          ],
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Normal official internships page advertises Product Design Intern (UI/UX), three to six months, full-time Pune office, paid for the whole duration. It explicitly welcomes diploma/postgraduate students and applicants from colleges outside the listed campuses. Stipend amount disclosed on the first call, not published. Mid-semester applicants should choose a later window; cohort/dates to confirm. Official full-time product-designer detail links this internship and describes screens/design-system work; its separate2+years shipped-consumer-product employment requirements are not intern requirements. Exact internship selector/application form visible, not submitted. Original posting date unstated. PPO depends on work and an available role, not guaranteed."
+        }
+      ],
+      "contact": {
+        "url": "https://outfindr.co/careers/",
+        "kind": "Published role/careers route; no contact or submission",
+        "sourceUrl": "https://outfindr.co/careers/"
+      }
+    },
+    {
+      "id": "tk-accelis-it-services",
+      "name": "tk accelis IT Services India Pvt Ltd (thyssenkrupp careers)",
+      "company": "tk accelis IT Services India Pvt Ltd (thyssenkrupp careers)",
+      "companyType": "Services team",
+      "sector": "Enterprise IT services and UI/UX design",
+      "focus": "Enterprise IT services and UI/UX design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://jobs.thyssenkrupp.com/en/job/id/973124",
+      "locationNote": "Thane West, Maharashtra; office at least two/three days weekly",
+      "openingStatus": "Experienced-role awareness only:3–5years despite Junior title; current exact employer404 unresolved.",
+      "currentOpeningVerified": false,
+      "payNote": "No numerical salary stated in sampled exact-role evidence; no design-intern pay inferred.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-27",
+      "sources": [
+        {
+          "url": "https://jobs.thyssenkrupp.com/en/job/id/973124",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Indexed exact employer Junior UX Designer973124/JPT_ALL00261 lists full-time permanent, Professionals, 6 October2026 posting, flexible entry and Thane office2–3days weekly. Focused exact-requisition search confirms3–5years experience and 2+years Figma despite Junior title. Normal exact canonical and named-path employer URLs return404; research-tool open also404. Indexed ongoing-recruitment wording is not verified current intake, and404 alone is not employer closure. Salary unstated. Employer contact Vinit Poojary/tkMits-IN-Recruitment@thyssenkrupp-materials.com is published recruitment-purpose; no contact sent. No active early-career card."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=baeaea4541e6df28",
+          "label": "27 November public research",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Normal exact Indeed advert matches employer requisition JPT_ALL00261 and explicitly states3–5years experience and 2+years Figma. The Junior title is not fresher eligibility. Salary undisclosed; no employer-wide closure inferred from exact employer404."
+        }
+      ],
+      "roles": [
+        {
+          "id": "tk-accelis-ux-jpt-all00261-research",
+          "title": "Junior UX Designer (Location — Thane)",
+          "seniority": "Experienced 3–5years despite Junior title; not a fresher/intern recommendation",
+          "url": "https://jobs.thyssenkrupp.com/en/job/id/973124",
+          "location": "Thane West, Maharashtra; office2–3days weekly",
+          "checkedAt": "2026-11-27",
+          "evidenceStatus": "Indexed exact employer Junior UX Designer973124/JPT_ALL00261 lists full-time permanent, Professionals, 6 October2026 posting, flexible entry and Thane office2–3days weekly. Focused exact-requisition search confirms3–5years experience and 2+years Figma despite Junior title. Normal exact canonical and named-path employer URLs return404; research-tool open also404. Indexed ongoing-recruitment wording is not verified current intake, and404 alone is not employer closure. Salary unstated. Employer contact Vinit Poojary/tkMits-IN-Recruitment@thyssenkrupp-materials.com is published recruitment-purpose; no contact sent. No active early-career card.",
+          "requirements": [
+            {
+              "id": "ed59478910dc",
+              "text": "Three to five years experience; at least two years hands-on Figma",
+              "sourceUrl": "https://jobs.thyssenkrupp.com/en/job/id/973124"
+            },
+            {
+              "id": "c804c40a3009",
+              "text": "UI/UX design systems, responsive design and accessibility",
+              "sourceUrl": "https://jobs.thyssenkrupp.com/en/job/id/973124"
+            },
+            {
+              "id": "455e4401505d",
+              "text": "Figma/Adobe XD/InVision/Photoshop/Illustrator/video tools",
+              "sourceUrl": "https://jobs.thyssenkrupp.com/en/job/id/973124"
+            },
+            {
+              "id": "2ae04210c654",
+              "text": "Bachelor degree, preferably UI/Interaction/HCI or related field; Thane office attendance",
+              "sourceUrl": "https://jobs.thyssenkrupp.com/en/job/id/973124"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "email": "tkMits-IN-Recruitment@thyssenkrupp-materials.com",
+        "url": "https://jobs.thyssenkrupp.com/en/job/id/973124",
+        "sourceUrl": "https://jobs.thyssenkrupp.com/en/job/id/973124",
+        "kind": "Published exact-role recruitment contact; role3–5years and current access unresolved; no message sent"
+      }
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-26",
+    "researchedAt": "2026-11-27",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 342,
+    "directoryCount": 345,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 21,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local.",
-    "lastResearchRefresh": "2026-11-26"
+    "lastResearchRefresh": "2026-11-27"
   }
 }
