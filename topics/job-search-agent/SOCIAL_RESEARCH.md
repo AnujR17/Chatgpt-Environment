@@ -181,3 +181,25 @@ company and vacancy-text fields on the exact permalink before exporting/importin
 Imported captures are browser-local, unclassified/on_hold with pay unverified.
 They are not shared with the background task or published public feed. No automatic
 application or message is sent. Never promise complete social-feed coverage.
+
+
+### Original/profile follow-through repair —28November2026
+
+boAt's25November mixed visual/UIUX full-time/internship post was missing from
+the board. A cached research profile exposed only an older internship post;
+a normal public author profile exposed the new exact permalink. For a bounded
+sample of newly encountered hiring authors,compare available normal public
+profile/post evidence with the index,follow exact published application links,
+and read the original post's own publication metadata,not comment dates.
+Do not repeatedly retry blocked/rate-limited feeds or use login/session bypass.
+An inaccessible form is an unresolved next action,not an automatic discard or
+closure. Unknown pay,location orstudent terms stay explicit on held credible
+leads;outside-geography rules still apply. Full-time in a mixed post does not
+establish junior experience eligibility.
+
+Include simple visual-design and UI UX spelling variants alongside product,
+interaction and UI/UX titles in broad employer/author discovery. Record relevant
+unknown-date hiring snippets in the ledger for follow-through;only date-verified
+social originals within14days qualify as active recommendations. boAt andTech
+Mahindra/BORN XDS/public authors are watchlist discovery targets,not substitutes
+for new-employer discovery or guarantees of complete internet coverage.

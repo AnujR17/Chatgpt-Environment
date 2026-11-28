@@ -1476,6 +1476,274 @@
       "checkedAt": "2026-11-28T01:34:38.990Z",
       "receiptBatch": "targets-c-20",
       "resultLimit": "Bounded public index sample; query execution does not confirm original dates, full feed access or no missed roles."
+    },
+    {
+      "id": "boat-lifestyle-linkedin-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"boAt Lifestyle\" (intern OR internship OR hiring) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22boAt+Lifestyle%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "boat-lifestyle-linkedin-updates",
+      "platform": "LinkedIn company updates",
+      "query": "site:linkedin.com/company/ \"boAt Lifestyle\" (\"intern\" OR \"internship\") after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22boAt+Lifestyle%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "boat-lifestyle-x-posts",
+      "platform": "X",
+      "query": "site:x.com \"boAt Lifestyle\" (intern OR internship OR hiring) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22boAt+Lifestyle%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "boat-lifestyle-linkedin-authors",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"boAt Lifestyle\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22boAt+Lifestyle%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "boat-lifestyle-person-0-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Arpit Anand\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Arpit+Anand%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "boat-lifestyle-person-1-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Brahmdeep Singh\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Brahmdeep+Singh%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "boat-lifestyle-person-2-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Mahesh Sathe\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Mahesh+Sathe%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-linkedin-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Tech Mahindra\" (intern OR internship OR hiring) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Tech+Mahindra%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-linkedin-updates",
+      "platform": "LinkedIn company updates",
+      "query": "site:linkedin.com/company/ \"Tech Mahindra\" (\"intern\" OR \"internship\") after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fcompany%2F+%22Tech+Mahindra%22+%28%22intern%22+OR+%22internship%22%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-x-posts",
+      "platform": "X",
+      "query": "site:x.com \"Tech Mahindra\" (intern OR internship OR hiring) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22Tech+Mahindra%22+%28intern+OR+internship+OR+hiring%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-linkedin-authors",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Tech Mahindra\" (\"UI/UX\" OR \"product design\" OR UIUX) (hiring OR portfolio OR intern) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Tech+Mahindra%22+%28%22UI%2FUX%22+OR+%22product+design%22+OR+UIUX%29+%28hiring+OR+portfolio+OR+intern%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-alias-0-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"BORN XDS\" (\"UI/UX\" OR design) (intern OR junior OR hiring) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22BORN+XDS%22+%28%22UI%2FUX%22+OR+design%29+%28intern+OR+junior+OR+hiring%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-alias-0-careers",
+      "platform": "Employer discovery",
+      "query": "\"BORN XDS\" (\"UI/UX\" OR \"product design\") (intern OR junior OR careers)",
+      "searchUrl": "https://www.google.com/search?q=%22BORN+XDS%22+%28%22UI%2FUX%22+OR+%22product+design%22%29+%28intern+OR+junior+OR+careers%29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "discovery",
+      "roleTrack": "Internships",
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-alias-0-x",
+      "platform": "X",
+      "query": "site:x.com \"BORN XDS\" (design OR UX) (intern OR hiring) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Ax.com+%22BORN+XDS%22+%28design+OR+UX%29+%28intern+OR+hiring%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-person-0-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Yuvakumar Parthasarathy\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Yuvakumar+Parthasarathy%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-person-1-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Rutuja Tare\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Rutuja+Tare%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
+    },
+    {
+      "id": "tech-mahindra-person-2-posts",
+      "platform": "LinkedIn posts",
+      "query": "site:linkedin.com/posts/ \"Imran Shaikh\" (\"UI/UX\" OR design) (hiring OR intern OR portfolio) after:2026-11-13 before:2026-11-29",
+      "searchUrl": "https://www.google.com/search?q=site%3Alinkedin.com%2Fposts%2F+%22Imran+Shaikh%22+%28%22UI%2FUX%22+OR+design%29+%28hiring+OR+intern+OR+portfolio%29+after%3A2026-11-13+before%3A2026-11-29",
+      "status": "searched",
+      "generatedFor": "2026-11-28",
+      "phase": "targets",
+      "roleTrack": "Internships",
+      "publicationWindow": {
+        "from": "2026-11-14",
+        "through": "2026-11-28"
+      },
+      "checkedAt": "2026-11-28",
+      "notes": "Executed in targeted follow-up;actual receipts outside Git. Search filters are discovery,not original publication verification."
     }
   ]
 }

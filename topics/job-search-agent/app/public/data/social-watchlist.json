@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-28",
   "purpose": "Public employer/recruiter post discovery targets; neither open vacancies nor workplace endorsements.",
   "limits": "Actual post searches, source access and findings must be recorded separately. No authenticated feed, live subscription or no-missed-post guarantee.",
   "targets": [
@@ -134,6 +134,49 @@
         "https://in.linkedin.com/in/prateek-dayal-b012b0220"
       ],
       "notes": "Awareness target requested for discovery, not a verified current eligible opening. Gurugram outside usual geography; no automatic NCR expansion. Product Design Intern mirror25k/month conflicts with another expired mirror and exact form401. Old employer-author posts retained as historical, not new intake; verify renewed original and student cohort."
+    },
+    {
+      "id": "boat-lifestyle",
+      "companyId": "boat-lifestyle",
+      "name": "boAt Lifestyle",
+      "type": "Consumer technology product company",
+      "check": "every_pass",
+      "careersUrl": "https://www.boat-lifestyle.com/pages/boat-careers",
+      "linkedinUrl": "https://www.linkedin.com/company/boat-lifestyle",
+      "publicHiringPeople": [
+        "Arpit Anand",
+        "Brahmdeep Singh",
+        "Mahesh Sathe"
+      ],
+      "identitySources": [
+        "https://www.boat-lifestyle.com/pages/boat-careers",
+        "https://in.linkedin.com/in/arpit-anand-33471b165",
+        "https://in.linkedin.com/in/mahesh-sathe"
+      ],
+      "notes": "Follow exact author posts and published form destinations. Fresh25November2026 visual/UIUX post advertises internship and full-time positions;pay,location,student eligibility and full-time seniority unknown;Googleform401. Older VisualDesignIntern and0–2year posts remain historical. Gurugram in other adverts does not verify location of new post or authorize an NCR exception."
+    },
+    {
+      "id": "tech-mahindra",
+      "companyId": "tech-mahindra",
+      "name": "Tech Mahindra",
+      "type": "Established technology services and design team",
+      "check": "every_pass",
+      "careersUrl": "https://careers.techmahindra.com/",
+      "linkedinUrl": "https://www.linkedin.com/company/tech-mahindra",
+      "aliases": [
+        "BORN XDS"
+      ],
+      "publicHiringPeople": [
+        "Yuvakumar Parthasarathy",
+        "Rutuja Tare",
+        "Imran Shaikh"
+      ],
+      "identitySources": [
+        "https://careers.techmahindra.com/",
+        "https://www.linkedin.com/posts/yuvap_hiringnow-uxdesign-uxjobs-activity-7309231711165329408-Y0pB",
+        "https://in.linkedin.com/in/rutuja-tare-7695b011b"
+      ],
+      "notes": "BORN XDS–Tech Mahindra is exact hiring-post wording,not independent legal ownership verification. Old junior-to-senior post requiresminimum2years/BFSI andisoutside14daywindow. Uncorroborated branded mirrors/referral/WhatsApp links are unresolved discovery,not current employer offers. Follow exact original dates,requirements and public application destinations."
     }
   ]
 }

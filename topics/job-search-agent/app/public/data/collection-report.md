@@ -1,3 +1,19 @@
+# 28 November targeted discovery follow-up
+
+## 28 November targeted boAt / Tech Mahindra follow-up — prepared
+
+The earlier published sweep omitted these employer dispositions. Normal public author-profile follow-through exposed boAt's25November post7531279582461673472 while a cached research profile showed only its older25September internship post. Added one held Visual/UIUX internship card: verified original publication25November08:56:16.866UTC;location,pay,duration/student terms unknown;exact published Googleform401. Full-time design positions are stated in the same post,but junior experience eligibility is not;no extra junior vacancy invented. Gurugram in other adverts does not establish this post location or extend the named NCR exception.
+
+Added Binated4491808611 as one held fresherUIUXemployment card inPune. Exact indexed employer copy welcomes freshers/academic portfolios;normal original404,matchingFirstHire/UXHack18November dates are mirrors,not verified original publication or renewed intake. Salary/current student/fulltime office terms unknown;published recruiting route retained,no message sent. Existing176 roles unchanged;178 retained/140 active-held/38 archived,112 internships/28 junior,353 companies.
+
+Tech Mahindra company awareness and BORN XDS hiring context now explicit. Genuine original7309231711165329408 is22March2025,minimum2–10+years andBFSI,not a currentfresher opening. Rajneesh/Rakhee hiring copy requires5–7/10+years andisold. gTvM2vfi resolves toWhatsApp channel;rb.gy/vqki0r tothird-party NaukriWakri article andgeneric official careers. ClickCareerPro/MyInternships branded stipend/verified claims lackexact employer corroboration;not current verified offers. EmployeeNavin resharingBijoy's6Novemberpost doesnot establishTechMahindra as employer. No blanket claim thatTechMahindra hasno openings.
+
+Both employers/verified public hiring authors added to persistent social-watchlist. Supported plan now111 queries;all17 added dated queries actually executed,preserving94 earlier same-day query receipts/statuses.58 supplemental queries including broader visual/UIUX discovery andNaukri executed;this is a targeted follow-up,not another complete daily sweep. Accounting PASS146 supplied matches/70 unresolved including noise;55 relevant public dispositions reconciled,remainingunresolved actions29November. Further Caliber/Feelpixel/MoonDive/YUJ/SocioSquares snippets pending exactpost/date/scope;Moon traineecontext linked toexistingrecord,not newintake. Naukri robots/X access limits explicit. Receipts/HTML/accounting outside Git:/workspace/boat-techmahindra-nov28/. No private applicant data,UI,schedule,task,applications ormessages changed.
+
+Supported CSV/workbook regenerated:178 roles,353 companies,990 requirements,5576 sources and54 coverage rows. Preservation audit PASS:all176 prior role records and350 prior companies exactly unchanged;source history,policies,stable IDs and94 prior query statuses retained. Existing5 JavaScript test files,15 Python tests andVite build PASS. Exact production publication andlive browser/file verification pending;previous verified28November daily release remains live until verification. No full internet coverage guarantee.
+
+---
+
 # 28 November 2026 — independent design-role research
 
 ## Junior / fresher employment
