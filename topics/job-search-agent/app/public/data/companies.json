@@ -1,5 +1,5 @@
 {
-  "researchedAt": "2026-11-27",
+  "researchedAt": "2026-11-28",
   "categoryNote": "Dream / Workable / Possible are editable suggested preference groups, not hiring probabilities or user-confirmed classifications.",
   "scopeNote": "Watchlist companies are not offers or verified open vacancies. Reported or modeled salaries are distinct from current employer-listed pay. Do not infer internship pay from senior salaries or treat annualized figures as internship stipends.",
   "companies": [
@@ -5224,6 +5224,12 @@
           "label": "27 November public research",
           "checkedAt": "2026-11-27",
           "evidenceStatus": "27 November normal employer graduate/no-academic-placement and Mumbai/Remote wording rechecked. Historical10–12k may clear India-remote10k only after current remote cohort/pay approval; below Mumbai15k. Separate annual compensation conflict retained, not converted."
+        },
+        {
+          "url": "https://club.ungrammary.com/jobs/ux%2Fui-trainee-designer",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November normal graduate/no-academic-placement andMumbai/Remote wording persists. Historical10–12k fits remote floor only after verified current remote approval/cohort; below Mumbai15k. Annual conflict unchanged."
         }
       ],
       "checkedAt": "2026-10-24",
@@ -5235,7 +5241,7 @@
       "focus": "UX/UI and digital product design",
       "rationale": "Design team working in ux/ui and digital product design. Watch published internship and early-career roles; current evidence is recorded below.",
       "locationNote": "Mumbai, Remote India. Check each role for remote eligibility.",
-      "researchedAt": "2026-11-27",
+      "researchedAt": "2026-11-28",
       "payBenchmark": {
         "min": 10000,
         "max": 12000,
@@ -10897,6 +10903,12 @@
           "label": "27 November public research",
           "checkedAt": "2026-11-27",
           "evidenceStatus": "27 November normal employer open list links 85790 as Visual UI Designer, 0–2years, Bangalore/full-time. Exact public employer research extract (crawl3days) still calls it Junior Visual UI and explicitly counts internships, academic projects and freelance work. Figma components/variables/icons/accessibility/handoff requirements retained. Salary and role-specific remote/student employment terms remain unknown; generic benefits not role approval. Normal Keka read restricted."
+        },
+        {
+          "url": "https://careers.toddleapp.com/",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November normal official current careers index rechecked with 36030, 85790 and 54457 retained. Exact36030 public research-tool body readable; 85790 research open unavailable today, not closure. Part-Time internship/pay/student/cohort and junior employment/experience/remote caveats unchanged. Not newly reopened again."
         }
       ],
       "contact": {
@@ -10906,7 +10918,7 @@
       },
       "openingStatus": "Current official index links internship36030 again, junior Visual UI85790 and Product Designer54457; each has separate pay/experience/student/hours caveats.",
       "payNote": "Current role compensation amount unstated; keep separate from any historical benchmark.",
-      "researchedAt": "2026-11-27",
+      "researchedAt": "2026-11-28",
       "currentOpeningVerified": true,
       "researchHistory": [
         {
@@ -19057,8 +19069,8 @@
       "rationale": "Editable qualitative preference based on evidenced work and eligible locations;not a hiring probability,quality guarantee or job offer.",
       "careersUrl": "https://felicitygames.com/careers",
       "locationNote": "Bengaluru in office",
-      "openingStatus": "Specific advertised six-month UX internship;current student intake/joining to confirm",
-      "currentOpeningVerified": true,
+      "openingStatus": "Exact retained internship advert closed for applications;not employer-wide closure.",
+      "currentOpeningVerified": false,
       "payNote": "Employer-authored Internshala explicitly INR35,000–40,000/month;listing range,not received offer.",
       "payConfidence": "High for advertised monthly listing units;written offer/intake not confirmed",
       "likelyRoles": [
@@ -19066,7 +19078,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-09",
+      "researchedAt": "2026-11-28",
       "sources": [
         {
           "url": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912",
@@ -19079,6 +19091,12 @@
           "label": "Official structured legal identity;normal body shell",
           "checkedAt": "2026-11-09",
           "evidenceStatus": "Organization JSON-LD names Dogster legal entity,Bengaluru and customer-service contact. Main page/body is a client shell;indexed terms separately corroborate brand ownership. Customer-service email not treated as recruitment."
+        },
+        {
+          "url": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912",
+          "label": "28 November exact public closure",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November normal exact Internshala role has the role-specific Applications are closed for this internship notice and Closed for applications control. This is actual advert status, not generic login/account-on-hold UI text. Original stipend, requirements and posting history retained; not employer-wide closure or a filled-role claim. Current apply-by is27 November2026, previous saved4 December evidence retained in history; start window4November–9December does not override explicit closure. INR35–40k/month, six-month Bengaluru terms remain historical current-listing evidence."
         }
       ],
       "roles": [
@@ -19106,8 +19124,38 @@
               "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
             }
           ],
-          "evidenceStatus": "Normal exact employer-authored Internshala detail and JobPosting metadata agree on INR35,000–40,000/month,full-time in-office Bengaluru,six months,one opening,application deadline4December2026 and eligible joining4November–9December2026. Structured platform posting is4November2026;first discovery/check is9November,not a fresh posting claim. Body names Felicity Games;official Felicity Organization metadata names Dogster Technologies Private Limited as legal entity. The main corporate site is a client-rendered shell,so the current product/brand narrative is supported by listing and official structured identity,not full normal corporate-body access. No explicit graduate-only degree restriction is stated;student eligibility and specific joining date still require confirmation. Broxer andJobsii are genuine matching mirrors with their own dates,not independent original freshness.",
-          "checkedAt": "2026-11-09"
+          "evidenceStatus": "28November normal exact Internshala role has the role-specific Applications are closed for this internship notice and Closed for applications control. This is actual advert status,not generic login/account-on-hold UI text. Original stipend,requirements and posting history retained;not employer-wide closure or a filled-role claim. Current apply-by is27November2026,previous saved4December evidence retained in history;start window4November–9December does not override explicit closure. INR35–40k/month,six-month Bengaluru terms remain historical current-listing evidence.",
+          "checkedAt": "2026-11-28",
+          "history": [
+            {
+              "id": "internshala-dogster-ux-design-1793796912",
+              "jobId": "internshala-dogster-ux-design-1793796912",
+              "title": "UX Design Intern",
+              "seniority": "Internship — advertised,current intake to confirm",
+              "url": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912",
+              "location": "Bengaluru, Karnataka, India — in office",
+              "requirements": [
+                {
+                  "id": "864b50241e28",
+                  "text": "Figma,prototyping,UI/UX design,UX research and wireframing",
+                  "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+                },
+                {
+                  "id": "f9bf772f5e5e",
+                  "text": "Full-time in-office availability for six months;listed joining window4November–9December2026",
+                  "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+                },
+                {
+                  "id": "5c2c693b418b",
+                  "text": "Responsibilities:mobile-game/app flows,small user tests,design-system components and developer specifications",
+                  "sourceUrl": "https://internshala.com/internship/detail/ux-design-internship-in-bangalore-at-dogster-technologies-private-limited1793796912"
+                }
+              ],
+              "evidenceStatus": "Normal exact employer-authored Internshala detail and JobPosting metadata agree on INR35,000–40,000/month,full-time in-office Bengaluru,six months,one opening,application deadline4December2026 and eligible joining4November–9December2026. Structured platform posting is4November2026;first discovery/check is9November,not a fresh posting claim. Body names Felicity Games;official Felicity Organization metadata names Dogster Technologies Private Limited as legal entity. The main corporate site is a client-rendered shell,so the current product/brand narrative is supported by listing and official structured identity,not full normal corporate-body access. No explicit graduate-only degree restriction is stated;student eligibility and specific joining date still require confirmation. Broxer andJobsii are genuine matching mirrors with their own dates,not independent original freshness.",
+              "checkedAt": "2026-11-09"
+            }
+          ],
+          "openingStatus": "Archived exact advert—applications closed"
         }
       ],
       "contact": {
@@ -19119,6 +19167,13 @@
       "aliases": [
         "Felicity Games",
         "DOGSTER TECHNOLOGIES PRIVATE LIMITED"
+      ],
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-28",
+          "openingStatus": "Specific advertised six-month UX internship;current student intake/joining to confirm",
+          "currentOpeningVerified": true
+        }
       ]
     },
     {
@@ -20348,7 +20403,7 @@
       "rationale": "Editable Possible suggestion based on interface work and remote evidence; not hiring odds or a quality endorsement.",
       "careersUrl": "https://www.ftfltechnology.com/careers",
       "locationNote": "Remote India on the internship; careers-wide hybrid/remote options",
-      "openingStatus": "Named exact Indeed internship; pay, legal employer and paid/volunteer track unresolved",
+      "openingStatus": "Exact retained Indeed internship advert expired;separate current eligible employer intake unverified,not employer-wide closure.",
       "currentOpeningVerified": false,
       "payNote": "Pay information not provided; volunteer job-type tag requires clarification. No verified stipend or current offer.",
       "payConfidence": "Limited; inspect exact role evidence",
@@ -20357,7 +20412,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional active openings.",
-      "researchedAt": "2026-11-11",
+      "researchedAt": "2026-11-28",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0",
@@ -20370,6 +20425,12 @@
           "label": "Official careers: normal shell and indexed role evidence",
           "checkedAt": "2026-11-11",
           "evidenceStatus": "Normal careers page shows general hiring and resume route but category inventory is not rendered. Indexed careers extract names one UI/UX Designer vacancy; not verified as this internship, a paid position or current student intake."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November normal exact Indeed HTML contains a visible alert explicitly This job has expired on Indeed and no apply control. Public research-tool cached/extracted view still shows an Apply control; this conflicting access observation is retained, not used to override the fresh normal platform expiry. This archives the exact advert, not an employer-wide closure or filled-role claim."
         }
       ],
       "roles": [
@@ -20397,8 +20458,38 @@
               "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
             }
           ],
-          "checkedAt": "2026-11-11",
-          "evidenceStatus": "Normal exact employer-authored Indeed UI/UX Design Intern is remote India and accepts students/freshers with 0–1 year, college/personal projects and Figma. Pay is explicitly not provided. Job-type tags mix internship, volunteer, student, part/full-time and contract; these are not proof of a paid internship. Structured platform date28October2026, not the11November category date. Employer metadata name FTFL Technology links a Saveinpe24 Innovation company profile, so legal employer identity needs clarification. Official ftfltechnology.com careers separately lists one UI/UX Designer vacancy but does not establish that it is the same internship or give stipend/cohort terms. Hold for written confirmation of paid/no-fee employment, fixed monthly stipend, legal employer, duration, hours and current student intake. No application sent."
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28November normal exact Indeed HTML contains a visible alert explicitly This job has expired on Indeed and no apply control. Public research-tool cached/extracted view still shows an Apply control;this conflicting access observation is retained,not used to override the fresh normal platform expiry. This archives the exact advert,not an employer-wide closure or filled-role claim.",
+          "history": [
+            {
+              "id": "indeed-ftfl-uiux-intern-c2ce29c74607f1e0",
+              "jobId": "indeed-ftfl-uiux-intern-c2ce29c74607f1e0",
+              "title": "UI/UX Design Intern",
+              "url": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0",
+              "seniority": "Internship;terms to confirm",
+              "location": "Remote — India",
+              "requirements": [
+                {
+                  "id": "6b4dcc2e0077",
+                  "text": "Figma and basic UI/UX principles, wireframing and prototyping",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
+                },
+                {
+                  "id": "57a0ebc03c89",
+                  "text": "Students/freshers, 0–1 year; personal or college projects accepted",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
+                },
+                {
+                  "id": "4c3a3c040916",
+                  "text": "Remote independent work, developer collaboration and design consistency",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=c2ce29c74607f1e0"
+                }
+              ],
+              "checkedAt": "2026-11-11",
+              "evidenceStatus": "Normal exact employer-authored Indeed UI/UX Design Intern is remote India and accepts students/freshers with 0–1 year, college/personal projects and Figma. Pay is explicitly not provided. Job-type tags mix internship, volunteer, student, part/full-time and contract; these are not proof of a paid internship. Structured platform date28October2026, not the11November category date. Employer metadata name FTFL Technology links a Saveinpe24 Innovation company profile, so legal employer identity needs clarification. Official ftfltechnology.com careers separately lists one UI/UX Designer vacancy but does not establish that it is the same internship or give stipend/cohort terms. Hold for written confirmation of paid/no-fee employment, fixed monthly stipend, legal employer, duration, hours and current student intake. No application sent."
+            }
+          ],
+          "openingStatus": "Archived exact Indeed advert;current independent intake unresolved"
         }
       ],
       "contact": {
@@ -20430,7 +20521,14 @@
         ],
         "limits": "No employee testimony,management investigation or representative review sample assessed. Low pay or a small company alone is not a Lala classification.",
         "nextAction": "Confirm legal employer,paid/no-fee employment track,fixed stipend,hours,duration and manager before applying."
-      }
+      },
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-28",
+          "openingStatus": "Named exact Indeed internship; pay, legal employer and paid/volunteer track unresolved",
+          "currentOpeningVerified": false
+        }
+      ]
     },
     {
       "id": "intuit",
@@ -24332,8 +24430,8 @@
       "rationale": "Possible editable preference for remote UX practice and a published three-month stipend. New employer-platform activity and limited independent team evidence require written terms/supervision checks.",
       "careersUrl": "https://unicraft.tech/careers",
       "locationNote": "Remote India; three-month full-time role",
-      "openingStatus": "Exact employer-posted paid remote internship; current student joining and written terms to confirm",
-      "currentOpeningVerified": true,
+      "openingStatus": "Exact retained internship advert closed for applications;not employer-wide closure.",
+      "currentOpeningVerified": false,
       "payNote": "Exact Internshala role advertises INR10,000–15,000/month in body and MONTH schema; verified listing units, not a received offer.",
       "payConfidence": "Moderate for advertised range/unit; current written employer agreement unconfirmed",
       "likelyRoles": [
@@ -24341,7 +24439,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future families, not additional vacancies.",
-      "researchedAt": "2026-11-20",
+      "researchedAt": "2026-11-28",
       "sources": [
         {
           "url": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599",
@@ -24366,6 +24464,12 @@
           "label": "20 November public research",
           "checkedAt": "2026-11-20",
           "evidenceStatus": "Normal official careers page readable; general employer hiring context only. Exact paid UIUX internship evidence is the employer-posted Internshala detail, not independent pay confirmation from this careers page."
+        },
+        {
+          "url": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599",
+          "label": "28 November exact public closure",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November normal exact Internshala role has the role-specific Applications are closed for this internship notice and Closed for applications control. This is actual advert status, not generic login/account-on-hold UI text. Original stipend, requirements and posting history retained; not employer-wide closure or a filled-role claim. Current apply-by23 November2026; previous saved27 November text already contained closure wording. Archival is first recorded28 November, not an invented employer closure date. INR10–15k/month, three-month remote terms retained."
         }
       ],
       "roles": [
@@ -24403,8 +24507,48 @@
               "sourceUrl": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599"
             }
           ],
-          "checkedAt": "2026-11-20",
-          "evidenceStatus": "Normal exact employer-posted Internshala1794991599 is readable with Apply now, remote India/TELECOMMUTE, three months, fixed advertised INR10,000–15,000/MONTH in visible body and JobPosting schema. Start16November–21December2026, applyby18December. Platform date18November, not independently verified employer-original publication. Three openings, flexible hours/five days, no degree/batch restriction visible. Employer describes consultancy/product-development services; linked unicraft.tech corroborates business identity only. Published pay meets revised remote floor but written contract/current joining/student intake remain unconfirmed. No fee claim or offer inferred from site reputation."
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28November normal exact Internshala role has the role-specific Applications are closed for this internship notice and Closed for applications control. This is actual advert status,not generic login/account-on-hold UI text. Original stipend,requirements and posting history retained;not employer-wide closure or a filled-role claim. Current apply-by23November2026;previous saved27November text already contained closure wording. Archival is first recorded28November,not an invented employer closure date. INR10–15k/month,three-month remote terms retained.",
+          "history": [
+            {
+              "id": "internshala-unicraft-tech-uiux-1794991599",
+              "jobId": "internshala-unicraft-tech-uiux-1794991599",
+              "title": "UI/UX Design Intern",
+              "url": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599",
+              "seniority": "Internship; current student joining to confirm",
+              "location": "Remote India",
+              "requirements": [
+                {
+                  "id": "ce7626081f80",
+                  "text": "Three months remote availability; published joining window16November–21December2026; relevant skills/interests, no specific degree/batch stated",
+                  "sourceUrl": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599"
+                },
+                {
+                  "id": "19149e130a6d",
+                  "text": "Figma wireframes, user flows, interactive prototypes and responsive interfaces",
+                  "sourceUrl": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599"
+                },
+                {
+                  "id": "d88ede89dc5e",
+                  "text": "Basic user research, competitor analysis, usability testing and accessible reusable UI components",
+                  "sourceUrl": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599"
+                },
+                {
+                  "id": "a778a2315975",
+                  "text": "Collaboration with product/developers, design feedback and consistent UI across screens",
+                  "sourceUrl": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599"
+                },
+                {
+                  "id": "243ca505f11e",
+                  "text": "Listed skills include Photoshop, Adobe XD, HTML/CSS, motion graphics and system design; confirm which are mandatory",
+                  "sourceUrl": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599"
+                }
+              ],
+              "checkedAt": "2026-11-20",
+              "evidenceStatus": "Normal exact employer-posted Internshala1794991599 is readable with Apply now, remote India/TELECOMMUTE, three months, fixed advertised INR10,000–15,000/MONTH in visible body and JobPosting schema. Start16November–21December2026, applyby18December. Platform date18November, not independently verified employer-original publication. Three openings, flexible hours/five days, no degree/batch restriction visible. Employer describes consultancy/product-development services; linked unicraft.tech corroborates business identity only. Published pay meets revised remote floor but written contract/current joining/student intake remain unconfirmed. No fee claim or offer inferred from site reputation."
+            }
+          ],
+          "openingStatus": "Archived exact advert—applications closed"
         }
       ],
       "contact": {
@@ -24412,7 +24556,14 @@
         "kind": "Exact employer-posted application route; not submitted",
         "sourceUrl": "https://internshala.com/internship/detail/work-from-home-ui-ux-design-internship-at-unicraft-tech1794991599"
       },
-      "website": "https://unicraft.tech"
+      "website": "https://unicraft.tech",
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-28",
+          "openingStatus": "Exact employer-posted paid remote internship; current student joining and written terms to confirm",
+          "currentOpeningVerified": true
+        }
+      ]
     },
     {
       "id": "scoutsubs",
@@ -24939,7 +25090,7 @@
         "UX Designer"
       ],
       "likelyRolesEvidence": "Inferred future families,not vacancies.",
-      "researchedAt": "2026-11-27",
+      "researchedAt": "2026-11-28",
       "aliases": [
         "Brahmaa.ai"
       ],
@@ -25029,6 +25180,12 @@
           "label": "27 November public research",
           "checkedAt": "2026-11-27",
           "evidenceStatus": "27 November Brahmaverse/Brahmaa.ai/Fastor7/Abhinav queries and normal Fastor7 site checked. Old12October deadline and distinct3+years4468586366 remain historical/out-of-scope; no new eligible intake inferred."
+        },
+        {
+          "url": "https://www.fastor7.com/",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November Brahmaverse/Brahmaa.ai/Fastor7/Abhinav queries and normal Fastor7 site checked; old12October deadline and distinct3+years4468586366 remain historical/out-of-scope. No new eligible intake inferred."
         }
       ],
       "roles": [
@@ -25472,7 +25629,7 @@
         "UX Researcher"
       ],
       "likelyRolesEvidence": "Inferred future role families,not additional vacancies.",
-      "researchedAt": "2026-11-27",
+      "researchedAt": "2026-11-28",
       "sources": [
         {
           "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
@@ -25545,6 +25702,12 @@
           "label": "27 November public research",
           "checkedAt": "2026-11-27",
           "evidenceStatus": "27 November mirror/named author queries and exact linked form rechecked; form401. No verified renewed eligible original intake; old25k/expiry/form conflict and geography caveat retained."
+        },
+        {
+          "url": "https://www.carrerlift.in/jobs/snapdeal-product-design-intern-ppo-gurugram-ba179b5f",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November mirror, aliases/hiring-author searches and exact form rechecked; form401. No new eligible current original intake; old25k/expiry/form andGurugram limits remain."
         }
       ],
       "roles": [
@@ -26489,7 +26652,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
-      "researchedAt": "2026-11-27",
+      "researchedAt": "2026-11-28",
       "sources": [
         {
           "url": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
@@ -26514,6 +26677,12 @@
           "label": "27 November public research",
           "checkedAt": "2026-11-27",
           "evidenceStatus": "27 November public original post extract is readable and crawl-labelled today, visible original relative label 4d (previously2d). Body still remote, six months, paid without amount, students/recent graduates. Original activity-ID-derived 21 November date retained as derived, not employer-confirmed absolute date. The changing relative label supports original age under14days; this is a retained lead, not a new post or renewed cohort."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/nishij0_hiring-uiux-productdesign-activity-7529988955732140032-jXIL",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November exact original public research extract remains readable but crawl-labelled yesterday, still4d. Retain27 November original-relative observation and derived21 November activity date separately. Both support age within14–28 November; no new post or renewed cohort inferred. Remote six-month paid amount still unknown; normal original read restricted."
         }
       ],
       "roles": [
@@ -27168,7 +27337,7 @@
       "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
       "careersUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
       "locationNote": "Bengaluru office; exact joining/cohort to confirm",
-      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "openingStatus": "Exact retained Indeed internship advert expired;separate current eligible employer intake unverified,not employer-wide closure.",
       "currentOpeningVerified": false,
       "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
       "payConfidence": "Unknown current compensation; source limits retained",
@@ -27177,7 +27346,7 @@
         "Product Designer"
       ],
       "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
-      "researchedAt": "2026-11-27",
+      "researchedAt": "2026-11-28",
       "sources": [
         {
           "url": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
@@ -27220,6 +27389,12 @@
           "label": "27 November public research",
           "checkedAt": "2026-11-27",
           "evidenceStatus": "Indexed matching Smytten UI/UX internship body;26November is mirror date. Frontend Engineer category is mirror classification, not a different role or headcount."
+        },
+        {
+          "url": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28 November normal exact Indeed HTML contains a visible alert explicitly This job has expired on Indeed and no apply control. Public research-tool cached/extracted view still shows an Apply control; this conflicting access observation is retained, not used to override the fresh normal platform expiry. This archives the exact advert, not an employer-wide closure or filled-role claim. LinkedIn 4495017726 public extract is crawl-labelled yesterday and still Apply; it does not independently verify current28 November intake. Normal LinkedIn read restricted; current employer/other-platform availability remains unresolved."
         }
       ],
       "roles": [
@@ -27252,8 +27427,43 @@
               "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
             }
           ],
-          "checkedAt": "2026-11-27",
-          "evidenceStatus": "Normal exact Indeed job 80b56b75690cc29b is readable: UI | UX Intern, Smytten Pulse B2B products, Bengaluru office, four to six months, pursuing/recently completed Design/UIUX-related degree. Figma, user flows, wireframes, prototypes, dashboards, data visualisation, research/testing and developer collaboration. Pay information not provided. Indeed JobPosting datePosted26 November2026 06:39:51.882UTC is a platform publication field, not independently established employer-original date. LinkedIn Jobs 4495017726 indexed body matches; normal original read restricted. FirstHire26 November18:26IST and RemJobs26 November are mirror dates. RemJobs gates its employer apply link behind membership; no gated destination accessed. DBERT adds conflicting3month and12–25k/month/project/certification-dependent terms absent from the readable employer-platform JD; not verified current pay, no inference that Smytten requires fees. Exact stipend, no-fee terms and joining remain to confirm."
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "28November normal exact Indeed HTML contains a visible alert explicitly This job has expired on Indeed and no apply control. Public research-tool cached/extracted view still shows an Apply control;this conflicting access observation is retained,not used to override the fresh normal platform expiry. This archives the exact advert,not an employer-wide closure or filled-role claim. LinkedIn4495017726 public extract is crawl-labelled yesterday and still Apply;it does not independently verify current28November intake. Normal LinkedIn read restricted;current employer/other-platform availability remains unresolved.",
+          "history": [
+            {
+              "id": "indeed-smytten-uiux-intern-80b56b75690cc29b",
+              "jobId": "indeed-smytten-uiux-intern-80b56b75690cc29b",
+              "title": "UI/UX Intern — Smytten Pulse",
+              "seniority": "Internship; current intake/eligibility unconfirmed",
+              "url": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b",
+              "location": "Bengaluru office; exact joining/cohort to confirm",
+              "requirements": [
+                {
+                  "id": "8dd5cd3d2e84",
+                  "text": "Pursuing or recently completed Design/UIUX-related degree; portfolio of design projects",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+                },
+                {
+                  "id": "aa8c0b83bca0",
+                  "text": "Figma, wireframes, prototypes and user flows for B2B products",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+                },
+                {
+                  "id": "5e93756c9027",
+                  "text": "Dashboards/data visualisation, research feedback and usability testing",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+                },
+                {
+                  "id": "5e6771de2dc6",
+                  "text": "Collaborate with product/engineering; communication and visual craft; motion skills optional",
+                  "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
+                }
+              ],
+              "checkedAt": "2026-11-27",
+              "evidenceStatus": "Normal exact Indeed job 80b56b75690cc29b is readable: UI | UX Intern, Smytten Pulse B2B products, Bengaluru office, four to six months, pursuing/recently completed Design/UIUX-related degree. Figma, user flows, wireframes, prototypes, dashboards, data visualisation, research/testing and developer collaboration. Pay information not provided. Indeed JobPosting datePosted26 November2026 06:39:51.882UTC is a platform publication field, not independently established employer-original date. LinkedIn Jobs 4495017726 indexed body matches; normal original read restricted. FirstHire26 November18:26IST and RemJobs26 November are mirror dates. RemJobs gates its employer apply link behind membership; no gated destination accessed. DBERT adds conflicting3month and12–25k/month/project/certification-dependent terms absent from the readable employer-platform JD; not verified current pay, no inference that Smytten requires fees. Exact stipend, no-fee terms and joining remain to confirm."
+            }
+          ],
+          "openingStatus": "Archived exact Indeed advert;current independent intake unresolved"
         }
       ],
       "contact": {
@@ -27262,7 +27472,14 @@
         "sourceUrl": "https://in.indeed.com/viewjob?jk=80b56b75690cc29b"
       },
       "website": "https://smytten.com/",
-      "careersUrlNote": "Official employer ATS destination not established;careersUrl uses the verified exact public Indeed role route. The official site is recorded separately."
+      "careersUrlNote": "Official employer ATS destination not established;careersUrl uses the verified exact public Indeed role route. The official site is recorded separately.",
+      "researchHistory": [
+        {
+          "checkedAt": "2026-11-28",
+          "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+          "currentOpeningVerified": false
+        }
+      ]
     },
     {
       "id": "outfindr",
@@ -27417,17 +27634,402 @@
         "sourceUrl": "https://jobs.thyssenkrupp.com/en/job/id/973124",
         "kind": "Published exact-role recruitment contact; role3–5years and current access unresolved; no message sent"
       }
+    },
+    {
+      "id": "vytron-dynamics",
+      "name": "Vytron Dynamics",
+      "company": "Vytron Dynamics",
+      "companyType": "Services team",
+      "sector": "Web/software development, business automation, integrations and digital-product design",
+      "focus": "Web/software development, business automation, integrations and digital-product design",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://vytronsol.com/careers/",
+      "locationNote": "Colombo, Sri Lanka; exact internship advert remote worldwide/any country; India contract/payment eligibility to confirm",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "Direct internship pay/paid status unstated. Optional Academy explicitly charges for three training months; its subsequent free internship does not mean paid work. No current stipend or benchmark inferred.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-28",
+      "sources": [
+        {
+          "url": "https://vytronsol.com/careers/job.php?id=uiux",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal exact employer UI/UX Designer internship detail readable:remote worldwide, six months, Figma wireframes/mockups/prototypes, usability checks, developer files, portfolio with at least two design projects. Official careers FAQ welcomes students/recent graduates/career changers from any country; hours agreed individually. No pay amount or paid status is stated. Careers separately offers an optional invitation-only Vytron Academy:three months fee-based training plus three-month free internship. That alternative is not a qualifying paid/no-fee opportunity and is not the same advertised six-month direct internship. Do not interpret free internship as stipend. Exact direct application selector/form visible, not submitted. Official homepage identifies Colombo, Sri Lanka software/client services. Student India agreement, payment, currency, full-time hours and joining remain to confirm. General info@ inbox is not a verified recruiting contact."
+        },
+        {
+          "url": "https://vytronsol.com/careers/",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal exact employer UI/UX Designer internship detail readable:remote worldwide, six months, Figma wireframes/mockups/prototypes, usability checks, developer files, portfolio with at least two design projects. Official careers FAQ welcomes students/recent graduates/career changers from any country; hours agreed individually. No pay amount or paid status is stated. Careers separately offers an optional invitation-only Vytron Academy:three months fee-based training plus three-month free internship. That alternative is not a qualifying paid/no-fee opportunity and is not the same advertised six-month direct internship. Do not interpret free internship as stipend. Exact direct application selector/form visible, not submitted. Official homepage identifies Colombo, Sri Lanka software/client services. Student India agreement, payment, currency, full-time hours and joining remain to confirm. General info@ inbox is not a verified recruiting contact."
+        },
+        {
+          "url": "https://vytronsol.com/",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal official homepage identifies Colombo, Sri Lanka web/software, automation, integration and client services. Worldwide client delivery is not proof of a paid internship or India contracting permission."
+        }
+      ],
+      "roles": [
+        {
+          "id": "careers-vytron-uiux-intern-uiux",
+          "jobId": "careers-vytron-uiux-intern-uiux",
+          "title": "Intern UI/UX Designer — direct six-month route",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://vytronsol.com/careers/job.php?id=uiux",
+          "location": "Colombo, Sri Lanka; exact internship advert remote worldwide/any country; India contract/payment eligibility to confirm",
+          "requirements": [
+            {
+              "id": "de3f73b187ac",
+              "text": "Portfolio with at least two design projects; Figma or similar tools",
+              "sourceUrl": "https://vytronsol.com/careers/job.php?id=uiux"
+            },
+            {
+              "id": "cbf25e4e7203",
+              "text": "Wireframes, mockups, prototypes and quick usability checks",
+              "sourceUrl": "https://vytronsol.com/careers/job.php?id=uiux"
+            },
+            {
+              "id": "a13e126dc722",
+              "text": "Layout, typography, colour and developer-ready design files",
+              "sourceUrl": "https://vytronsol.com/careers/job.php?id=uiux"
+            },
+            {
+              "id": "cc35ee80db7d",
+              "text": "Six-month worldwide remote internship; student/graduate/career-changer eligibility, agreed weekly hours",
+              "sourceUrl": "https://vytronsol.com/careers/job.php?id=uiux"
+            }
+          ],
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal exact employer UI/UX Designer internship detail readable:remote worldwide, six months, Figma wireframes/mockups/prototypes, usability checks, developer files, portfolio with at least two design projects. Official careers FAQ welcomes students/recent graduates/career changers from any country; hours agreed individually. No pay amount or paid status is stated. Careers separately offers an optional invitation-only Vytron Academy:three months fee-based training plus three-month free internship. That alternative is not a qualifying paid/no-fee opportunity and is not the same advertised six-month direct internship. Do not interpret free internship as stipend. Exact direct application selector/form visible, not submitted. Official homepage identifies Colombo, Sri Lanka software/client services. Student India agreement, payment, currency, full-time hours and joining remain to confirm. General info@ inbox is not a verified recruiting contact."
+        }
+      ],
+      "contact": {
+        "url": "https://vytronsol.com/careers/#apply-uiux",
+        "kind": "Published direct internship form; general info inbox separately serves questions/business,not a verified recruiter",
+        "sourceUrl": "https://vytronsol.com/careers/"
+      }
+    },
+    {
+      "id": "spraynslay",
+      "name": "SprayNSlay",
+      "company": "SprayNSlay",
+      "companyType": "Product company",
+      "sector": "Consumer-brand product experiences; exact digital product/client scope unverified",
+      "focus": "Consumer-brand product experiences; exact digital product/client scope unverified",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856",
+      "locationNote": "Bengaluru header; body says full-time remote; FirstHire overview says on-site—confirm India work arrangement",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-28",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Indexed exact employer LinkedIn Jobs 4495074856 body describes full-time remote Product Design Intern, wireframes/polished interfaces, research, prototypes, visual assets, development documentation and design reviews. Current/recent Design/HCI/Interaction students or equivalent work welcome. Brand is labelled Retail Health and Personal Care Products; exact digital product/project scope and employer identity beyond advert remain unverified. Normal original and public research-tool open unavailable. FirstHire matching mirror d3fa6913 lists27 November2026 13:46IST as mirror date, not verified employer publication. Its on-site overview conflicts with the same body saying remote. Pay, duration and current cohort unstated. No official independent careers website or recruitment email established; do not invent one."
+        },
+        {
+          "url": "https://getfirsthire.com/jobs/d3fa6913d02dacdb32b4e9a75150e71edeeabe79e73bb89c843b209aba41d84e",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Indexed genuine matching via-LinkedIn crosspost. Pay unstated; on-site overview contradicts remote body. Mirror date does not establish original publication."
+        }
+      ],
+      "roles": [
+        {
+          "id": "linkedin-spraynslay-product-design-intern-4495074856",
+          "jobId": "linkedin-spraynslay-product-design-intern-4495074856",
+          "title": "Product Design Intern — work arrangement to confirm",
+          "seniority": "Internship; current intake/eligibility unconfirmed",
+          "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856",
+          "location": "Bengaluru header; body says full-time remote; FirstHire overview says on-site—confirm India work arrangement",
+          "requirements": [
+            {
+              "id": "c759c72b5d8f",
+              "text": "Current/recent Design, HCI, Interaction Design or related study/equivalent practical experience",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856"
+            },
+            {
+              "id": "2329c449d3e8",
+              "text": "Product/design thinking, user/UX research and visual-interface fundamentals",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856"
+            },
+            {
+              "id": "e6b9ca669692",
+              "text": "Figma, Sketch or Adobe XD; basic prototyping, wireframes and polished interfaces",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856"
+            },
+            {
+              "id": "5845d91ed467",
+              "text": "Remote independent collaboration, documentation, feedback iteration and attention to detail",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856"
+            }
+          ],
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Indexed exact employer LinkedIn Jobs 4495074856 body describes full-time remote Product Design Intern, wireframes/polished interfaces, research, prototypes, visual assets, development documentation and design reviews. Current/recent Design/HCI/Interaction students or equivalent work welcome. Brand is labelled Retail Health and Personal Care Products; exact digital product/project scope and employer identity beyond advert remain unverified. Normal original and public research-tool open unavailable. FirstHire matching mirror d3fa6913 lists27 November2026 13:46IST as mirror date, not verified employer publication. Its on-site overview conflicts with the same body saying remote. Pay, duration and current cohort unstated. No official independent careers website or recruitment email established; do not invent one."
+        }
+      ],
+      "contact": {
+        "url": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856",
+        "kind": "Published role/careers route; no contact or submission",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/product-design-intern-at-spraynslay-4495074856"
+      }
+    },
+    {
+      "id": "qurious-click",
+      "name": "Qurious Click",
+      "company": "Qurious Click",
+      "companyType": "Services team",
+      "sector": "Digital agency: UI/UX, web/mobile application development and branding",
+      "focus": "Digital agency: UI/UX, web/mobile application development and branding",
+      "tier": "Workable",
+      "categorySuggested": "Workable",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Workable preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://quriousclick.com/careers",
+      "locationNote": "Vastrapur, Ahmedabad, Gujarat; office only, permanent full-time employment",
+      "openingStatus": "Role advertised; current eligible intake, pay and joining unconfirmed.",
+      "currentOpeningVerified": false,
+      "payNote": "Exact Indeed employment advert:INR120,000–276,000/year, verified original listing units; no monthly stipend inference.",
+      "payConfidence": "Range/currency/YEAR verified in normal platform detail; individual offer, current salary structure and eligibility unconfirmed",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-28",
+      "sources": [
+        {
+          "url": "https://in.indeed.com/viewjob?jk=268740af5bf1296b",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal exact Indeed Jr. UI/UX Designer 268740af5bf1296b:Qurious Click, Vastrapur Ahmedabad, permanent/full-time, fresher to one year, office only/no remote. Current/recent B.Des, BCA, B.Tech, M.Des, MCA design/CS-related students welcome; academic/personal/case-study portfolio accepted. One-year UI experience is preferred, not stated mandatory. Figma auto-layout/components/variants, handoff, design systems, responsive UI, AI-assisted tools, developer collaboration; Illustrator/Photoshop orsimilar listed. Explicit advertised salary INR120,000–276,000/YEAR in body and structured metadata. It is employment salary, not a monthly internship stipend match or received offer. Indeed platform datePosted 20 November2026 05:58:11.887UTC distinct from employer-original publication. Normal official careers page corroborates digital-agency identity and general career route but does not independently list this exact job. Indexed company Updates1mo/older reposts are historical additional evidence, not fresh social hiring. Current student full-time office/joining and salary structure to confirm."
+        },
+        {
+          "url": "https://quriousclick.com/careers/",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal official careers page identifies Qurious Click Digital Agency, Ahmedabad and web/mobile/UI/UX services. It offers general career contact, not independently verified current opening inventory."
+        },
+        {
+          "url": "https://in.linkedin.com/company/qurious-click",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Indexed self-published company Update welcomes junior UI/UX freshers and publishes tech@quriousclick.com for portfolio/resume recruitment. Original relative labels1mo/older reposts are historical, not a date-verified new social intake. Normal company feed not authenticated; email purpose is recruiting, no message sent."
+        }
+      ],
+      "roles": [
+        {
+          "id": "indeed-qurious-click-junior-uiux-268740af5bf1296b",
+          "jobId": "indeed-qurious-click-junior-uiux-268740af5bf1296b",
+          "title": "Jr. UI/UX Designer — fresher to one year",
+          "seniority": "Junior / fresher; current intake/eligibility unconfirmed",
+          "url": "https://in.indeed.com/viewjob?jk=268740af5bf1296b",
+          "location": "Vastrapur, Ahmedabad, Gujarat; office only, permanent full-time employment",
+          "requirements": [
+            {
+              "id": "0e991888e82f",
+              "text": "Fresher to one year; one-year UI experience preferred; academic/personal portfolio accepted",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=268740af5bf1296b"
+            },
+            {
+              "id": "d18d12bf561b",
+              "text": "Current/recent B.Des/BCA/B.Tech/M.Des/MCA design/CS-related study",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=268740af5bf1296b"
+            },
+            {
+              "id": "dbd32266f512",
+              "text": "Figma auto-layout, components, variants, design systems, responsive UI and developer handoff",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=268740af5bf1296b"
+            },
+            {
+              "id": "9796705cc1a5",
+              "text": "Visual fundamentals, wireframes/flows/prototypes, AI-assisted tools, communication and developer collaboration",
+              "sourceUrl": "https://in.indeed.com/viewjob?jk=268740af5bf1296b"
+            }
+          ],
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal exact Indeed Jr. UI/UX Designer 268740af5bf1296b:Qurious Click, Vastrapur Ahmedabad, permanent/full-time, fresher to one year, office only/no remote. Current/recent B.Des, BCA, B.Tech, M.Des, MCA design/CS-related students welcome; academic/personal/case-study portfolio accepted. One-year UI experience is preferred, not stated mandatory. Figma auto-layout/components/variants, handoff, design systems, responsive UI, AI-assisted tools, developer collaboration; Illustrator/Photoshop orsimilar listed. Explicit advertised salary INR120,000–276,000/YEAR in body and structured metadata. It is employment salary, not a monthly internship stipend match or received offer. Indeed platform datePosted 20 November2026 05:58:11.887UTC distinct from employer-original publication. Normal official careers page corroborates digital-agency identity and general career route but does not independently list this exact job. Indexed company Updates1mo/older reposts are historical additional evidence, not fresh social hiring. Current student full-time office/joining and salary structure to confirm."
+        }
+      ],
+      "contact": {
+        "email": "tech@quriousclick.com",
+        "url": "https://quriousclick.com/careers/",
+        "kind": "Published general recruitment inbox in historical company Update;use current exact Indeed role for availability",
+        "sourceUrl": "https://in.linkedin.com/company/qurious-click"
+      }
+    },
+    {
+      "id": "tempest-advertising",
+      "name": "Tempest Advertising",
+      "company": "Tempest Advertising",
+      "companyType": "Services team",
+      "sector": "Integrated communications, branding, web/mobile digital experiences and advertising",
+      "focus": "Integrated communications, branding, web/mobile digital experiences and advertising",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://www.tempestadvertising.com/currentopenings/",
+      "locationNote": "Hyderabad on-site; other offices do not imply role relocation choice",
+      "openingStatus": "Current experienced2–3year role only; not an active fresher/intern recommendation.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-28",
+      "sources": [
+        {
+          "url": "https://www.tempestadvertising.com/currentopenings/junior-ui-ux-designer-hyd/",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal exact employer Junior UI/UX Designer Hyderabad page readable and Apply form visible, but requires2–3years hands-on UI/UX experience, agency/product preferred. Related bachelor/diploma, strong portfolio, Figma/AdobeXD/Sketch, research, flows/prototypes, design systems, responsive UI and accessibility/usability. Compensation described as competitive without numbers. This is experienced-role awareness, not a fresher internship or active recommendation. Employer self-describes27-year agency; not independently audited workplace quality. Exact career email careers@tempestadvertising.com/subjectJuniorUI/UXDesigner is published recruitment-purpose. business@ serves business enquiries, not guessed as recruiting. No form/message sent."
+        }
+      ],
+      "roles": [
+        {
+          "id": "tempest-junior-uiux-hyd-experience-research",
+          "title": "Junior UI/UX Designer — Hyderabad",
+          "seniority": "Two to three years hands-on experience required; awareness only",
+          "url": "https://www.tempestadvertising.com/currentopenings/junior-ui-ux-designer-hyd/",
+          "location": "Hyderabad, on-site",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Normal exact employer Junior UI/UX Designer Hyderabad page readable and Apply form visible, but requires2–3years hands-on UI/UX experience, agency/product preferred. Related bachelor/diploma, strong portfolio, Figma/AdobeXD/Sketch, research, flows/prototypes, design systems, responsive UI and accessibility/usability. Compensation described as competitive without numbers. This is experienced-role awareness, not a fresher internship or active recommendation. Employer self-describes27-year agency; not independently audited workplace quality. Exact career email careers@tempestadvertising.com/subjectJuniorUI/UXDesigner is published recruitment-purpose. business@ serves business enquiries, not guessed as recruiting. No form/message sent.",
+          "requirements": [
+            {
+              "id": "65fde0c3b3c0",
+              "text": "Two to three years hands-on UI/UX experience; agency/product background preferred",
+              "sourceUrl": "https://www.tempestadvertising.com/currentopenings/junior-ui-ux-designer-hyd/"
+            },
+            {
+              "id": "8c67a8ccb498",
+              "text": "Related design/interaction/visual-communication bachelor or diploma and strong process portfolio",
+              "sourceUrl": "https://www.tempestadvertising.com/currentopenings/junior-ui-ux-designer-hyd/"
+            },
+            {
+              "id": "0723929848f9",
+              "text": "Figma/AdobeXD/Sketch, research, flows, prototypes, design-system consistency and usability",
+              "sourceUrl": "https://www.tempestadvertising.com/currentopenings/junior-ui-ux-designer-hyd/"
+            },
+            {
+              "id": "f5ae028d6d64",
+              "text": "Hyderabad on-site; client/developer/creative collaboration and deadlines",
+              "sourceUrl": "https://www.tempestadvertising.com/currentopenings/junior-ui-ux-designer-hyd/"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "email": "careers@tempestadvertising.com",
+        "url": "https://www.tempestadvertising.com/currentopenings/junior-ui-ux-designer-hyd/",
+        "kind": "Published exact-role recruitment email/Junior UIUX subject;role requires2–3years,no message sent",
+        "sourceUrl": "https://www.tempestadvertising.com/currentopenings/junior-ui-ux-designer-hyd/"
+      }
+    },
+    {
+      "id": "firmway",
+      "name": "Firmway",
+      "company": "Firmway",
+      "companyType": "Product company",
+      "sector": "Fintech/B2B software product UI/UX with supporting brand graphics",
+      "focus": "Fintech/B2B software product UI/UX with supporting brand graphics",
+      "tier": "Possible",
+      "categorySuggested": "Possible",
+      "categorySuggestedOnly": true,
+      "rationale": "Editable Possible preference based on sourced design scope and location; not a hiring probability or workplace-quality endorsement.",
+      "careersUrl": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329",
+      "locationNote": "Mumbai; historical full-time0–2year role, work arrangement unverified",
+      "openingStatus": "Historical exact LinkedIn advert explicitly closed; no verified renewed intake.",
+      "currentOpeningVerified": false,
+      "payNote": "No current numerical compensation or reliable role-specific benchmark established.",
+      "payConfidence": "Unknown current compensation; source limits retained",
+      "likelyRoles": [
+        "UI/UX Designer",
+        "Product Designer"
+      ],
+      "likelyRolesEvidence": "Inferred future role families, not additional vacancies.",
+      "researchedAt": "2026-11-28",
+      "sources": [
+        {
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329",
+          "label": "28 November public research",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Indexed exact employer UI/UX Designer4451672329 explicitly no longer accepting applications. Historical role welcomes0–2years/freshers, academic/personal portfolios, Figma/Canva; 85–90%UI/UX and10–15%brand/marketing graphics in fintech product. Pay unstated. Relative3months is not a verified absolute original date. Normal original read restricted. No current eligible vacancy inferred; official independent careers destination unestablished. Public job posterRinky Dhara relationship limited to advert, not guessed recruiter email."
+        }
+      ],
+      "roles": [
+        {
+          "id": "firmway-uiux-fresher-4451672329-historical",
+          "title": "UI/UX Designer — freshers welcome (historical)",
+          "seniority": "Historical0–2year employment advert; not active",
+          "url": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329",
+          "location": "Mumbai",
+          "checkedAt": "2026-11-28",
+          "evidenceStatus": "Indexed exact employer UI/UX Designer4451672329 explicitly no longer accepting applications. Historical role welcomes0–2years/freshers, academic/personal portfolios, Figma/Canva; 85–90%UI/UX and10–15%brand/marketing graphics in fintech product. Pay unstated. Relative3months is not a verified absolute original date. Normal original read restricted. No current eligible vacancy inferred; official independent careers destination unestablished. Public job posterRinky Dhara relationship limited to advert, not guessed recruiter email.",
+          "requirements": [
+            {
+              "id": "ab12b45c7389",
+              "text": "Zero to two years; freshers and college/personal/internship portfolios welcome",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329"
+            },
+            {
+              "id": "762ad415fdcf",
+              "text": "Figma, Canva and strong layout, typography, colour/visual hierarchy",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329"
+            },
+            {
+              "id": "7d9c39d07372",
+              "text": "Primarily UI/UX web/product interfaces; minor supporting brand/marketing graphics",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329"
+            },
+            {
+              "id": "15a67be6aff1",
+              "text": "Communication, feedback iteration and interest in fintech/B2B products",
+              "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329"
+            }
+          ]
+        }
+      ],
+      "contact": {
+        "url": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329",
+        "kind": "Published role/careers route; no contact or submission",
+        "sourceUrl": "https://in.linkedin.com/jobs/view/ui-ux-designer-fresher-can-apply-as-well-at-firmway-4451672329"
+      }
     }
   ],
   "meta": {
-    "researchedAt": "2026-11-27",
+    "researchedAt": "2026-11-28",
     "scope": "Product-first India design employer directory with studios/services; best-effort public research, not exhaustive.",
     "personalFit": "Unassessed until resume/portfolio evidence is reviewed. Checklist edits are private in browser storage.",
     "coverageLimits": "Public research now includes YC/Work at a Startup, HN, Wellfound, remote boards, India job boards and startup directories. Naukri/Internshala block automated access; some boards are limited or expired. Directories, talent pools and senior roles are not vacancies for this shortlist.",
-    "directoryCount": 345,
+    "directoryCount": 350,
     "employerScreeningUpdatedAt": "2026-11-11",
     "establishedEmployerCount": 21,
     "workplaceScreeningLimits": "This is a bounded screening aid, not a legal certification, employer quality score or hiring probability. Official policy is self-reported and not independent employee verification. No numerical review rating or inferred clean culture. Private Yes/No/Unknown assessments remain browser-local.",
-    "lastResearchRefresh": "2026-11-27"
+    "lastResearchRefresh": "2026-11-28"
   }
 }
