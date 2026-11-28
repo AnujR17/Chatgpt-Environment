@@ -2,13 +2,13 @@
 
 Live board: https://chatgpt-environment.vercel.app
 
-Production is READY from `topic/job-search-agent` data commit `7543e2f0bfe6f50ffd423951b67b15ff807ee071`. Verified 28 November 2026: 176 retained/138 active-held/38 archived roles, 111 internships/27 junior-fresher, 350 companies and 54 coverage records. Ten live data/export files byte-identical; live desktop/mobile saved-progress tests pass. Protection unchanged; assistant remains removed.
+Production is READY from `topic/job-search-agent` follow-up data commit `d43693da913904d17de12dfc260471766f1be6cf`. Verified 28 November 2026: 178 retained/140 active-held/38 archived roles, 112 internships/28 junior-fresher, 353 companies and54 coverage records. Ten live data/export files byte-identical; live desktop/mobile saved-progress tests pass. Protection unchanged; assistant remains removed.
 
 Publish source: `topic/job-search-agent` in `AnujR17/Chatgpt-Environment`. The public link above serves that branch's published build. Automatic preview deployments are disabled for this Vercel project so unrelated topic branches do not attempt to build the job board.
 
 Personal internship discovery and application Kanban for Anuj. Primary GitHub owner: **AnujR17**. Deployment target: **Vercel**.
 
-## 28 November targeted boAt / Tech Mahindra follow-up — prepared
+## 28 November targeted boAt / Tech Mahindra follow-up — published
 
 The earlier published sweep omitted these employer dispositions. Normal public author-profile follow-through exposed boAt's25November post7531279582461673472 while a cached research profile showed only its older25September internship post. Added one held Visual/UIUX internship card: verified original publication25November08:56:16.866UTC;location,pay,duration/student terms unknown;exact published Googleform401. Full-time design positions are stated in the same post,but junior experience eligibility is not;no extra junior vacancy invented. Gurugram in other adverts does not establish this post location or extend the named NCR exception.
 
@@ -18,7 +18,7 @@ Tech Mahindra company awareness and BORN XDS hiring context now explicit. Genuin
 
 Both employers/verified public hiring authors added to persistent social-watchlist. Supported plan now111 queries;all17 added dated queries actually executed,preserving94 earlier same-day query receipts/statuses.58 supplemental queries including broader visual/UIUX discovery andNaukri executed;this is a targeted follow-up,not another complete daily sweep. Accounting PASS146 supplied matches/70 unresolved including noise;55 relevant public dispositions reconciled,remainingunresolved actions29November. Further Caliber/Feelpixel/MoonDive/YUJ/SocioSquares snippets pending exactpost/date/scope;Moon traineecontext linked toexistingrecord,not newintake. Naukri robots/X access limits explicit. Receipts/HTML/accounting outside Git:/workspace/boat-techmahindra-nov28/. No private applicant data,UI,schedule,task,applications ormessages changed.
 
-Supported CSV/workbook regenerated:178 roles,353 companies,990 requirements,5576 sources and54 coverage rows. Preservation audit PASS:all176 prior role records and350 prior companies exactly unchanged;source history,policies,stable IDs and94 prior query statuses retained. Existing5 JavaScript test files,15 Python tests andVite build PASS. Exact production publication andlive browser/file verification pending;previous verified28November daily release remains live until verification. No full internet coverage guarantee.
+Supported CSV/workbook regenerated:178 roles,353 companies,990 requirements,5576 sources and54 coverage rows. Preservation audit PASS:all176 prior role records and350 prior companies exactly unchanged;source history,policies,stable IDs and94 prior query statuses retained. Existing5 JavaScript test files,15 Python tests andVite build PASS. Production READY on exact follow-up data commit `d43693da913904d17de12dfc260471766f1be6cf`,deployment `dpl_FVCP9aABiMMsTg79WE7Q25XZciX7`;existing project/account/topic branch andchatgpt-environment.vercel.app alias verified28November. All ten public data/export/watchlist/plan/ledger filesHTTP200 andbyte-identical. Live320/390/1440 categories,original annual units andsynthetic saved applications/blacklist/notes checks PASS;no runtime errors orsubmissions. Existing Sources mobile overflow545px unchanged;noUI changes. Protection unchanged;default authenticated scope,no teamId. One explicit follow-up production deploy;this verification-only documentation commit needs no redeploy. No full internet coverage guarantee.
 
 ## 28 November independent research — published
 
